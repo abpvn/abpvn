@@ -1,6 +1,3 @@
-/**
- * Created by Hoàng on 10/07/2016.
- */
 // ==UserScript==
 // @name        ABPVN AdsBlock
 // @namespace   ABPVN
@@ -13,7 +10,7 @@
 // @run-at      document-end
 // @include     http://*
 // @include     https://*
-// @version     2.1.2.1
+// @version     2.1.2.2
 // @grant       none
 // ==/UserScript==
 /* String Prototype */
@@ -166,7 +163,7 @@ var fixSite={
     },
     init: function(){
         this.url=location.href;
-        this.talktv_vn();
+        //this.talktv_vn();
     }
 };
 //Main class
