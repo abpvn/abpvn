@@ -10,7 +10,7 @@
 // @run-at      document-end
 // @include     http://*
 // @include     https://*
-// @version     2.1.2.2
+// @version     2.1.3
 // @grant       none
 // ==/UserScript==
 /* String Prototype */
@@ -161,9 +161,19 @@ var fixSite={
 
         }
     },
+  	usercloud_com: function(){
+      if(this.url.startWith('https://userscloud.com/')){
+        var form=document.querySelector('form[name="F1"]');
+        if(form){
+          form.submit();
+          //document.write('<center><h1>Popup Adblock by ABPVN</h1></center>');
+        }
+      }
+    },
     init: function(){
         this.url=location.href;
         //this.talktv_vn();
+       	this.usercloud_com();
     }
 };
 //Main class
