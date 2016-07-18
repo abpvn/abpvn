@@ -10,7 +10,7 @@
 // @run-at      document-end
 // @include     http://*
 // @include     https://*
-// @version     2.1.3
+// @version     2.1.3.1
 // @grant       none
 // ==/UserScript==
 /* String Prototype */
@@ -166,7 +166,10 @@ var fixSite={
         var form=document.querySelector('form[name="F1"]');
         if(form){
           form.submit();
-          //document.write('<center><h1>Popup Adblock by ABPVN</h1></center>');
+          var div = document.createElement('div');
+          div.style="position: fixed; width: 100%; height: 100%; background: rgba(0,0,0,0.80); z-index: 999999999; text-align: center; color: white; top: 0; left: 0;";
+          div.innerHTML="<h1>Popup Adblock by ABPVN</h1>";
+          document.body.insertBefore(div,document.body.firstChild);
         }
       }
     },
