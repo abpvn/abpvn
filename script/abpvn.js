@@ -214,7 +214,7 @@ var ABPVN={
         //Init class getLink
         getLink.init();
         fixSite.init();
-        console.info('ABVPN init finish for: '+this.url);
+        //console.info('ABVPN init finish for: '+this.url);
     }
 };
 //RUN INNIT
