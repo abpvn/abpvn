@@ -10,7 +10,7 @@
 // @run-at      document-end
 // @include     http://*
 // @include     https://*
-// @version     2.1.3.3
+// @version     2.1.3.4
 // @grant       none
 // ==/UserScript==
 /* String Prototype */
@@ -195,7 +195,10 @@ var ABPVN={
             'http://www.khosachnoi.net',
             'http://hamtruyen.vn/',
             'http://phim14.net/',
-            'http://phim7.com/'
+            'http://phim7.com/',
+	    'http://www.diendan.trentroiduoidat.com/',
+            'http://www.trentroiduoidat.com/',
+   	    'http://chophanthiet.us'
         ];
         for (var i = 0; i < listSite.length; i++) {
             if (this.url.startWith(listSite[i])) {
