@@ -10,7 +10,7 @@
 // @run-at      document-end
 // @include     http://*
 // @include     https://*
-// @version     2.1.4
+// @version     2.1.4.1
 // @grant       none
 // ==/UserScript==
 /* String Prototype */
@@ -21,25 +21,26 @@ String.prototype.startWith = function strxStart(str) {
 String.prototype.ismatch = function (regex) {
   return this.match(regex) !== null;
 };
-Array.prototype.removeDuplicates=function (){
-    var tmp = [];
-    for(var i = 0; i < this.length; i++){
-        if(tmp.indexOf(this[i]) == -1){
-        tmp.push(this[i]);
-        }
-    }
-    return tmp;
-};
-var getAllText = function (selector) { 
+var getAllText = function (selector) {
   var text = '';
-  var list = document.querySelectorAll(selector);  
+  var list = document.querySelectorAll(selector);
   if (list)
   for (var i = 0; i < list.length; i++) {
     text += list[i].innerText;
-  }  
+  }
   return text;
-}//Bypass Class
-
+};
+var removeDuplicates = function (arr) {
+  var tmp = [
+  ];
+  for (var i = 0; i < arr.length; i++) {
+    if (tmp.indexOf(arr[i]) == - 1) {
+      tmp.push(arr[i]);
+    }
+  }
+  return tmp;
+};
+//Bypass Class
 var byPass = {
 };
 //get Link class
@@ -200,38 +201,42 @@ var fixSite = {
     }
   },
   tv_zing_vn: function () {
-    if (this.url.startWith('http://tv.zing.vn/video/') && (navigator.userAgent.match('Firefox') !== null)&&!MP3.ZINGTV_VIP) {
-      window.addEventListener('DOMContentLoaded', function () {               
+    if (this.url.startWith('http://tv.zing.vn/video/') && (navigator.userAgent.match('Firefox') !== null) && !MP3.ZINGTV_VIP) {
+      window.addEventListener('DOMContentLoaded', function () {
         var script = document.createElement('script');
         script.src = 'https://content.jwplatform.com/libraries/QHJ5Iarr.js';
         script.type = 'text/javascript';
-        document.getElementsByTagName('head') [0].appendChild(script);        
+        document.getElementsByTagName('head') [0].appendChild(script);
         //get video list   
         var text = getAllText('script');
-        var quality=['360','480','720','1080'];
-        var listVideo=text.match(/http:\/\/stream15.+?\.mp4/g);
-        listVideo=listVideo.removeDuplicates();
-        var sources=[];
-        for(var i=0;i<listVideo.length;i++){
+        var quality = [
+          '360',
+          '480',
+          '720',
+          '1080'
+        ];
+        var listVideo = text.match(/http:\/\/stream15.+?\.mp4/g);
+        listVideo = removeDuplicates(listVideo);
+        var sources = [
+        ];
+        for (var i = 0; i < listVideo.length; i++) {
           sources.push({
             'file': listVideo[i],
             'label': quality[i]
           })
         };
-        console.log(sources);
         //get Image poster      
-        var imagePoster=text.match(/http:\/\/image.+?\.jpg/);     
-        console.log(imagePoster);
+        var imagePoster = text.match(/http:\/\/image.+?\.jpg/);
         //Setup Player
-        var playerId = 'abpvn_player';              
-        document.getElementById("player").innerHTML='<div id="'+playerId+'"></div>';       
+        var playerId = 'abpvn_player';
+        document.getElementById('player').innerHTML = '<div id="' + playerId + '"></div>';
         var clock = setInterval(function () {
           if (typeof jwplayer != 'undefined') {
             jwplayer(playerId).setup({
               sources: sources,
               autostart: true,
               image: imagePoster[0],
-              width: "100%",
+              width: '100%',
               height: 520
             })
             clearInterval(clock);
