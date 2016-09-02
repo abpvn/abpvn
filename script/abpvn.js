@@ -10,7 +10,9 @@
 // @run-at      document-end
 // @include     http://*
 // @include     https://*
-// @version     2.1.4.1
+// @version     2.1.4.2
+// @noframes
+// @change-log  Cập nhật zingtv chỉ load ABPVN Player khi chưa đăng nhập
 // @grant       none
 // ==/UserScript==
 /* String Prototype */
@@ -141,6 +143,10 @@ var getLink = {
 };
 //Fix site class
 var fixSite = {
+  elementExist: function(selector){
+    var check=document.querySelector(selector);
+    return check!=null;
+  },
   getScript: function (url) {
     var xhr = new XMLHttpRequest();
     xhr.open('GET', url);
@@ -201,7 +207,7 @@ var fixSite = {
     }
   },
   tv_zing_vn: function () {
-    if (this.url.startWith('http://tv.zing.vn/video/') && (navigator.userAgent.match('Firefox') !== null) && !MP3.ZINGTV_VIP) {
+    if (this.url.startWith('http://tv.zing.vn/video/') && !this.elementExist('#_infoUserCp') && !MP3.ZINGTV_VIP) {
       window.addEventListener('DOMContentLoaded', function () {
         var script = document.createElement('script');
         script.src = 'https://content.jwplatform.com/libraries/QHJ5Iarr.js';
@@ -296,4 +302,3 @@ var ABPVN = {
 };
 //RUN INNIT
 ABPVN.init();
-
