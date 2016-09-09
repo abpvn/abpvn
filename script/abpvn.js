@@ -175,7 +175,7 @@ var fixSite = {
       var script_vjs_tag = document.createElement('script');
       script_vjs_tag.src = '//vjs.zencdn.net/5.10/video.js';
       var script_js_hls = document.createElement('script');
-      script_js_hls.src = 'https://npmcdn.com/videojs-contrib-hls@%5E3.0.0/dist/videojs-contrib-hls.js';
+      script_js_hls.src = 'https://unpkg.com/videojs-contrib-hls@%5E3.0.0/dist/videojs-contrib-hls.js';
       var head = document.getElementsByTagName('head') [0];
       head.appendChild(css_tag);
       head.appendChild(script_vjs_tag);
