@@ -10,9 +10,9 @@
 // @run-at      document-end
 // @include     http://*
 // @include     https://*
-// @version     2.1.4.2
+// @version     2.1.4.3
 // @noframes
-// @change-log  Cập nhật zingtv chỉ load ABPVN Player khi chưa đăng nhập
+// @change-log  Cập nhật thêm nút download qua link vip cho fshare.vn
 // @grant       none
 // ==/UserScript==
 /* String Prototype */
@@ -72,8 +72,9 @@ var getLink = {
     }
   },
   FShareGetLink: function () {
-    if (this.url.startWith('https://www.fshare.vn/file/') && localStorage.off != 'true') {
-      console.info('Start get link Fshare.vn');
+    if (this.url.startWith('https://www.fshare.vn/file/')) {    
+      if(localStorage.off != 'true'){
+        console.info('Start get link Fshare.vn');
       $(document).ready(function () {
         var checkpassword = document.querySelector('.fa-lock');
         var linkcode = $('[data-linkcode]').attr('data-linkcode');
@@ -133,6 +134,15 @@ var getLink = {
           });
         }
       });
+      }
+      else {
+        $('.policy_download').prepend('<div class="col-xs-12"><a title="Download nhanh qua linksvip.net" style="margin-top: 10px; height: 70px;" class="btn btn-success btn-lg btn-block btn-download-sms" href="http://linksvip.net?link='+location.href+'">\
+        <i class="fa fa-cloud-download fa-2x pull-left"></i>\
+        <span class="pull-right text-right download-txt">\
+            Tải nhanh<br>\
+            <small>Qua dịch vụ linksvip.net</small>\
+        </span></a></div>');
+      }
     }
   },
   init: function () {
@@ -175,7 +185,7 @@ var fixSite = {
       var script_vjs_tag = document.createElement('script');
       script_vjs_tag.src = '//vjs.zencdn.net/5.10/video.js';
       var script_js_hls = document.createElement('script');
-      script_js_hls.src = 'https://unpkg.com/videojs-contrib-hls@%5E3.0.0/dist/videojs-contrib-hls.js';
+      script_js_hls.src = 'https://npmcdn.com/videojs-contrib-hls@%5E3.0.0/dist/videojs-contrib-hls.js';
       var head = document.getElementsByTagName('head') [0];
       head.appendChild(css_tag);
       head.appendChild(script_vjs_tag);
