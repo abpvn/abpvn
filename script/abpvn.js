@@ -4,14 +4,14 @@
 // @author      Hoàng Rio
 // @copyright   ABPVN
 // @homepage    http://abpvn.com
-// @supportURL  https://github.com/abvpn/abpvn/issues
+// @supportURL  https://github.com/abpvn/abpvn/issues
 // @icon        http://abpvn.com/icon.png
 // @description Script chặn quảng cáo,loại bỏ chờ đợi của ABPVN
 // @contributionURL https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=donghoang.nguyen@gmail.com&item_name=ABPVN Donation
 // @run-at      document-end
 // @include     http://*
 // @include     https://*
-// @version     2.1.4.4
+// @version     2.1.4.4.1
 // @noframes
 // @change-log  update support url
 // @grant       none
