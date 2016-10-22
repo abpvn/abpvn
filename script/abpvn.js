@@ -4,15 +4,16 @@
 // @author      Hoàng Rio
 // @copyright   ABPVN
 // @homepage    http://abpvn.com
+// @supportURL  https://github.com/abvpn/abpvn/issues
 // @icon        http://abpvn.com/icon.png
 // @description Script chặn quảng cáo,loại bỏ chờ đợi của ABPVN
 // @contributionURL https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=donghoang.nguyen@gmail.com&item_name=ABPVN Donation
 // @run-at      document-end
 // @include     http://*
 // @include     https://*
-// @version     2.1.4.3
+// @version     2.1.4.4
 // @noframes
-// @change-log  Cập nhật thêm nút download qua link vip cho fshare.vn
+// @change-log  update support url
 // @grant       none
 // ==/UserScript==
 /* String Prototype */
