@@ -11,9 +11,9 @@
 // @run-at      document-end
 // @include     http://*
 // @include     https://*
-// @version     2.1.4.5
+// @version     2.1.5
 // @noframes
-// @change-log  update support url
+// @change-log  update script talktv.vn
 // @grant       none
 // ==/UserScript==
 /* String Prototype */
@@ -174,34 +174,13 @@ var fixSite = {
     xhr.send();
   },
   talktv_vn: function () {
-    if (this.url.startWith('http://talktv.vn/')) {
+    if (this.url.startWith('http://talktv.vn/')&&this.url.length>17) {
       //disabled jwplayer
-      jwplayer = {
-      };
-      //Ininit Libs Tag
-      var css_tag = document.createElement('link');
-      css_tag.rel = 'stylesheet';
-      //this.getScript("//vjs.zencdn.net/5.10/video.js");
-      css_tag.href = '//vjs.zencdn.net/5.10/video-js.css';
-      var script_vjs_tag = document.createElement('script');
-      script_vjs_tag.src = '//vjs.zencdn.net/5.10/video.js';
-      var script_js_hls = document.createElement('script');
-      script_js_hls.src = 'https://npmcdn.com/videojs-contrib-hls@%5E3.0.0/dist/videojs-contrib-hls.js';
-      var head = document.getElementsByTagName('head') [0];
-      head.appendChild(css_tag);
-      head.appendChild(script_vjs_tag);
-      head.appendChild(script_js_hls);
-      //Innit video Tag to play
-      document.querySelector('.channel-play').innerHTML = '<video controls id="abpvn_talktv_vjs" style="width: 100%; height: 100%" class="video-js vjs-default-skin" poster="' + loadPlayer.backgroundImage + '"><source src="https://crossorigin.me/' + loadPlayer.manifestUrl + '" type="application/x-mpegURL"></video>';
-      window.addEventListener('load', function () {
-        var timer;
-        timer = setInterval(function () {
-          if (typeof videojs != 'undefined') {
-            var tmp_video = videojs('abpvn_talktv_vjs');
-            tmp_video.play();
-            clearInterval(timer);
-          }
-        }, 300);
+      //jwplayer = {
+     // };
+      $(document).ready(function(){    
+        var url='http://abpvn.com/third-party/i.php?live='+loadPlayer.manifestUrl+'&poster='+loadPlayer.backgroundImage;   
+        document.querySelector('.channel-play').innerHTML = '<iframe src="'+url+'" frame-boder="0" width="100%" height="100%" allowfullscreen="true"></iframe>';        
       });
     }
   },
@@ -264,7 +243,7 @@ var fixSite = {
   },
   init: function () {
     this.url = location.href;
-    //this.talktv_vn();
+    this.talktv_vn();
     this.usercloud_com();
     this.tv_zing_vn();
   }
