@@ -11,7 +11,7 @@
 // @run-at      document-end
 // @include     http://*
 // @include     https://*
-// @version     2.1.5
+// @version     2.1.6
 // @noframes
 // @change-log  update script talktv.vn
 // @grant       none
@@ -178,10 +178,33 @@ var fixSite = {
       //disabled jwplayer
       //jwplayer = {
      // };
-      $(document).ready(function(){    
-        var url='http://abpvn.com/third-party/i.php?live='+loadPlayer.manifestUrl+'&poster='+loadPlayer.backgroundImage;   
-        document.querySelector('.channel-play').innerHTML = '<iframe src="'+url+'" frame-boder="0" width="100%" height="100%" allowfullscreen="true"></iframe>';        
+      $(document).ready(function(){           
+            //Ininit Libs Tag
+      var css_tag = document.createElement('link');
+      css_tag.rel = 'stylesheet';     
+      css_tag.href = 'https://cdnjs.cloudflare.com/ajax/libs/video.js/5.13.0/video-js.min.css';
+      var script_vjs_tag = document.createElement('script');
+      script_vjs_tag.src = 'https://cdnjs.cloudflare.com/ajax/libs/video.js/5.13.0/video.min.js';
+      var script_js_hls = document.createElement('script');
+      //script_js_hls.src = 'https://unpkg.com/videojs-contrib-hls@%5E3.0.0/dist/videojs-contrib-hls.js';
+      script_js_hls.src = 'https://cdnjs.cloudflare.com/ajax/libs/videojs-contrib-hls/3.0.6-1/videojs-contrib-hls.min.js';    
+      var head = document.getElementsByTagName('head') [0];
+      head.appendChild(css_tag);
+      head.appendChild(script_vjs_tag);
+      head.appendChild(script_js_hls);
+      //Innit video Tag to play
+      document.querySelector('.channel-play').innerHTML = '<video controls id="abpvn_talktv_vjs" style="width: 100%; height: 100%" class="video-js vjs-default-skin" poster="' + loadPlayer.backgroundImage + '"><source src="' + loadPlayer.manifestUrl + '" type="application/x-mpegURL"></video>';
+      window.addEventListener('load', function () {
+        var timer;
+        timer = setInterval(function () {
+          if (typeof videojs != 'undefined'&&typeof videojs.Hls!='undefined') {
+            var tmp_video = videojs('abpvn_talktv_vjs');
+            tmp_video.play();
+            clearInterval(timer);
+          }
+        }, 300);
       });
+    });
     }
   },
   usercloud_com: function () {
