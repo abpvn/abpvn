@@ -11,7 +11,7 @@
 // @run-at      document-end
 // @include     http://*
 // @include     https://*
-// @version     2.1.6.3
+// @version     2.1.6.4
 // @noframes
 // @change-log  update script talktv.vn
 // @grant       none
@@ -182,12 +182,12 @@ var fixSite = {
             //Ininit Libs Tag
       var css_tag = document.createElement('link');
       css_tag.rel = 'stylesheet';     
-      css_tag.href = 'https://cdnjs.cloudflare.com/ajax/libs/video.js/5.10.2/video-js.min.css';
+      css_tag.href = 'https://cdnjs.cloudflare.com/ajax/libs/video.js/5.13.0/video-js.min.css';
       var script_vjs_tag = document.createElement('script');
-      script_vjs_tag.src = 'https://cdnjs.cloudflare.com/ajax/libs/video.js/5.10.2/video.min.js';
+      script_vjs_tag.src = 'https://cdnjs.cloudflare.com/ajax/libs/video.js/5.13.0/video.min.js';
       var script_js_hls = document.createElement('script');
-      //script_js_hls.src = 'https://unpkg.com/videojs-contrib-hls@%5E3.0.0/dist/videojs-contrib-hls.js';
-      script_js_hls.src = 'https://cdnjs.cloudflare.com/ajax/libs/videojs-contrib-hls/3.4.0/videojs-contrib-hls.js';    
+      script_js_hls.src = 'https://unpkg.com/videojs-contrib-hls@%5E3.6.9/dist/videojs-contrib-hls.js';
+      //script_js_hls.src = 'https://cdnjs.cloudflare.com/ajax/libs/videojs-contrib-hls/3.4.0/videojs-contrib-hls.js';    
       var head = document.getElementsByTagName('head') [0];
       head.appendChild(css_tag);
       head.appendChild(script_vjs_tag);
