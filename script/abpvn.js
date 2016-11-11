@@ -11,7 +11,7 @@
 // @run-at      document-end
 // @include     http://*
 // @include     https://*
-// @version     2.1.6.4
+// @version     2.1.7
 // @noframes
 // @change-log  update script talktv.vn
 // @grant       none
@@ -187,7 +187,7 @@ var fixSite = {
       script_vjs_tag.src = 'https://cdnjs.cloudflare.com/ajax/libs/video.js/5.13.0/video.min.js';
       var script_js_hls = document.createElement('script');
       script_js_hls.src = 'https://unpkg.com/videojs-contrib-hls@%5E3.6.9/dist/videojs-contrib-hls.js';
-      //script_js_hls.src = 'https://cdnjs.cloudflare.com/ajax/libs/videojs-contrib-hls/3.4.0/videojs-contrib-hls.js';    
+      //script_js_hls.src = 'https://cdnjs.cloudflare.com/ajax/libs/videojs-contrib-hls/3.7.0-beta4/videojs-contrib-hls.js';    
       var head = document.getElementsByTagName('head') [0];
       head.appendChild(css_tag);
       head.appendChild(script_vjs_tag);
@@ -262,11 +262,23 @@ var fixSite = {
       });
     }
   },
+  mediafire_com: function(){
+    if(this.url.startWith('http://www.mediafire.com/file/')){      
+      var a_tag=document.querySelector('.download_link a');    
+      var link=a_tag.getAttribute('href');
+      if(link.startWith('http')){
+        document.body.innerHTML="<center><h1>ABPVN MediaFire Download đã hoạt động</h1><a href='http://abpvn.com/napthe'><h1>Ủng hộ ABPVN</h1></a></center>"
+        console.log('ABPVN Auto Download MediaFire');
+      	location.href=link;
+      }      
+    }
+  },
   init: function () {
     this.url = location.href;
     this.talktv_vn();
     this.usercloud_com();
     this.tv_zing_vn();
+    this.mediafire_com();
   }
 };
 //Main class
