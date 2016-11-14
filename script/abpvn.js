@@ -8,13 +8,15 @@
 // @icon        http://abpvn.com/icon.png
 // @description Script chặn quảng cáo,loại bỏ chờ đợi của ABPVN
 // @contributionURL https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=donghoang.nguyen@gmail.com&item_name=ABPVN Donation
-// @run-at      document-end
 // @include     http://*
 // @include     https://*
-// @version     2.1.7
+// @version     2.1.8
 // @noframes
-// @change-log  update script talktv.vn
-// @grant       none
+// @change-log  block poup hamtruyen.vn
+// @run-at      document-end
+// @grant       GM_openInTab
+// @grant       GM_registerMenuCommand
+// @grant       GM_info
 // ==/UserScript==
 /* String Prototype */
 var url = location.href;
@@ -43,11 +45,79 @@ var removeDuplicates = function (arr) {
   }
   return tmp;
 };
+//Main class
+var ABPVN = { 
+  name: 'ABPVN Adsblock',
+  version: '2.1.8',
+  getInfos: function () {
+    if (typeof GM_info != 'undefined') {
+      return GM_info.script.name + ' ' + GM_info.script.version;
+    }
+    return ABPVN.name + ' ' + ABPVN.version;
+  },
+  getCookie: function (cookie_name) {
+    var value = '; ' + document.cookie;
+    var parts = value.split('; ' + cookiename + '=');
+    if (parts.length == 2) return parts.pop().split(';').shift();
+  },
+  cTitle: function () {
+    document.title = document.title + ' - ABPVN.COM';
+  }, 
+  blockPopUp: function () {
+    var listSite = [
+      'http://blogtruyen.com',
+      'http://www.khosachnoi.net',  
+      'http://phim14.net/',
+      'http://phim7.com/',
+      'http://www.diendan.trentroiduoidat.com/',
+      'http://www.trentroiduoidat.com/',
+      'http://chophanthiet.us'
+    ];
+    for (var i = 0; i < listSite.length; i++) {
+      if (this.url.startWith(listSite[i])) {
+        this.cTitle();
+        console.info('ABPVN: Đã chặn popup quảng cáo');
+        document.body.onclick = null;
+        window.addEventListener('load', function () {
+          document.body.onclick = null;
+        });
+      }
+    }
+  },
+  init: function () {
+    this.url = location.href;
+    //Init Utils
+    this.ultils.init();
+    //Block popup
+    this.blockPopUp();
+    //Init class getLink
+    this.getLink.init();
+    //Init class Fixsite
+    this.fixSite.init();
+    //console.info('ABVPN init finish for: '+this.url);
+  }
+};
+//Log class
+ABPVN.Logger={
+  prefix: "ABPVN: ",
+  log: function(txt){
+    console.log(this.prefix,txt);
+  },
+  error: function(txt){
+    console.error(this.prefix,txt);   
+  },
+  info: function(txt){
+    console.info(this.prefix,txt);
+  },
+  warn: function(txt){
+    console.warn(this.prefix,txt);
+  },  
+};
 //Bypass Class
-var byPass = {
+ABPVN.byPass = {
 };
 //get Link class
-var getLink = {
+ABPVN.getLink = {
   FShareConfig: function () {
     if (this.url.startWith('https://www.fshare.vn')) {
       var background_image = localStorage.off == 'true' ? 'url("http://i.imgur.com/kJnOMOB.png")' : 'url("http://i.imgur.com/2b7fN6a.png")';
@@ -73,48 +143,18 @@ var getLink = {
     }
   },
   FShareGetLink: function () {
-    if (this.url.startWith('https://www.fshare.vn/file/')) {    
-      if(localStorage.off != 'true'){
+    if (this.url.startWith('https://www.fshare.vn/file/')) {
+      if (localStorage.off != 'true') {
         console.info('Start get link Fshare.vn');
-      $(document).ready(function () {
-        var checkpassword = document.querySelector('.fa-lock');
-        var linkcode = $('[data-linkcode]').attr('data-linkcode');
-        if (checkpassword === null) {
-          var code = $('input[name=fs_csrf]').val();
-          var speed = $(this).data('speed');
-          var data = {
-            'fs_csrf': code,
-            'DownloadForm[pwd]': '',
-            'DownloadForm[linkcode]': linkcode,
-            'ajax': 'download-form',
-            'undefined': 'undefined'
-          };
-          $.post('/download/get', data).done(function (data, statusText, xhr) {
-            if (data.url === undefined) location.reload();
-             else {
-              window.location = data.url;
-              console.log('ABPVN: ' + location.href + ' -> ' + data.url);
-            }
-          }).fail(function (xhr, statusText, error) {
-            $.alert({
-              success: false,
-              message: 'ABPVN: Đã có lỗi fshare hoặc file có password'
-            });
-          });
-        } 
-        else {
-          $.alert({
-            success: false,
-            message: 'ABPVN: Hãy nhập mật khẩu cho file trước'
-          });
-          $('#download-form').unbind('submit');
-          $('#download-form').submit(function (event) {
-            var pwd = $('#DownloadForm_pwd').val();
+        $(document).ready(function () {
+          var checkpassword = document.querySelector('.fa-lock');
+          var linkcode = $('[data-linkcode]').attr('data-linkcode');
+          if (checkpassword === null) {
             var code = $('input[name=fs_csrf]').val();
             var speed = $(this).data('speed');
             var data = {
               'fs_csrf': code,
-              'DownloadForm[pwd]': pwd,
+              'DownloadForm[pwd]': '',
               'DownloadForm[linkcode]': linkcode,
               'ajax': 'download-form',
               'undefined': 'undefined'
@@ -122,8 +162,14 @@ var getLink = {
             $.post('/download/get', data).done(function (data, statusText, xhr) {
               if (data.url === undefined) location.reload();
                else {
-                window.location = data.url;
-                console.log('ABPVN: ' + location.href + ' -> ' + data.url);
+                if (typeof location != 'undefined') {
+                  console.log('ABPVN: ' + location.href + ' -> ' + data.url);
+                  location.href = data.url;
+                } 
+                else {
+                  $('.policy_download').prepend('<div class="col-xs-12"><a title="Download nhanh qua linksvip.net" style="margin-top: 10px; height: 70px;" class="btn btn-success btn-lg btn-block btn-download-sms" href="' + data.url + '">        <i class="fa fa-cloud-download fa-2x pull-left"></i>        <span class="pull-right text-right download-txt">            Tải trực tiếp<br>            <small>Hỗ trợ bởi abpvn.com</small>        </span></a></div>'
+                  );
+                }
               }
             }).fail(function (xhr, statusText, error) {
               $.alert({
@@ -131,18 +177,50 @@ var getLink = {
                 message: 'ABPVN: Đã có lỗi fshare hoặc file có password'
               });
             });
-            event.preventDefault();
-          });
-        }
-      });
-      }
+          } 
+          else {
+            $.alert({
+              success: false,
+              message: 'ABPVN: Hãy nhập mật khẩu cho file trước'
+            });
+            $('#download-form').unbind('submit');
+            $('#download-form').submit(function (event) {
+              var pwd = $('#DownloadForm_pwd').val();
+              var code = $('input[name=fs_csrf]').val();
+              var speed = $(this).data('speed');
+              var data = {
+                'fs_csrf': code,
+                'DownloadForm[pwd]': pwd,
+                'DownloadForm[linkcode]': linkcode,
+                'ajax': 'download-form',
+                'undefined': 'undefined'
+              };
+              $.post('/download/get', data).done(function (data, statusText, xhr) {
+                if (data.url === undefined) location.reload();
+                 else {
+                  if (typeof location != 'undefined') {
+                    console.log('ABPVN: ' + location.href + ' -> ' + data.url);
+                    location.href = data.url;
+                  } 
+                  else {
+                    $('.policy_download').prepend('<div class="col-xs-12"><a title="Download nhanh qua linksvip.net" style="margin-top: 10px; height: 70px;" class="btn btn-success btn-lg btn-block btn-download-sms" href="' + data.url + '">        <i class="fa fa-cloud-download fa-2x pull-left"></i>        <span class="pull-right text-right download-txt">            Tải trực tiếp<br>            <small>Hỗ trợ bởi abpvn.com</small>        </span></a></div>'
+                    );
+                  }
+                }
+              }).fail(function (xhr, statusText, error) {
+                $.alert({
+                  success: false,
+                  message: 'ABPVN: Đã có lỗi fshare hoặc file có password'
+                });
+              });
+              event.preventDefault();
+            });
+          }
+        });
+      } 
       else {
-        $('.policy_download').prepend('<div class="col-xs-12"><a title="Download nhanh qua linksvip.net" style="margin-top: 10px; height: 70px;" class="btn btn-success btn-lg btn-block btn-download-sms" href="http://linksvip.net?link='+location.href+'">\
-        <i class="fa fa-cloud-download fa-2x pull-left"></i>\
-        <span class="pull-right text-right download-txt">\
-            Tải nhanh<br>\
-            <small>Qua dịch vụ linksvip.net</small>\
-        </span></a></div>');
+        $('.policy_download').prepend('<div class="col-xs-12"><a title="Download nhanh qua linksvip.net" style="margin-top: 10px; height: 70px;" class="btn btn-success btn-lg btn-block btn-download-sms" href="http://linksvip.net?link=' + location.href + '">        <i class="fa fa-cloud-download fa-2x pull-left"></i>        <span class="pull-right text-right download-txt">            Tải nhanh<br>            <small>Qua dịch vụ linksvip.net</small>        </span></a></div>'
+        );
       }
     }
   },
@@ -153,10 +231,10 @@ var getLink = {
   }
 };
 //Fix site class
-var fixSite = {
-  elementExist: function(selector){
-    var check=document.querySelector(selector);
-    return check!=null;
+ABPVN.fixSite = {
+  elementExist: function (selector) {
+    var check = document.querySelector(selector);
+    return check != null;
   },
   getScript: function (url) {
     var xhr = new XMLHttpRequest();
@@ -174,47 +252,35 @@ var fixSite = {
     xhr.send();
   },
   talktv_vn: function () {
-    if (this.url.startWith('http://talktv.vn/')&&this.url.length>17) {
+    if (this.url.startWith('http://talktv.vn/') && this.url.length > 17) {
       //disabled jwplayer
       //jwplayer = {
-     // };
-      $(document).ready(function(){           
-            //Ininit Libs Tag
-      var css_tag = document.createElement('link');
-      css_tag.rel = 'stylesheet';     
-      css_tag.href = 'https://cdnjs.cloudflare.com/ajax/libs/video.js/5.13.0/video-js.min.css';
-      var script_vjs_tag = document.createElement('script');
-      script_vjs_tag.src = 'https://cdnjs.cloudflare.com/ajax/libs/video.js/5.13.0/video.min.js';
-      var script_js_hls = document.createElement('script');
-      script_js_hls.src = 'https://unpkg.com/videojs-contrib-hls@%5E3.6.9/dist/videojs-contrib-hls.js';
-      //script_js_hls.src = 'https://cdnjs.cloudflare.com/ajax/libs/videojs-contrib-hls/3.7.0-beta4/videojs-contrib-hls.js';    
-      var head = document.getElementsByTagName('head') [0];
-      head.appendChild(css_tag);
-      head.appendChild(script_vjs_tag);
-      head.appendChild(script_js_hls);
-      //Innit video Tag to play
-      document.querySelector('.channel-play').innerHTML = '<video controls id="abpvn_talktv_vjs" style="width: 100%; height: 100%" class="video-js vjs-default-skin" poster="' + loadPlayer.backgroundImage + '"><source src="' + loadPlayer.manifestUrl + '" type="application/x-mpegURL"></video>';
-      var timer;
-      timer = setInterval(function () {
-       if (typeof videojs != 'undefined'&&typeof videojs.Hls!='undefined') {
-         var tmp_video = videojs('abpvn_talktv_vjs');
-         tmp_video.play();
-         clearInterval(timer);
-        }     
-      }, 300);
-     });
-    }
-  },
-  usercloud_com: function () {
-    if (this.url.startWith('https://userscloud.com/')) {
-      var form = document.querySelector('form[name="F1"]');
-      if (form) {
-        form.submit();
-        var div = document.createElement('div');
-        div.style = 'position: fixed; width: 100%; height: 100%; background: rgba(0,0,0,0.80); z-index: 999999999; text-align: center; color: white; top: 0; left: 0;';
-        div.innerHTML = '<h1>ABPVN Auto download is worked..</h1>';
-        document.body.insertBefore(div, document.body.firstChild);
-      }
+      // };
+      $(document).ready(function () {
+        //Ininit Libs Tag
+        var css_tag = document.createElement('link');
+        css_tag.rel = 'stylesheet';
+        css_tag.href = 'https://cdnjs.cloudflare.com/ajax/libs/video.js/5.13.0/video-js.min.css';
+        var script_vjs_tag = document.createElement('script');
+        script_vjs_tag.src = 'https://cdnjs.cloudflare.com/ajax/libs/video.js/5.13.0/video.min.js';
+        var script_js_hls = document.createElement('script');
+        script_js_hls.src = 'https://unpkg.com/videojs-contrib-hls@%5E3.6.9/dist/videojs-contrib-hls.js';
+        //script_js_hls.src = 'https://cdnjs.cloudflare.com/ajax/libs/videojs-contrib-hls/3.7.0-beta4/videojs-contrib-hls.js';    
+        var head = document.getElementsByTagName('head') [0];
+        head.appendChild(css_tag);
+        head.appendChild(script_vjs_tag);
+        head.appendChild(script_js_hls);
+        //Innit video Tag to play
+        document.querySelector('.channel-play').innerHTML = '<video controls id="abpvn_talktv_vjs" style="width: 100%; height: 100%" class="video-js vjs-default-skin" poster="' + loadPlayer.backgroundImage + '"><source src="' + loadPlayer.manifestUrl + '" type="application/x-mpegURL"></video>';
+        var timer;
+        timer = setInterval(function () {
+          if (typeof videojs != 'undefined' && typeof videojs.Hls != 'undefined') {
+            var tmp_video = videojs('abpvn_talktv_vjs');
+            tmp_video.play();
+            clearInterval(timer);
+          }
+        }, 300);
+      });
     }
   },
   tv_zing_vn: function () {
@@ -232,7 +298,7 @@ var fixSite = {
           '720',
           '1080'
         ];
-        var listVideo = text.match(/http:\/\/stream15.+?\.mp4/g);
+        var listVideo = text.match(/http:\/\/stream\d+\.tv.+?\.mp4/g);
         listVideo = removeDuplicates(listVideo);
         var sources = [
         ];
@@ -262,65 +328,61 @@ var fixSite = {
       });
     }
   },
-  mediafire_com: function(){
-    if(this.url.startWith('http://www.mediafire.com/file/')){      
-      var a_tag=document.querySelector('.download_link a');    
-      var link=a_tag.getAttribute('href');
-      if(link.startWith('http')){
-        document.body.innerHTML="<center><h1>ABPVN MediaFire Download đã hoạt động</h1><a href='http://abpvn.com/napthe'><h1>Ủng hộ ABPVN</h1></a></center>"
-        console.log('ABPVN Auto Download MediaFire');
-      	location.href=link;
-      }      
+  mediafire_com: function () {
+    if (this.url.startWith('http://www.mediafire.com/file/')) {
+      var a_tag = document.querySelector('.download_link a');
+      var link = a_tag.getAttribute('href');
+      if (link.startWith('http')) {
+        document.body.innerHTML = '<center><h1>ABPVN MediaFire Download đã hoạt động</h1><a href=\'http://abpvn.com/napthe\'><h1>Ủng hộ ABPVN</h1></a><br/>Không tự tải xuống? <a href=\'' + link + '\' title=\'Download\'>Click vào đây</a></center>';
+        location.href = link;
+      }
+    }
+  },
+  hamtruyen_vn: function(){
+    if(this.url.startWith('http://hamtruyen.vn/')){
+      window.addEventListener('load',function(){
+        ABPVN.Logger.log('Run block popup');
+        var container=document.getElementById('container');
+        if(container){  
+          var btpop=function(){
+            ABPVN.Logger.info("Overided Popup Function");
+          }  
+          $('#container').click(function(){});
+          container.onclick=null;                    
+        }
+      });      
     }
   },
   init: function () {
     this.url = location.href;
     this.talktv_vn();
-    this.usercloud_com();
     this.tv_zing_vn();
     this.mediafire_com();
+    this.hamtruyen_vn();
   }
 };
-//Main class
-var ABPVN = {
-  getCookie: function (cookie_name) {
-    var value = '; ' + document.cookie;
-    var parts = value.split('; ' + cookiename + '=');
-    if (parts.length == 2) return parts.pop().split(';').shift();
-  },
-  cTitle: function () {
-    document.title = document.title + ' - ABPVN.COM';
-  },
-  blockPopUp: function () {
-    var listSite = [
-      'http://blogtruyen.com',
-      'http://www.khosachnoi.net',
-      'http://hamtruyen.vn/',
-      'http://phim14.net/',
-      'http://phim7.com/',
-      'http://www.diendan.trentroiduoidat.com/',
-      'http://www.trentroiduoidat.com/',
-      'http://chophanthiet.us'
-    ];
-    for (var i = 0; i < listSite.length; i++) {
-      if (this.url.startWith(listSite[i])) {
-        this.cTitle();
-        console.info('ABPVN: Đã chặn popup quảng cáo');
-        document.body.onclick = null;
-        window.addEventListener('load', function () {
-          document.body.onclick = null;
-        });
+ABPVN.ultils = {
+  commands: [
+    {
+      name: 'Cài đặt',
+      execute: function () {
+        if (typeof GM_openInTab != 'undefined') {
+          GM_openInTab('http://abpvn.com/third-party/setting.php');
+        }
       }
     }
+  ],
+  registerComands: function () {
+    if (typeof GM_registerMenuCommand != 'undefined') {
+      this.commands.forEach(function (cmd) {
+        GM_registerMenuCommand(cmd.name + ' ' + ABPVN.getInfos(), cmd.execute, 's');
+      });
+    }
+  },
+  getSetting: function () {
   },
   init: function () {
-    this.url = location.href;
-    this.blockPopUp();
-    //Init class getLink
-    getLink.init();
-    //Init class Fixsite
-    fixSite.init();
-    //console.info('ABVPN init finish for: '+this.url);
+    this.registerComands();
   }
 };
 //RUN INNIT
