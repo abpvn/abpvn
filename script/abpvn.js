@@ -10,7 +10,7 @@
 // @contributionURL https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=donghoang.nguyen@gmail.com&item_name=ABPVN Donation
 // @include     http://*
 // @include     https://*
-// @version     2.1.8
+// @version     2.1.8.1
 // @noframes
 // @change-log  block poup hamtruyen.vn
 // @run-at      document-end
@@ -257,7 +257,8 @@ ABPVN.fixSite = {
       //jwplayer = {
       // };
       $(document).ready(function () {
-        //Ininit Libs Tag
+        if(loadPlayer.manifestUrl.indexOf('.m3u8')!=-1){
+          //Ininit Libs Tag
         var css_tag = document.createElement('link');
         css_tag.rel = 'stylesheet';
         css_tag.href = 'https://cdnjs.cloudflare.com/ajax/libs/video.js/5.13.0/video-js.min.css';
@@ -280,6 +281,7 @@ ABPVN.fixSite = {
             clearInterval(timer);
           }
         }, 300);
+        }        
       });
     }
   },
@@ -340,13 +342,13 @@ ABPVN.fixSite = {
   },
   hamtruyen_vn: function(){
     if(this.url.startWith('http://hamtruyen.vn/')){
-      window.addEventListener('load',function(){
+      document.addEventListener('DOMContentLoaded',function(){
         ABPVN.Logger.log('Run block popup');
         var container=document.getElementById('container');
         if(container){  
           var btpop=function(){
             ABPVN.Logger.info("Overided Popup Function");
-          }  
+          };  
           $('#container').click(function(){});
           container.onclick=null;                    
         }
