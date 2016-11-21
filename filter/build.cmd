@@ -1,4 +1,6 @@
 @echo off;
+rem Update frist
+git pull;
 rem Soft filter rule and get Unique
 powershell -Command "copy src\abpvn_general.txt src\abpvn_general.tmp;copy src\abpvn_elemhide.txt src\abpvn_elemhide.tmp;copy src\abpvn_whitelist.txt src\abpvn_whitelist.tmp;copy src\abpvn_whitelist_elemhide.txt src\abpvn_whitelist_elemhide.tmp;"
 powershell -Command "Get-Content src\abpvn_general.tmp | Sort-Object | Get-Unique | Set-Content src\abpvn_general.txt;Get-Content src\abpvn_elemhide.tmp | Sort-Object | Get-Unique | Set-Content src\abpvn_elemhide.txt;Get-Content src\abpvn_whitelist.tmp | Sort-Object | Get-Unique | Set-Content src\abpvn_whitelist.txt; Get-Content src\abpvn_whitelist_elemhide.tmp | Sort-Object | Get-Unique | Set-Content src\abpvn_whitelist_elemhide.txt;"
