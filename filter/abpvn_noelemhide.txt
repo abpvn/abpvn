@@ -1,7 +1,7 @@
 ﻿[Adblock Plus 2.0]
-! Title: ABPVN List [download.com.vn]
+! Title: ABPVN List [optimize filter]
 ! Expires: 3 days
-! Updated: 24 November 2016 19:32:08
+! Updated: 25 November 2016 09:00:55
 ! License: ABPVN
 ! Nghiêm cấm mọi hình thức sao chép mà không được phép
 ! Please report any unblocked ads or problems by email or in our forums
@@ -12,7 +12,6 @@
 ! Forums: http://www.vn-zoom.com/f77/abp-bo-loc-quang-cao-cho-nguoi-viet-2856275.html
 ! Last edit by: Hoàng Rio
 ! ---------- Generic Blocking Rules ----------
-!/pop*.js comment 24/11/2016
 .com/*async$domain=mediafire.com
 .com/ads.
 .com/ro.ai$domain=mediafire.com
@@ -32,6 +31,7 @@
 /banner*/*.swf
 /googlead.
 /pop.ads.php
+/popup.js
 /qc/*
 /qcao/*
 /quang%20cao/*
@@ -131,7 +131,6 @@ _ads_
 ||ads.yahoo.com^
 ||ads1-adnow.com^$third-party
 ||adsafeprotected.com^
-||adskeeper.co.uk
 ||adskeeper.co.uk^third-party
 ||adsnative.com^$third-party
 ||adsoptimal.com^$third-party
@@ -517,7 +516,7 @@ _ads_
 ||static.24h.com.vn*.swf
 ||static.24h.com.vn*-background-
 ||static.bongda24h.vn/medias/*.gif
-||static.download.com.vn/cache.aspx?_path=*ad*$script,first-party
+||static.download.com.vn/cache.aspx?_path=*ad*$script
 ||static.hayhaytv.com*/*.mp4
 ||static.hayhaytv.com/layout/js/hayhaytv.js
 ||static.hayhaytv.com/layout/js/singlelogin.js
@@ -697,13 +696,13 @@ www.thienhieu.com$popup
 xemphimso.com/img/right_banner.gif
 !---------------ABPVN White List--------------------
 @@#-ad-util-/ad-iframe-/ads/160./ads/footer_/adsense5./rcolads1./sponsored_text./tmnadsense-ad=advertorial&/728x90_
-@@*capcha*$domain=mediafire.com
 @@/*advertis*.$domain=gamesupport.vn
 @@/*advertis*.$script,domain=hayhaytv.vn
 @@/*crossdomain.xml
 @@/ads/button.png
 @@/ads/play.png
 @@/ads/xemphim.png
+@@/capcha$domain=mediafire.com
 @@/popup_handler.$script,domain=dropbox.com
 @@||$image,script,third-party,domain=linkneverdie.com
 @@||*/ads.js$domain=hayhaytv.vn
@@ -726,7 +725,7 @@ xemphimso.com/img/right_banner.gif
 @@||bdstatic.com^
 @@||browxy.com/assets/javascripts/third-party/popup/popup.js
 @@||cbsistatic.com^$domain=cnet.com
-@@||chiasenhac.vn/js/ads.js$script,first-party
+@@||chiasenhac.vn/js/ads.js$script
 @@||cloud.ucweb.com$script
 @@||dmcdn.net/js/gen/widget/pack/popup.js.vfc7812cd5dcf8ad73
 @@||dns.norton.com/js/popup.js
