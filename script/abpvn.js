@@ -8,15 +8,13 @@
 // @icon        http://abpvn.com/icon.png
 // @description Script chặn quảng cáo,loại bỏ chờ đợi của ABPVN
 // @contributionURL https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=donghoang.nguyen@gmail.com&item_name=ABPVN Donation
+// @run-at      document-end
 // @include     http://*
 // @include     https://*
-// @version     2.1.8.1
+// @version     2.1.9
 // @noframes
-// @change-log  block poup hamtruyen.vn
-// @run-at      document-end
-// @grant       GM_openInTab
-// @grant       GM_registerMenuCommand
-// @grant       GM_info
+// @change-log  update script talktv.vn
+// @grant       none
 // ==/UserScript==
 /* String Prototype */
 var url = location.href;
@@ -45,79 +43,11 @@ var removeDuplicates = function (arr) {
   }
   return tmp;
 };
-//Main class
-var ABPVN = { 
-  name: 'ABPVN Adsblock',
-  version: '2.1.8',
-  getInfos: function () {
-    if (typeof GM_info != 'undefined') {
-      return GM_info.script.name + ' ' + GM_info.script.version;
-    }
-    return ABPVN.name + ' ' + ABPVN.version;
-  },
-  getCookie: function (cookie_name) {
-    var value = '; ' + document.cookie;
-    var parts = value.split('; ' + cookiename + '=');
-    if (parts.length == 2) return parts.pop().split(';').shift();
-  },
-  cTitle: function () {
-    document.title = document.title + ' - ABPVN.COM';
-  }, 
-  blockPopUp: function () {
-    var listSite = [
-      'http://blogtruyen.com',
-      'http://www.khosachnoi.net',  
-      'http://phim14.net/',
-      'http://phim7.com/',
-      'http://www.diendan.trentroiduoidat.com/',
-      'http://www.trentroiduoidat.com/',
-      'http://chophanthiet.us'
-    ];
-    for (var i = 0; i < listSite.length; i++) {
-      if (this.url.startWith(listSite[i])) {
-        this.cTitle();
-        console.info('ABPVN: Đã chặn popup quảng cáo');
-        document.body.onclick = null;
-        window.addEventListener('load', function () {
-          document.body.onclick = null;
-        });
-      }
-    }
-  },
-  init: function () {
-    this.url = location.href;
-    //Init Utils
-    this.ultils.init();
-    //Block popup
-    this.blockPopUp();
-    //Init class getLink
-    this.getLink.init();
-    //Init class Fixsite
-    this.fixSite.init();
-    //console.info('ABVPN init finish for: '+this.url);
-  }
-};
-//Log class
-ABPVN.Logger={
-  prefix: "ABPVN: ",
-  log: function(txt){
-    console.log(this.prefix,txt);
-  },
-  error: function(txt){
-    console.error(this.prefix,txt);   
-  },
-  info: function(txt){
-    console.info(this.prefix,txt);
-  },
-  warn: function(txt){
-    console.warn(this.prefix,txt);
-  },  
-};
 //Bypass Class
-ABPVN.byPass = {
+var byPass = {
 };
 //get Link class
-ABPVN.getLink = {
+var getLink = {
   FShareConfig: function () {
     if (this.url.startWith('https://www.fshare.vn')) {
       var background_image = localStorage.off == 'true' ? 'url("http://i.imgur.com/kJnOMOB.png")' : 'url("http://i.imgur.com/2b7fN6a.png")';
@@ -231,7 +161,7 @@ ABPVN.getLink = {
   }
 };
 //Fix site class
-ABPVN.fixSite = {
+var fixSite = {
   elementExist: function (selector) {
     var check = document.querySelector(selector);
     return check != null;
@@ -257,31 +187,31 @@ ABPVN.fixSite = {
       //jwplayer = {
       // };
       $(document).ready(function () {
-        if(loadPlayer.manifestUrl.indexOf('.m3u8')!=-1){
+        if (loadPlayer.manifestUrl.indexOf('.m3u8') != - 1) {
           //Ininit Libs Tag
-        var css_tag = document.createElement('link');
-        css_tag.rel = 'stylesheet';
-        css_tag.href = 'https://cdnjs.cloudflare.com/ajax/libs/video.js/5.13.0/video-js.min.css';
-        var script_vjs_tag = document.createElement('script');
-        script_vjs_tag.src = 'https://cdnjs.cloudflare.com/ajax/libs/video.js/5.13.0/video.min.js';
-        var script_js_hls = document.createElement('script');
-        script_js_hls.src = 'https://unpkg.com/videojs-contrib-hls@%5E3.6.9/dist/videojs-contrib-hls.js';
-        //script_js_hls.src = 'https://cdnjs.cloudflare.com/ajax/libs/videojs-contrib-hls/3.7.0-beta4/videojs-contrib-hls.js';    
-        var head = document.getElementsByTagName('head') [0];
-        head.appendChild(css_tag);
-        head.appendChild(script_vjs_tag);
-        head.appendChild(script_js_hls);
-        //Innit video Tag to play
-        document.querySelector('.channel-play').innerHTML = '<video controls id="abpvn_talktv_vjs" style="width: 100%; height: 100%" class="video-js vjs-default-skin" poster="' + loadPlayer.backgroundImage + '"><source src="' + loadPlayer.manifestUrl + '" type="application/x-mpegURL"></video>';
-        var timer;
-        timer = setInterval(function () {
-          if (typeof videojs != 'undefined' && typeof videojs.Hls != 'undefined') {
-            var tmp_video = videojs('abpvn_talktv_vjs');
-            tmp_video.play();
-            clearInterval(timer);
-          }
-        }, 300);
-        }        
+          var css_tag = document.createElement('link');
+          css_tag.rel = 'stylesheet';
+          css_tag.href = 'https://cdnjs.cloudflare.com/ajax/libs/video.js/5.13.0/video-js.min.css';
+          var script_vjs_tag = document.createElement('script');
+          script_vjs_tag.src = 'https://cdnjs.cloudflare.com/ajax/libs/video.js/5.13.0/video.min.js';
+          var script_js_hls = document.createElement('script');
+          script_js_hls.src = 'https://unpkg.com/videojs-contrib-hls@%5E3.6.9/dist/videojs-contrib-hls.js';
+          //script_js_hls.src = 'https://cdnjs.cloudflare.com/ajax/libs/videojs-contrib-hls/3.7.0-beta4/videojs-contrib-hls.js';    
+          var head = document.getElementsByTagName('head') [0];
+          head.appendChild(css_tag);
+          head.appendChild(script_vjs_tag);
+          head.appendChild(script_js_hls);
+          //Innit video Tag to play
+          document.querySelector('.channel-play').innerHTML = '<video controls id="abpvn_talktv_vjs" style="width: 100%; height: 100%" class="video-js vjs-default-skin" poster="' + loadPlayer.backgroundImage + '"><source src="' + loadPlayer.manifestUrl + '" type="application/x-mpegURL"></video>';
+          var timer;
+          timer = setInterval(function () {
+            if (typeof videojs != 'undefined' && typeof videojs.Hls != 'undefined') {
+              var tmp_video = videojs('abpvn_talktv_vjs');
+              tmp_video.play();
+              clearInterval(timer);
+            }
+          }, 300);
+        }
       });
     }
   },
@@ -340,19 +270,20 @@ ABPVN.fixSite = {
       }
     }
   },
-  hamtruyen_vn: function(){
-    if(this.url.startWith('http://hamtruyen.vn/')){
-      document.addEventListener('DOMContentLoaded',function(){
+  hamtruyen_vn: function () {
+    if (this.url.startWith('http://hamtruyen.vn/')) {
+      document.addEventListener('DOMContentLoaded', function () {
         ABPVN.Logger.log('Run block popup');
-        var container=document.getElementById('container');
-        if(container){  
-          var btpop=function(){
-            ABPVN.Logger.info("Overided Popup Function");
-          };  
-          $('#container').click(function(){});
-          container.onclick=null;                    
+        var container = document.getElementById('container');
+        if (container) {
+          var btpop = function () {
+            ABPVN.Logger.info('Overided Popup Function');
+          };
+          $('#container').click(function () {
+          });
+          container.onclick = null;
         }
-      });      
+      });
     }
   },
   init: function () {
@@ -363,28 +294,46 @@ ABPVN.fixSite = {
     this.hamtruyen_vn();
   }
 };
-ABPVN.ultils = {
-  commands: [
-    {
-      name: 'Cài đặt',
-      execute: function () {
-        if (typeof GM_openInTab != 'undefined') {
-          GM_openInTab('http://abpvn.com/third-party/setting.php');
-        }
+//Main class
+var ABPVN = {
+  getCookie: function (cookie_name) {
+    var value = '; ' + document.cookie;
+    var parts = value.split('; ' + cookiename + '=');
+    if (parts.length == 2) return parts.pop().split(';').shift();
+  },
+  cTitle: function () {
+    document.title = document.title + ' - ABPVN.COM';
+  },
+  blockPopUp: function () {
+    var listSite = [
+      'http://blogtruyen.com',
+      'http://www.khosachnoi.net',
+      'http://hamtruyen.vn/',
+      'http://phim14.net/',
+      'http://phim7.com/',
+      'http://www.diendan.trentroiduoidat.com/',
+      'http://www.trentroiduoidat.com/',
+      'http://chophanthiet.us'
+    ];
+    for (var i = 0; i < listSite.length; i++) {
+      if (this.url.startWith(listSite[i])) {
+        this.cTitle();
+        console.info('ABPVN: Đã chặn popup quảng cáo');
+        document.body.onclick = null;
+        window.addEventListener('load', function () {
+          document.body.onclick = null;
+        });
       }
     }
-  ],
-  registerComands: function () {
-    if (typeof GM_registerMenuCommand != 'undefined') {
-      this.commands.forEach(function (cmd) {
-        GM_registerMenuCommand(cmd.name + ' ' + ABPVN.getInfos(), cmd.execute, 's');
-      });
-    }
-  },
-  getSetting: function () {
   },
   init: function () {
-    this.registerComands();
+    this.url = location.href;
+    this.blockPopUp();
+    //Init class getLink
+    getLink.init();
+    //Init class Fixsite
+    fixSite.init();
+    //console.info('ABVPN init finish for: '+this.url);
   }
 };
 //RUN INNIT
