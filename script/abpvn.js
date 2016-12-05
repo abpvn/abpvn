@@ -11,7 +11,7 @@
 // @run-at      document-end
 // @include     http://*
 // @include     https://*
-// @version     2.1.9.2
+// @version     2.1.9.3
 // @noframes
 // @change-log  update script talktv.vn
 // @grant       none
@@ -172,11 +172,13 @@ var getLink = {
         document.body.innerHTML = '<center><h1>ABPVN UserCloud Download đã hoạt động</h1><a href=\'http://abpvn.com/napthe\'><h1>Ủng hộ ABPVN</h1></center>';
       }else{
         var a_link=document.querySelector('h4 a.btn-success');
-        var link=a_link.getAttribute('href')
+        if(a_link){
+           var link=a_link.getAttribute('href')
         if(link.startWith('https')){
           location.href=link;
            document.body.innerHTML = '<center><h1>ABPVN UserCloud Download đã hoạt động</h1><a href=\'http://abpvn.com/napthe\'><h1>Ủng hộ ABPVN</h1></a><br/>Không tự tải xuống? <a href=\'' + link + '\' title=\'Download\'>Click vào đây</a></center>';
         }
+        }       
       }
     }
   },
