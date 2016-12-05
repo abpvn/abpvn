@@ -11,7 +11,7 @@
 // @run-at      document-end
 // @include     http://*
 // @include     https://*
-// @version     2.1.9
+// @version     2.1.9.1
 // @noframes
 // @change-log  update script talktv.vn
 // @grant       none
@@ -154,10 +154,38 @@ var getLink = {
       }
     }
   },
+  mediafire_com: function () {
+    if (this.url.startWith('http://www.mediafire.com/file/')) {
+      var a_tag = document.querySelector('.download_link a');
+      var link = a_tag.getAttribute('href');
+      if (link.startWith('http')) {
+        document.body.innerHTML = '<center><h1>ABPVN MediaFire Download đã hoạt động</h1><a href=\'http://abpvn.com/napthe\'><h1>Ủng hộ ABPVN</h1></a><br/>Không tự tải xuống? <a href=\'' + link + '\' title=\'Download\'>Click vào đây</a></center>';
+        location.href = link;
+      }
+    }
+  },
+  usercloud_com: function(){
+    if(this.url.startWith('https://userscloud.com/')&&this.url.length>23){
+      var form=document.querySelector('form[name="F1"]');
+      if(form){
+        form.submit();
+        document.body.innerHTML = '<center><h1>ABPVN UserCloud Download đã hoạt động</h1><a href=\'http://abpvn.com/napthe\'><h1>Ủng hộ ABPVN</h1></center>';
+      }else{
+        var a_link=document.querySelector('h4 a.btn-success');
+        var link=a_link.getAttribute('href')
+        if(link.startWith('https')){
+          location.href=link;
+           document.body.innerHTML = '<center><h1>ABPVN UserCloud Download đã hoạt động</h1><a href=\'http://abpvn.com/napthe\'><h1>Ủng hộ ABPVN</h1></a><br/>Không tự tải xuống? <a href=\'' + link + '\' title=\'Download\'>Click vào đây</a></center>';
+        }
+      }
+    }
+  },
   init: function () {
     this.url = location.href;
     this.FShareConfig();
     this.FShareGetLink();
+    this.mediafire_com();
+    this.usercloud_com();
   }
 };
 //Fix site class
@@ -260,16 +288,7 @@ var fixSite = {
       });
     }
   },
-  mediafire_com: function () {
-    if (this.url.startWith('http://www.mediafire.com/file/')) {
-      var a_tag = document.querySelector('.download_link a');
-      var link = a_tag.getAttribute('href');
-      if (link.startWith('http')) {
-        document.body.innerHTML = '<center><h1>ABPVN MediaFire Download đã hoạt động</h1><a href=\'http://abpvn.com/napthe\'><h1>Ủng hộ ABPVN</h1></a><br/>Không tự tải xuống? <a href=\'' + link + '\' title=\'Download\'>Click vào đây</a></center>';
-        location.href = link;
-      }
-    }
-  },
+  
   hamtruyen_vn: function () {
     if (this.url.startWith('http://hamtruyen.vn/')) {
       document.addEventListener('DOMContentLoaded', function () {
@@ -289,8 +308,7 @@ var fixSite = {
   init: function () {
     this.url = location.href;
     this.talktv_vn();
-    this.tv_zing_vn();
-    this.mediafire_com();
+    this.tv_zing_vn();    
     this.hamtruyen_vn();
   }
 };
