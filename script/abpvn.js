@@ -11,7 +11,7 @@
 // @run-at      document-end
 // @include     http://*
 // @include     https://*
-// @version     2.1.9.1
+// @version     2.1.9.2
 // @noframes
 // @change-log  update script talktv.vn
 // @grant       none
@@ -165,7 +165,7 @@ var getLink = {
     }
   },
   usercloud_com: function(){
-    if(this.url.startWith('https://userscloud.com/')&&this.url.length>23){
+    if(this.url.startWith('https://userscloud.com/')&&this.url.length>24){
       var form=document.querySelector('form[name="F1"]');
       if(form){
         form.submit();
