@@ -1,4 +1,4 @@
-@echo off;
+echo off;
 rem Update frist
 git pull
 rem Soft filter rule and get Unique
