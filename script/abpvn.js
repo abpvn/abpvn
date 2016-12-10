@@ -11,9 +11,9 @@
 // @run-at      document-end
 // @include     http://*
 // @include     https://*
-// @version     2.1.9.3
+// @version     2.1.9.4
 // @noframes
-// @change-log  update script talktv.vn
+// @change-log  Block popup anime47.com
 // @grant       none
 // ==/UserScript==
 /* String Prototype */
@@ -164,21 +164,21 @@ var getLink = {
       }
     }
   },
-  usercloud_com: function(){
-    if(this.url.startWith('https://userscloud.com/')&&this.url.length>24){
-      var form=document.querySelector('form[name="F1"]');
-      if(form){
+  usercloud_com: function () {
+    if (this.url.startWith('https://userscloud.com/') && this.url.length > 24) {
+      var form = document.querySelector('form[name="F1"]');
+      if (form) {
         form.submit();
         document.body.innerHTML = '<center><h1>ABPVN UserCloud Download đã hoạt động</h1><a href=\'http://abpvn.com/napthe\'><h1>Ủng hộ ABPVN</h1></center>';
-      }else{
-        var a_link=document.querySelector('h4 a.btn-success');
-        if(a_link){
-           var link=a_link.getAttribute('href')
-        if(link.startWith('https')){
-          location.href=link;
-           document.body.innerHTML = '<center><h1>ABPVN UserCloud Download đã hoạt động</h1><a href=\'http://abpvn.com/napthe\'><h1>Ủng hộ ABPVN</h1></a><br/>Không tự tải xuống? <a href=\'' + link + '\' title=\'Download\'>Click vào đây</a></center>';
+      } else {
+        var a_link = document.querySelector('h4 a.btn-success');
+        if (a_link) {
+          var link = a_link.getAttribute('href')
+          if (link.startWith('https')) {
+            location.href = link;
+            document.body.innerHTML = '<center><h1>ABPVN UserCloud Download đã hoạt động</h1><a href=\'http://abpvn.com/napthe\'><h1>Ủng hộ ABPVN</h1></a><br/>Không tự tải xuống? <a href=\'' + link + '\' title=\'Download\'>Click vào đây</a></center>';
+          }
         }
-        }       
       }
     }
   },
@@ -290,7 +290,6 @@ var fixSite = {
       });
     }
   },
-  
   hamtruyen_vn: function () {
     if (this.url.startWith('http://hamtruyen.vn/')) {
       document.addEventListener('DOMContentLoaded', function () {
@@ -310,7 +309,7 @@ var fixSite = {
   init: function () {
     this.url = location.href;
     this.talktv_vn();
-    this.tv_zing_vn();    
+    this.tv_zing_vn();
     this.hamtruyen_vn();
   }
 };
@@ -333,7 +332,8 @@ var ABPVN = {
       'http://phim7.com/',
       'http://www.diendan.trentroiduoidat.com/',
       'http://www.trentroiduoidat.com/',
-      'http://chophanthiet.us'
+      'http://chophanthiet.us',
+      'http://anime47.com/'
     ];
     for (var i = 0; i < listSite.length; i++) {
       if (this.url.startWith(listSite[i])) {
