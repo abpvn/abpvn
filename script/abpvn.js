@@ -11,9 +11,9 @@
 // @run-at      document-end
 // @include     http://*
 // @include     https://*
-// @version     2.1.9.4
+// @version     2.1.10
 // @noframes
-// @change-log  Block popup anime47.com
+// @change-log  add remove forum redirect
 // @grant       none
 // ==/UserScript==
 /* String Prototype */
@@ -45,6 +45,21 @@ var removeDuplicates = function (arr) {
 };
 //Bypass Class
 var byPass = {
+};
+//Logger Class
+var Logger={
+  info: function(text){
+     console.info("ABPVN Info: ",text);
+  },
+  warn: function(text){
+     console.warn("ABPVN Warn: ",text);
+  },
+  error: function(text){
+     console.error("ABPVN Error: ",text);
+  },
+  log: function(text){
+     console.log("ABPVN Log: ",text);
+  },
 };
 //get Link class
 var getLink = {
@@ -306,11 +321,40 @@ var fixSite = {
       });
     }
   },
+  removeRedir(config){
+    if(this.url.startWith(config.url)){      
+      var links=document.querySelectorAll('a[href^="'+config.replace+'"]');      
+      Logger.info('Remove Redirect for '+links.length+ ' links');
+      if(links.length){
+         links.forEach(function(item){
+           item.setAttribute('href',decodeURIComponent(item.getAttribute('href').replace(config.replace,'')));
+         }.bind(this));
+      }                                    
+    }
+  },
+  removeRedirect(){
+    var configs=[
+      {
+        url: 'https://samsungvn.com',
+        replace: 'https://samsungvn.com/xfa-interstitial/redirect?url=',
+      },{
+        url: 'http://forum.vietdesigner.net',
+        replace: 'http://forum.vietdesigner.net/redirect/?url='
+      },{
+        url:'http://sinhvienit.net',
+        replace: 'http://sinhvienit.net/goto/?'
+      }
+    ];
+   configs.forEach(function(config){
+     this.removeRedir(config);
+   }.bind(this));
+  },
   init: function () {
     this.url = location.href;
     this.talktv_vn();
     this.tv_zing_vn();
     this.hamtruyen_vn();
+    this.removeRedirect();
   }
 };
 //Main class
