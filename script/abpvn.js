@@ -11,9 +11,9 @@
 // @run-at      document-end
 // @include     http://*
 // @include     https://*
-// @version     2.1.10
+// @version     2.1.11
 // @noframes
-// @change-log  add remove forum redirect
+// @change-log  fix url muli time encode in fix redirect
 // @grant       none
 // ==/UserScript==
 /* String Prototype */
@@ -327,7 +327,13 @@ var fixSite = {
       Logger.info('Remove Redirect for '+links.length+ ' links');
       if(links.length){
          links.forEach(function(item){
-           item.setAttribute('href',decodeURIComponent(item.getAttribute('href').replace(config.replace,'')));
+           var stockUrl=item.getAttribute('href').replace(config.replace,'');
+           var count=0;
+           while(stockUrl.indexOf("%2")>-1&&count<5){
+             stockUrl=decodeURIComponent(stockUrl);
+             count++;
+           }                      
+           item.setAttribute('href',stockUrl);           
          }.bind(this));
       }                                    
     }
@@ -339,7 +345,7 @@ var fixSite = {
         replace: 'https://samsungvn.com/xfa-interstitial/redirect?url=',
       },{
         url: 'http://forum.vietdesigner.net',
-        replace: 'http://forum.vietdesigner.net/redirect/?url='
+        replace: 'redirect/?url='
       },{
         url:'http://sinhvienit.net',
         replace: 'http://sinhvienit.net/goto/?'
