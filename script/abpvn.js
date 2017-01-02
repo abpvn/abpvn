@@ -11,13 +11,12 @@
 // @run-at      document-end
 // @include     http://*
 // @include     https://*
-// @version     2.1.11
+// @version     2.1.12
 // @noframes
-// @change-log  fix url muli time encode in fix redirect
+// @change-log  add fix 2idol.tv player on firefox
 // @grant       none
 // ==/UserScript==
 /* String Prototype */
-var url = location.href;
 String.prototype.startWith = function strxStart(str) {
   return this.indexOf(str) === 0;
 };
@@ -211,6 +210,16 @@ var fixSite = {
     var check = document.querySelector(selector);
     return check != null;
   },
+  getAllText: function(selector){
+    var text='';
+    var nodeList=document.querySelectorAll(selector);
+    if(nodeList){
+      for(var i in nodeList){
+        if(nodeList[i].innerText) text+=nodeList[i].innerText;
+      }
+    }
+    return text;
+  },
   getScript: function (url) {
     var xhr = new XMLHttpRequest();
     xhr.open('GET', url);
@@ -225,6 +234,14 @@ var fixSite = {
       document.getElementsByTagName('head') [0].appendChild(script);
     });
     xhr.send();
+  },
+  loadCss: function(url,id){
+     var css_tag = document.createElement('link');
+    css_tag.rel = 'stylesheet';
+    css_tag.id=id;
+    css_tag.href = url;
+    var head = document.getElementsByTagName('head') [0];
+    head.appendChild(css_tag);
   },
   talktv_vn: function () {
     if (this.url.startWith('http://talktv.vn/') && this.url.length > 17) {
@@ -321,8 +338,45 @@ var fixSite = {
       });
     }
   },
+  _2idol_tv: function(){   
+     if((this.url.startWith('http://2idol.tv/post/')||this.url.startWith('http://video.2idol.tv/post-video/'))&&navigator.userAgent.match(/Firefox/i)!=null){
+       Logger.info('Fix 2idol.tv player on Firefox');  
+       ABPVN.cTitle();
+       document.querySelector('#vod').setAttribute('id','abpvn_fixed');
+       window.addEventListener('DOMContentLoaded',function(){
+           var scriptText=this.getAllText('script');       
+           var file=scriptText.match(/https:\/\/www\.youtube\.com\/watch\?v=[\w-]+/i)[0];  
+           var style_url=URL.createObjectURL(new Blob(['.jwlogo {width: 50px; height: 50px; opacity: 0.7 !important;a}'],{type: 'text/css'}));
+           this.loadCss(style_url,'fix_logo');
+           if(file){           
+             jwplayer('abpvn_fixed').setup({
+               volume: "100",
+               menu: "true",
+               allowscriptaccess: "always",
+               wmode: "opaque",
+               file: file,
+               //file: "SampleVideo_1280x720_1mb.mp4",		
+               image: "",
+               width: "663",
+               height: "366",
+               autostart: "true",
+               primary:"html5",
+               skin: "http://"+location.hostname+"/public/player/jwplayer/bekle/bekle.xml",  
+               logo :{
+                 file: "http://abpvn.com/icon.png",
+                 link: "http://abpvn.com/",
+                 width: 30,
+                 height: 30,
+                 position: "top-right"
+               }
+             });
+           }           
+       }.bind(this));       
+     }
+  },
   removeRedir(config){
-    if(this.url.startWith(config.url)){      
+    if(this.url.startWith(config.url)){    
+       ABPVN.cTitle();
       var links=document.querySelectorAll('a[href^="'+config.replace+'"]');      
       Logger.info('Remove Redirect for '+links.length+ ' links');
       if(links.length){
@@ -361,6 +415,7 @@ var fixSite = {
     this.tv_zing_vn();
     this.hamtruyen_vn();
     this.removeRedirect();
+    this._2idol_tv();
   }
 };
 //Main class
@@ -371,7 +426,7 @@ var ABPVN = {
     if (parts.length == 2) return parts.pop().split(';').shift();
   },
   cTitle: function () {
-    document.title = document.title + ' - ABPVN.COM';
+    document.title = document.title + ' - Fixed by ABPVN.COM';
   },
   blockPopUp: function () {
     var listSite = [
