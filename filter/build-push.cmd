@@ -10,3 +10,5 @@ rem Build file
 copy /y /b src\abpvn_title.tmp+src\abpvn_general.txt+src\abpvn_elemhide.txt+src\abpvn_whitelist.txt+src\abpvn_whitelist_elemhide.txt abpvn.txt
 copy /y /b src\abpvn_title.tmp+src\abpvn_general.txt+src\abpvn_whitelist.txt abpvn_noelemhide.txt
 DEL src\*.tmp
+powershell -Command "$git_comment=Select-String -Path src\abpvn_title.txt -Pattern \"(\s\[.+?\])\" -AllMatches | %%{ $_.Matches } | %%{ $_.Value }; $git_comment=\"Update or Fix\"+$git_comment; git add .; git commit -m $git_comment; git push;";
+sh ../pull.sh
