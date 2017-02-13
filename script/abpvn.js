@@ -11,7 +11,7 @@
 // @run-at      document-end
 // @include     http://*
 // @include     https://*
-// @version     2.1.12
+// @version     2.1.13
 // @noframes
 // @change-log  add fix 2idol.tv player on firefox
 // @grant       none
@@ -403,6 +403,9 @@ var fixSite = {
       },{
         url:'http://sinhvienit.net',
         replace: 'http://sinhvienit.net/goto/?'
+      },{
+        url: 'http://phanmemaz.com/',
+        replace: 'http://phanmemaz.com/wp-content/plugins/tm-wordpress-redirection/l.php?'
       }
     ];
    configs.forEach(function(config){
