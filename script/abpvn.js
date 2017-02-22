@@ -11,9 +11,9 @@
 // @run-at      document-end
 // @include     http://*
 // @include     https://*
-// @version     2.1.13
+// @version     2.1.14
 // @noframes
-// @change-log  add fix 2idol.tv player on firefox
+// @change-log  add http://animetvn.com to popup block
 // @grant       none
 // ==/UserScript==
 /* String Prototype */
@@ -441,7 +441,8 @@ var ABPVN = {
       'http://www.diendan.trentroiduoidat.com/',
       'http://www.trentroiduoidat.com/',
       'http://chophanthiet.us',
-      'http://anime47.com/'
+      'http://anime47.com/',
+	  'http://animetvn.com'
     ];
     for (var i = 0; i < listSite.length; i++) {
       if (this.url.startWith(listSite[i])) {
