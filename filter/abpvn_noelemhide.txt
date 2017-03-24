@@ -1,8 +1,8 @@
 ﻿[Adblock Plus 2.0]
 ! Title: ABPVN List [optimize filter]
 ! Expires: 3 days
-! Updated: 24 March 2017 09:03:26
-! Version: 201703240903
+! Updated: 24 March 2017 09:06:13
+! Version: 201703240906
 ! License: ABPVN
 ! Nghiêm cấm mọi hình thức sao chép mà không được phép
 ! Please report any unblocked ads or problems by email or in our forums
@@ -24,6 +24,7 @@
 /adver.
 /banner/*.gif|*.swf
 /fuckadblock.$script
+/polyad.
 /qcao/*
 /quang%20cao/*
 /quang_cao/*
@@ -108,7 +109,7 @@ _990x100.
 ||chothuexenanggiare.com^$popup,third-party,domain=font.vn
 ||chovinh.com/data/Siropu/*.gif$image
 ||click.uniad.vn$popup
-||clkcln.com^
+||clkcln.com^$third-party
 ||clkmon.com^$third-party
 ||clkoffers.com^$third-party
 ||clktag.com^$third-party
@@ -163,7 +164,7 @@ _990x100.
 ||forum.bkav.com.vn/images/Banner_BkavForum/
 ||forum.bkav.com.vn/images/Bkav_Smarthome/
 ||fptplay.net/js/plugins/vast-
-||fptshop.com.vn*/Banner/
+||fptshop.com.vn^*/Banner/
 ||fshare.vn/media/banner_Fshare/
 ||fungetbag.info^
 ||gamehub.vn/img/files/*.gif
@@ -263,14 +264,13 @@ _990x100.
 ||pic.gsm.vn/*banner
 ||pic.hui598.cn$domain=xiuren.org,image
 ||pic.img80.com^$object
-||polyad.galaxypub.vn
 ||poptm.com^$popup,third-party
 ||postimg.org/*.gif$domain=bongdatructuyen.info|tivi4k.net|keonhacai.com|tructiepbongda.com|tv.101vn.com|8bongda.com|xemtiviso.com
 ||pttsite.com^$popup,third-party
 ||pub.lavanetwork.net^$third-party
 ||purgrobi.com/ub.pi$third-party
 ||qc.mibet.com$third-party
-||qccoccocmedia.vn
+||qccoccocmedia.vn^
 ||qcv5.blogtruyen.com^$script
 ||qcv5.blogtruyen.com^$subdocument
 ||qtcshop.com/images/$third-party
@@ -281,15 +281,15 @@ _990x100.
 ||redcafe.vn/imgs/*.swf
 ||rome.vn^$subdocument
 ||rx-name.ua^$domain=samlab.ws
-||s.mnet-ad.net
-||s.tuoitre.vn
+||s.mnet-ad.net^
+||s.tuoitre.vn^
 ||s1.download123.vn/images/bn/
 ||s1block.com^$third-party
 ||s2.truyen18.org/flash/
 ||s3.amazonaws.com/6e6de696d9ead35bd576b4087c9c03e99e58c54365b0a3ad2d845d9741140/9d696ed6e6
 ||s3.amazonaws.com^$domain=userscloud.com|uplod.ws
 ||s33.postimg.org/umi2aukan/$domain=livetvup.com
-||sbbanner.com
+||sbbanner.com^
 ||search.4shared.com$popup
 ||senpay.vn/widget/
 ||service.ringier.com.vn*/ams_images/
@@ -316,7 +316,7 @@ _990x100.
 ||static.htvonline.com.vn/layout/images/lienhequangcao.png
 ||static.ketqua.net/adv_imgs
 ||static.nhaccuatui.com/imgqc/
-||static.novanet.vn
+||static.novanet.vn^
 ||staticflickr.com/*.gif$domain=chophanthiet.us
 ||stc.nas.nixcdn.com*/*.gif
 ||stc-tv.zing.vn/skins/tv_v2/js/fadblock.min.js
