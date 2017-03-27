@@ -1,8 +1,8 @@
 ﻿[Adblock Plus 2.0]
 ! Title: ABPVN List [optimize filter]
 ! Expires: 3 days
-! Updated: 27 March 2017 11:25:29
-! Version: 201703271125
+! Updated: 27 March 2017 15:17:25
+! Version: 201703271517
 ! License: ABPVN
 ! Nghiêm cấm mọi hình thức sao chép mà không được phép
 ! Please report any unblocked ads or problems by email or in our forums
@@ -153,8 +153,7 @@ _ads_
 ||blogtruyen.com/File/*.swf
 ||blueseed.tv^$third-party
 ||blueserving.com^
-||bn.rada.vn/data/File/BeOnline/
-||bn.rada.vn/data/File/META.vn
+||bn.rada.vn/data/File$third-party
 ||bnhtml.com^
 ||buysellads.com^$third-party
 ||bvezznurwekr.com^$third-party
@@ -390,7 +389,6 @@ _ads_
 ||postimg.org/*.gif$domain=bongdatructuyen.info|tivi4k.net|keonhacai.com|tructiepbongda.com|tv.101vn.com|8bongda.com|xemtiviso.com
 ||protect-your-privacy.net^$popup
 ||pttsite.com^$popup,third-party
-||pub.lavanetwork.net/pre-roll/swf/$domain=bongdaplus.vn
 ||pub.lavanetwork.net^$third-party
 ||puhtml.com^$third-party
 ||purgrobi.com/ub.pi$third-party
@@ -398,8 +396,7 @@ _ads_
 ||putags.com^$third-party
 ||qc.mibet.com$third-party
 ||qccoccocmedia.vn
-||qcv5.blogtruyen.com^$script
-||qcv5.blogtruyen.com^$subdocument
+||qcv5.blogtruyen.com^$script,subdocument
 ||qiyou.com^
 ||qtcshop.com/images/$third-party
 ||quangcao.24h.com.vn^$third-party
@@ -420,8 +417,7 @@ _ads_
 ||s1block.com^$third-party
 ||s2.truyen18.org/flash/
 ||s2block.com^$third-party
-||s3.amazonaws.com^$domain=phimnhanh.com
-||s3.amazonaws.com^$domain=userscloud.com|uplod.ws
+||s3.amazonaws.com^$domain=userscloud.com|uplod.ws|phimnhanh.com
 ||s33.postimg.org/umi2aukan/$domain=livetvup.com
 ||sbbanner.com
 ||search.4shared.com$popup
@@ -722,7 +718,6 @@ ketnooi.com###feedgetCon
 ketnooi.com###youtube_player_button
 ketnooi.com##.tablecontainer
 ketnooi.com##TD[width="10%"]
-ketqua.net###hide_float_left
 ketqua.net##.adsb.bo
 khoahoc.com.vn##MetaNET_SHARING_AD_NUMBER_3
 kienthucviet.vn###header_balloon
@@ -739,9 +734,8 @@ laban.vn##.popup_usergroup_content.popup_content
 laban.vn##.zme-boxy
 laban.vn##.zme-boxy-title
 link5s.com##iframe
-linksvip.net##.row.quangcao-top
 linktocdo.com###img-ads
-linktocdo.com###wrapperbaba > .container.main > .row.quangcao-top
+linktocdo.com,linksvip.net##.row.quangcao-top
 lps.sbro.me##.content__back_vis:after
 lps.sbro.me##.content__inner
 m.phim14.net###geniee_overlay
@@ -907,7 +901,7 @@ wiziwig.ru###hiddenBannerCanvas
 xem.vn###float-ads-tags
 xem.vn###hideCashFishAds
 xemgame.com##.navigate-posts
-xemphimbox.com###hide_float_left
+xemphimbox.com,ketqua.net###hide_float_left
 xemtvhd.com##.quangcaos
 xvideos.com###ads
 zing.vn###_mp3_adsZoneRight1
