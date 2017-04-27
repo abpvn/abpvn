@@ -11,9 +11,9 @@
 // @run-at      document-end
 // @include     http://*
 // @include     https://*
-// @version     2.1.14
+// @version     2.1.15
 // @noframes
-// @change-log  add http://animetvn.com to popup block
+// @change-log  update videojs fix talktv player
 // @grant       none
 // ==/UserScript==
 /* String Prototype */
@@ -253,18 +253,18 @@ var fixSite = {
           //Ininit Libs Tag
           var css_tag = document.createElement('link');
           css_tag.rel = 'stylesheet';
-          css_tag.href = 'https://cdnjs.cloudflare.com/ajax/libs/video.js/5.13.0/video-js.min.css';
+          css_tag.href = 'https://cdnjs.cloudflare.com/ajax/libs/video.js/6.0.1/video-js.min.css';
           var script_vjs_tag = document.createElement('script');
-          script_vjs_tag.src = 'https://cdnjs.cloudflare.com/ajax/libs/video.js/5.13.0/video.min.js';
+          script_vjs_tag.src = 'https://cdnjs.cloudflare.com/ajax/libs/video.js/6.0.1/video.min.js';
           var script_js_hls = document.createElement('script');
-          script_js_hls.src = 'https://unpkg.com/videojs-contrib-hls@%5E3.6.9/dist/videojs-contrib-hls.js';
+          script_js_hls.src = 'https://cdnjs.cloudflare.com/ajax/libs/videojs-contrib-hls/5.5.0/videojs-contrib-hls.js';
           //script_js_hls.src = 'https://cdnjs.cloudflare.com/ajax/libs/videojs-contrib-hls/3.7.0-beta4/videojs-contrib-hls.js';    
           var head = document.getElementsByTagName('head') [0];
           head.appendChild(css_tag);
           head.appendChild(script_vjs_tag);
           head.appendChild(script_js_hls);
           //Innit video Tag to play
-          document.querySelector('.channel-play').innerHTML = '<video controls id="abpvn_talktv_vjs" style="width: 100%; height: 100%" class="video-js vjs-default-skin" poster="' + loadPlayer.backgroundImage + '"><source src="' + loadPlayer.manifestUrl + '" type="application/x-mpegURL"></video>';
+          document.querySelector('.channel-play').innerHTML = '<video controls id="abpvn_talktv_vjs" autoplay="autoplay" style="width: 100%; height: 100%" class="video-js vjs-default-skin" poster="' + loadPlayer.backgroundImage + '"><source src="http://crossorigin.me/' + loadPlayer.manifestUrl + '" type="application/x-mpegURL"></video>';
           var timer;
           timer = setInterval(function () {
             if (typeof videojs != 'undefined' && typeof videojs.Hls != 'undefined') {
@@ -442,16 +442,20 @@ var ABPVN = {
       'http://www.trentroiduoidat.com/',
       'http://chophanthiet.us',
       'http://anime47.com/',
-	  'http://animetvn.com'
+	    'http://animetvn.com',
+      'http://font.vn'
     ];
     for (var i = 0; i < listSite.length; i++) {
       if (this.url.startWith(listSite[i])) {
         this.cTitle();
-        console.info('ABPVN: Đã chặn popup quảng cáo');
+        console.info('ABPVN: Đã chặn popup quảng cáo');        
         document.body.onclick = null;
         window.addEventListener('load', function () {
-          document.body.onclick = null;
-        });
+          setTimeout(function(){
+                document.body.onclick = null;
+          },100);
+      
+        });        
       }
     }
   },
