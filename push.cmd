@@ -1,6 +1,6 @@
 rem Update first
 git pull
-rem Run Build filter for EasyList
+rem Run Build filter single File
 cd filter
 call build.cmd
 cd ..
