@@ -11,9 +11,9 @@
 // @run-at      document-end
 // @include     http://*
 // @include     https://*
-// @version     2.1.15
+// @version     2.1.2
 // @noframes
-// @change-log  update videojs fix talktv player
+// @change-log  Add unlock hidden content
 // @grant       none
 // ==/UserScript==
 /* String Prototype */
@@ -44,20 +44,39 @@ var removeDuplicates = function (arr) {
 };
 //Bypass Class
 var byPass = {
+  hideLink: function () {
+    var contentDiv = document.querySelector('.onp-sl-content');
+    if (contentDiv) {
+      ABPVN.cTitle();
+     var contentDiv = document.querySelector('.onp-sl-content');
+    var creditDiv=document.createElement('div');
+      creditDiv.innerHTML='<a href="http://abpvn.com" target="_blank" style="color: #08BE54;font-weight: bold;">Unlocked by ABPVN.COM</a>';
+      creditDiv.style.textAlign='right';
+      contentDiv.insertBefore(creditDiv,contentDiv.firstChild);
+      contentDiv.style.display = 'block';
+      var lockDiv = document.querySelector('.onp-sl');
+      if (lockDiv) {
+        lockDiv.style.display = 'none';
+      }
+    }
+  },
+  init: function () {
+    window.addEventListener("DOMContentLoaded",this.hideLink)
+  }
 };
 //Logger Class
-var Logger={
-  info: function(text){
-     console.info("ABPVN Info: ",text);
+var Logger = {
+  info: function (text) {
+    console.info('ABPVN Info: ', text);
   },
-  warn: function(text){
-     console.warn("ABPVN Warn: ",text);
+  warn: function (text) {
+    console.warn('ABPVN Warn: ', text);
   },
-  error: function(text){
-     console.error("ABPVN Error: ",text);
+  error: function (text) {
+    console.error('ABPVN Error: ', text);
   },
-  log: function(text){
-     console.log("ABPVN Log: ",text);
+  log: function (text) {
+    console.log('ABPVN Log: ', text);
   },
 };
 //get Link class
@@ -210,12 +229,12 @@ var fixSite = {
     var check = document.querySelector(selector);
     return check != null;
   },
-  getAllText: function(selector){
-    var text='';
-    var nodeList=document.querySelectorAll(selector);
-    if(nodeList){
-      for(var i in nodeList){
-        if(nodeList[i].innerText) text+=nodeList[i].innerText;
+  getAllText: function (selector) {
+    var text = '';
+    var nodeList = document.querySelectorAll(selector);
+    if (nodeList) {
+      for (var i in nodeList) {
+        if (nodeList[i].innerText) text += nodeList[i].innerText;
       }
     }
     return text;
@@ -235,10 +254,10 @@ var fixSite = {
     });
     xhr.send();
   },
-  loadCss: function(url,id){
-     var css_tag = document.createElement('link');
+  loadCss: function (url, id) {
+    var css_tag = document.createElement('link');
     css_tag.rel = 'stylesheet';
-    css_tag.id=id;
+    css_tag.id = id;
     css_tag.href = url;
     var head = document.getElementsByTagName('head') [0];
     head.appendChild(css_tag);
@@ -338,79 +357,84 @@ var fixSite = {
       });
     }
   },
-  _2idol_tv: function(){   
-     if((this.url.startWith('http://2idol.tv/post/')||this.url.startWith('http://video.2idol.tv/post-video/'))&&navigator.userAgent.match(/Firefox/i)!=null){
-       Logger.info('Fix 2idol.tv player on Firefox');  
-       ABPVN.cTitle();
-       document.querySelector('#vod').setAttribute('id','abpvn_fixed');
-       window.addEventListener('DOMContentLoaded',function(){
-           var scriptText=this.getAllText('script');       
-           var file=scriptText.match(/https:\/\/www\.youtube\.com\/watch\?v=[\w-]+/i)[0];  
-           var style_url=URL.createObjectURL(new Blob(['.jwlogo {width: 50px; height: 50px; opacity: 0.7 !important;a}'],{type: 'text/css'}));
-           this.loadCss(style_url,'fix_logo');
-           if(file){           
-             jwplayer('abpvn_fixed').setup({
-               volume: "100",
-               menu: "true",
-               allowscriptaccess: "always",
-               wmode: "opaque",
-               file: file,
-               //file: "SampleVideo_1280x720_1mb.mp4",		
-               image: "",
-               width: "663",
-               height: "366",
-               autostart: "true",
-               primary:"html5",
-               skin: "http://"+location.hostname+"/public/player/jwplayer/bekle/bekle.xml",  
-               logo :{
-                 file: "http://abpvn.com/icon.png",
-                 link: "http://abpvn.com/",
-                 width: 30,
-                 height: 30,
-                 position: "top-right"
-               }
-             });
-           }           
-       }.bind(this));       
-     }
-  },
-  removeRedir(config){
-    if(this.url.startWith(config.url)){    
-       ABPVN.cTitle();
-      var links=document.querySelectorAll('a[href^="'+config.replace+'"]');      
-      Logger.info('Remove Redirect for '+links.length+ ' links');
-      if(links.length){
-         links.forEach(function(item){
-           var stockUrl=item.getAttribute('href').replace(config.replace,'');
-           var count=0;
-           while(stockUrl.indexOf("%2")>-1&&count<5){
-             stockUrl=decodeURIComponent(stockUrl);
-             count++;
-           }                      
-           item.setAttribute('href',stockUrl);           
-         }.bind(this));
-      }                                    
+  _2idol_tv: function () {
+    if ((this.url.startWith('http://2idol.tv/post/') || this.url.startWith('http://video.2idol.tv/post-video/')) && navigator.userAgent.match(/Firefox/i) != null) {
+      Logger.info('Fix 2idol.tv player on Firefox');
+      ABPVN.cTitle();
+      document.querySelector('#vod').setAttribute('id', 'abpvn_fixed');
+      window.addEventListener('DOMContentLoaded', function () {
+        var scriptText = this.getAllText('script');
+        var file = scriptText.match(/https:\/\/www\.youtube\.com\/watch\?v=[\w-]+/i) [0];
+        var style_url = URL.createObjectURL(new Blob(['.jwlogo {width: 50px; height: 50px; opacity: 0.7 !important;a}'], {
+          type: 'text/css'
+        }));
+        this.loadCss(style_url, 'fix_logo');
+        if (file) {
+          jwplayer('abpvn_fixed').setup({
+            volume: '100',
+            menu: 'true',
+            allowscriptaccess: 'always',
+            wmode: 'opaque',
+            file: file,
+            //file: "SampleVideo_1280x720_1mb.mp4",		
+            image: '',
+            width: '663',
+            height: '366',
+            autostart: 'true',
+            primary: 'html5',
+            skin: 'http://' + location.hostname + '/public/player/jwplayer/bekle/bekle.xml',
+            logo: {
+              file: 'http://abpvn.com/icon.png',
+              link: 'http://abpvn.com/',
+              width: 30,
+              height: 30,
+              position: 'top-right'
+            }
+          });
+        }
+      }.bind(this));
     }
   },
-  removeRedirect(){
-    var configs=[
+  removeRedir(config) {
+    if (this.url.startWith(config.url)) {
+      ABPVN.cTitle();
+      var links = document.querySelectorAll('a[href^="' + config.replace + '"]');
+      Logger.info('Remove Redirect for ' + links.length + ' links');
+      if (links.length) {
+        links.forEach(function (item) {
+          var stockUrl = item.getAttribute('href').replace(config.replace, '');
+          var count = 0;
+          while (stockUrl.indexOf('%2') > - 1 && count < 5) {
+            stockUrl = decodeURIComponent(stockUrl);
+            count++;
+          }
+          item.setAttribute('href', stockUrl);
+        }.bind(this));
+      }
+    }
+  },
+  removeRedirect() {
+    var configs = [
       {
         url: 'https://samsungvn.com',
         replace: 'https://samsungvn.com/xfa-interstitial/redirect?url=',
-      },{
-        url: 'http://forum.vietdesigner.net',
+      },
+      {
+        url: 'https://forum.vietdesigner.net',
         replace: 'redirect/?url='
-      },{
-        url:'http://sinhvienit.net',
+      },
+      {
+        url: 'http://sinhvienit.net',
         replace: 'http://sinhvienit.net/goto/?'
-      },{
+      },
+      {
         url: 'http://phanmemaz.com/',
         replace: 'http://phanmemaz.com/wp-content/plugins/tm-wordpress-redirection/l.php?'
       }
     ];
-   configs.forEach(function(config){
-     this.removeRedir(config);
-   }.bind(this));
+    configs.forEach(function (config) {
+      this.removeRedir(config);
+    }.bind(this));
   },
   init: function () {
     this.url = location.href;
@@ -429,7 +453,9 @@ var ABPVN = {
     if (parts.length == 2) return parts.pop().split(';').shift();
   },
   cTitle: function () {
-    document.title = document.title + ' - Fixed by ABPVN.COM';
+    if(document.title.indexOf(' - Fixed by ABPVN.COM')==-1){
+      document.title = document.title + ' - Fixed by ABPVN.COM';
+    }    
   },
   blockPopUp: function () {
     var listSite = [
@@ -442,20 +468,19 @@ var ABPVN = {
       'http://www.trentroiduoidat.com/',
       'http://chophanthiet.us',
       'http://anime47.com/',
-	    'http://animetvn.com',
+      'http://animetvn.com',
       'http://font.vn'
     ];
     for (var i = 0; i < listSite.length; i++) {
       if (this.url.startWith(listSite[i])) {
         this.cTitle();
-        console.info('ABPVN: Đã chặn popup quảng cáo');        
+        console.info('ABPVN: Đã chặn popup quảng cáo');
         document.body.onclick = null;
         window.addEventListener('load', function () {
-          setTimeout(function(){
-                document.body.onclick = null;
-          },100);
-      
-        });        
+          setTimeout(function () {
+            document.body.onclick = null;
+          }, 100);
+        });
       }
     }
   },
@@ -467,6 +492,7 @@ var ABPVN = {
     //Init class Fixsite
     fixSite.init();
     //console.info('ABVPN init finish for: '+this.url);
+    byPass.init();
   }
 };
 //RUN INNIT
