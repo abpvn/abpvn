@@ -11,7 +11,7 @@
 // @run-at      document-end
 // @include     http://*
 // @include     https://*
-// @version     2.1.2
+// @version     2.1.2.1
 // @noframes
 // @change-log  Add unlock hidden content
 // @grant       none
@@ -61,7 +61,8 @@ var byPass = {
     }
   },
   init: function () {
-    window.addEventListener("DOMContentLoaded",this.hideLink)
+    window.addEventListener("DOMContentLoaded",this.hideLink);
+	window.addEventListener("load",this.hideLink);
   }
 };
 //Logger Class
