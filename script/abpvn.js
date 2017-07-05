@@ -11,9 +11,9 @@
 // @run-at      document-end
 // @include     http://*
 // @include     https://*
-// @version     2.1.2.1
+// @version     2.1.3
 // @noframes
-// @change-log  Add unlock hidden content
+// @change-log  Update unlock hidden content for multi block
 // @grant       none
 // ==/UserScript==
 /* String Prototype */
@@ -45,24 +45,27 @@ var removeDuplicates = function (arr) {
 //Bypass Class
 var byPass = {
   hideLink: function () {
-    var contentDiv = document.querySelector('.onp-sl-content');
-    if (contentDiv) {
+    var contentDiv = document.querySelectorAll('.onp-sl-content');
+    if (contentDiv.length) {
       ABPVN.cTitle();
-     var contentDiv = document.querySelector('.onp-sl-content');
-    var creditDiv=document.createElement('div');
-      creditDiv.innerHTML='<a href="http://abpvn.com" target="_blank" style="color: #08BE54;font-weight: bold;">Unlocked by ABPVN.COM</a>';
-      creditDiv.style.textAlign='right';
-      contentDiv.insertBefore(creditDiv,contentDiv.firstChild);
-      contentDiv.style.display = 'block';
-      var lockDiv = document.querySelector('.onp-sl');
-      if (lockDiv) {
-        lockDiv.style.display = 'none';
+      //ShowALl ContentDiv
+      for (var i in contentDiv) {
+        var creditDiv = document.createElement('div');
+        creditDiv.innerHTML = '<a href="http://abpvn.com" target="_blank" style="color: #08BE54;font-weight: bold;">Unlocked by ABPVN.COM</a>';
+        creditDiv.style.textAlign = 'right';
+        contentDiv[i].insertBefore(creditDiv, contentDiv[i].firstChild);
+        contentDiv[i].style.display = 'block';
+      }      //Hide All LockDiv
+
+      var lockDiv = document.querySelectorAll('.onp-sl');
+      for (var i in lockDiv) {
+        lockDiv[i].style.display = 'none';
       }
     }
   },
   init: function () {
-    window.addEventListener("DOMContentLoaded",this.hideLink);
-	window.addEventListener("load",this.hideLink);
+    window.addEventListener('DOMContentLoaded', this.hideLink);
+    window.addEventListener('load', this.hideLink);
   }
 };
 //Logger Class
@@ -454,9 +457,9 @@ var ABPVN = {
     if (parts.length == 2) return parts.pop().split(';').shift();
   },
   cTitle: function () {
-    if(document.title.indexOf(' - Fixed by ABPVN.COM')==-1){
+    if (document.title.indexOf(' - Fixed by ABPVN.COM') == - 1) {
       document.title = document.title + ' - Fixed by ABPVN.COM';
-    }    
+    }
   },
   blockPopUp: function () {
     var listSite = [
