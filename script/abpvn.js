@@ -11,7 +11,7 @@
 // @run-at      document-end
 // @include     http://*
 // @include     https://*
-// @version     2.1.3
+// @version     2.1.3.1
 // @noframes
 // @change-log  Update unlock hidden content for multi block
 // @grant       none
@@ -48,18 +48,26 @@ var byPass = {
     var contentDiv = document.querySelectorAll('.onp-sl-content');
     if (contentDiv.length) {
       ABPVN.cTitle();
+      //Add style tag to hide all .onp-sl and show all .onp-sl-content
+      if(!document.getElementById('abpvn_style')){
+        var style=document.createElement('style');
+        style.id='abpvn_style';
+        style.innerHTML='.onp-sl-content{display:block!important;}.onp-sl{display:none!important;}';
+        document.body.appendChild(style);
+      }            
       //ShowALl ContentDiv
       for (var i in contentDiv) {
-        var creditDiv = document.createElement('div');
-        creditDiv.innerHTML = '<a href="http://abpvn.com" target="_blank" style="color: #08BE54;font-weight: bold;">Unlocked by ABPVN.COM</a>';
-        creditDiv.style.textAlign = 'right';
-        contentDiv[i].insertBefore(creditDiv, contentDiv[i].firstChild);
+        if (contentDiv[i].firstChild.innerText != 'Unlocked by ABPVN.COM') {
+          var creditDiv = document.createElement('div');
+          creditDiv.innerHTML = '<a href="http://abpvn.com" target="_blank" style="color: #08BE54;font-weight: bold;">Unlocked by ABPVN.COM</a>';
+          creditDiv.style.textAlign = 'right';
+          contentDiv[i].insertBefore(creditDiv, contentDiv[i].firstChild);
+        }
         contentDiv[i].style.display = 'block';
-      }      //Hide All LockDiv
-
+      } //Hide All LockDiv
       var lockDiv = document.querySelectorAll('.onp-sl');
-      for (var i in lockDiv) {
-        lockDiv[i].style.display = 'none';
+      for (var j in lockDiv) {
+        lockDiv[j].style.display = 'none !important';
       }
     }
   },
