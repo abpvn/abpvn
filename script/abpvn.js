@@ -11,9 +11,9 @@
 // @run-at      document-end
 // @include     http://*
 // @include     https://*
-// @version     2.1.3.1
+// @version     2.1.4
 // @noframes
-// @change-log  Update unlock hidden content for multi block
+// @change-log  Add block popup, change block popup timeout
 // @grant       none
 // ==/UserScript==
 /* String Prototype */
@@ -481,17 +481,20 @@ var ABPVN = {
       'http://chophanthiet.us',
       'http://anime47.com/',
       'http://animetvn.com',
-      'http://font.vn'
+      'http://font.vn',
+      'https://vidoza.net/'
     ];
     for (var i = 0; i < listSite.length; i++) {
       if (this.url.startWith(listSite[i])) {
         this.cTitle();
         console.info('ABPVN: Đã chặn popup quảng cáo');
         document.body.onclick = null;
+        document.onclick=null;
         window.addEventListener('load', function () {
           setTimeout(function () {
+            document.onclick=null;
             document.body.onclick = null;
-          }, 100);
+          }, 300);
         });
       }
     }
