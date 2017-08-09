@@ -11,7 +11,7 @@
 // @run-at      document-end
 // @include     http://*
 // @include     https://*
-// @version     2.1.5
+// @version     2.1.5.1
 // @noframes
 // @change-log  Add block popup, change block popup timeout
 // @grant       none
@@ -49,13 +49,13 @@ var byPass = {
     if (contentDiv.length) {
       ABPVN.cTitle();
       //Add style tag to hide all .onp-sl and show all .onp-sl-content
-      if(!document.getElementById('abpvn_style')){
-        var style=document.createElement('style');
-        style.id='abpvn_style';
-        style.innerHTML='.onp-sl-content{display:block!important;}.onp-sl{display:none!important;}';
+      if (!document.getElementById('abpvn_style')) {
+        var style = document.createElement('style');
+        style.id = 'abpvn_style';
+        style.innerHTML = '.onp-sl-content{display:block!important;}.onp-sl{display:none!important;}';
         document.body.appendChild(style);
-      }            
-      //ShowALl ContentDiv
+      }      //ShowALl ContentDiv
+
       for (var i in contentDiv) {
         if (contentDiv[i].firstChild.innerText != 'Unlocked by ABPVN.COM') {
           var creditDiv = document.createElement('div');
@@ -65,6 +65,7 @@ var byPass = {
         }
         contentDiv[i].style.display = 'block';
       } //Hide All LockDiv
+
       var lockDiv = document.querySelectorAll('.onp-sl');
       for (var j in lockDiv) {
         lockDiv[j].style.display = 'none !important';
@@ -369,15 +370,18 @@ var fixSite = {
       });
     }
   },
-  phim_media: function(){
-    if(this.url.startWith("http://www.phim.media/")){
-      var link=document.querySelector('#btn-film-watch');
-      var href=link.getAttribute('href');
-      href=href.match("utm_id=.*")[0].replace('utm_id=','');
-      if(href){
-         link.setAttribute('href',href);
-         ABPVN.cTitle();
-      }     
+  phim_media: function () {
+    if (this.url.startWith('http://www.phim.media/')) {
+      var links = document.querySelectorAll('a[href^="http://coin2017.com"]');
+      for (var i in links) {
+        var link = links[i];
+        var href = link.getAttribute('href');
+        href = href.match('utm_id=.*') [0].replace('utm_id=', '');
+        if (href) {
+          link.setAttribute('href', href);
+        }
+      }
+      ABPVN.cTitle();
     }
   },
   _2idol_tv: function () {
@@ -501,10 +505,10 @@ var ABPVN = {
         this.cTitle();
         console.info('ABPVN: Đã chặn popup quảng cáo');
         document.body.onclick = null;
-        document.onclick=null;
+        document.onclick = null;
         window.addEventListener('load', function () {
           setTimeout(function () {
-            document.onclick=null;
+            document.onclick = null;
             document.body.onclick = null;
           }, 300);
         });
