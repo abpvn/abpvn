@@ -11,7 +11,7 @@
 // @run-at      document-end
 // @include     http://*
 // @include     https://*
-// @version     2.1.4
+// @version     2.1.5
 // @noframes
 // @change-log  Add block popup, change block popup timeout
 // @grant       none
@@ -369,6 +369,17 @@ var fixSite = {
       });
     }
   },
+  phim_media: function(){
+    if(this.url.startWith("http://www.phim.media/")){
+      var link=document.querySelector('#btn-film-watch');
+      var href=link.getAttribute('href');
+      href=href.match("utm_id=.*")[0].replace('utm_id=','');
+      if(href){
+         link.setAttribute('href',href);
+         ABPVN.cTitle();
+      }     
+    }
+  },
   _2idol_tv: function () {
     if ((this.url.startWith('http://2idol.tv/post/') || this.url.startWith('http://video.2idol.tv/post-video/')) && navigator.userAgent.match(/Firefox/i) != null) {
       Logger.info('Fix 2idol.tv player on Firefox');
@@ -455,6 +466,7 @@ var fixSite = {
     this.hamtruyen_vn();
     this.removeRedirect();
     this._2idol_tv();
+    this.phim_media();
   }
 };
 //Main class
