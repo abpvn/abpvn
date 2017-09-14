@@ -11,9 +11,9 @@
 // @run-at      document-end
 // @include     http://*
 // @include     https://*
-// @version     2.1.5.1
+// @version     2.1.5.2
 // @noframes
-// @change-log  Add block popup, change block popup timeout
+// @change-log  Add block popup site
 // @grant       none
 // ==/UserScript==
 /* String Prototype */
@@ -498,7 +498,8 @@ var ABPVN = {
       'http://anime47.com/',
       'http://animetvn.com',
       'http://font.vn',
-      'https://vidoza.net/'
+      'https://vidoza.net/',
+	  'http://www.easysoft.xyz'
     ];
     for (var i = 0; i < listSite.length; i++) {
       if (this.url.startWith(listSite[i])) {
