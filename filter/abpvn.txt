@@ -1,8 +1,8 @@
 ﻿[Adblock Plus 2.0]
-! Title: ABPVN List [remove dead domain]
+! Title: ABPVN List [optimize filter]
 ! Expires: 3 days
-! Updated: 24 September 2017 07:47:39
-! Version: 201709240747
+! Updated: 26 September 2017 09:05:55
+! Version: 201709260905
 ! License: ABPVN
 ! Nghiêm cấm mọi hình thức sao chép mà không được phép
 ! Please report any unblocked ads or problems by email or in our forums
@@ -38,7 +38,7 @@ $webrtc,domain=phim14.net
 /script/ad.
 /uts.js
 /vast.js
-/vast.xml$third-party,domain=vuighe.net
+/vast.xml$third-party
 _690x110.
 _800x105.
 _990x100.
@@ -57,8 +57,7 @@ _990x100.
 ||7mad1.7m.cn^$domain=vn2.7msport.com|vn.7msport.com
 ||7mimg.7m.cn^$domain=vn2.7msport.com|vn.7msport.com
 ||a-ads.com/a-ads-banners/
-||ad-*.24hstatic.com/upload/
-||ad-*.24hstatic.com:8008/upload/
+||ad-*.24hstatic.com^*/upload/
 ||ad360.vn^$third-party
 ||adexchangedirect.com^
 ||adflex.vn^$third-party
@@ -100,8 +99,7 @@ _990x100.
 ||bilutv.com/uploads/star/
 ||blogspot.com^*.gif$domain=~blogtruyen.com|~nccsupports.com
 ||blogtamsu.vn^*Banner$image
-||blogtruyen.com/file/$subdocument
-||blogtruyen.com/File/*.swf
+||blogtruyen.com/file/$subdocument,$object
 ||blogtruyen.com/scripts/banner-preload.js
 ||blogtruyen.com/scripts/iframe-rand.js
 ||blueseed.tv^$third-party
@@ -111,8 +109,7 @@ _990x100.
 ||cdn.comedia.coccoc.com$object,script
 ||cdn-qc.coccoc.com^
 ||chiasenhac.vn/qc
-||chodansinh.net/datafiles/*.gif
-||chodansinh.net/images/popcds.gif
+||chodansinh.net^*.gif
 ||choimobile.vn/hinhanh/*.swf
 ||chophanthiet.com.vn/styles/xenforo/banner/
 ||chophanthiet.us/chau/$image
@@ -127,7 +124,7 @@ _990x100.
 ||cohoi.tuoitre.vn/tto/
 ||coinurl.com^$subdocument
 ||collagenbeauty.vn^$third-party
-||congdongcviet.com/images/advertiser-*.jpg
+||congdongcviet.com/images/advertiser-*
 ||congdongvip.com/banner/
 ||content.jwplatform.com/libraries/$domain=hamtruyen.vn
 ||cungxaynhadep.vn^$popup
@@ -256,8 +253,8 @@ _990x100.
 ||phimchieurap.vn^$popup,domain=blogtruyen.com
 ||phimhay.info/jwplayer7/text.json$domain=hamtruyen.vn
 ||phimmoi.net/js/partner/$script
-||phimnhanh.net/abcdxyz/*.gif
 ||phimnhanh.net/banner/
+||phimnhanh.net^*.gif
 ||phunutoday.vn/images/banners/
 ||pic.cydia.vn^*banner
 ||pic.gsm.vn^*banner
