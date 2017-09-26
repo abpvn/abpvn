@@ -1,8 +1,8 @@
 ﻿[Adblock Plus 2.0]
-! Title: ABPVN List [optimize filter]
+! Title: ABPVN List [remove redundancy with EasyList]
 ! Expires: 3 days
-! Updated: 26 September 2017 09:05:55
-! Version: 201709260905
+! Updated: 26 September 2017 15:58:56
+! Version: 201709261558
 ! License: ABPVN
 ! Nghiêm cấm mọi hình thức sao chép mà không được phép
 ! Please report any unblocked ads or problems by email or in our forums
@@ -35,7 +35,6 @@ $webrtc,domain=phim14.net
 /quangcao.js
 /quangcao/*
 /root/ads/*
-/script/ad.
 /uts.js
 /vast.js
 /vast.xml$third-party
@@ -67,12 +66,10 @@ _990x100.
 ||admicro1.vcmedia.vn^$third-party
 ||admin.phim4k.net^*/banner
 ||adnetwork.vn^$third-party
-||adpushup.com^
 ||ads*.autodaily.vn
 ||ads.exdynsrv.com^$domain=linkneverdie.com
 ||adsplay.net^$third-party
 ||adsquangcao.com^
-||adsrvr.org^
 ||adtimaserver.vn^$third-party,domain=~talktv.vn
 ||adtop.vn^$third-party
 ||adv.vcmedia.vn^
@@ -95,7 +92,6 @@ _990x100.
 ||batdongsan.com.vn^$object
 ||benhvientinhoc.com/img/bichquangmon.jpg
 ||benhvientinhoc.com/img/cafemongcam.swf
-||bidadx.com^$third-party
 ||bilutv.com/uploads/star/
 ||blogspot.com^*.gif$domain=~blogtruyen.com|~nccsupports.com
 ||blogtamsu.vn^*Banner$image
@@ -122,7 +118,6 @@ _990x100.
 ||code.hoiquantinhoc.vn/$third-party,script
 ||cohet.vn/ajs/
 ||cohoi.tuoitre.vn/tto/
-||coinurl.com^$subdocument
 ||collagenbeauty.vn^$third-party
 ||congdongcviet.com/images/advertiser-*
 ||congdongvip.com/banner/
@@ -229,7 +224,6 @@ _990x100.
 ||maxonclick.com^
 ||media.coccoc.com$image,object,popup
 ||media.giphy.com^$domain=2idol.tv
-||media.go2speed.org$image,third-party
 ||media.jxf88.com^$domain=vkool.net
 ||media.kenhvideo.com^*.swf
 ||media2d.net^$third-party
@@ -262,7 +256,6 @@ _990x100.
 ||postimg.org^*.gif$domain=bongdatructuyen.info|tivi4k.net|keonhacai.com|tructiepbongda.com|tv.101vn.com|8bongda.com|xemtiviso.com
 ||pub.lavanetwork.net^$third-party
 ||purgrobi.com/ub.pi$third-party
-||pussl10.com^
 ||qc.mibet.com$third-party
 ||qccoccocmedia.vn^
 ||qcv5.blogtruyen.com^$script,subdocument
@@ -305,7 +298,6 @@ _990x100.
 ||static.htvonline.com.vn/layout/images/*_banner.jpg
 ||static.htvonline.com.vn/layout/images/lienhequangcao.png
 ||static.ketqua.net/adv_imgs
-||static.mywatchseries.to^*.gif
 ||static.nhaccuatui.com/imgqc/
 ||static.novanet.vn^
 ||staticflickr.com^*.gif$domain=chophanthiet.us
@@ -315,7 +307,6 @@ _990x100.
 ||stream*.24h.com.vn/upload/*.swf
 ||stream*.24h.com.vn:8008/upload*/*.swf
 ||superfastcdn.com^$third-party
-||sw2block.com^
 ||takataka.coccoc.com^
 ||tamdiem.net/widget/tin-tuc.html
 ||tangthuvien.vn/forum/images/$domain=~tangthuvien.vn
@@ -350,7 +341,6 @@ _990x100.
 ||vnreview.vn/ThemeReview-theme/images/custom/sh_big.jpg
 ||vtv3.com/iframe$domain=phimnhanh.com
 ||vuighe.net/assest/json/pause.json$xmlhttprequest
-||windows.net^$domain=userscloud.com
 ||xehay.vn/public/html5/ads/
 ||xemphimbox.com/img/*.gif
 ||xemphimbox.com/vast.php
@@ -365,7 +355,6 @@ _990x100.
 ||yomedia.vn^$third-party
 !---------------Element Hiding--------------
 ###ad_global_below_navbar
-###ad-case
 ###balloonads
 ###balloonads2
 ###banner_FloatLeft
@@ -374,22 +363,14 @@ _990x100.
 ###bn_bottom_fixed_left
 ###bn_bottom_fixed_right
 ###qcBallonright
-###watch7-sidebar-ads
-##.ad-left
-##.ad-right
 ##.ads_area_01
 ##.ads_area_03
 ##.ads_area_04
-##.adsbox
-##.afs_ads
 ##.banner-inner
 ##.leftAdsBanner
 ##.midroll-marker
 ##.quangcao
 ##.safeuploada-filter
-##.top_ads
-##.video-ads
-##.ytp-ad-progress-list
 24h.com.vn###background_bg_link
 24h.com.vn###linkbg1
 24h.com.vn###linkbg2
@@ -411,7 +392,6 @@ animetvn.com###footer
 animetvn.com###menubentrai
 anivn.com##A[href="http://simdepdongnai.com"]
 apk-dl.com##.mgbox
-apkmirror.com##.gooWidget
 arabloads.net###pic-bg
 autodaily.vn,xehay.vn###banner3double
 baobinhthuan.com.vn###ads_2_col_bot
@@ -439,7 +419,6 @@ chodansinh.net###banner_menu_home
 chodansinh.net##.footer
 chodansinh.net##.tl
 chodansinh.net##A[href^="/adv/go?viewbanner="]
-chophanthiet.us###ad_global_above_footer
 chophanthiet.us###forum_ads_1
 chophanthiet.us###forum_ads_583
 chophanthiet.us###forum_ads_649
@@ -463,8 +442,6 @@ coccoc.com##[data-show-urls^="http://context.qc.coccoc.com"]
 coccoc.com##video
 comicvn.net,phim.media,xemphimon.com##.SC_TBlock
 dantri.com.vn##.admicro
-d-h.st###downloadfile2
-download.cnet.com##.bidwar
 download.com.vn###adlefttop2
 download.com.vn###adrightsecond2
 download.com.vn##.adbox
@@ -472,19 +449,11 @@ download.com.vn##.adx-border
 download.com.vn##.breview-box
 download.com.vn##BG_leftBanner
 download.com.vn##BG_rightBanner
-drivers.softpedia.com###_wlts
-drivers.softpedia.com###_wlts_lead
-drivers.softpedia.com###wrapper > .main > .container_48 > .grid_48:nth-of-type(7)
 eva.vn###ADS_131_15s_0
 eva.vn###ADS_132_15s_0
 eva.vn###right_ads > .ads_unit:nth-of-type(1)
 eva.vn##.banner_top_masthead
 eva.vn##.banner300250-L
-facebook.com###pagelet_games_rhc
-facebook.com###xt_uniq_4
-facebook.com##DIV._5vw9
-footyroom.com###tfasyncframe_0
-footyroom.com##.wide_sponsors
 forum.bkav.com.vn###fanback
 forum.bkav.com.vn###fan-exit
 forum.bkav.com.vn###slider1_container
@@ -492,7 +461,6 @@ forum.bkav.com.vn###widget_131
 forum.bkav.com.vn###widget_left
 freetuts.net###adsoptimal_160_600_fixed
 fshare.vn###balloon
-fshare.vn###banner_adv
 fshare.vn###dialog-modal1
 fshare.vn###info-slider
 fshare.vn###popup-eventFollowFolder
@@ -500,7 +468,6 @@ fshare.vn##.ban-ev-bot-foot
 fshare.vn##.banner_left
 fshare.vn##.banner_right
 fshare.vn##.slideshowAdv
-fshare.vn##.topbg > .wrap.container > .padding-v-15 > .hidden-sm.ad-wrapper > .dl_2
 fshare.vn##.ui-corner-all
 fshare.vn##.ui-dialog-content
 fshare.vn##.ui-dialog-titlebar
@@ -558,7 +525,6 @@ ketnooi.com###youtube_player_button
 ketnooi.com##.tablecontainer
 ketnooi.com##TD[width="10%"]
 ketqua.net##.adsb.bo
-ketqua.vn###left_ads
 khoahoc.com.vn##MetaNET_SHARING_AD_NUMBER_3
 kienthucviet.vn###header_balloon
 kphim.tv##.ads_player
@@ -620,11 +586,6 @@ nhaccuatui.com##eventBannerLeft
 nhaccuatui.com##eventBannerTop
 nhacdj.vn###top-adv
 nhacso.net##.close-1
-onhax.me###bottom-promo-abdload
-onhax.me###bottom-promo-dload
-onhax.me###oh-suckitadb-promd-2
-onhax.me###top-promo-dload
-onhax.me##.lelabp.andro-a-holder
 phanmemaz.com##A[href^="https://href.li/?http://trafflict.com/r/"]
 phienbanmoi.com##.my_responsive_add
 phim.media##.adv-300-right:not(:nth-of-type(2))
@@ -639,7 +600,6 @@ phim7.com###bn_bottom_fixed_right_btn
 phim7.com###floatleft
 phimhayplus.com###close_banner
 phimnhanh.com##.qc
-photobucket.com##.slider-contents
 play.zing.vn##.ff-box
 probuilds.net##.welcome-bnr
 proxyviet.blogspot.com###fbslidebox
@@ -655,7 +615,6 @@ softasm.com##.the-ad-break
 techrum.vn##.WidgetFramework_WidgetRenderer_Html
 tiin.vn##.adv-detail
 tiin.vn##.banner-home-left
-tinhte.vn##.adWidget
 tinmoi.vn###footer_box_bottom
 tivi4k.net###ads_content
 tivi4k.net###ads_float
@@ -674,7 +633,6 @@ truyentranh8.net##.tt8quangcao
 truyentranhtuan.com##.doc-truyen-ads-d1
 truyentranhtuan.com##.doc-truyen-ads-d2
 truyenyy.com##.pre_btn_ads
-turbobit.net##.download-area-top
 tv.101vn.com###eb951855
 tv.101vn.com###full_banner1
 tv.101vn.com###full_banner2
@@ -807,7 +765,6 @@ porn99.net,thiendia.com##.float-ck
 sieukhung.net,tuoi69.com##.adsCenterHome
 sieukhung.net,tuoi69.com##.banner-detail
 sieukhung.net,tuoi69.com##.banner-topR
-thiendia.com###divAdLeft
 thiendia.com##A[href="http://www.9club.com/vn/"]
 tuoi69.com,sieukhung.net###bar_float_r
 tuoi69.com,sieukhung.net##.adsTopHome
