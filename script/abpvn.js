@@ -11,9 +11,9 @@
 // @run-at      document-end
 // @include     http://*
 // @include     https://*
-// @version     2.1.6.1
+// @version     2.1.6.2
 // @noframes
-// @change-log  Fix download linkneverdie.com
+// @change-log  Fix antiadblock linkneverdie.com
 // @grant       none
 // ==/UserScript==
 /* String Prototype */
@@ -422,19 +422,14 @@ var fixSite = {
       }.bind(this));
     }
   },
-  linkneverdie_com: function () {	  
-    if (this.url.startWith('https://linkneverdie.com/Download')) {
-	ABPVN.cTitle();
-    setTimeout(function () {
-		document.querySelector('.warning').style.display = 'none';
-        var gCaptcha = document.querySelector('.g-recaptcha');
-        if (gCaptcha) {
-          gCaptcha.style.display = 'block';
-        } else {
-          document.querySelector('#download').style.display = 'inline-block';
-        }
-      }, 3000);
-    }
+  linkneverdie_com: function () {
+    if(this.url.startWith('https://linkneverdie.com/')){
+      ABPVN.cTitle();
+      var el=document.getElementById('wrapper');
+      if(el){
+        el.id="wrapper-fix-by-abpvn";
+      }
+    }    
   },
   removeRedir(config) {
     if (this.url.startWith(config.url)) {
