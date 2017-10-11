@@ -11,9 +11,9 @@
 // @run-at      document-end
 // @include     http://*
 // @include     https://*
-// @version     2.1.6.2
+// @version     2.1.7
 // @noframes
-// @change-log  Fix antiadblock linkneverdie.com
+// @change-log  Fix skip link hdonline + phim.media
 // @grant       none
 // ==/UserScript==
 /* String Prototype */
@@ -370,9 +370,9 @@ var fixSite = {
       });
     }
   },
-  phim_media: function () {
-    if (this.url.startWith('http://www.phim.media/')) {
-      var links = document.querySelectorAll('a[href^="http://coin2017.com"]');
+  phim_media: function () {    
+    if (this.url.startWith('https://www.phim.media/')||this.url.startWith('http://www.phim.media/')) {      
+      var links = document.querySelectorAll('a[href^="http://bitcoin4go.us/"]');      
       for (var i in links) {
         var link = links[i];
         var href = link.getAttribute('href');
@@ -431,6 +431,20 @@ var fixSite = {
       }
     }    
   },
+  hdonline_vn: function(){    
+    if (this.url.startWith('http://hdonline.vn')) {         
+      var links = document.querySelectorAll('a[href^="http://hub.blueserving.com/"]');         
+      for (var i in links) {
+        var link = links[i];
+        var href = link.getAttribute('href');
+        href = href.match('url=.*') [0].replace('url=', '');
+        if (href) {
+          link.setAttribute('href', href);
+        }
+      }
+      ABPVN.cTitle();
+    }
+  },
   removeRedir(config) {
     if (this.url.startWith(config.url)) {
       ABPVN.cTitle();
@@ -480,7 +494,8 @@ var fixSite = {
     this.removeRedirect();
     this._2idol_tv();
     this.phim_media();
-	this.linkneverdie_com();
+	  this.linkneverdie_com();
+    this.hdonline_vn();
   }
 };
 //Main class
