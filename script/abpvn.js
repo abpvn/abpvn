@@ -11,9 +11,9 @@
 // @run-at      document-end
 // @include     http://*
 // @include     https://*
-// @version     2.1.7
+// @version     2.1.8
 // @noframes
-// @change-log  Fix skip link hdonline + phim.media
+// @change-log  Remove expires function
 // @grant       none
 // ==/UserScript==
 /* String Prototype */
@@ -263,7 +263,7 @@ var fixSite = {
       var script = document.createElement('script');
       script.src = url;
       script.type = 'text/javascript';
-      document.getElementsByTagName('head') [0].appendChild(script);
+      document.getElementsByTagName('head')[0].appendChild(script);
     });
     xhr.send();
   },
@@ -272,88 +272,9 @@ var fixSite = {
     css_tag.rel = 'stylesheet';
     css_tag.id = id;
     css_tag.href = url;
-    var head = document.getElementsByTagName('head') [0];
+    var head = document.getElementsByTagName('head')[0];
     head.appendChild(css_tag);
-  },
-  talktv_vn: function () {
-    if (this.url.startWith('http://talktv.vn/') && this.url.length > 17) {
-      //disabled jwplayer
-      //jwplayer = {
-      // };
-      $(document).ready(function () {
-        if (loadPlayer.manifestUrl.indexOf('.m3u8') != - 1) {
-          //Ininit Libs Tag
-          var css_tag = document.createElement('link');
-          css_tag.rel = 'stylesheet';
-          css_tag.href = 'https://cdnjs.cloudflare.com/ajax/libs/video.js/6.0.1/video-js.min.css';
-          var script_vjs_tag = document.createElement('script');
-          script_vjs_tag.src = 'https://cdnjs.cloudflare.com/ajax/libs/video.js/6.0.1/video.min.js';
-          var script_js_hls = document.createElement('script');
-          script_js_hls.src = 'https://cdnjs.cloudflare.com/ajax/libs/videojs-contrib-hls/5.5.0/videojs-contrib-hls.js';
-          //script_js_hls.src = 'https://cdnjs.cloudflare.com/ajax/libs/videojs-contrib-hls/3.7.0-beta4/videojs-contrib-hls.js';    
-          var head = document.getElementsByTagName('head') [0];
-          head.appendChild(css_tag);
-          head.appendChild(script_vjs_tag);
-          head.appendChild(script_js_hls);
-          //Innit video Tag to play
-          document.querySelector('.channel-play').innerHTML = '<video controls id="abpvn_talktv_vjs" autoplay="autoplay" style="width: 100%; height: 100%" class="video-js vjs-default-skin" poster="' + loadPlayer.backgroundImage + '"><source src="http://crossorigin.me/' + loadPlayer.manifestUrl + '" type="application/x-mpegURL"></video>';
-          var timer;
-          timer = setInterval(function () {
-            if (typeof videojs != 'undefined' && typeof videojs.Hls != 'undefined') {
-              var tmp_video = videojs('abpvn_talktv_vjs');
-              tmp_video.play();
-              clearInterval(timer);
-            }
-          }, 300);
-        }
-      });
-    }
-  },
-  tv_zing_vn: function () {
-    if (this.url.startWith('http://tv.zing.vn/video/') && !this.elementExist('#_infoUserCp') && !MP3.ZINGTV_VIP) {
-      window.addEventListener('DOMContentLoaded', function () {
-        var script = document.createElement('script');
-        script.src = 'https://content.jwplatform.com/libraries/QHJ5Iarr.js';
-        script.type = 'text/javascript';
-        document.getElementsByTagName('head') [0].appendChild(script);
-        //get video list   
-        var text = getAllText('script');
-        var quality = [
-          '360',
-          '480',
-          '720',
-          '1080'
-        ];
-        var listVideo = text.match(/http:\/\/stream\d+\.tv.+?\.mp4/g);
-        listVideo = removeDuplicates(listVideo);
-        var sources = [
-        ];
-        for (var i = 0; i < listVideo.length; i++) {
-          sources.push({
-            'file': listVideo[i],
-            'label': quality[i]
-          })
-        };
-        //get Image poster      
-        var imagePoster = text.match(/http:\/\/image.+?\.jpg/);
-        //Setup Player
-        var playerId = 'abpvn_player';
-        document.getElementById('player').innerHTML = '<div id="' + playerId + '"></div>';
-        var clock = setInterval(function () {
-          if (typeof jwplayer != 'undefined') {
-            jwplayer(playerId).setup({
-              sources: sources,
-              autostart: true,
-              image: imagePoster[0],
-              width: '100%',
-              height: 520
-            })
-            clearInterval(clock);
-          }
-        }, 300);
-      });
-    }
-  },
+  },  
   hamtruyen_vn: function () {
     if (this.url.startWith('http://hamtruyen.vn/')) {
       document.addEventListener('DOMContentLoaded', function () {
@@ -488,13 +409,11 @@ var fixSite = {
   },
   init: function () {
     this.url = location.href;
-    this.talktv_vn();
-    this.tv_zing_vn();
     this.hamtruyen_vn();
     this.removeRedirect();
     this._2idol_tv();
     this.phim_media();
-	  this.linkneverdie_com();
+    this.linkneverdie_com();
     this.hdonline_vn();
   }
 };
@@ -524,7 +443,7 @@ var ABPVN = {
       'http://animetvn.com',
       'http://font.vn',
       'https://vidoza.net/',
-	  'http://www.easysoft.xyz'
+      'http://www.easysoft.xyz'
     ];
     for (var i = 0; i < listSite.length; i++) {
       if (this.url.startWith(listSite[i])) {
