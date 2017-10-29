@@ -11,9 +11,9 @@
 // @run-at      document-end
 // @include     http://*
 // @include     https://*
-// @version     2.1.8
+// @version     2.1.8.1
 // @noframes
-// @change-log  Remove expires function
+// @change-log  Update phim.media
 // @grant       none
 // ==/UserScript==
 /* String Prototype */
@@ -293,7 +293,7 @@ var fixSite = {
   },
   phim_media: function () {    
     if (this.url.startWith('https://www.phim.media/')||this.url.startWith('http://www.phim.media/')) {      
-      var links = document.querySelectorAll('a[href^="http://bitcoin4go.us/"]');      
+      var links = document.querySelectorAll('#btn-film-watch');      
       for (var i in links) {
         var link = links[i];
         var href = link.getAttribute('href');
