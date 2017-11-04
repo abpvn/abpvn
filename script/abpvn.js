@@ -11,9 +11,9 @@
 // @run-at      document-end
 // @include     http://*
 // @include     https://*
-// @version     2.1.8.1
+// @version     2.1.9
 // @noframes
-// @change-log  Update phim.media
+// @change-log  Update hdonline
 // @grant       none
 // ==/UserScript==
 /* String Prototype */
@@ -443,7 +443,8 @@ var ABPVN = {
       'http://animetvn.com',
       'http://font.vn',
       'https://vidoza.net/',
-      'http://www.easysoft.xyz'
+      'http://www.easysoft.xyz',
+	  'http://hdonline.vn'
     ];
     for (var i = 0; i < listSite.length; i++) {
       if (this.url.startWith(listSite[i])) {
