@@ -11,7 +11,7 @@
 // @run-at      document-end
 // @include     http://*
 // @include     https://*
-// @version     2.1.9.1
+// @version     2.1.9.2
 // @noframes
 // @change-log  Update phim.media
 // @grant       none
@@ -299,7 +299,7 @@ var fixSite = {
         var href = link.getAttribute('href');
         href = href.match('utm_id=.*') [0].replace('utm_id=', '');
         if (href) {
-          link.setAttribute('href', abtob(href));
+          link.setAttribute('href', atob(href));
         }
       }
       ABPVN.cTitle();
