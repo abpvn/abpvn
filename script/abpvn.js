@@ -11,9 +11,9 @@
 // @run-at      document-end
 // @include     http://*
 // @include     https://*
-// @version     2.1.9
+// @version     2.1.9.1
 // @noframes
-// @change-log  Update hdonline
+// @change-log  Update phim.media
 // @grant       none
 // ==/UserScript==
 /* String Prototype */
@@ -299,7 +299,7 @@ var fixSite = {
         var href = link.getAttribute('href');
         href = href.match('utm_id=.*') [0].replace('utm_id=', '');
         if (href) {
-          link.setAttribute('href', href);
+          link.setAttribute('href', abtob(href));
         }
       }
       ABPVN.cTitle();
