@@ -11,9 +11,9 @@
 // @run-at      document-end
 // @include     http://*
 // @include     https://*
-// @version     2.1.9.3
+// @version     2.1.9.4
 // @noframes
-// @change-log  Remove short url maclife.vn
+// @change-log  Add remove redirect on vozforums.com
 // @grant       none
 // ==/UserScript==
 /* String Prototype */
@@ -414,7 +414,11 @@ var fixSite = {
       {
         url: 'http://phanmemaz.com/',
         replace: 'http://phanmemaz.com/wp-content/plugins/tm-wordpress-redirection/l.php?'
-      }
+      },
+	  {
+		  url:'https://vozforums.com',
+		  replace: '/redirect/index.php?link='
+	  }
     ];
     configs.forEach(function (config) {
       this.removeRedir(config);
