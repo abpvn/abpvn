@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name        ABPVN AdsBlock
 // @namespace   ABPVN
-// @author      Hoàng Rio
+// @author      ABPVN
 // @copyright   ABPVN
 // @homepage    http://abpvn.com
 // @supportURL  https://github.com/abpvn/abpvn/issues
@@ -11,9 +11,9 @@
 // @run-at      document-end
 // @include     http://*
 // @include     https://*
-// @version     2.1.9.2
+// @version     2.1.9.3
 // @noframes
-// @change-log  Update phim.media
+// @change-log  Remove short url maclife.vn
 // @grant       none
 // ==/UserScript==
 /* String Prototype */
@@ -366,6 +366,19 @@ var fixSite = {
       ABPVN.cTitle();
     }
   },
+  maclife_vn: function(){
+    if(this.url.startWith('https://maclife.vn/')){
+      var allShortUrl=document.querySelectorAll('a[rel]');      
+      var count=0;
+      for(var i=0;i<allShortUrl.length;i++){
+        if(allShortUrl[i].innerText.indexOf('http')===0){
+          allShortUrl[i].setAttribute('href',allShortUrl[i].innerText);
+          count++;
+        }
+      }
+      Logger.info("Đã xóa "+count+" link rút gọn!");
+    }
+  },
   removeRedir(config) {
     if (this.url.startWith(config.url)) {
       ABPVN.cTitle();
@@ -415,6 +428,7 @@ var fixSite = {
     this.phim_media();
     this.linkneverdie_com();
     this.hdonline_vn();
+    this.maclife_vn();
   }
 };
 //Main class
