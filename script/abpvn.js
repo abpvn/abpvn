@@ -11,9 +11,9 @@
 // @run-at      document-end
 // @include     http://*
 // @include     https://*
-// @version     2.1.9.4
+// @version     2.2
 // @noframes
-// @change-log  Add remove redirect on vozforums.com
+// @change-log  Fontdep.com like to download by pass
 // @grant       none
 // ==/UserScript==
 /* String Prototype */
@@ -379,6 +379,12 @@ var fixSite = {
       Logger.info("Đã xóa "+count+" link rút gọn!");
     }
   },
+  fontdep_com: function(){
+    if(this.url.startWith('http://www.fontdep.com/')&&document.cookie.indexOf('virallock_myid')==-1){
+      document.cookie='virallock_myid=0001';
+      location.reload();
+    }
+  }, 
   removeRedir(config) {
     if (this.url.startWith(config.url)) {
       ABPVN.cTitle();
@@ -433,6 +439,7 @@ var fixSite = {
     this.linkneverdie_com();
     this.hdonline_vn();
     this.maclife_vn();
+    this.fontdep_com();
   }
 };
 //Main class
