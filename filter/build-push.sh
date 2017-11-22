@@ -5,3 +5,4 @@ cd ..
 git add .
 git commit -m "$gitcomment"
 git push
+sh pull.sh
