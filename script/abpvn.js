@@ -11,9 +11,9 @@
 // @run-at      document-end
 // @include     http://*
 // @include     https://*
-// @version     2.2
+// @version     2.2.1
 // @noframes
-// @change-log  Fontdep.com like to download by pass
+// @change-log  Block popup anime47.com
 // @grant       none
 // ==/UserScript==
 /* String Prototype */
@@ -429,7 +429,7 @@ var fixSite = {
     configs.forEach(function (config) {
       this.removeRedir(config);
     }.bind(this));
-  },
+  },  
   init: function () {
     this.url = location.href;
     this.hamtruyen_vn();
@@ -469,18 +469,33 @@ var ABPVN = {
       'http://font.vn',
       'https://vidoza.net/',
       'http://www.easysoft.xyz',
-	  'http://hdonline.vn'
+	    'http://hdonline.vn',
+      'http://anime47.com'
     ];
     for (var i = 0; i < listSite.length; i++) {
       if (this.url.startWith(listSite[i])) {
         this.cTitle();
-        console.info('ABPVN: Đã chặn popup quảng cáo');
+        Logger.info('Đã chặn popup quảng cáo');
         document.body.onclick = null;
         document.onclick = null;
+        document.ontouchstart=null;
+        document.onmousedown=null;
         window.addEventListener('load', function () {
           setTimeout(function () {
+            Logger.info('Đã chặn popup quảng cáo onload');
+            document.ontouchstart=null;
             document.onclick = null;
             document.body.onclick = null;
+            document.onmousedown=null;
+          }, 300);
+        });
+        window.addEventListener('DOMContentLoaded', function () {
+          setTimeout(function () {
+            Logger.info('Đã chặn popup quảng cáo dom load');
+            document.ontouchstart=null;
+            document.onclick = null;
+            document.body.onclick = null;
+            document.onmousedown=null;
           }, 300);
         });
       }
