@@ -11,7 +11,7 @@
 // @run-at      document-end
 // @include     http://*
 // @include     https://*
-// @version     2.2.3
+// @version     2.2.4
 // @noframes
 // @change-log  Fix hideLinkUnlock
 // @grant       none
@@ -57,7 +57,7 @@ var byPass = {
       }      //ShowALl ContentDiv
 
       for (var i in contentDiv) {
-        if (contentDiv[i].firstChild.innerText != 'Unlocked by ABPVN.COM') {
+        if (contentDiv[i].firstChild && contentDiv[i].firstChild.innerText != 'Unlocked by ABPVN.COM') {
           var creditDiv = document.createElement('div');
           creditDiv.innerHTML = '<a href="http://abpvn.com" target="_blank" style="color: #08BE54;font-weight: bold;">Unlocked by ABPVN.COM</a>';
           creditDiv.style.textAlign = 'right';
