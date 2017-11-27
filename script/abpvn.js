@@ -11,7 +11,7 @@
 // @run-at      document-end
 // @include     http://*
 // @include     https://*
-// @version     2.2.1
+// @version     2.2.2
 // @noframes
 // @change-log  Block popup anime47.com
 // @grant       none
@@ -44,7 +44,7 @@ var removeDuplicates = function (arr) {
 };
 //Bypass Class
 var byPass = {
-  hideLink: function () {
+  hideLinkUnlock: function () {
     var contentDiv = document.querySelectorAll('.onp-sl-content');
     if (contentDiv.length) {
       ABPVN.cTitle();
@@ -73,8 +73,9 @@ var byPass = {
     }
   },
   init: function () {
-    window.addEventListener('DOMContentLoaded', this.hideLink);
-    window.addEventListener('load', this.hideLink);
+    window.addEventListener('DOMContentLoaded', this.hideLinkUnlock);
+    window.addEventListener('load', this.hideLinkUnlock);
+    this.hideLinkUnlock();
   }
 };
 //Logger Class
