@@ -11,7 +11,7 @@
 // @run-at      document-end
 // @include     http://*
 // @include     https://*
-// @version     2.2.4
+// @version     2.2.5
 // @noframes
 // @change-log  Fix hideLinkUnlock
 // @grant       none
@@ -63,12 +63,16 @@ var byPass = {
           creditDiv.style.textAlign = 'right';
           contentDiv[i].insertBefore(creditDiv, contentDiv[i].firstChild);
         }
-        contentDiv[i].style.display = 'block';
+        if(contentDiv[i].style){
+          contentDiv[i].style.display = 'block';
+        }
       } //Hide All LockDiv
 
       var lockDiv = document.querySelectorAll('.onp-sl');
       for (var j in lockDiv) {
-        lockDiv[j].style.display = 'none !important';
+        if(lockDiv[j].style){
+          lockDiv[j].style.display = 'none !important';
+        }        
       }
     }
   },
