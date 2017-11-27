@@ -11,9 +11,9 @@
 // @run-at      document-end
 // @include     http://*
 // @include     https://*
-// @version     2.2.2
+// @version     2.2.3
 // @noframes
-// @change-log  Block popup anime47.com
+// @change-log  Fix hideLinkUnlock
 // @grant       none
 // ==/UserScript==
 /* String Prototype */
@@ -45,7 +45,7 @@ var removeDuplicates = function (arr) {
 //Bypass Class
 var byPass = {
   hideLinkUnlock: function () {
-    var contentDiv = document.querySelectorAll('.onp-sl-content');
+    var contentDiv = document.querySelectorAll('.onp-sl-content,.onp-locker-call');
     if (contentDiv.length) {
       ABPVN.cTitle();
       //Add style tag to hide all .onp-sl and show all .onp-sl-content
