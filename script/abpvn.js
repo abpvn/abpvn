@@ -11,9 +11,9 @@
 // @run-at      document-end
 // @include     http://*
 // @include     https://*
-// @version     2.2.5
+// @version     2.2.5.1
 // @noframes
-// @change-log  Fix hideLinkUnlock
+// @change-log  Fix phim.media
 // @grant       none
 // ==/UserScript==
 /* String Prototype */
@@ -298,16 +298,15 @@ var fixSite = {
   },
   phim_media: function () {    
     if (this.url.startWith('https://www.phim.media/')||this.url.startWith('http://www.phim.media/')) {      
-      var links = document.querySelectorAll('#btn-film-watch');      
-      for (var i in links) {
-        var link = links[i];
+      var link = document.querySelector('#btn-film-watch');      
+      if(link){
         var href = link.getAttribute('href');
         href = href.match('utm_id=.*') [0].replace('utm_id=', '');
         if (href) {
           link.setAttribute('href', atob(href));
         }
-      }
-      ABPVN.cTitle();
+        ABPVN.cTitle();
+      }      
     }
   },
   _2idol_tv: function () {
@@ -475,7 +474,8 @@ var ABPVN = {
       'https://vidoza.net/',
       'http://www.easysoft.xyz',
 	    'http://hdonline.vn',
-      'http://anime47.com'
+      'http://anime47.com',
+      'https://phim.media'
     ];
     for (var i = 0; i < listSite.length; i++) {
       if (this.url.startWith(listSite[i])) {
