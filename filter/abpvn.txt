@@ -1,8 +1,8 @@
 ﻿[Adblock Plus 2.0]
-! Title: ABPVN List [phim.media]
+! Title: ABPVN List [openload]
 ! Expires: 3 days
-! Updated: 29 November 2017 22:43:50
-! Version: 201711292243
+! Updated: 29 November 2017 22:54:01
+! Version: 201711292254
 ! Copyright: ABPVN
 ! Nghiêm cấm mọi hình thức sao chép/tái phân phối mà không được phép
 ! Please report any unblocked ads or problems by email or in our forums
@@ -11,7 +11,7 @@
 ! Homepage: http://abpvn.com
 ! Facebook Fanpage: https://facebook.com/abpvn.org
 ! Forums: http://www.vn-zoom.com/f77/abp-bo-loc-quang-cao-cho-nguoi-viet-2856275.html! ---------- Generic Blocking Rules ----------
-$popup,domain=oload.stream
+$popup,third-party,domain=oload.tv|oload.stream|openload.co
 $webrtc,domain=forum.xda-developers.com|phim14.net|mkvcage.com|phimotv.net
 &adformat=
 &adunit=
@@ -1247,10 +1247,12 @@ zippyshare.com##.center_ad
 @@||media.m.ambientplatform.vn$script,domain=m.vivo.vn
 @@||muabanraovat.com/images/quangcao/
 @@||oload.stream/assets/js/license.$script
+@@||oload.tv/assets/js/license.$script
 @@||pagead2.googlesyndication.com$domain=upfile.vn|javadecompilers.com|thewindowsclub.com|onmsft.com|startuanit.net|vantuanit.com|thuthuatmeovat.net|videodictionary.kwebpia.net
 @@||phim14.net/IMG/ads/
 @@||pointer2.hopy.com/qc
 @@||securepubads.g.doubleclick.net^$domain=thewindowsclub.com|onmsft.com
+@@||serve.popads.net^$script,domain=oload.tv
 @@||smartadserver.com^$script,third-party,xmlhttprequest,domain=uploaded.net
 @@||source.pixiv.net/www/images/
 @@||static.hadarone.com^$domain=hub.blueserving.com
@@ -1272,6 +1274,7 @@ zippyshare.com##.center_ad
 @@||kphim.tv$generichide
 @@||kzone.tv$generichide
 @@||linkneverdie.com$generichide
+@@||oload.tv$generichide
 @@||onmsft.com$generichide
 @@||phim.tv$generichide
 @@||projectae.net$generichide
@@ -1289,6 +1292,7 @@ movies.hdviet.com#@##sponsorText
 oload.stream#@#.adsbox
 tratu.soha.vn#@#.adheader
 !------ ABPVN Adult block -------
+$popup,third-party,domain=veporn.net
 ||abcsrv1.com^
 ||atas.io^
 ||avgle.com/avideos.js$script
