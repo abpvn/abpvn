@@ -283,11 +283,11 @@ var fixSite = {
   hamtruyen_vn: function () {
     if (this.url.startWith('http://hamtruyen.vn/')) {
       document.addEventListener('DOMContentLoaded', function () {
-        ABPVN.Logger.log('Run block popup');
+        Logger.log('Run block popup');
         var container = document.getElementById('container');
         if (container) {
           var btpop = function () {
-            ABPVN.Logger.info('Overided Popup Function');
+            Logger.info('Overided Popup Function');
           };
           $('#container').click(function () {
           });
@@ -307,44 +307,6 @@ var fixSite = {
         }
         ABPVN.cTitle();
       }      
-    }
-  },
-  _2idol_tv: function () {
-    if ((this.url.startWith('http://2idol.tv/post/') || this.url.startWith('http://video.2idol.tv/post-video/')) && navigator.userAgent.match(/Firefox/i) != null) {
-      Logger.info('Fix 2idol.tv player on Firefox');
-      ABPVN.cTitle();
-      document.querySelector('#vod').setAttribute('id', 'abpvn_fixed');
-      window.addEventListener('DOMContentLoaded', function () {
-        var scriptText = this.getAllText('script');
-        var file = scriptText.match(/https:\/\/www\.youtube\.com\/watch\?v=[\w-]+/i) [0];
-        var style_url = URL.createObjectURL(new Blob(['.jwlogo {width: 50px; height: 50px; opacity: 0.7 !important;a}'], {
-          type: 'text/css'
-        }));
-        this.loadCss(style_url, 'fix_logo');
-        if (file) {
-          jwplayer('abpvn_fixed').setup({
-            volume: '100',
-            menu: 'true',
-            allowscriptaccess: 'always',
-            wmode: 'opaque',
-            file: file,
-            //file: "SampleVideo_1280x720_1mb.mp4",		
-            image: '',
-            width: '663',
-            height: '366',
-            autostart: 'true',
-            primary: 'html5',
-            skin: 'http://' + location.hostname + '/public/player/jwplayer/bekle/bekle.xml',
-            logo: {
-              file: 'http://abpvn.com/icon.png',
-              link: 'http://abpvn.com/',
-              width: 30,
-              height: 30,
-              position: 'top-right'
-            }
-          });
-        }
-      }.bind(this));
     }
   },
   linkneverdie_com: function () {
@@ -438,7 +400,6 @@ var fixSite = {
     this.url = location.href;
     this.hamtruyen_vn();
     this.removeRedirect();
-    this._2idol_tv();
     this.phim_media();
     this.linkneverdie_com();
     this.hdonline_vn();
