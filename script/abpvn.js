@@ -11,7 +11,7 @@
 // @run-at      document-end
 // @include     http://*
 // @include     https://*
-// @version     2.2.5.1
+// @version     2.2.5.2
 // @noframes
 // @change-log  Fix phim.media
 // @grant       none
@@ -358,7 +358,7 @@ var fixSite = {
   },
   hdonline_vn: function(){    
     if (this.url.startWith('http://hdonline.vn')) {         
-      var links = document.querySelectorAll('a[href^="http://hub.blueserving.com/"]');         
+      var links = document.querySelectorAll('a[href^="http://hub.blueserving.com/"]');
       for (var i in links) {
         var link = links[i];
         var href = link.getAttribute('href');
@@ -473,9 +473,9 @@ var ABPVN = {
       'http://font.vn',
       'https://vidoza.net/',
       'http://www.easysoft.xyz',
-	    'http://hdonline.vn',
+      'http://hdonline.vn',
       'http://anime47.com',
-      'https://phim.media'
+      'https://www.phim.media'
     ];
     for (var i = 0; i < listSite.length; i++) {
       if (this.url.startWith(listSite[i])) {
