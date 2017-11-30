@@ -11,7 +11,7 @@
 // @run-at      document-end
 // @include     http://*
 // @include     https://*
-// @version     2.2.5.2
+// @version     2.2.5.3
 // @noframes
 // @change-log  Fix phim.media
 // @grant       none
