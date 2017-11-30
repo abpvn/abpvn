@@ -11,9 +11,9 @@
 // @run-at      document-end
 // @include     http://*
 // @include     https://*
-// @version     2.2.5.3
+// @version     2.2.5.4
 // @noframes
-// @change-log  Fix phim.media
+// @change-log  Remove function
 // @grant       none
 // ==/UserScript==
 /* String Prototype */
@@ -280,22 +280,6 @@ var fixSite = {
     var head = document.getElementsByTagName('head')[0];
     head.appendChild(css_tag);
   },  
-  hamtruyen_vn: function () {
-    if (this.url.startWith('http://hamtruyen.vn/')) {
-      document.addEventListener('DOMContentLoaded', function () {
-        Logger.log('Run block popup');
-        var container = document.getElementById('container');
-        if (container) {
-          var btpop = function () {
-            Logger.info('Overided Popup Function');
-          };
-          $('#container').click(function () {
-          });
-          container.onclick = null;
-        }
-      });
-    }
-  },
   phim_media: function () {    
     if (this.url.startWith('https://www.phim.media/')||this.url.startWith('http://www.phim.media/')) {      
       var link = document.querySelector('#btn-film-watch');      
@@ -398,7 +382,6 @@ var fixSite = {
   },  
   init: function () {
     this.url = location.href;
-    this.hamtruyen_vn();
     this.removeRedirect();
     this.phim_media();
     this.linkneverdie_com();
