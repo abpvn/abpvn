@@ -3,12 +3,14 @@
 cp -r src/abpvn_adult.txt src/abpvn_adult.tmp
 cp -r src/abpvn_adult_elemhide.txt src/abpvn_adult_elemhide.tmp
 cp -r src/abpvn_general.txt src/abpvn_general.tmp
+cp -r src/abpvn_elemhide.txt src/abpvn_elemhide.tmp
 cp -r src/abpvn_whitelist.txt src/abpvn_whitelist.tmp
 cp -r src/abpvn_whitelist_elemhide.txt src/abpvn_whitelist_elemhide.tmp
 # sort tmp to txt
 sort -u -o src/abpvn_adult.txt src/abpvn_adult.tmp
 sort -u -o src/abpvn_adult_elemhide.txt src/abpvn_adult_elemhide.tmp
 sort -u -o src/abpvn_general.txt src/abpvn_general.tmp
+sort -u -o src/abpvn_elemhide.txt src/abpvn_elemhide.tmp
 sort -u -o src/abpvn_whitelist.txt src/abpvn_whitelist.tmp
 sort -u -o src/abpvn_whitelist_elemhide.txt src/abpvn_whitelist_elemhide.tmp
 # make time stamp update
