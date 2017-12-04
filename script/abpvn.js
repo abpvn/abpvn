@@ -11,9 +11,9 @@
 // @run-at      document-end
 // @include     http://*
 // @include     https://*
-// @version     2.2.5.4
+// @version     2.2.5.5
 // @noframes
-// @change-log  Remove function
+// @change-log  Block popup phimnhanh.com
 // @grant       none
 // ==/UserScript==
 /* String Prototype */
@@ -419,7 +419,8 @@ var ABPVN = {
       'http://www.easysoft.xyz',
       'http://hdonline.vn',
       'http://anime47.com',
-      'https://www.phim.media'
+      'https://www.phim.media',
+	  'http://phimnhanh.com'
     ];
     for (var i = 0; i < listSite.length; i++) {
       if (this.url.startWith(listSite[i])) {
