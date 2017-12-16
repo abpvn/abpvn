@@ -11,9 +11,9 @@
 // @run-at      document-end
 // @include     http://*
 // @include     https://*
-// @version     2.2.5.5
+// @version     2.2.6
 // @noframes
-// @change-log  Block popup phimnhanh.com
+// @change-log  Block ads link aphim.co
 // @grant       none
 // ==/UserScript==
 /* String Prototype */
@@ -72,7 +72,7 @@ var byPass = {
       for (var j in lockDiv) {
         if(lockDiv[j].style){
           lockDiv[j].style.display = 'none !important';
-        }        
+        }
       }
     }
   },
@@ -112,7 +112,7 @@ var getLink = {
             this.style.backgroundImage = 'url("http://i.imgur.com/kJnOMOB.png")';
             this.setAttribute('title', 'Bật get link fshare');
             alert('Đã tắt get link fshare');
-          } 
+          }
           else {
             localStorage.off = false;
             this.setAttribute('title', 'Tắt get link fshare');
@@ -198,7 +198,7 @@ var getLink = {
             });
           }
         });
-      } 
+      }
       else {
         $('.policy_download').prepend('<div class="col-xs-12"><a title="Download nhanh qua linksvip.net" style="margin-top: 10px; height: 70px;" class="btn btn-success btn-lg btn-block btn-download-sms" href="http://linksvip.net?link=' + location.href + '">        <i class="fa fa-cloud-download fa-2x pull-left"></i>        <span class="pull-right text-right download-txt">            Tải nhanh<br>            <small>Qua dịch vụ linksvip.net</small>        </span></a></div>'
         );
@@ -224,7 +224,7 @@ var getLink = {
       } else {
         var a_link = document.querySelector('h4 a.btn-success');
         if (a_link) {
-          var link = a_link.getAttribute('href')
+          var link = a_link.getAttribute('href');
           if (link.startWith('https')) {
             location.href = link;
             document.body.innerHTML = '<center><h1>ABPVN UserCloud Download đã hoạt động</h1><a href=\'http://abpvn.com/napthe\'><h1>Ủng hộ ABPVN</h1></a><br/>Không tự tải xuống? <a href=\'' + link + '\' title=\'Download\'>Click vào đây</a></center>';
@@ -279,10 +279,10 @@ var fixSite = {
     css_tag.href = url;
     var head = document.getElementsByTagName('head')[0];
     head.appendChild(css_tag);
-  },  
-  phim_media: function () {    
-    if (this.url.startWith('https://www.phim.media/')||this.url.startWith('http://www.phim.media/')) {      
-      var link = document.querySelector('#btn-film-watch');      
+  },
+  phim_media: function () {
+    if (this.url.startWith('https://www.phim.media/')||this.url.startWith('http://www.phim.media/')) {
+      var link = document.querySelector('#btn-film-watch');
       if(link){
         var href = link.getAttribute('href');
         href = href.match('utm_id=.*') [0].replace('utm_id=', '');
@@ -290,7 +290,7 @@ var fixSite = {
           link.setAttribute('href', atob(href));
         }
         ABPVN.cTitle();
-      }      
+      }
     }
   },
   linkneverdie_com: function () {
@@ -318,7 +318,7 @@ var fixSite = {
   },
   maclife_vn: function(){
     if(this.url.startWith('https://maclife.vn/')){
-      var allShortUrl=document.querySelectorAll('a[rel]');      
+      var allShortUrl=document.querySelectorAll('a[rel]');
       var count=0;
       for(var i=0;i<allShortUrl.length;i++){
         if(allShortUrl[i].innerText.indexOf('http')===0){
@@ -329,12 +329,21 @@ var fixSite = {
       Logger.info("Đã xóa "+count+" link rút gọn!");
     }
   },
+  aphim_co: function(){
+      if (this.url.startWith('https://aphim.co/xem-phim/')) {
+          ABPVN.cTitle();
+          var aTagAds = document.querySelector('#video > a');
+          aTagAds.setAttribute('href','#abpvn');
+          aTagAds.removeAttribute('target');
+          Logger.info('Đã xóa link quảng cáo!');
+      }
+  },
   fontdep_com: function(){
     if(this.url.startWith('http://www.fontdep.com/')&&document.cookie.indexOf('virallock_myid')==-1){
       document.cookie='virallock_myid=0001';
       location.reload();
     }
-  }, 
+  },
   removeRedir(config) {
     if (this.url.startWith(config.url)) {
       ABPVN.cTitle();
@@ -371,15 +380,15 @@ var fixSite = {
         url: 'http://phanmemaz.com/',
         replace: 'http://phanmemaz.com/wp-content/plugins/tm-wordpress-redirection/l.php?'
       },
-	  {
-		  url:'https://vozforums.com',
-		  replace: '/redirect/index.php?link='
-	  }
+    {
+      url:'https://vozforums.com',
+      replace: '/redirect/index.php?link='
+    }
     ];
     configs.forEach(function (config) {
       this.removeRedir(config);
     }.bind(this));
-  },  
+  },
   init: function () {
     this.url = location.href;
     this.removeRedirect();
@@ -387,6 +396,7 @@ var fixSite = {
     this.linkneverdie_com();
     this.hdonline_vn();
     this.maclife_vn();
+    this.aphim_co();
     this.fontdep_com();
   }
 };
@@ -420,7 +430,7 @@ var ABPVN = {
       'http://hdonline.vn',
       'http://anime47.com',
       'https://www.phim.media',
-	  'http://phimnhanh.com'
+    'http://phimnhanh.com'
     ];
     for (var i = 0; i < listSite.length; i++) {
       if (this.url.startWith(listSite[i])) {
