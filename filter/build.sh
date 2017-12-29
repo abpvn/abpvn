@@ -14,7 +14,7 @@ sort -u -o src/abpvn_elemhide.txt src/abpvn_elemhide.tmp
 sort -u -o src/abpvn_whitelist.txt src/abpvn_whitelist.tmp
 sort -u -o src/abpvn_whitelist_elemhide.txt src/abpvn_whitelist_elemhide.tmp
 # make time stamp update
-TIME_STAMP=`date +'%d %B %Y %H:%M:%S'`
+TIME_STAMP=`date +'%d %b %Y %H:%M:'`
 VERSION=`date +'%Y%m%d%H%M'`
 sed -e "s/_time_stamp_/$TIME_STAMP/g" -e "s/_version_/$VERSION/g" src/abpvn_title.txt > src/abpvn_title.tmp
 # add to 1 file
