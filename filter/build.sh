@@ -18,7 +18,10 @@ TIME_STAMP=`date +'%d %B %Y %H:%M:%S'`
 VERSION=`date +'%Y%m%d%H%M'`
 sed -e "s/_time_stamp_/$TIME_STAMP/g" -e "s/_version_/$VERSION/g" src/abpvn_title.txt > src/abpvn_title.tmp
 # add to 1 file
-cat src/abpvn_title.tmp src/abpvn_general.txt src/abpvn_elemhide.txt src/abpvn_whitelist.txt src/abpvn_whitelist_elemhide.txt src/abpvn_adult.txt src/abpvn_adult_elemhide.txt > abpvn.txt
-cat src/abpvn_title.tmp src/abpvn_general.txt src/abpvn_whitelist.txt src/abpvn_adult.txt > abpvn_noelemhide.txt
+cat src/abpvn_title.tmp src/abpvn_general.txt src/abpvn_elemhide.txt src/abpvn_whitelist.txt src/abpvn_whitelist_elemhide.txt src/abpvn_adult.txt src/abpvn_adult_elemhide.txt > abpvn.tmp
+cat src/abpvn_title.tmp src/abpvn_general.txt src/abpvn_whitelist.txt src/abpvn_adult.txt > abpvn_noelemhide.tmp
+# add checksum
+py addChecksum.py -i abpvn.tmp -o abpvn.txt
+py addChecksum.py -i abpvn_noelemhide.txt -o abpvn_noelemhide.txt
 # remove tmp file
 rm -rf src/*.tmp
