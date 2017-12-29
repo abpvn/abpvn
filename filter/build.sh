@@ -24,4 +24,4 @@ cat src/abpvn_title.tmp src/abpvn_general.txt src/abpvn_whitelist.txt src/abpvn_
 py addChecksum.py -i abpvn.tmp -o abpvn.txt
 py addChecksum.py -i abpvn_noelemhide.txt -o abpvn_noelemhide.txt
 # remove tmp file
-rm -rf src/*.tmp
+rm -rf *.tmp
