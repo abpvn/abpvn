@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 201712301243
-! Title: ABPVN List [vuviphim.com]
+! Version: 201801010824
+! Title: ABPVN List [Fix google sheets]
 ! ABPVN List filter
-! Last modified: 30 Dec 2017 12:43 UTC+7
+! Last modified: 01 Jan 2018 08:24 UTC+7
 ! Expires: 3 days (update frequency)
 ! Homepage: http://abpvn.com/
 !
@@ -24,10 +24,10 @@ $webrtc,domain=phim14.net|phimotv.net
 /24h-ad.
 /468-x-60-
 /600x60_
-/ads/$xmlhttprequest
-/banner-ads.
+/ads/*.xml$xmlhttprequest
 /banner/*.gif
 /banner/*.swf
+/banner-ads.
 /blueserving.
 /fuckadblock.$script
 /images/qc/*
@@ -110,8 +110,8 @@ _990x100.
 ||boudja.com^$third-party
 ||brand.ad^
 ||browser.coccoc.com/js/
-||cdn-qc.coccoc.com^
 ||cdn.comedia.coccoc.com$object,script
+||cdn-qc.coccoc.com^
 ||chiasenhac.vn$popup,domain=hdonline.vn
 ||chiasenhac.vn/qc
 ||chodansinh.net^*.gif
@@ -145,9 +145,9 @@ _990x100.
 ||duancityland.com.vn/uploads/$domain=font.vn
 ||embed.mvpviet.com/data/$image,domain=2idol.tv
 ||endpoint.terratraf.com^$third-party
-||eva-m-ad.24hstatic.com^
 ||eva.vn/upload/background/
 ||eva.vn/upload^*.gif
+||eva-m-ad.24hstatic.com^
 ||filmphil.net^$subdocument
 ||forum.bkav.com.vn/images/Banner_BkavForum/
 ||forum.bkav.com.vn/images/Bkav_Smarthome/
@@ -174,10 +174,10 @@ _990x100.
 ||guidegame.vn/wp-content/plugins/wpsite-background-takeover/js/wpsite_clickable.js
 ||guidegame.vn/wp-content/uploads/2017/09/vo-lam-truyen-ky-kiem-ca-giang-ho.png
 ||hadarone.com^
+||hamtruyen.com/bannerqc/
 ||hamtruyen.com/Scripts/blueyonew.
 ||hamtruyen.com/Scripts/ixinh.js
 ||hamtruyen.com/Scripts/jwplayer.js
-||hamtruyen.com/bannerqc/
 ||hamtruyen.com/spoilDaupha_tap4.mp4
 ||hamtruyen.com/ytb.html
 ||hayhaytv.vn/file/*.php
@@ -293,8 +293,8 @@ _990x100.
 ||sohagame.vcmedia.vn/swf/
 ||somo.vn^$popup
 ||st.vitalk.vn/js/Vitalk/vastvideo_playonlyad_vitalk.js
-||static.24h.com.vn^*-background-
 ||static.24h.com.vn^*.swf
+||static.24h.com.vn^*-background-
 ||static.bongda24h.vn/medias/*.gif
 ||static.download.com.vn/cache.aspx?_path=*ad$script
 ||static.hayhaytv.com^*.mp4
@@ -303,16 +303,16 @@ _990x100.
 ||static.hayhaytv.vn^*.mp4
 ||static.hdonline.vn/ads/
 ||static.hdonline.vn/template/frontend/images/FloatbannerHDO.png
-||static.hdonline.vn/template/frontend/images/Topplayer.png
 ||static.hdonline.vn/template/frontend/images/float-logo-Pose.png
+||static.hdonline.vn/template/frontend/images/Topplayer.png
 ||static.htvonline.com.vn/layout/images/*_banner.jpg
 ||static.htvonline.com.vn/layout/images/lienhequangcao.png
 ||static.ketqua.net/adv_imgs
 ||static.nhaccuatui.com/imgqc/
 ||static.novanet.vn^
 ||staticflickr.com^*.gif$domain=chophanthiet.us
-||stc-tv.zing.vn/skins/tv_v2/js/fadblock.min.js
 ||stc.nas.nixcdn.com^*.gif
+||stc-tv.zing.vn/skins/tv_v2/js/fadblock.min.js
 ||storeanyc.link^$third-party
 ||strapolan.com^$third-party
 ||stream*.24h.com.vn/upload/*.swf
@@ -350,8 +350,8 @@ _990x100.
 ||vkool.net/js/pov*.js
 ||vkool.net/swf/$xmlhttprequest
 ||vnmedia.vn*/ads_*.
-||vnreview.vn/ThemeReview-theme/images/custom/sh_big.jpg
 ||vnreview.vn/play-clip/video/flvPlayer.swf
+||vnreview.vn/ThemeReview-theme/images/custom/sh_big.jpg
 ||vtv3.com/iframe$domain=phimnhanh.com
 ||vuighe.net/assest/json/pause.json$xmlhttprequest
 ||vuviphim.com/ads/b1.xml$xmlhttprequest
@@ -367,9 +367,9 @@ _990x100.
 ||yeah1.com^*/banners/
 ||yomedia.vn^$third-party
 !---------------ABPVN White List--------------------
-@@#-ad-util-/ad-iframe-/ads/160./ads/footer_/adsense5./rcolads1./sponsored_text./tmnadsense-ad=advertorial&/728x90_
 @@#/ad_generator./adlink_/adpicture2./ads/player-/adx_iframe_/banners/ad10./magic-ads/ad/msgads./retrad._300_250.
 @@#/adaffiliate_/adops/ad/adsales/ad/adsby./adtest./ajax/ads/ad/controller/ads/ad/pageads/ad/weather/ads/ad-728x90-
+@@#-ad-util-/ad-iframe-/ads/160./ads/footer_/adsense5./rcolads1./sponsored_text./tmnadsense-ad=advertorial&/728x90_
 @@/ads.js$domain=hayhaytv.vn|talktv.vn|chiasenhac.vn|hplus.com.vn|phim.media|linkneverdie.com|fptplay.vn|xemurl.com|hdonline.vn|123link.io|nhacpro.net|123link.co
 @@/ads/button.png
 @@/ads/play.png
