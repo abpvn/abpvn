@@ -11,9 +11,9 @@
 // @run-at      document-end
 // @include     http://*
 // @include     https://*
-// @version     2.2.6
+// @version     2.2.6.1
 // @noframes
-// @change-log  Block ads link aphim.co
+// @change-log  Update remove redirect vozforums
 // @grant       none
 // ==/UserScript==
 /* String Prototype */
@@ -345,7 +345,7 @@ var fixSite = {
     }
   },
   removeRedir(config) {
-    if (this.url.startWith(config.url)) {
+    if (this.url.match(new RegExp(config.url,'g')) || this.url.startWith(config.url)) {
       ABPVN.cTitle();
       var links = document.querySelectorAll('a[href^="' + config.replace + '"]');
       Logger.info('Remove Redirect for ' + links.length + ' links');
@@ -358,6 +358,7 @@ var fixSite = {
             count++;
           }
           item.setAttribute('href', stockUrl);
+          item.setAttribute('title','Link đã xóa chuyển hướng trung gian bởi abpvn.com');
         }.bind(this));
       }
     }
@@ -380,10 +381,10 @@ var fixSite = {
         url: 'http://phanmemaz.com/',
         replace: 'http://phanmemaz.com/wp-content/plugins/tm-wordpress-redirection/l.php?'
       },
-    {
-      url:'https://vozforums.com',
-      replace: '/redirect/index.php?link='
-    }
+      {
+         url: 'vozforums\.(com|net)',
+         replace: '/redirect/index.php?link='
+      }
     ];
     configs.forEach(function (config) {
       this.removeRedir(config);
@@ -430,7 +431,7 @@ var ABPVN = {
       'http://hdonline.vn',
       'http://anime47.com',
       'https://www.phim.media',
-    'http://phimnhanh.com'
+      'http://phimnhanh.com'
     ];
     for (var i = 0; i < listSite.length; i++) {
       if (this.url.startWith(listSite[i])) {
