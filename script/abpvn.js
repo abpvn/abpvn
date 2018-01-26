@@ -11,9 +11,9 @@
 // @run-at      document-end
 // @include     http://*
 // @include     https://*
-// @version     2.2.6.1
+// @version     2.2.7
 // @noframes
-// @change-log  Update remove redirect vozforums
+// @change-log  Anti 123link shorter api
 // @grant       none
 // ==/UserScript==
 /* String Prototype */
@@ -76,10 +76,31 @@ var byPass = {
       }
     }
   },
+  anti123link: function(){
+    var allShortLink = document.querySelectorAll('a[href^="http://123link"]');
+    var count = 0;
+    if(allShortLink.length){
+      ABPVN.cTitle();
+      for(var i=0;i<allShortLink.length;i++){
+        var processingLink = allShortLink[i];        
+        var href = processingLink.getAttribute('href');
+        var tmp = href.match(/url=(.+?)&|$/);        ;
+        if(tmp[1]){
+          processingLink.setAttribute('href', atob(tmp[1]));
+          var oldTitle = processingLink.getAttribute('title');
+          processingLink.setAttribute('title',oldTitle?(oldTitle+' '):''+'123link by pass by ABPVN');
+          count++;
+        }
+      }
+      Logger.info("By pass "+count+" 123link short");
+    }
+  },
   init: function () {
     window.addEventListener('DOMContentLoaded', this.hideLinkUnlock);
     window.addEventListener('load', this.hideLinkUnlock);
     this.hideLinkUnlock();
+    window.addEventListener('DOMContentLoaded',  this.anti123link);
+    
   }
 };
 //Logger Class
