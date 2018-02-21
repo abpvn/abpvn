@@ -11,7 +11,7 @@
 // @run-at      document-end
 // @include     http://*
 // @include     https://*
-// @version     2.2.7
+// @version     2.2.7.1
 // @noframes
 // @change-log  Block popup at http://www.vietsubhd.com
 // @grant       none
