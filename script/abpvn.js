@@ -13,7 +13,7 @@
 // @include     https://*
 // @version     2.2.7
 // @noframes
-// @change-log  Anti 123link shorter api
+// @change-log  Block popup at http://www.vietsubhd.com
 // @grant       none
 // ==/UserScript==
 /* String Prototype */
@@ -452,7 +452,8 @@ var ABPVN = {
       'http://hdonline.vn',
       'http://anime47.com',
       'https://www.phim.media',
-      'http://phimnhanh.com'
+      'http://phimnhanh.com',
+      'http://www.vietsubhd.com'
     ];
     for (var i = 0; i < listSite.length; i++) {
       if (this.url.startWith(listSite[i])) {
