@@ -11,8 +11,8 @@
 // @run-at      document-end
 // @include     http://*
 // @include     https://*
-// @version     2.2.8
-// @change-log  Update fshare auto download, fix openload ads
+// @version     2.2.8.1
+// @change-log  Adjust openload
 // @grant       none
 // ==/UserScript==
 /* String Prototype */
@@ -348,6 +348,11 @@ var fixSite = {
                                         .attr('style', 'position: absolute; top: 0 ; left: 0 ; right: 0; text-align: center; z-index: 9999; background-color: #00DC58; padding: .5em 0;')
                                         .on('mouseenter', function(){ $(this).fadeTo(500, 1); }).on('mouseleave', function(){ $(this).fadeTo(500, 0); })
                                         .append( $('<a/>').attr('href', '').attr('style', 'color: #fff; text-decoration: none;').html('FREE DOWNLOAD<sub>Power by abpvn.com</sub>') ) );
+        if(document.location.href.match(/\/embed\//)){
+         setTimeout(function(){
+          $('#realdl').fadeTo(500,0);
+         },1500); 
+        }        
        $('#realdl').show();
        var tmrstreamurl = setInterval(function(){
         if( $(streamurl).text() != 'HERE IS THE LINK' )
