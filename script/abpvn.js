@@ -11,9 +11,8 @@
 // @run-at      document-end
 // @include     http://*
 // @include     https://*
-// @version     2.2.7.1
-// @noframes
-// @change-log  Block popup at http://www.vietsubhd.com
+// @version     2.2.8
+// @change-log  Update fshare auto download, fix openload ads
 // @grant       none
 // ==/UserScript==
 /* String Prototype */
@@ -145,21 +144,19 @@ var getLink = {
     }
   },
   FShareGetLink: function () {
-    if (this.url.startWith('https://www.fshare.vn/file/')) {
+    if (this.url.startWith('https://www.fshare.vn/file/') && !this.url.startWith('https://www.fshare.vn/file/manager')) {
       if (localStorage.off != 'true') {
         console.info('Start get link Fshare.vn');
         $(document).ready(function () {
-          var checkpassword = document.querySelector('.fa-lock');
-          var linkcode = $('[data-linkcode]').attr('data-linkcode');
+          var checkpassword = document.querySelector('.password-form');
+          var linkcode = $('#linkcode').val();
           if (checkpassword === null) {
-            var code = $('input[name=fs_csrf]').val();
-            var speed = $(this).data('speed');
+            var code = $('#form-download input[name="_csrf-app"]').val();           
             var data = {
-              'fs_csrf': code,
-              'DownloadForm[pwd]': '',
-              'DownloadForm[linkcode]': linkcode,
-              'ajax': 'download-form',
-              'undefined': 'undefined'
+              '_csrf-app': code,
+              'fcode5': '',
+              'linkcode': linkcode,
+              'withFcode5': 0,
             };
             $.post('/download/get', data).done(function (data, statusText, xhr) {
               if (data.url === undefined) location.reload();
@@ -169,59 +166,21 @@ var getLink = {
                   location.href = data.url;
                 } 
                 else {
-                  $('.policy_download').prepend('<div class="col-xs-12"><a title="Download nhanh qua linksvip.net" style="margin-top: 10px; height: 70px;" class="btn btn-success btn-lg btn-block btn-download-sms" href="' + data.url + '">        <i class="fa fa-cloud-download fa-2x pull-left"></i>        <span class="pull-right text-right download-txt">            Tải trực tiếp<br>            <small>Hỗ trợ bởi abpvn.com</small>        </span></a></div>'
+                  $('.download').prepend('<a title="Tải trực tiếp" style="padding: 5px 0;box-sizing: content-box;" class="download-btn mdc-button mdc-button--raised mdc-ripple-upgraded full-width mdc-button-primary fcode5" href="' + data.url + '">Tải trực tiếp<span>Hỗ trợ bởi abpvn.com</span></a>'
                   );
                 }
               }
             }).fail(function (xhr, statusText, error) {
-              $.alert({
-                success: false,
-                message: 'ABPVN: Đã có lỗi fshare hoặc file có password'
-              });
+              alert('ABPVN: Đã có lỗi fshare hoặc file có password');
             });
           } 
           else {
-            $.alert({
-              success: false,
-              message: 'ABPVN: Hãy nhập mật khẩu cho file trước'
-            });
-            $('#download-form').unbind('submit');
-            $('#download-form').submit(function (event) {
-              var pwd = $('#DownloadForm_pwd').val();
-              var code = $('input[name=fs_csrf]').val();
-              var speed = $(this).data('speed');
-              var data = {
-                'fs_csrf': code,
-                'DownloadForm[pwd]': pwd,
-                'DownloadForm[linkcode]': linkcode,
-                'ajax': 'download-form',
-                'undefined': 'undefined'
-              };
-              $.post('/download/get', data).done(function (data, statusText, xhr) {
-                if (data.url === undefined) location.reload();
-                 else {
-                  if (typeof location != 'undefined') {
-                    console.log('ABPVN: ' + location.href + ' -> ' + data.url);
-                    location.href = data.url;
-                  } 
-                  else {
-                    $('.policy_download').prepend('<div class="col-xs-12"><a title="Download nhanh qua linksvip.net" style="margin-top: 10px; height: 70px;" class="btn btn-success btn-lg btn-block btn-download-sms" href="' + data.url + '">        <i class="fa fa-cloud-download fa-2x pull-left"></i>        <span class="pull-right text-right download-txt">            Tải trực tiếp<br>            <small>Hỗ trợ bởi abpvn.com</small>        </span></a></div>'
-                    );
-                  }
-                }
-              }).fail(function (xhr, statusText, error) {
-                $.alert({
-                  success: false,
-                  message: 'ABPVN: Đã có lỗi fshare hoặc file có password'
-                });
-              });
-              event.preventDefault();
-            });
+            alert('ABPVN: Hãy nhập mật khẩu cho file trước');           
           }
         });
       }
       else {
-        $('.policy_download').prepend('<div class="col-xs-12"><a title="Download nhanh qua linksvip.net" style="margin-top: 10px; height: 70px;" class="btn btn-success btn-lg btn-block btn-download-sms" href="http://linksvip.net?link=' + location.href + '">        <i class="fa fa-cloud-download fa-2x pull-left"></i>        <span class="pull-right text-right download-txt">            Tải nhanh<br>            <small>Qua dịch vụ linksvip.net</small>        </span></a></div>'
+        $('.download').prepend('<a title="Download nhanh qua linksvip.net" style="padding: 5px 0;box-sizing: content-box;" class="download-btn mdc-button mdc-button--raised mdc-ripple-upgraded full-width mdc-button-primary fcode5" href="http://linksvip.net?link=' + location.href + '">Tải nhanh<span>Qua dịch vụ linksvip.net</span></a>'
         );
       }
     }
@@ -359,6 +318,52 @@ var fixSite = {
           Logger.info('Đã xóa link quảng cáo!');
       }
   },
+  openload: function(){
+    if(this.url.match(/^(https?:)?\/\/openload\.co\/*.*/) || this.url.match(/^(https?:)?\/\/oload\.(tv|stream)\/*.*/)){
+     //Base on https://greasyfork.org/vi/scripts/17665-openload
+     //
+     // @run-at document-start
+     //
+     window.adblock=false;
+     window.adblock2=false;
+     window.turnoff=true;
+     window.open=function(){};
+     //
+     // @run-at document-end
+     //
+     function onready(fn){if(document.readyState!='loading')fn();else document.addEventListener('DOMContentLoaded',fn);}
+
+     onready(function(){
+      if( document.location.href.match(/\/embed\//) || $('#realdl>a') )
+      {
+       var streamurl = '#streamurl, #streamuri, #streamurj';
+       $('#btnView').hide();
+       $('#btnDl').hide();
+       $('.dlButtonContainer').show();
+       $('h3.dlfile.h-method').hide();
+       $('.col-md-4.col-centered-sm *').remove();
+       $('#mgiframe,#main>div[id*="Composite"]').remove();
+       $('#downloadTimer').hide();
+       $('#mediaspace_wrapper').prepend( $('<div/>').attr('id', 'realdl')
+                                        .attr('style', 'position: absolute; top: 0 ; left: 0 ; right: 0; text-align: center; z-index: 9999; background-color: #00DC58; padding: .5em 0;')
+                                        .on('mouseenter', function(){ $(this).fadeTo(500, 1); }).on('mouseleave', function(){ $(this).fadeTo(500, 0); })
+                                        .append( $('<a/>').attr('href', '').attr('style', 'color: #fff; text-decoration: none;').html('FREE DOWNLOAD<sub>Power by abpvn.com</sub>') ) );
+       $('#realdl').show();
+       var tmrstreamurl = setInterval(function(){
+        if( $(streamurl).text() != 'HERE IS THE LINK' )
+        {
+         $('#realdl a').attr('href', '/stream/' + $(streamurl).text());
+         $('#videooverlay').click();
+         clearInterval(tmrstreamurl);
+        }
+       },100);
+      }
+      window.onclick=function(){};
+      document.onclick=function(){};
+      document.body.onclick=function(){};
+     });
+    }    
+  },
   fontdep_com: function(){
     if(this.url.startWith('http://www.fontdep.com/')&&document.cookie.indexOf('virallock_myid')==-1){
       document.cookie='virallock_myid=0001';
@@ -420,6 +425,7 @@ var fixSite = {
     this.maclife_vn();
     this.aphim_co();
     this.fontdep_com();
+    this.openload();
   }
 };
 //Main class
