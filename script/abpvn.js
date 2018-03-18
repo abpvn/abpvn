@@ -11,8 +11,8 @@
 // @run-at      document-end
 // @include     http://*
 // @include     https://*
-// @version     2.2.8.1
-// @change-log  Adjust openload
+// @version     2.2.8.2
+// @change-log  Update phim.media
 // @grant       none
 // ==/UserScript==
 /* String Prototype */
@@ -262,13 +262,15 @@ var fixSite = {
   },
   phim_media: function () {
     if (this.url.startWith('https://www.phim.media/')||this.url.startWith('http://www.phim.media/')) {
-      var link = document.querySelector('#btn-film-watch');
-      if(link){
-        var href = link.getAttribute('href');
-        href = href.match('utm_id=.*') [0].replace('utm_id=', '');
-        if (href) {
-          link.setAttribute('href', atob(href));
-        }
+      var links = document.querySelectorAll('#btn-film-watch,.poster > a');
+      if(links){
+        for(var i=0;i<links.length;i++){          
+          var href = links[i].getAttribute('href');
+          href = href.match('utm_id=.*') [0].replace('utm_id=', '');
+          if (href) {
+            links[i].setAttribute('href', atob(href));
+          } 
+        }       
         ABPVN.cTitle();
       }
     }
