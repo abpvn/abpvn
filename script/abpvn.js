@@ -11,8 +11,8 @@
 // @run-at      document-end
 // @include     http://*
 // @include     https://*
-// @version     2.2.8.2
-// @change-log  Update phim.media
+// @version     2.2.9
+// @change-log  Update br-art.vn
 // @grant       none
 // ==/UserScript==
 /* String Prototype */
@@ -44,7 +44,7 @@ var removeDuplicates = function (arr) {
 //Bypass Class
 var byPass = {
   hideLinkUnlock: function () {
-    var contentDiv = document.querySelectorAll('.onp-sl-content,.onp-locker-call');
+    var contentDiv = document.querySelectorAll('.onp-sl-content,.onp-locker-call,[data-locker-id]');
     if (contentDiv.length) {
       ABPVN.cTitle();
       //Add style tag to hide all .onp-sl and show all .onp-sl-content
@@ -67,10 +67,11 @@ var byPass = {
         }
       } //Hide All LockDiv
 
-      var lockDiv = document.querySelectorAll('.onp-sl');
+      var lockDiv = document.querySelectorAll('.onp-sl,div[id^="content-locker"]');
       for (var j in lockDiv) {
         if(lockDiv[j].style){
           lockDiv[j].style.display = 'none !important';
+          lockDiv[j].setAttribute('hidden','hidden');
         }
       }
     }
