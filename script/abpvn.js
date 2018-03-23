@@ -11,8 +11,8 @@
 // @run-at      document-end
 // @include     http://*
 // @include     https://*
-// @version     2.2.9
-// @change-log  Update br-art.vn
+// @version     2.2.9.1
+// @change-log  Fix unlock hide link nhasachtoeic.com
 // @grant       none
 // ==/UserScript==
 /* String Prototype */
@@ -51,7 +51,7 @@ var byPass = {
       if (!document.getElementById('abpvn_style')) {
         var style = document.createElement('style');
         style.id = 'abpvn_style';
-        style.innerHTML = '.onp-sl-content{display:block!important;}.onp-sl{display:none!important;}';
+        style.innerHTML = '.onp-sl-content{display:block!important;}.onp-sl,.onp-sl-overlap-box{display:none!important;}';
         document.body.appendChild(style);
       }      //ShowALl ContentDiv
 
