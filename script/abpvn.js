@@ -11,8 +11,8 @@
 // @run-at      document-end
 // @include     http://*
 // @include     https://*
-// @version     2.2.9.1
-// @change-log  Fix unlock hide link nhasachtoeic.com
+// @version     2.2.9.2
+// @change-log  Update openload block popup
 // @grant       none
 // ==/UserScript==
 /* String Prototype */
@@ -322,7 +322,7 @@ var fixSite = {
       }
   },
   openload: function(){
-    if(this.url.match(/^(https?:)?\/\/openload\.co\/*.*/) || this.url.match(/^(https?:)?\/\/oload\.(tv|stream)\/*.*/)){
+    if(this.url.match(/^(https?:)?\/\/openload\.co\/*.*/) || this.url.match(/^(https?:)?\/\/oload\.\/*.*/)){
      //Base on https://greasyfork.org/vi/scripts/17665-openload
      //
      // @run-at document-start
