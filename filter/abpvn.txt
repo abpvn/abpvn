@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 201804050932
+! Version: 201804051440
 ! Title: ABPVN List [facebook.com]
 ! ABPVN List filter
-! Last modified: 05 Apr 2018 09:32 UTC+7
+! Last modified: 05 Apr 2018 14:40 UTC+7
 ! Expires: 3 days (update frequency)
 ! Homepage: http://abpvn.com/
 !
@@ -973,6 +973,7 @@ facebook.com##a[href^="/ajax/emu/end.php?"]
 facebook.com##a[href^="https://l.facebook.com/"][href*="%2526ad_id%"]
 facebook.com##button[data-gt*="\"ref\":\"ad\""]
 facebook.com##div[id^="sponsoredTickerStory_"]
+facebook.com#?#div[id^="hyperfeed_story_id_"]:-abp-has(a[href="#"]:-abp-contains(ĐưĐợc Đtài Đtrợ))
 footyroom.com###tfasyncframe_0
 footyroom.com##.wide_sponsors
 forum.bkav.com.vn###fanback
