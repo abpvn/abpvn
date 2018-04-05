@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 201804050917
+! Version: 201804050932
 ! Title: ABPVN List [facebook.com]
 ! ABPVN List filter
-! Last modified: 05 Apr 2018 09:17 UTC+7
+! Last modified: 05 Apr 2018 09:32 UTC+7
 ! Expires: 3 days (update frequency)
 ! Homepage: http://abpvn.com/
 !
@@ -946,10 +946,33 @@ eva.vn###ADS_132_15s_0
 eva.vn###right_ads > .ads_unit:nth-of-type(1)
 eva.vn##.banner_top_masthead
 eva.vn##.banner300250-L
+facebook.com###pagelet_ads_when_no_friend_list_suggestion
 facebook.com###pagelet_ego_pane a[ajaxify*="&eid="]
+facebook.com##.ego_section a[href^="http://l.facebook.com/l.php?u="][href*="%26adgroup_id%"]
+facebook.com##.ego_section a[href^="http://l.facebook.com/l.php?u="][href*="utm_medium"]
+facebook.com##.ego_section a[href^="http://l.facebook.com/l.php?u="][href*="utm_source"]
+facebook.com##.ego_section a[href^="https://l.facebook.com/l.php?u="][href*="%26ad_id%"]
+facebook.com##.ego_section a[href^="https://l.facebook.com/l.php?u="][href*="%26ad_id%"] + div
+facebook.com##.ego_section a[href^="https://l.facebook.com/l.php?u="][href*="%26adgroup_id%"]
+facebook.com##.ego_section a[href^="https://l.facebook.com/l.php?u="][href*="%3Fcampaign%3D"]
+facebook.com##.ego_section a[href^="https://l.facebook.com/l.php?u="][href*=".intelliad.de"]
+facebook.com##.ego_section a[href^="https://l.facebook.com/l.php?u="][href*="adfarm.mediaplex.com"]
+facebook.com##.ego_section a[href^="https://l.facebook.com/l.php?u="][href*="fb_source%3Dad%26tag%3D"]
+facebook.com##.ego_section a[href^="https://l.facebook.com/l.php?u="][href*="fb_source%3Dad%26tag%3D"] + div
+facebook.com##.ego_section a[href^="https://l.facebook.com/l.php?u="][href*="https%3A%2F%2Fgoo.gl%2F"]
 facebook.com##.ego_section a[href^="https://l.facebook.com/l.php?u="][href*="utm_medium"]
 facebook.com##.ego_section a[href^="https://l.facebook.com/l.php?u="][href*="utm_source"]
 facebook.com##.ego_section:if(a[href^="/ad_campaign"])
+facebook.com##.fixedAux .pbm
+facebook.com##.muffin.group
+facebook.com##.ownsection[role="option"]
+facebook.com##[data-referrer="pagelet_side_ads"]
+facebook.com##[href^="/ads/adboard/"]
+facebook.com##a[ajaxify*="&eid="] + a[href^="https://l.facebook.com/l.php?u="]
+facebook.com##a[href^="/ajax/emu/end.php?"]
+facebook.com##a[href^="https://l.facebook.com/"][href*="%2526ad_id%"]
+facebook.com##button[data-gt*="\"ref\":\"ad\""]
+facebook.com##div[id^="sponsoredTickerStory_"]
 footyroom.com###tfasyncframe_0
 footyroom.com##.wide_sponsors
 forum.bkav.com.vn###fanback
