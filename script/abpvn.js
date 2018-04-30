@@ -11,8 +11,8 @@
 // @run-at      document-end
 // @include     http://*
 // @include     https://*
-// @version     2.2.10
-// @change-log  Fix ads can't block by ublock and ABP on xem7.com
+// @version     2.2.10.1
+// @change-log  Remove xem7.com. Because it fixed in Chrome 66
 // @grant       none
 // ==/UserScript==
 /* String Prototype */
@@ -397,18 +397,6 @@ var fixSite = {
       }
     }
   },
-  xem7_com: function(){
-    if(this.url.startWith('http://xem7.com')){
-      //Remove all .ad_location by css
-      if(!document.getElementById('#ABPVN_style')){
-        var styleTag = document.createElement('style');
-        styleTag.id = 'ABPVN_style';
-        styleTag.innerHTML = '.ad_location{display: none !important;}';
-        document.head.appendChild(styleTag);
-      }
-      ABPVN.cTitle();
-    }
-  },
   removeRedirect() {
     var configs = [
       {
@@ -446,7 +434,6 @@ var fixSite = {
     this.aphim_co();
     this.fontdep_com();
     this.openload();
-    this.xem7_com();
   }
 };
 //Main class
