@@ -11,8 +11,8 @@
 // @run-at      document-end
 // @include     http://*
 // @include     https://*
-// @version     2.2.10.1
-// @change-log  Remove xem7.com. Because it fixed in Chrome 66
+// @version     2.2.10.2
+// @change-log  Support mediafire auto download in https url
 // @grant       none
 // ==/UserScript==
 /* String Prototype */
@@ -187,7 +187,7 @@ var getLink = {
     }
   },
   mediafire_com: function () {
-    if (this.url.startWith('http://www.mediafire.com/file/')) {
+    if (this.url.startWith('http://www.mediafire.com/file/') || this.url.startWith('https://www.mediafire.com/file/')) {
       var a_tag = document.querySelector('.download_link a');
       var link = a_tag.getAttribute('href');
       if (link.startWith('http')) {
