@@ -358,7 +358,7 @@ var fixSite = {
         }        
        $('#realdl').show();
        var tmrstreamurl = setInterval(function(){
-        if( $(streamurl).text() != 'HERE IS THE LINK' )
+        if($(streamurl).text() != '640K ought to be enough for anybody')
         {
          $('#realdl a').attr('href', '/stream/' + $(streamurl).text());
          $('#videooverlay').click();
