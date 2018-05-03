@@ -11,8 +11,8 @@
 // @run-at      document-end
 // @include     http://*
 // @include     https://*
-// @version     2.2.11
-// @change-log  Use higher z-index for fshare config button
+// @version     2.2.10.3
+// @change-log  Use higher z-index for fshare button
 // @grant       none
 // ==/UserScript==
 /* String Prototype */
@@ -187,7 +187,7 @@ var getLink = {
     }
   },
   mediafire_com: function () {
-    if (this.url.startWith('http://www.mediafire.com/file/')) {
+    if (this.url.startWith('http://www.mediafire.com/file/') || this.url.startWith('https://www.mediafire.com/file/')) {
       var a_tag = document.querySelector('.download_link a');
       var link = a_tag.getAttribute('href');
       if (link.startWith('http')) {
@@ -397,18 +397,6 @@ var fixSite = {
       }
     }
   },
-  xem7_com: function(){
-    if(this.url.startWith('http://xem7.com')){
-      //Remove all .ad_location by css
-      if(!document.getElementById('#ABPVN_style')){
-        var styleTag = document.createElement('style');
-        styleTag.id = 'ABPVN_style';
-        styleTag.innerHTML = '.ad_location{display: none !important;}';
-        document.head.appendChild(styleTag);
-      }
-      ABPVN.cTitle();
-    }
-  },
   removeRedirect() {
     var configs = [
       {
@@ -446,7 +434,6 @@ var fixSite = {
     this.aphim_co();
     this.fontdep_com();
     this.openload();
-    this.xem7_com();
   }
 };
 //Main class
