@@ -11,8 +11,8 @@
 // @run-at      document-end
 // @include     http://*
 // @include     https://*
-// @version     2.2.10.2
-// @change-log  Support mediafire auto download in https url
+// @version     2.2.11
+// @change-log  Use higher z-index for fshare config button
 // @grant       none
 // ==/UserScript==
 /* String Prototype */
@@ -124,7 +124,7 @@ var getLink = {
     if (this.url.startWith('https://www.fshare.vn')) {
       var background_image = localStorage.off == 'true' ? 'url("http://i.imgur.com/kJnOMOB.png")' : 'url("http://i.imgur.com/2b7fN6a.png")';
       var title = localStorage.off == 'true' ? 'Bật get link fshare' : 'Tắt get link fshare';
-      var html = '<div id=\'fs_click\' title=\'' + title + '\' style=\'position: fixed; right: 0; bottom: 0; width: 30px; height: 30px; border-radius: 50%; background-image: ' + background_image + '; background-size: cover; cursor: pointer; z-index: 9999;\'></div>';
+      var html = '<div id=\'fs_click\' title=\'' + title + '\' style=\'position: fixed; right: 0; bottom: 0; width: 30px; height: 30px; border-radius: 50%; background-image: ' + background_image + '; background-size: cover; cursor: pointer; z-index: 99999;\'></div>';
       $(document).ready(function () {
         $(document.body).append(html);
         $(document).on('click', '#fs_click', function FS_on_off() {
@@ -187,7 +187,7 @@ var getLink = {
     }
   },
   mediafire_com: function () {
-    if (this.url.startWith('http://www.mediafire.com/file/') || this.url.startWith('https://www.mediafire.com/file/')) {
+    if (this.url.startWith('http://www.mediafire.com/file/')) {
       var a_tag = document.querySelector('.download_link a');
       var link = a_tag.getAttribute('href');
       if (link.startWith('http')) {
@@ -397,6 +397,18 @@ var fixSite = {
       }
     }
   },
+  xem7_com: function(){
+    if(this.url.startWith('http://xem7.com')){
+      //Remove all .ad_location by css
+      if(!document.getElementById('#ABPVN_style')){
+        var styleTag = document.createElement('style');
+        styleTag.id = 'ABPVN_style';
+        styleTag.innerHTML = '.ad_location{display: none !important;}';
+        document.head.appendChild(styleTag);
+      }
+      ABPVN.cTitle();
+    }
+  },
   removeRedirect() {
     var configs = [
       {
@@ -434,6 +446,7 @@ var fixSite = {
     this.aphim_co();
     this.fontdep_com();
     this.openload();
+    this.xem7_com();
   }
 };
 //Main class
