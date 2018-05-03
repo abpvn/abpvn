@@ -11,8 +11,8 @@
 // @run-at      document-end
 // @include     http://*
 // @include     https://*
-// @version     2.2.10.3
-// @change-log  Use higher z-index for fshare button
+// @version     2.2.10.4
+// @change-log  Update openload fix link
 // @grant       none
 // ==/UserScript==
 /* String Prototype */
@@ -339,7 +339,7 @@ var fixSite = {
      onready(function(){
       if( document.location.href.match(/\/embed\//) || $('#realdl>a') )
       {
-       var streamurl = '#streamurl, #streamuri, #streamurj';
+       var streamurl = '#streamurl,#streamuri,#streamurj,#adbdetect + script + div > p:nth-child(2)';
        $('#btnView').hide();
        $('#btnDl').hide();
        $('.dlButtonContainer').show();
