@@ -11,8 +11,8 @@
 // @run-at      document-end
 // @include     http://*
 // @include     https://*
-// @version     2.2.10.4
-// @change-log  Update openload fix link
+// @version     2.2.10.5
+// @change-log  Add mgIdAdRemover
 // @grant       none
 // ==/UserScript==
 /* String Prototype */
@@ -424,8 +424,18 @@ var fixSite = {
       this.removeRedir(config);
     }.bind(this));
   },
+  mgIdAdRemover: function(){
+    var allMgIdEl = document.querySelectorAll('[id*="ScriptRoot"]');
+    if(allMgIdEl && allMgIdEl.length){
+      ABPVN.cTitle();
+      for(var i = 0;i<allMgIdEl.length;i++){
+        allMgIdEl[i].remove();
+      }
+    }    
+  },
   init: function () {
     this.url = location.href;
+    this.mgIdAdRemover();
     this.removeRedirect();
     this.phim_media();
     this.linkneverdie_com();
@@ -433,7 +443,7 @@ var fixSite = {
     this.maclife_vn();
     this.aphim_co();
     this.fontdep_com();
-    this.openload();
+    this.openload();    
   }
 };
 //Main class
