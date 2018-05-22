@@ -1,8 +1,8 @@
 ﻿[Adblock Plus 2.0]
-! Version: 201805220858
-! Title: ABPVN List [optimize filter]
+! Version: 201805222006
+! Title: ABPVN List [anime47.com]
 ! ABPVN List filter
-! Last modified: 22 May 2018 08:58 UTC+7
+! Last modified: 22 May 2018 20:06 UTC+7
 ! Expires: 3 days (update frequency)
 ! Homepage: http://abpvn.com/
 !
@@ -212,6 +212,7 @@ _ads_
 ||anh.24h.com.vn/upload/*.gif
 ||anime14.net/wp-content/themes/phim3s/js/light.js
 ||anime47.com/BdcOadT.gif
+||anime47.com/skin/24032017/js/global.js
 ||anivn.com/images/sim-so-dep.jpg
 ||anthill.vn^$third-party
 ||ants.vn^$third-party
@@ -910,19 +911,19 @@ eva.vn##.banner_top_masthead
 eva.vn##.banner300250-L
 eva.vn##[id^="ADS_"]
 facebook.com###pagelet_ads_when_no_friend_list_suggestion
-facebook.com###pagelet_ego_pane a[ajaxify*="&eid="]
 facebook.com###pagelet_ego_pane a[ajaxify*="&eid="] + div
+facebook.com###pagelet_ego_pane a[ajaxify*="&eid="]
 facebook.com##.ego_section a[href^="http://l.facebook.com/l.php?u="][href*="%26adgroup_id%"]
 facebook.com##.ego_section a[href^="http://l.facebook.com/l.php?u="][href*="utm_medium"]
 facebook.com##.ego_section a[href^="http://l.facebook.com/l.php?u="][href*="utm_source"]
-facebook.com##.ego_section a[href^="https://l.facebook.com/l.php?u="][href*="%26ad_id%"]
 facebook.com##.ego_section a[href^="https://l.facebook.com/l.php?u="][href*="%26ad_id%"] + div
+facebook.com##.ego_section a[href^="https://l.facebook.com/l.php?u="][href*="%26ad_id%"]
 facebook.com##.ego_section a[href^="https://l.facebook.com/l.php?u="][href*="%26adgroup_id%"]
 facebook.com##.ego_section a[href^="https://l.facebook.com/l.php?u="][href*="%3Fcampaign%3D"]
 facebook.com##.ego_section a[href^="https://l.facebook.com/l.php?u="][href*=".intelliad.de"]
 facebook.com##.ego_section a[href^="https://l.facebook.com/l.php?u="][href*="adfarm.mediaplex.com"]
-facebook.com##.ego_section a[href^="https://l.facebook.com/l.php?u="][href*="fb_source%3Dad%26tag%3D"]
 facebook.com##.ego_section a[href^="https://l.facebook.com/l.php?u="][href*="fb_source%3Dad%26tag%3D"] + div
+facebook.com##.ego_section a[href^="https://l.facebook.com/l.php?u="][href*="fb_source%3Dad%26tag%3D"]
 facebook.com##.ego_section a[href^="https://l.facebook.com/l.php?u="][href*="https%3A%2F%2Fgoo.gl%2F"]
 facebook.com##.ego_section a[href^="https://l.facebook.com/l.php?u="][href*="utm_medium"]
 facebook.com##.ego_section a[href^="https://l.facebook.com/l.php?u="][href*="utm_source"]
@@ -994,8 +995,8 @@ keonhacai.com##.ctnz
 keonhacai.com##.page_bg > .wrapper > .page > .container-inner > .ctn
 ketqua.net##.adsb
 ketqua.vn###left_ads
-kienthuc.net.vn##.sponsor-zone
 kienthuc.net.vn##.sponsor-zone + div
+kienthuc.net.vn##.sponsor-zone
 kphim.tv##.ads_player
 kphim.tv##.right-movie-info
 kqxs.vn##.bggradient-mien
@@ -1150,7 +1151,6 @@ youtube.com##ytd-search-pyv-renderer
 ytmp3.cc###pa_download
 zippyshare.com##.center_ad
 !---------------ABPVN White List--------------------
-@@$xmlhttprequest,domain=anime47.com
 @@//adservice.google.$domain=download.mokeedev.com
 @@/ads.html$domain=xemrap.com
 @@/ads.js$domain=talktv.vn|chiasenhac.vn|hplus.com.vn|phim.media|fptplay.vn|xemurl.com|nhacpro.net
