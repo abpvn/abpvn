@@ -1,8 +1,8 @@
 ﻿[Adblock Plus 2.0]
-! Version: 201805220819
-! Title: ABPVN List [facebook.com]
+! Version: 201805220826
+! Title: ABPVN List [optimize filter]
 ! ABPVN List filter
-! Last modified: 22 May 2018 08:19 UTC+7
+! Last modified: 22 May 2018 08:26 UTC+7
 ! Expires: 3 days (update frequency)
 ! Homepage: http://abpvn.com/
 !
@@ -387,8 +387,13 @@ _ads_
 ||exoclick.com^
 ||explorads.com^
 ||eyeota.net^
+||facebook.com/audiencenetwork/$third-party
+||facebook.com/video/instream_video/$xmlhttprequest,domain=facebook.com
 ||facebook.com/video/instream_video/view/story/async/
 ||facebook.com^$popup,domain=vung.tv
+||facebook.com^*/instream/vast.xml?
+||fbcdn.net/safe_image.php?d=*&url=http%3A%2F%2Fwww.facebook.com%2Fads%2Fimage%2F%3F$domain=facebook.com
+||fbcdn.net^*/flyers/$domain=facebook.com
 ||fftrack.pro^$popup
 ||fifaaddict.com/banner/
 ||filmphil.net^$subdocument
@@ -820,6 +825,7 @@ ad_300_250
 ###player-ads
 ###qcBallonright
 ###watch7-sidebar-ads
+##.ad
 ##.ad_header
 ##.ad-728
 ##.AdBox
@@ -916,7 +922,6 @@ coccoc.com##video
 coccoc.com#?#ul>li:-abp-has(span:-abp-contains(Ad))
 comicvn.net##.fancybox-overlay
 dantri.com.vn##.admicro
-design.tutsplus.com##.avert
 design.tutsplus.com##.avert--sticky
 d-h.st###downloadfile2
 download.cnet.com##.download-fd-leaderboard-ad-top
@@ -936,15 +941,18 @@ eva.vn##.banner300250-L
 eva.vn##[id^="ADS_"]
 facebook.com###pagelet_ads_when_no_friend_list_suggestion
 facebook.com###pagelet_ego_pane a[ajaxify*="&eid="]
+facebook.com###pagelet_ego_pane a[ajaxify*="&eid="] + div
 facebook.com##.ego_section a[href^="http://l.facebook.com/l.php?u="][href*="%26adgroup_id%"]
 facebook.com##.ego_section a[href^="http://l.facebook.com/l.php?u="][href*="utm_medium"]
 facebook.com##.ego_section a[href^="http://l.facebook.com/l.php?u="][href*="utm_source"]
 facebook.com##.ego_section a[href^="https://l.facebook.com/l.php?u="][href*="%26ad_id%"]
+facebook.com##.ego_section a[href^="https://l.facebook.com/l.php?u="][href*="%26ad_id%"] + div
 facebook.com##.ego_section a[href^="https://l.facebook.com/l.php?u="][href*="%26adgroup_id%"]
 facebook.com##.ego_section a[href^="https://l.facebook.com/l.php?u="][href*="%3Fcampaign%3D"]
 facebook.com##.ego_section a[href^="https://l.facebook.com/l.php?u="][href*=".intelliad.de"]
 facebook.com##.ego_section a[href^="https://l.facebook.com/l.php?u="][href*="adfarm.mediaplex.com"]
 facebook.com##.ego_section a[href^="https://l.facebook.com/l.php?u="][href*="fb_source%3Dad%26tag%3D"]
+facebook.com##.ego_section a[href^="https://l.facebook.com/l.php?u="][href*="fb_source%3Dad%26tag%3D"] + div
 facebook.com##.ego_section a[href^="https://l.facebook.com/l.php?u="][href*="https%3A%2F%2Fgoo.gl%2F"]
 facebook.com##.ego_section a[href^="https://l.facebook.com/l.php?u="][href*="utm_medium"]
 facebook.com##.ego_section a[href^="https://l.facebook.com/l.php?u="][href*="utm_source"]
@@ -1023,7 +1031,8 @@ linkneverdie.com##.SC_TBlock
 linksvip.net##.quangcao-top
 livetvup.com##.box-fixquangcaos
 livetvup.com##.box-quangcaos
-m.batdongsan.com.vn##.aditem##.ad
+m.batdongsan.com.vn##.aditem
+m.facebook.com,touch.facebook.com###m_newsfeed_stream article[data-ft*="\"ei\":\""]
 mhktricks.net##.alignnone.size-full.wp-image-934
 minhngoc.net.vn###adv1
 mkvcage.com##.custom-html-widget.textwidget
@@ -1055,7 +1064,7 @@ phim.media##.adv-300-right
 phim.media##[href^="http://bit.ly/"]
 phimhayplus.com,anime47.com###ads_location
 phimnhanh.com###bn_bottom_fixed_bottom
-phimotv.net##A[rel=*"nofollow"]
+phimotv.net##A[rel*="nofollow"]
 photobucket.com##.slider-contents
 play.zing.vn##.ff-box
 plo.vn##.adsitem
@@ -1288,7 +1297,7 @@ $popup,third-party,domain=veporn.net|avgle.com
 ||trafficstars.com^$third-party
 ||tsumino.com^*.gif
 ||tsyndicate.com^
-||tuoi69.com/balloon*$script
+||tuoi69.com/balloon$script
 ||tuoi69.com/esheik.js
 ||tuoi69.com/trai.js
 !---------- ABPVN Adult Element Hide ---------------

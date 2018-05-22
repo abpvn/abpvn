@@ -1,8 +1,8 @@
 ﻿[Adblock Plus 2.0]
-! Version: 201805220819
-! Title: ABPVN List [facebook.com]
+! Version: 201805220826
+! Title: ABPVN List [optimize filter]
 ! ABPVN List filter
-! Last modified: 22 May 2018 08:19 UTC+7
+! Last modified: 22 May 2018 08:26 UTC+7
 ! Expires: 3 days (update frequency)
 ! Homepage: http://abpvn.com/
 !
@@ -387,8 +387,13 @@ _ads_
 ||exoclick.com^
 ||explorads.com^
 ||eyeota.net^
+||facebook.com/audiencenetwork/$third-party
+||facebook.com/video/instream_video/$xmlhttprequest,domain=facebook.com
 ||facebook.com/video/instream_video/view/story/async/
 ||facebook.com^$popup,domain=vung.tv
+||facebook.com^*/instream/vast.xml?
+||fbcdn.net/safe_image.php?d=*&url=http%3A%2F%2Fwww.facebook.com%2Fads%2Fimage%2F%3F$domain=facebook.com
+||fbcdn.net^*/flyers/$domain=facebook.com
 ||fftrack.pro^$popup
 ||fifaaddict.com/banner/
 ||filmphil.net^$subdocument
@@ -895,6 +900,6 @@ $popup,third-party,domain=veporn.net|avgle.com
 ||trafficstars.com^$third-party
 ||tsumino.com^*.gif
 ||tsyndicate.com^
-||tuoi69.com/balloon*$script
+||tuoi69.com/balloon$script
 ||tuoi69.com/esheik.js
 ||tuoi69.com/trai.js
