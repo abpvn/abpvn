@@ -11,7 +11,7 @@
 // @run-at      document-end
 // @include     http://*
 // @include     https://*
-// @version     2.2.10.6
+// @version     2.2.10.7
 // @change-log  Remove popup block because no needed on anime47.com
 // @grant       none
 // ==/UserScript==
@@ -473,7 +473,6 @@ var ABPVN = {
       'https://vidoza.net/',
       'http://www.easysoft.xyz',
       'http://hdonline.vn',
-      'http://anime47.com',
       'https://www.phim.media',
       'http://phimnhanh.com',
       'http://www.vietsubhd.com'
