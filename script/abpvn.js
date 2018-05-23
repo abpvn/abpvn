@@ -11,8 +11,8 @@
 // @run-at      document-end
 // @include     http://*
 // @include     https://*
-// @version     2.2.10.5
-// @change-log  Add mgIdAdRemover
+// @version     2.2.10.6
+// @change-log  Remove popup block because no needed on anime47.com
 // @grant       none
 // ==/UserScript==
 /* String Prototype */
@@ -468,7 +468,6 @@ var ABPVN = {
       'http://www.diendan.trentroiduoidat.com/',
       'http://www.trentroiduoidat.com/',
       'http://chophanthiet.us',
-      'http://anime47.com/',
       'http://animetvn.com',
       'http://font.vn',
       'https://vidoza.net/',
