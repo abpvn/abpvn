@@ -11,8 +11,8 @@
 // @run-at      document-end
 // @include     http://*
 // @include     https://*
-// @version     2.2.10.7
-// @change-log  Remove popup block because no needed on anime47.com
+// @version     2.2.10.8
+// @change-log  Optimize removeMgId function
 // @grant       none
 // ==/UserScript==
 /* String Prototype */
@@ -429,7 +429,7 @@ var fixSite = {
     if(allMgIdEl && allMgIdEl.length){
       ABPVN.cTitle();
       for(var i = 0;i<allMgIdEl.length;i++){
-        allMgIdEl[i].remove();
+        allMgIdEl[i].innerHTML = '';
       }
     }    
   },
@@ -443,7 +443,7 @@ var fixSite = {
     this.maclife_vn();
     this.aphim_co();
     this.fontdep_com();
-    this.openload();    
+    this.openload();
   }
 };
 //Main class
