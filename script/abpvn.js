@@ -11,8 +11,8 @@
 // @run-at      document-end
 // @include     http://*
 // @include     https://*
-// @version     2.2.10.8
-// @change-log  Optimize removeMgId function
+// @version     2.2.10.9
+// @change-log  Add anime47 anti adblock fix
 // @grant       none
 // ==/UserScript==
 /* String Prototype */
@@ -378,6 +378,16 @@ var fixSite = {
       location.reload();
     }
   },
+  anime47_com: function(){
+    if(this.url.startWith('http://anime47.com/xem-phim')){
+      //Remove class media
+      var mediaEl = document.querySelector('div.media');
+      if(mediaEl){
+        ABPVN.cTitle();
+        mediaEl.classList.remove('media');
+      }
+    }
+  },
   removeRedir(config) {
     if (this.url.match(new RegExp(config.url,'g')) || this.url.startWith(config.url)) {
       ABPVN.cTitle();
@@ -444,6 +454,7 @@ var fixSite = {
     this.aphim_co();
     this.fontdep_com();
     this.openload();
+    this.anime47_com();
   }
 };
 //Main class
