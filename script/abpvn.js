@@ -11,8 +11,8 @@
 // @run-at      document-end
 // @include     http://*
 // @include     https://*
-// @version     2.2.10.9
-// @change-log  Add anime47 anti adblock fix
+// @version     2.2.10.10
+// @change-log  Fix mgIdAdRemover issue
 // @grant       none
 // ==/UserScript==
 /* String Prototype */
@@ -21,25 +21,6 @@ String.prototype.startWith = function strxStart(str) {
 };
 String.prototype.ismatch = function (regex) {
   return this.match(regex) !== null;
-};
-var getAllText = function (selector) {
-  var text = '';
-  var list = document.querySelectorAll(selector);
-  if (list)
-  for (var i = 0; i < list.length; i++) {
-    text += list[i].innerText;
-  }
-  return text;
-};
-var removeDuplicates = function (arr) {
-  var tmp = [
-  ];
-  for (var i = 0; i < arr.length; i++) {
-    if (tmp.indexOf(arr[i]) == - 1) {
-      tmp.push(arr[i]);
-    }
-  }
-  return tmp;
 };
 //Bypass Class
 var byPass = {
@@ -66,7 +47,6 @@ var byPass = {
           contentDiv[i].style.display = 'block';
         }
       } //Hide All LockDiv
-
       var lockDiv = document.querySelectorAll('.onp-sl,div[id^="content-locker"]');
       for (var j in lockDiv) {
         if(lockDiv[j].style){
@@ -286,7 +266,7 @@ var fixSite = {
     }    
   },
   hdonline_vn: function(){    
-    if (this.url.startWith('http://hdonline.vn')) {         
+    if (this.url.startWith('http://hdonline.vn')) {
       var links = document.querySelectorAll('a[href^="http://hub.blueserving.com/"]');
       for (var i in links) {
         var link = links[i];
@@ -335,7 +315,6 @@ var fixSite = {
      // @run-at document-end
      //
      function onready(fn){if(document.readyState!='loading')fn();else document.addEventListener('DOMContentLoaded',fn);}
-
      onready(function(){
       if( document.location.href.match(/\/embed\//) || $('#realdl>a') )
       {
@@ -434,18 +413,8 @@ var fixSite = {
       this.removeRedir(config);
     }.bind(this));
   },
-  mgIdAdRemover: function(){
-    var allMgIdEl = document.querySelectorAll('[id*="ScriptRoot"]');
-    if(allMgIdEl && allMgIdEl.length){
-      ABPVN.cTitle();
-      for(var i = 0;i<allMgIdEl.length;i++){
-        allMgIdEl[i].innerHTML = '';
-      }
-    }    
-  },
   init: function () {
     this.url = location.href;
-    this.mgIdAdRemover();
     this.removeRedirect();
     this.phim_media();
     this.linkneverdie_com();
@@ -457,18 +426,8 @@ var fixSite = {
     this.anime47_com();
   }
 };
-//Main class
-var ABPVN = {
-  getCookie: function (cookie_name) {
-    var value = '; ' + document.cookie;
-    var parts = value.split('; ' + cookiename + '=');
-    if (parts.length == 2) return parts.pop().split(';').shift();
-  },
-  cTitle: function () {
-    if (document.title.indexOf(' - Fixed by ABPVN.COM') == - 1) {
-      document.title = document.title + ' - Fixed by ABPVN.COM';
-    }
-  },
+//Ad blocker script
+var adBlocker = {
   blockPopUp: function () {
     var listSite = [
       'http://blogtruyen.com',
@@ -517,14 +476,37 @@ var ABPVN = {
       }
     }
   },
-  init: function () {
+  mgIdAdRemover: function() {
+    var allMgIdEl = document.querySelectorAll('[id*="ScriptRoot"]');
+    if(allMgIdEl && allMgIdEl.length){
+      ABPVN.cTitle();
+      for(var i = 0;i<allMgIdEl.length;i++){
+        allMgIdEl[i].id = 'ScriptRoot-removed-by-abpvn-'+Math.random();
+        allMgIdEl[i].innerHTML = '';
+      }
+    }
+  },
+  init: function() {
     this.url = location.href;
+    this.mgIdAdRemover();
     this.blockPopUp();
+  }
+};
+//Main class
+var ABPVN = {
+  cTitle: function () {
+    if (document.title.indexOf(' - Fixed by ABPVN.COM') === - 1) {
+      document.title = document.title + ' - Fixed by ABPVN.COM';
+    }
+  },  
+  init: function () {
+    //Init class adBlocker
+    adBlocker.init();
     //Init class getLink
     getLink.init();
     //Init class Fixsite
     fixSite.init();
-    //console.info('ABVPN init finish for: '+this.url);
+    //Init bypass class
     byPass.init();
   }
 };
