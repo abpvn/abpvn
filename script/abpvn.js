@@ -11,8 +11,8 @@
 // @run-at      document-end
 // @include     http://*
 // @include     https://*
-// @version     2.2.10.11
-// @change-log  Beauty script
+// @version     2.2.11
+// @change-log  Update hideLinkUnlock fix blur area
 // @grant       none
 // ==/UserScript==
 /* String Prototype */
@@ -32,7 +32,7 @@ var byPass = {
             if (!document.getElementById('abpvn_style')) {
                 var style = document.createElement('style');
                 style.id = 'abpvn_style';
-                style.innerHTML = '.onp-sl-content{display:block!important;}.onp-sl,.onp-sl-overlap-box{display:none!important;}';
+                style.innerHTML = '.onp-sl-content{display:block!important;}.onp-sl,.onp-sl-overlap-box{display:none!important;}.onp-sl-blur-area{filter: none!important;}';
                 document.body.appendChild(style);
             } //ShowALl ContentDiv
 
