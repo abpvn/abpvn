@@ -1,1 +1,1 @@
-curl http://abpvn.com/pull_git.php
+curl https://abpvn.com/pull_git.php
