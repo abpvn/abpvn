@@ -11,8 +11,8 @@
 // @run-at      document-end
 // @include     http://*
 // @include     https://*
-// @version     2.2.11
-// @change-log  Update hideLinkUnlock fix blur area
+// @version     2.2.12
+// @change-log  Block popup phim.media
 // @grant       none
 // ==/UserScript==
 /* String Prototype */
@@ -443,11 +443,12 @@ var adBlocker = {
             'http://hdonline.vn',
             'https://www.phim.media',
             'http://phimnhanh.com',
-            'http://www.vietsubhd.com'
+            'http://www.vietsubhd.com',
+            'https://www.phim.media'
         ];
         for (var i = 0; i < listSite.length; i++) {
             if (this.url.startWith(listSite[i])) {
-                this.cTitle();
+                ABPVN.cTitle();
                 Logger.info('Đã chặn popup quảng cáo');
                 document.body.onclick = null;
                 document.onclick = null;
