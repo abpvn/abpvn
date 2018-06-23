@@ -11,8 +11,8 @@
 // @run-at      document-end
 // @include     http://*
 // @include     https://*
-// @version     2.2.12
-// @change-log  Block popup phim.media
+// @version     2.2.13
+// @change-log  Update phimmedia.tv domain
 // @grant       none
 // ==/UserScript==
 /* String Prototype */
@@ -235,8 +235,8 @@ var fixSite = {
         var head = document.getElementsByTagName('head')[0];
         head.appendChild(css_tag);
     },
-    phim_media: function() {
-        if (this.url.startWith('https://www.phim.media/') || this.url.startWith('http://www.phim.media/')) {
+    phimmedia_tv: function() {
+        if (this.url.startWith('https://www.phimmedia.tv/') || this.url.startWith('http://www.phimmedia.tv/')) {
             var links = document.querySelectorAll('#btn-film-watch,.poster > a');
             if (links) {
                 for (var i = 0; i < links.length; i++) {
@@ -414,7 +414,7 @@ var fixSite = {
     init: function() {
         this.url = location.href;
         this.removeRedirect();
-        this.phim_media();
+        this.phimmedia_tv();
         this.linkneverdie_com();
         this.hdonline_vn();
         this.maclife_vn();
@@ -441,10 +441,10 @@ var adBlocker = {
             'https://vidoza.net/',
             'http://www.easysoft.xyz',
             'http://hdonline.vn',
-            'https://www.phim.media',
+            'https://www.phimmedia.tv',
             'http://phimnhanh.com',
             'http://www.vietsubhd.com',
-            'https://www.phim.media'
+            'https://www.phimmedia.tv'
         ];
         for (var i = 0; i < listSite.length; i++) {
             if (this.url.startWith(listSite[i])) {
