@@ -11,8 +11,8 @@
 // @run-at      document-end
 // @include     http://*
 // @include     https://*
-// @version     2.2.15
-// @change-log  Update remove short link on fcine.net
+// @version     2.2.16
+// @change-log  Fix atob error in some place
 // @grant       none
 // ==/UserScript==
 /* String Prototype */
@@ -65,7 +65,7 @@ var byPass = {
                 var href = processingLink.getAttribute('href');
                 var tmp = href.match(/url=(.+?)&|$/);;
                 if (tmp[1]) {
-                    processingLink.setAttribute('href', atob(tmp[1]));
+                    processingLink.setAttribute('href', atob(tmp[1].replace(/=+$/,'')));
                     var oldTitle = processingLink.getAttribute('title');
                     processingLink.setAttribute('title', oldTitle ? (oldTitle + ' ') : '' + 'Short link by pass by ABPVN.COM');
                     count++;
