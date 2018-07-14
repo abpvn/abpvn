@@ -11,8 +11,8 @@
 // @run-at      document-end
 // @include     http://*
 // @include     https://*
-// @version     2.2.14
-// @change-log  Remove anime47.com from anti adblock fix
+// @version     2.2.15
+// @change-log  Update remove short link on fcine.net
 // @grant       none
 // ==/UserScript==
 /* String Prototype */
@@ -35,7 +35,6 @@ var byPass = {
                 style.innerHTML = '.onp-sl-content{display:block!important;}.onp-sl,.onp-sl-overlap-box{display:none!important;}.onp-sl-blur-area{filter: none!important;}';
                 document.body.appendChild(style);
             } //ShowALl ContentDiv
-
             for (var i in contentDiv) {
                 if (contentDiv[i].firstChild && contentDiv[i].firstChild.innerText != 'Unlocked by ABPVN.COM') {
                     var creditDiv = document.createElement('div');
@@ -56,8 +55,8 @@ var byPass = {
             }
         }
     },
-    anti123link: function() {
-        var allShortLink = document.querySelectorAll('a[href^="http://123link"]');
+    removeShortLink: function() {
+        var allShortLink = document.querySelectorAll('a[href*="/full/?api="]');
         var count = 0;
         if (allShortLink.length) {
             ABPVN.cTitle();
@@ -68,34 +67,34 @@ var byPass = {
                 if (tmp[1]) {
                     processingLink.setAttribute('href', atob(tmp[1]));
                     var oldTitle = processingLink.getAttribute('title');
-                    processingLink.setAttribute('title', oldTitle ? (oldTitle + ' ') : '' + '123link by pass by ABPVN');
+                    processingLink.setAttribute('title', oldTitle ? (oldTitle + ' ') : '' + 'Short link by pass by ABPVN.COM');
                     count++;
                 }
             }
-            Logger.info("By pass " + count + " 123link short");
+            Logger.info("By pass " + count + " short link");
         }
     },
     init: function() {
         window.addEventListener('DOMContentLoaded', this.hideLinkUnlock);
         window.addEventListener('load', this.hideLinkUnlock);
         this.hideLinkUnlock();
-        window.addEventListener('DOMContentLoaded', this.anti123link);
-
+        window.addEventListener('DOMContentLoaded', this.removeShortLink);
     }
 };
 //Logger Class
 var Logger = {
+    style: 'color: #00DC58',
     info: function(text) {
-        console.info('ABPVN Info: ', text);
+        console.info('%cABPVN.COM Info: ', this.style, text);
     },
     warn: function(text) {
-        console.warn('ABPVN Warn: ', text);
+        console.warn('%cABPVN Warn: ', this.style, text);
     },
     error: function(text) {
-        console.error('ABPVN Error: ', text);
+        console.error('%cABPVN Error: ', this.style, text);
     },
     log: function(text) {
-        console.log('ABPVN Log: ', text);
+        console.log('%cABPVN Log: ', this.style, text);
     },
 };
 //get Link class
