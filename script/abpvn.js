@@ -11,8 +11,8 @@
 // @run-at      document-end
 // @include     http://*
 // @include     https://*
-// @version     2.2.16
-// @change-log  Fix atob error in some place
+// @version     2.2.17
+// @change-log  Add vnlinks.net button fshare
 // @grant       none
 // ==/UserScript==
 /* String Prototype */
@@ -141,7 +141,7 @@ var getLink = {
                             if (data.url === undefined) location.reload();
                             else {
                                 if (typeof location != 'undefined') {
-                                    console.log('ABPVN: ' + location.href + ' -> ' + data.url);
+                                    Logger.log(location.href + ' -> ' + data.url);
                                     location.href = data.url;
                                 } else {
                                     $('.download').prepend('<a title="Tải trực tiếp" style="padding: 5px 0;box-sizing: content-box;" class="download-btn mdc-button mdc-button--raised mdc-ripple-upgraded full-width mdc-button-primary fcode5" href="' + data.url + '">Tải trực tiếp<span>Hỗ trợ bởi abpvn.com</span></a>');
@@ -156,6 +156,7 @@ var getLink = {
                 });
             } else {
                 $('.download').prepend('<a title="Download nhanh qua linksvip.net" style="padding: 5px 0;box-sizing: content-box;" class="download-btn mdc-button mdc-button--raised mdc-ripple-upgraded full-width mdc-button-primary fcode5" href="http://linksvip.net?link=' + location.href + '">Tải nhanh<span>Qua dịch vụ linksvip.net</span></a>');
+                $('.download').prepend('<a title="Download nhanh qua linksvip.net" style="padding: 5px 0;margin-bottom: 5px;box-sizing: content-box;" class="download-btn mdc-button mdc-button--raised mdc-ripple-upgraded full-width mdc-button-success fcode5" href="https://vnlinks.net/?link=' + location.href + '">Tải nhanh<span>Qua dịch vụ vnlinks.net</span></a>');
             }
         }
     },
