@@ -11,8 +11,8 @@
 // @run-at      document-end
 // @include     http://*
 // @include     https://*
-// @version     2.2.17
-// @change-log  Add vnlinks.net button fshare
+// @version     2.2.18
+// @change-log  Remove preroll ads on phimnhanh.com
 // @grant       none
 // ==/UserScript==
 /* String Prototype */
@@ -65,7 +65,7 @@ var byPass = {
                 var href = processingLink.getAttribute('href');
                 var tmp = href.match(/url=(.+?)&|$/);;
                 if (tmp[1]) {
-                    processingLink.setAttribute('href', atob(tmp[1].replace(/=+$/,'')));
+                    processingLink.setAttribute('href', atob(tmp[1].replace(/=+$/, '')));
                     var oldTitle = processingLink.getAttribute('title');
                     processingLink.setAttribute('title', oldTitle ? (oldTitle + ' ') : '' + 'Short link by pass by ABPVN.COM');
                     count++;
@@ -474,11 +474,20 @@ var adBlocker = {
             }
         }
     },
+    phimnhanh_com: function() {
+        if (this.url.startWith('http://phimnhanh.com/xem-phim')) {
+            Logger.warn('Đã chặn video preload');
+            if (video !== undefined) {
+                video.preroll = function(options) {};
+            }
+        }
+    },
     init: function() {
         this.url = location.href;
         this.mgIdAdRemover();
         this.blockPopUp();
-    }
+        this.phimnhanh_com();
+    },
 };
 //Main class
 var ABPVN = {
