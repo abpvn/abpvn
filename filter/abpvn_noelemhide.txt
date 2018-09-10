@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 201809041950
+! Version: 201809100838
 ! Title: ABPVN List [facebook.com]
 ! ABPVN List filter
-! Last modified: 04 Sep 2018 19:50 UTC+7
+! Last modified: 10 Sep 2018 08:38 UTC+7
 ! Expires: 3 days (update frequency)
 ! Homepage: https://abpvn.com/
 !
@@ -13,18 +13,12 @@
 ! Email: support@abpvn.com
 ! Facebook Fanpage: https://facebook.com/abpvn.org
 ! Forums: http://www.vn-zoom.com/f77/abp-bo-loc-quang-cao-cho-nguoi-viet-2856275.html
-
 $popup,third-party,domain=oload.tv|oload.stream|openload.co|oload.site|appvn.com|mediafire.com
 $webrtc,domain=forum.xda-developers.com|phim14.net|mkvcage.com|phimotv.net|dailyuploads.net|uploadocean.com|appvn.com
 &adformat=
 &aduid=
 &adunit=
 *$csp=default-src 'self' * data: 'unsafe-inline' 'unsafe-eval',domain=oload.tv|oload.stream|openload.co|oload.download|oload.site|forum.xda-developers.com
--120x240-
--728x90
--adnow.com^$third-party
--ads.
--pagead-id.
 .com/ads.
 .com/cpc/$script
 .com/qc/
@@ -36,26 +30,25 @@ $webrtc,domain=forum.xda-developers.com|phim14.net|mkvcage.com|phimotv.net|daily
 .vn/qc/
 //adserver.
 //affiliate.$third-party
+/\:\/\/[a-z0-9]{5,}\.com\/[A-Za-z0-9]{3,}(\/|.css|.js)$/$script,stylesheet,third-party,xmlhttprequest
 /120x240.
 /120x60.
 /468-x-60-
 /600x60_
-/YanAds/*
-/\:\/\/[a-z0-9]{5,}\.com\/[A-Za-z0-9]{3,}(\/|.css|.js)$/$script,stylesheet,third-party,xmlhttprequest
 /a/display.php
 /ad-exchange.
-/adServe/*
 /adk2.
 /admServer/*
 /ados.js
-/ads-iframe-display.php
 /ads/*$image
 /ads?
 /ads_clip/*
 /adsbanner/*
 /adscript/*
 /adsense/*
+/adServe/*
 /adsfloat/*
+/ads-iframe-display.php
 /adv/*
 /adv_out.
 /adver.
@@ -111,18 +104,15 @@ $webrtc,domain=forum.xda-developers.com|phim14.net|mkvcage.com|phimotv.net|daily
 /xbanner.js
 /xpopup.js
 /xupload.js
-600x100
+/YanAds/*
 ://ad.$third-party
 ://ads.$third-party
-=728x90&
 _690x110.
 _728x90.
 _800x105.
 _980x100.
 _990x100.
 _ads_
-ad_300_250
-|http://$popup,third-party,domain=mac-torrent-download.me|uploadocean.com
 ||1337x.to/js/cdcbdcafaccaedffdec.js
 ||188bongda.com/188bet-link/$subdocument
 ||1phads.com^
@@ -190,10 +180,10 @@ ad_300_250
 ||adsymptotic.com^
 ||adtear.com^
 ||adtech.de^
-||adtima-static.zadn.vn^$script
 ||adtima.vn^$script,third-party
 ||adtimaserver.vn^$domain=~talktv.vn
 ||adtimaserver.vn^$popup
+||adtima-static.zadn.vn^$script
 ||adtop.vn^$third-party
 ||adtrue.com^$third-party
 ||adultadworld.com^
@@ -260,8 +250,8 @@ ad_300_250
 ||bkrtx.com^$third-party
 ||blogspot.com^*.gif$domain=~blogtruyen.com|~nccsupports.com|~hocvientruyentranh.com
 ||blogtamsu.vn/*Banner$image
-||blogtruyen.com/File/*.swf
 ||blogtruyen.com/file/$subdocument
+||blogtruyen.com/File/*.swf
 ||blogtruyen.com/scripts/banner-preload.js
 ||blogtruyen.com/scripts/iframe-rand.js
 ||bluekai.com^
@@ -281,7 +271,6 @@ ad_300_250
 ||captifymedia.com^$third-party
 ||cashinme.com/req/
 ||cashtrafic.info^$third-party
-||cdn-qc.coccoc.com^
 ||cdn.adasiaholdings.com^$script
 ||cdn.adf.ly/images/banners/
 ||cdn.adf.ly/js/display.js
@@ -293,6 +282,7 @@ ad_300_250
 ||cdn9now.com^$script
 ||cdnmm.hyperpromote.com$subdocument
 ||cdnondemand.org^
+||cdn-qc.coccoc.com^
 ||chequent.info^
 ||chodansinh.net/datafiles/*.gif
 ||chodansinh.net/images/popcds.gif
@@ -337,7 +327,6 @@ ad_300_250
 ||criteo.net^$third-party
 ||crwdcntrl.net^
 ||cungxaynhadep.vn^$popup
-||d-h.st/assets/img/download
 ||d3k5fl0ycdyj0l.cloudfront.net^
 ||d3ud741uvs727m.cloudfront.net^
 ||dailyuploads.net/images/redbuttonx.png
@@ -348,6 +337,7 @@ ad_300_250
 ||delivery.vung.tv^
 ||delivery.vungtv.com^
 ||depmoingay.net.vn/banner
+||d-h.st/assets/img/download
 ||diemthi.24h.com.vn/upload/banner/
 ||diendandongnai.com/js/HDT/fun-forum/
 ||diendanlequydon.com/banner/
@@ -364,7 +354,6 @@ ad_300_250
 ||downmienphi.com/images/banner-$image
 ||dviixeyykyqjv.cloudfront.net^$domain=uplod.cc
 ||dyncdn.me/static/20/js/$domain=rarbg.to
-||dyncdn.me/static/20/js/expla*$script
 ||e.dtscout.com^
 ||eboundservices.com^
 ||eclick.vn^$third-party
@@ -376,9 +365,9 @@ ad_300_250
 ||embed.mvpviet.com/data/$image,domain=2idol.tv
 ||endpoint.terratraf.com^
 ||entitlements.jwplayer.com^$third-party
-||eva-m-ad.24hstatic.com
 ||eva.vn/upload*/*.gif
 ||eva.vn/upload/background/
+||eva-m-ad.24hstatic.com
 ||exelator.com^$third-party
 ||exoclick.com^
 ||explorads.com^
@@ -434,10 +423,10 @@ ad_300_250
 ||gumgum.com^
 ||h1.crvtrk.com^
 ||hadarone.com^
+||hamtruyen.com/bannerqc/
 ||hamtruyen.com/Scripts/blueyonew.
 ||hamtruyen.com/Scripts/ixinh.js
 ||hamtruyen.com/Scripts/jwplayer.js
-||hamtruyen.com/bannerqc/
 ||haynhucnhoi.tv/api$third-party
 ||hdsieunhanh.com/static/*.gif
 ||hdvietnam.com/banner/
@@ -479,8 +468,8 @@ ad_300_250
 ||iwanttodeliver.com^$third-party
 ||jadserve.postrelease.com^
 ||jerwested.info^
-||js-agent.newrelic.com/nr-918.min.js
 ||js.knowlead.io^$third-party
+||js-agent.newrelic.com/nr-918.min.js
 ||juicyads.com^
 ||jujzh9va.com^
 ||k8wap.com^$popup,third-party
@@ -677,8 +666,8 @@ ad_300_250
 ||static.download.com.vn/cache.aspx?_path=*ad$script
 ||static.hayhaytv.com^*.mp4
 ||static.hdo.tv/template/frontend/images/FloatbannerHDO.png
-||static.hdo.tv/template/frontend/images/Topplayer.png
 ||static.hdo.tv/template/frontend/images/float-logo-Pose.png
+||static.hdo.tv/template/frontend/images/Topplayer.png
 ||static.htvonline.com.vn/layout/images/*_banner.jpg
 ||static.htvonline.com.vn/layout/images/lienhequangcao.png
 ||static.ketqua.net/adv_imgs/
@@ -687,8 +676,8 @@ ad_300_250
 ||staticflickr.com/*.gif$domain=chophanthiet.us
 ||statsevent.com^$third-party
 ||statsy.net/a.php
-||stc-tv.zing.vn/skins/tv_v2/js/fadblock.min.js
 ||stc.nas.nixcdn.com^*.gif
+||stc-tv.zing.vn/skins/tv_v2/js/fadblock.min.js
 ||step.to^
 ||storage.fshare.vn/images/$third-party
 ||storage.fshare.vn/images^*.gif
@@ -779,8 +768,8 @@ ad_300_250
 ||vkool.net/js/pov*.js
 ||vkool.net/swf/$xmlhttprequest
 ||vnmedia.vn*/ads_*.
-||vnreview.vn/ThemeReview-theme/images/custom/sh_big.jpg
 ||vnreview.vn/play-clip/video/flvPlayer.swf
+||vnreview.vn/ThemeReview-theme/images/custom/sh_big.jpg
 ||vtc.vn/adsv/
 ||vtv3.com/iframe$domain=phimnhanh.com
 ||vuighe.net/assest/json/pause.json$xmlhttprequest
@@ -801,9 +790,9 @@ ad_300_250
 ||xoso.com/images/banners/
 ||xpanama.net^$third-party
 ||xtgem.com/images/xtvid/
-||y-flickr.yahoo.com/ad
 ||yan.vn/Flash/
 ||yeah1.com^*/banners/
+||y-flickr.yahoo.com/ad
 ||yllix.com^$third-party
 ||ylx-2.com^
 ||ylx-4.com^
@@ -815,6 +804,15 @@ ad_300_250
 ||zemanta.com^
 ||zhiziyun.com^$domain=dlkoo.com
 ||zukxd6fkxqn.com^
+|http://$popup,third-party,domain=mac-torrent-download.me|uploadocean.com
+=728x90&
+-120x240-
+600x100
+-728x90
+ad_300_250
+-adnow.com^$third-party
+-ads.
+-pagead-id.
 !---------------ABPVN White List--------------------
 @@//adservice.google.$domain=download.mokeedev.com
 @@/ads.html$domain=xemrap.com
