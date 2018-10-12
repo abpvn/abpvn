@@ -11,8 +11,8 @@
 // @run-at      document-end
 // @include     http://*
 // @include     https://*
-// @version     2.2.19
-// @change-log  Fix string prototype on sentry.io
+// @version     2.2.20
+// @change-log  Fix string prototye sentry.io
 // @grant       none
 // ==/UserScript==
 /* String Prototype */
@@ -20,7 +20,7 @@ String.prototype.startWith = function(str) {
     return typeof this.indexOf === 'function' && this.indexOf(str) === 0;
 };
 String.prototype.ismatch = function(regex) {
-    return typeof this.match === 'function' this.match(regex) !== null;
+    return typeof this.match === 'function' && this.match(regex) !== null;
 };
 //Bypass Class
 var byPass = {
