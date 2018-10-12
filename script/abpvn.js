@@ -11,16 +11,16 @@
 // @run-at      document-end
 // @include     http://*
 // @include     https://*
-// @version     2.2.18
-// @change-log  Remove preroll ads on phimnhanh.com
+// @version     2.2.19
+// @change-log  Fix string prototype on sentry.io
 // @grant       none
 // ==/UserScript==
 /* String Prototype */
-String.prototype.startWith = function strxStart(str) {
-    return this.indexOf(str) === 0;
+String.prototype.startWith = function(str) {
+    return typeof this.indexOf === 'function' && this.indexOf(str) === 0;
 };
 String.prototype.ismatch = function(regex) {
-    return this.match(regex) !== null;
+    return typeof this.match === 'function' this.match(regex) !== null;
 };
 //Bypass Class
 var byPass = {
