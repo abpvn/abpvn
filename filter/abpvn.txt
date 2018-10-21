@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 201810200648
-! Title: ABPVN List [general update]
-! Last modified: 20 Oct 2018 06:48 UTC+7
+! Version: 201810210732
+! Title: ABPVN List [ggenericupdate]
+! Last modified: 21 Oct 2018 07:32 UTC+7
 ! Expires: 3 days (update frequency)
 ! Homepage: https://abpvn.com/
 !
@@ -1267,6 +1267,7 @@ vietmod.pro,hvdic.thivien.net,startuanit.net,phimhayplus.com,download.mokeedev.c
 
 !------ ABPVN Adult block -------
 $popup,third-party,domain=veporn.net|avgle.com
+/www.eporner.com/\w{32,}/$image,script,~third-party
 @@||javpost.net/ads.php$subdocument,domain=www5.javmost.com
 ||abcsrv1.com^
 ||atas.io^
@@ -1301,6 +1302,7 @@ $popup,third-party,domain=veporn.net|avgle.com
 ||streaminporn.xyz/cdn-cgi/pe/bag2
 ||thiendia.com/popup2.js$script
 ||trafficjunky.com^
+||trafficjunky.net^
 ||trafficstars.com^$third-party
 ||tsumino.com^*.gif
 ||tsyndicate.com^
@@ -1308,11 +1310,15 @@ $popup,third-party,domain=veporn.net|avgle.com
 ||tuoi69.com/esheik.js
 ||tuoi69.com/trai.js
 ||ujoongeilaej.info^
+||www.eporner.com/dot/$subdocument,~third-party
+||www.eporner.com/dotm/$subdocument,~third-party
 !---------- ABPVN Adult Element Hide ---------------
 avgle.com###aoverlay
 avgle.com###blocked-if
 avgle.com##.vjs-marker
 bloghentai.info##.page-don
+eporner.com##.vjs-inplayer-container
+eporner.com##div[id^="ad-"]
 gaybeeg.info##.msc-content
 gaybeeg.info##.msc-overlay
 hanime.tv##.banner_iframe
@@ -1339,6 +1345,8 @@ thiendia.com##A[href="http://www.9club.com/vn/"]
 tuoi69.com,sieukhung.net###bar_float_r
 tuoi69.com,sieukhung.net##.adsTopHome
 vlxx.tv##a[rel*="nofollow"]
+www.pornhub.com###pb_block
+www.pornhub.com##.clear.hd
 xiuren.org###bannerIn
 xiuren.org###exoIMFrame
 xiuren.org###nativeAds_1505931906161
