@@ -9,18 +9,21 @@
 // @description Script chặn quảng cáo,loại bỏ chờ đợi của ABPVN
 // @contributionURL https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=donghoang.nguyen@gmail.com&item_name=ABPVN Donation
 // @run-at      document-end
+// @grant       GM_getValue
+// @grant       GM_setValue
+// @grant       GM_openInTab
+// @grant       GM_registerMenuCommand
 // @include     http://*
 // @include     https://*
-// @version     2.2.20
-// @change-log  Fix string prototye sentry.io
-// @grant       none
+// @version     2.2.21
+// @change-log  Add script menu, Allow setting some script feature
 // ==/UserScript==
 /* String Prototype */
 String.prototype.startWith = function(str) {
     return typeof this.indexOf === 'function' && this.indexOf(str) === 0;
 };
-String.prototype.ismatch = function(regex) {
-    return typeof this.match === 'function' && this.match(regex) !== null;
+String.prototype.ismatch = function(regex) { 
+    return typeof this.match === 'function' && this.match(regex) !== null;
 };
 //Bypass Class
 var byPass = {
@@ -75,10 +78,14 @@ var byPass = {
         }
     },
     init: function() {
-        window.addEventListener('DOMContentLoaded', this.hideLinkUnlock);
-        window.addEventListener('load', this.hideLinkUnlock);
-        this.hideLinkUnlock();
-        window.addEventListener('DOMContentLoaded', this.removeShortLink);
+        if (configure.getValue('unlock_content', true)) {
+            window.addEventListener('DOMContentLoaded', this.hideLinkUnlock);
+            window.addEventListener('load', this.hideLinkUnlock);
+            this.hideLinkUnlock();
+        }
+        if (configure.getValue('remove_short_link', true)) {
+            window.addEventListener('DOMContentLoaded', this.removeShortLink);
+        }
     }
 };
 //Logger Class
@@ -99,32 +106,36 @@ var Logger = {
 };
 //get Link class
 var getLink = {
+    settingKey: 'fshare_download',
     FShareConfig: function() {
         if (this.url.startWith('https://www.fshare.vn')) {
-            var background_image = localStorage.off == 'true' ? 'url("http://i.imgur.com/kJnOMOB.png")' : 'url("http://i.imgur.com/2b7fN6a.png")';
-            var title = localStorage.off == 'true' ? 'Bật get link fshare' : 'Tắt get link fshare';
+            var currentSetting = configure.getValue(this.settingKey, true);
+            var background_image = !currentSetting ? 'url("http://i.imgur.com/kJnOMOB.png")' : 'url("http://i.imgur.com/2b7fN6a.png")';
+            var title = currentSetting ? 'Bật get link fshare' : 'Tắt get link fshare';
             var html = '<div id=\'fs_click\' title=\'' + title + '\' style=\'position: fixed; right: 0; bottom: 0; width: 30px; height: 30px; border-radius: 50%; background-image: ' + background_image + '; background-size: cover; cursor: pointer; z-index: 99999;\'></div>';
             $(document).ready(function() {
                 $(document.body).append(html);
                 $(document).on('click', '#fs_click', function FS_on_off() {
-                    if (localStorage.off != 'true') {
-                        localStorage.off = true;
+                    if (currentSetting) {
+                        currentSetting = false;
                         this.style.backgroundImage = 'url("http://i.imgur.com/kJnOMOB.png")';
                         this.setAttribute('title', 'Bật get link fshare');
                         alert('Đã tắt get link fshare');
                     } else {
-                        localStorage.off = false;
+                        currentSetting = true;
                         this.setAttribute('title', 'Tắt get link fshare');
                         this.style.backgroundImage = 'url("http://i.imgur.com/2b7fN6a.png")';
                         alert('Đã bật get link fshare');
                     }
+                    configure.setValue("fshare_download", currentSetting);
                 });
             });
         }
     },
     FShareGetLink: function() {
         if (this.url.startWith('https://www.fshare.vn/file/') && !this.url.startWith('https://www.fshare.vn/file/manager')) {
-            if (localStorage.off != 'true') {
+            var currentSetting = configure.getValue(this.settingKey, true);
+            if (currentSetting) {
                 console.info('Start get link Fshare.vn');
                 $(document).ready(function() {
                     var checkpassword = document.querySelector('.password-form');
@@ -192,8 +203,10 @@ var getLink = {
         this.url = location.href;
         this.FShareConfig();
         this.FShareGetLink();
-        this.mediafire_com();
-        this.usercloud_com();
+        if (configure.getValue('quick_download', true)) {
+            this.mediafire_com();
+            this.usercloud_com();
+        }
     }
 };
 //Fix site class
@@ -393,7 +406,7 @@ var fixSite = {
                 replace: 'http://phanmemaz.com/wp-content/plugins/tm-wordpress-redirection/l.php?'
             },
             {
-                url: 'vozforums\.(com|net)',
+                url: 'forum.voz.vn',
                 replace: '/redirect/index.php?link='
             }
         ];
@@ -403,7 +416,9 @@ var fixSite = {
     },
     init: function() {
         this.url = location.href;
-        this.removeRedirect();
+        if (configure.getValue('remove_redirect')) {
+            this.removeRedirect();
+        }
         this.phimmedia_tv();
         this.linkneverdie_com();
         this.hdonline_vn();
@@ -489,6 +504,64 @@ var adBlocker = {
         this.phimnhanh_com();
     },
 };
+var configure = {
+    urls: {
+        setting: 'https://abpvn.com/script-setting.html',
+        issue: 'https://github.com/abpvn/abpvn/issues/new',
+        fanpage: 'https://www.facebook.com/abpvn.org',
+    },
+    openUrl: function(url) {
+        if (typeof GM_openInTab === 'function') {
+            GM_openInTab(url);
+        }
+    },
+    getValue: function(key, defaultValue) {
+        var value;
+        if (typeof GM_getValue === 'function') {
+            value = GM_getValue(key);
+        }
+        if (typeof value === 'undefined') {
+            return defaultValue;
+        }
+        return value;
+    },
+    setValue: function(key, value) {
+        if (typeof GM_setValue === 'function') {
+            return GM_setValue(key, value);
+        }
+    },
+    setUpSetting: function() {
+        if (this.url === this.urls.setting) {
+            var settingContainer = '#setting-container';
+            var allSetting = document.querySelectorAll(settingContainer + ' input[type="checkbox"]');
+            if (allSetting) {
+                allSetting.forEach(checkbox => {
+                    checkbox.checked = this.getValue(checkbox.name, true);
+                    checkbox.addEventListener('change', event => {
+                        var target = event.target;
+                        var key = target.name;
+                        this.setValue(key, event.target.checked);
+                    });
+                });
+            }
+        }
+    },
+    init: function() {
+        this.url = location.href;
+        if (typeof GM_registerMenuCommand === 'function') {
+            GM_registerMenuCommand('ABPVN - Cài đặt', () => {
+                this.openUrl(this.urls.setting);
+            });
+            GM_registerMenuCommand('ABPVN - Báo lỗi', () => {
+                this.openUrl(this.urls.issue);
+            });
+            GM_registerMenuCommand('ABPVN - Fanpage', () => {
+                this.openUrl(this.urls.fanpage);
+            });
+        }
+        this.setUpSetting();
+    }
+};
 //Main class
 var ABPVN = {
     cTitle: function() {
@@ -505,6 +578,8 @@ var ABPVN = {
         fixSite.init();
         //Init bypass class
         byPass.init();
+        //Init Congiure
+        configure.init();
     }
 };
 //RUN INNIT
