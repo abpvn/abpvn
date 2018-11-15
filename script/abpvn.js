@@ -15,19 +15,19 @@
 // @grant       GM_registerMenuCommand
 // @include     http://*
 // @include     https://*
-// @version     2.2.21
-// @change-log  Add script menu, Allow setting some script feature
+// @version     2.2.23
+// @change-log  Update setting page
 // ==/UserScript==
 /* String Prototype */
-String.prototype.startWith = function(str) {
+String.prototype.startWith = function (str) {
     return typeof this.indexOf === 'function' && this.indexOf(str) === 0;
 };
-String.prototype.ismatch = function(regex) { 
+String.prototype.ismatch = function (regex) {
     return typeof this.match === 'function' && this.match(regex) !== null;
 };
 //Bypass Class
 var byPass = {
-    hideLinkUnlock: function() {
+    hideLinkUnlock: function () {
         var contentDiv = document.querySelectorAll('.onp-sl-content,.onp-locker-call,[data-locker-id]');
         if (contentDiv.length) {
             ABPVN.cTitle();
@@ -58,7 +58,7 @@ var byPass = {
             }
         }
     },
-    removeShortLink: function() {
+    removeShortLink: function () {
         var allShortLink = document.querySelectorAll('a[href*="/full/?api="]');
         var count = 0;
         if (allShortLink.length) {
@@ -77,7 +77,7 @@ var byPass = {
             Logger.info("By pass " + count + " short link");
         }
     },
-    init: function() {
+    init: function () {
         if (configure.getValue('unlock_content', true)) {
             window.addEventListener('DOMContentLoaded', this.hideLinkUnlock);
             window.addEventListener('load', this.hideLinkUnlock);
@@ -91,29 +91,29 @@ var byPass = {
 //Logger Class
 var Logger = {
     style: 'color: #00DC58',
-    info: function(text) {
+    info: function (text) {
         console.info('%cABPVN.COM Info: ', this.style, text);
     },
-    warn: function(text) {
+    warn: function (text) {
         console.warn('%cABPVN Warn: ', this.style, text);
     },
-    error: function(text) {
+    error: function (text) {
         console.error('%cABPVN Error: ', this.style, text);
     },
-    log: function(text) {
+    log: function (text) {
         console.log('%cABPVN Log: ', this.style, text);
     },
 };
 //get Link class
 var getLink = {
     settingKey: 'fshare_download',
-    FShareConfig: function() {
+    FShareConfig: function () {
         if (this.url.startWith('https://www.fshare.vn')) {
             var currentSetting = configure.getValue(this.settingKey, true);
             var background_image = !currentSetting ? 'url("http://i.imgur.com/kJnOMOB.png")' : 'url("http://i.imgur.com/2b7fN6a.png")';
             var title = currentSetting ? 'Bật get link fshare' : 'Tắt get link fshare';
             var html = '<div id=\'fs_click\' title=\'' + title + '\' style=\'position: fixed; right: 0; bottom: 0; width: 30px; height: 30px; border-radius: 50%; background-image: ' + background_image + '; background-size: cover; cursor: pointer; z-index: 99999;\'></div>';
-            $(document).ready(function() {
+            $(document).ready(function () {
                 $(document.body).append(html);
                 $(document).on('click', '#fs_click', function FS_on_off() {
                     if (currentSetting) {
@@ -132,12 +132,12 @@ var getLink = {
             });
         }
     },
-    FShareGetLink: function() {
+    FShareGetLink: function () {
         if (this.url.startWith('https://www.fshare.vn/file/') && !this.url.startWith('https://www.fshare.vn/file/manager')) {
             var currentSetting = configure.getValue(this.settingKey, true);
             if (currentSetting) {
                 console.info('Start get link Fshare.vn');
-                $(document).ready(function() {
+                $(document).ready(function () {
                     var checkpassword = document.querySelector('.password-form');
                     var linkcode = $('#linkcode').val();
                     if (checkpassword === null) {
@@ -148,7 +148,7 @@ var getLink = {
                             'linkcode': linkcode,
                             'withFcode5': 0,
                         };
-                        $.post('/download/get', data).done(function(data, statusText, xhr) {
+                        $.post('/download/get', data).done(function (data, statusText, xhr) {
                             if (data.url === undefined) location.reload();
                             else {
                                 if (typeof location != 'undefined') {
@@ -158,7 +158,7 @@ var getLink = {
                                     $('.download').prepend('<a title="Tải trực tiếp" style="padding: 5px 0;box-sizing: content-box;" class="download-btn mdc-button mdc-button--raised mdc-ripple-upgraded full-width mdc-button-primary fcode5" href="' + data.url + '">Tải trực tiếp<span>Hỗ trợ bởi abpvn.com</span></a>');
                                 }
                             }
-                        }).fail(function(xhr, statusText, error) {
+                        }).fail(function (xhr, statusText, error) {
                             alert('ABPVN: Đã có lỗi fshare hoặc file có password');
                         });
                     } else {
@@ -171,7 +171,7 @@ var getLink = {
             }
         }
     },
-    mediafire_com: function() {
+    mediafire_com: function () {
         if (this.url.startWith('http://www.mediafire.com/file/') || this.url.startWith('https://www.mediafire.com/file/')) {
             var a_tag = document.querySelector('.download_link a');
             var link = a_tag.getAttribute('href');
@@ -181,7 +181,7 @@ var getLink = {
             }
         }
     },
-    usercloud_com: function() {
+    usercloud_com: function () {
         if (this.url.startWith('https://userscloud.com/') && this.url.length > 24) {
             var form = document.querySelector('form[name="F1"]');
             if (form) {
@@ -199,7 +199,7 @@ var getLink = {
             }
         }
     },
-    init: function() {
+    init: function () {
         this.url = location.href;
         this.FShareConfig();
         this.FShareGetLink();
@@ -211,11 +211,11 @@ var getLink = {
 };
 //Fix site class
 var fixSite = {
-    elementExist: function(selector) {
+    elementExist: function (selector) {
         var check = document.querySelector(selector);
         return check != null;
     },
-    getAllText: function(selector) {
+    getAllText: function (selector) {
         var text = '';
         var nodeList = document.querySelectorAll(selector);
         if (nodeList) {
@@ -225,10 +225,10 @@ var fixSite = {
         }
         return text;
     },
-    getScript: function(url) {
+    getScript: function (url) {
         var xhr = new XMLHttpRequest();
         xhr.open('GET', url);
-        xhr.addEventListener('load', function(data) {
+        xhr.addEventListener('load', function (data) {
             var blob = new Blob([xhr.responseText], {
                 type: 'text/javascript'
             });
@@ -240,7 +240,7 @@ var fixSite = {
         });
         xhr.send();
     },
-    loadCss: function(url, id) {
+    loadCss: function (url, id) {
         var css_tag = document.createElement('link');
         css_tag.rel = 'stylesheet';
         css_tag.id = id;
@@ -248,7 +248,7 @@ var fixSite = {
         var head = document.getElementsByTagName('head')[0];
         head.appendChild(css_tag);
     },
-    phimmedia_tv: function() {
+    phimmedia_tv: function () {
         if (this.url.startWith('https://www.phimmedia.tv/') || this.url.startWith('http://www.phimmedia.tv/')) {
             var links = document.querySelectorAll('#btn-film-watch,.poster > a');
             if (links) {
@@ -263,7 +263,7 @@ var fixSite = {
             }
         }
     },
-    linkneverdie_com: function() {
+    linkneverdie_com: function () {
         if (this.url.startWith('https://linkneverdie.com/')) {
             ABPVN.cTitle();
             var el = document.getElementById('wrapper');
@@ -272,7 +272,7 @@ var fixSite = {
             }
         }
     },
-    hdonline_vn: function() {
+    hdonline_vn: function () {
         if (this.url.startWith('http://hdonline.vn')) {
             var links = document.querySelectorAll('a[href^="http://hub.blueserving.com/"]');
             for (var i in links) {
@@ -286,7 +286,7 @@ var fixSite = {
             ABPVN.cTitle();
         }
     },
-    maclife_vn: function() {
+    maclife_vn: function () {
         if (this.url.startWith('https://maclife.vn/')) {
             var allShortUrl = document.querySelectorAll('a[rel]');
             var count = 0;
@@ -299,7 +299,7 @@ var fixSite = {
             Logger.info("Đã xóa " + count + " link rút gọn!");
         }
     },
-    aphim_co: function() {
+    aphim_co: function () {
         if (this.url.startWith('https://aphim.co/xem-phim/')) {
             ABPVN.cTitle();
             var aTagAds = document.querySelector('#video > a');
@@ -308,7 +308,7 @@ var fixSite = {
             Logger.info('Đã xóa link quảng cáo!');
         }
     },
-    openload: function() {
+    openload: function () {
         if (this.url.match(/^(https?:)?\/\/openload\.co\/*.*/) || this.url.match(/^(https?:)?\/\/oload\.\/*.*/)) {
             //Base on https://greasyfork.org/vi/scripts/17665-openload
             //
@@ -317,7 +317,7 @@ var fixSite = {
             window.adblock = false;
             window.adblock2 = false;
             window.turnoff = true;
-            window.open = function() {};
+            window.open = function () {};
             //
             // @run-at document-end
             //
@@ -325,7 +325,7 @@ var fixSite = {
                 if (document.readyState != 'loading') fn();
                 else document.addEventListener('DOMContentLoaded', fn);
             }
-            onready(function() {
+            onready(function () {
                 if (document.location.href.match(/\/embed\//) || $('#realdl>a')) {
                     var streamurl = '#streamurl,#streamuri,#streamurj,#adbdetect + script + div > p:nth-child(2)';
                     $('#btnView').hide();
@@ -337,19 +337,19 @@ var fixSite = {
                     $('#downloadTimer').hide();
                     $('#mediaspace_wrapper').prepend($('<div/>').attr('id', 'realdl')
                         .attr('style', 'position: absolute; top: 0 ; left: 0 ; right: 0; text-align: center; z-index: 9999; background-color: #00DC58; padding: .5em 0;')
-                        .on('mouseenter', function() {
+                        .on('mouseenter', function () {
                             $(this).fadeTo(500, 1);
-                        }).on('mouseleave', function() {
+                        }).on('mouseleave', function () {
                             $(this).fadeTo(500, 0);
                         })
                         .append($('<a/>').attr('href', '').attr('style', 'color: #fff; text-decoration: none;').html('FREE DOWNLOAD<sub>Power by abpvn.com</sub>')));
                     if (document.location.href.match(/\/embed\//)) {
-                        setTimeout(function() {
+                        setTimeout(function () {
                             $('#realdl').fadeTo(500, 0);
                         }, 1500);
                     }
                     $('#realdl').show();
-                    var tmrstreamurl = setInterval(function() {
+                    var tmrstreamurl = setInterval(function () {
                         if ($(streamurl).text() != '640K ought to be enough for anybody') {
                             $('#realdl a').attr('href', '/stream/' + $(streamurl).text());
                             $('#videooverlay').click();
@@ -357,13 +357,13 @@ var fixSite = {
                         }
                     }, 100);
                 }
-                window.onclick = function() {};
-                document.onclick = function() {};
-                document.body.onclick = function() {};
+                window.onclick = function () {};
+                document.onclick = function () {};
+                document.body.onclick = function () {};
             });
         }
     },
-    fontdep_com: function() {
+    fontdep_com: function () {
         if (this.url.startWith('http://www.fontdep.com/') && document.cookie.indexOf('virallock_myid') == -1) {
             document.cookie = 'virallock_myid=0001';
             location.reload();
@@ -375,7 +375,7 @@ var fixSite = {
             var links = document.querySelectorAll('a[href^="' + config.replace + '"]');
             Logger.info('Remove Redirect for ' + links.length + ' links');
             if (links.length) {
-                links.forEach(function(item) {
+                links.forEach(function (item) {
                     var stockUrl = item.getAttribute('href').replace(config.replace, '');
                     var count = 0;
                     while (stockUrl.indexOf('%2') > -1 && count < 5) {
@@ -410,11 +410,11 @@ var fixSite = {
                 replace: '/redirect/index.php?link='
             }
         ];
-        configs.forEach(function(config) {
+        configs.forEach(function (config) {
             this.removeRedir(config);
         }.bind(this));
     },
-    init: function() {
+    init: function () {
         this.url = location.href;
         if (configure.getValue('remove_redirect')) {
             this.removeRedirect();
@@ -430,7 +430,7 @@ var fixSite = {
 };
 //Ad blocker script
 var adBlocker = {
-    blockPopUp: function() {
+    blockPopUp: function () {
         var listSite = [
             'http://blogtruyen.com',
             'http://www.khosachnoi.net',
@@ -458,8 +458,8 @@ var adBlocker = {
                 document.onclick = null;
                 document.ontouchstart = null;
                 document.onmousedown = null;
-                window.addEventListener('load', function() {
-                    setTimeout(function() {
+                window.addEventListener('load', function () {
+                    setTimeout(function () {
                         Logger.info('Đã chặn popup quảng cáo onload');
                         document.ontouchstart = null;
                         document.onclick = null;
@@ -467,8 +467,8 @@ var adBlocker = {
                         document.onmousedown = null;
                     }, 300);
                 });
-                window.addEventListener('DOMContentLoaded', function() {
-                    setTimeout(function() {
+                window.addEventListener('DOMContentLoaded', function () {
+                    setTimeout(function () {
                         Logger.info('Đã chặn popup quảng cáo dom load');
                         document.ontouchstart = null;
                         document.onclick = null;
@@ -479,7 +479,7 @@ var adBlocker = {
             }
         }
     },
-    mgIdAdRemover: function() {
+    mgIdAdRemover: function () {
         var allMgIdEl = document.querySelectorAll('[id*="ScriptRoot"]');
         if (allMgIdEl && allMgIdEl.length) {
             ABPVN.cTitle();
@@ -489,15 +489,15 @@ var adBlocker = {
             }
         }
     },
-    phimnhanh_com: function() {
+    phimnhanh_com: function () {
         if (this.url.startWith('http://phimnhanh.com/xem-phim')) {
             Logger.warn('Đã chặn video preload');
             if (video !== undefined) {
-                video.preroll = function(options) {};
+                video.preroll = function (options) {};
             }
         }
     },
-    init: function() {
+    init: function () {
         this.url = location.href;
         this.mgIdAdRemover();
         this.blockPopUp();
@@ -510,12 +510,12 @@ var configure = {
         issue: 'https://github.com/abpvn/abpvn/issues/new',
         fanpage: 'https://www.facebook.com/abpvn.org',
     },
-    openUrl: function(url) {
+    openUrl: function (url) {
         if (typeof GM_openInTab === 'function') {
             GM_openInTab(url);
         }
     },
-    getValue: function(key, defaultValue) {
+    getValue: function (key, defaultValue) {
         var value;
         if (typeof GM_getValue === 'function') {
             value = GM_getValue(key);
@@ -525,28 +525,31 @@ var configure = {
         }
         return value;
     },
-    setValue: function(key, value) {
+    setValue: function (key, value) {
         if (typeof GM_setValue === 'function') {
             return GM_setValue(key, value);
         }
     },
-    setUpSetting: function() {
+    setUpSetting: function () {
         if (this.url === this.urls.setting) {
-            var settingContainer = '#setting-container';
-            var allSetting = document.querySelectorAll(settingContainer + ' input[type="checkbox"]');
-            if (allSetting) {
-                allSetting.forEach(checkbox => {
-                    checkbox.checked = this.getValue(checkbox.name, true);
-                    checkbox.addEventListener('change', event => {
-                        var target = event.target;
-                        var key = target.name;
-                        this.setValue(key, event.target.checked);
+            var settingContainer = document.querySelector('#setting-container');
+            if (settingContainer) {
+                settingContainer.classList.add('installed');
+                var allSetting = settingContainer.querySelectorAll('input[type="checkbox"]');
+                if (allSetting) {
+                    allSetting.forEach(checkbox => {
+                        checkbox.checked = this.getValue(checkbox.name, true);
+                        checkbox.addEventListener('change', event => {
+                            var target = event.target;
+                            var key = target.name;
+                            this.setValue(key, event.target.checked);
+                        });
                     });
-                });
+                }
             }
         }
     },
-    init: function() {
+    init: function () {
         this.url = location.href;
         if (typeof GM_registerMenuCommand === 'function') {
             GM_registerMenuCommand('ABPVN - Cài đặt', () => {
@@ -564,12 +567,12 @@ var configure = {
 };
 //Main class
 var ABPVN = {
-    cTitle: function() {
+    cTitle: function () {
         if (document.title.indexOf(' - Fixed by ABPVN.COM') === -1) {
             document.title = document.title + ' - Fixed by ABPVN.COM';
         }
     },
-    init: function() {
+    init: function () {
         //Init class adBlocker
         adBlocker.init();
         //Init class getLink
@@ -578,8 +581,10 @@ var ABPVN = {
         fixSite.init();
         //Init bypass class
         byPass.init();
-        //Init Congiure
-        configure.init();
+        if (window === window.parent) {
+            //Init Congfiure
+            configure.init();
+        }
     }
 };
 //RUN INNIT
