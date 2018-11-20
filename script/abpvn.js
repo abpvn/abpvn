@@ -15,8 +15,8 @@
 // @grant       GM_registerMenuCommand
 // @include     http://*
 // @include     https://*
-// @version     2.2.24
-// @change-log  Update for openload bypass function
+// @version     2.2.25
+// @change-log  Fix syntax error
 // @run-at      document-end
 // ==/UserScript==
 /* String Prototype */
@@ -212,163 +212,164 @@ var getLink = {
 };
 //Fix site class
 var fixSite = {
-        elementExist: function(selector) {
-            var check = document.querySelector(selector);
-            return check != null;
-        },
-        getAllText: function(selector) {
-            var text = '';
-            var nodeList = document.querySelectorAll(selector);
-            if (nodeList) {
-                for (var i in nodeList) {
-                    if (nodeList[i].innerText) text += nodeList[i].innerText;
-                }
+    elementExist: function(selector) {
+        var check = document.querySelector(selector);
+        return check != null;
+    },
+    getAllText: function(selector) {
+        var text = '';
+        var nodeList = document.querySelectorAll(selector);
+        if (nodeList) {
+            for (var i in nodeList) {
+                if (nodeList[i].innerText) text += nodeList[i].innerText;
             }
-            return text;
-        },
-        getScript: function(url) {
-            var xhr = new XMLHttpRequest();
-            xhr.open('GET', url);
-            xhr.addEventListener('load', function(data) {
-                var blob = new Blob([xhr.responseText], {
-                    type: 'text/javascript'
-                });
-                var url = URL.createObjectURL(blob);
-                var script = document.createElement('script');
-                script.src = url;
-                script.type = 'text/javascript';
-                document.getElementsByTagName('head')[0].appendChild(script);
+        }
+        return text;
+    },
+    getScript: function(url) {
+        var xhr = new XMLHttpRequest();
+        xhr.open('GET', url);
+        xhr.addEventListener('load', function(data) {
+            var blob = new Blob([xhr.responseText], {
+                type: 'text/javascript'
             });
-            xhr.send();
-        },
-        loadCss: function(url, id) {
-            var css_tag = document.createElement('link');
-            css_tag.rel = 'stylesheet';
-            css_tag.id = id;
-            css_tag.href = url;
-            var head = document.getElementsByTagName('head')[0];
-            head.appendChild(css_tag);
-        },
-        phimmedia_tv: function() {
-            if (this.url.startWith('https://www.phimmedia.tv/') || this.url.startWith('http://www.phimmedia.tv/')) {
-                var links = document.querySelectorAll('#btn-film-watch,.poster > a');
-                if (links) {
-                    for (var i = 0; i < links.length; i++) {
-                        var href = links[i].getAttribute('href');
-                        href = href.match('utm_id=.*')[0].replace('utm_id=', '');
-                        if (href) {
-                            links[i].setAttribute('href', atob(href));
-                        }
-                    }
-                    ABPVN.cTitle();
-                }
-            }
-        },
-        linkneverdie_com: function() {
-            if (this.url.startWith('https://linkneverdie.com/')) {
-                ABPVN.cTitle();
-                var el = document.getElementById('wrapper');
-                if (el) {
-                    el.id = "wrapper-fix-by-abpvn";
-                }
-            }
-        },
-        hdonline_vn: function() {
-            if (this.url.startWith('http://hdonline.vn')) {
-                var links = document.querySelectorAll('a[href^="http://hub.blueserving.com/"]');
-                for (var i in links) {
-                    var link = links[i];
-                    var href = link.getAttribute('href');
-                    href = href.match('url=.*')[0].replace('url=', '');
+            var url = URL.createObjectURL(blob);
+            var script = document.createElement('script');
+            script.src = url;
+            script.type = 'text/javascript';
+            document.getElementsByTagName('head')[0].appendChild(script);
+        });
+        xhr.send();
+    },
+    loadCss: function(url, id) {
+        var css_tag = document.createElement('link');
+        css_tag.rel = 'stylesheet';
+        css_tag.id = id;
+        css_tag.href = url;
+        var head = document.getElementsByTagName('head')[0];
+        head.appendChild(css_tag);
+    },
+    phimmedia_tv: function() {
+        if (this.url.startWith('https://www.phimmedia.tv/') || this.url.startWith('http://www.phimmedia.tv/')) {
+            var links = document.querySelectorAll('#btn-film-watch,.poster > a');
+            if (links) {
+                for (var i = 0; i < links.length; i++) {
+                    var href = links[i].getAttribute('href');
+                    href = href.match('utm_id=.*')[0].replace('utm_id=', '');
                     if (href) {
-                        link.setAttribute('href', href);
+                        links[i].setAttribute('href', atob(href));
                     }
                 }
                 ABPVN.cTitle();
             }
-        },
-        maclife_vn: function() {
-            if (this.url.startWith('https://maclife.vn/')) {
-                var allShortUrl = document.querySelectorAll('a[rel]');
-                var count = 0;
-                for (var i = 0; i < allShortUrl.length; i++) {
-                    if (allShortUrl[i].innerText.indexOf('http') === 0) {
-                        allShortUrl[i].setAttribute('href', allShortUrl[i].innerText);
-                        count++;
+        }
+    },
+    linkneverdie_com: function() {
+        if (this.url.startWith('https://linkneverdie.com/')) {
+            ABPVN.cTitle();
+            var el = document.getElementById('wrapper');
+            if (el) {
+                el.id = "wrapper-fix-by-abpvn";
+            }
+        }
+    },
+    hdonline_vn: function() {
+        if (this.url.startWith('http://hdonline.vn')) {
+            var links = document.querySelectorAll('a[href^="http://hub.blueserving.com/"]');
+            for (var i in links) {
+                var link = links[i];
+                var href = link.getAttribute('href');
+                href = href.match('url=.*')[0].replace('url=', '');
+                if (href) {
+                    link.setAttribute('href', href);
+                }
+            }
+            ABPVN.cTitle();
+        }
+    },
+    maclife_vn: function() {
+        if (this.url.startWith('https://maclife.vn/')) {
+            var allShortUrl = document.querySelectorAll('a[rel]');
+            var count = 0;
+            for (var i = 0; i < allShortUrl.length; i++) {
+                if (allShortUrl[i].innerText.indexOf('http') === 0) {
+                    allShortUrl[i].setAttribute('href', allShortUrl[i].innerText);
+                    count++;
+                }
+            }
+            Logger.info("Đã xóa " + count + " link rút gọn!");
+        }
+    },
+    aphim_co: function() {
+        if (this.url.startWith('https://aphim.co/xem-phim/')) {
+            ABPVN.cTitle();
+            var aTagAds = document.querySelector('#video > a');
+            aTagAds.setAttribute('href', '#abpvn');
+            aTagAds.removeAttribute('target');
+            Logger.info('Đã xóa link quảng cáo!');
+        }
+    },
+    openload: function() {
+        if (this.url.match(/^(https?:)?\/\/openload\.co\/*.*/) || this.url.match(/^(https?:)?\/\/oload\.\/*.*/)) {
+            //Base on https://greasyfork.org/vi/scripts/17665-openload
+            //
+            // @run-at document-start
+            //
+            window.adblock = false;
+            window.adblock2 = false;
+            window.turnoff = true;
+            window.open = function() {};
+            //
+            // @run-at document-end
+            //
+            function onready(fn) {
+                if (document.readyState != 'loading') fn();
+                else document.addEventListener('DOMContentLoaded', fn);
+            }
+            onready(function() {
+                if (document.location.href.match(/\/embed\//) || $('#realdl>a')) {
+                    var streamurl = '#streamurl,#streamuri,#streamurj,#adbdetect + script + div > p:nth-child(2)';
+                    $('#btnView').hide();
+                    $('#btnDl').hide();
+                    $('.dlButtonContainer').show();
+                    $('h3.dlfile.h-method').hide();
+                    $('.col-md-4.col-centered-sm *').remove();
+                    $('#mgiframe,#main>div[id*="Composite"]').remove();
+                    $('#downloadTimer').hide();
+                    $('#mediaspace_wrapper').prepend($('<div/>').attr('id', 'realdl')
+                        .attr('style', 'position: absolute; top: 0 ; left: 0 ; right: 0; text-align: center; z-index: 9999; background-color: #00DC58; padding: .5em 0;')
+                        .on('mouseenter', function() {
+                            $(this).fadeTo(500, 1);
+                        }).on('mouseleave', function() {
+                            $(this).fadeTo(500, 0);
+                        })
+                        .append($('<a/>').attr('href', '').attr('style', 'color: #fff; text-decoration: none;').html('FREE DOWNLOAD<sub>Power by abpvn.com</sub>')));
+                    if (document.location.href.match(/\/embed\//)) {
+                        setTimeout(function() {
+                            $('#realdl').fadeTo(500, 0);
+                        }, 1500);
                     }
-                }
-                Logger.info("Đã xóa " + count + " link rút gọn!");
-            }
-        },
-        aphim_co: function() {
-            if (this.url.startWith('https://aphim.co/xem-phim/')) {
-                ABPVN.cTitle();
-                var aTagAds = document.querySelector('#video > a');
-                aTagAds.setAttribute('href', '#abpvn');
-                aTagAds.removeAttribute('target');
-                Logger.info('Đã xóa link quảng cáo!');
-            }
-        },
-        openload: function() {
-            if (this.url.match(/^(https?:)?\/\/openload\.co\/*.*/) || this.url.match(/^(https?:)?\/\/oload\.\/*.*/)) {
-                //Base on https://greasyfork.org/vi/scripts/17665-openload
-                //
-                // @run-at document-start
-                //
-                window.adblock = false;
-                window.adblock2 = false;
-                window.turnoff = true;
-                window.open = function() {};
-                //
-                // @run-at document-end
-                //
-                function onready(fn) {
-                    if (document.readyState != 'loading') fn();
-                    else document.addEventListener('DOMContentLoaded', fn);
-                }
-                onready(function() {
-                        if (document.location.href.match(/\/embed\//) || $('#realdl>a')) {
-                            var streamurl = '#streamurl,#streamuri,#streamurj,#adbdetect + script + div > p:nth-child(2)';
-                            $('#btnView').hide();
-                            $('#btnDl').hide();
-                            $('.dlButtonContainer').show();
-                            $('h3.dlfile.h-method').hide();
-                            $('.col-md-4.col-centered-sm *').remove();
-                            $('#mgiframe,#main>div[id*="Composite"]').remove();
-                            $('#downloadTimer').hide();
-                            $('#mediaspace_wrapper').prepend($('<div/>').attr('id', 'realdl')
-                                .attr('style', 'position: absolute; top: 0 ; left: 0 ; right: 0; text-align: center; z-index: 9999; background-color: #00DC58; padding: .5em 0;')
-                                .on('mouseenter', function() {
-                                    $(this).fadeTo(500, 1);
-                                }).on('mouseleave', function() {
-                                    $(this).fadeTo(500, 0);
-                                })
-                                .append($('<a/>').attr('href', '').attr('style', 'color: #fff; text-decoration: none;').html('FREE DOWNLOAD<sub>Power by abpvn.com</sub>')));
-                            if (document.location.href.match(/\/embed\//)) {
-                                setTimeout(function() {
-                                    $('#realdl').fadeTo(500, 0);
-                                }, 1500);
-                            }
-                            $('#realdl').show();
-                            var streamurl_tmr = setInterval(function() {
-                                // <@snippet author="https://greasyfork.org/forum/profile/daedelus" src="https://greasyfork.org/forum/discussion/36362/x">
-                                var streamurl_src;
-                                $('p[id]').each(function() {
-                                    streamurl_src = streamurl_src || ($(this).text().match(/^[\w\.~-]+$/) && $(this).text().match(/~/)) ? $(this).text() : streamurl_src;
-                                });
-                                // </@snippet>
-                                if (streamurl_src) {
-                                    var streamurl_url = location.origin + '/stream/' + streamurl_src;
-                                    $('#realdl a').attr('href', streamurl_url);
-                                    $('#steamcopy').text(streamurl_url);
-                                    $('#videooverlay').click();
-                                    clearInterval(streamurl_tmr);
-                                }
-                            }, 100);
+                    $('#realdl').show();
+                    var streamurl_tmr = setInterval(function() {
+                        // <@snippet author="https://greasyfork.org/forum/profile/daedelus" src="https://greasyfork.org/forum/discussion/36362/x">
+                        var streamurl_src;
+                        $('p[id]').each(function() {
+                            streamurl_src = streamurl_src || ($(this).text().match(/^[\w\.~-]+$/) && $(this).text().match(/~/)) ? $(this).text() : streamurl_src;
+                        });
+                        // </@snippet>
+                        if (streamurl_src) {
+                            var streamurl_url = location.origin + '/stream/' + streamurl_src;
+                            $('#realdl a').attr('href', streamurl_url);
+                            $('#steamcopy').text(streamurl_url);
+                            $('#videooverlay').click();
+                            clearInterval(streamurl_tmr);
                         }
-                    }
-                    window.onclick = function() {}; document.onclick = function() {}; document.body.onclick = function() {};
-                });
+                    }, 100);
+                }
+                window.onclick = function() {};
+                document.onclick = function() {};
+                document.body.onclick = function() {};
+            });
         }
     },
     fontdep_com: function() {
