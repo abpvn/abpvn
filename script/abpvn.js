@@ -15,8 +15,8 @@
 // @grant       GM_registerMenuCommand
 // @include     http://*
 // @include     https://*
-// @version     2.2.25
-// @change-log  Fix syntax error
+// @version     2.2.26
+// @change-log  Bypass 123link adBlockDetected function
 // @run-at      document-end
 // ==/UserScript==
 /* String Prototype */
@@ -378,7 +378,14 @@ var fixSite = {
             location.reload();
         }
     },
-    removeRedir(config) {
+    _123link: function() {
+        if (this.url.startWith('https://123link')) {
+            adBlockDetected = function() {
+                Logger.info('By pass adBlock detect rồi nhé! Hahahahaha 😁😁😁');
+            };
+        }
+    },
+    removeRedir: function(config) {
         if (this.url.match(new RegExp(config.url, 'g')) || this.url.startWith(config.url)) {
             ABPVN.cTitle();
             var links = document.querySelectorAll('a[href^="' + config.replace + '"]');
@@ -428,6 +435,7 @@ var fixSite = {
         if (configure.getValue('remove_redirect')) {
             this.removeRedirect();
         }
+        this._123link();
         this.phimmedia_tv();
         this.linkneverdie_com();
         this.hdonline_vn();
