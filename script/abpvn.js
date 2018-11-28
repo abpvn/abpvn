@@ -15,8 +15,8 @@
 // @grant       GM_registerMenuCommand
 // @include     http://*
 // @include     https://*
-// @version     2.2.26
-// @change-log  Bypass 123link adBlockDetected function
+// @version     2.2.27
+// @change-log  Add webtretho.com to redirect remove
 // @run-at      document-end
 // ==/UserScript==
 /* String Prototype */
@@ -388,7 +388,7 @@ var fixSite = {
     removeRedir: function(config) {
         if (this.url.match(new RegExp(config.url, 'g')) || this.url.startWith(config.url)) {
             ABPVN.cTitle();
-            var links = document.querySelectorAll('a[href^="' + config.replace + '"]');
+            var links = document.querySelectorAll(config.selector || 'a[href^="' + config.replace + '"]');
             Logger.info('Remove Redirect for ' + links.length + ' links');
             if (links.length) {
                 links.forEach(function(item) {
@@ -424,6 +424,11 @@ var fixSite = {
             {
                 url: 'forum.voz.vn',
                 replace: '/redirect/index.php?link='
+            },
+            {
+                url: 'www.webtretho.com/forum/',
+                replace: /http(s?):\/\/webtretho\.com\/forum\/links\.php\?url=/,
+                selector: 'a[href*="webtretho.com/forum/links.php?url="]'
             }
         ];
         configs.forEach(function(config) {
@@ -432,7 +437,7 @@ var fixSite = {
     },
     init: function() {
         this.url = location.href;
-        if (configure.getValue('remove_redirect')) {
+        if (configure.getValue('remove_redirect', true)) {
             this.removeRedirect();
         }
         this._123link();
