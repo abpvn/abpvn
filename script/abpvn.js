@@ -15,7 +15,7 @@
 // @grant       GM_registerMenuCommand
 // @include     http://*
 // @include     https://*
-// @version     2.2.2
+// @version     2.2.28
 // @change-log  Fix remove redirect forums.voz.vn
 // @run-at      document-end
 // ==/UserScript==
