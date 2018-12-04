@@ -15,8 +15,8 @@
 // @grant       GM_registerMenuCommand
 // @include     http://*
 // @include     https://*
-// @version     2.2.27
-// @change-log  Add webtretho.com to redirect remove
+// @version     2.2.2
+// @change-log  Fix remove redirect forums.voz.vn
 // @run-at      document-end
 // ==/UserScript==
 /* String Prototype */
@@ -422,7 +422,7 @@ var fixSite = {
                 replace: 'http://phanmemaz.com/wp-content/plugins/tm-wordpress-redirection/l.php?'
             },
             {
-                url: 'forum.voz.vn',
+                url: 'forum'forums.voz.vn',
                 replace: '/redirect/index.php?link='
             },
             {
