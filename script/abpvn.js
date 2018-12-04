@@ -15,7 +15,7 @@
 // @grant       GM_registerMenuCommand
 // @include     http://*
 // @include     https://*
-// @version     2.2.28
+// @version     2.2.29
 // @change-log  Fix remove redirect forums.voz.vn
 // @run-at      document-end
 // ==/UserScript==
@@ -422,7 +422,7 @@ var fixSite = {
                 replace: 'http://phanmemaz.com/wp-content/plugins/tm-wordpress-redirection/l.php?'
             },
             {
-                url: 'forum'forums.voz.vn',
+                url: 'forums.voz.vn',
                 replace: '/redirect/index.php?link='
             },
             {
