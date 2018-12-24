@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 201812240820
-! Title: ABPVN List [Fix incorrect filter rule]
-! Last modified: 24 Dec 2018 08:20 UTC+7
+! Version: 201812240853
+! Title: ABPVN List [optimize fitler]
+! Last modified: 24 Dec 2018 08:53 UTC+7
 ! Expires: 1 days (update frequency)
 ! Homepage: https://abpvn.com/
 !
@@ -285,7 +285,6 @@ _990x100.
 ||11bet.com^$popup,third-party
 ||360game.vn^$popup,third-party
 ||3xviet.com^$popup
-||a-ads.com^$third-party
 ||ad360.vn^$third-party
 ||adbro.me^
 ||adflex.vn^$third-party
@@ -302,7 +301,6 @@ _990x100.
 ||adtop.vn^$third-party
 ||adv.vcmedia.vn^
 ||aff.opus-static.com^$third-party
-||ambientplatform.vn^$third-party
 ||amcdn.vn^
 ||anthill.vn^$third-party
 ||ants.vn^$third-party
@@ -323,7 +321,6 @@ _990x100.
 ||delivery.vungtv.com^
 ||doubleclick.net^$domain=vietmod.pro
 ||dxprljqoay4rt.cloudfront.net^
-||dybxezbel1g44.cloudfront.net^
 ||endpoint.terratraf.com^$third-party
 ||faunlesnuff.co^
 ||filmphil.net^$subdocument
@@ -359,7 +356,6 @@ _990x100.
 ||rigelink.com^
 ||s.mnet-ad.net^
 ||s1block.com^$third-party
-||s2blosh.com^
 ||s4block.com^
 ||sbbanner.com^
 ||sbobet.com^$popup,third-party
@@ -415,6 +411,7 @@ animetvn.com###dt-bottom-right-banner
 animetvn.com###footer
 animetvn.com###menubentrai
 animevsub.tv###invideo_wrapper
+animevsub.tv##.ads_player
 anivn.com##A[href="http://simdepdongnai.com"]
 anonyviet.com##.td-container-wrap.td-logo-wrap-full.td-banner-wrap-full
 anonyviet.com##.widget.widget_custom_html
@@ -565,7 +562,6 @@ kiemhieptruyen.com#?#p:-abp-has(a[href^="http://bit.ly"])
 kienthuc.net.vn##.sponsor-zone
 kienthuc.net.vn##.sponsor-zone + div
 kphim.tv##.right-movie-info
-kphim.tv,animevsub.tv##.ads_player
 kqxs.vn##.bggradient-mien
 kzone.tv##.kzone-sticky-footer-ad
 laptrinhvb.net##div.widget:nth-of-type(1)
@@ -628,7 +624,6 @@ tiin.vn##.banner-home-left
 tinmoi.vn###footer_box_bottom
 tivi12h.net###hide_float
 tivi12h.net,tivi4k.net###ads_float
-tivi4k.net###ads_content
 tivi4k.net##.adsbanner
 tivi4k.net##.topbaner
 tivi4k.net##[id^="Ads_"]
@@ -649,8 +644,6 @@ tv.101vn.com,bongdaso.com,keonhacai.net###right_float
 tv.101vn.com,keonhacai.net,tienganh.com.vn###fl813691
 tvhay.org,xem7.com,xemphimvtv.net##.ad_location
 valvrareteam.com,phimotv.net##A[rel*="nofollow"]
-vantuanit.com###AdSense2
-vantuanit.com##.AdSense
 vietjack.com##.block-teasers-47483
 vietmod.pro##.funboxWrapper
 vietnamgsm.vn###headerProxy
@@ -722,7 +715,7 @@ yan.vn##.AdNode
 @@||lh3.googleusercontent.com$image,domain=kenh4k.com
 @@||licklink.net/js/full-page-script.js$script,domain=fcine.net
 @@||luyenthithukhoa.vn/images/home.png$image,~third-party
-@@||pagead2.googlesyndication.com$script,domain=upfile.vn|startuanit.net|vantuanit.com|thuthuatmeovat.net|vietmod.pro|fullcrackpc.com|win10.vn|loinhacsong.com|tailieupro.com|downmienphi.com|kenhtao.net|kites.vn|mshare.io|123link.pw|123link.co|123link.pro
+@@||pagead2.googlesyndication.com$script,domain=upfile.vn|startuanit.net|thuthuatmeovat.net|vietmod.pro|fullcrackpc.com|win10.vn|loinhacsong.com|tailieupro.com|downmienphi.com|kenhtao.net|kites.vn|mshare.io|123link.pw|123link.co|123link.pro
 @@||phim14.net/IMG/ads/
 @@||s0.2mdn.net/instream/video/client.js$domain=yan.vn
 @@||st.bebi.com^$script,domain=kzone.tv|ani4u.org
@@ -776,7 +769,6 @@ yan.vn##.AdNode
 @@||thivien.net$generichide
 @@||tienichmaytinh.com$generichide
 @@||tuong.me$generichide
-@@||vantuanit.com$generichide
 @@||vietmod.pro$generichide
 @@||vinaurl.in$generichide
 @@||vnhd.net$generichide
