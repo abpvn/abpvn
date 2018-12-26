@@ -28,3 +28,4 @@ sed ':a;N;$!ba;s/\n\n/ /g' abpvn.tmp > abpvn.txt
 sed ':a;N;$!ba;s/\n\n/ /g' abpvn_noelemhide.tmp > abpvn_noelemhide.txt
 # remove tmp file
 rm -rf src/*.tmp
+rm -rf *.tmp
