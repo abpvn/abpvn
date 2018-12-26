@@ -21,7 +21,11 @@ VERSION=`date +'%Y%m%d%H%M'`
 sed -e "s/_time_stamp_/$TIME_STAMP/g" -e "s/_version_/$VERSION/g" src/abpvn_title.txt > src/abpvn_title.tmp
 echo >> src/abpvn_title.tmp
 # add to 1 file
-cat src/abpvn_title.tmp src/abpvn_general.txt src/abpvn_ad_domain.txt src/abpvn_elemhide.txt src/abpvn_whitelist.txt src/abpvn_whitelist_elemhide.txt src/abpvn_adult.txt src/abpvn_adult_elemhide.txt > abpvn.txt
-cat src/abpvn_title.tmp src/abpvn_general.txt src/abpvn_ad_domain.txt src/abpvn_whitelist.txt src/abpvn_adult.txt > abpvn_noelemhide.txt
+cat src/abpvn_title.tmp src/abpvn_general.txt src/abpvn_ad_domain.txt src/abpvn_elemhide.txt src/abpvn_whitelist.txt src/abpvn_whitelist_elemhide.txt src/abpvn_adult.txt src/abpvn_adult_elemhide.txt > abpvn.tmp
+cat src/abpvn_title.tmp src/abpvn_general.txt src/abpvn_ad_domain.txt src/abpvn_whitelist.txt src/abpvn_adult.txt > abpvn_noelemhide.tmp
+# remove duplicate new line
+sed ':a;N;$!ba;s/\n\n/ /g' abpvn.tmp > abpvn.txt
+sed ':a;N;$!ba;s/\n\n/ /g' abpvn_noelemhide.tmp > abpvn_noelemhide.txt
 # remove tmp file
 rm -rf src/*.tmp
+rm -rf *.tmp
