@@ -15,8 +15,8 @@
 // @grant       GM_registerMenuCommand
 // @include     http://*
 // @include     https://*
-// @version     2.2.29
-// @change-log  Fix remove redirect forums.voz.vn
+// @version     2.2.30
+// @change-log  Change fshare get link from vnlinks.net to getlinkaz.com
 // @run-at      document-end
 // ==/UserScript==
 /* String Prototype */
@@ -168,7 +168,7 @@ var getLink = {
                 });
             } else {
                 $('.download').prepend('<a title="Download nhanh qua linksvip.net" style="padding: 5px 0;box-sizing: content-box;" class="download-btn mdc-button mdc-button--raised mdc-ripple-upgraded full-width mdc-button-primary fcode5" href="http://linksvip.net?link=' + location.href + '">Tải nhanh<span>Qua dịch vụ linksvip.net</span></a>');
-                $('.download').prepend('<a title="Download nhanh qua linksvip.net" style="padding: 5px 0;margin-bottom: 5px;box-sizing: content-box;" class="download-btn mdc-button mdc-button--raised mdc-ripple-upgraded full-width mdc-button-success fcode5" href="https://vnlinks.net/?link=' + location.href + '">Tải nhanh<span>Qua dịch vụ vnlinks.net</span></a>');
+                $('.download').prepend('<a title="Download nhanh qua getlinkaz.com" style="padding: 5px 0;margin-bottom: 5px;box-sizing: content-box;" class="download-btn mdc-button mdc-button--raised mdc-ripple-upgraded full-width mdc-button-success fcode5" href="https://getlinkaz.com/?link=' + location.href + '">Tải nhanh<span>Qua dịch vụ getlinkaz.com</span></a>');
             }
         }
     },
