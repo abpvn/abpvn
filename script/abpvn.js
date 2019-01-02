@@ -15,8 +15,8 @@
 // @grant       GM_registerMenuCommand
 // @include     http://*
 // @include     https://*
-// @version     2.2.30
-// @change-log  Change fshare get link from vnlinks.net to getlinkaz.com
+// @version     2.2.31
+// @change-log  Add blockPopUp on tvhay.org
 // @run-at      document-end
 // ==/UserScript==
 /* String Prototype */
@@ -470,7 +470,8 @@ var adBlocker = {
             'https://www.phimmedia.tv',
             'http://phimnhanh.com',
             'http://www.vietsubhd.com',
-            'https://www.phimmedia.tv'
+            'https://www.phimmedia.tv',
+            'http://tvhay.org'
         ];
         for (var i = 0; i < listSite.length; i++) {
             if (this.url.startWith(listSite[i])) {
