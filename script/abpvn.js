@@ -15,8 +15,8 @@
 // @grant       GM_registerMenuCommand
 // @include     http://*
 // @include     https://*
-// @version     2.2.31
-// @change-log  Add blockPopUp on tvhay.org
+// @version     2.2.32
+// @change-log  Remove ads image in linkneverdie.com
 // @run-at      document-end
 // ==/UserScript==
 /* String Prototype */
@@ -270,6 +270,11 @@ var fixSite = {
             var el = document.getElementById('wrapper');
             if (el) {
                 el.id = "wrapper-fix-by-abpvn";
+            }
+            //Hide ads image
+            var aTag = document.querySelector('#adsqca');
+            if (aTag) {
+                aTag.setAttribute('style', 'display:none !important');
             }
         }
     },
