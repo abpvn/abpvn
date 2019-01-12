@@ -15,8 +15,8 @@
 // @grant       GM_registerMenuCommand
 // @include     http://*
 // @include     https://*
-// @version     2.2.32
-// @change-log  Remove ads image in linkneverdie.com
+// @version     2.2.33
+// @change-log  Fix quick download mediafire.com
 // @run-at      document-end
 // ==/UserScript==
 /* String Prototype */
@@ -174,7 +174,7 @@ var getLink = {
     },
     mediafire_com: function() {
         if (this.url.startWith('http://www.mediafire.com/file/') || this.url.startWith('https://www.mediafire.com/file/')) {
-            var a_tag = document.querySelector('.download_link a');
+            var a_tag = document.querySelector('.download_link a.input');
             var link = a_tag.getAttribute('href');
             if (link.startWith('http')) {
                 document.body.innerHTML = '<center><h1>ABPVN MediaFire Download đã hoạt động</h1><a href=\'http://abpvn.com/napthe\'><h1>Ủng hộ ABPVN</h1></a><br/>Không tự tải xuống? <a href=\'' + link + '\' title=\'Download\'>Click vào đây</a></center>';
