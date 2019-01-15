@@ -15,8 +15,8 @@
 // @grant       GM_registerMenuCommand
 // @include     http://*
 // @include     https://*
-// @version     2.2.35
-// @change-log  Update getlink download button fshare
+// @version     2.2.36
+// @change-log  Update popup blocker use location.hostname
 // @run-at      document-end
 // ==/UserScript==
 /* String Prototype */
@@ -459,27 +459,27 @@ var fixSite = {
 var adBlocker = {
     blockPopUp: function() {
         var listSite = [
-            'http://blogtruyen.com',
-            'http://www.khosachnoi.net',
-            'http://hamtruyen.vn/',
-            'http://phim14.net/',
-            'http://phim7.com/',
-            'http://www.diendan.trentroiduoidat.com/',
-            'http://www.trentroiduoidat.com/',
-            'http://chophanthiet.us',
-            'http://animetvn.com',
-            'http://font.vn',
-            'https://vidoza.net/',
-            'http://www.easysoft.xyz',
-            'http://hdonline.vn',
-            'https://www.phimmedia.tv',
-            'http://phimnhanh.com',
-            'http://www.vietsubhd.com',
-            'https://www.phimmedia.tv',
-            'http://tvhay.org'
+            'blogtruyen.com',
+            'www.khosachnoi.net',
+            'hamtruyen.vn',
+            'phim14.net',
+            'phim7.com',
+            'www.diendan.trentroiduoidat.com',
+            'www.trentroiduoidat.com',
+            'chophanthiet.us',
+            'animetvn.com',
+            'font.vn',
+            'vidoza.net',
+            'www.easysoft.xyz',
+            'hdonline.vn',
+            'www.phimmedia.tv',
+            'phimnhanh.com',
+            'www.vietsubhd.com',
+            'www.phimmedia.tv',
+            'tvhay.org'
         ];
         for (var i = 0; i < listSite.length; i++) {
-            if (this.url.startWith(listSite[i])) {
+            if (location.hostname === listSite[i]) {
                 ABPVN.cTitle();
                 Logger.info('Đã chặn popup quảng cáo');
                 document.body.onclick = null;
