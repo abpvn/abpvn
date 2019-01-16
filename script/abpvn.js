@@ -15,8 +15,8 @@
 // @grant       GM_registerMenuCommand
 // @include     http://*
 // @include     https://*
-// @version     2.2.36
-// @change-log  Update popup blocker use location.hostname
+// @version     2.2.37
+// @change-log  Remove redirect in voz thread only
 // @run-at      document-end
 // ==/UserScript==
 /* String Prototype */
@@ -427,7 +427,7 @@ var fixSite = {
                 replace: 'http://phanmemaz.com/wp-content/plugins/tm-wordpress-redirection/l.php?'
             },
             {
-                url: 'forums.voz.vn',
+                url: 'forums.voz.vn/showthread.php',
                 replace: '/redirect/index.php?link='
             },
             {
