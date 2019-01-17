@@ -15,7 +15,7 @@
 // @grant       GM_registerMenuCommand
 // @include     http://*
 // @include     https://*
-// @version     2.2.38
+// @version     2.2.39
 // @change-log  Update anti adblock remover
 // @run-at      document-end
 // ==/UserScript==
@@ -445,7 +445,7 @@ var fixSite = {
         if (configure.getValue('remove_redirect', true)) {
             this.removeRedirect();
         }
-        this.adBlockDetected();
+        this.antiAdblockRemover();
         this.phimmedia_tv();
         this.linkneverdie_com();
         this.hdonline_vn();
