@@ -15,8 +15,8 @@
 // @grant       GM_registerMenuCommand
 // @include     http://*
 // @include     https://*
-// @version     2.2.37
-// @change-log  Remove redirect in voz thread only
+// @version     2.2.38
+// @change-log  Update anti adblock remover
 // @run-at      document-end
 // ==/UserScript==
 /* String Prototype */
@@ -383,8 +383,8 @@ var fixSite = {
             location.reload();
         }
     },
-    _123link: function() {
-        if (this.url.startWith('https://123link')) {
+    antiAdblockRemover: function() {
+        if (typeof adBlockDetected === 'function') {
             adBlockDetected = function() {
                 Logger.info('By pass adBlock detect rồi nhé! Hahahahaha 😁😁😁');
             };
@@ -445,7 +445,7 @@ var fixSite = {
         if (configure.getValue('remove_redirect', true)) {
             this.removeRedirect();
         }
-        this._123link();
+        this.adBlockDetected();
         this.phimmedia_tv();
         this.linkneverdie_com();
         this.hdonline_vn();
