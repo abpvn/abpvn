@@ -15,8 +15,8 @@
 // @grant       GM_registerMenuCommand
 // @include     http://*
 // @include     https://*
-// @version     2.2.39
-// @change-log  Update anti adblock remover
+// @version     2.2.40
+// @change-log  Fix phim.media popup
 // @run-at      document-end
 // ==/UserScript==
 /* String Prototype */
@@ -472,7 +472,7 @@ var adBlocker = {
             'vidoza.net',
             'www.easysoft.xyz',
             'hdonline.vn',
-            'www.phimmedia.tv',
+            'www.phim.media',
             'phimnhanh.com',
             'www.vietsubhd.com',
             'www.phimmedia.tv',
