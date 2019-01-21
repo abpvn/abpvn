@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 201901201300
-! Title: ABPVN List [vatly247.com]
-! Last modified: 20 Jan 2019 13:00 UTC+7
+! Version: 201901210807
+! Title: ABPVN List [tvhay.org]
+! Last modified: 21 Jan 2019 08:07 UTC+7
 ! Expires: 1 days (update frequency)
 ! Homepage: https://abpvn.com/
 !
@@ -13,7 +13,6 @@
 ! Email: support@abpvn.com
 ! Facebook Fanpage: https://www.facebook.com/abpvn.org
 ! Forum: https://forums.voz.vn/showthread.php?t=5246802
-
 ! ---------- Generic Blocking Rules ----------
 $popup,third-party,domain=appvn.com
 $webrtc,domain=phim14.net|phimotv.net|appvn.com
@@ -32,8 +31,8 @@ $webrtc,domain=phim14.net|phimotv.net|appvn.com
 /ads/*.gif
 /ads/*.xml$xmlhttprequest
 /adservice.$domain=vietmod.pro
-/banner-ads.
 /banner/*.gif
+/banner-ads.
 /blueserving.
 /images.accesstrade.vn/
 /images/qc/*
@@ -127,11 +126,11 @@ _990x100.
 ||goo.gl^$popup,domain=animetvn.tv
 ||googlecontentmanager.com^$image,third-party
 ||googleusercontent.com^*.gif|$domain=tivi4k.net
+||hamtruyen.com/bannerqc/
 ||hamtruyen.com/Scripts/blueyonew.js
 ||hamtruyen.com/Scripts/index.js$script
 ||hamtruyen.com/Scripts/ixinh.js
 ||hamtruyen.com/Scripts/jwplayer.js
-||hamtruyen.com/bannerqc/
 ||hamtruyen.com/ytb.html
 ||haynhucnhoi.tv/api$third-party
 ||hdvietnam.com/banner/
@@ -154,7 +153,6 @@ _990x100.
 ||image.vtcns.com/files/qc/
 ||images.asianbookie.com/vwin/
 ||images.digistar.vn/Banner*.
-||images.tuyensinh247.com^*.gif$domain=vatly247.com
 ||images1.violympic.vn/assets/images/*.gif
 ||images2-focus-opensocial.googleusercontent.com^*.gif$image,domain=tvhay.org
 ||img.anime47.com/imgur/HnIjfZc.jpg
@@ -222,16 +220,16 @@ _990x100.
 ||static.download.com.vn/cache.aspx?_path=*ad$script
 ||static.hayhaytv.com^*.mp4
 ||static.hdo.tv/template/frontend/images/FloatbannerHDO.png
-||static.hdo.tv/template/frontend/images/Topplayer.png
 ||static.hdo.tv/template/frontend/images/float-logo-Pose.png
+||static.hdo.tv/template/frontend/images/Topplayer.png
 ||static.htvonline.com.vn/layout/images/*_banner.jpg
 ||static.htvonline.com.vn/layout/images/lienhequangcao.png
 ||static.ketqua.net/adv_imgs
 ||static.ketqua.net/img/qc/
 ||static.nhaccuatui.com/imgqc/
 ||staticflickr.com^*.gif$domain=chophanthiet.us
-||stc-tv.zing.vn/skins/tv_v2/js/fadblock.min.js
 ||stc.nas.nixcdn.com^*.gif
+||stc-tv.zing.vn/skins/tv_v2/js/fadblock.min.js
 ||storage.fshare.vn/images/$third-party
 ||storage.googleapis.com/adasia-ad-network-origin/
 ||taboola.com^$script,third-party
@@ -262,8 +260,7 @@ _990x100.
 ||truyentranhtuan.com^*.gif$image
 ||tuhocanninhmang.com/images/banners/
 ||tvb8vn.com^$subdocument,domain=phimmoi.info
-||tvhay.org/guide/$xmlhttprequest,script
-||tvhay.org/preload/$xmlhttprequest
+||tvhay.org^*.xml$xmlhttprequest,~third-party
 ||uniad.$third-party
 ||upsieutoc.com^*banner$domain=chophanthiet.us
 ||uyenland.com^$third-party,domain=font.vn
@@ -303,9 +300,9 @@ _990x100.
 ||ads.exdynsrv.com^
 ||adsplay.net^$third-party
 ||adsquangcao.com^
-||adtima-static.zadn.vn^$script
 ||adtima.vn^$third-party
 ||adtimaserver.vn^
+||adtima-static.zadn.vn^$script
 ||adtop.vn^$third-party
 ||adv.vcmedia.vn^
 ||aff.opus-static.com^$third-party
@@ -323,9 +320,9 @@ _990x100.
 ||binomo.com^$popup,third-party
 ||blueseed.tv^$third-party
 ||brand.ad^
-||cdn-qc.coccoc.com^
 ||cdn.videonow.ru^
 ||cdn9now.com^$script
+||cdn-qc.coccoc.com^
 ||click.advertnative.com^
 ||delivery.vungtv.com^
 ||doubleclick.net^$domain=vietmod.pro
