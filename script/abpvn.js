@@ -15,8 +15,8 @@
 // @grant       GM_registerMenuCommand
 // @include     http://*
 // @include     https://*
-// @version     2.2.41
-// @change-log  Update fshare.vn get link button
+// @version     2.2.42
+// @change-log  Add block popup bilutv.org
 // @run-at      document-end
 // ==/UserScript==
 /* String Prototype */
@@ -476,7 +476,8 @@ var adBlocker = {
             'phimnhanh.com',
             'www.vietsubhd.com',
             'www.phimmedia.tv',
-            'tvhay.org'
+            'tvhay.org',
+            'bilutv.org'
         ];
         for (var i = 0; i < listSite.length; i++) {
             if (location.hostname === listSite[i]) {
