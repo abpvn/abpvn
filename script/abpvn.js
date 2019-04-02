@@ -15,7 +15,7 @@
 // @grant       GM_registerMenuCommand
 // @include     http://*
 // @include     https://*
-// @version     2.2.44
+// @version     2.2.45
 // @change-log  Add 123link quickByPassLink
 // @run-at      document-end
 // ==/UserScript==
