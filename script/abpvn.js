@@ -15,8 +15,8 @@
 // @grant       GM_registerMenuCommand
 // @include     http://*
 // @include     https://*
-// @version     2.2.42
-// @change-log  Add block popup bilutv.org
+// @version     2.2.43
+// @change-log  Add antiAdblockRemover function check
 // @run-at      document-end
 // ==/UserScript==
 /* String Prototype */
@@ -384,9 +384,15 @@ var fixSite = {
         }
     },
     antiAdblockRemover: function() {
+        var msg = 'By pass adBlock detect rồi nhé! Hahahahaha 😁😁😁';
         if (typeof adBlockDetected === 'function') {
             adBlockDetected = function() {
-                Logger.info('By pass adBlock detect rồi nhé! Hahahahaha 😁😁😁');
+                Logger.info(msg);
+            };
+        }
+        if (typeof showAdsBlock === 'function') {
+            showAdsBlock = function() {
+                  Logger.info(msg);
             };
         }
     },
