@@ -15,8 +15,8 @@
 // @grant       GM_registerMenuCommand
 // @include     http://*
 // @include     https://*
-// @version     2.2.46
-// @change-log  Add mshare.io quick download
+// @version     2.2.47
+// @change-log  Add licklink.net quick download
 // @run-at      document-end
 // ==/UserScript==
 /* String Prototype */
@@ -79,7 +79,10 @@ var byPass = {
         }
     },
     quickByPassLink: function() {
-        var regex = /123link\..*|phlame.pw|mshare\.io/;
+        var regex = /123link\..*|phlame.pw|mshare\.io|licklink.net/;
+        var largeTimeoutHost = [
+            'licklink.net'
+        ];
         if (regex.test(location.hostname)) {
             try {
                 var checkClick = function(mutation) {
@@ -112,12 +115,17 @@ var byPass = {
                     observer.observe(button, config);
                 } else {
                     var getLink = document.querySelector('.get-link');
+                    var timeout = largeTimeoutHost.indexOf(location.hostname) > -1 ? 5000 : 100;
                     if (getLink) {
                         observer.observe(getLink, config);
-                        $("#go-link").addClass("go-link").trigger("submit.adLinkFly.counterSubmit").one("submit.adLinkFly.counterSubmit", function(e) {
-                            e.preventDefault();
-                            location.reload();
-                        });
+                        setTimeout(function() {
+                            $("#go-link").addClass("go-link").trigger("submit.adLinkFly.counterSubmit").one("submit.adLinkFly.counterSubmit", function(e) {
+                                e.preventDefault();
+                                if (largeTimeoutHost.indexOf(location.hostname) < 0) {
+                                    location.reload();
+                                }
+                            });
+                        }, timeout);
                     }
                 }
                 // mshare.io
