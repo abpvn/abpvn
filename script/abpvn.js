@@ -15,8 +15,8 @@
 // @grant       GM_registerMenuCommand
 // @include     http://*
 // @include     https://*
-// @version     2.2.45
-// @change-log  Add 123link quickByPassLink
+// @version     2.2.46
+// @change-log  Add mshare.io quick download
 // @run-at      document-end
 // ==/UserScript==
 /* String Prototype */
@@ -79,14 +79,23 @@ var byPass = {
         }
     },
     quickByPassLink: function() {
-        var regex = /123link\..*|phlame.pw/;
+        var regex = /123link\..*|phlame.pw|mshare\.io/;
         if (regex.test(location.hostname)) {
             try {
+                var checkClick = function(mutation) {
+                    if (mutation.attributeName === "disabled" && !mutation.target.disabled) {
+                        return true;
+                    }
+                    if (mutation.attributeName === "class" && !mutation.target.classList.contains('disabled')) {
+                        return true;
+                    }
+                    return false;
+                }
                 // Set up a new observer
                 var observer = new MutationObserver(function(mutations) {
                     mutations.forEach(function(mutation) {
                         // Check the modified attributeName is "disabled"
-                        if (mutation.attributeName === "disabled" && !mutation.target.disabled) {
+                        if (checkClick(mutation)) {
                             mutation.target.click();
                         }
                         if (mutation.attributeName === "href") {
@@ -98,7 +107,7 @@ var byPass = {
                 var config = {
                     attributes: true
                 };
-                var button = document.getElementById('invisibleCaptchaShortlink');
+                var button = document.getElementById('invisibleCaptchaShortlink') || document.querySelector('.download_1');
                 if (button) {
                     observer.observe(button, config);
                 } else {
@@ -110,6 +119,27 @@ var byPass = {
                             location.reload();
                         });
                     }
+                }
+                // mshare.io
+                var downloadButton = document.querySelector('#download-file-button');
+                if (downloadButton) {
+                    $.ajax({
+                        url: '/download/get-download-info',
+                        type: 'POST',
+                        data: {
+                            id: downloadButton.getAttribute('data-id')
+                        },
+                        success: function(data) {
+                            if (data.success && data.file_info && data.file_info.href) {
+                                location.href = data.file_info.href;
+                            } else {
+                                location.reload();
+                            }
+                        },
+                        error: function() {
+                            location.reload();
+                        }
+                    });
                 }
             } catch (e) {
                 Logger.error(e);
