@@ -15,7 +15,7 @@
 // @grant       GM_registerMenuCommand
 // @include     http://*
 // @include     https://*
-// @version     2.2.47
+// @version     2.2.48
 // @change-log  Add licklink.net quick download
 // @run-at      document-end
 // ==/UserScript==
@@ -115,7 +115,7 @@ var byPass = {
                     observer.observe(button, config);
                 } else {
                     var getLink = document.querySelector('.get-link');
-                    var timeout = largeTimeoutHost.indexOf(location.hostname) > -1 ? 5000 : 100;
+                    var timeout = largeTimeoutHost.indexOf(location.hostname) > -1 ? 6000 : 100;
                     if (getLink) {
                         observer.observe(getLink, config);
                         setTimeout(function() {
