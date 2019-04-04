@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 201904040826
-! Title: ABPVN List [fix incorrect filter]
-! Last modified: 04 Apr 2019 08:26 UTC+7
+! Version: 201904041300
+! Title: ABPVN List [Disable element hide 123link]
+! Last modified: 04 Apr 2019 13:00 UTC+7
 ! Expires: 1 days (update frequency)
 ! Homepage: https://abpvn.com/
 !
@@ -54,7 +54,7 @@ $webrtc,domain=forum.xda-developers.com|phim14.net|mkvcage.com|phimotv.net|daily
 /adscript/*
 /adsense/*
 /adServe/*
-/adservice.$domain=~123link.vip,~123link.carpartsviet31.site,~123link.co|~123link.pro|~123link.pw
+/adservice.
 /adsfloat/*
 /ads-iframe-display.php
 /adv/*
@@ -915,6 +915,7 @@ ad_300_250
 ##.ads_area_03
 ##.ads_area_04
 ##.ads_player
+##.ads-block-warning
 ##.ads-fix-bottom
 ##.adsmessage
 ##.ads-middle
@@ -948,7 +949,7 @@ ad_300_250
 /300x250.
 ~anime47.com##.ad_location
 ~fembed.com##.afs_ads
-~gameguardian.net,~vietmod.pro,~hvdic.thivien.net,~startuanit.net,~phimhayplus.com,~download.mokeedev.com,~platinmods.com,~anonyviet.com,~loinhacsong.com,~123link.pro,~123link.pw,~123link.co,~vinaurl.net,~phlame.pw##.adsbygoogle
+~gameguardian.net,~vietmod.pro,~hvdic.thivien.net,~startuanit.net,~phimhayplus.com,~download.mokeedev.com,~platinmods.com,~anonyviet.com,~loinhacsong.com,~vinaurl.net##.adsbygoogle
 ~msn.com##.qc
 ~oload.stream,~openload.co,~oload.tv,~howkteam.vn##.adsbox
 ~thanglongkydao.com###ad_global_below_navbar
@@ -1292,7 +1293,7 @@ zippyshare.com##.center_ad
 @@/ads/button.png
 @@/ads/play.png
 @@/ads/xemphim.png
-@@/advertisement.js$domain=123link.pw|secufiles.com
+@@/advertisement.js$domain=secufiles.com
 @@/crossdomain.xml
 @@/css.php$stylesheet
 @@/popup_handler.$script,domain=dropbox.com
@@ -1326,7 +1327,7 @@ zippyshare.com##.center_ad
 @@||khotailieu.com/Scripts/popup.js
 @@||licklink.net/js/full-page-script.js$script,domain=fcine.net
 @@||muabanraovat.com/images/quangcao/
-@@||pagead2.googlesyndication.com$script,domain=upfile.vn|javadecompilers.com|onmsft.com|startuanit.net|vantuanit.com|thuthuatmeovat.net|videodictionary.kwebpia.net|download.mokeedev.com|vietmod.pro|fullcrackpc.com|savetodrive.net|downmienphi.com|apkmirror.com|platinmods.com|file-upload.com|woprime.com|loinhacsong.com|win10.vn|mshare.io|123link.pw|123link.pro|123link.co|phuongtrinhhoahoc.com|dalatmongm.site|123link.vip|123link.carpartsviet31.site
+@@||pagead2.googlesyndication.com$script,domain=upfile.vn|javadecompilers.com|onmsft.com|startuanit.net|vantuanit.com|thuthuatmeovat.net|videodictionary.kwebpia.net|download.mokeedev.com|vietmod.pro|fullcrackpc.com|savetodrive.net|downmienphi.com|apkmirror.com|platinmods.com|file-upload.com|woprime.com|loinhacsong.com|win10.vn|mshare.io|phuongtrinhhoahoc.com|dalatmongm.site
 @@||phim14.net/IMG/ads/
 @@||pointer2.hopy.com/qc
 @@||securepubads.g.doubleclick.net^$domain=onmsft.com
@@ -1340,7 +1341,6 @@ zippyshare.com##.center_ad
 @@||yimg.com^$script,stylesheet,domain=mail.yahoo.com
 @@||zix.vn/js/LilTee/googleads.js
 !--------Element Hiding Exception--------------
-@@||123link.*$generichide
 @@||4downfiles.org$generichide
 @@||anivn.com$generichide
 @@||aphim.co$generichide
