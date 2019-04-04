@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 201904041348
-! Title: ABPVN List [optimize filter]
-! Last modified: 04 Apr 2019 13:48 UTC+7
+! Version: 201904041532
+! Title: ABPVN List [remove dead domain]
+! Last modified: 04 Apr 2019 15:32 UTC+7
 ! Expires: 1 days (update frequency)
 ! Homepage: https://abpvn.com/
 !
@@ -40,7 +40,7 @@ $webrtc,domain=phim14.net|phimotv.net|appvn.com
 /quangcao/*$domain=~muabanraovat.com|~linkneverdie.com
 /root/ads/*
 /uts.js
-/vast.$script,xmlhttprequest,domain=~ynet.co.il|~xemvtv.net|~bomtan.org
+/vast.$script,xmlhttprequest,domain=~ynet.co.il|~xemvtv.net
 /vast\d+\./$xmlhttprequest
 /videojs.ima.js
 /zone.uniad.vn/$image
@@ -165,7 +165,6 @@ $webrtc,domain=phim14.net|phimotv.net|appvn.com
 ||log.user-api.com^$domain=phim7.com
 ||luatminhkhue.vn/common/adshowleft
 ||luatvietnam.vn*/uploaded/*.gif
-||media.bilutv.org/qc/$image
 ||media.coccoc.com$image,object,popup
 ||media.jxf88.com^$third-party
 ||media.store123doc.com/images/web_2/tuyen-dung-min.png
@@ -379,7 +378,7 @@ $webrtc,domain=phim14.net|phimotv.net|appvn.com
 !---------------ABPVN White List--------------------
 @@#$image,domain=anonyviet.com|tuong.me|autoitvn.com|truyentranhnhamnhi.com|taive.click
 @@/1/2/jquery.adi.
-@@/ads.js$domain=talktv.vn|chiasenhac.vn|hplus.com.vn|phimmedia.tv|fptplay.vn|hdo.tv|nhacpro.net|megaurl.in|vnurl.net|tinylinks.net|vinaurl.net|licklink.net|vinaurl.in|paylink.pro|mshare.io|vnurl.xyz|vnurl.info|taive.click|megaurl.link|shareyou.pro|vaolienket.com|taive.in|lopte.pro
+@@/ads.js$domain=talktv.vn|chiasenhac.vn|hplus.com.vn|phimmedia.tv|fptplay.vn|hdo.tv|nhacpro.net|megaurl.in|vnurl.net|tinylinks.net|vinaurl.net|licklink.net|vinaurl.in|paylink.pro|mshare.io|vnurl.xyz|taive.click|megaurl.link|shareyou.pro|vaolienket.com|taive.in|lopte.pro
 @@/ads/button.png
 @@/ads/play.png
 @@/ads/xemphim.png
