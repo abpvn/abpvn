@@ -15,8 +15,8 @@
 // @grant       GM_registerMenuCommand
 // @include     http://*
 // @include     https://*
-// @version     2.2.48
-// @change-log  Add licklink.net quick download
+// @version     2.2.49
+// @change-log  Add megaurl.in auto submit captcha
 // @run-at      document-end
 // ==/UserScript==
 /* String Prototype */
@@ -79,10 +79,9 @@ var byPass = {
         }
     },
     quickByPassLink: function() {
-        var regex = /123link\..*|phlame.pw|mshare\.io|licklink.net/;
-        var largeTimeoutHost = [
-            'licklink.net'
-        ];
+        var regex = /123link\..*|phlame.pw|mshare\.io|megaurl\.*|licklink.net/;
+        var largeTimeoutHost = /licklink.net/;
+        var autoCaptchaOnlyList = /megaurl\.*/;
         if (regex.test(location.hostname)) {
             try {
                 var checkClick = function(mutation) {
@@ -115,17 +114,20 @@ var byPass = {
                     observer.observe(button, config);
                 } else {
                     var getLink = document.querySelector('.get-link');
-                    var timeout = largeTimeoutHost.indexOf(location.hostname) > -1 ? 6000 : 100;
+                    var timeout = largeTimeoutHost.test(location.hostname) ? 6000 : 100;
                     if (getLink) {
                         observer.observe(getLink, config);
-                        setTimeout(function() {
-                            $("#go-link").addClass("go-link").trigger("submit.adLinkFly.counterSubmit").one("submit.adLinkFly.counterSubmit", function(e) {
-                                e.preventDefault();
-                                if (largeTimeoutHost.indexOf(location.hostname) < 0) {
-                                    location.reload();
-                                }
-                            });
-                        }, timeout);
+                        console.log(getLink);
+                        if (!autoCaptchaOnlyList.test(location.hostname)) {
+                            setTimeout(function() {
+                                $("#go-link").addClass("go-link").trigger("submit.adLinkFly.counterSubmit").one("submit.adLinkFly.counterSubmit", function(e) {
+                                    e.preventDefault();
+                                    if (!largeTimeoutHost.test(location.hostname)) {
+                                        location.reload();
+                                    }
+                                });
+                            }, timeout);
+                        }
                     }
                 }
                 // mshare.io
