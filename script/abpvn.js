@@ -15,8 +15,8 @@
 // @grant       GM_registerMenuCommand
 // @include     http://*
 // @include     https://*
-// @version     2.2.49
-// @change-log  Add megaurl.in auto submit captcha
+// @version     2.2.50
+// @change-log  Add 123link new domain
 // @run-at      document-end
 // ==/UserScript==
 /* String Prototype */
@@ -79,7 +79,7 @@ var byPass = {
         }
     },
     quickByPassLink: function() {
-        var regex = /123link\..*|phlame.pw|mshare\.io|megaurl\.*|licklink.net/;
+        var regex = /123link\..*|phlame.pw|mshare\.io|megaurl\.*|licklink.net|www.123l\.*/;
         var largeTimeoutHost = /licklink.net/;
         var autoCaptchaOnlyList = /megaurl\.*/;
         if (regex.test(location.hostname)) {
