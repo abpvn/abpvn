@@ -15,8 +15,8 @@
 // @grant       GM_registerMenuCommand
 // @include     http://*
 // @include     https://*
-// @version     2.2.50
-// @change-log  Update style
+// @version     2.2.52
+// @change-log  Add vinaurl fix site + auto redirect
 // @run-at      document-end
 // ==/UserScript==
 /* String Prototype */
@@ -78,10 +78,10 @@ var byPass = {
             Logger.info("By pass " + count + " short link");
         }
     },
-    quickByPassLink: function () {
-        var regex = /123link\..*|phlame.pw|mshare\.io|megaurl\.*|licklink.net/;
+    quickByPassLink: function() {
+        var regex = /123link\..*|phlame.pw|mshare\.io|megaurl\.*|licklink.net|www.123l\.*|vinaurl\.*/;
         var largeTimeoutHost = /licklink.net/;
-        var autoCaptchaOnlyList = /megaurl\.*/;
+        var autoCaptchaOnlyList = /megaurl\.*|vinaurl\.*/;
         if (regex.test(location.hostname)) {
             try {
                 var checkClick = function (mutation) {
@@ -615,11 +615,17 @@ var adBlocker = {
             }
         }
     },
-    init: function () {
+    vinaurl_net: function() {
+        if (this.url.match(/vinaurl\.*/)) {
+            document.querySelectorAll('div[id^="ads-"]').forEach(item => item.remove());
+        }
+    },
+    init: function() {
         this.url = location.href;
         this.mgIdAdRemover();
         this.blockPopUp();
         this.phimnhanh_com();
+        this.vinaurl_net();
     },
 };
 var configure = {
