@@ -15,8 +15,8 @@
 // @grant       GM_registerMenuCommand
 // @include     http://*
 // @include     https://*
-// @version     2.2.52
-// @change-log  Add vinaurl fix site + auto redirect
+// @version     2.2.53
+// @change-log  Add share4you.pro fix site + auto redirect
 // @run-at      document-end
 // ==/UserScript==
 /* String Prototype */
@@ -79,8 +79,8 @@ var byPass = {
         }
     },
     quickByPassLink: function() {
-        var regex = /123link\..*|phlame.pw|mshare\.io|megaurl\.*|licklink.net|www.123l\.*|vinaurl\.*/;
-        var largeTimeoutHost = /licklink.net/;
+        var regex = /123link\..*|phlame.pw|mshare\.io|megaurl\.*|licklink.net|www.123l\.*|vinaurl\.*|share4you.pro/;
+        var largeTimeoutHost = /licklink.net|share4you.pro/;
         var autoCaptchaOnlyList = /megaurl\.*|vinaurl\.*/;
         if (regex.test(location.hostname)) {
             try {
