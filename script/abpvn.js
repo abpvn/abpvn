@@ -15,8 +15,8 @@
 // @grant       GM_registerMenuCommand
 // @include     http://*
 // @include     https://*
-// @version     2.2.54
-// @change-log  Add doxeaz10.site auto redirect
+// @version     2.2.55
+// @change-log  Add derow.win auto redirect
 // @run-at      document-end
 // ==/UserScript==
 /* String Prototype */
@@ -79,8 +79,8 @@ var byPass = {
         }
     },
     quickByPassLink: function() {
-        var regex = /123link\..*|phlame.pw|mshare\.io|megaurl\.*|licklink.net|www.123l\.*|vinaurl\.*|share4you.pro|doxeaz10.site/;
-        var largeTimeoutHost = /licklink.net|share4you.pro/;
+        var regex = /123link\..*|phlame.pw|mshare\.io|megaurl\.*|licklink.net|www.123l\.*|vinaurl\.*|share4you.pro|doxeaz10.site|derow.win/;
+        var largeTimeoutHost = /licklink.net|share4you.pro|derow.win/;
         var autoCaptchaOnlyList = /megaurl\.*|vinaurl\.*|doxeaz10.site/;
         if (regex.test(location.hostname)) {
             try {
