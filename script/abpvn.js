@@ -15,8 +15,8 @@
 // @grant       GM_registerMenuCommand
 // @include     http://*
 // @include     https://*
-// @version     2.2.56
-// @change-log  Remove ibongda.tv fake link
+// @version     2.2.57
+// @change-log  Remove thevang.tv fake link
 // @run-at      document-end
 // ==/UserScript==
 /* String Prototype */
@@ -466,8 +466,8 @@ var fixSite = {
             location.reload();
         }
     },
-    ibongda_tv: function () {
-        if (this.url.startWith('https://ibongda.tv')) {
+    fakelinkRemover: function () {
+        if (this.url.startWith('https://ibongda.tv') || this.url.startWith('https://thevang.tv')) {
             var fakeLink = document.querySelectorAll('a[data-href][rel="nofollow"]');
             var count = 0;
             for (var i = 0; i < fakeLink.length; i++) {
@@ -476,7 +476,7 @@ var fixSite = {
                     count++;
                 }
             }
-            Logger.info("Removed " + count + " fake link in ibongda.tv");
+            Logger.info("Removed " + count + " fake link in " + location.hostname);
         }
     },
     antiAdblockRemover: function () {
@@ -555,7 +555,7 @@ var fixSite = {
         this.aphim_co();
         this.fontdep_com();
         this.openload();
-        this.ibongda_tv();
+        this.fakelinkRemover();
     }
 };
 //Ad blocker script
