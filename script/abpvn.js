@@ -15,8 +15,8 @@
 // @grant       GM_registerMenuCommand
 // @include     http://*
 // @include     https://*
-// @version     2.2.57
-// @change-log  Remove thevang.tv fake link
+// @version     2.2.58
+// @change-log  Remove kickass.best fake link
 // @run-at      document-end
 // ==/UserScript==
 /* String Prototype */
@@ -492,6 +492,21 @@ var fixSite = {
             };
         }
     },
+    kickass_best: function () {
+        if (this.url.startWith('https://kickass.best')) {
+            allFakeA = document.querySelectorAll('a[href^="https://mylink.cx/?url="]');
+            var count = 0;
+            for (var i = 0; i < allFakeA.length; i++) {
+                aTag = allFakeA[i];
+                if (aTag) {
+                    realLink = aTag.getAttribute('href').replace(/https:\/\/mylink\.cx\/\?url=(.*)/, '$1');
+                    aTag.setAttribute('href', decodeURIComponent(realLink));
+                    count++;
+                }
+            }
+            Logger.info("Removed " + count + " fake link in " + location.hostname);
+        }
+    },
     removeRedir: function (config) {
         if (this.url.match(new RegExp(config.url, 'g')) || this.url.startWith(config.url)) {
             ABPVN.cTitle();
@@ -555,6 +570,7 @@ var fixSite = {
         this.aphim_co();
         this.fontdep_com();
         this.openload();
+        this.kickass_best();
         this.fakelinkRemover();
     }
 };
