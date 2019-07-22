@@ -15,8 +15,8 @@
 // @grant       GM_registerMenuCommand
 // @include     http://*
 // @include     https://*
-// @version     2.2.59
-// @change-log  Update fshare auto get link
+// @version     2.2.60
+// @change-log  Add wi.cr in domain wikiall.org auto redirect
 // @run-at      document-end
 // ==/UserScript==
 /* String Prototype */
@@ -159,6 +159,24 @@ var byPass = {
             }
         }
     },
+    wikiall_org: function () {
+        if (location.hostname == 'wikiall.org' && document.querySelector('#timer')) {
+            var observer = new MutationObserver(function (mutations) {
+                mutations.forEach(function (mutation) {
+                    // Check the modified childList of place
+                    if (mutation.type == 'childList') {
+                        var targetA = mutation.target.querySelector('a');
+                        location.href = targetA.getAttribute('href');
+                    }
+                });
+            });
+            // Configure to only listen to attribute changes
+            var place = document.querySelector('#place');
+            observer.observe(place, {
+                childList: true
+            });
+        }
+    },
     init: function () {
         if (configure.getValue('unlock_content', true)) {
             window.addEventListener('DOMContentLoaded', this.hideLinkUnlock);
@@ -170,6 +188,7 @@ var byPass = {
         }
         if (configure.getValue('quick_by_pass_link', true)) {
             this.quickByPassLink();
+            this.wikiall_org();
         }
     }
 };
