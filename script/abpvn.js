@@ -15,8 +15,8 @@
 // @grant       GM_registerMenuCommand
 // @include     http://*
 // @include     https://*
-// @version     2.2.58
-// @change-log  Remove kickass.best fake link
+// @version     2.2.59
+// @change-log  Update fshare auto get link
 // @run-at      document-end
 // ==/UserScript==
 /* String Prototype */
@@ -238,7 +238,16 @@ var getLink = {
                             else {
                                 if (typeof location != 'undefined') {
                                     Logger.log(location.href + ' -> ' + data.url);
-                                    location.href = data.url;
+                                    var count_time = data.wait_time;
+                                    var interval = setInterval(function () {
+                                        var msg = "Cần đợi <span style='color: #cd1417'>" + count_time + "</span> giây nữa";
+                                        document.querySelector('.d-info-container .thumbnail').innerHTML = "<div style='font-size: 25px;color: #00dc58;font-weight: bold'>ABPVN Auto download:<br/>" + msg + "</div>";
+                                        count_time--;
+                                        if (count_time <= 0) {
+                                            clearInterval(interval);
+                                            location.href = data.url;
+                                        }
+                                    }, 1000);
                                 } else {
                                     $('.download').prepend('<a title="Tải trực tiếp" style="padding: 5px 0;box-sizing: content-box;" class="download-btn mdc-button mdc-button--raised mdc-ripple-upgraded full-width mdc-button-primary fcode5" href="' + data.url + '">Tải trực tiếp<span>Hỗ trợ bởi abpvn.com</span></a>');
                                 }
@@ -407,7 +416,7 @@ var fixSite = {
             window.adblock = false;
             window.adblock2 = false;
             window.turnoff = true;
-            window.open = function () { };
+            window.open = function () {};
             //
             // @run-at document-end
             //
@@ -454,9 +463,9 @@ var fixSite = {
                         }
                     }, 100);
                 }
-                window.onclick = function () { };
-                document.onclick = function () { };
-                document.body.onclick = function () { };
+                window.onclick = function () {};
+                document.onclick = function () {};
+                document.body.onclick = function () {};
             });
         }
     },
@@ -494,12 +503,12 @@ var fixSite = {
     },
     kickass_best: function () {
         if (this.url.startWith('https://kickass.best')) {
-            allFakeA = document.querySelectorAll('a[href^="https://mylink.cx/?url="]');
+            var allFakeA = document.querySelectorAll('a[href^="https://mylink.cx/?url="]');
             var count = 0;
             for (var i = 0; i < allFakeA.length; i++) {
-                aTag = allFakeA[i];
+                var aTag = allFakeA[i];
                 if (aTag) {
-                    realLink = aTag.getAttribute('href').replace(/https:\/\/mylink\.cx\/\?url=(.*)/, '$1');
+                    var realLink = aTag.getAttribute('href').replace(/https:\/\/mylink\.cx\/\?url=(.*)/, '$1');
                     aTag.setAttribute('href', decodeURIComponent(realLink));
                     count++;
                 }
@@ -528,30 +537,30 @@ var fixSite = {
     },
     removeRedirect() {
         var configs = [{
-            url: 'https://samsungvn.com',
-            replace: 'https://samsungvn.com/xfa-interstitial/redirect?url=',
-        },
-        {
-            url: 'https://forum.vietdesigner.net',
-            replace: 'redirect/?url='
-        },
-        {
-            url: 'http://sinhvienit.net',
-            replace: 'http://sinhvienit.net/goto/?'
-        },
-        {
-            url: 'http://phanmemaz.com/',
-            replace: 'http://phanmemaz.com/wp-content/plugins/tm-wordpress-redirection/l.php?'
-        },
-        {
-            url: 'forums.voz.vn/showthread.php',
-            replace: '/redirect/index.php?link='
-        },
-        {
-            url: 'www.webtretho.com/forum/',
-            replace: /http(s?):\/\/webtretho\.com\/forum\/links\.php\?url=/,
-            selector: 'a[href*="webtretho.com/forum/links.php?url="]'
-        }
+                url: 'https://samsungvn.com',
+                replace: 'https://samsungvn.com/xfa-interstitial/redirect?url=',
+            },
+            {
+                url: 'https://forum.vietdesigner.net',
+                replace: 'redirect/?url='
+            },
+            {
+                url: 'http://sinhvienit.net',
+                replace: 'http://sinhvienit.net/goto/?'
+            },
+            {
+                url: 'http://phanmemaz.com/',
+                replace: 'http://phanmemaz.com/wp-content/plugins/tm-wordpress-redirection/l.php?'
+            },
+            {
+                url: 'forums.voz.vn/showthread.php',
+                replace: '/redirect/index.php?link='
+            },
+            {
+                url: 'www.webtretho.com/forum/',
+                replace: /http(s?):\/\/webtretho\.com\/forum\/links\.php\?url=/,
+                selector: 'a[href*="webtretho.com/forum/links.php?url="]'
+            }
         ];
         configs.forEach(function (config) {
             this.removeRedir(config);
@@ -641,7 +650,7 @@ var adBlocker = {
         if (this.url.startWith('http://phimnhanh.com/xem-phim')) {
             Logger.warn('Đã chặn video preload');
             if (video !== undefined) {
-                video.preroll = function (options) { };
+                video.preroll = function (options) {};
             }
         }
     },
