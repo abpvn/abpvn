@@ -15,8 +15,8 @@
 // @grant       GM_registerMenuCommand
 // @include     http://*
 // @include     https://*
-// @version     2.2.60
-// @change-log  Add wi.cr in domain wikiall.org auto redirect
+// @version     2.2.61
+// @change-log  Replace vnlinks.net by vnz-leech.com
 // @run-at      document-end
 // ==/UserScript==
 /* String Prototype */
@@ -280,7 +280,18 @@ var getLink = {
                 });
             } else {
                 $('.download').prepend('<a title="Download nhanh qua linksvip.net" style="padding: 5px 0;box-sizing: content-box; margin: 5px auto;background-color: #00dc58;" class="download-btn mdc-button mdc-button--raised mdc-ripple-upgraded full-width mdc-button-primary fcode5" href="http://linksvip.net?link=' + location.href + '">Tải nhanh<span>Qua dịch vụ linksvip.net</span></a>');
-                $('.download').prepend('<a title="Download nhanh qua getlinkaz.com" style="padding: 5px 0;margin: 5px auto;box-sizing: content-box;background-color: #00dc58;" class="download-btn mdc-button mdc-button--raised mdc-ripple-upgraded full-width mdc-button-success fcode5" href="https://vnlinks.net?link=' + location.href + '">Tải nhanh<span>Qua dịch vụ vnlinks.net</span></a>');
+                $('.download').prepend('<a title="Download nhanh qua getlinkaz.com" style="padding: 5px 0;margin: 5px auto;box-sizing: content-box;background-color: #00dc58;" class="download-btn mdc-button mdc-button--raised mdc-ripple-upgraded full-width mdc-button-success fcode5" href="https://vnz-leech.com?link=' + location.href + '">Tải nhanh<span>Qua dịch vụ vnz-leech.com</span></a>');
+            }
+        }
+    },
+    vnz_leech_auto_fill: function () {
+        if (this.url == 'https://www4.cbox.ws/box/?boxid=4240872&boxtag=soigia&sec=form' && this.url.indexOf('link=')) {
+            var url = (window.location != window.parent.location)
+                ? document.referrer
+                : document.location.href;
+            var match = url.match(/link=([\w\.\/\:]+)($|&|\?)/);
+            if (match) {
+                document.querySelector('input[name="pst"]').value = match[1];
             }
         }
     },
@@ -319,6 +330,7 @@ var getLink = {
         if (configure.getValue('quick_download', true)) {
             this.mediafire_com();
             this.usercloud_com();
+            this.vnz_leech_auto_fill();
         }
     }
 };
@@ -435,7 +447,7 @@ var fixSite = {
             window.adblock = false;
             window.adblock2 = false;
             window.turnoff = true;
-            window.open = function () {};
+            window.open = function () { };
             //
             // @run-at document-end
             //
@@ -482,9 +494,9 @@ var fixSite = {
                         }
                     }, 100);
                 }
-                window.onclick = function () {};
-                document.onclick = function () {};
-                document.body.onclick = function () {};
+                window.onclick = function () { };
+                document.onclick = function () { };
+                document.body.onclick = function () { };
             });
         }
     },
@@ -556,30 +568,30 @@ var fixSite = {
     },
     removeRedirect() {
         var configs = [{
-                url: 'https://samsungvn.com',
-                replace: 'https://samsungvn.com/xfa-interstitial/redirect?url=',
-            },
-            {
-                url: 'https://forum.vietdesigner.net',
-                replace: 'redirect/?url='
-            },
-            {
-                url: 'http://sinhvienit.net',
-                replace: 'http://sinhvienit.net/goto/?'
-            },
-            {
-                url: 'http://phanmemaz.com/',
-                replace: 'http://phanmemaz.com/wp-content/plugins/tm-wordpress-redirection/l.php?'
-            },
-            {
-                url: 'forums.voz.vn/showthread.php',
-                replace: '/redirect/index.php?link='
-            },
-            {
-                url: 'www.webtretho.com/forum/',
-                replace: /http(s?):\/\/webtretho\.com\/forum\/links\.php\?url=/,
-                selector: 'a[href*="webtretho.com/forum/links.php?url="]'
-            }
+            url: 'https://samsungvn.com',
+            replace: 'https://samsungvn.com/xfa-interstitial/redirect?url=',
+        },
+        {
+            url: 'https://forum.vietdesigner.net',
+            replace: 'redirect/?url='
+        },
+        {
+            url: 'http://sinhvienit.net',
+            replace: 'http://sinhvienit.net/goto/?'
+        },
+        {
+            url: 'http://phanmemaz.com/',
+            replace: 'http://phanmemaz.com/wp-content/plugins/tm-wordpress-redirection/l.php?'
+        },
+        {
+            url: 'forums.voz.vn/showthread.php',
+            replace: '/redirect/index.php?link='
+        },
+        {
+            url: 'www.webtretho.com/forum/',
+            replace: /http(s?):\/\/webtretho\.com\/forum\/links\.php\?url=/,
+            selector: 'a[href*="webtretho.com/forum/links.php?url="]'
+        }
         ];
         configs.forEach(function (config) {
             this.removeRedir(config);
@@ -669,7 +681,7 @@ var adBlocker = {
         if (this.url.startWith('http://phimnhanh.com/xem-phim')) {
             Logger.warn('Đã chặn video preload');
             if (video !== undefined) {
-                video.preroll = function (options) {};
+                video.preroll = function (options) { };
             }
         }
     },
