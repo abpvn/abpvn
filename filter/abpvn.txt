@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 201908281329
-! Title: ABPVN List [optimize filter]
-! Last modified: 28 Aug 2019 13:29 UTC+7
+! Version: 201908300939
+! Title: ABPVN List [Remove redundancy]
+! Last modified: 30 Aug 2019 09:39 UTC+7
 ! Expires: 1 days (update frequency)
 ! Homepage: https://abpvn.com/
 !
@@ -169,7 +169,6 @@ _ads_
 ||blogspot.com^*.gif$domain=~blogtruyen.com|~nccsupports.com|~hocvientruyentranh.com
 ||blogtamsu.vn/*Banner$image
 ||blogtruyen.com/file/$subdocument
-||blogtruyen.com/File/*.swf
 ||blogtruyen.com/scripts/banner-preload.js
 ||blogtruyen.com/scripts/iframe-rand.js
 ||bongdalive.tv^*.gif$image
@@ -272,8 +271,7 @@ _ads_
 ||image.vtcns.com/files/qc/
 ||images.asianbookie.com/vwin/
 ||images.digistar.vn/Banner*.
-||images2-focus-opensocial.googleusercontent.com^*.gif$domain=demkhuya.tv
-||images2-focus-opensocial.googleusercontent.com^*.gif$image,domain=tvhay.org
+||images2-focus-opensocial.googleusercontent.com^*.gif$domain=demkhuya.tv|tvhay.org
 ||imasdk.googleapis.com^$third-party,domain=~vivo.vn|~tving.vn|~24h.com.vn|~danet.vn|~pose.com.vn|~anime47.com|~fptplay.vn
 ||imei.vcdn.club/storage20/hh247/wangcao
 ||img.anime47.com/imgur/HnIjfZc.jpg
@@ -346,8 +344,7 @@ _ads_
 ||pic.hui598.cn$domain=xiuren.org,image
 ||pic.img80.com^$object
 ||pl.ventunotech.com/plugins/cntplayer/ventunoSmartPlayer.js$domain=truyenfull.vn
-||popupmaker.com^$domain=razorphim.com
-||popupmaker.com^$script,third-party
+||popupmaker.com^$third-party
 ||pose.com.vn/colgate/content-box-colgate/$subdocument
 ||postimg.cc^*.gif$domain=bongdatructuyen.info|tivi4k.net|keonhacai.com|tructiepbongda.com|tv.101vn.com|8bongda.com|xemtiviso.com|xemphimhayz.com
 ||preskalyn.com^$popup
@@ -538,7 +535,6 @@ hoathinh247.com###catfish1
 ||ads.phimnhanh.com^
 ||adsafeprotected.com^
 ||ads-cdn.fptplay.net^
-||adservme.com^$popup
 ||adservme.com^$third-party
 ||adshost.site^
 ||adskeeper.co.uk^$third-party
@@ -552,8 +548,7 @@ hoathinh247.com###catfish1
 ||adtear.com^
 ||adtech.de^
 ||adtima.vn^$script,third-party
-||adtimaserver.vn^$domain=~talktv.vn
-||adtimaserver.vn^$popup
+||adtimaserver.vn^
 ||adtima-static.zadn.vn^$script
 ||adtop.vn^$third-party
 ||adtrue.com^$third-party
@@ -730,7 +725,6 @@ hoathinh247.com###catfish1
 ||hadarone.com^
 ||hantinlethemsed.info^
 ||hitcpm.com^
-||hitcpm.com^$popup
 ||hiug862dj0.com^
 ||hyperline88.com^
 ||imrworldwide.com^$third-party
@@ -1083,7 +1077,6 @@ coccoc.com##.right-wrapper
 coccoc.com##[data-show-urls^="http://catalog.qc.coccoc.com"]
 coccoc.com##[data-show-urls^="http://context.qc.coccoc.com"]
 coccoc.com##video
-comicvn.net##.fancybox-overlay
 dantri.com.vn##.admicro
 demkhuya.tv##.block-ad-top
 design.tutsplus.com##.avert--sticky
@@ -1142,9 +1135,9 @@ hayhaytv.com,hdsieunhanh.com###mobileMasthead
 hdo.tv###pose
 hdsieunhanh.com##.balloon_ad
 hdvietnam.com###topbillboard
-hoathinh247.com##.fancybox-overlay.fancybox-overlay-fixed
 hoathinh247.com##.pcbanner
 hoathinh247.com##.widget-area > div:nth-of-type(4)
+hoathinh247.com,comicvn.net##.fancybox-overlay
 hocvientruyentranh.com###float_right
 hocvientruyentranh.com##.quang-cao-trang-truyen
 hocvientruyentranh.net###popup-giua-man-hinh
@@ -1176,8 +1169,7 @@ keonhacai.net##div.bannerm
 ketqua.net##.adsb
 ketqua.vn###left_ads
 khoai.tv,hatde.tv##.ads-fix-bottom
-khoai.tv,hatde.tv##.ads-fix-bottom-left
-khophimle.com##.ads-fix-bottom-left
+khoai.tv,hatde.tv,khophimle.com##.ads-fix-bottom-left
 khophimplus.com##div[id^="float"]
 khophimplus.com,phimnhanh.com##.preload
 kienthuc.net.vn##.sponsor-zone + div
@@ -1402,7 +1394,6 @@ zippyshare.com##.center_ad
 @@||danet.vn/js/videojs.ads.min.js
 @@||dmcdn.net/js/gen/widget/pack/popup.js.vfc7812cd5dcf8ad73
 @@||dns.norton.com/js/popup.js
-@@||doubleclick.net$domain=kites.vn
 @@||easylist.club^$script,domain=oload.stream|openload.co|oload.tv
 @@||edgecastcdn.net^$stylesheet
 @@||facebook.com/ads/growth/aymt/homepage_panel/save_settings/
