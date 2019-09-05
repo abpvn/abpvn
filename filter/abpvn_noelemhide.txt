@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 201909021851
-! Title: ABPVN List [vndoc.com]
-! Last modified: 02 Sep 2019 18:51 UTC+7
+! Version: 201909051239
+! Title: ABPVN List [dothi.net]
+! Last modified: 05 Sep 2019 12:39 UTC+7
 ! Expires: 1 days (update frequency)
 ! Homepage: https://abpvn.com/
 !
@@ -13,6 +13,7 @@
 ! Email: support@abpvn.com
 ! Facebook Fanpage: https://www.facebook.com/abpvn.org
 ! Forum: https://forums.voz.vn/showthread.php?t=5246802
+
 ! ---------- Generic Blocking Rules ----------
 $popup,third-party,domain=appvn.com|khophimplus.com|megaurl.in
 $webrtc,domain=phim14.net|phimotv.net|appvn.com
@@ -22,12 +23,12 @@ $webrtc,domain=phim14.net|phimotv.net|appvn.com
 .vn/Ad/
 .vn/ads/
 .vn/qc/
-/24h-ad.
 /\w{2}\/\w{2}\/\w{32}\.js/$domain=thaygiaoba.com
+/24h-ad.
 /ads/*.gif
 /ads/*.xml$xmlhttprequest
-/banner-ads.
 /banner/*.gif
+/banner-ads.
 /blueserving.
 /images.accesstrade.vn/
 /images/qc/*
@@ -71,8 +72,8 @@ $webrtc,domain=phim14.net|phimotv.net|appvn.com
 ||baotocdep.info^$subdocument,third-party
 ||biphim.net^*.gif$image
 ||bit.ly^$popup,domain=ngonphongcomics.com
-||blogspot.com^*-banner$image,domain=blogtruyen.com
 ||blogspot.com^*.gif$domain=phim33.com|hamtruyen.com|truyensieuhay.com|hamtruyen.vn|hocvientruyentranh.net
+||blogspot.com^*-banner$image,domain=blogtruyen.com
 ||blogtruyen.com/scripts/banner-preload.js
 ||blogtruyen.com/scripts/iframe-rand.js
 ||bongdalive.tv^*.gif$image
@@ -120,11 +121,11 @@ $webrtc,domain=phim14.net|phimotv.net|appvn.com
 ||go3xsex.com^$subdocument,third-party
 ||googlecontentmanager.com^$image,third-party
 ||googleusercontent.com^*.gif|$domain=tivi4k.net
+||hamtruyen.com/bannerqc/
 ||hamtruyen.com/Scripts/blueyonew.js
 ||hamtruyen.com/Scripts/index.js$script
 ||hamtruyen.com/Scripts/ixinh.js
 ||hamtruyen.com/Scripts/jwplayer.js
-||hamtruyen.com/bannerqc/
 ||hamtruyen.com/ytb.html
 ||haynhucnhoi.tv/api$third-party
 ||hdvietnam.com/banner/
@@ -148,10 +149,11 @@ $webrtc,domain=phim14.net|phimotv.net|appvn.com
 ||images.digistar.vn/Banner
 ||images.tuyensinh247.com^$image,domain=sachbaitap.com
 ||images1.violympic.vn/assets/images/*.gif
-||images2-focus-opensocial.googleusercontent.com^*.gif$image,domain=tvhay.org
 ||images2.imgbox.com^*.gif$domain=ngonphongcomics.com
+||images2-focus-opensocial.googleusercontent.com^*.gif$image,domain=tvhay.org
 ||imei.vcdn.club/storage20/hh247/wangcao/
 ||img.anime47.com/imgur/HnIjfZc.jpg
+||img.dothi.net^*.gif
 ||img.hayhaytv.com/popup/
 ||img.keonhacai.net/img/gmodules.php?url=*.gif$image
 ||img.ketqua.net^*.gif
@@ -223,16 +225,16 @@ $webrtc,domain=phim14.net|phimotv.net|appvn.com
 ||static.download.com.vn/cache.aspx?_path=*ad$script
 ||static.hayhaytv.com^*.mp4
 ||static.hdo.tv/template/frontend/images/FloatbannerHDO.png
-||static.hdo.tv/template/frontend/images/Topplayer.png
 ||static.hdo.tv/template/frontend/images/float-logo-Pose.png
+||static.hdo.tv/template/frontend/images/Topplayer.png
 ||static.htvonline.com.vn/layout/images/*_banner.jpg
 ||static.htvonline.com.vn/layout/images/lienhequangcao.png
 ||static.ketqua.net/adv_imgs
 ||static.ketqua.net/img/qc/
 ||static.nhaccuatui.com/imgqc/
 ||staticflickr.com^*.gif$domain=chophanthiet.us
-||stc-tv.zing.vn/skins/tv_v2/js/fadblock.min.js
 ||stc.nas.nixcdn.com^*.gif
+||stc-tv.zing.vn/skins/tv_v2/js/fadblock.min.js
 ||storage.fshare.vn/images/$third-party
 ||storage.googleapis.com/adasia-ad-network-origin/
 ||stream.anime4u.net^*-ad.xml
@@ -304,13 +306,13 @@ $webrtc,domain=phim14.net|phimotv.net|appvn.com
 ||adi.vcmedia.vn^
 ||admicro1.vcmedia.vn^$third-party
 ||adnetwork.vn^$third-party
-||ads-cdn.fptplay.net^
 ||ads.exdynsrv.com^
+||ads-cdn.fptplay.net^
 ||adsplay.net^$third-party
 ||adsquangcao.com^
-||adtima-static.zadn.vn^$script
 ||adtima.vn^$third-party
 ||adtimaserver.vn^
+||adtima-static.zadn.vn^$script
 ||adtop.vn^$third-party
 ||adv.vcmedia.vn^
 ||aenan.pw^
@@ -333,9 +335,9 @@ $webrtc,domain=phim14.net|phimotv.net|appvn.com
 ||binomo.com^$popup,third-party
 ||blueseed.tv^$third-party
 ||brand.ad^
-||cdn-qc.coccoc.com^
 ||cdn.videonow.ru^
 ||cdn9now.com^$script
+||cdn-qc.coccoc.com^
 ||click.advertnative.com^
 ||d2ho1n52p59mwv.cloudfront.net^
 ||d3t5ngjixpjdho.cloudfront.net^
