@@ -3,9 +3,9 @@
 // @namespace   ABPVN
 // @author      ABPVN
 // @copyright   ABPVN
-// @homepage    http://abpvn.com
+// @homepage    https://abpvn.com
 // @supportURL  https://github.com/abpvn/abpvn/issues
-// @icon        http://abpvn.com/icon.png
+// @icon        https://abpvn.com/icon.png
 // @description Script block ads, remove wating of ABPVN
 // @description:vi Script chặn quảng cáo,loại bỏ chờ đợi của ABPVN
 // @contributionURL https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=donghoang.nguyen@gmail.com&item_name=ABPVN Donation
@@ -15,8 +15,8 @@
 // @grant       GM_registerMenuCommand
 // @include     http://*
 // @include     https://*
-// @version     2.2.61
-// @change-log  Replace vnlinks.net by vnz-leech.com
+// @version     2.2.62
+// @change-log  Update home page and icon url to https
 // @run-at      document-end
 // ==/UserScript==
 /* String Prototype */
@@ -286,9 +286,9 @@ var getLink = {
     },
     vnz_leech_auto_fill: function () {
         if (this.url == 'https://www4.cbox.ws/box/?boxid=4240872&boxtag=soigia&sec=form' && this.url.indexOf('link=')) {
-            var url = (window.location != window.parent.location)
-                ? document.referrer
-                : document.location.href;
+            var url = (window.location != window.parent.location) ?
+                document.referrer :
+                document.location.href;
             var match = url.match(/link=([\w\.\/\:]+)($|&|\?)/);
             if (match) {
                 document.querySelector('input[name="pst"]').value = match[1];
@@ -447,7 +447,7 @@ var fixSite = {
             window.adblock = false;
             window.adblock2 = false;
             window.turnoff = true;
-            window.open = function () { };
+            window.open = function () {};
             //
             // @run-at document-end
             //
@@ -494,9 +494,9 @@ var fixSite = {
                         }
                     }, 100);
                 }
-                window.onclick = function () { };
-                document.onclick = function () { };
-                document.body.onclick = function () { };
+                window.onclick = function () {};
+                document.onclick = function () {};
+                document.body.onclick = function () {};
             });
         }
     },
@@ -568,30 +568,30 @@ var fixSite = {
     },
     removeRedirect() {
         var configs = [{
-            url: 'https://samsungvn.com',
-            replace: 'https://samsungvn.com/xfa-interstitial/redirect?url=',
-        },
-        {
-            url: 'https://forum.vietdesigner.net',
-            replace: 'redirect/?url='
-        },
-        {
-            url: 'http://sinhvienit.net',
-            replace: 'http://sinhvienit.net/goto/?'
-        },
-        {
-            url: 'http://phanmemaz.com/',
-            replace: 'http://phanmemaz.com/wp-content/plugins/tm-wordpress-redirection/l.php?'
-        },
-        {
-            url: 'forums.voz.vn/showthread.php',
-            replace: '/redirect/index.php?link='
-        },
-        {
-            url: 'www.webtretho.com/forum/',
-            replace: /http(s?):\/\/webtretho\.com\/forum\/links\.php\?url=/,
-            selector: 'a[href*="webtretho.com/forum/links.php?url="]'
-        }
+                url: 'https://samsungvn.com',
+                replace: 'https://samsungvn.com/xfa-interstitial/redirect?url=',
+            },
+            {
+                url: 'https://forum.vietdesigner.net',
+                replace: 'redirect/?url='
+            },
+            {
+                url: 'http://sinhvienit.net',
+                replace: 'http://sinhvienit.net/goto/?'
+            },
+            {
+                url: 'http://phanmemaz.com/',
+                replace: 'http://phanmemaz.com/wp-content/plugins/tm-wordpress-redirection/l.php?'
+            },
+            {
+                url: 'forums.voz.vn/showthread.php',
+                replace: '/redirect/index.php?link='
+            },
+            {
+                url: 'www.webtretho.com/forum/',
+                replace: /http(s?):\/\/webtretho\.com\/forum\/links\.php\?url=/,
+                selector: 'a[href*="webtretho.com/forum/links.php?url="]'
+            }
         ];
         configs.forEach(function (config) {
             this.removeRedir(config);
@@ -681,7 +681,7 @@ var adBlocker = {
         if (this.url.startWith('http://phimnhanh.com/xem-phim')) {
             Logger.warn('Đã chặn video preload');
             if (video !== undefined) {
-                video.preroll = function (options) { };
+                video.preroll = function (options) {};
             }
         }
     },
