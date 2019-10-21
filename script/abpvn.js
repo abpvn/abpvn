@@ -15,8 +15,8 @@
 // @grant       GM_registerMenuCommand
 // @include     http://*
 // @include     https://*
-// @version     2.2.63
-// @change-log  Remove fake link of https://banthang.tv/
+// @version     2.2.64
+// @change-log  Add nothingCanStopMeShowThisMessage funtion to atiadblock remove
 // @run-at      document-end
 // ==/UserScript==
 /* String Prototype */
@@ -447,7 +447,7 @@ var fixSite = {
             window.adblock = false;
             window.adblock2 = false;
             window.turnoff = true;
-            window.open = function () { };
+            window.open = function () {};
             //
             // @run-at document-end
             //
@@ -494,9 +494,9 @@ var fixSite = {
                         }
                     }, 100);
                 }
-                window.onclick = function () { };
-                document.onclick = function () { };
-                document.body.onclick = function () { };
+                window.onclick = function () {};
+                document.onclick = function () {};
+                document.body.onclick = function () {};
             });
         }
     },
@@ -529,6 +529,11 @@ var fixSite = {
         }
         if (typeof showAdsBlock === 'function') {
             showAdsBlock = function () {
+                Logger.info(msg);
+            };
+        }
+        if (typeof nothingCanStopMeShowThisMessage === 'function') {
+            nothingCanStopMeShowThisMessage = function () {
                 Logger.info(msg);
             };
         }
@@ -569,30 +574,30 @@ var fixSite = {
     },
     removeRedirect() {
         var configs = [{
-            url: 'https://samsungvn.com',
-            replace: 'https://samsungvn.com/xfa-interstitial/redirect?url=',
-        },
-        {
-            url: 'https://forum.vietdesigner.net',
-            replace: 'redirect/?url='
-        },
-        {
-            url: 'http://sinhvienit.net',
-            replace: 'http://sinhvienit.net/goto/?'
-        },
-        {
-            url: 'http://phanmemaz.com/',
-            replace: 'http://phanmemaz.com/wp-content/plugins/tm-wordpress-redirection/l.php?'
-        },
-        {
-            url: 'forums.voz.vn/showthread.php',
-            replace: '/redirect/index.php?link='
-        },
-        {
-            url: 'www.webtretho.com/forum/',
-            replace: /http(s?):\/\/webtretho\.com\/forum\/links\.php\?url=/,
-            selector: 'a[href*="webtretho.com/forum/links.php?url="]'
-        }
+                url: 'https://samsungvn.com',
+                replace: 'https://samsungvn.com/xfa-interstitial/redirect?url=',
+            },
+            {
+                url: 'https://forum.vietdesigner.net',
+                replace: 'redirect/?url='
+            },
+            {
+                url: 'http://sinhvienit.net',
+                replace: 'http://sinhvienit.net/goto/?'
+            },
+            {
+                url: 'http://phanmemaz.com/',
+                replace: 'http://phanmemaz.com/wp-content/plugins/tm-wordpress-redirection/l.php?'
+            },
+            {
+                url: 'forums.voz.vn/showthread.php',
+                replace: '/redirect/index.php?link='
+            },
+            {
+                url: 'www.webtretho.com/forum/',
+                replace: /http(s?):\/\/webtretho\.com\/forum\/links\.php\?url=/,
+                selector: 'a[href*="webtretho.com/forum/links.php?url="]'
+            }
         ];
         configs.forEach(function (config) {
             this.removeRedir(config);
@@ -682,7 +687,7 @@ var adBlocker = {
         if (this.url.startWith('http://phimnhanh.com/xem-phim')) {
             Logger.warn('Đã chặn video preload');
             if (video !== undefined) {
-                video.preroll = function (options) { };
+                video.preroll = function (options) {};
             }
         }
     },
