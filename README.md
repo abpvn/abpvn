@@ -2,6 +2,6 @@
 ## [Facebook fanpage](https://www.facebook.com/abpvn.org)
 
 ## LICENSE:
-Under **GNUv3**, detail see [LICENSE](LICENSE)
+Under **GNU GPLv3**, detail see [LICENSE](LICENSE)
 
 Made with ♥ by hoangrio
