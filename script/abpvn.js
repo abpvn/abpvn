@@ -15,8 +15,8 @@
 // @grant       GM_registerMenuCommand
 // @include     http://*
 // @include     https://*
-// @version     2.2.64
-// @change-log  Add nothingCanStopMeShowThisMessage funtion to atiadblock remove
+// @version     2.2.65
+// @change-log  Add kat.vc redirect removal
 // @run-at      document-end
 // ==/UserScript==
 /* String Prototype */
@@ -447,7 +447,7 @@ var fixSite = {
             window.adblock = false;
             window.adblock2 = false;
             window.turnoff = true;
-            window.open = function () {};
+            window.open = function () { };
             //
             // @run-at document-end
             //
@@ -494,9 +494,9 @@ var fixSite = {
                         }
                     }, 100);
                 }
-                window.onclick = function () {};
-                document.onclick = function () {};
-                document.body.onclick = function () {};
+                window.onclick = function () { };
+                document.onclick = function () { };
+                document.body.onclick = function () { };
             });
         }
     },
@@ -573,7 +573,8 @@ var fixSite = {
         }
     },
     removeRedirect() {
-        var configs = [{
+        var configs = [
+            {
                 url: 'https://samsungvn.com',
                 replace: 'https://samsungvn.com/xfa-interstitial/redirect?url=',
             },
@@ -597,6 +598,10 @@ var fixSite = {
                 url: 'www.webtretho.com/forum/',
                 replace: /http(s?):\/\/webtretho\.com\/forum\/links\.php\?url=/,
                 selector: 'a[href*="webtretho.com/forum/links.php?url="]'
+            },
+            {
+                url: '/kat.vc|kickass.best/',
+                replace: 'https://mylink.cx/?url='
             }
         ];
         configs.forEach(function (config) {
@@ -687,7 +692,7 @@ var adBlocker = {
         if (this.url.startWith('http://phimnhanh.com/xem-phim')) {
             Logger.warn('Đã chặn video preload');
             if (video !== undefined) {
-                video.preroll = function (options) {};
+                video.preroll = function (options) { };
             }
         }
     },
