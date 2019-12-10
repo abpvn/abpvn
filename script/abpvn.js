@@ -15,8 +15,8 @@
 // @grant       GM_registerMenuCommand
 // @include     http://*
 // @include     https://*
-// @version     2.2.65
-// @change-log  Add kat.vc redirect removal
+// @version     2.2.66
+// @change-log  Add auto bypass linkviet.net
 // @run-at      document-end
 // ==/UserScript==
 /* String Prototype */
@@ -79,9 +79,9 @@ var byPass = {
         }
     },
     quickByPassLink: function () {
-        var regex = /123link\..*|phlame.pw|mshare\.io|megaurl\.*|licklink.net|www.123l\.*|vinaurl\.*|share4you.pro|doxeaz10.site|derow.win/;
+        var regex = /123link\..*|phlame.pw|mshare\.io|megaurl\.*|licklink.net|www.123l\.*|vinaurl\.*|share4you.pro|doxeaz10.site|derow.win|linkviet.net/;
         var largeTimeoutHost = /licklink.net|share4you.pro|derow.win/;
-        var autoCaptchaOnlyList = /megaurl\.*|vinaurl\.*|doxeaz10.site/;
+        var autoCaptchaOnlyList = /megaurl\.*|vinaurl\.*|doxeaz10.site|linkviet.net/;
         if (regex.test(location.hostname)) {
             try {
                 var checkClick = function (mutation) {
@@ -447,7 +447,7 @@ var fixSite = {
             window.adblock = false;
             window.adblock2 = false;
             window.turnoff = true;
-            window.open = function () { };
+            window.open = function () {};
             //
             // @run-at document-end
             //
@@ -494,9 +494,9 @@ var fixSite = {
                         }
                     }, 100);
                 }
-                window.onclick = function () { };
-                document.onclick = function () { };
-                document.body.onclick = function () { };
+                window.onclick = function () {};
+                document.onclick = function () {};
+                document.body.onclick = function () {};
             });
         }
     },
@@ -573,8 +573,7 @@ var fixSite = {
         }
     },
     removeRedirect() {
-        var configs = [
-            {
+        var configs = [{
                 url: 'https://samsungvn.com',
                 replace: 'https://samsungvn.com/xfa-interstitial/redirect?url=',
             },
@@ -692,7 +691,7 @@ var adBlocker = {
         if (this.url.startWith('http://phimnhanh.com/xem-phim')) {
             Logger.warn('Đã chặn video preload');
             if (video !== undefined) {
-                video.preroll = function (options) { };
+                video.preroll = function (options) {};
             }
         }
     },
