@@ -15,8 +15,8 @@
 // @grant       GM_registerMenuCommand
 // @include     http://*
 // @include     https://*
-// @version     2.2.66
-// @change-log  Add auto bypass linkviet.net
+// @version     2.2.67
+// @change-log  Add auto bypass ez4linkss.com
 // @run-at      document-end
 // ==/UserScript==
 /* String Prototype */
@@ -79,9 +79,9 @@ var byPass = {
         }
     },
     quickByPassLink: function () {
-        var regex = /123link\..*|phlame.pw|mshare\.io|megaurl\.*|licklink.net|www.123l\.*|vinaurl\.*|share4you.pro|doxeaz10.site|derow.win|linkviet.net/;
+        var regex = /123link\..*|phlame.pw|mshare\.io|megaurl\.*|licklink.net|www.123l\.*|vinaurl\.*|share4you.pro|doxeaz10.site|derow.win|linkviet.net|ez4linkss.com/;
         var largeTimeoutHost = /licklink.net|share4you.pro|derow.win/;
-        var autoCaptchaOnlyList = /megaurl\.*|vinaurl\.*|doxeaz10.site|linkviet.net/;
+        var autoCaptchaOnlyList = /megaurl\.*|vinaurl\.*|doxeaz10.site|linkviet.net|ez4linkss.com/;
         if (regex.test(location.hostname)) {
             try {
                 var checkClick = function (mutation) {
