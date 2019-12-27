@@ -15,8 +15,8 @@
 // @grant       GM_registerMenuCommand
 // @include     http://*
 // @include     https://*
-// @version     2.2.67
-// @change-log  Add auto bypass ez4linkss.com
+// @version     2.2.68
+// @change-log  Add remove popup phimnhe.net
 // @run-at      document-end
 // ==/UserScript==
 /* String Prototype */
@@ -700,12 +700,19 @@ var adBlocker = {
             document.querySelectorAll('div[id^="ads-"]').forEach(item => item.remove());
         }
     },
+    phimnhe_net: function () {
+        if (this.url.startWith('https://phimnhe.net') && createCookie !== undefined) {
+            ABPVN.cTitle();
+            createCookie('popt360', 1, 72);
+        }
+    },
     init: function () {
         this.url = location.href;
         this.mgIdAdRemover();
         this.blockPopUp();
         this.phimnhanh_com();
         this.vinaurl_net();
+        this.phimnhe_net();
     },
 };
 var configure = {
