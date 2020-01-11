@@ -15,8 +15,8 @@
 // @grant       GM_registerMenuCommand
 // @include     http://*
 // @include     https://*
-// @version     2.2.68
-// @change-log  Add remove popup phimnhe.net
+// @version     2.2.69
+// @change-log  Add bypass ckk.ai
 // @run-at      document-end
 // ==/UserScript==
 /* String Prototype */
@@ -79,9 +79,9 @@ var byPass = {
         }
     },
     quickByPassLink: function () {
-        var regex = /123link\..*|phlame.pw|mshare\.io|megaurl\.*|licklink.net|www.123l\.*|vinaurl\.*|share4you.pro|doxeaz10.site|derow.win|linkviet.net|ez4linkss.com/;
+        var regex = /123link\..*|phlame.pw|mshare\.io|megaurl\.*|licklink.net|www.123l\.*|vinaurl\.*|share4you.pro|doxeaz10.site|derow.win|linkviet.net|ez4linkss.com|ckk.ai/;
         var largeTimeoutHost = /licklink.net|share4you.pro|derow.win/;
-        var autoCaptchaOnlyList = /megaurl\.*|vinaurl\.*|doxeaz10.site|linkviet.net|ez4linkss.com/;
+        var autoCaptchaOnlyList = /megaurl\.*|vinaurl\.*|doxeaz10.site|linkviet.net|ez4linkss.com|ckk.ai/;
         if (regex.test(location.hostname)) {
             try {
                 var checkClick = function (mutation) {
