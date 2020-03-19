@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 202003191613
-! Title: ABPVN List [saostar.vn]
-! Last modified: 19 Mar 2020 16:13 UTC+7
+! Version: 202003191657
+! Title: ABPVN List [bilutv.org]
+! Last modified: 19 Mar 2020 16:57 UTC+7
 ! Expires: 1 days (update frequency)
 !
 ! ABPVN List filter
@@ -72,6 +72,7 @@ $webrtc,domain=phim14.net|phimotv.net|appvn.com
 ||baobongda.net/files/*.gif
 ||baobongda.net/files/m88-
 ||baotocdep.info^$subdocument,third-party
+||bilutv.org/Theme/js/pop.js
 ||biphim.net^*.gif$image
 ||biphim.tv^*.gif
 ||bit.ly^$popup,domain=ngonphongcomics.com
@@ -287,6 +288,7 @@ $webrtc,domain=phim14.net|phimotv.net|appvn.com
 ||tocbien.com^*.gif$third-party
 ||topitworks.com/vi/salary/widget$subdocument
 ||tr.topdevvn.com/js/follow.js
+||tructiepbongda.vip/themes/newbongda/*.gif
 ||truyencv.com/images/bn/
 ||truyencv.com/images/lzd-300.jpeg$image
 ||truyencv.com/images/tvmb-2.png$image
@@ -354,6 +356,8 @@ $webrtc,domain=phim14.net|phimotv.net|appvn.com
 ||adrealclick.com^
 ||ads-cdn.fptplay.net^
 ||ads.exdynsrv.com^
+||ads.sporttv.today^
+||ads.sporttv.today^$popup,third-party
 ||adsplay.net^$third-party
 ||adsquangcao.com^
 ||adtima-static.zadn.vn^$script
@@ -393,6 +397,7 @@ $webrtc,domain=phim14.net|phimotv.net|appvn.com
 ||d3t5ngjixpjdho.cloudfront.net^
 ||daezorwyn.xyz^
 ||data.videonow.ru^
+||debet.com^$popup,third-party
 ||delivery.vungtv.com^
 ||dorehernowi.pro^
 ||endpoint.terratraf.com^$third-party
@@ -525,7 +530,6 @@ banhtv.net##.preload
 banhtv.net##a[href^="https://hapicasino.com/"]
 banhtv.net##div.web > center
 banhtv.net##div[class^="ab"]
-banthang.tv##.adsInMatch
 banthang.tv##.adsInPlayer
 banthang.tv##.adsPlayerBanner
 banthang.tv##.ballon-bottom
@@ -534,6 +538,7 @@ banthang.tv##.btn_button.bet-now.watch-now
 banthang.tv##.buttonDatCuoc
 banthang.tv##.buttonFabet
 banthang.tv##.buttonNCL
+banthang.tv##.hot-menu
 banthang.tv##.m_disreponsive
 banthang.tv##.show-ads
 banthang.tv##.under-h1 > .inner_header
@@ -562,6 +567,9 @@ blogtruyen.vn##div.qc_TC_Chap_Middle
 blogtruyen.vn##div[id^="qc_M_"]
 blogtruyen.vn,vkool.tv###dialog
 blogtruyen.vn,vkool.tv##.window
+bongda365.tv##.banner-top
+bongda365.tv##.banner-under-player
+bongda365.tv##[class^="ballon-"]
 bongdaso.com###left_float
 bongdaso.com##.img_rec_banner
 bongdaso.com##.med_rec_banner2
@@ -570,6 +578,7 @@ bongdaso.com##.sky_banner2
 bongdaso.com,xemtiviso.com##.med_rec_banner1
 bongdaso.tv###wap_bottombanner
 bongdaso.tv##.d-lg-none.d-block.container.ads-header-mobile
+cbox.ws##a[href^="https://one88.vn/vi/"]
 chap.vn##.my_responsive_add
 chap.vn##.titleBar + *
 chap.vn##[class1="my_responsive_add"]
@@ -606,6 +615,7 @@ cuoi.tuoitre.vn,dabong.net##.banner-top
 dabong.net##.under-h1
 dabong.net##div[class^="ballon-"]
 dabong.net##div[class^="float-"]
+dabong.net,bongda365.tv,banthang.tv###.adsInMatch
 dantri.com.vn##.admicro
 designs.vn##.qc-right2
 dongphim.net##.vast-checkpoint-wrapper
@@ -685,6 +695,7 @@ ibongda.live##.adAboveBottom
 ibongda.live##.adBot
 ibongda.live##.content_live
 ibongda.live##.popup-ads-banner
+ibongda.live##a[href^="https://ads.sporttv.today?code=adsButtonCuoc"]
 ibongda.live,banthang.tv##.float-left
 ibongda.live,banthang.tv##.float-right
 icamera.vn###TextHTML-Module:nth-of-type(1) > p
@@ -829,6 +840,9 @@ topphimmoi.com##div[style="position:fixed;left:0;bottom:0;z-index:11"]
 topphimmoi.com##div[style="position:fixed;right:0;bottom:0;z-index:11"]
 topthuthuat.com##.widget.ai_widget
 topthuthuat.com,anonyviet.com##.widget.widget_text
+tructiepbongda.vip##.top-banner
+tructiepbongda.vip##.under-player
+tructiepbongda.vip##[class^="ballon-"]
 tructiepbongda.xyz##.fulladImage
 truyencv.com###geniee_overray_base
 truyendoc.info##[data-original^="http://imgg-cdn.steepto.com"]

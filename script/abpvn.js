@@ -447,7 +447,7 @@ var fixSite = {
             window.adblock = false;
             window.adblock2 = false;
             window.turnoff = true;
-            window.open = function () {};
+            window.open = function () { };
             //
             // @run-at document-end
             //
@@ -494,9 +494,9 @@ var fixSite = {
                         }
                     }, 100);
                 }
-                window.onclick = function () {};
-                document.onclick = function () {};
-                document.body.onclick = function () {};
+                window.onclick = function () { };
+                document.onclick = function () { };
+                document.body.onclick = function () { };
             });
         }
     },
@@ -507,9 +507,9 @@ var fixSite = {
         }
     },
     fakelinkRemover: function () {
-        if (this.url.startWith('https://ibongda.tv') || this.url.startWith('https://thevang.tv') || this.url.startWith('https://banthang.tv/')) {
+        if (this.url.startWith('https://ibongda.tv') || this.url.startWith('https://thevang.tv') || this.url.startWith('https://banthang.tv/') || this.url.startWith('https://tructiepbongda.vip/')) {
             ABPVN.cTitle();
-            var fakeLink = document.querySelectorAll('a[data-href][rel="nofollow"],a[data-url][rel="nofollow"]');
+            var fakeLink = document.querySelectorAll('a[data-href][rel="nofollow"],a[data-url][rel="nofollow"],a[data-url].pop-open');
             var count = 0;
             for (var i = 0; i < fakeLink.length; i++) {
                 if (fakeLink[i]) {
@@ -574,34 +574,34 @@ var fixSite = {
     },
     removeRedirect() {
         var configs = [{
-                url: 'https://samsungvn.com',
-                replace: 'https://samsungvn.com/xfa-interstitial/redirect?url=',
-            },
-            {
-                url: 'https://forum.vietdesigner.net',
-                replace: 'redirect/?url='
-            },
-            {
-                url: 'http://sinhvienit.net',
-                replace: 'http://sinhvienit.net/goto/?'
-            },
-            {
-                url: 'http://phanmemaz.com/',
-                replace: 'http://phanmemaz.com/wp-content/plugins/tm-wordpress-redirection/l.php?'
-            },
-            {
-                url: 'forums.voz.vn/showthread.php',
-                replace: '/redirect/index.php?link='
-            },
-            {
-                url: 'www.webtretho.com/forum/',
-                replace: /http(s?):\/\/webtretho\.com\/forum\/links\.php\?url=/,
-                selector: 'a[href*="webtretho.com/forum/links.php?url="]'
-            },
-            {
-                url: '/kat.vc|kickass.best/',
-                replace: 'https://mylink.cx/?url='
-            }
+            url: 'https://samsungvn.com',
+            replace: 'https://samsungvn.com/xfa-interstitial/redirect?url=',
+        },
+        {
+            url: 'https://forum.vietdesigner.net',
+            replace: 'redirect/?url='
+        },
+        {
+            url: 'http://sinhvienit.net',
+            replace: 'http://sinhvienit.net/goto/?'
+        },
+        {
+            url: 'http://phanmemaz.com/',
+            replace: 'http://phanmemaz.com/wp-content/plugins/tm-wordpress-redirection/l.php?'
+        },
+        {
+            url: 'forums.voz.vn/showthread.php',
+            replace: '/redirect/index.php?link='
+        },
+        {
+            url: 'www.webtretho.com/forum/',
+            replace: /http(s?):\/\/webtretho\.com\/forum\/links\.php\?url=/,
+            selector: 'a[href*="webtretho.com/forum/links.php?url="]'
+        },
+        {
+            url: '/kat.vc|kickass.best/',
+            replace: 'https://mylink.cx/?url='
+        }
         ];
         configs.forEach(function (config) {
             this.removeRedir(config);
@@ -691,7 +691,7 @@ var adBlocker = {
         if (this.url.startWith('http://phimnhanh.com/xem-phim')) {
             Logger.warn('Đã chặn video preload');
             if (video !== undefined) {
-                video.preroll = function (options) {};
+                video.preroll = function (options) { };
             }
         }
     },
