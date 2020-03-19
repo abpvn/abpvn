@@ -15,8 +15,8 @@
 // @grant       GM_registerMenuCommand
 // @include     http://*
 // @include     https://*
-// @version     2.2.70
-// @change-log  mshare.io => mshare.xyz
+// @version     2.2.71
+// @change-log  Add domain in fake link remover
 // @run-at      document-end
 // ==/UserScript==
 /* String Prototype */
@@ -507,7 +507,7 @@ var fixSite = {
         }
     },
     fakelinkRemover: function () {
-        if (this.url.startWith('https://ibongda.tv') || this.url.startWith('https://thevang.tv') || this.url.startWith('https://banthang.tv/') || this.url.startWith('https://tructiepbongda.vip/')) {
+        if (this.url.startWith('https://ibongda.tv') || this.url.startWith('https://thevang.tv') || this.url.startWith('https://banthang.tv/') || this.url.startWith('https://tructiepbongda.vip/') || this.url.startWith('https://dabong.net/') || this.url.startWith('https://bongda365.tv/') || this.url.startWith('https://ibongda.live/')) {
             ABPVN.cTitle();
             var fakeLink = document.querySelectorAll('a[data-href][rel="nofollow"],a[data-url][rel="nofollow"],a[data-url].pop-open');
             var count = 0;
