@@ -15,8 +15,8 @@
 // @grant       GM_registerMenuCommand
 // @include     http://*
 // @include     https://*
-// @version     2.2.73
-// @change-log  Update mshares.co,mshare.xyz domain
+// @version     2.2.74
+// @change-log  Add tuong.me ads redirect remover
 // @run-at      document-end
 // ==/UserScript==
 /* String Prototype */
@@ -601,6 +601,10 @@ var fixSite = {
             {
                 url: '/kat.vc|kickass.best/',
                 replace: 'https://mylink.cx/?url='
+            },
+            {
+                url: 'https://tuong.me/',
+                replace: 'https://tuong.me/chuyen-huong/?url='
             }
         ];
         configs.forEach(function (config) {
