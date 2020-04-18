@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 202004171558
-! Title: ABPVN List [hatde.tv]
-! Last modified: 17 Apr 2020 15:58 UTC+7
+! Version: 202004181157
+! Title: ABPVN List [optimize filter]
+! Last modified: 18 Apr 2020 11:57 UTC+7
 ! Expires: 1 days (update frequency)
 !
 ! ABPVN List filter
@@ -23,13 +23,13 @@ $webrtc,domain=phim14.net|phimotv.net|appvn.com
 .vn/Ad/
 .vn/ads/
 .vn/qc/
-/\w{2}\/\w{2}\/\w{32}\.js/$domain=thaygiaoba.com
 /24h-ad.
+/\w{2}\/\w{2}\/\w{32}\.js/$domain=thaygiaoba.com
 /ads/*.gif
 /ads/*.xml$xmlhttprequest
 /assets/popup.js
-/banner/*.gif
 /banner-ads.
+/banner/*.gif
 /blueserving.
 /cvast.$script,xmlhttprequest,third-party
 /images.accesstrade.vn/
@@ -43,6 +43,7 @@ $webrtc,domain=phim14.net|phimotv.net|appvn.com
 /quangcao.
 /quangcao/*$domain=~muabanraovat.com|~linkneverdie.com
 /root/ads/*
+/stores/ads_data/
 /uploaded/ads/*
 /uploads/wangcao/*
 /uts.js
@@ -80,10 +81,9 @@ $webrtc,domain=phim14.net|phimotv.net|appvn.com
 ||biphim.net^*.gif$image
 ||biphim.tv^*.gif
 ||bit.ly^$domain=biphim.tv|kingphim.net|vphim.net|phimmedia.tv|vkool.tv
-||bit.ly^$popup,domain=hatde.tv
-||bit.ly^$popup,domain=ngonphongcomics.com
-||blogspot.com^*.gif$domain=phim33.com|hamtruyen.com|truyensieuhay.com|hamtruyen.vn|hocvientruyentranh.net|mythethao.net|vuviphimmoi.com
+||bit.ly^$popup,domain=ngonphongcomics.com|hatde.tv
 ||blogspot.com^*-banner$image,domain=blogtruyen.vn
+||blogspot.com^*.gif$domain=phim33.com|hamtruyen.com|truyensieuhay.com|hamtruyen.vn|hocvientruyentranh.net|mythethao.net|vuviphimmoi.com
 ||blogtruyen.vn/scripts/banner-preload.js
 ||blogtruyen.vn/scripts/iframe-rand.js
 ||bongdalive.tv^*.gif$image
@@ -140,11 +140,11 @@ $webrtc,domain=phim14.net|phimotv.net|appvn.com
 ||go3xsex.com^$subdocument,third-party
 ||googlecontentmanager.com^$image,third-party
 ||googleusercontent.com^*.gif|$domain=tivi4k.net
-||hamtruyen.com/bannerqc/
 ||hamtruyen.com/Scripts/ads_qc.js
 ||hamtruyen.com/Scripts/blueyonew.js
 ||hamtruyen.com/Scripts/ixinh.js
 ||hamtruyen.com/Scripts/jwplayer.js
+||hamtruyen.com/bannerqc/
 ||hamtruyen.com/ytb.html
 ||haynhucnhoi.tv/api$third-party
 ||hdvietnam.com/banner/
@@ -172,9 +172,8 @@ $webrtc,domain=phim14.net|phimotv.net|appvn.com
 ||images.tuyensinh247.com^$image,domain=sachbaitap.com
 ||images.tuyensinh247.com^*banner-
 ||images1.violympic.vn/assets/images/*.gif
-||images2.imgbox.com^*.gif$domain=ngonphongcomics.com
-||images2.imgbox.com^*.gif$image,domain=ocumeo.com
 ||images2-focus-opensocial.googleusercontent.com^*.gif$image,domain=tvhay.org|90phut.tv|binhluan.tv
+||images2.imgbox.com^*.gif$image,domain=ocumeo.com|ngonphongcomics.com
 ||imei.vcdn.club/storage20/hh247/wangcao/
 ||img.anime47.com/imgur/HnIjfZc.jpg
 ||img.dothi.net^*.gif
@@ -184,8 +183,8 @@ $webrtc,domain=phim14.net|phimotv.net|appvn.com
 ||img.yeah1.com/upload/logo/
 ||inet.vn/images/banner
 ||ismcorp.vn^*.gif$domain=hdvietnam.com
-||js.pmcontent.com/js/ambient/client.js
 ||js-agent.newrelic.com
+||js.pmcontent.com/js/ambient/client.js
 ||k8wap.com^$popup,third-party
 ||kenhvideo.com^*.gif
 ||ketqua.vn/uploads/images/*.gif
@@ -221,7 +220,6 @@ $webrtc,domain=phim14.net|phimotv.net|appvn.com
 ||ntruyen.info/Ad$subdocument
 ||nv-ad-*.24hstatic.com/imageupload/upload/
 ||onthitoeic.vn//wp-content/themes/Demet/banner-
-||petrotimes.vn/stores/ads_data
 ||phanthiet24h.com/bannerqc/
 ||phimmedia.tv^*.xml$~third-party
 ||phimmoi.info^*.gif
@@ -261,8 +259,8 @@ $webrtc,domain=phim14.net|phimotv.net|appvn.com
 ||static.download.com.vn/cache.aspx?_path=*ad$script
 ||static.hayhaytv.com^*.mp4
 ||static.hdo.tv/template/frontend/images/FloatbannerHDO.png
-||static.hdo.tv/template/frontend/images/float-logo-Pose.png
 ||static.hdo.tv/template/frontend/images/Topplayer.png
+||static.hdo.tv/template/frontend/images/float-logo-Pose.png
 ||static.htvonline.com.vn/layout/images/*_banner.jpg
 ||static.htvonline.com.vn/layout/images/lienhequangcao.png
 ||static.ketqua.net/adv_imgs
@@ -272,8 +270,8 @@ $webrtc,domain=phim14.net|phimotv.net|appvn.com
 ||static.truyenfull.vn/taitro/
 ||static.ybox.vn^*.gif
 ||staticflickr.com^*.gif$domain=chophanthiet.us
-||stc.nas.nixcdn.com^*.gif
 ||stc-tv.zing.vn/skins/tv_v2/js/fadblock.min.js
+||stc.nas.nixcdn.com^*.gif
 ||storage.fshare.vn/images/$third-party
 ||storage.googleapis.com/adasia-ad-network-origin/
 ||stream.anime4u.net^*-ad.xml
@@ -326,7 +324,6 @@ $webrtc,domain=phim14.net|phimotv.net|appvn.com
 ||vietjack.com/git/images/2k2_new_2.jpg
 ||vietjack.com/git/images/banner_
 ||vietyo.com/yomedia/
-||vir.com.vn/stores/ads_data/
 ||vjs.zencdn.net/5.20.3/video.min.js$domain=gacsach.com
 ||vkool.tv/js/abp.js
 ||vkool.tv/js/pov*.js
@@ -367,15 +364,15 @@ $webrtc,domain=phim14.net|phimotv.net|appvn.com
 ||adnetwork.vn^$third-party
 ||adpia.vn^$third-party
 ||adrealclick.com^
+||ads-cdn.fptplay.net^
 ||ads.exdynsrv.com^
 ||ads.sporttv.today^
 ||ads.sporttv.today^$popup,third-party
-||ads-cdn.fptplay.net^
 ||adsplay.net^$third-party
 ||adsquangcao.com^
+||adtima-static.zadn.vn^$script
 ||adtima.vn^$third-party
 ||adtimaserver.vn^
-||adtima-static.zadn.vn^$script
 ||adtop.vn^$third-party
 ||adv.vcmedia.vn^
 ||aenan.pw^
@@ -402,10 +399,10 @@ $webrtc,domain=phim14.net|phimotv.net|appvn.com
 ||binomo.com^$popup,third-party
 ||blueseed.tv^$third-party
 ||brand.ad^
+||cdn-qc.coccoc.com^
 ||cdn.videonow.ru^
 ||cdn9now.com^$script
 ||cdnads.90phut.tv^
-||cdn-qc.coccoc.com^
 ||cheap-ads.net^
 ||click.advertnative.com^
 ||cpx.vnecdn.com^
