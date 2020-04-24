@@ -15,8 +15,8 @@
 // @grant       GM_registerMenuCommand
 // @include     http://*
 // @include     https://*
-// @version     2.2.74
-// @change-log  Add tuong.me ads redirect remover
+// @version     2.2.75
+// @change-log  Update phimnhe.net redirect cookie
 // @run-at      document-end
 // ==/UserScript==
 /* String Prototype */
@@ -707,7 +707,8 @@ var adBlocker = {
     phimnhe_net: function () {
         if (this.url.startWith('https://phimnhe.net') && createCookie !== undefined) {
             ABPVN.cTitle();
-            createCookie('popt360', 1, 72);
+            createCookie('vwinpopuppc', 1, 72);
+            createCookie('vwinpopupmb', 1, 72);
         }
     },
     init: function () {
