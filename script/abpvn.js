@@ -15,8 +15,8 @@
 // @grant       GM_registerMenuCommand
 // @include     http://*
 // @include     https://*
-// @version     2.2.75
-// @change-log  Update phimnhe.net redirect cookie
+// @version     2.2.76
+// @change-log  Remove redirect on yhocdata.com
 // @run-at      document-end
 // ==/UserScript==
 /* String Prototype */
@@ -605,6 +605,10 @@ var fixSite = {
             {
                 url: 'https://tuong.me/',
                 replace: 'https://tuong.me/chuyen-huong/?url='
+            },
+            {
+                url: 'https://yhocdata.com/',
+                replace: 'https://yhocdata.com/redirect/?url='
             }
         ];
         configs.forEach(function (config) {
