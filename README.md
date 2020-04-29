@@ -2,7 +2,7 @@
 ABPVN - Vietnamese adblock filter list
 ## [Facebook fanpage](https://www.facebook.com/abpvn.org)
 
-## [Support forum](https://forums.voz.vn/showthread.php?t=5246802)
+## [Support forum](https://next.voz.vn/t/abpvn-chan-quang-cao-cho-nguoi-viet.25778/)
 
 ## LICENSE: 
 Under **GNU GPLv3**, detail see [LICENSE](LICENSE)
