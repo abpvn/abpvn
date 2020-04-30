@@ -4,13 +4,13 @@ $webrtc,domain=forum.xda-developers.com|phim14.net|mkvcage.com|phimotv.net|daily
 &aduid=
 &adunit=
 *$csp=default-src 'self' * data: 'unsafe-inline' 'unsafe-eval',domain=forum.xda-developers.com
-*$csp=script-src 'self' * data: 'unsafe-eval',domain=yts.am
+*$csp=script-src 'self' * data: 'unsafe-eval',domain=yts.am|feurl.com
 -120x240-
 -728x90
 -adnow.com^$third-party
 -ads.
 -pagead-id.
-.com/ads
+.com/ads$domain=~anime47.com
 .com/cpc/$script
 .com/qc/
 .com/vast/$xmlhttprequest
@@ -66,6 +66,7 @@ $webrtc,domain=forum.xda-developers.com|phim14.net|mkvcage.com|phimotv.net|daily
 /fembed\.com(\/\w{2}){3}\/\w{32}\.js/$script,domain=fembed.com
 /flowplayer.ads.
 /full-page-script.$script
+/googima.js
 /googlead.
 /googleads.
 /gpt.$script

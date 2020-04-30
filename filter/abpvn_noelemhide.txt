@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 202004270623
-! Title: ABPVN List [bilutv.org]
-! Last modified: 27 Apr 2020 06:23 UTC+7
+! Version: 202004302147
+! Title: ABPVN List [anime47.com]
+! Last modified: 30 Apr 2020 21:47 UTC+7
 ! Expires: 1 days (update frequency)
 !
 ! ABPVN List filter
@@ -20,13 +20,13 @@ $webrtc,domain=forum.xda-developers.com|phim14.net|mkvcage.com|phimotv.net|daily
 &aduid=
 &adunit=
 *$csp=default-src 'self' * data: 'unsafe-inline' 'unsafe-eval',domain=forum.xda-developers.com
-*$csp=script-src 'self' * data: 'unsafe-eval',domain=yts.am
+*$csp=script-src 'self' * data: 'unsafe-eval',domain=yts.am|feurl.com
 -120x240-
 -728x90
 -adnow.com^$third-party
 -ads.
 -pagead-id.
-.com/ads
+.com/ads$domain=~anime47.com
 .com/cpc/$script
 .com/qc/
 .com/vast/$xmlhttprequest
@@ -82,6 +82,7 @@ $webrtc,domain=forum.xda-developers.com|phim14.net|mkvcage.com|phimotv.net|daily
 /fembed\.com(\/\w{2}){3}\/\w{32}\.js/$script,domain=fembed.com
 /flowplayer.ads.
 /full-page-script.$script
+/googima.js
 /googlead.
 /googleads.
 /gpt.$script
@@ -783,6 +784,7 @@ hoathinh247.com###catfish1
 ||hitcpm.com^
 ||hiug862dj0.com^
 ||hyperline88.com^
+||imasdk.googleapis.com^
 ||imgcdnbet.com^
 ||imrworldwide.com^$third-party
 ||imstore.bet365affiliates.com$third-party
@@ -916,6 +918,7 @@ hoathinh247.com###catfish1
 ||revsci.net^$third-party
 ||rithaphouse.info^
 ||runative-syndicate.com^
+||rusenov.com^
 ||s.mnet-ad.net^
 ||s.tuoitre.vn^
 ||s1block.com^$third-party
@@ -997,6 +1000,7 @@ hoathinh247.com###catfish1
 ||video.your-notice.com^
 ||vietnamnetad.vn^
 ||wafmedia6.com^
+||watakaw133.xyz
 ||waust.at^$script
 ||www.w88clubw88win.com$image,third-party
 ||wwwpromoter.com^$third-party
