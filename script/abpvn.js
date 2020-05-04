@@ -15,8 +15,8 @@
 // @grant       GM_registerMenuCommand
 // @include     http://*
 // @include     https://*
-// @version     2.2.76
-// @change-log  Remove redirect on yhocdata.com
+// @version     2.2.77
+// @change-log  Add popup block on fullcrackpc.com
 // @run-at      document-end
 // ==/UserScript==
 /* String Prototype */
@@ -654,7 +654,8 @@ var adBlocker = {
             'www.vietsubhd.com',
             'www.phimmedia.tv',
             'tvhay.org',
-            'bilutv.org'
+            'bilutv.org',
+            'fullcrackpc.com'
         ];
         for (var i = 0; i < listSite.length; i++) {
             if (location.hostname === listSite[i]) {
