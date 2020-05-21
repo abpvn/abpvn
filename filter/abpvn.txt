@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 202005191149
-! Title: ABPVN List [Update forum url]
-! Last modified: 19 May 2020 11:49 UTC+7
+! Version: 202005211427
+! Title: ABPVN List [optimize filter]
+! Last modified: 21 May 2020 14:27 UTC+7
 ! Expires: 1 days (update frequency)
 !
 ! ABPVN List filter
@@ -115,7 +115,7 @@ $webrtc,domain=forum.xda-developers.com|phim14.net|mkvcage.com|phimotv.net|daily
 /uts.js
 /vast.
 /vast\d+\./$xmlhttprequest
-/videojs.ads.
+/videojs.ads.$domain=~danet.vn|~phimnhanh.com
 /videojs.ima.js
 /wmedia/tags/*
 /wp-content/plugins/simple-adblock-notice-pro/*
@@ -1496,8 +1496,6 @@ zippyshare.com##.center_ad
 @@||browxy.com/assets/javascripts/third-party/popup/popup.js
 @@||cdn.popcash.net^$domain=netdna-storage.com
 @@||cdn.vidyomani.com/c/p/showads.js$domain=vidyomani.com
-@@||cdnjs.cloudflare.com/ajax/libs/videojs-contrib-ads/6.3.0/videojs.ads.min.js$domain=phimnhanh.com
-@@||danet.vn/js/videojs.ads.min.js
 @@||dmcdn.net/js/gen/widget/pack/popup.js.vfc7812cd5dcf8ad73
 @@||dns.norton.com/js/popup.js
 @@||easylist.club^$script,domain=oload.stream|openload.co|oload.tv
