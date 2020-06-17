@@ -15,8 +15,8 @@
 // @grant       GM_registerMenuCommand
 // @include     http://*
 // @include     https://*
-// @version     2.2.77
-// @change-log  Add popup block on fullcrackpc.com
+// @version     2.2.78
+// @change-log  Add remove redirect in vn-z.vn
 // @run-at      document-end
 // ==/UserScript==
 /* String Prototype */
@@ -566,6 +566,11 @@ var fixSite = {
                         stockUrl = decodeURIComponent(stockUrl);
                         count++;
                     }
+                    count = 0;
+                    while (stockUrl.indexOf('==') === stockUrl.length - 2 && count < 5) {
+                        stockUrl = atob(stockUrl);
+                        count++;
+                    }
                     item.setAttribute('href', stockUrl);
                     item.setAttribute('title', 'Link đã xóa chuyển hướng trung gian bởi abpvn.com');
                 }.bind(this));
@@ -609,6 +614,10 @@ var fixSite = {
             {
                 url: 'https://yhocdata.com/',
                 replace: 'https://yhocdata.com/redirect/?url='
+            },
+            {
+                url: 'https://vn-z.vn/',
+                replace: 'https://vn-z.vn/redirect?to='
             }
         ];
         configs.forEach(function (config) {
