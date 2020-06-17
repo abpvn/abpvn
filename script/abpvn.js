@@ -67,7 +67,7 @@ var byPass = {
             for (var i = 0; i < allShortLink.length; i++) {
                 var processingLink = allShortLink[i];
                 var href = processingLink.getAttribute('href');
-                var tmp = href.match(/url=(.+?)&|$/);;
+                var tmp = href.match(/url=(.+?)&|$/);
                 if (tmp[1]) {
                     processingLink.setAttribute('href', atob(tmp[1].replace(/=+$/, '')));
                     var oldTitle = processingLink.getAttribute('title');
@@ -115,10 +115,10 @@ var byPass = {
                 if (button) {
                     observer.observe(button, config);
                 } else {
-                    var getLink = document.querySelector('.get-link');
+                    var getLinkl = document.querySelector('.get-link');
                     var timeout = largeTimeoutHost.test(location.hostname) ? 6000 : 100;
-                    if (getLink) {
-                        observer.observe(getLink, config);
+                    if (getLinkl) {
+                        observer.observe(getLinkl, config);
                         if (!autoCaptchaOnlyList.test(location.hostname)) {
                             setTimeout(function () {
                                 $("#go-link").addClass("go-link").trigger("submit.adLinkFly.counterSubmit").one("submit.adLinkFly.counterSubmit", function (e) {
@@ -252,23 +252,23 @@ var getLink = {
                             'linkcode': linkcode,
                             'withFcode5': 0,
                         };
-                        $.post('/download/get', data).done(function (data, statusText, xhr) {
-                            if (data.url === undefined) location.reload();
+                        $.post('/download/get', data).done(function (resData, statusText, xhr) {
+                            if (resData.url === undefined) location.reload();
                             else {
                                 if (typeof location != 'undefined') {
-                                    Logger.log(location.href + ' -> ' + data.url);
-                                    var count_time = data.wait_time;
+                                    Logger.log(location.href + ' -> ' + resData.url);
+                                    var count_time = resData.wait_time;
                                     var interval = setInterval(function () {
                                         var msg = "Cần đợi <span style='color: #cd1417'>" + count_time + "</span> giây nữa";
                                         document.querySelector('.d-info-container .thumbnail').innerHTML = "<div style='font-size: 25px;color: #00dc58;font-weight: bold'>ABPVN Auto download:<br/>" + msg + "</div>";
                                         count_time--;
                                         if (count_time <= 0) {
                                             clearInterval(interval);
-                                            location.href = data.url;
+                                            location.href = resData.url;
                                         }
                                     }, 1000);
                                 } else {
-                                    $('.download').prepend('<a title="Tải trực tiếp" style="padding: 5px 0;box-sizing: content-box;" class="download-btn mdc-button mdc-button--raised mdc-ripple-upgraded full-width mdc-button-primary fcode5" href="' + data.url + '">Tải trực tiếp<span>Hỗ trợ bởi abpvn.com</span></a>');
+                                    $('.download').prepend('<a title="Tải trực tiếp" style="padding: 5px 0;box-sizing: content-box;" class="download-btn mdc-button mdc-button--raised mdc-ripple-upgraded full-width mdc-button-primary fcode5" href="' + resData.url + '">Tải trực tiếp<span>Hỗ trợ bởi abpvn.com</span></a>');
                                 }
                             }
                         }).fail(function (xhr, statusText, error) {
@@ -357,9 +357,9 @@ var fixSite = {
             var blob = new Blob([xhr.responseText], {
                 type: 'text/javascript'
             });
-            var url = URL.createObjectURL(blob);
+            var blobUrl = URL.createObjectURL(blob);
             var script = document.createElement('script');
-            script.src = url;
+            script.src = blobUrl;
             script.type = 'text/javascript';
             document.getElementsByTagName('head')[0].appendChild(script);
         });
