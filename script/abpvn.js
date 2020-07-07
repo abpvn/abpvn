@@ -15,8 +15,8 @@
 // @grant       GM_registerMenuCommand
 // @include     http://*
 // @include     https://*
-// @version     2.2.78
-// @change-log  Add remove redirect in vn-z.vn
+// @version     2.2.79
+// @change-log  Update blogtruyen.vn block popup domain
 // @run-at      document-end
 // ==/UserScript==
 /* String Prototype */
@@ -645,7 +645,7 @@ var fixSite = {
 var adBlocker = {
     blockPopUp: function () {
         var listSite = [
-            'blogtruyen.com',
+            'blogtruyen.vn',
             'www.khosachnoi.net',
             'hamtruyen.vn',
             'phim14.net',

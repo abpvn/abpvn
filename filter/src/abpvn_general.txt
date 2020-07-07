@@ -1,5 +1,5 @@
 ! ---------- Generic Blocking Rules ----------
-$popup,third-party,domain=appvn.com|khophimplus.com|megaurl.in|hamtruyen.com|hatde.tv|blogtruyen.com|razorphim.com|phim1080.com
+$popup,third-party,domain=appvn.com|khophimplus.com|megaurl.in|hamtruyen.com|hatde.tv|blogtruyen.vn|razorphim.com|phim1080.com
 $webrtc,domain=phim14.net|appvn.com
 .com/cpc/$script
 .com/qc/
@@ -86,6 +86,7 @@ $webrtc,domain=phim14.net|appvn.com
 ||blogfonts.com^$domain=hosocongty.vn,image
 ||blogspot.com^*.gif$domain=phim33.com|hamtruyen.com|truyensieuhay.com|hamtruyen.vn|hocvientruyentranh.net|mythethao.net|vuviphimmoi.com
 ||blogspot.com^*-banner$image,domain=blogtruyen.vn
+||blogtruyen.vn$csp=script-src 'self' *
 ||blogtruyen.vn/scripts/banner-preload.js
 ||blogtruyen.vn/scripts/iframe-rand.js
 ||blueadss.com^
