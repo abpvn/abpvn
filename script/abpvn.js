@@ -15,8 +15,8 @@
 // @grant       GM_registerMenuCommand
 // @include     http://*
 // @include     https://*
-// @version     2.2.79
-// @change-log  Update blogtruyen.vn block popup domain
+// @version     2.2.80
+// @change-log  Fix remove redirect in vn-z.vn
 // @run-at      document-end
 // ==/UserScript==
 /* String Prototype */
@@ -567,7 +567,7 @@ var fixSite = {
                         count++;
                     }
                     count = 0;
-                    while (stockUrl.indexOf('==') === stockUrl.length - 2 && count < 5) {
+                    while (stockUrl.indexOf('aHR0c') === 0 && count < 5) {
                         stockUrl = atob(stockUrl);
                         count++;
                     }
