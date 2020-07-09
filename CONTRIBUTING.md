@@ -1,0 +1,10 @@
+## How to contributing ABPVN
+1. Fork abpvn repository
+2. Create your rule use your favorite Adblocker extention (ABP, Ublock Origin, AdGuard)
+3. Filter your rule as type: Network rule, Element hiding rule, Network white list rule, Elmenent hide white list rule and add it to correct file under `filter/src` folder
+4. Update `filter/src/abpvn_title.txt` file about your change `! Title: ABPVN List [(You change here)]`
+5. Run `build-push.sh` with git-bash in Windows or terminal on Unix/Linux
+6. Create pull request to **ABPVN** repository
+7. Waiting for approve from **ABPVN** Author
+
+Made with ♥ by hoangrio
