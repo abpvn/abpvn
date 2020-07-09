@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 202007080841
-! Title: ABPVN List [accept github issue #131]
-! Last modified: 08 Jul 2020 08:41 UTC+7
+! Version: 202007090804
+! Title: ABPVN List [khophimle.tv]
+! Last modified: 09 Jul 2020 08:04 UTC+7
 ! Expires: 1 days (update frequency)
 !
 ! ABPVN List filter
@@ -100,7 +100,7 @@ $webrtc,domain=phim14.net|appvn.com
 ||bizlive.vn/*banner$script
 ||bizlive.vn/*banner.css
 ||blogfonts.com^$domain=hosocongty.vn,image
-||blogspot.com^*.gif$domain=phim33.com|hamtruyen.com|truyensieuhay.com|hamtruyen.vn|hocvientruyentranh.net|mythethao.net|vuviphimmoi.com
+||blogspot.com^*.gif$domain=phim33.com|hamtruyen.com|truyensieuhay.com|hamtruyen.vn|hocvientruyentranh.net|mythethao.net|vuviphimmoi.com|khophimle.tv
 ||blogspot.com^*-banner$image,domain=blogtruyen.vn
 ||blogtruyen.vn$csp=script-src 'self' *
 ||blogtruyen.vn/scripts/banner-preload.js
@@ -401,6 +401,7 @@ $webrtc,domain=phim14.net|appvn.com
 ||vtc.vn/adsv/
 ||vuighe.tv^*.gif$image
 ||w88clubw88win.com$image,third-party
+||web.lotuscdn.vn^*.gif$domain=khophimle.tv
 ||webtruyen.com/public/frontend/desk/js/load_video.js
 ||xehay.vn/public/html5/ads/
 ||xemchua.tv/*ads$image,subdocument
@@ -622,17 +623,13 @@ banhtv.net##a[href^="https://hapicasino.com/"]
 banhtv.net##div.web > center
 banhtv.net##div[class^="ab"]
 banhtv.net,baprang.tv##.preload
-banthang.tv##.adsInPlayer
 banthang.tv##.ballon-bottom
 banthang.tv##.ballon-left-pc
-banthang.tv##.buttonDatCuoc
-banthang.tv##.buttonFabet
-banthang.tv##.buttonNCL
 banthang.tv##.hot-menu
 banthang.tv##.m_disreponsive
 banthang.tv##.show-ads
 banthang.tv##.under-h1 > .inner_header
-banthang.tv,tructiep.xemchua.tv##.adsPlayerBanner
+banthang.tv,tructiep.xemchua.tv,bongda365.tv##.adsPlayerBanner
 baobinhthuan.com.vn###ads_2_col_bot
 baodauthau.vn##.advertise
 baodauthau.vn##.main-ad-wrapper
@@ -669,14 +666,13 @@ blogtruyen.vn##div.qc_TC_Chap_Middle
 blogtruyen.vn##div[id^="qc_M_"]
 blogtruyen.vn,vkool.tv###dialog
 blogtruyen.vn,vkool.tv##.window
-bongda365.tv##.adsInPlayer
-bongda365.tv##.adsPlayerBanner
 bongda365.tv##.banners
 bongda365.tv##.banner-under-player
-bongda365.tv##.buttonDatCuoc
-bongda365.tv##.buttonFabet
-bongda365.tv##.buttonNCL
 bongda365.tv##[class^="float-"]
+bongda365.tv,banthang.tv##.adsInPlayer
+bongda365.tv,banthang.tv##.buttonDatCuoc
+bongda365.tv,banthang.tv##.buttonFabet
+bongda365.tv,banthang.tv##.buttonNCL
 bongdaso.com###left_float
 bongdaso.com##.img_rec_banner
 bongdaso.com##.med_rec_banner2
@@ -730,9 +726,8 @@ coccoc.com##[data-show-urls^="http://context.qc.coccoc.com"]
 coccoc.com##a[href^="https://context.qc.coccoc.com"]
 coccoc.com##video
 coccoc.com#?#li:-abp-has(h3:-abp-contains(Sản phẩm))
-coccoc.com,phimgi.tv,huphim.com,anhem.tv,bongdatructuyen.live,tructiep.xemchua.tv##.ads
+coccoc.com,phimgi.tv,huphim.com,anhem.tv,bongdatructuyen.live,tructiep.xemchua.tv,khophimle.tv##.ads
 congluan.vn##.box_ads_d
-congluan.vn##.exp_qc_share
 congly.vn###show_adv_1
 congly.vn###show_adv_2
 cuoi.tuoitre.vn##.banner-bottom
@@ -783,9 +778,9 @@ gamevui.vn##.adx-zone
 gamevui.vn##.underlay
 genk.vn###ads_zone59_slot2
 ghostviet.com###navbar_notice_7
-giadinhvietnam.com##.exp_qc_share
 giadinhvietnam.com##.id_26.adv
 giadinhvietnam.com##.mar_top20.fl.w100.ads_pc
+giadinhvietnam.com,congluan.vn##.exp_qc_share
 giaitriviet.net.vn###idads1
 giaitriviet.net.vn##.nd
 hamtruyen.com###ad_float_right
@@ -863,9 +858,11 @@ keonhacai.net##div.bannerm
 ketqua.net##.adsb
 ketqua.net##div[id^="baloon"]
 khoahoc.com.vn##MetaNET_SHARING_AD_NUMBER_3
-khophimle.com##.a-single
-khophimle.com##.sticky_bottom
-khophimle.com,khoaitv.org,hatde.tv##div[class^="ads-fix-bottom"]
+khophimle.tv##.ads-fix-bottom
+khophimle.tv##.ads-fix-bottom-left
+khophimle.tv##.a-single
+khophimle.tv##.sticky_bottom
+khophimle.tv,khoaitv.org,hatde.tv##div[class^="ads-fix-bottom"]
 kiemhieptruyen.com##a[href^="https://shorten.asia"]
 kiemhieptruyen.com#?#p.hoi:-abp-contains(DEAL)
 kiemhieptruyen.com#?#p:-abp-has(a[href^="http://bit.ly"])
@@ -1241,13 +1238,12 @@ howkteam.vn,fptplay.vn#@#.adsbox
 hvdic.thivien.net,startuanit.net,loinhacsong.com,vinaurl.in,taivenhanh.com,123link.f4vnn.com#@#.adsbygoogle
 linkviet.net,linkviet.top,linkvietvip.com,megalink.pro#@##ad-banner
 linkviet.net,linkviet.top,linkvietvip.com,megalink.pro#@#.ad-banner
-loinhacsong.com,phimgi.tv,loptelink.pro#@#.adBanner
+loinhacsong.com,phimgi.tv,loptelink.pro,truyentranhaudio.com#@#.adBanner
 movies.hdviet.com#@##sponsorText
 quiznhe.com#@#.video-ads-container
 sachmoi.net#@##adblock
 taisachhay.com,echip.pro#@#div[id^="ads300_250-widget"]
 tratu.soha.vn#@#.adheader
-truyentranhaudio.com#@#.adBanner
 vutrung.gnomio.com,appvn.com#@##banner_ad
 !------ ABPVN Adult block -------
 $popup,domain=hentailxx.com,third-party
