@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 202007251112
+! Version: 202007251117
 ! Title: ABPVN List [goldphim.com]
-! Last modified: 25 Jul 2020 11:12 UTC+7
+! Last modified: 25 Jul 2020 11:17 UTC+7
 ! Expires: 1 days (update frequency)
 !
 ! ABPVN List filter
@@ -14,8 +14,10 @@
 ! Facebook Fanpage: https://www.facebook.com/abpvn.org
 ! Forum: https://voz.vn/t/abpvn-chan-quang-cao-cho-nguoi-viet.25778/
 ! Report new issue on github: https://github.com/abpvn/abpvn/issues/new
+
 ! ---------- Generic Blocking Rules ----------
-$popup,third-party,domain=oload.tv|oload.stream|openload.co|oload.site|appvn.com|mediafire.com|dfpan.com|mac-torrent-download.me|uploadocean.com|khophimplus.com|vinaurl.net|clipconverter.cc|userscloud.com|proxyrarbg.org|megaurl.in|loptelink.pro|linksht.com|ouo.io|razorphim.com|phim1080.com
+$popup,domain=playhydrax.com
+$popup,third-party,domain=oload.tv|oload.stream|openload.co|oload.site|appvn.com|mediafire.com|dfpan.com|mac-torrent-download.me|uploadocean.com|khophimplus.com|vinaurl.net|clipconverter.cc|userscloud.com|proxyrarbg.org|megaurl.in|loptelink.pro|linksht.com|ouo.io|razorphim.com|phim1080.net
 $webrtc,domain=forum.xda-developers.com|phim14.net|mkvcage.com|phimotv.net|dailyuploads.net|uploadocean.com|appvn.com|monova.org|monova.to|sharemods.com
 &adformat=
 &aduid=
@@ -282,6 +284,7 @@ hoathinh247.com###catfish1
 ||i.imgur.com^*.gif$domain=8bongda.com|bongdatv.net|mybongda.com|tructiepbongda.com|tv.101vn.com|xemphimon.com|xemtivingon.com|tvhay.org|banhtv.net|mythethao.com|phim.media|phimonl.net|phimgi.tv|binhluan.tv|phimnhe.net|goldphim.com
 ||i.k8info.com/images/promo/$third-party
 ||i.mmcdn.cn/simba/img/
+||iamcdn.net/players/playera.dmins.js
 ||iclickcdn.com^$script
 ||igg-games.cc$csp=script-src * 'self' data: 'unsafe-eval'
 ||igo.5giay.vn/mobile/
@@ -353,13 +356,16 @@ hoathinh247.com###catfish1
 ||p.novostimira.biz^$domain=samlab.ws
 ||phanmemdietvirus.com.vn$popup,third-party
 ||phanthiet24h.com/bannerqc/
-||phim1080.com/sponsor
+||phim1080.net/sponsor
 ||phimchieurap.vn$popup,domain=blogtruyen.vn
 ||phimchieurap.vn/promo/cgv
 ||phimhay.info/jwplayer7/text.json$domain=hamtruyen.com
 ||phimmoi.net/js/ambient/
 ||phimmoi.net/js/partner/$script
 ||phimmoi.net/js/vtlai/movie/public/pad.js
+||phimmoizz.net/js/ambient/
+||phimmoizz.net/js/partner/$script
+||phimmoizz.net/js/vtlai/movie/public/pad.js
 ||phimnhanh.net/abcdxyz/*.gif
 ||phimnhanh.net/banner/
 ||phunutoday.vn/images/banners/
@@ -386,7 +392,7 @@ hoathinh247.com###catfish1
 ||rx-name.ua^$domain=samlab.ws
 ||s0.2mdn.net/instream$domain=~anime47.com
 ||s2.truyen18.org/flash/
-||s3.amazonaws.com^$domain=userscloud.com|uplod.cc|phimnhanh.com|hamtruyen.com|phimmedia.tv|onhax.me|uploadocean.com|phimmoi.net|thuvienaz.net
+||s3.amazonaws.com^$domain=userscloud.com|uplod.cc|phimnhanh.com|hamtruyen.com|phimmedia.tv|onhax.me|uploadocean.com|phimmoi.net|phimmoizz.net|thuvienaz.net
 ||s33.postimg.org/umi2aukan/$domain=livetvup.com
 ||savetodrive.net/javascripts/cblock.js
 ||sendspace.com/defaults/sendspace-pop.html$popup
@@ -406,7 +412,7 @@ hoathinh247.com###catfish1
 ||static.8cache.com/spon/$image
 ||static.bepolite.eu^
 ||static.bongda24h.vn/medias/*.gif
-||static.dongphim.biz^*.gif
+||static.dongphym.net^*.gif
 ||static.download.com.vn/cache.aspx?_path=*ad$script
 ||static.hdo.tv/template/frontend/images/FloatbannerHDO.png
 ||static.hdo.tv/template/frontend/images/Topplayer.png
@@ -575,7 +581,6 @@ hoathinh247.com###catfish1
 ||advertising.com^
 ||advrcsr.xyz^$popup
 ||adx.wapmcn.com^
-||adxprts.com^
 ||adzerk.net$third-party
 ||adziff.com^$third-party
 ||aff.opus-static.com$third-party
@@ -606,6 +611,7 @@ hoathinh247.com###catfish1
 ||auctional.info^
 ||autbid.net^$third-party
 ||automoc.net^
+||auweelta.net^
 ||b.cdsbnrs.com^
 ||bam.nr-data.net^$third-party
 ||banner.5giay.vn^
@@ -749,7 +755,6 @@ hoathinh247.com###catfish1
 ||get.optad360.io^
 ||get.sbro.me^$script,third-party
 ||gloadmarket.com^$third-party
-||go.blogtruyen.vn^$popup
 ||go.mobtrks.com^
 ||go.oclaserver.com^$third-party
 ||go.onclasrv.com^
@@ -760,6 +765,7 @@ hoathinh247.com###catfish1
 ||go3xsex.com^$subdocument,third-party
 ||gothrgh.pro^$popup
 ||greedseed.world^
+||grooksom.com^
 ||gsspat.jp^$third-party
 ||gssprt.jp^$third-party
 ||gumgum.com^
@@ -851,6 +857,7 @@ hoathinh247.com###catfish1
 ||openx.net^
 ||origer.info^$popup
 ||ottomdisede.club^
+||ouftukoo.net^
 ||outbrain.com^
 ||overely.com^
 ||ox-d.majorgeeks.com^
@@ -1155,11 +1162,11 @@ dantri.com.vn##.admicro
 demkhuya.tv##.block-ad-top
 design.tutsplus.com##.avert--sticky
 docviewer.yandex.com##ya-recommendation-widget
-dongphim.biz##.vast-checkpoint-wrapper
-dongphim.biz##div[class^="aballon-"]
-dongphim.biz##div[class^="abanner-"]
-dongphim.biz##div[class^="afixed-"]
-dongphim.biz##div[class^="apreload-"]
+dongphym.net##.vast-checkpoint-wrapper
+dongphym.net##div[class^="aballon-"]
+dongphym.net##div[class^="abanner-"]
+dongphym.net##div[class^="afixed-"]
+dongphym.net##div[class^="apreload-"]
 download.cnet.com##.download-fd-leaderboard-ad-top
 download.com.vn###adlefttop2
 download.com.vn###adrightsecond2
@@ -1189,7 +1196,6 @@ filecr.com##.filec-widget
 files.pw##.adscenter
 files.pw##.adscenter2
 files.pw##.adscenter3
-fimfast.com##.ff-banner
 footyroom.com###tfasyncframe_0
 footyroom.com##.wide_sponsors
 forum.bkav.com.vn###fan-exit
@@ -1255,8 +1261,7 @@ keonhacai.net##div.AdsDesktop-header
 keonhacai.net##div.bannerm
 ketqua.net##.adsb
 ketqua.vn###left_ads
-khoai.tv,hatde.tv##.ads-fix-bottom
-khoai.tv,hatde.tv,khophimle.com##.ads-fix-bottom-left
+khophimle.com##.ads-fix-bottom-left
 khophimplus.com##div[id^="float"]
 khophimplus.com,phimnhanh.com##.preload
 kickass.best,kat.vc,kat.lat##td[width="100%"] > .tabNavigation
@@ -1268,7 +1273,7 @@ kqxs.vn##.bggradient-mien
 kzone.tv###aniplayer
 kzone.tv##.kzone-sticky-footer-ad
 kzone.tv##.preload-overlay
-kzone.tv,phimmoi.net##.uniad-zonetype-preload-container
+kzone.tv,phimmoi.net,phimmoizz.net##.uniad-zonetype-preload-container
 limetorrents.info##a[href^="/fast.php"]
 linkedin.com##.ad-banner-container.ember-view
 linksht.com##.adCreator
@@ -1325,10 +1330,10 @@ onhax.me,onhax.net###top-promo-dload
 onhax.me,onhax.net##.lelabp.andro-a-holder
 phanmemaz.com##A[href^="https://href.li/?http://trafflict.com/r/"]
 phim.media,phimmedia.tv##.adv-300-right
-phim1080.com##.banner-preload-link
-phim1080.com##.popup-link
-phim1080.com,fimfast.com###popup-under
-phim1080.com,fimfast.com##.ff-banner
+phim1080.net##.banner-preload-link
+phim1080.net##.popup-link
+phim1080.net,fimfast.com###popup-under
+phim1080.net,fimfast.com##.ff-banner
 phimgi.tv###lixi88-ads-left
 phimgi.tv###mobile-catfix
 phimgi.tv###pc-catfix
@@ -1336,9 +1341,9 @@ phimgi.tv###sobet-ads-right
 phimhayplus.com,anime47.com###ads_location
 phimhoathinh.biz###footer-ads-manga
 phimmedia.tv,hoathinh247.com##a[href^="http://bit.ly/"]
-phimmoi.net##.ad-center-980
-phimmoi.net##.balloon-ad-wrap
-phimmoi.net##.uniad-zonetype-preload-overlay
+phimmoi.net,phimmoizz.net##.ad-center-980
+phimmoi.net,phimmoizz.net##.balloon-ad-wrap
+phimmoi.net,phimmoizz.net##.uniad-zonetype-preload-overlay
 phimnhanh.com###bn_bottom_fixed_bottom
 phimnhe.net##.ballon-left
 phimnhe.net##.catfix
@@ -1556,10 +1561,8 @@ zippyshare.com##.center_ad
 @@||bkshare.com$generichide
 @@||devexchanges.info$generichide
 @@||fcine.net$generichide
-@@||hatde.tv$generichide
 @@||htv3tv.com$generichide
 @@||javadecompilers.com$generichide
-@@||khoai.tv$generichide
 @@||onmsft.com$generichide
 @@||phim.tv$generichide
 @@||projectae.net$generichide
@@ -1598,7 +1601,6 @@ $webrtc,domain=daxab.com
 ||doublepimp.com^
 ||doublepimpssl.com^
 ||dt2xr6g2i5.com^$popup
-||ero-advertising.com^
 ||exosrv.com^
 ||f5v1x3kgv5.com^
 ||fingahvf.top^$script
@@ -1678,7 +1680,7 @@ javwhores.com##a[rel="nofollow norefferer noopener"]
 javwide.com##[id$="roll"]
 luscious.net###l-center-txt
 phimmat.net###divExoLayerWrapper
-phimmoi.net##[id^="uniad-zone"]
+phimmoi.net,phimmoizz.net##[id^="uniad-zone"]
 pornhub.com###hd-rightColVideoPage > .clearfix
 pornhub.com##.mhp1138_actionTag
 pornhub.com##.sectionWrapper > div:nth-child(2)
