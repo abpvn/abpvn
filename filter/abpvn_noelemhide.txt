@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 202008041018
-! Title: ABPVN List [optimize filter]
-! Last modified: 04 Aug 2020 10:18 UTC+7
+! Version: 202008041620
+! Title: ABPVN List [Remove dead domain]
+! Last modified: 04 Aug 2020 16:20 UTC+7
 ! Expires: 1 days (update frequency)
 !
 ! ABPVN List filter
@@ -16,7 +16,7 @@
 ! Report new issue on github: https://github.com/abpvn/abpvn/issues/new
 ! ---------- Generic Blocking Rules ----------
 $popup,domain=playhydrax.com
-$popup,third-party,domain=appvn.com|khophimplus.com|megaurl.in|hamtruyen.com|hatde.tv|razorphim.com|phim1080.net|blogtruyen.vn
+$popup,third-party,domain=appvn.com|khophimplus.com|megaurl.in|hamtruyen.com|razorphim.com|phim1080.net|blogtruyen.vn
 $webrtc,domain=phim14.net|appvn.com
 .com/cpc/$script
 .com/qc/
@@ -96,7 +96,7 @@ $webrtc,domain=phim14.net|appvn.com
 ||bilutvz.org/Theme/js/pop.js
 ||biphimz.tv^*.gif
 ||bit.ly^$domain=biphimz.tv|kingphim.net|vphim.net|phimmedia.info|phimmedia.tv|vkool.net|huphim.com
-||bit.ly^$popup,domain=hatde.tv|kingphim.net
+||bit.ly^$popup,domain=kingphim.net
 ||bizlive.vn/*.ads
 ||bizlive.vn/*banner$script
 ||bizlive.vn/*banner.css
@@ -331,7 +331,6 @@ $webrtc,domain=phim14.net|appvn.com
 ||static.8cache.com/spon/
 ||static.bongda24h.vn/medias/*.gif
 ||static.dongphim.net^*.gif
-||static.dongphym.com^*.gif
 ||static.download.com.vn/cache.aspx?_path=*ad$script
 ||static.hayhaytv.com^*.mp4
 ||static.hdo.tv/template/frontend/images/FloatbannerHDO.png
@@ -483,7 +482,6 @@ $webrtc,domain=phim14.net|appvn.com
 ||apinas.nct.vn^
 ||asc.quantrimang.com^
 ||asecdn.w88media.com^
-||aspanyarc.club^
 ||at.hdsieunhanh.com^
 ||auweelta.net^
 ||bam.nr-data.net
@@ -506,7 +504,6 @@ $webrtc,domain=phim14.net|appvn.com
 ||ds88pc0kw6cvc.cloudfront.net^
 ||embed.dugout.com^
 ||endpoint.terratraf.com^$third-party
-||escortyasami.site^
 ||fabet.com^$popup,third-party
 ||filmphil.net^$subdocument
 ||five88.com^$popup,third-party
