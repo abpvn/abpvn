@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 202008071616
-! Title: ABPVN List [download.com.vn]
-! Last modified: 07 Aug 2020 16:16 UTC+7
+! Version: 202008101051
+! Title: ABPVN List [download.vn a3manga.com]
+! Last modified: 10 Aug 2020 10:51 UTC+7
 ! Expires: 1 days (update frequency)
 !
 ! ABPVN List filter
@@ -83,6 +83,7 @@ $webrtc,domain=phim14.net|appvn.com
 ||api.xemtvhd.com$subdocument
 ||apitvh.net/preload/$xmlhttprequest
 ||apitvh.net^*.xml$xmlhttprequest
+||as.gamevui.com^$domain=download.vn
 ||bachngocsach.com/forum/styles/fox9/qc-
 ||banhtv.net^*.gif$image
 ||banthangtv.b-cdn.net^*.gif
@@ -441,6 +442,8 @@ $webrtc,domain=phim14.net|appvn.com
 ||youtube.com/embed/$subdocument,domain=truyentranhth.net
 ||zbet.fun/promotions$popup
 ||zjs.zadn.vn/zplayer/ads.js
+a3manga.com##.single-video
+a3manga.com##div[id$="-catfish"]
 ! ---------- Ad domain ----------
 ||360game.vn^$popup,third-party
 ||3xviet.com^$popup
