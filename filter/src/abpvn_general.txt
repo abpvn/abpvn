@@ -1,6 +1,6 @@
 ! ---------- Generic Blocking Rules ----------
 $popup,domain=playhydrax.com|hydracdn.network
-$popup,third-party,domain=appvn.com|banh24h.com|megaurl.in|hamtruyen.com|razorphim.com|phim1080.net|blogtruyen.vn|phimnhe.net
+$popup,third-party,domain=appvn.com|megaurl.in|hamtruyen.com|razorphim.com|phim1080.net|blogtruyen.vn|phimnhe.net
 $webrtc,domain=phim14.net|appvn.com
 .com/cpc/$script
 .com/qc/
@@ -72,7 +72,6 @@ safedownload.net$csp=script-src self * data: unsafe-eval 'sha256-Fd/Qv7k3A0GqeyD
 ||apitvh.net/preload/$xmlhttprequest
 ||apitvh.net^*.xml$xmlhttprequest
 ||bachngocsach.com/forum/styles/fox9/qc-
-||banh24h.com^*.gif$image
 ||banthang.live/ads/$popup
 ||banthangtv.b-cdn.net^*.gif
 ||baobongda.net/files/*.gif
@@ -82,8 +81,7 @@ safedownload.net$csp=script-src self * data: unsafe-eval 'sha256-Fd/Qv7k3A0GqeyD
 ||baotocdep.info^$subdocument,third-party
 ||batdongsan.com.vn/*/Banner/
 ||batdongsan.com.vn/scripts/banner*.js
-||bilutvz.org/Theme/js/pop-$script
-||bilutvz.org/Theme/js/pop.js
+||bilutvz.org/Theme/js/pop$script
 ||biphimz.tv^*.gif
 ||bit.ly^$domain=biphimz.tv|kingphim.net|vphim.net|phimmedia.info|phimmedia.tv|vkool.net|huphim.com
 ||bit.ly^$popup,domain=kingphim.net
@@ -186,7 +184,7 @@ safedownload.net$csp=script-src self * data: unsafe-eval 'sha256-Fd/Qv7k3A0GqeyD
 ||hotnhat.com.vn/images/$image,third-party
 ||huphim.com/assets/themes/js/ads33.js
 ||i.imgur.com^$domain=chophanthiet.us|nhacdj.vn|phimmedia.info|phimmedia.tv|phim.media|phim13.net|truyenfull.vn
-||i.imgur.com^*.gif$domain=8bongda.com|bongdatv.net|tructiepbongda.xyz|tv.101vn.com|xemtivingon.com|tvhayz.org|banh24h.com|vuviphim.com|phimgi.tv|binhluan.live|vuviphimmoi.net|phimnhe.net|11met.live|hoitruyentranh.com|90p.tv|mythethao.net|baprang.tv|fptplay.org|yeuphimmoi.com|goldphim.com|weblinhtinh.xyz
+||i.imgur.com^*.gif$domain=8bongda.com|bongdatv.net|tructiepbongda.xyz|tv.101vn.com|xemtivingon.com|tvhayz.org|vuviphim.com|phimgi.tv|binhluan.live|vuviphimmoi.net|phimnhe.net|11met.live|hoitruyentranh.com|90p.tv|mythethao.net|baprang.tv|fptplay.org|yeuphimmoi.com|goldphim.com|weblinhtinh.xyz
 ||i.k8info.com/images/promo/$third-party
 ||iamcdn.net/players/playera.dmins.js
 ||igo.5giay.vn/mobile/
@@ -224,8 +222,7 @@ safedownload.net$csp=script-src self * data: unsafe-eval 'sha256-Fd/Qv7k3A0GqeyD
 ||laodong.vn/*QuangcaoOnline
 ||laptrinhvb.net/uploads/Banner.gif$image
 ||laptrinhvb.net/uploads/phan_mem_lay_tin_tu_dong_bat_dong_san.png
-||lh3.googleusercontent.com^*.gif$domain=tvmienphi.net
-||lh3.googleusercontent.com^*.gif$image,domain=phimplay.com
+||lh3.googleusercontent.com^*.gif$domain=tvmienphi.net|phimplay.com
 ||licklink.net/img/banner
 ||linksvip.net/images/*banner
 ||linksvip.net/vip/index_files/linksvip.js
@@ -263,8 +260,7 @@ safedownload.net$csp=script-src self * data: unsafe-eval 'sha256-Fd/Qv7k3A0GqeyD
 ||nhipcaudautu.vn/Content/*QC-$image
 ||nhipcaudautu.vn/Media/*.gif
 ||nhipsongdoanhnghiep.cuocsongantoan.vn/*.ads
-||nhipsongdoanhnghiep.cuocsongantoan.vn/*banner$script
-||nhipsongdoanhnghiep.cuocsongantoan.vn/*banner.css
+||nhipsongdoanhnghiep.cuocsongantoan.vn/*banner
 ||ntruyen.info/Ad$subdocument
 ||nv-ad-*.24hstatic.com/imageupload/uplo8ad/
 ||onecms.vn/*banner$image
@@ -275,9 +271,6 @@ safedownload.net$csp=script-src self * data: unsafe-eval 'sha256-Fd/Qv7k3A0GqeyD
 ||phim7z.tv/ads/popup.html$popup
 ||phimmedia.info^*.xml$~third-party
 ||phimmedia.tv^*.xml$~third-party
-||phimmoi.net/js/ambient/
-||phimmoi.net/js/partner/$script
-||phimmoi.net/js/vtlai/movie/public/pad.js
 ||phimmoizz.net/js/ambient/
 ||phimmoizz.net/js/partner/$script
 ||phimmoizz.net/js/vtlai/movie/public/pad.js
@@ -305,7 +298,7 @@ safedownload.net$csp=script-src self * data: unsafe-eval 'sha256-Fd/Qv7k3A0GqeyD
 ||razorphim.com^*.gif$image
 ||razorphim.com^*.mp4$~third-party
 ||reatimes.vn/*banner$image
-||s3.amazonaws.com^$domain=phimnhanh.com|phimmedia.info|phimmedia.tv|hamtruyen.com|phimmoi.net
+||s3.amazonaws.com^$domain=phimnhanh.com|phimmedia.info|phimmedia.tv|hamtruyen.com
 ||salaphim.com/application/player/js/vastvideoplugin.js
 ||salaphim.com/images/$image
 ||salaphim.com^*.php$xmlhttprequest

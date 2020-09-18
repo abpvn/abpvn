@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 202009181341
-! Title: ABPVN List [vphim.net]
-! Last modified: 18 Sep 2020 13:41 UTC+7
+! Version: 202009181714
+! Title: ABPVN List [optimize filter]
+! Last modified: 18 Sep 2020 17:14 UTC+7
 ! Expires: 1 days (update frequency)
 !
 ! ABPVN List filter
@@ -16,7 +16,7 @@
 ! Report new issue on github: https://github.com/abpvn/abpvn/issues/new
 ! ---------- Generic Blocking Rules ----------
 $popup,domain=playhydrax.com|hydracdn.network
-$popup,third-party,domain=appvn.com|banh24h.com|megaurl.in|hamtruyen.com|razorphim.com|phim1080.net|blogtruyen.vn|phimnhe.net
+$popup,third-party,domain=appvn.com|megaurl.in|hamtruyen.com|razorphim.com|phim1080.net|blogtruyen.vn|phimnhe.net
 $webrtc,domain=phim14.net|appvn.com
 .com/cpc/$script
 .com/qc/
@@ -88,7 +88,6 @@ safedownload.net$csp=script-src self * data: unsafe-eval 'sha256-Fd/Qv7k3A0GqeyD
 ||apitvh.net/preload/$xmlhttprequest
 ||apitvh.net^*.xml$xmlhttprequest
 ||bachngocsach.com/forum/styles/fox9/qc-
-||banh24h.com^*.gif$image
 ||banthang.live/ads/$popup
 ||banthangtv.b-cdn.net^*.gif
 ||baobongda.net/files/*.gif
@@ -98,8 +97,7 @@ safedownload.net$csp=script-src self * data: unsafe-eval 'sha256-Fd/Qv7k3A0GqeyD
 ||baotocdep.info^$subdocument,third-party
 ||batdongsan.com.vn/*/Banner/
 ||batdongsan.com.vn/scripts/banner*.js
-||bilutvz.org/Theme/js/pop-$script
-||bilutvz.org/Theme/js/pop.js
+||bilutvz.org/Theme/js/pop$script
 ||biphimz.tv^*.gif
 ||bit.ly^$domain=biphimz.tv|kingphim.net|vphim.net|phimmedia.info|phimmedia.tv|vkool.net|huphim.com
 ||bit.ly^$popup,domain=kingphim.net
@@ -202,7 +200,7 @@ safedownload.net$csp=script-src self * data: unsafe-eval 'sha256-Fd/Qv7k3A0GqeyD
 ||hotnhat.com.vn/images/$image,third-party
 ||huphim.com/assets/themes/js/ads33.js
 ||i.imgur.com^$domain=chophanthiet.us|nhacdj.vn|phimmedia.info|phimmedia.tv|phim.media|phim13.net|truyenfull.vn
-||i.imgur.com^*.gif$domain=8bongda.com|bongdatv.net|tructiepbongda.xyz|tv.101vn.com|xemtivingon.com|tvhayz.org|banh24h.com|vuviphim.com|phimgi.tv|binhluan.live|vuviphimmoi.net|phimnhe.net|11met.live|hoitruyentranh.com|90p.tv|mythethao.net|baprang.tv|fptplay.org|yeuphimmoi.com|goldphim.com|weblinhtinh.xyz
+||i.imgur.com^*.gif$domain=8bongda.com|bongdatv.net|tructiepbongda.xyz|tv.101vn.com|xemtivingon.com|tvhayz.org|vuviphim.com|phimgi.tv|binhluan.live|vuviphimmoi.net|phimnhe.net|11met.live|hoitruyentranh.com|90p.tv|mythethao.net|baprang.tv|fptplay.org|yeuphimmoi.com|goldphim.com|weblinhtinh.xyz
 ||i.k8info.com/images/promo/$third-party
 ||iamcdn.net/players/playera.dmins.js
 ||igo.5giay.vn/mobile/
@@ -240,8 +238,7 @@ safedownload.net$csp=script-src self * data: unsafe-eval 'sha256-Fd/Qv7k3A0GqeyD
 ||laodong.vn/*QuangcaoOnline
 ||laptrinhvb.net/uploads/Banner.gif$image
 ||laptrinhvb.net/uploads/phan_mem_lay_tin_tu_dong_bat_dong_san.png
-||lh3.googleusercontent.com^*.gif$domain=tvmienphi.net
-||lh3.googleusercontent.com^*.gif$image,domain=phimplay.com
+||lh3.googleusercontent.com^*.gif$domain=tvmienphi.net|phimplay.com
 ||licklink.net/img/banner
 ||linksvip.net/images/*banner
 ||linksvip.net/vip/index_files/linksvip.js
@@ -279,8 +276,7 @@ safedownload.net$csp=script-src self * data: unsafe-eval 'sha256-Fd/Qv7k3A0GqeyD
 ||nhipcaudautu.vn/Content/*QC-$image
 ||nhipcaudautu.vn/Media/*.gif
 ||nhipsongdoanhnghiep.cuocsongantoan.vn/*.ads
-||nhipsongdoanhnghiep.cuocsongantoan.vn/*banner$script
-||nhipsongdoanhnghiep.cuocsongantoan.vn/*banner.css
+||nhipsongdoanhnghiep.cuocsongantoan.vn/*banner
 ||ntruyen.info/Ad$subdocument
 ||nv-ad-*.24hstatic.com/imageupload/uplo8ad/
 ||onecms.vn/*banner$image
@@ -291,9 +287,6 @@ safedownload.net$csp=script-src self * data: unsafe-eval 'sha256-Fd/Qv7k3A0GqeyD
 ||phim7z.tv/ads/popup.html$popup
 ||phimmedia.info^*.xml$~third-party
 ||phimmedia.tv^*.xml$~third-party
-||phimmoi.net/js/ambient/
-||phimmoi.net/js/partner/$script
-||phimmoi.net/js/vtlai/movie/public/pad.js
 ||phimmoizz.net/js/ambient/
 ||phimmoizz.net/js/partner/$script
 ||phimmoizz.net/js/vtlai/movie/public/pad.js
@@ -321,7 +314,7 @@ safedownload.net$csp=script-src self * data: unsafe-eval 'sha256-Fd/Qv7k3A0GqeyD
 ||razorphim.com^*.gif$image
 ||razorphim.com^*.mp4$~third-party
 ||reatimes.vn/*banner$image
-||s3.amazonaws.com^$domain=phimnhanh.com|phimmedia.info|phimmedia.tv|hamtruyen.com|phimmoi.net
+||s3.amazonaws.com^$domain=phimnhanh.com|phimmedia.info|phimmedia.tv|hamtruyen.com
 ||salaphim.com/application/player/js/vastvideoplugin.js
 ||salaphim.com/images/$image
 ||salaphim.com^*.php$xmlhttprequest
@@ -579,13 +572,13 @@ safedownload.net$csp=script-src self * data: unsafe-eval 'sha256-Fd/Qv7k3A0GqeyD
 @@/crossdomain.xml
 @@/css.php$stylesheet
 @@/fuckadblock.js$script,domain=vatlypt.com|phimbathu.com|upload.exam24h.com|kenhtao.net
+@@/js/siropu/am/ads.min.js$script,~third-party
 @@/wp-content/plugins/advanced-ads/admin/assets/js/advertisement.js
 @@||ad.doubleclick.net/ddm/adj/$domain=anonyviet.com
 @@||ads.tinmoi.vn$stylesheet,image
 @@||adsweb.vn$~third-party
 @@||animet.net/ad/banner/_adsense_/_adserver/_adview_.ad.json$xmlhttprequest
 @@||animevsub.tv/ad/banner/_adsense_/_adserver/_adview_.ad.json$xmlhttprequest
-@@||animevsub.tv/statics/default/js/fuckadblock.js
 @@||apitvh.net/embed/ads_code_1.js
 @@||blogspot.com$image,domain=truyentranhtuan.com
 @@||cdnjs.cloudflare.com/ajax/libs/fuckadblock$script
@@ -594,8 +587,6 @@ safedownload.net$csp=script-src self * data: unsafe-eval 'sha256-Fd/Qv7k3A0GqeyD
 @@||chk.ss-hn-1.vccloud.vn$image,domain=chohoakieng.vn
 @@||dafulbrightteachers.org/wp-content/themes/mts_ad_sense/
 @@||deo.shopeemobile.com/shopee/$script,stylesheet
-@@||diendan.tiengnga.net/js/siropu/am/ads.min.js$script,domain=diendan.tiengnga.net
-@@||diendanit.net/js/siropu/am/ads.min.js$script,~third-party
 @@||etoy.vn/upload/product/$image,~third-party
 @@||game24h.vn/js/ads_$script,~third-party
 @@||gateway.chotot.com^$xmlhttprequest,domain=chotot.com
@@ -608,7 +599,7 @@ safedownload.net$csp=script-src self * data: unsafe-eval 'sha256-Fd/Qv7k3A0GqeyD
 @@||kenhtao.net/ad/$xmlhttprequest
 @@||licklink.net/js/full-page-script.js$script,domain=fcine.net
 @@||netphimm.com/train/ads_code_tvc_vast/jwplayer.js$script
-@@||pagead2.googlesyndication.com$script,domain=upfile.vn|startuanit.net|thuthuatmeovat.net|khogamepc.com|win10.vn|loinhacsong.com|tailieupro.com|downmienphi.com|kenhtao.net|kites.vn|mshares.co|mshare.xyz|phuongtrinhhoahoc.com|phlame.pw|vinaurl.com|taivenhanh.com|gsm1x.xyz|hhkungfu.tv|webphanmem.com|icongnghe.com|hataphim.com|vutrung.gnomio.com
+@@||pagead2.googlesyndication.com$script,domain=upfile.vn|startuanit.net|thuthuatmeovat.net|khogamepc.com|win10.vn|loinhacsong.com|tailieupro.com|downmienphi.com|kenhtao.net|kites.vn|mshares.co|mshare.xyz|phuongtrinhhoahoc.com|phlame.pw|vinaurl.com|taivenhanh.com|gsm1x.xyz|hhkungfu.tv|webphanmem.com|icongnghe.com|hataphim.com|vutrung.gnomio.com|qthang.net
 @@||phim16.net/Theme/libs/adi/jquery.adi.js
 @@||pubads.g.doubleclick.net$xmlhttprequest,domain=vtvgiaitri.vn
 @@||s0.2mdn.net/instream/video/client.js$domain=yan.vn|anime47.com
