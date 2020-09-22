@@ -1,7 +1,7 @@
 ! ---------- Generic Blocking Rules ----------
 $popup,domain=playhydrax.com|hydracdn.network
 $popup,third-party,domain=appvn.com|megaurl.in|hamtruyen.com|razorphim.com|phim1080.net|blogtruyen.vn|phimnhe.net
-$webrtc,domain=phim14.net|appvn.com
+$webrtc,domain=appvn.com
 .com/cpc/$script
 .com/qc/
 .net/ads$image
@@ -300,7 +300,7 @@ safedownload.net$csp=script-src self * data: unsafe-eval 'sha256-Fd/Qv7k3A0GqeyD
 ||razorphim.com^*.gif$image
 ||razorphim.com^*.mp4$~third-party
 ||reatimes.vn/*banner$image
-||s3.amazonaws.com^$domain=phimnhanh.com|phimmedia.info|phimmedia.tv|hamtruyen.com
+||s3.amazonaws.com^$domain=phimmedia.info|phimmedia.tv|hamtruyen.com
 ||salaphim.com/application/player/js/vastvideoplugin.js
 ||salaphim.com/images/$image
 ||salaphim.com^*.php$xmlhttprequest
