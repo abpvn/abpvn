@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 202009221113
-! Title: ABPVN List [vphim.net]
-! Last modified: 22 Sep 2020 11:13 UTC+7
+! Version: 202009221731
+! Title: ABPVN List [remove dead domain]
+! Last modified: 22 Sep 2020 17:31 UTC+7
 ! Expires: 1 days (update frequency)
 !
 ! ABPVN List filter
@@ -16,8 +16,8 @@
 ! Report new issue on github: https://github.com/abpvn/abpvn/issues/new
 ! ---------- Generic Blocking Rules ----------
 $popup,domain=playhydrax.com|hydracdn.network
-$popup,third-party,domain=oload.tv|oload.stream|openload.co|oload.site|appvn.com|mediafire.com|mac-torrent-download.me|uploadocean.com|khophimplus.com|vinaurl.net|clipconverter.cc|userscloud.com|proxyrarbg.org|megaurl.in|loptelink.pro|linksht.com|ouo.io|razorphim.com|phim1080.net|blogtruyen.vn|phimnhe.net
-$webrtc,domain=forum.xda-developers.com|phim14.net|mkvcage.com|phimotv.net|dailyuploads.net|uploadocean.com|appvn.com|monova.org|monova.to|sharemods.com
+$popup,third-party,domain=oload.tv|oload.stream|openload.co|oload.site|appvn.com|mediafire.com|mactorrent.co|uploadocean.com|vinaurl.net|clipconverter.cc|userscloud.com|proxyrarbg.org|megaurl.in|loptelink.pro|linksht.com|ouo.io|razorphim.com|phim1080.net|blogtruyen.vn|phimnhe.net
+$webrtc,domain=forum.xda-developers.com|mkvcage.com|phimotv.net|dailyuploads.net|uploadocean.com|appvn.com|monova.org|monova.to|sharemods.com
 &adformat=
 &aduid=
 &adunit=
@@ -123,7 +123,7 @@ $webrtc,domain=forum.xda-developers.com|phim14.net|mkvcage.com|phimotv.net|daily
 /uts.js
 /vast.$domain=~nhaccuatui.com
 /vast\d+\./$xmlhttprequest
-/videojs.ads.$domain=~danet.vn|~phimnhanh.com
+/videojs.ads.$domain=~danet.vn
 /videojs.ima.js
 /wmedia/tags/*
 /wp-content/plugins/simple-adblock-notice-pro/*
@@ -172,7 +172,6 @@ hoathinh247.com###catfish1
 ||anime47.com/BdcOadT.gif
 ||animevsub.tv^*.gif$image
 ||areyouahuman.com^$domain=vkool.tv
-||assets.pinterest.com/js/pinit_main.js$domain=onhax.net
 ||az708531.vo.msecnd.net^$domain=userscloud.com
 ||b.bnrdom.com/p.js
 ||banh24h.com^*.gif$image
@@ -185,7 +184,7 @@ hoathinh247.com###catfish1
 ||betfaq.ru/i/promo_material/
 ||bilutvz.org/Theme/js/pop-$script
 ||bit.ly$popup,domain=khophimle.com|kingphim.net
-||blogspot.com^*.gif$domain=~blogtruyen.vn|~nccsupports.com|~hocvientruyentranh.net
+||blogspot.com^*.gif$domain=~blogtruyen.vn|~hocvientruyentranh.net
 ||blogtamsu.vn/*Banner$image
 ||blogtruyen.vn/file/$subdocument
 ||blogtruyen.vn/scripts/banner-preload.js
@@ -195,7 +194,6 @@ hoathinh247.com###catfish1
 ||bongngo.tv/assets/games/*.gif
 ||browser.coccoc.com/js/
 ||c.adsco.re^$script
-||cashinme.com/req/
 ||cdn.adf.ly/images/banners/
 ||cdn.adf.ly/js/display.js
 ||cdn.engine.4dsply.com/Scripts/
@@ -214,7 +212,7 @@ hoathinh247.com###catfish1
 ||clipconverter.cc$csp=default-src 'self' * data: 'unsafe-inline'
 ||cloudfront.net/?cdlad=
 ||cloudfront.net/atrk.js
-||cloudfront.net^$script,domain=shink.me|short.am|onhax.me|macupload.net|megaurl.in
+||cloudfront.net^$script,domain=shink.me|short.am|onhax.me|megaurl.in
 ||coccoc.com/skin/
 ||coccoc.com/vastPlayer/
 ||code.hoiquantinhoc.vn/$third-party,script
@@ -228,7 +226,6 @@ hoathinh247.com###catfish1
 ||daibusee.com^
 ||dailyuploads.net/images/redbuttonx.png
 ||data.chiasenhac.com/banner/
-||demkhuya.tv^*.gif$image
 ||depmoingay.net.vn/banner
 ||diemthi.24h.com.vn/upload/banner/
 ||diendandongnai.com/js/HDT/fun-forum/
@@ -262,7 +259,6 @@ hoathinh247.com###catfish1
 ||goo.gl$subdocument,domain=phimmedia.info
 ||google.com/afs/ads
 ||googleadservices.com^$third-party
-||googlecontentmanager.com^$image,domain=phimnhanh.com
 ||googledrive.com$domain=chophanthiet.us
 ||googleusercontent.com/proxy/$image,domain=xemtiviso.com
 ||gophim.net^*.gif$image
@@ -280,9 +276,9 @@ hoathinh247.com###catfish1
 ||heyphim.com/img/
 ||hosocongty.vn/uploads/linksite/
 ||hotnhat.com.vn/images/*.$image,third-party
-||i.imacdn.com^$image,domain=phim1080.com
+||i.imacdn.com^$image,domain=phim1080.net
 ||i.imgur.com$domain=chophanthiet.us|nhacdj.vn|phimmedia.info|vuviphim.com|trochoiviet.com
-||i.imgur.com^*.gif$domain=8bongda.com|bongdatv.net|mybongda.com|tructiepbongda.com|tv.101vn.com|xemphimon.com|xemtivingon.com|tvhay.org|banh24h.com|mythethao.com|phim.media|phimonl.net|phimgi.tv|binhluan.tv|phimnhe.net|goldphim.com
+||i.imgur.com^*.gif$domain=8bongda.com|bongdatv.net|tructiepbongda.com|tv.101vn.com|xemphimon.com|xemtivingon.com|tvhay.org|banh24h.com|mythethao.com|phim.media|phimonl.net|phimgi.tv|binhluan.tv|phimnhe.net|goldphim.com
 ||i.k8info.com/images/promo/$third-party
 ||i.mmcdn.cn/simba/img/
 ||i0.wp.com/dc.motphim.net/*.gif$image
@@ -297,9 +293,8 @@ hoathinh247.com###catfish1
 ||image.vtcns.com/files/qc/
 ||images.asianbookie.com/vwin/
 ||images.digistar.vn/Banner*.
-||images2-focus-opensocial.googleusercontent.com^*.gif$domain=demkhuya.tv|tvhay.org|binhluan.tv
+||images2-focus-opensocial.googleusercontent.com^*.gif$domain=thuckhuya.net|tvhay.org|binhluan.tv
 ||imasdk.googleapis.com^$third-party,domain=~vivo.vn|~tving.vn|~24h.com.vn|~danet.vn|~pose.com.vn|~anime47.com|~fptplay.vn
-||imei.vcdn.club/storage20/hh247/wangcao
 ||img.anime47.com/imgur/HnIjfZc.jpg
 ||img.keonhacai.net/img/gmodules.php?url=*.gif$image
 ||img.ketqua.net^*.gif
@@ -326,7 +321,6 @@ hoathinh247.com###catfish1
 ||kiemhieptruyen.com/js/copy.js
 ||kqxs.vn/images/*Banner*.
 ||kst.vn/community/data/attachment/common/cf
-||leadpress.wpinhands.com/wp-content/themes/leadpress/img/
 ||lh3.googleusercontent.com^*.gif$image,domain=phimplay.com
 ||licklink.net/img/banner
 ||linksvip.net/images/*banner
@@ -335,7 +329,6 @@ hoathinh247.com###catfish1
 ||livestreambongda.tv^*.gif$image
 ||luatminhkhue.vn/common/adshowleft
 ||luatvietnam.vn*/uploaded/*.gif
-||macupload.net/themes/flow/images/nitro.png
 ||mangak.info^*.gif$image
 ||matomo.hellohi.me/matomo.js
 ||media.coccoc.com$image,object,popup
@@ -362,7 +355,7 @@ hoathinh247.com###catfish1
 ||p.novostimira.biz^$domain=samlab.ws
 ||phanmemdietvirus.com.vn$popup,third-party
 ||phanthiet24h.com/bannerqc/
-||phim1080.com/banner/
+||phim1080.net/banner/
 ||phim1080.net/sponsor
 ||phimchieurap.vn$popup,domain=blogtruyen.vn
 ||phimchieurap.vn/promo/cgv
@@ -379,12 +372,10 @@ hoathinh247.com###catfish1
 ||pic.cydia.vn^*banner
 ||pic.gsm.vn^*banner
 ||pic.hui598.cn$domain=xiuren.org,image
-||pic.img80.com^$object
 ||pl.ventunotech.com/plugins/cntplayer/ventunoSmartPlayer.js$domain=truyenfull.net
 ||popupmaker.com^$third-party
 ||pose.com.vn/colgate/content-box-colgate/$subdocument
-||postimg.cc^*.gif$domain=bongdatructuyen.info|tivi4k.net|keonhacai.com|tructiepbongda.com|tv.101vn.com|8bongda.com|xemtiviso.com|xemphimhayz.com
-||preskalyn.com^$popup
+||postimg.cc^*.gif$domain=bongdatructuyen.info|tivi4k.net|keonhacai1.net|tructiepbongda.com|tv.101vn.com|8bongda.com|xemtiviso.com|xemphimhayz.com
 ||pushokey.com^
 ||qtcshop.com/images/$third-party
 ||quangcao.24h.com.vn^$third-party
@@ -401,8 +392,7 @@ hoathinh247.com###catfish1
 ||rx-name.ua^$domain=samlab.ws
 ||s0.2mdn.net/instream$domain=~anime47.com
 ||s2.truyen18.org/flash/
-||s3.amazonaws.com^$domain=userscloud.com|uplod.cc|phimnhanh.com|hamtruyen.com|phimmedia.info|onhax.me|uploadocean.com|phimmoi.net|phimmoizz.net|thuvienaz.net
-||s33.postimg.org/umi2aukan/$domain=livetvup.com
+||s3.amazonaws.com^$domain=userscloud.com|uplod.cc|hamtruyen.com|phimmedia.info|onhax.me|uploadocean.com|phimmoi.net|phimmoizz.net|thuvienaz.net
 ||savetodrive.net/javascripts/cblock.js
 ||sendspace.com/defaults/sendspace-pop.html$popup
 ||senpay.vn/widget/
@@ -421,7 +411,7 @@ hoathinh247.com###catfish1
 ||static.8cache.com/spon/$image
 ||static.bepolite.eu^
 ||static.bongda24h.vn/medias/*.gif
-||static.dongphym.net^*.gif
+||static.dongphim.biz^*.gif
 ||static.download.com.vn/cache.aspx?_path=*ad$script
 ||static.hdo.tv/template/frontend/images/FloatbannerHDO.png
 ||static.hdo.tv/template/frontend/images/Topplayer.png
@@ -461,6 +451,7 @@ hoathinh247.com###catfish1
 ||thewindowsclub.com/porpoiseant/
 ||thewindowsclub.com/utilcave_com/inc/ezcl.webp
 ||thucdem.tv^*.gif$image
+||thuckhuya.net^*.gif$image
 ||tiin.vn/banner
 ||tinsoikeo.com^*.gif$image
 ||tocbien.com^*.gif$third-party
@@ -478,8 +469,8 @@ hoathinh247.com###catfish1
 ||tuhocanninhmang.com/images/banners/
 ||tvhay.org/guide/$script,xmlhttprequest
 ||uniad.$third-party
-||upanh.hocvientruyentranh.net^*.gif$image
 ||upanh.ssc.vn^*.gif$image,domain=chovungtau.com
+||upanh4.hocvientruyentranh.net^*.gif$image
 ||upload.kingphim.tv^*.gif
 ||upload69.net^*.gif$third-party
 ||upsieutoc.com^*.gif$image,domain=mythethao.com
@@ -504,7 +495,6 @@ hoathinh247.com###catfish1
 ||voz.vn/data/backgrounds/
 ||vphim.net/js/adsvk_v3.js
 ||vtc.vn/adsv/
-||vtv3.com/iframe$domain=phimnhanh.com
 ||vuighe.net/assest/json/pause.json$xmlhttprequest
 ||windows.net^$domain=userscloud.com
 ||www.file-up.org/assets/images/logo_new.png$popup,domain=www.file-up.org
@@ -628,8 +618,6 @@ hoathinh247.com###catfish1
 ||b.cdsbnrs.com^
 ||bam.nr-data.net^$third-party
 ||banner.5giay.vn^
-||banner.apigrab.com^
-||bbtrf.info^
 ||bebi.com^$third-party
 ||beiven.pw^
 ||bestadbid.com^$third-party
@@ -648,14 +636,12 @@ hoathinh247.com###catfish1
 ||boudja.com^$third-party
 ||boyaidare.club^
 ||brand.ad^
-||breatik.info^
 ||brightonclick.com^
 ||buysellads.com^$third-party
 ||buzzadexchange.com^
 ||captifymedia.com^$third-party
 ||cashtrafic.info^$third-party
 ||cdn-qc.coccoc.com^
-||cdn.adasiaholdings.com^$script
 ||cdn.ay.gy^
 ||cdn.castplatform.com^$third-party
 ||cdn.comedia.coccoc.com^
@@ -663,11 +649,8 @@ hoathinh247.com###catfish1
 ||cdn.nativestatic.com
 ||cdn.netcatx.com^
 ||cdn9now.com^$script
-||cdnads.90phut.tv^
 ||cdnondemand.org^
 ||cepailru.com^
-||chequent.info^
-||chukalapopi.com^
 ||clevernt.com^
 ||click.advertnative.com^
 ||clickadu.com^
@@ -684,10 +667,8 @@ hoathinh247.com###catfish1
 ||collagenbeauty.vn^$third-party
 ||compass.adop.cc^
 ||connextra.com^$third-party
-||content-ad.net^
 ||contextual.media.net
 ||conyak.com^$third-party
-||copicvarianuty.info^
 ||cpm10.com^$third-party
 ||cpm20.com^$popup
 ||cpmstar.com^
@@ -705,9 +686,7 @@ hoathinh247.com###catfish1
 ||d2ho1n52p59mwv.cloudfront.net^
 ||d2va1d0hpla18n.cloudfront.net^
 ||d36zfztxfflmqo.cloudfront.net^
-||d3al52d8cojds7.cloudfront.net^
 ||d3hs51abvkuanv.cloudfront.net^
-||d3k5fl0ycdyj0l.cloudfront.net^
 ||d3ud741uvs727m.cloudfront.net^
 ||d5ssgc0nf5vml.cloudfront.net^
 ||d63a3au5lqmtu.cloudfront.net^
@@ -729,7 +708,6 @@ hoathinh247.com###catfish1
 ||do67etikr7pwz.cloudfront.net^
 ||dorectertnerow.info^
 ||doubleclick.net^
-||download.fast-download-1.com^
 ||drda5yf9kgz5p.cloudfront.net^
 ||dxprljqoay4rt.cloudfront.net^
 ||dybxezbel1g44.cloudfront.net^
@@ -739,18 +717,14 @@ hoathinh247.com###catfish1
 ||eclkmpbn.com^$third-party
 ||eclkmpsa.com^
 ||ecpmrocks.com^$third-party
-||educing.info^
-||eltrack.pro^$popup
 ||embed.dugout.com^
 ||emunaplet.site^
 ||endpoint.terratraf.com^
 ||entitlements.jwplayer.com^
 ||esignificanvi.info^
-||eva-m-ad.24hstatic.com^
 ||exelator.com^$third-party
 ||exoclick.com^
 ||explorads.com^
-||expo9.exponential.com^
 ||eyeota.net^
 ||ezoic.net^$third-party
 ||fabet.vip^$popup
@@ -800,28 +774,19 @@ hoathinh247.com###catfish1
 ||iz682noju02ye5.com^$popup
 ||jads.co^
 ||jadserve.postrelease.com^
-||jerredsite.pro^
-||jerwested.info^
 ||js.knowlead.io^$third-party
 ||juicyads.com^
-||jujzh9va.com^
-||jzdstqhknq.com^
 ||k8wap.com^$popup,third-party
 ||khoavang24h.com^$third-party
-||kintino.com^$popup
 ||klick.vn^
 ||kul.vn^$popup,third-party
-||lamiflor.xyz^
 ||lijit.com^$third-party
 ||live.demand.supply^
 ||liveadexchanger.com^$third-party
 ||liverail.com
 ||log.user-api.com^
-||m4clicks.com^
 ||mathtag.com^
 ||maxonclick.com^
-||med.heyzap.com^
-||medi-8.net^
 ||media.jxf88.com^$third-party
 ||media2d.net^$third-party
 ||mediapalmtree.com^
@@ -844,19 +809,13 @@ hoathinh247.com###catfish1
 ||monetiza.co^
 ||moneymakercdn.com^$script,third-party
 ||mookie1.com^
-||movinces.info^
 ||mugpothop.com^
 ||multationprop.club^
-||musclerku.com^
-||n-cdn.areyouahuman.com^
 ||nanoadexchange.com^$popup
 ||nativeserv.com^
 ||naucaips.com^
-||nbriskerry.com^
-||netlife.vn^$popup
 ||nextlnk2.com^$popup
 ||ngoinhachung.net^$popup
-||nothereh.info^
 ||nt-cdn.coccoc.com^
 ||oclasrv.com^$third-party
 ||onclickads.net^$popup,third-party
@@ -866,22 +825,16 @@ hoathinh247.com###catfish1
 ||onclicksuper.com^
 ||onclicktop.com^$third-party
 ||onclkds.com^$popup
-||openx.net^
-||origer.info^$popup
 ||ottomdisede.club^
 ||ouftukoo.net^
 ||outbrain.com^
 ||overely.com^
-||ox-d.majorgeeks.com^
 ||ox-i.majorgeeks.com^
 ||padsdelivery.com^
 ||pagiwp.com^
 ||patecrafts.com^
 ||patithatspartal.pro^
-||phengung.net^
 ||phokukse.com^
-||pickytime.com^
-||pmddby.com^
 ||polyad.galaxypub.vn
 ||polyad.net^$third-party
 ||popads.net^
@@ -889,19 +842,16 @@ hoathinh247.com###catfish1
 ||popmyads.com^$third-party
 ||poptm.com^$popup,third-party
 ||porn99.net^$third-party
-||preligions.com^
 ||presbanise.pw^
 ||producebreed.com^
 ||projectwonderful.com^$third-party
 ||propellerads.com^
-||propellerclick.com^
 ||protect-your-privacy.net^$popup
 ||pttsite.com^$popup,third-party
 ||pub.lavanetwork.net^$third-party
 ||puhtml.com^$third-party
 ||purgrobi.com/ub.pi$third-party
 ||puserving.com^$third-party
-||pussl10.com^
 ||putags.com^$third-party
 ||pvclouds.com^
 ||qc.coccoc.com^$third-party
@@ -909,12 +859,10 @@ hoathinh247.com###catfish1
 ||qc.violet.vn^
 ||qccoccocmedia.vn^
 ||qcv5.blogtruyen.vn^$script,subdocument
-||qiyou.com^
 ||quensillo.com^
 ||raiphupi.com^
 ||raupsooy.net^
 ||realclick.vn^$third-party
-||realsecuredredirect.com^
 ||reasedoper.pw^$third-party
 ||recreativ.ru^$third-party
 ||remind.tv^$script,third-party
@@ -991,7 +939,6 @@ hoathinh247.com###catfish1
 ||udarem.com^
 ||udockoan.net^
 ||ufpcdn.com^
-||uniad.phimmoi.net^
 ||upgulpinon.com^
 ||uprimp.com^
 ||urldelivery.com^$third-party
@@ -1024,7 +971,7 @@ hoathinh247.com###catfish1
 ||zijaipse.com^
 ||zukxd6fkxqn.com^
 !---------------ABPVN White List--------------------
-@@#$image,domain=autoitvn.com|truyentranhnhamnhi.com|phim4400.cf|dropapk.to|khogamepc.com
+@@#$image,domain=autoitvn.com|truyentranhnhamnhi.com|phim440.cf|dropapk.to|khogamepc.com
 @@$websocket,domain=playhydrax.com|hydracdn.network
 @@/ads.$script,domain=igg-games.com
 @@/ads.html$domain=xemrap.com
@@ -1053,7 +1000,6 @@ hoathinh247.com###catfish1
 @@||cdn.popcash.net^$domain=netdna-storage.com
 @@||cdn.vidyomani.com/c/p/showads.js$domain=vidyomani.com
 @@||dmcdn.net/js/gen/widget/pack/popup.js.vfc7812cd5dcf8ad73
-@@||dns.norton.com/js/popup.js
 @@||easylist.club^$script,domain=oload.stream|openload.co|oload.tv
 @@||edgecastcdn.net^$stylesheet
 @@||facebook.com/ads/growth/aymt/homepage_panel/save_settings/
@@ -1067,20 +1013,18 @@ hoathinh247.com###catfish1
 @@||licklink.net/js/full-page-script.js$script,domain=fcine.net
 @@||muabanraovat.com/images/quangcao/
 @@||oxfordlearnersdictionaries.com/media/$~third-party
-@@||pagead2.googlesyndication.com$script,xmlhttprequest,domain=upfile.vn|javadecompilers.com|onmsft.com|startuanit.net|vantuanit.com|thuthuatmeovat.net|videodictionary.kwebpia.net|download.mokeedev.com|vietmod.pro|khogamepc.com|savetodrive.net|downmienphi.com|apkmirror.com|platinmods.com|file-upload.com|woprime.com|loinhacsong.com|win10.vn|mshares.co|mshare.xyz|phuongtrinhhoahoc.com|dalatmongm.site|vinaurl.in|memoryhackers.org|mylink.li|traderviet.com|phanmemtop.net|123link.biz|camera.aeonax.com|webphanmem.com|2rdroid.com|123link.f4vnn.com|phanmemgoc.com|icongnghe.com|filecr.com|gocmod.com|qthang.net
-@@||phim14.net/IMG/ads/
+@@||pagead2.googlesyndication.com$script,xmlhttprequest,domain=upfile.vn|javadecompilers.com|onmsft.com|startuanit.net|vantuanit.com|thuthuatmeovat.net|videodictionary.kwebpia.net|download.mokeedev.com|vietmod.pro|khogamepc.com|savetodrive.net|downmienphi.com|apkmirror.com|platinmods.com|file-upload.com|woprime.com|loinhacsong.com|win10.vn|mshares.co|mshare.xyz|phuongtrinhhoahoc.com|dalatmongm.site|vinaurl.in|memoryhackers.org|mylink.li|traderviet.com|123link.biz|camera.aeonax.com|webphanmem.com|2rdroid.com|123link.f4vnn.com|phanmemgoc.com|icongnghe.com|filecr.com|gocmod.com|qthang.net
 @@||pointer2.hopy.com/qc
 @@||pubads.g.doubleclick.net$xmlhttprequest,domain=vtvgiaitri.vn
 @@||securepubads.g.doubleclick.net^$domain=onmsft.com
 @@||securepubads.g.doubleclick.net^$script,domain=linksht.com
 @@||source.pixiv.net/www/images/
-@@||st.bebi.com/bebi_v3.js^$script,domain=kzone.tv|ani4u.org|phimhoathinh.biz|anime47.com
+@@||st.bebi.com/bebi_v3.js^$script,domain=kzone.tv|ani4u.org|anime47.com
 @@||static.doubleclick.net/instream/ad_status.js$script,xmlhttprequest
 @@||stats.g.doubleclick.net$domain=download.mokeedev.com
 @@||taive.click/img/logo-tv.png$image,~third-party
 @@||thepiratebay.org/static/main.js
 @@||vidoza.net/js/pop.js
-@@||vn-platform.bidgear.com^$script,domain=notelink.me
 @@||yimg.com^$script,stylesheet,domain=mail.yahoo.com
 @@||zix.vn/js/LilTee/googleads.js
 !------ ABPVN Adult block -------
@@ -1101,7 +1045,6 @@ $webrtc,domain=daxab.com
 ||biqle.ru/swp.js
 ||cdn.torrango.com^$script
 ||ci.phncdn.com/www-static/js/promo-banner.js$script,domain=www.pornhub.com
-||clcknads.pro^
 ||clmcom.com^
 ||commank.pro^
 ||d3pvcolmug0tz6.cloudfront.net^
@@ -1110,7 +1053,6 @@ $webrtc,domain=daxab.com
 ||doublepimp.com^
 ||doublepimpssl.com^
 ||dt2xr6g2i5.com^$popup
-||exosrv.com^
 ||f5v1x3kgv5.com^
 ||fingahvf.top^$script
 ||fkbwtoopwg.com^
@@ -1121,19 +1063,16 @@ $webrtc,domain=daxab.com
 ||gsparteewise.info^
 ||hentaihaven.org/basement/js/adshow.js
 ||hentaivn.net/qc/
-||hfllrf6lwh.com^
 ||hubt.pornhub.com/js/ht.js
-||javfeed.com/img/r18/
 ||javhub.me/Cms_Data/Sites/admin/Files/ads.js
+||javstick.com/img/r18/
 ||javwide.com$script,third-party
 ||lucky88.com^$popup,third-party
 ||luscious.net/luscious.js
-||mely.win^$popup
 ||newdonate.com^
 ||o333o.com^
 ||oupe71eiun.com^
 ||p.123lnk.com^$script
-||partlepool.com^
 ||phncdn.com/iframe
 ||player.h-cdn.com/loader.js
 ||pornhdx.to/api-ads
