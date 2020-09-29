@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 202009251332
-! Title: ABPVN List [optimize filter]
-! Last modified: 25 Sep 2020 13:32 UTC+7
+! Version: 202009290951
+! Title: ABPVN List [update redirect domain]
+! Last modified: 29 Sep 2020 09:51 UTC+7
 ! Expires: 1 days (update frequency)
 !
 ! ABPVN List filter
@@ -15,7 +15,7 @@
 ! Forum: https://voz.vn/t/abpvn-chan-quang-cao-cho-nguoi-viet.25778/
 ! Report new issue on github: https://github.com/abpvn/abpvn/issues/new
 ! ---------- Generic Blocking Rules ----------
-$popup,domain=playhydrax.com|hydracdn.network
+$popup,domain=playhydrax.com+
 $popup,third-party,domain=appvn.com|megaurl.in|hamtruyen.com|razorphim.com|phim1080.net|blogtruyen.vn|phimnhe.net
 $webrtc,domain=appvn.com
 .com/cpc/$script
@@ -307,7 +307,7 @@ safedownload.net$csp=script-src self * data: unsafe-eval 'sha256-Fd/Qv7k3A0GqeyD
 ||plo.vn/*/banner.min.js
 ||popupmaker.com^$domain=razorphim.com
 ||pose.com.vn/colgate/content-box-colgate/$subdocument
-||postimg.cc^*.gif$domain=tivi4k.com|keonhacai1.net|tructiepbongda.xyz|tv.101vn.com|8bongda.com|xemtivisohd.com|xemphimhayz.net
+||postimg.cc^*.gif$domain=tivi4k.com|keonhacai1.com|tructiepbongda.xyz|tv.101vn.com|8bongda.com|xemtivisohd.com|xemphimhayz.net
 ||purgrobi.com/ub.pi$third-party
 ||qc-static.coccoc.com
 ||qtcshop.com/images/$third-party
