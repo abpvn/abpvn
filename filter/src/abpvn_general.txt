@@ -1,5 +1,5 @@
 ! ---------- Generic Blocking Rules ----------
-$popup,domain=playhydrax.com+
+$popup,domain=playhydrax.com
 $popup,third-party,domain=appvn.com|megaurl.in|hamtruyen.com|razorphim.com|phim1080.net|blogtruyen.vn|phimnhe.net
 $webrtc,domain=appvn.com
 .com/cpc/$script
@@ -91,8 +91,8 @@ safedownload.net$csp=script-src self * data: unsafe-eval 'sha256-Fd/Qv7k3A0GqeyD
 ||blogtruyen.vn/scripts/banner-preload.js
 ||blogtruyen.vn/scripts/iframe-rand.js
 ||blueadss.com^
-||bongda365.pro/video/$media
 ||bongda365.tv/video/$media
+||bongda365.vip/video/$media
 ||bongngo.tv/assets/games/*.gif
 ||bp.blogspot.com$image,domain=tivi4k.com
 ||bp.blogspot.com*/s0/$image,domain=blogtruyen.vn
@@ -175,8 +175,6 @@ safedownload.net$csp=script-src self * data: unsafe-eval 'sha256-Fd/Qv7k3A0GqeyD
 ||hayghetv.com/players/ads/
 ||hayghetv.com^*.gif
 ||haynhucnhoi.tv/api$third-party
-||hdvip.tv^*.gif
-||hdvip.tv^*.xml$xmlhttprequest
 ||hinhso.com^$domain=diendanmaychu.vn,image
 ||hoanluu.com^*.gif$image
 ||hoc24.vn/images/zuize.jpg
@@ -240,7 +238,7 @@ safedownload.net$csp=script-src self * data: unsafe-eval 'sha256-Fd/Qv7k3A0GqeyD
 ||media.coccoc.com$image,object,popup
 ||media.dabong247.com/ads/
 ||media.ex-cdn.com/*/qc$image
-||media.giphy.com/media/$image,domain=animevsub.tv|phimgi.tv|thevangtv.vip|ngoac.tv|vaoroi.tv|banthang.live|ibongda.pro|tructiepbongda.mobi|bongda365.tv|bongda365.pro
+||media.giphy.com/media/$image,domain=animevsub.tv|phimgi.tv|thevangtv.vip|ngoac.tv|vaoroi.tv|banthang.live|ibongda.pro|tructiepbongda.mobi|bongda365.tv|bongda365.vip
 ||media.jxf88.com^$third-party
 ||media.store123doc.com/images/web_2/tuyen-dung-min.png
 ||media2d.net^$third-party
@@ -291,7 +289,7 @@ safedownload.net$csp=script-src self * data: unsafe-eval 'sha256-Fd/Qv7k3A0GqeyD
 ||plo.vn/*/banner.min.js
 ||popupmaker.com^$domain=razorphim.com
 ||pose.com.vn/colgate/content-box-colgate/$subdocument
-||postimg.cc^*.gif$domain=tivi4k.com|keonhacai1.com|tructiepbongda.xyz|tv.101vn.com|8bongda.com|xemtivisohd.com|xemphimhayz.net
+||postimg.cc^*.gif$domain=tivi4k.com|keonhacai1.net|tructiepbongda.xyz|tv.101vn.com|8bongda.com|xemtivisohd.com|xemphimhayz.net
 ||purgrobi.com/ub.pi$third-party
 ||qc-static.coccoc.com
 ||qtcshop.com/images/$third-party
@@ -391,7 +389,7 @@ safedownload.net$csp=script-src self * data: unsafe-eval 'sha256-Fd/Qv7k3A0GqeyD
 ||uniad.$third-party
 ||upanh4.hocvientruyentranh.net^*.gif$image
 ||upload.kingphim.tv^*.gif
-||upsieutoc.com^*.gif$domain=bongda365.tv|bongda365.pro|banthang.live
+||upsieutoc.com^*.gif$domain=bongda365.tv|bongda365.vip|banthang.live
 ||upsieutoc.com^*banner$domain=chophanthiet.us
 ||uyenland.com^$third-party,domain=font.vn
 ||vegacdn.com^*.gif$image
