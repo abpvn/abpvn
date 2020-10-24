@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 202010240755
-! Title: ABPVN List [general update]
-! Last modified: 24 Oct 2020 07:55 UTC+7
+! Version: 202010242152
+! Title: ABPVN List [facebook.com]
+! Last modified: 24 Oct 2020 21:52 UTC+7
 ! Expires: 1 days (update frequency)
 !
 ! ABPVN List filter
@@ -14,7 +14,6 @@
 ! Facebook Fanpage: https://www.facebook.com/abpvn.org
 ! Forum: https://voz.vn/t/abpvn-chan-quang-cao-cho-nguoi-viet.25778/
 ! Report new issue on github: https://github.com/abpvn/abpvn/issues/new
-
 ! ---------- Generic Blocking Rules ----------
 $popup,domain=playhydrax.com|hydracdn.network
 $popup,third-party,domain=oload.tv|oload.stream|openload.co|oload.site|appvn.com|mediafire.com|mactorrent.co|uploadocean.com|vinaurl.net|clipconverter.cc|userscloud.com|proxyrarbg.org|megaurl.in|loptelink.pro|linksht.com|ouo.io|razorphim.com|phim1080.net|blogtruyen.vn|phimnhe.net
@@ -1127,15 +1126,8 @@ eva.vn###right_ads > .ads_unit:nth-of-type(1)
 eva.vn##.banner300250-L
 eva.vn##.banner_top_masthead
 eva.vn,24h.com.vn##[id^="ADS_"]
-facebook.com#$#hide-if-contains-visible-text /Sponsored|Được tài trợ/ 'div[id^="topnews_main_stream"] div[data-testid^="fbfeed_story"]' 'div[id^="topnews_main_stream"] div[data-testid^="fbfeed_story"] div[id*="feed"][id*="sub"] a'
-facebook.com#?#.pagelet-group.pagelet:-abp-has(span:-abp-contains(Still Available on Marketplace))
-facebook.com#?#.pagelet:-abp-has(a:-abp-contains(Được tài trợ))
-facebook.com#?#.pagelet:-abp-has(a[href^="/ad__campaign/landing.php"])
-facebook.com#?#div[id="pagelet_ego_pane"]:-abp-has(div:-abp-contains(Suggested Pages))
-facebook.com#?#div[id="pagelet_ego_pane"]:-abp-has(div:-abp-contains(Trang được đề xuất))
-facebook.com#?#div[id^="hyperfeed_story_id_"]:-abp-has(a[href*="is_sponsored"])
-facebook.com#?#div[id^="hyperfeed_story_id_"]:-abp-has(a[href^="/ads/about"])
-facebook.com#?#div[id^="hyperfeed_story_id_"]:-abp-has(span:-abp-contains(Bài viết được đề xuất))
+facebook.com##div[data-pagelet="RightRail"] > div > div:nth-child(1) > .l9j0dhe7:nth-child(1)
+facebook.com#?#div[data-pagelet^="FeedUnit_"]:-abp-has(a[href^="/ads/"])
 filecr.com##.filec-widget
 files.pw##.adscenter
 files.pw##.adscenter2
