@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 202011181859
-! Title: ABPVN List [fix popup tvhay]
-! Last modified: 18 Nov 2020 18:59 UTC+7
+! Version: 202011231037
+! Title: ABPVN List [optimize filter]
+! Last modified: 23 Nov 2020 10:37 UTC+7
 ! Expires: 1 days (update frequency)
 !
 ! ABPVN List filter
@@ -32,8 +32,8 @@ $popup,third-party,domain=megaurl.in|hamtruyen.com|razorphimzz.com|phim1080.me|p
 /ads/*.xml$xmlhttprequest
 /allposition-zone-*.ads
 /assets/popup.js
-/banner/*.gif
 /banner-ads.
+/banner/*.gif
 /blueserving.
 /content/vast$xmlhttprequest
 /cvast.$script,xmlhttprequest,third-party
@@ -58,6 +58,9 @@ $popup,third-party,domain=megaurl.in|hamtruyen.com|razorphimzz.com|phim1080.me|p
 /vast\d+\./$xmlhttprequest
 /videojs.ima.js
 /zone.uniad.vn/$image
+a3manga.com##.single-video
+a3manga.com##div[id$="-catfish"]
+safedownload.net$csp=script-src self * data: unsafe-eval 'sha256-Fd/Qv7k3A0GqeyDDw9drCXHa0+zn9UjYCOFwAUXeJFo='
 ||11bet.$popup,third-party
 ||123phim.top$csp=script-src 'self' * data: 'unsafe-eval'
 ||188bongda.com^$third-party
@@ -105,8 +108,8 @@ $popup,third-party,domain=megaurl.in|hamtruyen.com|razorphimzz.com|phim1080.me|p
 ||bit.ly^$domain=biphimz.tv|kingphimz.net|vphimz.net|phimmedia.info|phimmedia.me|phimmedia.tv|vkool.net|huphimz.com
 ||bit.ly^$popup,domain=kingphimz.net
 ||blogfonts.com^$domain=hosocongty.vn,image
-||blogspot.com^*.gif$domain=phim33.org|hamtruyen.com|truyensieuhay.com|hamtruyen.vn|hocvientruyentranh.net|mythethao.net|vuviphimzz.com|khophimle.tv
 ||blogspot.com^*-banner$image,domain=blogtruyen.vn
+||blogspot.com^*.gif$domain=phim33.org|hamtruyen.com|truyensieuhay.com|hamtruyen.vn|hocvientruyentranh.net|mythethao.net|vuviphimzz.com|khophimle.tv
 ||blogtruyen.vn/scripts/banner-preload.js
 ||blogtruyen.vn/scripts/iframe-rand.js
 ||blueadss.com^
@@ -189,11 +192,11 @@ $popup,third-party,domain=megaurl.in|hamtruyen.com|razorphimzz.com|phim1080.me|p
 ||googleusercontent.com^*.gif|$domain=tivi4k.com
 ||gophim.net^*.gif$image
 ||graizoah.com/tag.min.js
-||hamtruyen.com/bannerqc/
 ||hamtruyen.com/Scripts/ads_qc.js
 ||hamtruyen.com/Scripts/blueyonew.js
 ||hamtruyen.com/Scripts/ixinh.js
 ||hamtruyen.com/Scripts/jwplayer.js
+||hamtruyen.com/bannerqc/
 ||hamtruyen.com/ytb.html
 ||hayghez.net/players/ads/
 ||hayghez.net^*.gif
@@ -223,16 +226,16 @@ $popup,third-party,domain=megaurl.in|hamtruyen.com|razorphimzz.com|phim1080.me|p
 ||images.tuyensinh247.com^*banner-
 ||images.vov.vn/Uploaded/QC/
 ||images1.violympic.vn/assets/images/*.gif
-||images2.imgbox.com^*.gif$image,domain=ocumeo.com
 ||images2-focus-opensocial.googleusercontent.com^*.gif$image,domain=tvhays.org|90phut.tv|binhluan.live
+||images2.imgbox.com^*.gif$image,domain=ocumeo.com
 ||img.anime47.com/imgur/HnIjfZc.jpg
 ||img.dothi.net^*.gif
 ||img.hayhaytv.com/popup/
 ||img.keonhacai.net/img/gmodules.php?url=*.gif$image
 ||img.ketqua.net^*.gif
 ||inet.vn/images/banner
-||js.pmcontent.com/js/ambient/client.js
 ||js-agent.newrelic.com
+||js.pmcontent.com/js/ambient/client.js
 ||k8wap.com^$popup,third-party
 ||kenhvideoz.net^*.gif
 ||ketqua.vn/uploads/images/*.gif
@@ -329,13 +332,14 @@ $popup,third-party,domain=megaurl.in|hamtruyen.com|razorphimzz.com|phim1080.me|p
 ||santruongit.com^$popup,third-party
 ||sapo.vn/blog/wp-content/uploads/2018/07/Banner-Gift.gif$image
 ||senpay.vn/widget/
+||sg-test-11.slatic.net/other/lzd-ad/
 ||sggp.org.vn/*.ads
 ||sggp.org.vn/*banner
-||sg-test-11.slatic.net/other/lzd-ad/
 ||shoppanda.co/partners/
 ||sohagame.vcmedia.vn/swf/
 ||sohuutritue.net.vn/files/qc/
 ||st.getsitecontrol.com^$script,domain=sachmoi.net
+||static-znews.zadn.vn/banner
 ||static.24h.com.vn^*-background-
 ||static.8cache.com/spon/
 ||static.8cache.com/taitro/
@@ -344,8 +348,8 @@ $popup,third-party,domain=megaurl.in|hamtruyen.com|razorphimzz.com|phim1080.me|p
 ||static.download.com.vn/cache.aspx?_path=*ad$script
 ||static.hayhaytv.com^*.mp4
 ||static.hdo.tv/template/frontend/images/FloatbannerHDO.png
-||static.hdo.tv/template/frontend/images/float-logo-Pose.png
 ||static.hdo.tv/template/frontend/images/Topplayer.png
+||static.hdo.tv/template/frontend/images/float-logo-Pose.png
 ||static.htvonline.com.vn/layout/images/*_banner.jpg
 ||static.htvonline.com.vn/layout/images/lienhequangcao.png
 ||static.ketqua.net/adv_imgs
@@ -356,9 +360,8 @@ $popup,third-party,domain=megaurl.in|hamtruyen.com|razorphimzz.com|phim1080.me|p
 ||static.voocdn.com^*.gif$domain=dongphym.com|dongphym.net
 ||static.ybox.vn^*.gif
 ||staticflickr.com^*.gif$domain=chophanthiet.us
-||static-znews.zadn.vn/banner
-||stc.nas.nixcdn.com^*.gif
 ||stc-tv.zing.vn/skins/tv_v2/js/fadblock.min.js
+||stc.nas.nixcdn.com^*.gif
 ||storage.fshare.vn/images/$third-party
 ||storage.googleapis.com/adasia-ad-network-origin/
 ||taboola.com^$script,third-party
@@ -459,9 +462,6 @@ $popup,third-party,domain=megaurl.in|hamtruyen.com|razorphimzz.com|phim1080.me|p
 ||zbet.fun/promotions$popup
 ||zingnews.vn/interactive^$subdocument
 ||zjs.zadn.vn/zplayer/ads.js
-a3manga.com##.single-video
-a3manga.com##div[id$="-catfish"]
-safedownload.net$csp=script-src self * data: unsafe-eval 'sha256-Fd/Qv7k3A0GqeyDDw9drCXHa0+zn9UjYCOFwAUXeJFo='
 ! ---------- Ad domain ----------
 ||360game.vn^$popup,third-party
 ||3xviet.com^$popup
@@ -478,13 +478,13 @@ safedownload.net$csp=script-src self * data: unsafe-eval 'sha256-Fd/Qv7k3A0GqeyD
 ||adnetwork.vn^$third-party
 ||adpia.vn^$third-party
 ||adrealclick.com^
+||ads-cdn.fptplay.net^
 ||ads.bestads.me^
 ||ads.sporttv.today^
-||ads-cdn.fptplay.net^
 ||adsplay.net^$third-party
+||adtima-static.zadn.vn^$script
 ||adtima.vn^$third-party
 ||adtimaserver.vn^
-||adtima-static.zadn.vn^$script
 ||adtop.vn^$third-party
 ||adv.vcmedia.vn^
 ||aff.opus-static.com^$third-party
@@ -512,9 +512,9 @@ safedownload.net$csp=script-src self * data: unsafe-eval 'sha256-Fd/Qv7k3A0GqeyD
 ||bluemaulpuffs.com^
 ||blueseed.tv^$third-party
 ||brand.ad^
-||cdn.videonow.ru^
 ||cdn-ads.thesaigontimes.vn^
 ||cdn-qc.coccoc.com^
+||cdn.videonow.ru^
 ||cheap-ads.net^
 ||click.advertnative.com^
 ||cpx.vnecdn.com^
@@ -582,7 +582,7 @@ safedownload.net$csp=script-src self * data: unsafe-eval 'sha256-Fd/Qv7k3A0GqeyD
 @@/advertisement.js$domain=megaurl.in|phimmedia.tv|vinaurl.com|phim.media|downmienphi.net
 @@/crossdomain.xml
 @@/css.php$stylesheet
-@@/fuckadblock.js$script,domain=vatlypt.com|phimbathu.com|upload.exam24h.com|kenhtao.net
+@@/fuckadblock.js$script,domain=vatlypt.com|phimbathu.com|upload.exam24h.com
 @@/js/siropu/am/ads.min.js$script,~third-party
 @@/wp-content/plugins/advanced-ads/admin/assets/js/advertisement.js
 @@||ad.doubleclick.net/ddm/adj/$domain=anonyviet.com
@@ -606,11 +606,10 @@ safedownload.net$csp=script-src self * data: unsafe-eval 'sha256-Fd/Qv7k3A0GqeyD
 @@||iamcdn.net/players/app.ads.js
 @@||imasdk.googleapis.com^$domain=vivo.vn|24h.com.vn|danet.vn|pose.com.vn|gamevui.vn|yan.vn|saostar.vn|anime47.com|fptplay.vn
 @@||jsc.adskeeper.co.uk^$script,domain=hhkungfu.tv
-@@||kenhtao.net/ad/$xmlhttprequest
 @@||licklink.net/js/full-page-script.js$script,domain=fcine.net
 @@||netphimm.com/train/ads_code_tvc_vast/jwplayer.js$script
 @@||p.jwpcdn.com/player/plugins/vast/$script,domain=phimhanz.net|phimhanz.com|phimhans.net
-@@||pagead2.googlesyndication.com$script,xmlhttprequest,domain=upfile.vn|startuanit.net|thuthuatmeovat.net|khogamepc.com|win10.vn|loinhacsong.com|tailieupro.com|downmienphi.com|kenhtao.net|kites.vn|mshares.co|mshare.xyz|phuongtrinhhoahoc.com|vinaurl.com|taivenhanh.com|gsm1x.xyz|hhkungfu.tv|thichvn.com|icongnghe.com|hataphim.com|vutrung.gnomio.com|qthang.net
+@@||pagead2.googlesyndication.com$script,xmlhttprequest,domain=upfile.vn|startuanit.net|thuthuatmeovat.net|khogamepc.com|win10.vn|loinhacsong.com|tailieupro.com|downmienphi.com|kites.vn|mshares.co|mshare.xyz|phuongtrinhhoahoc.com|vinaurl.com|taivenhanh.com|gsm1x.xyz|hhkungfu.tv|thichvn.com|icongnghe.com|hataphim.com|vutrung.gnomio.com|qthang.net
 @@||phim16.net/Theme/libs/adi/jquery.adi.js
 @@||pubads.g.doubleclick.net$xmlhttprequest,domain=vtvgiaitri.vn
 @@||s0.2mdn.net/instream/video/client.js$domain=yan.vn|anime47.com
