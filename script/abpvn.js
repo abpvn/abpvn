@@ -15,8 +15,8 @@
 // @grant       GM_registerMenuCommand
 // @include     http://*
 // @include     https://*
-// @version     2.2.82
-// @change-log  Add link.codevn.net auto by pass
+// @version     2.2.83
+// @change-log  Add https://tructiepbongda.pro/ fake link remove
 // @run-at      document-end
 // ==/UserScript==
 /* String Prototype */
@@ -507,7 +507,7 @@ var fixSite = {
         }
     },
     fakelinkRemover: function () {
-        if (this.url.startWith('https://ibongda.vip') || this.url.startWith('https://thevang.tv') || this.url.startWith('https://banthang.live/') || this.url.startWith('https://tructiepbongda.vip/') || this.url.startWith('https://dabong.net/') || this.url.startWith('https://bongda365.tv/') || this.url.startWith('https://ibongda.live/')) {
+        if (this.url.startWith('https://ibongda.vip') || this.url.startWith('https://thevang.tv') || this.url.startWith('https://banthang.live/') || this.url.startWith('https://tructiepbongda.vip/') || this.url.startWith('https://dabong.net/') || this.url.startWith('https://bongda365.tv/') || this.url.startWith('https://ibongda.live/') || this.url.startWith('https://tructiepbongda.pro/')) {
             ABPVN.cTitle();
             var fakeLink = document.querySelectorAll('a[data-href][rel="nofollow"],a[data-url][rel="nofollow"],a[data-url].pop-open');
             var count = 0;
