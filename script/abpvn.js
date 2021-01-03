@@ -15,8 +15,8 @@
 // @grant       GM_registerMenuCommand
 // @include     http://*
 // @include     https://*
-// @version     2.2.81
-// @change-log  Update changed domain
+// @version     2.2.83
+// @change-log  Add https://tructiepbongda.pro/ fake link remove
 // @run-at      document-end
 // ==/UserScript==
 /* String Prototype */
@@ -79,9 +79,9 @@ var byPass = {
         }
     },
     quickByPassLink: function () {
-        var regex = /123link\..*|phlame.pw|mshares\.co|mshare\.xyz|megaurl\.*|licklink.net|www.123l\.*|vinaurl\.*|share4you.pro|doxeaz10.site|derow.win|linkviet.net|ez4linkss.com|ckk.ai/;
-        var largeTimeoutHost = /licklink.net|share4you.pro|derow.win/;
-        var autoCaptchaOnlyList = /megaurl\.*|vinaurl\.*|doxeaz10.site|linkviet.net|ez4linkss.com|ckk.ai/;
+        var regex = /123link\..*|phlame.pw|mshares\.co|mshare\.xyz|megaurl\.*|www.123l\.*|vinaurl\.*|share4you.pro|doxeaz10.site|derow.win|linkviet.net|ez4linkss.com|ckk.ai|link.codevn.net/;
+        var largeTimeoutHost = /share4you.pro|derow.win/;
+        var autoCaptchaOnlyList = /megaurl\.*|vinaurl\.*|doxeaz10.site|linkviet.net|ez4linkss.com|ckk.ai|link.codevn.net/;
         if (regex.test(location.hostname)) {
             try {
                 var checkClick = function (mutation) {
@@ -507,7 +507,7 @@ var fixSite = {
         }
     },
     fakelinkRemover: function () {
-        if (this.url.startWith('https://ibongda.vip') || this.url.startWith('https://thevang.tv') || this.url.startWith('https://banthang.live/') || this.url.startWith('https://tructiepbongda.vip/') || this.url.startWith('https://dabong.net/') || this.url.startWith('https://bongda365.tv/') || this.url.startWith('https://ibongda.live/')) {
+        if (this.url.startWith('https://ibongda.vip') || this.url.startWith('https://thevang.tv') || this.url.startWith('https://banthang.live/') || this.url.startWith('https://tructiepbongda.vip/') || this.url.startWith('https://dabong.net/') || this.url.startWith('https://bongda365.tv/') || this.url.startWith('https://ibongda.live/') || this.url.startWith('https://tructiepbongda.pro/')) {
             ABPVN.cTitle();
             var fakeLink = document.querySelectorAll('a[data-href][rel="nofollow"],a[data-url][rel="nofollow"],a[data-url].pop-open');
             var count = 0;
