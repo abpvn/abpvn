@@ -15,8 +15,8 @@
 // @grant       GM_registerMenuCommand
 // @include     http://*
 // @include     https://*
-// @version     2.2.84
-// @change-log  Add hydrax popup blocker
+// @version     2.2.85
+// @change-log  Remove fshare auto download because deprecapted
 // @run-at      document-end
 // ==/UserScript==
 /* String Prototype */
@@ -210,80 +210,6 @@ var Logger = {
 };
 //get Link class
 var getLink = {
-    settingKey: 'fshare_download',
-    FShareConfig: function () {
-        if (this.url.startWith('https://www.fshare.vn')) {
-            var currentSetting = configure.getValue(this.settingKey, true);
-            var background_image = !currentSetting ? 'url("http://i.imgur.com/kJnOMOB.png")' : 'url("http://i.imgur.com/2b7fN6a.png")';
-            var title = currentSetting ? 'Bật get link fshare' : 'Tắt get link fshare';
-            var html = '<div id=\'fs_click\' title=\'' + title + '\' style=\'position: fixed; right: 0; bottom: 0; width: 30px; height: 30px; border-radius: 50%; background-image: ' + background_image + '; background-size: cover; cursor: pointer; z-index: 99999;\'></div>';
-            $(document).ready(function () {
-                $(document.body).append(html);
-                $(document).on('click', '#fs_click', function FS_on_off() {
-                    if (currentSetting) {
-                        currentSetting = false;
-                        this.style.backgroundImage = 'url("http://i.imgur.com/kJnOMOB.png")';
-                        this.setAttribute('title', 'Bật get link fshare');
-                        alert('Đã tắt get link fshare');
-                    } else {
-                        currentSetting = true;
-                        this.setAttribute('title', 'Tắt get link fshare');
-                        this.style.backgroundImage = 'url("http://i.imgur.com/2b7fN6a.png")';
-                        alert('Đã bật get link fshare');
-                    }
-                    configure.setValue("fshare_download", currentSetting);
-                });
-            });
-        }
-    },
-    FShareGetLink: function () {
-        if (this.url.startWith('https://www.fshare.vn/file/') && !this.url.startWith('https://www.fshare.vn/file/manager')) {
-            var currentSetting = configure.getValue(this.settingKey, true);
-            if (currentSetting) {
-                console.info('Start get link Fshare.vn');
-                $(document).ready(function () {
-                    var checkpassword = document.querySelector('.password-form');
-                    var linkcode = $('#linkcode').val();
-                    if (checkpassword === null) {
-                        var code = $('#form-download input[name="_csrf-app"]').val();
-                        var data = {
-                            '_csrf-app': code,
-                            'fcode5': '',
-                            'linkcode': linkcode,
-                            'withFcode5': 0,
-                        };
-                        $.post('/download/get', data).done(function (resData, statusText, xhr) {
-                            if (resData.url === undefined) location.reload();
-                            else {
-                                if (typeof location != 'undefined') {
-                                    Logger.log(location.href + ' -> ' + resData.url);
-                                    var count_time = resData.wait_time;
-                                    var interval = setInterval(function () {
-                                        var msg = "Cần đợi <span style='color: #cd1417'>" + count_time + "</span> giây nữa";
-                                        document.querySelector('.d-info-container .thumbnail').innerHTML = "<div style='font-size: 25px;color: #00dc58;font-weight: bold'>ABPVN Auto download:<br/>" + msg + "</div>";
-                                        count_time--;
-                                        if (count_time <= 0) {
-                                            clearInterval(interval);
-                                            location.href = resData.url;
-                                        }
-                                    }, 1000);
-                                } else {
-                                    $('.download').prepend('<a title="Tải trực tiếp" style="padding: 5px 0;box-sizing: content-box;" class="download-btn mdc-button mdc-button--raised mdc-ripple-upgraded full-width mdc-button-primary fcode5" href="' + resData.url + '">Tải trực tiếp<span>Hỗ trợ bởi abpvn.com</span></a>');
-                                }
-                            }
-                        }).fail(function (xhr, statusText, error) {
-                            alert('ABPVN: Đã có lỗi fshare hoặc file có password');
-                        });
-                    } else {
-                        alert('ABPVN: Hãy nhập mật khẩu cho file trước');
-                    }
-                });
-            } else {
-                $('.download').prepend('<a title="Download nhanh qua linksvip.net" style="padding: 5px 0;box-sizing: content-box; margin: 5px auto;background-color: #00dc58;" class="download-btn mdc-button mdc-button--raised mdc-ripple-upgraded full-width mdc-button-primary fcode5" href="http://linksvip.net?link=' + location.href + '">Tải nhanh<span>Qua dịch vụ linksvip.net</span></a>');
-                $('.download').prepend('<a title="Download nhanh qua getlinkaz.com" style="padding: 5px 0;margin: 5px auto;box-sizing: content-box;background-color: #00dc58;" class="download-btn mdc-button mdc-button--raised mdc-ripple-upgraded full-width mdc-button-success fcode5" href="https://vnz-leech.com?link=' + location.href + '">Tải nhanh<span>Qua dịch vụ vnz-leech.com</span></a>');
-            }
-        }
-    },
     vnz_leech_auto_fill: function () {
         if (this.url == 'https://www4.cbox.ws/box/?boxid=4240872&boxtag=soigia&sec=form' && this.url.indexOf('link=')) {
             var url = (window.location != window.parent.location) ?
@@ -325,8 +251,6 @@ var getLink = {
     },
     init: function () {
         this.url = location.href;
-        this.FShareConfig();
-        this.FShareGetLink();
         if (configure.getValue('quick_download', true)) {
             this.mediafire_com();
             this.usercloud_com();
