@@ -15,8 +15,8 @@
 // @grant       GM_registerMenuCommand
 // @include     http://*
 // @include     https://*
-// @version     2.2.83
-// @change-log  Add https://tructiepbongda.pro/ fake link remove
+// @version     2.2.84
+// @change-log  Add hydrax popup blocker
 // @run-at      document-end
 // ==/UserScript==
 /* String Prototype */
@@ -447,7 +447,7 @@ var fixSite = {
             window.adblock = false;
             window.adblock2 = false;
             window.turnoff = true;
-            window.open = function () {};
+            window.open = function () { };
             //
             // @run-at document-end
             //
@@ -494,9 +494,9 @@ var fixSite = {
                         }
                     }, 100);
                 }
-                window.onclick = function () {};
-                document.onclick = function () {};
-                document.body.onclick = function () {};
+                window.onclick = function () { };
+                document.onclick = function () { };
+                document.body.onclick = function () { };
             });
         }
     },
@@ -579,46 +579,46 @@ var fixSite = {
     },
     removeRedirect() {
         var configs = [{
-                url: 'https://samsungvn.com',
-                replace: 'https://samsungvn.com/xfa-interstitial/redirect?url=',
-            },
-            {
-                url: 'https://forum.vietdesigner.net',
-                replace: 'redirect/?url='
-            },
-            {
-                url: 'http://sinhvienit.net',
-                replace: 'http://sinhvienit.net/goto/?'
-            },
-            {
-                url: 'http://phanmemaz.com/',
-                replace: 'http://phanmemaz.com/wp-content/plugins/tm-wordpress-redirection/l.php?'
-            },
-            {
-                url: 'forums.voz.vn/showthread.php',
-                replace: '/redirect/index.php?link='
-            },
-            {
-                url: 'www.webtretho.com/forum/',
-                replace: /http(s?):\/\/webtretho\.com\/forum\/links\.php\?url=/,
-                selector: 'a[href*="webtretho.com/forum/links.php?url="]'
-            },
-            {
-                url: '/kat.vc|kickass.best/',
-                replace: 'https://mylink.cx/?url='
-            },
-            {
-                url: 'https://tuong.me/',
-                replace: 'https://tuong.me/chuyen-huong/?url='
-            },
-            {
-                url: 'https://yhocdata.com/',
-                replace: 'https://yhocdata.com/redirect/?url='
-            },
-            {
-                url: 'https://vn-z.vn/',
-                replace: 'https://vn-z.vn/redirect?to='
-            }
+            url: 'https://samsungvn.com',
+            replace: 'https://samsungvn.com/xfa-interstitial/redirect?url=',
+        },
+        {
+            url: 'https://forum.vietdesigner.net',
+            replace: 'redirect/?url='
+        },
+        {
+            url: 'http://sinhvienit.net',
+            replace: 'http://sinhvienit.net/goto/?'
+        },
+        {
+            url: 'http://phanmemaz.com/',
+            replace: 'http://phanmemaz.com/wp-content/plugins/tm-wordpress-redirection/l.php?'
+        },
+        {
+            url: 'forums.voz.vn/showthread.php',
+            replace: '/redirect/index.php?link='
+        },
+        {
+            url: 'www.webtretho.com/forum/',
+            replace: /http(s?):\/\/webtretho\.com\/forum\/links\.php\?url=/,
+            selector: 'a[href*="webtretho.com/forum/links.php?url="]'
+        },
+        {
+            url: '/kat.vc|kickass.best/',
+            replace: 'https://mylink.cx/?url='
+        },
+        {
+            url: 'https://tuong.me/',
+            replace: 'https://tuong.me/chuyen-huong/?url='
+        },
+        {
+            url: 'https://yhocdata.com/',
+            replace: 'https://yhocdata.com/redirect/?url='
+        },
+        {
+            url: 'https://vn-z.vn/',
+            replace: 'https://vn-z.vn/redirect?to='
+        }
         ];
         configs.forEach(function (config) {
             this.removeRedir(config);
@@ -709,7 +709,7 @@ var adBlocker = {
         if (this.url.startWith('http://phimnhanh.com/xem-phim')) {
             Logger.warn('Đã chặn video preload');
             if (video !== undefined) {
-                video.preroll = function (options) {};
+                video.preroll = function (options) { };
             }
         }
     },
@@ -725,6 +725,12 @@ var adBlocker = {
             createCookie('vwinpopupmb', 1, 72);
         }
     },
+    geoip_redirect_ads_com: function () {
+        if (this.url.match(/geoip.redirect-ads.com/)) {
+            url = 'about:blank';
+            countPop = 10;
+        }
+    },
     init: function () {
         this.url = location.href;
         this.mgIdAdRemover();
@@ -732,6 +738,7 @@ var adBlocker = {
         this.phimnhanh_com();
         this.vinaurl_net();
         this.phimnhe_net();
+        this.geoip_redirect_ads_com();
     },
 };
 var configure = {
