@@ -15,7 +15,7 @@
 // @grant       GM_registerMenuCommand
 // @include     http://*
 // @include     https://*
-// @version     2.2.86
+// @version     2.2.87
 // @change-log  Remove deprecapted
 // @run-at      document-end
 // ==/UserScript==
@@ -523,12 +523,6 @@ var adBlocker = {
             createCookie('vwinpopupmb', 1, 72);
         }
     },
-    geoip_redirect_ads_com: function () {
-        if (this.url.match(/geoip.redirect-ads.com/)) {
-            url = 'about:blank';
-            countPop = 10;
-        }
-    },
     init: function () {
         this.url = location.href;
         this.mgIdAdRemover();
@@ -536,7 +530,6 @@ var adBlocker = {
         this.phimnhanh_com();
         this.vinaurl_net();
         this.phimnhe_net();
-        this.geoip_redirect_ads_com();
     },
 };
 var configure = {
