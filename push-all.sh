@@ -1,1 +1,1 @@
-git push --all && ./pull.sh
+git push --all && sh pull.sh
