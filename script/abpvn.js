@@ -15,8 +15,8 @@
 // @grant       GM_registerMenuCommand
 // @include     http://*
 // @include     https://*
-// @version     2.2.87
-// @change-log  Remove deprecapted
+// @version     2.2.88
+// @change-log  Add romgoc.net remove redirect
 // @run-at      document-end
 // ==/UserScript==
 /* String Prototype */
@@ -382,47 +382,52 @@ var fixSite = {
         }
     },
     removeRedirect() {
-        var configs = [{
-            url: 'https://samsungvn.com',
-            replace: 'https://samsungvn.com/xfa-interstitial/redirect?url=',
-        },
-        {
-            url: 'https://forum.vietdesigner.net',
-            replace: 'redirect/?url='
-        },
-        {
-            url: 'http://sinhvienit.net',
-            replace: 'http://sinhvienit.net/goto/?'
-        },
-        {
-            url: 'http://phanmemaz.com/',
-            replace: 'http://phanmemaz.com/wp-content/plugins/tm-wordpress-redirection/l.php?'
-        },
-        {
-            url: 'forums.voz.vn/showthread.php',
-            replace: '/redirect/index.php?link='
-        },
-        {
-            url: 'www.webtretho.com/forum/',
-            replace: /http(s?):\/\/webtretho\.com\/forum\/links\.php\?url=/,
-            selector: 'a[href*="webtretho.com/forum/links.php?url="]'
-        },
-        {
-            url: '/kat.vc|kickass.best/',
-            replace: 'https://mylink.cx/?url='
-        },
-        {
-            url: 'https://tuong.me/',
-            replace: 'https://tuong.me/chuyen-huong/?url='
-        },
-        {
-            url: 'https://yhocdata.com/',
-            replace: 'https://yhocdata.com/redirect/?url='
-        },
-        {
-            url: 'https://vn-z.vn/',
-            replace: 'https://vn-z.vn/redirect?to='
-        }
+        var configs = [
+            {
+                url: 'https://samsungvn.com',
+                replace: 'https://samsungvn.com/xfa-interstitial/redirect?url=',
+            },
+            {
+                url: 'https://forum.vietdesigner.net',
+                replace: 'redirect/?url='
+            },
+            {
+                url: 'http://sinhvienit.net',
+                replace: 'http://sinhvienit.net/goto/?'
+            },
+            {
+                url: 'http://phanmemaz.com/',
+                replace: 'http://phanmemaz.com/wp-content/plugins/tm-wordpress-redirection/l.php?'
+            },
+            {
+                url: 'forums.voz.vn/showthread.php',
+                replace: '/redirect/index.php?link='
+            },
+            {
+                url: 'www.webtretho.com/forum/',
+                replace: /http(s?):\/\/webtretho\.com\/forum\/links\.php\?url=/,
+                selector: 'a[href*="webtretho.com/forum/links.php?url="]'
+            },
+            {
+                url: '/kat.vc|kickass.best/',
+                replace: 'https://mylink.cx/?url='
+            },
+            {
+                url: 'https://tuong.me/',
+                replace: 'https://tuong.me/chuyen-huong/?url='
+            },
+            {
+                url: 'https://yhocdata.com/',
+                replace: 'https://yhocdata.com/redirect/?url='
+            },
+            {
+                url: 'https://vn-z.vn/',
+                replace: 'https://vn-z.vn/redirect?to='
+            },
+            {
+                url: 'https://romgoc.net',
+                replace: 'https://romgoc.net/redirect-to/?url='
+            }
         ];
         configs.forEach(function (config) {
             this.removeRedir(config);
