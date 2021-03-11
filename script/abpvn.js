@@ -15,8 +15,8 @@
 // @grant       GM_registerMenuCommand
 // @include     http://*
 // @include     https://*
-// @version     2.2.88
-// @change-log  Add romgoc.net remove redirect
+// @version     2.2.89
+// @change-log  Add aphimhot.com popup remover
 // @run-at      document-end
 // ==/UserScript==
 /* String Prototype */
@@ -528,6 +528,15 @@ var adBlocker = {
             createCookie('vwinpopupmb', 1, 72);
         }
     },
+    aphimhot_com: function () {
+        if (this.url.startWith('https://aphimhot.com')) {
+            sessionStorage.setItem(key, 1);
+            openTab = function (url) {
+                Logger.log(`Chặn popup rồi nhé😁😁. Đang chuyển đến ${url}...`);
+                location.href = url;
+            }
+        }
+    },
     init: function () {
         this.url = location.href;
         this.mgIdAdRemover();
@@ -535,6 +544,7 @@ var adBlocker = {
         this.phimnhanh_com();
         this.vinaurl_net();
         this.phimnhe_net();
+        this.aphimhot_com();
     },
 };
 var configure = {
