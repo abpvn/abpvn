@@ -1,5 +1,5 @@
 #!/bin/bash
 cd ..
 sh push.sh
-sleep 3
+sleep 5
 sh pull.sh
