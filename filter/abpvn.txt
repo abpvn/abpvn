@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 202104081356
-! Title: ABPVN List [invert.vn]
-! Last modified: 08 Apr 2021 13:56 UTC+7
+! Version: 202104081450
+! Title: ABPVN List [optimize filter]
+! Last modified: 08 Apr 2021 14:50 UTC+7
 ! Expires: 1 days (update frequency)
 !
 ! ABPVN List filter
@@ -20,8 +20,8 @@ $webrtc,domain=forum.xda-developers.com|dailyuploads.net|uploadocean.com|appvn.c
 &adformat=
 &aduid=
 &adunit=
-*$csp=default-src 'self' * data: 'unsafe-inline' 'unsafe-eval',domain=forum.xda-developers.com
-*$csp=script-src 'self' * data: 'unsafe-eval',domain=yts.mx|feurl.com
+*$csp=default-src 'self' * 'unsafe-inline' 'unsafe-eval',domain=forum.xda-developers.com
+*$csp=script-src 'self' * 'unsafe-eval',domain=yts.mx|feurl.com
 .admicro.
 .codes/*.js$script,domain=nettruyen.com|nhattruyen.com|anime47.com
 .com/ads$domain=~anime47.com
@@ -224,7 +224,7 @@ _ads_
 ||chophanthiet.us/images/phanthiet.jpg
 ||chovinh.com/data/Siropu/*.gif$image
 ||click.mibet88.com^$popup
-||clipconverter.cc$csp=default-src 'self' * data: 'unsafe-inline'
+||clipconverter.cc$csp=default-src 'self' * 'unsafe-inline'
 ||cloudfront.net/?cdlad=
 ||cloudfront.net/atrk.js
 ||cloudfront.net^$script,domain=shink.me|short.am|onhax.me|megaurl.in
@@ -312,7 +312,7 @@ _ads_
 ||i0.wp.com/dc.motphim.net/*.gif$image
 ||iamcdn.net/players/playera.dmins.js
 ||iclickcdn.com^$script
-||igg-games.cc$csp=script-src * 'self' data: 'unsafe-eval'
+||igg-games.cc$csp=script-src * 'self'  'unsafe-eval'
 ||igo.5giay.vn/mobile/
 ||igo.5giay.vn^*.gif
 ||image.24h.com.vn/*banner
@@ -388,7 +388,7 @@ _ads_
 ||nhanthuong88.com^$popup,third-party
 ||nhatrangclub.vn/files/
 ||notepad.vn/media/images/like68.jpg
-||nro.vn$csp=script-src self * data: 'unsafe-inline'
+||nro.vn$csp=script-src self *  'unsafe-inline'
 ||nv-ad-*.24hstatic.com/imageupload/upload/
 ||octaengine.com^$subdocument,domain=traderviet.com
 ||one88.fun^$popup,third-party
@@ -1810,7 +1810,7 @@ $webrtc,domain=daxab.com
 ||pushlum.com^
 ||pussl48.com^
 ||rphang.online^*.gif
-||rphangvn.net$csp=script-src 'self' * data:
+||rphangvn.net$csp=script-src 'self' *
 ||runmewivel.com^
 ||sexhayvc.com/popjs/$script
 ||sextop.info/asset/default/player/plugins/vast-8.4.13.js
