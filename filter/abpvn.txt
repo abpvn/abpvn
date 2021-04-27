@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 202104270842
-! Title: ABPVN List [v4u.vn]
-! Last modified: 27 Apr 2021 08:42 UTC+7
+! Version: 202104271213
+! Title: ABPVN List [phymhan.com]
+! Last modified: 27 Apr 2021 12:13 UTC+7
 ! Expires: 1 days (update frequency)
 !
 ! ABPVN List filter
@@ -123,7 +123,7 @@ $webrtc,domain=forum.xda-developers.com|dailyuploads.net|uploadocean.com|appvn.c
 /storage.adpia.vn/$image
 /uploads/wangcao/*
 /uts.js
-/vast.$domain=~nhaccuatui.com|~phimhanz.net|~phimhans.com|~phimhans.net|~cdnstream.net
+/vast.$domain=~nhaccuatui.com|~phimhanz.net|~phymhan.com|~cdnstream.net
 /vast\d+\./$xmlhttprequest
 /videojs.ads.$domain=~danet.vn
 /videojs.ima.js
@@ -318,7 +318,7 @@ _ads_
 ||i0.wp.com/dc.motphim.net/*.gif$image
 ||i0.wp.com^*.gif$domain=vietrao.com
 ||iamcdn.net/players/playera.dmins.js
-||igg-games.cc$csp=script-src * 'self'  'unsafe-eval'
+||igg-games.cc$csp=script-src * 'self' 'unsafe-eval'
 ||igo.5giay.vn/mobile/
 ||igo.5giay.vn^*.gif
 ||i-imgur-com.cdn.ampproject.org$domain=101vn.com,image
@@ -399,7 +399,7 @@ _ads_
 ||nhanthuong88.com^$popup,third-party
 ||nhatrangclub.vn/files/
 ||notepad.vn/media/images/like68.jpg
-||nro.vn$csp=script-src self *  'unsafe-inline'
+||nro.vn$csp=script-src self * 'unsafe-inline'
 ||nv-ad-*.24hstatic.com/imageupload/upload/
 ||octaengine.com^$subdocument,domain=traderviet.com
 ||okmen.edu.vn^*.gif
@@ -414,7 +414,6 @@ _ads_
 ||phimchat.tv/public/images/banner/$image
 ||phimchieurap.vn$popup,domain=blogtruyen.vn
 ||phimchieurap.vn/promo/cgv
-||phimhans.com/ads/
 ||phimhay.info/jwplayer7/text.json$domain=hamtruyen.com
 ||phimmoizz.net/js/ambient/
 ||phimmoizz.net/js/partner/$script
@@ -424,6 +423,7 @@ _ads_
 ||phonhadat.net/Images/*.gif
 ||photo-cms-anninhthudo.zadn.vn/Uploaded/2021/xtsmr/
 ||phunutoday.vn/images/banners/
+||phymhan.com/ads/
 ||pic.cydia.vn^*banner
 ||pic.gsm.vn^*banner
 ||pic.hui598.cn$domain=xiuren.org,image
@@ -1555,9 +1555,6 @@ phimgiz.net###lixi88-ads-left
 phimgiz.net###mobile-catfix
 phimgiz.net###pc-catfix
 phimgiz.net###sobet-ads-right
-phimhans.com##.player-right-ads
-phimhans.com##.preload-overlay
-phimhans.com##[class^="uniad-zonetype-preload-"]
 phimmedia.info,phimmedia.tv,hoathinh247.com##a[href^="http://bit.ly/"]
 phimmedia.me##.adpia_banner
 phimmoizz.net##.ad-center-980
@@ -1570,6 +1567,9 @@ phimnhe.net,netphimm.com##.preload
 phimonl.net##.catfish
 phimtt.com##.breadcrumb.block-title
 photobucket.com##.slider-contents
+phymhan.com##.player-right-ads
+phymhan.com##.preload-overlay
+phymhan.com##[class^="uniad-zonetype-preload-"]
 play.zing.vn##.ff-box
 plus.edu.vn###widget-11
 plus.edu.vn###widget-16
