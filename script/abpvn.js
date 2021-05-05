@@ -15,8 +15,8 @@
 // @grant       GM_registerMenuCommand
 // @include     http://*
 // @include     https://*
-// @version     2.2.89
-// @change-log  Add aphimhot.com popup remover
+// @version     2.2.90
+// @change-log  Remove sinhvienit.net
 // @run-at      document-end
 // ==/UserScript==
 /* String Prototype */
@@ -390,10 +390,6 @@ var fixSite = {
             {
                 url: 'https://forum.vietdesigner.net',
                 replace: 'redirect/?url='
-            },
-            {
-                url: 'http://sinhvienit.net',
-                replace: 'http://sinhvienit.net/goto/?'
             },
             {
                 url: 'http://phanmemaz.com/',
