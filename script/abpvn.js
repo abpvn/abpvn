@@ -15,8 +15,8 @@
 // @grant       GM_registerMenuCommand
 // @include     http://*
 // @include     https://*
-// @version     2.2.90
-// @change-log  Remove sinhvienit.net
+// @version     2.2.91
+// @change-log  Add auto redirect linksht.com
 // @run-at      document-end
 // ==/UserScript==
 /* String Prototype */
@@ -79,7 +79,7 @@ var byPass = {
         }
     },
     quickByPassLink: function () {
-        var regex = /123link\..*|phlame.pw|mshares\.co|mshare\.xyz|megaurl\.*|www.123l\.*|vinaurl\.*|share4you.pro|doxeaz10.site|derow.win|linkviet.net|ez4linkss.com|ckk.ai|link.codevn.net/;
+        var regex = /123link\..*|phlame.pw|mshares\.co|mshare\.xyz|megaurl\.*|www.123l\.*|vinaurl\.*|share4you.pro|doxeaz10.site|derow.win|linkviet.net|ez4linkss.com|ckk.ai|link.codevn.net|linksht.com/;
         var largeTimeoutHost = /share4you.pro|derow.win/;
         var autoCaptchaOnlyList = /megaurl\.*|vinaurl\.*|doxeaz10.site|linkviet.net|ez4linkss.com|ckk.ai|link.codevn.net/;
         if (regex.test(location.hostname)) {
@@ -93,6 +93,7 @@ var byPass = {
                     }
                     return false;
                 }
+                var link;
                 // Set up a new observer
                 var observer = new MutationObserver(function (mutations) {
                     mutations.forEach(function (mutation) {
@@ -101,7 +102,7 @@ var byPass = {
                             mutation.target.click();
                         }
                         if (mutation.attributeName === "href") {
-                            var link = mutation.target.getAttribute("href");
+                            link = mutation.target.getAttribute("href");
                             document.body.innerHTML = '<style>h1{color: #00dc58;}a{color: #015199}a h1{color: #015199;}</style><center><h1>ABPVN quick bypass đã hoạt động</h1><a href=\'https://abpvn.com/donate\'><h1>Ủng hộ ABPVN</h1></a><br/>Không tự chuyển trang? <a href=\'' + link + '\' title=\'Chuyển trang\'>Click vào đây</a></center>';
                             location.href = link;
                         }
@@ -114,6 +115,10 @@ var byPass = {
                 var button = document.getElementById('invisibleCaptchaShortlink') || document.querySelector('.download_1');
                 if (button) {
                     observer.observe(button, config);
+                } else if(document.querySelector('#originalLink')) {
+                    link = document.querySelector('#originalLink').getAttribute("href");
+                    document.body.innerHTML = '<style>h1{color: #00dc58;}a{color: #015199}a h1{color: #015199;}</style><center><h1>ABPVN quick bypass đã hoạt động</h1><a href=\'https://abpvn.com/donate\'><h1>Ủng hộ ABPVN</h1></a><br/>Không tự chuyển trang? <a href=\'' + link + '\' title=\'Chuyển trang\'>Click vào đây</a></center>';
+                    location.href = link;
                 } else {
                     var getLinkl = document.querySelector('.get-link');
                     var timeout = largeTimeoutHost.test(location.hostname) ? 6000 : 100;
