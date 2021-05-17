@@ -15,8 +15,8 @@
 // @grant       GM_registerMenuCommand
 // @include     http://*
 // @include     https://*
-// @version     2.2.91
-// @change-log  Add auto redirect linksht.com
+// @version     2.2.92
+// @change-log  Add remove redirect for tophanmem.com
 // @run-at      document-end
 // ==/UserScript==
 /* String Prototype */
@@ -115,7 +115,7 @@ var byPass = {
                 var button = document.getElementById('invisibleCaptchaShortlink') || document.querySelector('.download_1');
                 if (button) {
                     observer.observe(button, config);
-                } else if(document.querySelector('#originalLink')) {
+                } else if (document.querySelector('#originalLink')) {
                     link = document.querySelector('#originalLink').getAttribute("href");
                     document.body.innerHTML = '<style>h1{color: #00dc58;}a{color: #015199}a h1{color: #015199;}</style><center><h1>ABPVN quick bypass đã hoạt động</h1><a href=\'https://abpvn.com/donate\'><h1>Ủng hộ ABPVN</h1></a><br/>Không tự chuyển trang? <a href=\'' + link + '\' title=\'Chuyển trang\'>Click vào đây</a></center>';
                     location.href = link;
@@ -428,7 +428,11 @@ var fixSite = {
             {
                 url: 'https://romgoc.net',
                 replace: 'https://romgoc.net/redirect-to/?url='
-            }
+            },
+            {
+                url: 'https://tophanmem.com',
+                replace: 'https://tophanmem.com/redirect-to/?url='
+            },
         ];
         configs.forEach(function (config) {
             this.removeRedir(config);
