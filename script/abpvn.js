@@ -15,8 +15,8 @@
 // @grant       GM_registerMenuCommand
 // @include     http://*
 // @include     https://*
-// @version     2.2.92
-// @change-log  Add remove redirect for tophanmem.com
+// @version     2.2.93
+// @change-log  Fix megaup.net antiadblock
 // @run-at      document-end
 // ==/UserScript==
 /* String Prototype */
@@ -507,8 +507,11 @@ var adBlocker = {
         var allMgIdEl = document.querySelectorAll('[id*="ScriptRoot"]');
         if (allMgIdEl && allMgIdEl.length) {
             ABPVN.cTitle();
+            Logger.log('Removed mgIdAd placeholder');
             for (var i = 0; i < allMgIdEl.length; i++) {
-                allMgIdEl[i].id = 'ScriptRoot-removed-by-abpvn-' + Math.random();
+                if (location.hostname !== 'megaup.net') {
+                  allMgIdEl[i].id = 'ScriptRoot-removed-by-abpvn-' + Math.random();
+                }
                 allMgIdEl[i].innerHTML = '';
             }
         }
