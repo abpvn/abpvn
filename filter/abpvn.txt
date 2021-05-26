@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 202105251631
-! Title: ABPVN List [optimize filter]
-! Last modified: 25 May 2021 16:31 UTC+7
+! Version: 202105260946
+! Title: ABPVN List [optimize csp filter]
+! Last modified: 26 May 2021 09:46 UTC+7
 ! Expires: 1 days (update frequency)
 !
 ! ABPVN List filter
@@ -26,6 +26,7 @@ $popup,third-party,domain=megaurl.in|hamtruyen.com|phim1080z.com|phim1080zz.com|
 .tv/ads$image
 .vn/Ad/
 .vn/ads
+.vn/ads/
 .vn/c3s-ad/$xmlhttprequest
 .vn/qc/
 /24h-ad.
@@ -63,7 +64,7 @@ $popup,third-party,domain=megaurl.in|hamtruyen.com|phim1080z.com|phim1080zz.com|
 ||123nhadat.vn/uploads/banners
 ||123nhadatviet.com/Media/CK/banners
 ||123nhadatviet.net/Media/CK/banners/
-||123phim.top$csp=script-src 'self' * 'unsafe-eval'
+||123phim.top$csp=script-src 'self' 'unsafe-eval'
 ||24hmoney.vn/_nuxt/img/banner
 ||2banh.vn/igo/banner/
 ||2banh.vn/igo/shop2b/goracing/goracing-tet-300x250.jpg
@@ -90,7 +91,7 @@ $popup,third-party,domain=megaurl.in|hamtruyen.com|phim1080z.com|phim1080zz.com|
 ||animevietsub.tv^*.gif$image
 ||animevnn.com^*.gif
 ||api.xemtvhd.com$subdocument
-||appvn.com$csp=script-src 'self' * 'unsafe-inline'
+||appvn.com$csp=script-src 'self' 'unsafe-inline'
 ||assets-global.website-files.com/*.gif$image
 ||aydieso.90.link^*.gif
 ||az.mom/ads_data/
@@ -280,7 +281,7 @@ $popup,third-party,domain=megaurl.in|hamtruyen.com|phim1080z.com|phim1080zz.com|
 ||kenhvideoz.net^*.gif
 ||khogamepc.com/wp-content/plugins/simple-adblock-notice-pro/
 ||khogamepc.com/wp-content/uploads/*.gif
-||khophimhd.net$csp=script-src * 'self' 'unsafe-inline'
+||khophimhd.net$csp=script-src 'self' 'unsafe-inline'
 ||kiemhieptruyen.com/js/copy.js
 ||kienthuc.net.vn/*.ads
 ||kienthuc.net.vn/*banner.min.js
@@ -341,7 +342,7 @@ $popup,third-party,domain=megaurl.in|hamtruyen.com|phim1080z.com|phim1080zz.com|
 ||nhipsongdoanhnghiep.cuocsongantoan.vn/*.ads
 ||nhipsongdoanhnghiep.cuocsongantoan.vn/*banner
 ||notepad.vn/media/images/like68.jpg
-||nro.vn$csp=script-src self * 'unsafe-inline'
+||nro.vn$csp=script-src 'self' 'unsafe-inline'
 ||nv-ad-*.24hstatic.com/imageupload/uplo8ad/
 ||okmen.edu.vn^*.gif
 ||onecms.vn/*banner$image
@@ -550,9 +551,8 @@ $popup,third-party,domain=megaurl.in|hamtruyen.com|phim1080z.com|phim1080zz.com|
 ||zphimmoi.com/js/partner/$script
 ||zphimmoi.com/js/vtlai/movie/public/pad.js
 chosaigon.biz||chosaigon.biz/upload/LinkImg/$image
-safedownload.net$csp=script-src self * 'unsafe-eval' 'sha256-Fd/Qv7k3A0GqeyDDw9drCXHa0+zn9UjYCOFwAUXeJFo='
+safedownload.net$csp=script-src 'self' 'unsafe-eval' 'sha256-Fd/Qv7k3A0GqeyDDw9drCXHa0+zn9UjYCOFwAUXeJFo='
 utm_source=propellerads$popup
-vn/ads/
 ! ---------- Ad domain ----------
 ||188bongda.com^$third-party
 ||360game.vn^$popup,third-party
@@ -915,7 +915,7 @@ bongdaso.com##.sky_banner2
 bongdaso.com##blink
 bongdaso.com,xemtivisohd.com##.med_rec_banner1
 bongdatructuyen.vip##.btn_bet_live
-bongdatructuyen.vip,banthang.live,bongdatructuyen.vip##.hot-menu
+bongdatructuyen.vip,banthang.live##.hot-menu
 bongdazone.com##.text-link-sapo
 bongtron.tv,ghiban.tv##.BannerFixed
 bongtron.tv,ghiban.tv##.BannerStickyLeft
@@ -1682,14 +1682,14 @@ $popup,domain=hoihentai.com|viet69.co
 ||hentaivn.tv/qx/$subdocument
 ||hentaiz.pro/images/sponsor/
 ||lucky88.com^$popup,third-party
-||nungvl.net$csp=script-src * 'self' unsafe-inline
+||nungvl.net$csp=script-src 'self' 'unsafe-inline'
 ||rphang.online^*.gif
-||rphangvn.net$csp=script-src * 'self'
+||rphangvn.net$csp=script-src 'self'
 ||sexhayvc.com/popjs/$script
 ||sexmoi.club^*.gif$image
 ||sieukhungz.net^*.gif$image
 ||static.htvncdn.net/qx/$subdocument
-||tinhmotdem.asia$csp=script-src * 'self' 'unsafe-eval'
+||tinhmotdem.asia$csp=script-src 'self' 'unsafe-eval'
 ||tuoi69.com/balloon$script
 ||upsieutoc.com^*.gif$image,domain=thiendia88.com
 !---------- ABPVN Adult Element Hide ---------------
