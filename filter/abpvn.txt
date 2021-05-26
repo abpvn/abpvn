@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 202105250917
-! Title: ABPVN List bancavip.xyz]
-! Last modified: 25 May 2021 09:17 UTC+7
+! Version: 202105260947
+! Title: ABPVN List [optimize csp filter]
+! Last modified: 26 May 2021 09:47 UTC+7
 ! Expires: 1 days (update frequency)
 !
 ! ABPVN List filter
@@ -20,8 +20,8 @@ $webrtc,domain=forum.xda-developers.com|dailyuploads.net|uploadocean.com|appvn.c
 &adformat=
 &aduid
 &adunit=
-*$csp=default-src 'self' * 'unsafe-inline' 'unsafe-eval',domain=forum.xda-developers.com
-*$csp=script-src 'self' * 'unsafe-eval',domain=yts.mx|feurl.com
+*$csp=default-src 'self' 'unsafe-inline' 'unsafe-eval',domain=forum.xda-developers.com
+*$csp=script-src 'self' 'unsafe-eval',domain=yts.mx|feurl.com
 .admicro.
 .codes/*.js$script,domain=nettruyen.com|nhattruyen.com|anime47.com
 .com/ads$domain=~anime47.com
@@ -237,7 +237,7 @@ _ads_
 ||chothuesaigon.net^*.gif
 ||chovinh.com/data/Siropu/*.gif$image
 ||chuanmen.edu.vn^*.gif
-||clipconverter.cc$csp=default-src 'self' * 'unsafe-inline'
+||clipconverter.cc$csp=default-src 'self' 'unsafe-inline'
 ||cloudfront.net/?cdlad=
 ||cloudfront.net/atrk.js
 ||cloudfront.net^$script,domain=shink.me|short.am|onhax.me|megaurl.in
@@ -328,7 +328,7 @@ _ads_
 ||i0.wp.com/img.media3s.xyz/branch/
 ||i0.wp.com^*.gif$domain=vietrao.com
 ||iamcdn.net/players/playera.dmins.js
-||igg-games.cc$csp=script-src * 'self' 'unsafe-eval'
+||igg-games.cc$csp=script-src 'self' 'unsafe-eval'
 ||igo.5giay.vn/mobile/
 ||igo.5giay.vn^*.gif
 ||i-imgur-com.cdn.ampproject.org$domain=101vn.com,image
@@ -364,7 +364,7 @@ _ads_
 ||kenhvideo.com^*.gif
 ||ketchapp.org/crosspromo^
 ||ketqua.vn/uploads/images/*.gif
-||khophimhd.net$csp=script-src * 'self' 'unsafe-inline'
+||khophimhd.net$csp=script-src 'self' 'unsafe-inline'
 ||khuyenmaivang.vn$domain=5giay.vn
 ||kickass.best/c.js
 ||kickass.best/n/
@@ -412,7 +412,7 @@ _ads_
 ||nhanthuong88.com^$popup,third-party
 ||nhatrangclub.vn/files/
 ||notepad.vn/media/images/like68.jpg
-||nro.vn$csp=script-src self * 'unsafe-inline'
+||nro.vn$csp=script-src 'self' 'unsafe-inline'
 ||nv-ad-*.24hstatic.com/imageupload/upload/
 ||octaengine.com^$subdocument,domain=traderviet.com
 ||okmen.edu.vn^*.gif
@@ -1983,7 +1983,7 @@ $webrtc,domain=daxab.com
 ||lucky88.com^$popup,third-party
 ||luscious.net/luscious.js
 ||newdonate.com^
-||nungvl.net$csp=script-src * 'self' unsafe-inline
+||nungvl.net$csp=script-src 'self' unsafe-inline
 ||o333o.com^
 ||oupe71eiun.com^
 ||p.123lnk.com^$script
@@ -1995,7 +1995,7 @@ $webrtc,domain=daxab.com
 ||pussl48.com^
 ||resalag.com^
 ||rphang.online^*.gif
-||rphangvn.net$csp=script-src 'self' *
+||rphangvn.net$csp=script-src 'self'
 ||runmewivel.com^
 ||sexhayvc.com/popjs/$script
 ||sexmoi.club^*.gif$image
