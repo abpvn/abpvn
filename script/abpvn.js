@@ -15,8 +15,8 @@
 // @grant       GM_registerMenuCommand
 // @include     http://*
 // @include     https://*
-// @version     2.2.93
-// @change-log  Fix megaup.net antiadblock
+// @version     2.2.94
+// @change-log  Update domain + remove outdate func
 // @run-at      document-end
 // ==/UserScript==
 /* String Prototype */
@@ -302,19 +302,6 @@ var fixSite = {
         var head = document.getElementsByTagName('head')[0];
         head.appendChild(css_tag);
     },
-    maclife_vn: function () {
-        if (this.url.startWith('https://maclife.vn/')) {
-            var allShortUrl = document.querySelectorAll('a[rel]');
-            var count = 0;
-            for (var i = 0; i < allShortUrl.length; i++) {
-                if (allShortUrl[i].innerText.indexOf('http') === 0) {
-                    allShortUrl[i].setAttribute('href', allShortUrl[i].innerText);
-                    count++;
-                }
-            }
-            Logger.info("Đã xóa " + count + " link rút gọn!");
-        }
-    },
     fakelinkRemover: function () {
         if (this.url.startWith('https://ibongda.vip') || this.url.startWith('https://thevang.tv') || this.url.startWith('https://banthang.live/') || this.url.startWith('https://tructiepbongda.vip/') || this.url.startWith('https://dabong.net/') || this.url.startWith('https://bongda365.tv/') || this.url.startWith('https://ibongda.live/') || this.url.startWith('https://tructiepbongda.pro/')) {
             ABPVN.cTitle();
@@ -347,8 +334,8 @@ var fixSite = {
             };
         }
     },
-    kickass_best: function () {
-        if (this.url.startWith('https://kickass.best')) {
+    kickass_cc: function () {
+        if (this.url.startWith('https://kickass2.cc')) {
             var allFakeA = document.querySelectorAll('a[href^="https://mylink.cx/?url="]');
             var count = 0;
             for (var i = 0; i < allFakeA.length; i++) {
@@ -444,8 +431,7 @@ var fixSite = {
             this.removeRedirect();
         }
         this.antiAdblockRemover();
-        this.maclife_vn();
-        this.kickass_best();
+        this.kickass_cc();
         this.fakelinkRemover();
     }
 };
@@ -510,7 +496,7 @@ var adBlocker = {
             Logger.log('Removed mgIdAd placeholder');
             for (var i = 0; i < allMgIdEl.length; i++) {
                 if (location.hostname !== 'megaup.net') {
-                  allMgIdEl[i].id = 'ScriptRoot-removed-by-abpvn-' + Math.random();
+                    allMgIdEl[i].id = 'ScriptRoot-removed-by-abpvn-' + Math.random();
                 }
                 allMgIdEl[i].innerHTML = '';
             }
