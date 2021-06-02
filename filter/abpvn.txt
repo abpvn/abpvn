@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 202106021117
-! Title: ABPVN List [90phut.online]
-! Last modified: 02 Jun 2021 11:17 UTC+7
+! Version: 202106021730
+! Title: ABPVN List [Remove dead domain]
+! Last modified: 02 Jun 2021 17:30 UTC+7
 ! Expires: 1 days (update frequency)
 !
 ! ABPVN List filter
@@ -23,13 +23,13 @@ $webrtc,domain=forum.xda-developers.com|dailyuploads.net|uploadocean.com|appvn.c
 *$csp=default-src 'self' 'unsafe-inline' 'unsafe-eval',domain=forum.xda-developers.com
 *$csp=script-src 'self' 'unsafe-eval',domain=yts.mx|feurl.com
 .admicro.
-.codes/*.js$script,domain=nettruyen.com|nhattruyen.com|anime47.com
+.codes/*.js$script,domain=nhattruyen.com|anime47.com
 .com/ads$domain=~anime47.com
 .com/cpc/$script
 .com/qc/
 .com/vast/$xmlhttprequest
 .engine?id=
-.me/*.js$script,domain=nettruyen.com|nhattruyen.com|anime47.com
+.me/*.js$script,domain=nhattruyen.com|anime47.com
 .net/ads.
 .net/Ads/
 .net/cpf/$script
@@ -327,7 +327,6 @@ _ads_
 ||hosocongty.vn/uploads/linksite/
 ||hotnhat.com.vn/images/*.$image,third-party
 ||i.ibb.co^*.gif$domain=mmo4me.com
-||i.imacdn.com^$image,domain=phim1080.net
 ||i.imgur.com$domain=chophanthiet.us|nhacdj.vn|phimmedia.me|vuviphim.com|trochoiviet.com|animet.net|diendanit.net|banbuondalat.com|khoedep.vn
 ||i.imgur.com^*.gif$domain=8bongda.com|bongdatv.net|tructiepbongda.com|tvz.101vn.com|xemphimon.com|xemtivingon.com|tvhai.org|banh24h.com|mythethao.com|phim.media|phimonl.net|phimgiz.net|binhluan.tv|phimnhe.net|kingphimz.net|megalink.vip|tivi4k.com|tvzingvn.net|bilutvs.net|motphims.net|binhluanvidamme.online|phut90.online|phut91.online|topgamehot.net|fimnhe.net
 ||i.k8info.com/images/promo/$third-party
@@ -341,7 +340,6 @@ _ads_
 ||igo.5giay.vn^*.gif
 ||i-imgur-com.cdn.ampproject.org$domain=101vn.com,image
 ||i-imgur-com.cdn.ampproject.org/i/s/cdn.bongdadem.net/2020/11/lienhe.png
-||i-imgur-com.cdn.ampproject.org^*.gif$domain=mitomtv.com|keonhacai1.net
 ||image.24h.com.vn/*banner
 ||image.diaoconline.vn/banner-dool/$domain=diaoconline.vn
 ||image.thuvienvatly.com/home/images/banners/
@@ -435,8 +433,6 @@ _ads_
 ||phanmemdietvirus.com.vn$popup,third-party
 ||phanthiet24h.com/bannerqc/
 ||phim1080.me/sponsor/
-||phim1080.net/banner/
-||phim1080.net/sponsor
 ||phim18z.net/assets/themes/js/wonderfarm$script
 ||phimchat.tv/public/images/banner/$image
 ||phimchieurap.vn$popup,domain=blogtruyen.vn
@@ -457,7 +453,7 @@ _ads_
 ||pic.hui598.cn$domain=xiuren.org,image
 ||pl.ventunotech.com/plugins/cntplayer/ventunoSmartPlayer.js$domain=truyenfull.net
 ||plus.edu.vn/js/jquery/openwindow.js
-||postimg.cc^*.gif$domain=tivi4k.com|keonhacai1.net|tructiepbongda.com|tvz.101vn.com|8bongda.com|xemtivisohd.com
+||postimg.cc^*.gif$domain=tivi4k.com|tructiepbongda.com|tvz.101vn.com|8bongda.com|xemtivisohd.com
 ||qtcshop.com/images/$third-party
 ||quangcaosanpham.com/images/$third-party
 ||rada.vn/data/File/$third-party
@@ -492,7 +488,6 @@ _ads_
 ||shink.me/js/p.$script
 ||shink.me/js/pd.js
 ||shink.me/s/$popup
-||shoppanda.co/partners/
 ||sohagame.vcmedia.vn/swf/
 ||solebux.com/n2.gif
 ||sosanhnha.com/assets/banner/
@@ -883,7 +878,6 @@ utm_source=propellerads$popup
 ||explorads.com^
 ||eyeota.net^
 ||ezoic.net^$third-party
-||fabet.info^$popup
 ||fabrkrup.com^
 ||fb88sports.com^$third-party
 ||fbcdn2.com^
@@ -931,7 +925,6 @@ utm_source=propellerads$popup
 ||homeyloanedmes.work^
 ||hosupshunk.com^
 ||hqq.to^$popup
-||huvang88.com^$popup
 ||i.gyazo.com^$domain=~gyazo.com
 ||iclickcdn.com^$script
 ||imad24.com^
@@ -975,10 +968,8 @@ utm_source=propellerads$popup
 ||log.user-api.com^
 ||lotsnippier.cam^
 ||lowtyroguer.com^$popup
-||lucky88.live^$popup
 ||luvaihoo.com^
 ||maxonclick.com^
-||may88.com^$popup
 ||may88win.com^$popup
 ||media.jxf88.com^$third-party
 ||media2d.net^$third-party
@@ -1125,7 +1116,6 @@ utm_source=propellerads$popup
 ||streesusa.info^$third-party,popup
 ||sugardaddy.com^
 ||superfastcdn.com^$third-party
-||sv88.com^$popup
 ||sw1block.com^$third-party
 ||sw2block.com^
 ||syncwowsails.com^
@@ -1515,6 +1505,7 @@ hoathinh247.com###catfish1
 hoathinh247.com##.catfish2
 hoathinh247.com##.pcbanner
 hoathinh247.com##.widget-area > div:nth-of-type(4)
+hoathinh247.com##a[href^="http://bit.ly/"]
 hoathinh247.com,beeng.net,cryptoviet.com##.fancybox-overlay
 hocvientruyentranh.net###float_right
 hocvientruyentranh.net###popup-giua-man-hinh
@@ -1550,8 +1541,6 @@ kenhvideo.com##.bannerhome1
 keonhacai.net###med_rec_banner3
 keonhacai.net##div.AdsDesktop-header
 keonhacai.net##div.bannerm
-keonhacai1.net##.ctnz
-keonhacai1.net##.page_bg > .wrapper > .page > .container-inner > .ctn
 ketqua.net##.adsb
 ketqua.vn###left_ads
 ketqua247.com###adsModal
@@ -1649,7 +1638,7 @@ onhax.me##.lelabp.andro-a-holder
 outlook.live.com##._3_hHr3kfEhbNYRFM5YJxH9
 phanmemaz.com##A[href^="https://href.li/?http://trafflict.com/r/"]
 phephimz.net###catfish
-phim.media,phimmedia.me,phimmedia.tv##.adv-300-right
+phim.media,phimmedia.me##.adv-300-right
 phim1080z.com,phim1080zz.com###popup-under
 phim1080z.com,phim1080zz.com##.banner-preload-link
 phim1080z.com,phim1080zz.com##.popup-link
@@ -1660,7 +1649,6 @@ phimgiz.net###pc-catfix
 phimgiz.net###sobet-ads-right
 phimhdonlinez.com##.idmuvi-topbanner-aftermenu
 phimmedia.me##.adpia_banner
-phimmedia.tv,hoathinh247.com##a[href^="http://bit.ly/"]
 phimnhe.net##.ballon-left
 phimnhe.net##.catfix
 phimnhe.net,netphimm.com##.preload
@@ -1890,7 +1878,7 @@ zphimmoi.com##.uniad-zonetype-preload-overlay
 @@#$image,domain=autoitvn.com|truyentranhnhamnhi.com|phim440.cf|dropapk.to|khogamepc.com
 @@$websocket,domain=playhydrax.com|hydracdn.network|geoip.redirect-ads.com
 @@/ads.$script,domain=igg-games.com
-@@/ads.js$domain=chiasenhac.vn|hplus.com.vn|phimmedia.tv|fptplay.vn|nhacpro.net|khogamepc.com
+@@/ads.js$domain=chiasenhac.vn|hplus.com.vn|fptplay.vn|nhacpro.net|khogamepc.com
 @@/ads/button.png
 @@/ads/play.png
 @@/ads/xemphim.png
@@ -2030,7 +2018,6 @@ $webrtc,domain=daxab.com
 ||rphangvn.net$csp=script-src 'self'
 ||runmewivel.com^
 ||sexhayvc.com/popjs/$script
-||sexmoi.club^*.gif$image
 ||sextop.info/asset/default/player/plugins/vast-8.4.13.js
 ||sieukhungz.net^*.gif$image
 ||static.htvncdn.net/qx/$subdocument
