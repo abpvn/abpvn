@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 202106031702
+! Version: 202106031732
 ! Title: ABPVN List [optimize filter]
-! Last modified: 03 Jun 2021 17:02 UTC+7
+! Last modified: 03 Jun 2021 17:32 UTC+7
 ! Expires: 1 days (update frequency)
 !
 ! ABPVN List filter
@@ -312,9 +312,8 @@ $popup,third-party,domain=megaurl.in|hamtruyen.com|phim1080z.com|phim1080zz.com|
 ||media.coccoc.com$image,object,popup
 ||media.ex-cdn.com/*/qc$image
 ||media.giadinhvaphapluat.vn/images/*banner$image
-||media.giphy.com/media/$image,domain=animevietsub.tv|phimgiz.net|thevangtv.vip|vaoroi.tv|banthang.live|ibongda.pro|tructiepbongda.pro|bongda365.tv
+||media.giphy.com/media/$image,domain=animevietsub.tv|phimgiz.net|vaoroi.tv|banthang.live|ibongda.pro|tructiepbongda.pro|bongda365.tv
 ||media.nghean24h.vn$image
-||media.store123doc.com/images/web_2/tuyen-dung-min.png
 ||media3.scdn.vn^*/banners/
 ||mi2manga.mobi^*.gif
 ||minhngoc.net^*.gif
@@ -1089,7 +1088,9 @@ htv3tv.com###ahtv3
 htv3tv.com###bdv_mob_top1
 htv3tv.com###Box_mc_1
 htv3tv.com###in_player_close
+ibongda.pro##.adAboveBottom
 ibongda.pro##.content_live
+ibongda.pro##.divdatcuoc
 ibongda.pro##.popup-ads-banner
 ibongda.pro##a[href^="https://ads.sporttv.today?code=adsButtonCuoc"]
 ibongda.pro,banthang.live##.float-left
@@ -1177,13 +1178,6 @@ nhatrangclub.vn##.show_qc
 nhatrangclub.vn##.show-qc-home
 nhipsongdoanhnghiep.cuocsongantoan.vn##.simplebanner
 noithatphuongdong.vn##.news-popup
-nthevangtv.vip##.alignRight.box_detail_video_leftMenu
-nthevangtv.vip##.blow_player.box_detail_banner
-nthevangtv.vip##.box_detail_video_right
-nthevangtv.vip##.box_detail_video_text
-nthevangtv.vip##.center-banners
-nthevangtv.vip,ibongda.pro##.adAboveBottom
-nthevangtv.vip,ibongda.pro##.divdatcuoc
 o.voz.vn##.sponsor
 o.voz.vn##TD[width="160"]
 ocumeo.com###go88-mobile-catfish
@@ -1286,21 +1280,11 @@ thedo.tv##.ads-header-mobile
 thedo.tv##.tatqc
 thethao247.vn###lc-girl-block-en_2
 thethao247.vn##.box_sponsor
-thevangtv.vip###loadingPlayer [class^="ad"]
-thevangtv.vip###mainAds
-thevangtv.vip##.ads-menu-mobile
-thevangtv.vip##.adsMobile
 thichxemphim.net##.fixed-bottom
 thitruongsi.com#?#.container.my-3:-abp-has(a[href^="https://ads.thitruongsi.com/"])
 thitruongtaichinhtiente.vn##.bannerobile
 thitruongtaichinhtiente.vn##.bannerTOP1
 thitruongtaichinhtiente.vn##.pc.bannerAuto
-thoibao.com###sidebar-primary-sidebar
-thoibao.com##.adcontainer.container
-thoibao.com##.bs-vc-block.vc_clearfix.wpb_content_element.wpb_images_carousel
-thoibao.com##.col-xs-8.sidebar-col
-thoibao.com##.dqjalsh-column-1
-thoibao.com##.vc_align_left
 thoibaotaichinhvietnam.vn##.Content-QC
 thoibaotaichinhvietnam.vn##.items-qc
 thoibaotaichinhvietnam.vn##.QC-CM
@@ -1342,17 +1326,17 @@ tivi4k.com##.topbaner
 tivi4k.com##[id^="Ads_"]
 topcode.vn###floating_banner_left
 topcode.vn###floating_banner_right
-topphimhdz.net,topphimmoiz.net###ballon_content_left
-topphimhdz.net,topphimmoiz.net###ballon_content_right
-topphimhdz.net,topphimmoiz.net###closePC
-topphimhdz.net,topphimmoiz.net###fixed_bottom
-topphimhdz.net,topphimmoiz.net###float_content_left
-topphimhdz.net,topphimmoiz.net###float_content_right
-topphimhdz.net,topphimmoiz.net###hide_ballon_left
-topphimhdz.net,topphimmoiz.net###hide_ballon_right
-topphimhdz.net,topphimmoiz.net###hide_float_left
-topphimhdz.net,topphimmoiz.net###hide_float_right
-topphimhdz.net,topphimmoiz.net,animet.net##.gnarty-offads
+topphimhdz.net,motphimmoi.net###ballon_content_left
+topphimhdz.net,motphimmoi.net###ballon_content_right
+topphimhdz.net,motphimmoi.net###closePC
+topphimhdz.net,motphimmoi.net###fixed_bottom
+topphimhdz.net,motphimmoi.net###float_content_left
+topphimhdz.net,motphimmoi.net###float_content_right
+topphimhdz.net,motphimmoi.net###hide_ballon_left
+topphimhdz.net,motphimmoi.net###hide_ballon_right
+topphimhdz.net,motphimmoi.net###hide_float_left
+topphimhdz.net,motphimmoi.net###hide_float_right
+topphimhdz.net,motphimmoi.net,animet.net##.gnarty-offads
 topthuthuat.com##.widget.ai_widget
 topthuthuat.com,anonyviet.com,canhrau.com##.widget.widget_text
 traderviet.com##.homePageAds
