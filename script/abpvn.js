@@ -15,8 +15,8 @@
 // @grant       GM_registerMenuCommand
 // @include     http://*
 // @include     https://*
-// @version     2.2.95
-// @change-log  Add beta.shortearn.eu auto by pass
+// @version     2.2.96
+// @change-log  Add topphimhd.info video ads removal
 // @run-at      document-end
 // ==/UserScript==
 /* String Prototype */
@@ -349,6 +349,16 @@ var fixSite = {
             Logger.info("Removed " + count + " fake link in " + location.hostname);
         }
     },
+    topphimhd_info: function () {
+        if (this.url.startWith('http://lb.topphimhd.info')) {
+            var adSourceEl = document.querySelector('[data-ads=""]');
+            if (adSourceEl) {
+                adSourceEl.remove();
+                Logger.log("Removed ads source");
+                ABPVN.cTitle();
+            }
+        }
+    },
     removeRedir: function (config) {
         if (this.url.match(new RegExp(config.url, 'g')) || this.url.startWith(config.url)) {
             ABPVN.cTitle();
@@ -433,6 +443,7 @@ var fixSite = {
         this.antiAdblockRemover();
         this.kickass_cc();
         this.fakelinkRemover();
+        this.topphimhd_info();
     }
 };
 //Ad blocker script
