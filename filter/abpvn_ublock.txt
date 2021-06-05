@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 202106051852
-! Title: ABPVN List [motphimmoi.net]
-! Last modified: 05 Jun 2021 18:52 UTC+7
+! Version: 202106052022
+! Title: ABPVN List [elemhide.txt]
+! Last modified: 05 Jun 2021 20:22 UTC+7
 ! Expires: 1 days (update frequency)
 !
 ! ABPVN List filter
@@ -14,6 +14,7 @@
 ! Facebook Fanpage: https://www.facebook.com/abpvn.org
 ! Forum: https://voz.vn/t/abpvn-chan-quang-cao-cho-nguoi-viet.25778/
 ! Report new issue on github: https://github.com/abpvn/abpvn/issues/new
+
 ! ---------- Generic Blocking Rules ----------
 $popup,third-party,domain=megaurl.in|hamtruyen.com|phim1080z.com|phim1080zz.com|bilutivi.net|animehay.tv
 .codes/*.js$script,domain=nhattruyen.com|anime47.com
@@ -377,6 +378,7 @@ utm_source=propellerads$popup
 ||plus.edu.vn/js/jquery/openwindow.js
 ||popupmaker.com^$domain=razorphimzz.com
 ||postimg.cc^*.gif$domain=tivi4k.com|tructiepbongda.xyz|tvz.101vn.com|8bongda.com|xemtivisohd.com|xphimmoi.net
+||pre4sentre8dhf.com^$script,domain=truyentranhaudio.com
 ||purgrobi.com/ub.pi$third-party
 ||qc-static.coccoc.com
 ||qtcshop.com/images/$third-party
@@ -490,7 +492,6 @@ utm_source=propellerads$popup
 ||truyencv.com/js/load_video.js$script
 ||truyencv.com^*jwplayer.js
 ||truyentranh8.net^*.gif
-||truyentranhaudio.com/app/manga/themes/light/assets/images/logo.png$popup
 ||truyentranhtuan.com/wp-content/banners
 ||truyentranhtuan.com^*.gif$image
 ||truyentranhvang.net/images/image.jpg$image
@@ -1154,6 +1155,7 @@ loinhacsong.com##.qchead
 loinhacsong.com##a[href="https://loinhacsong.com/blog/huong-dan-go-chan-quang-cao-doi-voi-website-loi-nhac-song/"]
 lsvn.vn##p.mb-1
 luyenthithukhoa.vn#?#div.custom:-abp-has(.adsbygoogle)
+m.afamily.vn###adm-slot-7234
 m.batdongsan.com.vn##.aditem
 m.bongdaplus.vn###video-wrapper
 m.hamtruyen.com###catfish1
@@ -1211,7 +1213,6 @@ phim.xemchuatv.net##.BannerFixedLeft_content
 phim.xemchuatv.net##.BannerFixedRight_content
 phim.xemchuatv.net##.BannerStickyLeft_content
 phim.xemchuatv.net##.BannerStickyRight_content
-phim.xemchuatv.net##.in.fade.modal-backdrop
 phim1080z.com,phim1080zz.com###popup-under
 phim1080z.com,phim1080zz.com##.banner-preload-link
 phim1080z.com,phim1080zz.com##.popup-link
@@ -1352,7 +1353,9 @@ tivi4k.com##.topbaner
 tivi4k.com##[id^="Ads_"]
 topcode.vn###floating_banner_left
 topcode.vn###floating_banner_right
+topphim18.net###mobile-preload-modal
 topphim18.net##.float-top
+topphim18.net,phim.xemchuatv.net##.in.fade.modal-backdrop
 topphimhdz.net,motphimmoi.net###ballon_content_left
 topphimhdz.net,motphimmoi.net###ballon_content_right
 topphimhdz.net,motphimmoi.net###closePC
@@ -1393,6 +1396,9 @@ truyensieuhay.com###floatright
 truyensieuhay.com##.video_wrapper
 truyentranh.net###balloon-ads
 truyentranh86.com##.embed-responsive
+truyentranhaudio.com###modal-ads
+truyentranhaudio.com##.in.fade.modal-backdrop
+truyentranhaudio.com##html:style(height: auto !important; overflow: auto !important)
 truyentranhlh.net##.preload1
 truyentranhlh.net##.preload2
 truyentranhtam.com,mangaxy.com,truyentranh86.com##.tt8quangcao
