@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 202106051706
-! Title: ABPVN List [tintucvietnam.vn]
-! Last modified: 05 Jun 2021 17:06 UTC+7
+! Version: 202106051734
+! Title: ABPVN List [motphimmoi.net]
+! Last modified: 05 Jun 2021 17:34 UTC+7
 ! Expires: 1 days (update frequency)
 !
 ! ABPVN List filter
@@ -2122,4 +2122,6 @@ xnxx.com###ad-header-mobile
 xnxx.com###content-ad-top-zone
 zphimmoi.com##[id^="uniad-zone"]
 ! ---------Rule for only uBO------
-lb.topphimhd.info##+js(ra, data-ads, ul)
+lb.topphimhd.info##+js(remove-attr, data-ads, ul)
+motphimmoi.net##+js(addEventListener-defuser, load, /popunder/)
+motphimmoi.net##+js(remove-attr, onclick, body)
