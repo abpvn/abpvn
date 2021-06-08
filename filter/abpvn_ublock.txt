@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 202106081424
-! Title: ABPVN List [nguyentinhblog.com]
-! Last modified: 08 Jun 2021 14:24 UTC+7
+! Version: 202106081700
+! Title: ABPVN List [truyentranhaudio.com uBO]
+! Last modified: 08 Jun 2021 17:00 UTC+7
 ! Expires: 1 days (update frequency)
 !
 ! ABPVN List filter
@@ -2135,7 +2135,7 @@ zphimmoi.com##[id^="uniad-zone"]
 lb.topphimhd.info##+js(remove-attr, data-ads, ul)
 motphimmoi.net##+js(addEventListener-defuser, load, /popunder/)
 motphimmoi.net,fullcrackpc.com##+js(remove-attr, onclick, body)
-truyentranhaudio.com##^script:has-text(__CF$cv$params)
+truyentranhaudio.com##^script:has-text($._Ev=$.BC;)
 youtube.com##+js(json-prune, 2.playerResponse.adPlacements playerResponse.adPlacements playerResponse.playerAds adPlacements playerAds)
 youtube.com##+js(json-prune, 2.playerResponse.adPlacements)
 youtube.com##+js(json-prune, playerResponse.adPlacements)
