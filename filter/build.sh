@@ -1,4 +1,5 @@
 #!/bin/sh
+export LC_ALL=C
 # copy to tmp
 cp -r src/abpvn_adult.txt src/abpvn_adult.tmp
 cp -r src/abpvn_adult_elemhide.txt src/abpvn_adult_elemhide.tmp
