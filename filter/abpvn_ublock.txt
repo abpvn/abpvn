@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 202106290629
-! Title: ABPVN List [vieon.vn]
-! Last modified: 29 Jun 2021 06:29 UTC+7
+! Version: 202106290647
+! Title: ABPVN List [youtube.com]
+! Last modified: 29 Jun 2021 06:47 UTC+7
 ! Expires: 1 days (update frequency)
 !
 ! ABPVN List filter
@@ -2206,9 +2206,10 @@ xnxx.com###content-ad-top-zone
 ! ---------Rule only for uBlock Origin------
 fembed.com,femax20.com##+js(addEventListener-defuser, click, open)
 lb.topphimhd.info##+js(remove-attr, data-ads, ul)
+m.youtube.com,www.youtube.com,music.youtube.com,youtube-nocookie.com##+##+js(set-constant, playerResponse.adPlacements, undefined)
+m.youtube.com,www.youtube.com,music.youtube.com,youtube-nocookie.com##+js(json-prune, 0.playerResponse.adPlacements 0.playerResponse.playerAds 1.playerResponse.adPlacements 1.playerResponse.playerAds 2.playerResponse.adPlacements 2.playerResponse.playerAds 3.playerResponse.adPlacements 3.playerResponse.playerAds 4.playerResponse.adPlacements 4.playerResponse.playerAds 5.playerResponse.adPlacements 5.playerResponse.playerAds 6.playerResponse.adPlacements 6.playerResponse.playerAds 7.playerResponse.adPlacements 7.playerResponse.playerAds 8.playerResponse.adPlacements 8.playerResponse.playerAds 9.playerResponse.adPlacements 9.playerResponse.playerAds playerResponse.adPlacements playerResponse.playerAds ytInitialPlayerResponse.adPlacements ytInitialPlayerResponse.playerAds adPlacements playerAds)
+m.youtube.com,www.youtube.com,music.youtube.com,youtube-nocookie.com##+js(set, ytInitialPlayerResponse.adPlacements, undefined)
 motphimmoi.net##^script:has-text(popunder)
 motphimmoi.net,fullcrackpc.com##+js(remove-attr, onclick, body)
 phimgiz.net##^script:has-text(popurl)
 truyentranhaudio.com##^script:has-text($._Ev=$.BC;)
-www.youtube.com,music.youtube.com,youtube-nocookie.com##+js(json-prune, 0.playerResponse.adPlacements 0.playerResponse.playerAds 1.playerResponse.adPlacements 1.playerResponse.playerAds 2.playerResponse.adPlacements 2.playerResponse.playerAds 3.playerResponse.adPlacements 3.playerResponse.playerAds 4.playerResponse.adPlacements 4.playerResponse.playerAds 5.playerResponse.adPlacements 5.playerResponse.playerAds 6.playerResponse.adPlacements 6.playerResponse.playerAds 7.playerResponse.adPlacements 7.playerResponse.playerAds 8.playerResponse.adPlacements 8.playerResponse.playerAds 9.playerResponse.adPlacements 9.playerResponse.playerAds playerResponse.adPlacements playerResponse.playerAds ytInitialPlayerResponse.adPlacements ytInitialPlayerResponse.playerAds adPlacements playerAds)
-www.youtube.com,music.youtube.com,youtube-nocookie.com##+js(set, ytInitialPlayerResponse.adPlacements, null)
