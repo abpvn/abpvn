@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 202107020807
-! Title: ABPVN List [ketqua1.net]
-! Last modified: 02 Jul 2021 08:07 UTC+7
+! Version: 202107020811
+! Title: ABPVN List [remove ketqua.net]
+! Last modified: 02 Jul 2021 08:11 UTC+7
 ! Expires: 1 days (update frequency)
 !
 ! ABPVN List filter
@@ -43,7 +43,6 @@ $popup,third-party,domain=megaurl.in|hamtruyen.com|phim1080z.com|phim1080zz.com|
 /dc.motphimz.net/*.gif
 /images.accesstrade.vn/
 /images/qc/*
-/ketqua.net/vid/qc/
 /meta.vn/ajx/Ajx_TopProducts2.aspx$domain=quantrimang.com|download.com.vn
 /polyad.
 /pre-roll.xml$~third-party
@@ -279,7 +278,6 @@ utm_source=propellerads$popup
 ||img.dothi.net^*.gif
 ||img.hayhaytv.com/popup/
 ||img.keonhacai.net/img/gmodules.php?url=*.gif$image
-||img.ketqua.net^*.gif
 ||img.ketqua1.net^*.gif
 ||img.media3s.xyz/pp.js
 ||img.steamaz.co^*.gif$domain=huphimzz.com|xemphimvui.net|phim18z.net
@@ -446,8 +444,6 @@ utm_source=propellerads$popup
 ||static.homedy.com/*banner-
 ||static.htvonline.com.vn/layout/images/*_banner.jpg
 ||static.htvonline.com.vn/layout/images/lienhequangcao.png
-||static.ketqua.net/adv_imgs
-||static.ketqua.net/img/qc/
 ||static.mepuzz.com/sdk/v2/MePuzzServiceWorker.min.js
 ||static.nhaccuatui.com/imgqc/
 ||static.voocdn.com^*.gif$domain=dongphym.com|dongphym.co
@@ -1168,8 +1164,6 @@ kenhsinhvien.net##div[id^="uniad-loc"]
 keonhacai.net###med_rec_banner3
 keonhacai.net##div.AdsDesktop-header
 keonhacai.net##div.bannerm
-ketqua.net##.adsb
-ketqua.net##div[id^="baloon"]
 ketqua1.net##.baloon
 ketqua1.net##.col-sm-10.kqcenter
 ketqua1.net##.kqbackground.vien ~ a[target="_blank"]
@@ -1474,7 +1468,7 @@ tvhai.org##.ad_location
 tvz.101vn.com,bongdaso.com,keonhacai.net###right_float
 tvz.101vn.com,keonhacai.net###fl813691
 v4u.vn##.Flagrow-Ads-under-header
-valvrareteam.com,ketqua.net##a[rel*="nofollow"]
+valvrareteam.com[rel*="nofollow"]
 vanhien.vn##.ng-isolate-scope
 vatlypt.com##a[target="_blank"][rel="dofollow"]
 vietbao.com###nwwg_5609
