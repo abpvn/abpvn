@@ -1,6 +1,7 @@
 ! ---------Rule only for uBlock Origin------
 fembed.com,femax20.com##+js(addEventListener-defuser, click, open)
 lb.topphimhd.info##+js(remove-attr, data-ads, ul)
+linkneverdie.net##+js(abort-on-property-read, arrayAd)
 motphimmoi.net##^script:has-text(popunder)
 motphimmoi.net,fullcrackpc.com##+js(remove-attr, onclick, body)
 truyentranhaudio.com##^script:has-text($._Ev=$.BC;)
