@@ -1,6 +1,7 @@
 ! ---------Rule only for uBlock Origin------
 fullcrackpc.com##+js(addEventListener-defuser, load, /popunder/)
 lb.topphimhd.info##+js(remove-attr, data-ads, ul)
+linkneverdie.net##+js(abort-on-property-read, arrayAd)
 motphimmoi.net##+js(remove-attr, onclick, body)
 motphimmoi.net##^script:has-text(popunder)
 truyentranhaudio.com##^script:has-text($._Ev=$.BC;)
