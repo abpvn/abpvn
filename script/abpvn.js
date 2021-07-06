@@ -15,8 +15,8 @@
 // @grant       GM_registerMenuCommand
 // @include     http://*
 // @include     https://*
-// @version     2.2.96
-// @change-log  Add topphimhd.info video ads removal
+// @version     2.2.97
+// @change-log  Addibongda2.com fake link removal
 // @run-at      document-end
 // ==/UserScript==
 /* String Prototype */
@@ -303,7 +303,8 @@ var fixSite = {
         head.appendChild(css_tag);
     },
     fakelinkRemover: function () {
-        if (this.url.startWith('https://ibongda.vip') || this.url.startWith('https://thevang.tv') || this.url.startWith('https://banthang.live/') || this.url.startWith('https://tructiepbongda.vip/') || this.url.startWith('https://dabong.net/') || this.url.startWith('https://bongda365.tv/') || this.url.startWith('https://ibongda.live/') || this.url.startWith('https://tructiepbongda.pro/')) {
+        var regex = /ibongda|thevang.tv|banthang.live|tructiepbongda.vip|dabong.net|bongda365.tv|tructiepbongda.pro/
+        if (regex.test(this.url)) {
             ABPVN.cTitle();
             var fakeLink = document.querySelectorAll('a[data-href][rel="nofollow"],a[data-url][rel="nofollow"],a[data-url].pop-open');
             var count = 0;
