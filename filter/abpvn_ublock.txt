@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 202107171249
+! Version: 202107171300
 ! Title: ABPVN List [fancoiphim.net ublock]
-! Last modified: 17 Jul 2021 12:49 UTC+7
+! Last modified: 17 Jul 2021 13:00 UTC+7
 ! Expires: 1 days (update frequency)
 !
 ! ABPVN List filter
@@ -1681,12 +1681,11 @@ vlxx.xyz##.fads
 vlxx.xyz##.ff-banner
 vlxx.xyz##a[rel*="nofollow"]
 ! ---------Rule only for uBlock Origin------
-fancoiphim.net##+js(abort-current-inline-script, JSON.parse, /atob/)
 fancoiphim.net##+js(set, time_load_ads_1, '')
 fullcrackpc.com##+js(addEventListener-defuser, load, /popunder/)
 lb.topphimhd.info##+js(remove-attr, data-ads, ul)
 linkneverdie.net##+js(abort-on-property-read, arrayAd)
 motphimmoi.net##+js(remove-attr, onclick, body)
 motphimmoi.net##^script:has-text(popunder)
-truyentranhaudio.com##^script:has-text($._Ev=$.BC;)
+truyentranhaudio.com,fancoiphim.net##^script:has-text($._Ev=$.BC;)
 xemphimgi.net##^script:has-text(popurl)

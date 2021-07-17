@@ -1,10 +1,9 @@
 ! ---------Rule only for uBlock Origin------
-fancoiphim.net##+js(abort-current-inline-script, JSON.parse, /atob/)
 fancoiphim.net##+js(set, time_load_ads_1, '')
 fullcrackpc.com##+js(addEventListener-defuser, load, /popunder/)
 lb.topphimhd.info##+js(remove-attr, data-ads, ul)
 linkneverdie.net##+js(abort-on-property-read, arrayAd)
 motphimmoi.net##+js(remove-attr, onclick, body)
 motphimmoi.net##^script:has-text(popunder)
-truyentranhaudio.com##^script:has-text($._Ev=$.BC;)
+truyentranhaudio.com,fancoiphim.net##^script:has-text($._Ev=$.BC;)
 xemphimgi.net##^script:has-text(popurl)
