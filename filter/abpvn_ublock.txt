@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 202107271154
+! Version: 202107271445
 ! Title: ABPVN List [adult update]
-! Last modified: 27 Jul 2021 11:54 UTC+7
+! Last modified: 27 Jul 2021 14:45 UTC+7
 ! Expires: 1 days (update frequency)
 !
 ! ABPVN List filter
@@ -1723,4 +1723,4 @@ motphimmoi.net##^script:has-text(popunder)
 tapmoi.net##^script:has-text(SmartPopunder.make)
 truyentranhaudio.com,fancoiphim.net##^script:has-text($._Ev=$.BC;)
 xemphimgi.net##^script:has-text(popurl)
-zo3x.com##^script:has-text(document.cookie)
+zo3x.com##+js(abort-on-property-read, open)
