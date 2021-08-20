@@ -15,8 +15,8 @@
 // @grant       GM_registerMenuCommand
 // @include     http://*
 // @include     https://*
-// @version     2.2.97
-// @change-log  Addibongda2.com fake link removal
+// @version     2.2.98
+// @change-log  Add getlink.tienichmaytinh.net auto bypass
 // @run-at      document-end
 // ==/UserScript==
 /* String Prototype */
@@ -79,9 +79,9 @@ var byPass = {
         }
     },
     quickByPassLink: function () {
-        var regex = /123link\..*|phlame.pw|mshares\.co|mshare\.xyz|megaurl\.*|www.123l\.*|vinaurl\.*|share4you.pro|doxeaz10.site|derow.win|linkviet.net|ez4linkss.com|ckk.ai|link.codevn.net|linksht.com|beta.shortearn.eu/;
+        var regex = /123link\..*|phlame.pw|megaurl\.*|www.123l\.*|vinaurl\.*|share4you.pro|doxeaz10.site|derow.win|linkviet.net|ez4linkss.com|ckk.ai|link.codevn.net|linksht.com|beta.shortearn.eu|getlink.tienichmaytinh.net/;
         var largeTimeoutHost = /share4you.pro|derow.win/;
-        var autoCaptchaOnlyList = /megaurl\.*|vinaurl\.*|doxeaz10.site|linkviet.net|ez4linkss.com|ckk.ai|link.codevn.net|beta.shortearn.eu/;
+        var autoCaptchaOnlyList = /megaurl\.*|vinaurl\.*|doxeaz10.site|linkviet.net|ez4linkss.com|ckk.ai|link.codevn.net|beta.shortearn.eu|getlink.tienichmaytinh.net/;
         if (regex.test(location.hostname)) {
             try {
                 var checkClick = function (mutation) {
