@@ -1,7 +1,7 @@
 ---
 name: Report ads on website
-about: Report ads exist on website
-title: ''
+about: Report ads exist on website when enable ABPVN List
+title: 'Exist ads on website: [domain]'
 labels: Exist ads
 assignees: ''
 
