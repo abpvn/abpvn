@@ -1,7 +1,7 @@
 ---
 name: Block not ads content
 about: Report when ABPVN List block usefull content in website
-title: ''
+title: 'Block incorrect on website: [domain]'
 labels: Inccorect block
 assignees: ''
 
