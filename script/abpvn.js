@@ -15,8 +15,8 @@
 // @grant       GM_registerMenuCommand
 // @include     http://*
 // @include     https://*
-// @version     2.2.98
-// @change-log  Add getlink.tienichmaytinh.net auto bypass
+// @version     2.2.99
+// @change-log  Add luotphim.tv preroll bypass
 // @run-at      document-end
 // ==/UserScript==
 /* String Prototype */
@@ -360,6 +360,21 @@ var fixSite = {
             }
         }
     },
+    luotphim_tv: function () {
+        if (this.url.startWith('https://luotphim.tv/xem-phim')) {
+            var clickCount = 1;
+            var interval = setInterval(() => {
+                if (document.querySelector('.btn-close-preroll') && document.querySelector('#fakeplayer').style.display != 'none') {
+                    Logger.log("Click to by pass preroll: " + clickCount);
+                    clickCount++;
+                    document.querySelector('.btn-close-preroll').click();
+                } else {
+                    clearInterval(interval);
+                    Logger.log("By passed preroll");
+                }
+            }, 100);
+        }
+    },
     removeRedir: function (config) {
         if (this.url.match(new RegExp(config.url, 'g')) || this.url.startWith(config.url)) {
             ABPVN.cTitle();
@@ -445,6 +460,7 @@ var fixSite = {
         this.kickass_cc();
         this.fakelinkRemover();
         this.topphimhd_info();
+        this.luotphim_tv();
     }
 };
 //Ad blocker script
