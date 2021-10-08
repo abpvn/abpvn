@@ -15,8 +15,8 @@
 // @grant       GM_registerMenuCommand
 // @include     http://*
 // @include     https://*
-// @version     2.2.99
-// @change-log  Add luotphim.tv preroll bypass
+// @version     2.3.0
+// @change-log  Update luotphim.tv preroll bypass
 // @run-at      document-end
 // ==/UserScript==
 /* String Prototype */
@@ -361,7 +361,7 @@ var fixSite = {
         }
     },
     luotphim_tv: function () {
-        if (this.url.startWith('https://luotphim.tv/xem-phim')) {
+        if (this.url.startWith('https://luotphim.tv/xem-phim') || this.url.startWith('https://luotphim.tv/phim-')) {
             var clickCount = 1;
             var interval = setInterval(() => {
                 if (document.querySelector('.btn-close-preroll') && document.querySelector('#fakeplayer').style.display != 'none') {
