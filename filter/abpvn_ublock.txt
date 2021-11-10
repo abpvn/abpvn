@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 202111101450
+! Version: 202111101741
 ! Title: ABPVN List
-! Last modified: 10 Nov 2021 14:50 UTC+7
+! Last modified: 10 Nov 2021 17:41 UTC+7
 ! Expires: 1 days (update frequency)
 !
 ! ABPVN List filter
@@ -1741,14 +1741,18 @@ fancoiphim.net,downloadsachmienphi.com,animehay.tv##^script:has-text($._Ev=$.BC;
 fullcrackpc.com##+js(addEventListener-defuser, load, /popunder/)
 lb.topphimhd.info##+js(remove-attr, data-ads, ul)
 linkneverdie.net##+js(abort-on-property-read, arrayAd)
+lxhentai.com##+js(acis, document.cookie)
 lxhentai.com##^script:has-text(document.cookie)
 mitom1.tv##html:style(overflow: auto !important)  mitom1.tv##.show.fade.modal
 motphimmoi.net,biphimtv.net##+js(remove-attr, onclick, body)
 motphimmoi.net,biphimtv.net##^script:has-text(popunder)
+phimgii.net##+js(acis, jQuery, popurl)
 phimgii.net##^script:has-text(popurl)
 phimlau.online##^script:has-text(D4zz)
 rodjulian.com,link1s.com,pennbookcenter.com##^script:has-text(_0xad09)
+rphangs.net,mrcong.com##+js(acis, document.querySelectorAll, popMagic)
 rphangs.net,mrcong.com##^script:has-text(popMagic)
+tapmoi.net##+js(acis, navigator, SmartPopunder)
 tapmoi.net##^script:has-text(SmartPopunder.make)
 tienichmaytinh.net,giavang.net##+js(no-fetch-if, method:HEAD)
-zo3x.com##+js(abort-on-property-read, open)
+zo3x.*##+js(aopr, open)
