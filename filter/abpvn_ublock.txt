@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 202111110749
+! Version: 202111110845
 ! Title: ABPVN List
-! Last modified: 11 Nov 2021 07:49 UTC+7
+! Last modified: 11 Nov 2021 08:45 UTC+7
 ! Expires: 1 days (update frequency)
 !
 ! ABPVN List filter
@@ -1538,7 +1538,6 @@ docviewer.yandex.com##ya-recommendation-widget
 doisongphapluat.com###sticky_300
 dongphimmoiz.com###cash-fish-pc
 dongphymtv.com###footer_fixed_ads
-dongphymtv.com###overlay
 download.cnet.com##.download-fd-leaderboard-ad-top
 download.com.vn###adlefttop2
 download.com.vn###adrightsecond2
@@ -1888,17 +1887,17 @@ tivi4k.com##.main-nav.float-right
 tivi4k.com##.topbaner
 topcode.vn###floating_banner_left
 topcode.vn###floating_banner_right
-topphimhdz.net,motphimmoi.net###ballon_content_left
-topphimhdz.net,motphimmoi.net###ballon_content_right
-topphimhdz.net,motphimmoi.net###closePC
-topphimhdz.net,motphimmoi.net###fixed_bottom
-topphimhdz.net,motphimmoi.net###float_content_left
-topphimhdz.net,motphimmoi.net###float_content_right
-topphimhdz.net,motphimmoi.net###hide_ballon_left
-topphimhdz.net,motphimmoi.net###hide_ballon_right
-topphimhdz.net,motphimmoi.net###hide_float_left
-topphimhdz.net,motphimmoi.net###hide_float_right
-topphimhdz.net,motphimmoi.net,biphimtv.net,animet.net,phimmoi18.net##.gnarty-offads
+topphimhdz.net,phimmoi18.com###ballon_content_left
+topphimhdz.net,phimmoi18.com###ballon_content_right
+topphimhdz.net,phimmoi18.com###closePC
+topphimhdz.net,phimmoi18.com###fixed_bottom
+topphimhdz.net,phimmoi18.com###float_content_left
+topphimhdz.net,phimmoi18.com###float_content_right
+topphimhdz.net,phimmoi18.com###hide_ballon_left
+topphimhdz.net,phimmoi18.com###hide_ballon_right
+topphimhdz.net,phimmoi18.com###hide_float_left
+topphimhdz.net,phimmoi18.com###hide_float_right
+topphimhdz.net,phimmoi18.com,biphimtv.net,animet.net,phimmoi18.net##.gnarty-offads
 tpbpirateproxy.org###vpnModal
 tpbpirateproxy.org##.sidebar-vpn
 traderviet.com##.homePageAds
@@ -1934,9 +1933,6 @@ truyenyy.com##.pre_btn_ads
 tudomuaban.com###ad-center
 turbobit.net##.download-area-top
 tva.101vn.com###eb951855
-tva.101vn.com###full_banner1
-tva.101vn.com###full_banner2
-tva.101vn.com###med_rec_banner1
 tva.101vn.com###right_float1
 tva.101vn.com###right_float_banner
 tva.101vn.com###sl1
@@ -1988,7 +1984,7 @@ vir.com.vn##.menu_banner
 vkool.tv###ad_right_watch
 vkool.tv###ad_top_player
 vkool.tv###mask
-vkool.tv,360thethao.net,subnhanh.net###overlay
+vkool.tv,360thethao.net,subnhanh.net,dongphymtv.com###overlay
 vn.7msport.com###bottomFixedDiv
 vnexpress.net###sis_popup
 vnexpress.net##.banner-ads
@@ -2285,29 +2281,24 @@ zphimsex.me##.banner90
 zphimsex.me##.banner_inner
 zphimsex.me##.model-open.custom-model-main
 ! ---------Rule only for uBlock Origin------
-beeng.org##^script:has-text(ads)
-fancoiphim.net##+js(acis, JSON.parse, break;case $.)
 fancoiphim.net##+js(set, time_load_ads_1, '')
+fancoiphim.net,truyentranhaudio.com,fancoiphim.net,downloadsachmienphi.com,animehay.tv,lrepacks.net##+js(acis, JSON.parse, break;case $.)
 fembed.com,femax20.com,mrdhan.com##+js(addEventListener-defuser, click, open)
 lb.topphimhd.info##+js(remove-attr, data-ads, ul)
 linkneverdie.net##+js(abort-on-property-read, arrayAd)
 lxhentai.com##+js(acis, document.cookie)
-mitom1.tv##html:style(overflow: auto !important)  mitom1.tv##.show.fade.modal 
-motphimmoi.net,biphimtv.net##^script:has-text(popunder)
-motphimmoi.net,biphimtv.net,fullcrackpc.com##+js(remove-attr, onclick, body)
-ninjastream.to##+js(abort-current-inline-script, setTimeout, /argument/)
+mitom1.tv##.show.fade.modal 
+mitom1.tv##html:style(overflow: auto !important)
+ninjastream.to##+js(acis, setTimeout, /argument/)
 phimgii.net##+js(acis, jQuery, popurl)
-phimgii.net##^script:has-text(popurl)
-phimlau.online##^script:has-text(D4zz)
-rodjulian.com##^script:has-text(_0xad09)
+phimlau.online##+js(acis, i6H, Math)
+phimmoi18.com##+js(acis, addEvent, popunder)
+phimmoi18.com,biphimtv.net,fullcrackpc.com##+js(remove-attr, onclick, body)
+rodjulian.com,link1s.com,pennbookcenter.com##+js(acis, RdbkRNTa, function)
 rphangs.net,mrcong.com##+js(acis, document.querySelectorAll, popMagic)
-rphangs.net,mrcong.com##^script:has-text(popMagic)
 tapmoi.net##+js(acis, navigator, SmartPopunder)
-tapmoi.net##^script:has-text(SmartPopunder.make)
 tienichmaytinh.net,giavang.net##+js(no-fetch-if, method:HEAD)
-truyentranhaudio.com,fancoiphim.net,downloadsachmienphi.com,animehay.tv,lrepacks.net##^script:has-text($._Ev=$.BC;)
 youtube.com,youtube-nocookie.com##+js(json-prune, 0.playerResponse.adPlacements 0.playerResponse.playerAds 1.playerResponse.adPlacements 1.playerResponse.playerAds 2.playerResponse.adPlacements 2.playerResponse.playerAds 3.playerResponse.adPlacements 3.playerResponse.playerAds 4.playerResponse.adPlacements 4.playerResponse.playerAds 5.playerResponse.adPlacements 5.playerResponse.playerAds 6.playerResponse.adPlacements 6.playerResponse.playerAds 7.playerResponse.adPlacements 7.playerResponse.playerAds 8.playerResponse.adPlacements 8.playerResponse.playerAds 9.playerResponse.adPlacements 9.playerResponse.playerAds playerResponse.adPlacements playerResponse.playerAds ytInitialPlayerResponse.adPlacements ytInitialPlayerResponse.playerAds adPlacements playerAds)
 youtube.com,youtube-nocookie.com##+js(set, playerResponse.adPlacements, undefined)
 youtube.com,youtube-nocookie.com##+js(set, ytInitialPlayerResponse.adPlacements, undefined)
 zo3x.*##+js(aopr, open)
-zo3x.com##+js(abort-on-property-read, open)
