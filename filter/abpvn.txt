@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 202111110841
+! Version: 202111111135
 ! Title: ABPVN List
-! Last modified: 11 Nov 2021 08:41 UTC+7
+! Last modified: 11 Nov 2021 11:35 UTC+7
 ! Expires: 1 days (update frequency)
 !
 ! ABPVN List filter
@@ -15,7 +15,7 @@
 ! Forum: https://voz.vn/t/abpvn-chan-quang-cao-cho-nguoi-viet.25778/
 ! Report new issue on github: https://github.com/abpvn/abpvn/issues/new
 ! ---------- Generic Blocking Rules ----------
-$popup,third-party,domain=megaurl.in|hamtruyen.com|phim1080z.com|phim1080zz.com|bilutivi.net|animehay.tv|hhkungfu.tv|fancoiphim.net
+$popup,third-party,domain=megaurl.in|hamtruyen.com|phim1080z.com|fim1080.com|bilutivi.net|animehay.tv|hhkungfu.tv|fancoiphim.net
 *$csp=script-src 'self' 'unsafe-inline',domain=nousdecor.com|fidlarmusic.com|kingsleynyc.com|thegoneapp.com|staaker.com|uebnews.online|nro.vn|khophimhd.net|appvn.com|kiemlua.com
 *$csp=script-src 'self',domain=downloadsachmienphi.com
 .com/cpc/$script
@@ -202,6 +202,8 @@ utm_source=propellerads$popup
 ||fb88sports.com/Creative/banner$image
 ||ff.imacdn.com^$image,media
 ||file1.dangcongsan.vn^*.gif$image
+||fim1080.com/banner/
+||fim1080.com/sponsor
 ||forum.idichvuseo.com/images/baner
 ||forum.idichvuseo.com/images/quang-cao
 ||fptshop.com.vn^*/Banner/
@@ -367,8 +369,6 @@ utm_source=propellerads$popup
 ||onthitoeic.vn//wp-content/themes/Demet/banner-
 ||phim1080z.com/banner/
 ||phim1080z.com/sponsor
-||phim1080zz.com/banner/
-||phim1080zz.com/sponsor
 ||phim7z.tv/ads/popup.html$popup
 ||phimchat.tv/public/images/banner/$image
 ||phimchill.tv/media/*.gif
@@ -1222,10 +1222,10 @@ ocumeo.com###go88-mobile-catfish
 omtivi.com,bongda1.net###preload
 phapluatplus.vn##div[style="text-align:center;margin-top:0px;margin-bottom:0px;"]
 phephims.net,motphjm.net###catfish
-phim1080z.com,phim1080zz.com###popup-under
-phim1080z.com,phim1080zz.com##.banner-preload-link
-phim1080z.com,phim1080zz.com##.popup-link
-phim1080z.com,phim1080zz.com,mephimnhat.com,mephimmy.com,mephimtrung.com,mephimhanz.com,mephimthai.com##.ff-banner
+phim1080z.com,fim1080.com###popup-under
+phim1080z.com,fim1080.com##.banner-preload-link
+phim1080z.com,fim1080.com##.popup-link
+phim1080z.com,fim1080.com,mephimnhat.com,mephimmy.com,mephimtrung.com,mephimhanz.com,mephimthai.com##.ff-banner
 phim202.com###itro_opaco
 phim7z.tv###pop-report
 phimbathu.org#?#div[id^=anti]:-abp-has(.adBanner)
@@ -1516,7 +1516,7 @@ vtvgiaitri.vn##.ads-top-wrap
 vuighe.net##.film-info-right-content
 vuighe.net##.pause-banner
 vuighe.net##.player-pause-banner
-vuighe.net,clipanime.com,phim1080z.com,phim1080zz.com##.player-midpoint-progress
+vuighe.net,clipanime.com,phim1080z.com,fim1080.com##.player-midpoint-progress
 vuonhoalan.net##.content_middle_rightbar
 webgia.com##.ads100
 webhoctienganh.com##.button-action-float-banner
