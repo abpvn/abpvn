@@ -15,8 +15,8 @@
 // @grant       GM_registerMenuCommand
 // @include     http://*
 // @include     https://*
-// @version     2.3.1
-// @change-log  Update luotphim domain
+// @version     2.3.2
+// @change-log  Add download.baominh.tech quick by pass
 // @run-at      document-end
 // ==/UserScript==
 /* String Prototype */
@@ -79,9 +79,9 @@ var byPass = {
         }
     },
     quickByPassLink: function () {
-        var regex = /123link\..*|phlame.pw|megaurl\.*|www.123l\.*|vinaurl\.*|share4you.pro|doxeaz10.site|derow.win|linkviet.net|ez4linkss.com|ckk.ai|link.codevn.net|linksht.com|beta.shortearn.eu|getlink.tienichmaytinh.net/;
+        var regex = /123link\..*|phlame.pw|megaurl\.*|www.123l\.*|vinaurl\.*|share4you.pro|doxeaz10.site|derow.win|linkviet.net|ez4linkss.com|ckk.ai|link.codevn.net|linksht.com|beta.shortearn.eu|getlink.tienichmaytinh.net|download.baominh.tech/;
         var largeTimeoutHost = /share4you.pro|derow.win/;
-        var autoCaptchaOnlyList = /megaurl\.*|vinaurl\.*|doxeaz10.site|linkviet.net|ez4linkss.com|ckk.ai|link.codevn.net|beta.shortearn.eu|getlink.tienichmaytinh.net/;
+        var autoCaptchaOnlyList = /megaurl\.*|vinaurl\.*|doxeaz10.site|linkviet.net|ez4linkss.com|ckk.ai|link.codevn.net|beta.shortearn.eu|getlink.tienichmaytinh.net|download.baominh.tech/;
         if (regex.test(location.hostname)) {
             try {
                 var checkClick = function (mutation) {
