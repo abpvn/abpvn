@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 202111300808
+! Version: 202111301053
 ! Title: ABPVN List
-! Last modified: 30 Nov 2021 08:08 UTC+7
+! Last modified: 30 Nov 2021 10:53 UTC+7
 ! Expires: 1 days (update frequency)
 !
 ! ABPVN List filter
@@ -496,6 +496,7 @@ utm_source=propellerads$popup
 ||phimchieurap.vn$popup,domain=blogtruyen.vn
 ||phimchieurap.vn/promo/cgv
 ||phimchill.tv/media/*.gif
+||phimgii.net/player/dk.jpg
 ||phimhay.info/jwplayer7/text.json$domain=hamtruyen.com
 ||phimhdonlinez.com^*.gif
 ||phimnhanh.net/abcdxyz/*.gif
@@ -514,6 +515,7 @@ utm_source=propellerads$popup
 ||postimg.cc^*.gif$domain=tivi4k.com|tructiepbongda.com|tva.101vn.com|8bongda.com|xemtivisohd.com
 ||proguardstream.net/client_assets/images/partner$domain=ghienphim.org,image
 ||psg.mediacdn.vn/public/project/$script,domain=blogtruyen.vn
+||public.gostream.video/js/devtools-detector$script
 ||qtcshop.com/images/$third-party
 ||quangcaosanpham.com/images/$third-party
 ||rada.vn/data/File/$third-party
@@ -2338,6 +2340,7 @@ blog.abit.vn##+js(aopr, document.cookie)
 fancoiphim.net##+js(set, time_load_ads_1, '')
 fancoiphim.net,truyentranhaudio.com,fancoiphim.net,downloadsachmienphi.com,animehay.tv,lrepacks.net,khophimhd.net##+js(acis, JSON.parse, break;case $.)
 fembed.com,femax20.com,mrdhan.com##+js(addEventListener-defuser, click, open)
+gotphim.com##+js(acis, navigator, devtoolsDetector)
 lb.topphimhd.info##+js(ra, data-ads, ul)
 linkneverdie.net##+js(abort-on-property-read, arrayAd)
 lxhentai.com##+js(acis, document.cookie)
