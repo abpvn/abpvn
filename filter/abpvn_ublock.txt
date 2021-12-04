@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 202112041005
+! Version: 202112041017
 ! Title: ABPVN List
-! Last modified: 04 Dec 2021 10:05 UTC+7
+! Last modified: 04 Dec 2021 10:17 UTC+7
 ! Expires: 1 days (update frequency)
 !
 ! ABPVN List filter
@@ -28,6 +28,7 @@ $popup,third-party,domain=megaurl.in|hamtruyen.com|phim1080z.com|fim1080.com|bil
 .vn/c3s-ad/$xmlhttprequest
 .vn/qc/
 /24h-ad.
+/\w{14}\.com/\d{7}/$popup
 /ads/*.gif
 /ads/*.xml$xmlhttprequest
 /allposition-zone-*.ads
@@ -153,6 +154,7 @@ utm_source=propellerads$popup
 ||cdn.jsdelivr.net^*/arlinablock.js
 ||cdn.luotphim.net^*.gif$image
 ||cdn.pixfuture.com/adb-media/adb_detect_pixfuture.js
+||cdn.statically.io/img/i.imgur.com/*.gif
 ||cdn.thehinh.com^$image,domain=khoedep.vn
 ||cdn.truyentranh.net/frontend/player/jw7/7.10.2/jwplayer.js
 ||cdn.watching.vn/assets/img/banner$image
@@ -607,6 +609,7 @@ utm_source=propellerads$popup
 ||aff.opus-static.com^$third-party
 ||affiliate.k4.tinhte.vn^
 ||aj1010.online^
+||ak.hetaruvg.com^$popup
 ||alexissmacks.com^
 ||amcdn.vn^
 ||an.xemvtv.net^
@@ -1097,6 +1100,7 @@ hdo.tv##.filminfo-floatleft
 hdo.tv##.malert-bg-popup
 hdo.tv##.malert-popup
 hdo.tv##.tn-alert-close
+hdvietsub.net###preload-hdvs
 hdvietsub.net,tvzingvn.com##.sda-catfish
 hhkungfu.tv##.footer-widgets-wrap
 hhkungfu.tv,truongcongthang.com###bsadsheadline
