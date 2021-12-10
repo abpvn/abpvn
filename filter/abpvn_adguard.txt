@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 202112102110
+! Version: 202112102128
 ! Title: ABPVN List
-! Last modified: 10 Dec 2021 21:10 UTC+7
+! Last modified: 10 Dec 2021 21:28 UTC+7
 ! Expires: 1 days (update frequency)
 !
 ! ABPVN List filter
@@ -499,6 +499,8 @@ utm_source=propellerads$popup
 ||phimchill.tv/media/*.gif
 ||phimgii.net/player/dk.jpg
 ||phimhay.info/jwplayer7/text.json$domain=hamtruyen.com
+||phimhay3s.com/video/$media
+||phimhay3s.com^*.gif
 ||phimhdonlinez.com^*.gif
 ||phimnhanh.net/abcdxyz/*.gif
 ||phimnhanh.net/banner/
@@ -1831,6 +1833,7 @@ phimgii.net,phimhdvns.net###preload-11bet
 phimgii.net,phimhdvns.net###sobet-ads-right
 phimgii.net,phimhdvns.net##.lightbox-player-pc
 phimgii.net,phimhdvns.net##div[id^="preload-"]
+phimhay3s.com##.fix_bottom
 phimhayplus.xyz###container-ads
 phimhdonlinez.com##.idmuvi-topbanner-aftermenu
 phimnhe.net##.ballon-left
@@ -2380,6 +2383,7 @@ linkneverdie.net#%#//scriptlet('abort-on-property-read', 'arrayAd')
 lxhentai.com#%#//scriptlet('abort-current-inline-script', 'document.cookie')
 ninjastream.to#%#//scriptlet('abort-current-inline-script', 'setTimeout', 'argument')
 phimgii.net,phimhdvns.net#%#//scriptlet('abort-current-inline-script','jQuery', 'popurl')
+phimhay3s.com#%#//scriptlet('json-prune', 'ads')
 phimlau.online#%#//scriptlet('abort-current-inline-script', 'i6H', 'Math')
 phimmoi18.com#%#//scriptlet('abort-current-inline-script', 'addEvent', 'popunder')
 phimmoi18.com,phimmoi18.com,fullcrackpc.com#%#//scriptlet('remove-attr', 'onclick', 'body')
