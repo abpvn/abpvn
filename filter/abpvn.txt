@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 202112140804
+! Version: 202112140821
 ! Title: ABPVN List
-! Last modified: 14 Dec 2021 08:04 UTC+7
+! Last modified: 14 Dec 2021 08:21 UTC+7
 ! Expires: 1 days (update frequency)
 !
 ! ABPVN List filter
@@ -90,7 +90,7 @@ $webrtc,domain=forum.xda-developers.com|dailyuploads.net|uploadocean.com|appvn.c
 /banner/*.gif
 /bidvertiser/tags/*$script
 /blueserving.
-/cdn.bongdadem.net/*.gif$image
+/cdn.bongdadem.net/$image
 /content/vast$xmlhttprequest
 /delivery/channels/*
 /display/items.php
@@ -187,6 +187,7 @@ utm_source=propellerads$popup
 ||7mimg.7m.
 ||8bongda.com/wp-content/uploads/2016/06/demo120x400new.jpg
 ||8bongda.com^*.gif
+||90phut.net^*.gif
 ||acdn.thitruongsi.com/storage/banner/
 ||ad-*.24hstatic.com/upload/
 ||ad-*.24hstatic.com:8008/upload/
@@ -1430,6 +1431,10 @@ utm_source=propellerads$popup
 5giay.vn##.great-a-banner
 5giay.vn##.great-b-banner
 5giay.vn##.heart-banner
+90phut.net###dnn_float_left
+90phut.net###dnn_float_right
+90phut.net##.btn-od
+90phut.net##a[target="_blank"][rel="nofollow noopener"]
 a3mga.com##.adpia-header
 afamily.vn##.afw-topbanner
 anime47.com###ads_location
@@ -1691,8 +1696,8 @@ icamera.vn###TextHTML-Module:nth-of-type(1) > p
 ictnews.vietnamnet.vn##.header-banner
 ictnews.vietnamnet.vn##.sidebar
 idoc.vn###modal-showbox
-idoc.vn##.modal-backdrop
 idoc.vn##.modal-content
+idoc.vn,90phut.net##.modal-backdrop
 infothethao.com##.widget_media_image
 ione.net##.banner-top-home
 ione.net##.section_ads_300x250
@@ -2077,7 +2082,7 @@ vir.com.vn##.menu_banner
 vkoolz.net###ad_right_watch
 vkoolz.net###ad_top_player
 vkoolz.net###mask
-vkoolz.net,360thethao.net,subnhanh.net,dongphymtv.com###overlay
+vkoolz.net,360thethao.net,subnhanh.net,dongphymtv.com,90phut.net###overlay
 vn.7msport.com###bottomFixedDiv
 vnews.gov.vn##.banner-bottom-menu
 vnews.gov.vn##[href*="bit.ly"]
