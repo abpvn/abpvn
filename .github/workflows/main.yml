@@ -16,6 +16,8 @@ on:
 jobs:
   # This workflow contains a single job called "build"
   pull_git:
+    # Only run when pull_request is merged
+    if: ${{ github.event.pull_request.merged }}
     # The type of runner that the job will run on
     runs-on: ubuntu-latest
 
