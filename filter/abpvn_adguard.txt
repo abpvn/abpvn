@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 202112151019
+! Version: 202112151028
 ! Title: ABPVN List
-! Last modified: 15 Dec 2021 10:19 UTC+7
+! Last modified: 15 Dec 2021 10:28 UTC+7
 ! Expires: 1 days (update frequency)
 !
 ! ABPVN List filter
@@ -142,6 +142,7 @@ utm_source=propellerads$popup
 ||bp.blogspot.com/*banner
 ||browser.coccoc.com/js/
 ||cand.com.vn/*adv/
+||cdn-img.thethao247.vn/storage/files/*quang-cao$image
 ||cdn.baogiaothong.vn/upload/images/*ad_image/
 ||cdn.bongdadem.net^*.gif
 ||cdn.comedia.coccoc.com$object,script
@@ -512,6 +513,7 @@ utm_source=propellerads$popup
 ||thesaigontimes.vn/doitacqc/
 ||thethao12h.me^*.gif
 ||thethao12h.net^$popup,domain=topphim18.net
+||thethao247.vn/neo/$subdocument
 ||thietkeweb9999.com/data/upload/Banner
 ||thoigian.com.vn/mFiles/N/06/$image
 ||thoigian.com.vn^*.gif
@@ -1443,6 +1445,8 @@ thatlangon.com##[class*="thatl-in-article"]
 thatlangon.com#?#.ct-code-block:-abp-has(.adCreator)
 thethao247.vn###lc-girl-block-en_2
 thethao247.vn##.box_sponsor
+thethao247.vn##div[class$="_ads"]
+thethao247.vn##ins[id]
 thethaovanhoa.vn##.ads_660x90
 thichxemphim.net##.fixed-bottom
 thitruongsi.com##.rounded.bg-white > .row > .col-md-3
