@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 202112201114
+! Version: 202112201125
 ! Title: ABPVN List
-! Last modified: 20 Dec 2021 11:14 UTC+7
+! Last modified: 20 Dec 2021 11:25 UTC+7
 ! Expires: 1 days (update frequency)
 !
 ! ABPVN List filter
@@ -24,6 +24,7 @@ $popup,third-party,domain=megaurl.in|hamtruyen.com|phim1080z.com|fim1080.com|bil
 .vn/Ad/
 .vn/c3s-ad/$xmlhttprequest
 .vn/qc/
+/(https?:\/\/)\w{30,}.me/$image,third-party
 /24h-ad.
 /ads/*.gif
 /ads/*.xml$xmlhttprequest
@@ -1544,19 +1545,17 @@ truyenfull.vn##.ads-responsive
 truyenfull.vn##.desktop-taitro
 truyenfull.vn,razorphimzz.com##[id^="ads-"]
 truyenqk.work###ballon_right
-truyenqq.com###bottom-banner-ads
-truyenqq.com##.pc-banner
-truyenqq.com,truyenqq.net###ads_mobile
-truyenqq.com,truyenqq.net##div[id^="image_popup_"]
-truyenqq.com,truyenqq.net,truyenqqtop.com##.mobile-banner
-truyenqq.com,truyenqqtop.com###left-banner
-truyenqq.net##.left-banner
-truyenqqtop.com###image_popup_background
-truyenqqtop.com###image_popup_mobile_background
-truyenqqtop.com###image_popup_wrapper
 truyenqqtop.com##.catfish-bottom-mobile
 truyenqqtop.com##.pc-banner-full
 truyenqqtop.com##.popup_wrapper_visible.popup_wrapper
+truyenqqvip.com###ads_mobile
+truyenqqvip.com###bottom-banner-ads
+truyenqqvip.com###left-banner
+truyenqqvip.com##.left-banner
+truyenqqvip.com##.mobile-banner
+truyenqqvip.com##.pc-banner
+truyenqqvip.com##div[id^="image_popup_"]
+truyenqqvip.com#?#div:-abp-has(> div > a[href*="bitly.com"])
 truyensieuhay.com###floatleft
 truyensieuhay.com###floatright
 truyensieuhay.com###topbanner
