@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 202112171933
+! Version: 202112200833
 ! Title: ABPVN List
-! Last modified: 17 Dec 2021 19:33 UTC+7
+! Last modified: 20 Dec 2021 08:33 UTC+7
 ! Expires: 1 days (update frequency)
 !
 ! ABPVN List filter
@@ -1027,7 +1027,7 @@ utm_source=propellerads$popup
 ||iads.staticscdn.net^
 ||iclickcdn.com^$script
 ||imad24.com^
-||imasdk.googleapis.com^$third-party,domain=~vivo.vn|~24h.com.vn|~danet.vn|~anime47.com|~fptplay.vn|~startalk.vn|~vieon.vn|~vtvcab.vn
+||imasdk.googleapis.com^$third-party,domain=~vivo.vn|~24h.com.vn|~danet.vn|~anime47.com|~fptplay.vn|~startalk.vn|~vieon.vn|~vtvcab.vn|~game24h.vn
 ||imgcdnbet.com^
 ||imrworldwide.com^$third-party
 ||imstore.bet365affiliates.com$third-party
@@ -1305,6 +1305,7 @@ utm_source=propellerads$popup
 ||vidcpm.com^
 ||video.your-notice.com^
 ||vivaclix.com^
+||vlitag.com^
 ||vogueoatgap.com^
 ||vongquay88.com^$popup
 ||vuabongda.top^$popup
@@ -1648,6 +1649,7 @@ fsharetv.com###home_header
 fullcrackpc.com##.custom-html-widget.textwidget > .external
 fullmatchesandshows.com##[id^="div-insticator-ad-"]
 gaixinh18z.com##.sticky-footer-content
+game24h.vn##.LRBanner
 game4v.com###fixedban
 game4v.com##div[class^="banner-mobile"]
 gameio.vn###tubia
@@ -2210,6 +2212,8 @@ zippyshare.com##.center_ad
 @@||anime47.com/ads/player/v/8.8.2/jwplayer.js
 @@||animevnn.com/*/img/load-img.gif$image,~third-party
 @@||animevnn.com/*/img/loadimg.gif$image,~third-party
+@@||assets.vlitag.com/plugins/*$script,domain=game24h.vn
+@@||assets.vlitag.com/prebid/default/*$script,domain=game24h.vn
 @@||facebook.com/ads/ad_preview_generator_iframe/
 @@||geoip.redirect-ads.com^
 @@||get.optad360.io/sf/2096a71b-3b50-496f-a205-80f3d590781/plugin.min.js$domain=linkneverdie.net
@@ -2224,10 +2228,12 @@ zippyshare.com##.center_ad
 @@||player.phimno1.com$subdocument
 @@||pubads.g.doubleclick.net$xmlhttprequest,domain=vtvgiaitri.vn
 @@||raovatbienhoa.vn/images/icon
+@@||services.vlitag.com/adv1/*$script,domain=game24h.vn
 @@||static.amcdn.vn/tka/cdn.js$script,domain=genk.vn
 @@||static.contineljs.com/core/corecontineljs.js$script,domain=genk.vn
 @@||static.doubleclick.net/instream/ad_status.js$script,xmlhttprequest
 @@||stats.g.doubleclick.net$domain=download.mokeedev.com
+@@||tag.vlitag.com/v1/*$script,domain=game24h.vn
 @@||thepiratebay.org/static/main.js
 @@||trithuc24h.com.vn/upload/20996/20200817/LOGO_TRITHUC24H-02_3e6fff5981.png
 @@||truyentranhaudio.com/app/manga/themes/light/assets/js/prebid-ads.js
