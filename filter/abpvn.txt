@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 202112241651
+! Version: 202112251110
 ! Title: ABPVN List
-! Last modified: 24 Dec 2021 16:51 UTC+7
+! Last modified: 25 Dec 2021 11:10 UTC+7
 ! Expires: 1 days (update frequency)
 !
 ! ABPVN List filter
@@ -33,7 +33,7 @@ $popup,third-party,domain=megaurl.in|hamtruyen.com|phim1080z.com|fim1080.com|bil
 /assets/themes/js/ads$script,domain=phim18zz.com
 /assets/themes/js/wonderfarm$script,domain=huphimtv.com|phim18zz.com
 /banner-ads.
-/banner/*.gif
+/banner/*.gif,domain~=tvphapluat.vn
 /blueserving.
 /cdn.bongdadem.net/$image
 /content/vast$xmlhttprequest
@@ -1593,6 +1593,12 @@ tvhaiz.net###pc-catfish
 tvhaiz.net###wrapper>.col-lg-12:nth-child(2)
 tvhaiz.net,tvhayx.com,phimsml.com###overlay-pop
 tvhayx.com##.mobile-catfish
+tvphapluat.vn##.bannerqc
+tvphapluat.vn##[class^="sticky-top"]
+tvphapluat.vn##[href*="/default/template/"]
+tvphapluat.vn##[href*="hungthinhcorp.com.vn"]
+tvphapluat.vn##[href*="pbgdpl.longan.gov.vn"]
+tvphapluat.vn##[href*="vietcombank.com.vn"]
 tvzingvn.com###preload-mobile
 uploading.vn##.Top_news .fileinfoagb:nth-child(3)
 uploading.vn##.Top_news .fileinfoagb:nth-child(4)
