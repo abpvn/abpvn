@@ -15,8 +15,8 @@
 // @grant       GM_registerMenuCommand
 // @include     http://*
 // @include     https://*
-// @version     2.3.3
-// @change-log  Add anonyviet.com remove redirect
+// @version     2.3.4
+// @change-log  Remove dead domain
 // @run-at      document-end
 // ==/UserScript==
 /* String Prototype */
@@ -472,17 +472,11 @@ var adBlocker = {
     blockPopUp: function () {
         var listSite = [
             'blogtruyen.vn',
-            'www.khosachnoi.net',
             'hamtruyen.vn',
             'phim14.net',
-            'phim7.com',
-            'www.diendan.trentroiduoidat.com',
-            'www.trentroiduoidat.com',
-            'chophanthiet.us',
             'animetvn.com',
             'font.vn',
             'vidoza.net',
-            'www.easysoft.xyz',
             'hdonline.vn',
             'www.phim.media',
             'phimnhanh.com',
