@@ -15,8 +15,8 @@
 // @grant       GM_registerMenuCommand
 // @include     http://*
 // @include     https://*
-// @version     2.3.2
-// @change-log  Add download.baominh.tech quick by pass
+// @version     2.3.3
+// @change-log  Add anonyviet.com remove redirect
 // @run-at      document-end
 // ==/UserScript==
 /* String Prototype */
@@ -446,6 +446,10 @@ var fixSite = {
                 url: 'https://tophanmem.com',
                 replace: 'https://tophanmem.com/redirect-to/?url='
             },
+            {
+                url: 'https://anonyviet.com',
+                replace: 'https://anonyviet.com/tieptucdidentrangmoi/?url='
+            }
         ];
         configs.forEach(function (config) {
             this.removeRedir(config);
