@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 202201071342
+! Version: 202201071944
 ! Title: ABPVN List
-! Last modified: 07 Jan 2022 13:42 UTC+7
+! Last modified: 07 Jan 2022 19:44 UTC+7
 ! Expires: 1 days (update frequency)
 !
 ! ABPVN List filter
@@ -1854,9 +1854,11 @@ vtvgiaitri.vn#@#.pub_728x90
 ||tphimsex.club/wp-content/uploads^*.gif
 ||truyensac.net/anh/
 ||tuoi69.live/balloon$script
+||uphinh.vn/images/*.gif$image,domain=phimsexkhongche.club
 ||upsieutoc.com^*.gif$image,domain=thiendia88.net
 ||vlxx.sex/ads/desktop/desktop-ads.js$script
 ||xemanhnong.net/wp-content/uploads^*.gif
+||xxxpanel.club/*.gif$image,domain=phimsexkhongche.club
 !---------- ABPVN Adult Element Hide ---------------
 ##iframe[src^="https://media.vivaclix.com/js/ifr.html?"]
 @@||hentaiz.pro$generichide
@@ -1881,6 +1883,9 @@ phimhanquoc18.com##.access-trade
 phimhanquoc18.com##.data-vjs-player
 phimhanquoc18.com##.phiden
 phimhanquoc18.com##.x-popup
+phimsexkhongche.club##.video-player > div[id]
+phimsexkhongche.club#?#div:-abp-has([class$="-close"])
+phimsexkhongche.club#?#div:-abp-has([class$="-modal"])
 phimsexz.vip,pornpic.org##.clickadu
 phym18.com###a-player
 phym18.com###backgroundPopupp
