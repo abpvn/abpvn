@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 202202181351
+! Version: 202202181357
 ! Title: ABPVN List
-! Last modified: 18 Feb 2022 13:51 UTC+7
+! Last modified: 18 Feb 2022 13:57 UTC+7
 ! Expires: 1 days (update frequency)
 !
 ! ABPVN List filter
@@ -15,7 +15,7 @@
 ! Forum: https://voz.vn/t/abpvn-chan-quang-cao-cho-nguoi-viet.25778/
 ! Report new issue on github: https://github.com/abpvn/abpvn/issues/new
 ! ---------- Generic Blocking Rules ----------
-$popup,third-party,domain=oload.tv|oload.stream|openload.co|oload.site|appvn.com|mediafire.com|mactorrent.co|uploadocean.com|vinaurl.net|clipconverter.cc|userscloud.com|proxyrarbg.org|megaurl.in|linksht.com|ouo.io|phim1080z.com|fim1080.com|blogtruyen.vn|animehay.club|streamtape.site|hhkungfu.tv|fancoiphim.net
+$popup,third-party,domain=oload.tv|oload.stream|openload.co|oload.site|appvn.com|mediafire.com|mactorrent.co|uploadocean.com|vinaurl.net|clipconverter.cc|userscloud.com|proxyrarbg.org|linksht.com|ouo.io|phim1080z.com|fim1080.com|blogtruyen.vn|animehay.club|streamtape.site|hhkungfu.tv|fancoiphim.net
 $webrtc,domain=forum.xda-developers.com|dailyuploads.net|uploadocean.com|appvn.com|sharemods.com
 &adformat=
 &aduid
@@ -151,8 +151,8 @@ $webrtc,domain=forum.xda-developers.com|dailyuploads.net|uploadocean.com|appvn.c
 /zone.uniad.vn/$image
 336x280$image
 600x100
-://ad.$third-party,domain=~megaurl.in
-://ads.$third-party,domain=~megaurl.in
+://ad.$third-party
+://ads.$third-party
 :35.224.227.218^$webrtc
 =728x90&
 _690x110.
@@ -257,7 +257,7 @@ utm_source=propellerads$popup
 ||chuyendoitien.com/chuyendoitien.gif
 ||cloudfront.net/?cdlad=
 ||cloudfront.net/atrk.js
-||cloudfront.net^$script,domain=shink.me|short.am|megaurl.in
+||cloudfront.net^$script,domain=shink.me|short.am
 ||coccoc.com/skin/
 ||coccoc.com/vastPlayer/
 ||code.hoiquantinhoc.vn/$third-party,script
@@ -447,7 +447,6 @@ utm_source=propellerads$popup
 ||media.tintucvietnam.vn/files/qc
 ||media.vodcdn.xyz^*.gif$image
 ||megacode.vn/media/banners/
-||megaurl.in/sw.js
 ||minhngoc.net^*.gif
 ||mocfun.net/uploads/banners/
 ||motchill.net/api?countViews$subdocument
@@ -1327,7 +1326,6 @@ utm_source=propellerads$popup
 ##.ytp-ad-progress-list
 ##a[href^="https://ad.doubleclick.net/"]
 ##a[href^="https://medictiona.info/"]
-##a[href^="https://megaurl.in/ref/"]
 ##div[id^="div-gpt-ad"]
 ##iframe[id^="google_ads_frame"]
 ##iframe[id^="google_ads_iframe"]
@@ -1337,6 +1335,7 @@ utm_source=propellerads$popup
 123link.pro,123link.co,123link.pw,123link.vip,123link.biz,phimtop.net##.sticky_bottom
 123link.pro,123link.pw,123link.co,123link.vip,123link.biz#?#.banner:-abp-has(div[id^="div-gpt-ad-"])
 123link.pro,123link.pw,123link.co,123link.vip,123link.biz#?#div.banner:-abp-has(ins.adsbygoogle)
+123link.pw,123link.co,vnurl.net,vinaurl.net,licklink.net,123link.pro,vinaurl.in###link-view > center
 123nhadat.vn###scroll-banners
 123nhadat.vn##.banner_C
 123nhadatviet.com,123nhadatviet.net,dabong.vip,cuoi.tuoitre.vn,tuoitrenews.vn,bongda365.site,phephimzz.net##.banner-top
@@ -1690,9 +1689,6 @@ markets.businessinsider.com##.htl-ad-placeholder
 markets.businessinsider.com##.spacer-50.mobile-spacer-25
 megalink.vip###__bgd_link
 megaup.net#?#.metaRedirectWrapperBottomAds
-megaurl.in###link-view a[target="_blank"]
-megaurl.in##.box-main a[target="_blank"]
-megaurl.in,123link.pw,123link.co,vnurl.net,vinaurl.net,licklink.net,123link.pro,vinaurl.in###link-view > center
 mephimmy.com###sponsor-catfish
 mephimmy.com###sponsor-preload
 mephimtrungz.com,mephimmy.com,mephimhanz.com,mephimnhat.com##div[id^="sponsor-"]

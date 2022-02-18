@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 202202181351
+! Version: 202202181357
 ! Title: ABPVN List
-! Last modified: 18 Feb 2022 13:51 UTC+7
+! Last modified: 18 Feb 2022 13:57 UTC+7
 ! Expires: 1 days (update frequency)
 !
 ! ABPVN List filter
@@ -15,7 +15,7 @@
 ! Forum: https://voz.vn/t/abpvn-chan-quang-cao-cho-nguoi-viet.25778/
 ! Report new issue on github: https://github.com/abpvn/abpvn/issues/new
 ! ---------- Generic Blocking Rules ----------
-$popup,third-party,domain=oload.tv|oload.stream|openload.co|oload.site|appvn.com|mediafire.com|mactorrent.co|uploadocean.com|vinaurl.net|clipconverter.cc|userscloud.com|proxyrarbg.org|megaurl.in|linksht.com|ouo.io|phim1080z.com|fim1080.com|blogtruyen.vn|animehay.club|streamtape.site|hhkungfu.tv|fancoiphim.net
+$popup,third-party,domain=oload.tv|oload.stream|openload.co|oload.site|appvn.com|mediafire.com|mactorrent.co|uploadocean.com|vinaurl.net|clipconverter.cc|userscloud.com|proxyrarbg.org|linksht.com|ouo.io|phim1080z.com|fim1080.com|blogtruyen.vn|animehay.club|streamtape.site|hhkungfu.tv|fancoiphim.net
 $webrtc,domain=forum.xda-developers.com|dailyuploads.net|uploadocean.com|appvn.com|sharemods.com
 &adformat=
 &aduid
@@ -151,8 +151,8 @@ $webrtc,domain=forum.xda-developers.com|dailyuploads.net|uploadocean.com|appvn.c
 /zone.uniad.vn/$image
 336x280$image
 600x100
-://ad.$third-party,domain=~megaurl.in
-://ads.$third-party,domain=~megaurl.in
+://ad.$third-party
+://ads.$third-party
 :35.224.227.218^$webrtc
 =728x90&
 _690x110.
@@ -257,7 +257,7 @@ utm_source=propellerads$popup
 ||chuyendoitien.com/chuyendoitien.gif
 ||cloudfront.net/?cdlad=
 ||cloudfront.net/atrk.js
-||cloudfront.net^$script,domain=shink.me|short.am|megaurl.in
+||cloudfront.net^$script,domain=shink.me|short.am
 ||coccoc.com/skin/
 ||coccoc.com/vastPlayer/
 ||code.hoiquantinhoc.vn/$third-party,script
@@ -447,7 +447,6 @@ utm_source=propellerads$popup
 ||media.tintucvietnam.vn/files/qc
 ||media.vodcdn.xyz^*.gif$image
 ||megacode.vn/media/banners/
-||megaurl.in/sw.js
 ||minhngoc.net^*.gif
 ||mocfun.net/uploads/banners/
 ||motchill.net/api?countViews$subdocument
