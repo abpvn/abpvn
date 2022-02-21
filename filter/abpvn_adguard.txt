@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 202202211021
+! Version: 202202211628
 ! Title: ABPVN List
-! Last modified: 21 Feb 2022 10:21 UTC+7
+! Last modified: 21 Feb 2022 16:28 UTC+7
 ! Expires: 1 days (update frequency)
 !
 ! ABPVN List filter
@@ -99,6 +99,7 @@ vebotv.link##.ibs-bet
 ||az.mom/ads_data/
 ||babydeal.com.vn/image/catalog/banners/
 ||bachngocsach.com/forum/styles/fox9/qc-
+||baliphim.com^*.gif
 ||banthangtv.b-cdn.net^*.gif
 ||baohaugiang.com.vn/uploads/SlideHomeimg/
 ||baominh.tech/wp-content/plugins/wp-*/wp-*.js$script
@@ -202,7 +203,6 @@ vebotv.link##.ibs-bet
 ||explus.vn/gooima.js
 ||f.thuongtruong.com.vn/VIDEO/
 ||fabet88.net^$popup,third-party
-||fancoiphim.net^*.gif
 ||fb88sports.com/Creative/banner$image
 ||ff.imacdn.com^$image,media
 ||file1.dangcongsan.vn^*.gif$image
@@ -815,6 +815,15 @@ appvuive.fun,thethao12h.me##a[rel="nofollow noopener noreferrer sponsored"]
 autodaily.vn,xehay.vn###banner3double
 azviet.biz###widget-15
 azviet.biz,techrum.vn##.WidgetFramework_WidgetRenderer_Html
+baliphim.com###enable_hidden_state_to_show_skip_video_display_info
+baliphim.com###encompass > div[style^="float:left;"]
+baliphim.com###lam_khong_cong_het_1_ngay_link
+baliphim.com##.dont_show_pop_ups
+baliphim.com##div[id^="pc_top_xuyen_trang"]
+baliphim.com##div[style="float: left;width: 100%;text-align: center;margin-top: 30px;"]
+baliphim.com##div[style^="float:left;width:248px;"]
+baliphim.com##pc_top_xuyen_trang_1
+baliphim.com,salaphim.com##.clickadunopop
 banthang.co##.adsInMatch
 banthang.co##.adsInPlayer
 banthang.co##.adsPlayerBanner
@@ -964,15 +973,6 @@ eva.vn##.banner_top_masthead
 eva.vn##.banr-Rt
 eva.vn##.banrpstn
 eva.vn,24h.com.vn##[id^="ADS"]
-fancoiphim.net###enable_hidden_state_to_show_skip_video_display_info
-fancoiphim.net###encompass > div[style^="float:left;"]
-fancoiphim.net###lam_khong_cong_het_1_ngay_link
-fancoiphim.net##.dont_show_pop_ups
-fancoiphim.net##div[id^="pc_top_xuyen_trang"]
-fancoiphim.net##div[style="float: left;width: 100%;text-align: center;margin-top: 30px;"]
-fancoiphim.net##div[style^="float:left;width:248px;"]
-fancoiphim.net##pc_top_xuyen_trang_1
-fancoiphim.net,salaphim.com##.clickadunopop
 files.pw##.adscenter
 files.pw##.adscenter2
 files.pw##.adscenter3
@@ -1791,11 +1791,11 @@ zphimsex.me##.model-open.custom-model-main
 360thethao.net#%#//scriptlet('abort-current-inline-script', 'onload', 'puURL')
 90phuttttttt.xyz#%#//scriptlet('abort-current-inline-script', '$', 'overlay')
 aoe.vn#%#//scriptlet('abort-on-property-read', 'parseInt')
+baliphim.com#%#//scriptlet('set-constant', 'time_load_ads_1', '')
+baliphim.com#%#//scriptlet('set-constant', 'time_load_ads_2', '')
+baliphim.com,downloadsachmienphi.com,khophimhd.net#%#//scriptlet('abort-current-inline-script', 'JSON.parse', 'break;case $.')
 blog.abit.vn#%#//scriptlet('abort-on-property-read', 'document.cookie')
 ephimmoi.net#%#//scriptlet('abort-current-inline-script', '$', 'open')
-fancoiphim.net#%#//scriptlet('set-constant', 'time_load_ads_1', '')
-fancoiphim.net#%#//scriptlet('set-constant', 'time_load_ads_2', '')
-fancoiphim.net,downloadsachmienphi.com,khophimhd.net#%#//scriptlet('abort-current-inline-script', 'JSON.parse', 'break;case $.')
 fullcrackpc.com#%#//scriptlet('addEventListener-defuser, 'load', 'popunder')
 gametv.vn#%#//scriptlet('abort-current-inline-script', '$', 'homeModal')
 gocmod.com#%#//scriptlet('prevent-setTimeout', 'show')
