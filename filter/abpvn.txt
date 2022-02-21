@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 202202211020
+! Version: 202202211628
 ! Title: ABPVN List
-! Last modified: 21 Feb 2022 10:20 UTC+7
+! Last modified: 21 Feb 2022 16:28 UTC+7
 ! Expires: 1 days (update frequency)
 !
 ! ABPVN List filter
@@ -199,6 +199,9 @@ utm_source=propellerads$popup
 ||az708531.vo.msecnd.net^$domain=userscloud.com
 ||b.bnrdom.com/p.js
 ||babydeal.com.vn/image/catalog/banners/
+||baliphim.com/application/player/js/vastvideoplugin.js
+||baliphim.com/images/30062191518917335372.png
+||baliphim.com^*.gif
 ||baobinhthuan.com.vn/data/aditems/
 ||baohaugiang.com.vn/uploads/SlideHomeimg/
 ||baominh.tech/wp-content/plugins/wp-*/wp-*.js$script
@@ -297,9 +300,6 @@ utm_source=propellerads$popup
 ||f.thuongtruong.com.vn/VIDEO/
 ||facebook.com/audiencenetwork/$third-party
 ||facebook.com/video/instream_video/$xmlhttprequest,domain=facebook.com
-||fancoiphim.net/application/player/js/vastvideoplugin.js
-||fancoiphim.net/images/30062191518917335372.png
-||fancoiphim.net^*.gif
 ||fbcdn.net/safe_image.php?d=*&url=http%3A%2F%2Fwww.facebook.com%2Fads%2Fimage%2F%3F$domain=facebook.com
 ||fbcdn.net^*/flyers/$domain=facebook.com
 ||ff.imacdn.com^$image,media
@@ -1367,6 +1367,14 @@ apkmirror.com##.gooWidget
 appvuive.fun,thethao12h.me##a[rel="nofollow noopener noreferrer sponsored"]
 autodaily.vn,xehay.vn###banner3double
 azviet.biz###widget-15
+baliphim.com###enable_hidden_state_to_show_skip_video_display_info
+baliphim.com###encompass > div[style^="float:left;"]
+baliphim.com###lam_khong_cong_het_1_ngay_link
+baliphim.com##.dont_show_pop_ups
+baliphim.com##div[id^="pc_top_xuyen_trang"]
+baliphim.com##div[style="float: left;width: 100%;text-align: center;margin-top: 30px;"]
+baliphim.com##div[style^="float:left;width:248px;"]
+baliphim.com##pc_top_xuyen_trang_1
 banthang.co##.ballon-mobile
 banthang.co##.link-logo.m_disreponsive.hot-menu
 banthang.co##.menu-footer
@@ -1514,14 +1522,6 @@ eva.vn##.banrpstn
 eva.vn,24h.com.vn##[id^="ADS_"]
 facebook.com#?#[data-pagelet="RightRail"] .l9j0dhe7:-abp-has(b:-abp-contains(Được tài trợ))
 facebook.com#?#[data-pagelet^="FeedUnit_"]:-abp-has(b:-abp-contains(Được tài trợ))
-fancoiphim.net###enable_hidden_state_to_show_skip_video_display_info
-fancoiphim.net###encompass > div[style^="float:left;"]
-fancoiphim.net###lam_khong_cong_het_1_ngay_link
-fancoiphim.net##.dont_show_pop_ups
-fancoiphim.net##div[id^="pc_top_xuyen_trang"]
-fancoiphim.net##div[style="float: left;width: 100%;text-align: center;margin-top: 30px;"]
-fancoiphim.net##div[style^="float:left;width:248px;"]
-fancoiphim.net##pc_top_xuyen_trang_1
 filecr.com##.filec-widget
 files.pw##.adscenter
 files.pw##.adscenter2
@@ -1794,7 +1794,7 @@ salaphim.com###enable_hidden_state_to_show_ads_top_v2
 salaphim.com##.ads_popup_mobi_salaphim
 salaphim.com##.ads_popup_mobi_salaphim_v2
 salaphim.com##.ads_popup_pc_salaphim
-salaphim.com,fancoiphim.net##.clickadunopop
+salaphim.com,baliphim.com##.clickadunopop
 salaphim.com,thethaovanhoa.vn##div[class^="ads_"]
 sayhentai.net##.ads_popup
 sbongdatv.net##.euro-tips
