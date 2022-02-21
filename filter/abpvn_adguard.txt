@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 202202211807
+! Version: 202202211808
 ! Title: ABPVN List
-! Last modified: 21 Feb 2022 18:07 UTC+7
+! Last modified: 21 Feb 2022 18:08 UTC+7
 ! Expires: 1 days (update frequency)
 !
 ! ABPVN List filter
@@ -332,6 +332,10 @@ vebotv.link##.ibs-bet
 ||loinhacsong.com/images/banner
 ||luatminhkhue.vn/common/adshowleft
 ||luatvietnam.vn*/uploaded/*.gif
+||lucaphim.com/application/player/js/vastvideoplugin.js
+||lucaphim.com^*.gif$image
+||lucaphim.com^*.php$xmlhttprequest
+||lucaphim.com^*ads-$media
 ||luotphim.cc/wp-content/uploads/$media
 ||luotphimzz.com/wp-content/uploads/$media
 ||luotphimzz.com^*.gif
@@ -432,10 +436,6 @@ vebotv.link##.ibs-bet
 ||s.tainhaccho.vn/images/afl
 ||s1.animeweb.xyz/media/qcdd7$image
 ||s3.amazonaws.com^$domain=phimdinhcao.com|hamtruyenmoi.com
-||salaphim.com/application/player/js/vastvideoplugin.js
-||salaphim.com^*.gif$image
-||salaphim.com^*.php$xmlhttprequest
-||salaphim.com^*ads-$media
 ||sapo.vn/blog/wp-content/uploads/2018/07/Banner-Gift.gif$image
 ||sbongdatv.net^*.gif
 ||senpay.vn/widget/
@@ -822,7 +822,6 @@ baliphim.com###lam_khong_cong_het_1_ngay_link
 baliphim.com##.dont_show_pop_ups
 baliphim.com##div[id^="pc_top_xuyen_trang"]
 baliphim.com##div[style^="float:left;width:248px;"]
-baliphim.com,salaphim.com##.clickadunopop
 banthang.co##.adsInMatch
 banthang.co##.adsInPlayer
 banthang.co##.adsPlayerBanner
@@ -1075,7 +1074,7 @@ infothethao.com##.widget_media_image
 ione.net,saostar.vn##.banner-top-home
 iphimchill.net###quang-cao
 kenh14.vn##.khw-adk14-wrapper
-kenh14.vn,skmoba.com,baodauthau.vn,vnews.gov.vn,mmo4me.com,salaphim.com##div[class*="ads"]
+kenh14.vn,skmoba.com,baodauthau.vn,vnews.gov.vn,mmo4me.com,lucaphim.com##div[class*="ads"]
 kenhsinhvien.net##.sectionAd
 kenhsinhvien.net##.uniad_banner
 kenhsinhvien.net##div[id^="uniad-loc"]
@@ -1120,6 +1119,13 @@ loinhacsong.com##.qchead
 loinhacsong.com##a[href="https://loinhacsong.com/blog/huong-dan-go-chan-quang-cao-doi-voi-website-loi-nhac-song/"]
 lsvn.vn##p.mb-1
 luatvietnam.vn##.advHolder
+lucaphim.com###enable_hidden_state_to_show_ads_bottom
+lucaphim.com###enable_hidden_state_to_show_ads_top
+lucaphim.com###enable_hidden_state_to_show_ads_top_v2
+lucaphim.com##.ads_popup_mobi_salaphim
+lucaphim.com##.ads_popup_mobi_salaphim_v2
+lucaphim.com##.ads_popup_pc_salaphim
+lucaphim.com##.clickadunopop
 lucloi.vn##.ads_shortcode
 luotphim.fun,luotphim.cc,luotphim.vip,luotphimzz.com,webphim.cc###fakeplayer
 luotphim.fun,luotphim.cc,luotphim.vip,luotphimzz.com,webphim.cc###preroll-link
@@ -1280,12 +1286,6 @@ romgoc.net##.adsbygoogle
 rung.vn##.ads-970x280
 rung.vn##div.mb-3:nth-of-type(3)
 sachmoi.net##[href^="https://go.masoffer.net"]
-salaphim.com###enable_hidden_state_to_show_ads_bottom
-salaphim.com###enable_hidden_state_to_show_ads_top
-salaphim.com###enable_hidden_state_to_show_ads_top_v2
-salaphim.com##.ads_popup_mobi_salaphim
-salaphim.com##.ads_popup_mobi_salaphim_v2
-salaphim.com##.ads_popup_pc_salaphim
 saostar.vn###mobi-top
 saostar.vn###pc-top
 saostar.vn##.adblock
@@ -1471,7 +1471,7 @@ vietgiaitri.com##.ads_position
 viethansecurity.com##.banner-top-header
 vietjack.com##.ads_txt
 vietjack.com##.block-teasers-47483
-vietjack.com,phunumoi.net.vn,salaphim.com,nhipcaudautu.vn##div[id^="ads_"]
+vietjack.com,phunumoi.net.vn,lucaphim.com,nhipcaudautu.vn##div[id^="ads_"]
 vietmoz.net##.elementor-widget-image
 vietnamgsm.vn###headerProxy
 vietnamnet.vn##.VnnAdsPos
