@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 202202231614
+! Version: 202202231653
 ! Title: ABPVN List
-! Last modified: 23 Feb 2022 16:14 UTC+7
+! Last modified: 23 Feb 2022 16:53 UTC+7
 ! Expires: 1 days (update frequency)
 !
 ! ABPVN List filter
@@ -1404,7 +1404,7 @@ biphim.co##.banner-sticky-footer-wrapper
 blockchain.com##.bci-ad
 blog.abit.vn##.ab-adv_banner
 blog.abit.vn##.button-dangkyngay
-blogkienthuc.net,mitom1.tv##.textwidget
+blogkienthuc.net##.textwidget
 blogtienao.com##.elementor-popup-modal
 blogtruyen.vn###bar_follow
 blogtruyen.vn###dialog
@@ -1684,6 +1684,11 @@ metruyenchu.com##.nh-read__alert
 metruyenchu.com##nh-section>.text-center.pt-2
 metruyenchu.com,plo.vn##.tpm-ads-unit
 minhngoc.net.vn###adv1
+mitom1.tv###menu-sub-menu
+mitom1.tv##.box-action-odds
+mitom1.tv##.btn-odds
+mitom1.tv##.d-none.d-lg-block
+mitom1.tv##li[class^="style-"]
 mmo4me.com##div[class^="ads-"]
 mmo4me.com,kienthucykhoa.edu.vn,raovathochiminh.net###widget-12
 motchill.net###mp-pl-mb
@@ -1762,6 +1767,9 @@ phuongtrinhhoahoc.com##.top-banner
 play.zing.vn##.ff-box
 playbdl.p2pcdn.xyz##.textBot
 playbdl.p2pcdn.xyz##[href^="https://livebongdatv.net/img/"]
+playmt.fastlycdn.xyz##.boxBot
+playmt.fastlycdn.xyz##.boxTop
+playmt.fastlycdn.xyz##.odds-button
 playxl.fastlycdn.xyz##.a-v9
 playxl.fastlycdn.xyz##.odds-button
 plus.edu.vn###widget-11
@@ -2310,11 +2318,15 @@ gotphim.com#%#//scriptlet('abort-current-inline-script', 'navigator', 'devtoolsD
 lb.topphimhd.info#%#//scriptlet('remove-attr', 'data-ads', 'ul')
 linkneverdie.net#%#//scriptlet('abort-on-property-read', 'arrayAd')
 lxhentai.com#%#//scriptlet('abort-current-inline-script', 'document.cookie')
+mitom1.tv#%#//scriptlet('abort-current-inline-script', 'jQuery', 'overlay')
 ninjastream.to#%#//scriptlet('abort-current-inline-script', 'setTimeout', 'argument')
 phimgii.tv,phimhdvns.net#%#//scriptlet('abort-current-inline-script','jQuery', 'popurl')
 phimhay3s.com#%#//scriptlet('json-prune', 'ads')
 phimlau.online#%#//scriptlet('abort-current-inline-script', 'i6H', 'Math')
 phimtop.net#%#//scriptlet('abort-on-property-read', 'document.cookie')
+playmt.fastlycdn.xyz#%#//scriptlet('set-constant', 'adsButton', 'undefined')
+playmt.fastlycdn.xyz#%#//scriptlet('set-constant', 'adsPlayer', 'undefined')
+playmt.fastlycdn.xyz#%#//scriptlet('set-constant', 'adsTvc', 'undefined')
 rphangs.com,mrcong.com#%#//scriptlet('abort-current-inline-script', 'document.querySelectorAll', 'popMagic')
 sexphimhd.net,gvnvh18.com#%#//scriptlet('set-constant', 'D4zz', 'noopFunc')
 tienichmaytinh.net,giavang.net#%#//scriptlet('prevent-fetch', 'method:HEAD')
