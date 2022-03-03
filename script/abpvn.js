@@ -15,7 +15,7 @@
 // @grant       GM_registerMenuCommand
 // @include     http://*
 // @include     https://*
-// @version     2.3.5
+// @version     2.3.6
 // @change-log  Add download3s.net quick bypass
 // @run-at      document-end
 // ==/UserScript==
@@ -79,9 +79,9 @@ var byPass = {
         }
     },
     quickByPassLink: function () {
-        var regex = /123link\..*|phlame.pw|megaurl\.*|www.123l\.*|vinaurl\.*|share4you.pro|doxeaz10.site|derow.win|linkviet.net|ez4linkss.com|ckk.ai|link.codevn.net|linksht.com|beta.shortearn.eu|getlink.tienichmaytinh.net|download.baominh.tech/;
+        var regex = /123link\..*|phlame.pw|megaurl\.*|www.123l\.*|vinaurl\.*|share4you.pro|doxeaz10.site|derow.win|linkviet.net|ez4linkss.com|ckk.ai|link.codevn.net|linksht.com|beta.shortearn.eu|getlink.tienichmaytinh.net|download.baominh.tech|download3s.net/;
         var largeTimeoutHost = /share4you.pro|derow.win/;
-        var autoCaptchaOnlyList = /megaurl\.*|vinaurl\.*|doxeaz10.site|linkviet.net|ez4linkss.com|ckk.ai|link.codevn.net|beta.shortearn.eu|getlink.tienichmaytinh.net|download.baominh.tech/;
+        var autoCaptchaOnlyList = /megaurl\.*|vinaurl\.*|doxeaz10.site|linkviet.net|ez4linkss.com|ckk.ai|link.codevn.net|beta.shortearn.eu|getlink.tienichmaytinh.net|download.baominh.tech|download3s.net/;
         if (regex.test(location.hostname)) {
             try {
                 var checkClick = function (mutation) {
