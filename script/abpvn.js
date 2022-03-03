@@ -15,8 +15,8 @@
 // @grant       GM_registerMenuCommand
 // @include     http://*
 // @include     https://*
-// @version     2.3.4
-// @change-log  Remove dead domain
+// @version     2.3.5
+// @change-log  Add download3s.net quick bypass
 // @run-at      document-end
 // ==/UserScript==
 /* String Prototype */
