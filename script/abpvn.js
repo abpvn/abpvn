@@ -15,8 +15,8 @@
 // @grant       GM_registerMenuCommand
 // @include     http://*
 // @include     https://*
-// @version     2.3.7
-// @change-log  Add link1s.com quick bypass
+// @version     2.3.8
+// @change-log  Add try catch to runable on Edge
 // @run-at      document-end
 // ==/UserScript==
 /* String Prototype */
@@ -327,21 +327,25 @@ var fixSite = {
         }
     },
     antiAdblockRemover: function() {
-        var msg = 'By pass adBlock detect rồi nhé! Hahahahaha 😁😁😁';
-        if (typeof adBlockDetected === 'function') {
-            adBlockDetected = function() {
-                Logger.info(msg);
-            };
-        }
-        if (typeof showAdsBlock === 'function') {
-            showAdsBlock = function() {
-                Logger.info(msg);
-            };
-        }
-        if (typeof nothingCanStopMeShowThisMessage === 'function') {
-            nothingCanStopMeShowThisMessage = function() {
-                Logger.info(msg);
-            };
+        try {
+            var msg = 'By pass adBlock detect rồi nhé! Hahahahaha 😁😁😁';
+            if (typeof adBlockDetected === 'function') {
+                adBlockDetected = function() {
+                    Logger.info(msg);
+                };
+            }
+            if (typeof showAdsBlock === 'function') {
+                showAdsBlock = function() {
+                    Logger.info(msg);
+                };
+            }
+            if (typeof nothingCanStopMeShowThisMessage === 'function') {
+                nothingCanStopMeShowThisMessage = function() {
+                    Logger.info(msg);
+                };
+            }
+        } catch (e) {
+            Logger.error(e);
         }
     },
     kickass_cc: function() {
