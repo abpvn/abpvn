@@ -15,8 +15,8 @@
 // @grant       GM_registerMenuCommand
 // @include     http://*
 // @include     https://*
-// @version     2.3.8
-// @change-log  Add try catch to runable on Edge
+// @version     2.3.9
+// @change-log  Userscript refactor
 // @run-at      document-end
 // ==/UserScript==
 /* String Prototype */
@@ -173,7 +173,6 @@ var byPass = {
             }
             // step 2
             let btnGo = document.querySelector('#link1s-snp .btn-primary');
-            let interval;
             if (btnGo) {
                 Logger.info('Link1s.com step 2 match');
                 Logger.info('Finding next url');
@@ -184,7 +183,7 @@ var byPass = {
                     return;
                 }
             }
-            // Step 3
+            // step 3
             var observer = new MutationObserver((mutations) => {
                 mutations.forEach((mutation) => {
                     // Check the modified attributeName is "disabled"
@@ -198,6 +197,7 @@ var byPass = {
                 attributes: true
             };
             if (location.hostname === 'link1s.com' && document.querySelector('.get-link')) {
+                Logger.info('Link1s.com step 3 match');
                 observer.observe(document.querySelector('.get-link'), config);
             }
         });
@@ -236,31 +236,16 @@ var Logger = {
 };
 //get Link class
 var getLink = {
+    showBodyLinkDownloadAndRedirect: function(label, link) {
+        document.body.innerHTML = '<style>html,body{background: #fff !important;}h1{color: #00dc58;}a{color: #015199}a h1{color: #015199;}</style><center><h1>ABPVN ' + label + ' download đã hoạt động</h1><a href=\'https://abpvn.com/donate\'><h1>Ủng hộ ABPVN</h1></a><br/>Không tự tải xuống? <a href=\'' + link + '\' title=\'Download\'>Click vào đây</a></center>';
+        location.href = link;
+    },
     mediafire_com: function() {
         if (this.url.startWith('http://www.mediafire.com/file/') || this.url.startWith('https://www.mediafire.com/file/')) {
             var a_tag = document.querySelector('.download_link a.input');
             var link = a_tag.getAttribute('href');
             if (link.startWith('http')) {
-                document.body.innerHTML = '<style>h1{color: #00dc58;}a{color: #015199}a h1{color: #015199;}</style><center><h1>ABPVN MediaFire Download đã hoạt động</h1><a href=\'https://abpvn.com/donate\'><h1>Ủng hộ ABPVN</h1></a><br/>Không tự tải xuống? <a href=\'' + link + '\' title=\'Download\'>Click vào đây</a></center>';
-                location.href = link;
-            }
-        }
-    },
-    usercloud_com: function() {
-        if (this.url.startWith('https://userscloud.com/') && this.url.length > 24) {
-            var form = document.querySelector('form[name="F1"]');
-            if (form) {
-                form.submit();
-                document.body.innerHTML = '<style>h1{color: #00dc58;}a{color: #015199}a h1{color: #015199;}</style><center><h1>ABPVN UserCloud Download đã hoạt động</h1><a href=\'https://abpvn.com/donate\'><h1>Ủng hộ ABPVN</h1></center>';
-            } else {
-                var a_link = document.querySelector('h4 a.btn-success');
-                if (a_link) {
-                    var link = a_link.getAttribute('href');
-                    if (link.startWith('https')) {
-                        document.body.innerHTML = '<style>h1{color: #00dc58;}a{color: #015199}a h1{color: #015199;}</style><center><h1>ABPVN UserCloud Download đã hoạt động</h1><a href=\'https://abpvn.com/donate\'><h1>Ủng hộ ABPVN</h1></a><br/>Không tự tải xuống? <a href=\'' + link + '\' title=\'Download\'>Click vào đây</a></center>';
-
-                    }
-                }
+                this.showBodyLinkDownloadAndRedirect('MediaFire', link);
             }
         }
     },
@@ -268,7 +253,6 @@ var getLink = {
         this.url = location.href;
         if (configure.getValue('quick_download', true)) {
             this.mediafire_com();
-            this.usercloud_com();
         }
     }
 };
@@ -311,21 +295,6 @@ var fixSite = {
         var head = document.getElementsByTagName('head')[0];
         head.appendChild(css_tag);
     },
-    fakelinkRemover: function() {
-        var regex = /ibongda|thevang.tv|banthang.live|tructiepbongda.vip|dabong.net|bongda365.tv|tructiepbongda.pro/
-        if (regex.test(this.url)) {
-            ABPVN.cTitle();
-            var fakeLink = document.querySelectorAll('a[data-href][rel="nofollow"],a[data-url][rel="nofollow"],a[data-url].pop-open');
-            var count = 0;
-            for (var i = 0; i < fakeLink.length; i++) {
-                if (fakeLink[i]) {
-                    fakeLink[i].setAttribute('href', fakeLink[i].getAttribute('data-href') || fakeLink[i].getAttribute('data-url'));
-                    count++;
-                }
-            }
-            Logger.info("Removed " + count + " fake link in " + location.hostname);
-        }
-    },
     antiAdblockRemover: function() {
         try {
             var msg = 'By pass adBlock detect rồi nhé! Hahahahaha 😁😁😁';
@@ -348,21 +317,6 @@ var fixSite = {
             Logger.error(e);
         }
     },
-    kickass_cc: function() {
-        if (this.url.startWith('https://kickass2.cc')) {
-            var allFakeA = document.querySelectorAll('a[href^="https://mylink.cx/?url="]');
-            var count = 0;
-            for (var i = 0; i < allFakeA.length; i++) {
-                var aTag = allFakeA[i];
-                if (aTag) {
-                    var realLink = aTag.getAttribute('href').replace(/https:\/\/mylink\.cx\/\?url=(.*)/, '$1');
-                    aTag.setAttribute('href', decodeURIComponent(realLink));
-                    count++;
-                }
-            }
-            Logger.info("Removed " + count + " fake link in " + location.hostname);
-        }
-    },
     topphimhd_info: function() {
         if (this.url.startWith('http://lb.topphimhd.info')) {
             var adSourceEl = document.querySelector('[data-ads=""]');
@@ -374,7 +328,7 @@ var fixSite = {
         }
     },
     luotphim: function() {
-        if (this.url.startWith('https://luotphim.tv/xem-phim') || this.url.startWith('https://luotphim.tv/phim-') || this.url.startWith("https://luotphim.net/xem-phim") || this.url.startWith("https://luotphim.net/phim-")) {
+        if (this.url.startWith('https://luotphim.top/xem-phim') || this.url.startWith('https://luotphim.top/phim-') || this.url.startWith("https://luotphim.fun/xem-phim") || this.url.startWith("https://luotphim.fun/phim-")) {
             var clickCount = 1;
             var interval = setInterval(() => {
                 if (document.querySelector('.btn-close-preroll') && document.querySelector('#fakeplayer').style.display != 'none') {
@@ -423,21 +377,9 @@ var fixSite = {
                 replace: 'redirect/?url='
             },
             {
-                url: 'http://phanmemaz.com/',
-                replace: 'http://phanmemaz.com/wp-content/plugins/tm-wordpress-redirection/l.php?'
-            },
-            {
-                url: 'forums.voz.vn/showthread.php',
-                replace: '/redirect/index.php?link='
-            },
-            {
                 url: 'www.webtretho.com/forum/',
                 replace: /http(s?):\/\/webtretho\.com\/forum\/links\.php\?url=/,
                 selector: 'a[href*="webtretho.com/forum/links.php?url="]'
-            },
-            {
-                url: '/kat.vc|kickass.best/',
-                replace: 'https://mylink.cx/?url='
             },
             {
                 url: 'https://tuong.me/',
@@ -474,60 +416,12 @@ var fixSite = {
             this.removeRedirect();
         }
         this.antiAdblockRemover();
-        this.kickass_cc();
-        this.fakelinkRemover();
         this.topphimhd_info();
         this.luotphim();
     }
 };
 //Ad blocker script
 var adBlocker = {
-    blockPopUp: function() {
-        var listSite = [
-            'blogtruyen.vn',
-            'hamtruyen.vn',
-            'phim14.net',
-            'animetvn.com',
-            'font.vn',
-            'vidoza.net',
-            'hdonline.vn',
-            'www.phim.media',
-            'phimnhanh.com',
-            'www.vietsubhd.com',
-            'www.phimmedia.tv',
-            'tvhay.org',
-            'bilutv.org',
-            'fullcrackpc.com'
-        ];
-        for (var i = 0; i < listSite.length; i++) {
-            if (location.hostname === listSite[i]) {
-                ABPVN.cTitle();
-                Logger.info('Đã chặn popup quảng cáo');
-                document.body.onclick = null;
-                document.onclick = null;
-                document.ontouchstart = null;
-                document.onmousedown = null;
-                window.addEventListener('load', function() {
-                    setTimeout(function() {
-                        Logger.info('Đã chặn popup quảng cáo onload');
-                        document.ontouchstart = null;
-                        document.onclick = null;
-                        document.body.onclick = null;
-                        document.onmousedown = null;
-                    }, 300);
-                });
-                window.addEventListener('DOMContentLoaded', function() {
-                    setTimeout(function() {
-                        Logger.info('Đã chặn popup quảng cáo dom load');
-                        document.ontouchstart = null;
-                        document.onclick = null;
-                        document.body.onclick = null;
-                        document.onmousedown = null;
-                    }, 300);
-                });
-            }
-        }
-    },
     mgIdAdRemover: function() {
         var allMgIdEl = document.querySelectorAll('[id*="ScriptRoot"]');
         if (allMgIdEl && allMgIdEl.length) {
@@ -541,43 +435,9 @@ var adBlocker = {
             }
         }
     },
-    phimnhanh_com: function() {
-        if (this.url.startWith('http://phimnhanh.com/xem-phim')) {
-            Logger.warn('Đã chặn video preload');
-            if (video !== undefined) {
-                video.preroll = function(options) { };
-            }
-        }
-    },
-    vinaurl_net: function() {
-        if (this.url.match(/vinaurl\.*/)) {
-            document.querySelectorAll('div[id^="ads-"]').forEach(item => item.remove());
-        }
-    },
-    phimnhe_net: function() {
-        if (this.url.startWith('https://phimnhe.net') && createCookie !== undefined) {
-            ABPVN.cTitle();
-            createCookie('vwinpopuppc', 1, 72);
-            createCookie('vwinpopupmb', 1, 72);
-        }
-    },
-    aphimhot_com: function() {
-        if (this.url.startWith('https://aphimhot.com')) {
-            sessionStorage.setItem(key, 1);
-            openTab = function(url) {
-                Logger.log(`Chặn popup rồi nhé😁😁. Đang chuyển đến ${url}...`);
-                location.href = url;
-            }
-        }
-    },
     init: function() {
         this.url = location.href;
         this.mgIdAdRemover();
-        this.blockPopUp();
-        this.phimnhanh_com();
-        this.vinaurl_net();
-        this.phimnhe_net();
-        this.aphimhot_com();
     },
 };
 var configure = {
