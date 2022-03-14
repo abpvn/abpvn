@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 202203141555
+! Version: 202203141605
 ! Title: ABPVN List
-! Last modified: 14 Mar 2022 15:55 UTC+7
+! Last modified: 14 Mar 2022 16:05 UTC+7
 ! Expires: 1 days (update frequency)
 !
 ! ABPVN List filter
@@ -476,7 +476,7 @@ utm_source=propellerads$popup
 ||tinhayvip.com^*.gif
 ||tinmoi.vn/?mod=ajax&act=getAds
 ||tinmoi.vn/ga.js
-||tinsoikeo.net^*.gif$image
+||tinsoikeo.io^*.gif$image
 ||tocbien.com^*.gif$third-party
 ||top10review.vn^*.gif$image
 ||topcode.vn/FilesUpload/su-kien/
@@ -1701,6 +1701,8 @@ rphangs.com,mrcong.com#%#//scriptlet('abort-current-inline-script', 'document.qu
 sexphimhd.net,gvnvh18.com,g18vn.com#%#//scriptlet('set-constant', 'D4zz', 'noopFunc')
 tapmoi.net#%#//scriptlet('abort-current-inline-script', 'navigator', 'SmartPopunder')
 tienichmaytinh.net,giavang.net#%#//scriptlet('prevent-fetch', 'method:HEAD')
+tinsoikeo.io#%#//scriptlet('abort-current-inline-script', '$', 'window.open')
+tinsoikeo.io#%#//scriptlet('abort-on-property-read', 'sessionStorage')
 vebotv.link##.show.fade.modal
 vebotv.link,bongdahomnay.tech##.modal-backdrop.show
 vebotv.link,bongdahomnay.tech#$#body {overflow: visible!important;}
