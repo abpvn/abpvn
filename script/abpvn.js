@@ -15,8 +15,8 @@
 // @grant       GM_registerMenuCommand
 // @include     http://*
 // @include     https://*
-// @version     2.3.9
-// @change-log  Userscript refactor
+// @version     2.3.10
+// @change-log  Update link1s.com quick by pass
 // @run-at      document-end
 // ==/UserScript==
 /* String Prototype */
@@ -194,11 +194,12 @@ var byPass = {
                 });
             });
             var config = {
-                attributes: true
+                attributes: true,
+                subtree: true
             };
-            if (location.hostname === 'link1s.com' && document.querySelector('.get-link')) {
+            if (location.hostname === 'link1s.com' && (document.querySelector('.get-link') || document.querySelector('.skip-ad'))) {
                 Logger.info('Link1s.com step 3 match');
-                observer.observe(document.querySelector('.get-link'), config);
+                observer.observe((document.querySelector('.get-link') || document.querySelector('.skip-ad')), config);
             }
         });
     },
