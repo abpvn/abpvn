@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 202204261315
+! Version: 202204261316
 ! Title: ABPVN List
-! Last modified: 26 Apr 2022 13:15 UTC+7
+! Last modified: 26 Apr 2022 13:16 UTC+7
 ! Expires: 1 days (update frequency)
 !
 ! ABPVN List filter
@@ -334,7 +334,6 @@ utm_source=propellerads$popup
 ||lucaphim.com/application/player/js/vastvideoplugin.js
 ||lucaphim.com/images^*.png$popup,1p
 ||lucaphim.com^*.gif$image
-||lucaphim.com^*.php$xmlhttprequest
 ||lucaphim.com^*ads-$media
 ||luotphim.cc/wp-content/uploads/$media
 ||luotphimzz.com/wp-content/uploads/$media
@@ -1610,11 +1609,11 @@ vlxx.xyz##a[rel*="nofollow"]
 aoe.vn##+js(aopr, parseInt)
 baliphim.com##+js(set, time_load_ads_1, '')
 baliphim.com##+js(set, time_load_ads_2, '')
-baliphim.com,truyen2u.net##+js(acs, parseInt, break;case $.)
+baliphim.com,lucaphim.com,truyen2u.net##+js(acs, parseInt, break;case $.)
 baominh.tech##+js(addEventListener-defuser, DOMContentLoaded, adsBlocked)
 blog.abit.vn,phimdinhcao.net,truyensieuhay.com,phimtopz.com##+js(aopr, document.cookie)
 bongdahomnay.tech###partner-pop
-downloadsachmienphi.com,khophimhd.net,lucaphim.com##+js(acs, JSON.parse, break;case $.)
+downloadsachmienphi.com,khophimhd.net##+js(acs, JSON.parse, break;case $.)
 fullcrackpc.com##+js(addEventListener-defuser, load, popunder)
 gametv.vn##+js(acs, $, homeModal)
 gocmod.com##+js(nostif, show)
