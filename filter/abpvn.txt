@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 202205201523
+! Version: 202205201525
 ! Title: ABPVN List
-! Last modified: 20 May 2022 15:23 UTC+7
+! Last modified: 20 May 2022 15:25 UTC+7
 ! Expires: 1 days (update frequency)
 !
 ! ABPVN List filter
@@ -514,6 +514,7 @@ utm_source=propellerads$popup
 ||static.bepolite.eu^
 ||static.bongda24h.vn/medias/*.gif
 ||static.cdnno.com/storage/lazada/$image,domain=metruyenchu.com
+||static.cdnstoremedia.com/cmsads/$image
 ||static.homedy.com/*banner-
 ||static.mepuzz.com/sdk/v2/MePuzzServiceWorker.min.js
 ||static.nhaccuatui.com/imgqc/
@@ -1789,7 +1790,7 @@ truyentranhtuan.com##.doc-truyen-ads-d2
 truyenyy.com##.pre_btn_ads
 tudomuaban.com###ad-center
 tuoitre.vn###admbackground
-tuoitre.vn###divend > [id^="zone-"]
+tuoitre.vn##.Mobile_Masthead_TTO_Wrapper
 turbobit.net##.download-area-top
 tvhay.top,kingphim.co,khophim18.com,vietphim.vn##.float-ck-center-lt
 tvphapluat.vn##.bannerqc
@@ -1937,6 +1938,8 @@ zippyshare.com##.center_ad
 @@||animevnn.com/*/img/loadimg.gif$image,~third-party
 @@||assets.vlitag.com/plugins/$script,domain=game24h.vn
 @@||assets.vlitag.com/prebid/default/$script,domain=game24h.vn
+@@||cd.cococx.com/cms/$domain=tuoitre.vn
+@@||cd.cococx.com/core/admcorecc.js
 @@||cdn.ampproject.org/v0/amp-ad-0.1.js$domain=sum.vn
 @@||cdn.jsdelivr.net/gh/toidicode/favicons@1.0.1/js/prebid-ads.js
 @@||forum.gocmod.com/js/$~third-party
