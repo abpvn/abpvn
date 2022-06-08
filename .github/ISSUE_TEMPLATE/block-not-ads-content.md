@@ -1,6 +1,6 @@
 ---
 name: Block not ads content
-about: Report when ABPVN List block usefull content in website
+about: Report when ABPVN List block useful content in website
 title: 'Block incorrect on website: [domain]'
 labels: Inccorect block
 assignees: ''
@@ -8,7 +8,7 @@ assignees: ''
 ---
 
 **Incorrect block description**
-Tell about incorrect block
+<!-- Tell about incorrect block here -->
 
 **Step to reproduce**
 1. Go to website
@@ -16,14 +16,16 @@ Tell about incorrect block
 3. ...
 
 **Website url**
-Direct website url contains ads
+<!-- Place direct website url contains ads -->
 
 <details>
 <summary>With ABPVN Enabled</summary>
+<!-- Add your screenshot when ABPVN Enable -->
 ![Image name](imageUrl)
 </details>
 <details>
 <summary>Without ABPVN Enabled</summary>
+<!-- Add your screenshot when ABPVN Disabled -->
 ![image name](imageUrl)
 </details>
 
