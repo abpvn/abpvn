@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 202206081703
+! Version: 202206082048
 ! Title: ABPVN List
-! Last modified: 08 Jun 2022 17:03 UTC+7
+! Last modified: 08 Jun 2022 20:48 UTC+7
 ! Expires: 1 days (update frequency)
 !
 ! ABPVN List filter
@@ -208,6 +208,7 @@ ad_300_250
 ||cdn.thehinh.com^$image,domain=khoedep.vn
 ||cdn.thichxemphim.net/wp-content/themes/halimmovies-child/jscm.min.js
 ||cdn.tinypass.com/api/tinypass.min.js
+||cdn.vebo.live^*.gif$image
 ||cdnmedia.baotintuc.vn/Upload/QKrAM3u3JmfSk084HTqfEg/files/2020/06/Itaxa-moi.jpg
 ||cdnmm.hyperpromote.com$subdocument
 ||centralland.com.vn^*.gif
@@ -1757,6 +1758,10 @@ v4u.vn##.Flagrow-Ads-under-header
 valvrareteam.com##A[rel*="nofollow"]
 vaophimhay.com##.textwidget>p
 vcomic.net##.mrb10
+vebo.live###wap_bottombanner_content
+vebo.live##.align-items-center.justify-content-between.d-flex.col-12>.d-lg-none.d-block
+vebo.live##.btn-odds
+vebo.live##.topButton
 vebotv.xyz###m-bet
 vebotv.xyz##.box-host
 vebotv.xyz##.captain-sb
@@ -2137,6 +2142,7 @@ tinsoikeo.io#%#//scriptlet('abort-current-inline-script', '$', 'window.open')
 tinsoikeo.io#%#//scriptlet('abort-on-property-read', 'sessionStorage')
 truyentranhaudio.com,downloadsachmienphi.com,lrepacks.net,khophimhd.net,tvhay.top#%#//scriptlet('abort-current-inline-script', 'JSON.parse', 'break;case $.')
 truyentranhtuan.com#%#//scriptlet('abort-current-inline-script', '$', 'btpop')
+vebo.live#%#//scriptlet('abort-current-inline-script' 'jQuery', 'popup')
 vebotv.xyz##.show.fade.modal
 vebotv.xyz,bongdahomnay.tech##.modal-backdrop.show
 vebotv.xyz,bongdahomnay.tech#$#body {overflow: visible!important;}
