@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 202206081703
+! Version: 202206082052
 ! Title: ABPVN List
-! Last modified: 08 Jun 2022 17:03 UTC+7
+! Last modified: 08 Jun 2022 20:52 UTC+7
 ! Expires: 1 days (update frequency)
 !
 ! ABPVN List filter
@@ -89,6 +89,7 @@
 ||cdn.pixfuture.com/adb-media/adb_detect_pixfuture.js
 ||cdn.thehinh.com^$image,domain=khoedep.vn
 ||cdn.thichxemphim.net/wp-content/themes/halimmovies-child/jscm.min.js
+||cdn.vebo.live^*.gif$image
 ||cdn.webhoctienganh.com/asset/home/img/banner/
 ||centralland.com.vn^*.gif
 ||chodansinh.net^*.gif
@@ -1134,6 +1135,10 @@ v4u.vn##.Flagrow-Ads-under-header
 valvrareteam.com##a[rel*="nofollow"]
 vaophimhay.com##.textwidget > p
 vatlypt.com##a[target="_blank"][rel="dofollow"]
+vebo.live###wap_bottombanner_content
+vebo.live##.align-items-center.justify-content-between.d-flex.col-12>.d-lg-none.d-block
+vebo.live##.btn-odds
+vebo.live##.topButton
 vebotv.xyz###m-bet
 vebotv.xyz##.box-host
 vebotv.xyz##.captain-sb
@@ -1465,6 +1470,7 @@ tienichmaytinh.net,giavang.net#%#//scriptlet('prevent-fetch', 'method:HEAD')
 tinsoikeo.io#%#//scriptlet('abort-current-inline-script', '$', 'window.open')
 tinsoikeo.io#%#//scriptlet('abort-on-property-read', 'sessionStorage')
 truyentranhtuan.com#%#//scriptlet('abort-current-inline-script', '$', 'btpop')
+vebo.live#%#//scriptlet('abort-current-inline-script', 'jQuery', 'popup')
 vebotv.xyz##.show.fade.modal
 vebotv.xyz,bongdahomnay.tech##.modal-backdrop.show
 vebotv.xyz,bongdahomnay.tech#$#body {overflow: visible!important;}
