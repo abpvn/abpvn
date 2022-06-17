@@ -15,8 +15,8 @@
 // @grant       GM_registerMenuCommand
 // @include     http://*
 // @include     https://*
-// @version     2.3.10
-// @change-log  Update link1s.com quick by pass
+// @version     2.3.11
+// @change-log  Add remove redirect icongnghe.com
 // @run-at      document-end
 // ==/UserScript==
 /* String Prototype */
@@ -405,6 +405,10 @@ var fixSite = {
             {
                 url: 'https://anonyviet.com',
                 replace: 'https://anonyviet.com/tieptucdidentrangmoi/?url='
+            },
+            {
+                url: 'https://icongnghe.com',
+                replace: 'https://icongnghe.com/download/?url='
             }
         ];
         configs.forEach(function(config) {
