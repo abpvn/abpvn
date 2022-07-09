@@ -15,8 +15,8 @@
 // @grant       GM_registerMenuCommand
 // @include     http://*
 // @include     https://*
-// @version     2.3.11
-// @change-log  Add remove redirect icongnghe.com
+// @version     2.3.12
+// @change-log  Add remove redirect cakhia-tv.onl
 // @run-at      document-end
 // ==/UserScript==
 /* String Prototype */
@@ -409,6 +409,10 @@ var fixSite = {
             {
                 url: 'https://icongnghe.com',
                 replace: 'https://icongnghe.com/download/?url='
+            },
+            {
+                url: 'https://cakhia-tv.onl',
+                replace: '/chuyen-huong/?redirect='
             }
         ];
         configs.forEach(function(config) {
