@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 202207151720
+! Version: 202207170630
 ! Title: ABPVN List
-! Last modified: 15 Jul 2022 17:20 UTC+7
+! Last modified: 17 Jul 2022 06:30 UTC+7
 ! Expires: 1 days (update frequency)
 !
 ! ABPVN List filter
@@ -349,6 +349,9 @@
 ||static.nhaccuatui.com/imgqc/
 ||static.omphimz.com/thumbnail/*.gif
 ||static.omphimz.com/thumbnail/*.mp4
+||static.phimdacap.com/exstatic/*$image,~third-party
+||static.phimdacap.com/js/*/vastnamev1.js$script
+||static.phimdacap.com/js/trailer-popup.js$script,~third-party
 ||static.phimdacap.com^*.gif$image
 ||static.ybox.vn^*.gif
 ||statics.voz.tech/data/94bf/16229c4da035c9.jpg$image
@@ -1001,6 +1004,8 @@ phim18zz.com,mphimmoi1.net##.pcCatfish
 phim202.com###itro_opaco
 phimbathu.info###catfish_content
 phimdacap.com###mp-preload-popup-overlay
+phimdacap.com##[data-id="catfish"]
+phimdacap.com##[data-id="popup"]
 phimdacap.com##[id^="popup_"]
 phimdacap.com##div[id^="catfish_"]
 phimdacap.com,phimanimehd.net##.fixed_bottom
