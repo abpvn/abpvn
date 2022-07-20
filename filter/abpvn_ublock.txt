@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 202207201133
+! Version: 202207201540
 ! Title: ABPVN List
-! Last modified: 20 Jul 2022 11:33 UTC+7
+! Last modified: 20 Jul 2022 15:40 UTC+7
 ! Expires: 1 days (update frequency)
 !
 ! ABPVN List filter
@@ -122,7 +122,7 @@ $webrtc,domain=forum.xda-developers.com|dailyuploads.net|uploadocean.com|appvn.c
 /static/ads/*
 /storage.adpia.vn/$image
 /tinhocdongthap.com\/wp-content\/plugins\/wp-[\w-]+\/[\w-]+\.js/$script
-/uts.js
+/uts.jsr
 /vast.$domain=~nhaccuatui.com|~supjav.com|~xemvtvnet.net|~hplus.com.vn|~radiomitre.cienradios.com|~japopav.tv|~vast.gov.vn|~javuncen.xyz
 /videojs.ads.$domain=~danet.vn
 /videojs.ima.js
@@ -260,6 +260,9 @@ ad_300_250
 ||gamedoithuong.org^*.gif$image
 ||gamehub.vn/img/files/*.gif
 ||gameiwin.net/wp-content/uploads/$image,domain=daominhha.com
+||gamenoob.net/wp-content/plugins/convertplug/modules/modal/assets/js/modal.min.js
+||gamenoob.net/wp-content/plugins/simple-banner/simple-banner.js
+||gamenoob.net^*.gif
 ||giaxaydung.vn/images/
 ||giaxaydung.vn/styles/gxd/banner/
 ||gmodules.com/gadgets/proxy?container=ig&url=*.gif
@@ -1423,6 +1426,8 @@ game4v.com###fixedban
 game4v.com##div[class^="banner-mobile"]
 gameio.vn###tubia
 gamek.vn###admzone57
+gamenoob.net##.cp-modal-popup-container
+gamenoob.net##.simple-banner
 gametv.vn##.ads-right1
 gametv.vn##.adv-row
 gametv.vn,aoe.vn##.left-right-banner
