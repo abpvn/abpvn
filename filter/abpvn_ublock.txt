@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 202208131501
+! Version: 202208131723
 ! Title: ABPVN List
-! Last modified: 13 Aug 2022 15:01 UTC+7
+! Last modified: 13 Aug 2022 17:23 UTC+7
 ! Expires: 1 days (update frequency)
 !
 ! ABPVN List filter
@@ -661,6 +661,7 @@
 2banh.vn###position_full_top_banner_pc
 2banh.vn##.window_popup
 2game.vn###newmenu + div>div[style]
+2phimmoi.net##.container>.right-box
 360thethao.net##.ads-detail
 360thethao.net##.dealer-block
 360thethao.net##a[href^="https://www.mc876.com/?"]
@@ -1529,6 +1530,7 @@ vlxx.xyz##.fads
 vlxx.xyz##.ff-banner
 vlxx.xyz##a[rel*="nofollow"]
 ! ---------Rule only for uBlock Origin------
+2phimmoi.net##+js(acs, $, urlAdsMbIntro)
 360thethao.net##+js(acs, onload, puURL)
 90phut2.live##+js(acs, $, overlay)
 90phut2.live##+js(acs, setTimeout, overlay)
@@ -1567,7 +1569,7 @@ vebo1.tv##+js(acs, jQuery, popup)
 vebotv.today##.modal-backdrop.show
 vebotv.today##.show.fade.modal
 vebotv.today##html:style(overflow: auto!important)
-viettoons.tv,2phimmoi.net,phimmoiaz.cc,zo3x.ml,m.blogtruyen.vn##+js(aopr, open)
+viettoons.tv,phimmoiaz.cc,zo3x.ml,m.blogtruyen.vn##+js(aopr, open)
 vungoctuan.vn##+js(acs, document.write, snow)
 vungoctuan.vn##+js(no-xhr-if, ads)
 watchsb.com##+js(aopr, __Y)
