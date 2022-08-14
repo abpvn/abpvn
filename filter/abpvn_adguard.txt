@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 202208131501
+! Version: 202208141037
 ! Title: ABPVN List
-! Last modified: 13 Aug 2022 15:01 UTC+7
+! Last modified: 14 Aug 2022 10:37 UTC+7
 ! Expires: 1 days (update frequency)
 !
 ! ABPVN List filter
@@ -1249,6 +1249,7 @@ ad_300_250
 2banh.vn##.lb_overlay
 2banh.vn##.window_popup
 2game.vn###newmenu + div>div[style]
+2phimmoi.net##.container>.right-box
 360thethao.net##.ads-detail
 360thethao.net##.dealer-block
 360thethao.net##a[href^="https://www.mc876.com/?"]
@@ -2207,6 +2208,7 @@ xiuren.org##div[id^="exo_slider_"]
 xnxx.com###ad-header-mobile
 xnxx.com###content-ad-top-zone
 ! ---------Rule only for AdGuard------
+2phimmoi.net#%#//scriptlet('abort-current-inline-script', '$', 'urlAdsMbIntro')
 360thethao.net#%#//scriptlet('abort-current-inline-script', 'onload', 'puURL')
 90phut2.live#%#//scriptlet('abort-current-inline-script', '$', 'overlay')
 90phut2.live#%#//scriptlet('abort-current-inline-script', 'setTimeout', 'overlay')
@@ -2246,7 +2248,7 @@ vebotv.today##.modal-backdrop.show
 vebotv.today##.show.fade.modal
 vebotv.today#$#body {overflow: visible!important;}
 veryfiles.com#%#//scriptlet('abort-on-property-read', 'nFNcksmwU')
-viettoons.tv,2phimmoi.net,zo3x.ml,m.blogtruyen.vn,phimmoiaz.cc,dood.pm#%#//scriptlet('abort-on-property-read', 'open')
+viettoons.tv,zo3x.ml,m.blogtruyen.vn,phimmoiaz.cc,dood.pm#%#//scriptlet('abort-on-property-read', 'open')
 vungoctuan.vn#%#//scriptlet('abort-current-inline-script', 'document.write', 'snow')
 vungoctuan.vn#%#//scriptlet('prevent-xhr', 'ads')
 watchsb.com#%#//scriptlet('abort-on-property-read', '__Y')
