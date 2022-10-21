@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 202210210628
+! Version: 202210211028
 ! Title: ABPVN List
-! Last modified: 21 Oct 2022 06:28 UTC+7
+! Last modified: 21 Oct 2022 10:28 UTC+7
 ! Expires: 1 days (update frequency)
 !
 ! ABPVN List filter
@@ -124,7 +124,7 @@
 /storage.adpia.vn/$image
 /tinhocdongthap.com\/wp-content\/plugins\/wp-[\w-]+\/[\w-]+\.js/$script
 /uts.jsr
-/v/*/vast.js$script
+/v/*/vast.js$script,domain=~xemphim365.net
 /vast.js$script,domain=api.anime3s.com|tvzingvn.org|ophim.pro
 /videojs.ads.$domain=~danet.vn
 /videojs.ima.js
@@ -600,6 +600,7 @@ ad_300_250
 ||www.youtube.com^$csp=worker-src 'none'
 ||xahoingaynay.com.vn/upload/$image
 ||xembd.live^*.gif
+||xemphim365.net/public/*.mp4$domain=xemphim365.net,rewrite=abp-resource:blank-mp3s
 ||xemphimsoz.net/img/
 ||xemphimvtv.net/upload/img/download-xem.png
 ||xemphimvtv.net/upload/img/taive.png
