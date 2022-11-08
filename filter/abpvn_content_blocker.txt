@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 202211071943
+! Version: 202211081455
 ! Title: ABPVN List
-! Last modified: 07 Nov 2022 19:43 UTC+7
+! Last modified: 08 Nov 2022 14:55 UTC+7
 ! Expires: 1 days (update frequency)
 !
 ! ABPVN List filter
@@ -52,6 +52,8 @@
 /videojs.ads.$domain=~danet.vn
 /videojs.ima.js$domain=~jut.su|~earthcam.com
 ireviewsach.com##[href^="https://rutgon.me/"]
+phimdacap.com###iframe_bottom
+phimdacap.com##body > iframe
 ||123nhadatviet.com/Media/CK/banners/
 ||123nhadatviet.net/Media/CK/banners/
 ||24hmoney.vn/_nuxt/img/banner
@@ -1348,6 +1350,8 @@ yeuphimmoik.com##.cash-fish-pc
 zingnews.vn###site-header
 zingnews.vn,minhngoc.net.vn,vn-z.vn,kinhtedothi.vn##[id^="adv"]
 zingnews.vn,toquoc.vn,baoxaydung.com.vn,tienphong.vn,antt.nguoiduatin.vn,kinhtenongthon.vn,taichinhdoanhnghiep.net.vn,lsvn.vn,thichxemphim.net,bimbimz.tv,mannhantv.live##.banner
+||static.phimdacap.com/exstatic2/dk8/$image
+||static.phimdacap.com/js/jwplayer_v5/vastnamev3.js$script
 ~livescore.com,~msn.com,~dm.de##.qc
 !---------------ABPVN White List--------------------
 @@/favicon.ico
