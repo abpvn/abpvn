@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 202211081523
+! Version: 202211081545
 ! Title: ABPVN List
-! Last modified: 08 Nov 2022 15:23 UTC+7
+! Last modified: 08 Nov 2022 15:45 UTC+7
 ! Expires: 1 days (update frequency)
 !
 ! ABPVN List filter
@@ -103,6 +103,7 @@ phimdacap.com##body > iframe
 ||cdn.vebo2.tv^*.gif$image
 ||cdn.webhoctienganh.com/asset/home/img/banner/
 ||cdn2.vod.gmnc.xyz/vod/0a449bd3-81bf-4128-b7c3-1d6886c69430/index.m3u8
+||cdnwp.icu^*.gif$image
 ||centralland.com.vn^*.gif
 ||chodansinh.net^*.gif
 ||chonkeo.net/wp-content/uploads/pum/pum-site-scripts.js$script
@@ -1299,6 +1300,7 @@ vungoctuan.vn##.bf-3-primary-column-size.bs-vc-sidebar-column.vc_col-sm-3.vc_col
 vuonhoalan.net##.content_middle_rightbar
 webhoctienganh.com##.button-action-float-banner
 webphim.cc##.adsphim
+webphim1.com##.adsphim-mobile-popup
 webthethao.vn##.wrapper-adv
 webtintuc.com##.mb-20
 webtretho.com##.wtt-ads
@@ -1575,7 +1577,7 @@ gotphim.com##+js(acs, navigator, devtoolsDetector)
 hh3dhay.com,hh3dhay.xyz##+js(acs, document.createElement, ;break;case)
 linkneverdie.net##+js(acs, setTimeout, log)
 lphim.net,subnhanhz.net,iphimchillzz.net,phimmoik.com##+js(aopr, localStorage)
-luotphim2.com,luotphim.to,luotphimtv.live##+js(json-prune, 0.time_mobile 0.time 0.link_video 0.link_video_mobile 0.link 0.link_mobile 1.time_mobile 1.time 1.link_video 1.link_video_mobile 1.link 1.link_mobile)
+luotphim2.com,luotphim.to,luotphimtv.live,webphim1.com##+js(json-prune, 0.time_mobile 0.time 0.link_video 0.link_video_mobile 0.link 0.link_mobile 1.time_mobile 1.time 1.link_video 1.link_video_mobile 1.link 1.link_mobile)
 mtccv.com##+js(aopw, window.onclick)
 nguontv.org##+js(acs, encodeURIComponent, popunder)
 phimgif.tv,ophimhd.net,phimraphot.net##+js(acs, jQuery, popurl)
