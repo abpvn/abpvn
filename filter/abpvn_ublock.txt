@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 202211081457
+! Version: 202211081518
 ! Title: ABPVN List
-! Last modified: 08 Nov 2022 14:57 UTC+7
+! Last modified: 08 Nov 2022 15:18 UTC+7
 ! Expires: 1 days (update frequency)
 !
 ! ABPVN List filter
@@ -487,8 +487,7 @@ ad_300_250
 ||static.homedy.com/*banner-
 ||static.mepuzz.com/sdk/v2/MePuzzServiceWorker.min.js
 ||static.nhaccuatui.com/imgqc/
-||static.phimdacap.com/exstatic/*$image,~third-party
-||static.phimdacap.com/exstatic1/dk8/
+||static.phimdacap.com/exstatic$image,~third-party
 ||static.phimdacap.com/js/*/vastname$script
 ||static.phimdacap.com/js/trailer-popup.js$script,~third-party
 ||static.phimdacap.com^*.gif$image
@@ -1634,12 +1633,8 @@ phechill.net,vuianime.tv,2phimmoi.net,hhninja.xyz,phimmoiaz.cc,truyentranh86.com
 phim18zz.com,mphimmoiitv.com##.pcCatfish
 phim202.com###itro_opaco
 phimanimehd.net,mphim14.com##.fixed_bottom
-phimdacap.com##[data-id="catfish"]
-phimdacap.com##[data-id="catfish1"]
-phimdacap.com##[data-id="popup"]
-phimdacap.com##[data-id="popup1"]
-phimdacap.com##[id^="popup_"]
-phimdacap.com##div[id^="catfish_"]
+phimdacap.com###iframe_bottom
+phimdacap.com##body > iframe
 phimdinhcao.net##.BanerTop100
 phimdinhcao.net##.adv-300-right
 phimdinhcao.net,2phimmoi.net##.popUpBannerBox
