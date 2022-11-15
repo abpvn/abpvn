@@ -15,8 +15,8 @@
 // @grant       GM_registerMenuCommand
 // @include     http://*
 // @include     https://*
-// @version     2.3.12
-// @change-log  Add remove redirect cakhia-tv.onl
+// @version     2.3.13
+// @change-log  Inject style to hide all modal in specific site
 // @run-at      document-end
 // ==/UserScript==
 /* String Prototype */
@@ -444,9 +444,19 @@ var adBlocker = {
             }
         }
     },
+    noAdsModal: function() {
+        const domainRegex = /vebotv.biz|90phut6.live/;
+        if (location.hostname.match(domainRegex)) {
+            const styleTag = document.createElement('style');
+            styleTag.innerHTML = 'html,body{overflow: auto!important} .modal-backdrop,.modal{display: none!important}';
+            document.head.appendChild(styleTag);
+            ABPVN.cTitle();
+        }
+    },
     init: function() {
         this.url = location.href;
         this.mgIdAdRemover();
+        this.noAdsModal();
     },
 };
 var configure = {
