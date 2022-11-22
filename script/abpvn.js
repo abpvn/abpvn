@@ -15,8 +15,8 @@
 // @grant       GM_registerMenuCommand
 // @include     http://*
 // @include     https://*
-// @version     2.3.13
-// @change-log  Inject style to hide all modal in specific site
+// @version     2.3.14
+// @change-log  Update vebotv domain without extention
 // @run-at      document-end
 // ==/UserScript==
 /* String Prototype */
@@ -445,7 +445,7 @@ var adBlocker = {
         }
     },
     noAdsModal: function() {
-        const domainRegex = /vebotv.biz|90phut6.live/;
+        const domainRegex = /vebotv.|90phut6.live/;
         if (location.hostname.match(domainRegex)) {
             const styleTag = document.createElement('style');
             styleTag.innerHTML = 'html,body{overflow: auto!important} .modal-backdrop,.modal{display: none!important}';
