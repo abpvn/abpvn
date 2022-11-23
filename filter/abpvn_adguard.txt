@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 202211230821
+! Version: 202211230929
 ! Title: ABPVN List
-! Last modified: 23 Nov 2022 08:21 UTC+7
+! Last modified: 23 Nov 2022 09:29 UTC+7
 ! Expires: 1 days (update frequency)
 !
 ! ABPVN List filter
@@ -1585,9 +1585,8 @@ giavang.net#%#//scriptlet('prevent-fetch', 'method:HEAD')
 gocmod.com#%#//scriptlet('prevent-setTimeout', 'show')
 gotphim.com#%#//scriptlet('abort-current-inline-script', 'navigator', 'devtoolsDetector')
 hh3dhay.com,hh3dhay.xyz#%#//scriptlet('abort-current-inline-script', 'document.createElement', ';break;case')
-linkneverdie.net#%#//scriptlet('abort-current-inline-script', '$', 'open')
 linkneverdie.net#%#//scriptlet('abort-current-inline-script', 'document.createElement', 'script')
-linkneverdie.net#%#//scriptlet('abort-current-inline-script', 'setTimeout', 'log')
+linkneverdie.net#%#//scriptlet('abort-current-inline-script', 'setTimeout', 'body')
 lphim.net,subnhanhz.net,iphimchillzz.net,phimmoik.com#%#//scriptlet('abort-on-property-read', 'localStorage')
 luotphim2.com,luotphim.to,luotphimtv.live,webphim1.com#%#//scriptlet('json-prune', '0.time_mobile 0.time 0.link_video 0.link_video_mobile 0.link 0.link_mobile 1.time_mobile 1.time 1.link_video 1.link_video_mobile 1.link 1.link_mobile')
 metruyencv.com#%#//scriptlet('abort-on-property-write', 'window.onclick')
@@ -1609,7 +1608,7 @@ vb.plvb.xyz#%#//scriptlet('abort-on-property-read', 'adsTvc')
 vebotv.co,90phut6.live##.modal-backdrop.show
 vebotv.co,90phut6.live##.show.fade.modal
 vebotv.co,90phut6.live#$#body {overflow: visible!important;}
-viettoons.tv,phimmoiaz.cc,zo3x.ml,m.blogtruyen.vn#%#//scriptlet('abort-on-property-read', 'open')
+viettoons.tv,phimmoiaz.cc,zo3x.ml,m.blogtruyen.vn,linkneverdie.net#%#//scriptlet('abort-on-property-read', 'open')
 vungoctuan.vn#%#//scriptlet('abort-current-inline-script', 'document.write', 'snow')
 vungoctuan.vn#%#//scriptlet('prevent-xhr', 'ads')
 watchsb.com#%#//scriptlet('abort-on-property-read', '__Y')
