@@ -36,7 +36,7 @@ cat src/abpvn_title.tmp src/abpvn_general.txt src/abpvn_ad_domain.txt src/abpvn_
 # Search useless rule by ublock specific
 function get_replace_rule() {
     # $1 is input file
-    local INPUT_FILE="$1.tmp"
+    local INPUT_FILE="src/$1.txt"
     local REMOVE_RULE_TMP_FILE="$1_removal.tmp"
     grep -E '^-(.*)\n' $INPUT_FILE > $REMOVE_RULE_TMP_FILE
     local REPLACE_RULE=''
@@ -52,7 +52,7 @@ function get_replace_rule() {
     done
     echo $REPLACE_RULE
 }
-UBLOCK_REPLACE_RULE=$(get_replace_rule abpvn_ublock)
+UBLOCK_REPLACE_RULE=$(get_replace_rule abpvn_ublock_specific)
 if [ "$UBLOCK_REPLACE_RULE" == "" ]
 then
     sed -e '/^$/d' abpvn_ublock.tmp > abpvn_ublock.txt
@@ -63,7 +63,7 @@ else
 fi
 # abpvn_adguard.txt
 cat src/abpvn_title.tmp src/abpvn_general.txt src/abpvn_ad_domain.txt src/abpvn_elemhide.txt src/abpvn_whitelist.txt src/abpvn_whitelist_elemhide.txt src/abpvn_adult.txt src/abpvn_adult_elemhide.txt src/abpvn_adguard_specific.txt > abpvn_adguard.tmp
-ADGUARD_REPLACE_RULE=$(get_replace_rule abpvn_adguard)
+ADGUARD_REPLACE_RULE=$(get_replace_rule abpvn_adguard_specific)
 if [ "$ADGUARD_REPLACE_RULE" == "" ]
 then
     sed -e '/^$/d' abpvn_adguard.tmp > abpvn_adguard.txt
@@ -77,7 +77,7 @@ cat src/abpvn_title.tmp src/abpvn_general.txt src/abpvn_ad_domain.txt src/abpvn_
 sed -e '/^$/d' abpvn_noelemhide.tmp > abpvn_noelemhide.txt
 # abpvn_content_blocker.txt
 cat src/abpvn_title.tmp src/abpvn_general.txt src/abpvn_ad_domain.txt src/abpvn_elemhide.txt src/abpvn_whitelist.txt src/abpvn_whitelist_elemhide.txt src/abpvn_adult.txt src/abpvn_adult_elemhide.txt src/abpvn_content_blocker_hot_fix.txt > abpvn_content_blocker.tmp
-CONTENT_BLOCKER_REPLACE_RULE=$(get_replace_rule abpvn_content_blocker)
+CONTENT_BLOCKER_REPLACE_RULE=$(get_replace_rule abpvn_content_blocker_hot_fix)
 if [ "$CONTENT_BLOCKER_REPLACE_RULE" == "" ]
 then
     sed -e '/^$/d' abpvn_content_blocker.tmp > abpvn_content_blocker.txt
