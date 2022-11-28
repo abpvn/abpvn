@@ -15,8 +15,8 @@
 // @grant       GM_registerMenuCommand
 // @include     http://*
 // @include     https://*
-// @version     2.3.15
-// @change-log  Update 90phut domain without extention
+// @version     2.3.16
+// @change-log  Skip ios.codevn.net from migId Ad Removal
 // @run-at      document-end
 // ==/UserScript==
 /* String Prototype */
@@ -432,6 +432,10 @@ var fixSite = {
 //Ad blocker script
 var adBlocker = {
     mgIdAdRemover: function() {
+        const skipDomain = /ios.codevn.net/;
+        if (skipDomain.test(location.hostname)) {
+            return;
+        }
         var allMgIdEl = document.querySelectorAll('[id*="ScriptRoot"]');
         if (allMgIdEl && allMgIdEl.length) {
             ABPVN.cTitle();
