@@ -1,4 +1,6 @@
 ! ---------Rule only for AdGuard------
+-@@||jsc.adskeeper.co.uk^$script,domain=ios.codevn.net
+-ios.codevn.net#@#div[id*="ScriptRoot"]
 2phimmoi.net#%#//scriptlet("abort-current-inline-script", "$", "urlAdsMbIntro")
 360thethao.net#%#//scriptlet("abort-current-inline-script", "onload", "puURL")
 anonyviet.com#%#//scriptlet("abort-on-property-read", "reqServers")
@@ -14,6 +16,7 @@ giavang.net#%#//scriptlet("prevent-fetch", "method:HEAD")
 gocmod.com#%#//scriptlet("prevent-setTimeout", "show")
 gotphim.com#%#//scriptlet("abort-current-inline-script", "navigator", "devtoolsDetector")
 hh3dhay.com,hh3dhay.xyz#%#//scriptlet("abort-current-inline-script", "document.createElement", ";break;case")
+ios.codevn.net#%#//scriptlet("abort-current-inline-script", "setInterval", "offsetHeight")
 javnong.cc#%#//scriptlet("abort-on-property-read", "Math.round")
 linkneverdie.net#%#//scriptlet("abort-current-inline-script", "document.createElement", "script")
 linkneverdie.net#%#//scriptlet("abort-current-inline-script", "setTimeout", "log")
