@@ -15,8 +15,8 @@
 // @grant       GM_registerMenuCommand
 // @include     http://*
 // @include     https://*
-// @version     2.3.16
-// @change-log  Skip ios.codevn.net from migId Ad Removal
+// @version     2.3.17
+// @change-log  Fix ios.codevn.net ads placeholder
 // @run-at      document-end
 // ==/UserScript==
 /* String Prototype */
@@ -343,6 +343,14 @@ var fixSite = {
             }, 100);
         }
     },
+    ios_codevn_net: function () {
+        if (this.url.match(/ios.codevn.net/)) {
+            const styleTag = document.createElement('style');
+            styleTag.innerHTML = 'div[id*="ScriptRoot"]{height: 1px !important;}';
+            document.head.appendChild(styleTag);
+            ABPVN.cTitle();
+        }
+    },
     removeRedir: function(config) {
         if (this.url.match(new RegExp(config.url, 'g')) || this.url.startWith(config.url)) {
             ABPVN.cTitle();
@@ -427,6 +435,7 @@ var fixSite = {
         this.antiAdblockRemover();
         this.topphimhd_info();
         this.luotphim();
+        this.ios_codevn_net();
     }
 };
 //Ad blocker script
