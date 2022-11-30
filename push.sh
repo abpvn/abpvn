@@ -1,3 +1,3 @@
 #!/bin/bash
-sh commit.sh
+bash commit.sh
 git push
