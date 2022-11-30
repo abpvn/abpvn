@@ -33,7 +33,7 @@ cat src/abpvn_title.tmp src/abpvn_general.txt src/abpvn_ad_domain.txt src/abpvn_
 sed -e '/^$/d' abpvn.tmp > abpvn.txt
 # abpvn_ublock.txt
 cat src/abpvn_title.tmp src/abpvn_general.txt src/abpvn_ad_domain.txt src/abpvn_elemhide.txt src/abpvn_whitelist.txt src/abpvn_whitelist_elemhide.txt src/abpvn_adult.txt src/abpvn_adult_elemhide.txt src/abpvn_ublock_specific.txt > abpvn_ublock.tmp
-function get_replace_rule() {
+get_replace_rule () {
     # $1 is input file
     local INPUT_FILE="src/$1.txt"
     local REMOVE_RULE_TMP_FILE="$1_removal.tmp"
