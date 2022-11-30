@@ -1,4 +1,4 @@
 #!/bin/bash
 cd ..
-sh push.sh
-sh pull.sh
+bash push.sh
+bash pull.sh
