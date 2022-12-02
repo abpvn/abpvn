@@ -15,8 +15,8 @@
 // @grant       GM_registerMenuCommand
 // @include     http://*
 // @include     https://*
-// @version     2.3.17
-// @change-log  Fix ios.codevn.net ads placeholder
+// @version     2.3.18
+// @change-log  Add khomuc modal ads blocker
 // @run-at      document-end
 // ==/UserScript==
 /* String Prototype */
@@ -458,7 +458,7 @@ var adBlocker = {
         }
     },
     noAdsModal: function() {
-        const domainRegex = /vebotv.|90phut/;
+        const domainRegex = /vebotv.|90phut|khomuc/;
         if (location.hostname.match(domainRegex)) {
             const styleTag = document.createElement('style');
             styleTag.innerHTML = 'html,body{overflow: auto!important} .modal-backdrop,.modal{display: none!important}';
