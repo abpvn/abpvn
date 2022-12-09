@@ -1,7 +1,6 @@
 ! ---------Rule only for uBlock Origin------
--@@||ads.pubmatic.com/AdServer/js/mshowad.js$domain=linkneverdie.net
+-@@||get.optad360.io/sf/$domain=linkneverdie.net
 -@@||jsc.adskeeper.co.uk^$script,domain=ios.codevn.net
--@@||linksht.com/build/js/adsbanner.js$domain=linkneverdie.net
 -ios.codevn.net#@#div[id*="ScriptRoot"]
 360thethao.net##+js(acs, onload, puURL)
 anonyviet.com##+js(aopr, reqServers)
@@ -20,7 +19,8 @@ ios.codevn.net##+js(acs, setInterval, offsetHeight)
 javnong.cc##+js(aopr, Math.round)
 linkneverdie.net##+js(acs, $, open)
 linkneverdie.net##+js(acs, document.createElement, script)
-linkneverdie.net##+js(set, DisplayHTMLAdsBlock, noopFunc)
+linkneverdie.net##+js(nostif, callback, 4000)
+linkneverdie.net##+js(set, DisplayHTMLAdBlock, noopFunc)
 lphim.net,subnhanhz.net,phimmoikf.com##+js(aopr, localStorage)
 luotphim2.com,luotphim.to,luotphimtv.live,webphim1.com##+js(json-prune, 0.time_mobile 0.time 0.link_video 0.link_video_mobile 0.link 0.link_mobile 1.time_mobile 1.time 1.link_video 1.link_video_mobile 1.link 1.link_mobile)
 metruyencv.com##+js(aopw, window.onclick)
