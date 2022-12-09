@@ -1,5 +1,7 @@
 import re
 from const import Const
+
+
 class DomainList():
     @staticmethod
     def get_all_domain(text):

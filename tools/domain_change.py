@@ -1,5 +1,7 @@
 import requests
-import re;
+import re
+
+
 class DomainChange():
     @staticmethod
     def check_domain_change(domains):
@@ -8,9 +10,11 @@ class DomainChange():
         """
         redirect_pairs = []
         for domain in domains:
-            redirect_pair, is_error = DomainChange.__get_redirect_domain(domain)
+            redirect_pair, is_error = DomainChange.__get_redirect_domain(
+                domain)
             if is_error:
-                print("-----------------Check domain {} got error-----------".format(domain))
+                print(
+                    "-----------------Check domain {} got error-----------".format(domain))
             if redirect_pair is not False and len(redirect_pair) == 2:
                 redirect_pairs.append(redirect_pair)
         print("Found {} domain changed with redirect".format(len(redirect_pairs)))
@@ -29,10 +33,11 @@ class DomainChange():
             }, allow_redirects=True)
             if domain in res.url:
                 return (False, False)
-            final_redirect_domain = res.url.replace('https://', '').replace('http://', '').replace('/', '').replace('www.', '').replace('www1.', '')
-            print("----------Domain {} redirected to {}----------".format(domain, final_redirect_domain))
+            final_redirect_domain = res.url.replace('https://', '').replace(
+                'http://', '').replace('/', '').replace('www.', '').replace('www1.', '')
+            print("----------Domain {} redirected to {}----------".format(domain,
+                  final_redirect_domain))
             return ([domain, final_redirect_domain], False)
         except Exception as ex:
             print("Got exception {}".format(ex))
             return (False, True)
-    
