@@ -1,4 +1,5 @@
 import requests
+import re;
 class DomainChange():
     @staticmethod
     def check_domain_change(domains):
@@ -22,13 +23,15 @@ class DomainChange():
         """
         print("Start check redirect of domain {}".format(domain))
         try:
-            request_url = "https://" + domain
-            res = requests.get(url=request_url, headers={
+            request_url = "http://" + domain
+            res = requests.head(url=request_url, headers={
                 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:107.0) Gecko/20100101 Firefox/107.0'
-            })
-            if res.headers.get('Location') is None:
+            }, allow_redirects=True)
+            if domain in res.url:
                 return (False, False)
-            print(res.headers.get('Location'))
+            final_redirect_domain = res.url.replace('https://', '').replace('http://', '').replace('/', '').replace('www.', '').replace('www1.', '')
+            print("----------Domain {} redirected to {}----------".format(domain, final_redirect_domain))
+            return ([domain, final_redirect_domain], False)
         except Exception as ex:
             print("Got exception {}".format(ex))
             return (False, True)

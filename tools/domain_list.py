@@ -18,5 +18,6 @@ class DomainList():
             domains.append(match[1])
         domain_set = set(domains)
         domains = list(domain_set)
+        domains.sort()
         print("Found total {count} domain".format(count=len(domains)))
         return domains
