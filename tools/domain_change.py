@@ -18,7 +18,7 @@ class DomainChange():
                     "-----------------Check domain {} got error-----------".format(domain))
             if redirect_pair is not False and len(redirect_pair) == 2:
                 redirect_pairs.append(redirect_pair)
-            print("Processed {}/{} domain remaing".format(index, total_domain))
+            print("Processed {}/{} domain".format(index + 1, total_domain))
         print("Found {} domain changed with redirect".format(len(redirect_pairs)))
         return redirect_pairs
 
@@ -32,15 +32,17 @@ class DomainChange():
             request_url = "http://" + domain
             res = requests.head(url=request_url, headers={
                 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:107.0) Gecko/20100101 Firefox/107.0'
-            }, allow_redirects=True, timeout=2)
+            }, allow_redirects=True, timeout=3)
             if domain in res.url:
                 return (False, False)
             final_redirect_domain = res.url.replace('https://', '').replace(
                 'http://', '').replace('/', '').replace('www.', '').replace('www1.', '')
-            print("|---------------------------------------------|")
+            print(
+                "|-----------------------------------------------------------------------------|")
             print("|----------Domain {} redirected to {}---------|".format(domain,
                   final_redirect_domain))
-            print("|---------------------------------------------|")
+            print(
+                "|-----------------------------------------------------------------------------|")
             return ([domain, final_redirect_domain], False)
         except Exception as ex:
             print("Got exception {}".format(ex))
