@@ -1,5 +1,4 @@
 import requests
-import re
 
 
 class DomainChange():
@@ -32,7 +31,7 @@ class DomainChange():
             request_url = "http://" + domain
             res = requests.head(url=request_url, headers={
                 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:107.0) Gecko/20100101 Firefox/107.0'
-            }, allow_redirects=True, timeout=3)
+            }, allow_redirects=True, timeout=5)
             if domain in res.url:
                 return (False, False)
             final_redirect_domain = res.url.replace('https://', '').replace(
