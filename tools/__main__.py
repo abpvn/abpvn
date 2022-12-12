@@ -7,7 +7,7 @@ def main():
     filter_text = f.read()
     domains = DomainList.get_all_domain(filter_text)
     result = DomainChange.check_domain_change(domains)
-    print(result)
+    DomainChange.pretty(result)
 
 
 main()

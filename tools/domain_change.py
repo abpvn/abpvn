@@ -1,7 +1,20 @@
 import requests
 from const import Const
+import re
 
 class DomainChange():
+    @staticmethod
+    def pretty(d, indent=0):
+        """
+        Pretty print dict
+        """
+        for key, value in d.items():
+            print('\t' * indent + str(key))
+            if isinstance(value, dict):
+                DomainChange.pretty(value, indent+1)
+            else:
+                print('\t' * (indent+1) + str(value))
+
     @staticmethod
     def check_domain_change(domains):
         """
@@ -12,6 +25,7 @@ class DomainChange():
         for index, domain in enumerate(domains):
             if domain in Const.SKIP_CHECK_REDIRECT:
                 # Skip if domain in SKIP_CHECK_REDIRECT list
+                print("Skiped domain {}".format(domain))
                 continue
             redirect_pair, is_error = DomainChange.__get_redirect_domain(
                 domain)
@@ -35,17 +49,18 @@ class DomainChange():
             res = requests.head(url=request_url, headers={
                 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:107.0) Gecko/20100101 Firefox/107.0'
             }, allow_redirects=True, timeout=5)
-            if domain in res.url:
-                return (False, False)
-            final_redirect_domain = res.url.replace('https://', '').replace(
-                'http://', '').replace('/', '').replace('www.', '').replace('www1.', '')
-            print(
-                "|-----------------------------------------------------------------------------|")
-            print("|----------Domain {} redirected to {}---------|".format(domain,
-                  final_redirect_domain))
-            print(
-                "|-----------------------------------------------------------------------------|")
-            return ([domain, final_redirect_domain], False)
+            if domain not in res.url:
+                matches = re.findall(Const.TLD_DOMAIN_REGEX, res.url)
+                if matches is not None:
+                    final_redirect_domain = matches[0]
+                    print(
+                        "|-----------------------------------------------------------------------------|")
+                    print("|----------Domain {} redirected to {}---------|".format(domain,
+                        final_redirect_domain))
+                    print(
+                        "|-----------------------------------------------------------------------------|")
+                    return ([domain, final_redirect_domain], False)
+            return (False, False)
         except Exception as ex:
             print("Got exception {}".format(ex))
             return (False, True)
