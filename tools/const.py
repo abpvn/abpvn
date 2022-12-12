@@ -11,5 +11,6 @@ class Const():
     SKIP_CHECK_REDIRECT = [
         'amazonaws.com', 'blogspot.com', 'blogtruyen.com', 'fptplay.net',
         'doubleclick.net', 'github.io', 'herokuapp.com', 'zing.vn', 'com.vn',
-        'net.vn', 'edu.vn', 'googlesyndication.com', 'gov.vn', 'nct.vn', 'org.vn'
+        'net.vn', 'edu.vn', 'googlesyndication.com', 'gov.vn', 'nct.vn', 'org.vn',
+        'phukienthoitranggiare.com'
     ]
