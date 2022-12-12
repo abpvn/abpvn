@@ -4,18 +4,6 @@ import re
 
 class DomainChange():
     @staticmethod
-    def pretty(d, indent=0):
-        """
-        Pretty print dict
-        """
-        for key, value in d.items():
-            print('\t' * indent + str(key))
-            if isinstance(value, dict):
-                DomainChange.pretty(value, indent+1)
-            else:
-                print('\t' * (indent+1) + str(value))
-
-    @staticmethod
     def check_domain_change(domains):
         """
         Check domain change and return pair of change domain
