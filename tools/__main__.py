@@ -1,5 +1,6 @@
 from domain_list import DomainList
 from domain_change import DomainChange
+from pprint import pprint
 
 
 def main():
@@ -7,7 +8,7 @@ def main():
     filter_text = f.read()
     domains = DomainList.get_all_domain(filter_text)
     result = DomainChange.check_domain_change(domains)
-    DomainChange.pretty(result)
+    pprint(result)
 
 
 main()
