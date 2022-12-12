@@ -1,5 +1,5 @@
 import requests
-
+from const import Const
 
 class DomainChange():
     @staticmethod
@@ -10,6 +10,9 @@ class DomainChange():
         redirect_pairs = []
         total_domain = len(domains)
         for index, domain in enumerate(domains):
+            if domain in Const.SKIP_CHECK_REDIRECT:
+                # Skip if domain in SKIP_CHECK_REDIRECT list
+                continue
             redirect_pair, is_error = DomainChange.__get_redirect_domain(
                 domain)
             if is_error:
