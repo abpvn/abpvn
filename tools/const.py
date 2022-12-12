@@ -6,7 +6,7 @@ class Const():
         '.widget', '.ad', '.mp4', '.mp3', '.m3u8',
         '.row', '.parse', '.round0', 'abpvn.com',
         'abpvn.org', '.php', '.html', '.button', '.mrb10',
-        '.modal', '.ico', '.error'
+        '.modal', '.ico', '.error', '.write'
     ]
     SKIP_CHECK_REDIRECT = [
         'amazonaws.com', 'blogspot.com', 'blogtruyen.com', 'fptplay.net',
