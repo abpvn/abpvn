@@ -4,7 +4,7 @@ class Const():
     REJECT_ENDINGS = [
         '.js', '.png', '.jpg', '.gif', '.aspx',
         '.widget', '.ad', '.mp4', '.mp3', '.m3u8',
-        '.row', '.parse', '.round0', 'abpvn.com',
+        '.row', '.parse', '.round', 'abpvn.com',
         'abpvn.org', '.php', '.html', '.button', '.mrb10',
         '.modal', '.ico', '.error', '.write', '.webp'
     ]
