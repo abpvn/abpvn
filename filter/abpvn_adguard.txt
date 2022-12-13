@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 202212130952
+! Version: 202212130953
 ! Title: ABPVN List
-! Last modified: 13 Dec 2022 09:52 UTC+7
+! Last modified: 13 Dec 2022 09:53 UTC+7
 ! Expires: 1 days (update frequency)
 !
 ! ABPVN List filter
@@ -190,6 +190,7 @@
 ||images2-focus-opensocial.googleusercontent.com^*.gif$image,domain=anivn.club
 ||images2-focus-opensocial.googleusercontent.com^*.gif$image,domain=tvhayv.org|phimdinhcao.net
 ||images2.imgbox.com^*.gif$image,domain=ocumeo.com
+||images4.imagebam.com^*.gif$image,domain=luotphimtv.live|luotphimtv.vip
 ||img-portal-prod.s3.amazonaws.com/uploads/image/attachment/3380/HomeRandom2.gif
 ||img.blogtruyen.vn/sharex/$image
 ||img.blogtruyen.vn^*.gif
@@ -554,7 +555,6 @@
 ||hqq.to^$popup
 ||iads.staticscdn.net^
 ||imad24.com^
-||images4.imagebam.com^*.gif$image,domain=luotphimtv.live|luotphimtv.vip|luotphimtv.live
 ||ir3.xyz^$popup
 ||jbo039.com^$popup,third-party
 ||jbo064.com^$popup
@@ -938,7 +938,7 @@ lmssplus.com##p[style="color: rgb(174, 174, 174); margin-top: 10px; margin-botto
 loigiaihay.com###countdown
 luatvietnam.vn##.advHolder
 lucloi.vn##.ads_shortcode
-luotphimtv.live,luotphimtv.live,luotphimtv.vip##div[id^="adsphim-"]
+luotphimtv.live,luotphimtv.vip##div[id^="adsphim-"]
 m.afamily.vn###adm-slot-7234
 m.blogtruyen.vn##.mb10.item:-abp-has(a[href^="https://www.vb135.com/"])
 m.blogtruyen.vn##div[style*="position: fixed"]
@@ -1591,7 +1591,7 @@ javnong.xyz#%#//scriptlet("abort-on-property-read", "Math.round")
 linkneverdie.net#%#//scriptlet("abort-current-inline-script", "document.createElement", "script")
 linkneverdie.net#%#//scriptlet("prevent-setTimeout", "callback", "4000")
 linkneverdie.net#%#//scriptlet("set-constant", "DisplayHTMLAdBlock", "noopFunc")
-luotphimtv.live,luotphimtv.vip,luotphimtv.live,webphim1.com#%#//scriptlet("json-prune", "0.time_mobile 0.time 0.link_video 0.link_video_mobile 0.link 0.link_mobile 1.time_mobile 1.time 1.link_video 1.link_video_mobile 1.link 1.link_mobile")
+luotphimtv.live,luotphimtv.vip,webphim1.com#%#//scriptlet("json-prune", "0.time_mobile 0.time 0.link_video 0.link_video_mobile 0.link 0.link_mobile 1.time_mobile 1.time 1.link_video 1.link_video_mobile 1.link 1.link_mobile")
 metruyencv.com#%#//scriptlet("abort-on-property-write", "window.onclick")
 nguontvhay.com#%#//scriptlet("abort-current-inline-script", "encodeURIComponent", "popunder")
 phim1080tv.net,subnhanhz.tv,phimmoif.com#%#//scriptlet("abort-on-property-read", "localStorage")
