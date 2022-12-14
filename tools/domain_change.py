@@ -30,14 +30,14 @@ class DomainCheck(threading.Thread):
                 matches = re.findall(Const.TLD_DOMAIN_REGEX, res.url)
                 if matches is not None:
                     final_redirect_domain = matches[0]
-                    line = "|-------------------------------------------------------------------------------------------------------------|"
+                    line = "|--------------------------------------------------------------------------------------------------------------|"
                     print(line)
                     message = "Domain {} redirected to {} ({})".format(domain,
                         final_redirect_domain, res.url)
                     space_fill = (len(line) - 2 - len(message)) / 2
                     for i in range(int(space_fill)):
                         message = " " + message + " "
-                    if space_fill is float:
+                    if len(message) % 2 == 1:
                         message = message + " "
                     print("|{}|".format(message))
                     print(line)
