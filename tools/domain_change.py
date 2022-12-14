@@ -28,7 +28,7 @@ class DomainCheck(threading.Thread):
             }, allow_redirects=True, timeout=5)
             if domain not in res.url:
                 matches = re.findall(Const.TLD_DOMAIN_REGEX, res.url)
-                if matches is not None:
+                if matches:
                     final_redirect_domain = matches[0]
                     line = "|--------------------------------------------------------------------------------------------------------------|"
                     print(line)
