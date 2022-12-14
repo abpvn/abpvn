@@ -5,14 +5,34 @@ import threading
 
 
 class DomainCheck(threading.Thread):
-    def set_data(self, domain, redirect_pairs, index, total_domain):
+    def set_data(self, domain, index, total_domain,redirect_pairs: list = [], error_domains: list = []):
         """
         Set process domain
         """
         self.__domain = domain
-        self.redirect_pairs = redirect_pairs
         self.__domain_index = index
         self.__total_domain = total_domain
+        self.redirect_pairs = redirect_pairs
+        self.error_domains = error_domains
+
+    def box_print(self, message: str):
+        """
+        Print message in the box
+
+        :param message: Message to print
+        """
+        line = "--------------------------------------------------------------------------------------------------------------"
+        if len(message) > len(line):
+            for i in range(len(message) - len(line)):
+                line = '-' + line
+        print("|{}|".format(line))
+        space_fill = (len(line) - len(message)) / 2
+        for i in range(int(space_fill)):
+            message = " " + message + " "
+        if (len(line) - len(message)) % 2 == 1:
+            message = message + " "
+        print("|{}|".format(message))
+        print("|{}|".format(line))
 
     def get_redirect_domain(self):
         """
@@ -30,17 +50,9 @@ class DomainCheck(threading.Thread):
                 matches = re.findall(Const.TLD_DOMAIN_REGEX, res.url)
                 if matches:
                     final_redirect_domain = matches[0]
-                    line = "|--------------------------------------------------------------------------------------------------------------|"
-                    print(line)
                     message = "Domain {} redirected to {} ({})".format(domain,
                         final_redirect_domain, res.url)
-                    space_fill = (len(line) - 2 - len(message)) / 2
-                    for i in range(int(space_fill)):
-                        message = " " + message + " "
-                    if len(message) % 2 == 1:
-                        message = message + " "
-                    print("|{}|".format(message))
-                    print(line)
+                    self.box_print(message)
                     self.lock.acquire()
                     self.redirect_pairs.append([domain, final_redirect_domain])
                     self.lock.release()
@@ -48,7 +60,10 @@ class DomainCheck(threading.Thread):
             else:
                 print("{}: is not redirect".format(domain))
         except Exception as ex:
-            print("{}: Got exception {} when check".format(domain, ex))
+            self.box_print("{}: Got exception {} when check".format(domain, ex))
+            self.lock.acquire()
+            self.error_domains.append(domain)
+            self.lock.release()
 
     def run(self):
         self.lock = threading.Lock()
@@ -58,10 +73,11 @@ class DomainChange():
         self.domains = domains
         self.__threads = []
         self.redirect_pairs = []
+        self.error_domains = []
 
     def process_domain(self, domain, index, total_domain):
         domain_check = DomainCheck()
-        domain_check.set_data(domain, self.redirect_pairs, index, total_domain)
+        domain_check.set_data(domain, index, total_domain, redirect_pairs=self.redirect_pairs, error_domains=self.error_domains)
         self.__threads.append(domain_check)
         domain_check.start()
 
@@ -78,5 +94,4 @@ class DomainChange():
             self.process_domain(domain, index, total_domain)
         for t in self.__threads:
             t.join()
-        print("----Found {} domain changed with redirect----".format(len(self.redirect_pairs)))
-        return self.redirect_pairs
+        return (self.redirect_pairs, self.error_domains)
