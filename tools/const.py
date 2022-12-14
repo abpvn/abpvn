@@ -7,7 +7,7 @@ class Const():
         '.row', '.parse', '.round', 'abpvn.com',
         'abpvn.org', '.php', '.html', '.button', '.mrb10',
         '.modal', '.ico', '.error', '.write', '.webp', 'PanelScroller.Notices',
-        'preload-b91.preload'
+        'preload-b91.preload', 'firstmessfloadright.samItem'
     ]
     SKIP_CHECK_REDIRECT = [
         'amazonaws.com', 'blogspot.com', 'blogtruyen.com', 'fptplay.net',
