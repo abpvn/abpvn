@@ -8,7 +8,7 @@ class Const():
         'abpvn.org', '.php', '.html', '.button', '.mrb10',
         '.modal', '.ico', '.error', '.write', '.webp', 'PanelScroller.Notices',
         'preload-b91.preload', 'firstmessfloadright.samItem', 'banner-top-box.click',
-        'notMsg.Sticky'
+        'notMsg.Sticky', 'clear.hd'
     ]
     SKIP_CHECK_REDIRECT = [
         'amazonaws.com', 'blogspot.com', 'blogtruyen.com', 'fptplay.net',
