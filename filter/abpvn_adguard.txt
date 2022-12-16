@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 202212161656
+! Version: 202212161702
 ! Title: ABPVN List
-! Last modified: 16 Dec 2022 16:56 UTC+7
+! Last modified: 16 Dec 2022 17:02 UTC+7
 ! Expires: 1 days (update frequency)
 !
 ! ABPVN List filter
@@ -405,8 +405,6 @@ ad_300_250
 ||phimchill.org^*.gif$image
 ||phimfullhd.herokuapp.com^*.gif$image,domain=ophim.pro
 ||phimgif.tv/player/dk.jpg
-||phimhay3s.com/video/$media
-||phimhay3s.com^*.gif
 ||phimmoi3s.online.net^*.gif
 ||phimmoi3s.online/files/banner/$image
 ||phimmoi3s.online/video/$domain=phimmoi3s.online,rewrite=abp-resource:blank-mp3
@@ -1636,7 +1634,7 @@ phimgif.tv,ophimhd.net###sobet-ads-right
 phimgif.tv,ophimhd.net##.lightbox-player-pc
 phimgif.tv,ophimhd.net##div[id^="preload-"]
 phimgif.tv,ophimhd.net,laptrinhx.com,huphimtv.com,animevietsub.pro,xoso.mobi,xsmn247.me,saostar.vn,pmphimmoi.com,xemphimvuis.com##.ads
-phimhay3s.com,phimmoi3s.online##.fix_bottom
+phimhay3s.com,phimmoif.com##.fix_bottom
 phimhot365.net##.banner-preload
 phimmoi.vip###itro_opaco
 phimmoi.vip###itro_popup
@@ -1647,6 +1645,9 @@ phimmoi3s.online##.event_loader_e
 phimmoi3s.online##.popup_center
 phimmoichilla.net###chilladv
 phimmoichilla.net###pmadv
+phimmoif.com##.box_option
+phimmoif.com##.event_loader_e
+phimmoif.com##.popup_center
 phimnet.one###overlay-close
 phimnet.one###play
 phimnhua.com###catfish-banner
@@ -2264,7 +2265,6 @@ ninjastream.to#%#//scriptlet("abort-current-inline-script", "setTimeout", "argum
 phim1080tv.net,subnhanhz.tv,phimmoi3s.online#%#//scriptlet("abort-on-property-read", "localStorage")
 phimgif.tv,ophimhd.net,phimraphot.net#%#//scriptlet("abort-current-inline-script","jQuery", "popurl")
 phimhanz.me#%#//scriptlet("abort-current-inline-script", "jQuery", "showPopupSearchKey")
-phimhay3s.com#%#//scriptlet("json-prune", "ads")
 phimhayss.tv#%#//scriptlet("abort-current-inline-script", "jQuery", "window.open")
 phimhot365.net#%#//scriptlet("abort-on-property-read", "matchMedia")
 phimlau.online#%#//scriptlet("abort-current-inline-script", "i6H", "Math")
