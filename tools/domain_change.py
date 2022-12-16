@@ -53,10 +53,13 @@ class DomainCheck(threading.Thread):
                     message = "Domain {} redirected to {} ({})".format(domain,
                         final_redirect_domain, res.url)
                     self.box_print(message)
-                    self.lock.acquire()
-                    self.redirect_pairs.append([domain, final_redirect_domain])
-                    self.lock.release()
-                    print("{}: Processed domain in index {}/{}".format(domain, self.__domain_index, self.__total_domain))
+                    if final_redirect_domain not in Const.REJECT_TARGET_DOMAIN:
+                        self.lock.acquire()
+                        self.redirect_pairs.append([domain, final_redirect_domain])
+                        self.lock.release()
+                        print("{}: Processed domain in index {}/{}".format(domain, self.__domain_index, self.__total_domain))
+                    else:
+                        print("{}: Redirect but skiped because redirected to reject target domain".format(domain))
             else:
                 print("{}: is not redirect".format(domain))
         except Exception as ex:

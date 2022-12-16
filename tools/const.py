@@ -7,11 +7,14 @@ class Const():
         '.row', '.parse', '.round', 'abpvn.com',
         'abpvn.org', '.php', '.html', '.button', '.mrb10',
         '.modal', '.ico', '.error', '.write', '.webp', 'PanelScroller.Notices',
-        'preload-b91.preload', 'firstmessfloadright.samItem'
+        'preload-b91.preload', 'firstmessfloadright.samItem', 'banner-top-box.click'
     ]
     SKIP_CHECK_REDIRECT = [
         'amazonaws.com', 'blogspot.com', 'blogtruyen.com', 'fptplay.net',
         'doubleclick.net', 'github.io', 'herokuapp.com', 'zing.vn', 'com.vn',
         'net.vn', 'edu.vn', 'googlesyndication.com', 'gov.vn', 'nct.vn', 'org.vn',
         'phukienthoitranggiare.com', 'cloudfront.net',
+    ]
+    REJECT_TARGET_DOMAIN = [
+        'google.com'
     ]
