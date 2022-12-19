@@ -14,8 +14,8 @@ class Const():
         'amazonaws.com', 'blogspot.com', 'blogtruyen.com', 'fptplay.net',
         'doubleclick.net', 'github.io', 'herokuapp.com', 'zing.vn', 'com.vn',
         'net.vn', 'edu.vn', 'googlesyndication.com', 'gov.vn', 'nct.vn', 'org.vn',
-        'phukienthoitranggiare.com', 'cloudfront.net',
+        'phukienthoitranggiare.com', 'cloudfront.net', 'admarketplace.net'
     ]
     REJECT_TARGET_DOMAIN = [
-        'google.com'
+        'google.com', 'facebook.com', 'yahooinc.com'
     ]
