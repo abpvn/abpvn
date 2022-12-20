@@ -15,8 +15,8 @@
 // @grant       GM_registerMenuCommand
 // @include     http://*
 // @include     https://*
-// @version     2.3.20
-// @change-log  Add vebo modal ads blocker
+// @version     2.3.21
+// @change-log  Add banhkhuc modal ads blocker
 // @run-at      document-end
 // ==/UserScript==
 /* String Prototype */
@@ -458,7 +458,7 @@ var adBlocker = {
         }
     },
     noAdsModal: function() {
-        const domainRegex = /vebo|90phut|khomuc|xoilac/;
+        const domainRegex = /vebo|90phut|khomuc|xoilac|banhkhuc/;
         if (location.hostname.match(domainRegex)) {
             const styleTag = document.createElement('style');
             styleTag.innerHTML = 'html,body{overflow: auto!important} .modal-backdrop,.modal{display: none!important}';
