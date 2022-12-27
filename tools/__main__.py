@@ -9,6 +9,7 @@ def main():
     print("Script start at: {0}\n".format(start_time))
     f = open("../filter/abpvn_ublock.txt", "r", encoding="utf8")
     filter_text = f.read()
+    f.close()
     domains = DomainList.get_all_domain(filter_text)
     domain_change = DomainChange(domains)
     redirect_pairs, error_domains = domain_change.check_domain_change()
