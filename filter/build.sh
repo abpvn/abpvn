@@ -23,8 +23,8 @@ sort -u -o src/abpvn_ublock_specific.txt src/abpvn_ublock_specific.tmp
 sort -u -o src/abpvn_adguard_specific.txt src/abpvn_adguard_specific.tmp
 sort -u -o src/abpvn_content_blocker_hot_fix.txt src/abpvn_content_blocker_hot_fix.tmp
 # make time stamp update
-TIME_STAMP=`date +'%d %b %Y %H:%M'`
-VERSION=`date +'%Y%m%d%H%M'`
+TIME_STAMP=`date +'%d %b %Y %H:%M:%S'`
+VERSION=`date +'%Y%m%d%H%M%S'`
 sed -e "s/_time_stamp_/$TIME_STAMP/g" -e "s/_version_/$VERSION/g" src/abpvn_title.txt > src/abpvn_title.tmp
 echo >> src/abpvn_title.tmp
 # add to 1 file
