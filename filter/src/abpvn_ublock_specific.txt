@@ -1,7 +1,11 @@
 ! ---------Rule only for uBlock Origin------
+-@@||ads-api.twitter.com$domain=cafenau.com
+-@@||ads.pinterest.com$domain=cafenau.com
 -@@||ads.pubmatic.com/AdServer/js/mshowad.js$domain=linkneverdie.net
+-@@||cafenau.com$generichide
 -@@||get.optad360.io/sf/$domain=linkneverdie.net
 -@@||jsc.adskeeper.co.uk^$script,domain=ios.codevn.net
+-@@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=cafenau.com
 -ios.codevn.net#@#div[id*="ScriptRoot"]
 360thethao.net##+js(acs, onload, puURL)
 anonyviet.com##+js(aopr, reqServers)
@@ -9,6 +13,7 @@ aoe.vn##+js(aopr, parseInt)
 baominh.tech##+js(addEventListener-defuser, DOMContentLoaded, adsBlocked)
 blog.abit.vn,phimdinhcao.net,truyensieuhay.com,xemphimtop.net,tvhayyy.org,hiphimmoi.net,quangcaoyenbai.com,gamefullcrackpc.com##+js(aopr, document.cookie)
 cafef.vn,gamek.vn,genk.vn,kenh14.vn##+js(aopw, ADMStorageFileCDN)
+cafenau.com##+js(aopr, adsBlocked)
 chotlo.com###header:style(margin-top: 0 !important)
 dood.pm##+js(aopw, DoodPop)
 downloadsachmienphi.com,khophimhd.net,tvhay.top##+js(acs, JSON.parse, break;case $.)
