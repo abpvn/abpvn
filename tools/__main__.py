@@ -2,12 +2,13 @@ from domain_list import DomainList
 from domain_change import DomainChange
 from pprint import pprint
 from datetime import datetime
+import os
 
 
 def main():
     start_time = datetime.now()
     print("Script start at: {0}\n".format(start_time))
-    f = open("../filter/abpvn_ublock.txt", "r", encoding="utf8")
+    f = open(os.path.dirname(__file__) + "/../filter/abpvn_ublock.txt", "r", encoding="utf8")
     filter_text = f.read()
     f.close()
     domains = DomainList.get_all_domain(filter_text)
