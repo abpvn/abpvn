@@ -1,12 +1,18 @@
 ! ---------Rule only for AdGuard------
+-@@||ads-api.twitter.com^$domain=azrom.net
 -@@||ads.pubmatic.com/AdServer/js/mshowad.js$domain=linkneverdie.net
+-@@||azrom.net$generichide
 -@@||get.optad360.io/sf/$domain=linkneverdie.net
 -@@||jsc.adskeeper.co.uk^$script,domain=ios.codevn.net
+-@@||pagead2.googlesyndication.com^$domain=azrom.net
+-@@||z-na.amazon-adsystem.com^$domain=azrom.net
 -ios.codevn.net#@#div[id*="ScriptRoot"]
 -||kmyamhowpj.com^
 360thethao.net#%#//scriptlet("abort-current-inline-script", "onload", "puURL")
 anonyviet.com#%#//scriptlet("abort-on-property-read", "reqServers")
 aoe.vn#%#//scriptlet("abort-on-property-read", "parseInt")
+azrom.net#%#//scriptlet("abort-current-inline-script","atob", "ai_block_class")
+azrom.net#%#//scriptlet("abort-on-property-read", "adsBlocked")
 baominh.tech#%#//scriptlet("prevent-addEventListener", "DOMContentLoaded", "adsBlocked")
 blog.abit.vn,phimdinhcao.net,truyensieuhay.com,xemphimtop.net,tvhayyy.org,hiphimmoi.net,quangcaoyenbai.com,gamefullcrackpc.com#%#//scriptlet("abort-on-property-read", "document.cookie")
 cafef.vn,gamek.vn,genk.vn,kenh14.vn#%#//scriptlet("abort-on-property-write", "ADMStorageFileCDN")
