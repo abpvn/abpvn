@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 20230110104508
+! Version: 20230110195844
 ! Title: ABPVN List
-! Last modified: 10 Jan 2023 10:45:08 UTC+7
+! Last modified: 10 Jan 2023 19:58:44 UTC+7
 ! Expires: 1 days (update frequency)
 !
 ! ABPVN List filter
@@ -77,6 +77,7 @@
 ||appvuive.fun^*.gif
 ||assets-vaegaa.wedodemos.com/ads/$media,domain=vaoroi13.online
 ||assets.ophim.pro^*.gif$image
+||azrom.net/wp-content/plugins/best-ads-block-detector/
 ||baohaugiang.com.vn/uploads/SlideHomeimg/
 ||baonga.com/*quang_cao$image
 ||baonga.com/FileUpload/Images/*banner
@@ -1365,6 +1366,7 @@ zingnews.vn,toquoc.vn,baoxaydung.com.vn,tienphong.vn,antt.nguoiduatin.vn,kinhten
 @@||vr.com.vn/uploads/adv/banner/$image
 @@||www3.doubleclick.net$domain=trueid.net
 @@||xahoingaynay.com.vn/upload/20989/20200817/Asset_2_8x_9596af5d4e.png$~third-party
+@@||yhocdata.com/ext/d1/assets/js/ads-prebid.js
 @@||yhocdata.com/ext/d1/public/js/prebid-ads.js
 !--------Element Hiding Exception--------------
 @@||cotuong.top$generichide
@@ -1525,6 +1527,8 @@ vn.javbabe.net##.b-player
 360thethao.net##+js(acs, onload, puURL)
 anonyviet.com##+js(aopr, reqServers)
 aoe.vn##+js(aopr, parseInt)
+azrom.net##+js(acs, atob, ai_block_class)
+azrom.net##+js(aopr, adsBlocked)
 baominh.tech##+js(addEventListener-defuser, DOMContentLoaded, adsBlocked)
 blog.abit.vn,phimdinhcao.net,truyensieuhay.com,xemphimtop.net,tvhayyy.org,hiphimmoi.net,quangcaoyenbai.com,gamefullcrackpc.com##+js(aopr, document.cookie)
 cafef.vn,gamek.vn,genk.vn,kenh14.vn##+js(aopw, ADMStorageFileCDN)

@@ -1,16 +1,22 @@
 ! ---------Rule only for uBlock Origin------
 -@@||ads-api.twitter.com$domain=cafenau.com
+-@@||ads-api.twitter.com^$domain=azrom.net
 -@@||ads.pinterest.com$domain=cafenau.com
 -@@||ads.pubmatic.com/AdServer/js/mshowad.js$domain=linkneverdie.net
+-@@||azrom.net$generichide
 -@@||cafenau.com$generichide
 -@@||get.optad360.io/sf/$domain=linkneverdie.net
 -@@||jsc.adskeeper.co.uk^$script,domain=ios.codevn.net
 -@@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=cafenau.com
+-@@||pagead2.googlesyndication.com^$domain=azrom.net
+-@@||z-na.amazon-adsystem.com^$domain=azrom.net
 -ios.codevn.net#@#div[id*="ScriptRoot"]
 -||kmyamhowpj.com^
 360thethao.net##+js(acs, onload, puURL)
 anonyviet.com##+js(aopr, reqServers)
 aoe.vn##+js(aopr, parseInt)
+azrom.net##+js(acs, atob, ai_block_class)
+azrom.net##+js(aopr, adsBlocked)
 baominh.tech##+js(addEventListener-defuser, DOMContentLoaded, adsBlocked)
 blog.abit.vn,phimdinhcao.net,truyensieuhay.com,xemphimtop.net,tvhayyy.org,hiphimmoi.net,quangcaoyenbai.com,gamefullcrackpc.com##+js(aopr, document.cookie)
 cafef.vn,gamek.vn,genk.vn,kenh14.vn##+js(aopw, ADMStorageFileCDN)
