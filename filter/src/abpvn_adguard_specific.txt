@@ -1,12 +1,16 @@
 ! ---------Rule only for AdGuard------
--@@||ads-api.twitter.com^$domain=azrom.net
+-@@||ads-api.twitter.com^$domain=azrom.net|ycongnghe.com
 -@@||ads.pubmatic.com/AdServer/js/mshowad.js$domain=linkneverdie.net
 -@@||azrom.net$generichide
 -@@||get.optad360.io/sf/$domain=linkneverdie.net
 -@@||jsc.adskeeper.co.uk^$script,domain=ios.codevn.net
 -@@||pagead2.googlesyndication.com^$domain=azrom.net
+-@@||ycongnghe.com$generichide
 -@@||z-na.amazon-adsystem.com^$domain=azrom.net
 -ios.codevn.net#@#div[id*="ScriptRoot"]
+-ycongnghe.com##.adsbygoogle
+-ycongnghe.com##.google-auto-placed
+-ycongnghe.com##.td-banner-wrap-full
 -||kmyamhowpj.com^
 360thethao.net#%#//scriptlet("abort-current-inline-script", "onload", "puURL")
 anonyviet.com#%#//scriptlet("abort-on-property-read", "reqServers")
