@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 20230131161919
+! Version: 20230201101651
 ! Title: ABPVN List
-! Last modified: 31 Jan 2023 16:19:19 UTC+7
+! Last modified: 01 Feb 2023 10:16:51 UTC+7
 ! Expires: 1 days (update frequency)
 !
 ! ABPVN List filter
@@ -22,6 +22,7 @@
 .vn/Ad/
 .vn/c3s-ad/$xmlhttprequest
 .vn/qc/
+/^https?:\/\/s3\.*.*\.amazonaws\.com\/[a-f0-9]{45,}\/[a-f,0-9]{8,10}$/$xhr,3p,domain=~amazon.com
 /_BannerSlot.aspx$subdocument,domain=bongdaso66.net|bongdaso12.com|bongdaso12.net
 /ads/*.gif$domain=~mcleaks.net
 /ads/*.xml$xmlhttprequest
@@ -612,7 +613,6 @@
 ||d3cod80thn7qnd.cloudfront.net^
 ||d3g5ovfngjw9bw.cloudfront.net^
 ||d3hs51abvkuanv.cloudfront.net^
-||d3op2vgjk53ps1.cloudfront.net^
 ||d3ud741uvs727m.cloudfront.net^
 ||d5ssgc0nf5vml.cloudfront.net^
 ||d63a3au5lqmtu.cloudfront.net^
