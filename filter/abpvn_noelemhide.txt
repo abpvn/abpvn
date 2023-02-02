@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 20230202172111
+! Version: 20230202172946
 ! Title: ABPVN List
-! Last modified: 02 Feb 2023 17:21:11 UTC+7
+! Last modified: 02 Feb 2023 17:29:46 UTC+7
 ! Expires: 1 days (update frequency)
 !
 ! ABPVN List filter
@@ -23,7 +23,7 @@
 .vn/Ad/
 .vn/c3s-ad/$xmlhttprequest
 .vn/qc/
-/^https?:\/\/s3\.*.*\.amazonaws\.com\/[a-f0-9]{45,}\/[a-f,0-9]{8,10}$/$xhr,3p,domain=~amazon.com
+/^https?:\/\/s3\.*.*\.amazonaws\.com\/[a-f0-9]{45,}\/[a-f,0-9]{8,10}$/$xmlhttprequest,3p,domain=~amazon.com
 /_BannerSlot.aspx$subdocument,domain=bongdaso66.net|bongdaso12.com|bongdaso12.net
 /ads/*.gif$domain=~mcleaks.net
 /ads/*.xml$xmlhttprequest
@@ -300,7 +300,6 @@
 ||plus.edu.vn/js/jquery/openwindow.js
 ||product.ithongtin.com/api/get-product$script,~third-party
 ||psg.mediacdn.vn/public/project/$script,domain=blogtruyen.vn
-||purgrobi.com/ub.pi$third-party
 ||qtcshop.com/images/$third-party
 ||quaivatdienanh.com/*banner$image
 ||quangcaosanpham.com/images/$third-party
