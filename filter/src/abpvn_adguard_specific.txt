@@ -1,8 +1,8 @@
 ! ---------Rule only for AdGuard------
--@@||ads-api.twitter.com^$domain=azrom.net|ycongnghe.com
+-@@||ads-api.twitter.com^$domain=azrom.net|khohieu.com|ycongnghe.com
 -@@||azrom.net$generichide
 -@@||jsc.adskeeper.co.uk^$script,domain=ios.codevn.net
--@@||pagead2.googlesyndication.com^$domain=azrom.net
+-@@||pagead2.googlesyndication.com^$domain=azrom.net|khohieu.com
 -@@||rtb.adxpremium.services^$domain=linkneverdie.net
 -@@||ycongnghe.com$generichide
 -@@||z-na.amazon-adsystem.com^$domain=azrom.net
@@ -13,7 +13,7 @@
 -||kmyamhowpj.com^
 anonyviet.com#%#//scriptlet("abort-on-property-read", "reqServers")
 aoe.vn#%#//scriptlet("abort-on-property-read", "parseInt")
-azrom.net#%#//scriptlet("abort-current-inline-script","atob", "ai_block_class")
+azrom.net#%#//scriptlet("abort-current-inline-script", "atob", "ai_block_class")
 azrom.net#%#//scriptlet("abort-on-property-read", "adsBlocked")
 baominh.tech#%#//scriptlet("prevent-addEventListener", "DOMContentLoaded", "adsBlocked")
 blog.abit.vn,phimdinhcao.net,truyensieuhay.com,xemphimtop.net,tvhayyy.org,hiphimmoi.net,quangcaoyenbai.com,gamefullcrackpc.com#%#//scriptlet("abort-on-property-read", "document.cookie")
@@ -29,6 +29,7 @@ hh3dhay.com,hh3dhay.xyz#%#//scriptlet("abort-current-inline-script", "document.c
 hiphimmoi.net#%#//scriptlet("abort-current-inline-script", "$", "urlAdsMbIntro")
 ios.codevn.net#%#//scriptlet("abort-current-inline-script", "setInterval", "offsetHeight")
 javnong.top#%#//scriptlet("abort-on-property-read", "Math.round")
+khohieu.com#%#//scriptlet("abort-current-inline-script", "document.getElementById", "chpadblock")
 linkneverdie.net#%#//scriptlet("abort-current-inline-script", "$", "open")
 linkneverdie.net#%#//scriptlet("abort-current-inline-script", "document.createElement", "script")
 linkneverdie.net#%#//scriptlet("prevent-setTimeout", "catch")
