@@ -1,8 +1,10 @@
 ! ---------Rule only for AdGuard------
+-@@||ad.doubleclick.net^$domain=anonyviet.com
 -@@||ads-api.twitter.com^$domain=azrom.net|khohieu.com|ycongnghe.com
+-@@||anonyviet.com$generichide
 -@@||azrom.net$generichide
 -@@||jsc.adskeeper.co.uk^$script,domain=ios.codevn.net
--@@||pagead2.googlesyndication.com^$domain=azrom.net|khohieu.com
+-@@||pagead2.googlesyndication.com^$domain=azrom.net|khohieu.com|anonyviet.com
 -@@||rtb.adxpremium.services^$domain=linkneverdie.net
 -@@||ycongnghe.com$generichide
 -@@||z-na.amazon-adsystem.com^$domain=azrom.net
@@ -29,7 +31,7 @@ hh3dhay.com,hh3dhay.xyz#%#//scriptlet("abort-current-inline-script", "document.c
 hiphimmoi.net#%#//scriptlet("abort-current-inline-script", "$", "urlAdsMbIntro")
 ios.codevn.net#%#//scriptlet("abort-current-inline-script", "setInterval", "offsetHeight")
 javnong.top#%#//scriptlet("abort-on-property-read", "Math.round")
-khohieu.com#%#//scriptlet("abort-current-inline-script", "document.getElementById", "chpadblock")
+khohieu.com,anonyviet.com#%#//scriptlet("abort-current-inline-script", "document.getElementById", "chpadblock")
 linkneverdie.net#%#//scriptlet("abort-current-inline-script", "$", "open")
 linkneverdie.net#%#//scriptlet("abort-current-inline-script", "document.createElement", "script")
 linkneverdie.net#%#//scriptlet("prevent-setTimeout", "catch")
