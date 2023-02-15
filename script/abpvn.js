@@ -15,8 +15,8 @@
 // @grant       GM_registerMenuCommand
 // @include     http://*
 // @include     https://*
-// @version     2.3.21
-// @change-log  Add banhkhuc modal ads blocker
+// @version     2.3.22
+// @change-log  Add saostar.vn css placeholder fix
 // @run-at      document-end
 // ==/UserScript==
 /* String Prototype */
@@ -351,6 +351,14 @@ var fixSite = {
             ABPVN.cTitle();
         }
     },
+    saostar_vn: function() {
+        if (this.url.startWith('https://www.saostar.vn/')) {
+            const styleTag = document.createElement('style');
+            styleTag.innerHTML = 'header.bg-white {margin-top: 0 !important}.layout.pt-mobi-top {padding-top: 0 !important}';
+            document.head.appendChild(styleTag);
+            ABPVN.cTitle();
+        }
+    },
     removeRedir: function(config) {
         if (this.url.match(new RegExp(config.url, 'g')) || this.url.startWith(config.url)) {
             ABPVN.cTitle();
@@ -436,6 +444,7 @@ var fixSite = {
         this.topphimhd_info();
         this.luotphim();
         this.ios_codevn_net();
+        this.saostar_vn();
     }
 };
 //Ad blocker script
