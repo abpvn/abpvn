@@ -7,6 +7,16 @@ assignees: ''
 
 ---
 
+**Check list**
+
+Please check and fill all item bellow before create issue
+
+- [ ] Added prefix [NSFW] in issue title with site contain adult content
+
+- [ ] Searched domain in both open and close issue with same issue type
+
+- [ ] Reproduce rate is over 50%
+
 **Incorrect block description**
 <!-- Tell about incorrect block here -->
 
@@ -17,18 +27,21 @@ assignees: ''
 
 **Website url**
 <!-- Place direct website url contains ads -->
+<!-- Ex: https://example.com -->
 
+**Screenshot or screen capture**
+<!-- Please allway keep screenshot or screen capture inside details tag bellow-->
 <details>
 <summary>With ABPVN Enabled</summary>
-<!-- Add your screenshot when ABPVN Enable -->
+<!-- Add your screenshot or screen capture when ABPVN Enable -->
 
-![Image name](imageUrl)
+<!-- Ex: ![Image name](imageUrl) -->
 </details>
 <details>
 <summary>Without ABPVN Enabled</summary>
-<!-- Add your screenshot when ABPVN Disabled -->
+<!-- Add your screenshot or screen capture when ABPVN Disabled -->
 
-![image name](imageUrl)
+<!-- Ex: ![image name](imageUrl) -->
 </details>
 
 **Environment**
