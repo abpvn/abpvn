@@ -19,6 +19,8 @@ body:
           required: true
         - label: Replace [domain] in issue title with issue domain
           required: true
+        - label: Uploaded screenshot, screen capture inside details tag and must be click to viewable in preview tab
+          required: true
   - type: textarea
     id: description
     attributes:
@@ -45,10 +47,6 @@ body:
       placeholder: "Example: https://example.com"
     validations:
       required: true
-  - type: markdown
-    attributes:
-      value: |
-        ###Screenshot or screen capture
   - type: textarea
     id: sc-abpvn-enable
     attributes:
@@ -78,7 +76,7 @@ body:
   - type: markdown
     attributes:
       value: |
-        ###Enviroment
+        **Enviroment**
   - type: input
     id: browers
     attributes:
@@ -100,6 +98,10 @@ body:
     attributes:
       label: Active filter list
       description: List of using filter
-      placeholder: "Example: EasyList + ABPVN List, EasyPrivacy, Custom filter (https://custome-filter-url)"
+      placeholder: |
+        Example:
+        * EasyList + ABPVN List
+        * EasyPrivacy
+        * Custom filter (https://custome-filter-url)
     validations:
       required: true
