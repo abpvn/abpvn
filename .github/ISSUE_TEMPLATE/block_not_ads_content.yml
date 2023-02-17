@@ -17,6 +17,8 @@ body:
           required: true
         - label: Reproduce rate is over 50%
           required: true
+        - label: Replace [domain] in issue title with issue domain
+          required: true
   - type: textarea
     id: description
     attributes:
@@ -40,13 +42,13 @@ body:
     id: website-url
     attributes:
       label: Website url of issue
-      value: "https://example.com"
+      placeholder: "Example: https://example.com"
     validations:
       required: true
   - type: markdown
     attributes:
       value: |
-        **Screenshot or screen capture**
+        ###Screenshot or screen capture
   - type: textarea
     id: sc-abpvn-enable
     attributes:
@@ -54,9 +56,11 @@ body:
       description: Drag image or video insde details tag to upload
       value: |
         <details>
-        <summary>With ABPVN Enabled</summary>
+        <summary>Click to open</summary>
+
         <!-- Drag image or video here to upload -->
         <!-- If video too big you also upload to another service and past url here -->
+
         </details>
   - type: textarea
     id: sc-abpvn-disable
@@ -65,17 +69,37 @@ body:
       description: Drag image or video insde details tag to upload
       value: |
         <details>
-        <summary>Without ABPVN Disabled</summary>
+        <summary>Click to open</summary>
+
         <!-- Drag image or video here to upload -->
         <!-- If video too big you also upload to another service and past url here -->
+
         </details>
-  - type: textarea
-    id: environment
+  - type: markdown
     attributes:
-      label: Environment
-      description: Environment can reproduce the issue
       value: |
-        **Environment**
-        |Browser|Browser Version|Extentions/Adblocker Programs|Adblocker Version|Subscription Filter|
-        |-----------|-----------------------|-----------------|-----------------|-------------------|
-        |Ex: Firefox|Ex: 91|Ex: Adblock Plus|Ex: 3.10|Ex: EasyList + ABPVN List, EasyPrivacy|
+        ###Enviroment
+  - type: input
+    id: browers
+    attributes:
+      label: Browser
+      description: Browser  and version of it that can reproduce the issue
+      placeholder: "Example: Firefox 101"
+    validations:
+      required: true
+  - type: input
+    id: adblocker
+    attributes:
+      label: Adblocker
+      description: Adblocker and version of it
+      placeholder: "Example: Adblock Plus 3.84"
+    validations:
+      required: true
+  - type: textarea
+    id: subscription-filter
+    attributes:
+      label: Active filter list
+      description: List of using filter
+      placeholder: "Example: EasyList + ABPVN List, EasyPrivacy, Custom filter (https://custome-filter-url)"
+    validations:
+      required: true
