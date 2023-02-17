@@ -1,0 +1,81 @@
+name: Block not ads content
+description: Report when ABPVN List block useful content in website
+title: 'Block incorrect on website: [domain]'
+labels: ["Inccorect block"]
+assignees:
+  - hoang-rio
+body:
+  - type: checkboxes
+    id: checklist
+    attributes:
+      label: Check List
+      description: Check list before create issue
+      options:
+        - label: Added prefix [NSFW] in issue title with site contain adult content
+          required: true
+        - label: Searched domain in both open and close issue with same issue type
+          required: true
+        - label: Reproduce rate is over 50%
+          required: true
+  - type: textarea
+    id: description
+    attributes:
+      label: Incorrect block description
+      description: Tell about incorrect block you got
+      placeholder: "Example: Elemnent A is blocked by ABPVN"
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce-step
+    attributes:
+      label: Reproduce step
+      description: Tell me how to reproduce issue
+      value: |
+        1. Go to website
+        2. ...
+        3. ...
+    validations:
+      required: true
+  - type: input
+    id: website-url
+    attributes:
+      label: Website url of issue
+      value: "https://example.com"
+    validations:
+      required: true
+  - type: markdown
+    attributes:
+      value: |
+        **Screenshot or screen capture**
+  - type: textarea
+    id: sc-abpvn-enable
+    attributes:
+      label: Screenshot or screen capture when ABPVN enable
+      description: Drag image or video insde details tag to upload
+      value: |
+        <details>
+        <summary>With ABPVN Enabled</summary>
+        <!-- Drag image or video here to upload -->
+        <!-- If video too big you also upload to another service and past url here -->
+        </details>
+  - type: textarea
+    id: sc-abpvn-disable
+    attributes:
+      label: Screenshot or screen capture when ABPVN disabled
+      description: Drag image or video insde details tag to upload
+      value: |
+        <details>
+        <summary>Without ABPVN Disabled</summary>
+        <!-- Drag image or video here to upload -->
+        <!-- If video too big you also upload to another service and past url here -->
+        </details>
+  - type: textarea
+    id: environment
+    attributes:
+      label: Environment
+      description: Environment can reproduce the issue
+      value: |
+        **Environment**
+        |Browser|Browser Version|Extentions/Adblocker Programs|Adblocker Version|Subscription Filter|
+        |-----------|-----------------------|-----------------|-----------------|-------------------|
+        |Ex: Firefox|Ex: 91|Ex: Adblock Plus|Ex: 3.10|Ex: EasyList + ABPVN List, EasyPrivacy|
