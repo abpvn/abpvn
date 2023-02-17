@@ -51,26 +51,28 @@ body:
     id: sc-abpvn-enable
     attributes:
       label: Screenshot or screen capture when ABPVN enable
-      description: Drag image or video insde details tag to upload
+      description: Drag image or video inside details tag to upload
       value: |
         <details>
         <summary>Click to open</summary>
 
         <!-- Drag image or video here to upload -->
-        <!-- If video too big you also upload to another service and past url here -->
+
+        <!-- If video too big you also upload to another service and paste url here -->
 
         </details>
   - type: textarea
     id: sc-abpvn-disable
     attributes:
       label: Screenshot or screen capture when ABPVN disabled
-      description: Drag image or video insde details tag to upload
+      description: Drag image or video inside details tag to upload
       value: |
         <details>
         <summary>Click to open</summary>
 
         <!-- Drag image or video here to upload -->
-        <!-- If video too big you also upload to another service and past url here -->
+
+        <!-- If video too big you also upload to another service and paste url here -->
 
         </details>
   - type: markdown
@@ -81,7 +83,7 @@ body:
     id: browers
     attributes:
       label: Browser
-      description: Browser  and version of it that can reproduce the issue
+      description: Browser and version of it that can reproduce the issue
       placeholder: "Example: Firefox 101"
     validations:
       required: true
