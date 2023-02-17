@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 20230217202832
+! Version: 20230217204505
 ! Title: ABPVN List
-! Last modified: 17 Feb 2023 20:28:32 UTC+7
+! Last modified: 17 Feb 2023 20:45:05 UTC+7
 ! Expires: 1 days (update frequency)
 !
 ! ABPVN List filter
@@ -1848,6 +1848,7 @@ $popup,third-party,domain=veporno.net|avgle.com|daxab.com|javmost.cx
 $third-party,script,domain=sexdiaryz.fun
 /\w{10}\.com\/\w{2}\/\w{2}\/\w{2}\/\w{32}\.js/$script
 /\w{32}\/invoke.js/$domain=~shortearn.eu
+/player/vast.js
 /wp-content/uploads/*.gif$image,domain=tuoi69vn.com|sieukhung.org|tuoinung.co
 /www.eporner.com/\w{32,}/$image,script,~third-party
 /xad/js.php
@@ -1888,6 +1889,7 @@ $third-party,script,domain=sexdiaryz.fun
 ||jaletemetia.com^
 ||javhiv.xyz^*.gif$image
 ||javhub.me/Cms_Data/Sites/admin/Files/ads.js
+||javtopxx.com/public/images/banner/$image
 ||kxnggkh2nj.com^
 ||luscious.net/luscious.js
 ||mmliveapp.club/wp-content/uploads/2021/08/show-adsmmlive.png
@@ -1968,6 +1970,9 @@ javhay.media##body>div:not(.alldiv)
 javhiv.xyz##.mobile-catfix
 javhub.me###invideo_wrapper
 javqd.me##.pop-html
+javtopxx.com##.cat-fish.a-play
+javtopxx.com##.centered.preload.ads
+javtopxx.com##.overlay
 luscious.net###l-center-txt
 phim18hd.us##.cash-fish
 phim18hd.us##.top-mobile-banner
