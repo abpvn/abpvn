@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 20230220095705
+! Version: 20230220095722
 ! Title: ABPVN List
-! Last modified: 20 Feb 2023 09:57:05 UTC+7
+! Last modified: 20 Feb 2023 09:57:22 UTC+7
 ! Expires: 1 days (update frequency)
 !
 ! ABPVN List filter
@@ -1216,7 +1216,6 @@ game4v.com###fixedban
 game4v.com##div[class^="banner-mobile"]
 game8.vn##.bg_allpopupss
 game8.vn##.bgal_popndungalal
-gamefullcrackpc.com##.custom-html-widget.textwidget>.external
 gameio.vn###tubia
 gamek.vn###admzone57
 gamenoob.net##.cp-modal-popup-container
@@ -1309,6 +1308,7 @@ linkneverdie.net##.info-footer:nth-child(4)
 linksht.com##.adCreator
 listnhacai1.com##.dwpb-action
 listnhacai1.com##.fixtop
+lmhgame.com##.custom-html-widget.textwidget>.external
 lmssplus.com##.adsHOC_wrapper__i5MTn
 lmssplus.com##.homePage_adsHomeLeft__3_ruz.adsHOC_wrapper__Se0cN
 lmssplus.com##.style_wrapperAll__jFIbb
@@ -2044,12 +2044,11 @@ aoe.vn#%#//scriptlet("abort-on-property-read", "parseInt")
 azrom.net#%#//scriptlet("abort-current-inline-script", "atob", "ai_block_class")
 azrom.net#%#//scriptlet("abort-on-property-read", "adsBlocked")
 baominh.tech#%#//scriptlet("prevent-addEventListener", "DOMContentLoaded", "adsBlocked")
-blog.abit.vn,phimdinhcao.net,phimdinhcao.com,truyensieuhay.com,xemphimtop.net,tvhayyy.org,hiphimmoi.net,quangcaoyenbai.com,gamefullcrackpc.com#%#//scriptlet("abort-on-property-read", "document.cookie")
+blog.abit.vn,phimdinhcao.net,phimdinhcao.com,truyensieuhay.com,xemphimtop.net,tvhayyy.org,hiphimmoi.net,quangcaoyenbai.com,lmhgame.com#%#//scriptlet("abort-on-property-read", "document.cookie")
 cafef.vn,gamek.vn,genk.vn,kenh14.vn#%#//scriptlet("abort-on-property-write", "ADMStorageFileCDN")
 chotlo.com#$##header {margin-top: 0!important}
 dood.pm#%#//scriptlet("abort-on-property-write", "DoodPop")
 fembed.com,femax20.com,mrdhan.com#%#//scriptlet("prevent-addEventListener", "click", "open")
-gamefullcrackpc.com#%#//scriptlet("remove-attr", "onclick", "body")
 gametv.vn#%#//scriptlet("abort-current-inline-script", "$", "homeModal")
 giavang.net#%#//scriptlet("prevent-fetch", "method:HEAD")
 gotphim.com#%#//scriptlet("abort-current-inline-script", "navigator", "devtoolsDetector")
@@ -2062,6 +2061,7 @@ linkneverdie.net#%#//scriptlet("abort-current-inline-script", "$", "open")
 linkneverdie.net#%#//scriptlet("abort-current-inline-script", "document.createElement", "script")
 linkneverdie.net#%#//scriptlet("prevent-setTimeout", "catch")
 linkneverdie.net#%#//scriptlet("set-constant", "DisplayBlockHTML", "noopFunc")
+lmhgame.com#%#//scriptlet("remove-attr", "onclick", "body")
 luotphimtv1.com,luotphim2.net,luotphim1.net,luotphimtv.vip,webphim1.com#%#//scriptlet("json-prune", "0.time_mobile 0.time 0.link_video 0.link_video_mobile 0.link 0.link_mobile 1.time_mobile 1.time 1.link_video 1.link_video_mobile 1.link 1.link_mobile")
 metruyencv.com#%#//scriptlet("abort-on-property-write", "window.onclick")
 nguontvhay.com#%#//scriptlet("abort-current-inline-script", "encodeURIComponent", "popunder")
