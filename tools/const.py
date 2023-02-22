@@ -20,3 +20,4 @@ class Const():
     REJECT_TARGET_DOMAIN = [
         'google.com', 'facebook.com', 'yahooinc.com'
     ]
+    FILE_REGEX = r"\|\|([^*\n]+\.(js|png|webp|jpg|jpeg|mp4|gif))([\n\$])"
