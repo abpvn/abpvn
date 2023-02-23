@@ -106,7 +106,7 @@ class DomainChange():
 def main():
     start_time = datetime.now()
     print("Script start at: {0}\n".format(start_time))
-    f = open(os.path.dirname(__file__) + "/../filter/abpvn_ublock.txt", "r", encoding="utf8")
+    f = open(os.path.dirname(os.path.abspath(__file__)) + "/../filter/abpvn_ublock.txt", "r", encoding="utf8")
     filter_text = f.read()
     f.close()
     domains = DomainList.get_all_domain(filter_text)
