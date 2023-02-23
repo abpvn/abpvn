@@ -2,6 +2,10 @@ import requests
 from const import Const
 import re
 import threading
+from datetime import datetime
+from domain_list import DomainList
+from pprint import pprint
+import os
 
 
 class DomainCheck(threading.Thread):
@@ -98,3 +102,23 @@ class DomainChange():
         for t in self.__threads:
             t.join()
         return (self.redirect_pairs, self.error_domains)
+
+def main():
+    start_time = datetime.now()
+    print("Script start at: {0}\n".format(start_time))
+    f = open(os.path.dirname(__file__) + "/../filter/abpvn_ublock.txt", "r", encoding="utf8")
+    filter_text = f.read()
+    f.close()
+    domains = DomainList.get_all_domain(filter_text)
+    domain_change = DomainChange(domains)
+    redirect_pairs, error_domains = domain_change.check_domain_change()
+    print("----Found {} domain changed with redirect----".format(len(redirect_pairs)))
+    pprint(redirect_pairs)
+    print("----Found {} error domain----".format(len(error_domains)))
+    pprint(error_domains)
+    end_time = datetime.now()
+    print("Script finish at: {0}\n".format(end_time))
+    running_time = end_time - start_time
+    print("Running in {0} seconds".format(running_time.total_seconds()))
+
+main()
