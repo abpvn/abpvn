@@ -15,8 +15,8 @@
 // @grant       GM_registerMenuCommand
 // @include     http://*
 // @include     https://*
-// @version     2.3.22
-// @change-log  Add saostar.vn css placeholder fix
+// @version     2.3.23
+// @change-log  Add mephimtv.cc scroll fix
 // @run-at      document-end
 // ==/UserScript==
 /* String Prototype */
@@ -383,6 +383,12 @@ var fixSite = {
             }
         }
     },
+    mephimtv_cc: function() {
+        if (this.url.startWith('https://mephimtv.cc')) {
+          ABPVN.cTitle();
+          setTimeout(() => document.body.classList.remove('compensate-for-scrollbar'), 100);
+        }
+     },
     removeRedirect() {
         var configs = [
             {
@@ -445,6 +451,7 @@ var fixSite = {
         this.luotphim();
         this.ios_codevn_net();
         this.saostar_vn();
+        this.mephimtv_cc();
     }
 };
 //Ad blocker script
