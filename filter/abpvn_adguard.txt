@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 20230306163033
+! Version: 20230307101520
 ! Title: ABPVN List
-! Last modified: 06 Mar 2023 16:30:33 UTC+7
+! Last modified: 07 Mar 2023 10:15:20 UTC+7
 ! Expires: 1 days (update frequency)
 !
 ! ABPVN List filter
@@ -209,7 +209,6 @@
 ||laptrinhvb.net/uploads/Banner.gif$image
 ||laptrinhvb.net/uploads/phan_mem_lay_tin_tu_dong_bat_dong_san.png
 ||lh3.googleusercontent.com/*=s0$image,domain=hhninja.xyz|animevietsub.pro
-||linkneverdie.net/jquery-editor
 ||listnhacai1.com^*.gif$image
 ||live.staticflickr.com$domain=timdaily.vn,image
 ||lmssplus.com/static_image/ads-provider/$image
@@ -1417,8 +1416,7 @@ javnong.top#%#//scriptlet("abort-on-property-read", "Math.round")
 khohieu.com,anonyviet.com#%#//scriptlet("abort-current-inline-script", "document.getElementById", "chpadblock")
 linkneverdie.net#%#//scriptlet("abort-current-inline-script", "$", "open")
 linkneverdie.net#%#//scriptlet("abort-current-inline-script", "document.createElement", "script")
-linkneverdie.net#%#//scriptlet("prevent-setTimeout", "catch")
-linkneverdie.net#%#//scriptlet("set-constant", "DisplayBlockHTML", "noopFunc")
+linkneverdie.net#%#//scriptlet("abort-on-property-read", "setTimeout")
 lmhgame.com#%#//scriptlet("prevent-addEventListener", "load", "popunder")
 luotphimtv1.com,luotphim2.net,luotphim1.net,luotphimtv.vip,webphim1.com#%#//scriptlet("json-prune", "0.time_mobile 0.time 0.link_video 0.link_video_mobile 0.link 0.link_mobile 1.time_mobile 1.time 1.link_video 1.link_video_mobile 1.link 1.link_mobile")
 mephimtv.cc#%#//scriptlet("remove-class", "compensate-for-scrollbar", "body")
@@ -1446,7 +1444,7 @@ vebo3.org,90phut6.live,90phut4.live,khomuc6.tv,banhkhuc6.com##.modal-backdrop.sh
 vebo3.org,90phut6.live,90phut4.live,khomuc6.tv,banhkhuc6.com##.show.fade.modal
 vebo3.org,90phut6.live,90phut4.live,khomuc6.tv,banhkhuc6.com#$#body {overflow: visible!important;}
 viet69.page,ungtycomicsvip.com,vlxx.info#%#//scriptlet("abort-current-inline-script", "WebAssembly", "instantiate")
-viettoons.tv,phimmoiaz.cc,zo3x.us,m.blogtruyen.vn,linkneverdie.net#%#//scriptlet("abort-on-property-read", "open")
+viettoons.tv,phimmoiaz.cc,zo3x.us,m.blogtruyen.vn#%#//scriptlet("abort-on-property-read", "open")
 vungoctuan.vn#%#//scriptlet("abort-current-inline-script", "document.write", "snow")
 vungoctuan.vn#%#//scriptlet("prevent-xhr", "ads")
 watchsb.com#%#//scriptlet("abort-on-property-read", "__Y")
