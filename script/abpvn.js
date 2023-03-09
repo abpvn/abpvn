@@ -15,20 +15,20 @@
 // @grant       GM_registerMenuCommand
 // @include     http://*
 // @include     https://*
-// @version     2.3.23
-// @change-log  Add mephimtv.cc scroll fix
+// @version     2.3.24
+// @change-log  Add linkneverdie.net anti adblock removal
 // @run-at      document-end
 // ==/UserScript==
 /* String Prototype */
-String.prototype.startWith = function(str) {
+String.prototype.startWith = function (str) {
     return typeof this.indexOf === 'function' && this.indexOf(str) === 0;
 };
-String.prototype.ismatch = function(regex) {
+String.prototype.ismatch = function (regex) {
     return typeof this.match === 'function' && this.match(regex) !== null;
 };
 //Bypass Class
 var byPass = {
-    hideLinkUnlock: function() {
+    hideLinkUnlock: function () {
         var contentDiv = document.querySelectorAll('.onp-sl-content,.onp-locker-call,[data-locker-id]');
         if (contentDiv.length) {
             ABPVN.cTitle();
@@ -59,7 +59,7 @@ var byPass = {
             }
         }
     },
-    removeShortLink: function() {
+    removeShortLink: function () {
         var allShortLink = document.querySelectorAll('a[href*="/full/?api="]');
         var count = 0;
         if (allShortLink.length) {
@@ -78,17 +78,17 @@ var byPass = {
             Logger.info("By pass " + count + " short link");
         }
     },
-    showBodyLinkByPassAndRedirect: function(link) {
+    showBodyLinkByPassAndRedirect: function (link) {
         document.body.innerHTML = '<style>html,body{background: #fff !important;}h1{color: #00dc58;}a{color: #015199}a h1{color: #015199;}</style><center><h1>ABPVN quick bypass đã hoạt động</h1><a href=\'https://abpvn.com/donate\'><h1>Ủng hộ ABPVN</h1></a><br/>Không tự chuyển trang? <a href=\'' + link + '\' title=\'Chuyển trang\'>Click vào đây</a></center>';
         setTimeout(() => location.href = link, 500);
     },
-    quickByPassLink: function() {
+    quickByPassLink: function () {
         var regex = /123link\..*|phlame.pw|megaurl\.*|www.123l\.*|vinaurl\.*|share4you.pro|doxeaz10.site|derow.win|linkviet.net|ez4linkss.com|ckk.ai|link.codevn.net|linksht.com|beta.shortearn.eu|getlink.tienichmaytinh.net|download.baominh.tech|download3s.net/;
         var largeTimeoutHost = /share4you.pro|derow.win/;
         var autoCaptchaOnlyList = /megaurl\.*|vinaurl\.*|doxeaz10.site|linkviet.net|ez4linkss.com|ckk.ai|link.codevn.net|beta.shortearn.eu|getlink.tienichmaytinh.net|download.baominh.tech|download3s.net/;
         if (regex.test(location.hostname)) {
             try {
-                var checkClick = function(mutation) {
+                var checkClick = function (mutation) {
                     if (mutation.attributeName === "disabled" && !mutation.target.disabled) {
                         return true;
                     }
@@ -127,8 +127,8 @@ var byPass = {
                     if (getLinkl) {
                         observer.observe(getLinkl, config);
                         if (!autoCaptchaOnlyList.test(location.hostname)) {
-                            setTimeout(function() {
-                                $("#go-link").addClass("go-link").trigger("submit.adLinkFly.counterSubmit").one("submit.adLinkFly.counterSubmit", function(e) {
+                            setTimeout(function () {
+                                $("#go-link").addClass("go-link").trigger("submit.adLinkFly.counterSubmit").one("submit.adLinkFly.counterSubmit", function (e) {
                                     e.preventDefault();
                                     if (!largeTimeoutHost.test(location.hostname)) {
                                         location.reload();
@@ -143,7 +143,7 @@ var byPass = {
             }
         }
     },
-    wikiall_org: function() {
+    wikiall_org: function () {
         if (location.hostname == 'wikiall.org' && document.querySelector('#timer')) {
             var observer = new MutationObserver((mutations) => {
                 mutations.forEach((mutation) => {
@@ -161,7 +161,7 @@ var byPass = {
             });
         }
     },
-    link1s_com: function() {
+    link1s_com: function () {
         window.addEventListener("DOMContentLoaded", () => {
             // step 1
             let link1sgo = document.querySelector('a#link1s');
@@ -203,7 +203,7 @@ var byPass = {
             }
         });
     },
-    init: function() {
+    init: function () {
         if (configure.getValue('unlock_content', true)) {
             window.addEventListener('DOMContentLoaded', this.hideLinkUnlock);
             window.addEventListener('load', this.hideLinkUnlock);
@@ -222,26 +222,26 @@ var byPass = {
 //Logger Class
 var Logger = {
     style: 'color: #00DC58',
-    info: function(text) {
+    info: function (text) {
         console.info('%cABPVN.COM Info: ', this.style, text);
     },
-    warn: function(text) {
+    warn: function (text) {
         console.warn('%cABPVN Warn: ', this.style, text);
     },
-    error: function(text) {
+    error: function (text) {
         console.error('%cABPVN Error: ', this.style, text);
     },
-    log: function(text) {
+    log: function (text) {
         console.log('%cABPVN Log: ', this.style, text);
     },
 };
 //get Link class
 var getLink = {
-    showBodyLinkDownloadAndRedirect: function(label, link) {
+    showBodyLinkDownloadAndRedirect: function (label, link) {
         document.body.innerHTML = '<style>html,body{background: #fff !important;}h1{color: #00dc58;}a{color: #015199}a h1{color: #015199;}</style><center><h1>ABPVN ' + label + ' download đã hoạt động</h1><a href=\'https://abpvn.com/donate\'><h1>Ủng hộ ABPVN</h1></a><br/>Không tự tải xuống? <a href=\'' + link + '\' title=\'Download\'>Click vào đây</a></center>';
         location.href = link;
     },
-    mediafire_com: function() {
+    mediafire_com: function () {
         if (this.url.startWith('http://www.mediafire.com/file/') || this.url.startWith('https://www.mediafire.com/file/')) {
             var a_tag = document.querySelector('.download_link a.input');
             var link = a_tag.getAttribute('href');
@@ -250,7 +250,7 @@ var getLink = {
             }
         }
     },
-    init: function() {
+    init: function () {
         this.url = location.href;
         if (configure.getValue('quick_download', true)) {
             this.mediafire_com();
@@ -259,11 +259,11 @@ var getLink = {
 };
 //Fix site class
 var fixSite = {
-    elementExist: function(selector) {
+    elementExist: function (selector) {
         var check = document.querySelector(selector);
         return check != null;
     },
-    getAllText: function(selector) {
+    getAllText: function (selector) {
         var text = '';
         var nodeList = document.querySelectorAll(selector);
         if (nodeList) {
@@ -273,10 +273,10 @@ var fixSite = {
         }
         return text;
     },
-    getScript: function(url) {
+    getScript: function (url) {
         var xhr = new XMLHttpRequest();
         xhr.open('GET', url);
-        xhr.addEventListener('load', function(data) {
+        xhr.addEventListener('load', function (data) {
             var blob = new Blob([xhr.responseText], {
                 type: 'text/javascript'
             });
@@ -288,7 +288,7 @@ var fixSite = {
         });
         xhr.send();
     },
-    loadCss: function(url, id) {
+    loadCss: function (url, id) {
         var css_tag = document.createElement('link');
         css_tag.rel = 'stylesheet';
         css_tag.id = id;
@@ -296,21 +296,21 @@ var fixSite = {
         var head = document.getElementsByTagName('head')[0];
         head.appendChild(css_tag);
     },
-    antiAdblockRemover: function() {
+    antiAdblockRemover: function () {
         try {
             var msg = 'By pass adBlock detect rồi nhé! Hahahahaha 😁😁😁';
             if (typeof adBlockDetected === 'function') {
-                adBlockDetected = function() {
+                adBlockDetected = function () {
                     Logger.info(msg);
                 };
             }
             if (typeof showAdsBlock === 'function') {
-                showAdsBlock = function() {
+                showAdsBlock = function () {
                     Logger.info(msg);
                 };
             }
             if (typeof nothingCanStopMeShowThisMessage === 'function') {
-                nothingCanStopMeShowThisMessage = function() {
+                nothingCanStopMeShowThisMessage = function () {
                     Logger.info(msg);
                 };
             }
@@ -318,7 +318,7 @@ var fixSite = {
             Logger.error(e);
         }
     },
-    topphimhd_info: function() {
+    topphimhd_info: function () {
         if (this.url.startWith('http://lb.topphimhd.info')) {
             var adSourceEl = document.querySelector('[data-ads=""]');
             if (adSourceEl) {
@@ -328,7 +328,7 @@ var fixSite = {
             }
         }
     },
-    luotphim: function() {
+    luotphim: function () {
         if (this.url.startWith('https://luotphim.top/xem-phim') || this.url.startWith('https://luotphim.top/phim-') || this.url.startWith("https://luotphim.fun/xem-phim") || this.url.startWith("https://luotphim.fun/phim-")) {
             var clickCount = 1;
             var interval = setInterval(() => {
@@ -351,7 +351,7 @@ var fixSite = {
             ABPVN.cTitle();
         }
     },
-    saostar_vn: function() {
+    saostar_vn: function () {
         if (this.url.startWith('https://www.saostar.vn/')) {
             const styleTag = document.createElement('style');
             styleTag.innerHTML = 'header.bg-white {margin-top: 0 !important}.layout.pt-mobi-top {padding-top: 0 !important}';
@@ -359,13 +359,32 @@ var fixSite = {
             ABPVN.cTitle();
         }
     },
-    removeRedir: function(config) {
+    mephimtv_cc: function () {
+        if (this.url.startWith('https://mephimtv.cc')) {
+            ABPVN.cTitle();
+            setTimeout(() => document.body.classList.remove('compensate-for-scrollbar'), 100);
+        }
+    },
+    linkneverdie_net: function () {
+        if (this.url.startWith('https://linkneverdie.net')) {
+            const superHTML = $.prototype.html;
+            $.prototype.html = function (arguments) {
+                if (this.selector === 'body' && (arguments === '' || arguments.includes('huong-dan'))) {
+                    ABPVN.cTitle();
+                    Logger.info('😁😁Anti Adblock à? Còn lâu nhé!');
+                    return;
+                }
+                superHTML.call(this, arguments);
+            }
+        }
+    },
+    removeRedir: function (config) {
         if (this.url.match(new RegExp(config.url, 'g')) || this.url.startWith(config.url)) {
             ABPVN.cTitle();
             var links = document.querySelectorAll(config.selector || 'a[href^="' + config.replace + '"]');
             Logger.info('Remove Redirect for ' + links.length + ' links');
             if (links.length) {
-                links.forEach(function(item) {
+                links.forEach(function (item) {
                     var stockUrl = item.getAttribute('href').replace(config.replace, '');
                     var count = 0;
                     while (stockUrl.indexOf('%2') > -1 && count < 5) {
@@ -383,12 +402,6 @@ var fixSite = {
             }
         }
     },
-    mephimtv_cc: function() {
-        if (this.url.startWith('https://mephimtv.cc')) {
-          ABPVN.cTitle();
-          setTimeout(() => document.body.classList.remove('compensate-for-scrollbar'), 100);
-        }
-     },
     removeRedirect() {
         var configs = [
             {
@@ -437,11 +450,11 @@ var fixSite = {
                 replace: '/chuyen-huong/?redirect='
             }
         ];
-        configs.forEach(function(config) {
+        configs.forEach(function (config) {
             this.removeRedir(config);
         }.bind(this));
     },
-    init: function() {
+    init: function () {
         this.url = location.href;
         if (configure.getValue('remove_redirect', true)) {
             this.removeRedirect();
@@ -452,11 +465,12 @@ var fixSite = {
         this.ios_codevn_net();
         this.saostar_vn();
         this.mephimtv_cc();
+        this.linkneverdie_net();
     }
 };
 //Ad blocker script
 var adBlocker = {
-    mgIdAdRemover: function() {
+    mgIdAdRemover: function () {
         const skipDomain = /ios.codevn.net/;
         if (skipDomain.test(location.hostname)) {
             return;
@@ -473,7 +487,7 @@ var adBlocker = {
             }
         }
     },
-    noAdsModal: function() {
+    noAdsModal: function () {
         const domainRegex = /vebo|90phut|khomuc|xoilac|banhkhuc/;
         if (location.hostname.match(domainRegex)) {
             const styleTag = document.createElement('style');
@@ -482,7 +496,7 @@ var adBlocker = {
             ABPVN.cTitle();
         }
     },
-    init: function() {
+    init: function () {
         this.url = location.href;
         this.mgIdAdRemover();
         this.noAdsModal();
@@ -494,12 +508,12 @@ var configure = {
         issue: 'https://github.com/abpvn/abpvn/issues/new',
         fanpage: 'https://www.facebook.com/abpvn.org',
     },
-    openUrl: function(url) {
+    openUrl: function (url) {
         if (typeof GM_openInTab === 'function') {
             GM_openInTab(url);
         }
     },
-    getValue: function(key, defaultValue) {
+    getValue: function (key, defaultValue) {
         var value;
         if (typeof GM_getValue === 'function') {
             value = GM_getValue(key);
@@ -509,12 +523,12 @@ var configure = {
         }
         return value;
     },
-    setValue: function(key, value) {
+    setValue: function (key, value) {
         if (typeof GM_setValue === 'function') {
             return GM_setValue(key, value);
         }
     },
-    setUpSetting: function() {
+    setUpSetting: function () {
         if (this.url === this.urls.setting) {
             var settingContainer = document.querySelector('#setting-container');
             if (settingContainer) {
@@ -533,7 +547,7 @@ var configure = {
             }
         }
     },
-    init: function() {
+    init: function () {
         this.url = location.href;
         if (typeof GM_registerMenuCommand === 'function') {
             GM_registerMenuCommand('ABPVN - Cài đặt', () => {
@@ -551,12 +565,12 @@ var configure = {
 };
 //Main class
 var ABPVN = {
-    cTitle: function() {
+    cTitle: function () {
         if (document.title.indexOf(' - Fixed by ABPVN.COM') === -1) {
             document.title = document.title + ' - Fixed by ABPVN.COM';
         }
     },
-    init: function() {
+    init: function () {
         //Init class adBlocker
         adBlocker.init();
         //Init class getLink
