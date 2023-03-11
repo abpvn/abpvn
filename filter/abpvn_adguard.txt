@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 20230310095219
+! Version: 20230312064321
 ! Title: ABPVN List
-! Last modified: 10 Mar 2023 09:52:19 UTC+7
+! Last modified: 12 Mar 2023 06:43:21 UTC+7
 ! Expires: 1 days (update frequency)
 !
 ! ABPVN List filter
@@ -1354,6 +1354,7 @@ $third-party,script,domain=sexdiaryz.fun
 ||mmliveapp.club/wp-content/uploads/2021/08/show-adsmmlive.png
 ||phimsexsub.pro/300100-*.html$subdocument
 ||phym18.com/static/js/adlia.js
+||quoracdn.net^$image,domain=vlxx.cc
 ||rphang.online/images/*catfish$image
 ||sieukhung.org^*.gif$image
 ||tinwin.club/wp-content/uploads/2021/05/unnamed.jpg
@@ -1392,11 +1393,14 @@ tuoi69vn.com##.quangcaomb
 tuoinung.co###hide_float_right
 video.xembed.club###istext
 video.xembed.club##body>div[id]
+vlxx.cc###adx
+vlxx.cc##div.banner-catfish-bottom
 vlxx.info###adx
 vlxx.info##.ads
 vlxx.info##.catfish-bottom
 vlxx.info##.ff-banner
 vn.javbabe.net##.b-player
+vn.phym18.com##div#bnads
 ! ---------Rule only for AdGuard------
 anonyviet.com#%#//scriptlet("abort-on-property-read", "reqServers")
 aoe.vn#%#//scriptlet("abort-on-property-read", "parseInt")
@@ -1447,7 +1451,7 @@ vcomic.net,truyen86.com#%#//scriptlet("abort-current-inline-script", "Object", "
 vebo3.org,90phut6.live,90phut4.live,khomuc6.tv,banhkhuc6.com##.modal-backdrop.show
 vebo3.org,90phut6.live,90phut4.live,khomuc6.tv,banhkhuc6.com##.show.fade.modal
 vebo3.org,90phut6.live,90phut4.live,khomuc6.tv,banhkhuc6.com#$#body {overflow: visible!important;}
-viet69.page,ungtycomicsvip.com,vlxx.info#%#//scriptlet("abort-current-inline-script", "WebAssembly", "instantiate")
+viet69.page,ungtycomicsvip.com,vlxx.info,vlxx.cc#%#//scriptlet("abort-current-inline-script", "WebAssembly", "instantiate")
 viettoons.tv,phimmoiaz.cc,zo3x.us,m.blogtruyen.vn#%#//scriptlet("abort-on-property-read", "open")
 vungoctuan.vn#%#//scriptlet("abort-current-inline-script", "document.write", "snow")
 vungoctuan.vn#%#//scriptlet("prevent-xhr", "ads")
