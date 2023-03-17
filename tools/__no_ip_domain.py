@@ -41,15 +41,9 @@ class NoIpCheck(threading.Thread):
     def nslookup(self, domain):
         ip_address = []
         try:
-            ipv4s = dns.resolver.query(domain, rdtype=dns.rdatatype.A)
-            for ipv4_address in ipv4s:
-                ip_address.append(str(ipv4_address))
-        except:
-            pass
-        try:
-            ipv6s = dns.resolver.query(domain, rdtype=dns.rdatatype.AAAA)
-            for ipv6_address in ipv6s:
-                ip_address.append(str(ipv6_address))
+            ips = dns.resolver.query(domain)
+            for ip in ips:
+                ip_address.append(str(ip))
         except:
             pass
         return ip_address
