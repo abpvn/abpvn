@@ -1,5 +1,5 @@
 class Const():
-    DOMAIN_REGEX = '([|\/=\.~]?)(([\w-]{3,255})(\.[a-z]{2,7}))([#\/|\n\^\$,])'
+    DOMAIN_REGEX = '([|\/=\.~]?)(([\w-]{3,255})(\.[a-z]{2,3})?(\.[a-z]{2,7}))([#\/|\n\^\$,])'
     TLD_DOMAIN_REGEX = '([\w-]+\.\w+)\/'
     REJECT_ENDINGS = [
         '.js', '.png', '.jpg', '.gif', '.aspx',
