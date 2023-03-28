@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 20230328145242
+! Version: 20230328150025
 ! Title: ABPVN List
-! Last modified: 28 Mar 2023 14:52:42 UTC+7
+! Last modified: 28 Mar 2023 15:00:24 UTC+7
 ! Expires: 1 days (update frequency)
 !
 ! ABPVN List filter
@@ -62,7 +62,6 @@
 ||7mad1.7m.$domain=vn2.7msport.com|vn.7msport.com
 ||7mimg.7m.$domain=vn2.7msport.com|vn.7msport.com
 ||ads*.autodaily.vn
-||adsvideo.playpdc.xyz^$domain=phimdacap.org
 ||anime47.com^*.gif
 ||animechanel.com^*.gif
 ||animet.net^*.gif
@@ -327,9 +326,9 @@
 ||static.homedy.com/*banner-
 ||static.mepuzz.com/sdk/v2/MePuzzServiceWorker.min.js
 ||static.nhaccuatui.com/imgqc/
-||static.playpdc.xyz/*/dk8/$image
-||static.playpdc.xyz/js/*/vast$script,domain=phimdacap.org
+||static.playpdc.xyz/js/jwplayer_v5/aaa.js$script,domain=phimdacap.org
 ||static.playpdc.xyz/xml/$xmlhttprequest,domain=phimdacap.org
+||static.playpdc.xyz^*.gif$image
 ||static.truyenchu.com.vn/banner/
 ||static.ybox.vn^*.gif
 ||statics.voz.tech/data/94bf/16229c4da035c9.jpg$image
@@ -1378,8 +1377,7 @@ phim202.com,phimmoi.vip###itro_opaco
 phim33.tv##div[data-value="1"]
 phimanimehd.net##.preload-backdrop
 phimanimehd.net,mphim14.com##.fixed_bottom
-phimdacap.org##[data-id="p3popup"]
-phimdacap.org##[data-style="catfish"]
+phimdacap.org##[data-id]
 phimdinhcao.net,phimlongtieng.net,phimdinhcao.com##.BanerTop100
 phimdinhcao.net,phimlongtieng.net,phimdinhcao.com##.adv-300-right
 phimdinhcao.net,phimlongtieng.net,phimdinhcao.com,hiphimmoi.net##.popUpBannerBox
