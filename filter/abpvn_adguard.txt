@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 20230329141110
+! Version: 20230329141928
 ! Title: ABPVN List
-! Last modified: 29 Mar 2023 14:11:10 UTC+7
+! Last modified: 29 Mar 2023 14:19:27 UTC+7
 ! Expires: 1 days (update frequency)
 !
 ! ABPVN List filter
@@ -327,7 +327,6 @@
 ||stc-tv.zing.vn/skins/tv_v2/js/fadblock.min.js
 ||stockbiz.vn/AdsBanners/
 ||storage.fshare.vn/images/$third-party,domain=~qthang.net
-||storage.googleapis.com^*$script,domain=baomoi.com|zingnews.vn
 ||subnhanh.cc/js/ads_xx.js
 ||subnhanh.info/js/ads_xx.js
 ||suckhoelamdep.vn^*.gif$image
@@ -1975,7 +1974,7 @@ aoe.vn#%#//scriptlet("abort-on-property-read", "parseInt")
 azrom.net#%#//scriptlet("abort-current-inline-script", "atob", "ai_block_class")
 azrom.net#%#//scriptlet("abort-on-property-read", "adsBlocked")
 baominh.tech#%#//scriptlet("prevent-addEventListener", "DOMContentLoaded", "adsBlocked")
-baomoi.com,zingnews.vn#%#//scriptlet("abort-current-inline-script", "document.createElement", "script")
+baomoi.com,zingnews.vn#%#//scriptlet("abort-on-property-read", "_ssdz")
 blog.abit.vn,phimdinhcao.net,phimlongtieng.net,phimdinhcao.com,truyensieuhay.com,phimmoivn.pro,tvhay2.org,hiphimmoi.net,quangcaoyenbai.com,lmhgame.com#%#//scriptlet("abort-on-property-read", "document.cookie")
 bongda365a.net#%#//scriptlet("set-constant", "countTVC", "0")
 bongda365a.net#%#//scriptlet("set-constant", "isSkipAds", "true")
@@ -2035,4 +2034,3 @@ youtube.com,youtube-nocookie.com#%#//scriptlet("json-prune", "0.playerResponse.a
 youtube.com,youtube-nocookie.com#%#//scriptlet("set-constant", "playerResponse.adPlacements", "undefined")
 youtube.com,youtube-nocookie.com#%#//scriptlet("set-constant", "ytInitialPlayerResponse.adPlacements", "undefined")
 ytstv.me,yts.do,yts.mx,yts.movie,yts.rs#%#//scriptlet("abort-on-property-read", "atob")
-zingnews.vn#%#//scriptlet("abort-on-property-read", "atob")
