@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 20230330134737
+! Version: 20230331143241
 ! Title: ABPVN List
-! Last modified: 30 Mar 2023 13:47:37 UTC+7
+! Last modified: 31 Mar 2023 14:32:41 UTC+7
 ! Expires: 1 days (update frequency)
 !
 ! ABPVN List filter
@@ -1368,7 +1368,7 @@ vlxx.cc,javtopxx.com##.ads
 vn.javbabe.net##.b-player
 vn.phym18.com##div#bnads
 ! ---------Rule only for AdGuard------
-anonyviet.com#%#//scriptlet("abort-on-property-read", "reqServers")
+anonyviet.com#%#//scriptlet("abort-current-inline-script","decodeURIComponent", "escape")
 aoe.vn#%#//scriptlet("abort-on-property-read", "parseInt")
 azrom.net,ycongnghe.com#%#//scriptlet("abort-current-inline-script","atob", "ai_block_class")
 azrom.net,ycongnghe.com,cafenau.com#%#//scriptlet("abort-on-property-read", "adsBlocked")
