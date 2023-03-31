@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 20230330165936
+! Version: 20230331143036
 ! Title: ABPVN List
-! Last modified: 30 Mar 2023 16:59:36 UTC+7
+! Last modified: 31 Mar 2023 14:30:36 UTC+7
 ! Expires: 1 days (update frequency)
 !
 ! ABPVN List filter
@@ -1969,7 +1969,7 @@ xiuren.org##div[id^="exo_slider_"]
 xnxx.com###ad-header-mobile
 xnxx.com###content-ad-top-zone
 ! ---------Rule only for AdGuard------
-anonyviet.com#%#//scriptlet("abort-on-property-read", "reqServers")
+anonyviet.com#%#//scriptlet("abort-current-inline-script","decodeURIComponent", "escape")
 aoe.vn#%#//scriptlet("abort-on-property-read", "parseInt")
 azrom.net#%#//scriptlet("abort-current-inline-script", "atob", "ai_block_class")
 azrom.net#%#//scriptlet("abort-on-property-read", "adsBlocked")
