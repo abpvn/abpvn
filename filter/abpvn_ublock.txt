@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 20230405144251
+! Version: 20230406093001
 ! Title: ABPVN List
-! Last modified: 05 Apr 2023 14:42:51 UTC+7
+! Last modified: 06 Apr 2023 09:30:01 UTC+7
 ! Expires: 1 days (update frequency)
 !
 ! ABPVN List filter
@@ -1442,7 +1442,7 @@ linkneverdie.net##+js(nostif, backcall)
 linkneverdie.net##+js(nostif, catch)
 lmhgame.com##+js(addEventListener-defuser, load, popunder)
 luotphimtv1.com,luotphim2.net,luotphim1.net,luotphimtv.vip,webphim1.com##+js(json-prune, 0.time_mobile 0.time 0.link_video 0.link_video_mobile 0.link 0.link_mobile 1.time_mobile 1.time 1.link_video 1.link_video_mobile 1.link 1.link_mobile)
-mephimtv1.com##+js(m3u-prune, /ads, mixed.m3u8)
+mephimtv1.com##+js(m3u-prune, /#EXT-X-DISCONTINUITY.{1\,100}#EXT-X-DISCONTINUITY/gm, mixed.m3u8)
 mephimtv1.com##body:remove-class(compensate-for-scrollbar)
 metruyencv.com##+js(aopw, window.onclick)
 nguontvhd.com##+js(acs, encodeURIComponent, popunder)
