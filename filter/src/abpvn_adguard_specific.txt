@@ -1,16 +1,13 @@
 
 ! ---------Rule only for AdGuard------
 -@@||ad.doubleclick.net^$domain=anonyviet.com
--@@||ads-api.twitter.com^$domain=azrom.net|khohieu.com|ycongnghe.com
+-@@||ads-api.twitter.com^$domain=azrom.net|khohieu.com
 -@@||anonyviet.com$generichide
 -@@||azrom.net$generichide
 -@@||jsc.adskeeper.co.uk^$script,domain=ios.codevn.net
 -@@||pagead2.googlesyndication.com^$domain=azrom.net|khohieu.com|anonyviet.com
--@@||ycongnghe.com$generichide
 -@@||z-na.amazon-adsystem.com^$domain=azrom.net
 -ios.codevn.net#@#div[id*="ScriptRoot"]
--ycongnghe.com##.google-auto-placed
--ycongnghe.com##.td-banner-wrap-full
 -||kmyamhowpj.com^
 anonyviet.com#%#//scriptlet("abort-current-inline-script","decodeURIComponent", "escape")
 aoe.vn#%#//scriptlet("abort-on-property-read", "parseInt")
