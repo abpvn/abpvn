@@ -1,22 +1,18 @@
 ! ---------Rule only for AdGuard------
--@@||ads-api.twitter.com^$domain=azrom.net|cafenau.com|ycongnghe.com|khohieu.com
+-@@||ads-api.twitter.com^$domain=azrom.net|cafenau.com|khohieu.com
 -@@||ads.pinterest.com$domain=cafenau.com
 -@@||azrom.net$generichide
 -@@||cafenau.com$generichide
 -@@||jsc.adskeeper.co.uk^$script,domain=ios.codevn.net
 -@@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=cafenau.com
 -@@||pagead2.googlesyndication.com^$domain=azrom.net|khohieu.com
--@@||ycongnghe.com$generichide
 -@@||z-na.amazon-adsystem.com^$domain=azrom.net
 -ios.codevn.net#@#div[id*="ScriptRoot"]
--ycongnghe.com##.adsbygoogle
--ycongnghe.com##.google-auto-placed
--ycongnghe.com##.td-banner-wrap-full
 -||kmyamhowpj.com^
 anonyviet.com#%#//scriptlet("abort-current-inline-script","decodeURIComponent", "escape")
 aoe.vn#%#//scriptlet("abort-on-property-read", "parseInt")
-azrom.net,ycongnghe.com#%#//scriptlet("abort-current-inline-script","atob", "ai_block_class")
-azrom.net,ycongnghe.com,cafenau.com#%#//scriptlet("abort-on-property-read", "adsBlocked")
+azrom.net#%#//scriptlet("abort-current-inline-script","atob", "ai_block_class")
+azrom.net,cafenau.com#%#//scriptlet("abort-on-property-read", "adsBlocked")
 baominh.tech#%#//scriptlet("prevent-addEventListener", "DOMContentLoaded", "adsBlocked")
 blog.abit.vn,phimdinhcao.net,phimlongtieng.net,phimdinhcao.com,truyensieuhay.com,phimmoivn.pro,tvhay2.org,hiphimmoi.net,quangcaoyenbai.com,lmhgame.com#%#//scriptlet("abort-on-property-read", "document.cookie")
 bongcam.tv##.modal-backdrop.show
