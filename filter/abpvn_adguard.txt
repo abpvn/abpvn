@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 20230506155910
+! Version: 20230506174111
 ! Title: ABPVN List
-! Last modified: 06 May 2023 15:59:10 UTC+7
+! Last modified: 06 May 2023 17:41:11 UTC+7
 ! Expires: 1 days (update frequency)
 !
 ! ABPVN List filter
@@ -73,6 +73,7 @@
 ||azrom.net/wp-content/plugins/best-ads-block-detector/
 ||babydeal.com.vn/image/catalog/banners$image
 ||baohaugiang.com.vn/uploads/SlideHomeimg/
+||baomoi.com$csp=script-src * 'self' 'unsafe-inline'
 ||baonga.com/*quang_cao$image
 ||baonga.com/FileUpload/Images/*banner
 ||baonga.com/image*.gif
@@ -586,7 +587,7 @@ bantincongnghe.net##[href*="cellphones.com.vn"]
 baodansinh.vn##.box-ads-bar
 baohaugiang.com.vn##.top-header
 baomoi.com###BaoMoi_HalfPage
-baomoi.com##.bm_KO.bm_Fo
+baomoi.com#?#[id="__next"]>div:-abp-has(#BaoMoi_Masthead)
 baonga.com##.monkey-content-duoicanbiet
 baonga.com##.monkey-section-tinnoibat
 baonga.com##div.monkey-qc
