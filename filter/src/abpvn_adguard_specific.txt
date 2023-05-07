@@ -1,4 +1,3 @@
-
 ! ---------Rule only for AdGuard------
 -@@||ad.doubleclick.net^$domain=anonyviet.com
 -@@||ads-api.twitter.com^$domain=azrom.net|khohieu.com
@@ -17,7 +16,7 @@ baominh.tech#%#//scriptlet("prevent-addEventListener", "DOMContentLoaded", "adsB
 blog.abit.vn,phimdinhcao.net,phimlongtieng.net,phimdinhcao.com,truyensieuhay.com,phimmoivn.pro,tvhay2.org,hiphimmoi.net,quangcaoyenbai.com,lmhgame.com#%#//scriptlet("abort-on-property-read", "document.cookie")
 bongda365a.live#%#//scriptlet("set-constant", "countTVC", "0")
 bongda365a.live#%#//scriptlet("set-constant", "isSkipAds", "true")
-cafef.vn,gamek.vn,genk.vn,kenh14.vn#%#//scriptlet("abort-on-property-write", "ADMStorageFileCDN")
+cafef.vn,gamek.vn,genk.vn,kenh14.vn#%#//scriptlet("abort-on-property-read", "ADMStorageFileCDN")
 chotlo.net#$##header {margin-top: 0!important}
 dood.pm#%#//scriptlet("abort-on-property-write", "DoodPop")
 fembed.com,femax20.com,mrdhan.com#%#//scriptlet("prevent-addEventListener", "click", "open")
