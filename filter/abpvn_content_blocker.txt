@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 20230509203208
+! Version: 20230509203242
 ! Title: ABPVN List
-! Last modified: 09 May 2023 20:32:08 UTC+7
+! Last modified: 09 May 2023 20:32:42 UTC+7
 ! Expires: 1 days (update frequency)
 !
 ! ABPVN List filter
@@ -36,7 +36,7 @@
 /disable-devtool.min.js$script
 /giadinhonline.vn/files/qc/
 /i.imgur.com/*.gif$domain=keonhacai.de|phimlongtieng.net|phimdinhcao.com|phimdinhcao.net|tvzinghd.com|xoilac65.tv|bongdainfo.vip|91ptv.tv|ve-bo.live|cakhia2.net|plvb.xyz|mitom6.net
-/mmo/*$xmlhttprequest,image,domain=phimnhanh2.com|xemphim1080.com|phimmoi2.com|mephimnhat2.com|vuigher.com|mehoathinh1.com
+/mmo/*$xmlhttprequest,image,domain=phimnhanh2.com|phimmoi2.com|mephimnhat2.com|vuigher.com|mehoathinh1.com
 /polyad.
 /qc1.js$script,domain=tvzinghd.com
 /qcao/*$domain=~thegioididong.com
@@ -420,8 +420,6 @@
 ||xahoingaynay.com.vn/upload/$image
 ||xc.7mdt.com^*.gif$image
 ||xehay.vn/public/html5/ads/
-||xemphim1080.com/banner/
-||xemphim1080.com/sponsor
 ||xemphim365vn.com/public/*.mp4$domain=xemphim365vn.com,rewrite=abp-resource:blank-mp3
 ||xemphim365vn.com/public/banner/$image
 ||xevathethao.vn/wp-content/uploads/banner
@@ -1378,6 +1376,8 @@ phimhot365.org##.banner-preload
 phimmoi.vip###itro_popup
 phimmoi18.com###closePC
 phimmoi18.com###fixed_bottom
+phimmoi2.com,mephimnhat2.com,phimnhanh2.com##.player-vast-blocker
+phimmoi2.com,mephimnhat2.com,phimnhanh2.com,hhtqvietsub.tv###sponsor-balloon
 phimmoi2s.com##.bf_video>a
 phimmoi2s.com##.box_option
 phimmoi2s.com##.event_loader_e
@@ -1679,8 +1679,6 @@ xehay.vn###banner2ab
 xemlivenhanh.com##.banner_pc
 xemlivenhanh.com##.box-banner
 xemlivenhanh.com##.datcuoc.button
-xemphim1080.com,phimmoi2.com,mephimnhat2.com,phimnhanh2.com##.player-vast-blocker
-xemphim1080.com,phimmoi2.com,mephimnhat2.com,phimnhanh2.com,hhtqvietsub.tv###sponsor-balloon
 xemphimviet1.net##.popunder-link
 xemphimviet1.net,ghienphim4.net##.ad-floater
 xemphimviet1.net,ghienphim4.net##.promotion-popup
