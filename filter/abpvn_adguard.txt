@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 20230522130544
+! Version: 20230522133043
 ! Title: ABPVN List
-! Last modified: 22 May 2023 13:05:44 UTC+7
+! Last modified: 22 May 2023 13:30:43 UTC+7
 ! Expires: 1 days (update frequency)
 !
 ! ABPVN List filter
@@ -1958,6 +1958,7 @@ aoe.vn#%#//scriptlet("abort-on-property-read", "parseInt")
 azrom.net#%#//scriptlet("abort-current-inline-script", "atob", "ai_block_class")
 azrom.net#%#//scriptlet("abort-on-property-read", "adsBlocked")
 baominh.tech#%#//scriptlet("prevent-addEventListener", "DOMContentLoaded", "adsBlocked")
+baomoi.com#%#//scriptlet("abort-on-property-write", "AdtimaBaomoi")
 blog.abit.vn,phimdinhcao.net,phimlongtieng.net,phimdinhcao.com,truyensieuhay.com,phimmoivn.pro,tvhayu.org,hephimmoi.net,quangcaoyenbai.com,lmhgame.com,khoaiphim.com#%#//scriptlet("abort-on-property-read", "document.cookie")
 bongda365a.info#%#//scriptlet("set-constant", "countTVC", "0")
 bongda365a.info#%#//scriptlet("set-constant", "isSkipAds", "true")
@@ -2021,4 +2022,4 @@ youtube.com,youtube-nocookie.com#%#//scriptlet("json-prune", "0.playerResponse.a
 youtube.com,youtube-nocookie.com#%#//scriptlet("set-constant", "playerResponse.adPlacements", "undefined")
 youtube.com,youtube-nocookie.com#%#//scriptlet("set-constant", "ytInitialPlayerResponse.adPlacements", "undefined")
 ytstv.me,yts.do,yts.mx,yts.movie,yts.rs#%#//scriptlet("abort-on-property-read", "atob")
-zingnews.vn,baomoi.com#%#//scriptlet("abort-on-property-write", "AdtimaRender")
+zingnews.vn#%#//scriptlet("abort-on-property-write", "AdtimaRender")
