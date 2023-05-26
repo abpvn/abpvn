@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 20230526080600
+! Version: 20230526080616
 ! Title: ABPVN List
-! Last modified: 26 May 2023 08:06:00 UTC+7
+! Last modified: 26 May 2023 08:06:16 UTC+7
 ! Expires: 1 days (update frequency)
 !
 ! ABPVN List filter
@@ -1401,6 +1401,7 @@ plvb.xyz##.odds-button2
 protruyen.com##.click-ads
 protruyen.com##.click-ads ~ p
 protruyen.com##.mrb10
+protruyen.com,truyentranhaudio.online##div.mrb10
 qthang.net##.ad-script
 qthang.net#?#.HTML:-abp-has(.adsbygoogle)
 quantrimang.com###adrighttop
@@ -1540,7 +1541,6 @@ truyenqqq.vn,truyenqq.net##.mobile-banner
 truyensieuhay.com###topbanner
 truyensieuhay.com##.footer-info
 truyentranh8.net,truyentranh86.com##.tt8quangcao
-truyentranhaudio.com,truyentranhaudio.online##div.mrb10
 truyentuan.com##.doc-truyen-ads-d1
 truyentuan.com##.doc-truyen-ads-d2
 tudomuaban.com###ad-center
@@ -1998,6 +1998,7 @@ plvb.xyz#%#//scriptlet("abort-on-property-read", "adsPopupPlayer")
 plvb.xyz#%#//scriptlet("abort-on-property-read", "adsTvc")
 plvb.xyz#%#//scriptlet("abort-on-property-read", "keyPlayer")
 protruyen.com#%#//scriptlet("abort-current-inline-script", "Object", "$._Eu")
+protruyen.com,downloadsachmienphi.com,lrepacks.net,khophimhd.net#%#//scriptlet("abort-current-inline-script", "JSON.parse", "break;case $.")
 rphangx.me,mrcong.com#%#//scriptlet("abort-current-inline-script", "document.querySelectorAll", "popMagic")
 saostar.vn#$#div.layout.pt-mobi-top {padding-top: 0 !important}
 saostar.vn#$#header.bg-white {margin-top: 0px !important}
@@ -2005,7 +2006,6 @@ tinsoikeo.vip#%#//scriptlet("abort-current-inline-script", "$", "window.open")
 tinsoikeo.vip#%#//scriptlet("abort-on-property-read", "sessionStorage")
 truyen2u.net#%#//scriptlet("abort-current-inline-script", "eval")
 truyengihotne.com#%#//scriptlet("abort-current-inline-script", "document.createElement", "checkIntersection")
-truyentranhaudio.com,downloadsachmienphi.com,lrepacks.net,khophimhd.net#%#//scriptlet("abort-current-inline-script", "JSON.parse", "break;case $.")
 truyentuan.com#%#//scriptlet("abort-current-inline-script", "$", "btpop")
 vaoroi13.online#%#//scriptlet("set-constant", "adsTvcs", "")
 vebo3.org,90phuttv.pro,khomuc9.tv,banhkhuc6.com,cakhia2.net,90p-tv.tv,mi-tom.net,bongcam.tv##.modal-backdrop.show
