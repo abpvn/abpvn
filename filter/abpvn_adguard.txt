@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 20230614080301
+! Version: 20230614161129
 ! Title: ABPVN List
-! Last modified: 14 Jun 2023 08:03:01 UTC+7
+! Last modified: 14 Jun 2023 16:11:29 UTC+7
 ! Expires: 1 days (update frequency)
 !
 ! ABPVN List filter
@@ -33,7 +33,7 @@
 /core/*$script,domain=gamek.vn|genk.vn|kenh14.vn|cafef.vn
 /disable-devtool.min.js$script
 /giadinhonline.vn/files/qc/
-/i.imgur.com/*.gif$image,domain=tvzinghd.com|xoilac75.tv|keonhacai.de|bongda-info.com|90phut-tv.tv|vebo1.live|cakhia2.com|plvb.xyz|mi-tom.com
+/i.imgur.com/*.gif$image,domain=tvzinghd.com|xoilac75.tv|keonhacai.de|bongda-info.com|90phut-tv.tv|vebo1.live|ca-khia.net|plvb.xyz|mi-tom.com
 /mmo/*$xmlhttprequest,image,domain=phimnhanh2.com|phimmoi2.com|mephimnhat2.com|vuigher.com|mehoathinh1.com
 /polyad.
 /qc1.js$script,domain=tvzinghd.com
@@ -616,6 +616,12 @@ bongdaso12.com,bongdaso12.net,bongdaso66.net##[id$="float_banner"]
 bongdaso12.com,bongdaso12.net,bongdaso66.net,xemtivisohd.net,blog.abit.vn##[class*="_banner"]
 bongdatructuyen21.com##.menu-mobile.hot-menu
 btcvn.org##.PanelScroller.Notices
+ca-khia.net##.container.mt-1.d-none.d-lg-block
+ca-khia.net##.menu-item-object-custom
+ca-khia.net##a.rlw-extra-i.py-3.flex-grow-1
+ca-khia.net,90phut-tv.tv,mi-tom.com##.modal-backdrop.show
+ca-khia.net,90phut-tv.tv,mi-tom.com##.show.fade.modal
+ca-khia.net,xoilac75.tv,mi-tom.com,90phut-tv.tv,vebo1.live##.marquee-container
 cafebiz.vn##.bgadmtoptotal
 cafef.vn,ttvn.toquoc.vn##.bannertop
 cakhia18.com,cakhia27.tv,cakhia22.live,caheo7.tv##.container-banner
@@ -624,12 +630,6 @@ cakhia18.com,cakhia27.tv,cakhia22.live,caheo7.tv##.modal-ads
 cakhia18.com,cakhia27.tv,cakhia22.live,caheo7.tv##div[class^="slide-bar"]
 cakhia18.com,cakhia27.tv,cakhia22.live,caheo7.tv,livefb.xyz##.button-bottom-center-append-custom
 cakhia18.com,cakhia27.tv,cakhia22.live,rakhoi12.tv,rakhoi7.com,caheo7.tv,livefb.xyz##.button-in-player-box
-cakhia2.com##.container.mt-1.d-none.d-lg-block
-cakhia2.com##.menu-item-object-custom
-cakhia2.com##a.rlw-extra-i.py-3.flex-grow-1
-cakhia2.com,90phut-tv.tv,mi-tom.com##.modal-backdrop.show
-cakhia2.com,90phut-tv.tv,mi-tom.com##.show.fade.modal
-cakhia2.com,xoilac75.tv,mi-tom.com,90phut-tv.tv,vebo1.live##.marquee-container
 careerlink.vn##.top-right-col-ads
 chap.vn##.my_responsive_add
 chap.vn##.titleBar + *
@@ -877,10 +877,10 @@ mi-tom.com##.d-lg-none.d-flex.btn-odds.text-center
 mi-tom.com##.style-1.ml-2.d-none.d-lg-block.menu-item.menu-item-type-custom.menu-item-object-custom.menu-item-52424
 mi-tom.com##.text-center.btn-odds.d-none.d-lg-block
 mi-tom.com,90phut-tv.tv##.d-lg-none.d-block.p-1.text-center
-mi-tom.com,90phut-tv.tv,cakhia2.com,xoilac75.tv,vebo1.live###quangcaopc
-mi-tom.com,90phut-tv.tv,cakhia2.com,xoilac75.tv,vebo1.live,bongda-info.com###wap_bottombanner
-mi-tom.com,cakhia2.com,vebo1.live##.align-items-center.justify-content-between.d-flex.col-12>.d-lg-none.d-block
-mi-tom.com,cakhia2.com,xoilac75.tv##.sub-menu.d-none.d-lg-flex
+mi-tom.com,90phut-tv.tv,ca-khia.net,xoilac75.tv,vebo1.live###quangcaopc
+mi-tom.com,90phut-tv.tv,ca-khia.net,xoilac75.tv,vebo1.live,bongda-info.com###wap_bottombanner
+mi-tom.com,ca-khia.net,vebo1.live##.align-items-center.justify-content-between.d-flex.col-12>.d-lg-none.d-block
+mi-tom.com,ca-khia.net,xoilac75.tv##.sub-menu.d-none.d-lg-flex
 mitub.net##.single-box
 mitub.net##[href^="//dooloust.net/"]
 motchill.tv,phimnhanh24h.com,motphimtv.vip###mp-adbk
@@ -1262,8 +1262,8 @@ xoilac75.tv##a.btn-odds[rel="nofollow"]
 xoilac75.tv##div.d-lg-none.d-block:nth-of-type(3)
 xoilac75.tv,90phut-tv.tv##.match-detail__offer
 xoilac75.tv,tructiepdabong21.site##.offer__btn
-xoilac75.tv,vebo1.live,mi-tom.com,cakhia2.com##div[id^="dnn_"]
-xoilac75.tv,vebo1.live,mi-tom.com,cakhia2.com,90phut-tv.tv,bongda-info.com##.company
+xoilac75.tv,vebo1.live,mi-tom.com,ca-khia.net##div[id^="dnn_"]
+xoilac75.tv,vebo1.live,mi-tom.com,ca-khia.net,90phut-tv.tv,bongda-info.com##.company
 xoivo7.info##.bnt_what_live
 xoso.mobi,xsmn247.me##a[href^="/redirect/out?token="]
 xosodaiphat.com##.adv-side-bar
@@ -1479,7 +1479,7 @@ truyen2u.net#%#//scriptlet("abort-current-inline-script", "eval")
 truyengihotne.com#%#//scriptlet("abort-current-inline-script", "document.createElement", "checkIntersection")
 truyentuan.com#%#//scriptlet("abort-current-inline-script", "$", "btpop")
 vaoroi13.online#%#//scriptlet("set-constant", "adsTvcs", "")
-vebo3.org,90phuttvpro.net,90phut9.live,khomuc9.tv,banhkhuc6.com,90phut-tv.tv,cakhia2.com,xoilac75.tv,vebo1.live,mi-tom.com,bongcam.tv#$#body {overflow: visible!important;}
+vebo3.org,90phuttvpro.net,90phut9.live,khomuc9.tv,banhkhuc6.com,90phut-tv.tv,ca-khia.net,xoilac75.tv,vebo1.live,mi-tom.com,bongcam.tv#$#body {overflow: visible!important;}
 vebo3.org,90phuttvpro.net,90phut9.live,khomuc9.tv,banhkhuc6.com,xoilac75.tv,vebo1.live,bongcam.tv##.modal-backdrop.show
 vebo3.org,90phuttvpro.net,90phut9.live,khomuc9.tv,banhkhuc6.com,xoilac75.tv,vebo1.live,bongcam.tv##.show.fade.modal
 viet69.sh,ungtycomicsvip.com,vlxx.ai#%#//scriptlet("abort-current-inline-script", "WebAssembly", "instantiate")
