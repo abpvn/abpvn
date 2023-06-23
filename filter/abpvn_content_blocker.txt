@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 20230623143315
+! Version: 20230623161337
 ! Title: ABPVN List
-! Last modified: 23 Jun 2023 14:33:15 UTC+7
+! Last modified: 23 Jun 2023 16:13:37 UTC+7
 ! Expires: 1 days (update frequency)
 !
 ! ABPVN List filter
@@ -55,7 +55,6 @@
 /vast.js$script,domain=api.anime3s.com|tvzinghd.com|ophimhay.com
 /videojs.ads.$domain=~danet.vn
 /videojs.ima.js$domain=~jut.su|~earthcam.com
-anime47.com##.advertisement
 ||123nhadatviet.com/Media/CK/banners/
 ||123nhadatviet.net/Media/CK/banners/
 ||24hmoney.vn/_nuxt/img/banner
@@ -968,18 +967,16 @@ anime47.com##.advertisement
 90phuttvpro.org,90phut9.live##.item.item-betnow
 90phuttvpro.org,90phut9.live##.sv-link.btn-bet-top
 a3mng.com##.single-video
-anime3s.com###fbox-background
+anime3s.com,animetvn.live###fbox-background
 anime47.com###qc_clgt
 animehay.io###middle-box-screen
 animet.net###inx-content
 animet.net###inx-overlay
 animet.net##.float-left
-animet.net##.gnarty-offads
 animet.net##.gnartyx-offads
 animet.net##.jeg_ad
-animetvn.live###fbox-background
+animet.net,animetvn.live##.gnarty-offads
 animetvn.live###mobile-ads
-animetvn.live##.gnarty-offads
 animevietsub.moe###invideo_wrapper
 animevietsub.moe##.Ads
 animevietsub.moe##.mobile-catfixx
@@ -1048,7 +1045,6 @@ cakhia18.com,cakhia27.tv,cakhia22.live,caheo7.tv##.logo-top-right-append-custom
 cakhia35.net##.container.mt-1.d-none.d-lg-block
 cakhia35.net##.menu-item-object-custom
 cakhia35.net##a.rlw-extra-i.py-3.flex-grow-1
-cakhia35.net##div[id^="dnn_"]
 cakhia35.net,90phut-tv.tv,mitom365.tv##.modal-backdrop.show
 cakhia35.net,90phut-tv.tv,mitom365.tv##.show.fade.modal
 cakhia35.net,xoilac78.tv##.sub-menu.d-none.d-lg-flex
@@ -1162,7 +1158,7 @@ hayghe.pro###antiblocker_underplayer
 hh3dhay.com###layerLogo
 hhhkungfu.tv##div.text-center:nth-of-type(7)
 hhhkungfu.tv##div[style="min-height: 250px"]
-hhkungfutv.net,phimnet.vip,phimanimehd.net##.preload-banner
+hhkungfutv.net,phimnet.vip,phimanimehd.net,phimyeuthich.com##.preload-banner
 hoc24.vn###modal-ads-olm
 hoc247.net###boxmsgthongbaopopup
 hoidap247.com##.ads-home-feed
@@ -1300,17 +1296,14 @@ mmo4me.com##div[class^="ads-"]
 motchill.tv,phimnhanh24h.com,motphimtv.vip###mp-adbk
 motchill.tv,phimnhanh24h.com,motphimtv.vip###mp-adx-b32
 motchill.tv,phimnhanh24h.com,motphimtv.vip,phimmoipro.net,vkool1.net,phimmoichill.cc##.mp-adz
-motphim2.tv###ads-preload
 motphim2.tv##.box_odds
 motphim2.tv##.widget_custom_html.widget.widget_text
 motphimmoiz.net###preload-ads
-mphim14.com##.adv_phim
 mphimmoi31.com##.most-view:first-child
 muabanraovat.com##[class^="box_adv_ele"]
 muare.vn##.admicro_top
 muaxegiatot.com###tdi_129
 myeva.vn###adop_bfd
-myeva.vn##.adsbypubpower
 myeva.vn##ins[class*="adsby"]
 mythethao.net##.banner_top
 nettruyenmax.com,nhattruyenup.com##.container div:not(.top)>div.mrb5.mrt5.text-center>a
@@ -1375,10 +1368,8 @@ phimmoi4s.com##.box_option
 phimmoi4s.com##.event_loader_e
 phimmoi4s.com##.popup_center
 phimmoichill.cc###chilladv
-phimmoichill.cc,hayghe.pro,gocphims.net###pmadv
-phimmoinay.tv###popup_banner_beta
-phimmoinay.tv##.adv_phim
 phimmoinay.tv##.sda-catfish.sgpb-popup-dialog-main-div-wrapper
+phimmoinay.tv,mphim14.com##.adv_phim
 phimmoipro.net##.container>.right-box
 phimmoiv2.com##.uniad-player + div[style]
 phimmoivn.pro,tvhaye.org,api.anime3s.com,tvhay2.com##.t_logo
@@ -1389,10 +1380,9 @@ phimnhua.com###catfish-banner
 phimnhua.com##.topless
 phimno3.xyz###ads_location
 phimno3.xyz##.block.ad
-phimno3.xyz,hhtq.net,film365.in,dongphimtv.top,phimnhanh24h.com,phimz.vip,phimbocn.com,iphimchilla.com,dongphymz.com###ads-preload
+phimno3.xyz,hhtq.net,film365.in,dongphimtv.top,phimnhanh24h.com,phimz.vip,phimbocn.com,iphimchilla.com,dongphymz.com,motphim2.tv###ads-preload
 phimtt.com##.breadcrumb.block-title
 phimvietsub.co,luotphimtv.top##.code-block
-phimyeuthich.com##.preload-banner
 phimyeuthich.com##.sticky-footer
 phimz.vip##div.separator
 photobucket.com##.slider-contents
@@ -1527,7 +1517,7 @@ tivi4k.com##.col-lg-4.hidden-xs.d-flex.flex-column.address-wrap
 tivi4k.com##.main-nav.float-right
 toithuthuat.com##.box
 toithuthuat.com##.pum
-toptruyen68.com,doctruyen3qtv.net##.advertisement
+toptruyen68.com,doctruyen3qtv.net,anime47.com##.advertisement
 tpbpirateproxy.org###vpnModal
 tpbpirateproxy.org##.sidebar-vpn
 traderviet.net##.homePageAds
@@ -1566,7 +1556,7 @@ tvhay2.com###catfish-adv
 tvhay2.com###overlay-pop
 tvhay2.com##.mobile-catfish
 tvhay2.com,khoaiphim.com###ads_preload
-tvhaye.org,protruyen.com,yeumanhua.fun###popup_banner_beta
+tvhaye.org,protruyen.com,yeumanhua.fun,phimmoinay.tv###popup_banner_beta
 tvphapluat.vn##.bannerqc
 tvphapluat.vn##[class^="sticky-top"]
 tvphapluat.vn##[href*="/default/template/"]
@@ -1650,9 +1640,9 @@ vnexpress.net##.article_ads_300x250
 vnexpress.net##.banner_mobile_300x250
 voh.com.vn##.Advs_adv-components__1nBNS.Advs_adv-300x250__2eyhC.Advs_no-content__RWwW2
 voh.com.vn##.HotTagGlobal_fixed-height__1f50i
-voz.vn##.adsbypubpower
 voz.vn##.v-element>.v-responsive
 voz.vn##div.message--post
+voz.vn,myeva.vn##.adsbypubpower
 vphims.net##.catfish-ck
 vtipster.net##div[class*="qca"]
 vtruyen.com###article>.pt-3.text-center
@@ -1707,7 +1697,7 @@ xoilac78.tv##a[href^="https://www.mu922.com"]
 xoilac78.tv##div.d-lg-none.d-block:nth-of-type(3)
 xoilac78.tv,90phut-tv.tv##.match-detail__offer
 xoilac78.tv,tructiepdabong21.site##.offer__btn
-xoilac78.tv,vebo1.live,mitom365.tv##div[id^="dnn_"]
+xoilac78.tv,vebo1.live,mitom365.tv,cakhia35.net##div[id^="dnn_"]
 xoivo7.info##.bnt_what_live
 xoivo7.info,tructiepdabong21.site,vaoroi13.online##.ads-menu
 xoso.mobi,xsmn247.me##a[href^="/redirect/out?token="]
