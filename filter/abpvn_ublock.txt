@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 20230626083447
+! Version: 20230626213716
 ! Title: ABPVN List
-! Last modified: 26 Jun 2023 08:34:47 UTC+7
+! Last modified: 26 Jun 2023 21:37:16 UTC+7
 ! Expires: 1 days (update frequency)
 !
 ! ABPVN List filter
@@ -615,7 +615,10 @@ bongdaso12.com,bongdaso12.net,bongdaso66.net##.art_header_text
 bongdaso12.com,bongdaso12.net,bongdaso66.net##[id$="float_banner"]
 bongdaso12.com,bongdaso12.net,bongdaso66.net,xemtivisohd.net,blog.abit.vn##[class*="_banner"]
 bongdatructuyen21.com##.menu-mobile.hot-menu
-boophim.org##.no-pop
+boophim.org##.expand-static-banner
+boophim.org##.head--banner
+boophim.org##.preload-banner
+boophim.org##.static-banner
 btcvn.org##.PanelScroller.Notices
 cafebiz.vn##.bgadmtoptotal
 cafef.vn,ttvn.toquoc.vn##.bannertop
@@ -1437,6 +1440,8 @@ baomoi.com##+js(aopw, AdtimaBaomoi)
 blog.abit.vn,truyensieuhay.com,phimmoivn.pro,tvhaye.org,phimmoipro.net,quangcaoyenbai.com,lmhgame.com,khoaiphim.com##+js(aopr, document.cookie)
 bongda365a.club##+js(set, countTVC, 0)
 bongda365a.club##+js(set, isSkipAds, true)
+boophim.org##body:remove-attr(data-pop1)
+boophim.org##body:remove-attr(data-pop2)
 cafef.vn,gamek.vn,genk.vn,kenh14.vn##+js(set, ADMStorageFileCDN, noopFunc)
 chotlo.me###header:style(margin-top: 0 !important)
 dood.pm##+js(aopw, DoodPop)
