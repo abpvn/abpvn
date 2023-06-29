@@ -15,8 +15,8 @@
 // @grant       GM_registerMenuCommand
 // @include     http://*
 // @include     https://*
-// @version     2.3.24
-// @change-log  Add linkneverdie.net anti adblock removal
+// @version     2.3.25
+// @change-log  Add redirect.dafontvn.com auto redirect
 // @run-at      document-end
 // ==/UserScript==
 /* String Prototype */
@@ -378,6 +378,15 @@ var fixSite = {
             }
         }
     },
+    redirect_dafontvn_com() {
+        if (this.url.startWith('https://redirect.dafontvn.com')) {
+            ABPVN.cTitle();
+            window.addEventListener('load', () => {
+                var realurl = aesCrypto.decrypt(convertstr($.urlParam('o')), convertstr('root'));
+                location.href = realurl;
+            });
+        }
+    },
     removeRedir: function (config) {
         if (this.url.match(new RegExp(config.url, 'g')) || this.url.startWith(config.url)) {
             ABPVN.cTitle();
@@ -465,7 +474,7 @@ var fixSite = {
         this.ios_codevn_net();
         this.saostar_vn();
         this.mephimtv_cc();
-        this.linkneverdie_net();
+        this.redirect_dafontvn_com();
     }
 };
 //Ad blocker script
