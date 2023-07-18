@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 20230718075330
+! Version: 20230718161841
 ! Title: ABPVN List
-! Last modified: 18 Jul 2023 07:53:30 UTC+7
+! Last modified: 18 Jul 2023 16:18:41 UTC+7
 ! Expires: 1 days (update frequency)
 !
 ! ABPVN List filter
@@ -1960,6 +1960,7 @@ boophim.org#%#//scriptlet("remove-attr", "data-pop1|data-pop2", "body")
 cafef.vn,gamek.vn,genk.vn,kenh14.vn#%#//scriptlet("set-constant", "ADMStorageFileCDN", "noopFunc")
 chotlo.me#$##header {margin-top: 0!important}
 dood.pm#%#//scriptlet("abort-on-property-write", "DoodPop")
+dualeotruyenz.com#%#//scriptlet('abort-current-inline-script', 'document.addEventListener', 'popunder')
 fembed.com,femax20.com,mrdhan.com#%#//scriptlet("prevent-addEventListener", "click", "open")
 gametv.vn#%#//scriptlet("abort-current-inline-script", "$", "homeModal")
 giavang.net#%#//scriptlet("prevent-fetch", "method:HEAD")
