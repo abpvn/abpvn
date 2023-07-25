@@ -40,17 +40,14 @@ class NoIpCheck(threading.Thread):
 
     def nslookup(self, domain):
         ip_address = []
-        try:
-            ips = dns.resolver.query(domain)
-            for ip in ips:
-                ip_address.append(str(ip))
-        except:
-            pass
+        ips = dns.resolver.query(domain, raise_on_no_answer=False)
+        for ip in ips:
+            ip_address.append(str(ip))
         return ip_address
 
-    def get_redirect_domain(self):
+    def check_domain_ip(self):
         """
-        Request and get final redirect url. If same as input return False else return pair [source, redirection]
+        Check domain ip. If no ip return exception
         """
         if self.__domain is None:
             return
@@ -72,7 +69,7 @@ class NoIpCheck(threading.Thread):
 
     def run(self):
         self.lock = threading.Lock()
-        self.get_redirect_domain()
+        self.check_domain_ip()
 
 class NoIpDomain():
     def __init__(self, domains) -> None:
