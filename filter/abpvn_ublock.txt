@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 20230728150759
+! Version: 20230728151939
 ! Title: ABPVN List
-! Last modified: 28 Jul 2023 15:07:59 UTC+7
+! Last modified: 28 Jul 2023 15:19:39 UTC+7
 ! Expires: 1 days (update frequency)
 !
 ! ABPVN List filter
@@ -1372,6 +1372,7 @@ $third-party,script,domain=sexdiaryx.net
 ||hentaivn.autos/qx/$subdocument
 ||i.imgur.com^$image,domain=phym18.xyz|phim18hd.biz|phim18vn.biz
 ||javtopxx.com/public/images/banner/$image
+||lxmanga.net/storage/images/banners
 ||mmliveapp.club/wp-content/uploads/2021/08/show-adsmmlive.png
 ||phym18.xyz/static/js/adlia.js
 ||quoracdn.net^$image,domain=vlxx.moe
@@ -1388,6 +1389,9 @@ javtiful.com###latest-censored-videos>.row>div.pb-3.col:nth-of-type(1)
 javtiful.com##.v3sb-box
 javtopxx.com##.cat-fish.a-play
 javtopxx.com##.overlay
+lxmanga.net##.ads-wrapper
+lxmanga.net##.preload-backdrop
+lxmanga.net##.preload-banner
 phim18hd.biz##.top-mobile-banner
 phim18hd.biz,phim18vn.biz##.cash-fish
 phim18vn.biz##.cash-fish-pc
@@ -1407,7 +1411,7 @@ thiendia1.com##.samBannerUnit
 thiendia1.com##.samTextUnit
 thiendia1.com,rphang.tv,phim18vipa.com,phe3x.xyz,checkgaigoi.cc##.float-ck
 truyensextv.com###sticky-footer
-truyensextv.com##.sticky-footer
+truyensextv.com,lxmanga.net##.sticky-footer
 tuoi69vn.net###bar_float_r
 tuoi69vn.net##.quangcaomb
 tuoinung.cc###hide_float_right
@@ -1452,6 +1456,7 @@ linkneverdie.net##+js(acs, $, open)
 linkneverdie.net##+js(acs, document.createElement, script)
 linkneverdie.net##+js(nostif, catch)
 luotphimtv1.com,luotphim2.net,luotphim1.net,luotphimtv.vip,webphim2.com##+js(json-prune, 0.time_mobile 0.time 0.link_video 0.link_video_mobile 0.link 0.link_mobile 1.time_mobile 1.time 1.link_video 1.link_video_mobile 1.link 1.link_mobile)
+lxmanga.net##+js(acs, $, PopUnder)
 mephimtv.org##+js(m3u-prune, /#EXT-X-DISCONTINUITY.{1\,100}#EXT-X-DISCONTINUITY/gm, mixed.m3u8)
 mephimtv.org##body:remove-class(compensate-for-scrollbar)
 metruyencv.com##+js(aopw, window.onclick)
