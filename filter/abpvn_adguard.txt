@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 20230728150803
+! Version: 20230728152117
 ! Title: ABPVN List
-! Last modified: 28 Jul 2023 15:08:03 UTC+7
+! Last modified: 28 Jul 2023 15:21:17 UTC+7
 ! Expires: 1 days (update frequency)
 !
 ! ABPVN List filter
@@ -1823,6 +1823,7 @@ $third-party,script,domain=sexdiaryx.net
 ||javhub.me/Cms_Data/Sites/admin/Files/ads.js
 ||javtopxx.com/public/images/banner/$image
 ||kxnggkh2nj.com^
+||lxmanga.net/storage/images/banners
 ||mmliveapp.club/wp-content/uploads/2021/08/show-adsmmlive.png
 ||newdonate.com^
 ||newir3ltyug79aiman.com^
@@ -1890,6 +1891,9 @@ javtopxx.com##.cat-fish.a-play
 javtopxx.com##.centered.preload.ads
 javtopxx.com##.overlay
 luscious.net###l-center-txt
+lxmanga.net##.ads-wrapper
+lxmanga.net##.preload-backdrop
+lxmanga.net##.preload-banner
 phim18hd.biz##.top-mobile-banner
 phim18vn.biz##.cash-fish-pc
 phim18vn.biz##.preload-pc
@@ -1927,7 +1931,7 @@ thiendia1.com##.samBannerUnit
 thiendia1.com##.samTextUnit
 thiendia1.com##A[href="http://www.9club.com/vn/"]
 truyensextv.com###sticky-footer
-truyensextv.com##.sticky-footer
+truyensextv.com,lxmanga.net##.sticky-footer
 tuoi69vn.net,sieukhung.co###bar_float_r
 tuoi69vn.net,sieukhung.co##.adsTopHome
 tuoinung.cc###hide_float_right
@@ -1980,6 +1984,7 @@ linkneverdie.net#%#//scriptlet("abort-current-inline-script", "$", "open")
 linkneverdie.net#%#//scriptlet("abort-current-inline-script", "document.createElement", "script")
 linkneverdie.net#%#//scriptlet("prevent-setTimeout", "catch")
 luotphimtv1.com,luotphim2.net,luotphim1.net,luotphimtv.vip,webphim2.com#%#//scriptlet("json-prune", "0.time_mobile 0.time 0.link_video 0.link_video_mobile 0.link 0.link_mobile 1.time_mobile 1.time 1.link_video 1.link_video_mobile 1.link 1.link_mobile")
+lxmanga.net#%#//scriptlet("abort-current-inline-script", "$", "PopUnder")
 mephimtv.org#%#//scriptlet("remove-class", "compensate-for-scrollbar", "body")
 metruyencv.com#%#//scriptlet("abort-on-property-write", "window.onclick")
 nguontv1.com#%#//scriptlet("abort-current-inline-script", "encodeURIComponent", "popunder")
