@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 20230731110405
+! Version: 20230801080705
 ! Title: ABPVN List
-! Last modified: 31 Jul 2023 11:04:05 UTC+7
+! Last modified: 01 Aug 2023 08:07:05 UTC+7
 ! Expires: 1 days (update frequency)
 !
 ! ABPVN List filter
@@ -246,6 +246,8 @@
 ||nhipsonghomnay.vn^*.gif
 ||notepad.vn/media/images/like68.jpg
 ||onecms.vn/*banner$image
+||ophim.vip/download
+||ophim.vip/upload
 ||p.thoctv.com^*.gif$image
 ||phanmemcntt.com/wp-content/uploads/2021/09/direct-link.jpg
 ||phimbocn.com/player-embed/assets/js/tvc.js
@@ -1333,6 +1335,10 @@ nitroflare.com##[id^="superbox-"]
 nld.com.vn##.top-advertisment
 nongnghiep.vn##.exp_qc_share
 olug.vn###popup_center
+ophim.vip###ad-container
+ophim.vip##.ad-container
+ophim.vip##.mp-adz
+ophim.vip##.uniad-player + div[style]
 ophimhay.com###popup
 ophimhay.com##.adsContainer
 outlook.live.com##._3_hHr3kfEhbNYRFM5YJxH9
@@ -1988,7 +1994,7 @@ mephimtv.org##+js(m3u-prune, /#EXT-X-DISCONTINUITY.{1\,100}#EXT-X-DISCONTINUITY/
 mephimtv.org##body:remove-class(compensate-for-scrollbar)
 metruyencv.com##+js(aopw, window.onclick)
 nguontv1.com##+js(acs, encodeURIComponent, popunder)
-phim1080tv.net,subnhanhvl.pro,subnhanh.vip,phimmoi4s.com,phimdinhcao.net,phimlongtieng.net,phimdinhcao.com##+js(aopr, localStorage)
+phim1080tv.net,subnhanhvl.pro,subnhanh.vip,phimmoi4s.com,phimdinhcao.net,phimlongtieng.net,phimdinhcao.com,ophim.vip##+js(aopr, localStorage)
 phimgivn.net,ophimhdvn.net,mephimnhe.net##+js(acs, jQuery, popurl)
 phimhot365.vip##+js(aopr, matchMedia)
 phimlau.online##+js(acs, i6H, Math)
