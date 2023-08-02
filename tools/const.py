@@ -8,8 +8,8 @@ class Const():
         'abpvn.org', '.php', '.html', '.button', '.mrb10',
         '.modal', '.ico', '.error', '.write', '.webp', 'PanelScroller.Notices',
         'preload-b91.preload', 'firstmessfloadright.samItem', 'banner-top-box.click',
-        'notMsg.Sticky', 'clear.hd', 'info.card', 'left.box', 'btn-sm.btn', 'right.box',
-        'uts.jsr', 'blqPr.nwsItHm', 'text-center.adsense'
+        'notMsg.Sticky', 'clear.hd', 'info.card', 'left.box', 'right.box',
+        'uts.jsr', 'blqPr.nwsItHm', 'text-center.adsense', '.btn', '.show'
     ]
     SKIP_CHECK_REDIRECT = [
         'amazonaws.com', 'blogspot.com', 'blogtruyen.com', 'fptplay.net',
