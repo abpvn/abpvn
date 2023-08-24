@@ -1,17 +1,14 @@
 
 ! ---------Rule only for AdGuard------
--@@||ad.doubleclick.net^$domain=anonyviet.com
 -@@||ads-api.twitter.com^$domain=azrom.net|khohieu.com
--@@||anonyviet.com$generichide
 -@@||azrom.net$generichide
 -@@||jsc.adskeeper.co.uk^$script,domain=ios.codevn.net
--@@||pagead2.googlesyndication.com^$domain=azrom.net|khohieu.com|anonyviet.com
+-@@||pagead2.googlesyndication.com^$domain=azrom.net|khohieu.com
 -@@||z-na.amazon-adsystem.com^$domain=azrom.net
 -ios.codevn.net#@#div[id*="ScriptRoot"]
 -||kmyamhowpj.com^
 -||s.lazada.vn^$popup,domain=boophim.org
 -||shope.ee^$popup,domain=boophim.org
-anonyviet.com#%#//scriptlet("abort-current-inline-script","decodeURIComponent", "escape")
 aoe.vn#%#//scriptlet("abort-on-property-read", "parseInt")
 azrom.net#%#//scriptlet("abort-current-inline-script", "atob", "ai_block_class")
 azrom.net#%#//scriptlet("abort-on-property-read", "adsBlocked")
@@ -34,7 +31,7 @@ ios.codevn.net#%#//scriptlet("abort-current-inline-script", "setInterval", "offs
 javnong.cc#%#//scriptlet("abort-on-property-read", "Math.round")
 khoaiphim.com#%#//scriptlet("abort-current-inline-script", "addEvent", "popunder")
 khoaiphim.com#%#//scriptlet("abort-current-inline-script", "jQuery", "click_time")
-khohieu.com,anonyviet.com#%#//scriptlet("abort-current-inline-script", "document.getElementById", "chpadblock")
+khohieu.com#%#//scriptlet("abort-current-inline-script", "document.getElementById", "chpadblock")
 linkneverdie.net#%#//scriptlet("abort-current-inline-script", "$", "open")
 linkneverdie.net#%#//scriptlet("abort-current-inline-script", "document.createElement", "script")
 linkneverdie.net#%#//scriptlet("prevent-setTimeout", "catch")
