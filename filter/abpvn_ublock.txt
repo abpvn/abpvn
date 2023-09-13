@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 20230913100808
+! Version: 20230913154441
 ! Title: ABPVN List
-! Last modified: 13 Sep 2023 10:08:08 UTC+7
+! Last modified: 13 Sep 2023 15:44:41 UTC+7
 ! Expires: 1 days (update frequency)
 !
 ! ABPVN List filter
@@ -1933,7 +1933,8 @@ xnxx-sex-videos.com##+js(acs, setTimeout, window.location)
 xnxx-sex-videos.com##+js(ra, target|onclick, a[href^="/video/"])
 xoilac82.tv##+js(acs, jQuery, overlay)
 xoivo7.info##+js(set, adsPlayer, '')
-youtube.com##+js(json-prune, 0.playerResponse.adPlacements 0.playerResponse.playerAds 1.playerResponse.adPlacements 1.playerResponse.playerAds 2.playerResponse.adPlacements 2.playerResponse.playerAds 3.playerResponse.adPlacements 3.playerResponse.playerAds 4.playerResponse.adPlacements 4.playerResponse.playerAds 5.playerResponse.adPlacements 5.playerResponse.playerAds 6.playerResponse.adPlacements 6.playerResponse.playerAds 7.playerResponse.adPlacements 7.playerResponse.playerAds 8.playerResponse.adPlacements 8.playerResponse.playerAds 9.playerResponse.adPlacements 9.playerResponse.playerAds playerResponse.adPlacements playerResponse.playerAds ytInitialPlayerResponse.adPlacements ytInitialPlayerResponse.playerAds adPlacements playerAds)
+youtube.com##+js(json-prune, playerResponse.adPlacements playerResponse.playerAds adPlacements playerAds, playerConfig.audioConfig)
+youtube.com##+js(json-prune, playerResponse.adPlacements playerResponse.playerAds adPlacements playerAds, playerResponse.playerConfig)
 youtube.com##+js(set, playerResponse.adPlacements, undefined)
 youtube.com##+js(set, ytInitialPlayerResponse.adPlacements, undefined)
 yts.do,yts.mx,yts.rs##+js(aopr, atob)
