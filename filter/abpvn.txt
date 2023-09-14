@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 20230914084844
+! Version: 20230914090620
 ! Title: ABPVN List
-! Last modified: 14 Sep 2023 08:48:44 UTC+7
+! Last modified: 14 Sep 2023 09:06:20 UTC+7
 ! Expires: 1 days (update frequency)
 !
 ! ABPVN List filter
@@ -63,6 +63,7 @@
 ||24hmoney.vn/_nuxt/img/banner
 ||2banh.vn/images/banners/
 ||ads*.autodaily.vn
+||akamaized.net/audio/$media,rewrite=abp-resource:blank-mp3,domain=open.spotify.com
 ||anime47.com^*.gif
 ||animehay.city^*.gif
 ||animet.net^*.gif
@@ -296,6 +297,7 @@
 ||s.tainhaccho.vn/images/afl
 ||s3.amazonaws.com^$domain=phimdinhcao.net|phimdinhcao.com|phimlongtieng.net
 ||saytruyenmoi.com/storage/images/banner/$image
+||scdn.co/audio/$media,rewrite=abp-resource:blank-mp3,domain=open.spotify.com
 ||scrap.ithongtin.com/api/aff$xmlhttprequest
 ||senpay.vn/widget/
 ||sggp.org.vn/*.ads
@@ -1281,6 +1283,8 @@ nitroflare.com##[id^="superbox-"]
 nld.com.vn##.top-advertisment
 nongnghiep.vn##.exp_qc_share
 olug.vn###popup_center
+open.spotify.com###leaderboard-ad-element
+open.spotify.com##[href^="https://adclick.g.doubleclick.net/"]
 ophim.vip###ad-container
 ophimhay.com###popup
 ophimhay.com##.adsContainer
