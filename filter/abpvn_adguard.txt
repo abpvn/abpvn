@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 20231005143311
+! Version: 20231005152704
 ! Title: ABPVN List
-! Last modified: 05 Oct 2023 14:33:11 UTC+7
+! Last modified: 05 Oct 2023 15:27:04 UTC+7
 ! Expires: 1 days (update frequency)
 !
 ! ABPVN List filter
@@ -72,6 +72,8 @@
 ||api.affmates.com/js/popup_app.min.js$script
 ||api.affmates.com/js/publisher_tool.js
 ||assets-vaegaa.wedodemos.com/ads/$image
+||audiotruyenfull.com/wp-content/litespeed/js/50fd459c3e3682fa267485de709d7f83.js
+||audiotruyenfull.com^*.gif$image
 ||azrom.net/wp-content/plugins/best-ads-block-detector/
 ||baohaugiang.com.vn/uploads/SlideHomeimg/
 ||baomoi.com$csp=script-src data: blob: * 'self' 'unsafe-inline'
@@ -955,6 +957,7 @@ animevietsub.fan##div[style^="position: fixed; top: 60px"]
 anivn.club###quang-cao
 aoe.vn##.adv-section
 apkmirror.com##.gooWidget
+audiotruyenfull.com##.ai-close-fit
 autodaily.vn,xehay.vn###banner3double
 autopro.com.vn##.admicro
 banhkhuc6.com##.btn-user.r-btn
@@ -1901,6 +1904,7 @@ xnxx.com###ad-header-mobile
 xnxx.com###content-ad-top-zone
 ! ---------Rule only for AdGuard------
 aoe.vn#%#//scriptlet("abort-on-property-read", "parseInt")
+audiotruyenfull.com#%#//scriptlet("abort-on-property-read", "adpiaListUrl")
 azrom.net#%#//scriptlet("abort-current-inline-script", "atob", "ai_block_class")
 azrom.net#%#//scriptlet("abort-on-property-read", "adsBlocked")
 baomoi.com#%#//scriptlet("abort-on-property-write", "AdtimaBaomoi")
