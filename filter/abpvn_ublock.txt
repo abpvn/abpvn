@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 20231009135311
+! Version: 20231009140810
 ! Title: ABPVN List
-! Last modified: 09 Oct 2023 13:53:11 UTC+7
+! Last modified: 09 Oct 2023 14:08:10 UTC+7
 ! Expires: 1 days (update frequency)
 !
 ! ABPVN List filter
@@ -260,6 +260,7 @@
 ||phimhaytv.info/images$media,domain=phimhaytv.info,rewrite=abp-resource:blank-mp3
 ||phimhaytv.info^*.gif
 ||phimlongtieng.net^*.xml$~third-party
+||phimmoi.im^*.gif$image
 ||phimmoi4s.com/files/banner/$image
 ||phimmoi4s.com^*.gif
 ||phimmoichill79.cc^*gif
@@ -955,6 +956,7 @@ phimgigi.net,ophimhdvn2.net,vietnamplus.vn,kienthuc.net.vn,saostar.vn,laptrinhx.
 phimhay.mobi##div.container:nth-of-type(5)
 phimhaymoi.com##.popmake
 phimhaytv.info##.fixed
+phimmoi.im###hide_catfish
 phimmoi2.com,mephimnhat2.com,phimnhanh2.com##.player-vast-blocker
 phimmoi2.com,mephimnhat2.com,phimnhanh2.com,hhtqvietsub.top###sponsor-balloon
 phimmoi4s.com##.box_option
@@ -982,7 +984,7 @@ phimnhua.com##.ibetlogo
 phimnhua.com##.topless
 phimno4.xyz###ads_location
 phimno4.xyz##.block.ad
-phimno4.xyz,dailyphimz.com,phimbathu.one,hhhtq.net,film365.in,phimbocn.com,iphimchilla.net,dongphymz.com,motphim1.info,phimtn.com,motchill3.com,hdphim18.net,phimchill3.net###ads-preload
+phimno4.xyz,dailyphimz.com,phimbathu.one,hhhtq.net,film365.in,phimbocn.com,iphimchilla.net,dongphymz.com,motphim1.info,phimtn.com,motchill3.com,hdphim18.net,phimchill3.net,phimmoi.im###ads-preload
 phimplay24h.com###itro_popup
 phimtn.com###float_content_right
 phimvietsub.co,gocphimvn.com##.code-block
@@ -1480,6 +1482,7 @@ mephimtv.net##body:remove-class(compensate-for-scrollbar)
 metruyencv.com##+js(aopw, window.onclick)
 nguontv.live##+js(acs, encodeURIComponent, popunder)
 phimgigi.net,ophimhdvn2.net,mephimnhez.net##+js(acs, jQuery, popurl)
+phimmoi.im##+js(aopr, document.cookie)
 phimmoi4s.com##+js(json-prune, ads)
 phimmoipro2.net##+js(acs, $, urlAdsMbIntro)
 phimvuihd.org##+js(set, urlAds, '')
