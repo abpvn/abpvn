@@ -7,10 +7,10 @@ class Const():
         '.row', '.parse', '.round', 'abpvn.com',
         'abpvn.org', '.php', '.html', '.button', '.mrb10',
         '.modal', '.ico', '.error', '.write', '.webp', 'PanelScroller.Notices',
-        'preload-b91.preload', 'firstmessfloadright.samItem', 'banner-top-box.click',
-        'notMsg.Sticky', 'clear.hd', 'info.card', 'left.box', 'right.box',
-        'uts.jsr', 'blqPr.nwsItHm', 'text-center.adsense', '.btn', '.show',
-        'show.fade', 'preload.ads'
+        'firstmessfloadright.samItem', 'banner-top-box.click',
+        'clear.hd', 'info.card', 'left.box', 'right.box',
+        'blqPr.nwsItHm', 'text-center.adsense', '.btn', '.show',
+        'show.fade', 'parent.special'
     ]
     SKIP_CHECK_REDIRECT = [
         'amazonaws.com', 'blogspot.com', 'blogtruyen.com', 'fptplay.net',
