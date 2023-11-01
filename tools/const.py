@@ -1,5 +1,6 @@
 class Const():
     DOMAIN_REGEX = '([|\/=\.~]?)(([\w-]{3,255})(\.[a-z]{2,3})?(\.[a-z]{2,7}))([#\/|\n\^\$,])'
+    SUB_DOMAIN_REGEX = '([|\/=\.~]?)(([\w-]+\.){1,3}(([\w-]{3,255})(\.[a-z]{2,3})?(\.[a-z]{2,7})))([#\/|\n\^\$,])'
     TLD_DOMAIN_REGEX = '([\w-]+\.\w+)\/'
     REJECT_ENDINGS = [
         '.js', '.png', '.jpg', '.gif', '.aspx',
@@ -10,7 +11,7 @@ class Const():
         'firstmessfloadright.samItem', 'banner-top-box.click',
         'clear.hd', 'info.card', 'left.box', 'right.box',
         'blqPr.nwsItHm', 'text-center.adsense', '.btn', '.show',
-        'show.fade', 'parent.special'
+        'show.fade', 'parent.special', 'flex-1.table'
     ]
     SKIP_CHECK_REDIRECT = [
         'amazonaws.com', 'blogspot.com', 'blogtruyen.com', 'fptplay.net',
