@@ -105,7 +105,7 @@ def main():
     f = open(os.path.dirname(os.path.abspath(__file__)) + "/../filter/abpvn_ublock.txt", "r", encoding="utf8")
     filter_text = f.read()
     f.close()
-    domains = DomainList.get_all_domain(filter_text)
+    domains = DomainList.get_all_domain(filter_text, True)
     no_ip_domain = NoIpDomain(domains)
     no_ip_domains, error_domains = no_ip_domain.check()
     print("----Found {} domain with no ip address----".format(len(no_ip_domains)))
