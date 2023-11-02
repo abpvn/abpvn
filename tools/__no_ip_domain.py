@@ -40,7 +40,7 @@ class NoIpCheck(threading.Thread):
 
     def nslookup(self, domain):
         ip_address = []
-        ips = dns.resolver.query(domain, raise_on_no_answer=False)
+        ips = dns.resolver.resolve(domain, raise_on_no_answer=False)
         for ip in ips:
             ip_address.append(str(ip))
         return ip_address
