@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 20231102110746
+! Version: 20231102140003
 ! Title: ABPVN List
-! Last modified: 02 Nov 2023 11:07:46 UTC+7
+! Last modified: 02 Nov 2023 14:00:03 UTC+7
 ! Expires: 1 days (update frequency)
 !
 ! ABPVN List filter
@@ -1807,7 +1807,8 @@ khoaiphim.com#%#//scriptlet("abort-current-inline-script", "jQuery", "click_time
 khohieu.com#%#//scriptlet("abort-current-inline-script", "document.getElementById", "chpadblock")
 linkneverdie.net#%#//scriptlet("abort-current-inline-script", "$", "open")
 linkneverdie.net#%#//scriptlet("abort-current-inline-script", "document.createElement", "script")
-linkneverdie.net#%#//scriptlet("set-constant", "DisplayBHTML", "noopFunc")
+linkneverdie.net#%#//scriptlet("prevent-setTimeout", "DisplayBHTML", "5000")
+linkneverdie.net#%#//scriptlet("prevent-setTimeout", "callback", "4001")
 luotphimtv1.com,luotphim2.net,luotphim1.net,luotphimtv.vip,webphim2.com#%#//scriptlet("json-prune", "0.time_mobile 0.time 0.link_video 0.link_video_mobile 0.link 0.link_mobile 1.time_mobile 1.time 1.link_video 1.link_video_mobile 1.link 1.link_mobile")
 lxmanga.net#%#//scriptlet("abort-current-inline-script", "$", "PopUnder")
 mephimtv.net#%#//scriptlet("remove-class", "compensate-for-scrollbar", "body")
