@@ -6,7 +6,8 @@ ABPVN - Vietnamese adblock filter list
 
 ## CONTRIBUTING GUIDE:
 See [CONTRIBUTING.md](CONTRIBUTING.md)
-## LICENSE: 
+
+## LICENSE:
 Under **GNU GPLv3**, detail see [LICENSE](LICENSE)
 ## Domain change report tool
 https://abpvn.com/report/
