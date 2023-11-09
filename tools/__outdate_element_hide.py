@@ -94,11 +94,11 @@ class OutdateElementHide():
     def parse_filter(self):
         domains_with_element_hide = {}
         for domain in self.domains:
-            regex = rf"{domain}([,.\w]+)?##([.\w-]+)$"
+            regex = rf"(^|,){domain}([,.\w]+)?##([\.\w\-\=\"\'\>\ \+\+\#\[\]\:]+)$"
             matches = re.findall(regex, self.filter_text, re.MULTILINE)
             element_hides = []
             for match in matches:
-                element_hides.append(match[1])
+                element_hides.append(match[2])
             if len(element_hides) > 0:
                 domains_with_element_hide.__setitem__(domain, element_hides)
         return domains_with_element_hide
