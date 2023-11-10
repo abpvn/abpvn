@@ -8,6 +8,7 @@ from selenium.webdriver.chrome.service import Service as ChromeService
 from webdriver_manager.chrome import ChromeDriverManager
 from selenium.webdriver.common.by import By
 import re
+from const import Const
 
 MAX_THREAD_COUNT = 100
 
@@ -46,11 +47,10 @@ class OutdateElementHideCheck(threading.Thread):
         """
         if self.__element_hide is None:
             return
+        current_out_date_el = self.domain_with_outdate_element_hide.get(self.__domain)
         try:
-            self.box_print(f"Start visit {self.__domain}")
-            current_out_date_el = self.domain_with_outdate_element_hide.get(self.__domain)
-            options = webdriver.ChromeOptions() #newly added 
-            options.headless = True #newly added 
+            self.box_print(f"Start visit {self.__domain} with Chrome")
+            options = webdriver.ChromeOptions()
             options.add_argument("--window-size=1920,1080")
             options.add_argument("–disable-gpu")
             options.add_argument("--headless")
@@ -75,7 +75,7 @@ class OutdateElementHideCheck(threading.Thread):
             self.error_domains.append(self.__domain)
             self.lock.release()
         finally:
-            self.box_print(f"Finish visit {self.__domain}")
+            self.box_print(f"Finish visit {self.__domain} with Chrome")
             if current_out_date_el is not None:
                 pprint(current_out_date_el)
 
@@ -94,7 +94,7 @@ class OutdateElementHide():
     def parse_filter(self):
         domains_with_element_hide = {}
         for domain in self.domains:
-            regex = rf"(^|,){domain}([,.\w]+)?##([\.\w\-\=\"\'\>\ \+\+\#\[\]\:]+)$"
+            regex = Const.ELEMENT_HIDE_REGEX.format(domain=domain)
             matches = re.findall(regex, self.filter_text, re.MULTILINE)
             element_hides = []
             for match in matches:
@@ -138,7 +138,7 @@ def main():
     f.close()
     all_domain_with_outdate_element_hides = {}
     all_error_domains = []
-    domains_chunk = list(chunks(DomainList.get_all_domain(filter_text, True), MAX_THREAD_COUNT))
+    domains_chunk = list(chunks(DomainList.get_all_domain(filter_text, True), Const.MAX_CHROME_THREAD))
     for domains in domains_chunk:
         outdate_elment_hide = OutdateElementHide(filter_text, domains)
         domains_with_outdate_element_hide, error_domains = outdate_elment_hide.check()
