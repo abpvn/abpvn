@@ -9,6 +9,7 @@ from webdriver_manager.chrome import ChromeDriverManager
 from selenium.webdriver.common.by import By
 import re
 from const import Const
+from util import box_print
 
 MAX_THREAD_COUNT = 100
 
@@ -22,25 +23,6 @@ class OutdateElementHideCheck(threading.Thread):
         self.domain_with_outdate_element_hide = domain_with_outdate_element_hide
         self.error_domains = error_domains
 
-    def box_print(self, message: str):
-        """
-        Print message in the box
-
-        :param message: Message to print
-        """
-        line = "--------------------------------------------------------------------------------------------------------------"
-        if len(message) > len(line):
-            for _ in range(len(message) - len(line)):
-                line = '-' + line
-        print("|{}|".format(line))
-        space_fill = (len(line) - len(message)) / 2
-        for _ in range(int(space_fill)):
-            message = " " + message + " "
-        if (len(line) - len(message)) % 2 == 1:
-            message = message + " "
-        print("|{}|".format(message))
-        print("|{}|".format(line))
-
     def check_element(self):
         """
         Check domain ip. If no ip return exception
@@ -48,7 +30,7 @@ class OutdateElementHideCheck(threading.Thread):
         if self.__element_hide is None:
             return
         current_out_date_el = self.domain_with_outdate_element_hide.get(self.__domain)
-        self.box_print(f"Start visit {self.__domain} with Chrome")
+        box_print(f"Start visit {self.__domain} with Chrome")
         options = webdriver.ChromeOptions()
         options.add_argument("--window-size=1920,1080")
         options.add_argument("–disable-gpu")
@@ -68,12 +50,12 @@ class OutdateElementHideCheck(threading.Thread):
                         current_out_date_el = current_out_date_el if current_out_date_el is not None else []
                         current_out_date_el.append(el_hide)
             except Exception as ex:
-                self.box_print("{}: Got exception {} when check".format(self.__domain, ex))
+                box_print("{}: Got exception {} when check".format(self.__domain, ex))
                 self.lock.acquire()
                 self.error_domains.append(self.__domain)
                 self.lock.release()
             finally:
-                self.box_print(f"Finish visit {self.__domain} with Chrome")
+                box_print(f"Finish visit {self.__domain} with Chrome")
                 if current_out_date_el is not None:
                     pprint(current_out_date_el)
             browser.quit()
@@ -140,15 +122,18 @@ def main():
     all_domain_with_outdate_element_hides = {}
     all_error_domains = []
     domains_chunk = list(chunks(DomainList.get_all_domain(filter_text, True), Const.MAX_CHROME_THREAD))
-    for domains in domains_chunk:
+    total_chunk = len(domains_chunk)
+    for i, domains in enumerate(domains_chunk):
+        box_print(f"Start process chunk {i+1}/{total_chunk} with {len(domains)} domain")
         outdate_elment_hide = OutdateElementHide(filter_text, domains)
         domains_with_outdate_element_hide, error_domains = outdate_elment_hide.check()
         all_domain_with_outdate_element_hides = all_domain_with_outdate_element_hides | domains_with_outdate_element_hide
         all_error_domains.extend(error_domains)
+        box_print(f"Finish process chunk {i+1}/{total_chunk}")
     print("----Found {} domain with outdate element hide----".format(len(all_domain_with_outdate_element_hides)))
-    pprint(all_domain_with_outdate_element_hides) # type: ignore
+    pprint(all_domain_with_outdate_element_hides)
     print("----Found {} error domain----".format(len(all_error_domains)))
-    pprint(all_error_domains) # type: ignore
+    pprint(all_error_domains)
     end_time = datetime.now()
     print("Script finish at: {0}\n".format(end_time))
     running_time = end_time - start_time
