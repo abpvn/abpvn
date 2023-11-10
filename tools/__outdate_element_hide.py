@@ -137,5 +137,6 @@ def main():
     print("Script finish at: {0}\n".format(end_time))
     running_time = end_time - start_time
     print("Running in {0} seconds".format(running_time.total_seconds()))
+    exit()
 
 main()
