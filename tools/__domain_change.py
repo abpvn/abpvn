@@ -7,9 +7,11 @@ from domain_list import DomainList
 from pprint import pprint
 import os
 
+from tools.util import box_print
+
 
 class DomainCheck(threading.Thread):
-    def set_data(self, domain, index, total_domain,redirect_pairs: list = [], error_domains: list = []):
+    def set_data(self, domain, index, total_domain,redirect_pairs: list, error_domains: list):
         """
         Set process domain
         """
@@ -18,25 +20,6 @@ class DomainCheck(threading.Thread):
         self.__total_domain = total_domain
         self.redirect_pairs = redirect_pairs
         self.error_domains = error_domains
-
-    def box_print(self, message: str):
-        """
-        Print message in the box
-
-        :param message: Message to print
-        """
-        line = "--------------------------------------------------------------------------------------------------------------"
-        if len(message) > len(line):
-            for i in range(len(message) - len(line)):
-                line = '-' + line
-        print("|{}|".format(line))
-        space_fill = (len(line) - len(message)) / 2
-        for i in range(int(space_fill)):
-            message = " " + message + " "
-        if (len(line) - len(message)) % 2 == 1:
-            message = message + " "
-        print("|{}|".format(message))
-        print("|{}|".format(line))
 
     def get_redirect_domain(self):
         """
@@ -56,7 +39,7 @@ class DomainCheck(threading.Thread):
                     final_redirect_domain = matches[0]
                     message = "Domain {} redirected to {} ({})".format(domain,
                         final_redirect_domain, res.url)
-                    self.box_print(message)
+                    box_print(message)
                     if final_redirect_domain not in Const.REJECT_TARGET_DOMAIN:
                         self.lock.acquire()
                         self.redirect_pairs.append([domain, final_redirect_domain])
@@ -67,7 +50,7 @@ class DomainCheck(threading.Thread):
             else:
                 print("{}: is not redirect".format(domain))
         except Exception as ex:
-            self.box_print("{}: Got exception {} when check".format(domain, ex))
+            box_print("{}: Got exception {} when check".format(domain, ex))
             self.lock.acquire()
             self.error_domains.append(domain)
             self.lock.release()

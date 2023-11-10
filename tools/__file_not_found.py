@@ -5,36 +5,17 @@ from file_list import FileList
 import requests
 import threading
 
+from tools.util import box_print
+
 
 class FileCheck(threading.Thread):
-    def set_data(self, file, index, total_file,not_found_pairs: list = [], error_files: list = []):
+    def set_data(self, file, not_found_pairs: list, error_files: list):
         """
         Set process file
         """
         self.__file = file
-        self.__file_index = index
-        self.__total_file = total_file
         self.not_found_pairs = not_found_pairs
         self.error_files = error_files
-
-    def box_print(self, message: str):
-        """
-        Print message in the box
-
-        :param message: Message to print
-        """
-        line = "--------------------------------------------------------------------------------------------------------------"
-        if len(message) > len(line):
-            for i in range(len(message) - len(line)):
-                line = '-' + line
-        print("|{}|".format(line))
-        space_fill = (len(line) - len(message)) / 2
-        for i in range(int(space_fill)):
-            message = " " + message + " "
-        if (len(line) - len(message)) % 2 == 1:
-            message = message + " "
-        print("|{}|".format(message))
-        print("|{}|".format(line))
 
     def get_not_found_file(self):
         """
@@ -56,7 +37,7 @@ class FileCheck(threading.Thread):
             else:
                 print("{}: is still exist".format(file))
         except Exception as ex:
-            self.box_print("{}: Got exception {} when check".format(file, ex))
+            box_print("{}: Got exception {} when check".format(file, ex))
             self.lock.acquire()
             self.error_files.append(file)
             self.lock.release()
@@ -72,9 +53,9 @@ class FileNotFound():
         self.not_found_pairs = []
         self.error_files = []
 
-    def process_file(self, file, index, total_file):
+    def process_file(self, file):
         file_check = FileCheck()
-        file_check.set_data(file, index, total_file, not_found_pairs=self.not_found_pairs, error_files=self.error_files)
+        file_check.set_data(file, not_found_pairs=self.not_found_pairs, error_files=self.error_files)
         self.__threads.append(file_check)
         file_check.start()
 
@@ -82,9 +63,8 @@ class FileNotFound():
         """
         Check file change and return pair of change file
         """
-        total_file = len(self.files)
-        for index, file in enumerate(self.files):
-            self.process_file(file, index, total_file)
+        for  file in self.files:
+            self.process_file(file)
         for t in self.__threads:
             t.join()
         return (self.not_found_pairs, self.error_files)
