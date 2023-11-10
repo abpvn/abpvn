@@ -1,7 +1,7 @@
 class Const():
-    DOMAIN_REGEX = '([|\/=\.~]?)(([\w-]{3,255})(\.[a-z]{2,3})?(\.[a-z]{2,7}))([#\/|\n\^\$,])'
-    SUB_DOMAIN_REGEX = '([|\/=\.~]?)(([\w-]+\.){1,3}(([\w-]{3,255})(\.[a-z]{2,3})?(\.[a-z]{2,7})))([#\/|\n\^\$,])'
-    TLD_DOMAIN_REGEX = '([\w-]+\.\w+)\/'
+    DOMAIN_REGEX = r'([|\/=\.~]?)(([\w-]{3,255})(\.[a-z]{2,3})?(\.[a-z]{2,7}))([#\/|\n\^\$,])'
+    SUB_DOMAIN_REGEX = r'([|\/=\.~]?)(([\w-]+\.){1,3}(([\w-]{3,255})(\.[a-z]{2,3})?(\.[a-z]{2,7})))([#\/|\n\^\$,])'
+    TLD_DOMAIN_REGEX = r'([\w-]+\.\w+)\/'
     REJECT_ENDINGS = [
         '.js', '.png', '.jpg', '.gif', '.aspx',
         '.widget', 'block.ad', '.mp4', '.mp3', '.m3u8',
@@ -23,3 +23,5 @@ class Const():
         'google.com', 'facebook.com', 'yahooinc.com'
     ]
     FILE_REGEX = r"\|\|([^*\n]+\.(js|png|webp|jpg|jpeg|mp4|gif))([\n\$])"
+    ELEMENT_HIDE_REGEX = r"(^|,){domain}([,.\w]+)?##([\.\w\-\=\"\'\>\ \+\+\#\[\]\:]+)$"
+    MAX_CHROME_THREAD = 100
