@@ -23,5 +23,5 @@ class Const():
         'google.com', 'facebook.com', 'yahooinc.com'
     ]
     FILE_REGEX = r"\|\|([^*\n]+\.(js|png|webp|jpg|jpeg|mp4|gif))([\n\$])"
-    ELEMENT_HIDE_REGEX = r"(^|,){domain}([,.\w]+)?##([\.\w\-\=\"\'\>\ \+\+\#\[\]\:]+)$"
+    ELEMENT_HIDE_REGEX = r"(^|,){domain}([,.\w]+)?#(@)?#([\.\w\-\=\"\'\>\ \+\+\#\[\]\:]+)$"
     MAX_CHROME_THREAD = 100

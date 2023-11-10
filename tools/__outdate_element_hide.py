@@ -80,7 +80,7 @@ class OutdateElementHide():
             matches = re.findall(regex, self.filter_text, re.MULTILINE)
             element_hides = []
             for match in matches:
-                element_hides.append(match[2])
+                element_hides.append(match[3])
             if len(element_hides) > 0:
                 domains_with_element_hide.__setitem__(domain, element_hides)
         return domains_with_element_hide
