@@ -7,9 +7,10 @@ import os
 import dns.resolver
 import dns.rdatatype
 
+from tools.util import box_print
 
 class NoIpCheck(threading.Thread):
-    def set_data(self, domain, index, total_domain, no_ip_domains: list = [], error_domains: list = []):
+    def set_data(self, domain, index, total_domain, no_ip_domains: list, error_domains: list):
         """
         Set process domain
         """
@@ -19,29 +20,10 @@ class NoIpCheck(threading.Thread):
         self.no_ip_domains = no_ip_domains
         self.error_domains = error_domains
 
-    def box_print(self, message: str):
-        """
-        Print message in the box
-
-        :param message: Message to print
-        """
-        line = "--------------------------------------------------------------------------------------------------------------"
-        if len(message) > len(line):
-            for i in range(len(message) - len(line)):
-                line = '-' + line
-        print("|{}|".format(line))
-        space_fill = (len(line) - len(message)) / 2
-        for i in range(int(space_fill)):
-            message = " " + message + " "
-        if (len(line) - len(message)) % 2 == 1:
-            message = message + " "
-        print("|{}|".format(message))
-        print("|{}|".format(line))
-
     def nslookup(self, domain):
         ip_address = []
         ips = dns.resolver.resolve(domain, raise_on_no_answer=False)
-        for ip in ips:
+        for ip in ips: # type: ignore
             ip_address.append(str(ip))
         return ip_address
 
@@ -62,7 +44,7 @@ class NoIpCheck(threading.Thread):
             else:
                 print("{}: has valid IP address".format(domain))
         except Exception as ex:
-            self.box_print("{}: Got exception {} when check".format(domain, ex))
+            box_print("{}: Got exception {} when check".format(domain, ex))
             self.lock.acquire()
             self.error_domains.append(domain)
             self.lock.release()

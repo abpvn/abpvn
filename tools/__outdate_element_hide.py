@@ -13,7 +13,7 @@ from const import Const
 MAX_THREAD_COUNT = 100
 
 class OutdateElementHideCheck(threading.Thread):
-    def set_data(self, domain, element_hide, domain_with_outdate_element_hide: dict = {}, error_domains: list = []):
+    def set_data(self, domain, element_hide, domain_with_outdate_element_hide: dict, error_domains: list):
         """
         Set process domain
         """
@@ -30,11 +30,11 @@ class OutdateElementHideCheck(threading.Thread):
         """
         line = "--------------------------------------------------------------------------------------------------------------"
         if len(message) > len(line):
-            for i in range(len(message) - len(line)):
+            for _ in range(len(message) - len(line)):
                 line = '-' + line
         print("|{}|".format(line))
         space_fill = (len(line) - len(message)) / 2
-        for i in range(int(space_fill)):
+        for _ in range(int(space_fill)):
             message = " " + message + " "
         if (len(line) - len(message)) % 2 == 1:
             message = message + " "
@@ -48,14 +48,15 @@ class OutdateElementHideCheck(threading.Thread):
         if self.__element_hide is None:
             return
         current_out_date_el = self.domain_with_outdate_element_hide.get(self.__domain)
-        try:
-            self.box_print(f"Start visit {self.__domain} with Chrome")
-            options = webdriver.ChromeOptions()
-            options.add_argument("--window-size=1920,1080")
-            options.add_argument("–disable-gpu")
-            options.add_argument("--headless")
-            options.add_argument("--log-level=3")
-            with webdriver.Chrome(service=ChromeService(ChromeDriverManager().install()), options=options) as browser: #modified
+        self.box_print(f"Start visit {self.__domain} with Chrome")
+        options = webdriver.ChromeOptions()
+        options.add_argument("--window-size=1920,1080")
+        options.add_argument("–disable-gpu")
+        options.add_argument("--headless")
+        options.add_argument("--log-level=3")
+        with webdriver.Chrome(service=ChromeService(ChromeDriverManager().install()), options=options) as browser:
+            try:
+                browser.set_page_load_timeout(30)
                 browser.get(f"http://{self.__domain}")
                 for el_hide in self.__element_hide:
                     try:
@@ -63,21 +64,21 @@ class OutdateElementHideCheck(threading.Thread):
                         if el is None:
                             current_out_date_el = current_out_date_el if current_out_date_el is not None else []
                             current_out_date_el.append(el_hide)
-                    except:
+                    except Exception:
                         current_out_date_el = current_out_date_el if current_out_date_el is not None else []
                         current_out_date_el.append(el_hide)
-                browser.quit()
-            if current_out_date_el is not None:
-                self.domain_with_outdate_element_hide.__setitem__(self.__domain, current_out_date_el)
-        except Exception as ex:
-            self.box_print("{}: Got exception {} when check".format(self.__domain, ex))
-            self.lock.acquire()
-            self.error_domains.append(self.__domain)
-            self.lock.release()
-        finally:
-            self.box_print(f"Finish visit {self.__domain} with Chrome")
-            if current_out_date_el is not None:
-                pprint(current_out_date_el)
+            except Exception as ex:
+                self.box_print("{}: Got exception {} when check".format(self.__domain, ex))
+                self.lock.acquire()
+                self.error_domains.append(self.__domain)
+                self.lock.release()
+            finally:
+                self.box_print(f"Finish visit {self.__domain} with Chrome")
+                if current_out_date_el is not None:
+                    pprint(current_out_date_el)
+            browser.quit()
+        if current_out_date_el is not None:
+            self.domain_with_outdate_element_hide.__setitem__(self.__domain, current_out_date_el)
 
     def run(self):
         self.lock = threading.Lock()
