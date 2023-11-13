@@ -7,7 +7,7 @@ import os
 import dns.resolver
 import dns.rdatatype
 
-from tools.util import box_print
+from util import box_print
 
 class NoIpCheck(threading.Thread):
     def set_data(self, domain, index, total_domain, no_ip_domains: list, error_domains: list):

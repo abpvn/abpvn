@@ -7,7 +7,7 @@ from domain_list import DomainList
 from pprint import pprint
 import os
 
-from tools.util import box_print
+from util import box_print
 
 
 class DomainCheck(threading.Thread):
