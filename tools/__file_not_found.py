@@ -5,7 +5,7 @@ from file_list import FileList
 import requests
 import threading
 
-from tools.util import box_print
+from util import box_print
 
 
 class FileCheck(threading.Thread):
