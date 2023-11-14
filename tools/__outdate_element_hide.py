@@ -25,7 +25,7 @@ class OutdateElementHideCheck(threading.Thread):
 
     def check_element(self):
         """
-        Check domain ip. If no ip return exception
+        Check element present of website
         """
         if self.__element_hide is None:
             return
