@@ -24,9 +24,9 @@ class OutdateNetworkRuleCheck(threading.Thread):
         self.domain_with_outdate_network_rule = domain_with_outdate_network_rule
         self.error_domains = error_domains
 
-    def check_element(self):
+    def check_network(self):
         """
-        Check domain ip. If no ip return exception
+        Check network rule is request in website
         """
         if self.__network_rule is None:
             return
@@ -71,7 +71,7 @@ class OutdateNetworkRuleCheck(threading.Thread):
 
     def run(self):
         self.lock = threading.Lock()
-        self.check_element()
+        self.check_network()
 
 class OutdateNetWorkRule():
     def __init__(self, filter_text, domains) -> None:
