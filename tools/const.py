@@ -25,3 +25,16 @@ class Const():
     FILE_REGEX = r"\|\|([^*\n]+\.(js|png|webp|jpg|jpeg|mp4|gif))([\n\$])"
     ELEMENT_HIDE_REGEX = r"(^|,){domain}([,.\w]+)?#(@)?#([\.\w\-\=\"\'\>\ \+\+\#\[\]\:]+)$"
     MAX_CHROME_THREAD = 100
+    NETWORK_RULE_REGEXS = {
+        "TYPE1": r"\|\|({domain}([\w\*\^\.\/\^\-\?\=]+))(.+)?$",
+        "TYPE2": r"\|\|([\.\-\w\^\*\/]+)([,$])?(.+)?domain=([.|\w]+)?{domain}"
+    }
+    NETWORK_RULE_SKIPS = {
+        "TYPE1": [
+            "{domain}^"
+        ],
+    }
+    NETWORK_RULE_REPLACE = [
+        ["^*", ".*"],
+        ["^", ""]
+    ]
