@@ -11,8 +11,6 @@ import re
 from const import Const
 from util import box_print
 
-MAX_THREAD_COUNT = 100
-
 class OutdateElementHideCheck(threading.Thread):
     def set_data(self, domain, element_hide, domain_with_outdate_element_hide: dict, error_domains: list):
         """
@@ -38,7 +36,6 @@ class OutdateElementHideCheck(threading.Thread):
         options.add_argument("--log-level=3")
         with webdriver.Chrome(service=ChromeService(ChromeDriverManager().install()), options=options) as browser:
             try:
-                browser.set_page_load_timeout(30)
                 browser.get(f"http://{self.__domain}")
                 for el_hide in self.__element_hide:
                     try:
