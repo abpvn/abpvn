@@ -3,15 +3,13 @@ import os
 from pprint import pprint
 import threading
 from domain_list import DomainList
-from seleniumwire import webdriver 
+from seleniumwire import webdriver, request
 from selenium.webdriver.chrome.service import Service as ChromeService
 from webdriver_manager.chrome import ChromeDriverManager
-from selenium.webdriver.common.by import By
 import re
 from const import Const
 from util import box_print
 
-MAX_THREAD_COUNT = 100
 DEBUG = False
 
 class OutdateNetworkRuleCheck(threading.Thread):
@@ -23,6 +21,20 @@ class OutdateNetworkRuleCheck(threading.Thread):
         self.__domain = domain
         self.domain_with_outdate_network_rule = domain_with_outdate_network_rule
         self.error_domains = error_domains
+
+    def is_outdate_nr(self, network_rule: str, nr_regex:str, requests: list[request.Request]):
+        """
+        Check network rule is outdate
+        """
+        for request in requests:
+            matches = re.findall(nr_regex, request.url)
+            if DEBUG:
+                print(f"Checking rule {network_rule} with regex {nr_regex} on {self.__domain} with request url {request.url} and matches: {matches}")
+            if len(matches) > 0:
+                if DEBUG:
+                    print(f"Network rule {network_rule} is up to date because of match url {request.url} with regex {nr_regex} in {self.__domain}")
+                return False
+        return True
 
     def check_network(self):
         """
@@ -39,21 +51,10 @@ class OutdateNetworkRuleCheck(threading.Thread):
         options.add_argument("--log-level=3")
         with webdriver.Chrome(service=ChromeService(ChromeDriverManager().install()), options=options) as browser:
             try:
-                browser.set_page_load_timeout(30)
                 browser.get(f"http://{self.__domain}")
                 for network_rule in self.__network_rule.keys():
                     nr_regex = self.__network_rule[network_rule]
-                    is_outdate = True
-                    for request in browser.requests:
-                        matches = re.findall(nr_regex, request.url)
-                        if DEBUG:
-                            print(f"Checking rule {network_rule} with regex {nr_regex} on {self.__domain} with request url {request.url} and matches: {matches}")
-                        if len(matches) > 0:
-                            is_outdate = False
-                            if DEBUG:
-                                print(f"Network rule {network_rule} is up to date because of match url {request.url} with regex {nr_regex} in {self.__domain}")
-                            continue
-                    if is_outdate:
+                    if self.is_outdate_nr(network_rule, nr_regex, browser.requests):
                         current_outdate_nr = current_outdate_nr if current_outdate_nr is not None else []
                         current_outdate_nr.append(network_rule)
             except Exception as ex:
