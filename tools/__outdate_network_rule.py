@@ -10,7 +10,7 @@ import re
 from const import Const
 from util import box_print
 
-DEBUG = True
+DEBUG = False
 
 class OutdateNetworkRuleCheck(threading.Thread):
     def set_data(self, domain, network_rule: dict, domain_with_outdate_network_rule: dict, error_domains: list):
