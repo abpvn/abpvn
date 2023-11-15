@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 20231115100839
+! Version: 20231115113557
 ! Title: ABPVN List
-! Last modified: 15 Nov 2023 10:08:39 UTC+7
+! Last modified: 15 Nov 2023 11:35:57 UTC+7
 ! Expires: 1 days (update frequency)
 !
 ! ABPVN List filter
@@ -138,6 +138,7 @@
 ||hh3dhay.com/wp-content/uploads/*.gif$image
 ||hh3dhay.com/wp-content/uploads/*.mp4$media
 ||hh3dhay.xyz/wp-content/uploads$media
+||hh3dhay.xyz^*.gif$domain=3dchill.net
 ||hhhtq.net^*.gif$image
 ||hhpanda.cc/ads/ads_xx.js
 ||hhtqvietsub.top/_nuxt/img/*gif$image
@@ -547,6 +548,7 @@
 24h.com.vn##.module3
 2banh.vn###position_full_top_banner_pc
 2game.vn##.gc-header__wrapper + div[style]
+3dchill.net##.sponsor-balloon
 4rkinggame.com##.float-ck1
 4rkinggame.com##.module_ahlaejaba
 90phut9.live###app-web + .container[style="margin-bottom: 30px"]
@@ -742,8 +744,8 @@ hayghe.fan###antiblocker
 hayghe.fan###antiblocker_underplayer
 hdphim18.net###pc-top-banner
 hh3dhay.com###layerLogo
-hhchina.tv###ad-floating-right
-hhchina.tv##.ad-floating-left
+hhchina.tv,3dchill.net###ad-floating-right
+hhchina.tv,3dchill.net##.ad-floating-left
 hhhkungfu.tv##div.text-center:nth-of-type(7)
 hhhkungfu.tv##div[style="min-height: 250px"]
 hhtq.top###header-ads
