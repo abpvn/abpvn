@@ -101,9 +101,9 @@ class OutdateNetWorkRule():
         )
         matches = re.finditer(regex, self.filter_text, re.MULTILINE)
         for match in matches:
-            if match.group(1) in skip_rules:
+            if match.group(2) in skip_rules:
                 continue
-            domain_network_rule.__setitem__(match.group(), self.to_regex(match.group(1)))
+            domain_network_rule.__setitem__(match.group(), self.to_regex(match.group(2)))
 
     def parse_filter(self):
         """
