@@ -96,8 +96,8 @@ class OutdateNetWorkRule():
         """
         regex = regex_str.format(domain=domain)
         skip_rules = list(
-            map(lambda x: x.format(domain=domain), Const.NETWORK_RULE_SKIPS[type])
-            if type in Const.NETWORK_RULE_SKIPS.keys() else []
+            map(lambda x: x.format(domain=domain), Const.NETWORK_RULE_SKIP[type])
+            if type in Const.NETWORK_RULE_SKIP.keys() else []
         )
         matches = re.finditer(regex, self.filter_text, re.MULTILINE)
         for match in matches:
@@ -112,7 +112,7 @@ class OutdateNetWorkRule():
         network_rule = {}
         for domain in self.domains:
             domain_network_rule = {}
-            for type, regex_str in Const.NETWORK_RULE_REGEXS.items():
+            for type, regex_str in Const.NETWORK_RULE_REGEX.items():
                 self.parse_rule(domain, type, regex_str, domain_network_rule)
             if len(domain_network_rule) > 0:
                 network_rule.__setitem__(domain, domain_network_rule)
