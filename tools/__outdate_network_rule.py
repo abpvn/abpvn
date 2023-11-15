@@ -156,7 +156,7 @@ def main():
     f.close()
     all_domain_with_outdate_network_rules = {}
     all_error_domains = []
-    domains_chunk = list(chunks(DomainList.get_all_domain(filter_text, True), 10))
+    domains_chunk = list(chunks(DomainList.get_all_domain(filter_text, True), Const.MAX_CHROME_THREAD))
     total_chunk = len(domains_chunk)
     for i, domains in enumerate(domains_chunk):
         box_print(f"Start process chunk {i+1}/{total_chunk} with {len(domains)} domain")
@@ -165,7 +165,6 @@ def main():
         all_domain_with_outdate_network_rules = all_domain_with_outdate_network_rules | domains_with_outdate_network_rule
         all_error_domains.extend(error_domains)
         box_print(f"Finish process chunk {i+1}/{total_chunk}")
-        break
     print("----Found {} domain with outdate network rule----".format(len(all_domain_with_outdate_network_rules)))
     pprint(all_domain_with_outdate_network_rules)
     print("----Found {} error domain----".format(len(all_error_domains)))
