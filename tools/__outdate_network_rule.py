@@ -10,7 +10,7 @@ import re
 from const import Const
 from util import box_print
 
-DEBUG = False
+DEBUG = True
 
 class OutdateNetworkRuleCheck(threading.Thread):
     def set_data(self, domain, network_rule: dict, domain_with_outdate_network_rule: dict, error_domains: list):
@@ -45,12 +45,14 @@ class OutdateNetworkRuleCheck(threading.Thread):
         current_outdate_nr = self.domain_with_outdate_network_rule.get(self.__domain)
         box_print(f"Start visit {self.__domain} with Chrome")
         options = webdriver.ChromeOptions()
-        options.add_argument("--window-size=1920,1080")
+        options.add_argument("--start-maximized")
         options.add_argument("–disable-gpu")
         options.add_argument("--headless")
         options.add_argument("--log-level=3")
         with webdriver.Chrome(service=ChromeService(ChromeDriverManager().install()), options=options) as browser:
             try:
+                browser.set_page_load_timeout(120)
+                browser.implicitly_wait(10)
                 browser.get(f"http://{self.__domain}")
                 for network_rule in self.__network_rule.keys():
                     nr_regex = self.__network_rule[network_rule]
@@ -154,7 +156,7 @@ def main():
     f.close()
     all_domain_with_outdate_network_rules = {}
     all_error_domains = []
-    domains_chunk = list(chunks(DomainList.get_all_domain(filter_text, True), Const.MAX_CHROME_THREAD))
+    domains_chunk = list(chunks(DomainList.get_all_domain(filter_text, True), 10))
     total_chunk = len(domains_chunk)
     for i, domains in enumerate(domains_chunk):
         box_print(f"Start process chunk {i+1}/{total_chunk} with {len(domains)} domain")
@@ -163,6 +165,7 @@ def main():
         all_domain_with_outdate_network_rules = all_domain_with_outdate_network_rules | domains_with_outdate_network_rule
         all_error_domains.extend(error_domains)
         box_print(f"Finish process chunk {i+1}/{total_chunk}")
+        break
     print("----Found {} domain with outdate network rule----".format(len(all_domain_with_outdate_network_rules)))
     pprint(all_domain_with_outdate_network_rules)
     print("----Found {} error domain----".format(len(all_error_domains)))

@@ -30,12 +30,14 @@ class OutdateElementHideCheck(threading.Thread):
         current_out_date_el = self.domain_with_outdate_element_hide.get(self.__domain)
         box_print(f"Start visit {self.__domain} with Chrome")
         options = webdriver.ChromeOptions()
-        options.add_argument("--window-size=1920,1080")
+        options.add_argument("--start-maximized")
         options.add_argument("–disable-gpu")
         options.add_argument("--headless")
         options.add_argument("--log-level=3")
         with webdriver.Chrome(service=ChromeService(ChromeDriverManager().install()), options=options) as browser:
             try:
+                browser.set_page_load_timeout(120)
+                browser.implicitly_wait(10)
                 browser.get(f"http://{self.__domain}")
                 for el_hide in self.__element_hide:
                     try:
