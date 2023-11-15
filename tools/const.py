@@ -26,8 +26,8 @@ class Const():
     ELEMENT_HIDE_REGEX = r"(^|,){domain}([,.\w]+)?#(@)?#([\.\w\-\=\"\'\>\ \+\+\#\[\]\:]+)$"
     MAX_CHROME_THREAD = 100
     NETWORK_RULE_REGEX = {
-        "TYPE1": r"\|\|({domain}([\w\*\^\.\/\^\-\?\=]+))(.+)?$",
-        "TYPE2": r"\|\|([\.\-\w\^\*\/]+)([,$])?(.+)?domain=([.|\w]+)?{domain}"
+        "TYPE1": r"(@@)?\|\|({domain}([\w\*\^\.\/\^\-\?\=]+))(.+)?$",
+        "TYPE2": r"(@@)?\|\|([\.\-\w\^\*\/]+)([,$])?(.+)?domain=([.|\w]+)?{domain}"
     }
     NETWORK_RULE_SKIP = {
         "TYPE1": [
