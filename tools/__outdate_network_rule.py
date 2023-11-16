@@ -10,8 +10,6 @@ import re
 from const import Const
 from util import box_print
 
-DEBUG = False
-
 class OutdateNetworkRuleCheck(threading.Thread):
     def set_data(self, domain, network_rule: dict, domain_with_outdate_network_rule: dict, error_domains: list):
         """
@@ -28,11 +26,10 @@ class OutdateNetworkRuleCheck(threading.Thread):
         """
         for request in requests:
             matches = re.findall(nr_regex, request.url)
-            if DEBUG:
+            if Const.DEBUG:
                 print(f"Checking rule {network_rule} with regex {nr_regex} on {self.__domain} with request url {request.url} and matches: {matches}")
             if len(matches) > 0:
-                if DEBUG:
-                    print(f"Network rule {network_rule} is up to date because of match url {request.url} with regex {nr_regex} in {self.__domain}")
+                print(f"Network rule {network_rule} is up to date because of match url {request.url} with regex {nr_regex} in {self.__domain}")
                 return False
         return True
 
@@ -136,7 +133,9 @@ class OutdateNetWorkRule():
         Check element outdate in domain
         """
         domains_with_network_rule = self.parse_filter()
-        pprint(domains_with_network_rule)
+        if Const.DEBUG:
+            box_print("List domain with network rule")
+            pprint(domains_with_network_rule)
         for domain in domains_with_network_rule.keys():
             self.process_domain(domain, domains_with_network_rule[domain])
         for t in self.__threads:
