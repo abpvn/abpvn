@@ -32,7 +32,8 @@ class Const():
     }
     NETWORK_RULE_SKIP = {
         "TYPE1": [
-            "{domain}^"
+            "{domain}^",
+            "domain="
         ],
     }
     NETWORK_RULE_REPLACE = [
