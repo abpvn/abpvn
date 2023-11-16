@@ -88,6 +88,17 @@ class OutdateNetWorkRule():
         for replace_rule in Const.NETWORK_RULE_REPLACE:
             network_rule_str = network_rule_str.replace(replace_rule[0], replace_rule[1])
         return fr"{network_rule_str}"
+    
+    def must_be_skip(self, match: re.Match[str], skip_rules: list[str]):
+        """
+        Check is network rule must be skip
+        """
+        for skip_rule in skip_rules:
+            if skip_rule == match.group(2):
+                return True
+            if match.group(4) is not None and skip_rule in match.group(4):
+                return True
+        return False
 
     def parse_rule(self, domain: str, type: str, regex_str: str, domain_network_rule: dict):
         """
@@ -100,7 +111,7 @@ class OutdateNetWorkRule():
         )
         matches = re.finditer(regex, self.filter_text, re.MULTILINE)
         for match in matches:
-            if match.group(2) in skip_rules:
+            if self.must_be_skip(match, skip_rules):
                 continue
             domain_network_rule.__setitem__(match.group(), self.to_regex(match.group(2)))
 
