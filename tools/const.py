@@ -28,7 +28,7 @@ class Const():
     MAX_CHROME_THREAD = 50
     NETWORK_RULE_REGEX = {
         "TYPE1": r"(@@)?\|\|({domain}([\w\*\^\.\/\^\-\?\=]+))(.+)?$",
-        "TYPE2": r"(@@)?\|\|([\.\-\w\^\*\/]+)([,$])?(.+)?domain=([.|\w]+)?{domain}(.+)?$"
+        "TYPE2": r"(@@)?\|\|(([\.\-\w\^\*\/]+)([,$])?(.+)?)domain=([.|\w]+)?{domain}(.+)?$"
     }
     NETWORK_RULE_SKIP = {
         "TYPE1": [
