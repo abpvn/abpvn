@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 20231130094648
+! Version: 20231130094751
 ! Title: ABPVN List
-! Last modified: 30 Nov 2023 09:46:48 UTC+7
+! Last modified: 30 Nov 2023 09:47:51 UTC+7
 ! Expires: 1 days (update frequency)
 !
 ! ABPVN List filter
@@ -421,8 +421,6 @@ phimlongtieng.com,phimlongtieng.net##+js(acs, jQuery, window.open)
 ||yhocdata.com/wp-content/plugins/dh-anti-adblocker/
 ||youtube.com/embed$subdocument,domain=tvhayhd.com
 ||zcine.net^*.gif$image
-||zingnews.vn$csp=script-src data: blob: * 'self' 'unsafe-inline'
-||zingnews.vn/interactive^$subdocument
 ! ---------- Ad domain ----------
 ||adflex.vn^$third-party
 ||adpia.vn^$third-party
@@ -851,6 +849,7 @@ metruyencv.net###js-read-body>.text-center.pb-3
 metruyencv.net##.text-center.pb-3.nh-read__pagination>.mb-1>.text-muted
 metruyencv.net##[href="https://metruyencv.com/goout/lazada"]
 metruyencv.net##section.nh-section:nth-of-type(5)
+minhngoc.net.vn,vn-z.vn,kinhtedothi.vn##[id^="adv"]
 mitom.bio###menu-item-52424
 mitom.bio##.btn-od
 mitom.bio##.style-1.ml-2.d-none.d-lg-block.menu-item.menu-item-type-custom.menu-item-object-custom.menu-item-52424
@@ -1097,6 +1096,7 @@ toithuthuat.com##.box
 toithuthuat.com##.pum
 topthuthuat.com,canhrau.com##.widget.widget_text
 toptruyenne.com,doctruyen3qmax.com,anime47.com##.advertisement
+toquoc.vn,baoxaydung.com.vn,tienphong.vn,taichinhdoanhnghiep.net.vn,thichxemphim1.net,mannhan2.live,xemphimviet1.net,ghienphim8.net,oj.husc.edu.vn##.banner
 traderviet.org##.homePageAds
 trithuc24h.com.vn##.columns-widget .col-right
 tructiepdabong5.co##.adsMobile
@@ -1274,11 +1274,6 @@ xosodaiphat.com##.item-qc1
 xskt.com.vn,vieclam.tv###bnc0
 yellowpages.vn##.ad_by_yellowpages
 yellowpages.vn##.banner_add
-zingnews.vn###Zingnews_SiteHeader
-zingnews.vn###site-header
-zingnews.vn##.znews-banner
-zingnews.vn,minhngoc.net.vn,vn-z.vn,kinhtedothi.vn##[id^="adv"]
-zingnews.vn,toquoc.vn,baoxaydung.com.vn,tienphong.vn,taichinhdoanhnghiep.net.vn,thichxemphim1.net,mannhan2.live,xemphimviet1.net,ghienphim8.net,oj.husc.edu.vn##.banner
 ~livescore.com,~msn.com,~dm.de,~medium.com##.qc
 !---------------ABPVN White List--------------------
 @@/favicon.ico
@@ -1573,5 +1568,4 @@ xnxx-sex-videos.com##+js(ra, target|onclick, a[href^="/video/"])
 xoilac93.tv##+js(acs, jQuery, overlay)
 xoivo2.online##+js(set, adsPlayer, '')
 ytstv.me,yts.do,yts.mx,yts.rs##+js(aopr, atob)
-zingnews.vn##+js(aopr, adtimaConfig)
 zuiphim.com##+js(aopr, matchMedia)
