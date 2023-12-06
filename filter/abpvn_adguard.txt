@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 20231206153555
+! Version: 20231206154528
 ! Title: ABPVN List
-! Last modified: 06 Dec 2023 15:35:55 UTC+7
+! Last modified: 06 Dec 2023 15:45:28 UTC+7
 ! Expires: 1 days (update frequency)
 !
 ! ABPVN List filter
@@ -97,6 +97,8 @@
 ||cdn2-img.net^*.gif$image,domain=hhpanda.cc|dongchill.tv|biphim.io|subnhanh.im|subnhanhvl.co|bichill.one|dongphim3s.net
 ||cf.shopee.vn^$image,domain=animevietsub.fan
 ||chillhay.org/ads/$image
+||chillphimmoi.org/assets/*.gif$image
+||chillphimmoi.org/assets/js/popup.js
 ||chodansinh.net^*.gif
 ||chotlo.me^*gif
 ||clbgamesvn.com/diendan/popup/popup.js$script,~third-party
@@ -961,9 +963,9 @@ bongdalu6.com##div[id^="ad_"]
 bongdaso66.net###right_float
 bongdaso66.net##[id$="float_banner"]
 bongdatructuyen28.com##.menu-mobile.hot-menu
-boophim.net##.expand-static-banner
 boophim.net##.head--banner
-boophim.net##.static-banner
+boophim.net,chillphimmoi.org##.expand-static-banner
+boophim.net,chillphimmoi.org##.static-banner
 btcvn.org##.PanelScroller.Notices
 cafebiz.vn##.bgadmtoptotal
 cafef.vn,ttvn.toquoc.vn##.bannertop
@@ -1328,7 +1330,7 @@ phimmoiv2.com,ophim.vip##.uniad-player + div[style]
 phimnet.vip###overlay-close
 phimnet.vip###play
 phimnet.vip,film365.in##.ab1
-phimnet.vip,phimyeuthichz.com,boophim.net##.preload-banner
+phimnet.vip,phimyeuthichz.com,boophim.net,chillphimmoi.org##.preload-banner
 phimnhua.com###catfish-banner
 phimnhua.com##.center-screen.backdrop
 phimnhua.com##.ibetlogo
