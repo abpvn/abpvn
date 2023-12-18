@@ -21,7 +21,7 @@ class Const():
         'phukienthoitranggiare.com', 'cloudfront.net', 'admarketplace.net'
     ]
     REJECT_TARGET_DOMAIN = [
-        'google.com', 'facebook.com', 'yahooinc.com'
+        'www.google.com', 'facebook.com', 'yahooinc.com'
     ]
     FILE_REGEX = r"\|\|([^*\n]+\.(js|png|webp|jpg|jpeg|mp4|gif))([\n\$])"
     ELEMENT_HIDE_REGEX = r"(^|,){domain}([,.\w]+)?#(@)?#([\.\w\-\=\"\'\>\ \+\+\#\[\]\:]+)$"
