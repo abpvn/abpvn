@@ -40,7 +40,7 @@ class DomainCheck(threading.Thread):
         try:
             request_url = "http://" + domain
             res = requests.head(url=request_url, headers={
-                'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:107.0) Gecko/20100101 Firefox/107.0'
+                'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36 Edg/120.0.0.0'
             }, allow_redirects=True, timeout=5)
             if Const.DEBUG:
                 print(f"[DEBUG]: Requested to domain {domain} with response url {res.url}")
