@@ -20,6 +20,15 @@ class DomainCheck(threading.Thread):
         self.__total_domain = total_domain
         self.redirect_pairs = redirect_pairs
         self.error_domains = error_domains
+    
+    def is_redirect_sub_to_domain(self, domain: str, redirected_domain: str):
+        """
+        Check is redirect from sub domain to domain when REDIRECT_SKIP_SUB_TO_DOMAIN = True
+        Example: Return True when redirected_domain=afamily.vn and domain=m.afamily.vn
+        """
+        if not Const.REDIRECT_SKIP_SUB_TO_DOMAIN:
+            return False
+        return redirected_domain in domain
 
     def get_redirect_domain(self):
         """
@@ -46,7 +55,7 @@ class DomainCheck(threading.Thread):
                     message = "Domain {} redirected to {} ({})".format(domain,
                         final_redirect_domain, res.url)
                     box_print(message)
-                    if final_redirect_domain not in Const.REJECT_TARGET_DOMAIN:
+                    if final_redirect_domain not in Const.REDIRECT_REJECT_TARGET_DOMAIN and not self.is_redirect_sub_to_domain(domain, final_redirect_domain):
                         self.lock.acquire()
                         self.redirect_pairs.append([domain, final_redirect_domain])
                         self.lock.release()
