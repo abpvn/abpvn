@@ -38,6 +38,8 @@ class DomainList():
             sub_domains = list(sub_domains_set)
             sub_domains.sort()
             domains.extend(sub_domains)
+            domain_set = set(domains)
+            domains = list(domain_set)
         domains.sort()
         print(f"Found total domain and subdomain {len(domains)}")
         return domains
