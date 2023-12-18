@@ -1,8 +1,8 @@
 class Const():
     DEBUG = False
-    DOMAIN_REGEX = r'([|\/=\.~]?)(([\w-]{3,255})(\.[a-z]{2,3})?(\.[a-z]{2,7}))([#\/|\n\^\$,])'
-    SUB_DOMAIN_REGEX = r'([|\/=\.~]?)(([\w-]+\.){1,3}(([\w-]{3,255})(\.[a-z]{2,3})?(\.[a-z]{2,7})))([#\/|\n\^\$,])'
-    TLD_DOMAIN_REGEX = r'([\w-]+\.\w+)\/'
+    FILTER_DOMAIN_REGEX = r'([|\/=\.~]?)(([\w-]{3,255})(\.[a-z]{2,3})?(\.[a-z]{2,7}))([#\/|\n\^\$,])'
+    FILTER_SUB_DOMAIN_REGEX = r'([|\/=\.~]?)(([\w-]+\.){1,3}(([\w-]{3,255})(\.[a-z]{2,3})?(\.[a-z]{2,7})))([#\/|\n\^\$,])'
+    RESPONSE_DOMAIN_REGEX = r'(([\w-]+\.){0,3}(([\w-]{3,255})(\.[a-z]{2,3})?(\.[a-z]{2,7})))'
     REJECT_ENDINGS = [
         '.js', '.png', '.jpg', '.gif', '.aspx',
         '.widget', 'block.ad', '.mp4', '.mp3', '.m3u8',

@@ -16,3 +16,10 @@ def box_print(message: str):
         message = message + " "
     print("|{}|".format(message))
     print("|{}|".format(line))
+
+def is_sub_domain(domain: str):
+    """
+    Check domain string is subdomain
+    """
+    split_domain = domain.split(".")
+    return len(split_domain) > 2

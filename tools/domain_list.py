@@ -8,7 +8,7 @@ class DomainList():
         """
         Get domain from text with regex
         """
-        matches = re.findall(Const.DOMAIN_REGEX, text)
+        matches = re.findall(Const.FILTER_DOMAIN_REGEX, text)
         domains = []
         for match in matches:
             invalid_domain = False
@@ -23,7 +23,7 @@ class DomainList():
         domains = list(domain_set)
         print("Found total {count} domain".format(count=len(domains)))
         if include_sub_domain:
-            sub_matches = re.findall(Const.SUB_DOMAIN_REGEX, text)
+            sub_matches = re.findall(Const.FILTER_SUB_DOMAIN_REGEX, text)
             sub_domains = []
             for match in sub_matches:
                 invalid_domain = False
