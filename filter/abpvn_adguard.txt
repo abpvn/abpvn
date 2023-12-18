@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 20231218100751
+! Version: 20231218100957
 ! Title: ABPVN List
-! Last modified: 18 Dec 2023 10:07:51 UTC+7
+! Last modified: 18 Dec 2023 10:09:57 UTC+7
 ! Expires: 1 days (update frequency)
 !
 ! ABPVN List filter
@@ -1061,6 +1061,8 @@ gocphimk.net##.show-load-ad
 gocphimvn.vip###mobileCatfishz
 google.com.vn##li.ads-ad
 google.com.vn#?#ol>li:-abp-has(span:-abp-contains(QC))
+gplay.vn##.qc-benphai
+gplay.vn##.qc-bentrai
 greasyfork.org###script-show-info-ad
 gyazo.com##.lower-ad
 gyazo.com##.upper-ad-box
@@ -1334,8 +1336,6 @@ phuongtrinhhoahoc.com,tructiepbongda27.com,thanhnien.vn##.top-banner
 player.phimbocn.com##div[style^="position:fixed;inset:0px;z-index:100000;"]
 player.phimbocn.com,bestx.stream###video_player ~ div[id]
 plo.vn##.tpm-ads-unit
-plus.gtv.vn##.qc-benphai
-plus.gtv.vn##.qc-bentrai
 plvb.xyz##.odds-button
 plvb.xyz##.odds-button2
 protruyen.fun##.click-ads
@@ -1894,6 +1894,7 @@ gametv.vn#%#//scriptlet("abort-current-inline-script", "$", "homeModal")
 gavang1.link##.MuiDialog-root
 giavang.net#%#//scriptlet("prevent-fetch", "method:HEAD")
 gotphim.com#%#//scriptlet("abort-current-inline-script", "navigator", "devtoolsDetector")
+gplay.vn#%#//scriptlet("abort-current-inline-script", "$", "youtube-modal")
 gvnvh18.com,phe3x.xyz,sexdiaryx.us#%#//scriptlet("set-constant", "D4zz", "noopFunc")
 hh3dhay.com,hh3dhay.xyz#%#//scriptlet("abort-current-inline-script", "document.createElement", ";break;case")
 holyphim.com#%#//scriptlet("abort-current-inline-script", "window.addEventListener", "window.open")
@@ -1916,7 +1917,6 @@ nguontv.biz#%#//scriptlet("abort-current-inline-script", "encodeURIComponent", "
 phimgichill.net,ophimhdvn3.net,mephimnhe1.net#%#//scriptlet("abort-current-inline-script","jQuery", "popurl")
 phimmoi4s.com#%#//scriptlet("json-prune", "ads")
 phimvuihd.org#%#//scriptlet("set-constant", "urlAds", "")
-plus.gtv.vn#%#//scriptlet("abort-current-inline-script", "$", "youtube-modal")
 plvb.xyz#%#//scriptlet("abort-on-property-read", "ads")
 plvb.xyz#%#//scriptlet("abort-on-property-read", "adsPlayer")
 plvb.xyz#%#//scriptlet("abort-on-property-read", "adsPopupPlayer")
