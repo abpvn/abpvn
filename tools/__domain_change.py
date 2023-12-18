@@ -1,3 +1,4 @@
+from xml import dom
 import requests
 from const import Const
 import re
@@ -7,8 +8,7 @@ from domain_list import DomainList
 from pprint import pprint
 import os
 
-from util import box_print
-
+from util import box_print, is_sub_domain
 
 class DomainCheck(threading.Thread):
     def set_data(self, domain, index, total_domain,redirect_pairs: list, error_domains: list):
@@ -33,10 +33,16 @@ class DomainCheck(threading.Thread):
             res = requests.head(url=request_url, headers={
                 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:107.0) Gecko/20100101 Firefox/107.0'
             }, allow_redirects=True, timeout=5)
+            if Const.DEBUG:
+                print(f"[DEBUG]: Requested to domain {domain} with response url {res.url}")
             if domain not in res.url:
-                matches = re.findall(Const.TLD_DOMAIN_REGEX, res.url)
+                domain_regex = Const.RESPONSE_DOMAIN_REGEX
+                matches = re.search(domain_regex, res.url)
+                if Const.DEBUG:
+                    print(f"[DEBUG]: Find matches for domain:res url {domain}:{res.url} with regex {domain_regex}")
+                    pprint(matches)
                 if matches:
-                    final_redirect_domain = matches[0]
+                    final_redirect_domain = matches.group()
                     message = "Domain {} redirected to {} ({})".format(domain,
                         final_redirect_domain, res.url)
                     box_print(message)
@@ -92,7 +98,7 @@ def main():
     f = open(os.path.dirname(os.path.abspath(__file__)) + "/../filter/abpvn_ublock.txt", "r", encoding="utf8")
     filter_text = f.read()
     f.close()
-    domains = DomainList.get_all_domain(filter_text)
+    domains = DomainList.get_all_domain(filter_text, True)
     domain_change = DomainChange(domains)
     redirect_pairs, error_domains = domain_change.check_domain_change()
     print("----Found {} domain changed with redirect----".format(len(redirect_pairs)))
