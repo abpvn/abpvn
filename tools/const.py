@@ -3,7 +3,7 @@ class Const():
     FILTER_DOMAIN_REGEX = r'([|\/=\.~]?)(([\w-]{3,255})(\.[a-z]{2,3})?(\.[a-z]{2,7}))([#\/|\n\^\$,])'
     FILTER_SUB_DOMAIN_REGEX = r'([|\/=\.~]?)(([\w-]+\.){1,3}(([\w-]{3,255})(\.[a-z]{2,3})?(\.[a-z]{2,7})))([#\/|\n\^\$,])'
     RESPONSE_DOMAIN_REGEX = r'(([\w-]+\.){0,3}(([\w-]{3,255})(\.[a-z]{2,3})?(\.[a-z]{2,7})))'
-    REJECT_ENDINGS = [
+    DOMAIN_REJECT_ENDINGS = [
         '.js', '.png', '.jpg', '.gif', '.aspx',
         '.widget', 'block.ad', '.mp4', '.mp3', '.m3u8',
         '.row', '.parse', '.round', 'abpvn.com',
@@ -20,9 +20,10 @@ class Const():
         'net.vn', 'edu.vn', 'googlesyndication.com', 'gov.vn', 'nct.vn', 'org.vn',
         'phukienthoitranggiare.com', 'cloudfront.net', 'admarketplace.net'
     ]
-    REJECT_TARGET_DOMAIN = [
-        'www.google.com', 'facebook.com', 'www.advertising.yahooinc.com'
+    REDIRECT_REJECT_TARGET_DOMAIN = [
+        'www.google.com', 'facebook.com', 'www.advertising.yahooinc.com', 'marketingplatform.google.com'
     ]
+    REDIRECT_SKIP_SUB_TO_DOMAIN = True
     FILE_REGEX = r"\|\|([^*\n]+\.(js|png|webp|jpg|jpeg|mp4|gif))([\n\$])"
     ELEMENT_HIDE_REGEX = r"(^|,){domain}([,.\w]+)?#(@)?#([\.\w\-\=\"\'\>\ \+\+\#\[\]\:]+)$"
     MAX_CHROME_THREAD = 50
