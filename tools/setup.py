@@ -5,7 +5,10 @@ setup(
     version='0.0.1',
     install_requires=[
         'requests',
-        "dnspython",
+        'dnspython',
+        'selenium',
+        'webdriver_manager',
+        'selenium-wire',
         'importlib-metadata; python_version == "3.8"',
     ],
 )
