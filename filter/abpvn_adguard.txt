@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 20231221140718
+! Version: 20231221143623
 ! Title: ABPVN List
-! Last modified: 21 Dec 2023 14:07:18 UTC+7
+! Last modified: 21 Dec 2023 14:36:23 UTC+7
 ! Expires: 1 days (update frequency)
 !
 ! ABPVN List filter
@@ -198,7 +198,6 @@
 ||ophimhd.vip/upload
 ||ophimmoi.com/storage/files/qc/$image,domain=phimmoizz.org
 ||p.thoctv.com^*.gif$image
-||phimbocn.com/player-embed/assets/js/tvc.js
 ||phimchat2.com/public/*.mp4$domain=phimchat2.com,rewrite=abp-resource:blank-mp3
 ||phimchat2.com/public/images/banner/$image
 ||phimchat2.com^*.gif
@@ -825,6 +824,7 @@
 ##.ytp-ad-progress
 ##.ytp-ad-progress-list
 ##[class^="adHTML"]
+##[href^="https://gmxvmvptfm.com/"]
 ##a[href^="https://ad.doubleclick.net/"]
 ##a[href^="https://www.i9bet35.com/"]
 ##div[id^="div-gpt-ad"]
@@ -896,6 +896,7 @@ baonga.com##.monkey-section-tinnoibat
 baonga.com##div.monkey-qc
 batdongsan.com.vn##.adPosition
 bds123.vn##.js-ad-fixed-position
+bestx.stream###video_player ~ div[id]
 biphim.io###top_oddd
 biphim.io,biphims.co,biphims.cc##.banner-sticky-footer-wrapper
 blockchain.com##.bci-ad
@@ -1310,8 +1311,6 @@ photoshoponlinemienphi.com##.sgpb-popup-overlay
 phunumoi.net.vn##div[id^="ads_"]
 phuongtrinhhoahoc.com##.sticky-bottom
 phuongtrinhhoahoc.com,tructiepbongda27.com,thanhnien.vn##.top-banner
-player.phimbocn.com##div[style^="position:fixed;inset:0px;z-index:100000;"]
-player.phimbocn.com,bestx.stream###video_player ~ div[id]
 plo.vn##.tpm-ads-unit
 plvb.xyz##.odds-button
 plvb.xyz##.odds-button2
