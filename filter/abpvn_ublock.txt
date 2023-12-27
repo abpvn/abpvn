@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 20231227135459
+! Version: 20231227140818
 ! Title: ABPVN List
-! Last modified: 27 Dec 2023 13:54:59 UTC+7
+! Last modified: 27 Dec 2023 14:08:18 UTC+7
 ! Expires: 1 days (update frequency)
 !
 ! ABPVN List filter
@@ -73,7 +73,7 @@
 ||animehay.city^*.gif
 ||animet.net^*.gif
 ||anivn.club^*.gif
-||api.anime3s.com/video888.mp4$domain=api.anime3s.com,rewrite=abp-resource:blank-mp3
+||api.anime3s.com/*.mp4$domain=api.anime3s.com|subnhanh.xyz,rewrite=abp-resource:blank-mp3
 ||asecdn.w88media.com/VN/250x250-VN.gif$domain=mythethao.net
 ||asideway.com$csp=script-src 'self' 'unsafe-inline' https: http:
 ||audiotruyenfull.com/wp-content/litespeed/js/50fd459c3e3682fa267485de709d7f83.js
@@ -150,7 +150,7 @@
 ||i.imgur.com/FbUH5AQ.png
 ||i.imgur.com/Q0a2mv2.png
 ||i.imgur.com^$image,domain=nhacdj.vn|truyenfull.vn|animet.net|diendanit.net|banbuondalat.com|khoedep.vn|animeweb.vip|xemphimvuis.com|hoathinhtq.tv|tinsoikeo.vip|fimfast.pro|chillhay-net.pro|hh3d.tv
-||i.imgur.com^*.gif$image,domain=subnhanh.xyz|vungtv.us|hdphimhay1.xyz|ghienphim9.net|247phim.cc|dailyphimz.com|mv.phimmoiaz.cc|phimgichill.net|ophimhdvn3.net|mythethao.net|xemtivi4k.com|animevietsub.fan|tvhay2.net|caheo7.tv|vtipster.net|subnhanhvl.co|mphimmoi1.xyz|tructiepnba.com|huphimtv.com|phim18zz.com|vietphims.tv|zuiphim.com|xamvn.vc|xoilac14.org|film365.in|vebo8.link|90phut9.live|xemphimviet1.net|90phuts.tv|watch.ezyproxy.com|live7.thapcam.live|vkooll.net|phimmoiyyy.net|vebo4.org|vebotv.net|tvhayhd.com|phimbocn.com|motphimhan.cc|khoaiphim.com|motchillzz.in
+||i.imgur.com^*.gif$image,domain=vungtv.us|hdphimhay1.xyz|ghienphim9.net|247phim.cc|dailyphimz.com|mv.phimmoiaz.cc|phimgichill.net|ophimhdvn3.net|mythethao.net|xemtivi4k.com|animevietsub.fan|tvhay2.net|caheo7.tv|vtipster.net|subnhanhvl.co|mphimmoi1.xyz|tructiepnba.com|huphimtv.com|phim18zz.com|vietphims.tv|zuiphim.com|xamvn.vc|xoilac14.org|film365.in|vebo8.link|90phut9.live|xemphimviet1.net|90phuts.tv|watch.ezyproxy.com|live7.thapcam.live|vkooll.net|phimmoiyyy.net|vebo4.org|vebotv.net|tvhayhd.com|phimbocn.com|motphimhan.cc|khoaiphim.com|motchillzz.in
 ||i.postimg.cc^*.gif$domain=motchillzz.in
 ||i.servimg.com/u/f22/$domain=4rkinggame.com
 ||i.upanh.org^*.gif$domain=xemhay24h.com
@@ -173,6 +173,7 @@
 ||laodong.vn/*QuangcaoOnline
 ||laptrinhvb.net/banner_bds.png
 ||lh3.googleusercontent.com/*=s0$image,domain=animevietsub.fan
+||lh3.googleusercontent.com^$image,domain=subnhanh.xyz
 ||lichngaytot.com/navive-advs$subdocument,domain=doctailieu.com
 ||listnhacai1.com^*.gif$image
 ||live.staticflickr.com$domain=timdaily.vn,image
@@ -468,8 +469,8 @@ anime47.com###qc_clgt
 animehay.city##div[style^="position: fixed; bottom: 0px;"]
 animet.net###menubentrai
 animet.net##.gnartyx-offads
-animet.net,animetvn2.com###fbox-background
 animet.net,animetvn2.com##.gnarty-offads
+animet.net,animetvn2.com,subnhanh.xyz###fbox-background
 animetvn2.com###mobile-ads
 animevietsub.fan###invideo_wrapper
 animevietsub.fan##.Ads
@@ -897,8 +898,8 @@ phimno4.xyz###ads_location
 phimno4.xyz##.block.ad
 phimplay24h.com###itro_popup
 phimtuoitho.tv##[href^="https://www.toprevenuegate.com/q7rbxxz1v"]
-phimvietsub.pro##.sticky_bottom
-phimvietsub.pro,tvhayh.org,tvhay2.net,api.anime3s.com##.t_logo
+phimvietsub.pro,subnhanh.xyz##.sticky_bottom
+phimvietsub.pro,tvhayh.org,tvhay2.net,api.anime3s.com,subnhanh.xyz##.t_logo
 phimvuihd.org,vietphims.tv,hh3dhay.com,phimtn.com,khoaiphim.com,phimhay.in,hdphim18.net,xemhay24h.com,phimtuoitho.tv,xem8z.com,motchillzz.in##.float-ck-center-lt
 phimyeuthichz.com##.sticky-footer
 phimyeuthichz.com,boophim.net,chillphimmoiz.org##.preload-banner
@@ -1455,7 +1456,7 @@ nettruyenus.net##+js(acs, sp)
 nguontv.biz##+js(acs, encodeURIComponent, popunder)
 phimgichill.net,mephimnhe1.net##+js(acs, jQuery, popurl)
 phimmoi4s.com##+js(json-prune, ads)
-phimvietsub.pro,api.anime3s.com##+js(set, maxAds, 0)
+phimvietsub.pro,api.anime3s.com,subnhanh.xyz##+js(set, maxAds, 0)
 phimvuihd.org##+js(set, urlAds, '')
 plvb.xyz##+js(aopr, ads)
 plvb.xyz##+js(aopr, adsPlayer)
