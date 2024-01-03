@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 20240103151033
+! Version: 20240103152052
 ! Title: ABPVN List
-! Last modified: 03 Jan 2024 15:10:33 UTC+7
+! Last modified: 03 Jan 2024 15:20:52 UTC+7
 ! Expires: 1 days (update frequency)
 !
 ! ABPVN List filter
@@ -40,7 +40,7 @@
 /disable-devtool.min.js$script
 /giadinhonline.vn/files/qc/
 /i.imgur.com/$domain=xemphimchill.xyz
-/i.imgur.com/*.gif$domain=keonhacai5.vip|phimlongtieng.net|phimdinhcao.com|phimdinhcao.net|tvzinghd.com|xoilac96.net|bongdainfoz.com|90phutt.tv|vebov.live|cakhia365z.net|91p.plvb.xyz|motchillz.org|listnhacai1.com|xoilaczs.tv|xemtivingon.org|phimlongtieng.com
+/i.imgur.com/*.gif$domain=keonhacai5.vip|phimlongtieng.net|phimdinhcao.com|phimdinhcao.net|tvzinghd.com|xoilac96.net|bongdainfoz.com|90phutt.tv|vebov.live|cakhia365z.net|plvb.xyz|motchillz.org|listnhacai1.com|xoilaczs.tv|xemtivingon.org|phimlongtieng.com
 /media.discordapp/$domain=phimno4.xyz|bongda21h.me
 /mmo/*$xmlhttprequest,image,domain=phimmoi2.com|vuighe2.com|mehoathinh3.com
 /newchill/*gif$image
@@ -288,7 +288,6 @@
 ||uniad.$third-party
 ||upload.bongda365.asia//banner/$domain=bongda365.asia
 ||upload.cc^*.gif$image,domain=zuiphim.com
-||vebov.live^*.gif
 ||vegacdn.com^*.gif$image
 ||vesotantai.com/upload/photo/$image
 ||vidian.wiki/images/*.gif
@@ -797,8 +796,6 @@
 90phutt.tv##.justify-content-center.d-flex>.btn-primary.btn
 90phutt.tv##.mt-1.d-lg-flex.d-none.sub-menu
 90phutt.tv##a.d-lg-none.d-block:nth-of-type(2)
-91p.plvb.xyz##.odds-button
-91p.plvb.xyz##.odds-button2
 anime47.com###qc_clgt
 animehay.city##div[style^="position: fixed; bottom: 0px;"]
 animet.net###inx-content
@@ -1238,6 +1235,8 @@ photobucket.com##.slider-contents
 phunumoi.net.vn##div[id^="ads_"]
 phuongtrinhhoahoc.com##.shadow-card + .mt-2
 pl-rk.livefb.xyz##.danh-sach-phia-duoi
+plvb.xyz##.odds-button
+plvb.xyz##.odds-button2
 protruyen.xyz##.click-ads ~ p
 protruyen.xyz##.overlay-close
 protruyen.xyz##div.mrb10
@@ -1756,11 +1755,6 @@ xiuren.org##div[id^="exo_slider_"]
 xnxx.com###ad-header-mobile
 xnxx.com###content-ad-top-zone
 ! ---------Rule only for uBlock Origin------
-91p.plvb.xyz##+js(aopr, ads)
-91p.plvb.xyz##+js(aopr, adsPlayer)
-91p.plvb.xyz##+js(aopr, adsPopupPlayer)
-91p.plvb.xyz##+js(aopr, adsTvc)
-91p.plvb.xyz##+js(aopr, keyPlayer)
 aoe.vn##+js(aopr, parseInt)
 audiotruyenfull.com##+js(aopr, adpiaListUrl)
 azrom.net##+js(acs, atob, ai_block_class)
@@ -1804,6 +1798,11 @@ phimmoi4s.com##+js(json-prune, ads)
 phimmoi4s.com,phimdinhcao.net,phimlongtieng.net,phimdinhcao.com##+js(aopr, localStorage)
 phimvietsub.pro,api.anime3s.com,subnhanh.xyz##+js(set, maxAds, 0)
 phimvuihd.org##+js(set, urlAds, '')
+plvb.xyz##+js(aopr, ads)
+plvb.xyz##+js(aopr, adsPlayer)
+plvb.xyz##+js(aopr, adsPopupPlayer)
+plvb.xyz##+js(aopr, adsTvc)
+plvb.xyz##+js(aopr, keyPlayer)
 protruyen.xyz,animevietsub.fan##+js(acs, document.documentElement, break;case $.)
 protruyen.xyz,downloadsachmienphi.com,lrepacks.net##+js(acs, JSON.parse, break;case $.)
 rphang.cc,misskon.com##+js(acs, document.querySelectorAll, popMagic)
