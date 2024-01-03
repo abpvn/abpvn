@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 20240103151010
+! Version: 20240103151819
 ! Title: ABPVN List
-! Last modified: 03 Jan 2024 15:10:10 UTC+7
+! Last modified: 03 Jan 2024 15:18:19 UTC+7
 ! Expires: 1 days (update frequency)
 !
 ! ABPVN List filter
@@ -284,7 +284,6 @@
 ||uniad.$third-party
 ||upload.bongda365.asia//banner/$domain=bongda365.asia
 ||upload.cc^*.gif$image,domain=zuiphim.com
-||vebov.live^*.gif
 ||vegacdn.com^*.gif$image
 ||vesotantai.com/upload/photo/$image
 ||vidian.wiki/images/*.gif
@@ -441,8 +440,6 @@
 90phutt.tv##a.d-lg-none.d-block:nth-of-type(2)
 90phutt.tv,cakhia365z.net,xoilac96.net,vebov.live###quangcaopc
 90phutt.tv,cakhia365z.net,xoilac96.net,vebov.live,bongdainfoz.com,xoilaczs.tv,tvhayhd.com###wap_bottombanner
-91p.plvb.xyz##.odds-button
-91p.plvb.xyz##.odds-button2
 ahaphimz.com,vkoolsss.net,vphims.net##.catfish-ck
 anime47.com###qc_clgt
 animehay.city##div[style^="position: fixed; bottom: 0px;"]
@@ -866,6 +863,8 @@ phimyeuthichz.com,boophim.net,chillphimmoiz.org##.preload-banner
 phunumoi.net.vn,nhipcaudautu.vn##div[id^="ads_"]
 phuongtrinhhoahoc.com##.shadow-card + .mt-2
 pl-rk.livefb.xyz##.danh-sach-phia-duoi
+plvb.xyz##.odds-button
+plvb.xyz##.odds-button2
 protruyen.xyz##.click-ads ~ p
 protruyen.xyz##.overlay-close
 protruyen.xyz##div.mrb10
@@ -1380,11 +1379,6 @@ vn.javbabe.net##.b-player
 vn.phym18.org##div#bnads
 web15.sexphim1.com##.code-block-4
 ! ---------Rule only for uBlock Origin------
-91p.plvb.xyz##+js(aopr, ads)
-91p.plvb.xyz##+js(aopr, adsPlayer)
-91p.plvb.xyz##+js(aopr, adsPopupPlayer)
-91p.plvb.xyz##+js(aopr, adsTvc)
-91p.plvb.xyz##+js(aopr, keyPlayer)
 aoe.vn##+js(aopr, parseInt)
 audiotruyenfull.com##+js(aopr, adpiaListUrl)
 azrom.net##+js(acs, atob, ai_block_class)
@@ -1429,6 +1423,11 @@ phimmoi4s.com##+js(json-prune, ads)
 phimmoi4s.com,phimdinhcao.net,phimlongtieng.net,phimdinhcao.com##+js(aopr, localStorage)
 phimvietsub.pro,api.anime3s.com,subnhanh.xyz##+js(set, maxAds, 0)
 phimvuihd.org##+js(set, urlAds, '')
+plvb.xyz##+js(aopr, ads)
+plvb.xyz##+js(aopr, adsPlayer)
+plvb.xyz##+js(aopr, adsPopupPlayer)
+plvb.xyz##+js(aopr, adsTvc)
+plvb.xyz##+js(aopr, keyPlayer)
 protruyen.xyz,animevietsub.fan##+js(acs, document.documentElement, break;case $.)
 rphang.cc,misskon.com##+js(acs, document.querySelectorAll, popMagic)
 saostar.vn##div.layout.pt-mobi-top:style(padding-top: 0 !important)
