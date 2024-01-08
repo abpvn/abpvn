@@ -36,7 +36,9 @@ class Const():
     NETWORK_RULE_SKIP = {
         "TYPE1": [
             "{domain}^",
-            "domain="
+            "domain=",
+            ",third-party",
+            "$third-party"
         ],
     }
     NETWORK_RULE_REPLACE = [
