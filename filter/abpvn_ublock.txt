@@ -1,7 +1,7 @@
 [Adblock Plus 2.0]
-! Version: 20240111161751
+! Version: 20240111162903
 ! Title: ABPVN List
-! Last modified: 11 Jan 2024 16:17:51 UTC+7
+! Last modified: 11 Jan 2024 16:29:03 UTC+7
 ! Expires: 1 days (update frequency)
 !
 ! ABPVN List filter
@@ -198,7 +198,6 @@
 ||p.thoctv.com^*.gif$image
 ||phetruyen.pro/storage/images/banner/$image
 ||phimcuon.com^*.gif$image
-||phimgichill.net$csp=script-src 'self' 'unsafe-inline' http: https:
 ||phimhay.in^*.gif
 ||phimhaythuyetminh.live$csp=script-src 'self' 'unsafe-inline'
 ||phimhaytv.info^*.gif
@@ -1400,6 +1399,7 @@ lxmanga.net##+js(acs, $, PopUnder)
 nettruyenall.com##+js(acs, Promise, break;case)
 nettruyenus.net##+js(acs, sp)
 nguontv.biz##+js(acs, encodeURIComponent, popunder)
+phimgichill.net##+js(acs, eval, $._Eu)
 phimgichill.net,mephimnhe1.net##+js(acs, jQuery, popurl)
 phimmoi4s.com##+js(json-prune, ads)
 phimmoi4s.com,phimdinhcao.net,phimlongtieng.net,phimdinhcao.com##+js(aopr, localStorage)
