@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 20240112144803
+! Version: 20240112194442
 ! Title: ABPVN List
-! Last modified: 12 Jan 2024 14:48:03 UTC+7
-! Diff-Path: patches/20240112144803.patch#abpvn_adguard
+! Last modified: 12 Jan 2024 19:44:43 UTC+7
+! Diff-Path: patches/20240112194442.patch#abpvn_adguard
 ! Diff-Expires: 60 minutes
 ! Expires: 1 days (update frequency)
 !
@@ -91,6 +91,7 @@
 ||batdongsan.com.vn/*/Banner/
 ||bf.333xbet.com/18881999/video888.mp4$domain=phimhaytv.info,rewrite=abp-resource:blank-mp3
 ||bf.333xbet.com^$media,third-party,domain=~phimhaytv.info
+||biphim.io/public/prom_ad/prom_ad.js$script
 ||blog.abit.vn/wp-content/uploads/2020/05/abit_$image
 ||blogger.googleusercontent.com^$image,domain=animevip.tv|hhninja1.tv|xem8z.com
 ||blogtruyenvn.com^*.gif$image
@@ -275,7 +276,7 @@
 ||tinsoikeo.vip^*.gif$image
 ||toithuthuat.com^*.gif
 ||top10review.vn^*.gif$image
-||tracker.idocdn.com^$domain=freeplayervideo.com|abysscdn.com|player-cdn.com
+||tracker.idocdn.com^$domain=freeplayervideo.com|abysscdn.com|player-cdn.com|geoip.redirect-ads.com
 ||traderviet.org/data/Siropu/images/
 ||tructiep.vn/website/adv/
 ||tructiep24h.co^*.gif
@@ -924,7 +925,7 @@ forum.gocmod.com##.ad-manager-thread-view-bottom
 forum.gocmod.com##.ad-manager-thread-view-top
 forum.gocmod.com##.google-auto-placed
 forum.gocmod.com##div[style="margin:6px 0px 6px 0px"]
-freeplayervideo.com,abysscdn.com,player-cdn.com###player + div[id]
+freeplayervideo.com,abysscdn.com,player-cdn.com,geoip.redirect-ads.com###player + div[id]
 freshnewsasia.com##.art-adsbottom103
 freshnewsasia.com##.nospace
 fshare.vn###myElementz
@@ -1339,7 +1340,7 @@ tructiep.rakhoi14.tv##.button-in-player-box
 tructiep.rakhoi14.tv##.footer-button-sign-in.hide-desk
 tructiep.rakhoi14.tv##.hide-desk.wrap-content>.wrap-btn-action
 tructiep.rakhoi14.tv##.menu-right-slide
-tructiep.rakhoi14.tv,play.vnupload.net,ssplay.net,mephimtv.net,api.anime3s.com,motchillz.org,xoilac14.org,tvhayh.org,p.thoctv.com,watch.ezyproxy.com,coiphim18.com,freeplayervideo.com,abysscdn.com,player-cdn.com##.jw-logo
+tructiep.rakhoi14.tv,play.vnupload.net,ssplay.net,mephimtv.net,api.anime3s.com,motchillz.org,xoilac14.org,tvhayh.org,p.thoctv.com,watch.ezyproxy.com,coiphim18.com,freeplayervideo.com,abysscdn.com,player-cdn.com,bitvtom1000.xyz,geoip.redirect-ads.com##.jw-logo
 tructiep.rakhoi14.tv,tructiep.cakhia54.tv,tructiep.cakhia14.com,tructiep.caheo18.tv##.btn-betting
 tructiep.rakhoi14.tv,tructiep.cakhia54.tv,tructiep.cakhia14.com,tructiep.caheo18.tv##.container-banner
 tructiep.rakhoi14.tv,tructiep.cakhia54.tv,tructiep.cakhia14.com,tructiep.caheo18.tv##.datCuocBTN
@@ -1422,7 +1423,7 @@ vietnamnet.vn##.mb-20.col-right-ads
 vietnamnet.vn##.vmcadszone
 vietq.vn##section.mar20:nth-of-type(2)
 vietq.vn##section.mar20:nth-of-type(4)
-vkoolsss.net,subnhanhvl.co,subnhanh.app,subnhanh.bio,dongphim3s.net,mitomv.com,tutientruyen3.xyz,protruyen2.fun###overlay
+vkoolsss.net,subnhanhvl.co,subnhanh.app,subnhanh.bio,dongphim3s.net,mitomv.com,tutientruyen3.xyz,protruyen2.fun,biphim.io###overlay
 vnews.gov.vn##.banner-bottom-menu
 vnews.gov.vn##[href*="bit.ly"]
 vnexpress.net###banner_top
