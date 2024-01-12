@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 20240112144707
+! Version: 20240112194158
 ! Title: ABPVN List
-! Last modified: 12 Jan 2024 14:47:07 UTC+7
-! Diff-Path: patches/20240112144707.patch#abpvn_content_blocker
+! Last modified: 12 Jan 2024 19:41:59 UTC+7
+! Diff-Path: patches/20240112194158.patch#abpvn_content_blocker
 ! Diff-Expires: 60 minutes
 ! Expires: 1 days (update frequency)
 !
@@ -88,6 +88,7 @@
 ||batdongsan.com.vn/*/Banner/
 ||bf.333xbet.com/18881999/video888.mp4$domain=phimhaytv.info,rewrite=abp-resource:blank-mp3
 ||bf.333xbet.com^$media,third-party,domain=~phimhaytv.info
+||biphim.io/public/prom_ad/prom_ad.js$script
 ||blog.abit.vn/wp-content/uploads/2020/05/abit_$image
 ||blogger.googleusercontent.com^$image,domain=animevip.tv|hhninja1.tv|xem8z.com
 ||blogtruyenvn.com^*.gif$image
@@ -273,7 +274,7 @@
 ||tinsoikeo.vip^*.gif$image
 ||toithuthuat.com^*.gif
 ||top10review.vn^*.gif$image
-||tracker.idocdn.com^$domain=freeplayervideo.com|abysscdn.com|player-cdn.com
+||tracker.idocdn.com^$domain=freeplayervideo.com|abysscdn.com|player-cdn.com|geoip.redirect-ads.com
 ||traderviet.org/data/Siropu/images/
 ||tructiep.vn/website/adv/
 ||tructiep24h.co^*.gif
@@ -561,7 +562,7 @@ forum.gocmod.com##.ad-manager-thread-view-top
 forum.gocmod.com##.google-auto-placed
 forum.gocmod.com##div[style="margin:6px 0px 6px 0px"]
 fptshop.com.vn##.banner-cs
-freeplayervideo.com,abysscdn.com,player-cdn.com###player + div[id]
+freeplayervideo.com,abysscdn.com,player-cdn.com,geoip.redirect-ads.com###player + div[id]
 fshare.vn###myElementz
 fshare.vn##.bannerinfooter
 fsharetv.com###home_header
@@ -964,7 +965,7 @@ tructiep.rakhoi14.tv##.button-in-player-box
 tructiep.rakhoi14.tv##.footer-button-sign-in.hide-desk
 tructiep.rakhoi14.tv##.hide-desk.wrap-content>.wrap-btn-action
 tructiep.rakhoi14.tv##.menu-right-slide
-tructiep.rakhoi14.tv,play.vnupload.net,ssplay.net,mephimtv.net,api.anime3s.com,motchillz.org,xoilac14.org,tvhayh.org,watch.ezyproxy.com,p.thoctv.com,coiphim18.com,freeplayervideo.com,abysscdn.com,player-cdn.com##.jw-logo
+tructiep.rakhoi14.tv,play.vnupload.net,ssplay.net,mephimtv.net,api.anime3s.com,motchillz.org,xoilac14.org,tvhayh.org,watch.ezyproxy.com,p.thoctv.com,coiphim18.com,freeplayervideo.com,abysscdn.com,player-cdn.com,bitvtom1000.xyz,geoip.redirect-ads.com##.jw-logo
 tructiep.rakhoi14.tv,tructiep.cakhia54.tv,tructiep.cakhia14.com,tructiep.caheo18.tv##.btn-betting
 tructiep.rakhoi14.tv,tructiep.cakhia54.tv,tructiep.cakhia14.com,tructiep.caheo18.tv##.datCuocBTN
 tructiep.rakhoi14.tv,tructiep.cakhia54.tv,tructiep.cakhia14.com,tructiep.caheo18.tv##.modelAds
@@ -1041,7 +1042,7 @@ vietq.vn##section.mar20:nth-of-type(4)
 viettelstore.vn###banner-dai-bottom
 viettelstore.vn###banner-dai-top
 vkoolsss.net##.box-rating
-vkoolsss.net,subnhanhvl.co,subnhanh.app,subnhanh.bio,tructiepdabong5.co,tutientruyen3.xyz,protruyen2.fun###overlay
+vkoolsss.net,subnhanhvl.co,subnhanh.app,subnhanh.bio,tructiepdabong5.co,tutientruyen3.xyz,protruyen2.fun,biphim.io###overlay
 vkoolsss.net,vuonhoalan.net,gunnylau360.net,mythethao.net,phimplay24h.com,kenhgamelau.com,phimno4.xyz,gunnymienphi.net,dailyphimz.com,xemhay24h.com,listnhacai1.com,phim33.tv,247phim.cc,vkooll.net,vungtv.us##.float-ck
 vndoc.com,download.com.vn,quantrimang.com,download.vn,gamevui.vn,khoahoc.tv,meta.vn##.adbox
 vnews.gov.vn##.banner-bottom-menu
