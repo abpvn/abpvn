@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 20240112135548
+! Version: 20240112140919
 ! Title: ABPVN List
-! Last modified: 12 Jan 2024 13:55:48 UTC+7
-! Diff-Path: patches/20240112135548.patch#abpvn_content_blocker
+! Last modified: 12 Jan 2024 14:09:19 UTC+7
+! Diff-Path: patches/20240112140919.patch#abpvn_content_blocker
 ! Diff-Expires: 60 minutes
 ! Expires: 1 days (update frequency)
 !
@@ -282,6 +282,7 @@
 ||truyentuanopm.com/wp-content/themes/nos/js/pop-before.js
 ||truyenvnhay.tv^*banner$image
 ||tudomuaban.com/public/upload/ad/
+||tutientruyen3.xyz^*.gif$image,domain=protruyen2.fun
 ||tuviso.com/public/media//banner/
 ||tuyensinh247.com/$image,third-party
 ||tuyensinhso.vn/images/banners/*.gif$image,~third-party
@@ -854,11 +855,10 @@ phuongtrinhhoahoc.com##.shadow-card + .mt-2
 pl-rk.livefb.xyz##.danh-sach-phia-duoi
 plvb.xyz##.odds-button
 plvb.xyz##.odds-button2
-protruyen2.fun##.click-ads ~ p
+protruyen2.fun##.ad-image
+protruyen2.fun##.click-ads
 protruyen2.fun##.close-button
-protruyen2.fun##.overlay-close
 protruyen2.fun##div.mrb10
-protruyen2.fun,protruyen2.fun##.click-ads
 qdnd.vn##.box-banner
 qthang.net##.ad-script
 qthang.net##.elementor-widget-container>.widget_custom_html
@@ -881,7 +881,7 @@ soikeo365.net###desktopPopupBanner
 soikeo365.net##.ads-floatingads
 soikeo365.net##.banner-item
 soikeo365.net##.top-nha-cai
-soikeoz.co,tvhayh.org,protruyen2.fun,phimmoinay.tv,phimtho.net,tutientruyen3.xyz,chillhay-net.pro,protruyen2.fun###popup_banner_beta
+soikeoz.co,tvhayh.org,phimmoinay.tv,phimtho.net,tutientruyen3.xyz,chillhay-net.pro###popup_banner_beta
 sport5.vn,afamily.vn##.afw-topbanner
 ssplay.net,zophim.net###_AM_POPUP_FRAME
 subnhanhvl.co,subnhanh.app,subnhanh.bio###xs-addd0
@@ -1041,7 +1041,7 @@ vietq.vn##section.mar20:nth-of-type(4)
 viettelstore.vn###banner-dai-bottom
 viettelstore.vn###banner-dai-top
 vkoolsss.net##.box-rating
-vkoolsss.net,subnhanhvl.co,subnhanh.app,subnhanh.bio,tructiepdabong5.co,tutientruyen3.xyz###overlay
+vkoolsss.net,subnhanhvl.co,subnhanh.app,subnhanh.bio,tructiepdabong5.co,tutientruyen3.xyz,protruyen2.fun###overlay
 vkoolsss.net,vuonhoalan.net,gunnylau360.net,mythethao.net,phimplay24h.com,kenhgamelau.com,phimno4.xyz,gunnymienphi.net,dailyphimz.com,xemhay24h.com,listnhacai1.com,phim33.tv,247phim.cc,vkooll.net,vungtv.us##.float-ck
 vndoc.com,download.com.vn,quantrimang.com,download.vn,gamevui.vn,khoahoc.tv,meta.vn##.adbox
 vnews.gov.vn##.banner-bottom-menu
@@ -1216,8 +1216,6 @@ nhipcaudautu.vn#@#.ads_top
 pops.vn#@##adsContainer
 pops.vn#@#.ad-placement
 protruyen2.fun#@##adContainer
-protruyen2.fun#@#.ad-slot
-protruyen2.fun#@#.ad_slot
 qthang.net#@#.advert-wrap
 qthang.net#@#.widget-ad
 timvanban.vn#@##ad-slot
