@@ -24,13 +24,17 @@ sort -u -o src/abpvn_adguard_specific.txt src/abpvn_adguard_specific.tmp
 sort -u -o src/abpvn_content_blocker_hot_fix.txt src/abpvn_content_blocker_hot_fix.tmp
 # make time stamp update
 TIME_STAMP=`date +'%d %b %Y %H:%M:%S'`
-VERSION=`date +'%Y%m%d%H%M%S'`
+VERSION=$1
+if [[ -z $VERSION ]]; then
+    VERSION=`date +'%Y%m%d%H%M%S'`
+fi
+
 sed -e "s/_time_stamp_/$TIME_STAMP/g" -e "s/_version_/$VERSION/g" src/abpvn_title.txt > src/abpvn_title.tmp
 echo >> src/abpvn_title.tmp
 # add to 1 file
 # abpvn.txt
 cat src/abpvn_title.tmp src/abpvn_general.txt src/abpvn_ad_domain.txt src/abpvn_elemhide.txt src/abpvn_whitelist.txt src/abpvn_whitelist_elemhide.txt src/abpvn_adult.txt src/abpvn_adult_elemhide.txt > abpvn.tmp
-sed -e '/^$/d' abpvn.tmp > abpvn.txt
+sed -e '/^$/d' -e "s/.patch#/.patch#abpvn/" abpvn.tmp > abpvn.txt
 # abpvn_ublock.txt
 cat src/abpvn_title.tmp src/abpvn_general.txt src/abpvn_ad_domain.txt src/abpvn_elemhide.txt src/abpvn_whitelist.txt src/abpvn_whitelist_elemhide.txt src/abpvn_adult.txt src/abpvn_adult_elemhide.txt src/abpvn_ublock_specific.txt > abpvn_ublock.tmp
 get_replace_rule () {
@@ -55,11 +59,11 @@ get_replace_rule () {
 UBLOCK_REPLACE_RULE=$(get_replace_rule abpvn_ublock_specific)
 if [ "$UBLOCK_REPLACE_RULE" == "" ]
 then
-    sed -e '/^$/d' abpvn_ublock.tmp > abpvn_ublock.txt
+    sed -e '/^$/d' -e "s/.patch#/.patch#abpvn_ublock/" abpvn_ublock.tmp > abpvn_ublock.txt
 else
     echo "UBLOCK_REPLACE_RULE: $UBLOCK_REPLACE_RULE"
     sed $UBLOCK_REPLACE_RULE abpvn_ublock.tmp > abpvn_ublock1.tmp 
-    sed -e '/^$/d' abpvn_ublock1.tmp > abpvn_ublock.txt
+    sed -e '/^$/d' -e "s/.patch#/.patch#abpvn_ublock/" abpvn_ublock1.tmp > abpvn_ublock.txt
 fi
 # abpvn_adguard.txt
 cat src/abpvn_title.tmp src/abpvn_general.txt src/abpvn_ad_domain.txt src/abpvn_elemhide.txt src/abpvn_whitelist.txt src/abpvn_whitelist_elemhide.txt src/abpvn_adult.txt src/abpvn_adult_elemhide.txt src/abpvn_adguard_specific.txt > abpvn_adguard.tmp
@@ -67,26 +71,26 @@ cat src/abpvn_title.tmp src/abpvn_general.txt src/abpvn_ad_domain.txt src/abpvn_
 ADGUARD_REPLACE_RULE=$(get_replace_rule abpvn_adguard_specific)
 if [ "$ADGUARD_REPLACE_RULE" == "" ]
 then
-    sed -e '/^$/d' abpvn_adguard.tmp > abpvn_adguard.txt
+    sed -e '/^$/d' -e "s/.patch#/.patch#abpvn_adguard/" abpvn_adguard.tmp > abpvn_adguard.txt
 else
     echo "ADGUARD_REPLACE_RULE: $ADGUARD_REPLACE_RULE"
     sed $ADGUARD_REPLACE_RULE abpvn_adguard.tmp > abpvn_adguard1.tmp 
-    sed -e '/^$/d' abpvn_adguard1.tmp > abpvn_adguard.txt
+    sed -e '/^$/d' -e "s/.patch#/.patch#abpvn_adguard/" abpvn_adguard1.tmp > abpvn_adguard.txt
 fi
 # abpvn_noelemhide.txt
 cat src/abpvn_title.tmp src/abpvn_general.txt src/abpvn_ad_domain.txt src/abpvn_whitelist.txt src/abpvn_adult.txt > abpvn_noelemhide.tmp
-sed -e '/^$/d' abpvn_noelemhide.tmp > abpvn_noelemhide.txt
+sed -e '/^$/d' -e "s/.patch#/.patch#abpvn_noelemhide/" abpvn_noelemhide.tmp > abpvn_noelemhide.txt
 # abpvn_content_blocker.txt
 cat src/abpvn_title.tmp src/abpvn_general.txt src/abpvn_ad_domain.txt src/abpvn_elemhide.txt src/abpvn_whitelist.txt src/abpvn_whitelist_elemhide.txt src/abpvn_adult.txt src/abpvn_adult_elemhide.txt src/abpvn_content_blocker_hot_fix.txt > abpvn_content_blocker.tmp
 # Search useless rule by content blocker
 CONTENT_BLOCKER_REPLACE_RULE=$(get_replace_rule abpvn_content_blocker_hot_fix)
 if [ "$CONTENT_BLOCKER_REPLACE_RULE" == "" ]
 then
-    sed -e '/^$/d' abpvn_content_blocker.tmp > abpvn_content_blocker.txt
+    sed -e '/^$/d' -e "s/.patch#/.patch#abpvn_content_blocker/" abpvn_content_blocker.tmp > abpvn_content_blocker.txt
 else
     echo "CONTENT_BLOCKER_REPLACE_RULE: $CONTENT_BLOCKER_REPLACE_RULE"
     sed $CONTENT_BLOCKER_REPLACE_RULE abpvn_content_blocker.tmp > abpvn_content_blocker1.tmp
-    sed -e '/^$/d' abpvn_content_blocker1.tmp > abpvn_content_blocker.txt
+    sed -e '/^$/d' -e "s/.patch#/.patch#abpvn_content_blocker/" abpvn_content_blocker1.tmp > abpvn_content_blocker.txt
 fi
 # remove tmp file
 rm -rf *.tmp src/*.tmp
