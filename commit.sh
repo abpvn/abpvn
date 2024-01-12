@@ -2,6 +2,7 @@
 VERSION=`date +'%Y%m%d%H%M%S'`
 cd filter
 bash build.sh "$VERSION"
+git add src
 cd ..
 PATCHES_DIR="filter/patches"
 bash make-diffpatch.sh "$VERSION" "$PATCHES_DIR"
