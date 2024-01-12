@@ -12,7 +12,7 @@ class Const():
         'firstmessfloadright.samItem', 'banner-top-box.click',
         'clear.hd', 'info.card', 'left.box', 'right.box',
         'blqPr.nwsItHm', 'text-center.adsense', '.btn', '.show',
-        'show.fade', 'parent.special', 'flex-1.table'
+        'show.fade', 'parent.special', 'flex-1.table', '.patch'
     ]
     SKIP_CHECK_REDIRECT = [
         'amazonaws.com', 'blogspot.com', 'blogtruyen.com', 'fptplay.net',
