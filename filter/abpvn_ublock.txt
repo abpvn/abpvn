@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 20240115133409
+! Version: 20240115071010
 ! Title: ABPVN List
-! Last modified: 15 Jan 2024 13:34:09 UTC+7
-! Diff-Path: patches/20240115133409.patch#abpvn_ublock
+! Last modified: 15 Jan 2024 07:10:10 UTC+7
+! Diff-Path: patches/20240115071010.patch#abpvn_ublock
 ! Diff-Expires: 60 minutes
 ! Expires: 1 days (update frequency)
 !
@@ -151,7 +151,7 @@
 ||i.imgur.com/FbUH5AQ.png
 ||i.imgur.com/Q0a2mv2.png
 ||i.imgur.com^$image,domain=nhacdj.vn|animet.net|diendanit.net|banbuondalat.com|khoedep.vn|animeweb.vip|hoathinhtq.tv|www1.fimfast1.pr|chillhaynet.click|hh3d.tv|xem.tructiepnba.com|vungtv.us
-||i.imgur.com^*.gif$image,domain=ghienphim11.net|247phim.cc|dailyphimz.com|mv.phimmoiaz.cc|phimgichill.net|ophimhdvn3.net|mythethao.net|xemtivi4k.com|animevietsub.io|tructiep.caheo18.tv|vtipster.net|huphimtv.com|zuiphim2.com|xoilac14.org|film365.in|live2.90phut10.live|xemphimviet1.net|90phutt.tv|watch.ezyproxy.com|live2.thapcam2.net|phimmoiyyy.net|live.vebo4.net|xemtv.tvhayhd.com|phimbocn.com|motphimhan.cc|khoaiphim.com|motphimz.cc
+||i.imgur.com^*.gif$image,domain=ghienphim11.net|247phim.cc|dailyphimz.com|mv.phimmoiaz.cc|phimgichill.net|ophimhdvn3.net|mythethao.net|xemtivi4k.com|animevietsub.io|tructiep.caheo18.tv|vtipster.net|huphimtv.com|zuiphim2.com|xoilac14.org|film365.in|live2.90phut10.live|xemphimviet1.net|90phutt.tv|watch.ezyproxy.com|live2.thapcam2.net|phimmoiyyy.net|live.vebo4.net|xemtv.tvhayhd.com|phimbocn.com|motphimhan.cc|motphimz.cc
 ||i.postimg.cc^*.gif$domain=motphimz.cc
 ||i.servimg.com/u/f22/$domain=4rkinggame.com
 ||i.upanh.org^*.gif$domain=xemhay24h.com
@@ -166,7 +166,6 @@
 ||imgyn.imageshh.com^*.gif$image,domain=mphim14.com|hhchina.tv
 ||kenhgamelau.com^*.gif
 ||kenhtin.net/upload/images/banner-
-||khoaiphim.com/image/qc/$image
 ||khophim-poster.cuoiia.top^*.gif$image,domain=coiphim18.com
 ||kienthuc.net.vn/*.ads
 ||kienviet.net/*banner
@@ -653,15 +652,6 @@ ketqua9.net##.col-sm-10.kqcenter
 ketqua9.net,ketqua3.net##.kqbackground.vien ~ a[target="_blank"]
 ketqua9.net,nghean24h.vn,xem.tructiepnba.com,phimmoi4s.com,biphim.io,vidian.wiki,truyenchu.com.vn,vbfast.xyz,xemtivi4k.com,abtruyen.com##a[rel="nofollow"]
 khiphach.vip###qc-kpgame
-khoaiphim.com###hide_top
-khoaiphim.com###top_content
-khoaiphim.com##.ads-embed
-khoaiphim.com##.float-ck-center-lt1
-khoaiphim.com##.separator_mb
-khoaiphim.com##.separator_pc
-khoaiphim.com##.topbaner
-khoaiphim.com##.topbaner_mb
-khoaiphim.com,phimcuon.com###ads_preload
 khomuc5.live##.button-ads-header
 khomuc5.live##.main-carousel-wrapper
 khomuc5.live##.top-bookies
@@ -804,6 +794,7 @@ phim202.com###itro_opaco
 phim33.tv##div[data-value="1"]
 phimbathu.one###catfish_content
 phimbocn.com###sticky
+phimcuon.com###ads_preload
 phimcuon.com##.show.ads-sticky
 phimdacap.tv##[data-clm="ccccc2"]
 phimdacap.tv##[data-id="ap3poapup"]
@@ -849,7 +840,7 @@ phimplay24h.com###itro_popup
 phimtuoitho.tv##[href^="https://www.toprevenuegate.com/q7rbxxz1v"]
 phimvietsub.pro,subnhanh.xyz##.sticky_bottom
 phimvietsub.pro,tvhayh.org,api.anime3s.com,subnhanh.xyz##.t_logo
-phimvuihd.org,hh3dhay.com,phimtn.com,khoaiphim.com,phimhay.in,coiphim18.com,xemhay24h.com,phimtuoitho.tv,xem8z.com,motphimz.cc##.float-ck-center-lt
+phimvuihd.org,hh3dhay.com,phimtn.com,phimhay.in,coiphim18.com,xemhay24h.com,phimtuoitho.tv,xem8z.com,motphimz.cc##.float-ck-center-lt
 phimyeuthichz.com##.sticky-footer
 phimyeuthichz.com,boophim.net,chillphimmoiz.org##.preload-banner
 phunumoi.net.vn,nhipcaudautu.vn##div[id^="ads_"]
@@ -1402,8 +1393,6 @@ hh3dhay.com,hh3dhay.xyz##+js(acs, document.createElement, ;break;case)
 holyphim.com##+js(acs, window.addEventListener, window.open)
 ios.codevn.net##+js(acs, setInterval, offsetHeight)
 javnong.cc##+js(aopr, Math.round)
-khoaiphim.com##+js(acs, addEvent, popunder)
-khoaiphim.com,phimmoinay.tv##+js(acs, jQuery, click_time)
 khohieu.com##+js(acs, document.getElementById, chpadblock)
 khomuc5.live,90phutt.tv,gocarrots.org,veboz.net,live2.thapcam2.net,blog.abit.vn,gavang1.link,xem1.gavang1.net##html:style(overflow: auto!important)
 khomuc5.live,veboz.net,live2.thapcam2.net,blog.abit.vn##.modal-backdrop.show
@@ -1421,6 +1410,7 @@ phimgichill.net##+js(acs, eval, $._Eu)
 phimgichill.net,mephimnhe1.net##+js(acs, jQuery, popurl)
 phimmoi4s.com##+js(json-prune, ads)
 phimmoi4s.com,phimdinhcao.net,phimlongtieng.net,phimdinhcao.com##+js(aopr, localStorage)
+phimmoinay.tv##+js(acs, jQuery, click_time)
 phimvietsub.pro,api.anime3s.com,subnhanh.xyz##+js(set, maxAds, 0)
 phimvuihd.org##+js(set, urlAds, '')
 plvb.xyz##+js(aopr, ads)
