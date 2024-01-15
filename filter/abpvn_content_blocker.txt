@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 20240115075914
+! Version: 20240115090554
 ! Title: ABPVN List
-! Last modified: 15 Jan 2024 07:59:14 UTC+7
-! Diff-Path: patches/20240115075914.patch#abpvn_content_blocker
+! Last modified: 15 Jan 2024 09:05:55 UTC+7
+! Diff-Path: patches/20240115090554.patch#abpvn_content_blocker
 ! Diff-Expires: 60 minutes
 ! Expires: 1 days (update frequency)
 !
@@ -455,7 +455,7 @@ bantincongnghe.net##[href*="cellphones.com.vn"]
 baodauthau.vn,mmo4me.com##div[class*="ads"]
 baohaugiang.com.vn##.top-header
 baomoi.com###BaoMoi_HalfPage
-baomoi.com#?#[id="__next"]>div:-abp-has(#BaoMoi_Masthead)
+baomoi.com##[id="__next"]>div:has(#BaoMoi_Masthead)
 baonga.com##.monkey-content-duoicanbiet
 baonga.com##.monkey-section-tinnoibat
 baonga.com##div.monkey-qc
@@ -633,8 +633,8 @@ hoc24.vn###modal-ads-olm
 hoidap247.com##.ads-home-feed
 homedy.com##.left-slider
 hosocongty.vn##.advertTop
+hosocongty.vn##.hsdn>li:has(.adsbygoogle)
 hosocongty.vn##.module_plugins
-hosocongty.vn#?#.hsdn>li:-abp-has(.adsbygoogle)
 hotruyen.com##.text-center.adsense
 huphimtv.com##.banner-bot-mobile
 huphimtv.com##.banner-top-mobile
@@ -682,7 +682,7 @@ lichvannien365.com##div[style="width: 100%; min-height: 240px; text-align: cente
 lichvannien365.com##div[style="width: 100%; min-height: 90px; text-align: center;"]
 lichvannien365.com##div[style="width: 100%;text-align: center;min-height: 280px;"]
 link1s.com###link-view>center:nth-of-type(1)
-linkerpt.com#?#[id^="bdaia-widget-html"]:-abp-has(.widget-inner>[href*="premiumvns.com"])
+linkerpt.com##[id^="bdaia-widget-html"]:has(.widget-inner>[href*="premiumvns.com"])
 linkneverdie.net##.info-footer:nth-child(4)
 listnhacai1.com##.dwpb-action
 listnhacai1.com##.fixtop
@@ -896,8 +896,8 @@ tapchibitcoin.io##.lepopup-popup-overlay
 tapchikientruc.com.vn##._ning_outer
 tctruyen.com,tctruyen.net,abtruyen.com##.no-auto-popup
 tctruyen.com,tctruyen.net,abtruyen.com##.qc-adskeeper
-techrum.vn#?#.block:-abp-has(.block-container>.block-body>a[href])
-techrum.vn#?#.block:-abp-has(.block-container>.block-body>ins)
+techrum.vn##.block:has(.block-container>.block-body>a[href])
+techrum.vn##.block:has(.block-container>.block-body>ins)
 tenovi.net###ad_balloon
 thanhnien.vn##.asd-headt
 thanhnien.vn##.detail-tab>.container
