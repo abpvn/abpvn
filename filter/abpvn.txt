@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 20240115075917
+! Version: 20240115090809
 ! Title: ABPVN List
-! Last modified: 15 Jan 2024 07:59:17 UTC+7
-! Diff-Path: patches/20240115075917.patch#abpvn
+! Last modified: 15 Jan 2024 09:08:09 UTC+7
+! Diff-Path: patches/20240115090809.patch#abpvn
 ! Diff-Expires: 60 minutes
 ! Expires: 1 days (update frequency)
 !
@@ -772,8 +772,8 @@
 24h.com.vn##.cate-24h-foot-box-adv-view-news>.row>.col-6:first-child
 24h.com.vn##.module3
 24h.com.vn##DIV[class="banner-LR"]
+24h.com.vn##div.pos-rel:has(a[rel="nofollow sponsored"])
 24h.com.vn#?#.col:-abp-has(span:-abp-contains(Tin tài trợ))
-24h.com.vn#?#div.pos-rel:-abp-has(a[rel="nofollow sponsored"])
 24hmoney.vn##.banner-top-box.click
 2banh.vn###position_full_top_banner_pc
 2banh.vn##.lb_overlay
@@ -814,7 +814,7 @@ autopro.com.vn##.admicro
 baohaugiang.com.vn##.top-header
 baohaugiang.com.vn,tructiep.rakhoi14.tv,tructiep.cakhia54.tv,tructiep.cakhia14.com,tructiep.caheo18.tv##.sticky
 baomoi.com###BaoMoi_HalfPage
-baomoi.com#?#[id="__next"]>div:-abp-has(#BaoMoi_Masthead)
+baomoi.com##[id="__next"]>div:has(#BaoMoi_Masthead)
 baonga.com##.monkey-content-duoicanbiet
 baonga.com##.monkey-section-tinnoibat
 baonga.com##div.monkey-qc
@@ -994,8 +994,8 @@ hoc24.vn###modal-ads-olm
 hoidap247.com##.ads-home-feed
 homedy.com##.left-slider
 hosocongty.vn##.advertTop
+hosocongty.vn##.hsdn>li:has(.adsbygoogle)
 hosocongty.vn##.module_plugins
-hosocongty.vn#?#.hsdn>li:-abp-has(.adsbygoogle)
 hotruyen.com##.text-center.adsense
 huphimtv.com###sideAdsLeft
 huphimtv.com###sideAdsRight
@@ -1031,8 +1031,8 @@ khomuc5.live##.main-carousel-wrapper
 khomuc5.live##.top-bookies
 khomuc5.live##.tvc-link-ads-full
 khuchotot.com##.ads_header
+kick4ss.com##td[width="100%"] div[id]:has(a[href="/k/?q=q"])
 kick4ss.com##td[width="100%"]>.tabNavigation
-kick4ss.com#?#td[width="100%"] div[id]:-abp-has(a[href="/k/?q=q"])
 kienthuc.net.vn##.sponsor-zone
 kienthucykhoa.edu.vn###widget-12
 kinhtedothi.vn###advSharetopmenu1
@@ -1235,8 +1235,8 @@ protruyen2.fun##.ad-image
 protruyen2.fun##.click-ads
 protruyen2.fun##.close-button
 protruyen2.fun##div.mrb10
+qthang.net##.HTML:has(.adsbygoogle)
 qthang.net##.ad-script
-qthang.net#?#.HTML:-abp-has(.adsbygoogle)
 quantrimang.com###adrighttop
 quantrimang.com###adsposttop
 quantrimang.com,download.com.vn,khoahoc.tv,gamevui.vn,meta.vn##.adbox
@@ -1278,8 +1278,8 @@ tapchibitcoin.io##.lepopup-popup-container
 tapchibitcoin.io##.lepopup-popup-overlay
 tctruyen.com,tctruyen.net,abtruyen.com##.no-auto-popup
 tctruyen.com,tctruyen.net,abtruyen.com##.qc-adskeeper
-techrum.vn#?#.block:-abp-has(.block-container>.block-body>a[href])
-techrum.vn#?#.block:-abp-has(.block-container>.block-body>ins)
+techrum.vn##.block:has(.block-container>.block-body>a[href])
+techrum.vn##.block:has(.block-container>.block-body>ins)
 tenovi.net###ad-masthead
 tenovi.net###ad_balloon
 tenovi.net###m-adsence-popup
@@ -1460,7 +1460,7 @@ www.a3manga.online##.single-video
 www.nettruyenclub.com,nhattruyenup.com,nhattruyenmax.com##.container div:not(.top)>div.mrb5.mrt5.text-center>a
 www.nettruyenclub.com,nhattruyenup.com,nhattruyenmax.com##.mrb5.text-center.container
 www.thuocbietduoc.com.vn###neo-right-ads
-www.youtube.com#?#ytd-rich-item-renderer:-abp-has(.ytd-in-feed-ad-layout-renderer)
+www.youtube.com##ytd-rich-item-renderer:has(.ytd-in-feed-ad-layout-renderer)
 www5.cbox.ws##a[rel="noopener noreferrer"]
 xdaforums.com##.adonis-placeholder
 xdaforums.com##.purchad
