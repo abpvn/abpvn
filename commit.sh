@@ -5,6 +5,9 @@ bash build.sh "$VERSION"
 git add src
 cd ..
 PATCHES_DIR="filter/patches"
+# Clean outdate patches
+bash clean-patches.sh "$PATCHES_DIR"
+# Create new patches
 bash make-diffpatch.sh "$VERSION" "$PATCHES_DIR"
 SKIP_COMMIT=$1
 if [[ -z $SKIP_COMMIT ]]; then
