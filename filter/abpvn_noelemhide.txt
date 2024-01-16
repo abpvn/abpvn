@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 20240116153740
+! Version: 20240116162053
 ! Title: ABPVN List
-! Last modified: 16 Jan 2024 15:37:40 UTC+7
-! Diff-Path: patches/20240116153740.patch#abpvn_noelemhide
+! Last modified: 16 Jan 2024 16:20:54 UTC+7
+! Diff-Path: patches/20240116162053.patch#abpvn_noelemhide
 ! Diff-Expires: 60 minutes
 ! Expires: 1 days (update frequency)
 !
@@ -37,8 +37,10 @@
 /adv/*$image,domain=bongdaso66.net
 /banner-ads.
 /banner/*.gif$domain=~tvphapluat.vn
+/beardeddragon$script
 /blueserving.
 /core/*$script,domain=gamek.vn|genk.vn|kenh14.vn|cafef.vn
+/detroitchicago$script
 /disable-devtool.min.js$script
 /giadinhonline.vn/files/qc/
 /i.imgur.com/$domain=xemphimchill.xyz
@@ -48,6 +50,7 @@
 /newchill/*gif$image
 /polyad.
 /popunder7.
+/porpoiseant$script
 /qc1.js$script,domain=tvzinghd.com
 /qcao/*$domain=~thegioididong.com
 /quang%20cao/*
@@ -188,6 +191,7 @@
 ||maclife.io^*.gif
 ||media.giphy.com/media/$image,domain=animevietsub.io
 ||media.nghean24h.vn$image
+||media.yeah1.com/files/qc/$image,domain=yeah1.com
 ||mehoathinh3.com/xml/
 ||mephimtv.info/wp-banner$image
 ||mocfun.net/uploads/banners/
@@ -310,12 +314,7 @@
 ||xahoingaynay.com.vn/upload/$image
 ||xc.1357668.com^*.gif$domain=7mvn2.com
 ||xmedia.antt.vn/upload/*.gif$image,domain=antt.vn
-||xoso.com.vn^*.gif
-||xoso.com/images/banners/
-||xoso888.win^*.gif
 ||ycongnghe.com$csp=script-src 'self' 'unsafe-inline'
-||yeah1.com/native-ads/
-||yhocdata.com/wp-content/plugins/dh-anti-adblocker/
 ||zcine.net^*.gif$image
 ||zunia.vn/ads.html$subdocument,domain=tracnghiem.net
 ! ---------- Ad domain ----------
@@ -341,6 +340,7 @@
 ||adpushup.com^
 ||adroll.com^$third-party
 ||ads-cdn.fptplay.net^
+||ads.pubmatic.com^
 ||adservme.com^$third-party
 ||adsplay.net^
 ||adsrvr.org^
@@ -469,6 +469,7 @@
 ||exdynsrv.com^
 ||exoclick.com^
 ||explorads.media^
+||ezodn.com^
 ||fb88sports.com^$third-party
 ||fbcdn2.com^
 ||firstimpression.io^
@@ -709,7 +710,6 @@
 @@||voz.vn/u/adx.$xmlhttprequest
 @@||www.clickadu.com/startup/flat-ui/js/bootstrap-select.js$domain=linkneverdie.net
 @@||xahoingaynay.com.vn/upload/20989/20200817/Asset_2_8x_9596af5d4e.png$~third-party
-@@||yhocdata.com/ext/d1/assets/js/ads-prebid.js
 @@||z-na.amazon-adsystem.com^$domain=azrom.net
 !------ ABPVN Adult block -------
 $third-party,script,domain=sexdiaryx.us
