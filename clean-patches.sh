@@ -12,8 +12,8 @@ for file in "$PATCHES_DIR"/*.patch; do
         OUTDATE_PREFIX=`date -d "$i days ago" +'%Y%m%d'`
         if [[ "$file" == "$PATCHES_DIR/$OUTDATE_PREFIX"* ]]; then
             rm -rf $file
-            git add $file
-            printf '%s being deleted\n' "$file"
+            git add -A $file
+            printf '%s being deleted because is patches for %d days ago\n' "$file" "$i"
             break
         fi
     done
