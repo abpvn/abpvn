@@ -61,7 +61,6 @@ if [ "$UBLOCK_REPLACE_RULE" == "" ]
 then
     sed -e '/^$/d' -e "s/.patch#/.patch#abpvn_ublock/" abpvn_ublock.tmp > abpvn_ublock.txt
 else
-    echo "UBLOCK_REPLACE_RULE: $UBLOCK_REPLACE_RULE"
     sed $UBLOCK_REPLACE_RULE abpvn_ublock.tmp > abpvn_ublock1.tmp 
     sed -e '/^$/d' -e "s/.patch#/.patch#abpvn_ublock/" abpvn_ublock1.tmp > abpvn_ublock.txt
 fi
@@ -73,7 +72,6 @@ if [ "$ADGUARD_REPLACE_RULE" == "" ]
 then
     sed -e '/^$/d' -e "s/.patch#/.patch#abpvn_adguard/" abpvn_adguard.tmp > abpvn_adguard.txt
 else
-    echo "ADGUARD_REPLACE_RULE: $ADGUARD_REPLACE_RULE"
     sed $ADGUARD_REPLACE_RULE abpvn_adguard.tmp > abpvn_adguard1.tmp 
     sed -e '/^$/d' -e "s/.patch#/.patch#abpvn_adguard/" abpvn_adguard1.tmp > abpvn_adguard.txt
 fi
@@ -88,7 +86,6 @@ if [ "$CONTENT_BLOCKER_REPLACE_RULE" == "" ]
 then
     sed -e '/^$/d' -e "s/.patch#/.patch#abpvn_content_blocker/" abpvn_content_blocker.tmp > abpvn_content_blocker.txt
 else
-    echo "CONTENT_BLOCKER_REPLACE_RULE: $CONTENT_BLOCKER_REPLACE_RULE"
     sed $CONTENT_BLOCKER_REPLACE_RULE abpvn_content_blocker.tmp > abpvn_content_blocker1.tmp
     sed -e '/^$/d' -e "s/.patch#/.patch#abpvn_content_blocker/" abpvn_content_blocker1.tmp > abpvn_content_blocker.txt
 fi
