@@ -17,7 +17,7 @@ bash make-diffpatch.sh "$VERSION" "$PATCHES_DIR"
 FILTER_FILES=$(git ls-files --exclude-standard -- filter/*.txt)
 bash update-diffpatches.sh "$GITHUB_REPOSITORY" "$PATCHES_DIR" "$FILTER_FILES"
 SKIP_COMMIT=$1
-if [ $SKIP_COMMIT != 'true' ]; then
+if [ "$SKIP_COMMIT" != 'true' ]; then
     commit_type="A"
     read -p "Enter filter update type Add (A), Modified (M), Delete (D)? " update_type
     if [ $update_type == 'm' ] || [ $update_type == 'M' ]
