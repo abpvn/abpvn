@@ -1,14 +1,16 @@
 #!/bin/bash
+GITHUB_REPOSITORY="abpvn/abpvn"
 VERSION=`date +'%Y%m%d%H%M%S'`
 cd filter
 bash build.sh "$VERSION"
 git add src
 cd ..
 PATCHES_DIR="filter/patches"
-# Clean outdate patches
-bash clean-patches.sh "$PATCHES_DIR"
 # Create new patches
 bash make-diffpatch.sh "$VERSION" "$PATCHES_DIR"
+# Update exist patches
+FILTER_FILES=$(git ls-files --exclude-standard -- filter/*.txt)
+bash update-diffpatches.sh "$GITHUB_REPOSITORY" "$PATCHES_DIR" "$FILTER_FILES"
 SKIP_COMMIT=$1
 if [[ -z $SKIP_COMMIT ]]; then
     commit_type="A"
@@ -24,4 +26,5 @@ if [[ -z $SKIP_COMMIT ]]; then
     gitcomment="$commit_type: $domain"
     git add .
     git commit -m "$gitcomment"
+    git tag "$VERSION"
 fi
