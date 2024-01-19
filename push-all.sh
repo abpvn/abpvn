@@ -12,9 +12,9 @@ cd "$TEMP_DIR"
 TEMP_VERSION=$(cat version)
 git tag $TEMP_VERSION
 git push origin $TEMP_VERSION
+cd "$CURRENT_DIR"
 rm -rf $TEMP_DIR
 git worktree prune
 
-cd "$CURRENT_DIR"
 sleep 5
 bash pull.sh
