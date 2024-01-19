@@ -10,19 +10,14 @@ set -e
 # It's not being hosted at CDN because that
 # repo is also used as a website
 
-REPO_DIR=$1
-if [[ -z $REPO_DIR ]]; then
-    echo "Error: repo directory is not provided, aborting"
-    exit 1
-fi
 
-PATCHES_DIR=$2
+PATCHES_DIR=$1
 if [[ -z $PATCHES_DIR ]]; then
     echo "Error: patches directory is not provided, aborting"
     exit 1
 fi
 
-FILTER_FILES=$3
+FILTER_FILES=$2
 if [[ -z $FILTER_FILES ]]; then
     echo "Error: filter lists are not provided, aborting"
     exit 1
@@ -31,15 +26,28 @@ FILTER_FILES=( "$FILTER_FILES" )
 
 PATCH_FILES=( $(ls -1v "$PATCHES_DIR"/*.patch | head -n -1) )
 
-# Keep only the most recent (5-day x 4-per-day) patches
-OBSOLETE_PATCHES=( $(ls -1v "$PATCHES_DIR"/*.patch | head -n -20) )
+SKIP_PUSH_DEL_TAG=$3
+DELETED_VERSIONS=''
+
+# Keep only the most recent 30 patches
+OBSOLETE_PATCHES=( $(ls -1v "$PATCHES_DIR"/*.patch | head -n -30) )
 for FILE in "${OBSOLETE_PATCHES[@]}"; do
     echo "Removing obsolete patch $FILE"
+    # Extract tag from patch file name
+    [[ ${FILE} =~ ^$PATCHES_DIR/([0-9]{14})\.patch$ ]] && \
+        DEL_VERSION=${BASH_REMATCH[1]}
+    if [ "$DELETED_VERSION" == '' ]; then
+        DELETED_VERSIONS=$DEL_VERSION
+    else
+        DELETED_VERSIONS="$DELETED_VERSIONS $DEL_VERSION"
+    fi
     git rm "$FILE"
 done
 
 NEW_PATCH_FILE=$(mktemp)
 DIFF_FILE=$(mktemp)
+
+ALL_VERSION=$(git tag --list)
 
 for PATCH_FILE in "${PATCH_FILES[@]}"; do
 
@@ -47,15 +55,16 @@ for PATCH_FILE in "${PATCH_FILES[@]}"; do
     [[ ${PATCH_FILE} =~ ^$PATCHES_DIR/([0-9]{14})\.patch$ ]] && \
         PREVIOUS_VERSION=${BASH_REMATCH[1]}
 
-    # This will receive a clone of an old version of the current repo
-    echo "Fetching repo at $PREVIOUS_VERSION version"
-    OLD_REPO=$(mktemp -d)
-    git clone -q --single-branch --branch "$PREVIOUS_VERSION" --depth=1 "https://github.com/$REPO_DIR.git" "$OLD_REPO" 2>/dev/null || true
-
     # Skip if version doesn't exist
-    if [ -z "$(ls -A "$OLD_REPO" 2>/dev/null)" ]; then
+    if [[ "$ALL_VERSION" != *"$PREVIOUS_VERSION"* ]]; then
+        echo "Skip version $PREVIOUS_VERSION because does not exist"
         continue;
     fi
+
+    # This will receive a clone of an old version of the current repo to another git work tree
+    echo "Checkout repo at version $PREVIOUS_VERSION"
+    OLD_REPO=$(mktemp -d)
+    git worktree add -f "$OLD_REPO" "$PREVIOUS_VERSION"
 
     : > "$NEW_PATCH_FILE"
 
@@ -112,5 +121,13 @@ for PATCH_FILE in "${PATCH_FILES[@]}"; do
 
 done
 
+git worktree prune
 rm -f "$DIFF_FILE"
 rm -f "$NEW_PATCH_FILE"
+if [ "$DELETED_VERSIONS" != '' ]; then
+    if [ "$SKIP_PUSH_DEL_TAG" != 'true' ]; then
+        git push -d origin $DELETED_VERSIONS
+    else
+        echo "These tag should be delete manualy: '$DELETED_VERSIONS'"
+    fi
+fi
