@@ -1,5 +1,6 @@
 #!/bin/bash
 git push --all
-git push --tags
+VERSION=$(cat version)
+git push origin $VERSION
 sleep 5
 bash pull.sh
