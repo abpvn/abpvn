@@ -10,7 +10,7 @@ TEMP_DIR=$(mktemp -d)
 git worktree add -f "$TEMP_DIR" master
 cd "$TEMP_DIR"
 TEMP_VERSION=$(cat version)
-git tag $TEMP_DIR
+git tag $TEMP_VERSION
 git push origin $TEMP_VERSION
 rm -rf $TEMP_DIR
 git worktree prune
