@@ -19,7 +19,7 @@ class Const():
         'doubleclick.net', 'github.io', 'herokuapp.com', 'zing.vn', 'com.vn',
         'net.vn', 'edu.vn', 'googlesyndication.com', 'gov.vn', 'nct.vn', 'org.vn',
         'phukienthoitranggiare.com', 'cloudfront.net', 'admarketplace.net', 'www5.cbox.ws',
-        'web1s.asia'
+        'web1s.asia', 'vinaurl.net'
     ]
     REDIRECT_REJECT_TARGET_DOMAIN = [
         'www.google.com', 'www.facebook.com', 'www.advertising.yahooinc.com', 'marketingplatform.google.com',
