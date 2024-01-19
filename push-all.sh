@@ -6,12 +6,12 @@ git push origin $VERSION
 CURRENT_DIR=$(pwd)
 
 # Create tag for master branch
-$TEMP_DIR=$(mktemp -d)
+TEMP_DIR=$(mktemp -d)
 git worktree add -f "$TEMP_DIR" master
 cd "$TEMP_DIR"
-TEMP_DIR=$(cat version)
+TEMP_VERSION=$(cat version)
 git tag $TEMP_DIR
-git push origin $TEMP_DIR
+git push origin $TEMP_VERSION
 rm -rf $TEMP_DIR
 git worktree prune
 
