@@ -1,7 +1,5 @@
 #!/bin/bash
-if [[ -z $GITHUB_REPOSITORY ]]; then
-    GITHUB_REPOSITORY="abpvn/abpvn"
-fi
+SKIP_COMMIT=$1
 VERSION=$2
 if [[ -z $VERSION ]]; then
     VERSION=`date +'%Y%m%d%H%M%S'`
@@ -15,8 +13,7 @@ PATCHES_DIR="filter/patches"
 bash make-diffpatch.sh "$VERSION" "$PATCHES_DIR"
 # Update exist patches
 FILTER_FILES=$(git ls-files --exclude-standard -- filter/*.txt)
-bash update-diffpatches.sh "$GITHUB_REPOSITORY" "$PATCHES_DIR" "$FILTER_FILES"
-SKIP_COMMIT=$1
+bash update-diffpatches.sh "$PATCHES_DIR" "$FILTER_FILES" "$SKIP_COMMIT"
 if [ "$SKIP_COMMIT" != 'true' ]; then
     commit_type="A"
     read -p "Enter filter update type Add (A), Modified (M), Delete (D)? " update_type
