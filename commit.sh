@@ -28,5 +28,4 @@ if [ "$SKIP_COMMIT" != 'true' ]; then
     gitcomment="$commit_type: $domain"
     git add .
     git commit -m "$gitcomment"
-    git tag "$VERSION"
 fi
