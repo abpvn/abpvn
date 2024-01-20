@@ -29,8 +29,8 @@ PATCH_FILES=( $(ls -1v "$PATCHES_DIR"/*.patch | head -n -1) )
 SKIP_PUSH_DEL_TAG=$3
 DELETED_VERSIONS=''
 
-# Keep only the most recent 30 patches
-OBSOLETE_PATCHES=( $(ls -1v "$PATCHES_DIR"/*.patch | head -n -30) )
+# Keep only the most recent 20 patches
+OBSOLETE_PATCHES=( $(ls -1v "$PATCHES_DIR"/*.patch | head -n -20) )
 for FILE in "${OBSOLETE_PATCHES[@]}"; do
     echo "Removing obsolete patch $FILE"
     # Extract tag from patch file name
