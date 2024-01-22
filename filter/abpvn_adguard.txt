@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 20240122152051
+! Version: 20240122195524
 ! Title: ABPVN List
-! Last modified: 22 Jan 2024 15:20:52 UTC+7
-! Diff-Path: patches/20240122152051.patch#abpvn_adguard
+! Last modified: 22 Jan 2024 19:55:24 UTC+7
+! Diff-Path: patches/20240122195524.patch#abpvn_adguard
 ! Diff-Expires: 60 minutes
 ! Expires: 1 days (update frequency)
 !
@@ -87,13 +87,11 @@
 ||baohaugiang.com.vn/uploads/SlideHomeimg/
 ||baomoi.com$csp=script-src data: blob: * 'self' 'unsafe-inline'
 ||baonga.com/FileUpload/Images/*banner
-||batdongsan.com.vn/*/Banner/
 ||bf.333xbet.com/18881999/video888.mp4$domain=phimhaytv.info,rewrite=abp-resource:blank-mp3
 ||bf.333xbet.com^$media,third-party,domain=~phimhaytv.info
 ||biphim.io/public/prom_ad/prom_ad.js$script
 ||blog.abit.vn/wp-content/uploads/2020/05/abit_$image
 ||blogger.googleusercontent.com^$image,domain=hhtqnet.tv|hhninja1.tv|xem8z.com
-||blogtruyenvn.com^*.gif$image
 ||bonbanh.com/ad/
 ||bongdalu4.com^*.gif
 ||boophim.net^*.gif$image
@@ -149,7 +147,7 @@
 ||i.imgur.com/81uid6d.jpg
 ||i.imgur.com/FbUH5AQ.png
 ||i.imgur.com/Q0a2mv2.png
-||i.imgur.com^$image,domain=nhacdj.vn|diendanit.net|banbuondalat.com|khoedep.vn|hoathinhtq.tv|chillhaynet.click|hh3d.tv|xem.tructiepnba.com|vungtv.us
+||i.imgur.com^$image,domain=nhacdj.vn|diendanit.net|banbuondalat.com|khoedep.vn|hoathinhtq.tv|hh3d.tv|xem.tructiepnba.com|vungtv.us
 ||i.imgur.com^*.gif$image,domain=ghienphim11.net|dailyphimz.com|mv.phimmoiaz.cc|phimgichill.net|ophimhdvn3.net|mythethao.net|xemtivi4k.com|tructiep.caheo18.tv|vtipster.net|huphimtv.com|vuaphimmoi2.net|xoilac14.org|film365.in|live3.90phut10.live|xemphimviet1.net|watch.ezyproxy.com|live3.thapcam2.net|phimmoiyyy.net|live.vebo4.net|live2.vebo4.net|tvhayhd.com|phimbocn.com|motphimhan.cc|hoathinh4k.net
 ||i.postimg.cc^*.gif$domain=motphimz.cc
 ||i.servimg.com/u/f22/$domain=4rkinggame.com
@@ -164,7 +162,6 @@
 ||images1.violympic.vn/assets/images/*.gif
 ||images2-focus-opensocial.googleusercontent.com^*.gif$image,domain=phimdinhcao.net|phimdinhcao.com|phimlongtieng.net
 ||img-portal-prod.s3.amazonaws.com/uploads/image/attachment/3380/HomeRandom2.gif
-||img.blogtruyenvn.com/sharex/$image
 ||img.dtruyen.com/login-ads-desktop.gif$domain=dtruyen.com
 ||img.upanh.tv^*.gif$image,domain=phimtuoitho.tv|xemhay24h.com
 ||imgyn.imageshh.com^*.gif$image,domain=mphim14.com|hhchina.tv
@@ -808,11 +805,11 @@ baomoi.com##[id="__next"]>div:has(#BaoMoi_Masthead)
 baonga.com##.monkey-content-duoicanbiet
 baonga.com##.monkey-section-tinnoibat
 baonga.com##div.monkey-qc
-batdongsan.com.vn##.adPosition
 bds123.vn##.js-ad-fixed-position
 bestx.stream###video_player ~ div[id]
 biphim.io###top_oddd
-biphim.io,biphims.co,biphims.cc##.banner-sticky-footer-wrapper
+biphim.io##.underplayer_btn
+biphims.co,biphims.cc##.banner-sticky-footer-wrapper
 blockchain.com##.bci-ad
 blog.abit.vn##.ab-adv_banner
 blog.abit.vn##.button-dangkyngay
@@ -822,7 +819,6 @@ blogtruyenvn.com##.BT-Ads
 blogtruyenvn.com##.qc-inner
 blogtruyenvn.com##div.qc_TC_Chap_Middle
 blogtruyenvn.com##div[id^="qc_M_"]
-blogtruyenvn.com##div[style*="position: fixed;"]
 bluphim.com##.container>div[style^="height: 228px"]
 boctem.com,phimdinhcao.net,phimlongtieng.net,phimdinhcao.com,vuaphimmoi2.net,motchillz.org,phimhoathinh3d.com,vkooll.net,hoathinhtq.tv,247phim.cc,hh3d.tv,vungtv.us###popup-giua-man-hinh
 bongda.com.vn##.top_page
@@ -1062,7 +1058,6 @@ luotphimtv1.com,luotphim2.net,luotphim1.net,luotphimtv.vip,cdnwp.icu,webphim2.co
 m.baomoi.com##.bm_B>div
 m.baomoi.com##div.ad-banner-list
 m.baomoi.com##div.bm_Ii
-m.blogtruyenvn.com##div[style*="position: fixed"]
 m.soha.vn###adm-slot-7299
 maclife.io##.adrotate_widgets
 maclife.io##.entry>a[target="_blank"]
@@ -1531,7 +1526,6 @@ znews.vn##.znews-banner
 @@/wp-content/plugins/advanced-ads/admin/assets/js/advertisement.js$script,~third-party
 @@||4.bp.blogspot.com/-Faf4F4bEgfs/X6bgItBh8RI/AAAAAAAADr4/TI07qDfVYWk4cPdNAj8Mn5Q_yVzuG2cJgCK4BGAYYCw/s1600/gvnvh18.png$image,domain=gvnvh18.com
 @@||apicdn.sctvonline.vn/tenants/sctv/$xmlhttprequest,domain=sctvonline.vn
-@@||blogtruyenvn.com/file/bullseyegreen.gif
 @@||cdnjs.cloudflare.com/ajax/libs/videojs-contrib-ads/6.0.0/videojs-contrib-ads.js$script,domain=sctvonline.vn
 @@||cmangavn.com/assets/img/pr/cmanga.png
 @@||contextual.media.net/dmedianet.js$domain=azrom.net
@@ -1816,7 +1810,7 @@ truyentuanopm.com#%#//scriptlet("abort-current-inline-script", "$", "btpop")
 vailonxx.com,phimlongtieng.com,phimlongtieng.net#%#//scriptlet("abort-current-inline-script", "jQuery", "window.open")
 veryfiles.com#%#//scriptlet("abort-on-property-read", "nFNcksmwU")
 viet69.red,ungtycomicsvip.com,vlxx.xxx,dualeotruyenvi.com,yurineko.net,vlxyz.tv,javhay.cam,phimsexhay669.co,cliphot69.vin,doctruyen3qup.com,hentaizz.vip,animehay.city,heo69.top,top1sex.club,lenlut.net,xemsex.moe,hentai-vn.tv,web31.sexphim1.com,cdn.streamvl.sbs,buomtv.tv,motphimz.cc,truyenvnhay.tv,cdnstream.sbs,javtiful.com,truyengihotvay.net,truyengihotqua.net,truyengihotqua.com,truyengihotnay.com,tuoi69.tv,quatvn.club#%#//scriptlet("abort-current-inline-script", "WebAssembly", "instantiate")
-viettoons.tv,m.blogtruyenvn.com,mv.phimmoiaz.cc,dood.pm,ytstv.me,animet.net,anh.moe#%#//scriptlet("abort-on-property-read", "open")
+viettoons.tv,mv.phimmoiaz.cc,dood.pm,ytstv.me,animet.net,anh.moe#%#//scriptlet("abort-on-property-read", "open")
 vinaurl.net#%#//scriptlet("abort-on-property-read", "oneClick")
 vndoc.com#%#//scriptlet("set-constant", "seconds", "0")
 vuaphimmoi2.net#%#//scriptlet("abort-current-inline-script", "$", "urlAdsMbIntro")
