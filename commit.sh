@@ -17,10 +17,10 @@ bash update-diffpatches.sh "$PATCHES_DIR" "$FILTER_FILES" "$SKIP_COMMIT"
 if [ "$SKIP_COMMIT" != 'true' ]; then
     commit_type="A"
     read -p "Enter filter update type Add (A), Modified (M), Delete (D)? " update_type
-    if [ $update_type == 'm' ] || [ $update_type == 'M' ]
+    if [ "$update_type" == 'm' ] || [ "$update_type" == 'M' ]
     then
         commit_type="M"
-    elif [ $update_type == 'd' ] || [ $update_type == 'D' ]
+    elif [ "$update_type" == 'd' ] || [ "$update_type" == 'D' ]
     then
         commit_type="D"
     fi
