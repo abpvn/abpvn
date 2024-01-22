@@ -24,8 +24,6 @@ if [[ -z $FILTER_FILES ]]; then
 fi
 FILTER_FILES=( "$FILTER_FILES" )
 
-PATCH_FILES=( $(ls -1v "$PATCHES_DIR"/*.patch | head -n -1) )
-
 SKIP_PUSH_DEL_TAG=$3
 DELETED_VERSIONS=''
 
@@ -48,6 +46,7 @@ NEW_PATCH_FILE=$(mktemp)
 DIFF_FILE=$(mktemp)
 
 ALL_VERSION=$(git tag --list)
+PATCH_FILES=( $(ls -1v "$PATCHES_DIR"/*.patch | head -n -1) )
 
 for PATCH_FILE in "${PATCH_FILES[@]}"; do
 
