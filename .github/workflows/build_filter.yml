@@ -17,23 +17,28 @@ env:
 jobs:
   build_filter_master:
     runs-on: ubuntu-latest
+    outputs:
+      NEED_BUILD_MASTER: ${{steps.check_build.outputs.NEED_BUILD_MASTER}}
     steps:
       - uses: actions/checkout@v4
         with:
           ref: master
       - name: Check need to build
+        id: check_build
         if: ${{ env.NEED_BUILD_MASTER == 'false'}}
         working-directory: ./filter
         run: |
           bash build.sh
           DIFF_STAT=$(git diff --numstat abpvn_ublock.txt)
           echo $DIFF_STAT
-          if [ "DIFF_STAT" != "3       3      filter/abpvn_ublock.txt" ]; then
-            echo "NEED_BUILD=true" >> $GITHUB_ENV
+          if [ "DIFF_STAT" != "3 3 filter/abpvn_ublock.txt" ]; then
+            echo "Need build to update to latest version"
+            echo "NEED_BUILD_MASTER=true" >> $GITHUB_ENV
           else
             echo "Nothing to build"
           fi
           git checkout .
+          echo "NEED_BUILD_MASTER=$NEED_BUILD_MASTER" >> $GITHUB_OUTPUT
       - name: Build filter
         if: ${{ env.NEED_BUILD_MASTER == 'yes' }}
         run: |
@@ -55,23 +60,28 @@ jobs:
           git push origin $GIT_TAG
   build_filter_single:
     runs-on: ubuntu-latest
+    outputs:
+      NEED_BUILD_SINGlE: ${{steps.check_build.outputs.NEED_BUILD_SINGlE}}
     steps:
       - uses: actions/checkout@v4
         with:
           ref: single
       - name: Check need to build
+        id: check_build
         if: ${{ env.NEED_BUILD_SINGLE == 'false'}}
         working-directory: ./filter
         run: |
           bash build.sh
           DIFF_STAT=$(git diff --numstat abpvn_ublock.txt)
           echo $DIFF_STAT
-          if [ "DIFF_STAT" != "3       3      filter/abpvn_ublock.txt" ]; then
-            echo "NEED_BUILD=true" >> $GITHUB_ENV
+          if [ "DIFF_STAT" != "3 3 filter/abpvn_ublock.txt" ]; then
+            echo "Need build to update to latest version"
+            echo "NEED_BUILD_SINGLE=true" >> $GITHUB_ENV
           else
             echo "Nothing to build"
           fi
           git checkout .
+          echo "NEED_BUILD_SINGLE=$NEED_BUILD_SINGLE" >> $GITHUB_OUTPUT
       - name: Build filter
         if: ${{ env.NEED_BUILD_SINGLE == 'yes' }}
         run: |
@@ -91,3 +101,11 @@ jobs:
           git push origin $BRANCH
           git tag $GIT_TAG
           git push origin $GIT_TAG
+  update_server_filter:
+    runs-on: ubuntu-latest
+    needs: [build_filter_master, build_filter_single]
+    if: ${{ needs.build_filter_master.outputs.NEED_BUILD_MASTER == 'yes' || needs.build_filter_single.outputs.NEED_BUILD_SINGLE == 'yes' }}
+    steps:
+      - uses: actions/checkout@v4
+      - name: Request to server
+        run: bash pull.sh
