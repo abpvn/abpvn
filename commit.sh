@@ -2,7 +2,7 @@
 SKIP_COMMIT=$1
 VERSION=$2
 if [[ -z $VERSION ]]; then
-    VERSION=`date +'%Y%m%d%H%M%S'`
+    VERSION=`date +'%Y%m%d%H%M%S%3N'`
 fi
 cd filter
 bash build.sh "$VERSION"
