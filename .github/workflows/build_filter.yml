@@ -13,6 +13,9 @@ on:
         default: false
   schedule:
     - cron: 0 */3 * * *
+  push:
+    branches:
+      - master
 
 env:
   NEED_BUILD_MASTER: ${{inputs.FORCE_BUILD || false}}
@@ -21,6 +24,7 @@ env:
 
 jobs:
   build_filter_master:
+    if: ${{ github.event_name != 'push' || contains(github.event.head_commit.message, 'fix') }}
     runs-on: ubuntu-latest
     outputs:
       NEED_BUILD_MASTER: ${{steps.check_build.outputs.NEED_BUILD_MASTER}}
@@ -74,6 +78,7 @@ jobs:
             git push origin $GIT_TAG
           fi
   build_filter_single:
+    if: ${{ github.event_name != 'push' || contains(github.event.head_commit.message, 'fix') }}
     runs-on: ubuntu-latest
     outputs:
       NEED_BUILD_SINGLE: ${{steps.check_build.outputs.NEED_BUILD_SINGLE}}
