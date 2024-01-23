@@ -43,7 +43,7 @@ jobs:
             echo "Nothing to build"
           fi
           git checkout .
-          if [ ${{env.DRY_RUN}} == 'false' ]; then
+          if [ '${{env.DRY_RUN}}' == 'false' ]; then
             echo "NEED_BUILD_MASTER=$NEED_BUILD_MASTER" >> $GITHUB_OUTPUT
           fi
       - name: Build filter
@@ -57,14 +57,17 @@ jobs:
           REGEX=These[[:space:]]tag[[:space:]]should[[:space:]]be[[:space:]]delete[[:space:]]manualy:[[:space:]]'(.*)'
           [[ ${BUILD_OUTPUT} =~ $REGEX ]] && \
             DEL_VERSIONS=${BASH_REMATCH[1]}
+          DEL_VERSIONS=$(echo "$DEL_VERSIONS" | sed -e "s/'//g")
           echo "Version to delete: $DEL_VERSIONS"
           if [ "$DEL_VERSIONS" != "" ]; then
-            git push -d origin $DEL_VERSIONS
+            if [ '${{env.DRY_RUN}}' == 'false' ]; then
+              git push -d origin $DEL_VERSIONS
+            fi
           fi
           GIT_TAG=$(cat version)
           git commit -m "Auto build filter on master to $GIT_TAG"
           git tag $GIT_TAG
-          if [ ${{env.DRY_RUN}} == 'false' ]; then
+          if [ '${{env.DRY_RUN}}' == 'false' ]; then
             git push origin master
             git push origin $GIT_TAG
           fi
@@ -91,7 +94,7 @@ jobs:
             echo "Nothing to build"
           fi
           git checkout .
-          if [ ${{env.DRY_RUN}} == 'false' ]; then
+          if [ '${{env.DRY_RUN}}' == 'false' ]; then
             echo "NEED_BUILD_SINGLE=$NEED_BUILD_SINGLE" >> $GITHUB_OUTPUT
           fi
       - name: Build filter
@@ -105,14 +108,17 @@ jobs:
           REGEX=These[[:space:]]tag[[:space:]]should[[:space:]]be[[:space:]]delete[[:space:]]manualy:[[:space:]]'(.*)'
           [[ ${BUILD_OUTPUT} =~ $REGEX ]] && \
             DEL_VERSIONS=${BASH_REMATCH[1]}
+          DEL_VERSIONS=$(echo "$DEL_VERSIONS" | sed -e "s/'//g")
           echo "Version to delete: $DEL_VERSIONS"
           if [ "$DEL_VERSIONS" != "" ]; then
-            git push -d origin $DEL_VERSIONS
+            if [ '${{env.DRY_RUN}}' == 'false' ]; then
+              git push -d origin $DEL_VERSIONS
+            fi
           fi
           GIT_TAG=$(cat version)
           git commit -m "Auto build filter on single to $GIT_TAG"
           git tag $GIT_TAG
-          if [ ${{env.DRY_RUN}} == 'false' ]; then
+          if [ '${{env.DRY_RUN}}' == 'false' ]; then
             git push origin single
             git push origin $GIT_TAG
           fi
