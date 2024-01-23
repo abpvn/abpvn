@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 20240123071946070
+! Version: 20240123135313858
 ! Title: ABPVN List
-! Last modified: 23 Jan 2024 07:19:46 UTC+7
-! Diff-Path: patches/20240123071946070.patch#abpvn_content_blocker
+! Last modified: 23 Jan 2024 13:53:13 UTC+7
+! Diff-Path: patches/20240123135313858.patch#abpvn_content_blocker
 ! Diff-Expires: 60 minutes
 ! Expires: 1 days (update frequency)
 !
@@ -227,7 +227,7 @@
 ||sggp.org.vn/*banner
 ||sharecode.vn/assets/images/thiet-ke-web-gia-re.jpg
 ||sharecode.vn/assets/images/thiet-ke-website.jpg
-||shope.ee^$popup,domain=boophim.net|chillphimmoiz.org|blogtruyenmoi.com|cunghocvui.com
+||shope.ee^$popup,domain=boophim.net|chillphimmoiz.org|blogtruyenmoi.com|cunghocvui.com|khophimchill.com
 ||softworldvietnam.com/banners/$domain=oj.husc.edu.vn
 ||sohuutritue.net.vn/files/qc/
 ||soikeo365.net^*.gif
@@ -507,6 +507,7 @@ conservatoriopaganini.org,xoilac98.tv##.sub-menu.d-none.d-lg-flex
 conservatoriopaganini.org,xoilac98.tv,90phutzz.tv,veboz.net##.marquee-container
 contuhoc.com,www5.cbox.ws##a[rel="noopener noreferrer"]
 cryptoviet.com##.widget-wrap.widget_text
+cunghocvui.com###shoppe_aff_button
 daklak24h.com.vn##.features-r
 dantri.com.vn###bannerMasthead
 dantri.com.vn###desktop-home-top-page
@@ -1215,15 +1216,17 @@ $third-party,script,domain=sexdiaryx.us
 /wp-content/uploads/*.gif$image,domain=tuoi69z.pro|tuoinung.cc|teletiengviet.com|phevkl.co
 @@||pagead2.googlesyndication.com^$domain=www.gaingon18.me
 ||ads.6789live.com^$image
+||avvietsub.com/static/tpl.vi.png$image
 ||blogger.googleusercontent.com^*.gif$image,domain=gvnvh18.com
 ||buomtv.tv/palivn/ad/$image
 ||cdn-01.w3img.com^*.gif$image,domain=javhd.tech|sexvietz.co
 ||cdn.adxcontent.com^
 ||cdn.javbabe.net^$subdocument
 ||cliphot69.vin$csp=script-src 'self' 'unsafe-inline'
+||cliphot69.vin^*.gif$image
 ||cliphotvn123.com^*.gif$image
 ||cloufdlare.com/ads/vn1.html$subdocument,domain=sex.phe.to
-||discordapp.$image,domain=phym18.net|phim18vipb.com
+||discordapp.$image,domain=phym18.net|phim18vipb.com|avvietsub.com
 ||greenupload.com^*.gif$image,domain=thiendia2.net
 ||greenupload.com^*ad-$image,domain=thiendia2.net
 ||greenupload.com^*banner$image
@@ -1260,6 +1263,7 @@ $third-party,script,domain=sexdiaryx.us
 ||top1sex.club/theme/custom.int.js
 ||truyen18.xyz/media/abc/$image
 ||truyen18.xyz/media/banner/$image
+||truyenhentaivn.com^*.gif$image
 ||truyensextv.com/anh/
 ||truyensextv.me/anh/
 ||truyensextv.org/anh/$image
@@ -1272,6 +1276,9 @@ $third-party,script,domain=sexdiaryx.us
 ||yr.fopbandido.com^
 !---------- ABPVN Adult Element Hide ---------------
 ##iframe[src^="https://media.vivaclix.com/js/ifr.html?"]
+avvietsub.com###ds_top
+avvietsub.com###wap_bottombanner
+avvietsub.com##.hidden-md.right.col-3
 buomtv.tv##._9xtpcl.c4je67d.c1qs0lzc.c1hrlkpu.cc2icwl.c1i0iccj.cfd18df
 buomtv.tv##._9xtpcl.e1e6v8dt
 buomtv.tv##.llnefd1
@@ -1342,6 +1349,8 @@ thiendia2.net,rphang.co,phim18vipb.com,checkgaigoi.site,sieudamtv.one,web31.sexp
 truyen18.xyz##.a-header
 truyen18.xyz##.apu
 truyen18.xyz##.header
+truyenhentaivn.com###catfish
+truyenhentaivn.com##.wppopups-whole
 truyensextv.com,lxmanga.net,truyensextv.org,truyensextv.me##.sticky-footer
 truyensextv.com,truyensextv.me###sticky-footer
 tuoi69.tv##.v4j-header.v4j-content
