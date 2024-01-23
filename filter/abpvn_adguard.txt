@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 20240123135313858
+! Version: 20240123141438102
 ! Title: ABPVN List
-! Last modified: 23 Jan 2024 13:53:13 UTC+7
-! Diff-Path: patches/20240123135313858.patch#abpvn_adguard
+! Last modified: 23 Jan 2024 14:14:38 UTC+7
+! Diff-Path: patches/20240123141438102.patch#abpvn_adguard
 ! Diff-Expires: 60 minutes
 ! Expires: 1 days (update frequency)
 !
@@ -1215,12 +1215,13 @@ $third-party,script,domain=sexdiaryx.us
 ||cliphot69.vin^*.gif$image
 ||cliphotvn123.com^*.gif$image
 ||cloufdlare.com/ads/vn1.html$subdocument,domain=sex.phe.to
-||discordapp.$image,domain=phym18.net|phim18vipb.com|avvietsub.com
+||discordapp.$image,domain=phym18.net|phim18vipb.com|avvietsub.com|phimsexvietsub.co
 ||greenupload.com^*.gif$image,domain=thiendia2.net
 ||greenupload.com^*ad-$image,domain=thiendia2.net
 ||greenupload.com^*banner$image
 ||hentaivn.lol/qx/$subdocument
 ||i.ibb.co^$image,domain=thiendia2.net
+||i.ibb.co^*.gif$image,domain=javnong.cc
 ||i.imgur.com^$image,domain=phym18.net|phim18hd.top|phim18vn.biz|phim18hd.me|xamvn.dog
 ||i2.wp.com/hentaivnmoi.net/*banner
 ||i9zk5f8szj4x8saj5wcks8acja5sk1dz8stjs2g8isdcn6ejxn8zsr5xjs5h.com^
@@ -1265,7 +1266,6 @@ $third-party,script,domain=sexdiaryx.us
 !---------- ABPVN Adult Element Hide ---------------
 ##iframe[src^="https://media.vivaclix.com/js/ifr.html?"]
 avvietsub.com###ds_top
-avvietsub.com###wap_bottombanner
 avvietsub.com##.hidden-md.right.col-3
 buomtv.tv##._9xtpcl.c4je67d.c1qs0lzc.c1hrlkpu.cc2icwl.c1i0iccj.cfd18df
 buomtv.tv##._9xtpcl.e1e6v8dt
@@ -1295,7 +1295,6 @@ lxmanga.net##.preload-banner
 nhentaivn.com###backgroundPopupp
 nhentaivn.com###popupContact
 nhentaivn.com###popup_fi
-nhentaivn.com###wap_bottombanner
 phevkl.co###mp-preload-popup-overlay
 phevkl.co##.separator
 phim.heo69.top##.catfix
@@ -1306,10 +1305,10 @@ phim18hd.top,phim18vn.biz,phim18hd.me##.top-mobile-banner
 phimsexhay669.co##.v4j-header>a[target="_blank"]
 phym18.net###backgroundPopupp
 phym18.net###popupContact
-phym18.net###wap_bottombanner
 phym18.net##.black-layout>div:nth-child(2)
 phym18.net##.popup_u
 phym18.net##div[style^="position: absolute;top: 0;"]
+phym18.net,nhentaivn.com,avvietsub.com,phimsexvietsub.co###wap_bottombanner
 rphang.co##.bbMediaWrapper-inner>.samCodeUnit
 rphang.co##.js-replyNewMessageContainer.block-body>div.samCodeUnit>.samItem
 rphang.co##.p-footer
@@ -1365,7 +1364,7 @@ vn.javbabe.net##.b-player
 vn.phym18.net##div#bnads
 vn.sexviet1.net,vn3.yeusex.cc##.preload
 web31.sexphim1.com##.code-block-4
-webx.sexnhanh.co##.alldiv ~ div[class]
+webx.sexnhanh.co,phim.javhdsex.org##.alldiv ~ div[class]
 www.gaingon18.me###iklan-atas-wrapper
 ! ---------Rule only for AdGuard------
 animevietsub.io#%#//scriptlet("abort-current-inline-script", "document.documentElement", "break;case $.")
@@ -1428,6 +1427,7 @@ tinsoikeo.vip#%#//scriptlet("abort-on-property-read", "sessionStorage")
 truyen2u.net#%#//scriptlet("abort-current-inline-script", "eval")
 truyen35.vn#%#//scriptlet("abort-current-inline-script", "jQuery", "click_ads")
 truyenqqvn.com#%#//scriptlet("abort-current-inline-script", "document.addEventListener", "window.open")
+truyensextv.org#%#//scriptlet("abort-current-inline-script", "document.addEventListener", "popup")
 truyensieuhay.com,phimvietsub.pro,tvhayh.org,vuaphimmoi2.net,quangcaoyenbai.com,sieudamtv.one,ephimchill.com,motphimhan.cc,maclife.io,ophimhdvn3.net,thuvienhd.xyz,xemtv.tvhayhd.com,khophim88.net,nhentaivn.com,khophimchill.com#%#//scriptlet("abort-on-property-read", "document.cookie")
 truyentuanopm.com#%#//scriptlet("abort-current-inline-script", "$", "btpop")
 vailonxx.com,phimlongtieng.com,phimlongtieng.net#%#//scriptlet("abort-current-inline-script", "jQuery", "window.open")
