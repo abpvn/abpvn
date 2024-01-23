@@ -1,0 +1,83 @@
+name: Build filter
+
+on:
+  workflow_dispatch:
+    inputs:
+      FORCE_BUILD:
+        description: Force filter build
+        type: boolean
+        default: false
+  schedule:
+    - cron: 0 */3 * * *
+
+env:
+  NEED_BUILD_MASTER: ${{inputs.FORCE_BUILD || false}}
+  NEED_BUILD_SINGLE: ${{inputs.FORCE_BUILD || false}}
+
+jobs:
+  build_filter_master:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: master
+      - name: Check need to build
+        if: ${{ env.NEED_BUILD_MASTER == 'false'}}
+        working-directory: ./filter
+        run: |
+          bash build.sh
+          if [ "$(git diff --numstat abp_ublock.txt)" != "3       3      filter/abpvn_ublock.txt" ]; then
+              echo "NEED_BUILD=true" >> $GITHUB_ENV
+          fi
+          git checkout .
+      - name: Build filter
+        if: ${{ env.NEED_BUILD_MASTER == 'yes' }}
+        run: |
+          BRANCH=${GITHUB_REF##*/}
+          git config user.name github-actions
+          git config user.email github-actions@github.com
+          BUILD_OUTPUT=$(bash commit.sh true)
+          DEL_VERSIONS=""
+          [[ ${BUILD_OUTPUT} =~ These tag should be delete manualy: '(.*)' ]] && \
+            DEL_VERSIONS=${BASH_REMATCH[1]}
+          if [ "$DEL_VERSION" != "" ]; then
+            git push -d origin $DEL_VERSION
+          fi
+          GIT_TAG=$(cat version)
+          git commit -m "Auto build filter on $BRANCH to $GIT_TAG"
+          git push origin $BRANCH
+          git tag $GIT_TAG
+          git push origin $GIT_TAG
+  build_filter_single:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: single
+      - name: Check need to build
+        if: ${{ env.NEED_BUILD_SINGLE == 'false'}}
+        working-directory: ./filter
+        run: |
+          bash build.sh
+          if [ "$(git diff --numstat abp_ublock.txt)" != "3       3      filter/abpvn_ublock.txt" ]; then
+              echo "NEED_BUILD=true" >> $GITHUB_ENV
+          fi
+          git checkout .
+      - name: Build filter
+        if: ${{ env.NEED_BUILD_SINGLE == 'yes' }}
+        run: |
+          BRANCH=${GITHUB_REF##*/}
+          git config user.name github-actions
+          git config user.email github-actions@github.com
+          BUILD_OUTPUT=$(bash commit.sh true)
+          DEL_VERSIONS=""
+          [[ ${BUILD_OUTPUT} =~ These tag should be delete manualy: '(.*)' ]] && \
+            DEL_VERSIONS=${BASH_REMATCH[1]}
+          if [ "$DEL_VERSION" != "" ]; then
+            git push -d origin $DEL_VERSION
+          fi
+          GIT_TAG=$(cat version)
+          git commit -m "Auto build filter on $BRANCH to $GIT_TAG"
+          git push origin $BRANCH
+          git tag $GIT_TAG
+          git push origin $GIT_TAG
