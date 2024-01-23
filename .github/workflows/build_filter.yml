@@ -31,7 +31,7 @@ jobs:
           bash build.sh
           DIFF_STAT=$(git diff --numstat abpvn_ublock.txt)
           echo $DIFF_STAT
-          if [ "DIFF_STAT" != "3 3 filter/abpvn_ublock.txt" ]; then
+          if [ "$DIFF_STAT" != "3 3 filter/abpvn_ublock.txt" ]; then
             echo "Need build to update to latest version"
             echo "NEED_BUILD_MASTER=true" >> $GITHUB_ENV
           else
@@ -74,7 +74,7 @@ jobs:
           bash build.sh
           DIFF_STAT=$(git diff --numstat abpvn_ublock.txt)
           echo $DIFF_STAT
-          if [ "DIFF_STAT" != "3 3 filter/abpvn_ublock.txt" ]; then
+          if [ "$DIFF_STAT" != "3 3 filter/abpvn_ublock.txt" ]; then
             echo "Need build to update to latest version"
             echo "NEED_BUILD_SINGLE=true" >> $GITHUB_ENV
           else
