@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 20240123055403150
+! Version: 20240123071946070
 ! Title: ABPVN List
-! Last modified: 23 Jan 2024 05:54:03 UTC+7
-! Diff-Path: patches/20240123055403150.patch#abpvn_noelemhide
+! Last modified: 23 Jan 2024 07:19:46 UTC+7
+! Diff-Path: patches/20240123071946070.patch#abpvn_noelemhide
 ! Diff-Expires: 60 minutes
 ! Expires: 1 days (update frequency)
 !
@@ -73,7 +73,6 @@
 ||anh.moe/src/video/vidmoeads.js$script
 ||anime47.com^*.gif
 ||animehay.city^*.gif
-||animehayz.top/wp-content/uploads/2023/04/400x300.jpg$domain=hoathinh4k.net
 ||animet.net^*.gif
 ||asecdn.w88media.com/VN/250x250-VN.gif$domain=mythethao.net
 ||asideway.com$csp=script-src 'self' 'unsafe-inline' https: http:
@@ -93,7 +92,6 @@
 ||bp.blogspot.com/*banner$image,domain=~aowvn.org|~umu.pink
 ||bs_89fa1fc0.tapchibitcoin.care/sdk.js$script,domain=tapchibitcoin.io
 ||cdn.pixfuture.com/adb-media/adb_detect_pixfuture.js$domain=saigonbao.com
-||cdn.thehinh.com^$image,domain=khoedep.vn
 ||cdn.thichxemphim1.net/wp-content/themes/halimmovies-child/jscm.min.js$domain=thichxemphim1.net
 ||cdn.webhoctienganh.com/asset/home/img/banner/$image,domain=webhoctienganh.com
 ||cdn2-img.net^*.gif$image,domain=hhpanda.co|dongchill.tv|biphim.io|subnhanh.app|subnhanh.bio|subnhanhvl.co|bichill.one|dongphim3s.net
@@ -131,6 +129,7 @@
 ||hhpanda.co/ads/ads_xx.js
 ||hinhso.com^$domain=diendanmaychu.vn,image
 ||hosocongty.vn/uploads/products/$~third-party,image
+||hotphim.cc/disable.js$script
 ||huongdanjava.com$csp=script-src data: 'self' 'unsafe-inline' http: https:
 ||huphimtv.com/assets/themes/js/wonderfarm68.js
 ||i-imgur-com.cdn.ampproject.org^*.gif$image,domain=bongdainfoz.net
@@ -141,19 +140,19 @@
 ||i.imgur.com/81uid6d.jpg
 ||i.imgur.com/FbUH5AQ.png
 ||i.imgur.com/Q0a2mv2.png
-||i.imgur.com^$image,domain=nhacdj.vn|diendanit.net|banbuondalat.com|khoedep.vn|hoathinhtq.tv|hh3d.tv|xem.tructiepnba.com|vungtv.us
+||i.imgur.com^$image,domain=nhacdj.vn|diendanit.net|banbuondalat.com|hoathinhtq.tv|xem.tructiepnba.com|vungtv.us
 ||i.imgur.com^*.gif$image,domain=ghienphim11.net|dailyphimz.com|mv.phimmoiaz.cc|phimgichill.net|ophimhdvn3.net|mythethao.net|xemtivi4k.com|tructiep.caheo18.tv|vtipster.net|huphimtv.com|xoilac14.org|film365.in|live3.90phut10.live|xemphimviet1.net|watch.ezyproxy.com|live3.thapcam2.net|phimmoiyyy.net|live.vebo4.net|live2.vebo4.net|xemtv.tvhayhd.com|phimbocn.com|motphimhan.cc|motphimz.cc|hoathinh4k.net
 ||i.postimg.cc^*.gif$domain=motphimz.cc
 ||i.servimg.com/u/f22/$domain=4rkinggame.com
 ||i.upanh.org^*.gif$domain=xemhay24h.com
 ||iamcdn.net/players/playera.dmins.js
 ||iamcdn.net/players/playhydraxs.min.js
-||igg-games.com^*.gif
+||igg-games.com/maven/av.js$script
 ||images.asianbookie.com^*.gif$image,domain=asianbookie.com
 ||images1.violympic.vn/violympic/images/upload/banner$image,domain=violympic.vn
 ||images2-focus-opensocial.googleusercontent.com^*.gif$image,domain=phimdinhcao.net|phimdinhcao.com|phimlongtieng.net
 ||img.upanh.tv^*.gif$image,domain=phimtuoitho.tv|xemhay24h.com
-||imgyn.imageshh.com^*.gif$image,domain=mphim14.com|hhchina.tv
+||imgyn.imageshh.com^*.gif$image,domain=mphim14.com|hhchina.tv|hh3d.tv
 ||kenhgamelau.com^*.gif
 ||kenhtin.net/upload/images/banner-
 ||khophim-poster.cuoiia.top^*.gif$image,domain=coiphim18.com
@@ -170,6 +169,7 @@
 ||lmssplus.com/static_image/ads-provider/$image
 ||luotphimtv1.com/wp-content/uploads/$media
 ||maclife.io^*.gif
+||media.adop.asia^$image,domain=hotphim.cc
 ||media.nghean24h.vn$image
 ||media.yeah1.com/files/qc/$image,domain=yeah1.com
 ||mehoathinh3.com/xml/
@@ -238,7 +238,7 @@
 ||static.cdnimgtgh.com/images/ads/$image,domain=truyengihotvay.net|truyengihotqua.net|truyengihotqua.com|truyengihotnay.com
 ||static.cdnno.com/storage/lazada/$image,domain=metruyencv.net
 ||static.ybox.vn^*.gif$domain=ybox.vn
-||stc02bc54661548.cloud.anycastapnic.com^*.gif$domain=gavang1.link|xem1.gavang1.net|ws-client.gavang.tech
+||stc02bc54661548.cloud.anycastapnic.com^*.gif$domain=xem1.gavang1.net|ws-client.gavang.tech
 ||storage.fshare.vn/images/$third-party,domain=~qthang.net
 ||subnhanh.app/js/ads_xx.js
 ||subnhanh.bio/js/ads_xx.js
@@ -285,7 +285,6 @@
 ||vidian.wiki/images/*.gif
 ||vietjack.com/FrontEndWeb/js/sp.js$script
 ||vnmu.edu.vn^*.gif
-||vod02bc25882576.cloud.anycastapnic.com/8xBET_480p.mp4$domain=gavang1.link
 ||vod02bc25882576.cloud.anycastapnic.com/8xBET_480p.mp4$domain=xem1.gavang1.net
 ||vov.vn/ads/show-ads
 ||vsc31.com/wp-content/themes/vuasanco/assets/scripts/scripts.js
@@ -338,6 +337,7 @@
 ||gelatinerespectivelyhector.com^
 ||genieesspv.jp^$third-party
 ||genmonet.com^
+||gonzalodaemon.top^
 ||grubsnuchale.com^
 ||grunoaph.net^
 ||hoosgowhandbow.com^
