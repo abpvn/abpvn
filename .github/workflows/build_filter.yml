@@ -28,7 +28,7 @@ jobs:
       - uses: actions/checkout@v4
         with:
           ref: master
-          fetch-tags: true
+          fetch-depth: 0
       - name: Check need to build
         id: check_build
         if: ${{ env.NEED_BUILD_MASTER == 'false'}}
@@ -80,7 +80,7 @@ jobs:
       - uses: actions/checkout@v4
         with:
           ref: single
-          fetch-tags: true
+          fetch-depth: 0
       - name: Check need to build
         id: check_build
         if: ${{ env.NEED_BUILD_SINGLE == 'false'}}
