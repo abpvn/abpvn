@@ -39,7 +39,8 @@ jobs:
           echo $DIFF_STAT
           if [[ "$DIFF_STAT" != *"| 6 +++---"* ]]; then
             echo "Need build to update to latest version"
-            echo "NEED_BUILD_MASTER=true" >> $GITHUB_ENV
+            NEED_BUILD_MASTER=true
+            echo "NEED_BUILD_MASTER=$NEED_BUILD_MASTER" >> $GITHUB_ENV
           else
             echo "Nothing to build"
           fi
@@ -91,7 +92,8 @@ jobs:
           echo $DIFF_STAT
           if [[ "$DIFF_STAT" != *"| 6 +++---"* ]]; then
             echo "Need build to update to latest version"
-            echo "NEED_BUILD_SINGLE=true" >> $GITHUB_ENV
+            NEED_BUILD_SINGLE=true
+            echo "NEED_BUILD_SINGLE=$NEED_BUILD_SINGLE" >> $GITHUB_ENV
           else
             echo "Nothing to build"
           fi
