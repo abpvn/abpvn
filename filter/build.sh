@@ -68,3 +68,5 @@ else
     sed -e '/^$/d' -e "s/.patch#/.patch#abpvn_content_blocker/" abpvn_content_blocker1.tmp > abpvn_content_blocker.txt
 fi
 
+# remove tmp file
+rm -rf *.tmp src/*.tmp
