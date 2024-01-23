@@ -47,7 +47,7 @@ jobs:
           git config user.email github-actions@github.com
           BUILD_OUTPUT=$(bash commit.sh true)
           DEL_VERSIONS=""
-          [[ ${BUILD_OUTPUT} =~ These tag should be delete manualy: '(.*)' ]] && \
+          [[ ${BUILD_OUTPUT} =~ "These tag should be delete manualy: '(.*)'" ]] && \
             DEL_VERSIONS=${BASH_REMATCH[1]}
           echo "Version to delete: $DEL_VERSIONS"
           if [ "$DEL_VERSION" != "" ]; then
@@ -90,7 +90,7 @@ jobs:
           git config user.email github-actions@github.com
           BUILD_OUTPUT=$(bash commit.sh true)
           DEL_VERSIONS=""
-          [[ ${BUILD_OUTPUT} =~ These tag should be delete manualy: '(.*)' ]] && \
+          [[ ${BUILD_OUTPUT} =~ "These tag should be delete manualy: '(.*)'" ]] && \
             DEL_VERSIONS=${BASH_REMATCH[1]}
           echo "Version to delete: $DEL_VERSIONS"
           if [ "$DEL_VERSION" != "" ]; then
