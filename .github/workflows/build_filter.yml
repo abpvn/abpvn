@@ -38,7 +38,7 @@ jobs:
           echo $DIFF_STAT
           if [[ "$DIFF_STAT" != *"| 6 +++---"* ]]; then
             echo "Need build to update to latest version"
-            echo "NEED_BUILD_MASTER=yes" >> $GITHUB_ENV
+            echo "NEED_BUILD_MASTER=true" >> $GITHUB_ENV
           else
             echo "Nothing to build"
           fi
@@ -47,7 +47,7 @@ jobs:
             echo "NEED_BUILD_MASTER=$NEED_BUILD_MASTER" >> $GITHUB_OUTPUT
           fi
       - name: Build filter
-        if: ${{ env.NEED_BUILD_MASTER == 'yes' }}
+        if: ${{ env.NEED_BUILD_MASTER == 'true' }}
         run: |
           git config user.name github-actions
           git config user.email github-actions@github.com
@@ -86,7 +86,7 @@ jobs:
           echo $DIFF_STAT
           if [[ "$DIFF_STAT" != *"| 6 +++---"* ]]; then
             echo "Need build to update to latest version"
-            echo "NEED_BUILD_SINGLE=yes" >> $GITHUB_ENV
+            echo "NEED_BUILD_SINGLE=true" >> $GITHUB_ENV
           else
             echo "Nothing to build"
           fi
@@ -95,7 +95,7 @@ jobs:
             echo "NEED_BUILD_SINGLE=$NEED_BUILD_SINGLE" >> $GITHUB_OUTPUT
           fi
       - name: Build filter
-        if: ${{ env.NEED_BUILD_SINGLE == 'yes' }}
+        if: ${{ env.NEED_BUILD_SINGLE == 'true' }}
         run: |
           git config user.name github-actions
           git config user.email github-actions@github.com
@@ -119,7 +119,7 @@ jobs:
   update_server_filter:
     runs-on: ubuntu-latest
     needs: [build_filter_master, build_filter_single]
-    if: ${{ needs.build_filter_master.outputs.NEED_BUILD_MASTER == 'yes' || needs.build_filter_single.outputs.NEED_BUILD_SINGLE == 'yes' }}
+    if: ${{ needs.build_filter_master.outputs.NEED_BUILD_MASTER == 'true' || needs.build_filter_single.outputs.NEED_BUILD_SINGLE == 'true' }}
     steps:
       - uses: actions/checkout@v4
       - name: Request to server
