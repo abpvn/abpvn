@@ -7,12 +7,17 @@ on:
         description: Force filter build
         type: boolean
         default: false
+      DRY_RUN:
+        description: Dry run without push
+        type: boolean
+        default: false
   schedule:
     - cron: 0 */3 * * *
 
 env:
   NEED_BUILD_MASTER: ${{inputs.FORCE_BUILD || false}}
   NEED_BUILD_SINGLE: ${{inputs.FORCE_BUILD || false}}
+  DRY_RUN: ${{inputs.DRY_RUN || false}}
 
 jobs:
   build_filter_master:
@@ -38,26 +43,31 @@ jobs:
             echo "Nothing to build"
           fi
           git checkout .
-          echo "NEED_BUILD_MASTER=$NEED_BUILD_MASTER" >> $GITHUB_OUTPUT
+          if [ ${{env.DRY_RUN}} == 'false' ]; then
+            echo "NEED_BUILD_MASTER=$NEED_BUILD_MASTER" >> $GITHUB_OUTPUT
+          fi
       - name: Build filter
         if: ${{ env.NEED_BUILD_MASTER == 'yes' }}
         run: |
           git config user.name github-actions
           git config user.email github-actions@github.com
           BUILD_OUTPUT=$(bash commit.sh true)
+          echo $BUILD_OUTPUT
           DEL_VERSIONS=''
           REGEX=These[[:space:]]tag[[:space:]]should[[:space:]]be[[:space:]]delete[[:space:]]manualy:[[:space:]]'(.*)'
           [[ ${BUILD_OUTPUT} =~ $REGEX ]] && \
             DEL_VERSIONS=${BASH_REMATCH[1]}
           echo "Version to delete: $DEL_VERSIONS"
-          if [ "$DEL_VERSION" != "" ]; then
-            git push -d origin $DEL_VERSION
+          if [ "$DEL_VERSIONS" != "" ]; then
+            git push -d origin $DEL_VERSIONS
           fi
           GIT_TAG=$(cat version)
           git commit -m "Auto build filter on master to $GIT_TAG"
-          git push origin master
           git tag $GIT_TAG
-          git push origin $GIT_TAG
+          if [ ${{env.DRY_RUN}} == 'false' ]; then
+            git push origin master
+            git push origin $GIT_TAG
+          fi
   build_filter_single:
     runs-on: ubuntu-latest
     outputs:
@@ -81,26 +91,31 @@ jobs:
             echo "Nothing to build"
           fi
           git checkout .
-          echo "NEED_BUILD_SINGLE=$NEED_BUILD_SINGLE" >> $GITHUB_OUTPUT
+          if [ ${{env.DRY_RUN}} == 'false' ]; then
+            echo "NEED_BUILD_SINGLE=$NEED_BUILD_SINGLE" >> $GITHUB_OUTPUT
+          fi
       - name: Build filter
         if: ${{ env.NEED_BUILD_SINGLE == 'yes' }}
         run: |
           git config user.name github-actions
           git config user.email github-actions@github.com
           BUILD_OUTPUT=$(bash commit.sh true)
+          echo $BUILD_OUTPUT
           DEL_VERSIONS=''
           REGEX=These[[:space:]]tag[[:space:]]should[[:space:]]be[[:space:]]delete[[:space:]]manualy:[[:space:]]'(.*)'
           [[ ${BUILD_OUTPUT} =~ $REGEX ]] && \
             DEL_VERSIONS=${BASH_REMATCH[1]}
           echo "Version to delete: $DEL_VERSIONS"
-          if [ "$DEL_VERSION" != "" ]; then
-            git push -d origin $DEL_VERSION
+          if [ "$DEL_VERSIONS" != "" ]; then
+            git push -d origin $DEL_VERSIONS
           fi
           GIT_TAG=$(cat version)
           git commit -m "Auto build filter on single to $GIT_TAG"
-          git push origin single
           git tag $GIT_TAG
-          git push origin $GIT_TAG
+          if [ ${{env.DRY_RUN}} == 'false' ]; then
+            git push origin single
+            git push origin $GIT_TAG
+          fi
   update_server_filter:
     runs-on: ubuntu-latest
     needs: [build_filter_master, build_filter_single]
