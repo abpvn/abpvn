@@ -26,8 +26,12 @@ jobs:
         working-directory: ./filter
         run: |
           bash build.sh
-          if [ "$(git diff --numstat abpvn_ublock.txt)" != "3       3      filter/abpvn_ublock.txt" ]; then
-              echo "NEED_BUILD=true" >> $GITHUB_ENV
+          DIFF_STAT=$(git diff --numstat abpvn_ublock.txt)
+          echo $DIFF_STAT
+          if [ "DIFF_STAT" != "3       3      filter/abpvn_ublock.txt" ]; then
+            echo "NEED_BUILD=true" >> $GITHUB_ENV
+          else
+            echo "Nothing to build"
           fi
           git checkout .
       - name: Build filter
@@ -40,6 +44,7 @@ jobs:
           DEL_VERSIONS=""
           [[ ${BUILD_OUTPUT} =~ These tag should be delete manualy: '(.*)' ]] && \
             DEL_VERSIONS=${BASH_REMATCH[1]}
+          echo "Version to delete: $DEL_VERSIONS"
           if [ "$DEL_VERSION" != "" ]; then
             git push -d origin $DEL_VERSION
           fi
@@ -59,8 +64,12 @@ jobs:
         working-directory: ./filter
         run: |
           bash build.sh
-          if [ "$(git diff --numstat abpvn_ublock.txt)" != "3       3      filter/abpvn_ublock.txt" ]; then
-              echo "NEED_BUILD=true" >> $GITHUB_ENV
+          DIFF_STAT=$(git diff --numstat abpvn_ublock.txt)
+          echo $DIFF_STAT
+          if [ "DIFF_STAT" != "3       3      filter/abpvn_ublock.txt" ]; then
+            echo "NEED_BUILD=true" >> $GITHUB_ENV
+          else
+            echo "Nothing to build"
           fi
           git checkout .
       - name: Build filter
@@ -73,6 +82,7 @@ jobs:
           DEL_VERSIONS=""
           [[ ${BUILD_OUTPUT} =~ These tag should be delete manualy: '(.*)' ]] && \
             DEL_VERSIONS=${BASH_REMATCH[1]}
+          echo "Version to delete: $DEL_VERSIONS"
           if [ "$DEL_VERSION" != "" ]; then
             git push -d origin $DEL_VERSION
           fi
