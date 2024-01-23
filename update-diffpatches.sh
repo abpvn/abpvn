@@ -32,7 +32,7 @@ OBSOLETE_PATCHES=( $(ls -1v "$PATCHES_DIR"/*.patch | head -n -20) )
 for FILE in "${OBSOLETE_PATCHES[@]}"; do
     echo "Removing obsolete patch $FILE"
     # Extract tag from patch file name
-    [[ ${FILE} =~ ^$PATCHES_DIR/([0-9]{14})\.patch$ ]] && \
+    [[ ${FILE} =~ ^$PATCHES_DIR/([0-9]+)\.patch$ ]] && \
         DEL_VERSION=${BASH_REMATCH[1]}
     if [ "$DELETED_VERSION" == '' ]; then
         DELETED_VERSIONS=$DEL_VERSION
@@ -51,7 +51,7 @@ PATCH_FILES=( $(ls -1v "$PATCHES_DIR"/*.patch | head -n -1) )
 for PATCH_FILE in "${PATCH_FILES[@]}"; do
 
     # Extract tag from patch file name
-    [[ ${PATCH_FILE} =~ ^$PATCHES_DIR/([0-9]{14})\.patch$ ]] && \
+    [[ ${PATCH_FILE} =~ ^$PATCHES_DIR/([0-9]+)\.patch$ ]] && \
         PREVIOUS_VERSION=${BASH_REMATCH[1]}
 
     # Skip if version doesn't exist
