@@ -25,7 +25,7 @@ jobs:
     outputs:
       NEED_BUILD_MASTER: ${{steps.check_build.outputs.NEED_BUILD_MASTER}}
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v3
         with:
           ref: master
       - name: Check need to build
@@ -76,7 +76,7 @@ jobs:
     outputs:
       NEED_BUILD_SINGlE: ${{steps.check_build.outputs.NEED_BUILD_SINGlE}}
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v3
         with:
           ref: single
       - name: Check need to build
@@ -127,6 +127,6 @@ jobs:
     needs: [build_filter_master, build_filter_single]
     if: ${{ needs.build_filter_master.outputs.NEED_BUILD_MASTER == 'true' || needs.build_filter_single.outputs.NEED_BUILD_SINGLE == 'true' }}
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v3
       - name: Request to server
         run: bash pull.sh
