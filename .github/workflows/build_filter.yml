@@ -75,7 +75,7 @@ jobs:
   build_filter_single:
     runs-on: ubuntu-latest
     outputs:
-      NEED_BUILD_SINGlE: ${{steps.check_build.outputs.NEED_BUILD_SINGlE}}
+      NEED_BUILD_SINGLE: ${{steps.check_build.outputs.NEED_BUILD_SINGLE}}
     steps:
       - uses: actions/checkout@v4
         with:
