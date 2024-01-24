@@ -61,7 +61,6 @@ jobs:
           git config user.name github-actions
           git config user.email github-actions@github.com
           BUILD_OUTPUT=$(bash commit.sh true)
-          echo $BUILD_OUTPUT
           DEL_VERSIONS=''
           REGEX=These[[:space:]]tag[[:space:]]should[[:space:]]be[[:space:]]delete[[:space:]]manualy:[[:space:]]'(.*)'
           [[ ${BUILD_OUTPUT} =~ $REGEX ]] && \
@@ -118,7 +117,6 @@ jobs:
           git config user.name github-actions
           git config user.email github-actions@github.com
           BUILD_OUTPUT=$(bash commit.sh true)
-          echo $BUILD_OUTPUT
           DEL_VERSIONS=''
           REGEX=These[[:space:]]tag[[:space:]]should[[:space:]]be[[:space:]]delete[[:space:]]manualy:[[:space:]]'(.*)'
           [[ ${BUILD_OUTPUT} =~ $REGEX ]] && \
