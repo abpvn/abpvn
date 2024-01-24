@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 20240124025342265
+! Version: 20240124114653922
 ! Title: ABPVN List
-! Last modified: 24 Jan 2024 02:53:42 UTC+7
-! Diff-Path: patches/20240124025342265.patch#abpvn_content_blocker
+! Last modified: 24 Jan 2024 11:46:53 UTC+7
+! Diff-Path: patches/20240124114653922.patch#abpvn_content_blocker
 ! Diff-Expires: 60 minutes
 ! Expires: 1 days (update frequency)
 !
@@ -66,7 +66,7 @@
 ||123nhadatviet.net/Media/CK/banners/
 ||2banh.vn/images/banners/
 ||70303d714.vws.vegacdn.vn/cakhiastatic/$image
-||9767ebd63c.vws.vegacdn.vn/template/images-nc/$domain=mn.mediastation.live
+||9767ebd63c.vws.vegacdn.vn^*.gif$image,domain=livetv4.mannhan1.live
 ||ads*.autodaily.vn
 ||ads.starzd.com^$image,domain=chillhay.io
 ||akamaized.net/audio/$media,rewrite=abp-resource:blank-mp3,domain=open.spotify.com
@@ -169,7 +169,6 @@
 ||media.nghean24h.vn$image,domain=nghean24h.vn
 ||media.yeah1.com/files/qc/$image,domain=yeah1.com
 ||mehoathinh3.com/xml/
-||mephimtv.com/wp-banner$image
 ||mocfun.net/uploads/banners/
 ||motchilltivi.com/banner$image
 ||nettruyenviet.com/assets/js/popShope.js$script
@@ -497,7 +496,7 @@ congthucvatly.com##.mb-4>[style="min-height: 350px;"]
 conservatoriopaganini.org##.container.mt-1.d-none.d-lg-block
 conservatoriopaganini.org##.menu-item-object-custom
 conservatoriopaganini.org##a.rlw-extra-i.py-3.flex-grow-1
-conservatoriopaganini.org,live3.90phut10.live##.modal-backdrop.show
+conservatoriopaganini.org,live3.90phut10.live,noitu.online##.modal-backdrop.show
 conservatoriopaganini.org,veboz.net##.align-items-center.justify-content-between.d-flex.col-12>.d-lg-none.d-block
 conservatoriopaganini.org,xoilac98.tv##.sub-menu.d-none.d-lg-flex
 conservatoriopaganini.org,xoilac98.tv,90phutzz.tv,veboz.net##.marquee-container
@@ -667,6 +666,12 @@ live3.thapcam2.net##.mct_-bet-bot
 live3.thapcam2.net##.mmo
 live3.thapcam2.net##.mmo-inner
 live3.thapcam2.net,xoilaczze.tv,veboz.net##.btn-odds
+livetv4.mannhan1.live##.bet-btn-8423
+livetv4.mannhan1.live##.btn_betnow_632132
+livetv4.mannhan1.live##.highlight
+livetv4.mannhan1.live##.images-bnr
+livetv4.mannhan1.live##.images_fixed
+livetv4.mannhan1.live##.popup
 lmssplus.com##p[style="color: rgb(174, 174, 174); margin-top: 10px; margin-bottom: 20px;"]
 loigiaihay.com###countdown
 loigiaihay.com##.bottom_cnt_ad
@@ -692,7 +697,6 @@ maclife.io##div.\35 fb1ed6025b0b.widget:nth-of-type(3)
 mephimnhe1.net,phimgichill.net,ophimhdvn3.net##.mobile-catfix
 mephimnhe1.net,xemhay24h.com##.a--d-wrapper
 mephimtv.co##.ai-viewport-1
-mephimtv.com##.flex-wrap-banner
 mephimtv.com##.movie-banner
 metruyencv.info,metruyencv.net,metruyencv.com###div-ub-metruyencv_net
 metruyencv.info,metruyencv.net,metruyencv.com###js-read-body>.text-center.pb-3
@@ -708,7 +712,6 @@ metruyencv.info,metruyencv.net,metruyencv.com#?#.text-center:-abp-has(small:-abp
 minhngoc.net.vn,vn-z.vn,kinhtedothi.vn##[id^="adv"]
 mitub.net##.single-box
 mitub.net##[href^="//dooloust.net/"]
-mn.mediastation.live##.btn-bottom-right-append-player
 motchilli.net,motphimtvi.net###mp-adbk
 motchilli.net,motphimtvi.net###mp-adx-b32
 motchilli.net,motphimtvi.net,vkooll.net,phimmoichillm.net,ophimhd.vip,subnhanh.xyz##.mp-adz
@@ -737,7 +740,6 @@ nhatrangclub.vn##.show-qc-home
 nhatrangclub.vn##.show_qc
 nld.com.vn##.top-advertisment
 noitu.online##.show.modal
-noitu.online##.show.modal-backdrop
 olug.vn###popup_center
 ophimhay.com###adsTopInPageBanner
 ophimhay.com###popup
@@ -919,7 +921,7 @@ tructiep.rakhoi14.tv##.button-in-player-box
 tructiep.rakhoi14.tv##.footer-button-sign-in.hide-desk
 tructiep.rakhoi14.tv##.hide-desk.wrap-content>.wrap-btn-action
 tructiep.rakhoi14.tv##.menu-right-slide
-tructiep.rakhoi14.tv,play.vnupload.net,ssplay.net,mephimtv.com,api.anime3s.com,motchillz.org,xoilac14.org,tvhayh.org,watch.ezyproxy.com,p.thoctv.com,coiphim18.com,freeplayervideo.com,abysscdn.com,player-cdn.com,bitvtom1000.xyz,geoip.redirect-ads.com##.jw-logo
+tructiep.rakhoi14.tv,play.vnupload.net,ssplay.net,api.anime3s.com,motchillz.org,xoilac14.org,tvhayh.org,watch.ezyproxy.com,p.thoctv.com,coiphim18.com,freeplayervideo.com,abysscdn.com,player-cdn.com,bitvtom1000.xyz,geoip.redirect-ads.com##.jw-logo
 tructiep.rakhoi14.tv,tructiep.cakhia54.tv,tructiep.cakhia14.com,tructiep.caheo18.tv##.btn-betting
 tructiep.rakhoi14.tv,tructiep.cakhia54.tv,tructiep.cakhia14.com,tructiep.caheo18.tv##.datCuocBTN
 tructiep.rakhoi14.tv,tructiep.cakhia54.tv,tructiep.cakhia14.com,tructiep.caheo18.tv##.modelAds
@@ -1284,8 +1286,6 @@ javtopxx.com##.overlay
 lxmanga.net##.ads-wrapper
 lxmanga.net##.preload-backdrop
 lxmanga.net##.preload-banner
-nhentaivn.com###backgroundPopupp
-nhentaivn.com###popupContact
 nhentaivn.com###popup_fi
 phevkl.co###mp-preload-popup-overlay
 phevkl.co##.separator
@@ -1295,11 +1295,11 @@ phim18hd.top,phim18vn.biz,phim18hd.me##.cash-fish-pc
 phim18hd.top,phim18vn.biz,phim18hd.me##.preload-pc
 phim18hd.top,phim18vn.biz,phim18hd.me##.top-mobile-banner
 phimsexhay669.co##.v4j-header>a[target="_blank"]
-phym18.net###backgroundPopupp
-phym18.net###popupContact
 phym18.net##.black-layout>div:nth-child(2)
 phym18.net##.popup_u
 phym18.net##div[style^="position: absolute;top: 0;"]
+phym18.net,nhentaivn.com###backgroundPopupp
+phym18.net,nhentaivn.com###popupContact
 phym18.net,nhentaivn.com,avvietsub.com,phimsexvietsub.co###wap_bottombanner
 rphang.co##.bbMediaWrapper-inner>.samCodeUnit
 rphang.co##.js-replyNewMessageContainer.block-body>div.samCodeUnit>.samItem
