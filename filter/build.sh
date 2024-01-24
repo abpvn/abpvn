@@ -1,7 +1,6 @@
 #!/bin/sh
 bash sort.sh
 # make time stamp update
-TZ=":Asia/Ho_Chi_Minh"
 TIME_STAMP=`date +'%d %b %Y %H:%M:%S'`
 VERSION=$1
 if [[ -z $VERSION ]]; then

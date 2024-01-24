@@ -29,6 +29,9 @@ jobs:
     outputs:
       NEED_BUILD_MASTER: ${{steps.check_build.outputs.NEED_BUILD_MASTER}}
     steps:
+      - uses: szenius/set-timezone@v1.2
+        with:
+          timezoneLinux: "Asia/Ho_Chi_Minh"
       - uses: actions/checkout@v4
         with:
           ref: master
@@ -83,6 +86,9 @@ jobs:
     outputs:
       NEED_BUILD_SINGLE: ${{steps.check_build.outputs.NEED_BUILD_SINGLE}}
     steps:
+      - uses: szenius/set-timezone@v1.2
+        with:
+          timezoneLinux: "Asia/Ho_Chi_Minh"
       - uses: actions/checkout@v4
         with:
           ref: single

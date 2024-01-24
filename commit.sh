@@ -2,7 +2,6 @@
 SKIP_COMMIT=$1
 VERSION=$2
 if [[ -z $VERSION ]]; then
-    TZ=":Asia/Ho_Chi_Minh"
     VERSION=`date +'%Y%m%d%H%M%S%3N'`
 fi
 cd filter
