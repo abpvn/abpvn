@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 20240123200435499
+! Version: 20240124025342265
 ! Title: ABPVN List
-! Last modified: 23 Jan 2024 20:04:35 UTC+7
-! Diff-Path: patches/20240123200435499.patch#abpvn_ublock
+! Last modified: 24 Jan 2024 02:53:42 UTC+7
+! Diff-Path: patches/20240124025342265.patch#abpvn_ublock
 ! Diff-Expires: 60 minutes
 ! Expires: 1 days (update frequency)
 !
@@ -66,7 +66,7 @@
 ||123nhadatviet.net/Media/CK/banners/
 ||2banh.vn/images/banners/
 ||70303d714.vws.vegacdn.vn/cakhiastatic/$image
-||9767ebd63c.vws.vegacdn.vn/template/images-nc/$domain=mannhan.net|mn.mediastation.live
+||9767ebd63c.vws.vegacdn.vn/template/images-nc/$domain=mn.mediastation.live
 ||ads*.autodaily.vn
 ||ads.starzd.com^$image,domain=chillhay.io
 ||akamaized.net/audio/$media,rewrite=abp-resource:blank-mp3,domain=open.spotify.com
@@ -157,8 +157,6 @@
 ||kenhtin.net/upload/images/banner-
 ||khophim-poster.cuoiia.top^*.gif$image,domain=coiphim18.com
 ||kienthuc.net.vn/*.ads
-||kienviet.net/*banner
-||kienviet.net^*.gif
 ||laodong.vn/*QuangcaoOnline
 ||laptrinhvb.net/banner_bds.png
 ||lh3.googleusercontent.com/*=s0$image,domain=animevietsub.io|hoathinh4k.net
@@ -166,11 +164,9 @@
 ||lichngaytot.com/navive-advs$subdocument,domain=doctailieu.com
 ||listnhacai1.com^*.gif$image
 ||live.staticflickr.com$domain=timdaily.vn,image
-||lmssplus.com/static_image/ads-provider/$image
-||luotphimtv1.com/wp-content/uploads/$media
 ||maclife.io^*.gif
 ||media.adop.asia^$image,domain=hotphim.cc
-||media.nghean24h.vn$image
+||media.nghean24h.vn$image,domain=nghean24h.vn
 ||media.yeah1.com/files/qc/$image,domain=yeah1.com
 ||mehoathinh3.com/xml/
 ||mephimtv.com/wp-banner$image
@@ -210,7 +206,7 @@
 ||phimvuihd.org^*.gif$image
 ||phimyeuthichz.com/ad-data/$image
 ||photo2.tinhte.vn/data/attachment-files/*banner
-||photo2.tinhte.vn^*.gif$domain=live3.90phut10.live|watch.ezyproxy.com|live.vebo4.net
+||photo2.tinhte.vn^*.gif$domain=watch.ezyproxy.com|live.vebo4.net
 ||pic1025.com^*gif$domain=xemtivi4k.com
 ||potsiuds.com^$script,domain=nettruyentr.com
 ||quaivatdienanh.com/*banner$image
@@ -669,22 +665,14 @@ live3.thapcam2.net##.mct_-bet-bot
 live3.thapcam2.net##.mmo
 live3.thapcam2.net##.mmo-inner
 live3.thapcam2.net,xoilaczze.tv,veboz.net##.btn-odds
-lmssplus.com##.adsHOC_wrapper__i5MTn
-lmssplus.com##.homePage_adsHomeLeft__3_ruz.adsHOC_wrapper__Se0cN
-lmssplus.com##.style_wrapperAll__jFIbb
-lmssplus.com##.style_wrapperAll__oHfiq
-lmssplus.com##.style_wrapper__2LeQp
-lmssplus.com##.style_wrapper__YEwSi
-lmssplus.com##.textlinkBox_notwrap__scC4g.textlinkBox_wrapper__1C2P9
-lmssplus.com##.textlinkBox_wrapper
 lmssplus.com##p[style="color: rgb(174, 174, 174); margin-top: 10px; margin-bottom: 20px;"]
 loigiaihay.com###countdown
 loigiaihay.com##.bottom_cnt_ad
 loigiaihay.com##.tp_ads_incontent
 loigiaihay.com##div.ad_separator
 lucloi.vn##.ads_shortcode
-luotphimtv1.com,luotphim2.net,luotphim1.net,luotphimtv.vip,cdnwp.icu,webphim2.com###myModal
-luotphimtv1.com,luotphim2.net,luotphim1.net,luotphimtv.vip,cdnwp.icu,webphim2.com##div[id^="adsphim-"]
+luotphimtv1.com,luotphimtv1.net,luotphim2.net,luotphim1.net,luotphimtv.vip,cdnwp.icu,webphim2.com###myModal
+luotphimtv1.com,luotphimtv1.net,luotphim2.net,luotphim1.net,luotphimtv.vip,cdnwp.icu,webphim2.com##div[id^="adsphim-"]
 m.afamily.vn###adm-slot-7234
 m.baomoi.com##.bm_B>div
 m.baomoi.com##div.ad-banner-list
@@ -699,14 +687,6 @@ maclife.io##[href*="macone.vn"]
 maclife.io##[href*="minhtuanmobile.com"]
 maclife.io##[href*="vender.vn"]
 maclife.io##div.\35 fb1ed6025b0b.widget:nth-of-type(3)
-mannhan.net##.bet-btn-8423
-mannhan.net##.btn_betnow_632132
-mannhan.net##.btn_fb
-mannhan.net##.btn_soikeo_74324
-mannhan.net##.highlight
-mannhan.net##.images_fixed
-mannhan.net##.popup
-mannhan.net##[href="/top-bet.html"]
 mephimnhe1.net,phimgichill.net,ophimhdvn3.net##.mobile-catfix
 mephimnhe1.net,xemhay24h.com##.a--d-wrapper
 mephimtv.co##.ai-viewport-1
@@ -1142,7 +1122,7 @@ znews.vn##.znews-banner
 @@||imasdk.googleapis.com^$script,xmlhttprequest,domain=vieon.vn|fptplay.vn|24h.com.vn|gamgame24h|sctvonline.vn|danet.vn
 @@||linkads.xyz/aphim.org/ads2video/embed.html$subdocument,domain=vungtv.us|247phim.cc
 @@||luyenthithukhoa.vn/vietmxDetect/$~third-party
-@@||media.nghean24h.vn/thumb$image
+@@||media.nghean24h.vn/image_resize$image,domain=nghean24h.vn
 @@||media1.admicro.vn/cms/$script,domain=tuoitre.vn
 @@||pagead2.googlesyndication.com^$script,xmlhttprequest,image,domain=thuthuatmeovat.net|kites.vn|phuongtrinhhoahoc.com|letrongdai.vn|romgoc.net|traderviet.org|sum.vn|truyenaudiocv.org|khuchotot.com|1shortlink.com|thelanb.com|cungthi.online|lehait.net|nhacsong.pro|kientruc360.info|giavang.net|qthang.net|vnjpclub.com|753x.blogspot.com|ngohoanganhtuan.com|ngohoanganhtuan.net|toeicexamstore.xyz|vungoctuan.vn|ichi.pro|gocmod.com|tromcap.com|dafontvn.com|gvnvh18.com|sesenblog.com|filess.us|xaydungplus.com|nguonhd.net|anhdep24.com|nguontv.biz|windowslite.net|tiengnhatdongian.com|quangcaoyenbai.com|ios.codevn.net|traffic1s.com|audiotruyenfull.com|minhpc.com|vongquaymayman.one|toilaquantri.com|diendancauduong.com|note1s.com|covemarkets.com|taisachonthi.com|mifirm.net|link1s.com|anonyviet.com|nguonphim.one|4g.tintuc247.top|linkvip.io|web1s.asia|vanhoatamlinh.com|kiemlua.com|tailieungon.com|khotailieuonthi247.com|tailieuvang.com|phimlongtieng.net|ipacrack.com|duan24h.net|www.iosviet.com|hoctoan123.com|xem1.gavang1.net|yhocdata.com
 @@||player.sohatv.vn/resource/$script,domain=cafef.vn|gamek.vn|genk.vn|kenh14.vn
@@ -1399,7 +1379,7 @@ linkneverdie.net##+js(acs, document.createElement, optad)
 linkneverdie.net##+js(aopr, pushOnPageGala)
 linkneverdie.net##+js(nostif, DisplayAHTML, 5000)
 linkneverdie.net##+js(nostif, callback, 4003)
-luotphimtv1.com,luotphim2.net,luotphim1.net,luotphimtv.vip,webphim2.com,cdnwp.icu##+js(json-prune, 0.time_mobile 0.time 0.link_video 0.link_video_mobile 0.link 0.link_mobile 1.time_mobile 1.time 1.link_video 1.link_video_mobile 1.link 1.link_mobile)
+luotphimtv1.com,luotphimtv1.net,luotphim2.net,luotphim1.net,luotphimtv.vip,webphim2.com,cdnwp.icu##+js(json-prune, 0.time_mobile 0.time 0.link_video 0.link_video_mobile 0.link 0.link_mobile 1.time_mobile 1.time 1.link_video 1.link_video_mobile 1.link 1.link_mobile)
 lxmanga.net##+js(acs, $, PopUnder)
 nettruyenall.com##+js(acs, Promise, break;case)
 nettruyenus.net##+js(acs, sp)

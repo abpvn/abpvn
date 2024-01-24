@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 20240123200435499
+! Version: 20240124025342265
 ! Title: ABPVN List
-! Last modified: 23 Jan 2024 20:04:35 UTC+7
-! Diff-Path: patches/20240123200435499.patch#abpvn_noelemhide
+! Last modified: 24 Jan 2024 02:53:42 UTC+7
+! Diff-Path: patches/20240124025342265.patch#abpvn_noelemhide
 ! Diff-Expires: 60 minutes
 ! Expires: 1 days (update frequency)
 !
@@ -66,7 +66,7 @@
 ||123nhadatviet.net/Media/CK/banners/
 ||2banh.vn/images/banners/
 ||70303d714.vws.vegacdn.vn/cakhiastatic/$image
-||9767ebd63c.vws.vegacdn.vn/template/images-nc/$domain=mannhan.net|mn.mediastation.live
+||9767ebd63c.vws.vegacdn.vn/template/images-nc/$domain=mn.mediastation.live
 ||ads*.autodaily.vn
 ||ads.starzd.com^$image,domain=chillhay.io
 ||akamaized.net/audio/$media,rewrite=abp-resource:blank-mp3,domain=open.spotify.com
@@ -157,8 +157,6 @@
 ||kenhtin.net/upload/images/banner-
 ||khophim-poster.cuoiia.top^*.gif$image,domain=coiphim18.com
 ||kienthuc.net.vn/*.ads
-||kienviet.net/*banner
-||kienviet.net^*.gif
 ||laodong.vn/*QuangcaoOnline
 ||laptrinhvb.net/banner_bds.png
 ||lh3.googleusercontent.com/*=s0$image,domain=animevietsub.io|hoathinh4k.net
@@ -166,11 +164,9 @@
 ||lichngaytot.com/navive-advs$subdocument,domain=doctailieu.com
 ||listnhacai1.com^*.gif$image
 ||live.staticflickr.com$domain=timdaily.vn,image
-||lmssplus.com/static_image/ads-provider/$image
-||luotphimtv1.com/wp-content/uploads/$media
 ||maclife.io^*.gif
 ||media.adop.asia^$image,domain=hotphim.cc
-||media.nghean24h.vn$image
+||media.nghean24h.vn$image,domain=nghean24h.vn
 ||media.yeah1.com/files/qc/$image,domain=yeah1.com
 ||mehoathinh3.com/xml/
 ||mephimtv.com/wp-banner$image
@@ -210,7 +206,7 @@
 ||phimvuihd.org^*.gif$image
 ||phimyeuthichz.com/ad-data/$image
 ||photo2.tinhte.vn/data/attachment-files/*banner
-||photo2.tinhte.vn^*.gif$domain=live3.90phut10.live|watch.ezyproxy.com|live.vebo4.net
+||photo2.tinhte.vn^*.gif$domain=watch.ezyproxy.com|live.vebo4.net
 ||pic1025.com^*gif$domain=xemtivi4k.com
 ||potsiuds.com^$script,domain=nettruyentr.com
 ||quaivatdienanh.com/*banner$image
@@ -404,7 +400,7 @@
 @@||jsc.adskeeper.co.uk^$script,domain=ios.codevn.net
 @@||linkads.xyz/aphim.org/ads2video/embed.html$subdocument,domain=vungtv.us|247phim.cc
 @@||luyenthithukhoa.vn/vietmxDetect/$~third-party
-@@||media.nghean24h.vn/thumb$image
+@@||media.nghean24h.vn/image_resize$image,domain=nghean24h.vn
 @@||media1.admicro.vn/cms/$script,domain=tuoitre.vn
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=cafenau.com
 @@||pagead2.googlesyndication.com^$domain=azrom.net|khohieu.com
