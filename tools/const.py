@@ -8,11 +8,11 @@ class Const():
         '.widget', 'block.ad', '.mp4', '.mp3', '.m3u8',
         '.row', '.parse', '.round', 'abpvn.com',
         'abpvn.org', '.php', '.html', '.button', '.mrb10',
-        '.modal', '.ico', '.error', '.write', '.webp', 'PanelScroller.Notices',
+        '.modal', '.ico', '.write', '.webp', 'PanelScroller.Notices',
         'firstmessfloadright.samItem', 'banner-top-box.click',
-        'clear.hd', 'info.card', 'left.box', 'right.box',
-        'blqPr.nwsItHm', 'text-center.adsense', '.btn', '.show',
-        'show.fade', 'parent.special', 'flex-1.table', '.patch'
+        'clear.hd', 'blqPr.nwsItHm', 'text-center.adsense', '.btn', '.show',
+        'show.fade', 'parent.special', '.patch', 'li.special.parent',
+        'relative.px-2.flex', 'd-none.p-0.company.flex-1.table'
     ]
     SKIP_CHECK_REDIRECT = [
         'amazonaws.com', 'blogspot.com', 'blogtruyen.com', 'fptplay.net',
