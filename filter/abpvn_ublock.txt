@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 20240125075504990
+! Version: 20240125120313836
 ! Title: ABPVN List
-! Last modified: 25 Jan 2024 07:55:05 UTC+7
-! Diff-Path: patches/20240125075504990.patch#abpvn_ublock
+! Last modified: 25 Jan 2024 12:03:13 UTC+7
+! Diff-Path: patches/20240125120313836.patch#abpvn_ublock
 ! Diff-Expires: 60 minutes
 ! Expires: 1 days (update frequency)
 !
@@ -140,7 +140,7 @@
 ||i.imgur.com/FbUH5AQ.png
 ||i.imgur.com/Q0a2mv2.png
 ||i.imgur.com^$image,domain=nhacdj.vn|diendanit.net|banbuondalat.com|hoathinhtq.tv|xem.tructiepnba.com|vungtv.us
-||i.imgur.com^*.gif$image,domain=ghienphim11.net|dailyphimz.com|mv.phimmoiaz.cc|phimgichill.net|ophimhdvn3.net|mythethao.net|xemtivi4k.com|tructiep.caheo18.tv|vtipster.net|huphimtv.com|xoilac14.org|film365.in|live3.90phut10.live|xemphimviet1.net|watch.ezyproxy.com|live3.thapcam2.net|phimmoiiii.net|live.vebo4.net|live2.vebo4.net|xemtv.tvhayhd.com|phimbocn.com|hoathinh4k.net
+||i.imgur.com^*.gif$image,domain=ghienphim11.net|dailyphimz.com|mv.phimmoiaz.cc|phimgichill.net|ophimhdvn3.net|mythethao.net|xemtivi4k.com|tructiep.caheo18.tv|vtipster.net|huphimtv.com|xoilac14.org|film365.in|live3.90phut10.live|xemphimviet1.net|watch.ezyproxy.com|live3.thapcam2.net|phimmoiiii.net|live.vebo4.net|live2.vebo4.net|xemtv.tvhayhd.com|hoathinh4k.net
 ||i.servimg.com/u/f22/$domain=4rkinggame.com
 ||i.upanh.org^*.gif$domain=xemhay24h.com
 ||iamcdn.net/players/playera.dmins.js
@@ -190,10 +190,7 @@
 ||phimmoi.win^*.gif$image
 ||phimmoi4s.com/files/banner/$image
 ||phimmoi4s.com^*.gif
-||phimmoichill79.cc^*gif
-||phimmoiv2.com^*.gif
 ||phimnhua.com/wp-content/uploads/2023/02/400x300.jpg$image
-||phimnhua.com/wp-content/uploads/2023/09/cc_com.png$image
 ||phimnhua.com^*.gif
 ||phimplay24h.com^*.gif
 ||phimtuoitho.tv/uploads/sale-timan-2.jpg$image
@@ -205,7 +202,6 @@
 ||potsiuds.com^$script,domain=nettruyentr.com
 ||quaivatdienanh.com/*banner$image
 ||quangcaosanpham.com/images/$third-party
-||quoracdn.net^$image,domain=phimbocn.com
 ||r2.plvb.xyz^*.gif$image,domain=xoilaczzo.tv
 ||raovat3s.com/clientscript/yui/yuiloader-dom-event/yuiloader-dom-event.js
 ||raovatdidong.vn/images/$domain=muabanraovat.com
@@ -524,7 +520,7 @@ dubaotiente.com##.ad-pin-right-bottom
 ebookbkmt.com##.top-right
 ecci.com.vn##.widget_media_image.widget
 ephoto360.com##.line-ads
-ephoto360.com,thiepmung.com,phimmoiv2.com,motchillz.org,ophimhd.vip,xemphimchill.xyz,phimmoi.win,247phim.cc,hotphim.cc##.ad-container
+ephoto360.com,thiepmung.com,motchillz.org,ophimhd.vip,xemphimchill.xyz,phimmoi.win,247phim.cc,hotphim.cc##.ad-container
 eva.vn##.banr-Rt
 eva.vn##.banrpstn
 film365.in###ballon-right
@@ -740,6 +736,7 @@ ophimhay.com###adsTopInPageBanner
 ophimhay.com###popup
 ophimhay.com##.adsContainer
 ophimhd.vip###ad-container
+ophimhd.vip##.uniad-player + div[style]
 ophimhdvn3.net##lixi88-ads-left
 ophimhdvn3.net##mb_catfish_1xbet
 ophimhdvn3.net##preload-11bet
@@ -754,7 +751,6 @@ phim.vkoolv.net,vuonhoalan.net,gunnylau360.net,mythethao.net,phimplay24h.com,ken
 phim202.com###itro_opaco
 phim33.tv##div[data-value="1"]
 phimbathu.one###catfish_content
-phimbocn.com###sticky
 phimcuon.com###ads_preload
 phimcuon.com##.show.ads-sticky
 phimdacap.tv##[data-clm="ccccc2"]
@@ -780,16 +776,7 @@ phimmoi2.com##.player-vast-blocker
 phimmoi2.com,hhtqvietsub.top,hhchina.tv###sponsor-balloon
 phimmoi2.com,mehoathinh3.com##.ff-banner
 phimmoi4s.com##.box_option
-phimmoi4s.com##.event_loader_e
-phimmoi4s.com##.fix_bottom
-phimmoi4s.com##.popup_center
-phimmoichill79.cc###chilladv
-phimmoichill79.cc###headermbads
-phimmoichill79.cc###headerpcads
-phimmoichill79.cc###mobiads
-phimmoichill79.cc###pcads
 phimmoichillm.net###pm_quangcao
-phimmoiv2.com,ophimhd.vip##.uniad-player + div[style]
 phimnhua.com###catfish-banner
 phimnhua.com##.center-screen.backdrop
 phimnhua.com##.ibetlogo
@@ -1046,7 +1033,7 @@ xem1.gavang1.net##.css-iol86l
 xem1.gavang1.net##.vjs-banner-btn
 xem8z.com###ouibounce-modal
 xemhay24h.com##div.container:nth-of-type(5)
-xemphimchill.xyz,hhninja1.tv,phimbocn.com,phimhoathinh3d.com,phimmoiv2.com,hoathinhtq.tv,hhtq.vip,hhtqvietsub.top,motchilltivi.com,hhtrungquoc.com,hhtqnet.tv,animeweb.vip,hh3d.tv,hoathinh4k.net###catfish
+xemphimchill.xyz,hhninja1.tv,phimbocn.com,phimhoathinh3d.com,hoathinhtq.tv,hhtq.vip,hhtqvietsub.top,motchilltivi.com,hhtrungquoc.com,hhtqnet.tv,animeweb.vip,hh3d.tv,hoathinh4k.net###catfish
 xemphimviet1.net##li.special.parent
 xemphimviet1.net,ghienphim11.net##.ad-floater
 xemphimviet1.net,ghienphim11.net##.popunder-link
