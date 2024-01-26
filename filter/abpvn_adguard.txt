@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 20240126140154085
+! Version: 20240126190224604
 ! Title: ABPVN List
-! Last modified: 26 Jan 2024 14:01:54 UTC+7
-! Diff-Path: patches/20240126140154085.patch#abpvn_adguard
+! Last modified: 26 Jan 2024 19:02:24 UTC+7
+! Diff-Path: patches/20240126190224604.patch#abpvn_adguard
 ! Diff-Expires: 60 minutes
 ! Expires: 1 days (update frequency)
 !
@@ -111,8 +111,8 @@
 ||code.gunnymienphi.net^*.gif
 ||danketoan.com/banner/
 ||datcang.vn/images/khicon.jpg
+||docnhanh.vn/images/ads/$image
 ||doctruyenchufull.com/ads/$image
-||ducvietonline.de/*banner$image
 ||ff.imacdn.com^$image,domain=xem1080.com
 ||file1.dangcongsan.vn^*.gif$image,domain=dangcongsan.vn
 ||forum.idichvuseo.com/images/quang-cao
@@ -144,7 +144,7 @@
 ||i.imgur.com/FbUH5AQ.png
 ||i.imgur.com/Q0a2mv2.png
 ||i.imgur.com^$image,domain=nhacdj.vn|diendanit.net|banbuondalat.com|hoathinhtq.tv|xem.tructiepnba.com|vungtv.us
-||i.imgur.com^*.gif$image,domain=ghienphim11.net|dailyphimz.com|mv.phimmoiaz.cc|phimgichill.net|ophimhdvn3.net|mythethao.net|xemtivi4k.com|vtipster.net|huphimtv.com|xoilac14.org|film365.in|live3.90phut10.live|xemphimviet1.net|watch.ezyproxy.com|live3.thapcam2.net|phimmoiiii.net|live.vebo4.net|live2.vebo4.net|tvhayhd.com|hoathinh4k.net
+||i.imgur.com^*.gif$image,domain=ghienphim11.net|mv.dailyphimz.com|mv.phimmoiaz.cc|phimgichill.net|ophimhdvn3.net|mythethao.net|xemtivi4k.com|vtipster.net|huphimtv.com|xoilac14.org|film365.in|live3.90phut10.live|xemphimviet1.net|watch.ezyproxy.com|live3.thapcam2.net|phimmoiiii.net|live.vebo4.net|live2.vebo4.net|tvhayhd.com|hoathinh4k.net
 ||i.servimg.com/u/f22/$domain=4rkinggame.com
 ||i.upanh.org^*.gif$domain=xemhay24h.com
 ||iamcdn.net/players/playera.dmins.js
@@ -171,6 +171,7 @@
 ||mehoathinh3.com/xml/
 ||mocfun.net/uploads/banners/
 ||motchilliv.net/banner$image
+||mv.dailyphimz.com/ads/popunder.js$script
 ||nettruyenviet.com/assets/js/popShope.js$script
 ||ngaytho.me^*.gif
 ||nhadatvang.vn/images/$domain=muabanraovat.com
@@ -821,7 +822,6 @@ clbgamesvn.com##.bannerBox
 clbgamesvn.com##.footerBanner
 clbgamesvn.com##center>[href*="tlink.vn"]
 clipconverter.cc##div[style^="z-index: 999999"]
-coccoc.com##.adsv
 coiphim18.com###banner-top-mobile
 coiphim18.com###pc-top-banner
 coiphim18.com###quang-cao-2
@@ -842,8 +842,6 @@ cunghocvui.com###shoppe_aff_button
 daklak24h.com.vn##.features-r
 dantri.com.vn###bannerMasthead
 dantri.com.vn###desktop-home-top-page
-dantri.com.vn###dta_inpage_wrapper
-dantri.com.vn###dtads_inpage_wrapper
 dantri.com.vn###mobile-home-middle-1
 dantri.com.vn###mobile-home-middle-2
 dantri.com.vn###mobile-home-top-page
@@ -852,7 +850,6 @@ danviet.vn##.sidebar>div[style]
 design.tutsplus.com##.avert--sticky
 dexuat.com###custom_html-7
 diadiem.com##.div_box_adv
-docnhanh.vn###div-ub-docbao
 doctruyenchufull.com##.ad-botton
 doctruyenchufull.com##.topbanner
 docviewer.yandex.com##div[style="width: 100%;"]
@@ -1744,7 +1741,7 @@ truyen2u.net#%#//scriptlet("abort-current-inline-script", "eval")
 truyen35.vn#%#//scriptlet("abort-current-inline-script", "jQuery", "click_ads")
 truyenqqvn.com#%#//scriptlet("abort-current-inline-script", "document.addEventListener", "window.open")
 truyensextv.org#%#//scriptlet("abort-current-inline-script", "document.addEventListener", "popup")
-truyensieuhay.com,phimvietsub.pro,quangcaoyenbai.com,sieudamtv.one,ephimchill.com,maclife.io,ophimhdvn3.net,thuvienhd.xyz,xemtv.tvhayhd.com,khophim88.net,nhentaivn.com,khophimchill.com#%#//scriptlet("abort-on-property-read", "document.cookie")
+truyensieuhay.com,phimvietsub.pro,quangcaoyenbai.com,sieudamtv.one,ephimchill.com,maclife.io,ophimhdvn3.net,thuvienhd.xyz,xemtv.tvhayhd.com,khophim88.net,nhentaivn.com,khophimchill.com,mv.dailyphimz.com#%#//scriptlet("abort-on-property-read", "document.cookie")
 truyentuanopm.com#%#//scriptlet("abort-current-inline-script", "$", "btpop")
 vailonxx.com,phimlongtieng.com,phimlongtieng.net#%#//scriptlet("abort-current-inline-script", "jQuery", "window.open")
 veryfiles.com#%#//scriptlet("abort-on-property-read", "nFNcksmwU")
