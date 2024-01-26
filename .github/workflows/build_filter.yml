@@ -12,7 +12,7 @@ on:
         type: boolean
         default: false
   schedule:
-    - cron: 0 */5 * * *
+    - cron: 0 2,7,12,17 * * * # Run at 9, 14, 19, 0 hour in UTC + 7
   push:
     branches:
       - master
