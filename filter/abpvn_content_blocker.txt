@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 20240127090609420
+! Version: 20240127185229442
 ! Title: ABPVN List
-! Last modified: 27 Jan 2024 09:06:09 UTC+7
-! Diff-Path: patches/20240127090609420.patch#abpvn_content_blocker
+! Last modified: 27 Jan 2024 18:52:29 UTC+7
+! Diff-Path: patches/20240127185229442.patch#abpvn_content_blocker
 ! Diff-Expires: 60 minutes
 ! Expires: 1 days (update frequency)
 !
@@ -88,7 +88,7 @@
 ||baonga.com/FileUpload/Images/*banner
 ||bf.333xbet.com/18881999/video888.mp4$domain=phimhaytv.info,rewrite=abp-resource:blank-mp3
 ||bf.333xbet.com^$media,third-party,domain=~phimhaytv.info
-||biphim.io/public/prom_ad/prom_ad.js$script
+||biphim.biz/public/prom_ad/prom_ad.js$script
 ||blog.abit.vn/wp-content/uploads/2020/05/abit_$image
 ||blogger.googleusercontent.com^$image,domain=hhtqnet.tv|hhninja1.tv|xem8z.com
 ||bonbanh.com/ad/
@@ -99,7 +99,7 @@
 ||cdn.pixfuture.com/adb-media/adb_detect_pixfuture.js$domain=saigonbao.com
 ||cdn.thichxemphim1.net/wp-content/themes/halimmovies-child/jscm.min.js$domain=thichxemphim1.net
 ||cdn.webhoctienganh.com/asset/home/img/banner/$image,domain=webhoctienganh.com
-||cdn2-img.net^*.gif$image,domain=hhpanda.co|dongchill.tv|biphim.io|subnhanh.app|subnhanh.bio|subnhanhvl.co|bichill.one|dongphim3s.net
+||cdn2-img.net^*.gif$image,domain=hhpanda.biz|dongchill.tv|biphim.biz|subnhanh.app|subnhanh.bio|subnhanhvl.net|bichill.biz|dongphim3s.com
 ||chillhay.me/ads/$image
 ||chillhay.me/guide/popup.tt-f.js
 ||chillphimmoiz.org/assets/*.gif$image
@@ -130,7 +130,7 @@
 ||heovktgame.club/wp-content/plugins/banner-management/$image
 ||hh3dhay.com/wp-content/uploads/*.gif$image
 ||hh3dhay.xyz^*.gif$domain=3dchill.net
-||hhpanda.co/ads/ads_xx.js
+||hhpanda.biz/ads/ads_xx.js
 ||hinhso.com^$domain=diendanmaychu.vn,image
 ||hosocongty.vn/uploads/products/$~third-party,image
 ||hotphim.cc/disable.js$script
@@ -227,7 +227,7 @@
 ||storage.fshare.vn/images/$third-party,domain=~qthang.net
 ||subnhanh.app/js/ads_xx.js
 ||subnhanh.bio/js/ads_xx.js
-||subnhanhvl.co/js/ads_xx.js
+||subnhanhvl.net/js/ads_xx.js
 ||suckhoelamdep.vn^*.gif$image
 ||tailieuvnu.com/wp-content/uploads/2022/12/28/shopee-2*.png$image
 ||taoanhdep.com$csp=script-src 'self' 'unsafe-inline' data: https:
@@ -777,8 +777,8 @@ baonga.com##.monkey-section-tinnoibat
 baonga.com##div.monkey-qc
 bds123.vn##.js-ad-fixed-position
 bestx.stream###video_player ~ div[id]
-biphim.io###top_oddd
-biphim.io,subnhanh.bio##.underplayer_btn
+biphim.biz###top_oddd
+biphim.biz,subnhanh.bio##.underplayer_btn
 biphims.co,biphims.cc##.banner-sticky-footer-wrapper
 blockchain.com##.bci-ad
 blog.abit.vn##.ab-adv_banner
@@ -859,8 +859,8 @@ doctruyenchufull.com##.topbanner
 docviewer.yandex.com##div[style="width: 100%;"]
 docviewer.yandex.com##ya-recommendation-widget
 doisongphapluat.com##div.box-aside
-dongphim3s.net##a[rel="nofollow sponsored"]
-dongphim3s.net,dongchill.tv,bichill.one,coiphim18.com,subnhanh.bio###footer_fixed_ads
+dongphim3s.com##a[rel="nofollow sponsored"]
+dongphim3s.com,dongchill.tv,bichill.biz,coiphim18.com,subnhanh.bio###footer_fixed_ads
 download.cnet.com##.download-fd-leaderboard-ad-top
 drivers.softpedia.com###_wlts
 drivers.softpedia.com###_wlts_lead
@@ -959,7 +959,7 @@ ketqua247vn.club,keoso.co##.ads-container
 ketqua9.net##.baloon
 ketqua9.net##.col-sm-10.kqcenter
 ketqua9.net,ketqua3.net##.kqbackground.vien ~ a[target="_blank"]
-ketqua9.net,nghean24h.vn,xem.tructiepnba.com,phimmoi4s.com,biphim.io,vidian.wiki,truyenchu.com.vn,abtruyen.com##a[rel="nofollow"]
+ketqua9.net,nghean24h.vn,xem.tructiepnba.com,phimmoi4s.com,biphim.biz,vidian.wiki,truyenchu.com.vn,abtruyen.com##a[rel="nofollow"]
 khiphach.vip###qc-kpgame
 khuchotot.com##.ads_header
 kick4ss.com##td[width="100%"] div[id]:has(a[href="/k/?q=q"])
@@ -1100,7 +1100,7 @@ ophimhdvn3.net,huphimtv.com,animevietsub.io,saostar.vn,xemphimviet1.net,ghienphi
 outlook.live.com##.LBktY>.GssDD
 p.thoctv.com##.add-logo-ads
 phapluatplus.vn##div[style="text-align:center;margin-top:0px;margin-bottom:0px;"]
-phim.vkoolv.net,subnhanhvl.co,subnhanh.app,subnhanh.bio,dongphim3s.net,mitome.tv,tutientruyen3.xyz,protruyen2.fun,biphim.io###overlay
+phim.vkoolv.net,subnhanhvl.net,subnhanh.app,subnhanh.bio,dongphim3s.com,mitome.tv,tutientruyen3.xyz,protruyen2.fun,biphim.biz###overlay
 phim202.com###itro_opaco
 phim33.tv##div[data-value="1"]
 phimbo88vn.net##.ads_popup
@@ -1186,7 +1186,7 @@ sport5.vn,afamily.vn##.afw-topbanner
 ssplay.net,zophim.net###_AM_POPUP_FRAME
 sstruyen.vn##.detail-content>center
 subnhanh.xyz##.sticky_bottom
-subnhanhvl.co,subnhanh.app,subnhanh.bio,dongchill.tv###xs-addd0
+subnhanhvl.net,subnhanh.app,subnhanh.bio,dongchill.tv###xs-addd0
 swradioafrica.com##.grid-match__footer
 swradioafrica.com##a.d-lg-none.d-block:nth-of-type(1)
 tamlinh247.com.vn##.ads-gg-top
