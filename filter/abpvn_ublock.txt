@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 20240127195616143
+! Version: 20240127201635376
 ! Title: ABPVN List
-! Last modified: 27 Jan 2024 19:56:16 UTC+7
-! Diff-Path: patches/20240127195616143.patch#abpvn_ublock
+! Last modified: 27 Jan 2024 20:16:35 UTC+7
+! Diff-Path: patches/20240127201635376.patch#abpvn_ublock
 ! Diff-Expires: 60 minutes
 ! Expires: 1 days (update frequency)
 !
@@ -1377,7 +1377,6 @@ www.nettruyenclub.com,nhattruyenup.com,nhattruyenmax.com##.mrb5.text-center.cont
 www.o-study.net###IMAGE635>.ladi-transition.ladi-image
 www.o-study.net###IMAGE639>.ladi-transition.ladi-image
 www.o-study.net###POPUP648
-www.o-study.net##.backdrop-popup
 www.thuocbietduoc.com.vn###neo-right-ads
 www.toptruyenhot.co,doctruyen3qup.com,anime47.com##.advertisement
 www.youtube.com##ytd-rich-item-renderer:has(.ytd-in-feed-ad-layout-renderer)
@@ -1758,6 +1757,8 @@ vinaurl.net##+js(aopr, oneClick)
 vndoc.com##+js(set, seconds, 0)
 vungoctuan.vn##+js(acs, document.write, snow)
 vungoctuan.vn##+js(no-xhr-if, ads)
+www.o-study.net##.backdrop-popup
+www.o-study.net##body:style(position: static !important)
 www.toptruyenhot.co##+js(acs, Promise, instance)
 xem1.gavang1.net##.css-15ay2jw
 xem1.gavang1.net##.css-d3rbv3
