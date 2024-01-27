@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 20240127201635396
+! Version: 20240127212055381
 ! Title: ABPVN List
-! Last modified: 27 Jan 2024 20:16:35 UTC+7
-! Diff-Path: patches/20240127201635396.patch#abpvn
+! Last modified: 27 Jan 2024 21:20:55 UTC+7
+! Diff-Path: patches/20240127212055381.patch#abpvn
 ! Diff-Expires: 60 minutes
 ! Expires: 1 days (update frequency)
 !
@@ -99,7 +99,7 @@
 ||cdn.pixfuture.com/adb-media/adb_detect_pixfuture.js$domain=saigonbao.com
 ||cdn.thichxemphim1.net/wp-content/themes/halimmovies-child/jscm.min.js$domain=thichxemphim1.net
 ||cdn.webhoctienganh.com/asset/home/img/banner/$image,domain=webhoctienganh.com
-||cdn2-img.net^*.gif$image,domain=hhpanda.biz|dongchill.tv|biphim.biz|subnhanh.app|subnhanh.bio|subnhanhvl.net|bichill.biz|dongphim3s.com
+||cdn2-img.net^*.gif$image,domain=hhpanda.biz|dongchill.co|biphim.biz|subnhanh.men|subnhanh.ac|subnhanhvl.net|bichill.biz|dongphim3s.com
 ||chillhay.me/ads/$image
 ||chillhay.me/guide/popup.tt-f.js
 ||chillphimmoiz.org/assets/*.gif$image
@@ -225,8 +225,8 @@
 ||static.ybox.vn^*.gif$domain=ybox.vn
 ||stc02bc54661548.cloud.anycastapnic.com^*.gif$domain=xem1.gavang1.net|ws-client.gavang.tech
 ||storage.fshare.vn/images/$third-party,domain=~qthang.net
-||subnhanh.app/js/ads_xx.js
-||subnhanh.bio/js/ads_xx.js
+||subnhanh.ac/js/ads_xx.js
+||subnhanh.men/js/ads_xx.js
 ||subnhanhvl.net/js/ads_xx.js
 ||suckhoelamdep.vn^*.gif$image
 ||tailieuvnu.com/wp-content/uploads/2022/12/28/shopee-2*.png$image
@@ -422,7 +422,7 @@ baonga.com##.monkey-section-tinnoibat
 baonga.com##div.monkey-qc
 bestx.stream###video_player + div[id]
 biphim.biz###top_oddd
-biphim.biz,subnhanh.bio##.underplayer_btn
+biphim.biz,subnhanh.ac##.underplayer_btn
 biphims.co,biphims.cc##.banner-sticky-footer-wrapper
 blog.abit.vn##.button-dangkyngay
 blogkiienthuc.net##.textwidget
@@ -498,7 +498,7 @@ doctruyenchufull.com##.ad-botton
 doctruyenchufull.com##.topbanner
 doisongphapluat.com##div.box-aside
 dongphim3s.com##a[rel="nofollow sponsored"]
-dongphim3s.com,dongchill.tv,bichill.biz,coiphim18.com###footer_fixed_ads
+dongphim3s.com,dongchill.co,bichill.biz,coiphim18.com###footer_fixed_ads
 download.vn,gamevui.vn###ouibounce-modal
 download.vn,gamevui.vn##div[id^="adsbg"]
 dubaotiente.com##.ad-pin-right-bottom
@@ -725,7 +725,7 @@ p.thoctv.com##.add-logo-ads
 phapluatplus.vn##div[style="text-align:center;margin-top:0px;margin-bottom:0px;"]
 phetruyen.vip,phimbo88vn.net##.ads_popup
 phim.vkoolv.net##.box-rating
-phim.vkoolv.net,subnhanhvl.net,subnhanh.app,subnhanh.bio,tructiepdabong5.co,tutientruyen3.xyz,protruyen2.fun,biphim.biz###overlay
+phim.vkoolv.net,subnhanhvl.net,subnhanh.men,subnhanh.ac,tructiepdabong5.co,tutientruyen3.xyz,protruyen2.fun,biphim.biz###overlay
 phim.vkoolv.net,vuonhoalan.net,gunnylau360.net,mythethao.net,phimplay24h.com,kenhgamelau.com,phimno4.xyz,gunnymienphi.net,dailyphimz.com,xemhay24h.com,listnhacai1.com,phim33.tv,247phim.cc,vkooll.net,vungtv.us,vuaphimmoi2.net##.float-ck
 phim202.com###itro_opaco
 phim33.tv##div[data-value="1"]
@@ -803,7 +803,7 @@ soikeo365.net##.top-nha-cai
 soikeoz.co,phimmoinay.tv,phimtho.net,tutientruyen3.xyz,chillhaynet.click,protruyen2.fun###popup_banner_beta
 sport5.vn,afamily.vn##.afw-topbanner
 ssplay.net,zophim.net###_AM_POPUP_FRAME
-subnhanhvl.net,subnhanh.app,subnhanh.bio,dongchill.tv###xs-addd0
+subnhanhvl.net,subnhanh.men,subnhanh.ac,dongchill.co###xs-addd0
 swradioafrica.com##.grid-match__footer
 swradioafrica.com##a.d-lg-none.d-block:nth-of-type(1)
 swradioafrica.com,mitome.tv##.d-lg-flex.d-none.p-0.company.flex-1.table
@@ -1164,8 +1164,8 @@ $third-party,script,domain=sexdiaryx.us
 ||cdn-01.w3img.com^*.gif$image,domain=javhd.tech|sexvietz.co
 ||cdn.adxcontent.com^
 ||cdn.javbabe.net^$subdocument
-||cliphot69.vin$csp=script-src 'self' 'unsafe-inline'
-||cliphot69.vin^*.gif$image
+||cliphot69.run$csp=script-src 'self' 'unsafe-inline'
+||cliphot69.run^*.gif$image
 ||cliphotvn123.com^*.gif$image
 ||cloufdlare.com/ads/vn1.html$subdocument,domain=sex.phe.to
 ||discordapp.$image,domain=phym18.net|phim18vipb.com|avvietsub.com|phimsexvietsub.co
@@ -1226,10 +1226,10 @@ buomtv.tv##._9xtpcl.e1e6v8dt
 buomtv.tv##.llnefd1
 buomtv.tv##.lpp0nsn
 buomtv.tv##.luq51lg.a13wihj
-cliphot69.vin###custom_html-42
+cliphot69.run###custom_html-42
 cliphotvn.2tenz.top##div[style^="position:fixed;inset:0px;z-index:100000;"]
 cliphotvn.2tenz.top,hls.playerfb.xyz###video_player ~ div[id]
-cliphotvn123.com,mobiblog.lol,cliphot69.vin,phevkl.co,gvnvh18.com##.float-ck-center-lt
+cliphotvn123.com,mobiblog.lol,cliphot69.run,phevkl.co,gvnvh18.com##.float-ck-center-lt
 damconuong.net##.pc-catfixx
 damconuong.net##a[rel="nofollow"]
 filemoon.sx##body>[style*="position: fixed;"]
