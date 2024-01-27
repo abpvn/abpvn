@@ -1,11 +1,11 @@
-diff name:abpvn lines:720 checksum:41062d549a
+diff name:abpvn lines:733 checksum:0ba77d9878
 d2 1
 a2 1
-! Version: 20240127090611525
+! Version: 20240127185219514
 d4 2
 a5 2
-! Last modified: 27 Jan 2024 09:06:11 UTC+7
-! Diff-Path: patches/20240127090611525.patch#abpvn
+! Last modified: 27 Jan 2024 18:52:19 UTC+7
+! Diff-Path: patches/20240127185219514.patch#abpvn
 a36 1
 /ads/popup_
 d47 1
@@ -16,12 +16,21 @@ a74 1
 ||9767ebd63c.vws.vegacdn.vn^*.gif$image,domain=livetv4.mannhan1.live|mn.mediastation.live
 d78 1
 d82 1
+d92 1
+a92 1
+||biphim.biz/public/prom_ad/prom_ad.js$script
 d100 1
 d102 1
+d105 1
+a105 1
+||cdn2-img.net^*.gif$image,domain=hhpanda.biz|dongchill.tv|biphim.biz|subnhanh.app|subnhanh.bio|subnhanhvl.net|bichill.biz|dongphim3s.com
 d112 1
 a116 1
 ||docnhanh.vn/images/ads/$image
 d118 1
+d137 1
+a137 1
+||hhpanda.biz/ads/ads_xx.js
 a139 1
 ||hotphim.cc/disable.js$script
 d144 1
@@ -72,6 +81,9 @@ d246 1
 d249 1
 a249 1
 ||stc02bc54661548.cloud.anycastapnic.com^*.gif$domain=xem1.gavang1.net|ws-client.gavang.tech
+d253 1
+a253 1
+||subnhanhvl.net/js/ads_xx.js
 d256 1
 d258 1
 a258 1
@@ -203,12 +215,11 @@ a801 2
 bantincongnghe.net##[href*="cellphones.com.vn"]
 baodauthau.vn,mmo4me.com##div[class*="ads"]
 d803 1
-d809 2
-a810 1
+d809 4
+a812 3
 bestx.stream###video_player + div[id]
-d812 1
-a812 1
-biphim.io,subnhanh.bio##.underplayer_btn
+biphim.biz###top_oddd
+biphim.biz,subnhanh.bio##.underplayer_btn
 d814 2
 d818 1
 d824 1
@@ -250,9 +261,10 @@ d879 2
 d886 1
 d889 1
 d892 2
-d896 8
-a903 3
-dongphim3s.net,dongchill.tv,bichill.one,coiphim18.com###footer_fixed_ads
+d895 9
+a903 4
+dongphim3s.com##a[rel="nofollow sponsored"]
+dongphim3s.com,dongchill.tv,bichill.biz,coiphim18.com###footer_fixed_ads
 download.vn,gamevui.vn###ouibounce-modal
 download.vn,gamevui.vn##div[id^="adsbg"]
 d905 1
@@ -301,7 +313,7 @@ a1000 1
 keoso.co##.widget-sidebar-block
 d1005 1
 a1005 1
-ketqua9.net,nghean24h.vn,xem.tructiepnba.com,phimmoi4s.com,biphim.io,vidian.wiki,truyenchu.com.vn,vbfast.xyz,xemtivi4k.com,abtruyen.com##a[rel="nofollow"]
+ketqua9.net,nghean24h.vn,xem.tructiepnba.com,phimmoi4s.com,biphim.biz,vidian.wiki,truyenchu.com.vn,vbfast.xyz,xemtivi4k.com,abtruyen.com##a[rel="nofollow"]
 d1007 7
 d1016 2
 a1018 2
@@ -381,7 +393,7 @@ d1159 1
 a1159 4
 phetruyen.vip,phimbo88vn.net##.ads_popup
 phim.vkoolv.net##.box-rating
-phim.vkoolv.net,subnhanhvl.co,subnhanh.app,subnhanh.bio,tructiepdabong5.co,tutientruyen3.xyz,protruyen2.fun,biphim.io###overlay
+phim.vkoolv.net,subnhanhvl.net,subnhanh.app,subnhanh.bio,tructiepdabong5.co,tutientruyen3.xyz,protruyen2.fun,biphim.biz###overlay
 phim.vkoolv.net,vuonhoalan.net,gunnylau360.net,mythethao.net,phimplay24h.com,kenhgamelau.com,phimno4.xyz,gunnymienphi.net,dailyphimz.com,xemhay24h.com,listnhacai1.com,phim33.tv,247phim.cc,vkooll.net,vungtv.us,vuaphimmoi2.net##.float-ck
 d1162 2
 a1163 1
@@ -430,8 +442,9 @@ a1240 1
 softonic.vn##.modal-di__button-wrapper
 a1246 1
 soikeoz.co,phimmoinay.tv,phimtho.net,tutientruyen3.xyz,chillhaynet.click,protruyen2.fun###popup_banner_beta
-d1249 2
-a1251 3
+d1249 3
+a1251 4
+subnhanhvl.net,subnhanh.app,subnhanh.bio,dongchill.tv###xs-addd0
 swradioafrica.com##.grid-match__footer
 swradioafrica.com##a.d-lg-none.d-block:nth-of-type(1)
 swradioafrica.com,mitome.tv##.d-lg-flex.d-none.p-0.company.flex-1.table
@@ -719,14 +732,14 @@ a1742 2
 vn1.sexphim1.com##.code-block-4
 webx.sexnhanh.co,phim.javhdsex.org##.alldiv ~ div[class]
 d1744 9
-diff name:abpvn_adguard lines:740 checksum:0b8c750cdf
+diff name:abpvn_adguard lines:753 checksum:067c9abb50
 d2 1
 a2 1
-! Version: 20240127090611525
+! Version: 20240127185219514
 d4 2
 a5 2
-! Last modified: 27 Jan 2024 09:06:11 UTC+7
-! Diff-Path: patches/20240127090611525.patch#abpvn_adguard
+! Last modified: 27 Jan 2024 18:52:19 UTC+7
+! Diff-Path: patches/20240127185219514.patch#abpvn_adguard
 a36 1
 /ads/popup_
 d47 1
@@ -737,12 +750,21 @@ a74 1
 ||9767ebd63c.vws.vegacdn.vn^*.gif$image,domain=livetv4.mannhan1.live|mn.mediastation.live
 d78 1
 d82 1
+d92 1
+a92 1
+||biphim.biz/public/prom_ad/prom_ad.js$script
 d100 1
 d102 1
+d105 1
+a105 1
+||cdn2-img.net^*.gif$image,domain=hhpanda.biz|dongchill.tv|biphim.biz|subnhanh.app|subnhanh.bio|subnhanhvl.net|bichill.biz|dongphim3s.com
 d112 1
 a116 1
 ||docnhanh.vn/images/ads/$image
 d118 1
+d137 1
+a137 1
+||hhpanda.biz/ads/ads_xx.js
 a139 1
 ||hotphim.cc/disable.js$script
 d144 1
@@ -790,6 +812,9 @@ d244 1
 d247 1
 a247 1
 ||stc02bc54661548.cloud.anycastapnic.com^*.gif$domain=xem1.gavang1.net|ws-client.gavang.tech
+d251 1
+a251 1
+||subnhanhvl.net/js/ads_xx.js
 d254 1
 d256 1
 a256 1
@@ -921,12 +946,11 @@ a799 2
 bantincongnghe.net##[href*="cellphones.com.vn"]
 baodauthau.vn,mmo4me.com##div[class*="ads"]
 d801 1
-d807 2
-a808 1
+d807 4
+a810 3
 bestx.stream###video_player + div[id]
-d810 1
-a810 1
-biphim.io,subnhanh.bio##.underplayer_btn
+biphim.biz###top_oddd
+biphim.biz,subnhanh.bio##.underplayer_btn
 d812 2
 d816 1
 d822 1
@@ -968,9 +992,10 @@ d877 2
 d884 1
 d887 1
 d890 2
-d894 8
-a901 3
-dongphim3s.net,dongchill.tv,bichill.one,coiphim18.com###footer_fixed_ads
+d893 9
+a901 4
+dongphim3s.com##a[rel="nofollow sponsored"]
+dongphim3s.com,dongchill.tv,bichill.biz,coiphim18.com###footer_fixed_ads
 download.vn,gamevui.vn###ouibounce-modal
 download.vn,gamevui.vn##div[id^="adsbg"]
 d903 1
@@ -1019,7 +1044,7 @@ a998 1
 keoso.co##.widget-sidebar-block
 d1003 1
 a1003 1
-ketqua9.net,nghean24h.vn,xem.tructiepnba.com,phimmoi4s.com,biphim.io,vidian.wiki,truyenchu.com.vn,vbfast.xyz,xemtivi4k.com,abtruyen.com##a[rel="nofollow"]
+ketqua9.net,nghean24h.vn,xem.tructiepnba.com,phimmoi4s.com,biphim.biz,vidian.wiki,truyenchu.com.vn,vbfast.xyz,xemtivi4k.com,abtruyen.com##a[rel="nofollow"]
 d1005 7
 d1014 2
 a1016 2
@@ -1099,7 +1124,7 @@ d1157 1
 a1157 4
 phetruyen.vip,phimbo88vn.net##.ads_popup
 phim.vkoolv.net##.box-rating
-phim.vkoolv.net,subnhanhvl.co,subnhanh.app,subnhanh.bio,tructiepdabong5.co,tutientruyen3.xyz,protruyen2.fun,biphim.io###overlay
+phim.vkoolv.net,subnhanhvl.net,subnhanh.app,subnhanh.bio,tructiepdabong5.co,tutientruyen3.xyz,protruyen2.fun,biphim.biz###overlay
 phim.vkoolv.net,vuonhoalan.net,gunnylau360.net,mythethao.net,phimplay24h.com,kenhgamelau.com,phimno4.xyz,gunnymienphi.net,dailyphimz.com,xemhay24h.com,listnhacai1.com,phim33.tv,247phim.cc,vkooll.net,vungtv.us,vuaphimmoi2.net##.float-ck
 d1160 2
 a1161 1
@@ -1148,8 +1173,9 @@ a1238 1
 softonic.vn##.modal-di__button-wrapper
 a1244 1
 soikeoz.co,phimmoinay.tv,phimtho.net,tutientruyen3.xyz,chillhaynet.click,protruyen2.fun###popup_banner_beta
-d1247 2
-a1249 3
+d1247 3
+a1249 4
+subnhanhvl.net,subnhanh.app,subnhanh.bio,dongchill.tv###xs-addd0
 swradioafrica.com##.grid-match__footer
 swradioafrica.com##a.d-lg-none.d-block:nth-of-type(1)
 swradioafrica.com,mitome.tv##.d-lg-flex.d-none.p-0.company.flex-1.table
@@ -1460,14 +1486,14 @@ d1814 1
 d1820 1
 a1820 1
 xemphimhdc.net,motchill.uk#%#//scriptlet("abort-current-inline-script", "document.addEventListener", "linksToOpen")
-diff name:abpvn_content_blocker lines:722 checksum:4a6d522f23
+diff name:abpvn_content_blocker lines:735 checksum:ff08a75233
 d2 1
 a2 1
-! Version: 20240127090611525
+! Version: 20240127185219514
 d4 2
 a5 2
-! Last modified: 27 Jan 2024 09:06:11 UTC+7
-! Diff-Path: patches/20240127090611525.patch#abpvn_content_blocker
+! Last modified: 27 Jan 2024 18:52:19 UTC+7
+! Diff-Path: patches/20240127185219514.patch#abpvn_content_blocker
 a36 1
 /ads/popup_
 d47 1
@@ -1478,12 +1504,21 @@ a74 1
 ||9767ebd63c.vws.vegacdn.vn^*.gif$image,domain=livetv4.mannhan1.live|mn.mediastation.live
 d78 1
 d82 1
+d92 1
+a92 1
+||biphim.biz/public/prom_ad/prom_ad.js$script
 d100 1
 d102 1
+d105 1
+a105 1
+||cdn2-img.net^*.gif$image,domain=hhpanda.biz|dongchill.tv|biphim.biz|subnhanh.app|subnhanh.bio|subnhanhvl.net|bichill.biz|dongphim3s.com
 d112 1
 a116 1
 ||docnhanh.vn/images/ads/$image
 d118 1
+d137 1
+a137 1
+||hhpanda.biz/ads/ads_xx.js
 a139 1
 ||hotphim.cc/disable.js$script
 d144 1
@@ -1534,6 +1569,9 @@ d246 1
 d249 1
 a249 1
 ||stc02bc54661548.cloud.anycastapnic.com^*.gif$domain=xem1.gavang1.net|ws-client.gavang.tech
+d253 1
+a253 1
+||subnhanhvl.net/js/ads_xx.js
 d256 1
 d258 1
 a258 1
@@ -1665,12 +1703,11 @@ a801 2
 bantincongnghe.net##[href*="cellphones.com.vn"]
 baodauthau.vn,mmo4me.com##div[class*="ads"]
 d803 1
-d809 2
-a810 1
+d809 4
+a812 3
 bestx.stream###video_player + div[id]
-d812 1
-a812 1
-biphim.io,subnhanh.bio##.underplayer_btn
+biphim.biz###top_oddd
+biphim.biz,subnhanh.bio##.underplayer_btn
 d814 2
 d818 1
 d824 1
@@ -1712,9 +1749,10 @@ d879 2
 d886 1
 d889 1
 d892 2
-d896 8
-a903 3
-dongphim3s.net,dongchill.tv,bichill.one,coiphim18.com###footer_fixed_ads
+d895 9
+a903 4
+dongphim3s.com##a[rel="nofollow sponsored"]
+dongphim3s.com,dongchill.tv,bichill.biz,coiphim18.com###footer_fixed_ads
 download.vn,gamevui.vn###ouibounce-modal
 download.vn,gamevui.vn##div[id^="adsbg"]
 d905 1
@@ -1763,7 +1801,7 @@ a1000 1
 keoso.co##.widget-sidebar-block
 d1005 1
 a1005 1
-ketqua9.net,nghean24h.vn,xem.tructiepnba.com,phimmoi4s.com,biphim.io,vidian.wiki,truyenchu.com.vn,vbfast.xyz,xemtivi4k.com,abtruyen.com##a[rel="nofollow"]
+ketqua9.net,nghean24h.vn,xem.tructiepnba.com,phimmoi4s.com,biphim.biz,vidian.wiki,truyenchu.com.vn,vbfast.xyz,xemtivi4k.com,abtruyen.com##a[rel="nofollow"]
 d1007 7
 d1016 2
 a1018 2
@@ -1843,7 +1881,7 @@ d1159 1
 a1159 4
 phetruyen.vip,phimbo88vn.net##.ads_popup
 phim.vkoolv.net##.box-rating
-phim.vkoolv.net,subnhanhvl.co,subnhanh.app,subnhanh.bio,tructiepdabong5.co,tutientruyen3.xyz,protruyen2.fun,biphim.io###overlay
+phim.vkoolv.net,subnhanhvl.net,subnhanh.app,subnhanh.bio,tructiepdabong5.co,tutientruyen3.xyz,protruyen2.fun,biphim.biz###overlay
 phim.vkoolv.net,vuonhoalan.net,gunnylau360.net,mythethao.net,phimplay24h.com,kenhgamelau.com,phimno4.xyz,gunnymienphi.net,dailyphimz.com,xemhay24h.com,listnhacai1.com,phim33.tv,247phim.cc,vkooll.net,vungtv.us,vuaphimmoi2.net##.float-ck
 d1162 2
 a1163 1
@@ -1892,8 +1930,9 @@ a1240 1
 softonic.vn##.modal-di__button-wrapper
 a1246 1
 soikeoz.co,phimmoinay.tv,phimtho.net,tutientruyen3.xyz,chillhaynet.click,protruyen2.fun###popup_banner_beta
-d1249 2
-a1251 3
+d1249 3
+a1251 4
+subnhanhvl.net,subnhanh.app,subnhanh.bio,dongchill.tv###xs-addd0
 swradioafrica.com##.grid-match__footer
 swradioafrica.com##a.d-lg-none.d-block:nth-of-type(1)
 swradioafrica.com,mitome.tv##.d-lg-flex.d-none.p-0.company.flex-1.table
@@ -2183,14 +2222,14 @@ webx.sexnhanh.co,phim.javhdsex.org##.alldiv ~ div[class]
 d1744 9
 a1753 1
 @@||nessainy.net^$popup
-diff name:abpvn_noelemhide lines:202 checksum:d1a9ab8912
+diff name:abpvn_noelemhide lines:214 checksum:f014d6aff9
 d2 1
 a2 1
-! Version: 20240127090611525
+! Version: 20240127185219514
 d4 2
 a5 2
-! Last modified: 27 Jan 2024 09:06:11 UTC+7
-! Diff-Path: patches/20240127090611525.patch#abpvn_noelemhide
+! Last modified: 27 Jan 2024 18:52:19 UTC+7
+! Diff-Path: patches/20240127185219514.patch#abpvn_noelemhide
 a36 1
 /ads/popup_
 d47 1
@@ -2201,12 +2240,21 @@ a74 1
 ||9767ebd63c.vws.vegacdn.vn^*.gif$image,domain=livetv4.mannhan1.live|mn.mediastation.live
 d78 1
 d82 1
+d92 1
+a92 1
+||biphim.biz/public/prom_ad/prom_ad.js$script
 d100 1
 d102 1
+d105 1
+a105 1
+||cdn2-img.net^*.gif$image,domain=hhpanda.biz|dongchill.tv|biphim.biz|subnhanh.app|subnhanh.bio|subnhanhvl.net|bichill.biz|dongphim3s.com
 d112 1
 a116 1
 ||docnhanh.vn/images/ads/$image
 d118 1
+d137 1
+a137 1
+||hhpanda.biz/ads/ads_xx.js
 a139 1
 ||hotphim.cc/disable.js$script
 d144 1
@@ -2257,6 +2305,9 @@ d246 1
 d249 1
 a249 1
 ||stc02bc54661548.cloud.anycastapnic.com^*.gif$domain=xem1.gavang1.net|ws-client.gavang.tech
+d253 1
+a253 1
+||subnhanhvl.net/js/ads_xx.js
 d256 1
 d258 1
 a258 1
@@ -2386,14 +2437,14 @@ a750 1
 a757 1
 ||vn1.sexphim1.com^*.gif$image
 d759 1
-diff name:abpvn_ublock lines:740 checksum:3238b4ba71
+diff name:abpvn_ublock lines:753 checksum:3529837a8b
 d2 1
 a2 1
-! Version: 20240127090611525
+! Version: 20240127185219514
 d4 2
 a5 2
-! Last modified: 27 Jan 2024 09:06:11 UTC+7
-! Diff-Path: patches/20240127090611525.patch#abpvn_ublock
+! Last modified: 27 Jan 2024 18:52:19 UTC+7
+! Diff-Path: patches/20240127185219514.patch#abpvn_ublock
 a36 1
 /ads/popup_
 d47 1
@@ -2404,12 +2455,21 @@ a74 1
 ||9767ebd63c.vws.vegacdn.vn^*.gif$image,domain=livetv4.mannhan1.live|mn.mediastation.live
 d78 1
 d82 1
+d92 1
+a92 1
+||biphim.biz/public/prom_ad/prom_ad.js$script
 d100 1
 d102 1
+d105 1
+a105 1
+||cdn2-img.net^*.gif$image,domain=hhpanda.biz|dongchill.tv|biphim.biz|subnhanh.app|subnhanh.bio|subnhanhvl.net|bichill.biz|dongphim3s.com
 d112 1
 a116 1
 ||docnhanh.vn/images/ads/$image
 d118 1
+d137 1
+a137 1
+||hhpanda.biz/ads/ads_xx.js
 a139 1
 ||hotphim.cc/disable.js$script
 d144 1
@@ -2457,6 +2517,9 @@ d244 1
 d247 1
 a247 1
 ||stc02bc54661548.cloud.anycastapnic.com^*.gif$domain=xem1.gavang1.net|ws-client.gavang.tech
+d251 1
+a251 1
+||subnhanhvl.net/js/ads_xx.js
 d254 1
 d256 1
 a256 1
@@ -2588,12 +2651,11 @@ a799 2
 bantincongnghe.net##[href*="cellphones.com.vn"]
 baodauthau.vn,mmo4me.com##div[class*="ads"]
 d801 1
-d807 2
-a808 1
+d807 4
+a810 3
 bestx.stream###video_player + div[id]
-d810 1
-a810 1
-biphim.io,subnhanh.bio##.underplayer_btn
+biphim.biz###top_oddd
+biphim.biz,subnhanh.bio##.underplayer_btn
 d812 2
 d816 1
 d822 1
@@ -2635,9 +2697,10 @@ d877 2
 d884 1
 d887 1
 d890 2
-d894 8
-a901 3
-dongphim3s.net,dongchill.tv,bichill.one,coiphim18.com###footer_fixed_ads
+d893 9
+a901 4
+dongphim3s.com##a[rel="nofollow sponsored"]
+dongphim3s.com,dongchill.tv,bichill.biz,coiphim18.com###footer_fixed_ads
 download.vn,gamevui.vn###ouibounce-modal
 download.vn,gamevui.vn##div[id^="adsbg"]
 d903 1
@@ -2686,7 +2749,7 @@ a998 1
 keoso.co##.widget-sidebar-block
 d1003 1
 a1003 1
-ketqua9.net,nghean24h.vn,xem.tructiepnba.com,phimmoi4s.com,biphim.io,vidian.wiki,truyenchu.com.vn,vbfast.xyz,xemtivi4k.com,abtruyen.com##a[rel="nofollow"]
+ketqua9.net,nghean24h.vn,xem.tructiepnba.com,phimmoi4s.com,biphim.biz,vidian.wiki,truyenchu.com.vn,vbfast.xyz,xemtivi4k.com,abtruyen.com##a[rel="nofollow"]
 d1005 7
 d1014 2
 a1016 2
@@ -2766,7 +2829,7 @@ d1157 1
 a1157 4
 phetruyen.vip,phimbo88vn.net##.ads_popup
 phim.vkoolv.net##.box-rating
-phim.vkoolv.net,subnhanhvl.co,subnhanh.app,subnhanh.bio,tructiepdabong5.co,tutientruyen3.xyz,protruyen2.fun,biphim.io###overlay
+phim.vkoolv.net,subnhanhvl.net,subnhanh.app,subnhanh.bio,tructiepdabong5.co,tutientruyen3.xyz,protruyen2.fun,biphim.biz###overlay
 phim.vkoolv.net,vuonhoalan.net,gunnylau360.net,mythethao.net,phimplay24h.com,kenhgamelau.com,phimno4.xyz,gunnymienphi.net,dailyphimz.com,xemhay24h.com,listnhacai1.com,phim33.tv,247phim.cc,vkooll.net,vungtv.us,vuaphimmoi2.net##.float-ck
 d1160 2
 a1161 1
@@ -2815,8 +2878,9 @@ a1238 1
 softonic.vn##.modal-di__button-wrapper
 a1244 1
 soikeoz.co,phimmoinay.tv,phimtho.net,tutientruyen3.xyz,chillhaynet.click,protruyen2.fun###popup_banner_beta
-d1247 2
-a1249 3
+d1247 3
+a1249 4
+subnhanhvl.net,subnhanh.app,subnhanh.bio,dongchill.tv###xs-addd0
 swradioafrica.com##.grid-match__footer
 swradioafrica.com##a.d-lg-none.d-block:nth-of-type(1)
 swradioafrica.com,mitome.tv##.d-lg-flex.d-none.p-0.company.flex-1.table

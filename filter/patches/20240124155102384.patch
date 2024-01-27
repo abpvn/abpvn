@@ -1,11 +1,11 @@
-diff name:abpvn lines:179 checksum:41062d549a
+diff name:abpvn lines:202 checksum:0ba77d9878
 d2 1
 a2 1
-! Version: 20240127090611525
+! Version: 20240127185219514
 d4 2
 a5 2
-! Last modified: 27 Jan 2024 09:06:11 UTC+7
-! Diff-Path: patches/20240127090611525.patch#abpvn
+! Last modified: 27 Jan 2024 18:52:19 UTC+7
+! Diff-Path: patches/20240127185219514.patch#abpvn
 a33 1
 /aas/r45d/vki/*$script
 a35 1
@@ -25,11 +25,20 @@ a57 1
 /storage.adpia.vn$image,script
 a70 1
 ||ads.nghenhinvietnam.vn^$domain=nghenhinvietnam.vn
+d84 1
+a84 1
+||biphim.biz/public/prom_ad/prom_ad.js$script
 d92 1
+d96 1
+a96 1
+||cdn2-img.net^*.gif$image,domain=hhpanda.biz|dongchill.tv|biphim.biz|subnhanh.app|subnhanh.bio|subnhanhvl.net|bichill.biz|dongphim3s.com
 d103 1
 a107 1
 ||docnhanh.vn/images/ads/$image
 d109 1
+d128 1
+a128 1
+||hhpanda.biz/ads/ads_xx.js
 d135 3
 a137 1
 ||i.ex-cdn.com/nhadautu.vn/files/qc/$domain=nhadautu.vn
@@ -61,6 +70,9 @@ a220 1
 ||shope.ee^$popup,domain=boophim.net|chillphimmoiz.org|blogtruyenmoi.com|cunghocvui.com|khophimchill.com|truyensextv.org|motchill.uk
 d225 1
 d228 1
+d235 1
+a235 1
+||subnhanhvl.net/js/ads_xx.js
 d238 1
 d240 3
 a242 2
@@ -81,9 +93,10 @@ a343 1
 d410 1
 a410 1
 90phutzz.tv,conservatoriopaganini.org,xoilac98.tv,veboz.net,bongdainfoz.net,swradioafrica.com,tvhayhd.com###wap_bottombanner
-d438 1
-a438 1
-biphim.io,subnhanh.bio##.underplayer_btn
+d437 2
+a438 2
+biphim.biz###top_oddd
+biphim.biz,subnhanh.bio##.underplayer_btn
 d447 1
 a447 1
 boctem.com,phimlongtieng.net,phimdinhcao.com,motchillz.org,motchill.uk,anivn.club,phimhoathinh3d.com,vkooll.net,hoathinhtq.tv,xemphimchill.xyz,247phim.cc,vungtv.us###popup-giua-man-hinh
@@ -94,6 +107,10 @@ d489 1
 d504 2
 d511 4
 d517 1
+d521 2
+a522 2
+dongphim3s.com##a[rel="nofollow sponsored"]
+dongphim3s.com,dongchill.tv,bichill.biz,coiphim18.com###footer_fixed_ads
 d529 1
 a529 1
 ephoto360.com,thiepmung.com,motchillz.org,ophimhd.vip,xemphimchill.xyz,phimmoi.win,247phim.cc,hotphim.cc##.ad-container
@@ -104,6 +121,9 @@ giadinhonline.vn,vietnamnet.vn,nongnghiep.vn,dubaotiente.com,bongda.com.vn,taich
 d597 1
 a597 1
 hoatieu.vn,tructiep.rakhoi14.tv,tructiep1.cakhia12.com,tructiep.cakhia14.com,tructiep2.caheo11.live##.sticky
+d625 1
+a625 1
+ketqua9.net,nghean24h.vn,xem.tructiepnba.com,phimmoi4s.com,biphim.biz,vidian.wiki,truyenchu.com.vn,vbfast.xyz,xemtivi4k.com,abtruyen.com##a[rel="nofollow"]
 d627 4
 d663 1
 a663 1
@@ -115,8 +135,9 @@ ophimhd.vip##.uniad-player + div[style]
 d749 1
 a749 1
 ophimhdvn3.net,kienthuc.net.vn,saostar.vn,huphimtv.com,bongda24h.vn,vieclam123.net,cungthi.online,appvn.com,linkerpt.com,tinnhac.com,antt.vn,xemphimviet1.net,ghienphim11.net,nhadautu.vn,soikeo365.net,nghenhinvietnam.vn,doctailieu.com##.ads
-d755 1
-a755 1
+d754 2
+a755 2
+phim.vkoolv.net,subnhanhvl.net,subnhanh.app,subnhanh.bio,tructiepdabong5.co,tutientruyen3.xyz,protruyen2.fun,biphim.biz###overlay
 phim.vkoolv.net,vuonhoalan.net,gunnylau360.net,mythethao.net,phimplay24h.com,kenhgamelau.com,phimno4.xyz,gunnymienphi.net,dailyphimz.com,xemhay24h.com,listnhacai1.com,phim33.tv,247phim.cc,vkooll.net,vungtv.us,vuaphimmoi2.net##.float-ck
 d759 1
 d780 1
@@ -130,7 +151,9 @@ d804 1
 d839 1
 a839 1
 soikeoz.co,phimmoinay.tv,phimtho.net,tutientruyen3.xyz,chillhaynet.click,protruyen2.fun###popup_banner_beta
-a842 3
+d842 1
+a842 4
+subnhanhvl.net,subnhanh.app,subnhanh.bio,dongchill.tv###xs-addd0
 swradioafrica.com##.grid-match__footer
 swradioafrica.com##a.d-lg-none.d-block:nth-of-type(1)
 swradioafrica.com,mitome.tv##.d-lg-flex.d-none.p-0.company.flex-1.table
@@ -178,14 +201,14 @@ thiendia2.net,rphang.co,phim18vipb.com,checkgaigoi.site,sieudamtv.one,vn1.sexphi
 d1356 1
 a1356 1
 vn1.sexphim1.com##.code-block-4
-diff name:abpvn_adguard lines:226 checksum:0b8c750cdf
+diff name:abpvn_adguard lines:249 checksum:067c9abb50
 d2 1
 a2 1
-! Version: 20240127090611525
+! Version: 20240127185219514
 d4 2
 a5 2
-! Last modified: 27 Jan 2024 09:06:11 UTC+7
-! Diff-Path: patches/20240127090611525.patch#abpvn_adguard
+! Last modified: 27 Jan 2024 18:52:19 UTC+7
+! Diff-Path: patches/20240127185219514.patch#abpvn_adguard
 a33 1
 /aas/r45d/vki/*$script
 a35 1
@@ -205,11 +228,20 @@ a57 1
 /storage.adpia.vn$image,script
 a70 1
 ||ads.nghenhinvietnam.vn^$domain=nghenhinvietnam.vn
+d84 1
+a84 1
+||biphim.biz/public/prom_ad/prom_ad.js$script
 d92 1
+d96 1
+a96 1
+||cdn2-img.net^*.gif$image,domain=hhpanda.biz|dongchill.tv|biphim.biz|subnhanh.app|subnhanh.bio|subnhanhvl.net|bichill.biz|dongphim3s.com
 d103 1
 a107 1
 ||docnhanh.vn/images/ads/$image
 d109 1
+d128 1
+a128 1
+||hhpanda.biz/ads/ads_xx.js
 d135 3
 a137 1
 ||i.ex-cdn.com/nhadautu.vn/files/qc/$domain=nhadautu.vn
@@ -238,6 +270,9 @@ a209 1
 d212 2
 d223 1
 d226 1
+d233 1
+a233 1
+||subnhanhvl.net/js/ads_xx.js
 d236 1
 d238 3
 a240 2
@@ -258,9 +293,10 @@ a341 1
 d408 1
 a408 1
 90phutzz.tv,conservatoriopaganini.org,xoilac98.tv,veboz.net,bongdainfoz.net,swradioafrica.com,tvhayhd.com###wap_bottombanner
-d436 1
-a436 1
-biphim.io,subnhanh.bio##.underplayer_btn
+d435 2
+a436 2
+biphim.biz###top_oddd
+biphim.biz,subnhanh.bio##.underplayer_btn
 d445 1
 a445 1
 boctem.com,phimlongtieng.net,phimdinhcao.com,motchillz.org,motchill.uk,anivn.club,phimhoathinh3d.com,vkooll.net,hoathinhtq.tv,xemphimchill.xyz,247phim.cc,vungtv.us###popup-giua-man-hinh
@@ -271,6 +307,10 @@ d487 1
 d502 2
 d509 4
 d515 1
+d519 2
+a520 2
+dongphim3s.com##a[rel="nofollow sponsored"]
+dongphim3s.com,dongchill.tv,bichill.biz,coiphim18.com###footer_fixed_ads
 d527 1
 a527 1
 ephoto360.com,thiepmung.com,motchillz.org,ophimhd.vip,xemphimchill.xyz,phimmoi.win,247phim.cc,hotphim.cc##.ad-container
@@ -281,6 +321,9 @@ giadinhonline.vn,vietnamnet.vn,nongnghiep.vn,dubaotiente.com,bongda.com.vn,taich
 d595 1
 a595 1
 hoatieu.vn,tructiep.rakhoi14.tv,tructiep1.cakhia12.com,tructiep.cakhia14.com,tructiep2.caheo11.live##.sticky
+d623 1
+a623 1
+ketqua9.net,nghean24h.vn,xem.tructiepnba.com,phimmoi4s.com,biphim.biz,vidian.wiki,truyenchu.com.vn,vbfast.xyz,xemtivi4k.com,abtruyen.com##a[rel="nofollow"]
 d625 4
 d661 1
 a661 1
@@ -292,8 +335,9 @@ ophimhd.vip##.uniad-player + div[style]
 d747 1
 a747 1
 ophimhdvn3.net,kienthuc.net.vn,saostar.vn,huphimtv.com,bongda24h.vn,vieclam123.net,cungthi.online,appvn.com,linkerpt.com,tinnhac.com,antt.vn,xemphimviet1.net,ghienphim11.net,nhadautu.vn,soikeo365.net,nghenhinvietnam.vn,doctailieu.com##.ads
-d753 1
-a753 1
+d752 2
+a753 2
+phim.vkoolv.net,subnhanhvl.net,subnhanh.app,subnhanh.bio,tructiepdabong5.co,tutientruyen3.xyz,protruyen2.fun,biphim.biz###overlay
 phim.vkoolv.net,vuonhoalan.net,gunnylau360.net,mythethao.net,phimplay24h.com,kenhgamelau.com,phimno4.xyz,gunnymienphi.net,dailyphimz.com,xemhay24h.com,listnhacai1.com,phim33.tv,247phim.cc,vkooll.net,vungtv.us,vuaphimmoi2.net##.float-ck
 d757 1
 d778 1
@@ -307,7 +351,9 @@ d802 1
 d837 1
 a837 1
 soikeoz.co,phimmoinay.tv,phimtho.net,tutientruyen3.xyz,chillhaynet.click,protruyen2.fun###popup_banner_beta
-a840 3
+d840 1
+a840 4
+subnhanhvl.net,subnhanh.app,subnhanh.bio,dongchill.tv###xs-addd0
 swradioafrica.com##.grid-match__footer
 swradioafrica.com##a.d-lg-none.d-block:nth-of-type(1)
 swradioafrica.com,mitome.tv##.d-lg-flex.d-none.p-0.company.flex-1.table
@@ -405,14 +451,14 @@ xemphimhdc.net,motchill.uk#%#//scriptlet("abort-current-inline-script", "documen
 d1427 1
 a1427 1
 yts.do,yts.mx,yts.rs#%#//scriptlet("abort-on-property-read", "atob")
-diff name:abpvn_content_blocker lines:179 checksum:4a6d522f23
+diff name:abpvn_content_blocker lines:202 checksum:ff08a75233
 d2 1
 a2 1
-! Version: 20240127090611525
+! Version: 20240127185219514
 d4 2
 a5 2
-! Last modified: 27 Jan 2024 09:06:11 UTC+7
-! Diff-Path: patches/20240127090611525.patch#abpvn_content_blocker
+! Last modified: 27 Jan 2024 18:52:19 UTC+7
+! Diff-Path: patches/20240127185219514.patch#abpvn_content_blocker
 a33 1
 /aas/r45d/vki/*$script
 a35 1
@@ -432,11 +478,20 @@ a57 1
 /storage.adpia.vn$image,script
 a70 1
 ||ads.nghenhinvietnam.vn^$domain=nghenhinvietnam.vn
+d84 1
+a84 1
+||biphim.biz/public/prom_ad/prom_ad.js$script
 d92 1
+d96 1
+a96 1
+||cdn2-img.net^*.gif$image,domain=hhpanda.biz|dongchill.tv|biphim.biz|subnhanh.app|subnhanh.bio|subnhanhvl.net|bichill.biz|dongphim3s.com
 d103 1
 a107 1
 ||docnhanh.vn/images/ads/$image
 d109 1
+d128 1
+a128 1
+||hhpanda.biz/ads/ads_xx.js
 d135 3
 a137 1
 ||i.ex-cdn.com/nhadautu.vn/files/qc/$domain=nhadautu.vn
@@ -468,6 +523,9 @@ a220 1
 ||shope.ee^$popup,domain=boophim.net|chillphimmoiz.org|blogtruyenmoi.com|cunghocvui.com|khophimchill.com|truyensextv.org|motchill.uk
 d225 1
 d228 1
+d235 1
+a235 1
+||subnhanhvl.net/js/ads_xx.js
 d238 1
 d240 3
 a242 2
@@ -488,9 +546,10 @@ a343 1
 d410 1
 a410 1
 90phutzz.tv,conservatoriopaganini.org,xoilac98.tv,veboz.net,bongdainfoz.net,swradioafrica.com,tvhayhd.com###wap_bottombanner
-d438 1
-a438 1
-biphim.io,subnhanh.bio##.underplayer_btn
+d437 2
+a438 2
+biphim.biz###top_oddd
+biphim.biz,subnhanh.bio##.underplayer_btn
 d447 1
 a447 1
 boctem.com,phimlongtieng.net,phimdinhcao.com,motchillz.org,motchill.uk,anivn.club,phimhoathinh3d.com,vkooll.net,hoathinhtq.tv,xemphimchill.xyz,247phim.cc,vungtv.us###popup-giua-man-hinh
@@ -501,6 +560,10 @@ d489 1
 d504 2
 d511 4
 d517 1
+d521 2
+a522 2
+dongphim3s.com##a[rel="nofollow sponsored"]
+dongphim3s.com,dongchill.tv,bichill.biz,coiphim18.com###footer_fixed_ads
 d529 1
 a529 1
 ephoto360.com,thiepmung.com,motchillz.org,ophimhd.vip,xemphimchill.xyz,phimmoi.win,247phim.cc,hotphim.cc##.ad-container
@@ -511,6 +574,9 @@ giadinhonline.vn,vietnamnet.vn,nongnghiep.vn,dubaotiente.com,bongda.com.vn,taich
 d597 1
 a597 1
 hoatieu.vn,tructiep.rakhoi14.tv,tructiep1.cakhia12.com,tructiep.cakhia14.com,tructiep2.caheo11.live##.sticky
+d625 1
+a625 1
+ketqua9.net,nghean24h.vn,xem.tructiepnba.com,phimmoi4s.com,biphim.biz,vidian.wiki,truyenchu.com.vn,vbfast.xyz,xemtivi4k.com,abtruyen.com##a[rel="nofollow"]
 d627 4
 d663 1
 a663 1
@@ -522,8 +588,9 @@ ophimhd.vip##.uniad-player + div[style]
 d749 1
 a749 1
 ophimhdvn3.net,kienthuc.net.vn,saostar.vn,huphimtv.com,bongda24h.vn,vieclam123.net,cungthi.online,appvn.com,linkerpt.com,tinnhac.com,antt.vn,xemphimviet1.net,ghienphim11.net,nhadautu.vn,soikeo365.net,nghenhinvietnam.vn,doctailieu.com##.ads
-d755 1
-a755 1
+d754 2
+a755 2
+phim.vkoolv.net,subnhanhvl.net,subnhanh.app,subnhanh.bio,tructiepdabong5.co,tutientruyen3.xyz,protruyen2.fun,biphim.biz###overlay
 phim.vkoolv.net,vuonhoalan.net,gunnylau360.net,mythethao.net,phimplay24h.com,kenhgamelau.com,phimno4.xyz,gunnymienphi.net,dailyphimz.com,xemhay24h.com,listnhacai1.com,phim33.tv,247phim.cc,vkooll.net,vungtv.us,vuaphimmoi2.net##.float-ck
 d759 1
 d780 1
@@ -537,7 +604,9 @@ d804 1
 d839 1
 a839 1
 soikeoz.co,phimmoinay.tv,phimtho.net,tutientruyen3.xyz,chillhaynet.click,protruyen2.fun###popup_banner_beta
-a842 3
+d842 1
+a842 4
+subnhanhvl.net,subnhanh.app,subnhanh.bio,dongchill.tv###xs-addd0
 swradioafrica.com##.grid-match__footer
 swradioafrica.com##a.d-lg-none.d-block:nth-of-type(1)
 swradioafrica.com,mitome.tv##.d-lg-flex.d-none.p-0.company.flex-1.table
@@ -585,14 +654,14 @@ thiendia2.net,rphang.co,phim18vipb.com,checkgaigoi.site,sieudamtv.one,vn1.sexphi
 d1356 1
 a1356 1
 vn1.sexphim1.com##.code-block-4
-diff name:abpvn_noelemhide lines:85 checksum:d1a9ab8912
+diff name:abpvn_noelemhide lines:97 checksum:f014d6aff9
 d2 1
 a2 1
-! Version: 20240127090611525
+! Version: 20240127185219514
 d4 2
 a5 2
-! Last modified: 27 Jan 2024 09:06:11 UTC+7
-! Diff-Path: patches/20240127090611525.patch#abpvn_noelemhide
+! Last modified: 27 Jan 2024 18:52:19 UTC+7
+! Diff-Path: patches/20240127185219514.patch#abpvn_noelemhide
 a33 1
 /aas/r45d/vki/*$script
 a35 1
@@ -612,11 +681,20 @@ a57 1
 /storage.adpia.vn$image,script
 a70 1
 ||ads.nghenhinvietnam.vn^$domain=nghenhinvietnam.vn
+d84 1
+a84 1
+||biphim.biz/public/prom_ad/prom_ad.js$script
 d92 1
+d96 1
+a96 1
+||cdn2-img.net^*.gif$image,domain=hhpanda.biz|dongchill.tv|biphim.biz|subnhanh.app|subnhanh.bio|subnhanhvl.net|bichill.biz|dongphim3s.com
 d103 1
 a107 1
 ||docnhanh.vn/images/ads/$image
 d109 1
+d128 1
+a128 1
+||hhpanda.biz/ads/ads_xx.js
 d135 3
 a137 1
 ||i.ex-cdn.com/nhadautu.vn/files/qc/$domain=nhadautu.vn
@@ -648,6 +726,9 @@ a220 1
 ||shope.ee^$popup,domain=boophim.net|chillphimmoiz.org|blogtruyenmoi.com|cunghocvui.com|khophimchill.com|truyensextv.org|motchill.uk
 d225 1
 d228 1
+d235 1
+a235 1
+||subnhanhvl.net/js/ads_xx.js
 d238 1
 d240 3
 a242 2
@@ -671,14 +752,14 @@ d405 1
 a473 1
 ||vn1.sexphim1.com^*.gif$image
 d475 1
-diff name:abpvn_ublock lines:222 checksum:3238b4ba71
+diff name:abpvn_ublock lines:245 checksum:3529837a8b
 d2 1
 a2 1
-! Version: 20240127090611525
+! Version: 20240127185219514
 d4 2
 a5 2
-! Last modified: 27 Jan 2024 09:06:11 UTC+7
-! Diff-Path: patches/20240127090611525.patch#abpvn_ublock
+! Last modified: 27 Jan 2024 18:52:19 UTC+7
+! Diff-Path: patches/20240127185219514.patch#abpvn_ublock
 a33 1
 /aas/r45d/vki/*$script
 a35 1
@@ -698,11 +779,20 @@ a57 1
 /storage.adpia.vn$image,script
 a70 1
 ||ads.nghenhinvietnam.vn^$domain=nghenhinvietnam.vn
+d84 1
+a84 1
+||biphim.biz/public/prom_ad/prom_ad.js$script
 d92 1
+d96 1
+a96 1
+||cdn2-img.net^*.gif$image,domain=hhpanda.biz|dongchill.tv|biphim.biz|subnhanh.app|subnhanh.bio|subnhanhvl.net|bichill.biz|dongphim3s.com
 d103 1
 a107 1
 ||docnhanh.vn/images/ads/$image
 d109 1
+d128 1
+a128 1
+||hhpanda.biz/ads/ads_xx.js
 d135 3
 a137 1
 ||i.ex-cdn.com/nhadautu.vn/files/qc/$domain=nhadautu.vn
@@ -731,6 +821,9 @@ a209 1
 d212 2
 d223 1
 d226 1
+d233 1
+a233 1
+||subnhanhvl.net/js/ads_xx.js
 d236 1
 d238 3
 a240 2
@@ -751,9 +844,10 @@ a341 1
 d408 1
 a408 1
 90phutzz.tv,conservatoriopaganini.org,xoilac98.tv,veboz.net,bongdainfoz.net,swradioafrica.com,tvhayhd.com###wap_bottombanner
-d436 1
-a436 1
-biphim.io,subnhanh.bio##.underplayer_btn
+d435 2
+a436 2
+biphim.biz###top_oddd
+biphim.biz,subnhanh.bio##.underplayer_btn
 d445 1
 a445 1
 boctem.com,phimlongtieng.net,phimdinhcao.com,motchillz.org,motchill.uk,anivn.club,phimhoathinh3d.com,vkooll.net,hoathinhtq.tv,xemphimchill.xyz,247phim.cc,vungtv.us###popup-giua-man-hinh
@@ -764,6 +858,10 @@ d487 1
 d502 2
 d509 4
 d515 1
+d519 2
+a520 2
+dongphim3s.com##a[rel="nofollow sponsored"]
+dongphim3s.com,dongchill.tv,bichill.biz,coiphim18.com###footer_fixed_ads
 d527 1
 a527 1
 ephoto360.com,thiepmung.com,motchillz.org,ophimhd.vip,xemphimchill.xyz,phimmoi.win,247phim.cc,hotphim.cc##.ad-container
@@ -774,6 +872,9 @@ giadinhonline.vn,vietnamnet.vn,nongnghiep.vn,dubaotiente.com,bongda.com.vn,taich
 d595 1
 a595 1
 hoatieu.vn,tructiep.rakhoi14.tv,tructiep1.cakhia12.com,tructiep.cakhia14.com,tructiep2.caheo11.live##.sticky
+d623 1
+a623 1
+ketqua9.net,nghean24h.vn,xem.tructiepnba.com,phimmoi4s.com,biphim.biz,vidian.wiki,truyenchu.com.vn,vbfast.xyz,xemtivi4k.com,abtruyen.com##a[rel="nofollow"]
 d625 4
 d661 1
 a661 1
@@ -785,8 +886,9 @@ ophimhd.vip##.uniad-player + div[style]
 d747 1
 a747 1
 ophimhdvn3.net,kienthuc.net.vn,saostar.vn,huphimtv.com,bongda24h.vn,vieclam123.net,cungthi.online,appvn.com,linkerpt.com,tinnhac.com,antt.vn,xemphimviet1.net,ghienphim11.net,nhadautu.vn,soikeo365.net,nghenhinvietnam.vn,doctailieu.com##.ads
-d753 1
-a753 1
+d752 2
+a753 2
+phim.vkoolv.net,subnhanhvl.net,subnhanh.app,subnhanh.bio,tructiepdabong5.co,tutientruyen3.xyz,protruyen2.fun,biphim.biz###overlay
 phim.vkoolv.net,vuonhoalan.net,gunnylau360.net,mythethao.net,phimplay24h.com,kenhgamelau.com,phimno4.xyz,gunnymienphi.net,dailyphimz.com,xemhay24h.com,listnhacai1.com,phim33.tv,247phim.cc,vkooll.net,vungtv.us,vuaphimmoi2.net##.float-ck
 d757 1
 d778 1
@@ -800,7 +902,9 @@ d802 1
 d837 1
 a837 1
 soikeoz.co,phimmoinay.tv,phimtho.net,tutientruyen3.xyz,chillhaynet.click,protruyen2.fun###popup_banner_beta
-a840 3
+d840 1
+a840 4
+subnhanhvl.net,subnhanh.app,subnhanh.bio,dongchill.tv###xs-addd0
 swradioafrica.com##.grid-match__footer
 swradioafrica.com##a.d-lg-none.d-block:nth-of-type(1)
 swradioafrica.com,mitome.tv##.d-lg-flex.d-none.p-0.company.flex-1.table
