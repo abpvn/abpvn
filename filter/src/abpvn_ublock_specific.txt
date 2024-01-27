@@ -1,12 +1,7 @@
 ! ---------Rule only for uBlock Origin------
--@@||ads-api.twitter.com^$domain=azrom.net|cafenau.com|khohieu.com
--@@||ads.pinterest.com$domain=cafenau.com
+-@@||ads-api.twitter.com^$domain=azrom.net|khohieu.com
 -@@||azrom.net$generichide
--@@||cafenau.com$generichide
--@@||cdnwebonplay.gviet.vn/public/js/player/ads/ima3.js$script,domain=vtvcab.vn
 -@@||jsc.adskeeper.co.uk^$script,domain=ios.codevn.net
--@@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=cafenau.com
--@@||pagead2.googlesyndication.com^$domain=azrom.net|khohieu.com
 -@@||z-na.amazon-adsystem.com^$domain=azrom.net
 -ios.codevn.net#@#div[id*="ScriptRoot"]
 -||kmyamhowpj.com^
@@ -16,21 +11,20 @@ animevietsub.io##+js(acs, document.documentElement, break;case $.)
 aoe.vn##+js(aopr, parseInt)
 audiotruyenfull.com##+js(aopr, adpiaListUrl)
 azrom.net##+js(acs, atob, ai_block_class)
-azrom.net,cafenau.com##+js(aopr, adsBlocked)
+azrom.net##+js(aopr, adsBlocked)
 baomoi.com##+js(aopw, AdtimaBaomoi)
 boophim.net,chillphimmoiz.org##body:remove-attr(data-pop1)
 boophim.net,chillphimmoiz.org##body:remove-attr(data-pop2)
 cafef.vn,gamek.vn,genk.vn,kenh14.vn,soha.vn,tuoitre.vn##+js(acs, Object.defineProperty, ADMStorageFileCDN)
 cafef.vn,gamek.vn,genk.vn,kenh14.vn,soha.vn,tuoitre.vn##+js(set, ADMStorageFileCDN, noopFunc)
 chotlo247.net###header:style(margin-top: 0 !important)
-conservatoriopaganini.org,veboz.net,live3.thapcam2.net,blog.abit.vn,xem1.gavang1.net##html:style(overflow: auto!important)
 cunghocvui.com##+js(acs, document.addEventListener, opened_window_shoppe)
 dood.pm##+js(aopw, DoodPop)
-downloadsachmienphi.com##+js(acs, JSON.parse, break;case $.)
+downloadsachmienphi.com,lrepacks.net##+js(acs, JSON.parse, break;case $.)
 dualeotruyenme.com,m.blogtruyenmoi.com##+js(acs, document.addEventListener, popunder)
+femax20.com##+js(addEventListener-defuser, click, open)
 gametv.vn##+js(acs, $, homeModal)
 giavang.net##+js(no-fetch-if, method:HEAD)
-gocmod.com##+js(nostif, show)
 gocphimvn.vip,p.thoctv.com##+js(acs, document.createElement, script)
 gotphim.com##+js(acs, navigator, devtoolsDetector)
 gvnvh18.com,sexdiaryx.us##+js(set, D4zz, noopFunc)
@@ -43,16 +37,19 @@ linkneverdie.net##+js(acs, document.createElement, optad)
 linkneverdie.net##+js(aopr, pushOnPageGala)
 linkneverdie.net##+js(nostif, DisplayAHTML, 5000)
 linkneverdie.net##+js(nostif, callback, 4003)
+live3.thapcam2.net,blog.abit.vn##.modal-backdrop.show
+live3.thapcam2.net,blog.abit.vn##.show.fade
+live3.thapcam2.net,blog.abit.vn,xem1.gavang1.net##html:style(overflow: auto !important)
 luotphimtv1.com,luotphimtv1.net,luotphim2.net,luotphim1.net,luotphimtv.vip,webphim2.com,cdnwp.icu##+js(json-prune, 0.time_mobile 0.time 0.link_video 0.link_video_mobile 0.link 0.link_mobile 1.time_mobile 1.time 1.link_video 1.link_video_mobile 1.link 1.link_mobile)
 lxmanga.net##+js(acs, $, PopUnder)
 nettruyenall.com##+js(acs, Promise, break;case)
-nettruyenus.net##+js(acs, sp)
+nettruyenus.net##+js(aopr, sp)
 phimgichill.net##+js(acs, eval, $._Eu)
 phimgichill.net,mephimnhe1.net##+js(acs, jQuery, popurl)
 phimmoi4s.com##+js(json-prune, ads)
 phimmoi4s.com,phimdinhcao.net,phimlongtieng.net,phimdinhcao.com##+js(aopr, localStorage)
 phimmoinay.tv##+js(acs, jQuery, click_time)
-phimtho.net##+js(acs, $, p0pUpRandom)
+phimtho.net#%#//scriptlet("abort-current-inline-script", "$", "p0pUpRandom")
 phimvietsub.pro,api.anime3s.com,subnhanh.xyz##+js(set, maxAds, 0)
 phimvuihd.org##+js(set, urlAds, '')
 plvb.xyz##+js(aopr, ads)
@@ -74,10 +71,9 @@ truyensextv.org##+js(acs, document.addEventListener, popup)
 truyensieuhay.com,phimvietsub.pro,quangcaoyenbai.com,sieudamtv.one,ephimchill.com,maclife.io,ophimhdvn3.net,thuvienhd.xyz,xemtv.tvhayhd.com,khophim88.net,nhentaivn.com,khophimchill.com,mv.dailyphimz.com##+js(aopr, document.cookie)
 truyentuanopm.com##+js(acs, $, btpop)
 vailonxx.com,phimlongtieng.com,phimlongtieng.net##+js(acs, jQuery, window.open)
-veboz.net,live3.thapcam2.net,blog.abit.vn##.modal-backdrop.show
-veboz.net,live3.thapcam2.net,blog.abit.vn##.show.fade
-viet69.red,ungtycomicsvip.com,vlxx.xxx,dualeotruyenme.com,yurineko.net,vlxyz.tv,javhay.cam,phimsexhay669.co,cliphot69.vin,doctruyen3qup.com,hentaizz.vip,animehay.city,heo69.top,tuoi69.tv,top1sex.club,lenlut.net,xemsex.moe,hentai-vn.tv,vn1.sexphim1.com,cdn.streamvl.sbs,buomtv.tv,truyenvnhay.tv,cdnstream.sbs,javtiful.com,truyengihotvay.net,truyengihotqua.net,truyengihotqua.com,truyengihotnay.com,quatvn.club##+js(acs, WebAssembly, instantiate)
-viettoons.tv,mv.phimmoiaz.cc,animet.net,anh.moe,truyenhentaivn.com##+js(aopr, open)
+veryfiles.com##+js(aopr, nFNcksmwU)
+viet69.red,ungtycomicsvip.com,vlxx.xxx,dualeotruyenme.com,yurineko.net,vlxyz.tv,javhay.cam,phimsexhay669.co,cliphot69.vin,doctruyen3qup.com,hentaizz.vip,animehay.city,heo69.top,tuoi69.tv,top1sex.club,lenlut.net,xemsex.moe,hentai-vn.tv,vn1.sexphim1.com,cdn.streamvl.sbs,buomtv.tv,truyenvnhay.tv,cdnstream.sbs,javtiful.com,truyengihotvay.net,truyengihotqua.net,truyengihotqua.com,truyengihotnay.com,quatvn.club,tenmientruyengi.net##+js(acs, WebAssembly, instantiate)
+viettoons.tv,mv.phimmoiaz.cc,dood.pm,ytstv.me,animet.net,anh.moe,truyenhentaivn.com##+js(aopr, open)
 vinaurl.net##+js(aopr, oneClick)
 vndoc.com##+js(set, seconds, 0)
 vungoctuan.vn##+js(acs, document.write, snow)
@@ -91,7 +87,6 @@ xnxx-sex-videos.com##+js(ra, target|onclick, a[href^="/video/"])
 xoilac98.tv##+js(aopr, adsRedirectPopups)
 xoivo2.online##+js(set, adsPlayer, '')
 xoivo2.online##+js(set, adsTvcs, '')
-ytstv.me,yts.do,yts.mx,yts.rs##+js(aopr, atob)
+yts.do,yts.mx,yts.rs##+js(aopr, atob)
 znews.vn##+js(aopr, adtimaConfig)
 zuiphim2.com##+js(aopr, matchMedia)
-||cdnwebonplay.gviet.vn/public/js/player/ads/ima3.js$script,3p,redirect-rule=google-ima.js,domain=vtvcab.vn
