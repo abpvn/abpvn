@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 20240129090022928
+! Version: 20240129140210608
 ! Title: ABPVN List
-! Last modified: 29 Jan 2024 09:00:22 UTC+7
-! Diff-Path: patches/20240129090022928.patch#abpvn_adguard
+! Last modified: 29 Jan 2024 14:02:10 UTC+7
+! Diff-Path: patches/20240129140210608.patch#abpvn_adguard
 ! Diff-Expires: 60 minutes
 ! Expires: 1 days (update frequency)
 !
@@ -95,6 +95,7 @@
 ||boophim.net^*.gif$image
 ||bp.blogspot.com$image,domain=timdaily.vn|xemtivi4k.com
 ||bp.blogspot.com/*banner$image,domain=~aowvn.org|~umu.pink
+||cdn-data.gtvplus.vn/banners/$image,domain=gametv.vn
 ||cdn.pixfuture.com/adb-media/adb_detect_pixfuture.js$domain=saigonbao.com
 ||cdn.thichxemphim1.net/wp-content/themes/halimmovies-child/jscm.min.js$domain=thichxemphim1.net
 ||cdn.webhoctienganh.com/asset/home/img/banner/$image,domain=webhoctienganh.com
@@ -150,7 +151,7 @@
 ||igg-games.com/maven/av.js$script
 ||images2-focus-opensocial.googleusercontent.com^*.gif$image,domain=phimdinhcao.net|phimdinhcao.com|phimlongtieng.net
 ||img.upanh.tv^*.gif$image,domain=phimtuoitho.tv|xemhay24h.com
-||imgyn.imageshh.com^*.gif$image,domain=mphim14.com|hhchina.tv|hh3d.tv
+||imgyn.imageshh.com^*.gif$image,domain=mphim14.com|hhchina.vip|hh3d.tv
 ||kenhgamelau.com^*.gif
 ||kenhtin.net/upload/images/banner-
 ||khophim-poster.cuoiia.top^*.gif$image,domain=coiphim18.com
@@ -497,13 +498,12 @@ doctruyenchufull.com##.topbanner
 doisongphapluat.com##div.box-aside
 dongphim3s.com##a[rel="nofollow sponsored"]
 dongphim3s.com,dongchill.co,bichill.biz,coiphim18.com###footer_fixed_ads
-download.vn,gamevui.vn###ouibounce-modal
-download.vn,gamevui.vn##div[id^="adsbg"]
+download.vn###ouibounce-modal
+download.vn##div[id^="adsbg"]
 dubaotiente.com##.ad-pin-right-bottom
 ebookbkmt.com##.top-right
 ephoto360.com##.line-ads
 ephoto360.com,thiepmung.com,motchillz.org,ophimhd.vip,xemphimchill.xyz,phimmoi.win,247phim.cc,hotphim.cc##.ad-container
-eva.vn##.banr-Rt
 eva.vn##.banrpstn
 forum.gocmod.com##.ad-manager-forum-list-bottom
 forum.gocmod.com##.ad-manager-forum-list-top
@@ -512,33 +512,28 @@ forum.gocmod.com##.ad-manager-thread-view-bottom
 forum.gocmod.com##.ad-manager-thread-view-top
 forum.gocmod.com##div[style="margin:6px 0px 6px 0px"]
 forum.gocmod.com,www.tiengnhatdongian.com##.google-auto-placed
-fptshop.com.vn##.banner-cs
 freeplayervideo.com,abysscdn.com,player-cdn.com,geoip.redirect-ads.com,quat2vn.club###player + div[id]
 fshare.vn###myElementz
 fshare.vn##.bannerinfooter
 fsharetv.com###home_header
 game24h.vn##.LRBanner
+game4v.com.vn###banner-add-lixi88
+game4v.com.vn##.banner-home
 game8.vn##.bg_allpopupss
 game8.vn##.bgal_popndungalal
 game8.vn##.bn1
 game8.vn##.bn2
-game8.vn##.box_baiviet_dexuat
 game8.vn##.box_quangcao_mobile_320x50
 game8.vn##.box_text_qc
+game8.vn##div.news-left-related:nth-of-type(2)
 gameio.vn###tubia
 gamenoobz.net##.cp-modal-popup-container
 gamenoobz.net##.simple-banner
-gametv.vn##.ads-right1
-gametv.vn##.adv-row
-gamevui.vn##.adx-zone
-gamevui.vn##.underlay
 genk.vn##.khw-ads-wrapper.clearfix
 ghienphim11.net##.parent.special
 ghienphim11.net,phimmoi.win##.partner-me
 giadinhonline.vn,congluan.vn,nongnghiep.vn##.exp_qc_share
 giadinhonline.vn,vietnamnet.vn,nongnghiep.vn,dubaotiente.com,bongda.com.vn,taichinhdoanhnghiep.net.vn##.adv
-giaoducthoidai.vn###qcRight
-giaoducthoidai.vn##.banner-advertisements
 gocphimf.net##.other-ads-container
 gocphimf.net##.show-load-ad
 gocphimvn.vip###mobileCatfishz
@@ -552,13 +547,13 @@ hayghe.info###antiblocker
 hayghe.info###antiblocker_underplayer
 heovktgame.club##.toogle-ads
 hh3dhay.com###layerLogo
-hhchina.tv,3dchill.net###ad-floating-right
-hhchina.tv,3dchill.net##.ad-floating-left
+hhchina.vip,3dchill.net###ad-floating-right
+hhchina.vip,3dchill.net##.ad-floating-left
 hhhkungfu.tv##div.text-center:nth-of-type(7)
 hhhkungfu.tv##div[style="min-height: 250px"]
 hhtq.vip###header-ads
 hhtq.vip##.catfish-img
-hhtqvietsub.top,hhchina.tv###top-banner-pc
+hhtqvietsub.top,hhchina.vip###top-banner-pc
 hoahoc247.com##.btn_small_fix_container
 hoathinh4k.net##.ads-nlp
 hoatieu.vn###adrightsecondx
@@ -749,7 +744,7 @@ phimlongtieng.com,phimlongtieng.net###p-GMH
 phimmoi.win###hide_catfish
 phimmoi.win,vungtv.us,xemphimhdc.net###container-ads
 phimmoi2.com##.player-vast-blocker
-phimmoi2.com,hhtqvietsub.top,hhchina.tv###sponsor-balloon
+phimmoi2.com,hhtqvietsub.top,hhchina.vip###sponsor-balloon
 phimmoi2.com,mehoathinh3.com##.ff-banner
 phimmoi4s.com##.box_option
 phimmoichillm.net###pm_quangcao
@@ -1321,7 +1316,6 @@ dood.pm#%#//scriptlet("abort-on-property-write", "DoodPop")
 downloadsachmienphi.com,lrepacks.net#%#//scriptlet("abort-current-inline-script", "JSON.parse", "break;case $.")
 dualeotruyenme.com,m.blogtruyenmoi.com#%#//scriptlet("abort-current-inline-script", "document.addEventListener", "popunder")
 femax20.com#%#//scriptlet("prevent-addEventListener", "click", "open")
-gametv.vn#%#//scriptlet("abort-current-inline-script", "$", "homeModal")
 giavang.net#%#//scriptlet("prevent-fetch", "method:HEAD")
 gocphimvn.vip,p.thoctv.com#%#//scriptlet("abort-current-inline-script", "document.createElement", "script")
 gotphim.com#%#//scriptlet("abort-current-inline-script", "navigator", "devtoolsDetector")

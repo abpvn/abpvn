@@ -1,11 +1,11 @@
-diff name:abpvn lines:137 checksum:c3b5b22972
+diff name:abpvn lines:164 checksum:7fa74c06a7
 d2 1
 a2 1
-! Version: 20240129090022928
+! Version: 20240129140210608
 d4 2
 a5 2
-! Last modified: 29 Jan 2024 09:00:22 UTC+7
-! Diff-Path: patches/20240129090022928.patch#abpvn
+! Last modified: 29 Jan 2024 14:02:10 UTC+7
+! Diff-Path: patches/20240129140210608.patch#abpvn
 a33 1
 /aas/r45d/vki/*$script
 a35 1
@@ -29,6 +29,8 @@ d84 1
 a84 1
 ||biphim.biz/public/prom_ad/prom_ad.js$script
 d88 1
+a91 1
+||cdn-data.gtvplus.vn/banners/$image,domain=gametv.vn
 d95 1
 a95 1
 ||cdn2-img.net^*.gif$image,domain=hhpanda.biz|dongchill.co|biphim.biz|subnhanh.men|subnhanh.ac|subnhanhvl.net|bichill.biz|dongphim3s.com
@@ -43,6 +45,9 @@ d141 1
 a141 1
 ||i.imgur.com^*.gif$image,domain=ghienphim11.net|mv.dailyphimz.com|mv.phimmoiaz.cc|phimgichill.net|ophimhdvn3.net|mythethao.net|xemtivi4k.com|vtipster.net|huphimtv.com|xoilac14.org|film365.in|live3.90phut10.live|xemphimviet1.net|watch.ezyproxy.com|live3.thapcam2.net|phimmoiiii.net|live.vebo4.net|live2.vebo4.net|tvhayhd.com|hoathinh4k.net
 d147 2
+d151 1
+a151 1
+||imgyn.imageshh.com^*.gif$image,domain=mphim14.com|hhchina.vip|hh3d.tv
 d174 1
 d203 1
 a203 1
@@ -72,11 +77,30 @@ biphim.biz,subnhanh.ac##.underplayer_btn
 d432 1
 a432 1
 boctem.com,phimlongtieng.net,phimdinhcao.com,motchillz.org,motchill.uk,anivn.club,phimhoathinh3d.com,vkooll.net,hoathinhtq.tv,xemphimchill.xyz,247phim.cc,vungtv.us,vuaphimmoi2.net###popup-giua-man-hinh
-d498 2
-a499 2
+d498 4
+a501 4
 dongphim3s.com##a[rel="nofollow sponsored"]
 dongphim3s.com,dongchill.co,bichill.biz,coiphim18.com###footer_fixed_ads
+download.vn###ouibounce-modal
+download.vn##div[id^="adsbg"]
 d504 1
+d507 1
+d516 1
+a521 2
+game4v.com.vn###banner-add-lixi88
+game4v.com.vn##.banner-home
+d526 1
+a528 1
+game8.vn##div.news-left-related:nth-of-type(2)
+d532 4
+d541 2
+d556 2
+a557 2
+hhchina.vip,3dchill.net###ad-floating-right
+hhchina.vip,3dchill.net##.ad-floating-left
+d562 1
+a562 1
+hhtqvietsub.top,hhchina.vip###top-banner-pc
 d586 2
 d599 1
 a599 1
@@ -93,6 +117,9 @@ motphim1.info###custom_html-4
 d726 1
 a726 1
 phim.vkoolv.net,subnhanhvl.net,subnhanh.men,subnhanh.ac,tructiepdabong5.co,tutientruyen3.xyz,protruyen2.fun,biphim.biz###overlay
+d753 1
+a753 1
+phimmoi2.com,hhtqvietsub.top,hhchina.vip###sponsor-balloon
 d804 4
 a807 1
 subnhanhvl.net,subnhanh.men,subnhanh.ac,dongchill.co###xs-addd0
@@ -136,14 +163,14 @@ truyensextv.com,lxmanga.net,truyensextv.org##.sticky-footer
 d1314 1
 a1314 1
 ww1.ditnhauvietnam.com,phim.javhdvip.net##.alldiv ~ div[class]
-diff name:abpvn_adguard lines:183 checksum:dbfa22aa53
+diff name:abpvn_adguard lines:211 checksum:2ff259ce3c
 d2 1
 a2 1
-! Version: 20240129090022928
+! Version: 20240129140210608
 d4 2
 a5 2
-! Last modified: 29 Jan 2024 09:00:22 UTC+7
-! Diff-Path: patches/20240129090022928.patch#abpvn_adguard
+! Last modified: 29 Jan 2024 14:02:10 UTC+7
+! Diff-Path: patches/20240129140210608.patch#abpvn_adguard
 a33 1
 /aas/r45d/vki/*$script
 a35 1
@@ -167,6 +194,8 @@ d84 1
 a84 1
 ||biphim.biz/public/prom_ad/prom_ad.js$script
 d88 1
+a91 1
+||cdn-data.gtvplus.vn/banners/$image,domain=gametv.vn
 d95 1
 a95 1
 ||cdn2-img.net^*.gif$image,domain=hhpanda.biz|dongchill.co|biphim.biz|subnhanh.men|subnhanh.ac|subnhanhvl.net|bichill.biz|dongphim3s.com
@@ -181,6 +210,9 @@ d141 1
 a141 1
 ||i.imgur.com^*.gif$image,domain=ghienphim11.net|mv.dailyphimz.com|mv.phimmoiaz.cc|phimgichill.net|ophimhdvn3.net|mythethao.net|xemtivi4k.com|vtipster.net|huphimtv.com|xoilac14.org|film365.in|live3.90phut10.live|xemphimviet1.net|watch.ezyproxy.com|live3.thapcam2.net|phimmoiiii.net|live.vebo4.net|live2.vebo4.net|tvhayhd.com|hoathinh4k.net
 d147 2
+d151 1
+a151 1
+||imgyn.imageshh.com^*.gif$image,domain=mphim14.com|hhchina.vip|hh3d.tv
 d174 1
 d203 1
 a203 1
@@ -210,11 +242,30 @@ biphim.biz,subnhanh.ac##.underplayer_btn
 d430 1
 a430 1
 boctem.com,phimlongtieng.net,phimdinhcao.com,motchillz.org,motchill.uk,anivn.club,phimhoathinh3d.com,vkooll.net,hoathinhtq.tv,xemphimchill.xyz,247phim.cc,vungtv.us,vuaphimmoi2.net###popup-giua-man-hinh
-d496 2
-a497 2
+d496 4
+a499 4
 dongphim3s.com##a[rel="nofollow sponsored"]
 dongphim3s.com,dongchill.co,bichill.biz,coiphim18.com###footer_fixed_ads
+download.vn###ouibounce-modal
+download.vn##div[id^="adsbg"]
 d502 1
+d505 1
+d514 1
+a519 2
+game4v.com.vn###banner-add-lixi88
+game4v.com.vn##.banner-home
+d524 1
+a526 1
+game8.vn##div.news-left-related:nth-of-type(2)
+d530 4
+d539 2
+d554 2
+a555 2
+hhchina.vip,3dchill.net###ad-floating-right
+hhchina.vip,3dchill.net##.ad-floating-left
+d560 1
+a560 1
+hhtqvietsub.top,hhchina.vip###top-banner-pc
 d584 2
 d597 1
 a597 1
@@ -231,6 +282,9 @@ motphim1.info###custom_html-4
 d724 1
 a724 1
 phim.vkoolv.net,subnhanhvl.net,subnhanh.men,subnhanh.ac,tructiepdabong5.co,tutientruyen3.xyz,protruyen2.fun,biphim.biz###overlay
+d751 1
+a751 1
+phimmoi2.com,hhtqvietsub.top,hhchina.vip###sponsor-balloon
 d802 4
 a805 1
 subnhanhvl.net,subnhanh.men,subnhanh.ac,dongchill.co###xs-addd0
@@ -290,7 +344,8 @@ d1315 1
 d1318 1
 a1318 1
 downloadsachmienphi.com,lrepacks.net#%#//scriptlet("abort-current-inline-script", "JSON.parse", "break;case $.")
-a1319 1
+d1320 1
+a1320 1
 femax20.com#%#//scriptlet("prevent-addEventListener", "click", "open")
 d1322 1
 a1334 3
@@ -320,14 +375,14 @@ www.o-study.net#$#body {position: static !important}
 d1383 1
 a1383 1
 yts.do,yts.mx,yts.rs#%#//scriptlet("abort-on-property-read", "atob")
-diff name:abpvn_content_blocker lines:137 checksum:432a34b047
+diff name:abpvn_content_blocker lines:164 checksum:1883e42a59
 d2 1
 a2 1
-! Version: 20240129090022928
+! Version: 20240129140210608
 d4 2
 a5 2
-! Last modified: 29 Jan 2024 09:00:22 UTC+7
-! Diff-Path: patches/20240129090022928.patch#abpvn_content_blocker
+! Last modified: 29 Jan 2024 14:02:10 UTC+7
+! Diff-Path: patches/20240129140210608.patch#abpvn_content_blocker
 a33 1
 /aas/r45d/vki/*$script
 a35 1
@@ -351,6 +406,8 @@ d84 1
 a84 1
 ||biphim.biz/public/prom_ad/prom_ad.js$script
 d88 1
+a91 1
+||cdn-data.gtvplus.vn/banners/$image,domain=gametv.vn
 d95 1
 a95 1
 ||cdn2-img.net^*.gif$image,domain=hhpanda.biz|dongchill.co|biphim.biz|subnhanh.men|subnhanh.ac|subnhanhvl.net|bichill.biz|dongphim3s.com
@@ -365,6 +422,9 @@ d141 1
 a141 1
 ||i.imgur.com^*.gif$image,domain=ghienphim11.net|mv.dailyphimz.com|mv.phimmoiaz.cc|phimgichill.net|ophimhdvn3.net|mythethao.net|xemtivi4k.com|vtipster.net|huphimtv.com|xoilac14.org|film365.in|live3.90phut10.live|xemphimviet1.net|watch.ezyproxy.com|live3.thapcam2.net|phimmoiiii.net|live.vebo4.net|live2.vebo4.net|tvhayhd.com|hoathinh4k.net
 d147 2
+d151 1
+a151 1
+||imgyn.imageshh.com^*.gif$image,domain=mphim14.com|hhchina.vip|hh3d.tv
 d174 1
 d203 1
 a203 1
@@ -394,11 +454,30 @@ biphim.biz,subnhanh.ac##.underplayer_btn
 d432 1
 a432 1
 boctem.com,phimlongtieng.net,phimdinhcao.com,motchillz.org,motchill.uk,anivn.club,phimhoathinh3d.com,vkooll.net,hoathinhtq.tv,xemphimchill.xyz,247phim.cc,vungtv.us,vuaphimmoi2.net###popup-giua-man-hinh
-d498 2
-a499 2
+d498 4
+a501 4
 dongphim3s.com##a[rel="nofollow sponsored"]
 dongphim3s.com,dongchill.co,bichill.biz,coiphim18.com###footer_fixed_ads
+download.vn###ouibounce-modal
+download.vn##div[id^="adsbg"]
 d504 1
+d507 1
+d516 1
+a521 2
+game4v.com.vn###banner-add-lixi88
+game4v.com.vn##.banner-home
+d526 1
+a528 1
+game8.vn##div.news-left-related:nth-of-type(2)
+d532 4
+d541 2
+d556 2
+a557 2
+hhchina.vip,3dchill.net###ad-floating-right
+hhchina.vip,3dchill.net##.ad-floating-left
+d562 1
+a562 1
+hhtqvietsub.top,hhchina.vip###top-banner-pc
 d586 2
 d599 1
 a599 1
@@ -415,6 +494,9 @@ motphim1.info###custom_html-4
 d726 1
 a726 1
 phim.vkoolv.net,subnhanhvl.net,subnhanh.men,subnhanh.ac,tructiepdabong5.co,tutientruyen3.xyz,protruyen2.fun,biphim.biz###overlay
+d753 1
+a753 1
+phimmoi2.com,hhtqvietsub.top,hhchina.vip###sponsor-balloon
 d804 4
 a807 1
 subnhanhvl.net,subnhanh.men,subnhanh.ac,dongchill.co###xs-addd0
@@ -458,14 +540,14 @@ truyensextv.com,lxmanga.net,truyensextv.org##.sticky-footer
 d1314 1
 a1314 1
 ww1.ditnhauvietnam.com,phim.javhdvip.net##.alldiv ~ div[class]
-diff name:abpvn_noelemhide lines:68 checksum:fc3db20e80
+diff name:abpvn_noelemhide lines:73 checksum:20d698ceb4
 d2 1
 a2 1
-! Version: 20240129090022928
+! Version: 20240129140210608
 d4 2
 a5 2
-! Last modified: 29 Jan 2024 09:00:22 UTC+7
-! Diff-Path: patches/20240129090022928.patch#abpvn_noelemhide
+! Last modified: 29 Jan 2024 14:02:10 UTC+7
+! Diff-Path: patches/20240129140210608.patch#abpvn_noelemhide
 a33 1
 /aas/r45d/vki/*$script
 a35 1
@@ -489,6 +571,8 @@ d84 1
 a84 1
 ||biphim.biz/public/prom_ad/prom_ad.js$script
 d88 1
+a91 1
+||cdn-data.gtvplus.vn/banners/$image,domain=gametv.vn
 d95 1
 a95 1
 ||cdn2-img.net^*.gif$image,domain=hhpanda.biz|dongchill.co|biphim.biz|subnhanh.men|subnhanh.ac|subnhanhvl.net|bichill.biz|dongphim3s.com
@@ -503,6 +587,9 @@ d141 1
 a141 1
 ||i.imgur.com^*.gif$image,domain=ghienphim11.net|mv.dailyphimz.com|mv.phimmoiaz.cc|phimgichill.net|ophimhdvn3.net|mythethao.net|xemtivi4k.com|vtipster.net|huphimtv.com|xoilac14.org|film365.in|live3.90phut10.live|xemphimviet1.net|watch.ezyproxy.com|live3.thapcam2.net|phimmoiiii.net|live.vebo4.net|live2.vebo4.net|tvhayhd.com|hoathinh4k.net
 d147 2
+d151 1
+a151 1
+||imgyn.imageshh.com^*.gif$image,domain=mphim14.com|hhchina.vip|hh3d.tv
 d174 1
 d203 1
 a203 1
@@ -527,14 +614,14 @@ a407 2
 ||cliphot69.run$csp=script-src 'self' 'unsafe-inline'
 ||cliphot69.run^*.gif$image
 d450 1
-diff name:abpvn_ublock lines:179 checksum:39f8a34f12
+diff name:abpvn_ublock lines:207 checksum:b575d895b9
 d2 1
 a2 1
-! Version: 20240129090022928
+! Version: 20240129140210608
 d4 2
 a5 2
-! Last modified: 29 Jan 2024 09:00:22 UTC+7
-! Diff-Path: patches/20240129090022928.patch#abpvn_ublock
+! Last modified: 29 Jan 2024 14:02:10 UTC+7
+! Diff-Path: patches/20240129140210608.patch#abpvn_ublock
 a33 1
 /aas/r45d/vki/*$script
 a35 1
@@ -558,6 +645,8 @@ d84 1
 a84 1
 ||biphim.biz/public/prom_ad/prom_ad.js$script
 d88 1
+a91 1
+||cdn-data.gtvplus.vn/banners/$image,domain=gametv.vn
 d95 1
 a95 1
 ||cdn2-img.net^*.gif$image,domain=hhpanda.biz|dongchill.co|biphim.biz|subnhanh.men|subnhanh.ac|subnhanhvl.net|bichill.biz|dongphim3s.com
@@ -572,6 +661,9 @@ d141 1
 a141 1
 ||i.imgur.com^*.gif$image,domain=ghienphim11.net|mv.dailyphimz.com|mv.phimmoiaz.cc|phimgichill.net|ophimhdvn3.net|mythethao.net|xemtivi4k.com|vtipster.net|huphimtv.com|xoilac14.org|film365.in|live3.90phut10.live|xemphimviet1.net|watch.ezyproxy.com|live3.thapcam2.net|phimmoiiii.net|live.vebo4.net|live2.vebo4.net|tvhayhd.com|hoathinh4k.net
 d147 2
+d151 1
+a151 1
+||imgyn.imageshh.com^*.gif$image,domain=mphim14.com|hhchina.vip|hh3d.tv
 d174 1
 d203 1
 a203 1
@@ -601,11 +693,30 @@ biphim.biz,subnhanh.ac##.underplayer_btn
 d430 1
 a430 1
 boctem.com,phimlongtieng.net,phimdinhcao.com,motchillz.org,motchill.uk,anivn.club,phimhoathinh3d.com,vkooll.net,hoathinhtq.tv,xemphimchill.xyz,247phim.cc,vungtv.us,vuaphimmoi2.net###popup-giua-man-hinh
-d496 2
-a497 2
+d496 4
+a499 4
 dongphim3s.com##a[rel="nofollow sponsored"]
 dongphim3s.com,dongchill.co,bichill.biz,coiphim18.com###footer_fixed_ads
+download.vn###ouibounce-modal
+download.vn##div[id^="adsbg"]
 d502 1
+d505 1
+d514 1
+a519 2
+game4v.com.vn###banner-add-lixi88
+game4v.com.vn##.banner-home
+d524 1
+a526 1
+game8.vn##div.news-left-related:nth-of-type(2)
+d530 4
+d539 2
+d554 2
+a555 2
+hhchina.vip,3dchill.net###ad-floating-right
+hhchina.vip,3dchill.net##.ad-floating-left
+d560 1
+a560 1
+hhtqvietsub.top,hhchina.vip###top-banner-pc
 d584 2
 d597 1
 a597 1
@@ -622,6 +733,9 @@ motphim1.info###custom_html-4
 d724 1
 a724 1
 phim.vkoolv.net,subnhanhvl.net,subnhanh.men,subnhanh.ac,tructiepdabong5.co,tutientruyen3.xyz,protruyen2.fun,biphim.biz###overlay
+d751 1
+a751 1
+phimmoi2.com,hhtqvietsub.top,hhchina.vip###sponsor-balloon
 d802 4
 a805 1
 subnhanhvl.net,subnhanh.men,subnhanh.ac,dongchill.co###xs-addd0
@@ -682,7 +796,8 @@ d1315 1
 d1318 1
 a1318 1
 downloadsachmienphi.com,lrepacks.net##+js(acs, JSON.parse, break;case $.)
-a1319 1
+d1320 1
+a1320 1
 femax20.com##+js(addEventListener-defuser, click, open)
 d1322 1
 a1334 3
