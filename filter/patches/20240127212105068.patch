@@ -1,15 +1,15 @@
-diff name:abpvn lines:109 checksum:92ad74797b
+diff name:abpvn lines:122 checksum:266d629cc0
 d2 1
 a2 1
-! Version: 20240129142258601
+! Version: 20240129145210211
 d4 2
 a5 2
-! Last modified: 29 Jan 2024 14:22:58 UTC+7
-! Diff-Path: patches/20240129142258601.patch#abpvn
+! Last modified: 29 Jan 2024 14:52:10 UTC+7
+! Diff-Path: patches/20240129145210211.patch#abpvn
 d48 1
 a48 1
 /i.imgur.com/*.gif$domain=keonhacai5.vip|phimlongtieng.net|phimdinhcao.com|phimdinhcao.net|tvzinghd.com|xoilac98.tv|bongdainfoz.net|90phutzz.tv|veboz.net|conservatoriopaganini.org|plvb.xyz|motchillz.org|listnhacai1.com|xoilaczzv.tv|xemtivingon.org|phimlongtieng.com|mitoms.tv
-d95 1
+d95 2
 a98 1
 ||cdn-data.gtvplus.vn/banners/$image,domain=gametv.vn
 d103 2
@@ -28,10 +28,20 @@ a205 1
 d208 1
 a208 1
 ||r2.plvb.xyz^*.gif$image,domain=xoilaczzv.tv
+d211 1
+a211 1
+||s.lazada.vn^$popup,domain=chillphimmoiz.org
+d217 1
+a217 1
+||shope.ee^$popup,domain=chillphimmoiz.org|blogtruyenmoi.com|cunghocvui.com|khophimchill.com|truyensextv.org|motchill.uk
 a270 1
 ||www.bongdalu6.com^*.gif
 a766 1
 aoe.vn##.left-right-banner
+d807 3
+a818 2
+chillphimmoiz.org##.expand-static-banner
+chillphimmoiz.org##.static-banner
 d837 5
 a841 5
 conservatoriopaganini.org,90phutzz.tv,mitoms.tv,live3.90phut10.live,noitu.online##.modal-backdrop.show
@@ -81,6 +91,9 @@ phim.vkoolv.net,subnhanhvl.net,subnhanh.men,subnhanh.ac,dongphim3s.com,mitoms.tv
 d1128 1
 a1128 1
 phimmoi2.com,hhtqvietsub.top,hhchina.vip###sponsor-balloon
+d1144 1
+a1144 1
+phimyeuthichz.com,chillphimmoiz.org##.preload-banner
 d1190 2
 d1330 1
 a1330 1
@@ -108,18 +121,18 @@ truyensextv.com,lxmanga.net,truyensextv.org##.sticky-footer
 d1685 1
 a1685 1
 ww1.ditnhauvietnam.com,phim.javhdvip.net##.alldiv ~ div[class]
-diff name:abpvn_adguard lines:110 checksum:36515c656e
+diff name:abpvn_adguard lines:120 checksum:68b4384980
 d2 1
 a2 1
-! Version: 20240129142258601
+! Version: 20240129145210211
 d4 2
 a5 2
-! Last modified: 29 Jan 2024 14:22:58 UTC+7
-! Diff-Path: patches/20240129142258601.patch#abpvn_adguard
+! Last modified: 29 Jan 2024 14:52:10 UTC+7
+! Diff-Path: patches/20240129145210211.patch#abpvn_adguard
 d48 1
 a48 1
 /i.imgur.com/*.gif$domain=keonhacai5.vip|phimlongtieng.net|phimdinhcao.com|phimdinhcao.net|tvzinghd.com|xoilac98.tv|bongdainfoz.net|90phutzz.tv|veboz.net|conservatoriopaganini.org|plvb.xyz|motchillz.org|listnhacai1.com|xoilaczzv.tv|xemtivingon.org|phimlongtieng.com|mitoms.tv
-d95 1
+d95 2
 a98 1
 ||cdn-data.gtvplus.vn/banners/$image,domain=gametv.vn
 d103 2
@@ -142,6 +155,10 @@ a268 1
 ||www.bongdalu6.com^*.gif
 a764 1
 aoe.vn##.left-right-banner
+d805 3
+a816 2
+chillphimmoiz.org##.expand-static-banner
+chillphimmoiz.org##.static-banner
 d835 5
 a839 5
 conservatoriopaganini.org,90phutzz.tv,mitoms.tv,live3.90phut10.live,noitu.online##.modal-backdrop.show
@@ -191,6 +208,9 @@ phim.vkoolv.net,subnhanhvl.net,subnhanh.men,subnhanh.ac,dongphim3s.com,mitoms.tv
 d1126 1
 a1126 1
 phimmoi2.com,hhtqvietsub.top,hhchina.vip###sponsor-balloon
+d1142 1
+a1142 1
+phimyeuthichz.com,chillphimmoiz.org##.preload-banner
 d1188 2
 d1328 1
 a1328 1
@@ -218,19 +238,22 @@ truyensextv.com,lxmanga.net,truyensextv.org##.sticky-footer
 d1677 1
 a1677 1
 ww1.ditnhauvietnam.com,phim.javhdvip.net##.alldiv ~ div[class]
+d1695 1
+a1697 1
+chillphimmoiz.org#%#//scriptlet("remove-attr", "data-pop1|data-pop2", "body")
 d1704 1
-diff name:abpvn_content_blocker lines:109 checksum:e3b1e94ef9
+diff name:abpvn_content_blocker lines:122 checksum:f0dc785f98
 d2 1
 a2 1
-! Version: 20240129142258601
+! Version: 20240129145210211
 d4 2
 a5 2
-! Last modified: 29 Jan 2024 14:22:58 UTC+7
-! Diff-Path: patches/20240129142258601.patch#abpvn_content_blocker
+! Last modified: 29 Jan 2024 14:52:10 UTC+7
+! Diff-Path: patches/20240129145210211.patch#abpvn_content_blocker
 d48 1
 a48 1
 /i.imgur.com/*.gif$domain=keonhacai5.vip|phimlongtieng.net|phimdinhcao.com|phimdinhcao.net|tvzinghd.com|xoilac98.tv|bongdainfoz.net|90phutzz.tv|veboz.net|conservatoriopaganini.org|plvb.xyz|motchillz.org|listnhacai1.com|xoilaczzv.tv|xemtivingon.org|phimlongtieng.com|mitoms.tv
-d95 1
+d95 2
 a98 1
 ||cdn-data.gtvplus.vn/banners/$image,domain=gametv.vn
 d103 2
@@ -249,10 +272,20 @@ a205 1
 d208 1
 a208 1
 ||r2.plvb.xyz^*.gif$image,domain=xoilaczzv.tv
+d211 1
+a211 1
+||s.lazada.vn^$popup,domain=chillphimmoiz.org
+d217 1
+a217 1
+||shope.ee^$popup,domain=chillphimmoiz.org|blogtruyenmoi.com|cunghocvui.com|khophimchill.com|truyensextv.org|motchill.uk
 a270 1
 ||www.bongdalu6.com^*.gif
 a766 1
 aoe.vn##.left-right-banner
+d807 3
+a818 2
+chillphimmoiz.org##.expand-static-banner
+chillphimmoiz.org##.static-banner
 d837 5
 a841 5
 conservatoriopaganini.org,90phutzz.tv,mitoms.tv,live3.90phut10.live,noitu.online##.modal-backdrop.show
@@ -302,6 +335,9 @@ phim.vkoolv.net,subnhanhvl.net,subnhanh.men,subnhanh.ac,dongphim3s.com,mitoms.tv
 d1128 1
 a1128 1
 phimmoi2.com,hhtqvietsub.top,hhchina.vip###sponsor-balloon
+d1144 1
+a1144 1
+phimyeuthichz.com,chillphimmoiz.org##.preload-banner
 d1190 2
 d1330 1
 a1330 1
@@ -329,18 +365,18 @@ truyensextv.com,lxmanga.net,truyensextv.org##.sticky-footer
 d1685 1
 a1685 1
 ww1.ditnhauvietnam.com,phim.javhdvip.net##.alldiv ~ div[class]
-diff name:abpvn_noelemhide lines:35 checksum:999b7a66ee
+diff name:abpvn_noelemhide lines:41 checksum:a0d03c8c93
 d2 1
 a2 1
-! Version: 20240129142258601
+! Version: 20240129145210211
 d4 2
 a5 2
-! Last modified: 29 Jan 2024 14:22:58 UTC+7
-! Diff-Path: patches/20240129142258601.patch#abpvn_noelemhide
+! Last modified: 29 Jan 2024 14:52:10 UTC+7
+! Diff-Path: patches/20240129145210211.patch#abpvn_noelemhide
 d48 1
 a48 1
 /i.imgur.com/*.gif$domain=keonhacai5.vip|phimlongtieng.net|phimdinhcao.com|phimdinhcao.net|tvzinghd.com|xoilac98.tv|bongdainfoz.net|90phutzz.tv|veboz.net|conservatoriopaganini.org|plvb.xyz|motchillz.org|listnhacai1.com|xoilaczzv.tv|xemtivingon.org|phimlongtieng.com|mitoms.tv
-d95 1
+d95 2
 a98 1
 ||cdn-data.gtvplus.vn/banners/$image,domain=gametv.vn
 d103 2
@@ -359,24 +395,30 @@ a205 1
 d208 1
 a208 1
 ||r2.plvb.xyz^*.gif$image,domain=xoilaczzv.tv
+d211 1
+a211 1
+||s.lazada.vn^$popup,domain=chillphimmoiz.org
+d217 1
+a217 1
+||shope.ee^$popup,domain=chillphimmoiz.org|blogtruyenmoi.com|cunghocvui.com|khophimchill.com|truyensextv.org|motchill.uk
 a270 1
 ||www.bongdalu6.com^*.gif
 d691 1
 a691 1
 ||i.imgur.com^$image,domain=phym18.net|phim18hd.top|phim18vn.biz|phim18hd.me|xamvn.li
 d724 1
-diff name:abpvn_ublock lines:110 checksum:2e567c5d8a
+diff name:abpvn_ublock lines:121 checksum:102c0c8e14
 d2 1
 a2 1
-! Version: 20240129142258601
+! Version: 20240129145210211
 d4 2
 a5 2
-! Last modified: 29 Jan 2024 14:22:58 UTC+7
-! Diff-Path: patches/20240129142258601.patch#abpvn_ublock
+! Last modified: 29 Jan 2024 14:52:10 UTC+7
+! Diff-Path: patches/20240129145210211.patch#abpvn_ublock
 d48 1
 a48 1
 /i.imgur.com/*.gif$domain=keonhacai5.vip|phimlongtieng.net|phimdinhcao.com|phimdinhcao.net|tvzinghd.com|xoilac98.tv|bongdainfoz.net|90phutzz.tv|veboz.net|conservatoriopaganini.org|plvb.xyz|motchillz.org|listnhacai1.com|xoilaczzv.tv|xemtivingon.org|phimlongtieng.com|mitoms.tv
-d95 1
+d95 2
 a98 1
 ||cdn-data.gtvplus.vn/banners/$image,domain=gametv.vn
 d103 2
@@ -399,6 +441,10 @@ a268 1
 ||www.bongdalu6.com^*.gif
 a764 1
 aoe.vn##.left-right-banner
+d805 3
+a816 2
+chillphimmoiz.org##.expand-static-banner
+chillphimmoiz.org##.static-banner
 d835 5
 a839 5
 conservatoriopaganini.org,90phutzz.tv,mitoms.tv,live3.90phut10.live,noitu.online##.modal-backdrop.show
@@ -448,6 +494,9 @@ phim.vkoolv.net,subnhanhvl.net,subnhanh.men,subnhanh.ac,dongphim3s.com,mitoms.tv
 d1126 1
 a1126 1
 phimmoi2.com,hhtqvietsub.top,hhchina.vip###sponsor-balloon
+d1142 1
+a1142 1
+phimyeuthichz.com,chillphimmoiz.org##.preload-banner
 d1188 2
 d1328 1
 a1328 1
@@ -475,4 +524,8 @@ truyensextv.com,lxmanga.net,truyensextv.org##.sticky-footer
 d1677 1
 a1677 1
 ww1.ditnhauvietnam.com,phim.javhdvip.net##.alldiv ~ div[class]
+d1695 2
+a1698 2
+chillphimmoiz.org##body:remove-attr(data-pop1)
+chillphimmoiz.org##body:remove-attr(data-pop2)
 d1705 1
