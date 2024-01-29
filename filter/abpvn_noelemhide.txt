@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 20240129145210211
+! Version: 20240129190248628
 ! Title: ABPVN List
-! Last modified: 29 Jan 2024 14:52:10 UTC+7
-! Diff-Path: patches/20240129145210211.patch#abpvn_noelemhide
+! Last modified: 29 Jan 2024 19:02:48 UTC+7
+! Diff-Path: patches/20240129190248628.patch#abpvn_noelemhide
 ! Diff-Expires: 60 minutes
 ! Expires: 1 days (update frequency)
 !
@@ -68,6 +68,7 @@
 /vast.js$script,domain=tvzinghd.com|ophimhay.com|watch.ezyproxy.com|boctem.com|cdn.tinny2.tech|cdn.lookapi.website|phimvietsub.pro|phimdacap.tv|hoathinhtq.tv
 /videojs.ads.$domain=~danet.vn
 /videojs.ima.js$domain=~jut.su|~earthcam.com
+/wp-auto-affiliate-links/*
 ||123nhadatviet.com/Media/CK/banners/
 ||123nhadatviet.net/Media/CK/banners/
 ||2banh.vn/images/banners/
@@ -144,12 +145,12 @@
 ||i.imgur.com^$image,domain=nhacdj.vn|diendanit.net|banbuondalat.com|hoathinhtq.tv|xem.tructiepnba.com|vungtv.us
 ||i.imgur.com^*.gif$image,domain=ghienphim11.net|mv.dailyphimz.com|mv.phimmoiaz.cc|phimgichill.net|ophimhdvn3.net|mythethao.net|xemtivi4k.com|vtipster.net|huphimtv.com|xoilac14.org|film365.in|live3.90phut10.live|xemphimviet1.net|watch.ezyproxy.com|live3.thapcam2.net|phimmoiiii.net|live.vebo4.net|live2.vebo4.net|tvhayhd.com|hoathinh4k.net
 ||i.servimg.com/u/f22/$domain=4rkinggame.com
-||i.upanh.org^*.gif$domain=xemhay24h.com
+||i.upanh.org^*.gif$domain=phimhay.mobi
 ||iamcdn.net/players/playera.dmins.js
 ||iamcdn.net/players/playhydraxs.min.js
 ||igg-games.com/maven/av.js$script
 ||images2-focus-opensocial.googleusercontent.com^*.gif$image,domain=phimdinhcao.net|phimdinhcao.com|phimlongtieng.net
-||img.upanh.tv^*.gif$image,domain=phimtuoitho.tv|xemhay24h.com
+||img.upanh.tv^*.gif$image,domain=phimtuoitho.tv|phimhay.mobi
 ||imgyn.imageshh.com^*.gif$image,domain=mphim14.com|hhchina.vip|hh3d.tv
 ||kenhgamelau.com^*.gif
 ||kenhtin.net/upload/images/banner-
@@ -208,7 +209,7 @@
 ||raovat3s.com/clientscript/yui/yuiloader-dom-event/yuiloader-dom-event.js
 ||raovatdidong.vn/images/$domain=muabanraovat.com
 ||s.lazada.vn^$popup,domain=chillphimmoiz.org
-||s2.truyentot.com^*.gif$image,domain=hhtq.vip
+||s2.truyentot.com^*.gif$image,domain=hhtq1.vip
 ||scrap.ithongtin.com/api/aff$xmlhttprequest,domain=ithongtin.com
 ||sggp.org.vn/*banner
 ||sharecode.vn/assets/images/thiet-ke-web-gia-re.jpg
@@ -726,6 +727,6 @@ $third-party,script,domain=sexdiaryx.us
 ||tuoi69.tv/theme/custom.int.js
 ||vl3x.vip/ads/$script
 ||vn.sexviet1.net^*.gif$image
-||vn1.sexphim1.com^*.gif$image
+||vn2.sexphim1.com^*.gif$image
 ||vn3.yeusex.cc^*.gif$image
 ||yr.fopbandido.com^

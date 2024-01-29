@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 20240129145210211
+! Version: 20240129190248628
 ! Title: ABPVN List
-! Last modified: 29 Jan 2024 14:52:10 UTC+7
-! Diff-Path: patches/20240129145210211.patch#abpvn_content_blocker
+! Last modified: 29 Jan 2024 19:02:48 UTC+7
+! Diff-Path: patches/20240129190248628.patch#abpvn_content_blocker
 ! Diff-Expires: 60 minutes
 ! Expires: 1 days (update frequency)
 !
@@ -68,6 +68,7 @@
 /vast.js$script,domain=tvzinghd.com|ophimhay.com|watch.ezyproxy.com|boctem.com|cdn.tinny2.tech|cdn.lookapi.website|phimvietsub.pro|phimdacap.tv|hoathinhtq.tv
 /videojs.ads.$domain=~danet.vn
 /videojs.ima.js$domain=~jut.su|~earthcam.com
+/wp-auto-affiliate-links/*
 ||123nhadatviet.com/Media/CK/banners/
 ||123nhadatviet.net/Media/CK/banners/
 ||2banh.vn/images/banners/
@@ -144,12 +145,12 @@
 ||i.imgur.com^$image,domain=nhacdj.vn|diendanit.net|banbuondalat.com|hoathinhtq.tv|xem.tructiepnba.com|vungtv.us
 ||i.imgur.com^*.gif$image,domain=ghienphim11.net|mv.dailyphimz.com|mv.phimmoiaz.cc|phimgichill.net|ophimhdvn3.net|mythethao.net|xemtivi4k.com|vtipster.net|huphimtv.com|xoilac14.org|film365.in|live3.90phut10.live|xemphimviet1.net|watch.ezyproxy.com|live3.thapcam2.net|phimmoiiii.net|live.vebo4.net|live2.vebo4.net|tvhayhd.com|hoathinh4k.net
 ||i.servimg.com/u/f22/$domain=4rkinggame.com
-||i.upanh.org^*.gif$domain=xemhay24h.com
+||i.upanh.org^*.gif$domain=phimhay.mobi
 ||iamcdn.net/players/playera.dmins.js
 ||iamcdn.net/players/playhydraxs.min.js
 ||igg-games.com/maven/av.js$script
 ||images2-focus-opensocial.googleusercontent.com^*.gif$image,domain=phimdinhcao.net|phimdinhcao.com|phimlongtieng.net
-||img.upanh.tv^*.gif$image,domain=phimtuoitho.tv|xemhay24h.com
+||img.upanh.tv^*.gif$image,domain=phimtuoitho.tv|phimhay.mobi
 ||imgyn.imageshh.com^*.gif$image,domain=mphim14.com|hhchina.vip|hh3d.tv
 ||kenhgamelau.com^*.gif
 ||kenhtin.net/upload/images/banner-
@@ -208,7 +209,7 @@
 ||raovat3s.com/clientscript/yui/yuiloader-dom-event/yuiloader-dom-event.js
 ||raovatdidong.vn/images/$domain=muabanraovat.com
 ||s.lazada.vn^$popup,domain=chillphimmoiz.org
-||s2.truyentot.com^*.gif$image,domain=hhtq.vip
+||s2.truyentot.com^*.gif$image,domain=hhtq1.vip
 ||scrap.ithongtin.com/api/aff$xmlhttprequest,domain=ithongtin.com
 ||sggp.org.vn/*banner
 ||sharecode.vn/assets/images/thiet-ke-web-gia-re.jpg
@@ -704,6 +705,8 @@
 ##.question_page_ad
 ##.right-box.top-block
 ##.safeuploada-filter
+##.top-ad-content
+##.top-ad-wrap
 ##.top-ads
 ##.top_ads
 ##.video-ads
@@ -905,8 +908,6 @@ gamenoobz.net##.simple-banner
 genk.vn##.khw-ads-wrapper.clearfix
 ghienphim11.net##.parent.special
 ghienphim11.net,phimmoi.win##.partner-me
-gocphimf.net##.other-ads-container
-gocphimf.net##.show-load-ad
 gocphimvn.vip###mobileCatfishz
 gocphimvn.vip##.code-block
 google.com.vn##li.ads-ad
@@ -918,8 +919,6 @@ grabcad.com##[ng-if="model.asense"]
 greasyfork.org###script-show-info-ad
 gyazo.com##.lower-ad
 gyazo.com##.upper-ad-box
-haiquanonline.com.vn##.banner-top-main
-haiquanonline.com.vn##.baohaiquan_bottom_970x250
 hayghe.info###antiblocker
 hayghe.info###antiblocker_underplayer
 heovktgame.club##.toogle-ads
@@ -928,9 +927,9 @@ hhchina.vip,3dchill.net###ad-floating-right
 hhchina.vip,3dchill.net##.ad-floating-left
 hhhkungfu.tv##div.text-center:nth-of-type(7)
 hhhkungfu.tv##div[style="min-height: 250px"]
-hhninja1.tv,phimbocn.com,phimhoathinh3d.com,hoathinhtq.tv,hhtq.vip,hhtqvietsub.top,motchilliv.net,motchill.uk,hhtrungquoc.com,hhtqnet.tv,animeweb.vip,hh3d.tv,hoathinh4k.net###catfish
-hhtq.vip###header-ads
-hhtq.vip##.catfish-img
+hhninja1.tv,phimbocn.com,phimhoathinh3d.com,hoathinhtq.tv,hhtq1.vip,hhtqvietsub.top,motchilliv.net,motchill.uk,hhtrungquoc.vip,hhtqnet.tv,animeweb.vip,hh3d.tv,hoathinh4k.net###catfish
+hhtq1.vip###header-ads
+hhtq1.vip##.catfish-img
 hhtqvietsub.top,hhchina.vip###top-banner-pc
 hoathinh4k.net##.ads-nlp
 hoc24.vn###modal-ads-olm
@@ -1024,7 +1023,7 @@ markets.businessinsider.com##.htl-ad-placeholder
 markets.businessinsider.com##.spacer-50.mobile-spacer-25
 megaup.net#?#.metaRedirectWrapperBottomAds
 mephimnhe1.net,phimgichill.net,ophimhdvn3.net##.mobile-catfix
-mephimnhe1.net,xemhay24h.com##.a--d-wrapper
+mephimnhe1.net,phimhay.mobi##.a--d-wrapper
 mephimtv.co##.ai-viewport-1
 mephimtv.com##.movie-banner
 metruyencv.info,metruyencv.net,metruyencv.com###div-ub-metruyencv_net
@@ -1056,7 +1055,7 @@ motchilli.net,motphimtvi.net,vkooll.net,ophimhd.vip,subnhanh.xyz##.mp-adz
 motphim1.info###custom_html-2
 motphim1.info###custom_html-4
 motphim1.info##.widget_custom_html.widget.widget_text
-motphim1.info,hhtq.vip,hhtqnet.tv,hhtqvietsub.top##.box_odds
+motphim1.info,hhtq1.vip,hhtqnet.tv,hhtqvietsub.top##.box_odds
 mphim14.com##.fixed_bottom
 muabanraovat.com##[class^="box_adv_ele"]
 muare.vn##.admicro_top
@@ -1138,7 +1137,7 @@ phimplay24h.com###itro_popup
 phimtt.com##.breadcrumb.block-title
 phimtuoitho.tv##[href^="https://www.toprevenuegate.com/q7rbxxz1v"]
 phimvietsub.pro,api.anime3s.com,subnhanh.xyz##.t_logo
-phimvuihd.org,hh3dhay.com,phimtn.com,phimhay.in,animesub.me,coiphim18.com,xemhay24h.com,phimtuoitho.tv,xem8z.com##.float-ck-center-lt
+phimvuihd.org,hh3dhay.com,phimtn.com,phimhay.in,animesub.me,coiphim18.com,phimhay.mobi,phimtuoitho.tv,xem8z.com##.float-ck-center-lt
 phimyeuthichz.com##.sticky-footer
 phimyeuthichz.com,chillphimmoiz.org##.preload-banner
 photobucket.com##.slider-contents
@@ -1284,7 +1283,7 @@ truyenqqvn.com##.mobile-banner
 truyenqqvn.com##.pc-banner
 truyenqqvn.com##div[id^="image_popup_"]
 truyensieuhay.com##.footer-info
-truyensieuhay.com,hhtrungquoc.com,hhtq.vip,animeweb.vip###topbanner
+truyensieuhay.com,hhtrungquoc.vip,hhtq1.vip,animeweb.vip###topbanner
 truyentuanopm.com###banner_preload
 truyentuanopm.com##.doc-truyen-ads-d1
 truyentuanopm.com##.doc-truyen-ads-d2
@@ -1551,7 +1550,7 @@ $third-party,script,domain=sexdiaryx.us
 ||tuoi69.tv/theme/custom.int.js
 ||vl3x.vip/ads/$script
 ||vn.sexviet1.net^*.gif$image
-||vn1.sexphim1.com^*.gif$image
+||vn2.sexphim1.com^*.gif$image
 ||vn3.yeusex.cc^*.gif$image
 ||yr.fopbandido.com^
 !---------- ABPVN Adult Element Hide ---------------
@@ -1676,7 +1675,7 @@ vn.javbabe.net##.b-player
 vn.javbabe.net##.clipxx
 vn.phym18.net##div#bnads
 vn.sexviet1.net,vn3.yeusex.cc##.preload
-vn1.sexphim1.com##.code-block-4
+vn2.sexphim1.com##.code-block-4
 ww1.ditnhauvietnam.com,phim.javhdvip.net##.alldiv ~ div[class]
 www.gaingon18.me###iklan-atas-wrapper
 www.pornhub.com###pb_block
