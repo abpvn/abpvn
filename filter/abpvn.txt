@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 20240128140807373
+! Version: 20240129082313897
 ! Title: ABPVN List
-! Last modified: 28 Jan 2024 14:08:07 UTC+7
-! Diff-Path: patches/20240128140807373.patch#abpvn
+! Last modified: 29 Jan 2024 08:23:13 UTC+7
+! Diff-Path: patches/20240129082313897.patch#abpvn
 ! Diff-Expires: 60 minutes
 ! Expires: 1 days (update frequency)
 !
@@ -45,7 +45,7 @@
 /disable-devtool.min.js$script
 /giadinhonline.vn/files/qc/
 /i.imgur.com/$domain=xemphimchill.xyz
-/i.imgur.com/*.gif$domain=keonhacai5.vip|phimlongtieng.net|phimdinhcao.com|phimdinhcao.net|tvzinghd.com|xoilac98.tv|bongdainfoz.net|90phutzz.tv|veboz.net|conservatoriopaganini.org|plvb.xyz|motchillz.org|listnhacai1.com|swradioafrica.com|xemtivingon.org|phimlongtieng.com|mitome.tv
+/i.imgur.com/*.gif$domain=keonhacai5.vip|phimlongtieng.net|phimdinhcao.com|phimdinhcao.net|tvzinghd.com|xoilac98.tv|bongdainfoz.net|90phutzz.tv|veboz.net|conservatoriopaganini.org|plvb.xyz|motchillz.org|listnhacai1.com|xoilacz.co|xemtivingon.org|phimlongtieng.com|mitoms.tv
 /media.discordapp/$domain=phimno4.xyz|bongda21h.me
 /mmo/*$xmlhttprequest,image,domain=phimmoi2.com|vuighe2.com|mehoathinh3.com
 /newchill/*gif$image
@@ -92,7 +92,6 @@
 ||blog.abit.vn/wp-content/uploads/2020/05/abit_$image
 ||blogger.googleusercontent.com^$image,domain=hhtqnet.tv|hhninja1.tv|xem8z.com
 ||bonbanh.com/ad/
-||bongdalu4.com^*.gif
 ||boophim.net^*.gif$image
 ||bp.blogspot.com$image,domain=timdaily.vn|xemtivi4k.com
 ||bp.blogspot.com/*banner$image,domain=~aowvn.org|~umu.pink
@@ -202,10 +201,10 @@
 ||photo2.tinhte.vn/data/attachment-files/*banner
 ||photo2.tinhte.vn^*.gif$domain=live.vebo4.net
 ||pic1025.com^*gif$domain=xemtivi4k.com
-||potsiuds.com^$script,domain=nettruyentr.com
+||potsiuds.com^$script,domain=nettruyenclubs.com
 ||quaivatdienanh.com/*banner$image
 ||quangcaosanpham.com/images/$third-party
-||r2.plvb.xyz^*.gif$image,domain=swradioafrica.com
+||r2.plvb.xyz^*.gif$image,domain=xoilacz.co
 ||raovat3s.com/clientscript/yui/yuiloader-dom-event/yuiloader-dom-event.js
 ||raovatdidong.vn/images/$domain=muabanraovat.com
 ||s.lazada.vn^$popup,domain=boophim.net|chillphimmoiz.org
@@ -268,6 +267,7 @@
 ||vov.vn/ads/show-ads
 ||vsc31.com/wp-content/themes/vuasanco/assets/scripts/scripts.js
 ||wikisach.net/static/js/adx/$script
+||www.bongdalu6.com^*.gif
 ||www.thuocbietduoc.com.vn/adv/
 ||www.thuocbietduoc.com.vn/aqc/$image
 ||xahoingaynay.com.vn/upload/$image
@@ -834,11 +834,11 @@ congan.com.vn##.ad-embed
 congngheviet.com##.asbybgn
 congthucvatly.com##.mb-4>[style="min-height: 350px;"]
 conservatoriopaganini.org##a.rlw-extra-i.py-3.flex-grow-1
-conservatoriopaganini.org,90phutzz.tv,mitome.tv,live3.90phut10.live,noitu.online##.modal-backdrop.show
-conservatoriopaganini.org,90phutzz.tv,mitome.tv,live3.90phut10.live,xoilac14.org,live.vebo4.net,live2.vebo4.net##.show.fade
-conservatoriopaganini.org,mitome.tv##.menu-item-object-custom
-conservatoriopaganini.org,xoilac98.tv,mitome.tv##.sub-menu.d-none.d-lg-flex
-conservatoriopaganini.org,xoilac98.tv,mitome.tv,90phutzz.tv,veboz.net##.marquee-container
+conservatoriopaganini.org,90phutzz.tv,mitoms.tv,live3.90phut10.live,noitu.online##.modal-backdrop.show
+conservatoriopaganini.org,90phutzz.tv,mitoms.tv,live3.90phut10.live,xoilac14.org,live.vebo4.net,live2.vebo4.net##.show.fade
+conservatoriopaganini.org,mitoms.tv##.menu-item-object-custom
+conservatoriopaganini.org,xoilac98.tv,mitoms.tv##.sub-menu.d-none.d-lg-flex
+conservatoriopaganini.org,xoilac98.tv,mitoms.tv,90phutzz.tv,veboz.net##.marquee-container
 cryptoviet.com##.fancybox-overlay
 cryptoviet.com##.snp-pop-54465-wrap
 cryptoviet.com##.widget-wrap.widget_text
@@ -945,8 +945,6 @@ huphimtv.com###sideAdsLeft
 huphimtv.com###sideAdsRight
 huphimtv.com##.catfishLoader
 huphimtv.com##.preload
-iphimchilla.net###custom_html-2
-iphimchilla.net###custom_html-4
 kenh14.vn##.ads-sponsor
 kenh14.vn##.khw-adk14-wrapper
 keonhacai5.vip##.container>.row>center
@@ -994,7 +992,7 @@ live3.90phut10.live##.sv-link.btn-bet-top
 live3.thapcam2.net##.mct_-bet-bot
 live3.thapcam2.net##.mmo
 live3.thapcam2.net##.mmo-inner
-live3.thapcam2.net,veboz.net,swradioafrica.com,mitome.tv,90phutzz.tv##.btn-odds
+live3.thapcam2.net,veboz.net,xoilacz.co,mitoms.tv,90phutzz.tv##.btn-odds
 livetv4.mannhan1.live##.bet-btn-8423
 livetv4.mannhan1.live##.btn_betnow_632132
 livetv4.mannhan1.live##.highlight
@@ -1043,10 +1041,10 @@ metruyencv.info,metruyencv.net,metruyencv.com##[href$="/goout/lazada"]
 metruyencv.info,metruyencv.net,metruyencv.com##section.nh-section:nth-of-type(5)
 metruyencv.info,metruyencv.net,metruyencv.com#?#.text-center:-abp-has(small:-abp-contains(QUẢNG CÁO))
 metruyencv.net,vtruyen.com##.text-muted
-mitome.tv##.btn-od
-mitome.tv,90phutzz.tv##.d-lg-none.d-block.p-1.text-center
-mitome.tv,conservatoriopaganini.org,90phutzz.tv,veboz.net,xoilac98.tv,bongdainfoz.net,swradioafrica.com###wap_bottombanner
-mitome.tv,conservatoriopaganini.org,90phutzz.tv,xoilac98.tv,veboz.net,bongdainfoz.net,swradioafrica.com##.company
+mitoms.tv##.btn-od
+mitoms.tv,90phutzz.tv##.d-lg-none.d-block.p-1.text-center
+mitoms.tv,conservatoriopaganini.org,90phutzz.tv,veboz.net,xoilac98.tv,bongdainfoz.net,xoilacz.co###wap_bottombanner
+mitoms.tv,conservatoriopaganini.org,90phutzz.tv,xoilac98.tv,veboz.net,bongdainfoz.net,xoilacz.co##.company
 mitub.net##.single-box
 mitub.net##[href^="//dooloust.net/"]
 mmo4me.com##div[class^="ads-"]
@@ -1056,6 +1054,8 @@ mn.mediastation.live##.images-top-pl
 motchilli.net,motphimtvi.net###mp-adbk
 motchilli.net,motphimtvi.net###mp-adx-b32
 motchilli.net,motphimtvi.net,vkooll.net,ophimhd.vip,subnhanh.xyz##.mp-adz
+motphim1.info###custom_html-2
+motphim1.info###custom_html-4
 motphim1.info##.widget_custom_html.widget.widget_text
 motphim1.info,hhtq.vip,hhtqnet.tv,hhtqvietsub.top##.box_odds
 mphim14.com##.fixed_bottom
@@ -1100,7 +1100,7 @@ ophimhdvn3.net,huphimtv.com,animevietsub.io,saostar.vn,xemphimviet1.net,ghienphi
 outlook.live.com##.LBktY>.GssDD
 p.thoctv.com##.add-logo-ads
 phapluatplus.vn##div[style="text-align:center;margin-top:0px;margin-bottom:0px;"]
-phim.vkoolv.net,subnhanhvl.net,subnhanh.men,subnhanh.ac,dongphim3s.com,mitome.tv,tutientruyen3.xyz,protruyen2.fun,biphim.biz###overlay
+phim.vkoolv.net,subnhanhvl.net,subnhanh.men,subnhanh.ac,dongphim3s.com,mitoms.tv,tutientruyen3.xyz,protruyen2.fun,biphim.biz###overlay
 phim202.com###itro_opaco
 phim33.tv##div[data-value="1"]
 phimbo88vn.net##.ads_popup
@@ -1187,8 +1187,6 @@ ssplay.net,zophim.net###_AM_POPUP_FRAME
 sstruyen.vn##.detail-content>center
 subnhanh.xyz##.sticky_bottom
 subnhanhvl.net,subnhanh.men,subnhanh.ac,dongchill.co###xs-addd0
-swradioafrica.com##.grid-match__footer
-swradioafrica.com##a.d-lg-none.d-block:nth-of-type(1)
 tamlinh247.com.vn##.ads-gg-top
 tamlinh247.com.vn##.container + .col-xs-12.content_wrap
 tamlinh247.com.vn##.content>.content>.content
@@ -1327,7 +1325,7 @@ veboz.net##.topButton
 veboz.net##.widget_offer
 veboz.net##header>.container
 veboz.net,conservatoriopaganini.org##.container.mt-1.d-none.d-lg-block
-veboz.net,mitome.tv,conservatoriopaganini.org##.align-items-center.justify-content-between.d-flex.col-12>.d-lg-none.d-block
+veboz.net,mitoms.tv,conservatoriopaganini.org##.align-items-center.justify-content-between.d-flex.col-12>.d-lg-none.d-block
 vesotantai.com##.item-qc
 vidian.wiki###closeAds
 vieclam.tv###bnc1
@@ -1432,11 +1430,13 @@ xoilac98.tv##a.btn-odds[rel="nofollow"]
 xoilac98.tv##a[href^="https://www.fb88cup.com"]
 xoilac98.tv##a[href^="https://www.mu922.com"]
 xoilac98.tv##div.d-lg-none.d-block:nth-of-type(3)
-xoilac98.tv,90phutzz.tv,swradioafrica.com###match-child-1
-xoilac98.tv,90phutzz.tv,swradioafrica.com##.match-detail__offer
-xoilac98.tv,90phutzz.tv,swradioafrica.com##.menu-cuoc-8xbet
-xoilac98.tv,swradioafrica.com##.menu-top-nha-cai
-xoilac98.tv,veboz.net,mitome.tv,conservatoriopaganini.org##div[id^="dnn_"]
+xoilac98.tv,90phutzz.tv,xoilacz.co###match-child-1
+xoilac98.tv,90phutzz.tv,xoilacz.co##.match-detail__offer
+xoilac98.tv,90phutzz.tv,xoilacz.co##.menu-cuoc-8xbet
+xoilac98.tv,veboz.net,mitoms.tv,conservatoriopaganini.org##div[id^="dnn_"]
+xoilac98.tv,xoilacz.co##.menu-top-nha-cai
+xoilacz.co##.grid-match__footer
+xoilacz.co##a.d-lg-none.d-block:nth-of-type(1)
 xoivo2.online##.adLogoPlayer
 xoivo2.online##.dcmm-button-player
 xosodaiphat.com##.adv-side-bar
@@ -1547,7 +1547,6 @@ $third-party,script,domain=sexdiaryx.us
 ||truyen18.xyz/media/banner/$image
 ||truyenhentaivn.com^*.gif$image
 ||truyensextv.com/anh/
-||truyensextv.me/anh/
 ||truyensextv.org/anh/$image
 ||truyensextv.org^*.gif
 ||tuoi69.tv/theme/custom.int.js
@@ -1596,8 +1595,6 @@ javtopxx.com##.cat-fish.a-play
 javtopxx.com##.overlay
 luscious.net###l-center-txt
 lxmanga.net##.ads-wrapper
-lxmanga.net##.preload-backdrop
-lxmanga.net##.preload-banner
 nhentaivn.com###popup_fipup-overlay
 phevkl.co##.separator
 phim18vn.biz,phim18hd.top,phim18hd.me##.cash-fish
@@ -1652,8 +1649,8 @@ truyen18.xyz##.apu
 truyen18.xyz##.header
 truyenhentaivn.com###catfish
 truyenhentaivn.com##.wppopups-whole
-truyensextv.com,lxmanga.net,truyensextv.org,truyensextv.me##.sticky-footer
-truyensextv.com,truyensextv.me###sticky-footer
+truyensextv.com,lxmanga.net,truyensextv.org,truyensextv.com##.sticky-footer
+truyensextv.com,truyensextv.com###sticky-footer
 tuoi69.tv##.v4j-header.v4j-content
 tuoi69z.pro,sieukhung.site###bar_float_r
 tuoi69z.pro,sieukhung.site##.adsTopHome
@@ -1682,7 +1679,7 @@ vn.javbabe.net##.clipxx
 vn.phym18.net##div#bnads
 vn.sexviet1.net,vn3.yeusex.cc##.preload
 vn1.sexphim1.com##.code-block-4
-ww1.ditnhauvietnam.com,phim.javhdsex.org##.alldiv ~ div[class]
+ww1.ditnhauvietnam.com,phim.javhdvip.net##.alldiv ~ div[class]
 www.gaingon18.me###iklan-atas-wrapper
 www.pornhub.com###pb_block
 www.pornhub.com##.adContainer
