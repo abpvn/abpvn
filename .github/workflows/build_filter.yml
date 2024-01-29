@@ -57,10 +57,18 @@ jobs:
           fi
       - name: Build filter
         if: ${{ env.NEED_BUILD_MASTER == 'true' }}
+        continue-on-error: true
         run: |
           git config user.name github-actions
           git config user.email github-actions@github.com
           BUILD_OUTPUT=$(bash commit.sh true)
+          GIT_TAG=$(cat version)
+          git commit -m "Auto build filter on master to $GIT_TAG"
+          git tag $GIT_TAG
+          if [ '${{env.DRY_RUN}}' == 'false' ]; then
+            git push origin master
+            git push origin $GIT_TAG
+          fi
           DEL_VERSIONS=''
           REGEX=These[[:space:]]tag[[:space:]]should[[:space:]]be[[:space:]]delete[[:space:]]manualy:[[:space:]]'(.*)'
           [[ ${BUILD_OUTPUT} =~ $REGEX ]] && \
@@ -71,13 +79,6 @@ jobs:
             if [ '${{env.DRY_RUN}}' == 'false' ]; then
               git push -d origin $DEL_VERSIONS
             fi
-          fi
-          GIT_TAG=$(cat version)
-          git commit -m "Auto build filter on master to $GIT_TAG"
-          git tag $GIT_TAG
-          if [ '${{env.DRY_RUN}}' == 'false' ]; then
-            git push origin master
-            git push origin $GIT_TAG
           fi
   build_filter_single:
     if: ${{ github.event_name != 'push' || contains(github.event.head_commit.message, '[build]') }}
@@ -113,10 +114,18 @@ jobs:
           fi
       - name: Build filter
         if: ${{ env.NEED_BUILD_SINGLE == 'true' }}
+        continue-on-error: true
         run: |
           git config user.name github-actions
           git config user.email github-actions@github.com
           BUILD_OUTPUT=$(bash commit.sh true)
+          GIT_TAG=$(cat version)
+          git commit -m "Auto build filter on single to $GIT_TAG"
+          git tag $GIT_TAG
+          if [ '${{env.DRY_RUN}}' == 'false' ]; then
+            git push origin single
+            git push origin $GIT_TAG
+          fi
           DEL_VERSIONS=''
           REGEX=These[[:space:]]tag[[:space:]]should[[:space:]]be[[:space:]]delete[[:space:]]manualy:[[:space:]]'(.*)'
           [[ ${BUILD_OUTPUT} =~ $REGEX ]] && \
@@ -127,13 +136,6 @@ jobs:
             if [ '${{env.DRY_RUN}}' == 'false' ]; then
               git push -d origin $DEL_VERSIONS
             fi
-          fi
-          GIT_TAG=$(cat version)
-          git commit -m "Auto build filter on single to $GIT_TAG"
-          git tag $GIT_TAG
-          if [ '${{env.DRY_RUN}}' == 'false' ]; then
-            git push origin single
-            git push origin $GIT_TAG
           fi
   update_server_filter:
     runs-on: ubuntu-latest
