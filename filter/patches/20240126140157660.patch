@@ -1,11 +1,11 @@
-diff name:abpvn lines:194 checksum:40861ab375
+diff name:abpvn lines:204 checksum:24d63afc74
 d2 1
 a2 1
-! Version: 20240129142248143
+! Version: 20240129145304648
 d4 2
 a5 2
-! Last modified: 29 Jan 2024 14:22:48 UTC+7
-! Diff-Path: patches/20240129142248143.patch#abpvn
+! Last modified: 29 Jan 2024 14:53:04 UTC+7
+! Diff-Path: patches/20240129145304648.patch#abpvn
 a33 1
 /aas/r45d/vki/*$script
 a35 1
@@ -28,7 +28,7 @@ a70 1
 d84 1
 a84 1
 ||biphim.biz/public/prom_ad/prom_ad.js$script
-d88 1
+d88 2
 a91 1
 ||cdn-data.gtvplus.vn/banners/$image,domain=gametv.vn
 d95 3
@@ -66,9 +66,12 @@ a200 1
 d203 1
 a203 1
 ||r2.plvb.xyz^*.gif$image,domain=xoilaczzv.tv
+d206 1
+a206 1
+||s.lazada.vn^$popup,domain=chillphimmoiz.org
 d212 1
 a212 1
-||shope.ee^$popup,domain=boophim.net|chillphimmoiz.org|blogtruyenmoi.com|cunghocvui.com|khophimchill.com|truyensextv.org|motchill.uk
+||shope.ee^$popup,domain=chillphimmoiz.org|blogtruyenmoi.com|cunghocvui.com|khophimchill.com|truyensextv.org|motchill.uk
 d223 3
 a225 3
 ||subnhanh.ac/js/ads_xx.js
@@ -91,6 +94,10 @@ biphim.biz,subnhanh.ac##.underplayer_btn
 d429 1
 a429 1
 boctem.com,phimlongtieng.net,phimdinhcao.com,motchillz.org,motchill.uk,anivn.club,phimhoathinh3d.com,vkooll.net,hoathinhtq.tv,xemphimchill.xyz,247phim.cc,vungtv.us,vuaphimmoi2.net###popup-giua-man-hinh
+d443 3
+a456 2
+chillphimmoiz.org##.expand-static-banner
+chillphimmoiz.org##.static-banner
 d466 1
 d472 1
 d487 2
@@ -144,6 +151,9 @@ phim.vkoolv.net,subnhanhvl.net,subnhanh.men,subnhanh.ac,tructiepdabong5.co,tutie
 d759 1
 a759 1
 phimmoi2.com,hhtqvietsub.top,hhchina.vip###sponsor-balloon
+d775 1
+a775 1
+phimyeuthichz.com,chillphimmoiz.org##.preload-banner
 d810 4
 a813 1
 subnhanhvl.net,subnhanh.men,subnhanh.ac,dongchill.co###xs-addd0
@@ -193,14 +203,14 @@ truyensextv.com,lxmanga.net,truyensextv.org##.sticky-footer
 d1320 1
 a1320 1
 ww1.ditnhauvietnam.com,phim.javhdvip.net##.alldiv ~ div[class]
-diff name:abpvn_adguard lines:244 checksum:7785758e7a
+diff name:abpvn_adguard lines:254 checksum:fba62162c4
 d2 1
 a2 1
-! Version: 20240129142248143
+! Version: 20240129145304648
 d4 2
 a5 2
-! Last modified: 29 Jan 2024 14:22:48 UTC+7
-! Diff-Path: patches/20240129142248143.patch#abpvn_adguard
+! Last modified: 29 Jan 2024 14:53:04 UTC+7
+! Diff-Path: patches/20240129145304648.patch#abpvn_adguard
 a33 1
 /aas/r45d/vki/*$script
 a35 1
@@ -223,7 +233,7 @@ a70 1
 d84 1
 a84 1
 ||biphim.biz/public/prom_ad/prom_ad.js$script
-d88 1
+d88 2
 a91 1
 ||cdn-data.gtvplus.vn/banners/$image,domain=gametv.vn
 d95 3
@@ -283,6 +293,10 @@ biphim.biz,subnhanh.ac##.underplayer_btn
 d427 1
 a427 1
 boctem.com,phimlongtieng.net,phimdinhcao.com,motchillz.org,motchill.uk,anivn.club,phimhoathinh3d.com,vkooll.net,hoathinhtq.tv,xemphimchill.xyz,247phim.cc,vungtv.us,vuaphimmoi2.net###popup-giua-man-hinh
+d441 3
+a454 2
+chillphimmoiz.org##.expand-static-banner
+chillphimmoiz.org##.static-banner
 d464 1
 d470 1
 d485 2
@@ -336,6 +350,9 @@ phim.vkoolv.net,subnhanhvl.net,subnhanh.men,subnhanh.ac,tructiepdabong5.co,tutie
 d757 1
 a757 1
 phimmoi2.com,hhtqvietsub.top,hhchina.vip###sponsor-balloon
+d773 1
+a773 1
+phimyeuthichz.com,chillphimmoiz.org##.preload-banner
 d808 4
 a811 1
 subnhanhvl.net,subnhanh.men,subnhanh.ac,dongchill.co###xs-addd0
@@ -397,6 +414,9 @@ d1314 2
 a1315 2
 azrom.net#%#//scriptlet("abort-current-inline-script", "atob", "ai_block_class")
 azrom.net#%#//scriptlet("abort-on-property-read", "adsBlocked")
+d1317 1
+a1319 1
+chillphimmoiz.org#%#//scriptlet("remove-attr", "data-pop1|data-pop2", "body")
 d1321 1
 d1324 1
 a1324 1
@@ -438,14 +458,14 @@ xemphimhdc.net,motchill.uk#%#//scriptlet("abort-current-inline-script", "documen
 d1389 1
 a1389 1
 yts.do,yts.mx,yts.rs#%#//scriptlet("abort-on-property-read", "atob")
-diff name:abpvn_content_blocker lines:194 checksum:0619998904
+diff name:abpvn_content_blocker lines:204 checksum:0e437d8693
 d2 1
 a2 1
-! Version: 20240129142248143
+! Version: 20240129145304648
 d4 2
 a5 2
-! Last modified: 29 Jan 2024 14:22:48 UTC+7
-! Diff-Path: patches/20240129142248143.patch#abpvn_content_blocker
+! Last modified: 29 Jan 2024 14:53:04 UTC+7
+! Diff-Path: patches/20240129145304648.patch#abpvn_content_blocker
 a33 1
 /aas/r45d/vki/*$script
 a35 1
@@ -468,7 +488,7 @@ a70 1
 d84 1
 a84 1
 ||biphim.biz/public/prom_ad/prom_ad.js$script
-d88 1
+d88 2
 a91 1
 ||cdn-data.gtvplus.vn/banners/$image,domain=gametv.vn
 d95 3
@@ -506,9 +526,12 @@ a200 1
 d203 1
 a203 1
 ||r2.plvb.xyz^*.gif$image,domain=xoilaczzv.tv
+d206 1
+a206 1
+||s.lazada.vn^$popup,domain=chillphimmoiz.org
 d212 1
 a212 1
-||shope.ee^$popup,domain=boophim.net|chillphimmoiz.org|blogtruyenmoi.com|cunghocvui.com|khophimchill.com|truyensextv.org|motchill.uk
+||shope.ee^$popup,domain=chillphimmoiz.org|blogtruyenmoi.com|cunghocvui.com|khophimchill.com|truyensextv.org|motchill.uk
 d223 3
 a225 3
 ||subnhanh.ac/js/ads_xx.js
@@ -531,6 +554,10 @@ biphim.biz,subnhanh.ac##.underplayer_btn
 d429 1
 a429 1
 boctem.com,phimlongtieng.net,phimdinhcao.com,motchillz.org,motchill.uk,anivn.club,phimhoathinh3d.com,vkooll.net,hoathinhtq.tv,xemphimchill.xyz,247phim.cc,vungtv.us,vuaphimmoi2.net###popup-giua-man-hinh
+d443 3
+a456 2
+chillphimmoiz.org##.expand-static-banner
+chillphimmoiz.org##.static-banner
 d466 1
 d472 1
 d487 2
@@ -584,6 +611,9 @@ phim.vkoolv.net,subnhanhvl.net,subnhanh.men,subnhanh.ac,tructiepdabong5.co,tutie
 d759 1
 a759 1
 phimmoi2.com,hhtqvietsub.top,hhchina.vip###sponsor-balloon
+d775 1
+a775 1
+phimyeuthichz.com,chillphimmoiz.org##.preload-banner
 d810 4
 a813 1
 subnhanhvl.net,subnhanh.men,subnhanh.ac,dongchill.co###xs-addd0
@@ -633,14 +663,14 @@ truyensextv.com,lxmanga.net,truyensextv.org##.sticky-footer
 d1320 1
 a1320 1
 ww1.ditnhauvietnam.com,phim.javhdvip.net##.alldiv ~ div[class]
-diff name:abpvn_noelemhide lines:90 checksum:3fb3d39f8e
+diff name:abpvn_noelemhide lines:93 checksum:b6961b1016
 d2 1
 a2 1
-! Version: 20240129142248143
+! Version: 20240129145304648
 d4 2
 a5 2
-! Last modified: 29 Jan 2024 14:22:48 UTC+7
-! Diff-Path: patches/20240129142248143.patch#abpvn_noelemhide
+! Last modified: 29 Jan 2024 14:53:04 UTC+7
+! Diff-Path: patches/20240129145304648.patch#abpvn_noelemhide
 a33 1
 /aas/r45d/vki/*$script
 a35 1
@@ -663,7 +693,7 @@ a70 1
 d84 1
 a84 1
 ||biphim.biz/public/prom_ad/prom_ad.js$script
-d88 1
+d88 2
 a91 1
 ||cdn-data.gtvplus.vn/banners/$image,domain=gametv.vn
 d95 3
@@ -701,9 +731,12 @@ a200 1
 d203 1
 a203 1
 ||r2.plvb.xyz^*.gif$image,domain=xoilaczzv.tv
+d206 1
+a206 1
+||s.lazada.vn^$popup,domain=chillphimmoiz.org
 d212 1
 a212 1
-||shope.ee^$popup,domain=boophim.net|chillphimmoiz.org|blogtruyenmoi.com|cunghocvui.com|khophimchill.com|truyensextv.org|motchill.uk
+||shope.ee^$popup,domain=chillphimmoiz.org|blogtruyenmoi.com|cunghocvui.com|khophimchill.com|truyensextv.org|motchill.uk
 d223 3
 a225 3
 ||subnhanh.ac/js/ads_xx.js
@@ -724,14 +757,14 @@ d414 1
 a414 1
 ||i.imgur.com^$image,domain=phym18.net|phim18hd.top|phim18vn.biz|phim18hd.me|xamvn.li
 d447 1
-diff name:abpvn_ublock lines:240 checksum:5da8407bf5
+diff name:abpvn_ublock lines:251 checksum:3a23cd2a3e
 d2 1
 a2 1
-! Version: 20240129142248143
+! Version: 20240129145304648
 d4 2
 a5 2
-! Last modified: 29 Jan 2024 14:22:48 UTC+7
-! Diff-Path: patches/20240129142248143.patch#abpvn_ublock
+! Last modified: 29 Jan 2024 14:53:04 UTC+7
+! Diff-Path: patches/20240129145304648.patch#abpvn_ublock
 a33 1
 /aas/r45d/vki/*$script
 a35 1
@@ -754,7 +787,7 @@ a70 1
 d84 1
 a84 1
 ||biphim.biz/public/prom_ad/prom_ad.js$script
-d88 1
+d88 2
 a91 1
 ||cdn-data.gtvplus.vn/banners/$image,domain=gametv.vn
 d95 3
@@ -814,6 +847,10 @@ biphim.biz,subnhanh.ac##.underplayer_btn
 d427 1
 a427 1
 boctem.com,phimlongtieng.net,phimdinhcao.com,motchillz.org,motchill.uk,anivn.club,phimhoathinh3d.com,vkooll.net,hoathinhtq.tv,xemphimchill.xyz,247phim.cc,vungtv.us,vuaphimmoi2.net###popup-giua-man-hinh
+d441 3
+a454 2
+chillphimmoiz.org##.expand-static-banner
+chillphimmoiz.org##.static-banner
 d464 1
 d470 1
 d485 2
@@ -867,6 +904,9 @@ phim.vkoolv.net,subnhanhvl.net,subnhanh.men,subnhanh.ac,tructiepdabong5.co,tutie
 d757 1
 a757 1
 phimmoi2.com,hhtqvietsub.top,hhchina.vip###sponsor-balloon
+d773 1
+a773 1
+phimyeuthichz.com,chillphimmoiz.org##.preload-banner
 d808 4
 a811 1
 subnhanhvl.net,subnhanh.men,subnhanh.ac,dongchill.co###xs-addd0
@@ -929,6 +969,10 @@ ww1.ditnhauvietnam.com,phim.javhdvip.net##.alldiv ~ div[class]
 d1314 1
 a1314 1
 azrom.net##+js(aopr, adsBlocked)
+d1316 2
+a1319 2
+chillphimmoiz.org##body:remove-attr(data-pop1)
+chillphimmoiz.org##body:remove-attr(data-pop2)
 d1321 1
 d1324 1
 a1324 1
