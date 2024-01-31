@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 20240131090726677
+! Version: 20240131114608000
 ! Title: ABPVN List
-! Last modified: 31 Jan 2024 09:07:26 UTC+7
-! Diff-Path: patches/20240131090726677.patch#abpvn_adguard
+! Last modified: 31 Jan 2024 11:46:08 UTC+7
+! Diff-Path: patches/20240131114608000.patch#abpvn_adguard
 ! Diff-Expires: 60 minutes
 ! Expires: 1 days (update frequency)
 !
@@ -161,6 +161,7 @@
 ||lichngaytot.com/navive-advs$subdocument,domain=doctailieu.com
 ||listnhacai1.com^*.gif$image
 ||live.staticflickr.com$domain=timdaily.vn,image
+||maclife.io/wp-content/uploads/2024/01/mlow_1.png$image
 ||maclife.io^*.gif
 ||media.adop.asia^$image,domain=hotphim.cc
 ||media.nghean24h.vn$image,domain=nghean24h.vn
@@ -990,11 +991,11 @@ loigiaihay.com##div.ad_separator
 luotphimtv1.com,luotphimtv1.net,luotphim2.net,luotphim1.net,luotphimtv.vip,cdnwp.icu,webphim2.com###myModal
 luotphimtv1.com,luotphimtv1.net,luotphim2.net,luotphim1.net,luotphimtv.vip,cdnwp.icu,webphim2.com##div[id^="adsphim-"]
 m.baomoi.com##.bm_B>div
-m.baomoi.com##div.ad-banner-list
 m.baomoi.com##div.bm_Ii
 m.soha.vn###adm-slot-7299
 maclife.io##.adrotate_widgets
 maclife.io##.entry>a[target="_blank"]
+maclife.io##.single-content>a[target="_blank"]
 maclife.io##.wpbcap-laptopvang
 maclife.io##[href*="hnmac.vn"]
 maclife.io##[href*="laptopvang.com"]
@@ -1012,14 +1013,10 @@ mephimnhe1.net,phimgichill.net,ophimhdvn3.net##.mobile-catfix
 mephimnhe1.net,phimhay.mobi##.a--d-wrapper
 mephimtv.co##.ai-viewport-1
 mephimtv.com##.movie-banner
-metruyencv.info,metruyencv.net,metruyencv.com###div-ub-metruyencv_net
 metruyencv.info,metruyencv.net,metruyencv.com###js-read-body>.text-center.pb-3
 metruyencv.info,metruyencv.net,metruyencv.com###js-read__body + .mt-3
 metruyencv.info,metruyencv.net,metruyencv.com###js-read__content>div.text-center.pt-3
-metruyencv.info,metruyencv.net,metruyencv.com###tpads-pc-top-page
 metruyencv.info,metruyencv.net,metruyencv.com##.nh-read__alert
-metruyencv.info,metruyencv.net,metruyencv.com##.px-3.nh-read__body>.text-center.pb-3
-metruyencv.info,metruyencv.net,metruyencv.com##.text-center.pb-3.nh-read__pagination
 metruyencv.info,metruyencv.net,metruyencv.com##.tpm-unit
 metruyencv.info,metruyencv.net,metruyencv.com##[href$="/goout/lazada"]
 metruyencv.info,metruyencv.net,metruyencv.com##section.nh-section:nth-of-type(5)
@@ -1140,7 +1137,7 @@ qthang.net##.HTML:has(.adsbygoogle)
 qthang.net##.ad-script
 quantrimang.com###adrighttop
 quantrimang.com###adsposttop
-quantrimang.com,download.com.vn,khoahoc.tv,gamevui.vn,meta.vn##.adbox
+quantrimang.com,download.com.vn,khoahoc.tv,gamevui.vn##.adbox
 raovatdanang.com.vn##.samCodeUnit
 raovatdanang.com.vn,voz.vn##.samBannerUnit
 razorphimzz.com###ads-razormobile
@@ -1678,8 +1675,8 @@ audiotruyenfull.com#%#//scriptlet("abort-on-property-read", "adpiaListUrl")
 azrom.net#%#//scriptlet("abort-current-inline-script", "atob", "ai_block_class")
 azrom.net#%#//scriptlet("abort-on-property-read", "adsBlocked")
 baomoi.com#%#//scriptlet("abort-on-property-write", "AdtimaBaomoi")
-cafef.vn,gamek.vn,genk.vn,kenh14.vn,soha.vn,tuoitre.vn#%#//scriptlet("abort-current-inline-script", "Object.defineProperty", "ADMStorageFileCDN")
-cafef.vn,gamek.vn,genk.vn,kenh14.vn,soha.vn,tuoitre.vn#%#//scriptlet("set-constant", "ADMStorageFileCDN", "noopFunc")
+cafef.vn,gamek.vn,genk.vn,kenh14.vn,soha.vn,tuoitre.vn,afamily.vn#%#//scriptlet("abort-current-inline-script", "Object.defineProperty", "ADMStorageFileCDN")
+cafef.vn,gamek.vn,genk.vn,kenh14.vn,soha.vn,tuoitre.vn,afamily.vn#%#//scriptlet("set-constant", "ADMStorageFileCDN", "noopFunc")
 chillphimmoiz.org#%#//scriptlet("remove-attr", "data-pop1|data-pop2", "body")
 chotlo247.net#$##header {margin-top: 0!important}
 cunghocvui.com#%#//scriptlet("abort-current-inline-script", "document.addEventListener", "opened_window_shoppe")
