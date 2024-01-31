@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 20240131140301309
+! Version: 20240131165238764
 ! Title: ABPVN List
-! Last modified: 31 Jan 2024 14:03:01 UTC+7
-! Diff-Path: patches/20240131140301309.patch#abpvn_ublock
+! Last modified: 31 Jan 2024 16:52:38 UTC+7
+! Diff-Path: patches/20240131165238764.patch#abpvn_ublock
 ! Diff-Expires: 60 minutes
 ! Expires: 1 days (update frequency)
 !
@@ -77,12 +77,12 @@
 ||ads*.autodaily.vn
 ||ads.nghenhinvietnam.vn^$domain=nghenhinvietnam.vn
 ||ads.starzd.com^$image,domain=chillhayy.xyz
-||anh.moe/src/video/vidmoeads.js$script
 ||anime47.com^*.gif
 ||animehay.city^*.gif
 ||animet.net^*.gif
 ||asecdn.w88media.com/VN/250x250-VN.gif$domain=mythethao.net
 ||asideway.com$csp=script-src 'self' 'unsafe-inline' https: http:
+||assets.anh.moe/js/vidad.js$script,domain=video.anh.moe
 ||aztruyen.vip$csp=script-src 'self' 'unsafe-inline'
 ||baohaugiang.com.vn/uploads/SlideHomeimg/
 ||baomoi.com$csp=script-src data: blob: * 'self' 'unsafe-inline'
@@ -264,7 +264,7 @@
 ||vnmu.edu.vn^*.gif
 ||vod02bc25882576.cloud.anycastapnic.com/8xBET_480p.mp4$domain=xem3.gavang1.net
 ||vov.vn/ads/show-ads
-||vsc32.com/wp-content/themes/vuasanco/assets/scripts/scripts.js
+||vsc33.com/wp-content/themes/vuasanco/assets/scripts/scripts.js
 ||wikisach.net/static/js/adx/$script
 ||www.bongdalu6.com^*.gif
 ||www.thuocbietduoc.com.vn/adv/
@@ -792,7 +792,7 @@ blogtruyenvn.com##.qc-inner
 blogtruyenvn.com##div.qc_TC_Chap_Middle
 blogtruyenvn.com##div[id^="qc_M_"]
 bluphim.com##.container>div[style^="height: 228px"]
-boctem.com,phimdinhcao.net,phimlongtieng.net,phimdinhcao.com,ww1.motchill1.pro,motchill.uk,phimhoathinh3d.com,vkooll.net,hoathinhtq.tv,247phim.cc,vungtv.us,vuaphimmoi2.net###popup-giua-man-hinh
+boctem.com,phimdinhcao.net,phimlongtieng.net,phimdinhcao.com,ww1.motchill1.pro,motchill.uk,phimhoathinh3d.com,phim.vkoolz.com,hoathinhtq.tv,247phim.cc,vungtv.us,vuaphimmoi2.net###popup-giua-man-hinh
 bongda.com.vn##.top_page
 bongda12h365.com,thethao12h.me##.list-dat-cuoc
 bongda21h.me###backgroundPopupp
@@ -1034,7 +1034,7 @@ mn.mediastation.live##.images-bnr-bellow-append-custom
 mn.mediastation.live##.images-top-pl
 motchilli.net,motphimtvi.net###mp-adbk
 motchilli.net,motphimtvi.net###mp-adx-b32
-motchilli.net,motphimtvi.net,vkooll.net,ophimhd.vip,subnhanh.xyz##.mp-adz
+motchilli.net,motphimtvi.net,phim.vkoolz.com,ophimhd.vip,subnhanh.xyz##.mp-adz
 mphim14.com##.fixed_bottom
 muabanraovat.com##[class^="box_adv_ele"]
 muare.vn##.admicro_top
@@ -1337,7 +1337,7 @@ voz.vn##.v-element>.v-responsive
 voz.vn##div.message--post
 voz.vn,myeva.vn##.adsbypubpower
 vphims.net##.catfish-ck
-vsc32.com##a.news__item--action:nth-of-type(2)
+vsc33.com##a.news__item--action:nth-of-type(2)
 vtipster.net##div[class*="qca"]
 vtruyen.com###article>.pt-3.text-center
 vuighe2.com###balloon
@@ -1513,6 +1513,7 @@ $third-party,script,domain=sexdiaryx.pro
 ||quoracdn.net^$image,domain=vlxx.xxx|vlxyz.vc|sieudamtv.cc
 ||rphang.online^*.gif
 ||sayhentai.club/assets/js/ads.js
+||sex5.2ola1.pro^*.gif$image
 ||sexdiaryx.pro$csp=script-src 'self' 'unsafe-eval'
 ||sexsub.online^*.gif$image,domain=tuoi69.tv|javhay.cam|sexsub.online
 ||sieukhung.site^*.gif$image
@@ -1528,7 +1529,6 @@ $third-party,script,domain=sexdiaryx.pro
 ||vl3x.vip/ads/$script
 ||vn.sexviet1.net^*.gif$image
 ||vn.yeusex.club^*.gif$image
-||vn3.sexphim1.com^*.gif$image
 ||yr.fopbandido.com^
 !---------- ABPVN Adult Element Hide ---------------
 avgle.com###aoverlay
@@ -1599,6 +1599,7 @@ rphang.ac##.js-replyNewMessageContainer.block-body>div.samCodeUnit>.samItem
 rphang.ac##.p-footer
 rphang.ac##.samCarousel.samAlignCenter.samCodeUnit
 rphang.ac##.samVideoOverlay
+sex5.2ola1.pro##.code-block-4
 sexdacbiets.pro,phim.sexmup69.pro,phim.sexhay88.pro##.quangcaomobile
 sexdiaryx.pro##a[href^="//mage98rquewz.com/"]
 sexsub.online##.v4j-watch-1.v4j-content
@@ -1654,7 +1655,6 @@ vn.javbabe.net##.b-player
 vn.javbabe.net##.clipxx
 vn.phym18.one##div#bnads
 vn.sexviet1.net,vn.yeusex.club##.preload
-vn3.sexphim1.com##.code-block-4
 ww1.ditnhauvietnam.com,phim.javhdvip.net##.alldiv ~ div[class]
 www.gaingon18.me###iklan-atas-wrapper
 www.pornhub.com###pb_block
@@ -1733,7 +1733,7 @@ truyensieuhay.com,phimvietsub.pro,quangcaoyenbai.com,sieudamtv.cc,ephimchill.com
 truyentuan.xyz##+js(acs, $, btpop)
 vailonxx.com,phimlongtieng.com,phimlongtieng.net##+js(acs, jQuery, window.open)
 veryfiles.com##+js(aopr, nFNcksmwU)
-viet69.li,ungtycomicsvip.com,vlxx.xxx,dualeotruyenme.com,yurineko.net,vlxyz.vc,javhay.cam,phimsexhay669.co,cliphot69.run,doctruyen3qto.com,hentaizz.vip,animehay.city,heo69.vc,tuoi69.tv,top1sex.club,lenlut.tv,xemsex.vc,hentaivn.vc,vn3.sexphim1.com,cdn.streamvl.sbs,buomtv.tv,truyenvnhay.tv,cdnstream.sbs,javtiful.com,truyengihotvay.net,truyengihotqua.net,truyengihotqua.com,truyengihotnay.com,quatvn.club,tenmientruyengi.net,topsexviet69.com##+js(acs, WebAssembly, instantiate)
+viet69.li,ungtycomicsvip.com,vlxx.xxx,dualeotruyenme.com,yurineko.net,vlxyz.vc,javhay.cam,phimsexhay669.co,cliphot69.run,doctruyen3qto.com,hentaizz.vip,animehay.city,heo69.vc,tuoi69.tv,top1sex.club,lenlut.tv,xemsex.vc,hentaivn.vc,sex5.2ola1.pro,cdn.streamvl.sbs,buomtv.tv,truyenvnhay.tv,cdnstream.sbs,javtiful.com,truyengihotvay.net,truyengihotqua.net,truyengihotqua.com,truyengihotnay.com,quatvn.club,tenmientruyengi.net,topsexviet69.com##+js(acs, WebAssembly, instantiate)
 viettoons.tv,mv.phimmoiaz.cc,dood.pm,ytstv.me,animet.net,anh.moe,truyenhentaivn.com##+js(aopr, open)
 vinaurl.net##+js(aopr, oneClick)
 vndoc.com##+js(set, seconds, 0)
