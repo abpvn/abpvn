@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 20240202140214673
+! Version: 20240202190223013
 ! Title: ABPVN List
-! Last modified: 02 Feb 2024 14:02:14 UTC+7
-! Diff-Path: patches/20240202140214673.patch#abpvn
+! Last modified: 02 Feb 2024 19:02:23 UTC+7
+! Diff-Path: patches/20240202190223013.patch#abpvn
 ! Diff-Expires: 60 minutes
 ! Expires: 1 days (update frequency)
 !
@@ -203,7 +203,9 @@
 ||photo2.tinhte.vn^*.gif$domain=live3.vebo4.net
 ||pic1025.com^*gif$domain=xemtivi4k.com
 ||potsiuds.com^$script,domain=nettruyenclubs.com
+||qthang.net/js/blocker.js$script
 ||quaivatdienanh.com/*banner$image
+||quangcao13.s3.ap-southeast-2.amazonaws.com^*.gif$image,domain=phimtn.com
 ||quangcaosanpham.com/images/$third-party
 ||r2.plvb.xyz^*.gif$image,domain=xoilaczzv.tv
 ||raovat3s.com/clientscript/yui/yuiloader-dom-event/yuiloader-dom-event.js
@@ -223,7 +225,7 @@
 ||static.cdnno.com/storage/lazada/$image,domain=metruyencv.net
 ||static.ybox.vn^*.gif$domain=ybox.vn
 ||stc02bc54661548.cloud.anycastapnic.com^*.gif$domain=xem3.gavang1.net|ws-client.gavang.tech
-||storage.fshare.vn/images/$third-party,domain=~qthang.net
+||storage.fshare.vn/images/$third-party
 ||subnhanh.ac/js/ads_xx.js
 ||subnhanh.men/js/ads_xx.js
 ||subnhanhvl.net/js/ads_xx.js
@@ -818,6 +820,7 @@ chatboxn.com##a[target="_blank"][rel="nofollow"]
 chillphim2.com,zuiphim2.com##.banner-preload
 chillphim2.com,zuiphim2.com##.block-bookmaker.block.most-views
 chillphimmoiz.org##.expand-static-banner
+chillphimmoiz.org##.preload-banner
 chillphimmoiz.org##.static-banner
 chodansinh.net##.link-gold
 chodansinh.net##[id^="banner"]
@@ -1019,7 +1022,7 @@ megaup.net#?#.metaRedirectWrapperBottomAds
 mephimnhe1.net,cophimhay.com##.a--d-wrapper
 mephimnhe1.net,phimgichill.net,ophimhdvn3.net##.mobile-catfix
 mephimtv.co##.ai-viewport-1
-mephimtv.com##.movie-banner
+mephimtvi.com##.movie-banner
 metruyencv.info,metruyencv.net,metruyencv.com###js-read-body>.text-center.pb-3
 metruyencv.info,metruyencv.net,metruyencv.com###js-read__body + .mt-3
 metruyencv.info,metruyencv.net,metruyencv.com###js-read__content>div.text-center.pt-3
@@ -1109,7 +1112,6 @@ phimtuoitho.tv##[href^="https://www.toprevenuegate.com/q7rbxxz1v"]
 phimvietsub.pro,api.anime3s.com,subnhanh.xyz##.t_logo
 phimvuihd.org,hh3dhay.com,phimtn.com,animesub.me,phim18viet.net,cophimhay.com,phimtuoitho.tv,xem8z.com##.float-ck-center-lt
 phimyeuthichz.com##.sticky-footer
-phimyeuthichz.com,chillphimmoiz.org##.preload-banner
 photobucket.com##.slider-contents
 phunumoi.net.vn##div[id^="ads_"]
 phuongtrinhhoahoc.com##.shadow-card + .mt-2
@@ -1121,8 +1123,6 @@ protruyen2.fun##.click-ads
 protruyen2.fun##.close-button
 protruyen2.fun##div.mrb10
 protruyen2.fun,phimmoinay.org,phimtho.net,tutientruyen3.xyz,chillhaynet.click###popup_banner_beta
-qthang.net##.HTML:has(.adsbygoogle)
-qthang.net##.ad-script
 quantrimang.com###adrighttop
 quantrimang.com###adsposttop
 quantrimang.com,download.com.vn,khoahoc.tv,gamevui.vn##.adbox
@@ -1220,7 +1220,7 @@ tintucvietnam.vn##.container .desktopjszone
 tintucvietnam.vn##.mobilejszone
 toithuthuat.com##.box
 toithuthuat.com##.pum
-toquoc.vn,baoxaydung.com.vn,tienphong.vn,taichinhdoanhnghiep.net.vn,qthang.net,xemphimviet1.net,ghienphim11.net,oj.husc.edu.vn,megalink.vip,thichxemphim1.net,truyengihotvay.net,truyengihotqua.net,truyengihotqua.com,truyengihotnay.com,tenmientruyengi.net##.banner
+toquoc.vn,baoxaydung.com.vn,tienphong.vn,taichinhdoanhnghiep.net.vn,xemphimviet1.net,ghienphim11.net,oj.husc.edu.vn,megalink.vip,thichxemphim1.net,truyengihotvay.net,truyengihotqua.net,truyengihotqua.com,truyengihotnay.com,tenmientruyengi.net##.banner
 tpbpirateproxy.org###vpnModal
 tpbpirateproxy.org##.sidebar-vpn
 tracnghiem.net##.sbAdv
@@ -1230,7 +1230,7 @@ tructiep.rakhoi14.tv##.button-in-player-box
 tructiep.rakhoi14.tv##.footer-button-sign-in.hide-desk
 tructiep.rakhoi14.tv##.hide-desk.wrap-content>.wrap-btn-action
 tructiep.rakhoi14.tv##.menu-right-slide
-tructiep.rakhoi14.tv,play.vnupload.net,ssplay.net,api.anime3s.com,xoilac14.org,watch.ezyproxy.com,phim18viet.net,freeplayervideo.com,abysscdn.com,player-cdn.com,bitvtom1000.xyz,geoip.redirect-ads.com##.jw-logo
+tructiep.rakhoi14.tv,ssplay.net,api.anime3s.com,xoilac14.org,watch.ezyproxy.com,phim18viet.net,freeplayervideo.com,abysscdn.com,player-cdn.com,bitvtom1000.xyz,geoip.redirect-ads.com##.jw-logo
 tructiep.rakhoi14.tv,tructiep1.cakhia12.com,tructiep.cakhia14.com,tructiep2.caheo11.live##.btn-betting
 tructiep.rakhoi14.tv,tructiep1.cakhia12.com,tructiep.cakhia14.com,tructiep2.caheo11.live##.container-banner
 tructiep.rakhoi14.tv,tructiep1.cakhia12.com,tructiep.cakhia14.com,tructiep2.caheo11.live##.datCuocBTN
@@ -1423,7 +1423,7 @@ zapmeta.com.vn###csa-top
 znews.vn###Zingnews_SiteHeader
 znews.vn##.znews-banner
 ~facebook.com##.AdBox
-~gameguardian.net,~hvdic.thivien.net,~platinmods.com,~traderviet.org,~camera.aeonax.com,~2rdroid.com,~123link.f4vnn.com,~khuchotot.com,~truyenaudiocv.org,~qthang.net,~ichi.pro,~thiepmung.com,~lehait.net,~covemarkets.com,~pops.vn,~ipacrack.com,~duan24h.net,~yhocdata.com##.adsbygoogle
+~gameguardian.net,~hvdic.thivien.net,~platinmods.com,~traderviet.org,~camera.aeonax.com,~2rdroid.com,~123link.f4vnn.com,~khuchotot.com,~truyenaudiocv.org,~ichi.pro,~thiepmung.com,~lehait.net,~covemarkets.com,~pops.vn,~ipacrack.com,~duan24h.net,~yhocdata.com##.adsbygoogle
 ~howkteam.vn,~fptplay.vn,~khuchotot.com,~tvbmotthoidenho.com,~lehait.net,~covemarkets.com,~pops.vn,~3dpchip.com,~duan24h.net,~yhocdata.com##.adsbox
 ~lehait.net,~3dpchip.com##.ad-left
 ~megaup.net##div[id*="ScriptRoot"]
@@ -1502,7 +1502,7 @@ $third-party,script,domain=sexdiaryx.pro
 ||phimsexsub.xyz/css/pss.webp$image,domain=nhentaivn.com
 ||phym18.one/static/js/adlia.js
 ||quatvn.tube/ads.js$script
-||quoracdn.net^$image,domain=vlxx.xxx|vlxyz.vc|sieudamtv.cc
+||quoracdn.net^$image,domain=vlxx.xxx|vlxyz.vc|sieudamtv.vip
 ||rphang.online^*.gif
 ||sayhentai.club/assets/js/ads.js
 ||sex5.2ola1.pro^*.gif$image
@@ -1594,9 +1594,9 @@ sexdiaryx.pro##a[href^="//mage98rquewz.com/"]
 sexsub.online##.v4j-watch-1.v4j-content
 sexsub.online##body>div[class]
 sexvietz.co,javhd.tech,hd.viet69b.com,sex.heovl6.com,sexvip1z.com,sex.heovl.online###f186fb23a33995d91ce3c2212189178c8
-sieudamtv.cc###pc-preload-modal
-sieudamtv.cc###popup
-sieudamtv.cc##.quang-cao
+sieudamtv.vip###pc-preload-modal
+sieudamtv.vip###popup
+sieudamtv.vip##.quang-cao
 sieukhung.site##.adspopupgiua
 sieukhung.site##.adspopupleft
 sieukhung.site##.adspopupright
