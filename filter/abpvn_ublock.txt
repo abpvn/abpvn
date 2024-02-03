@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 20240203140209942
+! Version: 20240203190308116
 ! Title: ABPVN List
-! Last modified: 03 Feb 2024 14:02:09 UTC+7
-! Diff-Path: patches/20240203140209942.patch#abpvn_ublock
+! Last modified: 03 Feb 2024 19:03:08 UTC+7
+! Diff-Path: patches/20240203190308116.patch#abpvn_ublock
 ! Diff-Expires: 60 minutes
 ! Expires: 1 days (update frequency)
 !
@@ -169,7 +169,7 @@
 ||mocfun.net/uploads/banners/
 ||motchill.uk/i9.gif$image
 ||motchill.uk/popup.jpg$image
-||motchilliv.net/banner$image
+||motchilliv.com/banner$image
 ||mv.dailyphimz.com/ads/popunder.js$script
 ||mv.phimbathu.one/ads/popunder.js$script,~third-party
 ||nettruyenviet.com/assets/js/popShope.js$script
@@ -709,7 +709,7 @@ phimhaytv.info,congthucvatly.com,phuongtrinhhoahoc.com##.fixed
 phimlongtieng.com,phimlongtieng.net###mobile_content_top
 phimlongtieng.com,phimlongtieng.net###p-GMH
 phimmoi.win###hide_catfish
-phimmoi.win,vungtv.us,xemphimhdc.net###container-ads
+phimmoi.win,vungtv.us,phimhdc.com###container-ads
 phimmoi4s.com##.box_option
 phimmoichillm.net###pm_quangcao
 phimnhua.com###catfish-banner
@@ -964,7 +964,7 @@ xem3.gavang1.net##.css-e1zul9
 xem3.gavang1.net##.css-iol86l
 xem3.gavang1.net##.vjs-banner-btn
 xem8z.com###ouibounce-modal
-xemphimchill.xyz,hhninja1.tv,phimbocn.com,phimhoathinh3d.com,hoathinhtq.tv,hhtq1.vip,hhtqvietsub.top,motchilliv.net,motchill.uk,hhtrungquoc.vip,hhtqnet.tv,animeweb.vip,hh3d1.tv,hoathinh4k.net###catfish
+xemphimchill.xyz,hhninja1.tv,phimbocn.com,phimhoathinh3d.com,hoathinhtq.tv,hhtq1.vip,hhtqvietsub.top,motchilliv.com,motchill.uk,hhtrungquoc.vip,hhtqnet.tv,animeweb.vip,hh3d1.tv,hoathinh4k.net###catfish
 xemphimviet1.net##li.special.parent
 xemphimviet1.net,ghienphim11.net##.ad-floater
 xemphimviet1.net,ghienphim11.net##.popunder-link
@@ -1302,6 +1302,7 @@ nettruyenall.com##+js(acs, Promise, break;case)
 nettruyenus.net##+js(aopr, sp)
 phimgichill.net##+js(acs, eval, $._Eu)
 phimgichill.net,mephimnhe1.net##+js(acs, jQuery, popurl)
+phimhdc.com,motchill.uk##+js(acs, document.addEventListener, linksToOpen)
 phimmoi4s.com##+js(json-prune, ads)
 phimmoi4s.com,phimdinhcao.net,phimlongtieng.net,phimdinhcao.com##+js(aopr, localStorage)
 phimmoinay.org##+js(acs, jQuery, click_time)
@@ -1339,7 +1340,6 @@ www.o-study.net##body:style(position: static !important)
 www.toptruyenvi.info##+js(acs, Promise, instance)
 xem3.gavang1.net##.css-15ay2jw
 xem3.gavang1.net##.css-d3rbv3
-xemphimhdc.net,motchill.uk##+js(acs, document.addEventListener, linksToOpen)
 xnxx-sex-videos.com##+js(acs, setTimeout, window.location)
 xnxx-sex-videos.com##+js(ra, target|onclick, a[href^="/video/"])
 xoilac98.tv##+js(aopr, adsRedirectPopups)
