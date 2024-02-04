@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 20240204091009357
+! Version: 20240204190224942
 ! Title: ABPVN List
-! Last modified: 04 Feb 2024 09:10:09 UTC+7
-! Diff-Path: patches/20240204091009357.patch#abpvn_ublock
+! Last modified: 04 Feb 2024 19:02:24 UTC+7
+! Diff-Path: patches/20240204190224942.patch#abpvn_ublock
 ! Diff-Expires: 60 minutes
 ! Expires: 1 days (update frequency)
 !
@@ -45,7 +45,7 @@
 /disable-devtool.min.js$script
 /giadinhonline.vn/files/qc/
 /i.imgur.com/$domain=xemphimchill.xyz
-/i.imgur.com/*.gif$domain=keonhacai5.vip|phimlongtieng.net|phimdinhcao.com|phimdinhcao.net|tvzinghd.com|xoilac06.tv|bongdainfoz.net|90phutzz.com|veboz.net|communicus.com|plvb.xyz|listnhacai1.com|xoilaczzt.tv|xemtivingon.org|phimlongtieng.com|digimezzo.com
+/i.imgur.com/*.gif$domain=keonhacai5.vip|phimlongtieng.net|phimdinhcao.com|phimdinhcao.net|tvzinghd.com|xoilac06.tv|bongdainfoz.net|90phutzz.com|veboz.net|communicus.com|plvb.xyz|listnhacai1.com|xoilaczzt.tv|xemtivingon.org|phimlongtieng.com|axisphilly.org
 /media.discordapp/$domain=phimno4.xyz|bongda21h.me
 /mmo/*$xmlhttprequest,image,domain=vuighe2.com|mehoathinh3.com
 /newchill/*gif$image
@@ -772,6 +772,10 @@ apkmirror.com##.gooWidget
 asideway.com##.popup-container
 autodaily.vn,xehay.vn###banner3double
 autopro.com.vn##.admicro
+axisphilly.org##.btn-od
+axisphilly.org,90phutzz.com##.d-lg-none.d-block.p-1.text-center
+axisphilly.org,communicus.com,90phutzz.com,veboz.net,xoilac06.tv,bongdainfoz.net,xoilaczzt.tv###wap_bottombanner
+axisphilly.org,communicus.com,90phutzz.com,xoilac06.tv,veboz.net,bongdainfoz.net,xoilaczzt.tv##.company
 baohaugiang.com.vn##.top-header
 baohaugiang.com.vn,tructiep.rakhoi14.tv,tructiep1.cakhia12.com,tructiep.cakhia14.com,tructiep3.caheo11.live##.sticky
 baomoi.com###BaoMoi_HalfPage
@@ -831,11 +835,11 @@ clbgamesvn.com##.footerBanner
 clbgamesvn.com##center>[href*="tlink.vn"]
 clipconverter.cc##div[style^="z-index: 999999"]
 communicus.com##a.rlw-extra-i.py-3.flex-grow-1
-communicus.com,90phutzz.com,digimezzo.com,live4.90phut10.live,noitu.online##.modal-backdrop.show
-communicus.com,90phutzz.com,digimezzo.com,live4.90phut10.live,xoilac14.org,live3.vebo4.net,live2.vebo4.net##.show.fade
-communicus.com,digimezzo.com##.menu-item-object-custom
-communicus.com,xoilac06.tv,digimezzo.com##.sub-menu.d-none.d-lg-flex
-communicus.com,xoilac06.tv,digimezzo.com,90phutzz.com,veboz.net##.marquee-container
+communicus.com,90phutzz.com,axisphilly.org,live4.90phut10.live,noitu.online##.modal-backdrop.show
+communicus.com,90phutzz.com,axisphilly.org,live4.90phut10.live,xoilac14.org,live3.vebo4.net,live2.vebo4.net##.show.fade
+communicus.com,axisphilly.org##.menu-item-object-custom
+communicus.com,xoilac06.tv,axisphilly.org##.sub-menu.d-none.d-lg-flex
+communicus.com,xoilac06.tv,axisphilly.org,90phutzz.com,veboz.net##.marquee-container
 congan.com.vn###subiz_wrapper
 congan.com.vn##.ad-embed
 congngheviet.com##.asbybgn
@@ -855,10 +859,6 @@ danviet.vn##.sidebar>div[style]
 design.tutsplus.com##.avert--sticky
 dexuat.com###custom_html-7
 diadiem.com##.div_box_adv
-digimezzo.com##.btn-od
-digimezzo.com,90phutzz.com##.d-lg-none.d-block.p-1.text-center
-digimezzo.com,communicus.com,90phutzz.com,veboz.net,xoilac06.tv,bongdainfoz.net,xoilaczzt.tv###wap_bottombanner
-digimezzo.com,communicus.com,90phutzz.com,xoilac06.tv,veboz.net,bongdainfoz.net,xoilaczzt.tv##.company
 doctruyenchufull.org##.ad-botton
 doctruyenchufull.org##.topbanner
 docviewer.yandex.com##div[style="width: 100%;"]
@@ -985,7 +985,7 @@ live4.90phut10.live##.sv-link.btn-bet-top
 live4.thapcam2.net##.mct_-bet-bot
 live4.thapcam2.net##.mmo
 live4.thapcam2.net##.mmo-inner
-live4.thapcam2.net,veboz.net,xoilaczzt.tv,digimezzo.com,90phutzz.com##.btn-odds
+live4.thapcam2.net,veboz.net,xoilaczzt.tv,axisphilly.org,90phutzz.com##.btn-odds
 lmssplus.com##p[style="color: rgb(174, 174, 174); margin-top: 10px; margin-bottom: 20px;"]
 loigiaihay.com##.bottom_cnt_ad
 loigiaihay.com##.tp_ads_incontent
@@ -1072,7 +1072,7 @@ ophimhd.vip###ad-container
 ophimhd.vip##.uniad-player + div[style]
 outlook.live.com##.LBktY>.GssDD
 phapluatplus.vn##div[style="text-align:center;margin-top:0px;margin-bottom:0px;"]
-phim.vkoolv.net,subnhanhvl.net,subnhanh.men,subnhanh.ac,dongphim3s.com,digimezzo.com,tutientruyen3.xyz,protruyen2.fun,biphim.biz###overlay
+phim.vkoolv.net,subnhanhvl.net,subnhanh.men,subnhanh.ac,dongphim3s.com,axisphilly.org,tutientruyen3.xyz,protruyen2.fun,biphim.biz###overlay
 phim18viet.net###banner-top-mobile
 phim18viet.net###pc-top-banner
 phim18viet.net###quang-cao-2
@@ -1291,8 +1291,8 @@ veboz.net##.menu-item>a[rel="nofollow"]
 veboz.net##.topButton
 veboz.net##.widget_offer
 veboz.net##header>.container
+veboz.net,axisphilly.org,communicus.com##.align-items-center.justify-content-between.d-flex.col-12>.d-lg-none.d-block
 veboz.net,communicus.com##.container.mt-1.d-none.d-lg-block
-veboz.net,digimezzo.com,communicus.com##.align-items-center.justify-content-between.d-flex.col-12>.d-lg-none.d-block
 vesotantai.com##.item-qc
 vidian.wiki###closeAds
 vieclam.tv###bnc1
@@ -1391,7 +1391,7 @@ xoilac06.tv##div.d-lg-none.d-block:nth-of-type(3)
 xoilac06.tv,90phutzz.com,xoilaczzt.tv###match-child-1
 xoilac06.tv,90phutzz.com,xoilaczzt.tv##.match-detail__offer
 xoilac06.tv,90phutzz.com,xoilaczzt.tv##.menu-cuoc-8xbet
-xoilac06.tv,veboz.net,digimezzo.com,communicus.com##div[id^="dnn_"]
+xoilac06.tv,veboz.net,axisphilly.org,communicus.com##div[id^="dnn_"]
 xoilac06.tv,xoilaczzt.tv##.menu-top-nha-cai
 xoilac14.org##.ft-box
 xoilac14.org##div.vebo-sp.container:nth-of-type(7)
@@ -1522,8 +1522,6 @@ avgle.com##.vjs-marker
 avvietsub.com###ds_top
 avvietsub.com##.hidden-md.right.col-3
 cliphot69.run###custom_html-42
-cliphotvn.2tenz.top##div[style^="position:fixed;inset:0px;z-index:100000;"]
-cliphotvn.2tenz.top,hls.playerfb.xyz###video_player ~ div[id]
 cliphotvn123.com,mobiblog.me,cliphot69.run,phevkl.info,gvnvh18.com,topsexviet69.com##.float-ck-center-lt
 damconuong.net##.pc-catfixx
 damconuong.net##a[rel="nofollow"]
@@ -1654,6 +1652,8 @@ xnxx.com###ad-header-mobile
 xnxx.com###content-ad-top-zone
 xxx.phe.to###divExoLayerWrapper
 xxx.phe.to##.sdzhead
+youtubeporn.pro##div[style^="position:fixed;inset:0px;z-index:100000;"]
+youtubeporn.pro,hls.playerfb.xyz###video_player ~ div[id]
 ! ---------Rule only for uBlock Origin------
 animevietsub.io##+js(acs, document.documentElement, break;case $.)
 aoe.vn##+js(aopr, parseInt)
