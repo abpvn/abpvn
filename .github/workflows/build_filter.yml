@@ -16,6 +16,9 @@ on:
   push:
     branches:
       - master
+  pull_request:
+    branches: [ master ]
+    types: [ closed ]
 
 env:
   NEED_BUILD_MASTER: ${{inputs.FORCE_BUILD || false}}
@@ -24,7 +27,7 @@ env:
 
 jobs:
   build_filter_master:
-    if: ${{ github.event_name != 'push' || contains(github.event.head_commit.message, '[build]') }}
+    if: ${{ contains(fromJSON('["schedule", "workflow_dispatch"]'), github.event_name) || contains(github.event.head_commit.message, '[build]') || github.event.pull_request.merged }}
     runs-on: ubuntu-latest
     outputs:
       NEED_BUILD_MASTER: ${{steps.check_build.outputs.NEED_BUILD_MASTER}}
@@ -81,7 +84,7 @@ jobs:
             fi
           fi
   build_filter_single:
-    if: ${{ github.event_name != 'push' || contains(github.event.head_commit.message, '[build]') }}
+    if: ${{ contains(fromJSON('["schedule", "workflow_dispatch"]'), github.event_name) || contains(github.event.head_commit.message, '[build]') || github.event.pull_request.merged }}
     runs-on: ubuntu-latest
     outputs:
       NEED_BUILD_SINGLE: ${{steps.check_build.outputs.NEED_BUILD_SINGLE}}
