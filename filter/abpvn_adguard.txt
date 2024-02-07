@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 20240207090618705
+! Version: 20240207140209681
 ! Title: ABPVN List
-! Last modified: 07 Feb 2024 09:06:18 UTC+7
-! Diff-Path: patches/20240207090618705.patch#abpvn_adguard
+! Last modified: 07 Feb 2024 14:02:09 UTC+7
+! Diff-Path: patches/20240207140209681.patch#abpvn_adguard
 ! Diff-Expires: 60 minutes
 ! Expires: 1 days (update frequency)
 !
@@ -574,7 +574,7 @@ ketqua3.net##.kqbackground.vien ~ a[target="_blank"]
 ketqua3.net,nghean24h.vn,xem.tructiepnba.com,phimmoi4s.com,biphim.biz,vidian.wiki,truyenchu.com.vn,vbfast.xyz,xemtivi4k.com,abtruyen.com##a[rel="nofollow"]
 khiphach.vip###qc-kpgame
 kienthuc.net.vn##.sponsor-zone
-kienthuc.net.vn,saostar.vn,bongda24h.vn,vieclam123.net,cungthi.online,appvn.com,linkerpt.com,tinnhac.com,antt.vn,xemphimviet1.net,ghienphim11.net,nhadautu.vn,soikeo365.net,nghenhinvietnam.vn,doctailieu.com##.ads
+kienthuc.net.vn,saostar.vn,bongda24h.vn,vieclam123.net,cungthi.online,appvn.com,linkerpt.com,antt.vn,xemphimviet1.net,ghienphim11.net,nhadautu.vn,soikeo365.net,nghenhinvietnam.vn,doctailieu.com##.ads
 lacaigi.com##.anhbn-qc
 laptrinhcanban.com##.ezo_ad
 laptrinhcanban.com##.ezoic-ad
@@ -800,12 +800,10 @@ tienphong.vn,baodauthau.vn##div[id^="adsWeb"]
 tiin.vn##.ads-common-box
 timdaily.vn##.p-body-pageContent>table[style="width:100%;display:inline-block;background: #fff;"]
 tin2.news25link.com##.pcs-modal
-tinhte.vn##.in-article-promo
 tinhte.vn##.jsx-3569995709
 tinhte.vn##.micro
 tinhte.vn##.middle-comment-promotion
 tinhte.vn##.pro-container
-tinhte.vn##.promo-container
 tinhte.vn##div[style="width:300px;height:250px"]
 tinhte.vn##div[style="width:300px;height:600px"]
 tinhte.vn##div[style="width:320px;height:100px"]
@@ -836,9 +834,8 @@ tructiep2.rakhoi14.tv,tructiep3.cakhia12.com,tructiep.cakhia16.com,veboz.net,tru
 tructiep3.cakhia12.com,tructiep.cakhia16.com,tructiep1.caheo7.live##.container-banner
 tructiep3.cakhia12.com,tructiep.cakhia16.com,tructiep1.caheo7.live##.modal-ads
 tructiep3.cakhia12.com,tructiep.cakhia16.com,tructiep1.caheo7.live##div[class^="slide-bar"]
-tructiepdabong5.co##.ads-menu
 tructiepdabong5.co##.adsMobile
-tructiepdabong5.co##.adsShowPc
+tructiepdabong5.co##.col-chat
 tructiepdabong5.co##.offer-rating.widget-offers__list
 tructiepdabong5.co,xoivo2.online##.dcmm-button-player.row
 truyenchu.com.vn##.chapter-content .min-h-\[275px\]
@@ -1002,7 +999,7 @@ xoilac07.tv,xoilaczzs.tv,90phutzz.net##.menu-cuoc-8xbet
 xoilaczzs.tv##.grid-match__footer
 xoilaczzs.tv##a.d-lg-none.d-block:nth-of-type(1)
 xoilaczzs.tv,thelitupshow.com##.d-lg-flex.d-none.p-0.company.flex-1.table
-xoivo2.online##.adLogoPlayer
+xoivo2.online,tructiepdabong5.co##.adLogoPlayer
 xosodaiphat.com##.adv-side-bar
 xosodaiphat.com##.banner-adv-wrapper
 xosodaiphat.com##.banner-adv-wrapper2
@@ -1339,8 +1336,8 @@ xemphimhdcc.com,motchill.uk#%#//scriptlet("abort-current-inline-script", "docume
 xnxx-sex-videos.com#%#//scriptlet("abort-current-inline-script", "setTimeout", "window.location")
 xnxx-sex-videos.com#%#//scriptlet("remove-attr", "target|onclick", "a[href^='/video/']")
 xoilac07.tv#%#//scriptlet("abort-on-property-read", "adsRedirectPopups")
-xoivo2.online#%#//scriptlet("set-constant", "adsPlayer", "")
-xoivo2.online#%#//scriptlet("set-constant", "adsTvcs", "")
+xoivo2.online,tructiepdabong5.co#%#//scriptlet("set-constant", "adsPlayer", "")
+xoivo2.online,tructiepdabong5.co#%#//scriptlet("set-constant", "adsTvcs", "")
 yts.do,yts.mx,yts.rs#%#//scriptlet("abort-on-property-read", "atob")
 znews.vn#%#//scriptlet("abort-on-property-read", "adtimaConfig")
 zuiphim2.com#%#//scriptlet("abort-on-property-read", "matchMedia")
