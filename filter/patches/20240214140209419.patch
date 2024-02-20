@@ -1,11 +1,11 @@
-diff name:abpvn lines:164 checksum:04e136bd31
+diff name:abpvn lines:181 checksum:9a6a2ab275
 d2 1
 a2 1
-! Version: 20240220140201926
+! Version: 20240220190228263
 d4 2
 a5 2
-! Last modified: 20 Feb 2024 14:02:01 UTC+7
-! Diff-Path: patches/20240220140201926.patch#abpvn
+! Last modified: 20 Feb 2024 19:02:28 UTC+7
+! Diff-Path: patches/20240220190228263.patch#abpvn
 d40 1
 a40 1
 /banner/*.gif
@@ -16,6 +16,12 @@ d55 1
 d68 1
 a68 1
 /vast.js$script,domain=ophimhay.com|watch.ezyproxy.com|boctem.com|cdn.tinny2.tech|cdn.lookapi.website|phimvietsub.pro|phimdacap.tv|hoathinhtq.tv
+d103 4
+a106 4
+||chillhay.tv/ads/$image
+||chillhay.tv/guide/popup.tt-f.js
+||chillphimmoizz.org/assets/*.gif$image
+||chillphimmoizz.org/assets/js/popup.js
 d108 1
 a108 1
 ||chotlo247.me^*gif
@@ -29,6 +35,12 @@ a171 1
 ||motchillvi.net/banner$image
 a193 1
 ||phimmoiiii.net^*.gif$image
+d210 1
+a210 1
+||s.lazada.vn^$popup,domain=chillphimmoizz.org
+d216 1
+a216 1
+||shope.ee^$popup,domain=chillphimmoizz.org|blogtruyenmoi.com|cunghocvui.com|khophimchill.net|truyensextv.org|motchilluk.com
 d253 1
 a253 1
 ||truyenvn.fun^*banner$image
@@ -56,6 +68,11 @@ californiabiodieselalliance.org##.btn-od
 californiabiodieselalliance.org,90phuta.tv##.d-lg-none.d-block.p-1.text-center
 californiabiodieselalliance.org,proudgreenhome.com,90phuta.tv,veboz.net,xoilac98.tv,bongdainfoz.net,xoilaczzs.tv###wap_bottombanner
 californiabiodieselalliance.org,proudgreenhome.com,90phuta.tv,xoilac98.tv,veboz.net,bongdainfoz.net,xoilaczzs.tv,broadcast-live.com##.company
+d818 3
+a820 3
+chillphimmoizz.org##.expand-static-banner
+chillphimmoizz.org##.preload-banner
+chillphimmoizz.org##.static-banner
 d823 2
 a824 2
 chotlo247.me##div[id^="float_content"]
@@ -163,14 +180,14 @@ vlxx.moe,javtopxx.com##.ads
 d1652 1
 a1652 1
 vn1.sexviet1.net,vn.yeusex.club##.preload
-diff name:abpvn_adguard lines:180 checksum:3b8d4beb04
+diff name:abpvn_adguard lines:195 checksum:38479157b2
 d2 1
 a2 1
-! Version: 20240220140201926
+! Version: 20240220190228263
 d4 2
 a5 2
-! Last modified: 20 Feb 2024 14:02:01 UTC+7
-! Diff-Path: patches/20240220140201926.patch#abpvn_adguard
+! Last modified: 20 Feb 2024 19:02:28 UTC+7
+! Diff-Path: patches/20240220190228263.patch#abpvn_adguard
 d40 1
 a40 1
 /banner/*.gif
@@ -181,6 +198,12 @@ d55 1
 d68 1
 a68 1
 /vast.js$script,domain=ophimhay.com|watch.ezyproxy.com|boctem.com|cdn.tinny2.tech|cdn.lookapi.website|phimvietsub.pro|phimdacap.tv|hoathinhtq.tv
+d103 4
+a106 4
+||chillhay.tv/ads/$image
+||chillhay.tv/guide/popup.tt-f.js
+||chillphimmoizz.org/assets/*.gif$image
+||chillphimmoizz.org/assets/js/popup.js
 d108 1
 a108 1
 ||chotlo247.me^*gif
@@ -221,6 +244,11 @@ californiabiodieselalliance.org##.btn-od
 californiabiodieselalliance.org,90phuta.tv##.d-lg-none.d-block.p-1.text-center
 californiabiodieselalliance.org,proudgreenhome.com,90phuta.tv,veboz.net,xoilac98.tv,bongdainfoz.net,xoilaczzs.tv###wap_bottombanner
 californiabiodieselalliance.org,proudgreenhome.com,90phuta.tv,xoilac98.tv,veboz.net,bongdainfoz.net,xoilaczzs.tv,broadcast-live.com##.company
+d816 3
+a818 3
+chillphimmoizz.org##.expand-static-banner
+chillphimmoizz.org##.preload-banner
+chillphimmoizz.org##.static-banner
 d821 2
 a822 2
 chotlo247.me##div[id^="float_content"]
@@ -328,8 +356,12 @@ vlxx.moe,javtopxx.com##.ads
 d1644 1
 a1644 1
 vn1.sexviet1.net,vn.yeusex.club##.preload
-d1675 1
-a1675 1
+d1671 1
+a1671 1
+baomoi.com#%#//scriptlet("abort-on-property-write", "AdtimaRender")
+d1674 2
+a1675 2
+chillphimmoizz.org#%#//scriptlet("remove-attr", "data-pop1|data-pop2", "body")
 chotlo247.me#$##header {margin-top: 0!important}
 d1699 1
 d1711 5
@@ -344,14 +376,14 @@ a1729 1
 viet69.li,ungtycomicsvip.com,vlxx.moe,dualeotruyenme.com,yurineko.net,vlxyz.vc,javhay.in,phimsexhay669.co,cliphot69.run,doctruyen3qto.com,hentaizz.vip,animehay.city,heo69.vc,top1sex.club,lenlut.tv,xemsex.vc,hentaivn.vc,phim2.sexvn1.cc,cdn.streamvl.sbs,www.buomtv.app,truyenvn.fun,cdnstream.sbs,javtiful.com,truyengihotvay.net,truyengihotqua.net,truyengihotqua.com,truyengihotnay.com,tuoi69.red,quatvn.club,tenmientruyengi.net,topxxxhay.com#%#//scriptlet("abort-current-inline-script", "WebAssembly", "instantiate")
 a1743 1
 xoilac98.tv#%#//scriptlet("abort-on-property-read", "adsRedirectPopups")
-diff name:abpvn_content_blocker lines:164 checksum:e3e5495dee
+diff name:abpvn_content_blocker lines:181 checksum:308550546d
 d2 1
 a2 1
-! Version: 20240220140201926
+! Version: 20240220190228263
 d4 2
 a5 2
-! Last modified: 20 Feb 2024 14:02:01 UTC+7
-! Diff-Path: patches/20240220140201926.patch#abpvn_content_blocker
+! Last modified: 20 Feb 2024 19:02:28 UTC+7
+! Diff-Path: patches/20240220190228263.patch#abpvn_content_blocker
 d40 1
 a40 1
 /banner/*.gif
@@ -362,6 +394,12 @@ d55 1
 d68 1
 a68 1
 /vast.js$script,domain=ophimhay.com|watch.ezyproxy.com|boctem.com|cdn.tinny2.tech|cdn.lookapi.website|phimvietsub.pro|phimdacap.tv|hoathinhtq.tv
+d103 4
+a106 4
+||chillhay.tv/ads/$image
+||chillhay.tv/guide/popup.tt-f.js
+||chillphimmoizz.org/assets/*.gif$image
+||chillphimmoizz.org/assets/js/popup.js
 d108 1
 a108 1
 ||chotlo247.me^*gif
@@ -375,6 +413,12 @@ a171 1
 ||motchillvi.net/banner$image
 a193 1
 ||phimmoiiii.net^*.gif$image
+d210 1
+a210 1
+||s.lazada.vn^$popup,domain=chillphimmoizz.org
+d216 1
+a216 1
+||shope.ee^$popup,domain=chillphimmoizz.org|blogtruyenmoi.com|cunghocvui.com|khophimchill.net|truyensextv.org|motchilluk.com
 d253 1
 a253 1
 ||truyenvn.fun^*banner$image
@@ -402,6 +446,11 @@ californiabiodieselalliance.org##.btn-od
 californiabiodieselalliance.org,90phuta.tv##.d-lg-none.d-block.p-1.text-center
 californiabiodieselalliance.org,proudgreenhome.com,90phuta.tv,veboz.net,xoilac98.tv,bongdainfoz.net,xoilaczzs.tv###wap_bottombanner
 californiabiodieselalliance.org,proudgreenhome.com,90phuta.tv,xoilac98.tv,veboz.net,bongdainfoz.net,xoilaczzs.tv,broadcast-live.com##.company
+d818 3
+a820 3
+chillphimmoizz.org##.expand-static-banner
+chillphimmoizz.org##.preload-banner
+chillphimmoizz.org##.static-banner
 d823 2
 a824 2
 chotlo247.me##div[id^="float_content"]
@@ -509,14 +558,14 @@ vlxx.moe,javtopxx.com##.ads
 d1652 1
 a1652 1
 vn1.sexviet1.net,vn.yeusex.club##.preload
-diff name:abpvn_noelemhide lines:53 checksum:5a3cc7b155
+diff name:abpvn_noelemhide lines:65 checksum:7adc774d23
 d2 1
 a2 1
-! Version: 20240220140201926
+! Version: 20240220190228263
 d4 2
 a5 2
-! Last modified: 20 Feb 2024 14:02:01 UTC+7
-! Diff-Path: patches/20240220140201926.patch#abpvn_noelemhide
+! Last modified: 20 Feb 2024 19:02:28 UTC+7
+! Diff-Path: patches/20240220190228263.patch#abpvn_noelemhide
 d40 1
 a40 1
 /banner/*.gif
@@ -527,6 +576,12 @@ d55 1
 d68 1
 a68 1
 /vast.js$script,domain=ophimhay.com|watch.ezyproxy.com|boctem.com|cdn.tinny2.tech|cdn.lookapi.website|phimvietsub.pro|phimdacap.tv|hoathinhtq.tv
+d103 4
+a106 4
+||chillhay.tv/ads/$image
+||chillhay.tv/guide/popup.tt-f.js
+||chillphimmoizz.org/assets/*.gif$image
+||chillphimmoizz.org/assets/js/popup.js
 d108 1
 a108 1
 ||chotlo247.me^*gif
@@ -540,6 +595,12 @@ a171 1
 ||motchillvi.net/banner$image
 a193 1
 ||phimmoiiii.net^*.gif$image
+d210 1
+a210 1
+||s.lazada.vn^$popup,domain=chillphimmoizz.org
+d216 1
+a216 1
+||shope.ee^$popup,domain=chillphimmoizz.org|blogtruyenmoi.com|cunghocvui.com|khophimchill.net|truyensextv.org|motchilluk.com
 d253 1
 a253 1
 ||truyenvn.fun^*banner$image
@@ -563,14 +624,14 @@ a710 1
 d727 1
 a728 1
 ||vn1.sexviet1.net^*.gif$image
-diff name:abpvn_ublock lines:180 checksum:e3b1568691
+diff name:abpvn_ublock lines:196 checksum:bb122d7d67
 d2 1
 a2 1
-! Version: 20240220140201926
+! Version: 20240220190228263
 d4 2
 a5 2
-! Last modified: 20 Feb 2024 14:02:01 UTC+7
-! Diff-Path: patches/20240220140201926.patch#abpvn_ublock
+! Last modified: 20 Feb 2024 19:02:28 UTC+7
+! Diff-Path: patches/20240220190228263.patch#abpvn_ublock
 d40 1
 a40 1
 /banner/*.gif
@@ -581,6 +642,12 @@ d55 1
 d68 1
 a68 1
 /vast.js$script,domain=ophimhay.com|watch.ezyproxy.com|boctem.com|cdn.tinny2.tech|cdn.lookapi.website|phimvietsub.pro|phimdacap.tv|hoathinhtq.tv
+d103 4
+a106 4
+||chillhay.tv/ads/$image
+||chillhay.tv/guide/popup.tt-f.js
+||chillphimmoizz.org/assets/*.gif$image
+||chillphimmoizz.org/assets/js/popup.js
 d108 1
 a108 1
 ||chotlo247.me^*gif
@@ -621,6 +688,11 @@ californiabiodieselalliance.org##.btn-od
 californiabiodieselalliance.org,90phuta.tv##.d-lg-none.d-block.p-1.text-center
 californiabiodieselalliance.org,proudgreenhome.com,90phuta.tv,veboz.net,xoilac98.tv,bongdainfoz.net,xoilaczzs.tv###wap_bottombanner
 californiabiodieselalliance.org,proudgreenhome.com,90phuta.tv,xoilac98.tv,veboz.net,bongdainfoz.net,xoilaczzs.tv,broadcast-live.com##.company
+d816 3
+a818 3
+chillphimmoizz.org##.expand-static-banner
+chillphimmoizz.org##.preload-banner
+chillphimmoizz.org##.static-banner
 d821 2
 a822 2
 chotlo247.me##div[id^="float_content"]
@@ -728,8 +800,13 @@ vlxx.moe,javtopxx.com##.ads
 d1644 1
 a1644 1
 vn1.sexviet1.net,vn.yeusex.club##.preload
-d1676 1
-a1676 1
+d1671 1
+a1671 1
+baomoi.com##+js(aopw, AdtimaRender)
+d1674 3
+a1676 3
+chillphimmoizz.org##body:remove-attr(data-pop1)
+chillphimmoizz.org##body:remove-attr(data-pop2)
 chotlo247.me###header:style(margin-top: 0 !important)
 d1700 1
 d1712 5
