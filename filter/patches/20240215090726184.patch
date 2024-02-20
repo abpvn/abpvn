@@ -1,11 +1,11 @@
-diff name:abpvn lines:142 checksum:17d08d2855
+diff name:abpvn lines:159 checksum:1b8b7bee66
 d2 1
 a2 1
-! Version: 20240220140200067
+! Version: 20240220190231792
 d4 2
 a5 2
-! Last modified: 20 Feb 2024 14:02:00 UTC+7
-! Diff-Path: patches/20240220140200067.patch#abpvn
+! Last modified: 20 Feb 2024 19:02:31 UTC+7
+! Diff-Path: patches/20240220190231792.patch#abpvn
 d40 1
 a40 1
 /banner/*.gif
@@ -16,6 +16,12 @@ d55 1
 d68 1
 a68 1
 /vast.js$script,domain=ophimhay.com|watch.ezyproxy.com|boctem.com|cdn.tinny2.tech|cdn.lookapi.website|phimvietsub.pro|phimdacap.tv|hoathinhtq.tv
+d102 4
+a105 4
+||chillhay.tv/ads/$image
+||chillhay.tv/guide/popup.tt-f.js
+||chillphimmoizz.org/assets/*.gif$image
+||chillphimmoizz.org/assets/js/popup.js
 d107 1
 a107 1
 ||chotlo247.me^*gif
@@ -26,6 +32,12 @@ a142 3
 ||i.imgur.com/Q0a2mv2.png$domain=vozer.net
 a192 1
 ||phimmoiiii.net^*.gif$image
+d209 1
+a209 1
+||s.lazada.vn^$popup,domain=chillphimmoizz.org
+d215 1
+a215 1
+||shope.ee^$popup,domain=chillphimmoizz.org|blogtruyenmoi.com|cunghocvui.com|khophimchill.net|truyensextv.org|motchilluk.com
 d252 1
 a252 1
 ||truyenvn.fun^*banner$image
@@ -48,6 +60,11 @@ blogtruyenvn.org##div[id^="qc_M_"]
 d432 1
 a432 1
 boctem.com,motchilluk.com,anivn.club,movie.vkoolz.com,hoathinhtq.tv,xemphimchill.xyz,247phim.cc,vungtv.us,vuaphimmoi2.net###popup-giua-man-hinh
+d458 3
+a460 3
+chillphimmoizz.org##.expand-static-banner
+chillphimmoizz.org##.preload-banner
+chillphimmoizz.org##.static-banner
 d463 2
 a464 2
 chotlo247.me##div[id^="float"]
@@ -141,14 +158,14 @@ vlxx.moe##.catfish-top
 vlxx.moe##.ff-banner
 vlxx.moe##div.banner-catfish-bottom
 vlxx.moe,javtopxx.com##.ads
-diff name:abpvn_adguard lines:158 checksum:792d9caa89
+diff name:abpvn_adguard lines:173 checksum:47e5273dae
 d2 1
 a2 1
-! Version: 20240220140200067
+! Version: 20240220190231792
 d4 2
 a5 2
-! Last modified: 20 Feb 2024 14:02:00 UTC+7
-! Diff-Path: patches/20240220140200067.patch#abpvn_adguard
+! Last modified: 20 Feb 2024 19:02:31 UTC+7
+! Diff-Path: patches/20240220190231792.patch#abpvn_adguard
 d40 1
 a40 1
 /banner/*.gif
@@ -159,6 +176,12 @@ d55 1
 d68 1
 a68 1
 /vast.js$script,domain=ophimhay.com|watch.ezyproxy.com|boctem.com|cdn.tinny2.tech|cdn.lookapi.website|phimvietsub.pro|phimdacap.tv|hoathinhtq.tv
+d102 4
+a105 4
+||chillhay.tv/ads/$image
+||chillhay.tv/guide/popup.tt-f.js
+||chillphimmoizz.org/assets/*.gif$image
+||chillphimmoizz.org/assets/js/popup.js
 d107 1
 a107 1
 ||chotlo247.me^*gif
@@ -191,6 +214,11 @@ blogtruyenvn.org##div[id^="qc_M_"]
 d430 1
 a430 1
 boctem.com,motchilluk.com,anivn.club,movie.vkoolz.com,hoathinhtq.tv,xemphimchill.xyz,247phim.cc,vungtv.us,vuaphimmoi2.net###popup-giua-man-hinh
+d456 3
+a458 3
+chillphimmoizz.org##.expand-static-banner
+chillphimmoizz.org##.preload-banner
+chillphimmoizz.org##.static-banner
 d461 2
 a462 2
 chotlo247.me##div[id^="float"]
@@ -284,8 +312,12 @@ vlxx.moe##.catfish-top
 vlxx.moe##.ff-banner
 vlxx.moe##div.banner-catfish-bottom
 vlxx.moe,javtopxx.com##.ads
-d1279 1
-a1279 1
+d1275 1
+a1275 1
+baomoi.com#%#//scriptlet("abort-on-property-write", "AdtimaRender")
+d1278 2
+a1279 2
+chillphimmoizz.org#%#//scriptlet("remove-attr", "data-pop1|data-pop2", "body")
 chotlo247.me#$##header {margin-top: 0!important}
 d1314 5
 a1318 5
@@ -300,14 +332,14 @@ viet69.li,ungtycomicsvip.com,vlxx.moe,dualeotruyenme.com,yurineko.net,vlxyz.vc,j
 d1347 1
 a1347 1
 xoilac98.tv#%#//scriptlet("abort-on-property-read", "adsRedirectPopups")
-diff name:abpvn_content_blocker lines:142 checksum:d981654ca3
+diff name:abpvn_content_blocker lines:159 checksum:6638ea693d
 d2 1
 a2 1
-! Version: 20240220140200067
+! Version: 20240220190231792
 d4 2
 a5 2
-! Last modified: 20 Feb 2024 14:02:00 UTC+7
-! Diff-Path: patches/20240220140200067.patch#abpvn_content_blocker
+! Last modified: 20 Feb 2024 19:02:31 UTC+7
+! Diff-Path: patches/20240220190231792.patch#abpvn_content_blocker
 d40 1
 a40 1
 /banner/*.gif
@@ -318,6 +350,12 @@ d55 1
 d68 1
 a68 1
 /vast.js$script,domain=ophimhay.com|watch.ezyproxy.com|boctem.com|cdn.tinny2.tech|cdn.lookapi.website|phimvietsub.pro|phimdacap.tv|hoathinhtq.tv
+d102 4
+a105 4
+||chillhay.tv/ads/$image
+||chillhay.tv/guide/popup.tt-f.js
+||chillphimmoizz.org/assets/*.gif$image
+||chillphimmoizz.org/assets/js/popup.js
 d107 1
 a107 1
 ||chotlo247.me^*gif
@@ -328,6 +366,12 @@ a142 3
 ||i.imgur.com/Q0a2mv2.png$domain=vozer.net
 a192 1
 ||phimmoiiii.net^*.gif$image
+d209 1
+a209 1
+||s.lazada.vn^$popup,domain=chillphimmoizz.org
+d215 1
+a215 1
+||shope.ee^$popup,domain=chillphimmoizz.org|blogtruyenmoi.com|cunghocvui.com|khophimchill.net|truyensextv.org|motchilluk.com
 d252 1
 a252 1
 ||truyenvn.fun^*banner$image
@@ -350,6 +394,11 @@ blogtruyenvn.org##div[id^="qc_M_"]
 d432 1
 a432 1
 boctem.com,motchilluk.com,anivn.club,movie.vkoolz.com,hoathinhtq.tv,xemphimchill.xyz,247phim.cc,vungtv.us,vuaphimmoi2.net###popup-giua-man-hinh
+d458 3
+a460 3
+chillphimmoizz.org##.expand-static-banner
+chillphimmoizz.org##.preload-banner
+chillphimmoizz.org##.static-banner
 d463 2
 a464 2
 chotlo247.me##div[id^="float"]
@@ -443,14 +492,14 @@ vlxx.moe##.catfish-top
 vlxx.moe##.ff-banner
 vlxx.moe##div.banner-catfish-bottom
 vlxx.moe,javtopxx.com##.ads
-diff name:abpvn_noelemhide lines:42 checksum:037b27a69c
+diff name:abpvn_noelemhide lines:54 checksum:b9fa802849
 d2 1
 a2 1
-! Version: 20240220140200067
+! Version: 20240220190231792
 d4 2
 a5 2
-! Last modified: 20 Feb 2024 14:02:00 UTC+7
-! Diff-Path: patches/20240220140200067.patch#abpvn_noelemhide
+! Last modified: 20 Feb 2024 19:02:31 UTC+7
+! Diff-Path: patches/20240220190231792.patch#abpvn_noelemhide
 d40 1
 a40 1
 /banner/*.gif
@@ -461,6 +510,12 @@ d55 1
 d68 1
 a68 1
 /vast.js$script,domain=ophimhay.com|watch.ezyproxy.com|boctem.com|cdn.tinny2.tech|cdn.lookapi.website|phimvietsub.pro|phimdacap.tv|hoathinhtq.tv
+d102 4
+a105 4
+||chillhay.tv/ads/$image
+||chillhay.tv/guide/popup.tt-f.js
+||chillphimmoizz.org/assets/*.gif$image
+||chillphimmoizz.org/assets/js/popup.js
 d107 1
 a107 1
 ||chotlo247.me^*gif
@@ -471,6 +526,12 @@ a142 3
 ||i.imgur.com/Q0a2mv2.png$domain=vozer.net
 a192 1
 ||phimmoiiii.net^*.gif$image
+d209 1
+a209 1
+||s.lazada.vn^$popup,domain=chillphimmoizz.org
+d215 1
+a215 1
+||shope.ee^$popup,domain=chillphimmoizz.org|blogtruyenmoi.com|cunghocvui.com|khophimchill.net|truyensextv.org|motchilluk.com
 d252 1
 a252 1
 ||truyenvn.fun^*banner$image
@@ -486,14 +547,14 @@ a432 1
 d438 1
 a438 1
 ||quoracdn.net^$image,domain=vlxx.moe|vlxyz.vc|sieudamtv.vip
-diff name:abpvn_ublock lines:158 checksum:dcce769604
+diff name:abpvn_ublock lines:174 checksum:13d795a746
 d2 1
 a2 1
-! Version: 20240220140200067
+! Version: 20240220190231792
 d4 2
 a5 2
-! Last modified: 20 Feb 2024 14:02:00 UTC+7
-! Diff-Path: patches/20240220140200067.patch#abpvn_ublock
+! Last modified: 20 Feb 2024 19:02:31 UTC+7
+! Diff-Path: patches/20240220190231792.patch#abpvn_ublock
 d40 1
 a40 1
 /banner/*.gif
@@ -504,6 +565,12 @@ d55 1
 d68 1
 a68 1
 /vast.js$script,domain=ophimhay.com|watch.ezyproxy.com|boctem.com|cdn.tinny2.tech|cdn.lookapi.website|phimvietsub.pro|phimdacap.tv|hoathinhtq.tv
+d102 4
+a105 4
+||chillhay.tv/ads/$image
+||chillhay.tv/guide/popup.tt-f.js
+||chillphimmoizz.org/assets/*.gif$image
+||chillphimmoizz.org/assets/js/popup.js
 d107 1
 a107 1
 ||chotlo247.me^*gif
@@ -536,6 +603,11 @@ blogtruyenvn.org##div[id^="qc_M_"]
 d430 1
 a430 1
 boctem.com,motchilluk.com,anivn.club,movie.vkoolz.com,hoathinhtq.tv,xemphimchill.xyz,247phim.cc,vungtv.us,vuaphimmoi2.net###popup-giua-man-hinh
+d456 3
+a458 3
+chillphimmoizz.org##.expand-static-banner
+chillphimmoizz.org##.preload-banner
+chillphimmoizz.org##.static-banner
 d461 2
 a462 2
 chotlo247.me##div[id^="float"]
@@ -629,8 +701,13 @@ vlxx.moe##.catfish-top
 vlxx.moe##.ff-banner
 vlxx.moe##div.banner-catfish-bottom
 vlxx.moe,javtopxx.com##.ads
-d1280 1
-a1280 1
+d1275 1
+a1275 1
+baomoi.com##+js(aopw, AdtimaRender)
+d1278 3
+a1280 3
+chillphimmoizz.org##body:remove-attr(data-pop1)
+chillphimmoizz.org##body:remove-attr(data-pop2)
 chotlo247.me###header:style(margin-top: 0 !important)
 d1315 5
 a1319 5
