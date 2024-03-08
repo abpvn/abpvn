@@ -4,7 +4,7 @@ class Const():
     FILTER_SUB_DOMAIN_REGEX = r'([|\/=\.~]?)(([\w-]+\.){1,3}(([\w-]{3,255})(\.[a-z]{2,3})?(\.[a-z]{2,7})))([#\/|\n\^\$,])'
     RESPONSE_DOMAIN_REGEX = r'(([\w-]+\.){0,3}(([\w-]{3,255})(\.[a-z]{2,3})?(\.[a-z]{2,7})))'
     DOMAIN_REJECT_ENDINGS = [
-        '.js', '.png', '.jpg', '.gif', '.aspx',
+        '.js', '.png', '.jpg', '.gif', '.aspx', '.jpeg',
         '.widget', 'block.ad', '.mp4', '.mp3', '.m3u8',
         '.row', '.parse', '.round', 'abpvn.com',
         'abpvn.org', '.php', '.html', '.button', '.mrb10',
