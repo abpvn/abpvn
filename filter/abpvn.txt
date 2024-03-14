@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 20240313230435097
+! Version: 20240314090921981
 ! Title: ABPVN List
-! Last modified: 13 Mar 2024 23:04:35 UTC+7
-! Diff-Path: patches/20240313230435097.patch#abpvn
+! Last modified: 14 Mar 2024 09:09:22 UTC+7
+! Diff-Path: patches/20240314090921981.patch#abpvn
 ! Diff-Expires: 60 minutes
 ! Expires: 1 days (update frequency)
 !
@@ -64,7 +64,7 @@
 /taichinhdoanhnghiep.net.vn/files/qc
 /tinhocdongthap.com\/wp-content\/plugins\/wp-[\w-]+\/[\w-]+\.js/$script
 /v/*/vast.js$script,domain=~cdn2.kenhvn2.com
-/vast.js$script,domain=ophim.pro|boctem.com|cdn.tinny2.tech|cdn.lookapi.website|phimvietsub.pro|phimdacap.tv|hoathinhtq.tv|tvhayss.com|phimmoisz.net
+/vast.js$script,domain=ophimx.net|boctem.com|cdn.tinny2.tech|cdn.lookapi.website|phimvietsub.pro|phimdacap.tv|hoathinhtq.tv|tvhayss.com|phimmoisz.net
 /videojs.ads.$domain=~danet.vn
 /videojs.ima.js$domain=~jut.su|~earthcam.com
 phimmoisz.net/wp-content/themes/movies/js/adpm4u.js$script,~third-party
@@ -700,11 +700,11 @@ nhatrangclub.vn##.show_qc
 nld.com.vn##.top-advertisment
 noitu.online##.show.modal
 olug.vn###popup_center
-ophim.pro###adsTopInPageBanner
-ophim.pro##.adsContainer
-ophim.pro##.header__auth>.details__devices-list
 ophimhd.vip###ad-container
 ophimhd.vip##.uniad-player + div[style]
+ophimx.net###adsTopInPageBanner
+ophimx.net##.adsContainer
+ophimx.net##.header__auth>.details__devices-list
 phapluatplus.vn##div[style="text-align:center;margin-top:0px;margin-bottom:0px;"]
 phim.vkoolvvv.net##.box-rating
 phim.vkoolvvv.net,subnhanhvl.net,subnhanh.moe,subnhanh.vin,tructiepdabong5.co,protruyen5.fun,protruyen4.fun,biphim.vin,dongphim3s.tv###overlay
@@ -1118,7 +1118,7 @@ vndoc.com#@#.showads
 !------ ABPVN Adult block -------
 $third-party,script,domain=sexdiaryx.me
 /player/vast.js
-/theme/custom.int.js$script,domain=top1sex.club|tuoi69.blog|javhay.in|phimheovietnam.org|londep.io|phimsexviet.io|ww1.phimsexvietnam.live|clipsex.io|xxxvietnam.io|sex.gaimup.net|xx.phimsexvip.cc|webx.ditnhau.cc
+/theme/custom.int.js$script,domain=top1sex.club|tuoi69.blog|javhay.in|phimheovietnam.org|londep.io|phimsexviet.io|ww1.phimsexvietnam.live|mb.clipsex.xxx|xxxvietnam.io|sex.gaimup.net|xx.phimsexvip.cc|xem.ditnhau.cc
 /wp-content/uploads/*.gif$image,domain=tuoi69zz.net|tuoinung.cc|teletiengviet.com|phevkl.live
 @@||pagead2.googlesyndication.com^$domain=www.gaingon18.me
 ||ads.6789live.com^
@@ -1211,6 +1211,7 @@ javtiful.com##.v3sb-box
 javtopxx.com##.cat-fish.a-play
 javtopxx.com##.overlay
 lxmanga.net##.ads-wrapper
+mb.ditnhauvietnam.com,phim.javhdvip.net##.alldiv ~ div[class]
 ngaytho.me##.body_wrapper1
 nhentaivn.com###popup_fi
 phevkl.live###mp-preload-popup-overlay
@@ -1236,7 +1237,6 @@ sexsub.online##.v4j-watch-1.v4j-content
 sexsub.online##body>div[class]
 sexvietz.co,javhd.tech,hd.viet69.click,sex.heovl.io,sexvip1z.com,sex.heovl.online###f186fb23a33995d91ce3c2212189178c8
 sexvn1.cc##.code-block-4
-sexvungtrom.io,phim.javhdvip.net##.alldiv ~ div[class]
 sieudamtv.one###pc-preload-modal
 sieudamtv.one###popup
 sieudamtv.one##.quang-cao
