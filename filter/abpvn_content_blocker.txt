@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 20240322120513610
+! Version: 20240322230522759
 ! Title: ABPVN List
-! Last modified: 22 Mar 2024 12:05:13 UTC+7
-! Diff-Path: patches/20240322120513610.patch#abpvn_content_blocker
+! Last modified: 22 Mar 2024 23:05:22 UTC+7
+! Diff-Path: patches/20240322230522759.patch#abpvn_content_blocker
 ! Diff-Expires: 60 minutes
 ! Expires: 1 days (update frequency)
 !
@@ -45,7 +45,7 @@
 /disable-devtool.min.js$script
 /giadinhonline.vn/files/qc/
 /i.imgur.com/$domain=xemphimchill.xyz
-/i.imgur.com/*.gif$domain=keonhacai5.biz|phimlongtieng.net|phimdinhcao.com|phimdinhcao.net|readthehook.com|bongdainfoz.net|ice-energy.com|veboz.net|adaptretail.com|plvb.xyz|listnhacai1.com|xoilaczl.tv|xemtivingon.org|phimlongtieng.com|softwarestudies.com|rakhoiz.net|rk.plcdn.xyz|phimmoi.im
+/i.imgur.com/*.gif$domain=keonhacai5.biz|phimlongtieng.net|phimdinhcao.com|phimdinhcao.net|readthehook.com|ogres-crypt.com|ice-energy.com|veboz.net|adaptretail.com|plvb.xyz|listnhacai1.com|xoilaczl.tv|xemtivingon.org|phimlongtieng.com|softwarestudies.com|rakhoiz.net|rk.plcdn.xyz|phimmoi.im
 /media.discordapp/$domain=phimno4.xyz|bongda21h.vip
 /mmo/*$xmlhttprequest,image,domain=vuighe2.com
 /newchill/*gif$image
@@ -134,7 +134,7 @@
 ||hotphim.vip/disable.js$script
 ||huongdanjava.com$csp=script-src data: 'self' 'unsafe-inline' http: https:
 ||huphimtv.com/assets/themes/js/wonderfarm68.js
-||i-imgur-com.cdn.ampproject.org^*.gif$image,domain=bongdainfoz.net
+||i-imgur-com.cdn.ampproject.org^*.gif$image,domain=ogres-crypt.com
 ||i.ex-cdn.com/nhadautu.vn/files/qc/$domain=nhadautu.vn
 ||i.ibb.co^*.gif$image,domain=phimmoisz.net
 ||i.imgur.com/81uid6d.jpg$domain=vozer.net
@@ -821,7 +821,6 @@ bongda21h.vip###wap_bottombannerr
 bongda21h.vip##.grid-match[style]
 bongda24h.vn##div[style="height:250px"]
 bongda365.news##.banners
-bongdainfoz.net##.oddsCompany
 bongdaso66.net###right_float
 bongdaso66.net##[id$="float_banner"]
 btcvn.org##.PanelScroller.Notices
@@ -1072,6 +1071,7 @@ nitroflare.com##[id^="superbox-"]
 nld.com.vn##.top-advertisment
 noitu.online##.show.modal
 nongnghiep.vn##.exp_qc_share
+ogres-crypt.com##.oddsCompany
 olug.vn###popup_center
 open.spotify.com###leaderboard-ad-element
 open.spotify.com##[href^="https://adclick.g.doubleclick.net/"]
@@ -1174,8 +1174,8 @@ sharemods.com##div[id^="crt-"]
 sieutamphim.com###scriptDiv
 softonic.vn##.sam-slot
 softwarestudies.com##.btn-od
-softwarestudies.com,adaptretail.com,ice-energy.com,readthehook.com,veboz.net,bongdainfoz.net,xoilaczl.tv,rakhoiz.net##.company
-softwarestudies.com,adaptretail.com,ice-energy.com,veboz.net,readthehook.com,bongdainfoz.net,xoilaczl.tv###wap_bottombanner
+softwarestudies.com,adaptretail.com,ice-energy.com,readthehook.com,veboz.net,ogres-crypt.com,xoilaczl.tv,rakhoiz.net##.company
+softwarestudies.com,adaptretail.com,ice-energy.com,veboz.net,readthehook.com,ogres-crypt.com,xoilaczl.tv###wap_bottombanner
 softwarestudies.com,ice-energy.com##.d-lg-none.d-block.p-1.text-center
 soha.vn,gamek.vn##[id^="admzone"]
 soikeo365.net##.ads-floatingads
@@ -1544,7 +1544,7 @@ $third-party,script,domain=sexdiaryx.info
 ||vl3x.vip/ads/$script
 ||vn1.yeusex.club^*.gif$image
 ||vn3.sexviet1.net^*.gif$image
-||ww2.topsexviet.info^*.gif$image
+||ww2.topsexviet.com^*.gif$image
 ||www.buomtv.app/palivn/ad/$image
 ||xx.phimsexnhathay.com/theme/main.isa.js$script
 ||yr.fopbandido.com^
@@ -1558,7 +1558,7 @@ avvietsub.net###popupContact
 avvietsub.net##.hidden-md.right.col-3
 avvietsub.net##body>.container>div
 cliphot69.city###custom_html-42
-cliphotvn.xyz,mobiblog2.com,cliphot69.city,phevkl.live,gvnvh18.com,ww2.topsexviet.info,sayhentai.pro##.float-ck-center-lt
+cliphotvn.xyz,mobiblog2.com,cliphot69.city,phevkl.live,gvnvh18.com,ww2.topsexviet.com,sayhentai.pro##.float-ck-center-lt
 damconuong.net##.pc-catfixx
 damconuong.net##a[rel="nofollow"]
 filemoon.sx##body>[style*="position: fixed;"]
