@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 20240327180425662
+! Version: 20240328091209051
 ! Title: ABPVN List
-! Last modified: 27 Mar 2024 18:04:25 UTC+7
-! Diff-Path: patches/20240327180425662.patch#abpvn_adguard
+! Last modified: 28 Mar 2024 09:12:09 UTC+7
+! Diff-Path: patches/20240328091209051.patch#abpvn_adguard
 ! Diff-Expires: 60 minutes
 ! Expires: 1 days (update frequency)
 !
@@ -64,7 +64,7 @@
 /taichinhdoanhnghiep.net.vn/files/qc
 /tinhocdongthap.com\/wp-content\/plugins\/wp-[\w-]+\/[\w-]+\.js/$script
 /v/*/vast.js$script,domain=~cdn2.kenhvn2.com
-/vast.js$script,domain=ophimx.net|boctem.com|cdn.tinny2.tech|cdn.lookapi.website|phimvietsub.pro|phimdacap.tv|hoathinhtq.tv|tvhayss.com|phimmoisz.net
+/vast.js$script,domain=phimmoi.tuphim.net|boctem.com|cdn.tinny2.tech|cdn.lookapi.website|phimvietsub.pro|phimdacap.tv|hoathinhtq.tv|tvhayss.com|phimmoisz.net
 /videojs.ads.$domain=~danet.vn|~tn.com.ar
 /videojs.ima.js$domain=~jut.su|~earthcam.com
 phimmoisz.net/wp-content/themes/movies/js/adpm4u.js$script,~third-party
@@ -196,7 +196,7 @@ phimmoisz.net/wp-content/themes/movies/js/adpm4u.js$script,~third-party
 ||phimss.com/assets/ads/$image
 ||phimtuoitho.tv/uploads/12-cung-hoang-dao.jpg$image
 ||phimvuihd.org^*.gif$image
-||phimyeuthicha.com/ad-data/$image
+||phimyeuthichb.com/ad-data/$image
 ||photo2.tinhte.vn/data/attachment-files/*banner
 ||photo2.tinhte.vn^*.gif$domain=vebo4.net|vebo16.net
 ||pic1025.com^*gif$domain=xemtivi4k.com
@@ -683,9 +683,6 @@ ogres-crypt.com##.oddsCompany
 olug.vn###popup_center
 ophimhd.vip###ad-container
 ophimhd.vip##.uniad-player + div[style]
-ophimx.net###adsTopInPageBanner
-ophimx.net##.adsContainer
-ophimx.net##.header__auth>.details__devices-list
 phapluatplus.vn##div[style="text-align:center;margin-top:0px;margin-bottom:0px;"]
 phim.vkoolk.net##.box-rating
 phim.vkoolk.net,subnhanhvl.net,subnhanh.today,subnhanh.cx,tructiepdabong5.co,protruyen6.fun,biphim.online,dongphim3s.info###overlay
@@ -716,6 +713,9 @@ phimlongtieng.com,phimlongtieng.net###mobile_content_top
 phimlongtieng.com,phimlongtieng.net###p-GMH
 phimmoi.im###hide_catfish
 phimmoi.im,vungtv.us,phimhdc.net###container-ads
+phimmoi.tuphim.net###adsTopInPageBanner
+phimmoi.tuphim.net##.adsContainer
+phimmoi.tuphim.net##.header__auth>.details__devices-list
 phimmoi4s.com##.box_option
 phimmoichillo.net###pm_quangcao
 phimmoinay.vip,phimmoisz.net##.sda-catfish
@@ -732,7 +732,7 @@ phimtuoitho.tv##[href^="https://www.toprevenuegate.com/q7rbxxz1v"]
 phimvietsub.pro,api.anime3s.com,subnhanh.xyz##.t_logo
 phimvietsub.pro,subnhanh.xyz##.sticky_bottom
 phimvuihd.org,hh3dhay.lol,phim18di.net,xemphim.me,phimtuoitho.tv,xem8z.com,hh3dhay.pro,vutruphim.tv##.float-ck-center-lt
-phimyeuthicha.com##.sticky-footer
+phimyeuthichb.com##.sticky-footer
 phunumoi.net.vn,nhipcaudautu.vn##div[id^="ads_"]
 phuongtrinhhoahoc.com##.shadow-card + .mt-2
 plvb.xyz,rk.plcdn.xyz##.odds-button
@@ -1159,6 +1159,7 @@ $third-party,script,domain=sexdiaryx.info
 ||sexvn1.cc^*.gif$image
 ||sieukhungvn.org^*.gif$image
 ||spankbangdl.com/files/*.gif$image,domain=avvietsub.net
+||topviet69.com^*.gif$image
 ||truyen18.pro/media/abc/$image
 ||truyen18.pro/media/banner/$image
 ||truyenhentaivn.info^*.gif$image
@@ -1167,7 +1168,6 @@ $third-party,script,domain=sexdiaryx.info
 ||vl3x.vip/ads/$script
 ||vn1.yeusex.club^*.gif$image
 ||vn3.sexviet1.net^*.gif$image
-||ww2.topsexviet.com^*.gif$image
 ||www.buomtv.app/palivn/ad/$image
 ||xx.phimsexnhathay.com/theme/main.isa.js$script
 ||yr.fopbandido.com^
@@ -1179,7 +1179,7 @@ avvietsub.net###popupContact
 avvietsub.net##.hidden-md.right.col-3
 avvietsub.net##body>.container>div
 cliphot69.blog###custom_html-42
-cliphotvn.xyz,mobiblog2.com,cliphot69.blog,phevkl.live,gvnvh18.com,ww2.topsexviet.com,sayhentai.pro##.float-ck-center-lt
+cliphotvn.xyz,mobiblog2.com,cliphot69.blog,phevkl.live,gvnvh18.com,topviet69.com,sayhentai.pro##.float-ck-center-lt
 damconuong.net##.pc-catfixx
 damconuong.net##a[rel="nofollow"]
 filemoon.sx##body>[style*="position: fixed;"]
@@ -1351,7 +1351,7 @@ truyensieuhay.com,phimvietsub.pro,quangcaoyenbai.com,sieudamtv.vip,ephimchill.co
 truyentuan.xyz#%#//scriptlet("abort-current-inline-script", "$", "btpop")
 vailonxx.vip,phimlongtieng.com,phimlongtieng.net#%#//scriptlet("abort-current-inline-script", "jQuery", "window.open")
 veryfiles.com#%#//scriptlet("abort-on-property-read", "nFNcksmwU")
-viet69.ca,ungtycomicsvip.com,vlxx.moe,dualeotruyenza.com,yurineko.net,vlxyz.vc,javhay.in,phimsexhay669.org,cliphot69.blog,doctruyen3qvn.net,hentaizz.pro,animehay.me,heo69.vc,top1sex.club,lenlut.tv,mup69.net,hentaivn.day,sexvn1.cc,cdn.streamvl.sbs,www.buomtv.app,truyenvn.club,cdnstream.sbs,javtiful.com,truyengihotdo.net,truyengihotzay.net,truyengihotnha.com,truyengihotnha.net,truyengihotqua.net,truyengihotqua.com,truyengihotnay.com,tuoi69.media,quatvn2.club,tenmientruyengi.net,ww2.topsexviet.com,phim18hd.top,web.sexviet88.day,sexdep9x.pro,demo.14412882.com#%#//scriptlet("abort-current-inline-script", "WebAssembly", "instantiate")
+viet69.ca,ungtycomicsvip.com,vlxx.moe,dualeotruyenza.com,yurineko.net,vlxyz.vc,javhay.in,phimsexhay669.org,cliphot69.blog,doctruyen3qvn.net,hentaizz.pro,animehay.me,heo69.vc,top1sex.club,lenlut.tv,mup69.net,hentaivn.day,sexvn1.cc,cdn.streamvl.sbs,www.buomtv.app,truyenvn.club,cdnstream.sbs,javtiful.com,truyengihotdo.net,truyengihotzay.net,truyengihotnha.com,truyengihotnha.net,truyengihotqua.net,truyengihotqua.com,truyengihotnay.com,tuoi69.media,quatvn2.club,tenmientruyengi.net,topviet69.com,phim18hd.top,web.sexviet88.day,sexdep9x.pro,demo.14412882.com#%#//scriptlet("abort-current-inline-script", "WebAssembly", "instantiate")
 viettoons.tv,mv.phimmoiaz.cc,dood.pm,ytstv.me,animet24h.com,anh.moe,truyenhentaivn.info#%#//scriptlet("abort-on-property-read", "open")
 vinaurl.net#%#//scriptlet("abort-on-property-read", "oneClick")
 vndoc.com#%#//scriptlet("set-constant", "seconds", "0")
