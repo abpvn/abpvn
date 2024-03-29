@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 20240329180434744
+! Version: 20240329191728567
 ! Title: ABPVN List
-! Last modified: 29 Mar 2024 18:04:34 UTC+7
-! Diff-Path: patches/20240329180434744.patch#abpvn_ublock
+! Last modified: 29 Mar 2024 19:17:28 UTC+7
+! Diff-Path: patches/20240329191728567.patch#abpvn_ublock
 ! Diff-Expires: 60 minutes
 ! Expires: 1 days (update frequency)
 !
@@ -154,7 +154,7 @@ phimmoisz.net/wp-content/themes/movies/js/adpm4u.js$script,~third-party
 ||khophim-poster.cuoiia.top^*.gif$image,domain=phim18di.net
 ||kienthuc.net.vn/*.ads
 ||laodong.vn/*QuangcaoOnline
-||lh3.googleusercontent.com/*=s0$image,domain=animevietsub.io|hoathinh4k.net|hayghezz.info
+||lh3.googleusercontent.com/*=s0$image,domain=animevietsub.us|hoathinh4k.net|hayghezz.info
 ||lh3.googleusercontent.com^$image,domain=subnhanh.xyz
 ||lichngaytot.com/navive-advs$subdocument,domain=doctailieu.com
 ||listnhacai88.com^*.gif$image
@@ -411,10 +411,10 @@ animet24h.com##.gnartyx-offads
 animet24h.com,animetvn4.com##.gnarty-offads
 animet24h.com,animetvn4.com,subnhanh.xyz###fbox-background
 animetvn4.com###mobile-ads
-animevietsub.io###invideo_wrapper
-animevietsub.io##.Ads
-animevietsub.io##.mobile-catfixx
-animevietsub.io,thongtintruyen.com##.pc-catfixx
+animevietsub.us###invideo_wrapper
+animevietsub.us##.Ads
+animevietsub.us##.mobile-catfixx
+animevietsub.us,thongtintruyen.com##.pc-catfixx
 anivn.club###quang-cao
 api.anime3s.com,tructiep4.xoilac16.org,phim18di.net,freeplayervideo.com,abysscdn.com,player-cdn.com,bitvtom1000.xyz,geoip.redirect-ads.com,watch.rkplayer.xyz,xem.bdhub.xyz##.jw-logo
 asianbookie.com##a[href^="/cgi-bin/to.cgi"]
@@ -1289,7 +1289,7 @@ www.gaingon18.me###iklan-atas-wrapper
 youtubeporn.pro##div[style^="position:fixed;inset:0px;z-index:100000;"]
 youtubeporn.pro,hls.playerfb.xyz###video_player ~ div[id]
 ! ---------Rule only for uBlock Origin------
-animevietsub.io##+js(acs, document.documentElement, break;case $.)
+animevietsub.us##+js(acs, document.documentElement, break;case $.)
 aoe.vn##+js(aopr, parseInt)
 audiotruyenfull.com##+js(aopr, adpiaListUrl)
 azrom.net##+js(acs, atob, ai_block_class)
