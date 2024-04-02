@@ -1,11 +1,11 @@
-diff name:abpvn lines:436 checksum:19de8ac318
+diff name:abpvn lines:442 checksum:4eac66360b
 d2 1
 a2 1
-! Version: 20240402120427589
+! Version: 20240402134625997
 d4 2
 a5 2
-! Last modified: 02 Apr 2024 12:04:27 UTC+7
-! Diff-Path: patches/20240402120427589.patch#abpvn
+! Last modified: 02 Apr 2024 13:46:26 UTC+7
+! Diff-Path: patches/20240402134625997.patch#abpvn
 d48 3
 a50 3
 /i.imgur.com/*.gif$domain=keonhacai5.biz|phimlongtieng.net|phimdinhcao.com|phimdinhcao.net|healthweather.us|ogres-crypt.com|90phutr.tv|veboz.net|cc-briance-combade.com|plvb.xyz|listnhacai88.com|xoilaczzh.tv|xemtivingon.org|phimlongtieng.com|mitomu.tv|rakhoiz.net|rk.plcdn.xyz|phimmoi.im
@@ -360,7 +360,9 @@ a1144 1
 d1147 2
 a1148 1
 ||i.imgur.com^$image,domain=phym18.vip|phim18hd.top|phim18vn.biz|phim18hd.me|xamvn.bid|fullcliphot.com
-d1158 1
+d1158 2
+a1159 1
+||lxmanga.cc/storage/images/banners
 d1162 1
 d1165 3
 a1167 3
@@ -399,6 +401,9 @@ cliphotvn.xyz,mobiblog.one,cliphot69.blog,phevkl.live,gvnvh18.com,topviet69.com,
 d1208 1
 a1208 1
 hentaivn.bid##.qx_135
+d1218 1
+a1218 1
+lxmanga.cc##.ads-wrapper
 d1221 1
 a1221 1
 nhentaivn.pro###popup_fi
@@ -423,10 +428,11 @@ sieudamtv.cam##.quang-cao
 d1260 1
 a1260 1
 thiendia2.cc,rphang.la,phim18vip.xyz,checkgaigoi4.cc,sieudamtv.cam,sexvn1.cc##.float-ck
-d1264 4
-a1267 2
+d1264 5
+a1268 3
 truyenhentaivn.org###catfish
 truyenhentaivn.org##.wppopups-whole
+truyensextv.com,lxmanga.cc##.sticky-footer
 d1270 3
 a1272 3
 tuoi69zz.click###bar_float_r
@@ -435,14 +441,14 @@ tuoinung.pro###hide_float_right
 d1281 1
 a1281 1
 viet69.si##.footer-fixed-br-container
-diff name:abpvn_adguard lines:470 checksum:da0b0e6313
+diff name:abpvn_adguard lines:477 checksum:d32178dcf4
 d2 1
 a2 1
-! Version: 20240402120427589
+! Version: 20240402134625997
 d4 2
 a5 2
-! Last modified: 02 Apr 2024 12:04:27 UTC+7
-! Diff-Path: patches/20240402120427589.patch#abpvn_adguard
+! Last modified: 02 Apr 2024 13:46:26 UTC+7
+! Diff-Path: patches/20240402134625997.patch#abpvn_adguard
 d48 3
 a50 3
 /i.imgur.com/*.gif$domain=keonhacai5.biz|phimlongtieng.net|phimdinhcao.com|phimdinhcao.net|healthweather.us|ogres-crypt.com|90phutr.tv|veboz.net|cc-briance-combade.com|plvb.xyz|listnhacai88.com|xoilaczzh.tv|xemtivingon.org|phimlongtieng.com|mitomu.tv|rakhoiz.net|rk.plcdn.xyz|phimmoi.im
@@ -796,7 +802,9 @@ a1138 1
 d1141 2
 a1142 1
 ||i.imgur.com^$image,domain=phym18.vip|phim18hd.top|phim18vn.biz|phim18hd.me|xamvn.bid|fullcliphot.com
-d1151 1
+d1151 2
+a1152 1
+||lxmanga.cc/storage/images/banners
 d1155 1
 d1158 3
 a1160 3
@@ -835,6 +843,9 @@ cliphotvn.xyz,mobiblog.one,cliphot69.blog,phevkl.live,gvnvh18.com,topviet69.com,
 d1201 1
 a1201 1
 hentaivn.bid##.qx_135
+d1211 1
+a1211 1
+lxmanga.cc##.ads-wrapper
 d1214 1
 a1214 1
 nhentaivn.pro###popup_fi
@@ -859,10 +870,11 @@ sieudamtv.cam##.quang-cao
 d1253 1
 a1253 1
 thiendia2.cc,rphang.la,phim18vip.xyz,checkgaigoi4.cc,sieudamtv.cam,sexvn1.cc##.float-ck
-d1257 4
-a1260 2
+d1257 5
+a1261 3
 truyenhentaivn.org###catfish
 truyenhentaivn.org##.wppopups-whole
+truyensextv.com,lxmanga.cc##.sticky-footer
 d1263 3
 a1265 3
 tuoi69zz.click###bar_float_r
@@ -881,8 +893,9 @@ d1320 1
 a1320 2
 gvnvh18.com,sexdiaryx.biz#%#//scriptlet("set-constant", "D4zz", "noopFunc")
 healthweather.us#%#//scriptlet("abort-on-property-read", "adsRedirectPopups")
-d1332 1
-a1332 1
+d1331 2
+a1332 2
+lxmanga.cc#%#//scriptlet("abort-current-inline-script", "$", "PopUnder")
 nettruyenab.com#%#//scriptlet("abort-current-inline-script", "Promise", "break;case")
 d1348 2
 a1349 2
@@ -906,14 +919,14 @@ d1377 1
 a1377 1
 www.toptruyen.pro#%#//scriptlet("abort-current-inline-script", "Promise", "instance")
 d1384 1
-diff name:abpvn_content_blocker lines:436 checksum:f42a8b15f0
+diff name:abpvn_content_blocker lines:442 checksum:f9b60fe702
 d2 1
 a2 1
-! Version: 20240402120427589
+! Version: 20240402134625997
 d4 2
 a5 2
-! Last modified: 02 Apr 2024 12:04:27 UTC+7
-! Diff-Path: patches/20240402120427589.patch#abpvn_content_blocker
+! Last modified: 02 Apr 2024 13:46:26 UTC+7
+! Diff-Path: patches/20240402134625997.patch#abpvn_content_blocker
 d48 3
 a50 3
 /i.imgur.com/*.gif$domain=keonhacai5.biz|phimlongtieng.net|phimdinhcao.com|phimdinhcao.net|healthweather.us|ogres-crypt.com|90phutr.tv|veboz.net|cc-briance-combade.com|plvb.xyz|listnhacai88.com|xoilaczzh.tv|xemtivingon.org|phimlongtieng.com|mitomu.tv|rakhoiz.net|rk.plcdn.xyz|phimmoi.im
@@ -1268,7 +1281,9 @@ a1144 1
 d1147 2
 a1148 1
 ||i.imgur.com^$image,domain=phym18.vip|phim18hd.top|phim18vn.biz|phim18hd.me|xamvn.bid|fullcliphot.com
-d1158 1
+d1158 2
+a1159 1
+||lxmanga.cc/storage/images/banners
 d1162 1
 d1165 3
 a1167 3
@@ -1307,6 +1322,9 @@ cliphotvn.xyz,mobiblog.one,cliphot69.blog,phevkl.live,gvnvh18.com,topviet69.com,
 d1208 1
 a1208 1
 hentaivn.bid##.qx_135
+d1218 1
+a1218 1
+lxmanga.cc##.ads-wrapper
 d1221 1
 a1221 1
 nhentaivn.pro###popup_fi
@@ -1331,10 +1349,11 @@ sieudamtv.cam##.quang-cao
 d1260 1
 a1260 1
 thiendia2.cc,rphang.la,phim18vip.xyz,checkgaigoi4.cc,sieudamtv.cam,sexvn1.cc##.float-ck
-d1264 4
-a1267 2
+d1264 5
+a1268 3
 truyenhentaivn.org###catfish
 truyenhentaivn.org##.wppopups-whole
+truyensextv.com,lxmanga.cc##.sticky-footer
 d1270 3
 a1272 3
 tuoi69zz.click###bar_float_r
@@ -1343,14 +1362,14 @@ tuoinung.pro###hide_float_right
 d1281 1
 a1281 1
 viet69.si##.footer-fixed-br-container
-diff name:abpvn_noelemhide lines:145 checksum:78243f5ac8
+diff name:abpvn_noelemhide lines:147 checksum:eb0c80d2a9
 d2 1
 a2 1
-! Version: 20240402120427589
+! Version: 20240402134625997
 d4 2
 a5 2
-! Last modified: 02 Apr 2024 12:04:27 UTC+7
-! Diff-Path: patches/20240402120427589.patch#abpvn_noelemhide
+! Last modified: 02 Apr 2024 13:46:26 UTC+7
+! Diff-Path: patches/20240402134625997.patch#abpvn_noelemhide
 d48 3
 a50 3
 /i.imgur.com/*.gif$domain=keonhacai5.biz|phimlongtieng.net|phimdinhcao.com|phimdinhcao.net|healthweather.us|ogres-crypt.com|90phutr.tv|veboz.net|cc-briance-combade.com|plvb.xyz|listnhacai88.com|xoilaczzh.tv|xemtivingon.org|phimlongtieng.com|mitomu.tv|rakhoiz.net|rk.plcdn.xyz|phimmoi.im
@@ -1463,7 +1482,9 @@ a430 1
 d433 2
 a434 1
 ||i.imgur.com^$image,domain=phym18.vip|phim18hd.top|phim18vn.biz|phim18hd.me|xamvn.bid|fullcliphot.com
-d444 1
+d444 2
+a445 1
+||lxmanga.cc/storage/images/banners
 d448 1
 d451 3
 a453 3
@@ -1489,14 +1510,14 @@ d473 1
 d475 1
 a475 1
 ||xinh3x.com^*.gif$image,domain=sexdep9x.pro
-diff name:abpvn_ublock lines:470 checksum:a3cdfde5bd
+diff name:abpvn_ublock lines:477 checksum:40bbc76115
 d2 1
 a2 1
-! Version: 20240402120427589
+! Version: 20240402134625997
 d4 2
 a5 2
-! Last modified: 02 Apr 2024 12:04:27 UTC+7
-! Diff-Path: patches/20240402120427589.patch#abpvn_ublock
+! Last modified: 02 Apr 2024 13:46:26 UTC+7
+! Diff-Path: patches/20240402134625997.patch#abpvn_ublock
 d48 3
 a50 3
 /i.imgur.com/*.gif$domain=keonhacai5.biz|phimlongtieng.net|phimdinhcao.com|phimdinhcao.net|healthweather.us|ogres-crypt.com|90phutr.tv|veboz.net|cc-briance-combade.com|plvb.xyz|listnhacai88.com|xoilaczzh.tv|xemtivingon.org|phimlongtieng.com|mitomu.tv|rakhoiz.net|rk.plcdn.xyz|phimmoi.im
@@ -1850,7 +1871,9 @@ a1138 1
 d1141 2
 a1142 1
 ||i.imgur.com^$image,domain=phym18.vip|phim18hd.top|phim18vn.biz|phim18hd.me|xamvn.bid|fullcliphot.com
-d1151 1
+d1151 2
+a1152 1
+||lxmanga.cc/storage/images/banners
 d1155 1
 d1158 3
 a1160 3
@@ -1889,6 +1912,9 @@ cliphotvn.xyz,mobiblog.one,cliphot69.blog,phevkl.live,gvnvh18.com,topviet69.com,
 d1201 1
 a1201 1
 hentaivn.bid##.qx_135
+d1211 1
+a1211 1
+lxmanga.cc##.ads-wrapper
 d1214 1
 a1214 1
 nhentaivn.pro###popup_fi
@@ -1913,10 +1939,11 @@ sieudamtv.cam##.quang-cao
 d1253 1
 a1253 1
 thiendia2.cc,rphang.la,phim18vip.xyz,checkgaigoi4.cc,sieudamtv.cam,sexvn1.cc##.float-ck
-d1257 4
-a1260 2
+d1257 5
+a1261 3
 truyenhentaivn.org###catfish
 truyenhentaivn.org##.wppopups-whole
+truyensextv.com,lxmanga.cc##.sticky-footer
 d1263 3
 a1265 3
 tuoi69zz.click###bar_float_r
@@ -1935,8 +1962,9 @@ d1321 1
 a1321 2
 gvnvh18.com,sexdiaryx.biz##+js(set, D4zz, noopFunc)
 healthweather.us##+js(aopr, adsRedirectPopups)
-d1333 1
-a1333 1
+d1332 2
+a1333 2
+lxmanga.cc##+js(acs, $, PopUnder)
 nettruyenab.com##+js(acs, Promise, break;case)
 d1349 2
 a1350 2
