@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 20240402230447581
+! Version: 20240403091055964
 ! Title: ABPVN List
-! Last modified: 02 Apr 2024 23:04:47 UTC+7
-! Diff-Path: patches/20240402230447581.patch#abpvn_ublock
+! Last modified: 03 Apr 2024 09:10:55 UTC+7
+! Diff-Path: patches/20240403091055964.patch#abpvn_ublock
 ! Diff-Expires: 60 minutes
 ! Expires: 1 days (update frequency)
 !
@@ -109,6 +109,7 @@ phimmoisz.com/wp-content/themes/movies/js/adpm4u.js$script,~third-party
 ||doctruyenchufull.net/ads/$image
 ||dongphim3s.info/ads/ads_xx.js$script
 ||ff.imacdn.com^$image,domain=xem1080.com
+||ffmovie.online/uploads/12-cung-hoang-dao.jpg$image
 ||file1.dangcongsan.vn^*.gif$image,domain=dangcongsan.vn
 ||forum.idichvuseo.com/images/quang-cao
 ||fshare.vn/lib/jwplayer/jwplayer.js
@@ -143,7 +144,7 @@ phimmoisz.com/wp-content/themes/movies/js/adpm4u.js$script,~third-party
 ||iamcdn.net/players/playhydraxs.min.js
 ||image-eu-na-tsetsafndc.90phut.click^*.gif$domain=xem.bdhub.xyz
 ||images2-focus-opensocial.googleusercontent.com^*.gif$image,domain=phimdinhcao.net|phimdinhcao.com|phimlongtieng.net
-||img.upanh.tv^*.gif$image,domain=phimtuoitho.tv|xemphim.me
+||img.upanh.tv^*.gif$image,domain=ffmovie.online|xemphim.me
 ||imgyn.imageshh.com^*.gif$image,domain=mphim14.com
 ||in.frontend.clusters.tripi.vn^$script,domain=mytour.vn
 ||kenhgamez.biz^*.gif
@@ -162,7 +163,7 @@ phimmoisz.com/wp-content/themes/movies/js/adpm4u.js$script,~third-party
 ||media.nghean24h.vn$image,domain=nghean24h.vn
 ||media.yeah1.com/files/qc/$image,domain=yeah1.com
 ||mocfun.net/uploads/banners/
-||motchilliww.net/banner$image
+||motchilltvc.net/banner$image
 ||motchilly.co/i9.gif$image
 ||mv.dailyphimz.com/ads/popunder.js$script
 ||mv.phimbathu.one/ads/popunder.js$script,~third-party
@@ -191,7 +192,6 @@ phimmoisz.com/wp-content/themes/movies/js/adpm4u.js$script,~third-party
 ||phimnhua.net^*.gif
 ||phimplay24h.com^*.gif
 ||phimss.com/assets/ads/$image
-||phimtuoitho.tv/uploads/12-cung-hoang-dao.jpg$image
 ||phimvuihd.org^*.gif$image
 ||phimyeuthichb.com/ad-data/$image
 ||photo2.tinhte.vn/data/attachment-files/*banner
@@ -515,6 +515,7 @@ ebookbkmt.com##.top-right
 ephoto360.com##.line-ads
 ephoto360.com,thiepmung.com,ophimhd.vip,xemphimchill.xyz,phimmoi.im,247phim.cc,hotphim.vip##.ad-container
 eva.vn##.banrpstn
+ffmovie.online##[href^="https://www.toprevenuegate.com/q7rbxxz1v"]
 forum.gocmod.com##.ad-manager-forum-list-bottom
 forum.gocmod.com##.ad-manager-forum-list-top
 forum.gocmod.com##.ad-manager-header
@@ -725,10 +726,9 @@ phimno4.xyz###ads_location
 phimno4.xyz##.block.ad
 phimplay24h.com###itro_popup
 phimss.com##.ads-pc
-phimtuoitho.tv##[href^="https://www.toprevenuegate.com/q7rbxxz1v"]
 phimvietsub.pro,api.anime3s.com,subnhanh.xyz##.t_logo
 phimvietsub.pro,subnhanh.xyz##.sticky_bottom
-phimvuihd.org,hh3dhay.lol,phim18abc.net,xemphim.me,phimtuoitho.tv,xem14.com,hh3dhay.pro,vutruphim.tv##.float-ck-center-lt
+phimvuihd.org,hh3dhay.lol,phim18abc.net,xemphim.me,ffmovie.online,xem14.com,hh3dhay.pro,vutruphim.tv##.float-ck-center-lt
 phimyeuthichb.com##.sticky-footer
 phunumoi.net.vn,nhipcaudautu.vn##div[id^="ads_"]
 phuongtrinhhoahoc.com##.shadow-card + .mt-2
@@ -975,7 +975,7 @@ xem.bdhub.xyz##.jw-media>div[style^="max-height:5%;"]
 xem.tructiepnba.com##.truct-catfish
 xem.tructiepnba.com##.truct-widget
 xem14.com###ouibounce-modal
-xemphimchill.xyz,hhninja1.tv,phimbocn.com,phimhoathinh3d.com,hoathinhtq.tv,hhtq3.vip,hhtqvietsub.top,motchilliww.net,motchilly.co,hhtrungquoc3.com,hhtqnet.me,animeweb.vip,hh3d1.xyz,hoathinh4k.net,motchilltvzz.net,hoathinh3d.tv,hhtm.tv,dragonphim.tv,hhchina.me###catfish
+xemphimchill.xyz,hhninja1.tv,phimbocn.com,phimhoathinh3d.com,hoathinhtq.tv,hhtq3.vip,hhtqvietsub.top,motchilltvc.net,motchilly.co,hhtrungquoc3.com,hhtqnet.me,animeweb.vip,hh3d1.xyz,hoathinh4k.net,motchilltvzz.net,hoathinh3d.tv,hhtm.tv,dragonphim.tv,hhchina.me###catfish
 xemtivi4k.com###adstop2
 xemtivi4k.com##.ads-item
 xemtivi4k.com##.col-lg-4.hidden-xs.d-flex.flex-column.address-wrap
