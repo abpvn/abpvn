@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 20240421120430166
+! Version: 20240422091311490
 ! Title: ABPVN List
-! Last modified: 21 Apr 2024 12:04:30 UTC+7
-! Diff-Path: patches/20240421120430166.patch#abpvn_adguard
+! Last modified: 22 Apr 2024 09:13:11 UTC+7
+! Diff-Path: patches/20240422091311490.patch#abpvn_adguard
 ! Diff-Expires: 60 minutes
 ! Expires: 1 days (update frequency)
 !
@@ -206,6 +206,8 @@
 ||sggp.org.vn/*banner
 ||sharecode.vn/assets/images/thiet-ke-web-gia-re.jpg
 ||sharecode.vn/assets/images/thiet-ke-website.jpg
+||soc88b.net^*.gif$domain=vivuphim.info
+||soc88z.net^*.gif$domain=vivuphim.info
 ||softworldvietnam.com/banners/$domain=oj.husc.edu.vn
 ||sohuutritue.net.vn/files/qc/
 ||soikeo365.net^*.gif
@@ -256,6 +258,7 @@
 ||vesotantai.com/upload/photo/$image
 ||vidian.vn/images/*.gif
 ||vietjack.com/FrontEndWeb/js/sp.js$script
+||vivuphim.info^*.gif
 ||vnesports.vn^*.gif
 ||vod02bc25882576.cloud.anycastapnic.com/8xBET_480p.mp4/index.m3u8$domain=xem13.gavang1.net
 ||vov.vn/ads/show-ads
@@ -859,7 +862,7 @@ docviewer.yandex.com##div[style="width: 100%;"]
 docviewer.yandex.com##ya-recommendation-widget
 doisongphapluat.com##div.box-aside
 dongphim3s.info##a[rel="nofollow sponsored"]
-dongphim3s.info,dongchill.co,bichill.biz,phim18f.net,subnhanh.cx,phimmoi.cx###footer_fixed_ads
+dongphim3s.info,dongchill.co,bichill.biz,phim18f.net,subnhanh.cx,phimmoi.cx,vivuphim.info###footer_fixed_ads
 download.cnet.com##.download-fd-leaderboard-ad-top
 drivers.softpedia.com###_wlts
 drivers.softpedia.com###_wlts_lead
@@ -1088,7 +1091,7 @@ phimdacap.tv##[data-id="ap3poapup"]
 phimdinhcao.net,phimdinhcao.com,phimgichill.net,phimlongtieng.net##.i9bet
 phimdinhcao.net,phimlongtieng.net,phimdinhcao.com##.BanerTop100
 phimdinhcao.net,phimlongtieng.net,phimdinhcao.com##.adv-300-right
-phimdinhcao.net,phimlongtieng.net,phimdinhcao.com,xemphimchill.xyz##.popUpBannerBox
+phimdinhcao.net,phimlongtieng.net,phimdinhcao.com,xemphimchill.xyz,vivuphim.info##.popUpBannerBox
 phimgichill.net###mobile-catfix
 phimgichill.net,ophimhdvn3.net###pc-catfix
 phimgichill.net,ophimhdvn3.net##.lightbox-player-pc
@@ -1466,7 +1469,7 @@ znews.vn##.znews-banner
 !------ ABPVN Adult block -------
 $third-party,script,domain=sexdiaryx.club
 /player/vast.js
-/theme/custom.int.js$script,domain=top1sex.club|tuoi69.viet69.biz|javhay.click|sexvietmoi.io|clipsexvietnam.net|phimsexviet.io|phimsexvietnam.app|mb.clipsex.xxx|ww1.phimsexchill.com|gm.phimsexnhanh.tv|phimsexvip.cc|web.ditnhau.cc
+/theme/custom.int.js$script,domain=top1sex.club|tuoi69.viet69.biz|javhay.click|web.motsex.net|clipsexvietnam.net|phimsexviet.io|phimsexvietnam.app|mb.clipsex.xxx|web.phimsexnhanh.tv|gm.phimsexnhanh.tv|phimsexvip.cc|mobile.ditnhau.cc
 /wp-content/uploads/*.gif$image,domain=tuoi69z.today|tuoinung.org|teletiengviet.com|phevkl.cam
 ||ads.6789live.com^
 ||blogger.googleusercontent.com^*.gif$image,domain=gvnvh18.com
@@ -1572,7 +1575,6 @@ javtopxx.com##.cat-fish.a-play
 javtopxx.com##.overlay
 luscious.net###l-center-txt
 lxmanga.cc##.ads-wrapper
-mb.ditnhauvietnam.com,javhdvip.net##.alldiv ~ div[class]
 ngaytho.me##.body_wrapper1
 nhentaivn.online###popup_fipup-overlay
 phevkl.cam##.separator
@@ -1610,6 +1612,7 @@ sexsub.online##body>div[class]
 sexvietz.co,javhd.tech,hd.viet69.click,sexheovl.com,sexvip1z.com,sex.heovl.online,sex.vlxx.studio###f186fb23a33995d91ce3c2212189178c8
 sexvn1.cc##.code-block-4
 sexvn2024.xyz###tut4ktream_idAdLink
+sexvungtrom.io,javhdvip.net##.alldiv ~ div[class]
 sieudam.vip###pc-preload-modal
 sieudam.vip###popup
 sieudam.vip##.quang-cao
@@ -1724,7 +1727,6 @@ plvb.xyz,rk.plcdn.xyz#%#//scriptlet("abort-on-property-read", "adsPopupPlayer")
 plvb.xyz,rk.plcdn.xyz#%#//scriptlet("abort-on-property-read", "adsTvc")
 plvb.xyz,rk.plcdn.xyz#%#//scriptlet("abort-on-property-read", "keyPlayer")
 rphang.io,misskon.com#%#//scriptlet("abort-current-inline-script", "document.querySelectorAll", "popMagic")
-sexvietmoi.io,clipsexvietnam.net,phimsexviet.io,phimsexvietnam.app,mb.clipsex.xxx,ww1.phimsexchill.com,gm.phimsexnhanh.tv,phimsexvip.cc,web.ditnhau.cc,phim.sexhayvl.org#%#//scriptlet("set-constant", "video.adVast", "")
 tailieumoi.vn#%#//scriptlet("set-constant", "linkAff", "null")
 tctruyen.cc,abtruyen.net,phimss.com#%#//scriptlet("abort-current-inline-script", "$", "popup")
 thapcam4.net,blog.abit.vn##.modal-backdrop.show
@@ -1746,6 +1748,7 @@ vinaurl.net#%#//scriptlet("abort-on-property-read", "oneClick")
 vndoc.com#%#//scriptlet("set-constant", "seconds", "0")
 vungoctuan.vn#%#//scriptlet("abort-current-inline-script", "document.write", "snow")
 vungoctuan.vn#%#//scriptlet("prevent-xhr", "ads")
+web.motsex.net,clipsexvietnam.net,phimsexviet.io,phimsexvietnam.app,mb.clipsex.xxx,web.phimsexnhanh.tv,gm.phimsexnhanh.tv,phimsexvip.cc,mobile.ditnhau.cc,phim.sexhayvl.org#%#//scriptlet("set-constant", "video.adVast", "")
 www.iosviet.com#%#//scriptlet("set-constant", "timer", "0")
 www.o-study.net##.backdrop-popup
 www.o-study.net#$#body {position: static !important}
