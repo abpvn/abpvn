@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 20240422120447375
+! Version: 20240423120439504
 ! Title: ABPVN List
-! Last modified: 22 Apr 2024 12:04:47 UTC+7
-! Diff-Path: patches/20240422120447375.patch#abpvn_ublock
+! Last modified: 23 Apr 2024 12:04:39 UTC+7
+! Diff-Path: patches/20240423120439504.patch#abpvn_ublock
 ! Diff-Expires: 60 minutes
 ! Expires: 1 days (update frequency)
 !
@@ -37,7 +37,7 @@
 /ads/popup_
 /adv/*$image,domain=bongdaso66.net
 /banner-ads.
-/banner/*.gif
+/banner/*.gif$domain=~marsvenus.vn
 /beardeddragon$script
 /blueserving.
 /core/*$script,domain=gamek.vn|genk.vn|kenh14.vn|cafef.vn
@@ -142,7 +142,7 @@
 ||iamcdn.net/players/playhydraxs.min.js
 ||image-eu-na-tsetsafndc.90phut.click/90link/Cp9OssK.gif$image,domain=tructiep3.90phut12.live
 ||image-eu-na-tsetsafndc.90phut.click^*.gif$domain=xem.bdhub.xyz
-||img.upanh.tv^*.gif$image,domain=ffmovie.online|xemphim.me|phimtuoitho.tv
+||img.upanh.tv^*.gif$image,domain=ffmovie.online|xemphim.me|ffmovie.online
 ||imgyn.imageshh.com^*.gif$image,domain=mphim14.org
 ||kenhgamez.top^*.gif
 ||kenhtin.net/upload/images/banner-
@@ -606,8 +606,8 @@ loigiaihay.com##.bottom_cnt_ad
 loigiaihay.com##.tp_ads_incontent
 loigiaihay.com##div.ad_separator
 lucloi.vn##.ads_shortcode
-luotphimtv1.com,luotphimtv1.net,luotphim2.net,luotphim1.net,luotphimtv.vip,cdnwp.icu,webphim2.com###myModal
-luotphimtv1.com,luotphimtv1.net,luotphim2.net,luotphim1.net,luotphimtv.vip,cdnwp.icu,webphim2.com##div[id^="adsphim-"]
+luotphim1.net,cdnwp.icu,webphim2.com###myModal
+luotphim1.net,cdnwp.icu,webphim2.com##div[id^="adsphim-"]
 m.afamily.vn###adm-slot-7234
 m.baomoi.com##.bm_B>div
 m.baomoi.com##div.bm_Ii
@@ -689,7 +689,7 @@ ophimhd.vip##.uniad-player + div[style]
 phapluatplus.vn##div[style="text-align:center;margin-top:0px;margin-bottom:0px;"]
 phim.vkoolkkk.net##.box-rating
 phim.vkoolkkk.net,subnhanhvl.net,subnhanh.today,subnhanh.cx,tructiepdabong5.co,protruyen4.xyz,biphim.online,dongphim3s.info###overlay
-phim.vkoolkkk.net,vuonhoalan.net,gunnylau360.net,mythethao.net,phimplay24h.com,kenhgamez.top,phimno4.xyz,gunnymienphi.net,dailyphimz.com,phim33.tv,247phim.cc,movies.vkoolz.com,vungtv.us,ww3.vuaphimmoi4.net,phimtuoitho.tv##.float-ck
+phim.vkoolkkk.net,vuonhoalan.net,gunnylau360.net,mythethao.net,phimplay24h.com,kenhgamez.top,phimno4.xyz,gunnymienphi.net,dailyphimz.com,phim33.tv,247phim.cc,movies.vkoolz.com,vungtv.us,ww3.vuaphimmoi4.net,ffmovie.online##.float-ck
 phim1080.in##.ff-banner
 phim18f.net###banner-top-mobile
 phim18f.net###pc-top-banner
@@ -1321,7 +1321,7 @@ linkneverdie.net##+js(acs, document.createElement, optad)
 linkneverdie.net##+js(aopr, pushOnPageGala)
 linkneverdie.net##+js(nostif, DisplayAHTML, 5000)
 linkneverdie.net##+js(nostif, callback, 4003)
-luotphimtv1.com,luotphimtv1.net,luotphim2.net,luotphim1.net,luotphimtv.vip,webphim2.com,cdnwp.icu##+js(json-prune, 0.time_mobile 0.time 0.link_video 0.link_video_mobile 0.link 0.link_mobile 1.time_mobile 1.time 1.link_video 1.link_video_mobile 1.link 1.link_mobile)
+luotphim1.net,webphim2.com,cdnwp.icu##+js(json-prune, 0.time_mobile 0.time 0.link_video 0.link_video_mobile 0.link 0.link_mobile 1.time_mobile 1.time 1.link_video 1.link_video_mobile 1.link 1.link_mobile)
 lxmanga.cc##+js(acs, $, PopUnder)
 nettruyenab.com##+js(acs, Promise, break;case)
 nettruyenus.net##+js(aopr, sp)
