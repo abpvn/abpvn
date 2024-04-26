@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 20240426180424599
+! Version: 20240426201351611
 ! Title: ABPVN List
-! Last modified: 26 Apr 2024 18:04:24 UTC+7
-! Diff-Path: patches/20240426180424599.patch#abpvn_ublock
+! Last modified: 26 Apr 2024 20:13:51 UTC+7
+! Diff-Path: patches/20240426201351611.patch#abpvn_ublock
 ! Diff-Expires: 60 minutes
 ! Expires: 1 days (update frequency)
 !
@@ -137,6 +137,7 @@
 ||i.imgur.com/Q0a2mv2.png$domain=vozer.net
 ||i.imgur.com^$image,domain=nhacdj.vn|diendanit.net|banbuondalat.com|hoathinhtq.tv|xem.tructiepnba.com|vungtv.us|dragonphim.tv|hh3d1.xyz
 ||i.imgur.com^*.gif$image,domain=ghienphim.today|mv.dailyphimz.com|mv.phimmoiaz.cc|phimgichill.net|ophimhdvn3.net|mythethao.net|xemtivi4k.com|vtipster.net|huphimtv.com|tructiep12.xoilac16.org|film365.in|tructiep3.90phut12.live|v.xemphimviet.xyz|thapcam4.net|phimmoiiii.net|vebo4.net|vebo16.net|banhkhuc3.net|xemtv.tvhayhd.tv|hoathinh4k.net|xem.bdhub.xyz|vutruphim.tv|phimhay123.vn
+||i.postimg.cc^$image,domain=www.phimmoichill.lol
 ||i.servimg.com/u/f22/$domain=4rkinggame.com
 ||iamcdn.net/players/playera.dmins.js
 ||iamcdn.net/players/playhydraxs.min.js
@@ -150,7 +151,7 @@
 ||khophim-poster.cuoiia.top^*.gif$image,domain=phim18f.net
 ||kienthuc.net.vn/*.ads
 ||laodong.vn/*QuangcaoOnline
-||lh3.googleusercontent.com/*=s0$image,domain=animevietsub.day|hoathinh4k.net|hayghevietsub.info
+||lh3.googleusercontent.com/*=s0$image,domain=animevietsub.fun|hoathinh4k.net|hayghevietsub.info
 ||lh3.googleusercontent.com^$image,domain=subnhanh.xyz|hhchina.me
 ||lichngaytot.com/navive-advs$subdocument,domain=doctailieu.com
 ||listnhacai88.com^*.gif$image
@@ -407,10 +408,10 @@ animet2.net##.gnartyx-offads
 animet2.net,animetvn4.com##.gnarty-offads
 animet2.net,animetvn4.com,subnhanh.xyz###fbox-background
 animetvn4.com###mobile-ads
-animevietsub.day###invideo_wrapper
-animevietsub.day##.Ads
-animevietsub.day##.mobile-catfixx
-animevietsub.day,thongtintruyen.com##.pc-catfixx
+animevietsub.fun###invideo_wrapper
+animevietsub.fun##.Ads
+animevietsub.fun##.mobile-catfixx
+animevietsub.fun,thongtintruyen.com##.pc-catfixx
 anivn.club###quang-cao
 api.anime3s.com,tructiep12.xoilac16.org,phim18f.net,freeplayervideo.com,abysscdn.com,player-cdn.com,bitvtom1000.xyz,geoip.redirect-ads.com,watch.rkplayer.xyz,xem.bdhub.xyz##.jw-logo
 asianbookie.com##a[href^="/cgi-bin/to.cgi"]
@@ -436,7 +437,7 @@ blogtruyenvn.org##.qc-inner
 blogtruyenvn.org##div.qc_TC_Chap_Middle
 blogtruyenvn.org##div[id^="qc_M_"]
 bluphim.net##.container>div[style^="height: 228px"]
-boctem.com,anivn.club,movies.vkoolz.com,hoathinhtq.tv,xemphimchill.xyz,247phim.cc,vungtv.us,ww3.vuaphimmoi4.net,tvhayss.com,dragonphim.tv,hh3d1.xyz###popup-giua-man-hinh
+boctem.com,anivn.club,movies.vkoolz.com,hoathinhtq.tv,xemphimchill.xyz,247phim.cc,vungtv.us,ww3.vuaphimmoi4.net,tvhayss.com,dragonphim.tv,hh3d1.xyz,www.phimmoichill.lol###popup-giua-man-hinh
 bongda.com.vn##.top_page
 bongda12h365.com,thethao12h.me##.list-dat-cuoc
 bongda365.news,keoso.me,soikeoz.vip##.banners
@@ -506,7 +507,7 @@ download.vn##div[id^="adsbg"]
 dubaotiente.com##.ad-pin-right-bottom
 ebookbkmt.com##.top-right
 ephoto360.com##.line-ads
-ephoto360.com,thiepmung.com,ophimhd.vip,xemphimchill.xyz,phimmoi.cx,247phim.cc,hotphim.vip##.ad-container
+ephoto360.com,thiepmung.com,ophimhd.vip,xemphimchill.xyz,phimmoi.cx,247phim.cc,hotphim.vip,www.phimmoichill.lol##.ad-container
 eva.vn##.banrpstn
 ffmovie.online##[href^="https://www.toprevenuegate.com/q7rbxxz1v"]
 forum.gocmod.com##.ad-manager-forum-list-bottom
@@ -1288,7 +1289,7 @@ xem.javhay.in##.v4j-header>center
 youtubeporn.pro##div[style^="position:fixed;inset:0px;z-index:100000;"]
 youtubeporn.pro,hls.playerfb.xyz###video_player ~ div[id]
 ! ---------Rule only for uBlock Origin------
-animevietsub.day##+js(acs, document.documentElement, break;case $.)
+animevietsub.fun##+js(acs, document.documentElement, break;case $.)
 aoe.vn##+js(aopr, parseInt)
 audiotruyenfull.com##+js(aopr, adpiaListUrl)
 baomoi.com##+js(aopw, AdtimaRender)
