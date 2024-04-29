@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 20240429080507157
+! Version: 20240429120434984
 ! Title: ABPVN List
-! Last modified: 29 Apr 2024 08:05:07 UTC+7
-! Diff-Path: patches/20240429080507157.patch#abpvn_adguard
+! Last modified: 29 Apr 2024 12:04:35 UTC+7
+! Diff-Path: patches/20240429120434984.patch#abpvn_adguard
 ! Diff-Expires: 60 minutes
 ! Expires: 1 days (update frequency)
 !
@@ -64,7 +64,7 @@
 /taichinhdoanhnghiep.net.vn/files/qc
 /tinhocdongthap.com\/wp-content\/plugins\/wp-[\w-]+\/[\w-]+\.js/$script
 /v/*/vast.js$script,domain=~cdn2.kenhvn2.com
-/vast.js$script,domain=phimmoi.tuphim.net|boctem.com|cdn.tinny2.tech|cdn.lookapi.website|phimvietsub.pro|phimdacap.tv|hoathinhtq.tv|tvhayss.com|phimmoisz.com
+/vast.js$script,domain=phimmoi.tuphim.net|boctem.com|cdn.tinny2.tech|cdn.lookapi.website|phimvietsub.pro|phimdacap.tv|hoathinhtq.tv|tvhayss.com
 /videojs.ads.$domain=~danet.vn
 /videojs.ima.js$domain=~jut.su|~earthcam.com
 /wp-auto-affiliate-links/*
@@ -133,7 +133,6 @@
 ||huphimtv.com/assets/themes/js/wonderfarm68.js
 ||i-imgur-com.cdn.ampproject.org^*.gif$image,domain=bongdainfoz.tv
 ||i.ex-cdn.com/nhadautu.vn/files/qc/$domain=nhadautu.vn
-||i.ibb.co^*.gif$image,domain=phimmoisz.com
 ||i.imgur.com/81uid6d.jpg$domain=vozer.net
 ||i.imgur.com/FbUH5AQ.png$domain=vozer.net
 ||i.imgur.com/Q0a2mv2.png$domain=vozer.net
@@ -225,11 +224,7 @@
 ||suckhoelamdep.vn^*.gif$image
 ||tailieuvnu.com/wp-content/uploads/2022/12/28/shopee-2*.png$image
 ||taoanhdep.com$csp=script-src 'self' 'unsafe-inline' data: https:
-||tctruyen.cc/public/image/$domain=abtruyen.net
-||tctruyen.cc/public/js/timemer.js
 ||tepbac.com/upload/advertiment/$image
-||thichvanhoc.com.vn/wp-content/cache/min/1/scripts/a/8c6744c9d42ec2cb9e8885b54ff744d0.js$script,~third-party
-||thichvanhoc.com.vn/wp-content/cache/min/1/scripts/a/c0f168ce8900fa56e57789e2a2f2c9d0.js$script,~third-party
 ||thoigian.com.vn/mFiles/N/06/$image
 ||thoigian.com.vn^*.gif
 ||thongtintruyen.com^*.gif$image
@@ -752,6 +747,7 @@
 3ketqua.net,nghean24h.vn,xem.tructiepnba.com,phimmoi4s.com,biphim.online,vidian.vn,truyenchu.com.vn,abtruyen.net##a[rel="nofollow"]
 4rkinggame.com##.float-ck1
 4rkinggame.com##.module_ahlaejaba
+abtruyen.net##.no-auto-popup
 anime47.biz###qc_clgt
 animehay.video###banner-shopee
 animehay.video##div[style^="position: fixed; bottom: 0px;"]
@@ -1108,9 +1104,8 @@ phimmoi.tuphim.net##.adsContainer
 phimmoi.tuphim.net##.header__auth>.details__devices-list
 phimmoi4s.com##.box_option
 phimmoichillr.net###pm_quangcao
-phimmoinay.vip,phimmoisz.com##.sda-catfish
+phimmoinay.vip##.sda-catfish
 phimmoinay.vip,phimtho.net,protruyen4.xyz,chillhaytv.click,mphim14.org###popup_banner_beta
-phimmoisz.com###adspm4u
 phimnhua.net###catfish-banner
 phimnhua.net##.center-screen.backdrop
 phimnhua.net##.ibetlogo
@@ -1167,7 +1162,6 @@ tapchibitcoin.io##.header-fix-ads
 tapchibitcoin.io##.lepopup-popup-container
 tapchibitcoin.io##.lepopup-popup-overlay
 tapchikientruc.com.vn###topbn
-tctruyen.cc,abtruyen.net##.no-auto-popup
 techrum.vn##.block:has(.block-container>.block-body>a[href])
 techrum.vn##.block:has(.block-container>.block-body>ins)
 tenovi.net###ad-masthead
@@ -1364,7 +1358,6 @@ wi.cr###overly
 windowscentral.com###orderarea
 windowscentral.com##.netshelter-ad
 ws-client.gavang.tech##.bg-black.w-full.items-center>.relative.px-2.flex
-www.a3manga.store##.single-video
 www.bongdalu666.com##div[id^="AdLayer"]
 www.bongdalu666.com##div[id^="ad_"]
 www.clbgamesvn.com##.bannerBox
@@ -1460,7 +1453,6 @@ znews.vn##.znews-banner
 @@||tpc.googlesyndication.com/sodar/sodar2.js$domain=cungthi.online
 @@||viettelstore.vn/images/Advertises/$image
 @@||voz.vn/u/adx.$xmlhttprequest
-@@||www.clickadu.com/startup/flat-ui/js/flatui-radio.js$domain=linkneverdie.net
 @@||xahoingaynay.com.vn/upload/20989/20200817/Asset_2_8x_9596af5d4e.png$~third-party
 !--------Element Hiding Exception--------------
 @@||javadecompilers.com$generichide
@@ -1483,12 +1475,8 @@ $third-party,script,domain=sexdiaryx.org
 ||cloufdlare.com/ads/vn1.html$subdocument,domain=vl.phe.to
 ||demo123.info/*ads/$image,domain=phim.sexxsub.pro
 ||discordapp.$image,domain=phym18.lol|phim18vip.me|avvietsub.xyz|phimsexsub.xyz
-||greenupload.com^*.gif$image,domain=thiendia2.cc
-||greenupload.com^*ad-$image,domain=thiendia2.cc
-||greenupload.com^*banner$image
 ||haysex3xs.net^*.gif$image
 ||hentaivn.icu/qx/$subdocument
-||i.ibb.co^$image,domain=thiendia2.cc
 ||i.ibb.co^*.gif$image,domain=javnong.cc
 ||i.imgur.com^$image,domain=phym18.lol|phim18hd.top|phim18vn.biz|phim18hd.me|xamvn.tube|fullcliphot.com
 ||i9zk5f8szj4x8saj5wcks8acja5sk1dz8stjs2g8isdcn6ejxn8zsr5xjs5h.com^
@@ -1623,11 +1611,6 @@ sieukhungvn.org,tuoi69z.link##.adsCenterHome
 sieukhungvn.org,tuoi69z.link##.banner-detail
 sieukhungvn.org,tuoi69z.link##.banner-topR
 teletiengviet.com###bnads3_save
-thiendia2.cc###divAdLeft
-thiendia2.cc##.firstmessfloadright.samItem
-thiendia2.cc##.my_nonresponsive_ads
-thiendia2.cc##.samBannerUnit
-thiendia2.cc##.samTextUnit
 truyen18.pro##.a-header
 truyen18.pro##.apu
 truyen18.pro##.header
@@ -1677,6 +1660,7 @@ xnxx.com###content-ad-top-zone
 youtubeporn.pro##div[style^="position:fixed;inset:0px;z-index:100000;"]
 youtubeporn.pro,hls.playerfb.xyz###video_player ~ div[id]
 ! ---------Rule only for AdGuard------
+abtruyen.net,phimss.com#%#//scriptlet("abort-current-inline-script", "$", "popup")
 animevietsub.fun#%#//scriptlet("abort-current-inline-script", "document.documentElement", "break;case $.")
 aoe.vn#%#//scriptlet("abort-on-property-read", "parseInt")
 audiotruyenfull.com#%#//scriptlet("abort-on-property-read", "adpiaListUrl")
@@ -1726,7 +1710,6 @@ plvb.xyz,rk.plcdn.xyz#%#//scriptlet("abort-on-property-read", "adsTvc")
 plvb.xyz,rk.plcdn.xyz#%#//scriptlet("abort-on-property-read", "keyPlayer")
 rphang.moe,misskon.com#%#//scriptlet("abort-current-inline-script", "document.querySelectorAll", "popMagic")
 tailieumoi.vn#%#//scriptlet("set-constant", "linkAff", "null")
-tctruyen.cc,abtruyen.net,phimss.com#%#//scriptlet("abort-current-inline-script", "$", "popup")
 tinsoikeo.ink#%#//scriptlet("abort-current-inline-script", "$", "window.open")
 tinsoikeo.ink#%#//scriptlet("abort-on-property-read", "sessionStorage")
 truyen2u.net#%#//scriptlet("abort-current-inline-script", "eval")
