@@ -15,9 +15,6 @@ on:
     - cron: 0 2,5,8,11,16 * * * # Run at 9, 12, 15, 18, 23 hour in UTC + 7
   push:
     branches: [master, single]
-  pull_request:
-    branches: [ master ]
-    types: [ closed ]
 
 env:
   NEED_BUILD_MASTER: ${{inputs.FORCE_BUILD || false}}
@@ -26,7 +23,7 @@ env:
 
 jobs:
   build_filter_master:
-    if: ${{ github.repository_owner == 'abpvn' && (contains(fromJSON('["schedule", "workflow_dispatch"]'), github.event_name) || contains(github.event.head_commit.message, '[build]') || github.event.pull_request.merged) }}
+    if: ${{ github.repository_owner == 'abpvn' && (contains(fromJSON('["schedule", "workflow_dispatch"]'), github.event_name) || contains(github.event.head_commit.message, '[build]')) }}
     runs-on: ubuntu-latest
     outputs:
       NEED_BUILD_MASTER: ${{steps.check_build.outputs.NEED_BUILD_MASTER}}
@@ -83,7 +80,7 @@ jobs:
             fi
           fi
   build_filter_single:
-    if: ${{ github.repository_owner == 'abpvn' && (contains(fromJSON('["schedule", "workflow_dispatch"]'), github.event_name) || contains(github.event.head_commit.message, '[build]') || github.event.pull_request.merged) }}
+    if: ${{ github.repository_owner == 'abpvn' && (contains(fromJSON('["schedule", "workflow_dispatch"]'), github.event_name) || contains(github.event.head_commit.message, '[build]')) }}
     runs-on: ubuntu-latest
     outputs:
       NEED_BUILD_SINGLE: ${{steps.check_build.outputs.NEED_BUILD_SINGLE}}
