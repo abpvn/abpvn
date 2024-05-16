@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 20240516195741526
+! Version: 20240516204127384
 ! Title: ABPVN List
-! Last modified: 16 May 2024 19:57:41 UTC+7
-! Diff-Path: patches/20240516195741526.patch#abpvn_ublock
+! Last modified: 16 May 2024 20:41:27 UTC+7
+! Diff-Path: patches/20240516204127384.patch#abpvn_ublock
 ! Diff-Expires: 60 minutes
 ! Expires: 1 days (update frequency)
 !
@@ -1050,7 +1050,6 @@ znews.vn##.znews-banner
 @@||anime47.pro/ads/v/8.26.9/translations
 @@||apicdn.sctvonline.vn/tenants/sctv/$xmlhttprequest,domain=sctvonline.vn
 @@||cdnjs.cloudflare.com/ajax/libs/videojs-contrib-ads/6.0.0/videojs-contrib-ads.js$script,domain=sctvonline.vn
-@@||cdnwebonplay.gviet.vn/public/js/player/ads/ima3.js$script,domain=vtvcab.vn
 @@||contextual.media.net/dmedianet.js$domain=azrom.net
 @@||googleads.g.doubleclick.net/pagead/$domain=cungthi.online|romgoc.net
 @@||googletagservices.com/tag/js/gpt.js$domain=game24h.vn
@@ -1373,3 +1372,4 @@ xoivo2.online,tructiepdabong5.co,vaoroi365.com##+js(set, adsPlayer, '')
 xoivo2.online,tructiepdabong5.co,vaoroi365.com##+js(set, adsTvcs, '')
 yts.do,yts.mx,yts.rs##+js(aopr, atob)
 znews.vn##+js(aopr, adtimaConfig)
+||on-web-cdn.gviet.vn/public/js/player/ads/ima3.js$script,domain=www.vtvcab.vn,redirect=google-ima.js
