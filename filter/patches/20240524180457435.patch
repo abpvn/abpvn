@@ -1,11 +1,11 @@
-diff name:abpvn lines:94 checksum:3f55d8d2ba
+diff name:abpvn lines:102 checksum:0c2b44c8cf
 d2 1
 a2 1
-! Version: 20240528120450193
+! Version: 20240528180430140
 d4 2
 a5 2
-! Last modified: 28 May 2024 12:04:50 UTC+7
-! Diff-Path: patches/20240528120450193.patch#abpvn
+! Last modified: 28 May 2024 18:04:30 UTC+7
+! Diff-Path: patches/20240528180430140.patch#abpvn
 d67 1
 a67 1
 /vast.js$script,domain=phimmoi.tuphim.net|boctem.com|cdn.tinny2.tech|cdn.lookapi.website|phimvietsub.pro|phimdacap.tv|hoathinhtq.com|tvhayss.com
@@ -30,6 +30,9 @@ a203 1
 d208 1
 a208 1
 ||shope.ee^$popup,domain=chillphimmoizzz.org|blogtruyenmoi.com|cunghocvui.com|phimmoichill.vip|truyensextv.com
+d234 1
+a234 1
+||tinsoikeo.cloud^*.gif$image
 d748 1
 a748 1
 anime47.blog###qc_clgt
@@ -62,9 +65,10 @@ a1475 2
 d1483 1
 a1483 1
 ||cliphotvn9.com^*.gif$image
-d1486 1
-a1486 1
+d1486 2
+a1487 2
 ||discordapp.$image,domain=phym18.lol|phim18vip.vip|avvietsub.online|phimsexsub.xyz
+||hentaivn.zone/qx/$subdocument
 d1498 1
 a1498 1
 ||lxmanga.icu/storage/images/banners
@@ -79,6 +83,10 @@ avvietsub.online##body>.container>div
 d1544 1
 a1544 1
 cliphotvn9.com,mobiblogx.com,cliphot69.blog,phevkl.in,gvnvh18.com,topviet69.com,sayhentai.co,viet69.meme##.float-ck-center-lt
+d1555 2
+a1556 2
+hentaivn.zone##.a_d_s_115
+hentaivn.zone##.qx_135
 d1574 1
 a1574 1
 lxmanga.icu##.ads-wrapper
@@ -93,14 +101,14 @@ d1630 1
 a1630 1
 truyensextv.com,lxmanga.icu##.sticky-footer
 d1634 1
-diff name:abpvn_adguard lines:100 checksum:131e1a164c
+diff name:abpvn_adguard lines:112 checksum:cbc532116d
 d2 1
 a2 1
-! Version: 20240528120450193
+! Version: 20240528180430140
 d4 2
 a5 2
-! Last modified: 28 May 2024 12:04:50 UTC+7
-! Diff-Path: patches/20240528120450193.patch#abpvn_adguard
+! Last modified: 28 May 2024 18:04:30 UTC+7
+! Diff-Path: patches/20240528180430140.patch#abpvn_adguard
 d67 1
 a67 1
 /vast.js$script,domain=phimmoi.tuphim.net|boctem.com|cdn.tinny2.tech|cdn.lookapi.website|phimvietsub.pro|phimdacap.tv|hoathinhtq.com|tvhayss.com
@@ -122,6 +130,9 @@ a175 1
 d202 1
 a202 1
 ||s2.truyentot.com^*.gif$image,domain=hhtq7.vip
+d232 1
+a232 1
+||tinsoikeo.cloud^*.gif$image
 d746 1
 a746 1
 anime47.blog###qc_clgt
@@ -154,9 +165,10 @@ a1471 2
 d1479 1
 a1479 1
 ||cliphotvn9.com^*.gif$image
-d1482 1
-a1482 1
+d1482 2
+a1483 2
 ||discordapp.$image,domain=phym18.lol|phim18vip.vip|avvietsub.online|phimsexsub.xyz
+||hentaivn.zone/qx/$subdocument
 d1494 1
 a1494 1
 ||lxmanga.icu/storage/images/banners
@@ -171,6 +183,10 @@ avvietsub.online##body>.container>div
 d1540 1
 a1540 1
 cliphotvn9.com,mobiblogx.com,cliphot69.blog,phevkl.in,gvnvh18.com,topviet69.com,sayhentai.co,viet69.meme##.float-ck-center-lt
+d1551 2
+a1552 2
+hentaivn.zone##.a_d_s_115
+hentaivn.zone##.qx_135
 d1570 1
 a1570 1
 lxmanga.icu##.ads-wrapper
@@ -188,20 +204,24 @@ d1630 1
 d1701 1
 a1701 1
 lxmanga.icu#%#//scriptlet("abort-current-inline-script", "$", "PopUnder")
+d1722 2
+a1723 2
+tinsoikeo.cloud#%#//scriptlet("abort-current-inline-script", "$", "window.open")
+tinsoikeo.cloud#%#//scriptlet("abort-on-property-read", "sessionStorage")
 d1728 1
 a1728 1
 truyensieuhay.com,phimvietsub.pro,quangcaoyenbai.com,sieudamtv.men,ephimchill.com,ophimhdvn3.net,thuvienhd.xyz,xemtv.tvhayhd.tv,www.khophim88s.com,nhentaivn.online,phimmoichill.vip,mv.dailyphimz.com,mv.phimbathu.one#%#//scriptlet("abort-on-property-read", "document.cookie")
 d1737 1
 a1737 1
 web.motsex.net,clipsexvietnam.net,phimsexviet.io,phimsexvietnam.app,mb.clipsex.xxx,gm.phimsexnhanh.tv,mobile.phimsexvip.cc,mobile.ditnhau.cc,phim.sexhayvl.org#%#//scriptlet("set-constant", "video.adVast", "")
-diff name:abpvn_content_blocker lines:94 checksum:80afb7c3f9
+diff name:abpvn_content_blocker lines:102 checksum:2873c04518
 d2 1
 a2 1
-! Version: 20240528120450193
+! Version: 20240528180430140
 d4 2
 a5 2
-! Last modified: 28 May 2024 12:04:50 UTC+7
-! Diff-Path: patches/20240528120450193.patch#abpvn_content_blocker
+! Last modified: 28 May 2024 18:04:30 UTC+7
+! Diff-Path: patches/20240528180430140.patch#abpvn_content_blocker
 d67 1
 a67 1
 /vast.js$script,domain=phimmoi.tuphim.net|boctem.com|cdn.tinny2.tech|cdn.lookapi.website|phimvietsub.pro|phimdacap.tv|hoathinhtq.com|tvhayss.com
@@ -226,6 +246,9 @@ a203 1
 d208 1
 a208 1
 ||shope.ee^$popup,domain=chillphimmoizzz.org|blogtruyenmoi.com|cunghocvui.com|phimmoichill.vip|truyensextv.com
+d234 1
+a234 1
+||tinsoikeo.cloud^*.gif$image
 d748 1
 a748 1
 anime47.blog###qc_clgt
@@ -258,9 +281,10 @@ a1475 2
 d1483 1
 a1483 1
 ||cliphotvn9.com^*.gif$image
-d1486 1
-a1486 1
+d1486 2
+a1487 2
 ||discordapp.$image,domain=phym18.lol|phim18vip.vip|avvietsub.online|phimsexsub.xyz
+||hentaivn.zone/qx/$subdocument
 d1498 1
 a1498 1
 ||lxmanga.icu/storage/images/banners
@@ -275,6 +299,10 @@ avvietsub.online##body>.container>div
 d1544 1
 a1544 1
 cliphotvn9.com,mobiblogx.com,cliphot69.blog,phevkl.in,gvnvh18.com,topviet69.com,sayhentai.co,viet69.meme##.float-ck-center-lt
+d1555 2
+a1556 2
+hentaivn.zone##.a_d_s_115
+hentaivn.zone##.qx_135
 d1574 1
 a1574 1
 lxmanga.icu##.ads-wrapper
@@ -289,14 +317,14 @@ d1630 1
 a1630 1
 truyensextv.com,lxmanga.icu##.sticky-footer
 d1634 1
-diff name:abpvn_noelemhide lines:47 checksum:0444f95a8d
+diff name:abpvn_noelemhide lines:51 checksum:765a11dd9a
 d2 1
 a2 1
-! Version: 20240528120450193
+! Version: 20240528180430140
 d4 2
 a5 2
-! Last modified: 28 May 2024 12:04:50 UTC+7
-! Diff-Path: patches/20240528120450193.patch#abpvn_noelemhide
+! Last modified: 28 May 2024 18:04:30 UTC+7
+! Diff-Path: patches/20240528180430140.patch#abpvn_noelemhide
 d67 1
 a67 1
 /vast.js$script,domain=phimmoi.tuphim.net|boctem.com|cdn.tinny2.tech|cdn.lookapi.website|phimvietsub.pro|phimdacap.tv|hoathinhtq.com|tvhayss.com
@@ -321,6 +349,9 @@ a203 1
 d208 1
 a208 1
 ||shope.ee^$popup,domain=chillphimmoizzz.org|blogtruyenmoi.com|cunghocvui.com|phimmoichill.vip|truyensextv.com
+d234 1
+a234 1
+||tinsoikeo.cloud^*.gif$image
 d665 2
 a666 2
 /theme/custom.int.js$script,domain=top1sex.club|tuoi69.mom|javhay.click|web.motsex.net|clipsexvietnam.net|phimsexviet.io|phimsexvietnam.app|mb.clipsex.xxx|gm.phimsexnhanh.tv|mobile.phimsexvip.cc|mobile.ditnhau.cc
@@ -328,23 +359,24 @@ a666 2
 d674 1
 a674 1
 ||cliphotvn9.com^*.gif$image
-d677 1
-a677 1
+d677 2
+a678 2
 ||discordapp.$image,domain=phym18.lol|phim18vip.vip|avvietsub.online|phimsexsub.xyz
+||hentaivn.zone/qx/$subdocument
 d689 1
 a689 1
 ||lxmanga.icu/storage/images/banners
 d710 1
 a710 1
 ||spankbangdl.com/files/*.gif$image,domain=avvietsub.online
-diff name:abpvn_ublock lines:100 checksum:86eef8fcb1
+diff name:abpvn_ublock lines:112 checksum:f448c09a04
 d2 1
 a2 1
-! Version: 20240528120450193
+! Version: 20240528180430140
 d4 2
 a5 2
-! Last modified: 28 May 2024 12:04:50 UTC+7
-! Diff-Path: patches/20240528120450193.patch#abpvn_ublock
+! Last modified: 28 May 2024 18:04:30 UTC+7
+! Diff-Path: patches/20240528180430140.patch#abpvn_ublock
 d67 1
 a67 1
 /vast.js$script,domain=phimmoi.tuphim.net|boctem.com|cdn.tinny2.tech|cdn.lookapi.website|phimvietsub.pro|phimdacap.tv|hoathinhtq.com|tvhayss.com
@@ -366,6 +398,9 @@ a175 1
 d202 1
 a202 1
 ||s2.truyentot.com^*.gif$image,domain=hhtq7.vip
+d232 1
+a232 1
+||tinsoikeo.cloud^*.gif$image
 d746 1
 a746 1
 anime47.blog###qc_clgt
@@ -398,9 +433,10 @@ a1471 2
 d1479 1
 a1479 1
 ||cliphotvn9.com^*.gif$image
-d1482 1
-a1482 1
+d1482 2
+a1483 2
 ||discordapp.$image,domain=phym18.lol|phim18vip.vip|avvietsub.online|phimsexsub.xyz
+||hentaivn.zone/qx/$subdocument
 d1494 1
 a1494 1
 ||lxmanga.icu/storage/images/banners
@@ -415,6 +451,10 @@ avvietsub.online##body>.container>div
 d1540 1
 a1540 1
 cliphotvn9.com,mobiblogx.com,cliphot69.blog,phevkl.in,gvnvh18.com,topviet69.com,sayhentai.co,viet69.meme##.float-ck-center-lt
+d1551 2
+a1552 2
+hentaivn.zone##.a_d_s_115
+hentaivn.zone##.qx_135
 d1570 1
 a1570 1
 lxmanga.icu##.ads-wrapper
@@ -432,6 +472,10 @@ d1630 1
 d1702 1
 a1702 1
 lxmanga.icu##+js(acs, $, PopUnder)
+d1723 2
+a1724 2
+tinsoikeo.cloud##+js(acs, $, window.open)
+tinsoikeo.cloud##+js(aopr, sessionStorage)
 d1729 1
 a1729 1
 truyensieuhay.com,phimvietsub.pro,quangcaoyenbai.com,sieudamtv.men,ephimchill.com,ophimhdvn3.net,thuvienhd.xyz,xemtv.tvhayhd.tv,www.khophim88s.com,nhentaivn.online,phimmoichill.vip,mv.dailyphimz.com,mv.phimbathu.one##+js(aopr, document.cookie)

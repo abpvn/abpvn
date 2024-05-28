@@ -1,11 +1,11 @@
-diff name:abpvn lines:268 checksum:3f55d8d2ba
+diff name:abpvn lines:274 checksum:0c2b44c8cf
 d2 1
 a2 1
-! Version: 20240528120450193
+! Version: 20240528180430140
 d4 2
 a5 2
-! Last modified: 28 May 2024 12:04:50 UTC+7
-! Diff-Path: patches/20240528120450193.patch#abpvn
+! Last modified: 28 May 2024 18:04:30 UTC+7
+! Diff-Path: patches/20240528180430140.patch#abpvn
 d67 1
 a67 1
 /vast.js$script,domain=phimmoi.tuphim.net|boctem.com|cdn.tinny2.tech|cdn.lookapi.website|phimvietsub.pro|phimdacap.tv|hoathinhtq.com|tvhayss.com
@@ -50,6 +50,9 @@ a206 1
 d211 1
 a211 1
 ||shope.ee^$popup,domain=chillphimmoizzz.org|blogtruyenmoi.com|cunghocvui.com|phimmoichill.vip|truyensextv.com
+d237 1
+a237 1
+||tinsoikeo.cloud^*.gif$image
 d240 1
 a240 1
 ||traderviet.tv/data/siropu/am/user/$image
@@ -161,9 +164,10 @@ a1473 2
 d1481 1
 a1481 1
 ||cliphotvn9.com^*.gif$image
-d1484 1
-a1484 1
+d1484 2
+a1485 2
 ||discordapp.$image,domain=phym18.lol|phim18vip.vip|avvietsub.online|phimsexsub.xyz
+||hentaivn.zone/qx/$subdocument
 d1487 1
 a1487 1
 ||i.imgur.com^$image,domain=phym18.lol|phim18hd.top|phim18hd.me|xamvn.live|fullcliphot.com|xxx.sexkhongchehd.com
@@ -211,8 +215,10 @@ cliphotvn9.com,mobiblogx.com,cliphot69.blog,phevkl.in,gvnvh18.com,topviet69.com,
 d1546 1
 a1546 1
 dualeotruyenj.com##[id$="bnr"]
-d1556 1
-a1556 1
+d1554 3
+a1556 3
+hentaivn.zone##.a_d_s_115
+hentaivn.zone##.qx_135
 heo69.moe,sexphimhd.vip##.catfix
 d1573 1
 a1573 2
@@ -267,14 +273,14 @@ a1651 1
 vlxyz.tube,gai3x.vip##.xx-ads
 d1655 1
 d1663 1
-diff name:abpvn_adguard lines:298 checksum:131e1a164c
+diff name:abpvn_adguard lines:308 checksum:cbc532116d
 d2 1
 a2 1
-! Version: 20240528120450193
+! Version: 20240528180430140
 d4 2
 a5 2
-! Last modified: 28 May 2024 12:04:50 UTC+7
-! Diff-Path: patches/20240528120450193.patch#abpvn_adguard
+! Last modified: 28 May 2024 18:04:30 UTC+7
+! Diff-Path: patches/20240528180430140.patch#abpvn_adguard
 d67 1
 a67 1
 /vast.js$script,domain=phimmoi.tuphim.net|boctem.com|cdn.tinny2.tech|cdn.lookapi.website|phimvietsub.pro|phimdacap.tv|hoathinhtq.com|tvhayss.com
@@ -316,6 +322,9 @@ a185 1
 d205 1
 a205 1
 ||s2.truyentot.com^*.gif$image,domain=hhtq7.vip
+d235 1
+a235 1
+||tinsoikeo.cloud^*.gif$image
 d238 1
 a238 1
 ||traderviet.tv/data/siropu/am/user/$image
@@ -427,9 +436,10 @@ a1469 2
 d1477 1
 a1477 1
 ||cliphotvn9.com^*.gif$image
-d1480 1
-a1480 1
+d1480 2
+a1481 2
 ||discordapp.$image,domain=phym18.lol|phim18vip.vip|avvietsub.online|phimsexsub.xyz
+||hentaivn.zone/qx/$subdocument
 d1483 1
 a1483 1
 ||i.imgur.com^$image,domain=phym18.lol|phim18hd.top|phim18hd.me|xamvn.live|fullcliphot.com|xxx.sexkhongchehd.com
@@ -477,8 +487,10 @@ cliphotvn9.com,mobiblogx.com,cliphot69.blog,phevkl.in,gvnvh18.com,topviet69.com,
 d1541 1
 a1541 1
 dualeotruyenj.com##[id$="bnr"]
-d1551 1
-a1551 1
+d1549 3
+a1551 3
+hentaivn.zone##.a_d_s_115
+hentaivn.zone##.qx_135
 heo69.moe,sexphimhd.vip##.catfix
 d1568 1
 a1568 2
@@ -554,6 +566,10 @@ mv.phimmoiaz.cc,dood.pm,ytstv.me,animet1.net,anh.moe,truyenhentaivn.co,maclife.i
 d1717 1
 a1717 1
 rphang.men,misskon.com#%#//scriptlet("abort-current-inline-script", "document.querySelectorAll", "popMagic")
+d1720 2
+a1721 2
+tinsoikeo.cloud#%#//scriptlet("abort-current-inline-script", "$", "window.open")
+tinsoikeo.cloud#%#//scriptlet("abort-on-property-read", "sessionStorage")
 d1724 1
 a1724 1
 truyenqqvn.com,animehay.run#%#//scriptlet("abort-current-inline-script", "document.addEventListener", "window.open")
@@ -566,14 +582,14 @@ viet69.ceo,ungtycomicsvip.com,vlxx.mobi,dualeotruyenj.com,yurineko.net,vlxyz.tub
 d1735 1
 a1735 1
 web.motsex.net,clipsexvietnam.net,phimsexviet.io,phimsexvietnam.app,mb.clipsex.xxx,gm.phimsexnhanh.tv,mobile.phimsexvip.cc,mobile.ditnhau.cc,phim.sexhayvl.org#%#//scriptlet("set-constant", "video.adVast", "")
-diff name:abpvn_content_blocker lines:268 checksum:80afb7c3f9
+diff name:abpvn_content_blocker lines:274 checksum:2873c04518
 d2 1
 a2 1
-! Version: 20240528120450193
+! Version: 20240528180430140
 d4 2
 a5 2
-! Last modified: 28 May 2024 12:04:50 UTC+7
-! Diff-Path: patches/20240528120450193.patch#abpvn_content_blocker
+! Last modified: 28 May 2024 18:04:30 UTC+7
+! Diff-Path: patches/20240528180430140.patch#abpvn_content_blocker
 d67 1
 a67 1
 /vast.js$script,domain=phimmoi.tuphim.net|boctem.com|cdn.tinny2.tech|cdn.lookapi.website|phimvietsub.pro|phimdacap.tv|hoathinhtq.com|tvhayss.com
@@ -618,6 +634,9 @@ a206 1
 d211 1
 a211 1
 ||shope.ee^$popup,domain=chillphimmoizzz.org|blogtruyenmoi.com|cunghocvui.com|phimmoichill.vip|truyensextv.com
+d237 1
+a237 1
+||tinsoikeo.cloud^*.gif$image
 d240 1
 a240 1
 ||traderviet.tv/data/siropu/am/user/$image
@@ -729,9 +748,10 @@ a1473 2
 d1481 1
 a1481 1
 ||cliphotvn9.com^*.gif$image
-d1484 1
-a1484 1
+d1484 2
+a1485 2
 ||discordapp.$image,domain=phym18.lol|phim18vip.vip|avvietsub.online|phimsexsub.xyz
+||hentaivn.zone/qx/$subdocument
 d1487 1
 a1487 1
 ||i.imgur.com^$image,domain=phym18.lol|phim18hd.top|phim18hd.me|xamvn.live|fullcliphot.com|xxx.sexkhongchehd.com
@@ -779,8 +799,10 @@ cliphotvn9.com,mobiblogx.com,cliphot69.blog,phevkl.in,gvnvh18.com,topviet69.com,
 d1546 1
 a1546 1
 dualeotruyenj.com##[id$="bnr"]
-d1556 1
-a1556 1
+d1554 3
+a1556 3
+hentaivn.zone##.a_d_s_115
+hentaivn.zone##.qx_135
 heo69.moe,sexphimhd.vip##.catfix
 d1573 1
 a1573 2
@@ -835,14 +857,14 @@ a1651 1
 vlxyz.tube,gai3x.vip##.xx-ads
 d1655 1
 d1663 1
-diff name:abpvn_noelemhide lines:109 checksum:0444f95a8d
+diff name:abpvn_noelemhide lines:113 checksum:765a11dd9a
 d2 1
 a2 1
-! Version: 20240528120450193
+! Version: 20240528180430140
 d4 2
 a5 2
-! Last modified: 28 May 2024 12:04:50 UTC+7
-! Diff-Path: patches/20240528120450193.patch#abpvn_noelemhide
+! Last modified: 28 May 2024 18:04:30 UTC+7
+! Diff-Path: patches/20240528180430140.patch#abpvn_noelemhide
 d67 1
 a67 1
 /vast.js$script,domain=phimmoi.tuphim.net|boctem.com|cdn.tinny2.tech|cdn.lookapi.website|phimvietsub.pro|phimdacap.tv|hoathinhtq.com|tvhayss.com
@@ -887,6 +909,9 @@ a206 1
 d211 1
 a211 1
 ||shope.ee^$popup,domain=chillphimmoizzz.org|blogtruyenmoi.com|cunghocvui.com|phimmoichill.vip|truyensextv.com
+d237 1
+a237 1
+||tinsoikeo.cloud^*.gif$image
 d240 1
 a240 1
 ||traderviet.tv/data/siropu/am/user/$image
@@ -906,9 +931,10 @@ a669 2
 d677 1
 a677 1
 ||cliphotvn9.com^*.gif$image
-d680 1
-a680 1
+d680 2
+a681 2
 ||discordapp.$image,domain=phym18.lol|phim18vip.vip|avvietsub.online|phimsexsub.xyz
+||hentaivn.zone/qx/$subdocument
 d683 1
 a683 1
 ||i.imgur.com^$image,domain=phym18.lol|phim18hd.top|phim18hd.me|xamvn.live|fullcliphot.com|xxx.sexkhongchehd.com
@@ -945,14 +971,14 @@ a727 1
 ||xvideo98.me^*.gif$domain=viet69.meme
 a729 1
 ||yeusex1.info^*.gif$image
-diff name:abpvn_ublock lines:298 checksum:86eef8fcb1
+diff name:abpvn_ublock lines:308 checksum:f448c09a04
 d2 1
 a2 1
-! Version: 20240528120450193
+! Version: 20240528180430140
 d4 2
 a5 2
-! Last modified: 28 May 2024 12:04:50 UTC+7
-! Diff-Path: patches/20240528120450193.patch#abpvn_ublock
+! Last modified: 28 May 2024 18:04:30 UTC+7
+! Diff-Path: patches/20240528180430140.patch#abpvn_ublock
 d67 1
 a67 1
 /vast.js$script,domain=phimmoi.tuphim.net|boctem.com|cdn.tinny2.tech|cdn.lookapi.website|phimvietsub.pro|phimdacap.tv|hoathinhtq.com|tvhayss.com
@@ -994,6 +1020,9 @@ a185 1
 d205 1
 a205 1
 ||s2.truyentot.com^*.gif$image,domain=hhtq7.vip
+d235 1
+a235 1
+||tinsoikeo.cloud^*.gif$image
 d238 1
 a238 1
 ||traderviet.tv/data/siropu/am/user/$image
@@ -1105,9 +1134,10 @@ a1469 2
 d1477 1
 a1477 1
 ||cliphotvn9.com^*.gif$image
-d1480 1
-a1480 1
+d1480 2
+a1481 2
 ||discordapp.$image,domain=phym18.lol|phim18vip.vip|avvietsub.online|phimsexsub.xyz
+||hentaivn.zone/qx/$subdocument
 d1483 1
 a1483 1
 ||i.imgur.com^$image,domain=phym18.lol|phim18hd.top|phim18hd.me|xamvn.live|fullcliphot.com|xxx.sexkhongchehd.com
@@ -1155,8 +1185,10 @@ cliphotvn9.com,mobiblogx.com,cliphot69.blog,phevkl.in,gvnvh18.com,topviet69.com,
 d1541 1
 a1541 1
 dualeotruyenj.com##[id$="bnr"]
-d1551 1
-a1551 1
+d1549 3
+a1551 3
+hentaivn.zone##.a_d_s_115
+hentaivn.zone##.qx_135
 heo69.moe,sexphimhd.vip##.catfix
 d1568 1
 a1568 2
@@ -1232,6 +1264,10 @@ mv.phimmoiaz.cc,dood.pm,ytstv.me,animet1.net,anh.moe,truyenhentaivn.co,maclife.i
 d1718 1
 a1718 1
 rphang.men,misskon.com##+js(acs, document.querySelectorAll, popMagic)
+d1721 2
+a1722 2
+tinsoikeo.cloud##+js(acs, $, window.open)
+tinsoikeo.cloud##+js(aopr, sessionStorage)
 d1725 1
 a1725 1
 truyenqqvn.com,animehay.run##+js(acs, document.addEventListener, window.open)
