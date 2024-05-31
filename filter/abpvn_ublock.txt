@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 20240531120524251
+! Version: 20240531230445123
 ! Title: ABPVN List
-! Last modified: 31 May 2024 12:05:24 UTC+7
-! Diff-Path: patches/20240531120524251.patch#abpvn_ublock
+! Last modified: 31 May 2024 23:04:45 UTC+7
+! Diff-Path: patches/20240531230445123.patch#abpvn_ublock
 ! Diff-Expires: 60 minutes
 ! Expires: 1 days (update frequency)
 !
@@ -1149,11 +1149,13 @@ $third-party,script,domain=sexdiaryx.site
 ||phym18.lol/static/js/adlia.js
 ||play.stream4.me/jwplayer/vast.js$script,domain=play.stream4.me
 ||quatvn.shop/ads.js$script
-||quoracdn.net^$image,domain=vlxx.mobi|vlxyz.tube|sieudamtv.men|sex.lenlut.tv
+||quoracdn.net^$image,domain=vlxx.mobi|vlxyz.tube|sieudamtv.men|sex.lenlut.tv|sex.chichnhau.net
 ||rphang.online^*.gif
 ||sayhentai.co/assets/js/ads.js
 ||sayhentai.co/storage/images/banner/$image
 ||sexdiaryx.site$csp=script-src 'self' 'unsafe-eval'
+||sexhd88.co/wp-content/themes/vidorev/img/jun881.png$image
+||sexhd88.co^*.gif$image
 ||sexnhe.biz^*.gif$image,domain=gai3x.vip|sexphimhd.vip
 ||sexsub.guru^*.gif$image,domain=tuoi69.guru|javhay.click|sexsub.guru|xemphim18.cc
 ||sexviet1.info^*.gif$image
@@ -1172,6 +1174,7 @@ $third-party,script,domain=sexdiaryx.site
 ||xemphim18.cc/theme/custom.int.js$script,~third-party
 ||xnxx3s.net^*.gif$image
 ||xvideo98.me^*.gif$domain=viet69.meme
+||xx.clipsexhot.net/theme/main.isa.js$script,domain=xx.clipsexhot.net
 ||xxx.sexkhongchehd.com/theme/main.isa.js$script,~third-party
 ||ybs2ffs7v.com^
 ||yeusex1.info^*.gif$image
@@ -1230,8 +1233,13 @@ rphang.men##.js-replyNewMessageContainer.block-body>div.samCodeUnit>.samItem
 rphang.men##.p-footer
 rphang.men##.samVideoOverlay
 rphang.men,phim18vip.vip,checkgaigoi5.cc,sieudamtv.men,sexvn1.cc##.float-ck
+sex.chichnhau.net###pc-preload-modal
+sex.chichnhau.net###popup
+sex.chichnhau.net##.in.fade.modal-backdrop
 sex.lenlut.tv##.banner-catfish-bottomd
 sexdacbietv.pro,sexgai69.net,sexhay88.vip##.quangcaomobile
+sexhd88.co##.classvi
+sexhd88.co##.elementor-section-height-default.elementor-section-boxed.elementor-element-e601265.elementor-element.elementor-top-section.elementor-section
 sexsub.guru##.v4j-watch-1.v4j-content
 sexsub.guru##body>div[class]
 sexviet1.info,yeusex1.info##.preload
@@ -1345,6 +1353,8 @@ plvb.xyz,rk.plcdn.xyz##+js(aopr, adsTvc)
 plvb.xyz,rk.plcdn.xyz##+js(aopr, keyPlayer)
 rphang.men,misskon.com##+js(acs, document.querySelectorAll, popMagic)
 saigon24.net##+js(acs, document.getElementById, myModal)
+sex.chichnhau.net##+js(acs, $, pop)
+sexhd88.co##+js(acs, document.addEventListener, open)
 tailieumoi.vn##+js(set, linkAff, null, 3)
 tinsoikeo.cloud##+js(acs, $, window.open)
 tinsoikeo.cloud##+js(aopr, sessionStorage)
@@ -1363,7 +1373,7 @@ vinaurl.net##+js(aopr, oneClick)
 vndoc.com##+js(set, seconds, 0)
 vungoctuan.vn##+js(acs, document.write, snow)
 vungoctuan.vn##+js(no-xhr-if, ads)
-web.motsex.net,clipsexvietnam.net,phimsexviet.io,phimsexvietnam.app,mb.clipsex.xxx,gm.phimsexnhanh.tv,mobile.phimsexvip.cc,xx.ditnhau.cc,phim.sexhayvl.org##+js(set, video.adVast, '')
+web.motsex.net,clipsexvietnam.net,phimsexviet.io,phimsexvietnam.app,mb.clipsex.xxx,gm.phimsexnhanh.tv,mobile.phimsexvip.cc,xx.ditnhau.cc,phim.sexhayvl.org,xx.clipsexhot.net##+js(set, video.adVast, '')
 www.iosviet.com##+js(set, timer, 0)
 www.o-study.net##.backdrop-popup
 www.o-study.net##body:style(position: static !important)
