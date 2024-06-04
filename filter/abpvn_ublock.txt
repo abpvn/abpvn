@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 20240604150543573
+! Version: 20240604180517948
 ! Title: ABPVN List
-! Last modified: 04 Jun 2024 15:05:43 UTC+7
-! Diff-Path: patches/20240604150543573.patch#abpvn_ublock
+! Last modified: 04 Jun 2024 18:05:17 UTC+7
+! Diff-Path: patches/20240604180517948.patch#abpvn_ublock
 ! Diff-Expires: 60 minutes
 ! Expires: 1 days (update frequency)
 !
@@ -1677,7 +1677,7 @@ youtubeporn.pro##div[style^="position:fixed;inset:0px;z-index:100000;"]
 youtubeporn.pro,hls.playerfb.xyz###video_player ~ div[id]
 ! ---------Rule only for uBlock Origin------
 abtruyen.net,phimss.com##+js(acs, $, popup)
-animevietsub.art##+js(acs, document.documentElement, break;case $.)
+animevietsub.art,phimtuoitho.tv##+js(acs, document.documentElement, break;case $.)
 aoe.vn##+js(aopr, parseInt)
 audiotruyenfull.com##+js(aopr, adpiaListUrl)
 baomoi.com##+js(aopw, AdtimaRender)
@@ -1737,7 +1737,7 @@ tinsoikeo.cloud##+js(aopr, sessionStorage)
 truyen2u.net##+js(acs, eval)
 truyen35.shop##+js(acs, jQuery, click_ads)
 truyenqqvn.com,animehay.run##+js(acs, document.addEventListener, window.open)
-truyensextv.com##+js(acs, document.addEventListener, popup)
+truyensextv.com,phimtuoitho.tv##+js(acs, document.addEventListener, popup)
 truyensieuhay.com,phimvietsub.pro,quangcaoyenbai.com,sieudamtv.men,ephimchill.com,ophimhdvn3.net,thuvienhd.xyz,xemtv.tvhayhd.tv,www.khophim88s.com,nhentaivn.online,phimmoichill.vip,mv.dailyphimz.com,mv.phimbathu.one##+js(aopr, document.cookie)
 truyentuan.xyz##+js(acs, $, btpop)
 ungtycomicsvip.net##+js(acs, document.body.addEventListener, window.open)
