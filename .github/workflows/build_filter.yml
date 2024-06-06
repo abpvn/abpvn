@@ -23,7 +23,7 @@ env:
 
 jobs:
   build_filter_master:
-    if: ${{ github.repository_owner == 'abpvn' && (contains(fromJSON('["schedule", "workflow_dispatch"]'), github.event_name) || contains(github.event.head_commit.message, '[build]')) }}
+    if: ${{ github.repository_owner == 'abpvn' && (contains(fromJSON('["schedule", "workflow_dispatch"]'), github.event_name) || contains(github.event.head_commit.message, '[build]') || contains(github.event.head_commit.message, '(#')) }}
     runs-on: ubuntu-latest
     outputs:
       NEED_BUILD_MASTER: ${{steps.check_build.outputs.NEED_BUILD_MASTER}}
