@@ -1,20 +1,21 @@
-diff name:abpvn lines:272 checksum:7cd635f627
+diff name:abpvn lines:275 checksum:3c06290a8c
 d2 1
 a2 1
-! Version: 20240606165636752
+! Version: 20240606225107290
 d4 2
 a5 2
-! Last modified: 06 Jun 2024 16:56:36 UTC+7
-! Diff-Path: patches/20240606165636752.patch#abpvn
+! Last modified: 06 Jun 2024 22:51:07 UTC+7
+! Diff-Path: patches/20240606225107290.patch#abpvn
 d48 1
 a48 1
 /i.imgur.com/*.gif$domain=keonhacai5.cc|phimlongtieng.net|phimdinhcao.com|phimdinhcao.net|opendatafrance.net|americanpriority.com|screenbid.com|blockupy.org|c19hcc.org|plvb.xyz|listnhacai88.com|xoilaczzy.tv|xemtivingon.org|phimlongtieng.com|photovillenyc.org|rakhoit.tv|rk.plcdn.xyz|phimmoi.cx
 d67 1
 a67 1
 /vast.js$script,domain=phimmoi.tuphim.net|boctem.com|cdn.tinny2.tech|cdn.lookapi.website|phimvietsub.pro|phimdacap.tv|hoathinhtq.com|tvhayss.com|phimmoisz.org
-d77 1
-a77 1
+d77 2
+a78 2
 ||anime47.lol^*.gif
+||animehay.bio^*.gif
 d90 1
 a90 1
 ||blogger.googleusercontent.com^$image,domain=hhninja4.tv|xem14.com|hhtm.tv|hoathinh3dtq.com
@@ -70,10 +71,12 @@ a262 1
 d270 1
 a270 1
 ||xvideo98.me^$image,domain=phimmoi2024.net
-d398 1
-a398 2
+d398 3
+a400 4
 americanpriority.com##.oddsCompany
 anime47.lol###qc_clgt
+animehay.bio###banner-shopee
+animehay.bio##div[style^="position: fixed; bottom: 0px;"]
 d406 4
 a409 4
 animevietsub.life###invideo_wrapper
@@ -271,23 +274,24 @@ viet69.tax##.footer-fixed-br-container
 d1284 1
 a1284 1
 vlxx.mobi,sextop1x.net##.catfish-bottom
-diff name:abpvn_adguard lines:317 checksum:44d18f4246
+diff name:abpvn_adguard lines:323 checksum:1f69d5188e
 d2 1
 a2 1
-! Version: 20240606165636752
+! Version: 20240606225107290
 d4 2
 a5 2
-! Last modified: 06 Jun 2024 16:56:36 UTC+7
-! Diff-Path: patches/20240606165636752.patch#abpvn_adguard
+! Last modified: 06 Jun 2024 22:51:07 UTC+7
+! Diff-Path: patches/20240606225107290.patch#abpvn_adguard
 d48 1
 a48 1
 /i.imgur.com/*.gif$domain=keonhacai5.cc|phimlongtieng.net|phimdinhcao.com|phimdinhcao.net|opendatafrance.net|americanpriority.com|screenbid.com|blockupy.org|c19hcc.org|plvb.xyz|listnhacai88.com|xoilaczzy.tv|xemtivingon.org|phimlongtieng.com|photovillenyc.org|rakhoit.tv|rk.plcdn.xyz|phimmoi.cx
 d67 1
 a67 1
 /vast.js$script,domain=phimmoi.tuphim.net|boctem.com|cdn.tinny2.tech|cdn.lookapi.website|phimvietsub.pro|phimdacap.tv|hoathinhtq.com|tvhayss.com|phimmoisz.org
-d77 1
-a77 1
+d77 2
+a78 2
 ||anime47.lol^*.gif
+||animehay.bio^*.gif
 d90 1
 a90 1
 ||blogger.googleusercontent.com^$image,domain=hhninja4.tv|xem14.com|hhtm.tv|hoathinh3dtq.com
@@ -343,10 +347,12 @@ a260 1
 d268 1
 a268 1
 ||xvideo98.me^$image,domain=phimmoi2024.net
-d396 1
-a396 2
+d396 3
+a398 4
 americanpriority.com##.oddsCompany
 anime47.lol###qc_clgt
+animehay.bio###banner-shopee
+animehay.bio##div[style^="position: fixed; bottom: 0px;"]
 d404 4
 a407 4
 animevietsub.life###invideo_wrapper
@@ -576,12 +582,15 @@ rphang.meme,misskon.com#%#//scriptlet("abort-current-inline-script", "document.q
 d1355 1
 a1355 1
 sexhd88.vip#%#//scriptlet("abort-current-inline-script", "document.addEventListener", "open")
+d1361 1
+a1361 1
+truyenqqvn.com,animehay.bio#%#//scriptlet("abort-current-inline-script", "document.addEventListener", "window.open")
 d1363 1
 a1363 1
 truyensieuhay.com,phimvietsub.pro,quangcaoyenbai.com,sieudamtv.site,ephimchill.com,ophimhdvn3.net,thuvienhd.xyz,xemtv.tvhayhd.tv,www.khophim88s.com,nhentaivn.online,phimmoichill.vip,mv.dailyphimz.com,mv.phimbathu.one#%#//scriptlet("abort-on-property-read", "document.cookie")
 d1368 1
 a1368 1
-viet69.tax,ungtycomicsvip.com,vlxx.mobi,dualeotruyenbot.com,yurineko.net,vlxyz.tube,javhay.click,phimsexhay669.pro,cliphot69.blog,doctruyen3qx.pro,hentaizz.xyz,animehay.run,heo69.moe,top1sex.club,lenlut.tv,sexmup18.com,hentaivn.today,sexvn1.cc,cdn.streamvl.sbs,www.buomtv.app,truyenvn.me,cdnstream.sbs,javtiful.com,truyengihotdo.net,truyengihotzay.net,truyengihotnha.com,truyengihotnha.net,truyengihotqua.net,truyengihotqua.com,truyengihotnay.com,tuoi69.guru,quatvn.day,tenmientruyengi.net,topviet69.com,phim18hd.top,live.sexviet88.tube,gai3x.vip,demo.14412882.com,sexphimhd.vip,xemphim18.cc,ungtycomicsvip.net#%#//scriptlet("abort-current-inline-script", "WebAssembly", "instantiate")
+viet69.tax,ungtycomicsvip.com,vlxx.mobi,dualeotruyenbot.com,yurineko.net,vlxyz.tube,javhay.click,phimsexhay669.pro,cliphot69.blog,doctruyen3qx.pro,hentaizz.xyz,animehay.bio,heo69.moe,top1sex.club,lenlut.tv,sexmup18.com,hentaivn.today,sexvn1.cc,cdn.streamvl.sbs,www.buomtv.app,truyenvn.me,cdnstream.sbs,javtiful.com,truyengihotdo.net,truyengihotzay.net,truyengihotnha.com,truyengihotnha.net,truyengihotqua.net,truyengihotqua.com,truyengihotnay.com,tuoi69.guru,quatvn.day,tenmientruyengi.net,topviet69.com,phim18hd.top,live.sexviet88.tube,gai3x.vip,demo.14412882.com,sexphimhd.vip,xemphim18.cc,ungtycomicsvip.net#%#//scriptlet("abort-current-inline-script", "WebAssembly", "instantiate")
 d1374 1
 a1375 1
 www.nettruyenupp.com#%#//scriptlet("abort-on-property-read", "sp")
@@ -589,23 +598,24 @@ d1380 2
 a1381 2
 www.toptruyenx.pro#%#//scriptlet("abort-current-inline-script", "Promise", "instance")
 www.toptruyenx.pro#%#//scriptlet("abort-on-property-read", "setTimeout", "open")
-diff name:abpvn_content_blocker lines:272 checksum:39b51c2dd1
+diff name:abpvn_content_blocker lines:275 checksum:908b4932cc
 d2 1
 a2 1
-! Version: 20240606165636752
+! Version: 20240606225107290
 d4 2
 a5 2
-! Last modified: 06 Jun 2024 16:56:36 UTC+7
-! Diff-Path: patches/20240606165636752.patch#abpvn_content_blocker
+! Last modified: 06 Jun 2024 22:51:07 UTC+7
+! Diff-Path: patches/20240606225107290.patch#abpvn_content_blocker
 d48 1
 a48 1
 /i.imgur.com/*.gif$domain=keonhacai5.cc|phimlongtieng.net|phimdinhcao.com|phimdinhcao.net|opendatafrance.net|americanpriority.com|screenbid.com|blockupy.org|c19hcc.org|plvb.xyz|listnhacai88.com|xoilaczzy.tv|xemtivingon.org|phimlongtieng.com|photovillenyc.org|rakhoit.tv|rk.plcdn.xyz|phimmoi.cx
 d67 1
 a67 1
 /vast.js$script,domain=phimmoi.tuphim.net|boctem.com|cdn.tinny2.tech|cdn.lookapi.website|phimvietsub.pro|phimdacap.tv|hoathinhtq.com|tvhayss.com|phimmoisz.org
-d77 1
-a77 1
+d77 2
+a78 2
 ||anime47.lol^*.gif
+||animehay.bio^*.gif
 d90 1
 a90 1
 ||blogger.googleusercontent.com^$image,domain=hhninja4.tv|xem14.com|hhtm.tv|hoathinh3dtq.com
@@ -661,10 +671,12 @@ a262 1
 d270 1
 a270 1
 ||xvideo98.me^$image,domain=phimmoi2024.net
-d398 1
-a398 2
+d398 3
+a400 4
 americanpriority.com##.oddsCompany
 anime47.lol###qc_clgt
+animehay.bio###banner-shopee
+animehay.bio##div[style^="position: fixed; bottom: 0px;"]
 d406 4
 a409 4
 animevietsub.life###invideo_wrapper
@@ -862,23 +874,24 @@ viet69.tax##.footer-fixed-br-container
 d1284 1
 a1284 1
 vlxx.mobi,sextop1x.net##.catfish-bottom
-diff name:abpvn_noelemhide lines:106 checksum:664e3ba01a
+diff name:abpvn_noelemhide lines:107 checksum:296ae7f76c
 d2 1
 a2 1
-! Version: 20240606165636752
+! Version: 20240606225107290
 d4 2
 a5 2
-! Last modified: 06 Jun 2024 16:56:36 UTC+7
-! Diff-Path: patches/20240606165636752.patch#abpvn_noelemhide
+! Last modified: 06 Jun 2024 22:51:07 UTC+7
+! Diff-Path: patches/20240606225107290.patch#abpvn_noelemhide
 d48 1
 a48 1
 /i.imgur.com/*.gif$domain=keonhacai5.cc|phimlongtieng.net|phimdinhcao.com|phimdinhcao.net|opendatafrance.net|americanpriority.com|screenbid.com|blockupy.org|c19hcc.org|plvb.xyz|listnhacai88.com|xoilaczzy.tv|xemtivingon.org|phimlongtieng.com|photovillenyc.org|rakhoit.tv|rk.plcdn.xyz|phimmoi.cx
 d67 1
 a67 1
 /vast.js$script,domain=phimmoi.tuphim.net|boctem.com|cdn.tinny2.tech|cdn.lookapi.website|phimvietsub.pro|phimdacap.tv|hoathinhtq.com|tvhayss.com|phimmoisz.org
-d77 1
-a77 1
+d77 2
+a78 2
 ||anime47.lol^*.gif
+||animehay.bio^*.gif
 d90 1
 a90 1
 ||blogger.googleusercontent.com^$image,domain=hhninja4.tv|xem14.com|hhtm.tv|hoathinh3dtq.com
@@ -969,23 +982,24 @@ a434 2
 d448 2
 a449 1
 ||xvideo98.me^*.gif$domain=viet69.cafe
-diff name:abpvn_ublock lines:317 checksum:70febc1777
+diff name:abpvn_ublock lines:323 checksum:0a8ed2d939
 d2 1
 a2 1
-! Version: 20240606165636752
+! Version: 20240606225107290
 d4 2
 a5 2
-! Last modified: 06 Jun 2024 16:56:36 UTC+7
-! Diff-Path: patches/20240606165636752.patch#abpvn_ublock
+! Last modified: 06 Jun 2024 22:51:07 UTC+7
+! Diff-Path: patches/20240606225107290.patch#abpvn_ublock
 d48 1
 a48 1
 /i.imgur.com/*.gif$domain=keonhacai5.cc|phimlongtieng.net|phimdinhcao.com|phimdinhcao.net|opendatafrance.net|americanpriority.com|screenbid.com|blockupy.org|c19hcc.org|plvb.xyz|listnhacai88.com|xoilaczzy.tv|xemtivingon.org|phimlongtieng.com|photovillenyc.org|rakhoit.tv|rk.plcdn.xyz|phimmoi.cx
 d67 1
 a67 1
 /vast.js$script,domain=phimmoi.tuphim.net|boctem.com|cdn.tinny2.tech|cdn.lookapi.website|phimvietsub.pro|phimdacap.tv|hoathinhtq.com|tvhayss.com|phimmoisz.org
-d77 1
-a77 1
+d77 2
+a78 2
 ||anime47.lol^*.gif
+||animehay.bio^*.gif
 d90 1
 a90 1
 ||blogger.googleusercontent.com^$image,domain=hhninja4.tv|xem14.com|hhtm.tv|hoathinh3dtq.com
@@ -1041,10 +1055,12 @@ a260 1
 d268 1
 a268 1
 ||xvideo98.me^$image,domain=phimmoi2024.net
-d396 1
-a396 2
+d396 3
+a398 4
 americanpriority.com##.oddsCompany
 anime47.lol###qc_clgt
+animehay.bio###banner-shopee
+animehay.bio##div[style^="position: fixed; bottom: 0px;"]
 d404 4
 a407 4
 animevietsub.life###invideo_wrapper
@@ -1274,12 +1290,15 @@ rphang.meme,misskon.com##+js(acs, document.querySelectorAll, popMagic)
 d1355 1
 a1355 1
 sexhd88.vip##+js(acs, document.addEventListener, open)
+d1361 1
+a1361 1
+truyenqqvn.com,animehay.bio##+js(acs, document.addEventListener, window.open)
 d1363 1
 a1363 1
 truyensieuhay.com,phimvietsub.pro,quangcaoyenbai.com,sieudamtv.site,ephimchill.com,ophimhdvn3.net,thuvienhd.xyz,xemtv.tvhayhd.tv,www.khophim88s.com,nhentaivn.online,phimmoichill.vip,mv.dailyphimz.com,mv.phimbathu.one##+js(aopr, document.cookie)
 d1368 1
 a1368 1
-viet69.tax,ungtycomicsvip.com,vlxx.mobi,dualeotruyenbot.com,yurineko.net,vlxyz.tube,javhay.click,phimsexhay669.pro,cliphot69.blog,doctruyen3qx.pro,hentaizz.xyz,animehay.run,heo69.moe,tuoi69.guru,top1sex.club,lenlut.tv,sexmup18.com,hentaivn.today,sexvn1.cc,cdn.streamvl.sbs,www.buomtv.app,truyenvn.me,cdnstream.sbs,javtiful.com,truyengihotdo.net,truyengihotzay.net,truyengihotnha.com,truyengihotnha.net,truyengihotqua.net,truyengihotqua.com,truyengihotnay.com,quatvn.day,tenmientruyengi.net,topviet69.com,phim18hd.top,live.sexviet88.tube,gai3x.vip,demo.14412882.com,sexphimhd.vip,xemphim18.cc,ungtycomicsvip.net##+js(acs, WebAssembly, instantiate)
+viet69.tax,ungtycomicsvip.com,vlxx.mobi,dualeotruyenbot.com,yurineko.net,vlxyz.tube,javhay.click,phimsexhay669.pro,cliphot69.blog,doctruyen3qx.pro,hentaizz.xyz,animehay.bio,heo69.moe,tuoi69.guru,top1sex.club,lenlut.tv,sexmup18.com,hentaivn.today,sexvn1.cc,cdn.streamvl.sbs,www.buomtv.app,truyenvn.me,cdnstream.sbs,javtiful.com,truyengihotdo.net,truyengihotzay.net,truyengihotnha.com,truyengihotnha.net,truyengihotqua.net,truyengihotqua.com,truyengihotnay.com,quatvn.day,tenmientruyengi.net,topviet69.com,phim18hd.top,live.sexviet88.tube,gai3x.vip,demo.14412882.com,sexphimhd.vip,xemphim18.cc,ungtycomicsvip.net##+js(acs, WebAssembly, instantiate)
 d1374 1
 a1375 1
 www.nettruyenupp.com##+js(aopr, sp)
