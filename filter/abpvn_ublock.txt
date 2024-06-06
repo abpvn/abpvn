@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 20240606091843928
+! Version: 20240606120445884
 ! Title: ABPVN List
-! Last modified: 06 Jun 2024 09:18:43 UTC+7
-! Diff-Path: patches/20240606091843928.patch#abpvn_ublock
+! Last modified: 06 Jun 2024 12:04:45 UTC+7
+! Diff-Path: patches/20240606120445884.patch#abpvn_ublock
 ! Diff-Expires: 60 minutes
 ! Expires: 1 days (update frequency)
 !
@@ -1303,7 +1303,6 @@ youtubeporn.pro##div[style^="position:fixed;inset:0px;z-index:100000;"]
 youtubeporn.pro,hls.playerfb.xyz###video_player ~ div[id]
 ! ---------Rule only for uBlock Origin------
 abtruyen.net,phimss.com##+js(acs, $, popup)
-animevietsub.life,phimtuoitho.tv##+js(acs, document.documentElement, break;case $.)
 aoe.vn##+js(aopr, parseInt)
 audiotruyenfull.com##+js(aopr, adpiaListUrl)
 baomoi.com##+js(aopw, AdtimaRender)
@@ -1339,13 +1338,14 @@ lxmanga.icu##+js(acs, $, PopUnder)
 mb.heohay.com,vuasex.club,phimsexviet.io,phimsexvietnam.app,mb.clipsex.xxx,gm.phimsexnhanh.tv,clipsex.cam,mobile.ditnhau.cc,phim.sexhayvl.org,xx.clipsexhot.net##+js(set, video.adVast, '')
 nettruyenab.com##+js(acs, Promise, break;case)
 opendatafrance.net##+js(aopr, adsRedirectPopups)
-phimgichill.net,hhhay.tv,hh3dhay.pro,truyengihotnha.com,truyengihotnha.net,3dchill.shop##+js(acs, eval, $._Eu)
+phimgichill.net,hhhay.tv,hh3dhay.pro,truyengihotnha.com,truyengihotnha.net,3dchill.shop,animevietsub.life##+js(acs, eval, $._Eu)
 phimgichill.net,mephimnhe1.net##+js(acs, jQuery, popurl)
 phimhdcc.net##+js(acs, document.addEventListener, linksToOpen)
 phimmoi4s.com##+js(json-prune, ads)
 phimmoi4s.com,phimdinhcao.net,phimlongtieng.net,phimdinhcao.com##+js(aopr, localStorage)
 phimmoinay.vip##+js(acs, jQuery, click_time)
 phimtho.net#%#//scriptlet("abort-current-inline-script", "$", "p0pUpRandom")
+phimtuoitho.tv##+js(acs, document.documentElement, break;case $.)
 phimvietsub.pro,api.anime3s.com,subnhanh.xyz##+js(set, maxAds, 0)
 phimvuihd.org##+js(set, urlAds, '')
 plvb.xyz,rk.plcdn.xyz##+js(aopr, ads)

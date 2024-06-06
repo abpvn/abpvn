@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 20240606091843928
+! Version: 20240606120445884
 ! Title: ABPVN List
-! Last modified: 06 Jun 2024 09:18:43 UTC+7
-! Diff-Path: patches/20240606091843928.patch#abpvn_adguard
+! Last modified: 06 Jun 2024 12:04:45 UTC+7
+! Diff-Path: patches/20240606120445884.patch#abpvn_adguard
 ! Diff-Expires: 60 minutes
 ! Expires: 1 days (update frequency)
 !
@@ -1304,7 +1304,6 @@ youtubeporn.pro##div[style^="position:fixed;inset:0px;z-index:100000;"]
 youtubeporn.pro,hls.playerfb.xyz###video_player ~ div[id]
 ! ---------Rule only for AdGuard------
 abtruyen.net,phimss.com#%#//scriptlet("abort-current-inline-script", "$", "popup")
-animevietsub.life,phimtuoitho.tv#%#//scriptlet("abort-current-inline-script", "document.documentElement", "break;case $.")
 aoe.vn#%#//scriptlet("abort-on-property-read", "parseInt")
 audiotruyenfull.com#%#//scriptlet("abort-on-property-read", "adpiaListUrl")
 baomoi.com#%#//scriptlet("abort-on-property-write", "AdtimaRender")
@@ -1339,13 +1338,14 @@ lxmanga.icu#%#//scriptlet("abort-current-inline-script", "$", "PopUnder")
 mb.heohay.com,vuasex.club,phimsexviet.io,phimsexvietnam.app,mb.clipsex.xxx,gm.phimsexnhanh.tv,clipsex.cam,mobile.ditnhau.cc,phim.sexhayvl.org,xx.clipsexhot.net#%#//scriptlet("set-constant", "video.adVast", "")
 nettruyenab.com#%#//scriptlet("abort-current-inline-script", "Promise", "break;case")
 opendatafrance.net#%#//scriptlet("abort-on-property-read", "adsRedirectPopups")
-phimgichill.net,hhhay.tv,hh3dhay.pro,truyengihotnha.com,truyengihotnha.net,3dchill.shop#%#//scriptlet("abort-current-inline-script", "eval", "$._Eu")
+phimgichill.net,hhhay.tv,hh3dhay.pro,truyengihotnha.com,truyengihotnha.net,3dchill.shop,animevietsub.life#%#//scriptlet("abort-current-inline-script", "eval", "$._Eu")
 phimgichill.net,mephimnhe1.net#%#//scriptlet("abort-current-inline-script","jQuery", "popurl")
 phimhdcc.net#%#//scriptlet("abort-current-inline-script", "document.addEventListener", "linksToOpen")
 phimmoi4s.com#%#//scriptlet("json-prune", "ads")
 phimmoi4s.com,phimdinhcao.net,phimlongtieng.net,phimdinhcao.com#%#//scriptlet("abort-on-property-read", "localStorage")
 phimmoinay.vip#%#//scriptlet("abort-current-inline-script", "jQuery", "click_time")
 phimtho.net##+js(acs, $, p0pUpRandom)
+phimtuoitho.tv#%#//scriptlet("abort-current-inline-script", "document.documentElement", "break;case $.")
 phimvietsub.pro,api.anime3s.com,subnhanh.xyz#%#//scriptlet("set-constant", "maxAds", "0")
 phimvuihd.org#%#//scriptlet("set-constant", "urlAds", "")
 plvb.xyz,rk.plcdn.xyz#%#//scriptlet("abort-on-property-read", "ads")
