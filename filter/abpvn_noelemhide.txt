@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 20240618150546189
+! Version: 20240618230451295
 ! Title: ABPVN List
-! Last modified: 18 Jun 2024 15:05:46 UTC+7
-! Diff-Path: patches/20240618150546189.patch#abpvn_noelemhide
+! Last modified: 18 Jun 2024 23:04:51 UTC+7
+! Diff-Path: patches/20240618230451295.patch#abpvn_noelemhide
 ! Diff-Expires: 60 minutes
 ! Expires: 1 days (update frequency)
 !
@@ -64,7 +64,7 @@
 /taichinhdoanhnghiep.net.vn/files/qc
 /tinhocdongthap.com\/wp-content\/plugins\/wp-[\w-]+\/[\w-]+\.js/$script
 /v/*/vast.js$script,domain=~cdn2.kenhvn2.com
-/vast.js$script,domain=phimmoi.tuphim.net|boctem.com|cdn.tinny2.tech|cdn.lookapi.website|phimvietsub.pro|phimdacap.tv|hoathinhtq.site|tvhay26.com|phimmoisz.org
+/vast.js$script,domain=phimmoi.tuphim.net|boctem.com|cdn.tinny2.tech|cdn.lookapi.website|phimvietsub.pro|phimdacap.tv|hoathinhtq.site|tvhay26.com|phimmoisz.org|tvzinghd.co
 /videojs.ads.$domain=~danet.vn|~tn.com.ar
 /videojs.ima.js$domain=~jut.su|~earthcam.com
 ||123nhadatviet.com/Media/CK/banners/
@@ -129,6 +129,7 @@
 ||i-imgur-com.cdn.ampproject.org^*.gif$image,domain=bongdainfov.net
 ||i.ex-cdn.com/nhadautu.vn/files/qc/$domain=nhadautu.vn
 ||i.ibb.co^*.gif$image,domain=phimmoisz.org
+||i.imghippo.com^*.gif$image,domain=tvzinghd.co
 ||i.imgur.com/81uid6d.jpg$domain=vozer.net
 ||i.imgur.com/FbUH5AQ.png$domain=vozer.net
 ||i.imgur.com/Q0a2mv2.png$domain=vozer.net
@@ -177,6 +178,8 @@
 ||phim.vkool3.net/images/ads/
 ||phimcuon.com^*.gif$image
 ||phimhaythuyetminh.live$csp=script-src 'self' 'unsafe-inline'
+||phimhdcc.net$csp=script-src 'self' 'unsafe-inline' https:
+||phimhdcc.net^*.gif$image
 ||phimmoi.cx/js/ads.js$script
 ||phimmoi.cx^*.gif$image
 ||phimmoi4s.com/files/banner/$image
@@ -249,6 +252,7 @@
 ||tuyensinh247.com/$image,third-party
 ||tuyensinhso.vn/images/banners/*.gif$image,~third-party
 ||tvphim.app/guide/popup.tt-f.js
+||tvzinghd.co/wp-content/themes/zingtv/js/qci9bc.js$script,~third-party
 ||uniad.$third-party
 ||upanh.vn-z.vn/images/2024/05/20/Ban-sao-Deskin-banner-1.jpeg$image,domain=vn-z.vn
 ||upload.bongda365.news//banner/$domain=bongda365.news
@@ -318,6 +322,7 @@
 ||grubsnuchale.com^
 ||grunoaph.net^
 ||hqq.to^$popup
+||hymenvapour.com^
 ||iads.staticscdn.net^
 ||imad24.com^
 ||img.yeuketqua.net^

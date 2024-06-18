@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 20240618150546189
+! Version: 20240618230451295
 ! Title: ABPVN List
-! Last modified: 18 Jun 2024 15:05:46 UTC+7
-! Diff-Path: patches/20240618150546189.patch#abpvn_ublock
+! Last modified: 18 Jun 2024 23:04:51 UTC+7
+! Diff-Path: patches/20240618230451295.patch#abpvn_ublock
 ! Diff-Expires: 60 minutes
 ! Expires: 1 days (update frequency)
 !
@@ -64,7 +64,7 @@
 /taichinhdoanhnghiep.net.vn/files/qc
 /tinhocdongthap.com\/wp-content\/plugins\/wp-[\w-]+\/[\w-]+\.js/$script
 /v/*/vast.js$script,domain=~cdn2.kenhvn2.com
-/vast.js$script,domain=phimmoi.tuphim.net|boctem.com|cdn.tinny2.tech|cdn.lookapi.website|phimvietsub.pro|phimdacap.tv|hoathinhtq.site|tvhay26.com|phimmoisz.org
+/vast.js$script,domain=phimmoi.tuphim.net|boctem.com|cdn.tinny2.tech|cdn.lookapi.website|phimvietsub.pro|phimdacap.tv|hoathinhtq.site|tvhay26.com|phimmoisz.org|tvzinghd.co
 /videojs.ads.$domain=~danet.vn|~tn.com.ar
 /videojs.ima.js$domain=~jut.su|~earthcam.com
 ||123nhadatviet.com/Media/CK/banners/
@@ -129,6 +129,7 @@
 ||i-imgur-com.cdn.ampproject.org^*.gif$image,domain=bongdainfov.net
 ||i.ex-cdn.com/nhadautu.vn/files/qc/$domain=nhadautu.vn
 ||i.ibb.co^*.gif$image,domain=phimmoisz.org
+||i.imghippo.com^*.gif$image,domain=tvzinghd.co
 ||i.imgur.com/81uid6d.jpg$domain=vozer.net
 ||i.imgur.com/FbUH5AQ.png$domain=vozer.net
 ||i.imgur.com/Q0a2mv2.png$domain=vozer.net
@@ -177,6 +178,8 @@
 ||phim.vkool3.net/images/ads/
 ||phimcuon.com^*.gif$image
 ||phimhaythuyetminh.live$csp=script-src 'self' 'unsafe-inline'
+||phimhdcc.net$csp=script-src 'self' 'unsafe-inline' https:
+||phimhdcc.net^*.gif$image
 ||phimmoi.cx/js/ads.js$script
 ||phimmoi.cx^*.gif$image
 ||phimmoi4s.com/files/banner/$image
@@ -247,6 +250,7 @@
 ||tuyensinh247.com/$image,third-party
 ||tuyensinhso.vn/images/banners/*.gif$image,~third-party
 ||tvphim.app/guide/popup.tt-f.js
+||tvzinghd.co/wp-content/themes/zingtv/js/qci9bc.js$script,~third-party
 ||uniad.$third-party
 ||upanh.vn-z.vn/images/2024/05/20/Ban-sao-Deskin-banner-1.jpeg$image,domain=vn-z.vn
 ||upload.bongda365.news//banner/$domain=bongda365.news
@@ -316,6 +320,7 @@
 ||grubsnuchale.com^
 ||grunoaph.net^
 ||hqq.to^$popup
+||hymenvapour.com^
 ||iads.staticscdn.net^
 ||imad24.com^
 ||img.yeuketqua.net^
@@ -714,6 +719,7 @@ phimgichill.net,ophimhdvn3.net##div[id^="preload-"]
 phimhay123.vn###mp-preload-popup-overlay
 phimhaymoii.com##a[target="_blank"][rel="nofollow noopener"]
 phimhaytv.info,congthucvatly.com,phuongtrinhhoahoc.com##.fixed
+phimhdcc.net##a#banner
 phimlongtieng.com,phimlongtieng.net###mobile_content_top
 phimlongtieng.com,phimlongtieng.net###p-GMH
 phimmoi.cx###hide_catfish
@@ -723,7 +729,7 @@ phimmoi.tuphim.net##.adsContainer
 phimmoi.tuphim.net##.header__auth>.details__devices-list
 phimmoi4s.com##.box_option
 phimmoichillu.net###pm_quangcao
-phimmoinay.vip,phimmoisz.org##.sda-catfish
+phimmoinay.vip,phimmoisz.org,tvzinghd.co##.sda-catfish
 phimmoisz.org###adspm4u
 phimnhua.net###catfish-banner
 phimnhua.net##.center-screen.backdrop
@@ -877,6 +883,8 @@ tuyengiao.vn##.visible-md.header-banners
 tvhaiss.com##.ai-viewport-1
 tvphapluat.vn##[class^="sticky-top"]
 tvphapluat.vn##[href*="vietcombank.com.vn"]
+tvzinghd.co##.sda-preload-popup
+tvzinghd.co##.sda-preload-popup-overlay
 v.xemphimviet.xyz##li.special.parent
 v.xemphimviet.xyz,ghienphim.me##.ad-floater
 v.xemphimviet.xyz,ghienphim.me##.popunder-link
@@ -900,6 +908,7 @@ vebox7.live##.justify-content-between.d-lg-none.d-flex.btno-group
 vebox7.live##.topButton
 vebox7.live##.widget_offer
 vebox7.live##header>.container
+vectorx.top###video_player ~ div[id]
 vesotantai.com##.item-qc
 vidian.vn###closeAds
 vieclam.tv###bnc1
@@ -1317,6 +1326,7 @@ audiotruyenfull.com##+js(aopr, adpiaListUrl)
 baomoi.com##+js(aopw, AdtimaRender)
 cafef.vn,gamek.vn,genk.vn,kenh14.vn,soha.vn,tuoitre.vn,afamily.vn##+js(acs, Object.defineProperty, ADMStorageFileCDN)
 cafef.vn,gamek.vn,genk.vn,kenh14.vn,soha.vn,tuoitre.vn,afamily.vn##+js(set, ADMStorageFileCDN, noopFunc)
+cdn2.blueskychilling.online##+js(acs, $, open)
 chillphimmoizzz.org##body:remove-attr(data-pop1)
 chillphimmoizzz.org##body:remove-attr(data-pop2)
 chotlo247.me###header:style(margin-top: 0 !important)
@@ -1324,6 +1334,7 @@ cunghocvui.com##+js(acs, document.addEventListener, opened_window_shoppe)
 dood.pm##+js(aopw, DoodPop)
 dualeotruyenbot.com,m.blogtruyenmoi.com##+js(acs, document.addEventListener, popunder)
 femax20.com##+js(addEventListener-defuser, click, open)
+freeplayervideo.com,abysscdn.com,player-cdn.com,geoip.redirect-ads.com##+js(set, open, noopFunc)
 giavang.net##+js(no-fetch-if, method:HEAD)
 gocphimtvi.com,p.thoctv.com##+js(acs, document.createElement, script)
 gotphim.com##+js(acs, navigator, devtoolsDetector)
