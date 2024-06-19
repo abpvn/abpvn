@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 20240619150542530
+! Version: 20240619153317067
 ! Title: ABPVN List
-! Last modified: 19 Jun 2024 15:05:42 UTC+7
-! Diff-Path: patches/20240619150542530.patch#abpvn_content_blocker
+! Last modified: 19 Jun 2024 15:33:17 UTC+7
+! Diff-Path: patches/20240619153317067.patch#abpvn_content_blocker
 ! Diff-Expires: 60 minutes
 ! Expires: 1 days (update frequency)
 !
@@ -253,6 +253,7 @@
 ||tuviso.com/public/media//banner/
 ||tuyensinh247.com/$image,third-party
 ||tuyensinhso.vn/images/banners/*.gif$image,~third-party
+||tvhayb.com^*.gif$image
 ||tvphim.app/guide/popup.tt-f.js
 ||tvzinghd.co/wp-content/themes/zingtv/js/qci9bc.js$script,~third-party
 ||uniad.$third-party
@@ -1275,6 +1276,10 @@ tuoitre.vn##.detail__qc
 tuoitre.vn##.section__r-vietlot
 tuoitre.vn##.wrapper-ads-mb
 tvhaiss.com##.ai-viewport-1
+tvhayb.com###ads_preload1
+tvhayb.com###ads_preload2
+tvhayb.com###catfish-adv
+tvhayb.com##.widget_text.text-center + .text-center
 tvphapluat.vn##[class^="sticky-top"]
 tvphapluat.vn##[href*="vietcombank.com.vn"]
 tvso1.com##[class*="_banner"]
