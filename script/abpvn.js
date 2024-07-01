@@ -15,8 +15,8 @@
 // @grant       GM_registerMenuCommand
 // @include     http://*
 // @include     https://*
-// @version     2.3.25
-// @change-log  Add redirect.dafontvn.com auto redirect
+// @version     2.3.26
+// @change-log  Fix code scanning
 // @run-at      document-end
 // ==/UserScript==
 /* String Prototype */
@@ -83,9 +83,9 @@ var byPass = {
         setTimeout(() => location.href = link, 500);
     },
     quickByPassLink: function () {
-        var regex = /123link\..*|phlame.pw|megaurl\.*|www.123l\.*|vinaurl\.*|share4you.pro|doxeaz10.site|derow.win|linkviet.net|ez4linkss.com|ckk.ai|link.codevn.net|linksht.com|beta.shortearn.eu|getlink.tienichmaytinh.net|download.baominh.tech|download3s.net/;
+        var regex = /123link\..*|phlame.pw|megaurl\.*|www.123l\.*|vinaurl\.*|share4you.pro|doxeaz10.site|derow.win|linkviet.net|ez4linkss.com|ckk.ai|link\.codevn\.net|linksht.com|beta.shortearn.eu|getlink\.tienichmaytinh\.net|download.baominh.tech|download3s.net/;
         var largeTimeoutHost = /share4you.pro|derow.win/;
-        var autoCaptchaOnlyList = /megaurl\.*|vinaurl\.*|doxeaz10.site|linkviet.net|ez4linkss.com|ckk.ai|link.codevn.net|beta.shortearn.eu|getlink.tienichmaytinh.net|download.baominh.tech|download3s.net/;
+        var autoCaptchaOnlyList = /megaurl\.*|vinaurl\.*|doxeaz10.site|linkviet.net|ez4linkss.com|ckk.ai|link\.codevn\.net|beta.shortearn.eu|getlink\.tienichmaytinh\.net|download.baominh.tech|download3s.net/;
         if (regex.test(location.hostname)) {
             try {
                 var checkClick = function (mutation) {
@@ -344,7 +344,7 @@ var fixSite = {
         }
     },
     ios_codevn_net: function () {
-        if (this.url.match(/ios.codevn.net/)) {
+        if (this.url.match(/ios\.codevn\.net/)) {
             const styleTag = document.createElement('style');
             styleTag.innerHTML = 'div[id*="ScriptRoot"]{height: 1px !important;}';
             document.head.appendChild(styleTag);
@@ -480,7 +480,7 @@ var fixSite = {
 //Ad blocker script
 var adBlocker = {
     mgIdAdRemover: function () {
-        const skipDomain = /ios.codevn.net/;
+        const skipDomain = /ios\.codevn\.net/;
         if (skipDomain.test(location.hostname)) {
             return;
         }
