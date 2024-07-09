@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 20240709120438634
+! Version: 20240709162203475
 ! Title: ABPVN List
-! Last modified: 09 Jul 2024 12:04:38 UTC+7
-! Diff-Path: patches/20240709120438634.patch#abpvn_ublock
+! Last modified: 09 Jul 2024 16:22:03 UTC+7
+! Diff-Path: patches/20240709162203475.patch#abpvn_ublock
 ! Diff-Expires: 60 minutes
 ! Expires: 1 days (update frequency)
 !
@@ -92,7 +92,6 @@
 ||cdn.lfastcdn.com^*.gif$image,domain=bongdainfor.net
 ||cdn.phimhaytv.info/images/video888.mp4$domain=phimhaytv.info
 ||cdn.phimhaytv.info^*.gif$domain=phimhaytv.info
-||cdn.pixfuture.com/adb-media/adb_detect_pixfuture.js$domain=saigonbao.com
 ||cdn.thichxemphim1.net/wp-content/themes/halimmovies-child/jscm.min.js$domain=thichxemphim1.net
 ||cdn.webhoctienganh.com/asset/home/img/banner/$image,domain=webhoctienganh.com
 ||cdn2-img.net^*.gif$image,domain=hhpanda.tube|dongchill.co|biphim.online|subnhanh.today|subnhanh.kim|subnhanhvl.net|bichill.biz|dongphim3s.info
@@ -175,13 +174,12 @@
 ||phimnhanhvl.com^*.gif
 ||phimnhua.net^*.gif
 ||phimss.net/assets/ads/$image
-||phimtuoitho.tv/assets/js/hello.js$script,~third-party
 ||phimvuihd.org^*.gif$image
 ||phimyeuthichb.com/ad-data/$image
 ||photo2.tinhte.vn/data/attachment-files/*banner
 ||photo2.tinhte.vn^*.gif$domain=vebo4.net|live.vebo24.net|live.vebo25.net
 ||pic1025.com^*gif$domain=xemtivi4k.com
-||qthang.net/js/blocker.js$script
+||qthang.net/js/blocker1.js$script,~third-party
 ||quaivatdienanh.com/*banner$image
 ||quangcaosanpham.com/images/$third-party
 ||quoracdn.net^$image,domain=www.phimlongtieng.net
@@ -1065,7 +1063,6 @@ znews.vn##.znews-banner
 @@||4.bp.blogspot.com/-Faf4F4bEgfs/X6bgItBh8RI/AAAAAAAADr4/TI07qDfVYWk4cPdNAj8Mn5Q_yVzuG2cJgCK4BGAYYCw/s1600/gvnvh18.png$image,domain=gvnvh18.com
 @@||anime47.lol/ads/v/8.26.9/jw
 @@||anime47.lol/ads/v/8.26.9/translations
-@@||apicdn.sctvonline.vn/tenants/sctv/$xmlhttprequest,domain=sctvonline.vn
 @@||cdnjs.cloudflare.com/ajax/libs/videojs-contrib-ads/6.0.0/videojs-contrib-ads.js$script,domain=sctvonline.vn
 @@||contextual.media.net/dmedianet.js$domain=azrom.net
 @@||googleads.g.doubleclick.net/pagead/$domain=cungthi.online|romgoc.net
@@ -1141,7 +1138,7 @@ $third-party,script,domain=sexdiaryx.blog
 ||hentaivn.asia^*.gif$image
 ||hentaivn.bio/qx/$subdocument
 ||i.ibb.co^*.gif$image,domain=javnong.cc
-||i.imgur.com^$image,domain=phym18.lol|phim18hd.sex|xamvn.live|fullcliphot.com|xxx.sexkhongchehd.com|xx.sexkhongchemoi.com
+||i.imgur.com^$image,domain=phym18.lol|phim18hd.sex|xamvn.live|fullcliphot.com|xx.sexkhongchehd.com|xx.sexkhongchemoi.com
 ||i9zk5f8szj4x8saj5wcks8acja5sk1dz8stjs2g8isdcn6ejxn8zsr5xjs5h.com^
 ||img.av3x.net/upload/av3x.net/banners/$domain=phimsexhay669.pro
 ||img.buomtv.app/palivn/ad/$image,domain=www.buomtv.vip
@@ -1183,8 +1180,8 @@ $third-party,script,domain=sexdiaryx.blog
 ||xem.phim18c.org/theme/custom.int.js$script,~third-party
 ||xvideo98.me^*.gif$domain=viet69.mx
 ||xx.clipsexhot.net/theme/main.isa.js$script,domain=xx.clipsexhot.net
+||xx.sexkhongchehd.com/theme/main.isa.js$script,~third-party
 ||xx.sexkhongchemoi.com/theme/main.isa.js$script,domain=xx.sexkhongchemoi.com
-||xxx.sexkhongchehd.com/theme/main.isa.js$script,~third-party
 ||ybs2ffs7v.com^
 ||yr.fopbandido.com^
 !---------- ABPVN Adult Element Hide ---------------
@@ -1369,7 +1366,7 @@ tinsoikeo.live##+js(aopr, sessionStorage)
 truyen2u.net##+js(acs, eval)
 truyen35.shop##+js(acs, jQuery, click_ads)
 truyenqqvn.com,animehay.bio##+js(acs, document.addEventListener, window.open)
-truyensextv.com,phimtuoitho.tv##+js(acs, document.addEventListener, popup)
+truyensextv.com##+js(acs, document.addEventListener, popup)
 truyensieuhay.com,phimvietsub.pro,quangcaoyenbai.com,sieudamtv.dev,ephimchill.com,ophimhdvn3.net,thuvienhd.xyz,xemtv.tvhayhd.tv,www.khophim88s.com,nhentaivn.online,motphimmoi.net,mv.dailyphimz.com,mv.phimbathu.one##+js(aopr, document.cookie)
 truyentuan.xyz##+js(acs, $, btpop)
 ungtycomicsvip.net##+js(acs, document.body.addEventListener, window.open)
