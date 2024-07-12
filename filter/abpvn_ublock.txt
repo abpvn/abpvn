@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 20240712150639429
+! Version: 20240712164501729
 ! Title: ABPVN List
-! Last modified: 12 Jul 2024 15:06:39 UTC+7
-! Diff-Path: patches/20240712150639429.patch#abpvn_ublock
+! Last modified: 12 Jul 2024 16:45:01 UTC+7
+! Diff-Path: patches/20240712164501729.patch#abpvn_ublock
 ! Diff-Expires: 60 minutes
 ! Expires: 1 days (update frequency)
 !
@@ -68,6 +68,7 @@
 /videojs.ads.$domain=~danet.vn
 /videojs.ima.js$domain=~jut.su|~earthcam.com
 /wp-auto-affiliate-links/*
+://ads.$~image
 ||123nhadatviet.com/Media/CK/banners/
 ||123nhadatviet.net/Media/CK/banners/
 ||2banh.vn/images/banners/
@@ -649,7 +650,7 @@
 2game.vn##.gc-header__wrapper + div[style]
 abtruyen.net##.no-auto-popup
 ahaphimz.com,phim.vkool3.net,vphims.net##.catfish-ck
-anime47.lol###qc_clgt
+anime47.link###qc_clgt
 animehay.in###banner-shopee
 animehay.in##div[style^="position: fixed; bottom: 0px;"]
 animet1.net###menubentrai
@@ -1270,7 +1271,7 @@ www.saostar.vn##.align-items-center.justify-content-between.d-flex.text-center.b
 www.saostar.vn##.d-flex.justify-content-between>div>div.d-flex.justify-content-around.mt-4
 www.saostar.vn##.top-ads-16x9
 www.thuocbietduoc.com.vn###neo-right-ads
-www.toptruyenvn.pro,doctruyen3qvn.pro,anime47.lol##.advertisement
+www.toptruyenvn.pro,doctruyen3qvn.pro,anime47.link##.advertisement
 www.vietjack.com###download_appnew
 www.vietjack.com##.box-most-viewed.box-course.box-slide
 www.vietjack.com##div.ads_ads
@@ -1405,7 +1406,7 @@ $third-party,script,domain=sexdiaryx.blog
 ||truyen18.club/media/banner/$image
 ||truyensextv.com/anh/$image
 ||truyensextv.com^*.gif
-||truyenvn.me^*banner$image
+||truyenvn.cam^*banner$image
 ||vl3x.vip/ads/$script
 ||www.buomtv.vip/palivn/ad/$image
 ||xem.phim18c.org/theme/custom.int.js$script,~third-party
@@ -1428,7 +1429,7 @@ cliphot69.buzz##.adpl
 cliphotvn.lol,mobiblogz.com,cliphot69.blog,phevkl.uk,gvnvh18.com,topviet69.com,sayhentai.one,viet69.vin##.float-ck-center-lt
 damconuongz.com##.pc-catfixx
 damconuongz.com##a[rel="nofollow"]
-dualeotruyenbot.com##[id$="bnr"]
+dualeotruyenbi.com##[id$="bnr"]
 filemoon.sx##body>[style*="position: fixed;"]
 fullcliphot.com##.banner-ads
 fullcliphot.com##.popup
@@ -1569,7 +1570,7 @@ chotlo247.me###header:style(margin-top: 0 !important)
 cliphot69.buzz##+js(set, a_vid, 0)
 cunghocvui.com##+js(acs, document.addEventListener, opened_window_shoppe)
 dood.pm##+js(aopw, DoodPop)
-dualeotruyenbot.com,m.blogtruyenmoi.com##+js(acs, document.addEventListener, popunder)
+dualeotruyenbi.com,m.blogtruyenmoi.com##+js(acs, document.addEventListener, popunder)
 femax20.com##+js(addEventListener-defuser, click, open)
 ffmovie.online##+js(acs, document.addEventListener, popup)
 fphimhdc.com##+js(acs, document.addEventListener, linksToOpen)
@@ -1626,7 +1627,7 @@ truyentuan.xyz##+js(acs, $, btpop)
 ungtycomicsvip.net##+js(acs, document.body.addEventListener, window.open)
 vailonxx.co,phimlongtieng.com,phimlongtieng.net##+js(acs, jQuery, window.open)
 veryfiles.com##+js(aopr, nFNcksmwU)
-viet69.name,ungtycomicsvip.com,vlxx.mobi,dualeotruyenbot.com,yurineko.net,vlxyz.tube,javhay.click,phimsexhay669.pro,cliphot69.blog,doctruyen3qvn.pro,hentaizz.xyz,animehay.in,heo69.moe,sexvn.tuoi69s.com,top1sex.club,lenlut.tv,sexmup18.com,hentaivn.today,cdn.streamvl.sbs,www.buomtv.vip,truyenvn.me,cdnstream.sbs,javtiful.com,truyengihotdo.net,truyengihotnha.com,truyengihotnha.net,truyengihotqua.net,truyengihotqua.com,truyengihotnay.com,truyengihotzay.net,quatvn.day,tenmientruyengi.net,topviet69.com,phim18hd.sex,live.sexviet88.dev,gaidep3x.pro,demo.14412882.com,sexphimhd.vip,xem.phim18c.org,ungtycomicsvip.net,cliphot69.buzz,hhtq5.vip##+js(acs, WebAssembly, instantiate)
+viet69.name,ungtycomicsvip.com,vlxx.mobi,dualeotruyenbi.com,yurineko.net,vlxyz.tube,javhay.click,phimsexhay669.pro,cliphot69.blog,doctruyen3qvn.pro,hentaizz.xyz,animehay.in,heo69.moe,sexvn.tuoi69s.com,top1sex.club,lenlut.tv,sexmup18.com,hentaivn.today,cdn.streamvl.sbs,www.buomtv.vip,truyenvn.cam,cdnstream.sbs,javtiful.com,truyengihotdo.net,truyengihotnha.com,truyengihotnha.net,truyengihotqua.net,truyengihotqua.com,truyengihotnay.com,truyengihotzay.net,quatvn.day,tenmientruyengi.net,topviet69.com,phim18hd.sex,live.sexviet88.dev,gaidep3x.pro,demo.14412882.com,sexphimhd.vip,xem.phim18c.org,ungtycomicsvip.net,cliphot69.buzz,hhtq5.vip##+js(acs, WebAssembly, instantiate)
 vinaurl.net##+js(aopr, oneClick)
 vndoc.com##+js(set, seconds, 0)
 vungoctuan.vn##+js(acs, document.write, snow)

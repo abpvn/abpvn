@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 20240712150639429
+! Version: 20240712164501729
 ! Title: ABPVN List
-! Last modified: 12 Jul 2024 15:06:39 UTC+7
-! Diff-Path: patches/20240712150639429.patch#abpvn_noelemhide
+! Last modified: 12 Jul 2024 16:45:01 UTC+7
+! Diff-Path: patches/20240712164501729.patch#abpvn_noelemhide
 ! Diff-Expires: 60 minutes
 ! Expires: 1 days (update frequency)
 !
@@ -68,6 +68,7 @@
 /videojs.ads.$domain=~danet.vn
 /videojs.ima.js$domain=~jut.su|~earthcam.com
 /wp-auto-affiliate-links/*
+://ads.$~image
 ||123nhadatviet.com/Media/CK/banners/
 ||123nhadatviet.net/Media/CK/banners/
 ||2banh.vn/images/banners/
@@ -690,7 +691,7 @@ $third-party,script,domain=sexdiaryx.blog
 ||truyen18.club/media/banner/$image
 ||truyensextv.com/anh/$image
 ||truyensextv.com^*.gif
-||truyenvn.me^*banner$image
+||truyenvn.cam^*banner$image
 ||vl3x.vip/ads/$script
 ||www.buomtv.vip/palivn/ad/$image
 ||xem.phim18c.org/theme/custom.int.js$script,~third-party
