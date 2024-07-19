@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Version: 20240718211152392
+! Version: 20240719091749456
 ! Title: ABPVN List
-! Last modified: 18 Jul 2024 21:11:52 UTC+7
-! Diff-Path: patches/20240718211152392.patch#abpvn_ublock
+! Last modified: 19 Jul 2024 09:17:49 UTC+7
+! Diff-Path: patches/20240719091749456.patch#abpvn_ublock
 ! Diff-Expires: 60 minutes
 ! Expires: 1 days (update frequency)
 !
@@ -1119,6 +1119,7 @@ $third-party,script,domain=sexdiaryx.guru
 @@||pagead2.googlesyndication.com^$domain=www.gaingon18.me
 ||ads.6789live.com^
 ||blogger.googleusercontent.com^*.gif$image,domain=gvnvh18.com
+||blurbreimbursetrombone.com^
 ||cdn-01.w3img.com^*.gif$image,domain=javhd.tech|sexvietco.net|viet69new.net|vlxxai.net|javhd.social|sexsoc.info
 ||cdn.adxcontent.com^
 ||cdn.javbabe.net^$subdocument
@@ -1141,6 +1142,7 @@ $third-party,script,domain=sexdiaryx.guru
 ||lxmanga.life/storage/images/banners
 ||mangadm.cc$csp=script-src 'self' 'unsafe-inline' http
 ||mneydirec.com^
+||mobiblog.club^*.gif$image
 ||ngaytho.me^*.gif
 ||nrs6ffl9w.com^
 ||phim.sexhayvl.org/theme/main.isa.js$script
@@ -1209,6 +1211,9 @@ javtiful.com##.v3sb-box
 javtopxx.com##.cat-fish.a-play
 javtopxx.com##.overlay
 lxmanga.life##.ads-wrapper
+mobiblog.club###AgeModal
+mobiblog.club##div.mt-3:nth-of-type(2)
+mobiblog.club##div.mt-3:nth-of-type(3)
 mobile.ditnhauvietnam.com,javhdvip.net##.alldiv ~ div[class]
 ngaytho.me##.body_wrapper1
 nghienanh.com##.code-block
@@ -1319,7 +1324,7 @@ fphimhdc.com##+js(acs, document.addEventListener, linksToOpen)
 freeplayervideo.com,abysscdn.com,player-cdn.com,geoip.redirect-ads.com##+js(set, open, noopFunc)
 giavang.net##+js(no-fetch-if, method:HEAD)
 gocphimi.com,p.thoctv.com##+js(acs, document.createElement, script)
-goctruyentranhvui2.com##+js(acs, WebAssembly, globalThis)
+goctruyentranhvui2.com,mobiblog.club##+js(acs, WebAssembly, globalThis)
 gotphim.com##+js(acs, navigator, devtoolsDetector)
 gvnvh18.com,sexdiaryx.guru##+js(set, D4zz, noopFunc)
 hh3dhay.lol,hh3dhay.xyz##+js(acs, document.createElement, ;break;case)
