@@ -4,6 +4,10 @@
 -ios.codevn.net#@#div[id*="ScriptRoot"]
 -||s.lazada.vn^$popup,domain=chillphimmoizz.org
 -||shope.ee^$popup,domain=chillphimmoizzz.org|blogtruyenmoi.com|cunghocvui.com|motphimmoi.net|truyensextv.com
+/(https?:\/\/)\w{30,}\.me\/\w{30,}\./$script,third-party
+/\w{2}\.\w+\.com\/\w{13,}\/\w{5}$/$script
+/\w{60}\.\w{2,5}\/\w{84}\.js/$script
+/^https?:\/\/s3\.*.*\.amazonaws\.com\/[a-f0-9]{45,}\/[a-f,0-9]{8,10}$/$xmlhttprequest,third-party,domain=~amazon.com
 abtruyen.net##+js(acs, $, popup)
 animehay.in##+js(acs, document.addEventListener, window.open)
 aoe.vn##+js(aopr, parseInt)
