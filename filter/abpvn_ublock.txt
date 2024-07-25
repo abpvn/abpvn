@@ -1,9 +1,9 @@
 [Adblock Plus 2.0]
-! Version: 20240724223331972
+! Version: 20240725091812378
 ! id: D4028CDD-3D39-4624-ACC7-8140F4EC3888
 ! Title: ABPVN List
-! Last modified: 24 Jul 2024 22:33:31 UTC+7
-! Diff-Path: patches/20240724223331972.patch#abpvn_ublock
+! Last modified: 25 Jul 2024 09:18:12 UTC+7
+! Diff-Path: patches/20240725091812378.patch#abpvn_ublock
 ! Diff-Expires: 60 minutes
 ! Expires: 1 days (update frequency)
 !
@@ -37,6 +37,8 @@
 /banner/*.gif$domain=~marsvenus.vn
 /beardeddragon$script
 /blueserving.
+/cms/Arfcc.min.js$script,third-party,domain=cafef.vn|gamek.vn|genk.vn|kenh14.vn|soha.vn|tuoitre.vn|afamily.vn
+/cms/arf-$script,third-party,domain=cafef.vn|gamek.vn|genk.vn|kenh14.vn|soha.vn|tuoitre.vn|afamily.vn
 /core/*$script,domain=gamek.vn|genk.vn|kenh14.vn|cafef.vn
 /detroitchicago$script
 /disable-devtool.min.js$script
@@ -61,6 +63,7 @@
 /stores/ads_data/*
 /taichinhdoanhnghiep.net.vn/files/qc
 /tinhocdongthap.com\/wp-content\/plugins\/wp-[\w-]+\/[\w-]+\.js/$script
+/tracking_info.gif$domain=cafef.vn|gamek.vn|genk.vn|kenh14.vn|soha.vn|tuoitre.vn|afamily.vn
 /v/*/vast.js$script,domain=~cdn2.kenhvn2.com
 /vast.js$script,domain=phimmoi.tuphim.net|boctem.com|cdn.tinny2.tech|cdn.lookapi.website|phimvietsub.pro|phimdacap.tv|hoathinhtq.site|tvhay26.com|phimmoisz.org|tvzinghd.co
 /videojs.ads.$domain=~danet.vn|~tn.com.ar
