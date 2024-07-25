@@ -1,9 +1,9 @@
 [Adblock Plus 2.0]
-! Version: 20240725091812641
+! Version: 20240725193628043
 ! id: D4028CDD-3D39-4624-ACC7-8140F4EC3888
 ! Title: ABPVN List
-! Last modified: 25 Jul 2024 09:18:12 UTC+7
-! Diff-Path: patches/20240725091812641.patch#abpvn_adguard
+! Last modified: 25 Jul 2024 19:36:28 UTC+7
+! Diff-Path: patches/20240725193628043.patch#abpvn_adguard
 ! Diff-Expires: 60 minutes
 ! Expires: 1 days (update frequency)
 !
@@ -232,6 +232,7 @@
 ||tuviso.com/public/media//banner/
 ||tuyensinh247.com/$image,third-party
 ||tuyensinhso.vn/images/banners/*.gif$image,~third-party
+||tvhay.in/guide/popup.xp-f.js
 ||tvhayd.com^*.gif$image
 ||tvzinghd.co/wp-content/themes/zingtv/js/qci9bc.js$script,~third-party
 ||uniad.$third-party
@@ -619,11 +620,13 @@
 !---------------Element Hiding--------------
 ###ads-preload
 ###banner-top
+###floating_ads_bottom_textcss_container
 ###mobileCatfish
 ###pmadv
 ##.aanetwork-ads-box
 ##.adWidget
 ##.ad_location
+##.banner-ads
 ##.banner-bottom
 ##.close-ads
 ##.jw-cue
@@ -985,7 +988,6 @@ phimmoi.tuphim.net###adsTopInPageBanner
 phimmoi.tuphim.net##.adsContainer
 phimmoi.tuphim.net##.header__auth>.details__devices-list
 phimmoichillv.net###pm_quangcao
-phimmoiiii.net,motphimww.com,tvphim.us###floating_ads_bottom_textcss_container
 phimmoiiii.net,motphimww.com,tvphim.us##.module_home_ads
 phimmoiiii.net,motphimww.com,tvphim.us##.module_single_ads
 phimmoinay.vip,phimmoisz.org,tvzinghd.co##.sda-catfish
