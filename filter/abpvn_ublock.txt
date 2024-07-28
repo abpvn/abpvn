@@ -1,9 +1,9 @@
 [Adblock Plus 2.0]
-! Version: 20240728110405605
+! Version: 20240728120508554
 ! id: D4028CDD-3D39-4624-ACC7-8140F4EC3888
 ! Title: ABPVN List
-! Last modified: 28 Jul 2024 11:04:05 UTC+7
-! Diff-Path: patches/20240728110405605.patch#abpvn_ublock
+! Last modified: 28 Jul 2024 12:05:08 UTC+7
+! Diff-Path: patches/20240728120508554.patch#abpvn_ublock
 ! Diff-Expires: 60 minutes
 ! Expires: 1 days (update frequency)
 !
@@ -112,8 +112,6 @@
 ||ff.imacdn.com^$image,domain=xem1080.com
 ||file1.dangcongsan.vn^*.gif$image,domain=dangcongsan.vn
 ||forum.idichvuseo.com/images/quang-cao
-||fphimhdc.com$csp=script-src 'self' 'unsafe-inline' https:
-||fphimhdc.com^*.gif$image
 ||fshare.vn/lib/jwplayer/jwplayer.js
 ||fuhuq.net/content/rest?t=ads_config$xmlhttprequest
 ||fun6668.com/Banner/$domain=mythethao.net
@@ -194,6 +192,8 @@
 ||sohuutritue.net.vn/files/qc/
 ||soikeo365.net^*.gif
 ||soikeoz.vip^*.gif
+||sphimhdc.com$csp=script-src 'self' 'unsafe-inline' https:
+||sphimhdc.com^*.gif$image
 ||static.cdnno.com/storage/topbox/*.webp$image,domain=metruyencv.com
 ||static.ybox.vn^*.gif$domain=ybox.vn
 ||staticcdn-sk.mediastation.live^*.gif$image,domain=home.mannhan3.pro
@@ -494,7 +494,6 @@ forum.gocmod.com##.ad-manager-thread-view-bottom
 forum.gocmod.com##.ad-manager-thread-view-top
 forum.gocmod.com##div[style="margin:6px 0px 6px 0px"]
 forum.gocmod.com,www.tiengnhatdongian.com,ycongnghe.com##.google-auto-placed
-fphimhdc.com##a#banner
 francemag.com##.btn-od
 freeplayervideo.com,abysscdn.com,player-cdn.com,geoip.redirect-ads.com,quat2vn.club###player + div[id]
 fshare.vn###myElementz
@@ -536,7 +535,7 @@ hoatieu.vn###adrightspeciallinks
 hoatieu.vn###adsrighttop
 hoatieu.vn###adsuggestion
 hoatieu.vn,quantrimang.com###adsposttop
-hoatieu.vn,rakhoi1.rakhoi3.xyz,tructiep12.cakhia24.live,cakhia.cakhia27.xyz,tructiep.caheo7.link##.sticky
+hoatieu.vn,rakhoi1.rakhoi3.xyz,tructiep12.cakhia24.live,cakhia.cakhia29.xyz,tructiep.caheo7.link##.sticky
 hoatieu.vn,vndoc.com##div[class^="adbox"]
 hoidap247.com##.ads-home-feed
 home.mannhan3.pro###hots-btn
@@ -704,7 +703,7 @@ phimhaytv.info,congthucvatly.com,phuongtrinhhoahoc.com##.fixed
 phimlongtieng.com,phimlongtieng.net###mobile_content_top
 phimlongtieng.com,phimlongtieng.net###p-GMH
 phimmoi.onl###hide_catfish
-phimmoi.onl,vungtv.us,fphimhdc.com###container-ads
+phimmoi.onl,vungtv.us,sphimhdc.com###container-ads
 phimmoi.tuphim.net###adsTopInPageBanner
 phimmoi.tuphim.net##.adsContainer
 phimmoi.tuphim.net##.header__auth>.details__devices-list
@@ -736,12 +735,12 @@ quantrimang.com###adrighttop
 rakhoi1.rakhoi3.xyz##.footer-button-sign-in.hide-desk
 rakhoi1.rakhoi3.xyz##.hide-desk.wrap-content>.wrap-btn-action
 rakhoi1.rakhoi3.xyz##.menu-right-slide
-rakhoi1.rakhoi3.xyz,tructiep12.cakhia24.live,cakhia.cakhia27.xyz,tructiep.caheo7.link##.datCuocBTN
-rakhoi1.rakhoi3.xyz,tructiep12.cakhia24.live,cakhia.cakhia27.xyz,tructiep.caheo7.link##.modelAds
-rakhoi1.rakhoi3.xyz,tructiep12.cakhia24.live,cakhia.cakhia27.xyz,tructiep.caheo7.link##.nhacaiuytin
-rakhoi1.rakhoi3.xyz,tructiep12.cakhia24.live,cakhia.cakhia27.xyz,tructiep.caheo7.link##.text-running
-rakhoi1.rakhoi3.xyz,tructiep12.cakhia24.live,cakhia.cakhia27.xyz,tructiep.caheo7.link,tructiep36.cakhia24.live##.btn-betting
-rakhoi1.rakhoi3.xyz,tructiep12.cakhia24.live,cakhia.cakhia27.xyz,veboz18.live,tructiep.caheo7.link,francemag.com,rakhoizz.tv##.footer-banner
+rakhoi1.rakhoi3.xyz,tructiep12.cakhia24.live,cakhia.cakhia29.xyz,tructiep.caheo7.link##.datCuocBTN
+rakhoi1.rakhoi3.xyz,tructiep12.cakhia24.live,cakhia.cakhia29.xyz,tructiep.caheo7.link##.modelAds
+rakhoi1.rakhoi3.xyz,tructiep12.cakhia24.live,cakhia.cakhia29.xyz,tructiep.caheo7.link##.nhacaiuytin
+rakhoi1.rakhoi3.xyz,tructiep12.cakhia24.live,cakhia.cakhia29.xyz,tructiep.caheo7.link##.text-running
+rakhoi1.rakhoi3.xyz,tructiep12.cakhia24.live,cakhia.cakhia29.xyz,tructiep.caheo7.link,tructiep36.cakhia24.live##.btn-betting
+rakhoi1.rakhoi3.xyz,tructiep12.cakhia24.live,cakhia.cakhia29.xyz,veboz18.live,tructiep.caheo7.link,francemag.com,rakhoizz.tv##.footer-banner
 reatimes.vn##div[class^="adv-"]
 romgoc.net,giavang.net,custommapposter.com,cungthi.online##.adsbygoogle
 rung.vn##.ads-970x280
@@ -759,6 +758,7 @@ soikeo365.net##.ads-floatingads
 soikeo365.net##.banner-item
 soikeo365.net##.top-nha-cai
 soikeoz.vip,phimmoinay.vip,phimtho.net,protruyen4.xyz,chillhaytv.click,mphim14.org###popup_banner_beta
+sphimhdc.com##a#banner
 sport5.vn,afamily.vn##.afw-topbanner
 subnhanhvl.net,subnhanh.tube,subnhanh.li,dongchill.co###xs-addd0
 tamlinh247.biz##.ads-gg-top
@@ -827,9 +827,9 @@ toithuthuat.com##.pum
 topthuthuat.com,canhrau.com##.widget.widget_text
 toquoc.vn,baoxaydung.com.vn,tienphong.vn,taichinhdoanhnghiep.net.vn,thichxemphim1.net,v.xemphimviet.xyz,ghienphim.one,megalink.pro,truyengihotdo.net,truyengihotzay.net,truyengihotnha.com,truyengihotnha.net,truyengihotqua.net,truyengihotqua.com,truyengihotnay.com,tenmientruyengi.net##.banner
 tracnghiem.net##.sbAdv
-tructiep12.cakhia24.live,cakhia.cakhia27.xyz,tructiep.caheo7.link##.container-banner
-tructiep12.cakhia24.live,cakhia.cakhia27.xyz,tructiep.caheo7.link##.modal-ads
-tructiep12.cakhia24.live,cakhia.cakhia27.xyz,tructiep.caheo7.link##div[class^="slide-bar"]
+tructiep12.cakhia24.live,cakhia.cakhia29.xyz,tructiep.caheo7.link##.container-banner
+tructiep12.cakhia24.live,cakhia.cakhia29.xyz,tructiep.caheo7.link##.modal-ads
+tructiep12.cakhia24.live,cakhia.cakhia29.xyz,tructiep.caheo7.link##div[class^="slide-bar"]
 tructiep36.cakhia24.live##.hide-desk.footer-banner
 tructiep36.cakhia24.live##.modelAds.modal-ads
 tructiep36.cakhia24.live##.nhacaiuytin.after.top-btnpage
@@ -1329,7 +1329,6 @@ dood.pm##+js(aopw, DoodPop)
 dualeotruyenbi.com,m.blogtruyenmoi.com##+js(acs, document.addEventListener, popunder)
 femax20.com,motchilltv.us##+js(addEventListener-defuser, click, open)
 ffmovie.online##+js(acs, document.addEventListener, popup)
-fphimhdc.com##+js(acs, document.addEventListener, linksToOpen)
 freeplayervideo.com,abysscdn.com,player-cdn.com,geoip.redirect-ads.com##+js(set, open, noopFunc)
 giavang.net##+js(no-fetch-if, method:HEAD)
 gocphimi.com,p.thoctv.com##+js(acs, document.createElement, script)
@@ -1372,6 +1371,7 @@ rphang.vin,misskon.com##+js(acs, document.querySelectorAll, popMagic)
 saigon24.net##+js(acs, document.getElementById, myModal)
 sex.chichnhau.net##+js(acs, $, pop)
 sexhd88.live##+js(acs, document.addEventListener, open)
+sphimhdc.com##+js(acs, document.addEventListener, linksToOpen)
 tailieumoi.vn##+js(set, linkAff, null, 3)
 thongtintruyen.com##+js(acs, jQuery, PopUnder)
 tinsoikeo.live##+js(acs, $, window.open)
