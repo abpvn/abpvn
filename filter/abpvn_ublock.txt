@@ -1,9 +1,9 @@
 [Adblock Plus 2.0]
-! Version: 20240729120542273
+! Version: 20240729134335180
 ! id: D4028CDD-3D39-4624-ACC7-8140F4EC3888
 ! Title: ABPVN List
-! Last modified: 29 Jul 2024 12:05:42 UTC+7
-! Diff-Path: patches/20240729120542273.patch#abpvn_ublock
+! Last modified: 29 Jul 2024 13:43:35 UTC+7
+! Diff-Path: patches/20240729134335180.patch#abpvn_ublock
 ! Diff-Expires: 60 minutes
 ! Expires: 1 days (update frequency)
 !
@@ -357,6 +357,7 @@
 ##.midroll-marker
 ##.quangcao
 ##.right-box.top-block
+##.samBannerUnit
 ##[class^="adHTML"]
 ##[href^="http://www.sbbanner.com/"]
 ##[id^="adm-slot"]
@@ -942,6 +943,9 @@ voh.com.vn##.HotTagGlobal_fixed-height__1f50i
 voz.vn##.adsbypubpower
 voz.vn##.v-element>.v-responsive
 voz.vn##div.message--post
+voz.vn##div[style="margin: -10px auto 10px; min-height: 100px !important;"]:has(.adsbypubpower)
+voz.vn##div[style="margin: -10px auto 10px; min-height: 250px !important;"]:has(.adsbypubpower)
+voz.vn##div[style="min-height: 100px !important;"]:has(.adsbypubpower)
 vozer.net##.Notices.PanelScroller
 vsc7.com##a.news__item--action:nth-of-type(2)
 vtcnews.vn##.sys-ads
