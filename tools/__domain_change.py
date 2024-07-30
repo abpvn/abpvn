@@ -1,4 +1,3 @@
-from xml import dom
 import requests
 from const import Const
 import re
@@ -8,7 +7,7 @@ from domain_list import DomainList
 from pprint import pprint
 import os
 
-from util import box_print, is_sub_domain
+from util import box_print
 
 class DomainCheck(threading.Thread):
     def set_data(self, domain, index, total_domain,redirect_pairs: list, error_domains: list):
