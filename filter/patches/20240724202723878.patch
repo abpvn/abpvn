@@ -1,11 +1,11 @@
-diff name:abpvn lines:151 checksum:4f0c0c3064
+diff name:abpvn lines:155 checksum:463c5d407b
 d2 1
 a2 1
-! Version: 20240730213431522
+! Version: 20240731081341940
 d5 2
 a6 2
-! Last modified: 30 Jul 2024 21:34:31 UTC+7
-! Diff-Path: patches/20240730213431522.patch#abpvn
+! Last modified: 31 Jul 2024 08:13:41 UTC+7
+! Diff-Path: patches/20240731081341940.patch#abpvn
 a39 2
 /cms/Arfcc.min.js$script,third-party,domain=cafef.vn|gamek.vn|genk.vn|kenh14.vn|soha.vn|tuoitre.vn|afamily.vn
 /cms/arf-$script,third-party,domain=cafef.vn|gamek.vn|genk.vn|kenh14.vn|soha.vn|tuoitre.vn|afamily.vn
@@ -113,10 +113,8 @@ a839 3
 truyenfull.io###header-ads-full
 truyenfull.io##.ads-responsive
 truyenfull.io##[id^="ads-"]
-a938 3
-voz.vn##div[style="margin: -10px auto 10px; min-height: 100px !important;"]:has(.adsbypubpower)
-voz.vn##div[style="margin: -10px auto 10px; min-height: 250px !important;"]:has(.adsbypubpower)
-voz.vn##div[style="min-height: 100px !important;"]:has(.adsbypubpower)
+a938 1
+voz.vn##div[style]:has(.adsbypubpower)
 d967 1
 a967 1
 www.mp.com,motphimtvv.com,movies.vkoolz.com,ophimhd.vip,subnhanh.xyz,motchilltv.ink,phimnhanhvll.com##.mp-adz
@@ -139,25 +137,31 @@ yanhh3d.com,yanhh3d.tv##.banner-ads-cs
 d1042 1
 a1042 1
 yeah1.com##.Float_ads
+d1135 1
+a1174 1
+||truyenhentai.bio^*.gif$image
+d1203 2
 a1216 1
 m.phimsexdacbiet.pro,sexgaidep69.pro,sexabc.us##.quangcaomobile
 d1226 1
 d1265 1
-a1265 1
+a1265 3
 truyenfull.io###shoppe_ads_fly
+truyenhentai.bio###catfish
+truyenhentai.bio##.wppopups-whole
 d1288 3
 a1290 3
 vlxxhot.biz##.adx1
 vlxxhot.biz,vailonxx.co###ab_ctl
 vlxxhot.biz,vailonxx.co##.bannerads
-diff name:abpvn_adguard lines:159 checksum:aa77ad0752
+diff name:abpvn_adguard lines:166 checksum:a53ed3e6d6
 d2 1
 a2 1
-! Version: 20240730213431522
+! Version: 20240731081341940
 d5 2
 a6 2
-! Last modified: 30 Jul 2024 21:34:31 UTC+7
-! Diff-Path: patches/20240730213431522.patch#abpvn_adguard
+! Last modified: 31 Jul 2024 08:13:41 UTC+7
+! Diff-Path: patches/20240731081341940.patch#abpvn_adguard
 a39 2
 /cms/Arfcc.min.js$script,third-party,domain=cafef.vn|gamek.vn|genk.vn|kenh14.vn|soha.vn|tuoitre.vn|afamily.vn
 /cms/arf-$script,third-party,domain=cafef.vn|gamek.vn|genk.vn|kenh14.vn|soha.vn|tuoitre.vn|afamily.vn
@@ -265,10 +269,8 @@ a837 3
 truyenfull.io###header-ads-full
 truyenfull.io##.ads-responsive
 truyenfull.io##[id^="ads-"]
-a936 3
-voz.vn##div[style="margin: -10px auto 10px; min-height: 100px !important;"]:has(.adsbypubpower)
-voz.vn##div[style="margin: -10px auto 10px; min-height: 250px !important;"]:has(.adsbypubpower)
-voz.vn##div[style="min-height: 100px !important;"]:has(.adsbypubpower)
+a936 1
+voz.vn##div[style]:has(.adsbypubpower)
 d965 1
 a965 1
 www.mp.com,motphimtvv.com,movies.vkoolz.com,ophimhd.vip,subnhanh.xyz,motchilltv.ink,phimnhanhvll.com##.mp-adz
@@ -291,12 +293,18 @@ yanhh3d.com,yanhh3d.tv##.banner-ads-cs
 d1040 1
 a1040 1
 yeah1.com##.Float_ads
+d1131 1
+a1170 1
+||truyenhentai.bio^*.gif$image
+d1199 2
 a1212 1
 m.phimsexdacbiet.pro,sexgaidep69.pro,sexabc.us##.quangcaomobile
 d1222 1
 d1261 1
-a1261 1
+a1261 3
 truyenfull.io###shoppe_ads_fly
+truyenhentai.bio###catfish
+truyenhentai.bio##.wppopups-whole
 d1284 3
 a1286 3
 vlxxhot.biz##.adx1
@@ -310,14 +318,17 @@ a1367 1
 sphimhdc.com#%#//scriptlet("abort-current-inline-script", "document.addEventListener", "linksToOpen")
 a1368 1
 thongtintruyen.com#%#//scriptlet("abort-current-inline-script", "jQuery", "PopUnder")
-diff name:abpvn_content_blocker lines:151 checksum:e848230f71
+d1380 1
+a1380 1
+viettoons.tv,mv.phimmoiaz.cc,dood.pm,ytstv.me,animet1.net,anh.moe,truyenhentai.bio,maclife.io,javfc2.net,hoctot.hocmai.vn,cdn2.blueskychilling.online,moviking.ohaha79xxx.site#%#//scriptlet("abort-on-property-read", "open")
+diff name:abpvn_content_blocker lines:155 checksum:9d5a8b1046
 d2 1
 a2 1
-! Version: 20240730213431522
+! Version: 20240731081341940
 d5 2
 a6 2
-! Last modified: 30 Jul 2024 21:34:31 UTC+7
-! Diff-Path: patches/20240730213431522.patch#abpvn_content_blocker
+! Last modified: 31 Jul 2024 08:13:41 UTC+7
+! Diff-Path: patches/20240731081341940.patch#abpvn_content_blocker
 a39 2
 /cms/Arfcc.min.js$script,third-party,domain=cafef.vn|gamek.vn|genk.vn|kenh14.vn|soha.vn|tuoitre.vn|afamily.vn
 /cms/arf-$script,third-party,domain=cafef.vn|gamek.vn|genk.vn|kenh14.vn|soha.vn|tuoitre.vn|afamily.vn
@@ -425,10 +436,8 @@ a839 3
 truyenfull.io###header-ads-full
 truyenfull.io##.ads-responsive
 truyenfull.io##[id^="ads-"]
-a938 3
-voz.vn##div[style="margin: -10px auto 10px; min-height: 100px !important;"]:has(.adsbypubpower)
-voz.vn##div[style="margin: -10px auto 10px; min-height: 250px !important;"]:has(.adsbypubpower)
-voz.vn##div[style="min-height: 100px !important;"]:has(.adsbypubpower)
+a938 1
+voz.vn##div[style]:has(.adsbypubpower)
 d967 1
 a967 1
 www.mp.com,motphimtvv.com,movies.vkoolz.com,ophimhd.vip,subnhanh.xyz,motchilltv.ink,phimnhanhvll.com##.mp-adz
@@ -451,25 +460,31 @@ yanhh3d.com,yanhh3d.tv##.banner-ads-cs
 d1042 1
 a1042 1
 yeah1.com##.Float_ads
+d1135 1
+a1174 1
+||truyenhentai.bio^*.gif$image
+d1203 2
 a1216 1
 m.phimsexdacbiet.pro,sexgaidep69.pro,sexabc.us##.quangcaomobile
 d1226 1
 d1265 1
-a1265 1
+a1265 3
 truyenfull.io###shoppe_ads_fly
+truyenhentai.bio###catfish
+truyenhentai.bio##.wppopups-whole
 d1288 3
 a1290 3
 vlxxhot.biz##.adx1
 vlxxhot.biz,vailonxx.co###ab_ctl
 vlxxhot.biz,vailonxx.co##.bannerads
-diff name:abpvn_noelemhide lines:37 checksum:504192f10e
+diff name:abpvn_noelemhide lines:40 checksum:b6e6f9df32
 d2 1
 a2 1
-! Version: 20240730213431522
+! Version: 20240731081341940
 d5 2
 a6 2
-! Last modified: 30 Jul 2024 21:34:31 UTC+7
-! Diff-Path: patches/20240730213431522.patch#abpvn_noelemhide
+! Last modified: 31 Jul 2024 08:13:41 UTC+7
+! Diff-Path: patches/20240731081341940.patch#abpvn_noelemhide
 a39 2
 /cms/Arfcc.min.js$script,third-party,domain=cafef.vn|gamek.vn|genk.vn|kenh14.vn|soha.vn|tuoitre.vn|afamily.vn
 /cms/arf-$script,third-party,domain=cafef.vn|gamek.vn|genk.vn|kenh14.vn|soha.vn|tuoitre.vn|afamily.vn
@@ -500,14 +515,17 @@ a209 1
 ||thongtintruyen.com/wp-content/uploads/2023/11/400x300.jpg$image
 a228 1
 ||tvhay.in/guide/popup.xp-f.js
-diff name:abpvn_ublock lines:159 checksum:e0cbf05985
+d384 1
+a423 1
+||truyenhentai.bio^*.gif$image
+diff name:abpvn_ublock lines:166 checksum:1ebd67f90a
 d2 1
 a2 1
-! Version: 20240730213431522
+! Version: 20240731081341940
 d5 2
 a6 2
-! Last modified: 30 Jul 2024 21:34:31 UTC+7
-! Diff-Path: patches/20240730213431522.patch#abpvn_ublock
+! Last modified: 31 Jul 2024 08:13:41 UTC+7
+! Diff-Path: patches/20240731081341940.patch#abpvn_ublock
 a39 2
 /cms/Arfcc.min.js$script,third-party,domain=cafef.vn|gamek.vn|genk.vn|kenh14.vn|soha.vn|tuoitre.vn|afamily.vn
 /cms/arf-$script,third-party,domain=cafef.vn|gamek.vn|genk.vn|kenh14.vn|soha.vn|tuoitre.vn|afamily.vn
@@ -615,10 +633,8 @@ a837 3
 truyenfull.io###header-ads-full
 truyenfull.io##.ads-responsive
 truyenfull.io##[id^="ads-"]
-a936 3
-voz.vn##div[style="margin: -10px auto 10px; min-height: 100px !important;"]:has(.adsbypubpower)
-voz.vn##div[style="margin: -10px auto 10px; min-height: 250px !important;"]:has(.adsbypubpower)
-voz.vn##div[style="min-height: 100px !important;"]:has(.adsbypubpower)
+a936 1
+voz.vn##div[style]:has(.adsbypubpower)
 d965 1
 a965 1
 www.mp.com,motphimtvv.com,movies.vkoolz.com,ophimhd.vip,subnhanh.xyz,motchilltv.ink,phimnhanhvll.com##.mp-adz
@@ -641,12 +657,18 @@ yanhh3d.com,yanhh3d.tv##.banner-ads-cs
 d1040 1
 a1040 1
 yeah1.com##.Float_ads
+d1130 1
+a1169 1
+||truyenhentai.bio^*.gif$image
+d1198 2
 a1211 1
 m.phimsexdacbiet.pro,sexgaidep69.pro,sexabc.us##.quangcaomobile
 d1221 1
 d1260 1
-a1260 1
+a1260 3
 truyenfull.io###shoppe_ads_fly
+truyenhentai.bio###catfish
+truyenhentai.bio##.wppopups-whole
 d1283 3
 a1285 3
 vlxxhot.biz##.adx1
@@ -660,3 +682,6 @@ a1367 1
 sphimhdc.com##+js(acs, document.addEventListener, linksToOpen)
 a1368 1
 thongtintruyen.com##+js(acs, jQuery, PopUnder)
+d1380 1
+a1380 1
+viettoons.tv,mv.phimmoiaz.cc,dood.pm,ytstv.me,animet1.net,anh.moe,truyenhentai.bio,maclife.io,javfc2.net,hoctot.hocmai.vn,bluphim.art,cdn2.blueskychilling.online,moviking.ohaha79xxx.site##+js(aopr, open)
