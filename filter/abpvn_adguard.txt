@@ -1,9 +1,9 @@
 [Adblock Plus 2.0]
-! Version: 20240731211431377
+! Version: 20240731214458362
 ! id: D4028CDD-3D39-4624-ACC7-8140F4EC3888
 ! Title: ABPVN List
-! Last modified: 31 Jul 2024 21:14:31 UTC+7
-! Diff-Path: patches/20240731211431377.patch#abpvn_adguard
+! Last modified: 31 Jul 2024 21:44:58 UTC+7
+! Diff-Path: patches/20240731214458362.patch#abpvn_adguard
 ! Diff-Expires: 60 minutes
 ! Expires: 1 days (update frequency)
 !
@@ -76,7 +76,6 @@
 ||9767ebd63c.vws.vegacdn.vn^*.gif$image,domain=mn.mediastation.live|home.mannhan3.pro
 ||acscdn.com/script/aclib.js$script,domain=ytstv.me
 ||ads*.autodaily.vn
-||ads.mxhnkn.pro^$image,domain=truyenqqviet.com
 ||ads.nghenhinvietnam.vn^$domain=nghenhinvietnam.vn
 ||animehay.in^*.gif
 ||animet1.net^*.gif
@@ -283,6 +282,7 @@
 ||adpushup.com^
 ||adroll.com^$third-party
 ||ads-cdn.fptplay.net^
+||ads.mxhnkn.pro^
 ||ads.pubmatic.com^
 ||adservme.com^$third-party
 ||adsrvr.org^
@@ -704,6 +704,8 @@ blogtruyenvn.org##.BT-Ads
 blogtruyenvn.org##.qc-inner
 blogtruyenvn.org##div.qc_TC_Chap_Middle
 blogtruyenvn.org##div[id^="qc_M_"]
+bluphim.art###ads-1xbet-catfish
+bluphim.art###popup-1720497466
 bluphim.art##.container>div[style^="height: 228px"]
 boctem.com,anivn.club,movies.vkoolz.com,hoathinhtq.site,xemphimchill.xyz,247phim.cc,vungtv.us,vuaphimmoi8.net,tvhay26.com,dragonphim.tv,hh3d1.xyz,www.phimmoichilla.xyz,motphim.li,hhh3d.tv,hayhaytv.cc,yanhh3d.com,yanhh3d.tv###popup-giua-man-hinh
 bongda.com.vn##.top_page
@@ -988,6 +990,7 @@ phimmoi.tuphim.net###adsTopInPageBanner
 phimmoi.tuphim.net##.adsContainer
 phimmoi.tuphim.net##.header__auth>.details__devices-list
 phimmoichillv.net###pm_quangcao
+phimmoifhd.com##.banner-clickadu
 phimmoiiii.net,motphimww.com,tvphim.us##.module_home_ads
 phimmoiiii.net,motphimww.com,tvphim.us##.module_single_ads
 phimmoinay.vip,phimmoisz.org,tvzinghd.co##.sda-catfish
@@ -1610,7 +1613,7 @@ live.thapcam22.net,blog.abit.vn,xem20.gavang1.net,xem19.gavang1.net#$#body {over
 lrepacks.net#%#//scriptlet("abort-current-inline-script", "JSON.parse", "break;case $.")
 luotphim1.net,mephim.ink,cdnwp.icu#%#//scriptlet("json-prune", "0.time_mobile 0.time 0.link_video 0.link_video_mobile 0.link 0.link_mobile 1.time_mobile 1.time 1.link_video 1.link_video_mobile 1.link 1.link_mobile")
 lxmanga.life#%#//scriptlet("abort-current-inline-script", "$", "PopUnder")
-mv.phimmoiaz.cc,dood.pm,ytstv.me,animet1.net,anh.moe,truyenhentai.bio,maclife.io,javfc2.net,hoctot.hocmai.vn,cdn2.blueskychilling.online,moviking.ohaha79xxx.site#%#//scriptlet("abort-on-property-read", "open")
+mv.phimmoiaz.cc,dood.pm,ytstv.me,animet1.net,anh.moe,truyenhentai.bio,maclife.io,javfc2.net,hoctot.hocmai.vn,cdn2.blueskychilling.online,ohaha79xxx.site#%#//scriptlet("abort-on-property-read", "open")
 nettruyenaa.com#%#//scriptlet("abort-on-property-read", "links")
 nettruyenhq.com#%#//scriptlet("abort-current-inline-script", "Promise", "break;case")
 phimdinhcao.net,phimlongtieng.net,phimdinhcao.com#%#//scriptlet("abort-on-property-read", "localStorage")
