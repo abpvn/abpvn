@@ -1,9 +1,9 @@
 [Adblock Plus 2.0]
-! Version: 20240730213432164
+! Version: 20240731081343376
 ! id: D4028CDD-3D39-4624-ACC7-8140F4EC3888
 ! Title: ABPVN List
-! Last modified: 30 Jul 2024 21:34:32 UTC+7
-! Diff-Path: patches/20240730213432164.patch#abpvn_content_blocker
+! Last modified: 31 Jul 2024 08:13:43 UTC+7
+! Diff-Path: patches/20240731081343376.patch#abpvn_content_blocker
 ! Diff-Expires: 60 minutes
 ! Expires: 1 days (update frequency)
 !
@@ -1222,9 +1222,7 @@ voh.com.vn##.HotTagGlobal_fixed-height__1f50i
 voz.vn##.adsbypubpower
 voz.vn##.v-element>.v-responsive
 voz.vn##div.message--post
-voz.vn##div[style="margin: -10px auto 10px; min-height: 100px !important;"]:has(.adsbypubpower)
-voz.vn##div[style="margin: -10px auto 10px; min-height: 250px !important;"]:has(.adsbypubpower)
-voz.vn##div[style="min-height: 100px !important;"]:has(.adsbypubpower)
+voz.vn##div[style]:has(.adsbypubpower)
 vozer.net##.Notices.PanelScroller
 vsc7.com##a.news__item--action:nth-of-type(2)
 vtcnews.vn##.sys-ads
@@ -1380,7 +1378,6 @@ $third-party,script,domain=sexdiaryx.guru
 ||cloufdlare.com/ads/vn1.html$subdocument,domain=vl.phe.to
 ||demo123.info/*ads/$image,domain=xem.sex-sub.com
 ||discordapp.$image,domain=phym18.lol|phim18vip.vip|avvietsub.info|phimsexsub.xyz
-||hentaivn.forum^*.gif$image
 ||hentaivn.homes/qx/$subdocument
 ||i.ibb.co^*.gif$image,domain=javnong.cc
 ||i.imgur.com^$image,domain=phym18.lol|phim18hd.sex|xamvn.taxi|fullcliphot.com|x.sexkhongchehd.com|xx.sexkhongchemoi.com
@@ -1420,6 +1417,7 @@ $third-party,script,domain=sexdiaryx.guru
 ||topviet69.com^*.gif$image
 ||truyen18.life/media/abc/$image
 ||truyen18.life/media/banner/$image
+||truyenhentai.bio^*.gif$image
 ||truyensextv.com/anh/$image
 ||truyensextv.com^*.gif
 ||truyenvn.cam^*banner$image
@@ -1450,8 +1448,6 @@ fullcliphot.com##.popup
 fullcliphot.com##div#recent-content:nth-of-type(1)
 gvnvh18.com##.footmenu
 gvnvh18.com##.sticky_bottom
-hentaivn.forum###catfish
-hentaivn.forum##.wppopups-whole
 hentaivn.homes##.a_d_s_115
 hentaivn.homes##.qx_135
 heo69.moe,sexphimhd.vip##.catfix
@@ -1530,6 +1526,8 @@ teletiengviet.com###bnads3_save
 truyen18.life##.a-header
 truyen18.life##.apu
 truyen18.life##.header
+truyenhentai.bio###catfish
+truyenhentai.bio##.wppopups-whole
 truyensextv.com,lxmanga.life##.sticky-footer
 tuoi69.moe,sieukhungvn.net###bar_float_r
 tuoi69.moe,sieukhungvn.net##.adsTopHome
