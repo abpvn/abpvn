@@ -1,9 +1,9 @@
 [Adblock Plus 2.0]
-! Version: 20240807215718727
+! Version: 20240807223904519
 ! id: D4028CDD-3D39-4624-ACC7-8140F4EC3888
 ! Title: ABPVN List
-! Last modified: 07 Aug 2024 21:57:18 UTC+7
-! Diff-Path: patches/20240807215718727.patch#abpvn_adguard
+! Last modified: 07 Aug 2024 22:39:04 UTC+7
+! Diff-Path: patches/20240807223904519.patch#abpvn_adguard
 ! Diff-Expires: 60 minutes
 ! Expires: 1 days (update frequency)
 !
@@ -1602,6 +1602,7 @@ dood.pm#%#//scriptlet("abort-on-property-write", "DoodPop")
 dualeotruyenbi.com,m.blogtruyenmoi.com#%#//scriptlet("abort-current-inline-script", "document.addEventListener", "popunder")
 femax20.com,motchilltv.us#%#//scriptlet("prevent-addEventListener", "click", "open")
 ffmovie.online#%#//scriptlet("abort-current-inline-script", "document.addEventListener", "popup")
+freeplayervideo.com,abysscdn.com,player-cdn.com,geoip.redirect-ads.co#%#//scriptlet('set-session-storage-item', "logged", "1")
 freeplayervideo.com,abysscdn.com,player-cdn.com,geoip.redirect-ads.com#%#//scriptlet("set-constant", "open", "noopFunc")
 giavang.net#%#//scriptlet("prevent-fetch", "method:HEAD")
 gocphimii.com,p.thoctv.com#%#//scriptlet("abort-current-inline-script", "document.createElement", "script")
