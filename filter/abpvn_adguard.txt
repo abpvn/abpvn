@@ -1,9 +1,9 @@
 [Adblock Plus 2.0]
-! Version: 20240807223907472
+! Version: 20240808081256904
 ! id: D4028CDD-3D39-4624-ACC7-8140F4EC3888
 ! Title: ABPVN List
-! Last modified: 07 Aug 2024 22:39:07 UTC+7
-! Diff-Path: patches/20240807223907472.patch#abpvn_adguard
+! Last modified: 08 Aug 2024 08:12:56 UTC+7
+! Diff-Path: patches/20240808081256904.patch#abpvn_adguard
 ! Diff-Expires: 60 minutes
 ! Expires: 1 days (update frequency)
 !
@@ -1344,8 +1344,8 @@ dood.pm#%#//scriptlet("abort-on-property-write", "DoodPop")
 dualeotruyenbi.com,m.blogtruyenmoi.com#%#//scriptlet("abort-current-inline-script", "document.addEventListener", "popunder")
 femax20.com,motchilltv.us#%#//scriptlet("prevent-addEventListener", "click", "open")
 ffmovie.online#%#//scriptlet("abort-current-inline-script", "document.addEventListener", "popup")
-freeplayervideo.com,abysscdn.com,player-cdn.com,geoip.redirect-ads.co#%#//scriptlet('set-session-storage-item', "logged", "1")
 freeplayervideo.com,abysscdn.com,player-cdn.com,geoip.redirect-ads.com#%#//scriptlet("set-constant", "open", "noopFunc")
+freeplayervideo.com,abysscdn.com,player-cdn.com,geoip.redirect-ads.com#%#//scriptlet('set-session-storage-item', "logged", "1")
 giavang.net#%#//scriptlet("prevent-fetch", "method:HEAD")
 gocphimii.com,p.thoctv.com#%#//scriptlet("abort-current-inline-script", "document.createElement", "script")
 goctruyentranhvui2.com,mobiblog.club,truyenqqviet.com#%#//scriptlet("abort-current-inline-script", "WebAssembly", "globalThis")
