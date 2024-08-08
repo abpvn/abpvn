@@ -1,4 +1,5 @@
 ! ---------Rule only for AdGuard------
+-$popup,domain=player-cdn.com|freeplayervideo.com|abysscdn.com|geoip.redirect-ads.com
 -@@||jsc.adskeeper.co.uk^$script,domain=ios.codevn.net
 -ios.codevn.net#@#div[id*="ScriptRoot"]
 -||s.lazada.vn^$popup,domain=chillphimmoizz.org
@@ -21,8 +22,8 @@ dood.pm#%#//scriptlet("abort-on-property-write", "DoodPop")
 dualeotruyenbi.com,m.blogtruyenmoi.com#%#//scriptlet("abort-current-inline-script", "document.addEventListener", "popunder")
 femax20.com,motchilltv.us#%#//scriptlet("prevent-addEventListener", "click", "open")
 ffmovie.online#%#//scriptlet("abort-current-inline-script", "document.addEventListener", "popup")
-freeplayervideo.com,abysscdn.com,player-cdn.com,geoip.redirect-ads.co#%#//scriptlet('set-session-storage-item', "logged", "1")
 freeplayervideo.com,abysscdn.com,player-cdn.com,geoip.redirect-ads.com#%#//scriptlet("set-constant", "open", "noopFunc")
+freeplayervideo.com,abysscdn.com,player-cdn.com,geoip.redirect-ads.com#%#//scriptlet('set-session-storage-item', "logged", "1")
 giavang.net#%#//scriptlet("prevent-fetch", "method:HEAD")
 gocphimii.com,p.thoctv.com#%#//scriptlet("abort-current-inline-script", "document.createElement", "script")
 goctruyentranhvui2.com,mobiblog.club,truyenqqviet.com#%#//scriptlet("abort-current-inline-script", "WebAssembly", "globalThis")
