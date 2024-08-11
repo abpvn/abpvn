@@ -1,16 +1,16 @@
-diff name:abpvn lines:99 checksum:3b67f65ea4
+diff name:abpvn lines:159 checksum:37c50eb549
 d2 1
 a2 1
-! Version: 20240810230537628
+! Version: 20240811190524776
 d5 2
 a6 2
-! Last modified: 10 Aug 2024 23:05:37 UTC+7
-! Diff-Path: patches/20240810230537628.patch#abpvn
+! Last modified: 11 Aug 2024 19:05:24 UTC+7
+! Diff-Path: patches/20240811190524776.patch#abpvn
 a20 1
 $popup,domain=player-cdn.com|freeplayervideo.com|abysscdn.com|geoip.redirect-ads.com
 d47 1
 a47 1
-/i.imgur.com/*.gif$domain=keonhacai5.skin|phimlongtieng.net|phimdinhcao.com|phimdinhcao.net|xoilacx.cc|salesjobs.org|ramapoughlenapenation.org|zoolujan.com|plvb.xyz|listnhacai88.com|xoilaczvl.tv|xemtivingon.org|phimlongtieng.com|newmeaccelerator.com|rakhoizz.tv|rk.plcdn.xyz|phimmoi.onl|motphimww.com
+/i.imgur.com/*.gif$domain=keonhacai5.skin|phimlongtieng.net|phimdinhcao.com|phimdinhcao.net|xoilacx.cc|garance-paris.com|ramapoughlenapenation.org|hechoendumbo.com|plvb.xyz|listnhacai88.com|xoilaczve.tv|xemtivingon.org|phimlongtieng.com|newmeaccelerator.com|rakhoizz.tv|rk.plcdn.xyz|phimmoi.onl|motphimww.com
 d69 1
 a69 1
 /vast.js$script,domain=phimmoi.tuphim.net|boctem.com|phimvietsub.pro|phimdacap.tv|hoathinhtq.site|tvhay26.com|tvzinghd.co
@@ -18,32 +18,71 @@ d81 1
 d94 1
 a94 1
 ||blogger.googleusercontent.com^$image,domain=hhninja6.tv|xem14.com|hhtm.tv|hoathinh3dtq.com|hhh3d.tv|dragonphim.tv|hoathinhtq.site|phimhay.info|yanhh3d.com|yanhh3d.tv
+d100 1
+a100 1
+||cdn.lfastcdn.com^*.gif$image,domain=xoilaczve.tv
+a117 1
+||fastscans.net/_next/static/media/voucher.$image
 a123 1
 ||fundingchoicesmessages.google.com^$third-party
+a163 2
+||mephimhdc.net$csp=script-src 'self' 'unsafe-inline' https:
+||mephimhdc.net^*.gif$image
 a164 1
 ||motchilliii.net/banner$image
+a192 1
+||s1.fastscans.net/shopee/$image
 d197 1
 a197 1
 ||shope.ee^$popup,domain=chillphimmoizzz.org|blogtruyenmoi.com|cunghocvui.com|truyensextv.com
+d201 2
 a256 1
 ||www.phimlongtieng.com/3s.m3u8$rewrite=abp-resource:blank-mp3,domain=www.phimlongtieng.com
 a332 1
 ||blurbreimbursetrombone.com^
 a409 1
 ||earringsatisfiedsplice.com^
+a758 1
+fastscans.net##.banner-shopee
 d767 1
 a767 1
 freeplayervideo.com,abysscdn.com,player-cdn.com,geoip.redirect-ads.com##.playover
+a783 12
+garance-paris.com###menu-main-menu>.menu-bongdainfo.menu-item.nav-item.tt-bdif
+garance-paris.com###menu-main-menu>.menu-nha-cai-uy-tin.menu-item.nav-item.style-2>.nav-link
+garance-paris.com##.c-int.d-lg-none.d-block
+garance-paris.com##.col-xl-4
+garance-paris.com##.container>.row>.col-12
+garance-paris.com##.d-lg-none.d-block.p-1.text-center
+garance-paris.com##.justify-content-center.d-flex>.btn-primary.btn
+garance-paris.com##.matches__item--footer
+garance-paris.com##.mt-1.d-lg-flex.d-none.sub-menu
+garance-paris.com##a.d-lg-none.d-block:nth-of-type(2)
+garance-paris.com,hechoendumbo.com,xoilacx.cc,ramapoughlenapenation.org###quangcaopc
+garance-paris.com,hechoendumbo.com,xoilacx.cc,ramapoughlenapenation.org,bongdainfoc.tv,xoilaczve.tv,xemtv.tvhayhd.tv###wap_bottombanner
+a795 7
+hechoendumbo.com##.container.mt-1.d-none.d-lg-block
+hechoendumbo.com##.menu-item-object-custom
+hechoendumbo.com##a.rlw-extra-i.py-3.flex-grow-1
+hechoendumbo.com,live.90phut34.live,noitu.pro##.modal-backdrop.show
+hechoendumbo.com,ramapoughlenapenation.org##.align-items-center.justify-content-between.d-flex.col-12>.d-lg-none.d-block
+hechoendumbo.com,xoilacx.cc##.sub-menu.d-none.d-lg-flex
+hechoendumbo.com,xoilacx.cc,garance-paris.com,ramapoughlenapenation.org##.marquee-container
 d813 1
 a813 1
 hoatieu.vn,rakhoi1.rakhoi3.xyz,tructiep12.cakhia24.live,cakhia1.cakhia29.xyz,tructiep.caheo7.link##.sticky
 d832 1
 a832 1
 keonhacai5.skin##.container>.row>center
+d864 1
+a864 1
+live.90phut34.live,live4.xoilac34.org,hechoendumbo.com,vebo4.net,live.vebo24.net,live.vebo26.net,tructiep2.banhkhuc15.net##.fade.show
 d871 1
 a871 1
-live.thapcam22.net,xoilaczvl.tv,ramapoughlenapenation.org,newmeaccelerator.com,rakhoizz.tv##.btn-odds
+live.thapcam22.net,xoilaczve.tv,ramapoughlenapenation.org,newmeaccelerator.com,rakhoizz.tv##.btn-odds
 d902 1
+a902 1
+mephimhdc.net##a#banner
 a904 1
 mephimtv.net##.movie-banner
 a925 1
@@ -52,6 +91,9 @@ a967 2
 phimhay.info##.code-block-1.code-block
 phimhay.info##.navbar-container + .container
 d969 2
+d976 1
+a976 1
+phimmoi.onl,vungtv.us,mephimhdc.net###container-ads
 d997 1
 a997 1
 phimvuihd.org,hh3dhay.lol,phim18u.net,phim24h.mobi,ffmovie.online,xem14.com,hh3dhay.pro,vutruphim.tv,3dchill.shop,hh3dhay.life##.float-ck-center-lt
@@ -63,6 +105,8 @@ rakhoi1.rakhoi3.xyz,tructiep12.cakhia24.live,cakhia1.cakhia29.xyz,tructiep.caheo
 rakhoi1.rakhoi3.xyz,tructiep12.cakhia24.live,cakhia1.cakhia29.xyz,tructiep.caheo7.link##.nhacaiuytin
 rakhoi1.rakhoi3.xyz,tructiep12.cakhia24.live,cakhia1.cakhia29.xyz,tructiep.caheo7.link##.text-running
 rakhoi1.rakhoi3.xyz,tructiep12.cakhia24.live,cakhia1.cakhia29.xyz,tructiep.caheo7.link,tructiep36.cakhia24.live##.btn-betting
+d1027 12
+d1051 1
 d1122 3
 a1124 3
 tructiep12.cakhia24.live,cakhia1.cakhia29.xyz,tructiep.caheo7.link##.container-banner
@@ -74,12 +118,25 @@ xemphimchill.xyz,hhninja6.tv,phimbocn.com,phimhoathinh3d.com,hoathinhtq.site,hht
 d1287 1
 a1287 1
 xemtivingon.org,keonhacai5.skin##[id^="Balloon_"]
-d1302 1
-a1302 1
-xoilacx.cc,ramapoughlenapenation.org,zoolujan.com,newmeaccelerator.com##div[id^="dnn_"]
-d1319 1
-a1319 1
-xoilaczvl.tv,newmeaccelerator.com##.d-lg-flex.d-none.p-0.company.flex-1.table
+a1300 2
+xoilacx.cc,garance-paris.com###match-child-1
+xoilacx.cc,garance-paris.com,xoilaczve.tv##.match-detail__offer
+d1302 4
+a1305 2
+xoilacx.cc,ramapoughlenapenation.org,hechoendumbo.com,garance-paris.com,rakhoizz.tv##.company
+xoilacx.cc,ramapoughlenapenation.org,hechoendumbo.com,newmeaccelerator.com##div[id^="dnn_"]
+d1307 2
+a1308 2
+xoilacx.cc,xoilaczve.tv##.menu-top-nha-cai
+xoilacx.cc,xoilaczve.tv,garance-paris.com##.menu-cuoc-8xbet
+d1315 5
+a1319 5
+xoilaczve.tv##.grid-match__footer
+xoilaczve.tv##.odds-comp
+xoilaczve.tv##.w-100.justify-content-center.align-items-center.d-flex
+xoilaczve.tv##a.d-lg-none.d-block:nth-of-type(1)
+xoilaczve.tv,newmeaccelerator.com##.d-lg-flex.d-none.p-0.company.flex-1.table
+d1346 7
 d1393 1
 a1393 1
 ||hentaiayame.com/qx/$subdocument
@@ -87,6 +144,7 @@ d1462 2
 a1463 2
 hentaiayame.com##.a_d_s_115
 hentaiayame.com##.qx_135
+d1486 1
 d1547 5
 a1551 5
 vailonxx.vip###adsbottom
@@ -98,17 +156,19 @@ d1577 2
 a1578 2
 www.vlxxhot.net,vailonxx.vip###ab_ctl
 www.vlxxhot.net,vailonxx.vip##.bannerads
-diff name:abpvn_adguard lines:110 checksum:1e947648bd
+a1585 1
+xx.ditnhauvietnam.com,javhdvip.net##.alldiv ~ div[class]
+diff name:abpvn_adguard lines:173 checksum:fabb792a87
 d2 1
 a2 1
-! Version: 20240810230537628
+! Version: 20240811190524776
 d5 2
 a6 2
-! Last modified: 10 Aug 2024 23:05:37 UTC+7
-! Diff-Path: patches/20240810230537628.patch#abpvn_adguard
+! Last modified: 11 Aug 2024 19:05:24 UTC+7
+! Diff-Path: patches/20240811190524776.patch#abpvn_adguard
 d47 1
 a47 1
-/i.imgur.com/*.gif$domain=keonhacai5.skin|phimlongtieng.net|phimdinhcao.com|phimdinhcao.net|xoilacx.cc|salesjobs.org|ramapoughlenapenation.org|zoolujan.com|plvb.xyz|listnhacai88.com|xoilaczvl.tv|xemtivingon.org|phimlongtieng.com|newmeaccelerator.com|rakhoizz.tv|rk.plcdn.xyz|phimmoi.onl|motphimww.com
+/i.imgur.com/*.gif$domain=keonhacai5.skin|phimlongtieng.net|phimdinhcao.com|phimdinhcao.net|xoilacx.cc|garance-paris.com|ramapoughlenapenation.org|hechoendumbo.com|plvb.xyz|listnhacai88.com|xoilaczve.tv|xemtivingon.org|phimlongtieng.com|newmeaccelerator.com|rakhoizz.tv|rk.plcdn.xyz|phimmoi.onl|motphimww.com
 d69 1
 a69 1
 /vast.js$script,domain=phimmoi.tuphim.net|boctem.com|phimvietsub.pro|phimdacap.tv|hoathinhtq.site|tvhay26.com|tvzinghd.co
@@ -116,29 +176,68 @@ d81 1
 d94 1
 a94 1
 ||blogger.googleusercontent.com^$image,domain=hhninja6.tv|xem14.com|hhtm.tv|hoathinh3dtq.com|hhh3d.tv|dragonphim.tv|hoathinhtq.site|phimhay.info|yanhh3d.com|yanhh3d.tv
+d100 1
+a100 1
+||cdn.lfastcdn.com^*.gif$image,domain=xoilaczve.tv
+a117 1
+||fastscans.net/_next/static/media/voucher.$image
 a123 1
 ||fundingchoicesmessages.google.com^$third-party
+a163 2
+||mephimhdc.net$csp=script-src 'self' 'unsafe-inline' https:
+||mephimhdc.net^*.gif$image
 a164 1
 ||motchilliii.net/banner$image
+a191 1
+||s1.fastscans.net/shopee/$image
+d199 2
 a254 1
 ||www.phimlongtieng.com/3s.m3u8$rewrite=abp-resource:blank-mp3,domain=www.phimlongtieng.com
 a330 1
 ||blurbreimbursetrombone.com^
 a407 1
 ||earringsatisfiedsplice.com^
+a756 1
+fastscans.net##.banner-shopee
 d765 1
 a765 1
 freeplayervideo.com,abysscdn.com,player-cdn.com,geoip.redirect-ads.com##.playover
+a781 12
+garance-paris.com###menu-main-menu>.menu-bongdainfo.menu-item.nav-item.tt-bdif
+garance-paris.com###menu-main-menu>.menu-nha-cai-uy-tin.menu-item.nav-item.style-2>.nav-link
+garance-paris.com##.c-int.d-lg-none.d-block
+garance-paris.com##.col-xl-4
+garance-paris.com##.container>.row>.col-12
+garance-paris.com##.d-lg-none.d-block.p-1.text-center
+garance-paris.com##.justify-content-center.d-flex>.btn-primary.btn
+garance-paris.com##.matches__item--footer
+garance-paris.com##.mt-1.d-lg-flex.d-none.sub-menu
+garance-paris.com##a.d-lg-none.d-block:nth-of-type(2)
+garance-paris.com,hechoendumbo.com,xoilacx.cc,ramapoughlenapenation.org###quangcaopc
+garance-paris.com,hechoendumbo.com,xoilacx.cc,ramapoughlenapenation.org,bongdainfoc.tv,xoilaczve.tv,xemtv.tvhayhd.tv###wap_bottombanner
+a793 7
+hechoendumbo.com##.container.mt-1.d-none.d-lg-block
+hechoendumbo.com##.menu-item-object-custom
+hechoendumbo.com##a.rlw-extra-i.py-3.flex-grow-1
+hechoendumbo.com,live.90phut34.live,noitu.pro##.modal-backdrop.show
+hechoendumbo.com,ramapoughlenapenation.org##.align-items-center.justify-content-between.d-flex.col-12>.d-lg-none.d-block
+hechoendumbo.com,xoilacx.cc##.sub-menu.d-none.d-lg-flex
+hechoendumbo.com,xoilacx.cc,garance-paris.com,ramapoughlenapenation.org##.marquee-container
 d811 1
 a811 1
 hoatieu.vn,rakhoi1.rakhoi3.xyz,tructiep12.cakhia24.live,cakhia1.cakhia29.xyz,tructiep.caheo7.link##.sticky
 d830 1
 a830 1
 keonhacai5.skin##.container>.row>center
+d862 1
+a862 1
+live.90phut34.live,live4.xoilac34.org,hechoendumbo.com,vebo4.net,live.vebo24.net,live.vebo26.net,tructiep2.banhkhuc15.net##.fade.show
 d869 1
 a869 1
-live.thapcam22.net,xoilaczvl.tv,ramapoughlenapenation.org,newmeaccelerator.com,rakhoizz.tv##.btn-odds
+live.thapcam22.net,xoilaczve.tv,ramapoughlenapenation.org,newmeaccelerator.com,rakhoizz.tv##.btn-odds
 d900 1
+a900 1
+mephimhdc.net##a#banner
 a902 1
 mephimtv.net##.movie-banner
 a923 1
@@ -147,6 +246,9 @@ a965 2
 phimhay.info##.code-block-1.code-block
 phimhay.info##.navbar-container + .container
 d967 2
+d974 1
+a974 1
+phimmoi.onl,vungtv.us,mephimhdc.net###container-ads
 d995 1
 a995 1
 phimvuihd.org,hh3dhay.lol,phim18u.net,phim24h.mobi,ffmovie.online,xem14.com,hh3dhay.pro,vutruphim.tv,3dchill.shop,hh3dhay.life##.float-ck-center-lt
@@ -158,6 +260,8 @@ rakhoi1.rakhoi3.xyz,tructiep12.cakhia24.live,cakhia1.cakhia29.xyz,tructiep.caheo
 rakhoi1.rakhoi3.xyz,tructiep12.cakhia24.live,cakhia1.cakhia29.xyz,tructiep.caheo7.link##.nhacaiuytin
 rakhoi1.rakhoi3.xyz,tructiep12.cakhia24.live,cakhia1.cakhia29.xyz,tructiep.caheo7.link##.text-running
 rakhoi1.rakhoi3.xyz,tructiep12.cakhia24.live,cakhia1.cakhia29.xyz,tructiep.caheo7.link,tructiep36.cakhia24.live##.btn-betting
+d1025 12
+d1049 1
 d1120 3
 a1122 3
 tructiep12.cakhia24.live,cakhia1.cakhia29.xyz,tructiep.caheo7.link##.container-banner
@@ -169,12 +273,25 @@ xemphimchill.xyz,hhninja6.tv,phimbocn.com,phimhoathinh3d.com,hoathinhtq.site,hht
 d1285 1
 a1285 1
 xemtivingon.org,keonhacai5.skin##[id^="Balloon_"]
-d1300 1
-a1300 1
-xoilacx.cc,ramapoughlenapenation.org,zoolujan.com,newmeaccelerator.com##div[id^="dnn_"]
-d1317 1
-a1317 1
-xoilaczvl.tv,newmeaccelerator.com##.d-lg-flex.d-none.p-0.company.flex-1.table
+a1298 2
+xoilacx.cc,garance-paris.com###match-child-1
+xoilacx.cc,garance-paris.com,xoilaczve.tv##.match-detail__offer
+d1300 4
+a1303 2
+xoilacx.cc,ramapoughlenapenation.org,hechoendumbo.com,garance-paris.com,rakhoizz.tv##.company
+xoilacx.cc,ramapoughlenapenation.org,hechoendumbo.com,newmeaccelerator.com##div[id^="dnn_"]
+d1305 2
+a1306 2
+xoilacx.cc,xoilaczve.tv##.menu-top-nha-cai
+xoilacx.cc,xoilaczve.tv,garance-paris.com##.menu-cuoc-8xbet
+d1313 5
+a1317 5
+xoilaczve.tv##.grid-match__footer
+xoilaczve.tv##.odds-comp
+xoilaczve.tv##.w-100.justify-content-center.align-items-center.d-flex
+xoilaczve.tv##a.d-lg-none.d-block:nth-of-type(1)
+xoilaczve.tv,newmeaccelerator.com##.d-lg-flex.d-none.p-0.company.flex-1.table
+d1344 7
 d1389 1
 a1389 1
 ||hentaiayame.com/qx/$subdocument
@@ -182,6 +299,7 @@ d1458 2
 a1459 2
 hentaiayame.com##.a_d_s_115
 hentaiayame.com##.qx_135
+d1482 1
 d1543 5
 a1547 5
 vailonxx.vip###adsbottom
@@ -193,13 +311,18 @@ d1573 2
 a1574 2
 www.vlxxhot.net,vailonxx.vip###ab_ctl
 www.vlxxhot.net,vailonxx.vip##.bannerads
+a1581 1
+xx.ditnhauvietnam.com,javhdvip.net##.alldiv ~ div[class]
 a1603 1
 freeplayervideo.com,abysscdn.com,player-cdn.com,geoip.redirect-ads.com#%#//scriptlet('set-session-storage-item', "logged", "1")
 a1608 1
 hh3dhay.life#%#//scriptlet("abort-current-inline-script", "Symbol", "break;case $")
+a1623 1
+mephimhdc.net#%#//scriptlet("abort-current-inline-script", "document.addEventListener", "linksToOpen")
 d1632 1
 a1632 1
 phimtho.net#%#//scriptlet("abort-current-inline-script", "$", "p0pUpRandom")
+d1645 1
 d1653 1
 a1653 1
 truyensieuhay.com,phimvietsub.pro,quangcaoyenbai.com,sieudamtv.dev,ephimchill.com,ophimhdvn3.net,thuvienhd.xyz,xemtv.tvhayhd.tv,www.khophim88s.com,nhentaivn.online,mv.dailyphimz.com,mv.phimbathu.one#%#//scriptlet("abort-on-property-read", "document.cookie")
@@ -209,19 +332,19 @@ vailonxx.vip,phimlongtieng.com,phimlongtieng.net#%#//scriptlet("abort-current-in
 d1658 1
 a1658 1
 viet69.name,ungtycomicsvip.com,vlxx.mobi,dualeotruyenbi.com,yurineko.net,vlxyz.tube,javhay.click,phimsexhay669.pro,cliphot69.blog,doctruyen3qvn.pro,hentaizz.biz,animehay.in,heo69.moe,top1sex.club,lenlut.tv,sexmup18.com,hentaivn.today,streamvl.top,www.buomtv.vip,truyenvn.cam,cdnstream.sbs,javtiful.com,truyengihotdo.net,truyengihotnha.com,truyengihotnha.net,truyengihotqua.net,truyengihotqua.com,truyengihotnay.com,truyengihotzay.net,sexvn.tuoi69s.com,quatvn.baby,tenmientruyengi.net,truyengihotzay.net,topviet69.com,phim18hd.sex,live.sexviet88.dev,sexnhe.biz,demo.14412882.com,sexphimhd.vip,xem.phim18c.org,ungtycomicsvip.net,vn.cliphot69.live,hhtq5.vip,sayhentai.one,sexdiary.club#%#//scriptlet("abort-current-inline-script", "WebAssembly", "instantiate")
-diff name:abpvn_content_blocker lines:99 checksum:d768936d88
+diff name:abpvn_content_blocker lines:159 checksum:a9cd230c01
 d2 1
 a2 1
-! Version: 20240810230537628
+! Version: 20240811190524776
 d5 2
 a6 2
-! Last modified: 10 Aug 2024 23:05:37 UTC+7
-! Diff-Path: patches/20240810230537628.patch#abpvn_content_blocker
+! Last modified: 11 Aug 2024 19:05:24 UTC+7
+! Diff-Path: patches/20240811190524776.patch#abpvn_content_blocker
 a20 1
 $popup,domain=player-cdn.com|freeplayervideo.com|abysscdn.com|geoip.redirect-ads.com
 d47 1
 a47 1
-/i.imgur.com/*.gif$domain=keonhacai5.skin|phimlongtieng.net|phimdinhcao.com|phimdinhcao.net|xoilacx.cc|salesjobs.org|ramapoughlenapenation.org|zoolujan.com|plvb.xyz|listnhacai88.com|xoilaczvl.tv|xemtivingon.org|phimlongtieng.com|newmeaccelerator.com|rakhoizz.tv|rk.plcdn.xyz|phimmoi.onl|motphimww.com
+/i.imgur.com/*.gif$domain=keonhacai5.skin|phimlongtieng.net|phimdinhcao.com|phimdinhcao.net|xoilacx.cc|garance-paris.com|ramapoughlenapenation.org|hechoendumbo.com|plvb.xyz|listnhacai88.com|xoilaczve.tv|xemtivingon.org|phimlongtieng.com|newmeaccelerator.com|rakhoizz.tv|rk.plcdn.xyz|phimmoi.onl|motphimww.com
 d69 1
 a69 1
 /vast.js$script,domain=phimmoi.tuphim.net|boctem.com|phimvietsub.pro|phimdacap.tv|hoathinhtq.site|tvhay26.com|tvzinghd.co
@@ -229,32 +352,71 @@ d81 1
 d94 1
 a94 1
 ||blogger.googleusercontent.com^$image,domain=hhninja6.tv|xem14.com|hhtm.tv|hoathinh3dtq.com|hhh3d.tv|dragonphim.tv|hoathinhtq.site|phimhay.info|yanhh3d.com|yanhh3d.tv
+d100 1
+a100 1
+||cdn.lfastcdn.com^*.gif$image,domain=xoilaczve.tv
+a117 1
+||fastscans.net/_next/static/media/voucher.$image
 a123 1
 ||fundingchoicesmessages.google.com^$third-party
+a163 2
+||mephimhdc.net$csp=script-src 'self' 'unsafe-inline' https:
+||mephimhdc.net^*.gif$image
 a164 1
 ||motchilliii.net/banner$image
+a192 1
+||s1.fastscans.net/shopee/$image
 d197 1
 a197 1
 ||shope.ee^$popup,domain=chillphimmoizzz.org|blogtruyenmoi.com|cunghocvui.com|truyensextv.com
+d201 2
 a256 1
 ||www.phimlongtieng.com/3s.m3u8$rewrite=abp-resource:blank-mp3,domain=www.phimlongtieng.com
 a332 1
 ||blurbreimbursetrombone.com^
 a409 1
 ||earringsatisfiedsplice.com^
+a758 1
+fastscans.net##.banner-shopee
 d767 1
 a767 1
 freeplayervideo.com,abysscdn.com,player-cdn.com,geoip.redirect-ads.com##.playover
+a783 12
+garance-paris.com###menu-main-menu>.menu-bongdainfo.menu-item.nav-item.tt-bdif
+garance-paris.com###menu-main-menu>.menu-nha-cai-uy-tin.menu-item.nav-item.style-2>.nav-link
+garance-paris.com##.c-int.d-lg-none.d-block
+garance-paris.com##.col-xl-4
+garance-paris.com##.container>.row>.col-12
+garance-paris.com##.d-lg-none.d-block.p-1.text-center
+garance-paris.com##.justify-content-center.d-flex>.btn-primary.btn
+garance-paris.com##.matches__item--footer
+garance-paris.com##.mt-1.d-lg-flex.d-none.sub-menu
+garance-paris.com##a.d-lg-none.d-block:nth-of-type(2)
+garance-paris.com,hechoendumbo.com,xoilacx.cc,ramapoughlenapenation.org###quangcaopc
+garance-paris.com,hechoendumbo.com,xoilacx.cc,ramapoughlenapenation.org,bongdainfoc.tv,xoilaczve.tv,xemtv.tvhayhd.tv###wap_bottombanner
+a795 7
+hechoendumbo.com##.container.mt-1.d-none.d-lg-block
+hechoendumbo.com##.menu-item-object-custom
+hechoendumbo.com##a.rlw-extra-i.py-3.flex-grow-1
+hechoendumbo.com,live.90phut34.live,noitu.pro##.modal-backdrop.show
+hechoendumbo.com,ramapoughlenapenation.org##.align-items-center.justify-content-between.d-flex.col-12>.d-lg-none.d-block
+hechoendumbo.com,xoilacx.cc##.sub-menu.d-none.d-lg-flex
+hechoendumbo.com,xoilacx.cc,garance-paris.com,ramapoughlenapenation.org##.marquee-container
 d813 1
 a813 1
 hoatieu.vn,rakhoi1.rakhoi3.xyz,tructiep12.cakhia24.live,cakhia1.cakhia29.xyz,tructiep.caheo7.link##.sticky
 d832 1
 a832 1
 keonhacai5.skin##.container>.row>center
+d864 1
+a864 1
+live.90phut34.live,live4.xoilac34.org,hechoendumbo.com,vebo4.net,live.vebo24.net,live.vebo26.net,tructiep2.banhkhuc15.net##.fade.show
 d871 1
 a871 1
-live.thapcam22.net,xoilaczvl.tv,ramapoughlenapenation.org,newmeaccelerator.com,rakhoizz.tv##.btn-odds
+live.thapcam22.net,xoilaczve.tv,ramapoughlenapenation.org,newmeaccelerator.com,rakhoizz.tv##.btn-odds
 d902 1
+a902 1
+mephimhdc.net##a#banner
 a904 1
 mephimtv.net##.movie-banner
 a925 1
@@ -263,6 +425,9 @@ a967 2
 phimhay.info##.code-block-1.code-block
 phimhay.info##.navbar-container + .container
 d969 2
+d976 1
+a976 1
+phimmoi.onl,vungtv.us,mephimhdc.net###container-ads
 d997 1
 a997 1
 phimvuihd.org,hh3dhay.lol,phim18u.net,phim24h.mobi,ffmovie.online,xem14.com,hh3dhay.pro,vutruphim.tv,3dchill.shop,hh3dhay.life##.float-ck-center-lt
@@ -274,6 +439,8 @@ rakhoi1.rakhoi3.xyz,tructiep12.cakhia24.live,cakhia1.cakhia29.xyz,tructiep.caheo
 rakhoi1.rakhoi3.xyz,tructiep12.cakhia24.live,cakhia1.cakhia29.xyz,tructiep.caheo7.link##.nhacaiuytin
 rakhoi1.rakhoi3.xyz,tructiep12.cakhia24.live,cakhia1.cakhia29.xyz,tructiep.caheo7.link##.text-running
 rakhoi1.rakhoi3.xyz,tructiep12.cakhia24.live,cakhia1.cakhia29.xyz,tructiep.caheo7.link,tructiep36.cakhia24.live##.btn-betting
+d1027 12
+d1051 1
 d1122 3
 a1124 3
 tructiep12.cakhia24.live,cakhia1.cakhia29.xyz,tructiep.caheo7.link##.container-banner
@@ -285,12 +452,25 @@ xemphimchill.xyz,hhninja6.tv,phimbocn.com,phimhoathinh3d.com,hoathinhtq.site,hht
 d1287 1
 a1287 1
 xemtivingon.org,keonhacai5.skin##[id^="Balloon_"]
-d1302 1
-a1302 1
-xoilacx.cc,ramapoughlenapenation.org,zoolujan.com,newmeaccelerator.com##div[id^="dnn_"]
-d1319 1
-a1319 1
-xoilaczvl.tv,newmeaccelerator.com##.d-lg-flex.d-none.p-0.company.flex-1.table
+a1300 2
+xoilacx.cc,garance-paris.com###match-child-1
+xoilacx.cc,garance-paris.com,xoilaczve.tv##.match-detail__offer
+d1302 4
+a1305 2
+xoilacx.cc,ramapoughlenapenation.org,hechoendumbo.com,garance-paris.com,rakhoizz.tv##.company
+xoilacx.cc,ramapoughlenapenation.org,hechoendumbo.com,newmeaccelerator.com##div[id^="dnn_"]
+d1307 2
+a1308 2
+xoilacx.cc,xoilaczve.tv##.menu-top-nha-cai
+xoilacx.cc,xoilaczve.tv,garance-paris.com##.menu-cuoc-8xbet
+d1315 5
+a1319 5
+xoilaczve.tv##.grid-match__footer
+xoilaczve.tv##.odds-comp
+xoilaczve.tv##.w-100.justify-content-center.align-items-center.d-flex
+xoilaczve.tv##a.d-lg-none.d-block:nth-of-type(1)
+xoilaczve.tv,newmeaccelerator.com##.d-lg-flex.d-none.p-0.company.flex-1.table
+d1346 7
 d1393 1
 a1393 1
 ||hentaiayame.com/qx/$subdocument
@@ -298,6 +478,7 @@ d1462 2
 a1463 2
 hentaiayame.com##.a_d_s_115
 hentaiayame.com##.qx_135
+d1486 1
 d1547 5
 a1551 5
 vailonxx.vip###adsbottom
@@ -309,19 +490,21 @@ d1577 2
 a1578 2
 www.vlxxhot.net,vailonxx.vip###ab_ctl
 www.vlxxhot.net,vailonxx.vip##.bannerads
-diff name:abpvn_noelemhide lines:35 checksum:1b1dd19caf
+a1585 1
+xx.ditnhauvietnam.com,javhdvip.net##.alldiv ~ div[class]
+diff name:abpvn_noelemhide lines:46 checksum:39e94ec8d5
 d2 1
 a2 1
-! Version: 20240810230537628
+! Version: 20240811190524776
 d5 2
 a6 2
-! Last modified: 10 Aug 2024 23:05:37 UTC+7
-! Diff-Path: patches/20240810230537628.patch#abpvn_noelemhide
+! Last modified: 11 Aug 2024 19:05:24 UTC+7
+! Diff-Path: patches/20240811190524776.patch#abpvn_noelemhide
 a20 1
 $popup,domain=player-cdn.com|freeplayervideo.com|abysscdn.com|geoip.redirect-ads.com
 d47 1
 a47 1
-/i.imgur.com/*.gif$domain=keonhacai5.skin|phimlongtieng.net|phimdinhcao.com|phimdinhcao.net|xoilacx.cc|salesjobs.org|ramapoughlenapenation.org|zoolujan.com|plvb.xyz|listnhacai88.com|xoilaczvl.tv|xemtivingon.org|phimlongtieng.com|newmeaccelerator.com|rakhoizz.tv|rk.plcdn.xyz|phimmoi.onl|motphimww.com
+/i.imgur.com/*.gif$domain=keonhacai5.skin|phimlongtieng.net|phimdinhcao.com|phimdinhcao.net|xoilacx.cc|garance-paris.com|ramapoughlenapenation.org|hechoendumbo.com|plvb.xyz|listnhacai88.com|xoilaczve.tv|xemtivingon.org|phimlongtieng.com|newmeaccelerator.com|rakhoizz.tv|rk.plcdn.xyz|phimmoi.onl|motphimww.com
 d69 1
 a69 1
 /vast.js$script,domain=phimmoi.tuphim.net|boctem.com|phimvietsub.pro|phimdacap.tv|hoathinhtq.site|tvhay26.com|tvzinghd.co
@@ -329,13 +512,24 @@ d81 1
 d94 1
 a94 1
 ||blogger.googleusercontent.com^$image,domain=hhninja6.tv|xem14.com|hhtm.tv|hoathinh3dtq.com|hhh3d.tv|dragonphim.tv|hoathinhtq.site|phimhay.info|yanhh3d.com|yanhh3d.tv
+d100 1
+a100 1
+||cdn.lfastcdn.com^*.gif$image,domain=xoilaczve.tv
+a117 1
+||fastscans.net/_next/static/media/voucher.$image
 a123 1
 ||fundingchoicesmessages.google.com^$third-party
+a163 2
+||mephimhdc.net$csp=script-src 'self' 'unsafe-inline' https:
+||mephimhdc.net^*.gif$image
 a164 1
 ||motchilliii.net/banner$image
+a192 1
+||s1.fastscans.net/shopee/$image
 d197 1
 a197 1
 ||shope.ee^$popup,domain=chillphimmoizzz.org|blogtruyenmoi.com|cunghocvui.com|truyensextv.com
+d201 2
 a256 1
 ||www.phimlongtieng.com/3s.m3u8$rewrite=abp-resource:blank-mp3,domain=www.phimlongtieng.com
 a332 1
@@ -345,17 +539,17 @@ a409 1
 d659 1
 a659 1
 ||hentaiayame.com/qx/$subdocument
-diff name:abpvn_ublock lines:107 checksum:c34fde335f
+diff name:abpvn_ublock lines:170 checksum:458600ae56
 d2 1
 a2 1
-! Version: 20240810230537628
+! Version: 20240811190524776
 d5 2
 a6 2
-! Last modified: 10 Aug 2024 23:05:37 UTC+7
-! Diff-Path: patches/20240810230537628.patch#abpvn_ublock
+! Last modified: 11 Aug 2024 19:05:24 UTC+7
+! Diff-Path: patches/20240811190524776.patch#abpvn_ublock
 d47 1
 a47 1
-/i.imgur.com/*.gif$domain=keonhacai5.skin|phimlongtieng.net|phimdinhcao.com|phimdinhcao.net|xoilacx.cc|salesjobs.org|ramapoughlenapenation.org|zoolujan.com|plvb.xyz|listnhacai88.com|xoilaczvl.tv|xemtivingon.org|phimlongtieng.com|newmeaccelerator.com|rakhoizz.tv|rk.plcdn.xyz|phimmoi.onl|motphimww.com
+/i.imgur.com/*.gif$domain=keonhacai5.skin|phimlongtieng.net|phimdinhcao.com|phimdinhcao.net|xoilacx.cc|garance-paris.com|ramapoughlenapenation.org|hechoendumbo.com|plvb.xyz|listnhacai88.com|xoilaczve.tv|xemtivingon.org|phimlongtieng.com|newmeaccelerator.com|rakhoizz.tv|rk.plcdn.xyz|phimmoi.onl|motphimww.com
 d69 1
 a69 1
 /vast.js$script,domain=phimmoi.tuphim.net|boctem.com|phimvietsub.pro|phimdacap.tv|hoathinhtq.site|tvhay26.com|tvzinghd.co
@@ -363,29 +557,68 @@ d81 1
 d94 1
 a94 1
 ||blogger.googleusercontent.com^$image,domain=hhninja6.tv|xem14.com|hhtm.tv|hoathinh3dtq.com|hhh3d.tv|dragonphim.tv|hoathinhtq.site|phimhay.info|yanhh3d.com|yanhh3d.tv
+d100 1
+a100 1
+||cdn.lfastcdn.com^*.gif$image,domain=xoilaczve.tv
+a117 1
+||fastscans.net/_next/static/media/voucher.$image
 a123 1
 ||fundingchoicesmessages.google.com^$third-party
+a163 2
+||mephimhdc.net$csp=script-src 'self' 'unsafe-inline' https:
+||mephimhdc.net^*.gif$image
 a164 1
 ||motchilliii.net/banner$image
+a191 1
+||s1.fastscans.net/shopee/$image
+d199 2
 a254 1
 ||www.phimlongtieng.com/3s.m3u8$rewrite=abp-resource:blank-mp3,domain=www.phimlongtieng.com
 a330 1
 ||blurbreimbursetrombone.com^
 a407 1
 ||earringsatisfiedsplice.com^
+a756 1
+fastscans.net##.banner-shopee
 d765 1
 a765 1
 freeplayervideo.com,abysscdn.com,player-cdn.com,geoip.redirect-ads.com##.playover
+a781 12
+garance-paris.com###menu-main-menu>.menu-bongdainfo.menu-item.nav-item.tt-bdif
+garance-paris.com###menu-main-menu>.menu-nha-cai-uy-tin.menu-item.nav-item.style-2>.nav-link
+garance-paris.com##.c-int.d-lg-none.d-block
+garance-paris.com##.col-xl-4
+garance-paris.com##.container>.row>.col-12
+garance-paris.com##.d-lg-none.d-block.p-1.text-center
+garance-paris.com##.justify-content-center.d-flex>.btn-primary.btn
+garance-paris.com##.matches__item--footer
+garance-paris.com##.mt-1.d-lg-flex.d-none.sub-menu
+garance-paris.com##a.d-lg-none.d-block:nth-of-type(2)
+garance-paris.com,hechoendumbo.com,xoilacx.cc,ramapoughlenapenation.org###quangcaopc
+garance-paris.com,hechoendumbo.com,xoilacx.cc,ramapoughlenapenation.org,bongdainfoc.tv,xoilaczve.tv,xemtv.tvhayhd.tv###wap_bottombanner
+a793 7
+hechoendumbo.com##.container.mt-1.d-none.d-lg-block
+hechoendumbo.com##.menu-item-object-custom
+hechoendumbo.com##a.rlw-extra-i.py-3.flex-grow-1
+hechoendumbo.com,live.90phut34.live,noitu.pro##.modal-backdrop.show
+hechoendumbo.com,ramapoughlenapenation.org##.align-items-center.justify-content-between.d-flex.col-12>.d-lg-none.d-block
+hechoendumbo.com,xoilacx.cc##.sub-menu.d-none.d-lg-flex
+hechoendumbo.com,xoilacx.cc,garance-paris.com,ramapoughlenapenation.org##.marquee-container
 d811 1
 a811 1
 hoatieu.vn,rakhoi1.rakhoi3.xyz,tructiep12.cakhia24.live,cakhia1.cakhia29.xyz,tructiep.caheo7.link##.sticky
 d830 1
 a830 1
 keonhacai5.skin##.container>.row>center
+d862 1
+a862 1
+live.90phut34.live,live4.xoilac34.org,hechoendumbo.com,vebo4.net,live.vebo24.net,live.vebo26.net,tructiep2.banhkhuc15.net##.fade.show
 d869 1
 a869 1
-live.thapcam22.net,xoilaczvl.tv,ramapoughlenapenation.org,newmeaccelerator.com,rakhoizz.tv##.btn-odds
+live.thapcam22.net,xoilaczve.tv,ramapoughlenapenation.org,newmeaccelerator.com,rakhoizz.tv##.btn-odds
 d900 1
+a900 1
+mephimhdc.net##a#banner
 a902 1
 mephimtv.net##.movie-banner
 a923 1
@@ -394,6 +627,9 @@ a965 2
 phimhay.info##.code-block-1.code-block
 phimhay.info##.navbar-container + .container
 d967 2
+d974 1
+a974 1
+phimmoi.onl,vungtv.us,mephimhdc.net###container-ads
 d995 1
 a995 1
 phimvuihd.org,hh3dhay.lol,phim18u.net,phim24h.mobi,ffmovie.online,xem14.com,hh3dhay.pro,vutruphim.tv,3dchill.shop,hh3dhay.life##.float-ck-center-lt
@@ -405,6 +641,8 @@ rakhoi1.rakhoi3.xyz,tructiep12.cakhia24.live,cakhia1.cakhia29.xyz,tructiep.caheo
 rakhoi1.rakhoi3.xyz,tructiep12.cakhia24.live,cakhia1.cakhia29.xyz,tructiep.caheo7.link##.nhacaiuytin
 rakhoi1.rakhoi3.xyz,tructiep12.cakhia24.live,cakhia1.cakhia29.xyz,tructiep.caheo7.link##.text-running
 rakhoi1.rakhoi3.xyz,tructiep12.cakhia24.live,cakhia1.cakhia29.xyz,tructiep.caheo7.link,tructiep36.cakhia24.live##.btn-betting
+d1025 12
+d1049 1
 d1120 3
 a1122 3
 tructiep12.cakhia24.live,cakhia1.cakhia29.xyz,tructiep.caheo7.link##.container-banner
@@ -416,12 +654,25 @@ xemphimchill.xyz,hhninja6.tv,phimbocn.com,phimhoathinh3d.com,hoathinhtq.site,hht
 d1285 1
 a1285 1
 xemtivingon.org,keonhacai5.skin##[id^="Balloon_"]
-d1300 1
-a1300 1
-xoilacx.cc,ramapoughlenapenation.org,zoolujan.com,newmeaccelerator.com##div[id^="dnn_"]
-d1317 1
-a1317 1
-xoilaczvl.tv,newmeaccelerator.com##.d-lg-flex.d-none.p-0.company.flex-1.table
+a1298 2
+xoilacx.cc,garance-paris.com###match-child-1
+xoilacx.cc,garance-paris.com,xoilaczve.tv##.match-detail__offer
+d1300 4
+a1303 2
+xoilacx.cc,ramapoughlenapenation.org,hechoendumbo.com,garance-paris.com,rakhoizz.tv##.company
+xoilacx.cc,ramapoughlenapenation.org,hechoendumbo.com,newmeaccelerator.com##div[id^="dnn_"]
+d1305 2
+a1306 2
+xoilacx.cc,xoilaczve.tv##.menu-top-nha-cai
+xoilacx.cc,xoilaczve.tv,garance-paris.com##.menu-cuoc-8xbet
+d1313 5
+a1317 5
+xoilaczve.tv##.grid-match__footer
+xoilaczve.tv##.odds-comp
+xoilaczve.tv##.w-100.justify-content-center.align-items-center.d-flex
+xoilaczve.tv##a.d-lg-none.d-block:nth-of-type(1)
+xoilaczve.tv,newmeaccelerator.com##.d-lg-flex.d-none.p-0.company.flex-1.table
+d1344 7
 d1389 1
 a1389 1
 ||hentaiayame.com/qx/$subdocument
@@ -429,6 +680,7 @@ d1458 2
 a1459 2
 hentaiayame.com##.a_d_s_115
 hentaiayame.com##.qx_135
+d1482 1
 d1543 5
 a1547 5
 vailonxx.vip###adsbottom
@@ -440,10 +692,15 @@ d1573 2
 a1574 2
 www.vlxxhot.net,vailonxx.vip###ab_ctl
 www.vlxxhot.net,vailonxx.vip##.bannerads
+a1581 1
+xx.ditnhauvietnam.com,javhdvip.net##.alldiv ~ div[class]
 a1604 1
 freeplayervideo.com,abysscdn.com,player-cdn.com,geoip.redirect-ads.com##+js(set-session-storage-item, logged, 1)
 a1609 1
 hh3dhay.life##+js(acs, Symbol, break;case $)
+a1624 1
+mephimhdc.net##+js(acs, document.addEventListener, linksToOpen)
+d1646 1
 d1654 1
 a1654 1
 truyensieuhay.com,phimvietsub.pro,quangcaoyenbai.com,sieudamtv.dev,ephimchill.com,ophimhdvn3.net,thuvienhd.xyz,xemtv.tvhayhd.tv,www.khophim88s.com,nhentaivn.online,mv.dailyphimz.com,mv.phimbathu.one##+js(aopr, document.cookie)
