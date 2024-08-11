@@ -1,11 +1,11 @@
-diff name:abpvn lines:166 checksum:d23fb53053
+diff name:abpvn lines:168 checksum:8f33a1c6e3
 d2 1
 a2 1
-! Version: 20240811190526718
+! Version: 20240811213536727
 d5 2
 a6 2
-! Last modified: 11 Aug 2024 19:05:26 UTC+7
-! Diff-Path: patches/20240811190526718.patch#abpvn
+! Last modified: 11 Aug 2024 21:35:36 UTC+7
+! Diff-Path: patches/20240811213536727.patch#abpvn
 a20 1
 $popup,domain=player-cdn.com|freeplayervideo.com|abysscdn.com|geoip.redirect-ads.com
 d47 1
@@ -137,6 +137,8 @@ d1065 7
 d1090 1
 a1090 1
 @@||pagead2.googlesyndication.com^$script,xmlhttprequest,image,domain=thuthuatmeovat.net|kites.vn|phuongtrinhhoahoc.com|letrongdai.vn|romgoc.net|traderviet.tv|sum.vn|truyenaudiocv.org|khuchotot.com|1shortlink.com|thelanb.com|cungthi.online|lehait.net|nhacsong.pro|kientruc360.info|giavang.net|vnjpclub.com|753x.blogspot.com|ngohoanganhtuan.com|ngohoanganhtuan.net|toeicexamstore.xyz|vungoctuan.vn|ichi.pro|gocmod.com|tromcap.com|dafontvn.com|gvnvh18.com|sesenblog.com|filess.us|xaydungplus.com|nguonhd.net|anhdep24.com|windowslite.net|tiengnhatdongian.com|quangcaoyenbai.com|ios.codevn.net|traffic1s.com|audiotruyenfull.com|minhpc.com|vongquaymayman.one|toilaquantri.com|diendancauduong.com|taisachonthi.com|mifirm.net|web1s.com|anonyviet.com|4g.tintuc247.top|web1s.asia|vanhoatamlinh.com|kiemlua.vn|khotailieuonthi247.com|custommapposter.com|ipacrack.com|duan24h.net|www.iosviet.com|hoctoan123.com|yhocdata.com|ycongnghe.com|imail.edu.vn|thitotnghiepthpt.vn|mod.lnpchannel.com
+a1091 1
+@@||static.ads-twitter.com/uwt.js$script,domain=linkneverdie.net
 a1104 1
 @@||gamehayvl.com$generichide
 d1107 1
@@ -165,14 +167,14 @@ www.vlxxhot.net,vailonxx.vip###ab_ctl
 www.vlxxhot.net,vailonxx.vip##.bannerads
 a1327 1
 xx.ditnhauvietnam.com,javhdvip.net##.alldiv ~ div[class]
-diff name:abpvn_adguard lines:181 checksum:8f12889efa
+diff name:abpvn_adguard lines:187 checksum:113a85a8c5
 d2 1
 a2 1
-! Version: 20240811190526718
+! Version: 20240811213536727
 d5 2
 a6 2
-! Last modified: 11 Aug 2024 19:05:26 UTC+7
-! Diff-Path: patches/20240811190526718.patch#abpvn_adguard
+! Last modified: 11 Aug 2024 21:35:36 UTC+7
+! Diff-Path: patches/20240811213536727.patch#abpvn_adguard
 d47 1
 a47 1
 /i.imgur.com/*.gif$domain=keonhacai5.skin|phimlongtieng.net|phimdinhcao.com|phimdinhcao.net|xoilacx.cc|garance-paris.com|ramapoughlenapenation.org|hechoendumbo.com|plvb.xyz|listnhacai88.com|xoilaczve.tv|xemtivingon.org|phimlongtieng.com|newmeaccelerator.com|rakhoizz.tv|rk.plcdn.xyz|phimmoi.onl|motphimww.com
@@ -299,6 +301,8 @@ d1063 7
 d1087 1
 a1087 1
 @@||pagead2.googlesyndication.com^$script,xmlhttprequest,image,domain=thuthuatmeovat.net|kites.vn|phuongtrinhhoahoc.com|letrongdai.vn|romgoc.net|traderviet.tv|sum.vn|truyenaudiocv.org|khuchotot.com|1shortlink.com|thelanb.com|cungthi.online|lehait.net|nhacsong.pro|kientruc360.info|giavang.net|vnjpclub.com|753x.blogspot.com|ngohoanganhtuan.com|ngohoanganhtuan.net|toeicexamstore.xyz|vungoctuan.vn|ichi.pro|gocmod.com|tromcap.com|dafontvn.com|gvnvh18.com|sesenblog.com|filess.us|xaydungplus.com|nguonhd.net|anhdep24.com|windowslite.net|tiengnhatdongian.com|quangcaoyenbai.com|ios.codevn.net|traffic1s.com|audiotruyenfull.com|minhpc.com|vongquaymayman.one|toilaquantri.com|diendancauduong.com|taisachonthi.com|mifirm.net|web1s.com|anonyviet.com|4g.tintuc247.top|web1s.asia|vanhoatamlinh.com|kiemlua.vn|khotailieuonthi247.com|custommapposter.com|ipacrack.com|duan24h.net|www.iosviet.com|hoctoan123.com|yhocdata.com|ycongnghe.com|imail.edu.vn|thitotnghiepthpt.vn|mod.lnpchannel.com
+a1088 1
+@@||static.ads-twitter.com/uwt.js$script,domain=linkneverdie.net
 a1101 1
 @@||gamehayvl.com$generichide
 d1104 1
@@ -331,6 +335,10 @@ a1345 1
 freeplayervideo.com,abysscdn.com,player-cdn.com,geoip.redirect-ads.com#%#//scriptlet('set-session-storage-item', "logged", "1")
 a1350 1
 hh3dhay.life#%#//scriptlet("abort-current-inline-script", "Symbol", "break;case $")
+d1359 2
+a1360 2
+linkneverdie.net#%#//scriptlet("prevent-setTimeout", "DisplayAHTML", "5001")
+linkneverdie.net#%#//scriptlet("prevent-setTimeout", "callback", "6004")
 a1366 1
 mephimhdc.net#%#//scriptlet("abort-current-inline-script", "document.addEventListener", "linksToOpen")
 d1374 1
@@ -347,14 +355,14 @@ vailonxx.vip,phimlongtieng.com,phimlongtieng.net#%#//scriptlet("abort-current-in
 d1400 1
 a1400 1
 viet69.name,ungtycomicsvip.com,vlxx.mobi,dualeotruyenbi.com,yurineko.net,vlxyz.tube,javhay.click,phimsexhay669.pro,cliphot69.blog,doctruyen3qvn.pro,hentaizz.biz,animehay.in,heo69.moe,top1sex.club,lenlut.tv,sexmup18.com,hentaivn.today,streamvl.top,www.buomtv.vip,truyenvn.cam,cdnstream.sbs,javtiful.com,truyengihotdo.net,truyengihotzay.net,truyengihotnha.com,truyengihotnha.net,truyengihotqua.net,truyengihotqua.com,truyengihotnay.com,sexvn.tuoi69s.com,quatvn.baby,tenmientruyengi.net,topviet69.com,phim18hd.sex,live.sexviet88.dev,sexnhe.biz,demo.14412882.com,sexphimhd.vip,xem.phim18c.org,ungtycomicsvip.net,vn.cliphot69.live,hhtq5.vip,sayhentai.one,sexdiary.club#%#//scriptlet("abort-current-inline-script", "WebAssembly", "instantiate")
-diff name:abpvn_content_blocker lines:166 checksum:64b6394fc8
+diff name:abpvn_content_blocker lines:168 checksum:577ea67e1b
 d2 1
 a2 1
-! Version: 20240811190526718
+! Version: 20240811213536727
 d5 2
 a6 2
-! Last modified: 11 Aug 2024 19:05:26 UTC+7
-! Diff-Path: patches/20240811190526718.patch#abpvn_content_blocker
+! Last modified: 11 Aug 2024 21:35:36 UTC+7
+! Diff-Path: patches/20240811213536727.patch#abpvn_content_blocker
 a20 1
 $popup,domain=player-cdn.com|freeplayervideo.com|abysscdn.com|geoip.redirect-ads.com
 d47 1
@@ -486,6 +494,8 @@ d1065 7
 d1090 1
 a1090 1
 @@||pagead2.googlesyndication.com^$script,xmlhttprequest,image,domain=thuthuatmeovat.net|kites.vn|phuongtrinhhoahoc.com|letrongdai.vn|romgoc.net|traderviet.tv|sum.vn|truyenaudiocv.org|khuchotot.com|1shortlink.com|thelanb.com|cungthi.online|lehait.net|nhacsong.pro|kientruc360.info|giavang.net|vnjpclub.com|753x.blogspot.com|ngohoanganhtuan.com|ngohoanganhtuan.net|toeicexamstore.xyz|vungoctuan.vn|ichi.pro|gocmod.com|tromcap.com|dafontvn.com|gvnvh18.com|sesenblog.com|filess.us|xaydungplus.com|nguonhd.net|anhdep24.com|windowslite.net|tiengnhatdongian.com|quangcaoyenbai.com|ios.codevn.net|traffic1s.com|audiotruyenfull.com|minhpc.com|vongquaymayman.one|toilaquantri.com|diendancauduong.com|taisachonthi.com|mifirm.net|web1s.com|anonyviet.com|4g.tintuc247.top|web1s.asia|vanhoatamlinh.com|kiemlua.vn|khotailieuonthi247.com|custommapposter.com|ipacrack.com|duan24h.net|www.iosviet.com|hoctoan123.com|yhocdata.com|ycongnghe.com|imail.edu.vn|thitotnghiepthpt.vn|mod.lnpchannel.com
+a1091 1
+@@||static.ads-twitter.com/uwt.js$script,domain=linkneverdie.net
 a1104 1
 @@||gamehayvl.com$generichide
 d1107 1
@@ -514,14 +524,14 @@ www.vlxxhot.net,vailonxx.vip###ab_ctl
 www.vlxxhot.net,vailonxx.vip##.bannerads
 a1327 1
 xx.ditnhauvietnam.com,javhdvip.net##.alldiv ~ div[class]
-diff name:abpvn_noelemhide lines:43 checksum:98371afff5
+diff name:abpvn_noelemhide lines:45 checksum:d02fff94da
 d2 1
 a2 1
-! Version: 20240811190526718
+! Version: 20240811213536727
 d5 2
 a6 2
-! Last modified: 11 Aug 2024 19:05:26 UTC+7
-! Diff-Path: patches/20240811190526718.patch#abpvn_noelemhide
+! Last modified: 11 Aug 2024 21:35:36 UTC+7
+! Diff-Path: patches/20240811213536727.patch#abpvn_noelemhide
 a20 1
 $popup,domain=player-cdn.com|freeplayervideo.com|abysscdn.com|geoip.redirect-ads.com
 d47 1
@@ -555,17 +565,19 @@ a254 1
 d370 1
 a370 1
 @@||pagead2.googlesyndication.com^$script,xmlhttprequest,image,domain=thuthuatmeovat.net|kites.vn|phuongtrinhhoahoc.com|letrongdai.vn|romgoc.net|traderviet.tv|sum.vn|truyenaudiocv.org|khuchotot.com|1shortlink.com|thelanb.com|cungthi.online|lehait.net|nhacsong.pro|kientruc360.info|giavang.net|vnjpclub.com|753x.blogspot.com|ngohoanganhtuan.com|ngohoanganhtuan.net|toeicexamstore.xyz|vungoctuan.vn|ichi.pro|gocmod.com|tromcap.com|dafontvn.com|gvnvh18.com|sesenblog.com|filess.us|xaydungplus.com|nguonhd.net|anhdep24.com|windowslite.net|tiengnhatdongian.com|quangcaoyenbai.com|ios.codevn.net|traffic1s.com|audiotruyenfull.com|minhpc.com|vongquaymayman.one|toilaquantri.com|diendancauduong.com|taisachonthi.com|mifirm.net|web1s.com|anonyviet.com|4g.tintuc247.top|web1s.asia|vanhoatamlinh.com|kiemlua.vn|khotailieuonthi247.com|custommapposter.com|ipacrack.com|duan24h.net|www.iosviet.com|hoctoan123.com|yhocdata.com|ycongnghe.com|imail.edu.vn|thitotnghiepthpt.vn|mod.lnpchannel.com
+a371 1
+@@||static.ads-twitter.com/uwt.js$script,domain=linkneverdie.net
 d395 1
 a395 1
 ||hentaiayame.com/qx/$subdocument
-diff name:abpvn_ublock lines:177 checksum:7593ecbb39
+diff name:abpvn_ublock lines:183 checksum:38f6ccb3d3
 d2 1
 a2 1
-! Version: 20240811190526718
+! Version: 20240811213536727
 d5 2
 a6 2
-! Last modified: 11 Aug 2024 19:05:26 UTC+7
-! Diff-Path: patches/20240811190526718.patch#abpvn_ublock
+! Last modified: 11 Aug 2024 21:35:36 UTC+7
+! Diff-Path: patches/20240811213536727.patch#abpvn_ublock
 d47 1
 a47 1
 /i.imgur.com/*.gif$domain=keonhacai5.skin|phimlongtieng.net|phimdinhcao.com|phimdinhcao.net|xoilacx.cc|garance-paris.com|ramapoughlenapenation.org|hechoendumbo.com|plvb.xyz|listnhacai88.com|xoilaczve.tv|xemtivingon.org|phimlongtieng.com|newmeaccelerator.com|rakhoizz.tv|rk.plcdn.xyz|phimmoi.onl|motphimww.com
@@ -692,6 +704,8 @@ d1063 7
 d1086 1
 a1086 1
 @@||pagead2.googlesyndication.com^$script,xmlhttprequest,image,domain=thuthuatmeovat.net|kites.vn|phuongtrinhhoahoc.com|letrongdai.vn|romgoc.net|traderviet.tv|sum.vn|truyenaudiocv.org|khuchotot.com|1shortlink.com|thelanb.com|cungthi.online|lehait.net|nhacsong.pro|kientruc360.info|giavang.net|vnjpclub.com|753x.blogspot.com|ngohoanganhtuan.com|ngohoanganhtuan.net|toeicexamstore.xyz|vungoctuan.vn|ichi.pro|gocmod.com|tromcap.com|dafontvn.com|gvnvh18.com|sesenblog.com|filess.us|xaydungplus.com|nguonhd.net|anhdep24.com|windowslite.net|tiengnhatdongian.com|quangcaoyenbai.com|ios.codevn.net|traffic1s.com|audiotruyenfull.com|minhpc.com|vongquaymayman.one|toilaquantri.com|diendancauduong.com|taisachonthi.com|mifirm.net|web1s.com|anonyviet.com|4g.tintuc247.top|web1s.asia|vanhoatamlinh.com|kiemlua.vn|khotailieuonthi247.com|custommapposter.com|ipacrack.com|duan24h.net|www.iosviet.com|hoctoan123.com|yhocdata.com|ycongnghe.com|imail.edu.vn|thitotnghiepthpt.vn|mod.lnpchannel.com
+a1087 1
+@@||static.ads-twitter.com/uwt.js$script,domain=linkneverdie.net
 a1100 1
 @@||gamehayvl.com$generichide
 d1103 1
@@ -724,6 +738,10 @@ a1345 1
 freeplayervideo.com,abysscdn.com,player-cdn.com,geoip.redirect-ads.com##+js(set-session-storage-item, logged, 1)
 a1350 1
 hh3dhay.life##+js(acs, Symbol, break;case $)
+d1359 2
+a1360 2
+linkneverdie.net##+js(nostif, DisplayAHTML, 5001)
+linkneverdie.net##+js(nostif, callback, 6004)
 a1366 1
 mephimhdc.net##+js(acs, document.addEventListener, linksToOpen)
 d1387 1
