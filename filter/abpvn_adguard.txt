@@ -1,9 +1,9 @@
 [Adblock Plus 2.0]
-! Version: 20240811190524776
+! Version: 20240811213535935
 ! id: D4028CDD-3D39-4624-ACC7-8140F4EC3888
 ! Title: ABPVN List
-! Last modified: 11 Aug 2024 19:05:24 UTC+7
-! Diff-Path: patches/20240811190524776.patch#abpvn_adguard
+! Last modified: 11 Aug 2024 21:35:35 UTC+7
+! Diff-Path: patches/20240811213535935.patch#abpvn_adguard
 ! Diff-Expires: 60 minutes
 ! Expires: 1 days (update frequency)
 !
@@ -1367,6 +1367,7 @@ znews.vn##.znews-banner
 @@||media.nghean24h.vn/image_resize$image,domain=nghean24h.vn
 @@||media1.admicro.vn/cms/$script,domain=tuoitre.vn
 @@||player.sohatv.vn/resource/$script,domain=cafef.vn|gamek.vn|genk.vn|kenh14.vn
+@@||static.ads-twitter.com/uwt.js$script,domain=linkneverdie.net
 @@||static.amcdn.vn/tka/cdn.js$script,domain=genk.vn
 @@||tpc.googlesyndication.com/sodar/sodar2.js$domain=cungthi.online
 @@||voz.vn/u/adx.$xmlhttprequest
@@ -1623,8 +1624,8 @@ ios.codevn.net#%#//scriptlet("abort-current-inline-script", "setInterval", "offs
 javnong.cc#%#//scriptlet("abort-on-property-read", "Math.round")
 linkneverdie.net#%#//scriptlet("abort-current-inline-script", "document.createElement", "optad")
 linkneverdie.net#%#//scriptlet("abort-on-property-read", "pushOnPageGala")
-linkneverdie.net#%#//scriptlet("prevent-setTimeout", "DisplayAHTML", "5000")
-linkneverdie.net#%#//scriptlet("prevent-setTimeout", "callback", "4003")
+linkneverdie.net#%#//scriptlet("prevent-setTimeout", "DisplayAHTML", "5001")
+linkneverdie.net#%#//scriptlet("prevent-setTimeout", "callback", "6004")
 live.thapcam22.net,blog.abit.vn##.modal-backdrop.show
 live.thapcam22.net,blog.abit.vn##.show.fade
 live.thapcam22.net,blog.abit.vn,xem20.gavang1.net,xem19.gavang1.net#$#body {overflow: visible!important;}
