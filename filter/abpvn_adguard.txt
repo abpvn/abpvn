@@ -1,9 +1,9 @@
 [Adblock Plus 2.0]
-! Version: 20240811213535935
+! Version: 20240812093342801
 ! id: D4028CDD-3D39-4624-ACC7-8140F4EC3888
 ! Title: ABPVN List
-! Last modified: 11 Aug 2024 21:35:35 UTC+7
-! Diff-Path: patches/20240811213535935.patch#abpvn_adguard
+! Last modified: 12 Aug 2024 09:33:42 UTC+7
+! Diff-Path: patches/20240812093342801.patch#abpvn_adguard
 ! Diff-Expires: 60 minutes
 ! Expires: 1 days (update frequency)
 !
@@ -639,6 +639,7 @@
 ##.banner-ads
 ##.banner-bottom
 ##.close-ads
+##.google-auto-placed
 ##.jw-cue
 ##.midroll-marker
 ##.quangcao
@@ -1148,9 +1149,9 @@ truyenfull.io###header-ads-full
 truyenfull.io##.ads-responsive
 truyenfull.io##[id^="ads-"]
 truyengihotdo.net,truyengihotzay.net,truyengihotnha.com,truyengihotnha.net,truyengihotqua.net,truyengihotqua.com,truyengihotnay.com,tenmientruyengi.net##div#adsChapterTop
-truyenqqviet.com###ad_info_top
-truyenqqviet.com###catfishAd
-truyenqqviet.com##div#ad_info
+truyenqqto.com###ad_info_top
+truyenqqto.com###catfishAd
+truyenqqto.com##div#ad_info
 truyensieuhay.com##.footer-info
 truyensieuhay.com,hhtrungquoc6.com,hhtq7.vip,animeweb.vip,hhtq3d.com###topbanner
 truyentuan.xyz###banner_preload
@@ -1613,7 +1614,7 @@ freeplayervideo.com,abysscdn.com,player-cdn.com,geoip.redirect-ads.com#%#//scrip
 freeplayervideo.com,abysscdn.com,player-cdn.com,geoip.redirect-ads.com#%#//scriptlet('set-session-storage-item', "logged", "1")
 giavang.net#%#//scriptlet("prevent-fetch", "method:HEAD")
 gocphimii.com,p.thoctv.com#%#//scriptlet("abort-current-inline-script", "document.createElement", "script")
-goctruyentranhvui2.com,mobiblog.club,truyenqqviet.com#%#//scriptlet("abort-current-inline-script", "WebAssembly", "globalThis")
+goctruyentranhvui2.com,mobiblog.club,truyenqqto.com#%#//scriptlet("abort-current-inline-script", "WebAssembly", "globalThis")
 gotphim.com#%#//scriptlet("abort-current-inline-script", "navigator", "devtoolsDetector")
 gvnvh18.com,sexdiaryx.guru#%#//scriptlet("set-constant", "D4zz", "noopFunc")
 hh3dhay.life#%#//scriptlet("abort-current-inline-script", "Symbol", "break;case $")
@@ -1623,7 +1624,7 @@ imail.edu.vn#%#//scriptlet("abort-current-inline-script", "setTimeout", "Aff")
 ios.codevn.net#%#//scriptlet("abort-current-inline-script", "setInterval", "offsetHeight")
 javnong.cc#%#//scriptlet("abort-on-property-read", "Math.round")
 linkneverdie.net#%#//scriptlet("abort-current-inline-script", "document.createElement", "optad")
-linkneverdie.net#%#//scriptlet("abort-on-property-read", "pushOnPageGala")
+linkneverdie.net#%#//scriptlet("abort-on-property-read", "pushOnPage")
 linkneverdie.net#%#//scriptlet("prevent-setTimeout", "DisplayAHTML", "5001")
 linkneverdie.net#%#//scriptlet("prevent-setTimeout", "callback", "6004")
 live.thapcam22.net,blog.abit.vn##.modal-backdrop.show
