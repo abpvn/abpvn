@@ -1,11 +1,11 @@
-diff name:abpvn lines:186 checksum:0f550eb0d9
+diff name:abpvn lines:188 checksum:38e0ebceb3
 d2 1
 a2 1
-! Version: 20240812180439544
+! Version: 20240813091940491
 d5 2
 a6 2
-! Last modified: 12 Aug 2024 18:04:39 UTC+7
-! Diff-Path: patches/20240812180439544.patch#abpvn
+! Last modified: 13 Aug 2024 09:19:40 UTC+7
+! Diff-Path: patches/20240813091940491.patch#abpvn
 a20 1
 $popup,domain=player-cdn.com|freeplayervideo.com|abysscdn.com|geoip.redirect-ads.com
 d47 1
@@ -15,9 +15,6 @@ d69 1
 a69 1
 /vast.js$script,domain=phimmoi.tuphim.net|boctem.com|phimvietsub.pro|phimdacap.tv|hoathinhtq.site|tvhay26.com|tvzinghd.co
 d81 1
-d94 1
-a94 1
-||blogger.googleusercontent.com^$image,domain=hhninja6.tv|xem14.com|hhtm.tv|hoathinh3dtq.com|hhh3d.tv|dragonphim.tv|hoathinhtq.site|phimhay.info|yanhh3d.com|yanhh3d.tv
 d100 1
 a100 1
 ||cdn.lfastcdn.com^*.gif$image,domain=xoilaczve.tv
@@ -25,6 +22,7 @@ a117 1
 ||fastscans.net/_next/static/media/voucher.$image
 a123 1
 ||fundingchoicesmessages.google.com^$third-party
+d128 1
 a163 2
 ||mephimhdc.net$csp=script-src 'self' 'unsafe-inline' https:
 ||mephimhdc.net^*.gif$image
@@ -32,6 +30,8 @@ a164 1
 ||motchilliii.net/banner$image
 a165 1
 ||motphimchillc.net/ads1.js$script,~third-party
+a176 1
+||phimmoinhat.top^*.gif
 a192 1
 ||s1.fastscans.net/shopee/$image
 d197 1
@@ -104,10 +104,6 @@ a904 1
 mephimtv.net##.movie-banner
 a925 1
 newmeaccelerator.com##.btn-od
-a967 2
-phimhay.info##.code-block-1.code-block
-phimhay.info##.navbar-container + .container
-d969 2
 d976 1
 a976 1
 phimmoi.onl,vungtv.us,mephimhdc.net###container-ads
@@ -167,11 +163,17 @@ a1364 1
 d1393 1
 a1393 1
 ||hentaiayame.com/qx/$subdocument
+d1415 1
+a1415 1
+||quoracdn.net^$image,domain=vlxx.mobi|vlxyz.tube|sieudamtv.dev|sex.dam69.pro|sex.chichnhau.net
 d1462 2
 a1463 2
 hentaiayame.com##.a_d_s_115
 hentaiayame.com##.qx_135
 d1486 1
+d1517 1
+a1517 1
+sex.dam69.pro##.banner-catfish-bottomd
 d1547 5
 a1551 5
 vailonxx.vip###adsbottom
@@ -185,14 +187,14 @@ www.vlxxhot.net,vailonxx.vip###ab_ctl
 www.vlxxhot.net,vailonxx.vip##.bannerads
 a1585 1
 xx.ditnhauvietnam.com,javhdvip.net##.alldiv ~ div[class]
-diff name:abpvn_adguard lines:208 checksum:c44069cc78
+diff name:abpvn_adguard lines:210 checksum:a5dede89ef
 d2 1
 a2 1
-! Version: 20240812180439544
+! Version: 20240813091940491
 d5 2
 a6 2
-! Last modified: 12 Aug 2024 18:04:39 UTC+7
-! Diff-Path: patches/20240812180439544.patch#abpvn_adguard
+! Last modified: 13 Aug 2024 09:19:40 UTC+7
+! Diff-Path: patches/20240813091940491.patch#abpvn_adguard
 d47 1
 a47 1
 /i.imgur.com/*.gif$domain=keonhacai5.skin|phimlongtieng.net|phimdinhcao.com|phimdinhcao.net|xoilacx.cc|garance-paris.com|ramapoughlenapenation.org|hechoendumbo.com|plvb.xyz|listnhacai88.com|xoilaczve.tv|xemtivingon.org|phimlongtieng.com|newmeaccelerator.com|rakhoizz.tv|rk.plcdn.xyz|phimmoi.onl|motphimww.com
@@ -200,9 +202,6 @@ d69 1
 a69 1
 /vast.js$script,domain=phimmoi.tuphim.net|boctem.com|phimvietsub.pro|phimdacap.tv|hoathinhtq.site|tvhay26.com|tvzinghd.co
 d81 1
-d94 1
-a94 1
-||blogger.googleusercontent.com^$image,domain=hhninja6.tv|xem14.com|hhtm.tv|hoathinh3dtq.com|hhh3d.tv|dragonphim.tv|hoathinhtq.site|phimhay.info|yanhh3d.com|yanhh3d.tv
 d100 1
 a100 1
 ||cdn.lfastcdn.com^*.gif$image,domain=xoilaczve.tv
@@ -210,6 +209,7 @@ a117 1
 ||fastscans.net/_next/static/media/voucher.$image
 a123 1
 ||fundingchoicesmessages.google.com^$third-party
+d128 1
 a163 2
 ||mephimhdc.net$csp=script-src 'self' 'unsafe-inline' https:
 ||mephimhdc.net^*.gif$image
@@ -217,6 +217,8 @@ a164 1
 ||motchilliii.net/banner$image
 a165 1
 ||motphimchillc.net/ads1.js$script,~third-party
+a176 1
+||phimmoinhat.top^*.gif
 a191 1
 ||s1.fastscans.net/shopee/$image
 d199 2
@@ -286,10 +288,6 @@ a902 1
 mephimtv.net##.movie-banner
 a923 1
 newmeaccelerator.com##.btn-od
-a965 2
-phimhay.info##.code-block-1.code-block
-phimhay.info##.navbar-container + .container
-d967 2
 d974 1
 a974 1
 phimmoi.onl,vungtv.us,mephimhdc.net###container-ads
@@ -349,11 +347,17 @@ a1361 1
 d1389 1
 a1389 1
 ||hentaiayame.com/qx/$subdocument
+d1411 1
+a1411 1
+||quoracdn.net^$image,domain=vlxx.mobi|vlxyz.tube|sieudamtv.dev|sex.dam69.pro|sex.chichnhau.net
 d1458 2
 a1459 2
 hentaiayame.com##.a_d_s_115
 hentaiayame.com##.qx_135
 d1482 1
+d1513 1
+a1513 1
+sex.dam69.pro##.banner-catfish-bottomd
 d1543 5
 a1547 5
 vailonxx.vip###adsbottom
@@ -393,15 +397,15 @@ a1656 1
 vailonxx.vip,phimlongtieng.com,phimlongtieng.net#%#//scriptlet("abort-current-inline-script", "jQuery", "window.open")
 d1658 1
 a1658 1
-viet69.name,ungtycomicsvip.com,vlxx.mobi,dualeotruyenbi.com,yurineko.net,vlxyz.tube,javhay.click,phimsexhay669.pro,cliphot69.blog,doctruyen3qvn.pro,hentaizz.biz,animehay.in,heo69.moe,top1sex.club,lenlut.tv,sexmup18.com,hentaivn.today,streamvl.top,www.buomtv.vip,truyenvn.cam,cdnstream.sbs,javtiful.com,truyengihotdo.net,truyengihotnha.com,truyengihotnha.net,truyengihotqua.net,truyengihotqua.com,truyengihotnay.com,truyengihotzay.net,sexvn.tuoi69s.com,quatvn.baby,tenmientruyengi.net,truyengihotzay.net,topviet69.com,phim18hd.sex,live.sexviet88.dev,sexnhe.biz,demo.14412882.com,sexphimhd.vip,xem.phim18c.org,ungtycomicsvip.net,vn.cliphot69.live,hhtq5.vip,sayhentai.one,sexdiary.club#%#//scriptlet("abort-current-inline-script", "WebAssembly", "instantiate")
-diff name:abpvn_content_blocker lines:186 checksum:1f96e324f6
+viet69.name,ungtycomicsvip.com,vlxx.mobi,dualeotruyenbi.com,yurineko.net,vlxyz.tube,javhay.click,phimsexhay669.pro,cliphot69.blog,doctruyen3qvn.pro,hentaizz.biz,animehay.in,heo69.moe,top1sex.club,dam69.pro,sexmup18.com,hentaivn.today,streamvl.top,www.buomtv.vip,truyenvn.cam,cdnstream.sbs,javtiful.com,truyengihotdo.net,truyengihotnha.com,truyengihotnha.net,truyengihotqua.net,truyengihotqua.com,truyengihotnay.com,truyengihotzay.net,sexvn.tuoi69s.com,quatvn.baby,tenmientruyengi.net,truyengihotzay.net,topviet69.com,phim18hd.sex,live.sexviet88.dev,sexnhe.biz,demo.14412882.com,sexphimhd.vip,xem.phim18c.org,ungtycomicsvip.net,vn.cliphot69.live,hhtq5.vip,sayhentai.one,sexdiary.club#%#//scriptlet("abort-current-inline-script", "WebAssembly", "instantiate")
+diff name:abpvn_content_blocker lines:188 checksum:4692e617bc
 d2 1
 a2 1
-! Version: 20240812180439544
+! Version: 20240813091940491
 d5 2
 a6 2
-! Last modified: 12 Aug 2024 18:04:39 UTC+7
-! Diff-Path: patches/20240812180439544.patch#abpvn_content_blocker
+! Last modified: 13 Aug 2024 09:19:40 UTC+7
+! Diff-Path: patches/20240813091940491.patch#abpvn_content_blocker
 a20 1
 $popup,domain=player-cdn.com|freeplayervideo.com|abysscdn.com|geoip.redirect-ads.com
 d47 1
@@ -411,9 +415,6 @@ d69 1
 a69 1
 /vast.js$script,domain=phimmoi.tuphim.net|boctem.com|phimvietsub.pro|phimdacap.tv|hoathinhtq.site|tvhay26.com|tvzinghd.co
 d81 1
-d94 1
-a94 1
-||blogger.googleusercontent.com^$image,domain=hhninja6.tv|xem14.com|hhtm.tv|hoathinh3dtq.com|hhh3d.tv|dragonphim.tv|hoathinhtq.site|phimhay.info|yanhh3d.com|yanhh3d.tv
 d100 1
 a100 1
 ||cdn.lfastcdn.com^*.gif$image,domain=xoilaczve.tv
@@ -421,6 +422,7 @@ a117 1
 ||fastscans.net/_next/static/media/voucher.$image
 a123 1
 ||fundingchoicesmessages.google.com^$third-party
+d128 1
 a163 2
 ||mephimhdc.net$csp=script-src 'self' 'unsafe-inline' https:
 ||mephimhdc.net^*.gif$image
@@ -428,6 +430,8 @@ a164 1
 ||motchilliii.net/banner$image
 a165 1
 ||motphimchillc.net/ads1.js$script,~third-party
+a176 1
+||phimmoinhat.top^*.gif
 a192 1
 ||s1.fastscans.net/shopee/$image
 d197 1
@@ -500,10 +504,6 @@ a904 1
 mephimtv.net##.movie-banner
 a925 1
 newmeaccelerator.com##.btn-od
-a967 2
-phimhay.info##.code-block-1.code-block
-phimhay.info##.navbar-container + .container
-d969 2
 d976 1
 a976 1
 phimmoi.onl,vungtv.us,mephimhdc.net###container-ads
@@ -563,11 +563,17 @@ a1364 1
 d1393 1
 a1393 1
 ||hentaiayame.com/qx/$subdocument
+d1415 1
+a1415 1
+||quoracdn.net^$image,domain=vlxx.mobi|vlxyz.tube|sieudamtv.dev|sex.dam69.pro|sex.chichnhau.net
 d1462 2
 a1463 2
 hentaiayame.com##.a_d_s_115
 hentaiayame.com##.qx_135
 d1486 1
+d1517 1
+a1517 1
+sex.dam69.pro##.banner-catfish-bottomd
 d1547 5
 a1551 5
 vailonxx.vip###adsbottom
@@ -581,14 +587,14 @@ www.vlxxhot.net,vailonxx.vip###ab_ctl
 www.vlxxhot.net,vailonxx.vip##.bannerads
 a1585 1
 xx.ditnhauvietnam.com,javhdvip.net##.alldiv ~ div[class]
-diff name:abpvn_noelemhide lines:60 checksum:5077382940
+diff name:abpvn_noelemhide lines:63 checksum:4812f0f24c
 d2 1
 a2 1
-! Version: 20240812180439544
+! Version: 20240813091940491
 d5 2
 a6 2
-! Last modified: 12 Aug 2024 18:04:39 UTC+7
-! Diff-Path: patches/20240812180439544.patch#abpvn_noelemhide
+! Last modified: 13 Aug 2024 09:19:40 UTC+7
+! Diff-Path: patches/20240813091940491.patch#abpvn_noelemhide
 a20 1
 $popup,domain=player-cdn.com|freeplayervideo.com|abysscdn.com|geoip.redirect-ads.com
 d47 1
@@ -598,9 +604,6 @@ d69 1
 a69 1
 /vast.js$script,domain=phimmoi.tuphim.net|boctem.com|phimvietsub.pro|phimdacap.tv|hoathinhtq.site|tvhay26.com|tvzinghd.co
 d81 1
-d94 1
-a94 1
-||blogger.googleusercontent.com^$image,domain=hhninja6.tv|xem14.com|hhtm.tv|hoathinh3dtq.com|hhh3d.tv|dragonphim.tv|hoathinhtq.site|phimhay.info|yanhh3d.com|yanhh3d.tv
 d100 1
 a100 1
 ||cdn.lfastcdn.com^*.gif$image,domain=xoilaczve.tv
@@ -608,6 +611,7 @@ a117 1
 ||fastscans.net/_next/static/media/voucher.$image
 a123 1
 ||fundingchoicesmessages.google.com^$third-party
+d128 1
 a163 2
 ||mephimhdc.net$csp=script-src 'self' 'unsafe-inline' https:
 ||mephimhdc.net^*.gif$image
@@ -615,6 +619,8 @@ a164 1
 ||motchilliii.net/banner$image
 a165 1
 ||motphimchillc.net/ads1.js$script,~third-party
+a176 1
+||phimmoinhat.top^*.gif
 a192 1
 ||s1.fastscans.net/shopee/$image
 d197 1
@@ -642,14 +648,17 @@ a636 1
 d659 1
 a659 1
 ||hentaiayame.com/qx/$subdocument
-diff name:abpvn_ublock lines:205 checksum:7cf9d8c729
+d681 1
+a681 1
+||quoracdn.net^$image,domain=vlxx.mobi|vlxyz.tube|sieudamtv.dev|sex.dam69.pro|sex.chichnhau.net
+diff name:abpvn_ublock lines:207 checksum:13b17573e4
 d2 1
 a2 1
-! Version: 20240812180439544
+! Version: 20240813091940491
 d5 2
 a6 2
-! Last modified: 12 Aug 2024 18:04:39 UTC+7
-! Diff-Path: patches/20240812180439544.patch#abpvn_ublock
+! Last modified: 13 Aug 2024 09:19:40 UTC+7
+! Diff-Path: patches/20240813091940491.patch#abpvn_ublock
 d47 1
 a47 1
 /i.imgur.com/*.gif$domain=keonhacai5.skin|phimlongtieng.net|phimdinhcao.com|phimdinhcao.net|xoilacx.cc|garance-paris.com|ramapoughlenapenation.org|hechoendumbo.com|plvb.xyz|listnhacai88.com|xoilaczve.tv|xemtivingon.org|phimlongtieng.com|newmeaccelerator.com|rakhoizz.tv|rk.plcdn.xyz|phimmoi.onl|motphimww.com
@@ -657,9 +666,6 @@ d69 1
 a69 1
 /vast.js$script,domain=phimmoi.tuphim.net|boctem.com|phimvietsub.pro|phimdacap.tv|hoathinhtq.site|tvhay26.com|tvzinghd.co
 d81 1
-d94 1
-a94 1
-||blogger.googleusercontent.com^$image,domain=hhninja6.tv|xem14.com|hhtm.tv|hoathinh3dtq.com|hhh3d.tv|dragonphim.tv|hoathinhtq.site|phimhay.info|yanhh3d.com|yanhh3d.tv
 d100 1
 a100 1
 ||cdn.lfastcdn.com^*.gif$image,domain=xoilaczve.tv
@@ -667,6 +673,7 @@ a117 1
 ||fastscans.net/_next/static/media/voucher.$image
 a123 1
 ||fundingchoicesmessages.google.com^$third-party
+d128 1
 a163 2
 ||mephimhdc.net$csp=script-src 'self' 'unsafe-inline' https:
 ||mephimhdc.net^*.gif$image
@@ -674,6 +681,8 @@ a164 1
 ||motchilliii.net/banner$image
 a165 1
 ||motphimchillc.net/ads1.js$script,~third-party
+a176 1
+||phimmoinhat.top^*.gif
 a191 1
 ||s1.fastscans.net/shopee/$image
 d199 2
@@ -743,10 +752,6 @@ a902 1
 mephimtv.net##.movie-banner
 a923 1
 newmeaccelerator.com##.btn-od
-a965 2
-phimhay.info##.code-block-1.code-block
-phimhay.info##.navbar-container + .container
-d967 2
 d974 1
 a974 1
 phimmoi.onl,vungtv.us,mephimhdc.net###container-ads
@@ -806,11 +811,17 @@ a1361 1
 d1389 1
 a1389 1
 ||hentaiayame.com/qx/$subdocument
+d1411 1
+a1411 1
+||quoracdn.net^$image,domain=vlxx.mobi|vlxyz.tube|sieudamtv.dev|sex.dam69.pro|sex.chichnhau.net
 d1458 2
 a1459 2
 hentaiayame.com##.a_d_s_115
 hentaiayame.com##.qx_135
 d1482 1
+d1513 1
+a1513 1
+sex.dam69.pro##.banner-catfish-bottomd
 d1543 5
 a1547 5
 vailonxx.vip###adsbottom
@@ -847,4 +858,4 @@ a1657 1
 vailonxx.vip,phimlongtieng.com,phimlongtieng.net##+js(acs, jQuery, window.open)
 d1659 1
 a1659 1
-viet69.name,ungtycomicsvip.com,vlxx.mobi,dualeotruyenbi.com,yurineko.net,vlxyz.tube,javhay.click,phimsexhay669.pro,cliphot69.blog,doctruyen3qvn.pro,hentaizz.biz,animehay.in,heo69.moe,sexvn.tuoi69s.com,top1sex.club,lenlut.tv,sexmup18.com,hentaivn.today,streamvl.top,www.buomtv.vip,truyenvn.cam,cdnstream.sbs,javtiful.com,truyengihotdo.net,truyengihotnha.com,truyengihotnha.net,truyengihotqua.net,truyengihotqua.com,truyengihotnay.com,truyengihotzay.net,quatvn.baby,tenmientruyengi.net,topviet69.com,phim18hd.sex,live.sexviet88.dev,sexnhe.biz,demo.14412882.com,sexphimhd.vip,xem.phim18c.org,ungtycomicsvip.net,vn.cliphot69.live,hhtq5.vip,sayhentai.one,sexdiary.club##+js(acs, WebAssembly, instantiate)
+viet69.name,ungtycomicsvip.com,vlxx.mobi,dualeotruyenbi.com,yurineko.net,vlxyz.tube,javhay.click,phimsexhay669.pro,cliphot69.blog,doctruyen3qvn.pro,hentaizz.biz,animehay.in,heo69.moe,sexvn.tuoi69s.com,top1sex.club,dam69.pro,sexmup18.com,hentaivn.today,streamvl.top,www.buomtv.vip,truyenvn.cam,cdnstream.sbs,javtiful.com,truyengihotdo.net,truyengihotnha.com,truyengihotnha.net,truyengihotqua.net,truyengihotqua.com,truyengihotnay.com,truyengihotzay.net,quatvn.baby,tenmientruyengi.net,topviet69.com,phim18hd.sex,live.sexviet88.dev,sexnhe.biz,demo.14412882.com,sexphimhd.vip,xem.phim18c.org,ungtycomicsvip.net,vn.cliphot69.live,hhtq5.vip,sayhentai.one,sexdiary.club##+js(acs, WebAssembly, instantiate)
