@@ -1,9 +1,9 @@
 [Adblock Plus 2.0]
-! Version: 20240813091940491
+! Version: 20240813120447789
 ! id: D4028CDD-3D39-4624-ACC7-8140F4EC3888
 ! Title: ABPVN List
-! Last modified: 13 Aug 2024 09:19:40 UTC+7
-! Diff-Path: patches/20240813091940491.patch#abpvn_adguard
+! Last modified: 13 Aug 2024 12:04:47 UTC+7
+! Diff-Path: patches/20240813120447789.patch#abpvn_adguard
 ! Diff-Expires: 60 minutes
 ! Expires: 1 days (update frequency)
 !
@@ -1685,6 +1685,8 @@ www.iosviet.com#%#//scriptlet("set-constant", "timer", "0")
 www.nettruyenupp.com#%#//scriptlet("abort-on-property-read", "sp")
 www.o-study.net##.backdrop-popup
 www.o-study.net#$#body {position: static !important}
+www.opensubtitles.com##[id^="clock_"]
+www.opensubtitles.com#$#[class*="download-ready"] {display: block !important;}
 www.saostar.vn#$#div.layout.pt-mobi-top {padding-top: 0 !important}
 www.saostar.vn#$#header.bg-white {margin-top: 0px !important}
 www.toptruyenvn.pro#%#//scriptlet("abort-current-inline-script", "Promise", "instance")
