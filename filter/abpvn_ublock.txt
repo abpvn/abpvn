@@ -1,9 +1,9 @@
 [Adblock Plus 2.0]
-! Version: 20240820150637370
+! Version: 20240821080638849
 ! id: D4028CDD-3D39-4624-ACC7-8140F4EC3888
 ! Title: ABPVN List
-! Last modified: 20 Aug 2024 15:06:37 UTC+7
-! Diff-Path: patches/20240820150637370.patch#abpvn_ublock
+! Last modified: 21 Aug 2024 08:06:38 UTC+7
+! Diff-Path: patches/20240821080638849.patch#abpvn_ublock
 ! Diff-Expires: 60 minutes
 ! Expires: 1 days (update frequency)
 !
@@ -162,6 +162,7 @@
 ||motphim.li/js/ads.js$script,~third-party
 ||motphimchillc.net/ads1.js$script,~third-party
 ||nettruyenviet.com/assets/js/pop$script
+||nettruyenww.com/public/assets/js/pop$script,~third-party
 ||nhadatvang.vn/images/$domain=muabanraovat.com
 ||nhipcaudautu.vn/*gafin$script
 ||nhipcaudautu.vn/Media/*.gif
@@ -1363,7 +1364,7 @@ freeplayervideo.com,abysscdn.com,player-cdn.com,geoip.redirect-ads.com##+js(set,
 freeplayervideo.com,abysscdn.com,player-cdn.com,geoip.redirect-ads.com##+js(set-session-storage-item, logged, 1)
 giavang.net##+js(no-fetch-if, method:HEAD)
 gocphimii.net,p.thoctv.com##+js(acs, document.createElement, script)
-goctruyentranhvui2.com,truyenqqto.com##+js(acs, WebAssembly, globalThis)
+goctruyentranhvui2.com,truyenqqto.com,nettruyenww.com##+js(acs, WebAssembly, globalThis)
 gotphim.com##+js(acs, navigator, devtoolsDetector)
 gvnvh18.com,sexdiaryx.guru##+js(set, D4zz, noopFunc)
 hh3dhay.life##+js(acs, Symbol, break;case $)
@@ -1384,7 +1385,6 @@ lrepacks.net##+js(acs, JSON.parse, break;case $.)
 luotphim1.net,mephim.ink,cdnwp.icu##+js(json-prune, 0.time_mobile 0.time 0.link_video 0.link_video_mobile 0.link 0.link_mobile 1.time_mobile 1.time 1.link_video 1.link_video_mobile 1.link 1.link_mobile)
 lxmanga.life##+js(acs, $, PopUnder)
 nettruyenhq.com##+js(acs, Promise, break;case)
-nettruyenww.com##+js(aopr, links)
 phimdinhcao.net,phimlongtieng.net,phimdinhcao.com##+js(aopr, localStorage)
 phimgichill.net,hhhay.tv,hh3dhay.pro,truyengihotnha.com,truyengihotnha.net,3dchill.shop,animevietsub.app##+js(acs, eval, $._Eu)
 phimgichill.net,mephimnhe1.net##+js(acs, jQuery, popurl)
