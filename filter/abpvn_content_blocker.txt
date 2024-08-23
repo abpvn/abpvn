@@ -1,9 +1,9 @@
 [Adblock Plus 2.0]
-! Version: 20240823120457065
+! Version: 20240823230550471
 ! id: D4028CDD-3D39-4624-ACC7-8140F4EC3888
 ! Title: ABPVN List
-! Last modified: 23 Aug 2024 12:04:57 UTC+7
-! Diff-Path: patches/20240823120457065.patch#abpvn_content_blocker
+! Last modified: 23 Aug 2024 23:05:50 UTC+7
+! Diff-Path: patches/20240823230550471.patch#abpvn_content_blocker
 ! Diff-Expires: 60 minutes
 ! Expires: 1 days (update frequency)
 !
@@ -205,8 +205,6 @@ $popup,domain=player-cdn.com|freeplayervideo.com|abysscdn.com|geoip.redirect-ads
 ||sohuutritue.net.vn/files/qc/
 ||soikeo365.net^*.gif
 ||soikeoz.vip^*.gif
-||sphimhdc.com$csp=script-src 'self' 'unsafe-inline' https:
-||sphimhdc.com^*.gif$image
 ||static.cdnno.com/storage/topbox/*.webp$image,domain=metruyencv.com
 ||static.ybox.vn^*.gif$domain=ybox.vn
 ||staticcdn-sk.mediastation.live^*.gif$image,domain=home.mannhan3.pro
@@ -266,6 +264,8 @@ $popup,domain=player-cdn.com|freeplayervideo.com|abysscdn.com|geoip.redirect-ads
 ||www.thuocbietduoc.com.vn/aqc/$image
 ||xahoingaynay.com.vn/upload/$image
 ||xc.1357668.com^*.gif$domain=live.7mvn2.com
+||xemphimhdc.us$csp=script-src 'self' 'unsafe-inline' https:
+||xemphimhdc.us^*.gif$image
 ||xmedia.antt.vn/upload/*.gif$image,domain=antt.vn
 ||xoilacz.dev^*.gif$image
 ||xvideo98.me^$image,domain=phimmoi2024.net
@@ -1003,7 +1003,7 @@ phimhaytv.info,congthucvatly.com,phuongtrinhhoahoc.com##.fixed
 phimlongtieng.com,phimlongtieng.net###mobile_content_top
 phimlongtieng.com,phimlongtieng.net###p-GMH
 phimmoi.onl###hide_catfish
-phimmoi.onl,vungtv.us,sphimhdc.com###container-ads
+phimmoi.onl,vungtv.us,xemphimhdc.us###container-ads
 phimmoi.tuphim.net###adsTopInPageBanner
 phimmoi.tuphim.net##.adsContainer
 phimmoi.tuphim.net##.header__auth>.details__devices-list
@@ -1058,7 +1058,6 @@ soikeo365.net##.ads-floatingads
 soikeo365.net##.banner-item
 soikeo365.net##.top-nha-cai
 soikeoz.vip,phimmoinay.vip,phimtho.net,protruyen4.xyz,chillhaytv.click,mphim14.org###popup_banner_beta
-sphimhdc.com##a#banner
 sport5.vn,afamily.vn##.afw-topbanner
 subnhanhvl.net,subnhanh.tube,subnhanh.li,dongchill.co###xs-addd0
 tamlinh247.biz##.ads-gg-top
@@ -1304,6 +1303,7 @@ xem20.gavang1.net,xem19.gavang1.net##.css-ylxsn9.MuiStack-root
 xem20.gavang1.net,xem19.gavang1.net##.vjs-banner-btn
 xem20.gavang1.net,xem19.gavang1.net##div.css-m49bkq.MuiStack-root>a
 xemphimchill.xyz,hhninja6.tv,phimbocn.com,phimhoathinh3d.com,hoathinhtq.site,hhtq7.vip,hhtqvietsub.top,motchillon.net,hhtrungquoc6.com,hhtqnet.me,animeweb.vip,hh3d1.xyz,hoathinh4k.net,motchilltv.ink,hoathinh3dtq.com,hhtm.tv,dragonphim.tv,hhchina.app,motphim.li,phimmoi2024.net,hhh3d.tv,hhtq3d.com,wibu47.com,yanhh3d.com,hhhay.tv###catfish
+xemphimhdc.us##a#banner
 xemtivi4k.com###adstop2
 xemtivi4k.com##.ads-item
 xemtivi4k.com##.col-lg-4.hidden-xs.d-flex.flex-column.address-wrap
