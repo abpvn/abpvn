@@ -1,9 +1,9 @@
 [Adblock Plus 2.0]
-! Version: 20240825120446859
+! Version: 20240825160317100
 ! id: D4028CDD-3D39-4624-ACC7-8140F4EC3888
 ! Title: ABPVN List
-! Last modified: 25 Aug 2024 12:04:46 UTC+7
-! Diff-Path: patches/20240825120446859.patch#abpvn_ublock
+! Last modified: 25 Aug 2024 16:03:17 UTC+7
+! Diff-Path: patches/20240825160317100.patch#abpvn_ublock
 ! Diff-Expires: 60 minutes
 ! Expires: 1 days (update frequency)
 !
@@ -225,7 +225,7 @@
 ||tinmoi.vn/?mod=ajax&act=getAds
 ||tinsoikeo.live^*.gif$image
 ||toithuthuat.com^*.gif
-||tracker.idocdn.com^$domain=freeplayervideo.com|abysscdn.com|player-cdn.com|geoip.redirect-ads.com
+||tracker.idocdn.com^$domain=freeplayervideo.com|abysscdn.com|player-cdn.com|geoip.redirect-ads.com|playhydrax.com
 ||traderviet.tv/data/siropu/am/user/$image
 ||tructiep.vn/website/adv/
 ||truyen4u.pro$csp=script-src 'self' 'unsafe-inline'
@@ -1616,8 +1616,8 @@ dood.pm##+js(aopw, DoodPop)
 dualeotruyenbi.com,m.blogtruyenmoi.com##+js(acs, document.addEventListener, popunder)
 femax20.com,motchilltv.vc##+js(addEventListener-defuser, click, open)
 ffmovie.online##+js(acs, document.addEventListener, popup)
-freeplayervideo.com,abysscdn.com,player-cdn.com,geoip.redirect-ads.com##+js(set, open, noopFunc)
-freeplayervideo.com,abysscdn.com,player-cdn.com,geoip.redirect-ads.com##+js(set-session-storage-item, logged, 1)
+freeplayervideo.com,abysscdn.com,player-cdn.com,geoip.redirect-ads.com,playhydrax.com##+js(acs, document.getElementById, openPop)
+freeplayervideo.com,abysscdn.com,player-cdn.com,geoip.redirect-ads.com,playhydrax.com##+js(set, open, noopFunc)
 giavang.net##+js(no-fetch-if, method:HEAD)
 gocphimii.net,p.thoctv.com,ytstv.me##+js(acs, document.createElement, script)
 goctruyentranhvui2.com,truyenqqto.com,nettruyenww.com,sextop1.site##+js(acs, WebAssembly, globalThis)
