@@ -1,5 +1,5 @@
 ! ---------Rule only for uBlock Origin------
--$popup,domain=player-cdn.com|freeplayervideo.com|abysscdn.com|geoip.redirect-ads.com
+-$popup,domain=player-cdn.com|freeplayervideo.com|abysscdn.com|geoip.redirect-ads.com|playhydrax.com
 -@@||jsc.adskeeper.co.uk^$script,domain=ios.codevn.net
 -ios.codevn.net#@#div[id*="ScriptRoot"]
 -||s.lazada.vn^$popup,domain=chillphimmoizz.org
@@ -24,8 +24,8 @@ dood.pm##+js(aopw, DoodPop)
 dualeotruyenbi.com,m.blogtruyenmoi.com##+js(acs, document.addEventListener, popunder)
 femax20.com,motchilltv.vc##+js(addEventListener-defuser, click, open)
 ffmovie.online##+js(acs, document.addEventListener, popup)
-freeplayervideo.com,abysscdn.com,player-cdn.com,geoip.redirect-ads.com##+js(set, open, noopFunc)
-freeplayervideo.com,abysscdn.com,player-cdn.com,geoip.redirect-ads.com##+js(set-session-storage-item, logged, 1)
+freeplayervideo.com,abysscdn.com,player-cdn.com,geoip.redirect-ads.com,playhydrax.com##+js(acs, document.getElementById, openPop)
+freeplayervideo.com,abysscdn.com,player-cdn.com,geoip.redirect-ads.com,playhydrax.com##+js(set, open, noopFunc)
 giavang.net##+js(no-fetch-if, method:HEAD)
 gocphimii.net,p.thoctv.com,ytstv.me##+js(acs, document.createElement, script)
 goctruyentranhvui2.com,truyenqqto.com,nettruyenww.com,sextop1.site##+js(acs, WebAssembly, globalThis)
