@@ -1,9 +1,9 @@
 [Adblock Plus 2.0]
-! Version: 20240826150702728
+! Version: 20240826171211553
 ! id: D4028CDD-3D39-4624-ACC7-8140F4EC3888
 ! Title: ABPVN List
-! Last modified: 26 Aug 2024 15:07:02 UTC+7
-! Diff-Path: patches/20240826150702728.patch#abpvn_adguard
+! Last modified: 26 Aug 2024 17:12:11 UTC+7
+! Diff-Path: patches/20240826171211553.patch#abpvn_adguard
 ! Diff-Expires: 60 minutes
 ! Expires: 1 days (update frequency)
 !
@@ -71,6 +71,7 @@
 /videojs.ima.js$domain=~jut.su|~earthcam.com
 /wp-auto-affiliate-links/*
 ://ads.$~image
+||10gb.vn/assets/ads/
 ||123nhadatviet.com/Media/CK/banners/
 ||123nhadatviet.net/Media/CK/banners/
 ||2banh.vn/images/banners/
@@ -1361,8 +1362,8 @@ yellowpages.vn##.banner_add
 yhocdata.com##.code-block-8.code-block
 yhocdata.com##.ez-video-wrap
 yhocdata.com,laptrinhcanban.com##.ezoic-ad
-yts.mx###iwkjdooqw
-yts.mx##.uy.hfc
+yts.do,yts.mx,yts.rs###iwkjdooqw
+yts.do,yts.mx,yts.rs##.uy.hfc
 zcine.net##winbox-1
 znews.vn###Zingnews_SiteHeader
 znews.vn##.znews-banner
@@ -1696,5 +1697,5 @@ xnxx-sex-videos.com#%#//scriptlet("remove-attr", "target|onclick", "a[href^='/vi
 xoilacu.cc#%#//scriptlet("abort-on-property-read", "adsRedirectPopups")
 xoivo2.online,tructiepdabong5.co,adsTvcs #%#//scriptlet("set-constant", "adsPlayer", "")
 xoivo2.online,tructiepdabong5.co,vaoroi365.com#%#//scriptlet("set-constant", "adsTvcs", "")
-yts.do,yts.mx,yts.rs#%#//scriptlet("abort-on-property-read", "atob")
+yts.do,yts.mx,yts.rs#%#//scriptlet("abort-on-property-read", "window.aclib")
 znews.vn#%#//scriptlet("abort-on-property-read", "adtimaConfig")
