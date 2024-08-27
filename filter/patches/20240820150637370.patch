@@ -1,17 +1,17 @@
-diff name:abpvn lines:208 checksum:ec517cd78c
+diff name:abpvn lines:232 checksum:500f3a94ee
 d2 1
 a2 1
-! Version: 20240826171211626
+! Version: 20240827085405974
 d5 2
 a6 2
-! Last modified: 26 Aug 2024 17:12:11 UTC+7
-! Diff-Path: patches/20240826171211626.patch#abpvn
+! Last modified: 27 Aug 2024 08:54:06 UTC+7
+! Diff-Path: patches/20240827085405974.patch#abpvn
 d21 1
 a21 1
 $popup,domain=player-cdn.com|freeplayervideo.com|abysscdn.com|geoip.redirect-ads.com|playhydrax.com
 d48 1
 a48 1
-/i.imgur.com/*.gif$domain=keonhacai5.fans|phimlongtieng.net|phimdinhcao.com|phimdinhcao.net|xoilacu.cc|vokrugsveta.com|unmanned-ship.org|unfriendcoal.com|plvb.xyz|listnhacai88.com|xoilaczvx.tv|xemtivingon.org|phimlongtieng.com|newsmavens.com|truecenterpublishing.com|plcdn.xyz|phimmoi.onl|motphimww.com
+/i.imgur.com/*.gif$domain=keonhacai5.fans|phimlongtieng.net|phimdinhcao.com|phimdinhcao.net|xoilacu.cc|vokrugsveta.com|unmanned-ship.org|unfriendcoal.com|plvb.xyz|listnhacai88.com|xoilaczvx.tv|xemtivingon.org|phimlongtieng.com|newsmavens.com|truecenterpublishing.com|plcdn.xyz|phimmoi.my|motphimww.com
 a72 1
 ||10gb.vn/assets/ads/
 d95 1
@@ -22,6 +22,8 @@ a127 1
 d139 1
 a139 1
 ||i.imgur.com^*.gif$image,domain=ghienphim.one|mv.dailyphimz.com|mv.phimmoiaz.cc|phimgichill.net|ophimhdvn3.net|mythethao.net|xemtivi4k.com|vtipster.net|huphimtv.com|live7.90phut34.live|phimmoiiii.net|vebo4.net|xemtv.tvhayhd.tv|hoathinh4k3.net|vutruphim.tv|phimhay123.me
+a140 1
+||i45.servimg.com/u/f45/$domain=gocmod.com
 d143 2
 a144 2
 ||image-eu-na-ctnytbefjq.4shares.live/90link/*.gif$image,domain=live7.thapcam22.net|live4.xoilac34.org|live.vebo24.net|live6.vebo26.net|tructiep7.banhkhuc15.net|fdcdn.xyz
@@ -31,6 +33,10 @@ a164 1
 ||motphimchilld.net/ads1.js$script,~third-party
 a165 1
 ||nettruyenww.com/public/assets/js/pop$script,~third-party
+d173 2
+a174 2
+||phimmoi.my/js/ads.js$script
+||phimmoi.my^*.gif$image
 d183 1
 a183 1
 ||photo2.tinhte.vn^*.gif$domain=vebo4.net|live.vebo24.net|live6.vebo26.net
@@ -44,10 +50,22 @@ a264 2
 ||xemphimhdc.us^*.gif$image
 d400 12
 d461 1
+d499 1
+a499 1
+dongphim.li,dongchill.co,bichill.biz,phim18u.net,phimmoi.my,vivuphim.info###footer_fixed_ads
 d504 1
 a504 1
-ephoto360.com,thiepmung.com,ophimhd.vip,xemphimchill.xyz,phimmoi.onl,247phim.cc,www.phimmoichilla.xyz,motphimchill.online,phimmoi2024.net,hayhaytv.cc,www.ssphim.us,motphimchilld.net##.ad-container
+ephoto360.com,thiepmung.com,ophimhd.vip,xemphimchill.xyz,phimmoi.my,247phim.cc,www.phimmoichilla.xyz,motphimchill.online,phimmoi2024.net,hayhaytv.cc,www.ssphim.us,motphimchilld.net##.ad-container
 d520 1
+a534 5
+gocmod.com###bannerContainer1
+gocmod.com###bannerContainer2
+gocmod.com###sp-wrapper-hovering-format
+gocmod.com##.wam-banner
+gocmod.com##center:has(.adsbygoogle)
+d541 1
+a541 1
+hh3dhay.life###layerLogo
 d544 1
 a550 2
 hi.90phut21.xyz##.group-link:has(a[href*="&utm_"])
@@ -82,9 +100,13 @@ live7.thapcam22.net##.modal
 live7.thapcam22.net,xoilaczvx.tv,unmanned-ship.org,newsmavens.com,truecenterpublishing.com##.btn-odds
 a676 1
 newsmavens.com##.btn-od
-d723 1
-a723 1
-phimmoi.onl,vungtv.us,xemphimhdc.us###container-ads
+d722 2
+a723 2
+phimmoi.my###hide_catfish
+phimmoi.my,vungtv.us,xemphimhdc.us###container-ads
+d745 1
+a745 1
+phimvuihd.org,hh3dhay.life,phim18u.net,phim24h.mobi,xem14.com,hh3dhay.pro,vutruphim.tv,3dchill.shop,hh3dhay.life##.float-ck-center-lt
 d753 9
 a761 9
 rakhoi.rakhoi7.xyz##.footer-button-sign-in.hide-desk
@@ -182,6 +204,8 @@ xoilaczvx.tv##.odds-comp
 xoilaczvx.tv##.w-100.justify-content-center.align-items-center.d-flex
 xoilaczvx.tv##a.d-lg-none.d-block:nth-of-type(1)
 xoilaczvx.tv,newsmavens.com##.d-lg-flex.d-none.p-0.company.flex-1.table
+a1126 1
+@@||gocmod.com$generichide
 a1146 1
 gicovietnam.blogspot.com#@#.inline-ad
 d1162 1
@@ -207,17 +231,17 @@ phevkl.uk,clipss.viet69net.com###mp-preload-popup-overlay
 d1300 2
 a1311 1
 videocaraudio.pl##.code-block
-diff name:abpvn_adguard lines:233 checksum:ddce381469
+diff name:abpvn_adguard lines:260 checksum:ff868067fe
 d2 1
 a2 1
-! Version: 20240826171211626
+! Version: 20240827085405974
 d5 2
 a6 2
-! Last modified: 26 Aug 2024 17:12:11 UTC+7
-! Diff-Path: patches/20240826171211626.patch#abpvn_adguard
+! Last modified: 27 Aug 2024 08:54:06 UTC+7
+! Diff-Path: patches/20240827085405974.patch#abpvn_adguard
 d47 1
 a47 1
-/i.imgur.com/*.gif$domain=keonhacai5.fans|phimlongtieng.net|phimdinhcao.com|phimdinhcao.net|xoilacu.cc|vokrugsveta.com|unmanned-ship.org|unfriendcoal.com|plvb.xyz|listnhacai88.com|xoilaczvx.tv|xemtivingon.org|phimlongtieng.com|newsmavens.com|truecenterpublishing.com|plcdn.xyz|phimmoi.onl|motphimww.com
+/i.imgur.com/*.gif$domain=keonhacai5.fans|phimlongtieng.net|phimdinhcao.com|phimdinhcao.net|xoilacu.cc|vokrugsveta.com|unmanned-ship.org|unfriendcoal.com|plvb.xyz|listnhacai88.com|xoilaczvx.tv|xemtivingon.org|phimlongtieng.com|newsmavens.com|truecenterpublishing.com|plcdn.xyz|phimmoi.my|motphimww.com
 a71 1
 ||10gb.vn/assets/ads/
 d94 1
@@ -228,6 +252,8 @@ a126 1
 d138 1
 a138 1
 ||i.imgur.com^*.gif$image,domain=ghienphim.one|mv.dailyphimz.com|mv.phimmoiaz.cc|phimgichill.net|ophimhdvn3.net|mythethao.net|xemtivi4k.com|vtipster.net|huphimtv.com|live7.90phut34.live|phimmoiiii.net|vebo4.net|xemtv.tvhayhd.tv|hoathinh4k3.net|vutruphim.tv|phimhay123.me
+a139 1
+||i45.servimg.com/u/f45/$domain=gocmod.com
 d142 2
 a143 2
 ||image-eu-na-ctnytbefjq.4shares.live/90link/*.gif$image,domain=live7.thapcam22.net|live4.xoilac34.org|live.vebo24.net|live6.vebo26.net|tructiep7.banhkhuc15.net|fdcdn.xyz
@@ -237,6 +263,10 @@ a163 1
 ||motphimchilld.net/ads1.js$script,~third-party
 a164 1
 ||nettruyenww.com/public/assets/js/pop$script,~third-party
+d172 2
+a173 2
+||phimmoi.my/js/ads.js$script
+||phimmoi.my^*.gif$image
 d182 1
 a182 1
 ||photo2.tinhte.vn^*.gif$domain=vebo4.net|live.vebo24.net|live6.vebo26.net
@@ -250,10 +280,22 @@ a261 2
 ||xemphimhdc.us^*.gif$image
 d397 12
 d458 1
+d496 1
+a496 1
+dongphim.li,dongchill.co,bichill.biz,phim18u.net,phimmoi.my,vivuphim.info###footer_fixed_ads
 d501 1
 a501 1
-ephoto360.com,thiepmung.com,ophimhd.vip,xemphimchill.xyz,phimmoi.onl,247phim.cc,www.phimmoichilla.xyz,motphimchill.online,phimmoi2024.net,hayhaytv.cc,www.ssphim.us,motphimchilld.net##.ad-container
+ephoto360.com,thiepmung.com,ophimhd.vip,xemphimchill.xyz,phimmoi.my,247phim.cc,www.phimmoichilla.xyz,motphimchill.online,phimmoi2024.net,hayhaytv.cc,www.ssphim.us,motphimchilld.net##.ad-container
 d517 1
+a531 5
+gocmod.com###bannerContainer1
+gocmod.com###bannerContainer2
+gocmod.com###sp-wrapper-hovering-format
+gocmod.com##.wam-banner
+gocmod.com##center:has(.adsbygoogle)
+d538 1
+a538 1
+hh3dhay.life###layerLogo
 d541 1
 a547 2
 hi.90phut21.xyz##.group-link:has(a[href*="&utm_"])
@@ -288,9 +330,13 @@ live7.thapcam22.net##.modal
 live7.thapcam22.net,xoilaczvx.tv,unmanned-ship.org,newsmavens.com,truecenterpublishing.com##.btn-odds
 a673 1
 newsmavens.com##.btn-od
-d720 1
-a720 1
-phimmoi.onl,vungtv.us,xemphimhdc.us###container-ads
+d719 2
+a720 2
+phimmoi.my###hide_catfish
+phimmoi.my,vungtv.us,xemphimhdc.us###container-ads
+d742 1
+a742 1
+phimvuihd.org,hh3dhay.life,phim18u.net,phim24h.mobi,xem14.com,hh3dhay.pro,vutruphim.tv,3dchill.shop,hh3dhay.life##.float-ck-center-lt
 d750 9
 a758 9
 rakhoi.rakhoi7.xyz##.footer-button-sign-in.hide-desk
@@ -388,6 +434,8 @@ xoilaczvx.tv##.odds-comp
 xoilaczvx.tv##.w-100.justify-content-center.align-items-center.d-flex
 xoilaczvx.tv##a.d-lg-none.d-block:nth-of-type(1)
 xoilaczvx.tv,newsmavens.com##.d-lg-flex.d-none.p-0.company.flex-1.table
+a1122 1
+@@||gocmod.com$generichide
 a1142 1
 gicovietnam.blogspot.com#@#.inline-ad
 d1157 1
@@ -420,6 +468,9 @@ d1365 2
 a1366 2
 gocphimiz.com,p.thoctv.com#%#//scriptlet("abort-current-inline-script", "document.createElement", "script")
 goctruyentranhvui2.com,truyenqqto.com,nettruyenww.com,sextop1.site#%#//scriptlet("abort-current-inline-script", "WebAssembly", "globalThis")
+d1370 1
+a1370 1
+hh3dhay.life,hh3dhay.xyz#%#//scriptlet("abort-current-inline-script", "document.createElement", ";break;case")
 d1380 3
 a1382 3
 live7.thapcam22.net,blog.abit.vn##.modal-backdrop.show
@@ -441,20 +492,20 @@ xemphimhdc.us#%#//scriptlet("abort-current-inline-script", "document.addEventLis
 d1440 1
 a1440 1
 xoilacu.cc#%#//scriptlet("abort-on-property-read", "adsRedirectPopups")
-diff name:abpvn_content_blocker lines:208 checksum:ad3804bc71
+diff name:abpvn_content_blocker lines:232 checksum:e11d6c87d8
 d2 1
 a2 1
-! Version: 20240826171211626
+! Version: 20240827085405974
 d5 2
 a6 2
-! Last modified: 26 Aug 2024 17:12:11 UTC+7
-! Diff-Path: patches/20240826171211626.patch#abpvn_content_blocker
+! Last modified: 27 Aug 2024 08:54:06 UTC+7
+! Diff-Path: patches/20240827085405974.patch#abpvn_content_blocker
 d21 1
 a21 1
 $popup,domain=player-cdn.com|freeplayervideo.com|abysscdn.com|geoip.redirect-ads.com|playhydrax.com
 d48 1
 a48 1
-/i.imgur.com/*.gif$domain=keonhacai5.fans|phimlongtieng.net|phimdinhcao.com|phimdinhcao.net|xoilacu.cc|vokrugsveta.com|unmanned-ship.org|unfriendcoal.com|plvb.xyz|listnhacai88.com|xoilaczvx.tv|xemtivingon.org|phimlongtieng.com|newsmavens.com|truecenterpublishing.com|plcdn.xyz|phimmoi.onl|motphimww.com
+/i.imgur.com/*.gif$domain=keonhacai5.fans|phimlongtieng.net|phimdinhcao.com|phimdinhcao.net|xoilacu.cc|vokrugsveta.com|unmanned-ship.org|unfriendcoal.com|plvb.xyz|listnhacai88.com|xoilaczvx.tv|xemtivingon.org|phimlongtieng.com|newsmavens.com|truecenterpublishing.com|plcdn.xyz|phimmoi.my|motphimww.com
 a72 1
 ||10gb.vn/assets/ads/
 d95 1
@@ -465,6 +516,8 @@ a127 1
 d139 1
 a139 1
 ||i.imgur.com^*.gif$image,domain=ghienphim.one|mv.dailyphimz.com|mv.phimmoiaz.cc|phimgichill.net|ophimhdvn3.net|mythethao.net|xemtivi4k.com|vtipster.net|huphimtv.com|live7.90phut34.live|phimmoiiii.net|vebo4.net|xemtv.tvhayhd.tv|hoathinh4k3.net|vutruphim.tv|phimhay123.me
+a140 1
+||i45.servimg.com/u/f45/$domain=gocmod.com
 d143 2
 a144 2
 ||image-eu-na-ctnytbefjq.4shares.live/90link/*.gif$image,domain=live7.thapcam22.net|live4.xoilac34.org|live.vebo24.net|live6.vebo26.net|tructiep7.banhkhuc15.net|fdcdn.xyz
@@ -474,6 +527,10 @@ a164 1
 ||motphimchilld.net/ads1.js$script,~third-party
 a165 1
 ||nettruyenww.com/public/assets/js/pop$script,~third-party
+d173 2
+a174 2
+||phimmoi.my/js/ads.js$script
+||phimmoi.my^*.gif$image
 d183 1
 a183 1
 ||photo2.tinhte.vn^*.gif$domain=vebo4.net|live.vebo24.net|live6.vebo26.net
@@ -487,10 +544,22 @@ a264 2
 ||xemphimhdc.us^*.gif$image
 d400 12
 d461 1
+d499 1
+a499 1
+dongphim.li,dongchill.co,bichill.biz,phim18u.net,phimmoi.my,vivuphim.info###footer_fixed_ads
 d504 1
 a504 1
-ephoto360.com,thiepmung.com,ophimhd.vip,xemphimchill.xyz,phimmoi.onl,247phim.cc,www.phimmoichilla.xyz,motphimchill.online,phimmoi2024.net,hayhaytv.cc,www.ssphim.us,motphimchilld.net##.ad-container
+ephoto360.com,thiepmung.com,ophimhd.vip,xemphimchill.xyz,phimmoi.my,247phim.cc,www.phimmoichilla.xyz,motphimchill.online,phimmoi2024.net,hayhaytv.cc,www.ssphim.us,motphimchilld.net##.ad-container
 d520 1
+a534 5
+gocmod.com###bannerContainer1
+gocmod.com###bannerContainer2
+gocmod.com###sp-wrapper-hovering-format
+gocmod.com##.wam-banner
+gocmod.com##center:has(.adsbygoogle)
+d541 1
+a541 1
+hh3dhay.life###layerLogo
 d544 1
 a550 2
 hi.90phut21.xyz##.group-link:has(a[href*="&utm_"])
@@ -525,9 +594,13 @@ live7.thapcam22.net##.modal
 live7.thapcam22.net,xoilaczvx.tv,unmanned-ship.org,newsmavens.com,truecenterpublishing.com##.btn-odds
 a676 1
 newsmavens.com##.btn-od
-d723 1
-a723 1
-phimmoi.onl,vungtv.us,xemphimhdc.us###container-ads
+d722 2
+a723 2
+phimmoi.my###hide_catfish
+phimmoi.my,vungtv.us,xemphimhdc.us###container-ads
+d745 1
+a745 1
+phimvuihd.org,hh3dhay.life,phim18u.net,phim24h.mobi,xem14.com,hh3dhay.pro,vutruphim.tv,3dchill.shop,hh3dhay.life##.float-ck-center-lt
 d753 9
 a761 9
 rakhoi.rakhoi7.xyz##.footer-button-sign-in.hide-desk
@@ -625,6 +698,8 @@ xoilaczvx.tv##.odds-comp
 xoilaczvx.tv##.w-100.justify-content-center.align-items-center.d-flex
 xoilaczvx.tv##a.d-lg-none.d-block:nth-of-type(1)
 xoilaczvx.tv,newsmavens.com##.d-lg-flex.d-none.p-0.company.flex-1.table
+a1126 1
+@@||gocmod.com$generichide
 a1146 1
 gicovietnam.blogspot.com#@#.inline-ad
 d1162 1
@@ -650,20 +725,20 @@ phevkl.uk,clipss.viet69net.com###mp-preload-popup-overlay
 d1300 2
 a1311 1
 videocaraudio.pl##.code-block
-diff name:abpvn_noelemhide lines:54 checksum:59b0c68ee4
+diff name:abpvn_noelemhide lines:60 checksum:53a73d065b
 d2 1
 a2 1
-! Version: 20240826171211626
+! Version: 20240827085405974
 d5 2
 a6 2
-! Last modified: 26 Aug 2024 17:12:11 UTC+7
-! Diff-Path: patches/20240826171211626.patch#abpvn_noelemhide
+! Last modified: 27 Aug 2024 08:54:06 UTC+7
+! Diff-Path: patches/20240827085405974.patch#abpvn_noelemhide
 d21 1
 a21 1
 $popup,domain=player-cdn.com|freeplayervideo.com|abysscdn.com|geoip.redirect-ads.com|playhydrax.com
 d48 1
 a48 1
-/i.imgur.com/*.gif$domain=keonhacai5.fans|phimlongtieng.net|phimdinhcao.com|phimdinhcao.net|xoilacu.cc|vokrugsveta.com|unmanned-ship.org|unfriendcoal.com|plvb.xyz|listnhacai88.com|xoilaczvx.tv|xemtivingon.org|phimlongtieng.com|newsmavens.com|truecenterpublishing.com|plcdn.xyz|phimmoi.onl|motphimww.com
+/i.imgur.com/*.gif$domain=keonhacai5.fans|phimlongtieng.net|phimdinhcao.com|phimdinhcao.net|xoilacu.cc|vokrugsveta.com|unmanned-ship.org|unfriendcoal.com|plvb.xyz|listnhacai88.com|xoilaczvx.tv|xemtivingon.org|phimlongtieng.com|newsmavens.com|truecenterpublishing.com|plcdn.xyz|phimmoi.my|motphimww.com
 a72 1
 ||10gb.vn/assets/ads/
 d95 1
@@ -674,6 +749,8 @@ a127 1
 d139 1
 a139 1
 ||i.imgur.com^*.gif$image,domain=ghienphim.one|mv.dailyphimz.com|mv.phimmoiaz.cc|phimgichill.net|ophimhdvn3.net|mythethao.net|xemtivi4k.com|vtipster.net|huphimtv.com|live7.90phut34.live|phimmoiiii.net|vebo4.net|xemtv.tvhayhd.tv|hoathinh4k3.net|vutruphim.tv|phimhay123.me
+a140 1
+||i45.servimg.com/u/f45/$domain=gocmod.com
 d143 2
 a144 2
 ||image-eu-na-ctnytbefjq.4shares.live/90link/*.gif$image,domain=live7.thapcam22.net|live4.xoilac34.org|live.vebo24.net|live6.vebo26.net|tructiep7.banhkhuc15.net|fdcdn.xyz
@@ -683,6 +760,10 @@ a164 1
 ||motphimchilld.net/ads1.js$script,~third-party
 a165 1
 ||nettruyenww.com/public/assets/js/pop$script,~third-party
+d173 2
+a174 2
+||phimmoi.my/js/ads.js$script
+||phimmoi.my^*.gif$image
 d183 1
 a183 1
 ||photo2.tinhte.vn^*.gif$domain=vebo4.net|live.vebo24.net|live6.vebo26.net
@@ -705,17 +786,17 @@ a436 2
 ||sexsub.247jav.net^*.gif$image,domain=sexvn.tuoi69s.com|javhay.click|sexsub.247jav.net
 d445 1
 d452 1
-diff name:abpvn_ublock lines:233 checksum:5245fc39d6
+diff name:abpvn_ublock lines:260 checksum:e09f8afaba
 d2 1
 a2 1
-! Version: 20240826171211626
+! Version: 20240827085405974
 d5 2
 a6 2
-! Last modified: 26 Aug 2024 17:12:11 UTC+7
-! Diff-Path: patches/20240826171211626.patch#abpvn_ublock
+! Last modified: 27 Aug 2024 08:54:06 UTC+7
+! Diff-Path: patches/20240827085405974.patch#abpvn_ublock
 d47 1
 a47 1
-/i.imgur.com/*.gif$domain=keonhacai5.fans|phimlongtieng.net|phimdinhcao.com|phimdinhcao.net|xoilacu.cc|vokrugsveta.com|unmanned-ship.org|unfriendcoal.com|plvb.xyz|listnhacai88.com|xoilaczvx.tv|xemtivingon.org|phimlongtieng.com|newsmavens.com|truecenterpublishing.com|plcdn.xyz|phimmoi.onl|motphimww.com
+/i.imgur.com/*.gif$domain=keonhacai5.fans|phimlongtieng.net|phimdinhcao.com|phimdinhcao.net|xoilacu.cc|vokrugsveta.com|unmanned-ship.org|unfriendcoal.com|plvb.xyz|listnhacai88.com|xoilaczvx.tv|xemtivingon.org|phimlongtieng.com|newsmavens.com|truecenterpublishing.com|plcdn.xyz|phimmoi.my|motphimww.com
 a71 1
 ||10gb.vn/assets/ads/
 d94 1
@@ -726,6 +807,8 @@ a126 1
 d138 1
 a138 1
 ||i.imgur.com^*.gif$image,domain=ghienphim.one|mv.dailyphimz.com|mv.phimmoiaz.cc|phimgichill.net|ophimhdvn3.net|mythethao.net|xemtivi4k.com|vtipster.net|huphimtv.com|live7.90phut34.live|phimmoiiii.net|vebo4.net|xemtv.tvhayhd.tv|hoathinh4k3.net|vutruphim.tv|phimhay123.me
+a139 1
+||i45.servimg.com/u/f45/$domain=gocmod.com
 d142 2
 a143 2
 ||image-eu-na-ctnytbefjq.4shares.live/90link/*.gif$image,domain=live7.thapcam22.net|live4.xoilac34.org|live.vebo24.net|live6.vebo26.net|tructiep7.banhkhuc15.net|fdcdn.xyz
@@ -735,6 +818,10 @@ a163 1
 ||motphimchilld.net/ads1.js$script,~third-party
 a164 1
 ||nettruyenww.com/public/assets/js/pop$script,~third-party
+d172 2
+a173 2
+||phimmoi.my/js/ads.js$script
+||phimmoi.my^*.gif$image
 d182 1
 a182 1
 ||photo2.tinhte.vn^*.gif$domain=vebo4.net|live.vebo24.net|live6.vebo26.net
@@ -748,10 +835,22 @@ a261 2
 ||xemphimhdc.us^*.gif$image
 d397 12
 d458 1
+d496 1
+a496 1
+dongphim.li,dongchill.co,bichill.biz,phim18u.net,phimmoi.my,vivuphim.info###footer_fixed_ads
 d501 1
 a501 1
-ephoto360.com,thiepmung.com,ophimhd.vip,xemphimchill.xyz,phimmoi.onl,247phim.cc,www.phimmoichilla.xyz,motphimchill.online,phimmoi2024.net,hayhaytv.cc,www.ssphim.us,motphimchilld.net##.ad-container
+ephoto360.com,thiepmung.com,ophimhd.vip,xemphimchill.xyz,phimmoi.my,247phim.cc,www.phimmoichilla.xyz,motphimchill.online,phimmoi2024.net,hayhaytv.cc,www.ssphim.us,motphimchilld.net##.ad-container
 d517 1
+a531 5
+gocmod.com###bannerContainer1
+gocmod.com###bannerContainer2
+gocmod.com###sp-wrapper-hovering-format
+gocmod.com##.wam-banner
+gocmod.com##center:has(.adsbygoogle)
+d538 1
+a538 1
+hh3dhay.life###layerLogo
 d541 1
 a547 2
 hi.90phut21.xyz##.group-link:has(a[href*="&utm_"])
@@ -786,9 +885,13 @@ live7.thapcam22.net##.modal
 live7.thapcam22.net,xoilaczvx.tv,unmanned-ship.org,newsmavens.com,truecenterpublishing.com##.btn-odds
 a673 1
 newsmavens.com##.btn-od
-d720 1
-a720 1
-phimmoi.onl,vungtv.us,xemphimhdc.us###container-ads
+d719 2
+a720 2
+phimmoi.my###hide_catfish
+phimmoi.my,vungtv.us,xemphimhdc.us###container-ads
+d742 1
+a742 1
+phimvuihd.org,hh3dhay.life,phim18u.net,phim24h.mobi,xem14.com,hh3dhay.pro,vutruphim.tv,3dchill.shop,hh3dhay.life##.float-ck-center-lt
 d750 9
 a758 9
 rakhoi.rakhoi7.xyz##.footer-button-sign-in.hide-desk
@@ -886,6 +989,8 @@ xoilaczvx.tv##.odds-comp
 xoilaczvx.tv##.w-100.justify-content-center.align-items-center.d-flex
 xoilaczvx.tv##a.d-lg-none.d-block:nth-of-type(1)
 xoilaczvx.tv,newsmavens.com##.d-lg-flex.d-none.p-0.company.flex-1.table
+a1121 1
+@@||gocmod.com$generichide
 a1141 1
 gicovietnam.blogspot.com#@#.inline-ad
 d1156 1
@@ -918,6 +1023,9 @@ d1365 2
 a1366 2
 gocphimiz.com,p.thoctv.com##+js(acs, document.createElement, script)
 goctruyentranhvui2.com,truyenqqto.com,nettruyenww.com,sextop1.site##+js(acs, WebAssembly, globalThis)
+d1370 1
+a1370 1
+hh3dhay.life,hh3dhay.xyz##+js(acs, document.createElement, ;break;case)
 d1380 3
 a1382 3
 live7.thapcam22.net,blog.abit.vn##.modal-backdrop.show
