@@ -1,11 +1,11 @@
-diff name:abpvn lines:227 checksum:500f3a94ee
+diff name:abpvn lines:234 checksum:b508eb82e2
 d2 1
 a2 1
-! Version: 20240827085405974
+! Version: 20240827092007499
 d5 2
 a6 2
-! Last modified: 27 Aug 2024 08:54:06 UTC+7
-! Diff-Path: patches/20240827085405974.patch#abpvn
+! Last modified: 27 Aug 2024 09:20:07 UTC+7
+! Diff-Path: patches/20240827092007499.patch#abpvn
 d21 1
 a21 1
 $popup,domain=player-cdn.com|freeplayervideo.com|abysscdn.com|geoip.redirect-ads.com|playhydrax.com
@@ -32,6 +32,9 @@ d174 2
 a175 2
 ||phimmoi.my/js/ads.js$script
 ||phimmoi.my^*.gif$image
+a179 2
+||phimreview.org/playergk/phimreview.mp4$rewrite=abp-resource:blank-mp4,domain=phimreview.org
+||phimreview.org^*.gif$image
 d184 1
 a184 1
 ||photo2.tinhte.vn^*.gif$domain=vebo4.net|live.vebo24.net|live6.vebo26.net
@@ -99,6 +102,8 @@ d723 2
 a724 2
 phimmoi.my###hide_catfish
 phimmoi.my,vungtv.us,xemphimhdc.us###container-ads
+a740 1
+phimreview.org##.banner-sticky-footer-wrapper
 d746 1
 a746 1
 phimvuihd.org,hh3dhay.life,phim18u.net,phim24h.mobi,xem14.com,hh3dhay.pro,vutruphim.tv,3dchill.shop,hh3dhay.life##.float-ck-center-lt
@@ -201,6 +206,8 @@ xoilaczvx.tv##a.d-lg-none.d-block:nth-of-type(1)
 xoilaczvx.tv,newsmavens.com##.d-lg-flex.d-none.p-0.company.flex-1.table
 a1127 1
 @@||gocmod.com$generichide
+a1138 1
+@@||vn-z.vn$generichide
 a1147 1
 gicovietnam.blogspot.com#@#.inline-ad
 d1163 1
@@ -226,14 +233,14 @@ phevkl.uk,clipss.viet69net.com###mp-preload-popup-overlay
 d1301 2
 a1312 1
 videocaraudio.pl##.code-block
-diff name:abpvn_adguard lines:255 checksum:ff868067fe
+diff name:abpvn_adguard lines:262 checksum:7daef52f7c
 d2 1
 a2 1
-! Version: 20240827085405974
+! Version: 20240827092007499
 d5 2
 a6 2
-! Last modified: 27 Aug 2024 08:54:06 UTC+7
-! Diff-Path: patches/20240827085405974.patch#abpvn_adguard
+! Last modified: 27 Aug 2024 09:20:07 UTC+7
+! Diff-Path: patches/20240827092007499.patch#abpvn_adguard
 d47 1
 a47 1
 /i.imgur.com/*.gif$domain=keonhacai5.fans|phimlongtieng.net|phimdinhcao.com|phimdinhcao.net|xoilacu.cc|vokrugsveta.com|unmanned-ship.org|unfriendcoal.com|plvb.xyz|listnhacai88.com|xoilaczvx.tv|xemtivingon.org|phimlongtieng.com|newsmavens.com|truecenterpublishing.com|plcdn.xyz|phimmoi.my|motphimww.com
@@ -257,6 +264,9 @@ d173 2
 a174 2
 ||phimmoi.my/js/ads.js$script
 ||phimmoi.my^*.gif$image
+a178 2
+||phimreview.org/playergk/phimreview.mp4$rewrite=abp-resource:blank-mp4,domain=phimreview.org
+||phimreview.org^*.gif$image
 d183 1
 a183 1
 ||photo2.tinhte.vn^*.gif$domain=vebo4.net|live.vebo24.net|live6.vebo26.net
@@ -324,6 +334,8 @@ d720 2
 a721 2
 phimmoi.my###hide_catfish
 phimmoi.my,vungtv.us,xemphimhdc.us###container-ads
+a737 1
+phimreview.org##.banner-sticky-footer-wrapper
 d743 1
 a743 1
 phimvuihd.org,hh3dhay.life,phim18u.net,phim24h.mobi,xem14.com,hh3dhay.pro,vutruphim.tv,3dchill.shop,hh3dhay.life##.float-ck-center-lt
@@ -426,6 +438,8 @@ xoilaczvx.tv##a.d-lg-none.d-block:nth-of-type(1)
 xoilaczvx.tv,newsmavens.com##.d-lg-flex.d-none.p-0.company.flex-1.table
 a1123 1
 @@||gocmod.com$generichide
+a1134 1
+@@||vn-z.vn$generichide
 a1143 1
 gicovietnam.blogspot.com#@#.inline-ad
 d1158 1
@@ -482,14 +496,14 @@ xemphimhdc.us#%#//scriptlet("abort-current-inline-script", "document.addEventLis
 d1440 1
 a1440 1
 xoilacu.cc#%#//scriptlet("abort-on-property-read", "adsRedirectPopups")
-diff name:abpvn_content_blocker lines:227 checksum:e11d6c87d8
+diff name:abpvn_content_blocker lines:234 checksum:cc9cd40d5b
 d2 1
 a2 1
-! Version: 20240827085405974
+! Version: 20240827092007499
 d5 2
 a6 2
-! Last modified: 27 Aug 2024 08:54:06 UTC+7
-! Diff-Path: patches/20240827085405974.patch#abpvn_content_blocker
+! Last modified: 27 Aug 2024 09:20:07 UTC+7
+! Diff-Path: patches/20240827092007499.patch#abpvn_content_blocker
 d21 1
 a21 1
 $popup,domain=player-cdn.com|freeplayervideo.com|abysscdn.com|geoip.redirect-ads.com|playhydrax.com
@@ -516,6 +530,9 @@ d174 2
 a175 2
 ||phimmoi.my/js/ads.js$script
 ||phimmoi.my^*.gif$image
+a179 2
+||phimreview.org/playergk/phimreview.mp4$rewrite=abp-resource:blank-mp4,domain=phimreview.org
+||phimreview.org^*.gif$image
 d184 1
 a184 1
 ||photo2.tinhte.vn^*.gif$domain=vebo4.net|live.vebo24.net|live6.vebo26.net
@@ -583,6 +600,8 @@ d723 2
 a724 2
 phimmoi.my###hide_catfish
 phimmoi.my,vungtv.us,xemphimhdc.us###container-ads
+a740 1
+phimreview.org##.banner-sticky-footer-wrapper
 d746 1
 a746 1
 phimvuihd.org,hh3dhay.life,phim18u.net,phim24h.mobi,xem14.com,hh3dhay.pro,vutruphim.tv,3dchill.shop,hh3dhay.life##.float-ck-center-lt
@@ -685,6 +704,8 @@ xoilaczvx.tv##a.d-lg-none.d-block:nth-of-type(1)
 xoilaczvx.tv,newsmavens.com##.d-lg-flex.d-none.p-0.company.flex-1.table
 a1127 1
 @@||gocmod.com$generichide
+a1138 1
+@@||vn-z.vn$generichide
 a1147 1
 gicovietnam.blogspot.com#@#.inline-ad
 d1163 1
@@ -710,14 +731,14 @@ phevkl.uk,clipss.viet69net.com###mp-preload-popup-overlay
 d1301 2
 a1312 1
 videocaraudio.pl##.code-block
-diff name:abpvn_noelemhide lines:55 checksum:53a73d065b
+diff name:abpvn_noelemhide lines:58 checksum:609f1e2fbe
 d2 1
 a2 1
-! Version: 20240827085405974
+! Version: 20240827092007499
 d5 2
 a6 2
-! Last modified: 27 Aug 2024 08:54:06 UTC+7
-! Diff-Path: patches/20240827085405974.patch#abpvn_noelemhide
+! Last modified: 27 Aug 2024 09:20:07 UTC+7
+! Diff-Path: patches/20240827092007499.patch#abpvn_noelemhide
 d21 1
 a21 1
 $popup,domain=player-cdn.com|freeplayervideo.com|abysscdn.com|geoip.redirect-ads.com|playhydrax.com
@@ -744,6 +765,9 @@ d174 2
 a175 2
 ||phimmoi.my/js/ads.js$script
 ||phimmoi.my^*.gif$image
+a179 2
+||phimreview.org/playergk/phimreview.mp4$rewrite=abp-resource:blank-mp4,domain=phimreview.org
+||phimreview.org^*.gif$image
 d184 1
 a184 1
 ||photo2.tinhte.vn^*.gif$domain=vebo4.net|live.vebo24.net|live6.vebo26.net
@@ -766,14 +790,14 @@ a437 2
 ||sexsub.247jav.net^*.gif$image,domain=sexvn.tuoi69s.com|javhay.click|sexsub.247jav.net
 d446 1
 d453 1
-diff name:abpvn_ublock lines:255 checksum:e09f8afaba
+diff name:abpvn_ublock lines:262 checksum:1af4ca14da
 d2 1
 a2 1
-! Version: 20240827085405974
+! Version: 20240827092007499
 d5 2
 a6 2
-! Last modified: 27 Aug 2024 08:54:06 UTC+7
-! Diff-Path: patches/20240827085405974.patch#abpvn_ublock
+! Last modified: 27 Aug 2024 09:20:07 UTC+7
+! Diff-Path: patches/20240827092007499.patch#abpvn_ublock
 d47 1
 a47 1
 /i.imgur.com/*.gif$domain=keonhacai5.fans|phimlongtieng.net|phimdinhcao.com|phimdinhcao.net|xoilacu.cc|vokrugsveta.com|unmanned-ship.org|unfriendcoal.com|plvb.xyz|listnhacai88.com|xoilaczvx.tv|xemtivingon.org|phimlongtieng.com|newsmavens.com|truecenterpublishing.com|plcdn.xyz|phimmoi.my|motphimww.com
@@ -797,6 +821,9 @@ d173 2
 a174 2
 ||phimmoi.my/js/ads.js$script
 ||phimmoi.my^*.gif$image
+a178 2
+||phimreview.org/playergk/phimreview.mp4$rewrite=abp-resource:blank-mp4,domain=phimreview.org
+||phimreview.org^*.gif$image
 d183 1
 a183 1
 ||photo2.tinhte.vn^*.gif$domain=vebo4.net|live.vebo24.net|live6.vebo26.net
@@ -864,6 +891,8 @@ d720 2
 a721 2
 phimmoi.my###hide_catfish
 phimmoi.my,vungtv.us,xemphimhdc.us###container-ads
+a737 1
+phimreview.org##.banner-sticky-footer-wrapper
 d743 1
 a743 1
 phimvuihd.org,hh3dhay.life,phim18u.net,phim24h.mobi,xem14.com,hh3dhay.pro,vutruphim.tv,3dchill.shop,hh3dhay.life##.float-ck-center-lt
@@ -966,6 +995,8 @@ xoilaczvx.tv##a.d-lg-none.d-block:nth-of-type(1)
 xoilaczvx.tv,newsmavens.com##.d-lg-flex.d-none.p-0.company.flex-1.table
 a1122 1
 @@||gocmod.com$generichide
+a1133 1
+@@||vn-z.vn$generichide
 a1142 1
 gicovietnam.blogspot.com#@#.inline-ad
 d1157 1

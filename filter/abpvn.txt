@@ -1,9 +1,9 @@
 [Adblock Plus 2.0]
-! Version: 20240827085405974
+! Version: 20240827092007499
 ! id: D4028CDD-3D39-4624-ACC7-8140F4EC3888
 ! Title: ABPVN List
-! Last modified: 27 Aug 2024 08:54:06 UTC+7
-! Diff-Path: patches/20240827085405974.patch#abpvn
+! Last modified: 27 Aug 2024 09:20:07 UTC+7
+! Diff-Path: patches/20240827092007499.patch#abpvn
 ! Diff-Expires: 60 minutes
 ! Expires: 1 days (update frequency)
 !
@@ -180,6 +180,8 @@ $popup,domain=player-cdn.com|freeplayervideo.com|abysscdn.com|geoip.redirect-ads
 ||phimmoinhat.top^*.gif
 ||phimnhanhvl.com^*.gif
 ||phimnhua.net^*.gif
+||phimreview.org/playergk/phimreview.mp4$rewrite=abp-resource:blank-mp4,domain=phimreview.org
+||phimreview.org^*.gif$image
 ||phimss.net/assets/ads/$image
 ||phimvuihd.org^*.gif$image
 ||phimyeuthichb.com/ad-data/$image
@@ -731,6 +733,7 @@ phimnhua.net##.center-screen.backdrop
 phimnhua.net##.topless
 phimno4.xyz###ads_location
 phimno4.xyz##.block.ad
+phimreview.org##.banner-sticky-footer-wrapper
 phimss.net##.ads-pc
 phimss.net##.ads-sp
 phimtuoitho.tv,tvhayw.org##.catfish-bottom
@@ -1139,6 +1142,7 @@ znews.vn##.znews-banner
 @@||tainhanhvn.com$generichide
 @@||traderviet.tv$generichide
 @@||truyenaudiocv.org$generichide
+@@||vn-z.vn$generichide
 @@||web1s.asia$generichide
 @@||web1s.com$generichide
 @@||windowslite.net$generichide
