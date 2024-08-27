@@ -1,11 +1,11 @@
-diff name:abpvn lines:211 checksum:9d2e7381e2
+diff name:abpvn lines:216 checksum:e48c07ba84
 d2 1
 a2 1
-! Version: 20240827085405761
+! Version: 20240827092007419
 d5 2
 a6 2
-! Last modified: 27 Aug 2024 08:54:05 UTC+7
-! Diff-Path: patches/20240827085405761.patch#abpvn
+! Last modified: 27 Aug 2024 09:20:07 UTC+7
+! Diff-Path: patches/20240827092007419.patch#abpvn
 d21 1
 a21 1
 $popup,domain=player-cdn.com|freeplayervideo.com|abysscdn.com|geoip.redirect-ads.com|playhydrax.com
@@ -35,6 +35,9 @@ d178 2
 a179 2
 ||phimmoi.my/js/ads.js$script
 ||phimmoi.my^*.gif$image
+a183 2
+||phimreview.org/playergk/phimreview.mp4$rewrite=abp-resource:blank-mp4,domain=phimreview.org
+||phimreview.org^*.gif$image
 d188 1
 a188 1
 ||photo2.tinhte.vn^*.gif$domain=vebo4.net|live.vebo24.net|live6.vebo26.net
@@ -103,6 +106,8 @@ d1003 2
 a1004 2
 phimmoi.my###hide_catfish
 phimmoi.my,vungtv.us,xemphimhdc.us###container-ads
+a1019 1
+phimreview.org##.banner-sticky-footer-wrapper
 d1025 1
 a1025 1
 phimvuihd.org,hh3dhay.life,phim18u.net,phim24h.mobi,ffmovie.online,xem14.com,hh3dhay.pro,vutruphim.tv,3dchill.shop,hh3dhay.life##.float-ck-center-lt
@@ -210,14 +215,14 @@ hentaivn.forum###catfish
 hentaivn.forum##.wppopups-whole
 heo69.moe,damsextv.pro##.catfix
 d1553 2
-diff name:abpvn_adguard lines:242 checksum:c858dc1477
+diff name:abpvn_adguard lines:247 checksum:cc8c0049e6
 d2 1
 a2 1
-! Version: 20240827085405761
+! Version: 20240827092007419
 d5 2
 a6 2
-! Last modified: 27 Aug 2024 08:54:05 UTC+7
-! Diff-Path: patches/20240827085405761.patch#abpvn_adguard
+! Last modified: 27 Aug 2024 09:20:07 UTC+7
+! Diff-Path: patches/20240827092007419.patch#abpvn_adguard
 d47 1
 a47 1
 /i.imgur.com/*.gif$domain=keonhacai5.fans|phimlongtieng.net|phimdinhcao.com|phimdinhcao.net|xoilacu.cc|vokrugsveta.com|unmanned-ship.org|unfriendcoal.com|plvb.xyz|listnhacai88.com|xoilaczvx.tv|xemtivingon.org|phimlongtieng.com|newsmavens.com|truecenterpublishing.com|plcdn.xyz|phimmoi.my|motphimww.com
@@ -244,6 +249,9 @@ d177 2
 a178 2
 ||phimmoi.my/js/ads.js$script
 ||phimmoi.my^*.gif$image
+a182 2
+||phimreview.org/playergk/phimreview.mp4$rewrite=abp-resource:blank-mp4,domain=phimreview.org
+||phimreview.org^*.gif$image
 d187 1
 a187 1
 ||photo2.tinhte.vn^*.gif$domain=vebo4.net|live.vebo24.net|live6.vebo26.net
@@ -312,6 +320,8 @@ d1000 2
 a1001 2
 phimmoi.my###hide_catfish
 phimmoi.my,vungtv.us,xemphimhdc.us###container-ads
+a1016 1
+phimreview.org##.banner-sticky-footer-wrapper
 d1022 1
 a1022 1
 phimvuihd.org,hh3dhay.life,phim18u.net,phim24h.mobi,ffmovie.online,xem14.com,hh3dhay.pro,vutruphim.tv,3dchill.shop,hh3dhay.life##.float-ck-center-lt
@@ -453,14 +463,14 @@ xoilacu.cc#%#//scriptlet("abort-on-property-read", "adsRedirectPopups")
 d1698 1
 a1698 1
 yts.do,yts.mx,yts.rs#%#//scriptlet("abort-on-property-read", "window.aclib")
-diff name:abpvn_content_blocker lines:211 checksum:5550f37641
+diff name:abpvn_content_blocker lines:216 checksum:d28d06051c
 d2 1
 a2 1
-! Version: 20240827085405761
+! Version: 20240827092007419
 d5 2
 a6 2
-! Last modified: 27 Aug 2024 08:54:05 UTC+7
-! Diff-Path: patches/20240827085405761.patch#abpvn_content_blocker
+! Last modified: 27 Aug 2024 09:20:07 UTC+7
+! Diff-Path: patches/20240827092007419.patch#abpvn_content_blocker
 d21 1
 a21 1
 $popup,domain=player-cdn.com|freeplayervideo.com|abysscdn.com|geoip.redirect-ads.com|playhydrax.com
@@ -490,6 +500,9 @@ d178 2
 a179 2
 ||phimmoi.my/js/ads.js$script
 ||phimmoi.my^*.gif$image
+a183 2
+||phimreview.org/playergk/phimreview.mp4$rewrite=abp-resource:blank-mp4,domain=phimreview.org
+||phimreview.org^*.gif$image
 d188 1
 a188 1
 ||photo2.tinhte.vn^*.gif$domain=vebo4.net|live.vebo24.net|live6.vebo26.net
@@ -558,6 +571,8 @@ d1003 2
 a1004 2
 phimmoi.my###hide_catfish
 phimmoi.my,vungtv.us,xemphimhdc.us###container-ads
+a1019 1
+phimreview.org##.banner-sticky-footer-wrapper
 d1025 1
 a1025 1
 phimvuihd.org,hh3dhay.life,phim18u.net,phim24h.mobi,ffmovie.online,xem14.com,hh3dhay.pro,vutruphim.tv,3dchill.shop,hh3dhay.life##.float-ck-center-lt
@@ -665,14 +680,14 @@ hentaivn.forum###catfish
 hentaivn.forum##.wppopups-whole
 heo69.moe,damsextv.pro##.catfix
 d1553 2
-diff name:abpvn_noelemhide lines:56 checksum:3d889e4c6e
+diff name:abpvn_noelemhide lines:59 checksum:d867facad4
 d2 1
 a2 1
-! Version: 20240827085405761
+! Version: 20240827092007419
 d5 2
 a6 2
-! Last modified: 27 Aug 2024 08:54:05 UTC+7
-! Diff-Path: patches/20240827085405761.patch#abpvn_noelemhide
+! Last modified: 27 Aug 2024 09:20:07 UTC+7
+! Diff-Path: patches/20240827092007419.patch#abpvn_noelemhide
 d21 1
 a21 1
 $popup,domain=player-cdn.com|freeplayervideo.com|abysscdn.com|geoip.redirect-ads.com|playhydrax.com
@@ -702,6 +717,9 @@ d178 2
 a179 2
 ||phimmoi.my/js/ads.js$script
 ||phimmoi.my^*.gif$image
+a183 2
+||phimreview.org/playergk/phimreview.mp4$rewrite=abp-resource:blank-mp4,domain=phimreview.org
+||phimreview.org^*.gif$image
 d188 1
 a188 1
 ||photo2.tinhte.vn^*.gif$domain=vebo4.net|live.vebo24.net|live6.vebo26.net
@@ -722,14 +740,14 @@ d704 1
 a704 1
 ||sexnhe.biz^*.gif$image,domain=sexnhe.biz|damsextv.pro
 d714 1
-diff name:abpvn_ublock lines:243 checksum:85bbdc64bf
+diff name:abpvn_ublock lines:248 checksum:ff9e81fd1f
 d2 1
 a2 1
-! Version: 20240827085405761
+! Version: 20240827092007419
 d5 2
 a6 2
-! Last modified: 27 Aug 2024 08:54:05 UTC+7
-! Diff-Path: patches/20240827085405761.patch#abpvn_ublock
+! Last modified: 27 Aug 2024 09:20:07 UTC+7
+! Diff-Path: patches/20240827092007419.patch#abpvn_ublock
 d47 1
 a47 1
 /i.imgur.com/*.gif$domain=keonhacai5.fans|phimlongtieng.net|phimdinhcao.com|phimdinhcao.net|xoilacu.cc|vokrugsveta.com|unmanned-ship.org|unfriendcoal.com|plvb.xyz|listnhacai88.com|xoilaczvx.tv|xemtivingon.org|phimlongtieng.com|newsmavens.com|truecenterpublishing.com|plcdn.xyz|phimmoi.my|motphimww.com
@@ -756,6 +774,9 @@ d177 2
 a178 2
 ||phimmoi.my/js/ads.js$script
 ||phimmoi.my^*.gif$image
+a182 2
+||phimreview.org/playergk/phimreview.mp4$rewrite=abp-resource:blank-mp4,domain=phimreview.org
+||phimreview.org^*.gif$image
 d187 1
 a187 1
 ||photo2.tinhte.vn^*.gif$domain=vebo4.net|live.vebo24.net|live6.vebo26.net
@@ -824,6 +845,8 @@ d1000 2
 a1001 2
 phimmoi.my###hide_catfish
 phimmoi.my,vungtv.us,xemphimhdc.us###container-ads
+a1016 1
+phimreview.org##.banner-sticky-footer-wrapper
 d1022 1
 a1022 1
 phimvuihd.org,hh3dhay.life,phim18u.net,phim24h.mobi,ffmovie.online,xem14.com,hh3dhay.pro,vutruphim.tv,3dchill.shop,hh3dhay.life##.float-ck-center-lt
