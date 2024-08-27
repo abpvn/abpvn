@@ -1,11 +1,11 @@
-diff name:abpvn lines:76 checksum:d9f285a48b
+diff name:abpvn lines:101 checksum:83c8c8eb04
 d2 1
 a2 1
-! Version: 20240827120452938
+! Version: 20240827150610630
 d5 2
 a6 2
-! Last modified: 27 Aug 2024 12:04:52 UTC+7
-! Diff-Path: patches/20240827120452938.patch#abpvn
+! Last modified: 27 Aug 2024 15:06:10 UTC+7
+! Diff-Path: patches/20240827150610630.patch#abpvn
 d48 1
 a48 1
 /i.imgur.com/*.gif$domain=keonhacai5.fans|phimlongtieng.net|phimdinhcao.com|phimdinhcao.net|xoilacu.cc|vokrugsveta.com|unmanned-ship.org|unfriendcoal.com|plvb.xyz|listnhacai88.com|xoilaczvx.tv|xemtivingon.org|phimlongtieng.com|newsmavens.com|truecenterpublishing.com|plcdn.xyz|phimmoi.my|motphimww.com
@@ -14,6 +14,10 @@ a74 1
 d99 1
 a99 1
 ||cdn.lfastcdn.com^*.gif$image,domain=bongdainfox.tv|xoilaczvx.tv|vokrugsveta.com
+d126 2
+d144 1
+a144 1
+||i.imgur.com^*.gif$image,domain=v.ghienphim.cx|mv.dailyphimz.com|mv.phimmoiaz.cc|phimgichill.net|ophimhdvn3.net|mythethao.net|xemtivi4k.com|vtipster.net|huphimtv.com|live7.90phut34.live|phimmoiiii.net|xemtv.tvhayhd.tv|hoathinh4k3.net|vutruphim.tv|phimhay123.me
 a145 2
 ||i.upanh.org/2024/08/26/10010994843d1ae219dfae70cb-34989a380c05c803e.jpeg$image,domain=file.gocmod.com
 ||i45.servimg.com/u/f45/$domain=gocmod.com
@@ -24,6 +28,11 @@ a180 2
 a184 2
 ||phimreview.org/playergk/phimreview.mp4$rewrite=abp-resource:blank-mp4,domain=phimreview.org
 ||phimreview.org^*.gif$image
+a249 2
+||v.ghienphim.cx/client_assets/images/
+||v.ghienphim.cx/client_assets/js/minijumb.js
+a488 1
+||media.ethicalads.io^
 d769 1
 a769 1
 dongphim.li,dongchill.co,bichill.biz,phim18u.net,phimmoi.my,vivuphim.info###footer_fixed_ads
@@ -32,6 +41,7 @@ a774 1
 ephoto360.com,thiepmung.com,ophimhd.vip,xemphimchill.xyz,phimmoi.my,247phim.cc,hotphimvn.cc,www.phimmoichilla.xyz,motphimchill.online,phimmoi2024.net,hayhaytv.cc,www.ssphim.us,motphimchilld.net##.ad-container
 a778 1
 file.gocmod.com##div.ad
+d803 2
 a806 5
 gocmod.com###bannerContainer1
 gocmod.com###bannerContainer2
@@ -41,6 +51,9 @@ gocmod.com##center:has(.adsbygoogle)
 d815 1
 a815 1
 hh3dhay.life###layerLogo
+d865 1
+a865 1
+kienthuc.net.vn,saostar.vn,bongda24h.vn,cungthi.online,appvn.com,linkerpt.com,antt.vn,v.xemphimviet.xyz,v.ghienphim.cx,nhadautu.vn,soikeo365.net,nghenhinvietnam.vn,doctailieu.com,vivuphim.info##.ads
 d899 1
 a899 1
 live7.thapcam22.net,xoilaczvx.tv,unmanned-ship.org,newsmavens.com,truecenterpublishing.com##.btn-odds
@@ -53,6 +66,18 @@ phimreview.org##.banner-sticky-footer-wrapper
 d1015 1
 a1015 1
 phimvuihd.org,hh3dhay.life,phim18u.net,phim24h.mobi,ffmovie.online,xem14.com,hh3dhay.pro,vutruphim.tv,3dchill.shop,hh3dhay.life##.float-ck-center-lt
+d1114 1
+a1114 1
+toquoc.vn,baoxaydung.com.vn,tienphong.vn,taichinhdoanhnghiep.net.vn,thichxemphim1.net,v.xemphimviet.xyz,v.ghienphim.cx,oj.husc.edu.vn,truyengihotdo.net,truyengihotzay.net,truyengihotnha.com,truyengihotnha.net,truyengihotqua.net,truyengihotqua.com,truyengihotnay.com,tenmientruyengi.net,thongtintruyen.com##.banner
+a1178 2
+v.ghienphim.cx##.parent.special
+v.ghienphim.cx##.partner-me
+d1180 4
+a1183 4
+v.xemphimviet.xyz,v.ghienphim.cx##.ad-floater
+v.xemphimviet.xyz,v.ghienphim.cx##.popunder-link
+v.xemphimviet.xyz,v.ghienphim.cx##.promotion-popup
+v.xemphimviet.xyz,v.ghienphim.cx##.video-ad-layer
 d1247 1
 a1247 1
 vokrugsveta.com,unfriendcoal.com,xoilacu.cc,unmanned-ship.org,bongdainfox.tv,xoilaczvx.tv,xemtv.tvhayhd.tv###wap_bottombanner
@@ -75,14 +100,14 @@ yts.do,yts.mx,yts.rs##.uy.hfc
 d1398 1
 a1398 1
 /theme/custom.int.js$script,domain=top1sex.club|sexvn.tuoi69s.com|javhay.click|web.motsex.net|vuasex.club|phimsexviet.io|phimsexvietnam.app|mobi.clipsex.xxx|gm.phimsexnhanh.tv|clipsex.cam|link.ditnhau.cc
-diff name:abpvn_adguard lines:85 checksum:89da3d2dc4
+diff name:abpvn_adguard lines:110 checksum:01f1a94e38
 d2 1
 a2 1
-! Version: 20240827120452938
+! Version: 20240827150610630
 d5 2
 a6 2
-! Last modified: 27 Aug 2024 12:04:52 UTC+7
-! Diff-Path: patches/20240827120452938.patch#abpvn_adguard
+! Last modified: 27 Aug 2024 15:06:10 UTC+7
+! Diff-Path: patches/20240827150610630.patch#abpvn_adguard
 d47 1
 a47 1
 /i.imgur.com/*.gif$domain=keonhacai5.fans|phimlongtieng.net|phimdinhcao.com|phimdinhcao.net|xoilacu.cc|vokrugsveta.com|unmanned-ship.org|unfriendcoal.com|plvb.xyz|listnhacai88.com|xoilaczvx.tv|xemtivingon.org|phimlongtieng.com|newsmavens.com|truecenterpublishing.com|plcdn.xyz|phimmoi.my|motphimww.com
@@ -91,6 +116,10 @@ a73 1
 d98 1
 a98 1
 ||cdn.lfastcdn.com^*.gif$image,domain=bongdainfox.tv|xoilaczvx.tv|vokrugsveta.com
+d125 2
+d143 1
+a143 1
+||i.imgur.com^*.gif$image,domain=v.ghienphim.cx|mv.dailyphimz.com|mv.phimmoiaz.cc|phimgichill.net|ophimhdvn3.net|mythethao.net|xemtivi4k.com|vtipster.net|huphimtv.com|live7.90phut34.live|phimmoiiii.net|xemtv.tvhayhd.tv|hoathinh4k3.net|vutruphim.tv|phimhay123.me
 a144 2
 ||i.upanh.org/2024/08/26/10010994843d1ae219dfae70cb-34989a380c05c803e.jpeg$image,domain=file.gocmod.com
 ||i45.servimg.com/u/f45/$domain=gocmod.com
@@ -101,6 +130,11 @@ a179 2
 a183 2
 ||phimreview.org/playergk/phimreview.mp4$rewrite=abp-resource:blank-mp4,domain=phimreview.org
 ||phimreview.org^*.gif$image
+a246 2
+||v.ghienphim.cx/client_assets/images/
+||v.ghienphim.cx/client_assets/js/minijumb.js
+a485 1
+||media.ethicalads.io^
 d766 1
 a766 1
 dongphim.li,dongchill.co,bichill.biz,phim18u.net,phimmoi.my,vivuphim.info###footer_fixed_ads
@@ -109,6 +143,7 @@ a771 1
 ephoto360.com,thiepmung.com,ophimhd.vip,xemphimchill.xyz,phimmoi.my,247phim.cc,hotphimvn.cc,www.phimmoichilla.xyz,motphimchill.online,phimmoi2024.net,hayhaytv.cc,www.ssphim.us,motphimchilld.net##.ad-container
 a775 1
 file.gocmod.com##div.ad
+d800 2
 a803 5
 gocmod.com###bannerContainer1
 gocmod.com###bannerContainer2
@@ -118,6 +153,9 @@ gocmod.com##center:has(.adsbygoogle)
 d812 1
 a812 1
 hh3dhay.life###layerLogo
+d862 1
+a862 1
+kienthuc.net.vn,saostar.vn,bongda24h.vn,cungthi.online,appvn.com,linkerpt.com,antt.vn,v.xemphimviet.xyz,v.ghienphim.cx,nhadautu.vn,soikeo365.net,nghenhinvietnam.vn,doctailieu.com,vivuphim.info##.ads
 d896 1
 a896 1
 live7.thapcam22.net,xoilaczvx.tv,unmanned-ship.org,newsmavens.com,truecenterpublishing.com##.btn-odds
@@ -130,6 +168,18 @@ phimreview.org##.banner-sticky-footer-wrapper
 d1012 1
 a1012 1
 phimvuihd.org,hh3dhay.life,phim18u.net,phim24h.mobi,ffmovie.online,xem14.com,hh3dhay.pro,vutruphim.tv,3dchill.shop,hh3dhay.life##.float-ck-center-lt
+d1111 1
+a1111 1
+toquoc.vn,baoxaydung.com.vn,tienphong.vn,taichinhdoanhnghiep.net.vn,thichxemphim1.net,v.xemphimviet.xyz,v.ghienphim.cx,oj.husc.edu.vn,truyengihotdo.net,truyengihotzay.net,truyengihotnha.com,truyengihotnha.net,truyengihotqua.net,truyengihotqua.com,truyengihotnay.com,tenmientruyengi.net,thongtintruyen.com##.banner
+a1175 2
+v.ghienphim.cx##.parent.special
+v.ghienphim.cx##.partner-me
+d1177 4
+a1180 4
+v.xemphimviet.xyz,v.ghienphim.cx##.ad-floater
+v.xemphimviet.xyz,v.ghienphim.cx##.popunder-link
+v.xemphimviet.xyz,v.ghienphim.cx##.promotion-popup
+v.xemphimviet.xyz,v.ghienphim.cx##.video-ad-layer
 d1244 1
 a1244 1
 vokrugsveta.com,unfriendcoal.com,xoilacu.cc,unmanned-ship.org,bongdainfox.tv,xoilaczvx.tv,xemtv.tvhayhd.tv###wap_bottombanner
@@ -161,14 +211,14 @@ web.motsex.net,vuasex.club,phimsexviet.io,phimsexvietnam.app,mobi.clipsex.xxx,gm
 d1699 1
 a1699 1
 yts.do,yts.mx,yts.rs#%#//scriptlet("abort-on-property-read", "window.aclib")
-diff name:abpvn_content_blocker lines:76 checksum:f9dd1a6954
+diff name:abpvn_content_blocker lines:101 checksum:13ce8b11fb
 d2 1
 a2 1
-! Version: 20240827120452938
+! Version: 20240827150610630
 d5 2
 a6 2
-! Last modified: 27 Aug 2024 12:04:52 UTC+7
-! Diff-Path: patches/20240827120452938.patch#abpvn_content_blocker
+! Last modified: 27 Aug 2024 15:06:10 UTC+7
+! Diff-Path: patches/20240827150610630.patch#abpvn_content_blocker
 d48 1
 a48 1
 /i.imgur.com/*.gif$domain=keonhacai5.fans|phimlongtieng.net|phimdinhcao.com|phimdinhcao.net|xoilacu.cc|vokrugsveta.com|unmanned-ship.org|unfriendcoal.com|plvb.xyz|listnhacai88.com|xoilaczvx.tv|xemtivingon.org|phimlongtieng.com|newsmavens.com|truecenterpublishing.com|plcdn.xyz|phimmoi.my|motphimww.com
@@ -177,6 +227,10 @@ a74 1
 d99 1
 a99 1
 ||cdn.lfastcdn.com^*.gif$image,domain=bongdainfox.tv|xoilaczvx.tv|vokrugsveta.com
+d126 2
+d144 1
+a144 1
+||i.imgur.com^*.gif$image,domain=v.ghienphim.cx|mv.dailyphimz.com|mv.phimmoiaz.cc|phimgichill.net|ophimhdvn3.net|mythethao.net|xemtivi4k.com|vtipster.net|huphimtv.com|live7.90phut34.live|phimmoiiii.net|xemtv.tvhayhd.tv|hoathinh4k3.net|vutruphim.tv|phimhay123.me
 a145 2
 ||i.upanh.org/2024/08/26/10010994843d1ae219dfae70cb-34989a380c05c803e.jpeg$image,domain=file.gocmod.com
 ||i45.servimg.com/u/f45/$domain=gocmod.com
@@ -187,6 +241,11 @@ a180 2
 a184 2
 ||phimreview.org/playergk/phimreview.mp4$rewrite=abp-resource:blank-mp4,domain=phimreview.org
 ||phimreview.org^*.gif$image
+a249 2
+||v.ghienphim.cx/client_assets/images/
+||v.ghienphim.cx/client_assets/js/minijumb.js
+a488 1
+||media.ethicalads.io^
 d769 1
 a769 1
 dongphim.li,dongchill.co,bichill.biz,phim18u.net,phimmoi.my,vivuphim.info###footer_fixed_ads
@@ -195,6 +254,7 @@ a774 1
 ephoto360.com,thiepmung.com,ophimhd.vip,xemphimchill.xyz,phimmoi.my,247phim.cc,hotphimvn.cc,www.phimmoichilla.xyz,motphimchill.online,phimmoi2024.net,hayhaytv.cc,www.ssphim.us,motphimchilld.net##.ad-container
 a778 1
 file.gocmod.com##div.ad
+d803 2
 a806 5
 gocmod.com###bannerContainer1
 gocmod.com###bannerContainer2
@@ -204,6 +264,9 @@ gocmod.com##center:has(.adsbygoogle)
 d815 1
 a815 1
 hh3dhay.life###layerLogo
+d865 1
+a865 1
+kienthuc.net.vn,saostar.vn,bongda24h.vn,cungthi.online,appvn.com,linkerpt.com,antt.vn,v.xemphimviet.xyz,v.ghienphim.cx,nhadautu.vn,soikeo365.net,nghenhinvietnam.vn,doctailieu.com,vivuphim.info##.ads
 d899 1
 a899 1
 live7.thapcam22.net,xoilaczvx.tv,unmanned-ship.org,newsmavens.com,truecenterpublishing.com##.btn-odds
@@ -216,6 +279,18 @@ phimreview.org##.banner-sticky-footer-wrapper
 d1015 1
 a1015 1
 phimvuihd.org,hh3dhay.life,phim18u.net,phim24h.mobi,ffmovie.online,xem14.com,hh3dhay.pro,vutruphim.tv,3dchill.shop,hh3dhay.life##.float-ck-center-lt
+d1114 1
+a1114 1
+toquoc.vn,baoxaydung.com.vn,tienphong.vn,taichinhdoanhnghiep.net.vn,thichxemphim1.net,v.xemphimviet.xyz,v.ghienphim.cx,oj.husc.edu.vn,truyengihotdo.net,truyengihotzay.net,truyengihotnha.com,truyengihotnha.net,truyengihotqua.net,truyengihotqua.com,truyengihotnay.com,tenmientruyengi.net,thongtintruyen.com##.banner
+a1178 2
+v.ghienphim.cx##.parent.special
+v.ghienphim.cx##.partner-me
+d1180 4
+a1183 4
+v.xemphimviet.xyz,v.ghienphim.cx##.ad-floater
+v.xemphimviet.xyz,v.ghienphim.cx##.popunder-link
+v.xemphimviet.xyz,v.ghienphim.cx##.promotion-popup
+v.xemphimviet.xyz,v.ghienphim.cx##.video-ad-layer
 d1247 1
 a1247 1
 vokrugsveta.com,unfriendcoal.com,xoilacu.cc,unmanned-ship.org,bongdainfox.tv,xoilaczvx.tv,xemtv.tvhayhd.tv###wap_bottombanner
@@ -238,14 +313,14 @@ yts.do,yts.mx,yts.rs##.uy.hfc
 d1398 1
 a1398 1
 /theme/custom.int.js$script,domain=top1sex.club|sexvn.tuoi69s.com|javhay.click|web.motsex.net|vuasex.club|phimsexviet.io|phimsexvietnam.app|mobi.clipsex.xxx|gm.phimsexnhanh.tv|clipsex.cam|link.ditnhau.cc
-diff name:abpvn_noelemhide lines:28 checksum:417ee8ed3c
+diff name:abpvn_noelemhide lines:37 checksum:152a79231d
 d2 1
 a2 1
-! Version: 20240827120452938
+! Version: 20240827150610630
 d5 2
 a6 2
-! Last modified: 27 Aug 2024 12:04:52 UTC+7
-! Diff-Path: patches/20240827120452938.patch#abpvn_noelemhide
+! Last modified: 27 Aug 2024 15:06:10 UTC+7
+! Diff-Path: patches/20240827150610630.patch#abpvn_noelemhide
 d48 1
 a48 1
 /i.imgur.com/*.gif$domain=keonhacai5.fans|phimlongtieng.net|phimdinhcao.com|phimdinhcao.net|xoilacu.cc|vokrugsveta.com|unmanned-ship.org|unfriendcoal.com|plvb.xyz|listnhacai88.com|xoilaczvx.tv|xemtivingon.org|phimlongtieng.com|newsmavens.com|truecenterpublishing.com|plcdn.xyz|phimmoi.my|motphimww.com
@@ -254,6 +329,10 @@ a74 1
 d99 1
 a99 1
 ||cdn.lfastcdn.com^*.gif$image,domain=bongdainfox.tv|xoilaczvx.tv|vokrugsveta.com
+d126 2
+d144 1
+a144 1
+||i.imgur.com^*.gif$image,domain=v.ghienphim.cx|mv.dailyphimz.com|mv.phimmoiaz.cc|phimgichill.net|ophimhdvn3.net|mythethao.net|xemtivi4k.com|vtipster.net|huphimtv.com|live7.90phut34.live|phimmoiiii.net|xemtv.tvhayhd.tv|hoathinh4k3.net|vutruphim.tv|phimhay123.me
 a145 2
 ||i.upanh.org/2024/08/26/10010994843d1ae219dfae70cb-34989a380c05c803e.jpeg$image,domain=file.gocmod.com
 ||i45.servimg.com/u/f45/$domain=gocmod.com
@@ -264,17 +343,22 @@ a180 2
 a184 2
 ||phimreview.org/playergk/phimreview.mp4$rewrite=abp-resource:blank-mp4,domain=phimreview.org
 ||phimreview.org^*.gif$image
+a249 2
+||v.ghienphim.cx/client_assets/images/
+||v.ghienphim.cx/client_assets/js/minijumb.js
+a488 1
+||media.ethicalads.io^
 d661 1
 a661 1
 /theme/custom.int.js$script,domain=top1sex.club|sexvn.tuoi69s.com|javhay.click|web.motsex.net|vuasex.club|phimsexviet.io|phimsexvietnam.app|mobi.clipsex.xxx|gm.phimsexnhanh.tv|clipsex.cam|link.ditnhau.cc
-diff name:abpvn_ublock lines:85 checksum:7f4e866597
+diff name:abpvn_ublock lines:110 checksum:23ddaa9598
 d2 1
 a2 1
-! Version: 20240827120452938
+! Version: 20240827150610630
 d5 2
 a6 2
-! Last modified: 27 Aug 2024 12:04:52 UTC+7
-! Diff-Path: patches/20240827120452938.patch#abpvn_ublock
+! Last modified: 27 Aug 2024 15:06:10 UTC+7
+! Diff-Path: patches/20240827150610630.patch#abpvn_ublock
 d47 1
 a47 1
 /i.imgur.com/*.gif$domain=keonhacai5.fans|phimlongtieng.net|phimdinhcao.com|phimdinhcao.net|xoilacu.cc|vokrugsveta.com|unmanned-ship.org|unfriendcoal.com|plvb.xyz|listnhacai88.com|xoilaczvx.tv|xemtivingon.org|phimlongtieng.com|newsmavens.com|truecenterpublishing.com|plcdn.xyz|phimmoi.my|motphimww.com
@@ -283,6 +367,10 @@ a73 1
 d98 1
 a98 1
 ||cdn.lfastcdn.com^*.gif$image,domain=bongdainfox.tv|xoilaczvx.tv|vokrugsveta.com
+d125 2
+d143 1
+a143 1
+||i.imgur.com^*.gif$image,domain=v.ghienphim.cx|mv.dailyphimz.com|mv.phimmoiaz.cc|phimgichill.net|ophimhdvn3.net|mythethao.net|xemtivi4k.com|vtipster.net|huphimtv.com|live7.90phut34.live|phimmoiiii.net|xemtv.tvhayhd.tv|hoathinh4k3.net|vutruphim.tv|phimhay123.me
 a144 2
 ||i.upanh.org/2024/08/26/10010994843d1ae219dfae70cb-34989a380c05c803e.jpeg$image,domain=file.gocmod.com
 ||i45.servimg.com/u/f45/$domain=gocmod.com
@@ -293,6 +381,11 @@ a179 2
 a183 2
 ||phimreview.org/playergk/phimreview.mp4$rewrite=abp-resource:blank-mp4,domain=phimreview.org
 ||phimreview.org^*.gif$image
+a246 2
+||v.ghienphim.cx/client_assets/images/
+||v.ghienphim.cx/client_assets/js/minijumb.js
+a485 1
+||media.ethicalads.io^
 d766 1
 a766 1
 dongphim.li,dongchill.co,bichill.biz,phim18u.net,phimmoi.my,vivuphim.info###footer_fixed_ads
@@ -301,6 +394,7 @@ a771 1
 ephoto360.com,thiepmung.com,ophimhd.vip,xemphimchill.xyz,phimmoi.my,247phim.cc,hotphimvn.cc,www.phimmoichilla.xyz,motphimchill.online,phimmoi2024.net,hayhaytv.cc,www.ssphim.us,motphimchilld.net##.ad-container
 a775 1
 file.gocmod.com##div.ad
+d800 2
 a803 5
 gocmod.com###bannerContainer1
 gocmod.com###bannerContainer2
@@ -310,6 +404,9 @@ gocmod.com##center:has(.adsbygoogle)
 d812 1
 a812 1
 hh3dhay.life###layerLogo
+d862 1
+a862 1
+kienthuc.net.vn,saostar.vn,bongda24h.vn,cungthi.online,appvn.com,linkerpt.com,antt.vn,v.xemphimviet.xyz,v.ghienphim.cx,nhadautu.vn,soikeo365.net,nghenhinvietnam.vn,doctailieu.com,vivuphim.info##.ads
 d896 1
 a896 1
 live7.thapcam22.net,xoilaczvx.tv,unmanned-ship.org,newsmavens.com,truecenterpublishing.com##.btn-odds
@@ -322,6 +419,18 @@ phimreview.org##.banner-sticky-footer-wrapper
 d1012 1
 a1012 1
 phimvuihd.org,hh3dhay.life,phim18u.net,phim24h.mobi,ffmovie.online,xem14.com,hh3dhay.pro,vutruphim.tv,3dchill.shop,hh3dhay.life##.float-ck-center-lt
+d1111 1
+a1111 1
+toquoc.vn,baoxaydung.com.vn,tienphong.vn,taichinhdoanhnghiep.net.vn,thichxemphim1.net,v.xemphimviet.xyz,v.ghienphim.cx,oj.husc.edu.vn,truyengihotdo.net,truyengihotzay.net,truyengihotnha.com,truyengihotnha.net,truyengihotqua.net,truyengihotqua.com,truyengihotnay.com,tenmientruyengi.net,thongtintruyen.com##.banner
+a1175 2
+v.ghienphim.cx##.parent.special
+v.ghienphim.cx##.partner-me
+d1177 4
+a1180 4
+v.xemphimviet.xyz,v.ghienphim.cx##.ad-floater
+v.xemphimviet.xyz,v.ghienphim.cx##.popunder-link
+v.xemphimviet.xyz,v.ghienphim.cx##.promotion-popup
+v.xemphimviet.xyz,v.ghienphim.cx##.video-ad-layer
 d1244 1
 a1244 1
 vokrugsveta.com,unfriendcoal.com,xoilacu.cc,unmanned-ship.org,bongdainfox.tv,xoilaczvx.tv,xemtv.tvhayhd.tv###wap_bottombanner
