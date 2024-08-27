@@ -15,8 +15,8 @@
 // @grant       GM_registerMenuCommand
 // @include     http://*
 // @include     https://*
-// @version     2.3.26
-// @change-log  Fix code scanning
+// @version     2.3.27
+// @change-log  Add www.hdvietnam.me url redirection
 // @run-at      document-end
 // ==/UserScript==
 /* String Prototype */
@@ -457,6 +457,11 @@ var fixSite = {
             {
                 url: 'https://cakhia-tv.onl',
                 replace: '/chuyen-huong/?redirect='
+            },
+            {
+                url: 'www.hdvietnam.',
+                selector: 'a[href*="/diendan/chuyenlink.php?url="]',
+                replace: /http(s?):\/\/www.hdvietnam\.(com|me)\/diendan\/chuyenlink\.php\?url=/,
             }
         ];
         configs.forEach(function (config) {
