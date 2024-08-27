@@ -1,11 +1,11 @@
-diff name:abpvn lines:14 checksum:b508eb82e2
+diff name:abpvn lines:14 checksum:3603c3e9f1
 d2 1
 a2 1
-! Version: 20240827092007499
+! Version: 20240827100128755
 d5 2
 a6 2
-! Last modified: 27 Aug 2024 09:20:07 UTC+7
-! Diff-Path: patches/20240827092007499.patch#abpvn
+! Last modified: 27 Aug 2024 10:01:28 UTC+7
+! Diff-Path: patches/20240827100128755.patch#abpvn
 a182 2
 ||phimreview.org/playergk/phimreview.mp4$rewrite=abp-resource:blank-mp4,domain=phimreview.org
 ||phimreview.org^*.gif$image
@@ -13,14 +13,14 @@ a733 1
 phimreview.org##.banner-sticky-footer-wrapper
 a1141 1
 @@||vn-z.vn$generichide
-diff name:abpvn_adguard lines:14 checksum:7daef52f7c
+diff name:abpvn_adguard lines:17 checksum:7ceea1e8b7
 d2 1
 a2 1
-! Version: 20240827092007499
+! Version: 20240827100128755
 d5 2
 a6 2
-! Last modified: 27 Aug 2024 09:20:07 UTC+7
-! Diff-Path: patches/20240827092007499.patch#abpvn_adguard
+! Last modified: 27 Aug 2024 10:01:28 UTC+7
+! Diff-Path: patches/20240827100128755.patch#abpvn_adguard
 a181 2
 ||phimreview.org/playergk/phimreview.mp4$rewrite=abp-resource:blank-mp4,domain=phimreview.org
 ||phimreview.org^*.gif$image
@@ -28,14 +28,17 @@ a730 1
 phimreview.org##.banner-sticky-footer-wrapper
 a1137 1
 @@||vn-z.vn$generichide
-diff name:abpvn_content_blocker lines:14 checksum:cc9cd40d5b
+d1446 1
+a1446 1
+yts.do,yts.mx,yts.rs#%#//scriptlet("abort-on-property-read", "window.aclib")
+diff name:abpvn_content_blocker lines:14 checksum:35e632f416
 d2 1
 a2 1
-! Version: 20240827092007499
+! Version: 20240827100128755
 d5 2
 a6 2
-! Last modified: 27 Aug 2024 09:20:07 UTC+7
-! Diff-Path: patches/20240827092007499.patch#abpvn_content_blocker
+! Last modified: 27 Aug 2024 10:01:28 UTC+7
+! Diff-Path: patches/20240827100128755.patch#abpvn_content_blocker
 a182 2
 ||phimreview.org/playergk/phimreview.mp4$rewrite=abp-resource:blank-mp4,domain=phimreview.org
 ||phimreview.org^*.gif$image
@@ -43,25 +46,25 @@ a733 1
 phimreview.org##.banner-sticky-footer-wrapper
 a1141 1
 @@||vn-z.vn$generichide
-diff name:abpvn_noelemhide lines:10 checksum:609f1e2fbe
+diff name:abpvn_noelemhide lines:10 checksum:21115a8567
 d2 1
 a2 1
-! Version: 20240827092007499
+! Version: 20240827100128755
 d5 2
 a6 2
-! Last modified: 27 Aug 2024 09:20:07 UTC+7
-! Diff-Path: patches/20240827092007499.patch#abpvn_noelemhide
+! Last modified: 27 Aug 2024 10:01:28 UTC+7
+! Diff-Path: patches/20240827100128755.patch#abpvn_noelemhide
 a182 2
 ||phimreview.org/playergk/phimreview.mp4$rewrite=abp-resource:blank-mp4,domain=phimreview.org
 ||phimreview.org^*.gif$image
-diff name:abpvn_ublock lines:14 checksum:1af4ca14da
+diff name:abpvn_ublock lines:17 checksum:584aa796e0
 d2 1
 a2 1
-! Version: 20240827092007499
+! Version: 20240827100128755
 d5 2
 a6 2
-! Last modified: 27 Aug 2024 09:20:07 UTC+7
-! Diff-Path: patches/20240827092007499.patch#abpvn_ublock
+! Last modified: 27 Aug 2024 10:01:28 UTC+7
+! Diff-Path: patches/20240827100128755.patch#abpvn_ublock
 a181 2
 ||phimreview.org/playergk/phimreview.mp4$rewrite=abp-resource:blank-mp4,domain=phimreview.org
 ||phimreview.org^*.gif$image
@@ -69,3 +72,6 @@ a730 1
 phimreview.org##.banner-sticky-footer-wrapper
 a1136 1
 @@||vn-z.vn$generichide
+d1446 1
+a1446 1
+yts.do,yts.mx,yts.rs##+js(aopr, window.aclib)

@@ -1,9 +1,9 @@
 [Adblock Plus 2.0]
-! Version: 20240827092007499
+! Version: 20240827100128755
 ! id: D4028CDD-3D39-4624-ACC7-8140F4EC3888
 ! Title: ABPVN List
-! Last modified: 27 Aug 2024 09:20:07 UTC+7
-! Diff-Path: patches/20240827092007499.patch#abpvn_adguard
+! Last modified: 27 Aug 2024 10:01:28 UTC+7
+! Diff-Path: patches/20240827100128755.patch#abpvn_adguard
 ! Diff-Expires: 60 minutes
 ! Expires: 1 days (update frequency)
 !
@@ -1447,5 +1447,5 @@ xnxx-sex-videos.com#%#//scriptlet("remove-attr", "target|onclick", "a[href^='/vi
 xoilacu.cc#%#//scriptlet("abort-on-property-read", "adsRedirectPopups")
 xoivo2.online,tructiepdabong5.co,vaoroi365.com#%#//scriptlet("set-constant", "adsPlayer", "")
 xoivo2.online,tructiepdabong5.co,vaoroi365.com#%#//scriptlet("set-constant", "adsTvcs", "")
-yts.do,yts.mx,yts.rs#%#//scriptlet("abort-on-property-read", "atob")
+yts.do,yts.mx,yts.rs#%#//scriptlet("abort-on-property-read", "window.aclib")
 znews.vn#%#//scriptlet("abort-on-property-read", "adtimaConfig")
