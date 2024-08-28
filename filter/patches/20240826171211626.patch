@@ -1,17 +1,17 @@
-diff name:abpvn lines:114 checksum:fe7b0fda69
+diff name:abpvn lines:127 checksum:3da74138aa
 d2 1
 a2 1
-! Version: 20240828190858298
+! Version: 20240828212405396
 d5 2
 a6 2
-! Last modified: 28 Aug 2024 19:08:58 UTC+7
-! Diff-Path: patches/20240828190858298.patch#abpvn
+! Last modified: 28 Aug 2024 21:24:05 UTC+7
+! Diff-Path: patches/20240828212405396.patch#abpvn
 d48 1
 a48 1
 /i.imgur.com/*.gif$domain=keonhacai5.fans|phimlongtieng.net|phimdinhcao.com|phimdinhcao.net|xoilacu.cc|vokrugsveta.com|unmanned-ship.org|unfriendcoal.com|plvb.xyz|listnhacai88.com|xoilaczvx.tv|xemtivingon.org|phimlongtieng.com|mitomv.cc|truecenterpublishing.com|plcdn.xyz|phimmoi.my|motphimww.com
 d101 1
 a101 1
-||cdn2-img.net^*.gif$image,domain=hhpanda.cx|dongchill.co|biphim.online|subnhanh.tube|subnhanh.li|subnhanhvl.net|bichill.biz|dongphim.li
+||cdn2-img.net^*.gif$image,domain=hhpanda.cx|dongchill.co|biphim.online|subnhanh.tube|subnhanh.my|subnhanhvl.net|bichill.biz|dongphim.li
 d122 2
 d128 1
 a128 1
@@ -33,10 +33,17 @@ a181 2
 ||phimreview.org/playergk/phimreview.mp4$rewrite=abp-resource:blank-mp4,domain=phimreview.org
 ||phimreview.org^*.gif$image
 d193 1
+d210 2
+a211 2
+||subnhanh.my/js/ads_xx.js
+||subnhanh.my/js/ads_xx.min.js$script,~third-party
 a246 2
 ||v.ghienphim.cx/client_assets/images/
 ||v.ghienphim.cx/client_assets/js/minijumb.js
 d269 1
+d432 1
+a432 1
+biphim.online,subnhanh.my##.underplayer_btn
 d488 1
 a488 1
 dongphim.li,dongchill.co,bichill.biz,phim18u.net,phimmoi.my,vivuphim.info###footer_fixed_ads
@@ -68,6 +75,9 @@ live7.thapcam22.net,xoilaczvx.tv,unmanned-ship.org,mitomv.cc,truecenterpublishin
 a647 1
 mitomv.cc##.btn-od
 d664 1
+d684 1
+a684 1
+phim.vkool4.net,subnhanhvl.net,subnhanh.tube,subnhanh.my,tructiepdabong5.co,protruyen4.xyz,biphim.online,dongphim.li###overlay
 d710 2
 a711 2
 phimmoi.my###hide_catfish
@@ -80,6 +90,9 @@ phimvuihd.org,hh3dhay.life,phim18u.net,phim24h.mobi,xem14.com,hh3dhay.pro,vutrup
 d749 1
 a749 1
 rakhoi.rakhoi7.xyz,tructiep12.cakhia24.live,cakhia36.xyz,unmanned-ship.org,tructiep.caheo7.link,mitomv.cc,truecenterpublishing.com##.footer-banner
+d768 1
+a768 1
+subnhanhvl.net,subnhanh.tube,subnhanh.my,dongchill.co###xs-addd0
 d832 1
 a832 1
 toquoc.vn,baoxaydung.com.vn,tienphong.vn,taichinhdoanhnghiep.net.vn,thichxemphim1.net,v.xemphimviet.xyz,v.ghienphim.cx,truyengihotdo.net,truyengihotzay.net,truyengihotnha.com,truyengihotnha.net,truyengihotqua.net,truyengihotqua.com,truyengihotnay.com,tenmientruyengi.net,thongtintruyen.com##.banner
@@ -113,20 +126,20 @@ a1221 2
 d1319 1
 a1320 1
 vlxx.mobi,xemphimsex3x.net##.catfish-bottom
-diff name:abpvn_adguard lines:125 checksum:9aeb019e62
+diff name:abpvn_adguard lines:138 checksum:764cd16499
 d2 1
 a2 1
-! Version: 20240828190858298
+! Version: 20240828212405396
 d5 2
 a6 2
-! Last modified: 28 Aug 2024 19:08:58 UTC+7
-! Diff-Path: patches/20240828190858298.patch#abpvn_adguard
+! Last modified: 28 Aug 2024 21:24:05 UTC+7
+! Diff-Path: patches/20240828212405396.patch#abpvn_adguard
 d47 1
 a47 1
 /i.imgur.com/*.gif$domain=keonhacai5.fans|phimlongtieng.net|phimdinhcao.com|phimdinhcao.net|xoilacu.cc|vokrugsveta.com|unmanned-ship.org|unfriendcoal.com|plvb.xyz|listnhacai88.com|xoilaczvx.tv|xemtivingon.org|phimlongtieng.com|mitomv.cc|truecenterpublishing.com|plcdn.xyz|phimmoi.my|motphimww.com
 d100 1
 a100 1
-||cdn2-img.net^*.gif$image,domain=hhpanda.cx|dongchill.co|biphim.online|subnhanh.tube|subnhanh.li|subnhanhvl.net|bichill.biz|dongphim.li
+||cdn2-img.net^*.gif$image,domain=hhpanda.cx|dongchill.co|biphim.online|subnhanh.tube|subnhanh.my|subnhanhvl.net|bichill.biz|dongphim.li
 d121 2
 d127 1
 a127 1
@@ -148,10 +161,17 @@ a180 2
 ||phimreview.org/playergk/phimreview.mp4$rewrite=abp-resource:blank-mp4,domain=phimreview.org
 ||phimreview.org^*.gif$image
 d192 1
+d207 2
+a208 2
+||subnhanh.my/js/ads_xx.js
+||subnhanh.my/js/ads_xx.min.js$script,~third-party
 a243 2
 ||v.ghienphim.cx/client_assets/images/
 ||v.ghienphim.cx/client_assets/js/minijumb.js
 d266 1
+d429 1
+a429 1
+biphim.online,subnhanh.my##.underplayer_btn
 d485 1
 a485 1
 dongphim.li,dongchill.co,bichill.biz,phim18u.net,phimmoi.my,vivuphim.info###footer_fixed_ads
@@ -183,6 +203,9 @@ live7.thapcam22.net,xoilaczvx.tv,unmanned-ship.org,mitomv.cc,truecenterpublishin
 a644 1
 mitomv.cc##.btn-od
 d661 1
+d681 1
+a681 1
+phim.vkool4.net,subnhanhvl.net,subnhanh.tube,subnhanh.my,tructiepdabong5.co,protruyen4.xyz,biphim.online,dongphim.li###overlay
 d707 2
 a708 2
 phimmoi.my###hide_catfish
@@ -195,6 +218,9 @@ phimvuihd.org,hh3dhay.life,phim18u.net,phim24h.mobi,xem14.com,hh3dhay.pro,vutrup
 d746 1
 a746 1
 rakhoi.rakhoi7.xyz,tructiep12.cakhia24.live,cakhia36.xyz,unmanned-ship.org,tructiep.caheo7.link,mitomv.cc,truecenterpublishing.com##.footer-banner
+d765 1
+a765 1
+subnhanhvl.net,subnhanh.tube,subnhanh.my,dongchill.co###xs-addd0
 d829 1
 a829 1
 toquoc.vn,baoxaydung.com.vn,tienphong.vn,taichinhdoanhnghiep.net.vn,thichxemphim1.net,v.xemphimviet.xyz,v.ghienphim.cx,truyengihotdo.net,truyengihotzay.net,truyengihotnha.com,truyengihotnha.net,truyengihotqua.net,truyengihotqua.com,truyengihotnay.com,tenmientruyengi.net,thongtintruyen.com##.banner
@@ -239,20 +265,20 @@ viet69.name,ungtycomicsvip.com,vlxx.mobi,dualeotruyenbi.com,yurineko.net,vlxyz.t
 d1439 1
 a1439 1
 yts.do,yts.mx,yts.rs#%#//scriptlet("abort-on-property-read", "window.aclib")
-diff name:abpvn_content_blocker lines:114 checksum:76066969a3
+diff name:abpvn_content_blocker lines:127 checksum:5a97308f6a
 d2 1
 a2 1
-! Version: 20240828190858298
+! Version: 20240828212405396
 d5 2
 a6 2
-! Last modified: 28 Aug 2024 19:08:58 UTC+7
-! Diff-Path: patches/20240828190858298.patch#abpvn_content_blocker
+! Last modified: 28 Aug 2024 21:24:05 UTC+7
+! Diff-Path: patches/20240828212405396.patch#abpvn_content_blocker
 d48 1
 a48 1
 /i.imgur.com/*.gif$domain=keonhacai5.fans|phimlongtieng.net|phimdinhcao.com|phimdinhcao.net|xoilacu.cc|vokrugsveta.com|unmanned-ship.org|unfriendcoal.com|plvb.xyz|listnhacai88.com|xoilaczvx.tv|xemtivingon.org|phimlongtieng.com|mitomv.cc|truecenterpublishing.com|plcdn.xyz|phimmoi.my|motphimww.com
 d101 1
 a101 1
-||cdn2-img.net^*.gif$image,domain=hhpanda.cx|dongchill.co|biphim.online|subnhanh.tube|subnhanh.li|subnhanhvl.net|bichill.biz|dongphim.li
+||cdn2-img.net^*.gif$image,domain=hhpanda.cx|dongchill.co|biphim.online|subnhanh.tube|subnhanh.my|subnhanhvl.net|bichill.biz|dongphim.li
 d122 2
 d128 1
 a128 1
@@ -274,10 +300,17 @@ a181 2
 ||phimreview.org/playergk/phimreview.mp4$rewrite=abp-resource:blank-mp4,domain=phimreview.org
 ||phimreview.org^*.gif$image
 d193 1
+d210 2
+a211 2
+||subnhanh.my/js/ads_xx.js
+||subnhanh.my/js/ads_xx.min.js$script,~third-party
 a246 2
 ||v.ghienphim.cx/client_assets/images/
 ||v.ghienphim.cx/client_assets/js/minijumb.js
 d269 1
+d432 1
+a432 1
+biphim.online,subnhanh.my##.underplayer_btn
 d488 1
 a488 1
 dongphim.li,dongchill.co,bichill.biz,phim18u.net,phimmoi.my,vivuphim.info###footer_fixed_ads
@@ -309,6 +342,9 @@ live7.thapcam22.net,xoilaczvx.tv,unmanned-ship.org,mitomv.cc,truecenterpublishin
 a647 1
 mitomv.cc##.btn-od
 d664 1
+d684 1
+a684 1
+phim.vkool4.net,subnhanhvl.net,subnhanh.tube,subnhanh.my,tructiepdabong5.co,protruyen4.xyz,biphim.online,dongphim.li###overlay
 d710 2
 a711 2
 phimmoi.my###hide_catfish
@@ -321,6 +357,9 @@ phimvuihd.org,hh3dhay.life,phim18u.net,phim24h.mobi,xem14.com,hh3dhay.pro,vutrup
 d749 1
 a749 1
 rakhoi.rakhoi7.xyz,tructiep12.cakhia24.live,cakhia36.xyz,unmanned-ship.org,tructiep.caheo7.link,mitomv.cc,truecenterpublishing.com##.footer-banner
+d768 1
+a768 1
+subnhanhvl.net,subnhanh.tube,subnhanh.my,dongchill.co###xs-addd0
 d832 1
 a832 1
 toquoc.vn,baoxaydung.com.vn,tienphong.vn,taichinhdoanhnghiep.net.vn,thichxemphim1.net,v.xemphimviet.xyz,v.ghienphim.cx,truyengihotdo.net,truyengihotzay.net,truyengihotnha.com,truyengihotnha.net,truyengihotqua.net,truyengihotqua.com,truyengihotnay.com,tenmientruyengi.net,thongtintruyen.com##.banner
@@ -354,20 +393,20 @@ a1221 2
 d1319 1
 a1320 1
 vlxx.mobi,xemphimsex3x.net##.catfish-bottom
-diff name:abpvn_noelemhide lines:46 checksum:f1fc051e12
+diff name:abpvn_noelemhide lines:50 checksum:00707ca6d7
 d2 1
 a2 1
-! Version: 20240828190858298
+! Version: 20240828212405396
 d5 2
 a6 2
-! Last modified: 28 Aug 2024 19:08:58 UTC+7
-! Diff-Path: patches/20240828190858298.patch#abpvn_noelemhide
+! Last modified: 28 Aug 2024 21:24:05 UTC+7
+! Diff-Path: patches/20240828212405396.patch#abpvn_noelemhide
 d48 1
 a48 1
 /i.imgur.com/*.gif$domain=keonhacai5.fans|phimlongtieng.net|phimdinhcao.com|phimdinhcao.net|xoilacu.cc|vokrugsveta.com|unmanned-ship.org|unfriendcoal.com|plvb.xyz|listnhacai88.com|xoilaczvx.tv|xemtivingon.org|phimlongtieng.com|mitomv.cc|truecenterpublishing.com|plcdn.xyz|phimmoi.my|motphimww.com
 d101 1
 a101 1
-||cdn2-img.net^*.gif$image,domain=hhpanda.cx|dongchill.co|biphim.online|subnhanh.tube|subnhanh.li|subnhanhvl.net|bichill.biz|dongphim.li
+||cdn2-img.net^*.gif$image,domain=hhpanda.cx|dongchill.co|biphim.online|subnhanh.tube|subnhanh.my|subnhanhvl.net|bichill.biz|dongphim.li
 d122 2
 d128 1
 a128 1
@@ -389,6 +428,10 @@ a181 2
 ||phimreview.org/playergk/phimreview.mp4$rewrite=abp-resource:blank-mp4,domain=phimreview.org
 ||phimreview.org^*.gif$image
 d193 1
+d210 2
+a211 2
+||subnhanh.my/js/ads_xx.js
+||subnhanh.my/js/ads_xx.min.js$script,~third-party
 a246 2
 ||v.ghienphim.cx/client_assets/images/
 ||v.ghienphim.cx/client_assets/js/minijumb.js
@@ -401,20 +444,20 @@ d454 1
 a454 2
 ||xem.phim18c.org/theme/custom.int.js$script,~third-party
 ||xemphimsex3x.net^*.gif$image
-diff name:abpvn_ublock lines:125 checksum:3ef06e816c
+diff name:abpvn_ublock lines:138 checksum:64eb754f4f
 d2 1
 a2 1
-! Version: 20240828190858298
+! Version: 20240828212405396
 d5 2
 a6 2
-! Last modified: 28 Aug 2024 19:08:58 UTC+7
-! Diff-Path: patches/20240828190858298.patch#abpvn_ublock
+! Last modified: 28 Aug 2024 21:24:05 UTC+7
+! Diff-Path: patches/20240828212405396.patch#abpvn_ublock
 d47 1
 a47 1
 /i.imgur.com/*.gif$domain=keonhacai5.fans|phimlongtieng.net|phimdinhcao.com|phimdinhcao.net|xoilacu.cc|vokrugsveta.com|unmanned-ship.org|unfriendcoal.com|plvb.xyz|listnhacai88.com|xoilaczvx.tv|xemtivingon.org|phimlongtieng.com|mitomv.cc|truecenterpublishing.com|plcdn.xyz|phimmoi.my|motphimww.com
 d100 1
 a100 1
-||cdn2-img.net^*.gif$image,domain=hhpanda.cx|dongchill.co|biphim.online|subnhanh.tube|subnhanh.li|subnhanhvl.net|bichill.biz|dongphim.li
+||cdn2-img.net^*.gif$image,domain=hhpanda.cx|dongchill.co|biphim.online|subnhanh.tube|subnhanh.my|subnhanhvl.net|bichill.biz|dongphim.li
 d121 2
 d127 1
 a127 1
@@ -436,10 +479,17 @@ a180 2
 ||phimreview.org/playergk/phimreview.mp4$rewrite=abp-resource:blank-mp4,domain=phimreview.org
 ||phimreview.org^*.gif$image
 d192 1
+d207 2
+a208 2
+||subnhanh.my/js/ads_xx.js
+||subnhanh.my/js/ads_xx.min.js$script,~third-party
 a243 2
 ||v.ghienphim.cx/client_assets/images/
 ||v.ghienphim.cx/client_assets/js/minijumb.js
 d266 1
+d429 1
+a429 1
+biphim.online,subnhanh.my##.underplayer_btn
 d485 1
 a485 1
 dongphim.li,dongchill.co,bichill.biz,phim18u.net,phimmoi.my,vivuphim.info###footer_fixed_ads
@@ -471,6 +521,9 @@ live7.thapcam22.net,xoilaczvx.tv,unmanned-ship.org,mitomv.cc,truecenterpublishin
 a644 1
 mitomv.cc##.btn-od
 d661 1
+d681 1
+a681 1
+phim.vkool4.net,subnhanhvl.net,subnhanh.tube,subnhanh.my,tructiepdabong5.co,protruyen4.xyz,biphim.online,dongphim.li###overlay
 d707 2
 a708 2
 phimmoi.my###hide_catfish
@@ -483,6 +536,9 @@ phimvuihd.org,hh3dhay.life,phim18u.net,phim24h.mobi,xem14.com,hh3dhay.pro,vutrup
 d746 1
 a746 1
 rakhoi.rakhoi7.xyz,tructiep12.cakhia24.live,cakhia36.xyz,unmanned-ship.org,tructiep.caheo7.link,mitomv.cc,truecenterpublishing.com##.footer-banner
+d765 1
+a765 1
+subnhanhvl.net,subnhanh.tube,subnhanh.my,dongchill.co###xs-addd0
 d829 1
 a829 1
 toquoc.vn,baoxaydung.com.vn,tienphong.vn,taichinhdoanhnghiep.net.vn,thichxemphim1.net,v.xemphimviet.xyz,v.ghienphim.cx,truyengihotdo.net,truyengihotzay.net,truyengihotnha.com,truyengihotnha.net,truyengihotqua.net,truyengihotqua.com,truyengihotnay.com,tenmientruyengi.net,thongtintruyen.com##.banner
