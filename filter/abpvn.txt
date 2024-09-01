@@ -1,9 +1,9 @@
 [Adblock Plus 2.0]
-! Version: 20240831180418937
+! Version: 20240901072734367
 ! id: D4028CDD-3D39-4624-ACC7-8140F4EC3888
 ! Title: ABPVN List
-! Last modified: 31 Aug 2024 18:04:18 UTC+7
-! Diff-Path: patches/20240831180418937.patch#abpvn
+! Last modified: 01 Sep 2024 07:27:34 UTC+7
+! Diff-Path: patches/20240901072734367.patch#abpvn
 ! Diff-Expires: 60 minutes
 ! Expires: 1 days (update frequency)
 !
@@ -116,6 +116,7 @@ $popup,domain=player-cdn.com|freeplayervideo.com|abysscdn.com|geoip.redirect-ads
 ||doctruyenchufull.site/ads/$image
 ||dongphim.my/ads/ads_xx.js$script
 ||fastscans.net/_next/static/media/voucher.$image
+||fdcdn.xyz/img/cuoc-ngay.gif
 ||ff.imacdn.com^$image,domain=xem1080.com
 ||file1.dangcongsan.vn^*.gif$image,domain=dangcongsan.vn
 ||forum.idichvuseo.com/images/quang-cao
@@ -147,7 +148,7 @@ $popup,domain=player-cdn.com|freeplayervideo.com|abysscdn.com|geoip.redirect-ads
 ||i45.servimg.com/u/f45/$domain=gocmod.com
 ||iamcdn.net/players/playera.dmins.js
 ||iamcdn.net/players/playhydraxs.min.js
-||image-eu-na-ctnytbefjq.4shares.live/90link/*.gif$image,domain=live.thapcam23.net|live4.xoilac34.org|live.vebo24.net|live6.vebo26.net|tructiep.banhkhuc16.net|fdcdn.xyz
+||image-eu-na-ctnytbefjq.4shares.live/90link/*.gif$image
 ||image-eu-na-tsetsafndc.90phut.click/90link/Cp9OssK.gif$image,domain=live7.90phut34.live
 ||image.cdend.com^*.gif$image,domain=phimmoiiii.net
 ||img.upanh.tv^*.gif$image,domain=phim24h.mobi|phimtuoitho.tv
@@ -258,7 +259,7 @@ $popup,domain=player-cdn.com|freeplayervideo.com|abysscdn.com|geoip.redirect-ads
 ||vietjack.com/FrontEndWeb/js/sp.js$script
 ||vivuphim.info^*.gif
 ||vnesports.art^*.gif
-||vsc7.com/wp-content/themes/vuasanco/assets/scripts/scripts.js
+||vsc49.com/wp-content/themes/vuasanco/assets/scripts/scripts.js
 ||wibu47.com^*.gif$image
 ||www.bk8vnaf.com^*.gif$image,domain=phimgichill.net
 ||www.bongdalu808.com^*.gif
@@ -772,13 +773,14 @@ doisongphapluat.com##div.box-aside
 dongphim.my##a[rel="nofollow sponsored"]
 dongphim.my,dongchill.cc,bichill.li,phim18u.net,phimmoi.my,vivuphim.info###footer_fixed_ads
 download.vn##div[id^="adsbg"]
-dubaotiente.com##.ad-pin-right-bottom
+dubaotiente.io##.ad-pin-right-bottom
 ebookbkmt.com##.top-right
 ephoto360.com##.line-ads
 ephoto360.com,thiepmung.com,ophimhd.vip,xemphimchill.xyz,phimmoi.my,247phim.cc,hotphimvn.cc,www.phimmoichilla.xyz,motphimchill.online,phimmoi2024.net,hayhaytv.cc,www.ssphim.us,motphimchilld.net##.ad-container
 eva.vn##.banrpstn
 fastscans.net##.banner-shopee
 fastscans.net##a[href^="https://shope.ee"]
+fdcdn.xyz##.jw-button-image
 ffmovie.online##[href^="https://www.toprevenuegate.com/q7rbxxz1v"]
 file.gocmod.com##div.ad
 forum.gocmod.com##.ad-manager-forum-list-bottom
@@ -807,7 +809,7 @@ game8.vn##div.news-left-related:nth-of-type(2)
 gameio.vn###tubia
 genk.vn##.khw-ads-wrapper.clearfix
 giadinhonline.vn,congluan.vn,nongnghiep.vn##.exp_qc_share
-giadinhonline.vn,vietnamnet.vn,nongnghiep.vn,dubaotiente.com,bongda.com.vn,taichinhdoanhnghiep.net.vn##.adv
+giadinhonline.vn,vietnamnet.vn,nongnghiep.vn,dubaotiente.io,bongda.com.vn,taichinhdoanhnghiep.net.vn##.adv
 gocmod.com###bannerContainer1
 gocmod.com###bannerContainer2
 gocmod.com###sp-wrapper-hovering-format
@@ -1130,6 +1132,11 @@ tracnghiem.net##.sbAdv
 tructiep12.cakhia24.live,cakhia36.xyz,tructiep.caheo7.link##.container-banner
 tructiep12.cakhia24.live,cakhia36.xyz,tructiep.caheo7.link##.modal-ads
 tructiep12.cakhia24.live,cakhia36.xyz,tructiep.caheo7.link##div[class^="slide-bar"]
+tructiep2.banhkhuc16.net###m-bet
+tructiep2.banhkhuc16.net##.box-host.box
+tructiep2.banhkhuc16.net##.btn-bet-top
+tructiep2.banhkhuc16.net##.btn-betnow
+tructiep2.banhkhuc16.net##.item-betnow
 tructiep36.cakhia24.live##.hide-desk.footer-banner
 tructiep36.cakhia24.live##.modelAds.modal-ads
 tructiep36.cakhia24.live##.nhacaiuytin.after.top-btnpage
@@ -1266,7 +1273,7 @@ voz.vn##.v-element>.v-responsive
 voz.vn##div.message--post
 voz.vn##div[style]:has(.adsbypubpower)
 vozer.net,btcvn.org##.Notices.PanelScroller
-vsc7.com##a.news__item--action:nth-of-type(2)
+vsc49.com##a.news__item--action:nth-of-type(2)
 vtcnews.vn##.sys-ads
 vtipster.net##div[class*="qca"]
 vtruyen.com###article>.pt-3.text-centers
