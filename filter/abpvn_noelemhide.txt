@@ -1,9 +1,9 @@
 [Adblock Plus 2.0]
-! Version: 20240901120539472
+! Version: 20240903092143251
 ! id: D4028CDD-3D39-4624-ACC7-8140F4EC3888
 ! Title: ABPVN List
-! Last modified: 01 Sep 2024 12:05:39 UTC+7
-! Diff-Path: patches/20240901120539472.patch#abpvn_noelemhide
+! Last modified: 03 Sep 2024 09:21:43 UTC+7
+! Diff-Path: patches/20240903092143251.patch#abpvn_noelemhide
 ! Diff-Expires: 60 minutes
 ! Expires: 1 days (update frequency)
 !
@@ -38,9 +38,9 @@ $popup,domain=player-cdn.com|freeplayervideo.com|abysscdn.com|geoip.redirect-ads
 /banner/*.gif$domain=~marsvenus.vn
 /beardeddragon$script
 /blueserving.
-/cms/Arfcc.min.js$script,third-party,domain=cafef.vn|gamek.vn|genk.vn|kenh14.vn|soha.vn|tuoitre.vn|afamily.vn
+/cms/Arfcc.min.js$script,third-party,domain=cafef.vn|gamek.vn|genk.vn|kenh14.vn|soha.vn|tuoitre.vn|afamily.vn|thanhnien.vn
 /cms/arf-$script,third-party,domain=cafef.vn|gamek.vn|genk.vn|kenh14.vn|soha.vn|tuoitre.vn|afamily.vn
-/core/*$script,domain=gamek.vn|genk.vn|kenh14.vn|cafef.vn
+/core/*$script,domain=gamek.vn|genk.vn|kenh14.vn|cafef.vn|thanhnien.vn
 /detroitchicago$script
 /disable-devtool.min.js$script
 /giadinhonline.vn/files/qc/
@@ -182,6 +182,8 @@ $popup,domain=player-cdn.com|freeplayervideo.com|abysscdn.com|geoip.redirect-ads
 ||phimmoi.my/js/ads.js$script
 ||phimmoi.my^*.gif$image
 ||phimmoichillv.net/newchill/$script,~third-party
+||phimmoichillz.cc/pop$image
+||phimmoichillz.cc^*.gif$image
 ||phimmoinhat.top^*.gif
 ||phimnhanhvl.com^*.gif
 ||phimnhua.net^*.gif
@@ -259,6 +261,7 @@ $popup,domain=player-cdn.com|freeplayervideo.com|abysscdn.com|geoip.redirect-ads
 ||vietjack.com/FrontEndWeb/js/sp.js$script
 ||vivuphim.info^*.gif
 ||vnesports.art^*.gif
+||vov.vn/ads/show-ads
 ||vsc49.com/wp-content/themes/vuasanco/assets/scripts/scripts.js
 ||wibu47.com^*.gif$image
 ||www.bk8vnaf.com^*.gif$image,domain=phimgichill.net
@@ -599,6 +602,7 @@ $popup,domain=player-cdn.com|freeplayervideo.com|abysscdn.com|geoip.redirect-ads
 ||thaudray.com^$popup
 ||thingrealtape.com^
 ||thterras.com^
+||toathoule.com^
 ||topcreativeformat.com^
 ||topqualitylink.com^$image
 ||toro-tags.com^$third-party
