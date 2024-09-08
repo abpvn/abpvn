@@ -1,11 +1,11 @@
-diff name:abpvn lines:332 checksum:4b99037f4f
+diff name:abpvn lines:370 checksum:738bba82cc
 d2 1
 a2 1
-! Version: 20240907120447047
+! Version: 20240908150541195
 d5 2
 a6 2
-! Last modified: 07 Sep 2024 12:04:47 UTC+7
-! Diff-Path: patches/20240907120447047.patch#abpvn
+! Last modified: 08 Sep 2024 15:05:41 UTC+7
+! Diff-Path: patches/20240908150541195.patch#abpvn
 d41 1
 a41 1
 /cms/Arfcc.min.js$script,third-party,domain=cafef.vn|gamek.vn|genk.vn|kenh14.vn|soha.vn|tuoitre.vn|afamily.vn|thanhnien.vn
@@ -14,20 +14,25 @@ a43 1
 /core/*$script,domain=gamek.vn|genk.vn|kenh14.vn|cafef.vn|thanhnien.vn
 d48 1
 a48 1
-/i.imgur.com/*.gif$domain=keonhacai5.men|phimlongtieng.net|phimdinhcao.com|phimdinhcao.net|xoilacj.cc|vokrugsveta.com|unmanned-ship.org|unfriendcoal.com|plvb.xyz|listnhacai88.com|xoilaczva.tv|xemtivingon.org|phimlongtieng.com|mitomx.cc|rakhois.cc|plcdn.xyz|phimmoi.my|motphimww.com
+/i.imgur.com/*.gif$domain=keonhacai5.men|phimlongtieng.net|phimdinhcao.com|phimdinhcao.net|xoilaca.cc|vokrugsveta.com|unmanned-ship.org|unfriendcoal.com|plvb.xyz|listnhacai88.com|xoilaczva.tv|xemtivingon.org|phimlongtieng.com|mitomx.cc|rakhois.cc|plcdn.xyz|phimmoi.my|motphimww.com
 d79 1
 a79 2
 ||90phut22.xyz^*.gif$image
 ||9767ebd63c.vws.vegacdn.vn^*.gif$image,domain=mn.mediastation.live|home2.mannhan5.pro
-d83 1
-a83 1
+d83 2
+a84 2
 ||animehay.biz^*.gif
+||animet2.net^*.gif
 d95 1
 a95 1
 ||blogger.googleusercontent.com^$image,domain=hhninja6.tv|xem14.com|hhtm.tv|hoathinh3dtq.com|hhh3d.tv|dragonphim.tv|hoathinhtq.site|2phimhay.cc|yanhh3d.com
 d100 1
 a100 1
 ||cdn.lfastcdn.com^*.gif$image,domain=bongdainfox.tv|xoilaczva.tv|vokrugsveta.com
+d106 2
+a107 2
+||chillphimmoizzzz.org/assets/*.gif$image
+||chillphimmoizzzz.org/assets/js/popup.js
 d109 1
 a109 1
 ||chotlo3s.com^*gif
@@ -59,6 +64,10 @@ a170 3
 ||motchillcx.net/banner$image
 ||motphim.my/js/ads.js$script,~third-party
 ||motphimchille.net/ads1.js$script,~third-party
+d177 2
+a178 2
+||phim.vkool5.net/images/ads/$image
+||phim.vkool5.net/js/pov.js$script,~third-party
 a182 2
 ||phimmoichillz.cc/pop$image
 ||phimmoichillz.cc^*.gif$image
@@ -70,6 +79,9 @@ a197 1
 ||quoracdn.net^$image,domain=www.phimlongtieng.net|phimlongtieng.com|www.phimdinhcao.com
 a202 1
 ||server.zmedia.vn/static/$script
+d206 1
+a206 1
+||shope.ee^$popup,domain=chillphimmoizzzz.org|blogtruyenmoi.com|cunghocvui.com|truyensextv.com
 d212 1
 a212 1
 ||staticcdn-sk.mediastation.live^*.gif$image,domain=home2.mannhan5.pro
@@ -91,10 +103,15 @@ a684 4
 2phimhay.cc##.navbar-container + .container
 90phut22.xyz##.group-link:has(a[href*="&utm_"])
 90phut22.xyz##.topnhacai
-d687 2
-a688 2
+d686 7
+a692 7
+ahaphimz.com,phim.vkool5.net,vphims.net##.catfish-ck
 anime47.de###qc_clgt
 animehay.biz###banner-shopee
+animet2.net###menubentrai
+animet2.net##.gnartyx-offads
+animet2.net,animetvn4.com##.gnarty-offads
+animet2.net,animetvn4.com,subnhanh.xyz###fbox-background
 d694 4
 a697 4
 animevietsub.uk###invideo_wrapper
@@ -107,6 +124,11 @@ api.anime3s.com,live4.xoilac34.org,saophim18.net,freeplayervideo.com,abysscdn.co
 d727 1
 a727 1
 boctem.com,anivn.club,movies.vkoolz.com,hoathinhtq.site,xemphimchill.xyz,247phim.cc,vungtv.us,vuaphimmoi8.net,tvhay26.com,dragonphim.tv,hh3d1.xyz,www.phimmoichilla.xyz,motphim.my,hhh3d.tv,hayhaytv.cc,yanhh3d.com,www.ssphim.us###popup-giua-man-hinh
+d742 3
+a744 3
+chillphimmoizzzz.org##.expand-static-banner
+chillphimmoizzzz.org##.preload-banner
+chillphimmoizzzz.org##.static-banner
 d747 2
 a748 2
 chotlo3s.com##div[id^="float"]
@@ -148,7 +170,7 @@ home2.mannhan5.pro##.images_fixed
 home2.mannhan5.pro##.popup
 d868 1
 a868 1
-ketqua01.net,nghean24h.vn,xem.tructiepnba.com,biphim.moe,vidian.online,truyenchu.com.vn,vbfast.xyz,xemtivi4k.com,abtruyen.net,chatboxn.com,xoilacj.cc##a[rel="nofollow"]
+ketqua01.net,nghean24h.vn,xem.tructiepnba.com,biphim.moe,vidian.online,truyenchu.com.vn,vbfast.xyz,xemtivi4k.com,abtruyen.net,chatboxn.com,xoilaca.cc##a[rel="nofollow"]
 d874 1
 a874 1
 kienthuc.net.vn,saostar.vn,bongda24h.vn,cungthi.online,appvn.com,linkerpt.com,antt.vn,v.xemphimviet.xyz,ghienphim.onl,nhadautu.vn,soikeo365.net,nghenhinvietnam.vn,doctailieu.com,vivuphim.info##.ads
@@ -182,6 +204,11 @@ loigiaihay.com##div[style="margin: 10px 0 5px 0; min-height: 250px;"]
 d940 1
 a940 1
 mitomx.cc##.btn-od
+d976 3
+a978 3
+phim.vkool5.net##.box-rating
+phim.vkool5.net,subnhanhvl.tv,subnhanh.onl,subnhanh.my,tructiepdabong5.co,protruyen4.xyz,biphim.moe,dongphim.my###overlay
+phim.vkool5.net,vuonhoalan.net,gunnylau360.net,mythethao.net,kenhgamez.co,phimno4.xyz,gunnymienphi.net,dailyphimz.com,phim33.tv,247phim.cc,movies.vkoolz.com,vungtv.us,vuaphimmoi8.net,ffmovie.online,hayhaytv.cc##.float-ck
 d980 3
 d997 2
 d1002 1
@@ -220,8 +247,8 @@ a1177 1
 unfriendcoal.com,live10.90phut34.live,noitu.pro##.modal-backdrop.show
 d1179 2
 a1180 2
-unfriendcoal.com,xoilacj.cc##.sub-menu.d-none.d-lg-flex
-unfriendcoal.com,xoilacj.cc,vokrugsveta.com,unmanned-ship.org##.marquee-container
+unfriendcoal.com,xoilaca.cc##.sub-menu.d-none.d-lg-flex
+unfriendcoal.com,xoilaca.cc,vokrugsveta.com,unmanned-ship.org##.marquee-container
 d1191 2
 d1194 4
 a1197 4
@@ -236,8 +263,8 @@ vebo4.net,live.vebo24.net,live9.vebo26.net,tructiep4.banhkhuc16.net,live4.xoilac
 vebo4.net,live.vebo24.net,live9.vebo26.net,tructiep4.banhkhuc16.net,live4.xoilac34.org##.item-betnow
 d1260 2
 a1261 2
-vokrugsveta.com,unfriendcoal.com,xoilacj.cc,unmanned-ship.org###quangcaopc
-vokrugsveta.com,unfriendcoal.com,xoilacj.cc,unmanned-ship.org,bongdainfox.tv,xoilaczva.tv,xemtv.tvhayhd.tv###wap_bottombanner
+vokrugsveta.com,unfriendcoal.com,xoilaca.cc,unmanned-ship.org###quangcaopc
+vokrugsveta.com,unfriendcoal.com,xoilaca.cc,unmanned-ship.org,bongdainfox.tv,xoilaczva.tv,xemtv.tvhayhd.tv###wap_bottombanner
 d1267 1
 a1267 1
 vsc51.com##a.news__item--action:nth-of-type(2)
@@ -252,26 +279,26 @@ a1319 1
 xemphimchill.xyz,hhninja6.tv,phimbocn.com,phimhoathinh3d.com,hoathinhtq.site,hhtq7.vip,hhtqvietsub.top,motchillcx.net,hhtrungquoc6.com,hhtqnet.me,animeweb.vip,hh3d1.xyz,hoathinh4k.net,motchilltvzz.biz,hoathinh3dtq.com,hhtm.tv,dragonphim.tv,hhchina.app,motphim.my,phimmoi2024.net,hhh3d.tv,hhtq3d.com,wibu47.com,yanhh3d.com,hhhay.tv###catfish
 d1327 20
 a1346 20
-xoilacj.cc##.banner-link
-xoilacj.cc##.block-catfish.text-center.d-lg-none.d-block
-xoilacj.cc##.container.mt-1
-xoilacj.cc##.container>ul
-xoilacj.cc##.logo-cnt>.d-lg-none.d-block
-xoilacj.cc##.menu-cuoc-one88
-xoilacj.cc##.mt-5.d-lg-none.d-block.pb-2.text-center
-xoilacj.cc##.offer
-xoilacj.cc##.pl-lg-0.col-xl-4
-xoilacj.cc##.row.d-none
-xoilacj.cc##.widget-offers__list
-xoilacj.cc##div.d-lg-none.d-block:nth-of-type(3)
-xoilacj.cc,rakhois.cc##.sk_balloon
-xoilacj.cc,tructiepdabong5.co##.offer__btn
-xoilacj.cc,unmanned-ship.org,unfriendcoal.com,mitomx.cc##div[id^="dnn_"]
-xoilacj.cc,unmanned-ship.org,unfriendcoal.com,vokrugsveta.com,rakhois.cc##.company
-xoilacj.cc,vokrugsveta.com###match-child-1
-xoilacj.cc,vokrugsveta.com,xoilaczva.tv##.match-detail__offer
-xoilacj.cc,xoilaczva.tv##.menu-top-nha-cai
-xoilacj.cc,xoilaczva.tv,vokrugsveta.com##.menu-cuoc-8xbet
+xoilaca.cc##.banner-link
+xoilaca.cc##.block-catfish.text-center.d-lg-none.d-block
+xoilaca.cc##.container.mt-1
+xoilaca.cc##.container>ul
+xoilaca.cc##.logo-cnt>.d-lg-none.d-block
+xoilaca.cc##.menu-cuoc-one88
+xoilaca.cc##.mt-5.d-lg-none.d-block.pb-2.text-center
+xoilaca.cc##.offer
+xoilaca.cc##.pl-lg-0.col-xl-4
+xoilaca.cc##.row.d-none
+xoilaca.cc##.widget-offers__list
+xoilaca.cc##div.d-lg-none.d-block:nth-of-type(3)
+xoilaca.cc,rakhois.cc##.sk_balloon
+xoilaca.cc,tructiepdabong5.co##.offer__btn
+xoilaca.cc,unmanned-ship.org,unfriendcoal.com,mitomx.cc##div[id^="dnn_"]
+xoilaca.cc,unmanned-ship.org,unfriendcoal.com,vokrugsveta.com,rakhois.cc##.company
+xoilaca.cc,vokrugsveta.com###match-child-1
+xoilaca.cc,vokrugsveta.com,xoilaczva.tv##.match-detail__offer
+xoilaca.cc,xoilaczva.tv##.menu-top-nha-cai
+xoilaca.cc,xoilaczva.tv,vokrugsveta.com##.menu-cuoc-8xbet
 d1351 7
 a1357 7
 xoilacz.dev,90phut22.xyz##.btn-bet
@@ -293,6 +320,9 @@ d1415 1
 a1415 1
 ||33x.clipsexhot.net/theme/main.isa.js$script,domain=33x.clipsexhot.net
 d1433 1
+d1455 1
+a1455 1
+||quoracdn.net^$image,domain=vlxx.mobi|vlxyz.tube|sieudamtv.dev|sex.chichnhau.me|phevkl.vc
 d1462 2
 a1463 1
 ||sexsub.guru^*.gif$image,domain=sexvn.tuoi69s.com|javhay.my|sexsub.guru|xem.phim18c.org
@@ -303,10 +333,16 @@ a1478 1
 ||vnhentaivn.com^*.gif$image
 a1483 1
 ||xmupvl.net^*.gif$image,domain=xmupvl.net|damsextv.pro
+d1498 1
 d1510 2
 d1519 1
 a1519 1
 javhay.my##.v4j-header>center
+d1559 3
+a1561 3
+sex.chichnhau.me##.in.fade.modal-backdrop
+sex.chichnhau.me,sieudamtv.dev###pc-preload-modal
+sex.chichnhau.me,sieudamtv.dev###popup
 d1565 2
 a1566 2
 sexsub.guru##.v4j-watch-1.v4j-content
@@ -325,20 +361,22 @@ d1585 2
 a1586 2
 tuoi69zz.xyz,sieukhungz.org###bar_float_r
 tuoi69zz.xyz,sieukhungz.org##.adsTopHome
+a1593 1
+viet69.bio###mp-preload-popup-overlay
 d1607 1
 a1607 1
 vlxyz.tube,xmupvl.net##.xx-ads
 a1612 2
 vnhentaivn.com###catfish
 vnhentaivn.com##.wppopups-whole
-diff name:abpvn_adguard lines:374 checksum:870a4b7757
+diff name:abpvn_adguard lines:411 checksum:b386798e70
 d2 1
 a2 1
-! Version: 20240907120447047
+! Version: 20240908150541195
 d5 2
 a6 2
-! Last modified: 07 Sep 2024 12:04:47 UTC+7
-! Diff-Path: patches/20240907120447047.patch#abpvn_adguard
+! Last modified: 08 Sep 2024 15:05:41 UTC+7
+! Diff-Path: patches/20240908150541195.patch#abpvn_adguard
 d40 1
 a40 1
 /cms/Arfcc.min.js$script,third-party,domain=cafef.vn|gamek.vn|genk.vn|kenh14.vn|soha.vn|tuoitre.vn|afamily.vn|thanhnien.vn
@@ -347,20 +385,25 @@ a42 1
 /core/*$script,domain=gamek.vn|genk.vn|kenh14.vn|cafef.vn|thanhnien.vn
 d47 1
 a47 1
-/i.imgur.com/*.gif$domain=keonhacai5.men|phimlongtieng.net|phimdinhcao.com|phimdinhcao.net|xoilacj.cc|vokrugsveta.com|unmanned-ship.org|unfriendcoal.com|plvb.xyz|listnhacai88.com|xoilaczva.tv|xemtivingon.org|phimlongtieng.com|mitomx.cc|rakhois.cc|plcdn.xyz|phimmoi.my|motphimww.com
+/i.imgur.com/*.gif$domain=keonhacai5.men|phimlongtieng.net|phimdinhcao.com|phimdinhcao.net|xoilaca.cc|vokrugsveta.com|unmanned-ship.org|unfriendcoal.com|plvb.xyz|listnhacai88.com|xoilaczva.tv|xemtivingon.org|phimlongtieng.com|mitomx.cc|rakhois.cc|plcdn.xyz|phimmoi.my|motphimww.com
 d78 1
 a78 2
 ||90phut22.xyz^*.gif$image
 ||9767ebd63c.vws.vegacdn.vn^*.gif$image,domain=mn.mediastation.live|home2.mannhan5.pro
-d82 1
-a82 1
+d82 2
+a83 2
 ||animehay.biz^*.gif
+||animet2.net^*.gif
 d94 1
 a94 1
 ||blogger.googleusercontent.com^$image,domain=hhninja6.tv|xem14.com|hhtm.tv|hoathinh3dtq.com|hhh3d.tv|dragonphim.tv|hoathinhtq.site|2phimhay.cc|yanhh3d.com
 d99 1
 a99 1
 ||cdn.lfastcdn.com^*.gif$image,domain=bongdainfox.tv|xoilaczva.tv|vokrugsveta.com
+d105 2
+a106 2
+||chillphimmoizzzz.org/assets/*.gif$image
+||chillphimmoizzzz.org/assets/js/popup.js
 d108 1
 a108 1
 ||chotlo3s.com^*gif
@@ -392,6 +435,10 @@ a169 3
 ||motchillcx.net/banner$image
 ||motphim.my/js/ads.js$script,~third-party
 ||motphimchille.net/ads1.js$script,~third-party
+d176 2
+a177 2
+||phim.vkool5.net/images/ads/$image
+||phim.vkool5.net/js/pov.js$script,~third-party
 a181 2
 ||phimmoichillz.cc/pop$image
 ||phimmoichillz.cc^*.gif$image
@@ -424,10 +471,15 @@ a681 4
 2phimhay.cc##.navbar-container + .container
 90phut22.xyz##.group-link:has(a[href*="&utm_"])
 90phut22.xyz##.topnhacai
-d684 2
-a685 2
+d683 7
+a689 7
+ahaphimz.com,phim.vkool5.net,vphims.net##.catfish-ck
 anime47.de###qc_clgt
 animehay.biz###banner-shopee
+animet2.net###menubentrai
+animet2.net##.gnartyx-offads
+animet2.net,animetvn4.com##.gnarty-offads
+animet2.net,animetvn4.com,subnhanh.xyz###fbox-background
 d691 4
 a694 4
 animevietsub.uk###invideo_wrapper
@@ -440,6 +492,11 @@ api.anime3s.com,live4.xoilac34.org,saophim18.net,freeplayervideo.com,abysscdn.co
 d724 1
 a724 1
 boctem.com,anivn.club,movies.vkoolz.com,hoathinhtq.site,xemphimchill.xyz,247phim.cc,vungtv.us,vuaphimmoi8.net,tvhay26.com,dragonphim.tv,hh3d1.xyz,www.phimmoichilla.xyz,motphim.my,hhh3d.tv,hayhaytv.cc,yanhh3d.com,www.ssphim.us###popup-giua-man-hinh
+d739 3
+a741 3
+chillphimmoizzzz.org##.expand-static-banner
+chillphimmoizzzz.org##.preload-banner
+chillphimmoizzzz.org##.static-banner
 d744 2
 a745 2
 chotlo3s.com##div[id^="float"]
@@ -481,7 +538,7 @@ home2.mannhan5.pro##.images_fixed
 home2.mannhan5.pro##.popup
 d865 1
 a865 1
-ketqua01.net,nghean24h.vn,xem.tructiepnba.com,biphim.moe,vidian.online,truyenchu.com.vn,vbfast.xyz,xemtivi4k.com,abtruyen.net,chatboxn.com,xoilacj.cc##a[rel="nofollow"]
+ketqua01.net,nghean24h.vn,xem.tructiepnba.com,biphim.moe,vidian.online,truyenchu.com.vn,vbfast.xyz,xemtivi4k.com,abtruyen.net,chatboxn.com,xoilaca.cc##a[rel="nofollow"]
 d871 1
 a871 1
 kienthuc.net.vn,saostar.vn,bongda24h.vn,cungthi.online,appvn.com,linkerpt.com,antt.vn,v.xemphimviet.xyz,ghienphim.onl,nhadautu.vn,soikeo365.net,nghenhinvietnam.vn,doctailieu.com,vivuphim.info##.ads
@@ -515,6 +572,11 @@ loigiaihay.com##div[style="margin: 10px 0 5px 0; min-height: 250px;"]
 d937 1
 a937 1
 mitomx.cc##.btn-od
+d973 3
+a975 3
+phim.vkool5.net##.box-rating
+phim.vkool5.net,subnhanhvl.tv,subnhanh.onl,subnhanh.my,tructiepdabong5.co,protruyen4.xyz,biphim.moe,dongphim.my###overlay
+phim.vkool5.net,vuonhoalan.net,gunnylau360.net,mythethao.net,kenhgamez.co,phimno4.xyz,gunnymienphi.net,dailyphimz.com,phim33.tv,247phim.cc,movies.vkoolz.com,vungtv.us,vuaphimmoi8.net,ffmovie.online,hayhaytv.cc##.float-ck
 d977 3
 d994 2
 d999 1
@@ -553,8 +615,8 @@ a1174 1
 unfriendcoal.com,live10.90phut34.live,noitu.pro##.modal-backdrop.show
 d1176 2
 a1177 2
-unfriendcoal.com,xoilacj.cc##.sub-menu.d-none.d-lg-flex
-unfriendcoal.com,xoilacj.cc,vokrugsveta.com,unmanned-ship.org##.marquee-container
+unfriendcoal.com,xoilaca.cc##.sub-menu.d-none.d-lg-flex
+unfriendcoal.com,xoilaca.cc,vokrugsveta.com,unmanned-ship.org##.marquee-container
 d1188 2
 d1191 4
 a1194 4
@@ -569,8 +631,8 @@ vebo4.net,live.vebo24.net,live9.vebo26.net,tructiep4.banhkhuc16.net,live4.xoilac
 vebo4.net,live.vebo24.net,live9.vebo26.net,tructiep4.banhkhuc16.net,live4.xoilac34.org##.item-betnow
 d1257 2
 a1258 2
-vokrugsveta.com,unfriendcoal.com,xoilacj.cc,unmanned-ship.org###quangcaopc
-vokrugsveta.com,unfriendcoal.com,xoilacj.cc,unmanned-ship.org,bongdainfox.tv,xoilaczva.tv,xemtv.tvhayhd.tv###wap_bottombanner
+vokrugsveta.com,unfriendcoal.com,xoilaca.cc,unmanned-ship.org###quangcaopc
+vokrugsveta.com,unfriendcoal.com,xoilaca.cc,unmanned-ship.org,bongdainfox.tv,xoilaczva.tv,xemtv.tvhayhd.tv###wap_bottombanner
 d1264 1
 a1264 1
 vsc51.com##a.news__item--action:nth-of-type(2)
@@ -585,26 +647,26 @@ a1316 1
 xemphimchill.xyz,hhninja6.tv,phimbocn.com,phimhoathinh3d.com,hoathinhtq.site,hhtq7.vip,hhtqvietsub.top,motchillcx.net,hhtrungquoc6.com,hhtqnet.me,animeweb.vip,hh3d1.xyz,hoathinh4k.net,motchilltvzz.biz,hoathinh3dtq.com,hhtm.tv,dragonphim.tv,hhchina.app,motphim.my,phimmoi2024.net,hhh3d.tv,hhtq3d.com,wibu47.com,yanhh3d.com,hhhay.tv###catfish
 d1324 20
 a1343 20
-xoilacj.cc##.banner-link
-xoilacj.cc##.block-catfish.text-center.d-lg-none.d-block
-xoilacj.cc##.container.mt-1
-xoilacj.cc##.container>ul
-xoilacj.cc##.logo-cnt>.d-lg-none.d-block
-xoilacj.cc##.menu-cuoc-one88
-xoilacj.cc##.mt-5.d-lg-none.d-block.pb-2.text-center
-xoilacj.cc##.offer
-xoilacj.cc##.pl-lg-0.col-xl-4
-xoilacj.cc##.row.d-none
-xoilacj.cc##.widget-offers__list
-xoilacj.cc##div.d-lg-none.d-block:nth-of-type(3)
-xoilacj.cc,rakhois.cc##.sk_balloon
-xoilacj.cc,tructiepdabong5.co##.offer__btn
-xoilacj.cc,unmanned-ship.org,unfriendcoal.com,mitomx.cc##div[id^="dnn_"]
-xoilacj.cc,unmanned-ship.org,unfriendcoal.com,vokrugsveta.com,rakhois.cc##.company
-xoilacj.cc,vokrugsveta.com###match-child-1
-xoilacj.cc,vokrugsveta.com,xoilaczva.tv##.match-detail__offer
-xoilacj.cc,xoilaczva.tv##.menu-top-nha-cai
-xoilacj.cc,xoilaczva.tv,vokrugsveta.com##.menu-cuoc-8xbet
+xoilaca.cc##.banner-link
+xoilaca.cc##.block-catfish.text-center.d-lg-none.d-block
+xoilaca.cc##.container.mt-1
+xoilaca.cc##.container>ul
+xoilaca.cc##.logo-cnt>.d-lg-none.d-block
+xoilaca.cc##.menu-cuoc-one88
+xoilaca.cc##.mt-5.d-lg-none.d-block.pb-2.text-center
+xoilaca.cc##.offer
+xoilaca.cc##.pl-lg-0.col-xl-4
+xoilaca.cc##.row.d-none
+xoilaca.cc##.widget-offers__list
+xoilaca.cc##div.d-lg-none.d-block:nth-of-type(3)
+xoilaca.cc,rakhois.cc##.sk_balloon
+xoilaca.cc,tructiepdabong5.co##.offer__btn
+xoilaca.cc,unmanned-ship.org,unfriendcoal.com,mitomx.cc##div[id^="dnn_"]
+xoilaca.cc,unmanned-ship.org,unfriendcoal.com,vokrugsveta.com,rakhois.cc##.company
+xoilaca.cc,vokrugsveta.com###match-child-1
+xoilaca.cc,vokrugsveta.com,xoilaczva.tv##.match-detail__offer
+xoilaca.cc,xoilaczva.tv##.menu-top-nha-cai
+xoilaca.cc,xoilaczva.tv,vokrugsveta.com##.menu-cuoc-8xbet
 d1348 7
 a1354 7
 xoilacz.dev,90phut22.xyz##.btn-bet
@@ -626,6 +688,9 @@ d1410 1
 a1410 1
 ||33x.clipsexhot.net/theme/main.isa.js$script,domain=33x.clipsexhot.net
 d1428 1
+d1450 1
+a1450 1
+||quoracdn.net^$image,domain=vlxx.mobi|vlxyz.tube|sieudamtv.dev|sex.chichnhau.me|phevkl.vc
 d1457 2
 a1458 1
 ||sexsub.guru^*.gif$image,domain=sexvn.tuoi69s.com|javhay.my|sexsub.guru|xem.phim18c.org
@@ -636,10 +701,16 @@ a1473 1
 ||vnhentaivn.com^*.gif$image
 a1478 1
 ||xmupvl.net^*.gif$image,domain=xmupvl.net|damsextv.pro
+d1493 1
 d1505 2
 d1514 1
 a1514 1
 javhay.my##.v4j-header>center
+d1554 3
+a1556 3
+sex.chichnhau.me##.in.fade.modal-backdrop
+sex.chichnhau.me,sieudamtv.dev###pc-preload-modal
+sex.chichnhau.me,sieudamtv.dev###popup
 d1560 2
 a1561 2
 sexsub.guru##.v4j-watch-1.v4j-content
@@ -658,6 +729,8 @@ d1580 2
 a1581 2
 tuoi69zz.xyz,sieukhungz.org###bar_float_r
 tuoi69zz.xyz,sieukhungz.org##.adsTopHome
+a1588 1
+viet69.bio###mp-preload-popup-overlay
 d1602 1
 a1602 1
 vlxyz.tube,xmupvl.net##.xx-ads
@@ -668,12 +741,11 @@ d1634 2
 a1635 2
 animehay.biz#%#//scriptlet("abort-current-inline-script", "Number", ";break;case")
 animehay.biz#%#//scriptlet("abort-current-inline-script", "document.addEventListener", "window.open")
-d1639 2
-a1640 2
+d1639 4
+a1642 4
 cafef.vn,gamek.vn,genk.vn,kenh14.vn,soha.vn,tuoitre.vn,afamily.vn,thanhnien.vn#%#//scriptlet("abort-current-inline-script", "Object.defineProperty", "ADMStorageFileCDN")
 cafef.vn,gamek.vn,genk.vn,kenh14.vn,soha.vn,tuoitre.vn,afamily.vn,thanhnien.vn#%#//scriptlet("set-constant", "ADMStorageFileCDN", "noopFunc")
-d1642 1
-a1642 1
+chillphimmoizzzz.org#%#//scriptlet("remove-attr", "data-pop1|data-pop2", "body")
 chotlo3s.com#$##header {margin-top: 0!important}
 d1652 1
 a1652 1
@@ -689,11 +761,14 @@ live2.thapcam24.net,blog.abit.vn##.show.fade
 live2.thapcam24.net,blog.abit.vn,xem20.gavang1.net,xem19.gavang1.net#$#body {overflow: visible!important;}
 d1672 2
 a1673 2
-mv.phimmoiaz.cc,dood.pm,ytstv.me,animet1.net,anh.moe,vnhentaivn.com,maclife.io,javfc2.net,hoctot.hocmai.vn,cdn2.blueskychilling.online,ohaha79xxx.site,fastscans.net#%#//scriptlet("abort-on-property-read", "open")
-nettruyenha.com,clipss.viet69net.com#%#//scriptlet("abort-current-inline-script", "Promise", "break;case")
+mv.phimmoiaz.cc,dood.pm,ytstv.me,animet2.net,anh.moe,vnhentaivn.com,maclife.io,javfc2.net,hoctot.hocmai.vn,cdn2.blueskychilling.online,ohaha79xxx.site,fastscans.net#%#//scriptlet("abort-on-property-read", "open")
+nettruyenha.com,viet69.bio#%#//scriptlet("abort-current-inline-script", "Promise", "break;case")
 d1675 1
 a1675 1
 phimgichill.net,hhhay.tv,hh3dhay.pro,truyengihotnha.com,truyengihotnha.net,3dchill.shop,animevietsub.uk#%#//scriptlet("abort-current-inline-script", "eval", "$._Eu")
+d1690 1
+a1690 1
+sex.chichnhau.me#%#//scriptlet("abort-current-inline-script", "$", "pop")
 d1693 1
 a1693 1
 tiemsachhay.net#%#//scriptlet("abort-current-inline-script", "jQuery", "PopUnder")
@@ -705,15 +780,15 @@ a1710 1
 web.motsex.net,vuasex.club,phimsexviet.io,phimsexvietnam.app,mobile.clipsex.xxx,gm.phimsexnhanh.tv,clipsex.cam,mobi.ditnhau.cc,phim.sexhayvl.org,33x.clipsexhot.net,xx.sexkhongchemoi.com#%#//scriptlet("set-constant", "video.adVast", "")
 d1727 1
 a1727 1
-xoilacj.cc#%#//scriptlet("abort-on-property-read", "adsRedirectPopups")
-diff name:abpvn_content_blocker lines:332 checksum:eb6dc9048e
+xoilaca.cc#%#//scriptlet("abort-on-property-read", "adsRedirectPopups")
+diff name:abpvn_content_blocker lines:370 checksum:3301f4d994
 d2 1
 a2 1
-! Version: 20240907120447047
+! Version: 20240908150541195
 d5 2
 a6 2
-! Last modified: 07 Sep 2024 12:04:47 UTC+7
-! Diff-Path: patches/20240907120447047.patch#abpvn_content_blocker
+! Last modified: 08 Sep 2024 15:05:41 UTC+7
+! Diff-Path: patches/20240908150541195.patch#abpvn_content_blocker
 d41 1
 a41 1
 /cms/Arfcc.min.js$script,third-party,domain=cafef.vn|gamek.vn|genk.vn|kenh14.vn|soha.vn|tuoitre.vn|afamily.vn|thanhnien.vn
@@ -722,20 +797,25 @@ a43 1
 /core/*$script,domain=gamek.vn|genk.vn|kenh14.vn|cafef.vn|thanhnien.vn
 d48 1
 a48 1
-/i.imgur.com/*.gif$domain=keonhacai5.men|phimlongtieng.net|phimdinhcao.com|phimdinhcao.net|xoilacj.cc|vokrugsveta.com|unmanned-ship.org|unfriendcoal.com|plvb.xyz|listnhacai88.com|xoilaczva.tv|xemtivingon.org|phimlongtieng.com|mitomx.cc|rakhois.cc|plcdn.xyz|phimmoi.my|motphimww.com
+/i.imgur.com/*.gif$domain=keonhacai5.men|phimlongtieng.net|phimdinhcao.com|phimdinhcao.net|xoilaca.cc|vokrugsveta.com|unmanned-ship.org|unfriendcoal.com|plvb.xyz|listnhacai88.com|xoilaczva.tv|xemtivingon.org|phimlongtieng.com|mitomx.cc|rakhois.cc|plcdn.xyz|phimmoi.my|motphimww.com
 d79 1
 a79 2
 ||90phut22.xyz^*.gif$image
 ||9767ebd63c.vws.vegacdn.vn^*.gif$image,domain=mn.mediastation.live|home2.mannhan5.pro
-d83 1
-a83 1
+d83 2
+a84 2
 ||animehay.biz^*.gif
+||animet2.net^*.gif
 d95 1
 a95 1
 ||blogger.googleusercontent.com^$image,domain=hhninja6.tv|xem14.com|hhtm.tv|hoathinh3dtq.com|hhh3d.tv|dragonphim.tv|hoathinhtq.site|2phimhay.cc|yanhh3d.com
 d100 1
 a100 1
 ||cdn.lfastcdn.com^*.gif$image,domain=bongdainfox.tv|xoilaczva.tv|vokrugsveta.com
+d106 2
+a107 2
+||chillphimmoizzzz.org/assets/*.gif$image
+||chillphimmoizzzz.org/assets/js/popup.js
 d109 1
 a109 1
 ||chotlo3s.com^*gif
@@ -767,6 +847,10 @@ a170 3
 ||motchillcx.net/banner$image
 ||motphim.my/js/ads.js$script,~third-party
 ||motphimchille.net/ads1.js$script,~third-party
+d177 2
+a178 2
+||phim.vkool5.net/images/ads/$image
+||phim.vkool5.net/js/pov.js$script,~third-party
 a182 2
 ||phimmoichillz.cc/pop$image
 ||phimmoichillz.cc^*.gif$image
@@ -778,6 +862,9 @@ a197 1
 ||quoracdn.net^$image,domain=www.phimlongtieng.net|phimlongtieng.com|www.phimdinhcao.com
 a202 1
 ||server.zmedia.vn/static/$script
+d206 1
+a206 1
+||shope.ee^$popup,domain=chillphimmoizzzz.org|blogtruyenmoi.com|cunghocvui.com|truyensextv.com
 d212 1
 a212 1
 ||staticcdn-sk.mediastation.live^*.gif$image,domain=home2.mannhan5.pro
@@ -799,10 +886,15 @@ a684 4
 2phimhay.cc##.navbar-container + .container
 90phut22.xyz##.group-link:has(a[href*="&utm_"])
 90phut22.xyz##.topnhacai
-d687 2
-a688 2
+d686 7
+a692 7
+ahaphimz.com,phim.vkool5.net,vphims.net##.catfish-ck
 anime47.de###qc_clgt
 animehay.biz###banner-shopee
+animet2.net###menubentrai
+animet2.net##.gnartyx-offads
+animet2.net,animetvn4.com##.gnarty-offads
+animet2.net,animetvn4.com,subnhanh.xyz###fbox-background
 d694 4
 a697 4
 animevietsub.uk###invideo_wrapper
@@ -815,6 +907,11 @@ api.anime3s.com,live4.xoilac34.org,saophim18.net,freeplayervideo.com,abysscdn.co
 d727 1
 a727 1
 boctem.com,anivn.club,movies.vkoolz.com,hoathinhtq.site,xemphimchill.xyz,247phim.cc,vungtv.us,vuaphimmoi8.net,tvhay26.com,dragonphim.tv,hh3d1.xyz,www.phimmoichilla.xyz,motphim.my,hhh3d.tv,hayhaytv.cc,yanhh3d.com,www.ssphim.us###popup-giua-man-hinh
+d742 3
+a744 3
+chillphimmoizzzz.org##.expand-static-banner
+chillphimmoizzzz.org##.preload-banner
+chillphimmoizzzz.org##.static-banner
 d747 2
 a748 2
 chotlo3s.com##div[id^="float"]
@@ -856,7 +953,7 @@ home2.mannhan5.pro##.images_fixed
 home2.mannhan5.pro##.popup
 d868 1
 a868 1
-ketqua01.net,nghean24h.vn,xem.tructiepnba.com,biphim.moe,vidian.online,truyenchu.com.vn,vbfast.xyz,xemtivi4k.com,abtruyen.net,chatboxn.com,xoilacj.cc##a[rel="nofollow"]
+ketqua01.net,nghean24h.vn,xem.tructiepnba.com,biphim.moe,vidian.online,truyenchu.com.vn,vbfast.xyz,xemtivi4k.com,abtruyen.net,chatboxn.com,xoilaca.cc##a[rel="nofollow"]
 d874 1
 a874 1
 kienthuc.net.vn,saostar.vn,bongda24h.vn,cungthi.online,appvn.com,linkerpt.com,antt.vn,v.xemphimviet.xyz,ghienphim.onl,nhadautu.vn,soikeo365.net,nghenhinvietnam.vn,doctailieu.com,vivuphim.info##.ads
@@ -890,6 +987,11 @@ loigiaihay.com##div[style="margin: 10px 0 5px 0; min-height: 250px;"]
 d940 1
 a940 1
 mitomx.cc##.btn-od
+d976 3
+a978 3
+phim.vkool5.net##.box-rating
+phim.vkool5.net,subnhanhvl.tv,subnhanh.onl,subnhanh.my,tructiepdabong5.co,protruyen4.xyz,biphim.moe,dongphim.my###overlay
+phim.vkool5.net,vuonhoalan.net,gunnylau360.net,mythethao.net,kenhgamez.co,phimno4.xyz,gunnymienphi.net,dailyphimz.com,phim33.tv,247phim.cc,movies.vkoolz.com,vungtv.us,vuaphimmoi8.net,ffmovie.online,hayhaytv.cc##.float-ck
 d980 3
 d997 2
 d1002 1
@@ -928,8 +1030,8 @@ a1177 1
 unfriendcoal.com,live10.90phut34.live,noitu.pro##.modal-backdrop.show
 d1179 2
 a1180 2
-unfriendcoal.com,xoilacj.cc##.sub-menu.d-none.d-lg-flex
-unfriendcoal.com,xoilacj.cc,vokrugsveta.com,unmanned-ship.org##.marquee-container
+unfriendcoal.com,xoilaca.cc##.sub-menu.d-none.d-lg-flex
+unfriendcoal.com,xoilaca.cc,vokrugsveta.com,unmanned-ship.org##.marquee-container
 d1191 2
 d1194 4
 a1197 4
@@ -944,8 +1046,8 @@ vebo4.net,live.vebo24.net,live9.vebo26.net,tructiep4.banhkhuc16.net,live4.xoilac
 vebo4.net,live.vebo24.net,live9.vebo26.net,tructiep4.banhkhuc16.net,live4.xoilac34.org##.item-betnow
 d1260 2
 a1261 2
-vokrugsveta.com,unfriendcoal.com,xoilacj.cc,unmanned-ship.org###quangcaopc
-vokrugsveta.com,unfriendcoal.com,xoilacj.cc,unmanned-ship.org,bongdainfox.tv,xoilaczva.tv,xemtv.tvhayhd.tv###wap_bottombanner
+vokrugsveta.com,unfriendcoal.com,xoilaca.cc,unmanned-ship.org###quangcaopc
+vokrugsveta.com,unfriendcoal.com,xoilaca.cc,unmanned-ship.org,bongdainfox.tv,xoilaczva.tv,xemtv.tvhayhd.tv###wap_bottombanner
 d1267 1
 a1267 1
 vsc51.com##a.news__item--action:nth-of-type(2)
@@ -960,26 +1062,26 @@ a1319 1
 xemphimchill.xyz,hhninja6.tv,phimbocn.com,phimhoathinh3d.com,hoathinhtq.site,hhtq7.vip,hhtqvietsub.top,motchillcx.net,hhtrungquoc6.com,hhtqnet.me,animeweb.vip,hh3d1.xyz,hoathinh4k.net,motchilltvzz.biz,hoathinh3dtq.com,hhtm.tv,dragonphim.tv,hhchina.app,motphim.my,phimmoi2024.net,hhh3d.tv,hhtq3d.com,wibu47.com,yanhh3d.com,hhhay.tv###catfish
 d1327 20
 a1346 20
-xoilacj.cc##.banner-link
-xoilacj.cc##.block-catfish.text-center.d-lg-none.d-block
-xoilacj.cc##.container.mt-1
-xoilacj.cc##.container>ul
-xoilacj.cc##.logo-cnt>.d-lg-none.d-block
-xoilacj.cc##.menu-cuoc-one88
-xoilacj.cc##.mt-5.d-lg-none.d-block.pb-2.text-center
-xoilacj.cc##.offer
-xoilacj.cc##.pl-lg-0.col-xl-4
-xoilacj.cc##.row.d-none
-xoilacj.cc##.widget-offers__list
-xoilacj.cc##div.d-lg-none.d-block:nth-of-type(3)
-xoilacj.cc,rakhois.cc##.sk_balloon
-xoilacj.cc,tructiepdabong5.co##.offer__btn
-xoilacj.cc,unmanned-ship.org,unfriendcoal.com,mitomx.cc##div[id^="dnn_"]
-xoilacj.cc,unmanned-ship.org,unfriendcoal.com,vokrugsveta.com,rakhois.cc##.company
-xoilacj.cc,vokrugsveta.com###match-child-1
-xoilacj.cc,vokrugsveta.com,xoilaczva.tv##.match-detail__offer
-xoilacj.cc,xoilaczva.tv##.menu-top-nha-cai
-xoilacj.cc,xoilaczva.tv,vokrugsveta.com##.menu-cuoc-8xbet
+xoilaca.cc##.banner-link
+xoilaca.cc##.block-catfish.text-center.d-lg-none.d-block
+xoilaca.cc##.container.mt-1
+xoilaca.cc##.container>ul
+xoilaca.cc##.logo-cnt>.d-lg-none.d-block
+xoilaca.cc##.menu-cuoc-one88
+xoilaca.cc##.mt-5.d-lg-none.d-block.pb-2.text-center
+xoilaca.cc##.offer
+xoilaca.cc##.pl-lg-0.col-xl-4
+xoilaca.cc##.row.d-none
+xoilaca.cc##.widget-offers__list
+xoilaca.cc##div.d-lg-none.d-block:nth-of-type(3)
+xoilaca.cc,rakhois.cc##.sk_balloon
+xoilaca.cc,tructiepdabong5.co##.offer__btn
+xoilaca.cc,unmanned-ship.org,unfriendcoal.com,mitomx.cc##div[id^="dnn_"]
+xoilaca.cc,unmanned-ship.org,unfriendcoal.com,vokrugsveta.com,rakhois.cc##.company
+xoilaca.cc,vokrugsveta.com###match-child-1
+xoilaca.cc,vokrugsveta.com,xoilaczva.tv##.match-detail__offer
+xoilaca.cc,xoilaczva.tv##.menu-top-nha-cai
+xoilaca.cc,xoilaczva.tv,vokrugsveta.com##.menu-cuoc-8xbet
 d1351 7
 a1357 7
 xoilacz.dev,90phut22.xyz##.btn-bet
@@ -1001,6 +1103,9 @@ d1415 1
 a1415 1
 ||33x.clipsexhot.net/theme/main.isa.js$script,domain=33x.clipsexhot.net
 d1433 1
+d1455 1
+a1455 1
+||quoracdn.net^$image,domain=vlxx.mobi|vlxyz.tube|sieudamtv.dev|sex.chichnhau.me|phevkl.vc
 d1462 2
 a1463 1
 ||sexsub.guru^*.gif$image,domain=sexvn.tuoi69s.com|javhay.my|sexsub.guru|xem.phim18c.org
@@ -1011,10 +1116,16 @@ a1478 1
 ||vnhentaivn.com^*.gif$image
 a1483 1
 ||xmupvl.net^*.gif$image,domain=xmupvl.net|damsextv.pro
+d1498 1
 d1510 2
 d1519 1
 a1519 1
 javhay.my##.v4j-header>center
+d1559 3
+a1561 3
+sex.chichnhau.me##.in.fade.modal-backdrop
+sex.chichnhau.me,sieudamtv.dev###pc-preload-modal
+sex.chichnhau.me,sieudamtv.dev###popup
 d1565 2
 a1566 2
 sexsub.guru##.v4j-watch-1.v4j-content
@@ -1033,20 +1144,22 @@ d1585 2
 a1586 2
 tuoi69zz.xyz,sieukhungz.org###bar_float_r
 tuoi69zz.xyz,sieukhungz.org##.adsTopHome
+a1593 1
+viet69.bio###mp-preload-popup-overlay
 d1607 1
 a1607 1
 vlxyz.tube,xmupvl.net##.xx-ads
 a1612 2
 vnhentaivn.com###catfish
 vnhentaivn.com##.wppopups-whole
-diff name:abpvn_noelemhide lines:107 checksum:af53eedb42
+diff name:abpvn_noelemhide lines:122 checksum:ab44155a44
 d2 1
 a2 1
-! Version: 20240907120447047
+! Version: 20240908150541195
 d5 2
 a6 2
-! Last modified: 07 Sep 2024 12:04:47 UTC+7
-! Diff-Path: patches/20240907120447047.patch#abpvn_noelemhide
+! Last modified: 08 Sep 2024 15:05:41 UTC+7
+! Diff-Path: patches/20240908150541195.patch#abpvn_noelemhide
 d41 1
 a41 1
 /cms/Arfcc.min.js$script,third-party,domain=cafef.vn|gamek.vn|genk.vn|kenh14.vn|soha.vn|tuoitre.vn|afamily.vn|thanhnien.vn
@@ -1055,20 +1168,25 @@ a43 1
 /core/*$script,domain=gamek.vn|genk.vn|kenh14.vn|cafef.vn|thanhnien.vn
 d48 1
 a48 1
-/i.imgur.com/*.gif$domain=keonhacai5.men|phimlongtieng.net|phimdinhcao.com|phimdinhcao.net|xoilacj.cc|vokrugsveta.com|unmanned-ship.org|unfriendcoal.com|plvb.xyz|listnhacai88.com|xoilaczva.tv|xemtivingon.org|phimlongtieng.com|mitomx.cc|rakhois.cc|plcdn.xyz|phimmoi.my|motphimww.com
+/i.imgur.com/*.gif$domain=keonhacai5.men|phimlongtieng.net|phimdinhcao.com|phimdinhcao.net|xoilaca.cc|vokrugsveta.com|unmanned-ship.org|unfriendcoal.com|plvb.xyz|listnhacai88.com|xoilaczva.tv|xemtivingon.org|phimlongtieng.com|mitomx.cc|rakhois.cc|plcdn.xyz|phimmoi.my|motphimww.com
 d79 1
 a79 2
 ||90phut22.xyz^*.gif$image
 ||9767ebd63c.vws.vegacdn.vn^*.gif$image,domain=mn.mediastation.live|home2.mannhan5.pro
-d83 1
-a83 1
+d83 2
+a84 2
 ||animehay.biz^*.gif
+||animet2.net^*.gif
 d95 1
 a95 1
 ||blogger.googleusercontent.com^$image,domain=hhninja6.tv|xem14.com|hhtm.tv|hoathinh3dtq.com|hhh3d.tv|dragonphim.tv|hoathinhtq.site|2phimhay.cc|yanhh3d.com
 d100 1
 a100 1
 ||cdn.lfastcdn.com^*.gif$image,domain=bongdainfox.tv|xoilaczva.tv|vokrugsveta.com
+d106 2
+a107 2
+||chillphimmoizzzz.org/assets/*.gif$image
+||chillphimmoizzzz.org/assets/js/popup.js
 d109 1
 a109 1
 ||chotlo3s.com^*gif
@@ -1100,6 +1218,10 @@ a170 3
 ||motchillcx.net/banner$image
 ||motphim.my/js/ads.js$script,~third-party
 ||motphimchille.net/ads1.js$script,~third-party
+d177 2
+a178 2
+||phim.vkool5.net/images/ads/$image
+||phim.vkool5.net/js/pov.js$script,~third-party
 a182 2
 ||phimmoichillz.cc/pop$image
 ||phimmoichillz.cc^*.gif$image
@@ -1111,6 +1233,9 @@ a197 1
 ||quoracdn.net^$image,domain=www.phimlongtieng.net|phimlongtieng.com|www.phimdinhcao.com
 a202 1
 ||server.zmedia.vn/static/$script
+d206 1
+a206 1
+||shope.ee^$popup,domain=chillphimmoizzzz.org|blogtruyenmoi.com|cunghocvui.com|truyensextv.com
 d212 1
 a212 1
 ||staticcdn-sk.mediastation.live^*.gif$image,domain=home2.mannhan5.pro
@@ -1137,6 +1262,9 @@ d669 1
 a669 1
 ||33x.clipsexhot.net/theme/main.isa.js$script,domain=33x.clipsexhot.net
 d687 1
+d709 1
+a709 1
+||quoracdn.net^$image,domain=vlxx.mobi|vlxyz.tube|sieudamtv.dev|sex.chichnhau.me|phevkl.vc
 d716 2
 a717 1
 ||sexsub.guru^*.gif$image,domain=sexvn.tuoi69s.com|javhay.my|sexsub.guru|xem.phim18c.org
@@ -1147,14 +1275,14 @@ a732 1
 ||vnhentaivn.com^*.gif$image
 a737 1
 ||xmupvl.net^*.gif$image,domain=xmupvl.net|damsextv.pro
-diff name:abpvn_ublock lines:374 checksum:a2e13d2c7b
+diff name:abpvn_ublock lines:412 checksum:266b091fad
 d2 1
 a2 1
-! Version: 20240907120447047
+! Version: 20240908150541195
 d5 2
 a6 2
-! Last modified: 07 Sep 2024 12:04:47 UTC+7
-! Diff-Path: patches/20240907120447047.patch#abpvn_ublock
+! Last modified: 08 Sep 2024 15:05:41 UTC+7
+! Diff-Path: patches/20240908150541195.patch#abpvn_ublock
 d40 1
 a40 1
 /cms/Arfcc.min.js$script,third-party,domain=cafef.vn|gamek.vn|genk.vn|kenh14.vn|soha.vn|tuoitre.vn|afamily.vn|thanhnien.vn
@@ -1163,20 +1291,25 @@ a42 1
 /core/*$script,domain=gamek.vn|genk.vn|kenh14.vn|cafef.vn|thanhnien.vn
 d47 1
 a47 1
-/i.imgur.com/*.gif$domain=keonhacai5.men|phimlongtieng.net|phimdinhcao.com|phimdinhcao.net|xoilacj.cc|vokrugsveta.com|unmanned-ship.org|unfriendcoal.com|plvb.xyz|listnhacai88.com|xoilaczva.tv|xemtivingon.org|phimlongtieng.com|mitomx.cc|rakhois.cc|plcdn.xyz|phimmoi.my|motphimww.com
+/i.imgur.com/*.gif$domain=keonhacai5.men|phimlongtieng.net|phimdinhcao.com|phimdinhcao.net|xoilaca.cc|vokrugsveta.com|unmanned-ship.org|unfriendcoal.com|plvb.xyz|listnhacai88.com|xoilaczva.tv|xemtivingon.org|phimlongtieng.com|mitomx.cc|rakhois.cc|plcdn.xyz|phimmoi.my|motphimww.com
 d78 1
 a78 2
 ||90phut22.xyz^*.gif$image
 ||9767ebd63c.vws.vegacdn.vn^*.gif$image,domain=mn.mediastation.live|home2.mannhan5.pro
-d82 1
-a82 1
+d82 2
+a83 2
 ||animehay.biz^*.gif
+||animet2.net^*.gif
 d94 1
 a94 1
 ||blogger.googleusercontent.com^$image,domain=hhninja6.tv|xem14.com|hhtm.tv|hoathinh3dtq.com|hhh3d.tv|dragonphim.tv|hoathinhtq.site|2phimhay.cc|yanhh3d.com
 d99 1
 a99 1
 ||cdn.lfastcdn.com^*.gif$image,domain=bongdainfox.tv|xoilaczva.tv|vokrugsveta.com
+d105 2
+a106 2
+||chillphimmoizzzz.org/assets/*.gif$image
+||chillphimmoizzzz.org/assets/js/popup.js
 d108 1
 a108 1
 ||chotlo3s.com^*gif
@@ -1208,6 +1341,10 @@ a169 3
 ||motchillcx.net/banner$image
 ||motphim.my/js/ads.js$script,~third-party
 ||motphimchille.net/ads1.js$script,~third-party
+d176 2
+a177 2
+||phim.vkool5.net/images/ads/$image
+||phim.vkool5.net/js/pov.js$script,~third-party
 a181 2
 ||phimmoichillz.cc/pop$image
 ||phimmoichillz.cc^*.gif$image
@@ -1240,10 +1377,15 @@ a681 4
 2phimhay.cc##.navbar-container + .container
 90phut22.xyz##.group-link:has(a[href*="&utm_"])
 90phut22.xyz##.topnhacai
-d684 2
-a685 2
+d683 7
+a689 7
+ahaphimz.com,phim.vkool5.net,vphims.net##.catfish-ck
 anime47.de###qc_clgt
 animehay.biz###banner-shopee
+animet2.net###menubentrai
+animet2.net##.gnartyx-offads
+animet2.net,animetvn4.com##.gnarty-offads
+animet2.net,animetvn4.com,subnhanh.xyz###fbox-background
 d691 4
 a694 4
 animevietsub.uk###invideo_wrapper
@@ -1256,6 +1398,11 @@ api.anime3s.com,live4.xoilac34.org,saophim18.net,freeplayervideo.com,abysscdn.co
 d724 1
 a724 1
 boctem.com,anivn.club,movies.vkoolz.com,hoathinhtq.site,xemphimchill.xyz,247phim.cc,vungtv.us,vuaphimmoi8.net,tvhay26.com,dragonphim.tv,hh3d1.xyz,www.phimmoichilla.xyz,motphim.my,hhh3d.tv,hayhaytv.cc,yanhh3d.com,www.ssphim.us###popup-giua-man-hinh
+d739 3
+a741 3
+chillphimmoizzzz.org##.expand-static-banner
+chillphimmoizzzz.org##.preload-banner
+chillphimmoizzzz.org##.static-banner
 d744 2
 a745 2
 chotlo3s.com##div[id^="float"]
@@ -1297,7 +1444,7 @@ home2.mannhan5.pro##.images_fixed
 home2.mannhan5.pro##.popup
 d865 1
 a865 1
-ketqua01.net,nghean24h.vn,xem.tructiepnba.com,biphim.moe,vidian.online,truyenchu.com.vn,vbfast.xyz,xemtivi4k.com,abtruyen.net,chatboxn.com,xoilacj.cc##a[rel="nofollow"]
+ketqua01.net,nghean24h.vn,xem.tructiepnba.com,biphim.moe,vidian.online,truyenchu.com.vn,vbfast.xyz,xemtivi4k.com,abtruyen.net,chatboxn.com,xoilaca.cc##a[rel="nofollow"]
 d871 1
 a871 1
 kienthuc.net.vn,saostar.vn,bongda24h.vn,cungthi.online,appvn.com,linkerpt.com,antt.vn,v.xemphimviet.xyz,ghienphim.onl,nhadautu.vn,soikeo365.net,nghenhinvietnam.vn,doctailieu.com,vivuphim.info##.ads
@@ -1331,6 +1478,11 @@ loigiaihay.com##div[style="margin: 10px 0 5px 0; min-height: 250px;"]
 d937 1
 a937 1
 mitomx.cc##.btn-od
+d973 3
+a975 3
+phim.vkool5.net##.box-rating
+phim.vkool5.net,subnhanhvl.tv,subnhanh.onl,subnhanh.my,tructiepdabong5.co,protruyen4.xyz,biphim.moe,dongphim.my###overlay
+phim.vkool5.net,vuonhoalan.net,gunnylau360.net,mythethao.net,kenhgamez.co,phimno4.xyz,gunnymienphi.net,dailyphimz.com,phim33.tv,247phim.cc,movies.vkoolz.com,vungtv.us,vuaphimmoi8.net,ffmovie.online,hayhaytv.cc##.float-ck
 d977 3
 d994 2
 d999 1
@@ -1369,8 +1521,8 @@ a1174 1
 unfriendcoal.com,live10.90phut34.live,noitu.pro##.modal-backdrop.show
 d1176 2
 a1177 2
-unfriendcoal.com,xoilacj.cc##.sub-menu.d-none.d-lg-flex
-unfriendcoal.com,xoilacj.cc,vokrugsveta.com,unmanned-ship.org##.marquee-container
+unfriendcoal.com,xoilaca.cc##.sub-menu.d-none.d-lg-flex
+unfriendcoal.com,xoilaca.cc,vokrugsveta.com,unmanned-ship.org##.marquee-container
 d1188 2
 d1191 4
 a1194 4
@@ -1385,8 +1537,8 @@ vebo4.net,live.vebo24.net,live9.vebo26.net,tructiep4.banhkhuc16.net,live4.xoilac
 vebo4.net,live.vebo24.net,live9.vebo26.net,tructiep4.banhkhuc16.net,live4.xoilac34.org##.item-betnow
 d1257 2
 a1258 2
-vokrugsveta.com,unfriendcoal.com,xoilacj.cc,unmanned-ship.org###quangcaopc
-vokrugsveta.com,unfriendcoal.com,xoilacj.cc,unmanned-ship.org,bongdainfox.tv,xoilaczva.tv,xemtv.tvhayhd.tv###wap_bottombanner
+vokrugsveta.com,unfriendcoal.com,xoilaca.cc,unmanned-ship.org###quangcaopc
+vokrugsveta.com,unfriendcoal.com,xoilaca.cc,unmanned-ship.org,bongdainfox.tv,xoilaczva.tv,xemtv.tvhayhd.tv###wap_bottombanner
 d1264 1
 a1264 1
 vsc51.com##a.news__item--action:nth-of-type(2)
@@ -1401,26 +1553,26 @@ a1316 1
 xemphimchill.xyz,hhninja6.tv,phimbocn.com,phimhoathinh3d.com,hoathinhtq.site,hhtq7.vip,hhtqvietsub.top,motchillcx.net,hhtrungquoc6.com,hhtqnet.me,animeweb.vip,hh3d1.xyz,hoathinh4k.net,motchilltvzz.biz,hoathinh3dtq.com,hhtm.tv,dragonphim.tv,hhchina.app,motphim.my,phimmoi2024.net,hhh3d.tv,hhtq3d.com,wibu47.com,yanhh3d.com,hhhay.tv###catfish
 d1324 20
 a1343 20
-xoilacj.cc##.banner-link
-xoilacj.cc##.block-catfish.text-center.d-lg-none.d-block
-xoilacj.cc##.container.mt-1
-xoilacj.cc##.container>ul
-xoilacj.cc##.logo-cnt>.d-lg-none.d-block
-xoilacj.cc##.menu-cuoc-one88
-xoilacj.cc##.mt-5.d-lg-none.d-block.pb-2.text-center
-xoilacj.cc##.offer
-xoilacj.cc##.pl-lg-0.col-xl-4
-xoilacj.cc##.row.d-none
-xoilacj.cc##.widget-offers__list
-xoilacj.cc##div.d-lg-none.d-block:nth-of-type(3)
-xoilacj.cc,rakhois.cc##.sk_balloon
-xoilacj.cc,tructiepdabong5.co##.offer__btn
-xoilacj.cc,unmanned-ship.org,unfriendcoal.com,mitomx.cc##div[id^="dnn_"]
-xoilacj.cc,unmanned-ship.org,unfriendcoal.com,vokrugsveta.com,rakhois.cc##.company
-xoilacj.cc,vokrugsveta.com###match-child-1
-xoilacj.cc,vokrugsveta.com,xoilaczva.tv##.match-detail__offer
-xoilacj.cc,xoilaczva.tv##.menu-top-nha-cai
-xoilacj.cc,xoilaczva.tv,vokrugsveta.com##.menu-cuoc-8xbet
+xoilaca.cc##.banner-link
+xoilaca.cc##.block-catfish.text-center.d-lg-none.d-block
+xoilaca.cc##.container.mt-1
+xoilaca.cc##.container>ul
+xoilaca.cc##.logo-cnt>.d-lg-none.d-block
+xoilaca.cc##.menu-cuoc-one88
+xoilaca.cc##.mt-5.d-lg-none.d-block.pb-2.text-center
+xoilaca.cc##.offer
+xoilaca.cc##.pl-lg-0.col-xl-4
+xoilaca.cc##.row.d-none
+xoilaca.cc##.widget-offers__list
+xoilaca.cc##div.d-lg-none.d-block:nth-of-type(3)
+xoilaca.cc,rakhois.cc##.sk_balloon
+xoilaca.cc,tructiepdabong5.co##.offer__btn
+xoilaca.cc,unmanned-ship.org,unfriendcoal.com,mitomx.cc##div[id^="dnn_"]
+xoilaca.cc,unmanned-ship.org,unfriendcoal.com,vokrugsveta.com,rakhois.cc##.company
+xoilaca.cc,vokrugsveta.com###match-child-1
+xoilaca.cc,vokrugsveta.com,xoilaczva.tv##.match-detail__offer
+xoilaca.cc,xoilaczva.tv##.menu-top-nha-cai
+xoilaca.cc,xoilaczva.tv,vokrugsveta.com##.menu-cuoc-8xbet
 d1348 7
 a1354 7
 xoilacz.dev,90phut22.xyz##.btn-bet
@@ -1442,6 +1594,9 @@ d1410 1
 a1410 1
 ||33x.clipsexhot.net/theme/main.isa.js$script,domain=33x.clipsexhot.net
 d1428 1
+d1450 1
+a1450 1
+||quoracdn.net^$image,domain=vlxx.mobi|vlxyz.tube|sieudamtv.dev|sex.chichnhau.me|phevkl.vc
 d1457 2
 a1458 1
 ||sexsub.guru^*.gif$image,domain=sexvn.tuoi69s.com|javhay.my|sexsub.guru|xem.phim18c.org
@@ -1452,10 +1607,16 @@ a1473 1
 ||vnhentaivn.com^*.gif$image
 a1478 1
 ||xmupvl.net^*.gif$image,domain=xmupvl.net|damsextv.pro
+d1493 1
 d1505 2
 d1514 1
 a1514 1
 javhay.my##.v4j-header>center
+d1554 3
+a1556 3
+sex.chichnhau.me##.in.fade.modal-backdrop
+sex.chichnhau.me,sieudamtv.dev###pc-preload-modal
+sex.chichnhau.me,sieudamtv.dev###popup
 d1560 2
 a1561 2
 sexsub.guru##.v4j-watch-1.v4j-content
@@ -1474,6 +1635,8 @@ d1580 2
 a1581 2
 tuoi69zz.xyz,sieukhungz.org###bar_float_r
 tuoi69zz.xyz,sieukhungz.org##.adsTopHome
+a1588 1
+viet69.bio###mp-preload-popup-overlay
 d1602 1
 a1602 1
 vlxyz.tube,xmupvl.net##.xx-ads
@@ -1484,12 +1647,12 @@ d1634 2
 a1635 2
 animehay.biz##+js(acs, Number, ;break;case)
 animehay.biz##+js(acs, document.addEventListener, window.open)
-d1639 2
-a1640 2
+d1639 5
+a1643 5
 cafef.vn,gamek.vn,genk.vn,kenh14.vn,soha.vn,tuoitre.vn,afamily.vn,thanhnien.vn##+js(acs, Object.defineProperty, ADMStorageFileCDN)
 cafef.vn,gamek.vn,genk.vn,kenh14.vn,soha.vn,tuoitre.vn,afamily.vn,thanhnien.vn##+js(set, ADMStorageFileCDN, noopFunc)
-d1643 1
-a1643 1
+chillphimmoizzzz.org##body:remove-attr(data-pop1)
+chillphimmoizzzz.org##body:remove-attr(data-pop2)
 chotlo3s.com###header:style(margin-top: 0 !important)
 d1653 1
 a1653 1
@@ -1505,11 +1668,14 @@ live2.thapcam24.net,blog.abit.vn##.show.fade
 live2.thapcam24.net,blog.abit.vn,xem20.gavang1.net,xem19.gavang1.net##html:style(overflow: auto !important)
 d1673 2
 a1674 2
-mv.phimmoiaz.cc,dood.pm,ytstv.me,animet1.net,anh.moe,vnhentaivn.com,maclife.io,javfc2.net,hoctot.hocmai.vn,cdn2.blueskychilling.online,ohaha79xxx.site,fastscans.net##+js(aopr, open)
-nettruyenha.com,clipss.viet69net.com##+js(acs, Promise, break;case)
+mv.phimmoiaz.cc,dood.pm,ytstv.me,animet2.net,anh.moe,vnhentaivn.com,maclife.io,javfc2.net,hoctot.hocmai.vn,cdn2.blueskychilling.online,ohaha79xxx.site,fastscans.net##+js(aopr, open)
+nettruyenha.com,viet69.bio##+js(acs, Promise, break;case)
 d1676 1
 a1676 1
 phimgichill.net,hhhay.tv,hh3dhay.pro,truyengihotnha.com,truyengihotnha.net,3dchill.shop,animevietsub.uk##+js(acs, eval, $._Eu)
+d1691 1
+a1691 1
+sex.chichnhau.me##+js(acs, $, pop)
 d1694 1
 a1694 1
 tiemsachhay.net##+js(acs, jQuery, PopUnder)
@@ -1521,4 +1687,4 @@ a1711 1
 web.motsex.net,vuasex.club,phimsexviet.io,phimsexvietnam.app,mobile.clipsex.xxx,gm.phimsexnhanh.tv,clipsex.cam,mobi.ditnhau.cc,phim.sexhayvl.org,33x.clipsexhot.net,xx.sexkhongchemoi.com##+js(set, video.adVast, '')
 d1728 1
 a1728 1
-xoilacj.cc##+js(aopr, adsRedirectPopups)
+xoilaca.cc##+js(aopr, adsRedirectPopups)
