@@ -15,8 +15,8 @@
 // @grant       GM_registerMenuCommand
 // @include     http://*
 // @include     https://*
-// @version     2.3.27
-// @change-log  Add www.hdvietnam.me url redirection
+// @version     2.3.28
+// @change-log  Add anonyviet.com redirection remove
 // @run-at      document-end
 // ==/UserScript==
 /* String Prototype */
@@ -462,6 +462,10 @@ var fixSite = {
                 url: 'www.hdvietnam.',
                 selector: 'a[href*="/diendan/chuyenlink.php?url="]',
                 replace: /http(s?):\/\/www.hdvietnam\.(com|me)\/diendan\/chuyenlink\.php\?url=/,
+            },
+            {
+                url: 'anonyviet.com',
+                replace: 'https://anonyviet.com/tieptucdentrangmoi/?url='
             }
         ];
         configs.forEach(function (config) {
