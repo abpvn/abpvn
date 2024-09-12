@@ -1,9 +1,9 @@
 [Adblock Plus 2.0]
-! Version: 20240911180516900
+! Version: 20240912092340826
 ! id: D4028CDD-3D39-4624-ACC7-8140F4EC3888
 ! Title: ABPVN List
-! Last modified: 11 Sep 2024 18:05:16 UTC+7
-! Diff-Path: patches/20240911180516900.patch#abpvn
+! Last modified: 12 Sep 2024 09:23:40 UTC+7
+! Diff-Path: patches/20240912092340826.patch#abpvn
 ! Diff-Expires: 60 minutes
 ! Expires: 1 days (update frequency)
 !
@@ -153,7 +153,7 @@ $popup,domain=player-cdn.com|freeplayervideo.com|abysscdn.com|geoip.redirect-ads
 ||image-eu-na-tsetsafndc.90phut.click/90link/Cp9OssK.gif$image,domain=live10.90phut34.live
 ||image.cdend.com^*.gif$image,domain=phimmoi.club
 ||images.tuyensinh247.com^*.gif$third-party
-||img.upanh.tv^*.gif$image,domain=phim24h.mobi|phimtuoitho.tv
+||img.upanh.tv^*.gif$image,domain=phim24h.mobi|phimtuoitho.site
 ||imgyn.imageshh.com^*.gif$image,domain=mphim14.org
 ||kenhgamez.co^*.gif
 ||kenhtin.net/upload/images/banner-
@@ -834,8 +834,6 @@ gocmod.com###bannerContainer2
 gocmod.com###sp-wrapper-hovering-format
 gocmod.com##.wam-banner
 gocmod.com##center:has(.adsbygoogle)
-gocphimz.org###mobileCatfishz
-gocphimz.org##.code-block
 gplay.vn##.background-blur
 gplay.vn##.qc-benphai
 gplay.vn##.qc-bentrai
@@ -938,6 +936,8 @@ loigiaihay.com##div[style="margin: 10px 0 5px 0; min-height: 250px;"]
 lucloi.vn##.ads_shortcode
 luotphim1.net,cdnwp.icu,mephim.ink###myModal
 luotphim1.net,cdnwp.icu,mephim.ink##div[id^="adsphim-"]
+luotphimi.com###mobileCatfishz
+luotphimi.com##.code-block
 m.baomoi.com##.bm_B>div
 m.baomoi.com##div.bm_Ii
 maclife.io##.entry>a[target="_blank"]
@@ -1043,7 +1043,7 @@ phimno4.xyz##.block.ad
 phimreview.org##.banner-sticky-footer-wrapper
 phimss.net##.ads-pc
 phimss.net##.ads-sp
-phimtuoitho.tv,tvhayw.org##.catfish-bottom
+phimtuoitho.site,tvhayw.org##.catfish-bottom
 phimvietsub.pro,api.anime3s.com,subnhanh.xyz##.t_logo
 phimvietsub.pro,subnhanh.xyz##.sticky_bottom
 phimvuihd.org,hh3dhay.life,saophim18.net,phim24h.mobi,ffmovie.online,xem14.com,hh3dhay.pro,vutruphim.tv,3dchill.shop##.float-ck-center-lt
@@ -1316,7 +1316,7 @@ www.saostar.vn##.align-items-center.justify-content-between.d-flex.text-center.b
 www.saostar.vn##.d-flex.justify-content-between>div>div.d-flex.justify-content-around.mt-4
 www.saostar.vn##.top-ads-16x9
 www.thuocbietduoc.com.vn###neo-right-ads
-www.toptruyenqq.pro,doctruyen3qtv.pro,anime47.de##.advertisement
+www.toptruyenviet.info,doctruyen3qtv.pro,anime47.de##.advertisement
 www.vietjack.com###download_appnew
 www.vietjack.com##.box-most-viewed.box-course.box-slide
 www.vietjack.com##div.ads_ads
@@ -1469,7 +1469,7 @@ $third-party,script,domain=sexdiaryx.one
 ||play.stream4.me/jwplayer/vast.js$script,domain=play.stream4.me
 ||qcvip.xyz/popup$script,domain=phevkl.vc
 ||quatvn.store/ads.js$script
-||quoracdn.net^$image,domain=vlxx.mx|vlxyz.tube|sex.sieudamtv.biz|sex.chichnhau.me|phevkl.vc
+||quoracdn.net^$image,domain=vlxx.mx|vlxyz.tube|sex.sieudamtv.biz|sex.chichnhau.me|phevkl.vc|viet69.cx
 ||rphang.online^*.gif
 ||sayhentai.one/assets/js/ads.js
 ||sayhentai.one/storage/images/banner/$image
@@ -1548,8 +1548,8 @@ lxmanga.life##.ads-wrapper
 m.phimsexdacbiet.pro,sexgaidep69.pro,sexabc.us##.quangcaomobile
 ngaytho.me##.body_wrapper1
 nhentaivn.online###popup_fipup-overlay
-phevkl.vc###preload
 phevkl.vc##.separator
+phevkl.vc,viet69.cx###preload
 phim18hd.sex##.cash-fish
 phim18hd.sex##.cash-fish-pc
 phim18hd.sex##.preload-pc
