@@ -1,9 +1,9 @@
 [Adblock Plus 2.0]
-! Version: 20240916092902081
+! Version: 20240916150641818
 ! id: D4028CDD-3D39-4624-ACC7-8140F4EC3888
 ! Title: ABPVN List
-! Last modified: 16 Sep 2024 09:29:02 UTC+7
-! Diff-Path: patches/20240916092902081.patch#abpvn_ublock
+! Last modified: 16 Sep 2024 15:06:41 UTC+7
+! Diff-Path: patches/20240916150641818.patch#abpvn_ublock
 ! Diff-Expires: 60 minutes
 ! Expires: 1 days (update frequency)
 !
@@ -171,7 +171,6 @@
 ||mocfun.net/uploads/banners/
 ||motchillp.net/banner$image
 ||motphim.at/js/ads.js$script,~third-party
-||motphimchille.net/ads1.js$script,~third-party
 ||nettruyenviet.com/assets/js/pop$script
 ||nettruyenww.com/public/assets/js/pop$script,~third-party
 ||nhadatvang.vn/images/$domain=muabanraovat.com
@@ -215,7 +214,7 @@
 ||static.cdnno.com/storage/topbox/*.webp$image,domain=metruyencv.com
 ||static.ybox.vn^*.gif$domain=ybox.vn
 ||staticcdn-sk.mediastation.live^*.gif$image,domain=home2.mannhan5.pro
-||stc02bc54661548.cloud.anycastapnic.com^*gif$image,domain=xem19.gavang1.net|ws-client.gavang.tech|xem20.gavang1.net|gavang3.link
+||stc02bc54661548.cloud.anycastapnic.com^*gif$image,domain=xem19.gavang1.net|xem20.gavang1.net|gavang3.link
 ||storage.fshare.vn/images/$third-party
 ||subnhanh.my/js/ads_xx.js
 ||subnhanh.my/js/ads_xx.min.js$script,~third-party
@@ -792,12 +791,11 @@ download.vn##div[id^="adsbg"]
 dubaotiente.io##.ad-pin-right-bottom
 ebookbkmt.com##.top-right
 ephoto360.com##.line-ads
-ephoto360.com,thiepmung.com,ophimhd.vip,xemphimchill.xyz,phimmoi.my,247phim.cc,hotphimvn.cc,www.phimmoichilla.xyz,motphimchill.online,phimmoi2024.net,hayhaytv.cc,www.ssphim.us,motphimchille.net##.ad-container
+ephoto360.com,thiepmung.com,ophimhd.vip,xemphimchill.xyz,phimmoi.my,247phim.cc,hotphimvn.cc,www.phimmoichilla.xyz,motphimchill.online,phimmoi2024.net,hayhaytv.cc,www.ssphim.us##.ad-container
 eva.vn##.banrpstn
 fastscans.net##.banner-shopee
 fastscans.net##a[href^="https://shope.ee"]
 fdcdn.xyz##.jw-button-image
-ffmovie.online##[href^="https://www.toprevenuegate.com/q7rbxxz1v"]
 file.gocmod.com##div.ad
 forum.gocmod.com##.ad-manager-forum-list-bottom
 forum.gocmod.com##.ad-manager-forum-list-top
@@ -997,7 +995,7 @@ ophimhd.vip##.uniad-player + div[style]
 phapluatplus.vn##div[style="text-align:center;margin-top:0px;margin-bottom:0px;"]
 phim.vkool5.net##.box-rating
 phim.vkool5.net,subnhanhvl.tv,subnhanh.onl,subnhanh.my,tructiepdabong5.co,protruyen4.xyz,biphim.moe,dongphim.my,phimbet.biz###overlay
-phim.vkool5.net,vuonhoalan.net,gunnylau360.net,mythethao.net,kenhgamez.co,phimno4.xyz,gunnymienphi.net,dailyphimz.com,phim33.tv,247phim.cc,movies.vkoolz.com,vungtv.us,vuaphimmoi9.net,ffmovie.online,hayhaytv.cc##.float-ck
+phim.vkool5.net,vuonhoalan.net,gunnylau360.net,mythethao.net,kenhgamez.co,phimno4.xyz,gunnymienphi.net,dailyphimz.com,phim33.tv,247phim.cc,movies.vkoolz.com,vungtv.us,vuaphimmoi9.net,hayhaytv.cc##.float-ck
 phim1080.in##.ff-banner
 phim202.com###itro_opaco
 phim33.tv##div[data-value="1"]
@@ -1044,7 +1042,7 @@ phimss.net##.ads-sp
 phimtuoitho.site,tvhayw.org##.catfish-bottom
 phimvietsub.pro,api.anime3s.com,subnhanh.xyz##.t_logo
 phimvietsub.pro,subnhanh.xyz##.sticky_bottom
-phimvuihd.org,hh3dhay.life,zphim18.net,phim24h.mobi,ffmovie.online,xem14.com,hh3dhay.pro,vutruphim.tv,3dchill.shop##.float-ck-center-lt
+phimvuihd.org,hh3dhay.life,zphim18.net,phim24h.mobi,xem14.com,hh3dhay.pro,vutruphim.tv,3dchill.shop##.float-ck-center-lt
 phimyeuthichb.com##.sticky-footer
 phunumoi.net.vn,nhipcaudautu.vn##div[id^="ads_"]
 phuongtrinhhoahoc.com##.shadow-card + .mt-2
@@ -1294,8 +1292,6 @@ web1s.com###link-view>center:nth-of-type(1)
 webhoctienganh.com##.button-action-float-banner
 webthethao.vn##.wrapper-adv
 webtretho.com##.wtt-ads
-ws-client.gavang.tech##.bg-black.w-full.items-center>.relative.px-2.flex
-ws-client.gavang.tech##.items-center.justify-center.flex.w-full.top-\[47px\].fixed
 www.24h.com.vn##.col:has(span.tmPst.clrGr)
 www.clbgamesvn.com##.bannerBox
 www.clbgamesvn.com##.footerBanner
@@ -1661,7 +1657,6 @@ cunghocvui.com##+js(acs, document.addEventListener, opened_window_shoppe)
 dood.pm##+js(aopw, DoodPop)
 dualeotruyenceo.com,m.blogtruyenmoi.com##+js(acs, document.addEventListener, popunder)
 femax20.com,motchilltv.vc##+js(addEventListener-defuser, click, open)
-ffmovie.online##+js(acs, document.addEventListener, popup)
 freeplayervideo.com,abysscdn.com,player-cdn.com,geoip.redirect-ads.com,playhydrax.com##+js(acs, document.getElementById, openPop)
 freeplayervideo.com,abysscdn.com,player-cdn.com,geoip.redirect-ads.com,playhydrax.com##+js(set, open, noopFunc)
 full.cliphot69.live##+js(set, a_vid, 0)
