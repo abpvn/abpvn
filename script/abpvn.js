@@ -15,8 +15,8 @@
 // @grant       GM_registerMenuCommand
 // @include     http://*
 // @include     https://*
-// @version     2.3.28
-// @change-log  Add anonyviet.com redirection remove
+// @version     2.3.29
+// @change-log  Fix game24h.vn iframe game load + remove outdate function
 // @run-at      document-end
 // ==/UserScript==
 /* String Prototype */
@@ -318,31 +318,6 @@ var fixSite = {
             Logger.error(e);
         }
     },
-    topphimhd_info: function () {
-        if (this.url.startWith('http://lb.topphimhd.info')) {
-            var adSourceEl = document.querySelector('[data-ads=""]');
-            if (adSourceEl) {
-                adSourceEl.remove();
-                Logger.log("Removed ads source");
-                ABPVN.cTitle();
-            }
-        }
-    },
-    luotphim: function () {
-        if (this.url.startWith('https://luotphim.top/xem-phim') || this.url.startWith('https://luotphim.top/phim-') || this.url.startWith("https://luotphim.fun/xem-phim") || this.url.startWith("https://luotphim.fun/phim-")) {
-            var clickCount = 1;
-            var interval = setInterval(() => {
-                if (document.querySelector('.btn-close-preroll') && document.querySelector('#fakeplayer').style.display != 'none') {
-                    Logger.log("Click to by pass preroll: " + clickCount);
-                    clickCount++;
-                    document.querySelector('.btn-close-preroll').click();
-                } else {
-                    clearInterval(interval);
-                    Logger.log("By passed preroll");
-                }
-            }, 100);
-        }
-    },
     ios_codevn_net: function () {
         if (this.url.match(/ios\.codevn\.net/)) {
             const styleTag = document.createElement('style');
@@ -351,22 +326,8 @@ var fixSite = {
             ABPVN.cTitle();
         }
     },
-    saostar_vn: function () {
-        if (this.url.startWith('https://www.saostar.vn/')) {
-            const styleTag = document.createElement('style');
-            styleTag.innerHTML = 'header.bg-white {margin-top: 0 !important}.layout.pt-mobi-top {padding-top: 0 !important}';
-            document.head.appendChild(styleTag);
-            ABPVN.cTitle();
-        }
-    },
-    mephimtv_cc: function () {
-        if (this.url.startWith('https://mephimtv.cc')) {
-            ABPVN.cTitle();
-            setTimeout(() => document.body.classList.remove('compensate-for-scrollbar'), 100);
-        }
-    },
-    linkneverdie_net: function () {
-        if (this.url.startWith('https://linkneverdie.net')) {
+    linkneverdie: function () {
+        if (this.url.match(/linkneverdie/)) {
             const superHTML = $.prototype.html;
             $.prototype.html = function (arguments) {
                 if (this.selector === 'body' && (arguments === '' || arguments.includes('huong-dan'))) {
@@ -385,6 +346,15 @@ var fixSite = {
                 var realurl = aesCrypto.decrypt(convertstr($.urlParam('o')), convertstr('root'));
                 location.href = realurl;
             });
+        }
+    },
+    game24h_vn: function() {
+        if (this.url.startWith('https://game24h.vn')) {
+          if (typeof addGameIframe === 'function') {
+            ABPVN.cTitle();
+            document.querySelector('#playBtn').style.display = 'none';
+            addGameIframe();
+          }
         }
     },
     removeRedir: function (config) {
@@ -478,12 +448,10 @@ var fixSite = {
             this.removeRedirect();
         }
         this.antiAdblockRemover();
-        this.topphimhd_info();
-        this.luotphim();
         this.ios_codevn_net();
-        this.saostar_vn();
-        this.mephimtv_cc();
+        this.linkneverdie();
         this.redirect_dafontvn_com();
+        this.game24h_vn();
     }
 };
 //Ad blocker script
