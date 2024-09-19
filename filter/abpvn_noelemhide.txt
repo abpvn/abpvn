@@ -1,9 +1,9 @@
 [Adblock Plus 2.0]
-! Version: 20240918092407041
+! Version: 20240919092537968
 ! id: D4028CDD-3D39-4624-ACC7-8140F4EC3888
 ! Title: ABPVN List
-! Last modified: 18 Sep 2024 09:24:07 UTC+7
-! Diff-Path: patches/20240918092407041.patch#abpvn_noelemhide
+! Last modified: 19 Sep 2024 09:25:37 UTC+7
+! Diff-Path: patches/20240919092537968.patch#abpvn_noelemhide
 ! Diff-Expires: 60 minutes
 ! Expires: 1 days (update frequency)
 !
@@ -45,7 +45,7 @@ $popup,domain=player-cdn.com|freeplayervideo.com|abysscdn.com|geoip.redirect-ads
 /disable-devtool.min.js$script
 /giadinhonline.vn/files/qc/*
 /i.imgur.com$domain=xemphimchill.xyz
-/i.imgur.com/*.gif$domain=keonhacai5.men|phimlongtieng.net|www.phimdinhcaoz.com|phimdinhcao.net|xoilacr.cc|cloudpeakenergy.com|unmanned-ship.org|cakhiar.cc|plvb.xyz|listnhacai88.com|xoilaczvb.tv|xemtivingon.org|phimlongtieng.com|mitomr.cc|houseofbeautyworld.com|plcdn.xyz|phimmoi.my|motphimww.net
+/i.imgur.com/*.gif$domain=keonhacai5.men|phimlongtieng.net|www.phimdinhcaoz.com|phimdinhcao.net|xoilacr.cc|90phutr.cc|unmanned-ship.org|cakhiar.cc|plvb.xyz|listnhacai88.com|xoilaczvb.tv|xemtivingon.org|phimlongtieng.com|mitomr.cc|houseofbeautyworld.com|plcdn.xyz|phimmoi.my|motphimww.net
 /mmo/*$xmlhttprequest,image,domain=vuighe3.com
 /newchill/*gif$image
 /polyad.
@@ -96,7 +96,7 @@ $popup,domain=player-cdn.com|freeplayervideo.com|abysscdn.com|geoip.redirect-ads
 ||bp.blogspot.com$image,domain=timdaily.vn|xemtivi4k.com
 ||bp.blogspot.com/*banner$image,domain=~aowvn.org|~umu.pink
 ||cdn-data.gtvplus.vn/banners/$image,domain=gametv.vn
-||cdn.lfastcdn.com^*.gif$image,domain=bongdainfox.tv|xoilaczvb.tv|cloudpeakenergy.com
+||cdn.lfastcdn.com^*.gif$image,domain=bongdainfox.tv|xoilaczvb.tv|90phutr.cc
 ||cdn.phimhaytv.info/images/video888.mp4$domain=phimhaytv.info
 ||cdn.phimhaytv.info^*.gif$domain=phimhaytv.info
 ||cdn.thichxemphim1.net/wp-content/themes/halimmovies-child/jscm.min.js$domain=thichxemphim1.net
@@ -626,6 +626,7 @@ $popup,domain=player-cdn.com|freeplayervideo.com|abysscdn.com|geoip.redirect-ads
 ||vidcpm.com^
 ||video.your-notice.com^
 ||vipads.live^
+||vlitag.com^
 ||wafmedia6.com^
 ||waisheph.com^
 ||waust.at^$script
@@ -653,7 +654,7 @@ $popup,domain=player-cdn.com|freeplayervideo.com|abysscdn.com|geoip.redirect-ads
 !---------------ABPVN White List--------------------
 @@/favicon.ico
 @@/wp-content/plugins/advanced-ads/admin/assets/js/advertisement.js$script,~third-party
-@@||4.bp.blogspot.com/-Faf4F4bEgfs/X6bgItBh8RI/AAAAAAAADr4/TI07qDfVYWk4cPdNAj8Mn5Q_yVzuG2cJgCK4BGAYYCw/s1600/gvnvh18.png$image,domain=gvnvh18.com
+@@||4.bp.blogspot.com/-Faf4F4bEgfs/X6bgItBh8RI/AAAAAAAADr4/TI07qDfVYWk4cPdNAj8Mn5Q_yVzuG2cJgCK4BGAYYCw/s1600/gvnvh18.png$image,domain=www.gvnvh.net
 @@||cdnjs.cloudflare.com/ajax/libs/videojs-contrib-ads/6.0.0/videojs-contrib-ads.js$script,domain=sctvonline.vn
 @@||contextual.media.net/dmedianet.js$domain=azrom.net
 @@||googleads.g.doubleclick.net/pagead/$domain=cungthi.online
@@ -676,7 +677,7 @@ $third-party,script,domain=sexdiaryx.one
 ||3x.clipsexhot.net/theme/main.isa.js$script,domain=3x.clipsexhot.net
 ||ads.6789live.com^
 ||avhduwvirosl.com^
-||blogger.googleusercontent.com^*.gif$image,domain=gvnvh18.com
+||blogger.googleusercontent.com^*.gif$image,domain=www.gvnvh.net
 ||blurbreimbursetrombone.com^
 ||cdn-01.w3img.com^*.gif$image,domain=javhd.tech|sexvietco.net|quat69.pro|vlxxai.net|javhd.social|sexsoc.info
 ||cdn.adxcontent.com^
@@ -688,7 +689,7 @@ $third-party,script,domain=sexdiaryx.one
 ||clobberprocurertightwad.com^
 ||cloufdlare.com/ads/vn1.html$subdocument,domain=vl.phe.to
 ||d3mzokty951c5w.cloudfront.net^
-||demo123.info/*ads/$image,domain=xem.sex-sub.com
+||demo123.info/*ads/$image,domain=phim.sexxsub.pro
 ||discordapp.$image,domain=phym18.lol|phim18vip.vip|avvietsub.info|phimsexsub.xyz
 ||hentaihvn.tv/qx/$subdocument
 ||hentaivn.blog^*.gif$image
@@ -720,8 +721,8 @@ $third-party,script,domain=sexdiaryx.one
 ||sexdiaryx.one$csp=script-src 'self' 'unsafe-eval'
 ||sexhd88.live/wp-content/themes/vidorev/img/jun881.png$image
 ||sexhd88.live^*.gif$image
-||sexsub.pro^*.gif$image,domain=tuoi69.my|javhay.my|sexsub.pro|xem.phim18c.org
-||sexsub.pro^*.gif$image,domain=vietxxx.club
+||sexsub.onl^*.gif$image,domain=tuoi69.my|javhay.my|sexsub.onl|xem.phim18c.org
+||sexsub.onl^*.gif$image,domain=vietxxx.club
 ||sexviet1.me^*.gif$image
 ||sieukhungz.org^*.gif$image
 ||spankbangdl.com/files/*.gif$image,domain=avvietsub.info
