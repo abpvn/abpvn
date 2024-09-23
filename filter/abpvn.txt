@@ -1,9 +1,9 @@
 [Adblock Plus 2.0]
-! Version: 20240923092728867
+! Version: 20240923120513082
 ! id: D4028CDD-3D39-4624-ACC7-8140F4EC3888
 ! Title: ABPVN List
-! Last modified: 23 Sep 2024 09:27:28 UTC+7
-! Diff-Path: patches/20240923092728867.patch#abpvn
+! Last modified: 23 Sep 2024 12:05:13 UTC+7
+! Diff-Path: patches/20240923120513082.patch#abpvn
 ! Diff-Expires: 60 minutes
 ! Expires: 1 days (update frequency)
 !
@@ -290,6 +290,7 @@ $popup,domain=player-cdn.com|freeplayervideo.com|abysscdn.com|geoip.redirect-ads
 ||2158novffp.com^
 ||a.vdo.ai^
 ||acdcdn.com^
+||acdn.adnxs-simple.com^
 ||ad-delivery.net^
 ||ad.doubleclick.net^$popup
 ||ad.vidverto.io^
@@ -658,6 +659,7 @@ $popup,domain=player-cdn.com|freeplayervideo.com|abysscdn.com|geoip.redirect-ads
 ||zemanta.com^
 ||zijaipse.com^
 !---------------Element Hiding--------------
+###_AM_POPUP_FRAME
 ###ads-preload
 ###banner-top
 ###floating_ads_bottom_textcss_container
@@ -1032,6 +1034,7 @@ noitu.pro##.show.modal
 olug.vn###popup_center
 ophimhd.vip###ad-container
 ophimhd.vip##.uniad-player + div[style]
+outlook.live.com##.LBktY>.GssDD
 phapluatplus.baophapluat.vn##div[style="text-align:center;margin-top:0px;margin-bottom:0px;"]
 phim.vkool6.net##.box-rating
 phim.vkool6.net,subnhanhvl.vip,subnhanh.win,subnhanh.gg,tructiepdabong5.co,protruyen4.xyz,biphim.mx,dongphim.mx,phimbet.biz###overlay
@@ -1244,7 +1247,6 @@ vebo4.net,live.vebo24.net,live2.vebo28.net,tructiep2.banhkhuc17.net,live4.xoilac
 vebo4.net,live.vebo24.net,live2.vebo28.net,tructiep2.banhkhuc17.net,live4.xoilac34.org##.item-betnow
 vectorx.top###video_player ~ div[id]
 vesotantai.com##.item-qc
-vicdn.vip###_AM_POPUP_FRAME
 videophapluat.baophapluat.vn##[class^="sticky-top"]
 videophapluat.baophapluat.vn##[href*="vietcombank.com.vn"]
 vidian.online###closeAds
