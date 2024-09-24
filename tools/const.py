@@ -13,7 +13,7 @@ class Const():
         'clear.hd', 'blqPr.nwsItHm', 'text-center.adsense', '.btn', '.show',
         'show.fade', 'parent.special', '.patch', 'li.special.parent',
         'relative.px-2.flex', '2.bottom-0.fixed',
-        '2Flh3.googleusercontent.com'
+        '2Flh3.googleusercontent.com', 'div.ad', 'd-none.p-0.company.flex-1.table'
     ]
     SKIP_CHECK_REDIRECT = [
         'amazonaws.com', 'blogspot.com', 'blogtruyen.com', 'fptplay.net',
