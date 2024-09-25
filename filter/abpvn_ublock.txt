@@ -1,9 +1,9 @@
 [Adblock Plus 2.0]
-! Version: 20240925150641062
+! Version: 20240925203803692
 ! id: D4028CDD-3D39-4624-ACC7-8140F4EC3888
 ! Title: ABPVN List
-! Last modified: 25 Sep 2024 15:06:41 UTC+7
-! Diff-Path: patches/20240925150641062.patch#abpvn_ublock
+! Last modified: 25 Sep 2024 20:38:03 UTC+7
+! Diff-Path: patches/20240925203803692.patch#abpvn_ublock
 ! Diff-Expires: 60 minutes
 ! Expires: 1 days (update frequency)
 !
@@ -1199,7 +1199,7 @@ vn2.vn#@#.advertiser
 vndoc.com#@#.showads
 !------ ABPVN Adult block -------
 $third-party,script,domain=sexdiaryx.one
-/assets/js/vast.js$script
+/assets/js/vast.js$script,domain=~phevkl.cx
 /player/vast.js$script
 /theme/custom.int.js$script,domain=top1sex.me|tuoi69.studio|javhay.li|coiphimsex.net|vx.phimsexvip.cc|phimsexviet.io|phimsexvietnam.app|xxx.clipsex.xxx|gm.phimsexnhanh.tv|clipsex.cam|mobi.ditnhau.cc
 /wp-content/uploads/*.gif$image,domain=tuoi69zz.site|tuoinung.loan|teletiengviet.com|phevkl.cx
@@ -1221,6 +1221,7 @@ $third-party,script,domain=sexdiaryx.one
 ||hentaivn.blog^*.gif$image
 ||i.ibb.co^*.gif$image,domain=javnong.cc
 ||i.imgur.com^$image,domain=phym18.lol|phim18hd.sex|xamvn.taxi|fullcliphot.com|xem.sexkhongchehd.com|xx.sexkhongchemoi.com|bimmup.net
+||i2.vlstorage.com/da88_1080p.mp4$domain=phevkl.cx,rewrite=abp-resource:blank-mp3
 ||i9zk5f8szj4x8saj5wcks8acja5sk1dz8stjs2g8isdcn6ejxn8zsr5xjs5h.com^
 ||img.av3x.net/upload/av3x.net/banners/$domain=phimsexhay669.pro
 ||img.buomtv.vip/palivn/ad/$image,domain=www.buomtv.vip
@@ -1308,6 +1309,8 @@ javtopxx.com##.overlay
 lxmanga.click##.ads-wrapper
 ngaytho.me##.body_wrapper1
 nhentaivn.online###popup_fi
+phevkl.cx###haun-player>div[style]
+phevkl.cx###primary-nav>div[style]
 phevkl.cx##.separator
 phevkl.cx,viet69.rip###mp-preload-popup-overlay
 phevkl.cx,viet69.sbs###preload
