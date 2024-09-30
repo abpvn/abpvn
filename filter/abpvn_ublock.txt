@@ -1,9 +1,9 @@
 [Adblock Plus 2.0]
-! Version: 20240930205807290
+! Version: 20240930211211622
 ! id: D4028CDD-3D39-4624-ACC7-8140F4EC3888
 ! Title: ABPVN List
-! Last modified: 30 Sep 2024 20:58:07 UTC+7
-! Diff-Path: patches/20240930205807290.patch#abpvn_ublock
+! Last modified: 30 Sep 2024 21:12:11 UTC+7
+! Diff-Path: patches/20240930211211622.patch#abpvn_ublock
 ! Diff-Expires: 60 minutes
 ! Expires: 1 days (update frequency)
 !
@@ -226,6 +226,7 @@
 ||tailieuvnu.com/wp-content/uploads/2022/12/28/shopee-2*.png$image
 ||taoanhdep.com$csp=script-src 'self' 'unsafe-inline' data: https:
 ||tepbac.com/upload/advertiment/$image
+||the.tube/js/detect-ab.js$script
 ||the.tube/js/simpleblocker.js$script
 ||thoigian.com.vn/mFiles/N/06/$image
 ||thoigian.com.vn^*.gif
@@ -849,6 +850,7 @@ thethao12h.me##.div-ad-allpage-top
 thethao12h.me##div[id^="div-ad-list-"]
 thethao247.vn##div[class$="_ads"]
 thethaovanhoa.vn##.zone-top
+they.tube,the.tube##.ads-container
 thichxemphim1.net##.fixed-bottom
 thichxemphim1.net##.popup-banners
 thitruongtaichinhtiente.vn##.c-banner-item
@@ -1147,6 +1149,7 @@ znews.vn##.znews-banner
 @@||tpc.googlesyndication.com/sodar/sodar2.js$domain=cungthi.online
 @@||vlitag.com/vli-assets/prebid/$script,domain=game24h.vn
 @@||voz.vn/u/adx.$xmlhttprequest
+@@||www3.doubleclick.net^$xmlhttprequest,domain=they.tube|the.tube
 @@||xahoingaynay.com.vn/upload/20989/20200817/Asset_2_8x_9596af5d4e.png$~third-party
 !--------Element Hiding Exception--------------
 @@||blog.yopo.vn$generichide
