@@ -1,9 +1,9 @@
 [Adblock Plus 2.0]
-! Version: 20241001093105860
+! Version: 20241001180454050
 ! id: D4028CDD-3D39-4624-ACC7-8140F4EC3888
 ! Title: ABPVN List
-! Last modified: 01 Oct 2024 09:31:05 UTC+7
-! Diff-Path: patches/20241001093105860.patch#abpvn_ublock
+! Last modified: 01 Oct 2024 18:04:54 UTC+7
+! Diff-Path: patches/20241001180454050.patch#abpvn_ublock
 ! Diff-Expires: 60 minutes
 ! Expires: 1 days (update frequency)
 !
@@ -91,12 +91,13 @@
 ||bf.333xbet.com^$media,third-party
 ||biphim.mx/public/prom_ad/prom_ad.js$script
 ||blog.abit.vn/wp-content/uploads/2020/05/abit_$image
-||blogger.googleusercontent.com^$image,domain=hhninja8.tv|xem14.com|hhtm.tv|hoathinh3dtq.com|hhh3d.tv|dragonphim.tv|hoathinhtq.site|2phimhay.in|yanhh3d.com
+||blogger.googleusercontent.com^$image,domain=hhninja8.tv|xem14.com|hhtm.tv|hoathinh3dtq.com|hhh3d.tv|dragonphim.tv|hoathinhtq.site|phimhay.info|yanhh3d.com
 ||bonbanh.com/ad/
 ||bp.blogspot.com$image,domain=timdaily.vn|xemtivi4k.com
 ||bp.blogspot.com/*banner$image,domain=~aowvn.org|~umu.pink
 ||cdn-data.gtvplus.vn/banners/$image,domain=gametv.vn
 ||cdn.lfastcdn.com^*.gif$image,domain=bongdainfox.tv|xoilaczvy.tv|90phuti.cc
+||cdn.lfastcdn.com^*.gif$image,domain=houseofbeautyworld.com
 ||cdn.thichxemphim1.net/wp-content/themes/halimmovies-child/jscm.min.js$domain=thichxemphim1.net
 ||cdn.webhoctienganh.com/asset/home/img/banner/$image,domain=webhoctienganh.com
 ||cdn2-img.net^*.gif$image,domain=hhpanda.vin|dongchill.info|biphim.mx|subnhanh.win|subnhanh.gg|subnhanhvl.vip|bichill.win|dongphim.mx
@@ -416,8 +417,6 @@
 24hphim18.net###quang-cao-2
 2banh.vn###position_full_top_banner_pc
 2game.vn##.gc-header__wrapper + div[style]
-2phimhay.in##.code-block-1.code-block
-2phimhay.in##.navbar-container + .container
 90phut22.xyz##.group-link:has(a[href*="&utm_"])
 90phut22.xyz##.topnhacai
 90phuti.cc###menu-main-menu>.menu-bongdainfo.menu-item.nav-item.tt-bdif
@@ -431,16 +430,16 @@
 90phuti.cc##.mt-1.d-lg-flex.d-none.sub-menu
 90phuti.cc##a.d-lg-none.d-block:nth-of-type(2)
 90phuti.cc,cakhiat.cc,xoilacl.cc,unmanned-ship.org###quangcaopc
-90phuti.cc,cakhiat.cc,xoilacl.cc,unmanned-ship.org,xoilaczvy.tv,xemtv.tvhayhd.tv###wap_bottombanner
+90phuti.cc,cakhiat.cc,xoilacl.cc,unmanned-ship.org,xoilaczvy.tv,xemtv.tvhayhd.tv,houseofbeautyworld.com###wap_bottombanner
 abtruyenmoi.com##.no-auto-popup
 ahaphimz.com,phim.vkool6.net,vphims.net##.catfish-ck
 anime47.co###qc_clgt
 animehay.cam###banner-shopee
 animet3.net###menubentrai
 animet3.net##.gnartyx-offads
-animet3.net,animetvn4.com##.gnarty-offads
 animet3.net,animetvn4.com,subnhanh.xyz###fbox-background
 animetvn4.com###mobile-ads
+animetvn4.com##.gnarty-offads
 animevietsub.pub###invideo_wrapper
 animevietsub.pub##.Ads
 animevietsub.pub##.mobile-catfixx
@@ -561,7 +560,6 @@ freeplayervideo.com,abysscdn.com,player-cdn.com,geoip.redirect-ads.com##.playove
 fshare.vn###myElementz
 fshare.vn##.bannerinfooter
 fshare.vn##.quang-cao-ben-phai
-fsharetv.com###home_header
 game24h.vn###vi-smartbanner
 game24h.vn##.LRBanner
 game24h.vn##.running.adsbyvli
@@ -595,9 +593,7 @@ hhchina.app###ad-floating-right
 hhchina.app##.ad-floating-left
 hhhay.tv##.bnqcclm
 hhpanda.vin##.btn-fanpage.btn-default.btn-block.btn
-hhtq8.vip###header-ads
-hhtq8.vip##.catfish-img
-hhtq8.vip,hhtqnet.me,hhtqvietsub.top##.box_odds
+hhtqnet.me,hhtqvietsub.top##.box_odds
 hhtqvietsub.top,hhchina.app###sponsor-balloon
 hhtqvietsub.top,hhchina.app###top-banner-pc
 hoahoc247.com##.btn_small_fix_container
@@ -620,7 +616,6 @@ home1.mannhan6.pro##.popup
 home1.mannhan6.pro##a.btn_betnow_632132
 home1.mannhan6.pro##a.btn_fb:nth-of-type(3)
 home1.mannhan6.pro##li:nth-child(n+2)
-homedy.com##.left-slider
 hosocongty.vn##.advertTop
 hosocongty.vn##.hsdn>li:has(.adsbygoogle)
 hosocongty.vn##.module_plugins
@@ -762,6 +757,8 @@ phimgichill.net##mobile-catfix
 phimgichill.net,ophimhdvn3.net###pc-catfix
 phimgichill.net,ophimhdvn3.net##.lightbox-player-pc
 phimgichill.net,ophimhdvn3.net##div[id^="preload-"]
+phimhay.info##.code-block-1.code-block
+phimhay.info##.navbar-container + .container
 phimhay123.me###mp-preload-popup-overlay
 phimhaymoii.com##a[target="_blank"][rel="nofollow noopener"]
 phimlongtieng.com,phimlongtieng.net###p-GMH
