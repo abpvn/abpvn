@@ -1,9 +1,9 @@
 [Adblock Plus 2.0]
-! Version: 20241002120529858
+! Version: 20241002150631085
 ! id: D4028CDD-3D39-4624-ACC7-8140F4EC3888
 ! Title: ABPVN List
-! Last modified: 02 Oct 2024 12:05:29 UTC+7
-! Diff-Path: patches/20241002120529858.patch#abpvn_ublock
+! Last modified: 02 Oct 2024 15:06:31 UTC+7
+! Diff-Path: patches/20241002150631085.patch#abpvn_ublock
 ! Diff-Expires: 60 minutes
 ! Expires: 1 days (update frequency)
 !
@@ -45,6 +45,7 @@
 /giadinhonline.vn/files/qc/*
 /i.imgur.com$domain=xemphimchill.xyz
 /i.imgur.com/*.gif$domain=keonhacai5.vin|phimlongtieng.net|www.phimdinhcaoz.com|phimdinhcao.net|xoilacl.cc|90phuti.cc|unmanned-ship.org|visithullandeastyorkshire.com|listnhacai88.com|xoilaczvy.tv|xemtivingon.org|phimlongtieng.com|mitomp.cc|houseofbeautyworld.com|plcdn.xyz|phimmoi.ch|motphimww.net
+/khophim-poster.cuoiia.top/*.gif$image,domain=24hphim18.net
 /mmo/*$xmlhttprequest,image,domain=vuighe3.com
 /newchill/*gif$image
 /polyad.
@@ -158,7 +159,6 @@
 ||imgyn.imageshh.com^*.gif$image,domain=mphim14.org
 ||kenhgamez.co^*.gif
 ||kenhtin.net/upload/images/banner-
-||khophim-poster.cuoiia.top^*.gif$image,domain=24hphim18.net
 ||kienthuc.net.vn/*.ads
 ||laodong.vn/*QuangcaoOnline
 ||lh3.googleusercontent.com/*=s0$image,domain=animevietsub.pub|hoathinh4k3.net|hayghe.cam
@@ -203,6 +203,7 @@
 ||quoracdn.net^$image,domain=www.phimlongtieng.net|phimlongtieng.com|www.phimdinhcaoz.com
 ||raovat.tuoitre.vn^$domain=tuoitre.vn
 ||raovatdidong.vn/images/$domain=muabanraovat.com
+||raw.githubusercontent.com^$image,domain=24hphim18.net
 ||s1.fastscansz.com/shopee/$image
 ||s2.truyentot.com^*.gif$image,domain=hhtq8.vip|hhtq3d.net|hhtq5.vip|hhvsub.com
 ||server.zmedia.vn/static/$script
@@ -398,36 +399,30 @@
 ##[href^="http://www.sbbanner.com/"]
 ##[id^="adm-slot"]
 ##[id^="bn_bottom_fixed_"]
-10gb.vn##.artplayer-app
 123nhadatviet.net,123nhadatviet.com,tuoitrenews.vn,tuoitre.vn##.banner-top
 24h.com.vn###background_bg_link
-24h.com.vn###div_inpage_banner
-24h.com.vn###div_inpage_banner_after
-24h.com.vn###div_inpage_banner_open
-24h.com.vn###subRightAbove
 24h.com.vn###subRightAboveHome
 24h.com.vn##.adv-24h-mid
-24h.com.vn##.boxbannerinfeed-kh
+24h.com.vn##.col:has(a[rel="nofollow"])
+24h.com.vn##.col:has(a[rel="sponsored"])
 24h.com.vn##.fixad300x600
-24h.com.vn##.lady
 24h.com.vn##.module3
 24h.com.vn##[id^="ADS_"]
-24hphim18.net###banner-top-mobile
 24hphim18.net###pc-top-banner
-24hphim18.net###quang-cao-2
+24hphim18.net###quang-cao
 2banh.vn###position_full_top_banner_pc
 2game.vn##.gc-header__wrapper + div[style]
 90phut22.xyz##.group-link:has(a[href*="&utm_"])
 90phut22.xyz##.topnhacai
-90phuti.cc###menu-main-menu>.menu-bongdainfo.menu-item.nav-item.tt-bdif
 90phuti.cc###menu-main-menu>.menu-nha-cai-uy-tin.menu-item.nav-item.style-2>.nav-link
+90phuti.cc##.bookmaker-selector-container
 90phuti.cc##.c-int.d-lg-none.d-block
-90phuti.cc##.col-xl-4
 90phuti.cc##.container>.row>.col-12
 90phuti.cc##.d-lg-none.d-block.p-1.text-center
+90phuti.cc##.gmd-match-footer__odds
 90phuti.cc##.justify-content-center.d-flex>.btn-primary.btn
-90phuti.cc##.matches__item--footer
 90phuti.cc##.mt-1.d-lg-flex.d-none.sub-menu
+90phuti.cc##.nav-wrap>a[rel="nofollow"]
 90phuti.cc##a.d-lg-none.d-block:nth-of-type(2)
 90phuti.cc,visithullandeastyorkshire.com,xoilacl.cc,unmanned-ship.org###quangcaopc
 90phuti.cc,visithullandeastyorkshire.com,xoilacl.cc,unmanned-ship.org,xoilaczvy.tv,xemtv.tvhayhd.tv,houseofbeautyworld.com###wap_bottombanner
@@ -1018,7 +1013,6 @@ web1s.com###link-view>center:nth-of-type(1)
 webhoctienganh.com##.button-action-float-banner
 webthethao.vn##.wrapper-adv
 webtretho.com##.wtt-ads
-www.24h.com.vn##.col:has(a[rel="nofollow"])
 www.baogiaothong.vn###pos-25
 www.baogiaothong.vn###pos-26
 www.clbgamesvn.com##.bannerBox
@@ -1059,6 +1053,7 @@ xemtivi4k.com##.col-lg-4.hidden-xs.d-flex.flex-column.address-wrap
 xemtivi4k.com##.float-right
 xemtivingon.org,keonhacai5.vin##[id^="Balloon_"]
 xemtv.tvhayhd.tv##.navbar-ex8-collapse
+xoilacl.cc###match-child-1
 xoilacl.cc##.banner-link
 xoilacl.cc##.block-catfish.text-center.d-lg-none.d-block
 xoilacl.cc##.container.mt-1
@@ -1071,7 +1066,6 @@ xoilacl.cc##.pl-lg-0.col-xl-4
 xoilacl.cc##.row.d-none
 xoilacl.cc##.widget-offers__list
 xoilacl.cc##div.d-lg-none.d-block:nth-of-type(3)
-xoilacl.cc,90phuti.cc###match-child-1
 xoilacl.cc,90phuti.cc,xoilaczvy.tv##.match-detail__offer
 xoilacl.cc,houseofbeautyworld.com##.sk_balloon
 xoilacl.cc,tructiepdabong5.co##.offer__btn
