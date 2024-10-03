@@ -1,9 +1,9 @@
 [Adblock Plus 2.0]
-! Version: 20241003150636047
+! Version: 20241003180428173
 ! id: D4028CDD-3D39-4624-ACC7-8140F4EC3888
 ! Title: ABPVN List
-! Last modified: 03 Oct 2024 15:06:36 UTC+7
-! Diff-Path: patches/20241003150636047.patch#abpvn_content_blocker
+! Last modified: 03 Oct 2024 18:04:28 UTC+7
+! Diff-Path: patches/20241003180428173.patch#abpvn_content_blocker
 ! Diff-Expires: 60 minutes
 ! Expires: 1 days (update frequency)
 !
@@ -95,7 +95,7 @@ $popup,domain=player-cdn.com|freeplayervideo.com|abysscdn.com|geoip.redirect-ads
 ||bf.333xbet.com^$media,third-party
 ||biphim.mx/public/prom_ad/prom_ad.js$script
 ||blog.abit.vn/wp-content/uploads/2020/05/abit_$image
-||blogger.googleusercontent.com^$image,domain=hhninja8.tv|xem14.com|hhtm.tv|hoathinh3dtq.com|hhh3d.tv|dragonphim.tv|hoathinhtq.site|phimhay.info|yanhh3d.com
+||blogger.googleusercontent.com^$image,domain=hhninja8.tv|xem14.com|hhtm.tv|hoathinh3dtq.com|hhh3d.tv|dragonphim.tv|hoathinhtq.site|ww2.2phimhay.in|yanhh3d.com
 ||bonbanh.com/ad/
 ||bp.blogspot.com$image,domain=timdaily.vn|xemtivi4k.com
 ||bp.blogspot.com/*banner$image,domain=~aowvn.org|~umu.pink
@@ -810,6 +810,7 @@ dexuat.com###custom_html-7
 diadiem.com##.div_box_adv
 doctruyenchu.info##.ad-botton
 doctruyenchu.info##.topbanner
+doctruyenln.com##.chapter-content .min-h-\[275px\]
 docviewer.yandex.com##.js-doc-html>div>div[id]
 doisongphapluat.com##div.box-aside
 domdomtruyen.com##iframe[src*="ads"]
@@ -910,7 +911,7 @@ keoso.me##.widget-sidebar-block
 ketqua03.net##.baloon
 ketqua03.net##.col-sm-10.kqcenter
 ketqua03.net##.kqbackground.vien ~ a[target="_blank"]
-ketqua03.net,nghean24h.vn,xem.tructiepnba.com,biphim.mx,vidian.online,truyenchu.com.vn,xemtivi4k.com,abtruyenmoi.com,chatboxn.com,xoilacl.cc##a[rel="nofollow"]
+ketqua03.net,nghean24h.vn,xem.tructiepnba.com,biphim.mx,vidian.online,doctruyenln.com,xemtivi4k.com,abtruyenmoi.com,chatboxn.com,xoilacl.cc##a[rel="nofollow"]
 ketqua247vn.club,keoso.me##.ads-container
 khiphach.net###qc-kpgame
 kickass.sx##.dssdffds
@@ -1044,8 +1045,6 @@ phimgichill.net##mobile-catfix
 phimgichill.net,ophimhdvn3.net###pc-catfix
 phimgichill.net,ophimhdvn3.net##.lightbox-player-pc
 phimgichill.net,ophimhdvn3.net##div[id^="preload-"]
-phimhay.info##.code-block-1.code-block
-phimhay.info##.navbar-container + .container
 phimhay123.me###mp-preload-popup-overlay
 phimhaymoii.com##a[target="_blank"][rel="nofollow noopener"]
 phimlongtieng.com,phimlongtieng.net###p-GMH
@@ -1179,7 +1178,6 @@ tructiepdabong5.co##.col-chat
 tructiepdabong5.co##.offer-rating.widget-offers__list
 tructiepdabong5.co,xoivo2.online##.dcmm-button-player.row
 truyenaudiocv.org##.js-editors-choice-slider.editors-choice-slider > .adsbygoogle
-truyenchu.com.vn##.chapter-content .min-h-\[275px\]
 truyenfull.io###header-ads-full
 truyenfull.io##.ads-responsive
 truyenfull.io##[id^="ads-"]
@@ -1305,6 +1303,8 @@ web1s.com###link-view>center:nth-of-type(1)
 webhoctienganh.com##.button-action-float-banner
 webthethao.vn##.wrapper-adv
 webtretho.com##.wtt-ads
+ww2.2phimhay.in##.code-block-1.code-block
+ww2.2phimhay.in##.navbar-container + .container
 www.baogiaothong.vn###pos-25
 www.baogiaothong.vn###pos-26
 www.clbgamesvn.com##.bannerBox
@@ -1440,7 +1440,7 @@ ios.codevn.net#@#div[id*="ScriptRoot"]
 $third-party,script,domain=sexdiaryx.one
 /assets/js/vast.js$script,domain=~phevkl.cx|~viet69.sbs
 /player/vast.js$script
-/theme/custom.int.js$script,domain=top1sex.me|tuoi69.studio|javhay.li|coiphimsex.net|vx.phimsexvip.cc|phimsexviet.io|phimsexvietnam.app|xxx.clipsex.xxx|gm.phimsexnhanh.tv|clipsex.cam|mobi.ditnhau.cc
+/theme/custom.int.js$script,domain=top1sex.me|tuoi69.studio|hd.javhay.site|coiphimsex.net|vx.phimsexvip.cc|phimsexviet.io|phimsexvietnam.app|xxx.clipsex.xxx|gm.phimsexnhanh.tv|clipsex.cam|mobi.ditnhau.cc
 /wp-content/uploads/*.gif$image,domain=tuoi69zz.site|tuoinung.loan|teletiengviet.com|phevkl.cx|viet69.sbs
 ||ads.6789live.com^
 ||avhduwvirosl.com^
@@ -1492,7 +1492,7 @@ $third-party,script,domain=sexdiaryx.one
 ||sexhd88.live/wp-content/themes/vidorev/img/jun881.png$image
 ||sexhd88.live^*.gif$image
 ||sexphang.pro^*.gif$image,domain=sexphang.pro|damsextv.pro
-||sexsub.onl^*.gif$image,domain=tuoi69.studio|javhay.li|sexsub.onl|xemphim18.vip|vietxxx.live
+||sexsub.onl^*.gif$image,domain=tuoi69.studio|hd.javhay.site|sexsub.onl|xemphim18.vip|vietxxx.live
 ||sexviet2.top^*.gif$image
 ||sieukhungz.org^*.gif$image
 ||spankbangdl.com/files/*.gif$image,domain=avvietsub.info
@@ -1535,6 +1535,7 @@ filemoon.sx##body>[style*="position: fixed;"]
 fullcliphot.com##div#recent-content:nth-of-type(1)
 fullcliphot.com,fulllivehot.live##.popup
 fulllivehot.live##.cashfish
+hd.javhay.site##.v4j-header>center
 hentaihvn.tv##.a_d_s_115
 hentaihvn.tv##.qx_135
 hentaivn.blog###catfish
@@ -1544,7 +1545,6 @@ hplives.com##.video-boxad
 ihentai.vin##.bottom-0.w-100.position-fixed
 javbangers.com##.opt
 javbangers.com,www.gvnvh.net##a[rel="nofollow norefferer noopener"]
-javhay.li##.v4j-header>center
 javhd.shop,vlxxai.net,heosuong.pro,javhd.social,sexsoc.info##.hd-tube-desktop
 javhd.shop,vlxxai.net,heosuong.pro,javhd.social,sexsoc.info##.hd-tube-mobile
 javhd.tech###AgeModal
