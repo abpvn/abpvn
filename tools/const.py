@@ -24,7 +24,7 @@ class Const():
     ]
     REDIRECT_REJECT_TARGET_DOMAIN = [
         'www.google.com', 'www.facebook.com', 'www.advertising.yahooinc.com', 'marketingplatform.google.com',
-        'imgbb.com', 'blueseeddigital.com', 'www.criteo.com'
+        'imgbb.com', 'blueseeddigital.com', 'www.criteo.com', 'github.com'
     ]
     REDIRECT_SKIP_SUB_TO_DOMAIN = True
     FILE_REGEX = r"\|\|([^*\n]+\.(js|png|webp|jpg|jpeg|mp4|gif))([\n\$])"
