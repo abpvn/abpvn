@@ -1,9 +1,9 @@
 [Adblock Plus 2.0]
-! Version: 20241005120456920
+! Version: 20241005152801629
 ! id: D4028CDD-3D39-4624-ACC7-8140F4EC3888
 ! Title: ABPVN List
-! Last modified: 05 Oct 2024 12:04:56 UTC+7
-! Diff-Path: patches/20241005120456920.patch#abpvn_ublock
+! Last modified: 05 Oct 2024 15:28:01 UTC+7
+! Diff-Path: patches/20241005152801629.patch#abpvn_ublock
 ! Diff-Expires: 60 minutes
 ! Expires: 1 days (update frequency)
 !
@@ -240,6 +240,7 @@
 ||toithuthuat.com^*.gif
 ||tracker.idocdn.com^$domain=freeplayervideo.com|abysscdn.com|player-cdn.com|geoip.redirect-ads.com|playhydrax.com
 ||traderviet.tv/data/siropu/am/user/$image
+||tram3d.tv^*.gif$image,~third-party
 ||tructiep.vn/website/adv/
 ||truyen4u.pro$csp=script-src 'self' 'unsafe-inline'
 ||truyenconect.com/uploads/*-truyenconect_com-*.
@@ -864,6 +865,8 @@ toithuthuat.com##.pum
 topthuthuat.com,canhrau.com##.widget.widget_text
 toquoc.vn,baoxaydung.com.vn,tienphong.vn,taichinhdoanhnghiep.net.vn,thichxemphim1.net,v.xemphimviet.xyz,ghienphim.my,truyengihotdo.net,truyengihotzay.net,truyengihotnha.com,truyengihotnha.net,truyengihotqua.net,truyengihotqua.com,truyengihotnay.com,tenmientruyengi.net,tiemsachhay.net##.banner
 tracnghiem.net##.sbAdv
+tram3d.tv###sticky_ad
+tram3d.tv##div.text-center:nth-of-type(2)
 tructiep12.cakhia24.live,cakhia36.xyz,tructiep.caheo7.link##.container-banner
 tructiep12.cakhia24.live,cakhia36.xyz,tructiep.caheo7.link##.modal-ads
 tructiep12.cakhia24.live,cakhia36.xyz,tructiep.caheo7.link##div[class^="slide-bar"]
