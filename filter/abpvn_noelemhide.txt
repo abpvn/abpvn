@@ -1,9 +1,9 @@
 [Adblock Plus 2.0]
-! Version: 20241007120518857
+! Version: 20241007150651629
 ! id: D4028CDD-3D39-4624-ACC7-8140F4EC3888
 ! Title: ABPVN List
-! Last modified: 07 Oct 2024 12:05:18 UTC+7
-! Diff-Path: patches/20241007120518857.patch#abpvn_noelemhide
+! Last modified: 07 Oct 2024 15:06:51 UTC+7
+! Diff-Path: patches/20241007150651629.patch#abpvn_noelemhide
 ! Diff-Expires: 60 minutes
 ! Expires: 1 days (update frequency)
 !
@@ -45,7 +45,7 @@ $popup,domain=player-cdn.com|freeplayervideo.com|abysscdn.com|geoip.redirect-ads
 /disable-devtool.min.js$script
 /giadinhonline.vn/files/qc/*
 /i.imgur.com$domain=xemphimchill.xyz
-/i.imgur.com/*.gif$domain=keonhacai55.net|phimlongtieng.net|www.phimdinhcaoz.com|phimdinhcao.net|xoilacd.cc|90phuti.cc|veboz31.live|cakhiay.cc|listnhacai88.com|xoilaczz63.live|xemtivingon.org|phimlongtieng.com|mitomz10.live|rakhoiz20.live|plcdn.xyz|phimmoi.men|motphimww.net
+/i.imgur.com/*.gif$domain=keonhacai55.net|phimlongtieng.net|www.phimdinhcaoz.com|phimdinhcao.net|xoilacd.cc|90phuti.cc|unmanned-ship.org|cakhiay.cc|listnhacai88.com|xoilaczz63.live|xemtivingon.org|phimlongtieng.com|mitomy.cc|houseofbeautyworld.com|plcdn.xyz|phimmoi.men|motphimww.net
 /khophim-poster.cuoiia.top/*.gif$image,domain=24hphim18.net
 /mmo/*$xmlhttprequest,image,domain=vuighe3.com
 /newchill/*gif$image
@@ -75,7 +75,7 @@ $popup,domain=player-cdn.com|freeplayervideo.com|abysscdn.com|geoip.redirect-ads
 ||123nhadatviet.net/Media/CK/banners/
 ||2banh.vn/images/banners/
 ||90phut22.xyz^*.gif$image
-||9767ebd63c.vws.vegacdn.vn^*.gif$image,domain=mn.mediastation.live|home1.mannhan8.pro|live1.mannhan73.xyz
+||9767ebd63c.vws.vegacdn.vn^*.gif$image,domain=mn.mediastation.live|home1.mannhan8.pro|home1.mannhan8.pro
 ||acscdn.com/script/aclib.js$script,domain=ytstv.me
 ||ads*.autodaily.vn
 ||ads.nghenhinvietnam.vn^$domain=nghenhinvietnam.vn
@@ -99,10 +99,10 @@ $popup,domain=player-cdn.com|freeplayervideo.com|abysscdn.com|geoip.redirect-ads
 ||bp.blogspot.com$image,domain=timdaily.vn|xemtivi4k.com
 ||bp.blogspot.com/*banner$image,domain=~aowvn.org|~umu.pink
 ||cdn-data.gtvplus.vn/banners/$image,domain=gametv.vn
-||cdn.lfastcdn.com^*.gif$image,domain=bongdainfox.tv|xoilaczz63.live|90phuti.cc|rakhoiz20.live|cakhiay.cc
+||cdn.lfastcdn.com^*.gif$image,domain=bongdainfox.tv|xoilaczz63.live|90phuti.cc|houseofbeautyworld.com|cakhiay.cc
 ||cdn.thichxemphim1.net/wp-content/themes/halimmovies-child/jscm.min.js$domain=thichxemphim1.net
 ||cdn.webhoctienganh.com/asset/home/img/banner/$image,domain=webhoctienganh.com
-||cdn2-img.net^*.gif$image,domain=hhpanda.bio|dongchill.me|biphim.my|subnhanh.win|subnhanh.ch|subnhanhvl.vip|bichill.my|dongphim.video
+||cdn2-img.net^*.gif$image,domain=hhpanda.bio|dongchill.me|biphim.my|motchill.to|subnhanh.ch|subnhanhvl.com|bichill.my|dongphim.video
 ||chillphimmoizzzz.org/assets/*.gif$image
 ||chillphimmoizzzz.org/assets/js/popup.js
 ||chodansinh.net^*.gif
@@ -171,6 +171,7 @@ $popup,domain=player-cdn.com|freeplayervideo.com|abysscdn.com|geoip.redirect-ads
 ||media-static.cdnproz1.online/cakhiastatic/$image,domain=tructiep36.cakhia24.live
 ||media.nghean24h.vn$image,domain=nghean24h.vn
 ||mocfun.net/uploads/banners/
+||motchill.to/js/ads_xx.js
 ||motchillwin.net/banner$image
 ||motphimtv.to/js/ads.js$script,~third-party
 ||nettruyenviet.com/assets/js/pop$script
@@ -224,8 +225,7 @@ $popup,domain=player-cdn.com|freeplayervideo.com|abysscdn.com|geoip.redirect-ads
 ||storage.fshare.vn/images/$third-party
 ||subnhanh.ch/js/ads_xx.js
 ||subnhanh.ch/js/ads_xx.min.js$script,~third-party
-||subnhanh.win/js/ads_xx.js
-||subnhanhvl.vip/js/ads_xx.js
+||subnhanhvl.com/js/ads_xx.js
 ||suckhoelamdep.vn^*.gif$image
 ||tailieuvnu.com/wp-content/uploads/2022/12/28/shopee-2*.png$image
 ||taoanhdep.com$csp=script-src 'self' 'unsafe-inline' data: https:
@@ -415,10 +415,10 @@ $popup,domain=player-cdn.com|freeplayervideo.com|abysscdn.com|geoip.redirect-ads
 @@||xahoingaynay.com.vn/upload/20989/20200817/Asset_2_8x_9596af5d4e.png$~third-party
 !------ ABPVN Adult block -------
 $third-party,script,domain=sexdiaryx.one
-/assets/js/vast.js$script,domain=~phevkl.mx|~viet69.vote
+/assets/js/vast.js$script,domain=~phevkl.mx|~viet69.run
 /player/vast.js$script
 /theme/custom.int.js$script,domain=top1sex.me|sex.tuoi69.store|hd.javhay.site|coiphimsex.net|vx.phimsexvip.cc|phimsexviet.io|phimsexvietnam.app|web.clipsex.xxx|gm.phimsexnhanh.tv|clipsex.cam|ww1.ditnhau.cc
-/wp-content/uploads/*.gif$image,domain=tuoi69zz.site|tuoinung.loan|teletiengviet.com|phevkl.mx|viet69.vote
+/wp-content/uploads/*.gif$image,domain=tuoi69.taxi|tuoinung.info|teletiengviet.com|phevkl.mx|viet69.run
 @@||pagead2.googlesyndication.com^$domain=www.gaingon18.me
 ||ads.6789live.com^
 ||avhduwvirosl.com^
@@ -438,7 +438,7 @@ $third-party,script,domain=sexdiaryx.one
 ||hentaivn.blog^*.gif$image
 ||i.ibb.co^*.gif$image,domain=javnong.cc
 ||i.imgur.com^$image,domain=phym18.lol|phim18hd.sex|xamvn.taxi|fullcliphot.com|jav.sexkhongchehd.com|xx.sexkhongchemoi.com|bimmup.tv
-||i2.vlstorage.com/da88_1080p.mp4$domain=phevkl.mx|viet69.vote,rewrite=abp-resource:blank-mp3
+||i2.vlstorage.com/da88_1080p.mp4$domain=phevkl.mx|viet69.run,rewrite=abp-resource:blank-mp3
 ||i9zk5f8szj4x8saj5wcks8acja5sk1dz8stjs2g8isdcn6ejxn8zsr5xjs5h.com^
 ||img.av3x.net/upload/av3x.net/banners/$domain=phimsexhay669.pro
 ||img.buomtv.vip/palivn/ad/$image,domain=www.buomtv.vip
@@ -458,9 +458,9 @@ $third-party,script,domain=sexdiaryx.one
 ||phimsexsub.xyz/css/pss.webp$image,domain=nhentaivn.online
 ||phym18.lol/static/js/adlia.js
 ||play.stream4.me/jwplayer/vast.js$script,domain=play.stream4.me
-||qcvip.xyz/popup$script,domain=phevkl.mx|viet69.vote
+||qcvip.xyz/popup$script,domain=phevkl.mx|viet69.run
 ||quatvn.store/ads.js$script
-||quoracdn.net^$image,domain=vlxx.mx|vlxyz.tube|sieudamtv.vin|sex.chichnhau.me|phevkl.mx|viet69.vote|phim18vip.vip
+||quoracdn.net^$image,domain=vlxx.mx|vlxyz.tube|sieudamtv.vin|sex.chichnhau.me|phevkl.mx|viet69.run|phim18vip.vip
 ||rphang.online^*.gif
 ||sayhentai.one/assets/js/ads.js
 ||sayhentai.one/storage/images/banner/$image
@@ -478,7 +478,7 @@ $third-party,script,domain=sexdiaryx.one
 ||truyen18.lol/media/banner/$image
 ||truyensextv.com/anh/$image
 ||truyensextv.com^*.gif
-||truyenvn.fit^*banner$image
+||truyenvn.blog^*banner$image
 ||tvphimsex.pro^*.gif$image,domain=tvphimsex.pro|damsextv.pro
 ||vietxxx.xyz/theme/custom.int.js$script,~third-party
 ||vl3x.vip/ads/$script
