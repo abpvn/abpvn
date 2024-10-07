@@ -1,9 +1,9 @@
 [Adblock Plus 2.0]
-! Version: 20241007150651629
+! Version: 20241007171808014
 ! id: D4028CDD-3D39-4624-ACC7-8140F4EC3888
 ! Title: ABPVN List
-! Last modified: 07 Oct 2024 15:06:51 UTC+7
-! Diff-Path: patches/20241007150651629.patch#abpvn_noelemhide
+! Last modified: 07 Oct 2024 17:18:08 UTC+7
+! Diff-Path: patches/20241007171808014.patch#abpvn_noelemhide
 ! Diff-Expires: 60 minutes
 ! Expires: 1 days (update frequency)
 !
@@ -206,7 +206,6 @@ $popup,domain=player-cdn.com|freeplayervideo.com|abysscdn.com|geoip.redirect-ads
 ||raovat.tuoitre.vn^$domain=tuoitre.vn
 ||raovatdidong.vn/images/$domain=muabanraovat.com
 ||s.lazada.vn^$popup,domain=chillphimmoizz.org
-||s1.fastscans1.net/shopee/$image
 ||s2.truyentot.com^*.gif$image,domain=hhtq8.vip|hhtq3d.net|hhtq5.vip|hhvsub.com
 ||server.zmedia.vn/static/$script
 ||sggp.org.vn/*banner
@@ -226,6 +225,7 @@ $popup,domain=player-cdn.com|freeplayervideo.com|abysscdn.com|geoip.redirect-ads
 ||subnhanh.ch/js/ads_xx.js
 ||subnhanh.ch/js/ads_xx.min.js$script,~third-party
 ||subnhanhvl.com/js/ads_xx.js
+||subnhanhvl.com/js/ads_xx.js$script,~third-party
 ||suckhoelamdep.vn^*.gif$image
 ||tailieuvnu.com/wp-content/uploads/2022/12/28/shopee-2*.png$image
 ||taoanhdep.com$csp=script-src 'self' 'unsafe-inline' data: https:
@@ -460,7 +460,7 @@ $third-party,script,domain=sexdiaryx.one
 ||play.stream4.me/jwplayer/vast.js$script,domain=play.stream4.me
 ||qcvip.xyz/popup$script,domain=phevkl.mx|viet69.run
 ||quatvn.store/ads.js$script
-||quoracdn.net^$image,domain=vlxx.mx|vlxyz.tube|sieudamtv.vin|sex.chichnhau.me|phevkl.mx|viet69.run|phim18vip.vip
+||quoracdn.net^$image,domain=vlxx.mx|vlxyz.tube|sieudamtv.vin|phevkl.mx|viet69.run|phim18vip.vip
 ||rphang.online^*.gif
 ||sayhentai.one/assets/js/ads.js
 ||sayhentai.one/storage/images/banner/$image
