@@ -1,9 +1,9 @@
 [Adblock Plus 2.0]
-! Version: 20241009150630290
+! Version: 20241009180503865
 ! id: D4028CDD-3D39-4624-ACC7-8140F4EC3888
 ! Title: ABPVN List
-! Last modified: 09 Oct 2024 15:06:30 UTC+7
-! Diff-Path: patches/20241009150630290.patch#abpvn_ublock
+! Last modified: 09 Oct 2024 18:05:03 UTC+7
+! Diff-Path: patches/20241009180503865.patch#abpvn_ublock
 ! Diff-Expires: 60 minutes
 ! Expires: 1 days (update frequency)
 !
@@ -93,7 +93,7 @@
 ||bf.333xbet.com^$media,third-party
 ||biphim.my/public/prom_ad/prom_ad.js$script
 ||blog.abit.vn/wp-content/uploads/2020/05/abit_$image
-||blogger.googleusercontent.com^$image,domain=hhninja10.tv|xem14.com|hhtm.tv|hoathinh3dtq.site|hhh3d.tv|hoathinhtq.site|2phimhay.co|yanhh3d.com
+||blogger.googleusercontent.com^$image,domain=hhninja10.tv|xem14.com|hhtm.pro|hoathinh3dtq.site|hhh3d.tv|hoathinhtq.site|2phimhay.co|yanhh3d.com
 ||bonbanh.com/ad/
 ||bp.blogspot.com$image,domain=timdaily.vn|xemtivi4k.com
 ||bp.blogspot.com/*banner$image,domain=~aowvn.org|~umu.pink
@@ -136,6 +136,7 @@
 ||googleusercontent.com^$domain=hhtqvietsub.top
 ||heovktgame.club/wp-content/plugins/banner-management/$image
 ||hhhay.me^*.gif$image
+||hhkungfu.club/88vn$image,domain=hhchina.xyz
 ||hhpanda.bio/ads/$script,~third-party
 ||hinhso.com^$domain=diendanmaychu.vn,image
 ||hosocongty.vn/uploads/products/$~third-party,image
@@ -165,7 +166,6 @@
 ||kienthuc.net.vn/*.ads
 ||laodong.vn/*QuangcaoOnline
 ||lh3.googleusercontent.com/*=s0$image,domain=animevietsub.tube|hoathinh4k3.net|hayghe.cam
-||lh3.googleusercontent.com^$image,domain=hhchina.app
 ||linkads.xyz^$image,domain=hayhaytv.cc
 ||listnhacai88.com^*.gif$image
 ||live.staticflickr.com$domain=timdaily.vn,image
@@ -208,6 +208,7 @@
 ||raovat.tuoitre.vn^$domain=tuoitre.vn
 ||raovatdidong.vn/images/$domain=muabanraovat.com
 ||s2.truyentot.com^*.gif$image,domain=hhtq8.vip|hhtq3d.net|hhtq5.vip|hhvsub.com
+||sansale.online/hhtm.js$domain=hhtm.pro
 ||server.zmedia.vn/static/$script
 ||sggp.org.vn/*banner
 ||sharecode.vn/assets/images/thiet-ke-web-gia-re.jpg
@@ -468,7 +469,7 @@ bluphim.art###ads-1xbet-catfish
 bluphim.art###popup-1720497466
 bluphim.art##.banner728
 bluphim.art##.container>div[style^="height: 228px"]
-boctem.com,movies.vkoolz.com,hoathinhtq.site,xemphimchill.xyz,247phim.cc,vungtv.us,www.6phimmoi.net,tvhay26.com,www.phimmoichilla.xyz,hhh3d.tv,hayhaytv.cc,yanhh3d.com,www.ssphim.us###popup-giua-man-hinh
+boctem.com,movies.vkoolz.com,hoathinhtq.site,xemphimchill.xyz,247phim.cc,vungtv.us,www.6phimmoi.net,tvhay26.com,www.phimmoichilla.xyz,hayhaytv.cc,yanhh3d.com,www.ssphim.us###popup-giua-man-hinh
 bongda.rakhooi.tv##.footer-button-sign-in.hide-desk
 bongda.rakhooi.tv##.hide-desk.wrap-content>.wrap-btn-action
 bongda.rakhooi.tv##.menu-right-slide
@@ -566,23 +567,19 @@ gocmod.com###bannerContainer2
 gocmod.com###sp-wrapper-hovering-format
 gocmod.com##.wam-banner
 gocmod.com##center:has(.adsbygoogle)
-gplay.vn##.background-blur
-gplay.vn##.qc-benphai
-gplay.vn##.qc-bentrai
 hayghe.cam###antiblocker
 hayghe.cam###antiblocker_underplayer
 hayhaytv.org,subnhanh.xyz##.sticky_bottom
 hayhaytv.org,subnhanh.xyz##.t_logo
 heovktgame.club##.toogle-ads
-hh3dhay.life###layerLogo
 hhanime3d.com,hhpanda.bio,subnhanhvl.com###top_addd
-hhchina.app###ad-floating-right
-hhchina.app##.ad-floating-left
+hhchina.xyz###header-ads
+hhchina.xyz###header-ads + center
 hhhay.me##.bnqcclm
 hhpanda.bio##.btn-fanpage.btn-default.btn-block.btn
-hhtqnet.me,hhtqvietsub.top##.box_odds
-hhtqvietsub.top,hhchina.app###sponsor-balloon
-hhtqvietsub.top,hhchina.app###top-banner-pc
+hhtm.pro###catfish-ads
+hhtqvietsub.top###top-banner-pc
+hhtqvietsub.top,hhchina.xyz###sponsor-balloon
 hoahoc247.com##.btn_small_fix_container
 hoatieu.vn###adrightsecondx
 hoatieu.vn###adrightspecial
@@ -1039,7 +1036,7 @@ xem14.com,download.vn###ouibounce-modal
 xem20.gavang1.net,xem19.gavang1.net##.css-ylxsn9.MuiStack-root
 xem20.gavang1.net,xem19.gavang1.net##.vjs-banner-btn
 xem20.gavang1.net,xem19.gavang1.net##div.css-m49bkq.MuiStack-root>a
-xemphimchill.xyz,hhninja10.tv,phimbocn.com,phimhoathinh3d.com,hoathinhtq.site,hhtq8.vip,hhtqvietsub.top,motchillwin.net,hhtrungquoc6.com,hhtqnet.me,animeweb.vip,hh3d1.xyz,hoathinh4k3.net,motchilltvzz.biz,hoathinh3dtq.site,hhtm.tv,dragonphim.tv,hhchina.app,phimmoi2024.net,hhh3d.tv,hhtq3d.net,hhtq5.vip,wibu47.com,yanhh3d.com,hhhay.me,hhvsub.com###catfish
+xemphimchill.xyz,hhninja10.tv,phimbocn.com,phimhoathinh3d.com,hoathinhtq.site,hhtq8.vip,hhtqvietsub.top,motchillwin.net,hhtrungquoc6.com,hhtqnet.me,animeweb.vip,hh3d1.xyz,hoathinh4k3.net,motchilltvzz.biz,hoathinh3dtq.site,dragonphim.tv,hhchina.xyz,phimmoi2024.net,hhh3d.tv,hhtq3d.net,hhtq5.vip,wibu47.com,yanhh3d.com,hhhay.me,hhvsub.com###catfish
 xemphimhdcv.com##a#banner
 xemtivi4k.com###adstop2
 xemtivi4k.com##.ads-item
