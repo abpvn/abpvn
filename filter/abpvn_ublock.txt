@@ -1,9 +1,9 @@
 [Adblock Plus 2.0]
-! Version: 20241016170315028
+! Version: 20241016170743021
 ! id: D4028CDD-3D39-4624-ACC7-8140F4EC3888
 ! Title: ABPVN List
-! Last modified: 16 Oct 2024 17:03:15 UTC+7
-! Diff-Path: patches/20241016170315028.patch#abpvn_ublock
+! Last modified: 16 Oct 2024 17:07:43 UTC+7
+! Diff-Path: patches/20241016170743021.patch#abpvn_ublock
 ! Diff-Expires: 60 minutes
 ! Expires: 1 days (update frequency)
 !
@@ -80,7 +80,7 @@
 ||ads.nghenhinvietnam.vn^$domain=nghenhinvietnam.vn
 ||ahaphimz.com/js/pov.js$script
 ||alwingulla.com/88/tag.min.js$script,xmlhttprequest,rewrite=abp-resource:blank-js,domain=apkmoddone.com
-||animehay.kim^*.gif
+||animehay.my^*.gif
 ||animet3.pro^*.gif
 ||animevietsubs.com/vast/$image
 ||animew.org/_next/image?url=https%3A%2F%2Flh3.googleusercontent.com$image
@@ -1663,8 +1663,8 @@ youtubeporn.pro,hls.playerfb.xyz###video_player ~ div[id]
 ! ---------Rule only for uBlock Origin------
 10gb.vn##+js(acs, Promise, detectedAdblock)
 abtruyenmoi.com##+js(acs, $, popup)
-animehay.kim##+js(acs, Number, ;break;case)
-animehay.kim,anivn.club##+js(acs, document.addEventListener, window.open)
+animehay.my##+js(acs, Number, ;break;case)
+animehay.my,anivn.club##+js(acs, document.addEventListener, window.open)
 animevietsubs.com##+js(aopr, _0x3f9b)
 aoe.vn##+js(aopr, parseInt)
 apkmoddone.phongroblox.com##+js(set-cookie, antiBlock, 1)
