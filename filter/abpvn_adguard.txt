@@ -1,9 +1,9 @@
 [Adblock Plus 2.0]
-! Version: 20241016170743021
+! Version: 20241016172115530
 ! id: D4028CDD-3D39-4624-ACC7-8140F4EC3888
 ! Title: ABPVN List
-! Last modified: 16 Oct 2024 17:07:43 UTC+7
-! Diff-Path: patches/20241016170743021.patch#abpvn_adguard
+! Last modified: 16 Oct 2024 17:21:15 UTC+7
+! Diff-Path: patches/20241016172115530.patch#abpvn_adguard
 ! Diff-Expires: 60 minutes
 ! Expires: 1 days (update frequency)
 !
@@ -101,7 +101,7 @@
 ||cdn.lfastcdn.com^*.gif$image,domain=bongdainfox.tv|xoilaczz63.live|90phute.cc|rakhoiv.cc|cakhiaa.cc
 ||cdn.thichxemphim1.net/wp-content/themes/halimmovies-child/jscm.min.js$domain=thichxemphim1.net
 ||cdn.webhoctienganh.com/asset/home/img/banner/$image,domain=webhoctienganh.com
-||cdn2-img.net^*.gif$image,domain=hhpanda.bio|dongchill.me|biphim.my|motchill.to|subnhanh.ch|subnhanhvl.com|bichill.my|dongphim.video
+||cdn2-img.net^*.gif$image,domain=hhpanda.city|dongchill.me|biphim.my|motchill.to|subnhanh.ch|subnhanhvl.com|bichill.my|dongphim.video
 ||chillphimmoizzzz.org/assets/*.gif$image
 ||chillphimmoizzzz.org/assets/js/popup.js
 ||chodansinh.net^*.gif
@@ -137,7 +137,7 @@
 ||heovktgame.club/wp-content/plugins/banner-management/$image
 ||hhhay.me^*.gif$image
 ||hhkungfu.club/88vn$image,domain=hhchina.xyz
-||hhpanda.bio/ads/$script,~third-party
+||hhpanda.city/ads/$script,~third-party
 ||hinhso.com^$domain=diendanmaychu.vn,image
 ||hosocongty.vn/uploads/products/$~third-party,image
 ||hotphimvn.cc/disable.js$script
@@ -745,7 +745,7 @@ baonga.com##.monkey-content-duoicanbiet
 baonga.com##.monkey-section-tinnoibat
 baonga.com##div.monkey-qc
 biphim.my###top_oddd
-biphim.my,subnhanh.ch,subnhanhvl.com,hhpanda.bio,subnhanhvl.com##.underplayer_btn
+biphim.my,subnhanh.ch,subnhanhvl.com,hhpanda.city,subnhanhvl.com##.underplayer_btn
 blog.abit.vn##.button-dangkyngay
 blogkiienthuc.net##.textwidget
 blogtruyenvn.org##.qc-inner
@@ -809,7 +809,7 @@ docviewer.yandex.com##.js-doc-html>div>div[id]
 doisongphapluat.com.vn##.sys-ads
 domdomtruyentranh.com##iframe[src*="ads"]
 dongphim.video##a[rel="nofollow sponsored"]
-dongphim.video,dongchill.me,bichill.my,phim18han.net,phimmoiz.me,vivuphim.info,hhpanda.bio,hhanime3d.com,subnhanhvl.com,dongchill.me###footer_fixed_ads
+dongphim.video,dongchill.me,bichill.my,phim18han.net,phimmoiz.me,vivuphim.info,hhpanda.city,hhanime3d.com,subnhanhvl.com,dongchill.me###footer_fixed_ads
 download.vn##div[id^="adsbg"]
 dubaotiente.io##.ad-pin-right-bottom
 ebookbkmt.com##.top-right
@@ -858,11 +858,11 @@ hayghe.cam###antiblocker_underplayer
 hayhaytv.org,subnhanh1.org##.sticky_bottom
 hayhaytv.org,subnhanh1.org##.t_logo
 heovktgame.club##.toogle-ads
-hhanime3d.com,hhpanda.bio,subnhanhvl.com###top_addd
+hhanime3d.com,hhpanda.city,subnhanhvl.com###top_addd
 hhchina.xyz###header-ads
 hhchina.xyz###header-ads + center
 hhhay.me##.bnqcclm
-hhpanda.bio##.btn-fanpage.btn-default.btn-block.btn
+hhpanda.city##.btn-fanpage.btn-default.btn-block.btn
 hhtm.pro###catfish-ads
 hhtqvietsub.top###top-banner-pc
 hhtqvietsub.top,hhchina.xyz###sponsor-balloon
@@ -1696,7 +1696,7 @@ gotphim.com#%#//scriptlet("abort-current-inline-script", "navigator", "devtoolsD
 hayhaytv.org,api.anime3s.com,subnhanh1.org#%#//scriptlet("set-constant", "maxAds", "0")
 hh3dhay.life#%#//scriptlet("abort-current-inline-script", "Symbol", "break;case $")
 hh3dhay.life,hh3dhay.xyz#%#//scriptlet("abort-current-inline-script", "document.createElement", ";break;case")
-hhpanda.bio###overlay
+hhpanda.city###overlay
 holyfilm.org#%#//scriptlet("abort-current-inline-script", "window.addEventListener", "window.open")
 imail.edu.vn#%#//scriptlet("abort-current-inline-script", "setTimeout", "Aff")
 ios.codevn.net#%#//scriptlet("abort-current-inline-script", "setInterval", "offsetHeight")
@@ -1707,7 +1707,7 @@ linkneverdie.net,linkneverdie.top,linkneverdie2.com#%#//scriptlet("prevent-setTi
 linkneverdie.net,linkneverdie.top,linkneverdie2.com#%#//scriptlet("prevent-setTimeout", "callback", "6004")
 live3.thapcam26.net##.modal-backdrop.show
 live3.thapcam26.net##.show.fade
-live3.thapcam26.net,xem20.gavang1.net,xem19.gavang1.net,hhpanda.bio#$#html {overflow: auto!important;}
+live3.thapcam26.net,xem20.gavang1.net,xem19.gavang1.net,hhpanda.city#$#html {overflow: auto!important;}
 lrepacks.net#%#//scriptlet("abort-current-inline-script", "JSON.parse", "break;case $.")
 luotphim1.net,mephim.ink,cdnwp.icu#%#//scriptlet("json-prune", "0.time_mobile 0.time 0.link_video 0.link_video_mobile 0.link 0.link_mobile 1.time_mobile 1.time 1.link_video 1.link_video_mobile 1.link 1.link_mobile")
 luotphimtv.cam,p.thoctv.com,ytstv.me#%#//scriptlet("abort-current-inline-script", "document.createElement", "script")
