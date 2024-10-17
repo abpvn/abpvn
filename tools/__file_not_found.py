@@ -25,7 +25,7 @@ class FileCheck(threading.Thread):
             return
         file = self.__file
         try:
-            request_url = "http://" + file
+            request_url = "https://" + file
             res = requests.head(url=request_url, headers={
                 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:107.0) Gecko/20100101 Firefox/107.0'
             }, allow_redirects=True, timeout=5)
