@@ -1,11 +1,11 @@
-diff name:abpvn lines:217 checksum:129294f224
+diff name:abpvn lines:233 checksum:f3fb9348cf
 d2 1
 a2 1
-! Version: 20241028083431680
+! Version: 20241028083806199
 d5 2
 a6 2
-! Last modified: 28 Oct 2024 08:34:31 UTC+7
-! Diff-Path: patches/20241028083431680.patch#abpvn
+! Last modified: 28 Oct 2024 08:38:06 UTC+7
+! Diff-Path: patches/20241028083806199.patch#abpvn
 d25 1
 a25 1
 .net/ads/$domain=~linkneverdie.net
@@ -26,8 +26,10 @@ a150 1
 ||i.imgur.com^*.gif$image,domain=ghienphim.in|mv.dailyphimz.com|mv.phimmoiaz.cc|phimgichill.net|ophimhdvn3.net|mythethao.net|xemtivi4k.com|vtipster.net|huphimtv.com|phimmoi.sale|xemtv.tvhayhd.tv|hoathinh4k3.net|vutruphim.tv|phimhay123.me|ketqua247vn.club
 d158 1
 d176 1
-a176 1
+a176 3
 ||motchilltv.ws/banner$image
+||mplmncb.com/banners-web$image,domain=truyenqqto.com
+||mplmncb.com/popup/$script,domain=truyenqqto.com
 d183 2
 a184 2
 ||phim.vkool8.net/images/ads/$image
@@ -37,7 +39,7 @@ a217 1
 ||shopphukien.shop/pop.js$script,domain=motchill.id|ohaytv.com
 d222 2
 a223 2
-||static-mn.mediastation.live^*.gif$image,domain=mn.mediastation.live|home2.mannhan9.pro|live2.mannhan77.xyz
+||static-mn.mediastation.live^*.gif$image,domain=mn.mediastation.live|home2.mannhan9.pro|live10.mannhan79.xyz
 ||static-sk.mediastation.live^*.gif$image,domain=home2.mannhan9.pro
 a275 2
 ||ww1.xemphimhdc.com$csp=script-src 'self' 'unsafe-inline' https:
@@ -101,8 +103,16 @@ kienthuc.net.vn,saostar.vn,bongda24h.vn,cungthi.online,appvn.com,antt.vn,v.xemph
 d619 1
 d627 1
 d633 6
-d641 1
-d643 1
+d641 10
+a650 8
+live10.mannhan79.xyz##.bet-btn-8423
+live10.mannhan79.xyz##.btn_betnow_632132
+live10.mannhan79.xyz##.highlight
+live10.mannhan79.xyz##.images-bnr
+live10.mannhan79.xyz##.images_fixed
+live10.mannhan79.xyz##.popup
+live10.mannhan79.xyz##.sticky
+live10.mannhan79.xyz##a.btn_fb:nth-of-type(2)
 d656 2
 a657 2
 live3.thapcam26.net,live.thapcam70.net,live4.thapcam29.net,live.thapcam30.net,live3.thapcam121.net,live2.thapcam120.net##.modal
@@ -143,6 +153,12 @@ phimmoi.ing,vungtv.us,ww1.xemphimhdc.com###container-ads
 d779 1
 a829 1
 the.tube##.ads-container
+a884 5
+truyenqqto.com###floating-banner-left
+truyenqqto.com###floating-banner-right
+truyenqqto.com###popup-truyenqq
+truyenqqto.com###popup-truyenqq-home
+truyenqqto.com##.ads-banner
 a910 10
 unmanned-ship.org##.btn-action
 unmanned-ship.org##.btno-group.d-none.d-lg-flex
@@ -216,14 +232,14 @@ d1316 1
 d1326 1
 a1326 1
 sexviettop.blog,javhd.tech,khosex.blog,sexheovl.com,sexvip.lol,trangsexdam.net,vlxxai.net,javhd.social,sexsoc.info###f186fb23a33995d91ce3c2212189178c8
-diff name:abpvn_adguard lines:235 checksum:a6644ca4db
+diff name:abpvn_adguard lines:251 checksum:14f84799c6
 d2 1
 a2 1
-! Version: 20241028083431680
+! Version: 20241028083806199
 d5 2
 a6 2
-! Last modified: 28 Oct 2024 08:34:31 UTC+7
-! Diff-Path: patches/20241028083431680.patch#abpvn_adguard
+! Last modified: 28 Oct 2024 08:38:06 UTC+7
+! Diff-Path: patches/20241028083806199.patch#abpvn_adguard
 d23 1
 a23 1
 .net/ads/$domain=~linkneverdie.net
@@ -244,8 +260,10 @@ a148 1
 ||i.imgur.com^*.gif$image,domain=ghienphim.in|mv.dailyphimz.com|mv.phimmoiaz.cc|phimgichill.net|ophimhdvn3.net|mythethao.net|xemtivi4k.com|vtipster.net|huphimtv.com|phimmoi.sale|xemtv.tvhayhd.tv|hoathinh4k3.net|vutruphim.tv|phimhay123.me|ketqua247vn.club
 d156 1
 d174 1
-a174 1
+a174 3
 ||motchilltv.ws/banner$image
+||mplmncb.com/banners-web$image,domain=truyenqqto.com
+||mplmncb.com/popup/$script,domain=truyenqqto.com
 d181 2
 a182 2
 ||phim.vkool8.net/images/ads/$image
@@ -255,7 +273,7 @@ a213 1
 ||shopphukien.shop/pop.js$script,domain=motchill.id|ohaytv.com
 d218 2
 a219 2
-||static-mn.mediastation.live^*.gif$image,domain=mn.mediastation.live|home2.mannhan9.pro|live2.mannhan77.xyz
+||static-mn.mediastation.live^*.gif$image,domain=mn.mediastation.live|home2.mannhan9.pro|live10.mannhan79.xyz
 ||static-sk.mediastation.live^*.gif$image,domain=home2.mannhan9.pro
 a271 2
 ||ww1.xemphimhdc.com$csp=script-src 'self' 'unsafe-inline' https:
@@ -319,8 +337,16 @@ kienthuc.net.vn,saostar.vn,bongda24h.vn,cungthi.online,appvn.com,antt.vn,v.xemph
 d615 1
 d623 1
 d629 6
-d637 1
-d639 1
+d637 10
+a646 8
+live10.mannhan79.xyz##.bet-btn-8423
+live10.mannhan79.xyz##.btn_betnow_632132
+live10.mannhan79.xyz##.highlight
+live10.mannhan79.xyz##.images-bnr
+live10.mannhan79.xyz##.images_fixed
+live10.mannhan79.xyz##.popup
+live10.mannhan79.xyz##.sticky
+live10.mannhan79.xyz##a.btn_fb:nth-of-type(2)
 d652 2
 a653 2
 live3.thapcam26.net,live.thapcam70.net,live4.thapcam29.net,live.thapcam30.net,live3.thapcam121.net,live2.thapcam120.net##.modal
@@ -361,6 +387,12 @@ phimmoi.ing,vungtv.us,ww1.xemphimhdc.com###container-ads
 d775 1
 a825 1
 the.tube##.ads-container
+a880 5
+truyenqqto.com###floating-banner-left
+truyenqqto.com###floating-banner-right
+truyenqqto.com###popup-truyenqq
+truyenqqto.com###popup-truyenqq-home
+truyenqqto.com##.ads-banner
 a906 10
 unmanned-ship.org##.btn-action
 unmanned-ship.org##.btno-group.d-none.d-lg-flex
@@ -452,14 +484,14 @@ d1480 1
 d1483 1
 a1483 1
 xoilacxj.cc#%#//scriptlet("abort-on-property-read", "adsRedirectPopups")
-diff name:abpvn_content_blocker lines:217 checksum:0eaadd62b5
+diff name:abpvn_content_blocker lines:233 checksum:4db9a4f854
 d2 1
 a2 1
-! Version: 20241028083431680
+! Version: 20241028083806199
 d5 2
 a6 2
-! Last modified: 28 Oct 2024 08:34:31 UTC+7
-! Diff-Path: patches/20241028083431680.patch#abpvn_content_blocker
+! Last modified: 28 Oct 2024 08:38:06 UTC+7
+! Diff-Path: patches/20241028083806199.patch#abpvn_content_blocker
 d25 1
 a25 1
 .net/ads/$domain=~linkneverdie.net
@@ -480,8 +512,10 @@ a150 1
 ||i.imgur.com^*.gif$image,domain=ghienphim.in|mv.dailyphimz.com|mv.phimmoiaz.cc|phimgichill.net|ophimhdvn3.net|mythethao.net|xemtivi4k.com|vtipster.net|huphimtv.com|phimmoi.sale|xemtv.tvhayhd.tv|hoathinh4k3.net|vutruphim.tv|phimhay123.me|ketqua247vn.club
 d158 1
 d176 1
-a176 1
+a176 3
 ||motchilltv.ws/banner$image
+||mplmncb.com/banners-web$image,domain=truyenqqto.com
+||mplmncb.com/popup/$script,domain=truyenqqto.com
 d183 2
 a184 2
 ||phim.vkool8.net/images/ads/$image
@@ -491,7 +525,7 @@ a217 1
 ||shopphukien.shop/pop.js$script,domain=motchill.id|ohaytv.com
 d222 2
 a223 2
-||static-mn.mediastation.live^*.gif$image,domain=mn.mediastation.live|home2.mannhan9.pro|live2.mannhan77.xyz
+||static-mn.mediastation.live^*.gif$image,domain=mn.mediastation.live|home2.mannhan9.pro|live10.mannhan79.xyz
 ||static-sk.mediastation.live^*.gif$image,domain=home2.mannhan9.pro
 a275 2
 ||ww1.xemphimhdc.com$csp=script-src 'self' 'unsafe-inline' https:
@@ -555,8 +589,16 @@ kienthuc.net.vn,saostar.vn,bongda24h.vn,cungthi.online,appvn.com,antt.vn,v.xemph
 d619 1
 d627 1
 d633 6
-d641 1
-d643 1
+d641 10
+a650 8
+live10.mannhan79.xyz##.bet-btn-8423
+live10.mannhan79.xyz##.btn_betnow_632132
+live10.mannhan79.xyz##.highlight
+live10.mannhan79.xyz##.images-bnr
+live10.mannhan79.xyz##.images_fixed
+live10.mannhan79.xyz##.popup
+live10.mannhan79.xyz##.sticky
+live10.mannhan79.xyz##a.btn_fb:nth-of-type(2)
 d656 2
 a657 2
 live3.thapcam26.net,live.thapcam70.net,live4.thapcam29.net,live.thapcam30.net,live3.thapcam121.net,live2.thapcam120.net##.modal
@@ -597,6 +639,12 @@ phimmoi.ing,vungtv.us,ww1.xemphimhdc.com###container-ads
 d779 1
 a829 1
 the.tube##.ads-container
+a884 5
+truyenqqto.com###floating-banner-left
+truyenqqto.com###floating-banner-right
+truyenqqto.com###popup-truyenqq
+truyenqqto.com###popup-truyenqq-home
+truyenqqto.com##.ads-banner
 a910 10
 unmanned-ship.org##.btn-action
 unmanned-ship.org##.btno-group.d-none.d-lg-flex
@@ -670,14 +718,14 @@ d1316 1
 d1326 1
 a1326 1
 sexviettop.blog,javhd.tech,khosex.blog,sexheovl.com,sexvip.lol,trangsexdam.net,vlxxai.net,javhd.social,sexsoc.info###f186fb23a33995d91ce3c2212189178c8
-diff name:abpvn_noelemhide lines:54 checksum:df611126ac
+diff name:abpvn_noelemhide lines:56 checksum:c14c2bca4b
 d2 1
 a2 1
-! Version: 20241028083431680
+! Version: 20241028083806199
 d5 2
 a6 2
-! Last modified: 28 Oct 2024 08:34:31 UTC+7
-! Diff-Path: patches/20241028083431680.patch#abpvn_noelemhide
+! Last modified: 28 Oct 2024 08:38:06 UTC+7
+! Diff-Path: patches/20241028083806199.patch#abpvn_noelemhide
 d25 1
 a25 1
 .net/ads/$domain=~linkneverdie.net
@@ -698,8 +746,10 @@ a150 1
 ||i.imgur.com^*.gif$image,domain=ghienphim.in|mv.dailyphimz.com|mv.phimmoiaz.cc|phimgichill.net|ophimhdvn3.net|mythethao.net|xemtivi4k.com|vtipster.net|huphimtv.com|phimmoi.sale|xemtv.tvhayhd.tv|hoathinh4k3.net|vutruphim.tv|phimhay123.me|ketqua247vn.club
 d158 1
 d176 1
-a176 1
+a176 3
 ||motchilltv.ws/banner$image
+||mplmncb.com/banners-web$image,domain=truyenqqto.com
+||mplmncb.com/popup/$script,domain=truyenqqto.com
 d183 2
 a184 2
 ||phim.vkool8.net/images/ads/$image
@@ -709,7 +759,7 @@ a217 1
 ||shopphukien.shop/pop.js$script,domain=motchill.id|ohaytv.com
 d222 2
 a223 2
-||static-mn.mediastation.live^*.gif$image,domain=mn.mediastation.live|home2.mannhan9.pro|live2.mannhan77.xyz
+||static-mn.mediastation.live^*.gif$image,domain=mn.mediastation.live|home2.mannhan9.pro|live10.mannhan79.xyz
 ||static-sk.mediastation.live^*.gif$image,domain=home2.mannhan9.pro
 a275 2
 ||ww1.xemphimhdc.com$csp=script-src 'self' 'unsafe-inline' https:
@@ -725,14 +775,14 @@ d467 1
 a467 1
 ||quoracdn.net^$image,domain=vlxx.mx|vlxyz.tube|sieudamtv.lol|phevkl.club|viet69.la|phim18vip.vip|chichnhau.vin
 d476 1
-diff name:abpvn_ublock lines:235 checksum:97168bc8e0
+diff name:abpvn_ublock lines:251 checksum:0c127702e7
 d2 1
 a2 1
-! Version: 20241028083431680
+! Version: 20241028083806199
 d5 2
 a6 2
-! Last modified: 28 Oct 2024 08:34:31 UTC+7
-! Diff-Path: patches/20241028083431680.patch#abpvn_ublock
+! Last modified: 28 Oct 2024 08:38:06 UTC+7
+! Diff-Path: patches/20241028083806199.patch#abpvn_ublock
 d23 1
 a23 1
 .net/ads/$domain=~linkneverdie.net
@@ -753,8 +803,10 @@ a148 1
 ||i.imgur.com^*.gif$image,domain=ghienphim.in|mv.dailyphimz.com|mv.phimmoiaz.cc|phimgichill.net|ophimhdvn3.net|mythethao.net|xemtivi4k.com|vtipster.net|huphimtv.com|phimmoi.sale|xemtv.tvhayhd.tv|hoathinh4k3.net|vutruphim.tv|phimhay123.me|ketqua247vn.club
 d156 1
 d174 1
-a174 1
+a174 3
 ||motchilltv.ws/banner$image
+||mplmncb.com/banners-web$image,domain=truyenqqto.com
+||mplmncb.com/popup/$script,domain=truyenqqto.com
 d181 2
 a182 2
 ||phim.vkool8.net/images/ads/$image
@@ -764,7 +816,7 @@ a213 1
 ||shopphukien.shop/pop.js$script,domain=motchill.id|ohaytv.com
 d218 2
 a219 2
-||static-mn.mediastation.live^*.gif$image,domain=mn.mediastation.live|home2.mannhan9.pro|live2.mannhan77.xyz
+||static-mn.mediastation.live^*.gif$image,domain=mn.mediastation.live|home2.mannhan9.pro|live10.mannhan79.xyz
 ||static-sk.mediastation.live^*.gif$image,domain=home2.mannhan9.pro
 a271 2
 ||ww1.xemphimhdc.com$csp=script-src 'self' 'unsafe-inline' https:
@@ -828,8 +880,16 @@ kienthuc.net.vn,saostar.vn,bongda24h.vn,cungthi.online,appvn.com,antt.vn,v.xemph
 d615 1
 d623 1
 d629 6
-d637 1
-d639 1
+d637 10
+a646 8
+live10.mannhan79.xyz##.bet-btn-8423
+live10.mannhan79.xyz##.btn_betnow_632132
+live10.mannhan79.xyz##.highlight
+live10.mannhan79.xyz##.images-bnr
+live10.mannhan79.xyz##.images_fixed
+live10.mannhan79.xyz##.popup
+live10.mannhan79.xyz##.sticky
+live10.mannhan79.xyz##a.btn_fb:nth-of-type(2)
 d652 2
 a653 2
 live3.thapcam26.net,live.thapcam70.net,live4.thapcam29.net,live.thapcam30.net,live3.thapcam121.net,live2.thapcam120.net##.modal
@@ -870,6 +930,12 @@ phimmoi.ing,vungtv.us,ww1.xemphimhdc.com###container-ads
 d775 1
 a825 1
 the.tube##.ads-container
+a880 5
+truyenqqto.com###floating-banner-left
+truyenqqto.com###floating-banner-right
+truyenqqto.com###popup-truyenqq
+truyenqqto.com###popup-truyenqq-home
+truyenqqto.com##.ads-banner
 a906 10
 unmanned-ship.org##.btn-action
 unmanned-ship.org##.btno-group.d-none.d-lg-flex
