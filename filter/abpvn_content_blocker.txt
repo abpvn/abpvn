@@ -1,9 +1,9 @@
 [Adblock Plus 2.0]
-! Version: 20241119140147556
+! Version: 20241119180443050
 ! id: D4028CDD-3D39-4624-ACC7-8140F4EC3888
 ! Title: ABPVN List
-! Last modified: 19 Nov 2024 14:01:47 UTC+7
-! Diff-Path: patches/20241119140147556.patch#abpvn_content_blocker
+! Last modified: 19 Nov 2024 18:04:43 UTC+7
+! Diff-Path: patches/20241119180443050.patch#abpvn_content_blocker
 ! Diff-Expires: 60 minutes
 ! Expires: 1 days (update frequency)
 !
@@ -291,7 +291,7 @@ $popup,domain=truyenfull.io
 ||www.thuocbietduoc.com.vn/adv/
 ||www.thuocbietduoc.com.vn/aqc/$image
 ||xahoingaynay.com.vn/upload/$image
-||xc.1357668.com^*.gif$domain=live.7mvn4.com|live.7mvn4.com
+||xc.1357668.com^*.gif$domain=live.7mvn4.com
 ||xmedia.antt.vn/upload/*.gif$image,domain=antt.vn
 ||xxoilac.com^*.gif$image
 ||zcine.net^*.gif$image
@@ -570,6 +570,7 @@ $popup,domain=truyenfull.io
 ||pub.akadigital.vn^
 ||pub.lavamedia.vn^
 ||pub.lavanetwork.net^$third-party
+||pubpowerplatform.io^
 ||puhtml.com^$third-party
 ||purgrobi.com/ub.pi$third-party
 ||pushokey.com^
@@ -599,6 +600,7 @@ $popup,domain=truyenfull.io
 ||stagepopkek.com^
 ||static.adconnect.vn^
 ||static.cdnativepush.com^
+||static.dable.io^
 ||static.eclick.vn^
 ||static.philacct.com^
 ||stormyachiever.com^
@@ -874,7 +876,6 @@ hhchina.shop###header-ads
 hhchina.shop###header-ads + center
 hhhay.ink##.bnqcclm
 hhpanda.li##.btn-fanpage.btn-default.btn-block.btn
-hhtm.pro###catfish-ads
 hhtqvietsub.me###top-banner-pc
 hhtqvietsub.me,hhchina.shop###sponsor-balloon
 hoahoc247.com##.btn_small_fix_container
@@ -1011,7 +1012,6 @@ phim202.com###itro_opaco
 phim88.tv##div[data-value="1"]
 phimbet.biz###banner
 phimdacap.tv###ads-popup
-phimdacap.tv###catfish
 phimdinhcao.com##.BanerTop100
 phimdinhcao.com##.banner-container
 phimdinhcao.net,phimlongtieng.com,phimlongtieng.net,www.phimdinhcaoz.com##.BanerTop100
@@ -1048,7 +1048,7 @@ phimreview.org##.banner-sticky-footer-wrapper
 phimss.net##.ads-pc
 phimss.net##.ads-sp
 phimtuoitho.site,tvhayw.org##.catfish-bottom
-phimvuihd.org,hh3dhay.life,xemphim18.net,xem15.com,vutruphim.tv,tram3d.net##.float-ck-center-lt
+phimvuihd.org,hh3dhay.life,xemphim18.net,xem15.com,vutruphim.tv,tram3d.me##.float-ck-center-lt
 phongroblox.com###fakeDown
 phunumoi.net.vn,nhipcaudautu.vn##div[id^="ads_"]
 phuongtrinhhoahoc.com##.shadow-card + .mt-2
@@ -1258,6 +1258,8 @@ vnexpress.net##.section_ads_300x250
 voh.com.vn##.Advs_adv-components__1nBNS.Advs_adv-300x250__2eyhC.Advs_no-content__RWwW2
 voh.com.vn##.HotTagGlobal_fixed-height__1f50i
 voz.vn##.adsbypubpower
+voz.vn##.p-body-sidebar>.block>.block-container:has(.adsbypubpower)
+voz.vn##.p-body-sidebar>.block>.block-container:has([data-widget_id])
 voz.vn##.v-element>.v-responsive
 voz.vn##div.message--post
 voz.vn##div[style]:has(.adsbypubpower)
@@ -1318,7 +1320,7 @@ xem20.gavang1.net,xem19.gavang1.net##.vjs-banner-btn
 xem20.gavang1.net,xem19.gavang1.net##div.css-m49bkq.MuiStack-root>a
 xemphim18.net###pc-top-banner
 xemphim18.net###quang-cao
-xemphimchill.xyz,hhninja13.tv,phimhoathinh3d.vip,hoathinhtq.site,hhtq8.vip,hhtqvietsub.me,motchilles.com,hhtrungquoc6.com,hhtutien.tv,animeweb.vip,hh3d1.xyz,hoathinh4k.net,motchilltvzz.biz,hoathinh3dtq.site,dragonphim.tv,hhchina.shop,motphimtv.cam,hhh3d.tv,hhtq3d.net,wibu47.com,yanhh3d.com,yanhh3d.tv,hhhay.ink,hhvsub.com###catfish
+xemphimchill.xyz,hhninja13.tv,phimhoathinh3d.vip,hoathinhtq.site,hhtq8.vip,hhtqvietsub.me,motchilles.com,hhtrungquoc6.com,hhtutien.tv,animeweb.vip,hh3d1.xyz,hoathinh4k.net,motchilltvzz.biz,hoathinh3dtq.site,dragonphim.tv,hhchina.shop,motphimtv.cam,hhh3d.tv,hhtq3d.net,wibu47.com,yanhh3d.com,yanhh3d.tv,hhhay.ink,hhvsub.com,phimdacap.tv###catfish
 xemphimchill.xyz,vivuphim.info##.popUpBannerBox
 xemtivi4k.com###adstop2
 xemtivi4k.com##.ads-item
@@ -1363,8 +1365,8 @@ xxoilac.com##.link2.group-link
 xxoilac.com##.top-main>div:nth-child(1)>div:nth-child(1)>div:nth-child(2)
 xxoilac.com,goal.90phut24.xyz##.btn-bet
 xxoilac.com,live3.thapcam26.net,goal.90phut24.xyz,live4.thapcamm.xyz,live3.thapcam29.net,live4.thapcam29.net,live3.thapcam27.net,live2.thapcam120.net##.active.bg-overlay
-yanhh3d.com,yanhh3d.tv###catfish-ads
 yanhh3d.com,yanhh3d.tv##.banner-ads-cs
+yanhh3d.com,yanhh3d.tv,hhtm.pro###catfish-ads
 ycongnghe.com##.td-container > div.td-pb-row > .td-pb-span12
 ycongnghe.com##.td-container-wrap.td-logo-wrap-full.td-banner-wrap-full
 ycongnghe.com##.td-crumb-container
@@ -1502,10 +1504,7 @@ avvietsub.info##.hidden-md.right.col-3
 avvietsub.info##body>.container>div
 bimmup.tv###popup-giua-man-hinh
 bimmup.tv##.ads_below_player
-chichnhau.blog###pc-preload-modal
 chichnhau.blog###popup
-chichnhau.blog##.in.fade.modal-backdrop
-chichnhau.blog##.quang-cao
 chichnhau.blog##.top-float-ck
 cliphot69.lat###mp-preload-pp-overlay
 cliphot69.lat##.adpl
@@ -1545,9 +1544,6 @@ lxmanga.store##.ads-wrapper
 mobi.ditnhauvietnam.com##.alldiv ~ div[class]
 ngaytho.me##.body_wrapper1
 nhentaivn.online###popup_fipup-overlay
-pheclip.vin###pc-preload-modal
-pheclip.vin##.in.fade.modal-backdrop
-pheclip.vin##.quang-cao
 phevkl.blog,viet69.sale###haun-player>div[style]
 phevkl.blog,viet69.sale###preload
 phevkl.blog,viet69.sale###primary-nav>div[style]
@@ -1559,7 +1555,7 @@ phim18hd.sex##.cash-fish-pc
 phim18hd.sex##.preload-pc
 phim18hd.sex##.top-mobile-banner
 phim18hd.sex##.under-player-pc-banner
-phim18vip.vip##.in.fade.modal-backdrop
+phim18vip.vip,pheclip.vin,chichnhau.blog##.in.fade.modal-backdrop
 phimsexhay669.pro##.v4j-header>a[target="_blank"]
 phym18.lol###a-player
 phym18.lol###popup_fi
@@ -1586,9 +1582,9 @@ sextop.asia##div[style^="position:fixed;inset:0px;z-index:100000;"]
 sextop.asia,hls.playerfb.xyz###video_player ~ div[id]
 sexviettop.blog,javhd.tech,khosex.blog,sexheovl.com,phimsexloan.com,trangsexdam.net,vlxxai.net,javhd.social,sexsoc.info###f186fb23a33995d91ce3c2212189178c8
 sexvn2024.pro###tut4ktream_idAdLink
-sieudam.vin,phim18vip.vip###pc-preload-modal
 sieudam.vin,phim18vip.vip###popup
-sieudam.vin,phim18vip.vip##.quang-cao
+sieudam.vin,phim18vip.vip,chichnhau.blog,pheclip.vin###pc-preload-modal
+sieudam.vin,phim18vip.vip,chichnhau.blog,pheclip.vin##.quang-cao
 sieukhung.live##.adspopupgiua
 sieukhung.live##.adspopupleft
 sieukhung.live##.adspopupright
