@@ -43,6 +43,10 @@ class NoIpCheck(threading.Thread):
                 print("{}: Processed domain in index {}/{}".format(domain, self.__domain_index, self.__total_domain))
             else:
                 print("{}: has valid IP address".format(domain))
+        except dns.resolver.NXDOMAIN as ex:
+            self.lock.acquire()
+            self.no_ip_domains.append(domain)
+            self.lock.release()
         except Exception as ex:
             box_print("{}: Got exception {} when check".format(domain, ex))
             self.lock.acquire()
