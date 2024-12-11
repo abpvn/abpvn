@@ -49,9 +49,9 @@ class FileCheck(threading.Thread):
 class FileNotFound():
     def __init__(self, files) -> None:
         self.files = files
-        self.__threads = []
-        self.not_found_pairs = []
-        self.error_files = []
+        self.__threads: list[threading.Thread] = []
+        self.not_found_pairs: list[dict] = []
+        self.error_files: list[dict] = []
 
     def process_file(self, file):
         file_check = FileCheck()

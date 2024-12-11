@@ -60,9 +60,9 @@ class NoIpCheck(threading.Thread):
 class NoIpDomain():
     def __init__(self, domains) -> None:
         self.domains = domains
-        self.__threads = []
-        self.no_ip_domains = []
-        self.error_domains = []
+        self.__threads: list[threading.Thread] = []
+        self.no_ip_domains: list[str] = []
+        self.error_domains: list[str] = []
 
     def process_domain(self, domain, index, total_domain):
         domain_check = NoIpCheck()
