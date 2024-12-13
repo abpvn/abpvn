@@ -1,9 +1,9 @@
 [Adblock Plus 2.0]
-! Version: 20241212150649357
+! Version: 20241213155319813
 ! id: D4028CDD-3D39-4624-ACC7-8140F4EC3888
 ! Title: ABPVN List
-! Last modified: 12 Dec 2024 15:06:49 UTC+7
-! Diff-Path: patches/20241212150649357.patch#abpvn_ublock
+! Last modified: 13 Dec 2024 15:53:19 UTC+7
+! Diff-Path: patches/20241213155319813.patch#abpvn_ublock
 ! Diff-Expires: 60 minutes
 ! Expires: 1 days (update frequency)
 !
@@ -133,6 +133,7 @@
 ||github.com^$image,domain=xemphim18.net
 ||goal.90phut24.xyz^*.gif$image
 ||googleusercontent.com^$domain=hhtqvietsub.me
+||haychillz.com/*-pop$image
 ||heovktgame.club/wp-content/plugins/banner-management/$image
 ||hhhay.ink^*.gif$image
 ||hhkungfu.club/88vn$image,domain=hhchina.shop
@@ -358,6 +359,7 @@
 ||pk910324e.com^
 ||platform.adlinknetwork.vn^
 ||player.gliacloud.com^
+||poasauwhoothy.net^
 ||pub.akadigital.vn^
 ||pub.lavamedia.vn^
 ||pub.lavanetwork.net^$third-party
@@ -577,6 +579,7 @@ gocmod.com###bannerContainer2
 gocmod.com###sp-wrapper-hovering-format
 gocmod.com##.wam-banner
 gocmod.com##center:has(.adsbygoogle)
+haychillz.com###catfish_ads
 hayghe.me###antiblocker
 hayghe.me###antiblocker_underplayer
 hayhaytv.org,subnhanh1.org##.sticky_bottom
@@ -742,7 +745,7 @@ phimmoi.tuphim.net###adsTopInPageBanner
 phimmoi.tuphim.net##.adsContainer
 phimmoi.tuphim.net##.header__auth>.details__devices-list
 phimmoichillvn.net###pm_quangcao
-phimmoichillz.my###preload
+phimmoichillz.my,haychillz.com###preload
 phimmoinay.info,phimmoissz.pro,tvzinghd.co##.sda-catfish
 phimmoissz.pro###adspm4u
 phimnhua.net###catfish-banner
@@ -1406,6 +1409,7 @@ giavang.net##+js(no-fetch-if, method:HEAD)
 gocmod.com##+js(acs, jQuery, popup)
 goctruyentranhvui6.com,nettruyenww.com,sextop1.team,hhvsub.com,sayhentai.one,web.sexviet88.xyz##+js(acs, WebAssembly, globalThis)
 gotphim.com##+js(acs, navigator, devtoolsDetector)
+haychillz.com##+js(acs, Object.defineProperty, fromCharCode)
 hayhaytv.org,subnhanh1.org##+js(set, maxAds, 0)
 hh3dhay.life##+js(acs, Symbol, break;case $)
 hh3dhay.life,hh3dhay.in##+js(acs, document.createElement, ;break;case)
