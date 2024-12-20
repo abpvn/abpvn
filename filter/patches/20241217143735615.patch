@@ -1,19 +1,20 @@
-diff name:abpvn lines:310 checksum:3ad5c6435d
+diff name:abpvn lines:334 checksum:547d831df1
 d2 1
 a2 1
-! Version: 20241220114302697
+! Version: 20241220145005657
 d5 2
 a6 2
-! Last modified: 20 Dec 2024 11:43:02 UTC+7
-! Diff-Path: patches/20241220114302697.patch#abpvn
+! Last modified: 20 Dec 2024 14:50:05 UTC+7
+! Diff-Path: patches/20241220145005657.patch#abpvn
 d49 1
 a49 1
-/i.imgur.com/*.gif$domain=keonhacai55.cc|phimlongtieng.net|www.phimdinhcaoz.com|phimdinhcao.net|xoilacxj.cc|90phutz46.live|vebozg.cc|cakhiai.cc|listnhacai88.com|xoilaczz63.live|xemtivingon.org|phimlongtieng.com|mitomvg.cc|rakhoiy.cc|plcdn.xyz|phimmoi.ing|motphimww.net
+/i.imgur.com/*.gif$domain=keonhacai55.cc|phimlongtieng.net|www.phimdinhcaoz.com|phimdinhcao.net|xoilacxj.cc|90phutz46.live|vebozg.cc|cakhiai.cc|listnhacai88.com|xoilaczz63.live|xemtivingon.org|www.phimchaua.com|mitomvg.cc|rakhoiy.cc|plcdn.xyz|phimmoi.ing|motphimww.net
 d83 2
-a84 3
+a84 4
 ||animehay.moe^*.gif
 ||animet3.site^*.gif
 ||animevietsub.info/ads/popup.js$script
+||animevietsub.video/ads/popup.js$script
 d95 1
 a95 1
 ||biphim.lat/public/prom_ad/prom_ad.js$script
@@ -44,7 +45,7 @@ a142 2
 ||hhpanda.video/ads/$script,~third-party
 d170 1
 a170 1
-||lh3.googleusercontent.com/*=s0$image,domain=animevietsub.info|hoathinh4k3.net|hayghe.me
+||lh3.googleusercontent.com/*=s0$image,domain=animevietsub.info|animevietsub.video|hoathinh4k3.net|hayghe.me
 d176 1
 a176 1
 ||mediastation.live^*.gif$image,domain=mn.mediastation.live|home1.mannhan16.pro|mannhan89.xyz
@@ -52,6 +53,9 @@ d178 2
 a179 2
 ||motchill.vote/js/ads_xx.js
 ||motchillco.net/banner$image
+d212 1
+a212 1
+||quoracdn.net^$image,domain=www.phimlongtieng.net|www.phimchaua.com|www.phimdinhcaoz.com|phimdinhcao.com
 d216 1
 a216 1
 ||s2.phim1280.tv/adjump$domain=yeuphim.vip
@@ -69,7 +73,13 @@ a271 1
 d282 1
 a282 1
 ||vsc61.com/wp-content/themes/vuasanco/assets/scripts/scripts.js
+d290 1
+a290 1
+||www.phimchaua.com/3s.m3u8$rewrite=abp-resource:blank-mp3,domain=www.phimchaua.com
 d418 7
+d426 1
+a426 1
+123nhadatviet.net,123nhadatviet.com,tuoitrenews.vn,tuoitre.vn,nld.com.vn##.banner-top
 d449 2
 a450 2
 90phutz46.live,cakhiai.cc,xoilacxj.cc,vebozg.cc###quangcaopc
@@ -82,10 +92,10 @@ animet3.site##.gnartyx-offads
 animet3.site,animetvn4.com,subnhanh1.org###fbox-background
 d457 4
 a460 4
-animevietsub.info###invideo_wrapper
-animevietsub.info##.Ads
-animevietsub.info##.mobile-catfixx
-animevietsub.info##.pc-catfixx
+animevietsub.info,animevietsub.video####invideo_wrapper
+animevietsub.info,animevietsub.video###.Ads
+animevietsub.info,animevietsub.video###.mobile-catfixx
+animevietsub.info,animevietsub.video###.pc-catfixx
 d478 2
 a479 2
 biphim.lat###top_oddd
@@ -142,7 +152,7 @@ live.7mvn4.com###wAdList
 live.7mvn4.com##tr[id^="word_"]
 d676 1
 a679 1
-live4.xoilac34.org,vebo4.net,xem.vebo31.net,xem.banhkhuc120.info,thapcam53.net,xem.thapcamtv.live###m-bet
+live4.xoilac34.org,vebo4.net,xem.vebo31.net,xem.banhkhuc120.info,thapcam53.net,xem.thapcamtv.live,vv13.thapcamtivi.live###m-bet
 d681 1
 a681 1
 live4.xoilac34.org,xemphim18.net,freeplayervideo.com,abysscdn.com,player-cdn.com,geoip.redirect-ads.com,watch.rkplayer.xyz,phimss.net,fdcdn.xyz,animet3.site##.jw-logo
@@ -158,9 +168,15 @@ mitomvg.cc##.btn-od
 d708 1
 a708 1
 motphimww.net,tvphim.bz##.module_single_ads
+d726 1
 d731 1
 a731 1
 phim.vkool8.net,subnhanhvl.site,motchill.vote,subnhanh.now,tructiepdabong5.co,biphim.lat,dongphim.now,phimbet.biz,hhanime3d.net,dongchill.pro###overlay
+d738 2
+a739 2
+phimdinhcao.net,www.phimchaua.com,phimlongtieng.net,www.phimdinhcaoz.com##.adv-300-right
+phimdinhcao.net,www.phimchaua.com,phimlongtieng.net,www.phimdinhcaoz.com,phimdinhcao.com##.BanerTop100
+d748 2
 d753 2
 a754 2
 phimmoi.club,motphimww.net,tvphim.bz###floating_ads_bottom_textcss_container
@@ -168,8 +184,7 @@ phimmoi.club,motphimww.net,tvphim.bz##.module_home_ads
 d797 1
 a797 1
 subnhanhvl.site,motchill.vote,subnhanh.now###xs-addd0
-a821 2
-thapcam53.net##.mmo
+a821 1
 thapcam53.net,xem.thapcamtv.live##.btnz
 a866 1
 tructiepdabong5.co##.adLogoPlayer
@@ -194,11 +209,20 @@ vebozg.cc##header>.container
 d981 1
 a981 1
 vsc61.com##a.news__item--action:nth-of-type(2)
+d994 2
+d998 2
+a999 1
+vv13.thapcamtivi.live,thapcam53.net##.mmo
+a1018 2
+www.phimchaua.com,phimlongtieng.net###p-GMH
+www.phimchaua.com,phimlongtieng.net,www.phimdinhcaoz.com###mobile_content_top
 d1025 1
 a1025 1
 www.toptruyenpro1.com,doctruyen3qw.com,anime47.my##.advertisement
+d1035 1
+d1040 1
 a1041 1
-xem.thapcamtv.live,thapcam53.net,xx2.thapcam53.info,nn13.thapcam.asia##.modal
+xem.thapcamtv.live,thapcam53.net,xx2.thapcam53.info,nn13.thapcam.asia,xem.thapcamtv.com,vv13.thapcamtivi.live##.modal
 d1050 1
 a1050 1
 xemphimchill.xyz,hhninja14.tv,phimhoathinh3d.vip,hoathinhtq.site,hhtq8.vip,hhtqvietsub.me,motchillco.net,hhtrungquoc6.com,hhtutien.tv,animeweb.vip,hh3d1.xyz,hoathinh4k3.net,motchilltvzz.biz,hoathinh3dtq.site,dragonphim.tv,hhchina.my,hhh3d.tv,hhtq3d.net,hhtq5.vip,wibu47.com,yanhh3d.tv,hhhay.ink,hhvsub.com,motphim.cv,phimdacap.tv###catfish
@@ -214,7 +238,7 @@ a1083 1
 xoilaczz63.live,mitomvg.cc##.d-lg-flex.d-none.p-0.company.flex-1.table
 d1094 1
 a1094 1
-xxoilac.com,goal.90phut24.xyz,thapcam53.net,xem.thapcamtv.live,xx2.thapcam53.info,nn13.thapcam.asia##.active.bg-overlay
+xxoilac.com,goal.90phut24.xyz,thapcam53.net,xem.thapcamtv.live,xx2.thapcam53.info,nn13.thapcam.asia,vv13.thapcamtivi.live,xem.thapcamtv.com##.active.bg-overlay
 a1112 6
 z1000.thapcam53.net##.grid-match__footer>a.btn:nth-child(3)
 z1000.thapcam53.net##.mct_-bet-bot
@@ -262,7 +286,7 @@ a1273 1
 cliphot69.help###custom_html-42
 d1276 4
 a1279 3
-cliphotvn69.com,mobiblog123.one,cliphot69.help,phevkl.to,www.gvnvh.net,topviet69.video,sayhentai.one,viet69.ad##.float-ck-center-lt
+cliphotvn69.com,mobiblog123.xyz,cliphot69.help,phevkl.to,www.gvnvh.net,topviet69.video,sayhentai.one,viet69.ad##.float-ck-center-lt
 damconuong.art##a[rel="nofollow"]
 dualeotruyenxyz.com##[id$="bnr"]
 d1289 1
@@ -309,22 +333,23 @@ vlxxhot.xyz,vailonxx.co###ab_ctl
 vlxxhot.xyz,vailonxx.co##.bannerads
 vlxyz.tube,vlmupsex.com,sexhihiz.me##.xx-ads
 d1386 1
-diff name:abpvn_adguard lines:362 checksum:7d81f795ac
+diff name:abpvn_adguard lines:386 checksum:c59506e6ae
 d2 1
 a2 1
-! Version: 20241220114302697
+! Version: 20241220145005657
 d5 2
 a6 2
-! Last modified: 20 Dec 2024 11:43:02 UTC+7
-! Diff-Path: patches/20241220114302697.patch#abpvn_adguard
+! Last modified: 20 Dec 2024 14:50:05 UTC+7
+! Diff-Path: patches/20241220145005657.patch#abpvn_adguard
 d47 1
 a47 1
-/i.imgur.com/*.gif$domain=keonhacai55.cc|phimlongtieng.net|www.phimdinhcaoz.com|phimdinhcao.net|xoilacxj.cc|90phutz46.live|vebozg.cc|cakhiai.cc|listnhacai88.com|xoilaczz63.live|xemtivingon.org|phimlongtieng.com|mitomvg.cc|rakhoiy.cc|plcdn.xyz|phimmoi.ing|motphimww.net
+/i.imgur.com/*.gif$domain=keonhacai55.cc|phimlongtieng.net|www.phimdinhcaoz.com|phimdinhcao.net|xoilacxj.cc|90phutz46.live|vebozg.cc|cakhiai.cc|listnhacai88.com|xoilaczz63.live|xemtivingon.org|www.phimchaua.com|mitomvg.cc|rakhoiy.cc|plcdn.xyz|phimmoi.ing|motphimww.net
 d81 2
-a82 3
+a82 4
 ||animehay.moe^*.gif
 ||animet3.site^*.gif
 ||animevietsub.info/ads/popup.js$script
+||animevietsub.video/ads/popup.js$script
 d93 1
 a93 1
 ||biphim.lat/public/prom_ad/prom_ad.js$script
@@ -355,7 +380,7 @@ a140 2
 ||hhpanda.video/ads/$script,~third-party
 d168 1
 a168 1
-||lh3.googleusercontent.com/*=s0$image,domain=animevietsub.info|hoathinh4k3.net|hayghe.me
+||lh3.googleusercontent.com/*=s0$image,domain=animevietsub.info|animevietsub.video|hoathinh4k3.net|hayghe.me
 d174 1
 a174 1
 ||mediastation.live^*.gif$image,domain=mn.mediastation.live|home1.mannhan16.pro|mannhan89.xyz
@@ -363,6 +388,9 @@ d176 2
 a177 2
 ||motchill.vote/js/ads_xx.js
 ||motchillco.net/banner$image
+d210 1
+a210 1
+||quoracdn.net^$image,domain=www.phimlongtieng.net|www.phimchaua.com|www.phimdinhcaoz.com|phimdinhcao.com
 d213 1
 a213 1
 ||s2.phim1280.tv/adjump$domain=yeuphim.vip
@@ -380,7 +408,13 @@ a267 1
 d278 1
 a278 1
 ||vsc61.com/wp-content/themes/vuasanco/assets/scripts/scripts.js
+d286 1
+a286 1
+||www.phimchaua.com/3s.m3u8$rewrite=abp-resource:blank-mp3,domain=www.phimchaua.com
 d414 7
+d422 1
+a422 1
+123nhadatviet.net,123nhadatviet.com,tuoitrenews.vn,tuoitre.vn,nld.com.vn##.banner-top
 d445 2
 a446 2
 90phutz46.live,cakhiai.cc,xoilacxj.cc,vebozg.cc###quangcaopc
@@ -393,10 +427,10 @@ animet3.site##.gnartyx-offads
 animet3.site,animetvn4.com,subnhanh1.org###fbox-background
 d453 4
 a456 4
-animevietsub.info###invideo_wrapper
-animevietsub.info##.Ads
-animevietsub.info##.mobile-catfixx
-animevietsub.info##.pc-catfixx
+animevietsub.info,animevietsub.video####invideo_wrapper
+animevietsub.info,animevietsub.video###.Ads
+animevietsub.info,animevietsub.video###.mobile-catfixx
+animevietsub.info,animevietsub.video###.pc-catfixx
 d474 2
 a475 2
 biphim.lat###top_oddd
@@ -453,7 +487,7 @@ live.7mvn4.com###wAdList
 live.7mvn4.com##tr[id^="word_"]
 d672 1
 a675 1
-live4.xoilac34.org,vebo4.net,xem.vebo31.net,xem.banhkhuc120.info,thapcam53.net,xem.thapcamtv.live###m-bet
+live4.xoilac34.org,vebo4.net,xem.vebo31.net,xem.banhkhuc120.info,thapcam53.net,xem.thapcamtv.live,vv13.thapcamtivi.live###m-bet
 d677 1
 a677 1
 live4.xoilac34.org,xemphim18.net,freeplayervideo.com,abysscdn.com,player-cdn.com,geoip.redirect-ads.com,watch.rkplayer.xyz,phimss.net,fdcdn.xyz,animet3.site##.jw-logo
@@ -469,9 +503,15 @@ mitomvg.cc##.btn-od
 d704 1
 a704 1
 motphimww.net,tvphim.bz##.module_single_ads
+d722 1
 d727 1
 a727 1
 phim.vkool8.net,subnhanhvl.site,motchill.vote,subnhanh.now,tructiepdabong5.co,biphim.lat,dongphim.now,phimbet.biz,hhanime3d.net,dongchill.pro###overlay
+d734 2
+a735 2
+phimdinhcao.net,www.phimchaua.com,phimlongtieng.net,www.phimdinhcaoz.com##.adv-300-right
+phimdinhcao.net,www.phimchaua.com,phimlongtieng.net,www.phimdinhcaoz.com,phimdinhcao.com##.BanerTop100
+d744 2
 d749 2
 a750 2
 phimmoi.club,motphimww.net,tvphim.bz###floating_ads_bottom_textcss_container
@@ -479,8 +519,7 @@ phimmoi.club,motphimww.net,tvphim.bz##.module_home_ads
 d793 1
 a793 1
 subnhanhvl.site,motchill.vote,subnhanh.now###xs-addd0
-a817 2
-thapcam53.net##.mmo
+a817 1
 thapcam53.net,xem.thapcamtv.live##.btnz
 a862 1
 tructiepdabong5.co##.adLogoPlayer
@@ -505,11 +544,20 @@ vebozg.cc##header>.container
 d977 1
 a977 1
 vsc61.com##a.news__item--action:nth-of-type(2)
+d990 2
+d994 2
+a995 1
+vv13.thapcamtivi.live,thapcam53.net##.mmo
+a1014 2
+www.phimchaua.com,phimlongtieng.net###p-GMH
+www.phimchaua.com,phimlongtieng.net,www.phimdinhcaoz.com###mobile_content_top
 d1021 1
 a1021 1
 www.toptruyenpro1.com,doctruyen3qw.com,anime47.my##.advertisement
+d1031 1
+d1036 1
 a1037 1
-xem.thapcamtv.live,thapcam53.net,xx2.thapcam53.info,nn13.thapcam.asia##.modal
+xem.thapcamtv.live,thapcam53.net,xx2.thapcam53.info,nn13.thapcam.asia,xem.thapcamtv.com,vv13.thapcamtivi.live##.modal
 d1046 1
 a1046 1
 xemphimchill.xyz,hhninja14.tv,phimhoathinh3d.vip,hoathinhtq.site,hhtq8.vip,hhtqvietsub.me,motchillco.net,hhtrungquoc6.com,hhtutien.tv,animeweb.vip,hh3d1.xyz,hoathinh4k3.net,motchilltvzz.biz,hoathinh3dtq.site,dragonphim.tv,hhchina.my,hhh3d.tv,hhtq3d.net,hhtq5.vip,wibu47.com,yanhh3d.tv,hhhay.ink,hhvsub.com,motphim.cv,phimdacap.tv###catfish
@@ -525,7 +573,7 @@ a1079 1
 xoilaczz63.live,mitomvg.cc##.d-lg-flex.d-none.p-0.company.flex-1.table
 d1090 1
 a1090 1
-xxoilac.com,goal.90phut24.xyz,thapcam53.net,xem.thapcamtv.live,xx2.thapcam53.info,nn13.thapcam.asia##.active.bg-overlay
+xxoilac.com,goal.90phut24.xyz,thapcam53.net,xem.thapcamtv.live,xx2.thapcam53.info,nn13.thapcam.asia,vv13.thapcamtivi.live,xem.thapcamtv.com##.active.bg-overlay
 a1108 6
 z1000.thapcam53.net##.grid-match__footer>a.btn:nth-child(3)
 z1000.thapcam53.net##.mct_-bet-bot
@@ -573,7 +621,7 @@ a1267 1
 cliphot69.help###custom_html-42
 d1270 4
 a1273 3
-cliphotvn69.com,mobiblog123.one,cliphot69.help,phevkl.to,www.gvnvh.net,topviet69.video,sayhentai.one,viet69.ad##.float-ck-center-lt
+cliphotvn69.com,mobiblog123.xyz,cliphot69.help,phevkl.to,www.gvnvh.net,topviet69.video,sayhentai.one,viet69.ad##.float-ck-center-lt
 damconuong.art##a[rel="nofollow"]
 dualeotruyenxyz.com##[id$="bnr"]
 d1283 1
@@ -629,7 +677,7 @@ a1406 1
 dualeotruyenxyz.com,m.blogtruyenmoi.com#%#//scriptlet("abort-current-inline-script", "document.addEventListener", "popunder")
 d1411 1
 a1411 1
-goctruyentranhvui6.com,nettruyenww.com,sextop1.today,hhvsub.com,sayhentai.one,web1.sexviet88.xyz#%#//scriptlet("abort-current-inline-script", "WebAssembly", "globalThis")
+goctruyentranhvui6.com,nettruyenww.com,sextop1.today,hhvsub.com,sayhentai.one,web.sexviet88.link#%#//scriptlet("abort-current-inline-script", "WebAssembly", "globalThis")
 d1417 1
 a1417 1
 hhpanda.video###overlay
@@ -639,7 +687,7 @@ a1431 1
 lxmanga.live#%#//scriptlet("abort-current-inline-script", "$", "PopUnder")
 d1436 1
 a1436 1
-phimgichill.net,hhhay.ink,hh3dhay.life,truyengihotnha.com,truyengihotnha.net,tram3d.me,animevietsub.info#%#//scriptlet("abort-current-inline-script", "eval", "$._Eu")
+phimgichill.net,hhhay.ink,hh3dhay.life,truyengihotnha.com,truyengihotnha.net,tram3d.me,animevietsub.info,animevietsub.video##%#//scriptlet("abort-current-inline-script", "eval", "$._Eu")
 d1451 1
 a1452 1
 sieutamphim.com#%#//scriptlet("abort-current-inline-script", "document.addEventListener", "shopee")
@@ -654,11 +702,11 @@ a1463 1
 truyensieuhay.com,hayhaytv.org,quangcaoyenbai.com,sieudam.site,ephimchill.com,thuvienhd.xyz,xemtivi.tvhayhd.tv,www.khophim88s.com,nhentaivn.online,mv.dailyphimz.com,mv.phimbathu.one,sexhihiz.me#%#//scriptlet("abort-on-property-read", "document.cookie")
 d1466 1
 a1466 1
-vailonxx.co,phimlongtieng.com,phimlongtieng.net#%#//scriptlet("abort-current-inline-script", "jQuery", "window.open")
+vailonxx.co,www.phimchaua.com,phimlongtieng.net#%#//scriptlet("abort-current-inline-script", "jQuery", "window.open")
 d1468 3
 a1470 3
 viet69.ad#%#//scriptlet("abort-current-inline-script", "jQuery", "open")
-viet69.mn,ungtycomicsvip.com,vlxx.tech,dualeotruyenxyz.com,yurineko.my,vlxyz.tube,hd.javhay.site,phimsexhay669.pro,cliphot69.help,doctruyen3qw.com,ihentai.fan,jav.vc,top1sex.me,sexmup18.com,hentaivn.today,www.buomtv.io,truyenvn.live,cdnstream.sbs,javtiful.com,truyengihotdo.net,truyengihotzay.net,truyengihotnha.com,truyengihotnha.net,truyengihotqua.net,truyengihotqua.com,truyengihotnay.com,sex.tuoi69.store,quatvn.fit,tenmientruyengi.net,topviet69.video,phim18hd.in,web1.sexviet88.xyz,vlmupsex.com,demo.14412882.com,ungtycomicsvip.org,cliphot69.pics,hhtq5.vip,sexdiary.club,vn2.xvideos69.xxx,umetruyenhay.com,damconuong.art#%#//scriptlet("abort-current-inline-script", "WebAssembly", "instantiate")
+viet69.mn,ungtycomicsvip.com,vlxx.tech,dualeotruyenxyz.com,yurineko.my,vlxyz.tube,hd.javhay.site,phimsexhay669.pro,cliphot69.help,doctruyen3qw.com,ihentai.fan,jav.vc,top1sex.me,sexmup18.com,hentaivn.today,www.buomtv.io,truyenvn.live,cdnstream.sbs,javtiful.com,truyengihotdo.net,truyengihotzay.net,truyengihotnha.com,truyengihotnha.net,truyengihotqua.net,truyengihotqua.com,truyengihotnay.com,sex.tuoi69.store,quatvn.fit,tenmientruyengi.net,topviet69.video,phim18hd.in,web.sexviet88.link,vlmupsex.com,demo.14412882.com,ungtycomicsvip.org,cliphot69.pics,hhtq5.vip,sexdiary.club,vn2.xvideos69.xxx,umetruyenhay.com,damconuong.art#%#//scriptlet("abort-current-inline-script", "WebAssembly", "instantiate")
 viettoons.tv,mv.phimmoiaz.cc,dood.pm,ytstv.me,animet3.site,anh.moe,maclife.io,xemphimjav.com,hoctot.hocmai.vn,cdn2.blueskychilling.online,ohaha79xxx.site,fastscans5.net,herotruyen.com,truyenfull.io#%#//scriptlet("abort-on-property-read", "open")
 a1471 1
 vlmupsex.com#%#//scriptlet("abort-on-property-read", "Cookies")
@@ -672,22 +720,23 @@ a1492 3
 z1000.thapcam53.net##.modal-backdrop.show
 z1000.thapcam53.net##.show.fade
 z1000.thapcam53.net,xem20.gavang1.net,xem19.gavang1.net,hhpanda.video#$#html {overflow: auto!important;}
-diff name:abpvn_content_blocker lines:310 checksum:6e5b079093
+diff name:abpvn_content_blocker lines:334 checksum:74cd6b406e
 d2 1
 a2 1
-! Version: 20241220114302697
+! Version: 20241220145005657
 d5 2
 a6 2
-! Last modified: 20 Dec 2024 11:43:02 UTC+7
-! Diff-Path: patches/20241220114302697.patch#abpvn_content_blocker
+! Last modified: 20 Dec 2024 14:50:05 UTC+7
+! Diff-Path: patches/20241220145005657.patch#abpvn_content_blocker
 d49 1
 a49 1
-/i.imgur.com/*.gif$domain=keonhacai55.cc|phimlongtieng.net|www.phimdinhcaoz.com|phimdinhcao.net|xoilacxj.cc|90phutz46.live|vebozg.cc|cakhiai.cc|listnhacai88.com|xoilaczz63.live|xemtivingon.org|phimlongtieng.com|mitomvg.cc|rakhoiy.cc|plcdn.xyz|phimmoi.ing|motphimww.net
+/i.imgur.com/*.gif$domain=keonhacai55.cc|phimlongtieng.net|www.phimdinhcaoz.com|phimdinhcao.net|xoilacxj.cc|90phutz46.live|vebozg.cc|cakhiai.cc|listnhacai88.com|xoilaczz63.live|xemtivingon.org|www.phimchaua.com|mitomvg.cc|rakhoiy.cc|plcdn.xyz|phimmoi.ing|motphimww.net
 d83 2
-a84 3
+a84 4
 ||animehay.moe^*.gif
 ||animet3.site^*.gif
 ||animevietsub.info/ads/popup.js$script
+||animevietsub.video/ads/popup.js$script
 d95 1
 a95 1
 ||biphim.lat/public/prom_ad/prom_ad.js$script
@@ -718,7 +767,7 @@ a142 2
 ||hhpanda.video/ads/$script,~third-party
 d170 1
 a170 1
-||lh3.googleusercontent.com/*=s0$image,domain=animevietsub.info|hoathinh4k3.net|hayghe.me
+||lh3.googleusercontent.com/*=s0$image,domain=animevietsub.info|animevietsub.video|hoathinh4k3.net|hayghe.me
 d176 1
 a176 1
 ||mediastation.live^*.gif$image,domain=mn.mediastation.live|home1.mannhan16.pro|mannhan89.xyz
@@ -726,6 +775,9 @@ d178 2
 a179 2
 ||motchill.vote/js/ads_xx.js
 ||motchillco.net/banner$image
+d212 1
+a212 1
+||quoracdn.net^$image,domain=www.phimlongtieng.net|www.phimchaua.com|www.phimdinhcaoz.com|phimdinhcao.com
 d216 1
 a216 1
 ||s2.phim1280.tv/adjump$domain=yeuphim.vip
@@ -743,7 +795,13 @@ a271 1
 d282 1
 a282 1
 ||vsc61.com/wp-content/themes/vuasanco/assets/scripts/scripts.js
+d290 1
+a290 1
+||www.phimchaua.com/3s.m3u8$rewrite=abp-resource:blank-mp3,domain=www.phimchaua.com
 d418 7
+d426 1
+a426 1
+123nhadatviet.net,123nhadatviet.com,tuoitrenews.vn,tuoitre.vn,nld.com.vn##.banner-top
 d449 2
 a450 2
 90phutz46.live,cakhiai.cc,xoilacxj.cc,vebozg.cc###quangcaopc
@@ -756,10 +814,10 @@ animet3.site##.gnartyx-offads
 animet3.site,animetvn4.com,subnhanh1.org###fbox-background
 d457 4
 a460 4
-animevietsub.info###invideo_wrapper
-animevietsub.info##.Ads
-animevietsub.info##.mobile-catfixx
-animevietsub.info##.pc-catfixx
+animevietsub.info,animevietsub.video####invideo_wrapper
+animevietsub.info,animevietsub.video###.Ads
+animevietsub.info,animevietsub.video###.mobile-catfixx
+animevietsub.info,animevietsub.video###.pc-catfixx
 d478 2
 a479 2
 biphim.lat###top_oddd
@@ -816,7 +874,7 @@ live.7mvn4.com###wAdList
 live.7mvn4.com##tr[id^="word_"]
 d676 1
 a679 1
-live4.xoilac34.org,vebo4.net,xem.vebo31.net,xem.banhkhuc120.info,thapcam53.net,xem.thapcamtv.live###m-bet
+live4.xoilac34.org,vebo4.net,xem.vebo31.net,xem.banhkhuc120.info,thapcam53.net,xem.thapcamtv.live,vv13.thapcamtivi.live###m-bet
 d681 1
 a681 1
 live4.xoilac34.org,xemphim18.net,freeplayervideo.com,abysscdn.com,player-cdn.com,geoip.redirect-ads.com,watch.rkplayer.xyz,phimss.net,fdcdn.xyz,animet3.site##.jw-logo
@@ -832,9 +890,15 @@ mitomvg.cc##.btn-od
 d708 1
 a708 1
 motphimww.net,tvphim.bz##.module_single_ads
+d726 1
 d731 1
 a731 1
 phim.vkool8.net,subnhanhvl.site,motchill.vote,subnhanh.now,tructiepdabong5.co,biphim.lat,dongphim.now,phimbet.biz,hhanime3d.net,dongchill.pro###overlay
+d738 2
+a739 2
+phimdinhcao.net,www.phimchaua.com,phimlongtieng.net,www.phimdinhcaoz.com##.adv-300-right
+phimdinhcao.net,www.phimchaua.com,phimlongtieng.net,www.phimdinhcaoz.com,phimdinhcao.com##.BanerTop100
+d748 2
 d753 2
 a754 2
 phimmoi.club,motphimww.net,tvphim.bz###floating_ads_bottom_textcss_container
@@ -842,8 +906,7 @@ phimmoi.club,motphimww.net,tvphim.bz##.module_home_ads
 d797 1
 a797 1
 subnhanhvl.site,motchill.vote,subnhanh.now###xs-addd0
-a821 2
-thapcam53.net##.mmo
+a821 1
 thapcam53.net,xem.thapcamtv.live##.btnz
 a866 1
 tructiepdabong5.co##.adLogoPlayer
@@ -868,11 +931,20 @@ vebozg.cc##header>.container
 d981 1
 a981 1
 vsc61.com##a.news__item--action:nth-of-type(2)
+d994 2
+d998 2
+a999 1
+vv13.thapcamtivi.live,thapcam53.net##.mmo
+a1018 2
+www.phimchaua.com,phimlongtieng.net###p-GMH
+www.phimchaua.com,phimlongtieng.net,www.phimdinhcaoz.com###mobile_content_top
 d1025 1
 a1025 1
 www.toptruyenpro1.com,doctruyen3qw.com,anime47.my##.advertisement
+d1035 1
+d1040 1
 a1041 1
-xem.thapcamtv.live,thapcam53.net,xx2.thapcam53.info,nn13.thapcam.asia##.modal
+xem.thapcamtv.live,thapcam53.net,xx2.thapcam53.info,nn13.thapcam.asia,xem.thapcamtv.com,vv13.thapcamtivi.live##.modal
 d1050 1
 a1050 1
 xemphimchill.xyz,hhninja14.tv,phimhoathinh3d.vip,hoathinhtq.site,hhtq8.vip,hhtqvietsub.me,motchillco.net,hhtrungquoc6.com,hhtutien.tv,animeweb.vip,hh3d1.xyz,hoathinh4k3.net,motchilltvzz.biz,hoathinh3dtq.site,dragonphim.tv,hhchina.my,hhh3d.tv,hhtq3d.net,hhtq5.vip,wibu47.com,yanhh3d.tv,hhhay.ink,hhvsub.com,motphim.cv,phimdacap.tv###catfish
@@ -888,7 +960,7 @@ a1083 1
 xoilaczz63.live,mitomvg.cc##.d-lg-flex.d-none.p-0.company.flex-1.table
 d1094 1
 a1094 1
-xxoilac.com,goal.90phut24.xyz,thapcam53.net,xem.thapcamtv.live,xx2.thapcam53.info,nn13.thapcam.asia##.active.bg-overlay
+xxoilac.com,goal.90phut24.xyz,thapcam53.net,xem.thapcamtv.live,xx2.thapcam53.info,nn13.thapcam.asia,vv13.thapcamtivi.live,xem.thapcamtv.com##.active.bg-overlay
 a1112 6
 z1000.thapcam53.net##.grid-match__footer>a.btn:nth-child(3)
 z1000.thapcam53.net##.mct_-bet-bot
@@ -936,7 +1008,7 @@ a1273 1
 cliphot69.help###custom_html-42
 d1276 4
 a1279 3
-cliphotvn69.com,mobiblog123.one,cliphot69.help,phevkl.to,www.gvnvh.net,topviet69.video,sayhentai.one,viet69.ad##.float-ck-center-lt
+cliphotvn69.com,mobiblog123.xyz,cliphot69.help,phevkl.to,www.gvnvh.net,topviet69.video,sayhentai.one,viet69.ad##.float-ck-center-lt
 damconuong.art##a[rel="nofollow"]
 dualeotruyenxyz.com##[id$="bnr"]
 d1289 1
@@ -983,22 +1055,23 @@ vlxxhot.xyz,vailonxx.co###ab_ctl
 vlxxhot.xyz,vailonxx.co##.bannerads
 vlxyz.tube,vlmupsex.com,sexhihiz.me##.xx-ads
 d1386 1
-diff name:abpvn_noelemhide lines:106 checksum:f209c7916e
+diff name:abpvn_noelemhide lines:113 checksum:a33956a309
 d2 1
 a2 1
-! Version: 20241220114302697
+! Version: 20241220145005657
 d5 2
 a6 2
-! Last modified: 20 Dec 2024 11:43:02 UTC+7
-! Diff-Path: patches/20241220114302697.patch#abpvn_noelemhide
+! Last modified: 20 Dec 2024 14:50:05 UTC+7
+! Diff-Path: patches/20241220145005657.patch#abpvn_noelemhide
 d49 1
 a49 1
-/i.imgur.com/*.gif$domain=keonhacai55.cc|phimlongtieng.net|www.phimdinhcaoz.com|phimdinhcao.net|xoilacxj.cc|90phutz46.live|vebozg.cc|cakhiai.cc|listnhacai88.com|xoilaczz63.live|xemtivingon.org|phimlongtieng.com|mitomvg.cc|rakhoiy.cc|plcdn.xyz|phimmoi.ing|motphimww.net
+/i.imgur.com/*.gif$domain=keonhacai55.cc|phimlongtieng.net|www.phimdinhcaoz.com|phimdinhcao.net|xoilacxj.cc|90phutz46.live|vebozg.cc|cakhiai.cc|listnhacai88.com|xoilaczz63.live|xemtivingon.org|www.phimchaua.com|mitomvg.cc|rakhoiy.cc|plcdn.xyz|phimmoi.ing|motphimww.net
 d83 2
-a84 3
+a84 4
 ||animehay.moe^*.gif
 ||animet3.site^*.gif
 ||animevietsub.info/ads/popup.js$script
+||animevietsub.video/ads/popup.js$script
 d95 1
 a95 1
 ||biphim.lat/public/prom_ad/prom_ad.js$script
@@ -1029,7 +1102,7 @@ a142 2
 ||hhpanda.video/ads/$script,~third-party
 d170 1
 a170 1
-||lh3.googleusercontent.com/*=s0$image,domain=animevietsub.info|hoathinh4k3.net|hayghe.me
+||lh3.googleusercontent.com/*=s0$image,domain=animevietsub.info|animevietsub.video|hoathinh4k3.net|hayghe.me
 d176 1
 a176 1
 ||mediastation.live^*.gif$image,domain=mn.mediastation.live|home1.mannhan16.pro|mannhan89.xyz
@@ -1037,6 +1110,9 @@ d178 2
 a179 2
 ||motchill.vote/js/ads_xx.js
 ||motchillco.net/banner$image
+d212 1
+a212 1
+||quoracdn.net^$image,domain=www.phimlongtieng.net|www.phimchaua.com|www.phimdinhcaoz.com|phimdinhcao.com
 d216 1
 a216 1
 ||s2.phim1280.tv/adjump$domain=yeuphim.vip
@@ -1054,6 +1130,9 @@ a271 1
 d282 1
 a282 1
 ||vsc61.com/wp-content/themes/vuasanco/assets/scripts/scripts.js
+d290 1
+a290 1
+||www.phimchaua.com/3s.m3u8$rewrite=abp-resource:blank-mp3,domain=www.phimchaua.com
 d404 2
 a405 2
 @@||anime47.my/ads/v/8.26.9/jw
@@ -1090,22 +1169,23 @@ a490 1
 ||truyenvn.live^*banner$image
 a491 1
 ||vlmupsex.com^*.gif$image,domain=vlmupsex.com
-diff name:abpvn_ublock lines:362 checksum:52f2f9a885
+diff name:abpvn_ublock lines:386 checksum:92d40d8613
 d2 1
 a2 1
-! Version: 20241220114302697
+! Version: 20241220145005657
 d5 2
 a6 2
-! Last modified: 20 Dec 2024 11:43:02 UTC+7
-! Diff-Path: patches/20241220114302697.patch#abpvn_ublock
+! Last modified: 20 Dec 2024 14:50:05 UTC+7
+! Diff-Path: patches/20241220145005657.patch#abpvn_ublock
 d47 1
 a47 1
-/i.imgur.com/*.gif$domain=keonhacai55.cc|phimlongtieng.net|www.phimdinhcaoz.com|phimdinhcao.net|xoilacxj.cc|90phutz46.live|vebozg.cc|cakhiai.cc|listnhacai88.com|xoilaczz63.live|xemtivingon.org|phimlongtieng.com|mitomvg.cc|rakhoiy.cc|plcdn.xyz|phimmoi.ing|motphimww.net
+/i.imgur.com/*.gif$domain=keonhacai55.cc|phimlongtieng.net|www.phimdinhcaoz.com|phimdinhcao.net|xoilacxj.cc|90phutz46.live|vebozg.cc|cakhiai.cc|listnhacai88.com|xoilaczz63.live|xemtivingon.org|www.phimchaua.com|mitomvg.cc|rakhoiy.cc|plcdn.xyz|phimmoi.ing|motphimww.net
 d81 2
-a82 3
+a82 4
 ||animehay.moe^*.gif
 ||animet3.site^*.gif
 ||animevietsub.info/ads/popup.js$script
+||animevietsub.video/ads/popup.js$script
 d93 1
 a93 1
 ||biphim.lat/public/prom_ad/prom_ad.js$script
@@ -1136,7 +1216,7 @@ a140 2
 ||hhpanda.video/ads/$script,~third-party
 d168 1
 a168 1
-||lh3.googleusercontent.com/*=s0$image,domain=animevietsub.info|hoathinh4k3.net|hayghe.me
+||lh3.googleusercontent.com/*=s0$image,domain=animevietsub.info|animevietsub.video|hoathinh4k3.net|hayghe.me
 d174 1
 a174 1
 ||mediastation.live^*.gif$image,domain=mn.mediastation.live|home1.mannhan16.pro|mannhan89.xyz
@@ -1144,6 +1224,9 @@ d176 2
 a177 2
 ||motchill.vote/js/ads_xx.js
 ||motchillco.net/banner$image
+d210 1
+a210 1
+||quoracdn.net^$image,domain=www.phimlongtieng.net|www.phimchaua.com|www.phimdinhcaoz.com|phimdinhcao.com
 d213 1
 a213 1
 ||s2.phim1280.tv/adjump$domain=yeuphim.vip
@@ -1161,7 +1244,13 @@ a267 1
 d278 1
 a278 1
 ||vsc61.com/wp-content/themes/vuasanco/assets/scripts/scripts.js
+d286 1
+a286 1
+||www.phimchaua.com/3s.m3u8$rewrite=abp-resource:blank-mp3,domain=www.phimchaua.com
 d414 7
+d422 1
+a422 1
+123nhadatviet.net,123nhadatviet.com,tuoitrenews.vn,tuoitre.vn,nld.com.vn##.banner-top
 d445 2
 a446 2
 90phutz46.live,cakhiai.cc,xoilacxj.cc,vebozg.cc###quangcaopc
@@ -1174,10 +1263,10 @@ animet3.site##.gnartyx-offads
 animet3.site,animetvn4.com,subnhanh1.org###fbox-background
 d453 4
 a456 4
-animevietsub.info###invideo_wrapper
-animevietsub.info##.Ads
-animevietsub.info##.mobile-catfixx
-animevietsub.info##.pc-catfixx
+animevietsub.info,animevietsub.video####invideo_wrapper
+animevietsub.info,animevietsub.video###.Ads
+animevietsub.info,animevietsub.video###.mobile-catfixx
+animevietsub.info,animevietsub.video###.pc-catfixx
 d474 2
 a475 2
 biphim.lat###top_oddd
@@ -1234,7 +1323,7 @@ live.7mvn4.com###wAdList
 live.7mvn4.com##tr[id^="word_"]
 d672 1
 a675 1
-live4.xoilac34.org,vebo4.net,xem.vebo31.net,xem.banhkhuc120.info,thapcam53.net,xem.thapcamtv.live###m-bet
+live4.xoilac34.org,vebo4.net,xem.vebo31.net,xem.banhkhuc120.info,thapcam53.net,xem.thapcamtv.live,vv13.thapcamtivi.live###m-bet
 d677 1
 a677 1
 live4.xoilac34.org,xemphim18.net,freeplayervideo.com,abysscdn.com,player-cdn.com,geoip.redirect-ads.com,watch.rkplayer.xyz,phimss.net,fdcdn.xyz,animet3.site##.jw-logo
@@ -1250,9 +1339,15 @@ mitomvg.cc##.btn-od
 d704 1
 a704 1
 motphimww.net,tvphim.bz##.module_single_ads
+d722 1
 d727 1
 a727 1
 phim.vkool8.net,subnhanhvl.site,motchill.vote,subnhanh.now,tructiepdabong5.co,biphim.lat,dongphim.now,phimbet.biz,hhanime3d.net,dongchill.pro###overlay
+d734 2
+a735 2
+phimdinhcao.net,www.phimchaua.com,phimlongtieng.net,www.phimdinhcaoz.com##.adv-300-right
+phimdinhcao.net,www.phimchaua.com,phimlongtieng.net,www.phimdinhcaoz.com,phimdinhcao.com##.BanerTop100
+d744 2
 d749 2
 a750 2
 phimmoi.club,motphimww.net,tvphim.bz###floating_ads_bottom_textcss_container
@@ -1260,8 +1355,7 @@ phimmoi.club,motphimww.net,tvphim.bz##.module_home_ads
 d793 1
 a793 1
 subnhanhvl.site,motchill.vote,subnhanh.now###xs-addd0
-a817 2
-thapcam53.net##.mmo
+a817 1
 thapcam53.net,xem.thapcamtv.live##.btnz
 a862 1
 tructiepdabong5.co##.adLogoPlayer
@@ -1286,11 +1380,20 @@ vebozg.cc##header>.container
 d977 1
 a977 1
 vsc61.com##a.news__item--action:nth-of-type(2)
+d990 2
+d994 2
+a995 1
+vv13.thapcamtivi.live,thapcam53.net##.mmo
+a1014 2
+www.phimchaua.com,phimlongtieng.net###p-GMH
+www.phimchaua.com,phimlongtieng.net,www.phimdinhcaoz.com###mobile_content_top
 d1021 1
 a1021 1
 www.toptruyenpro1.com,doctruyen3qw.com,anime47.my##.advertisement
+d1031 1
+d1036 1
 a1037 1
-xem.thapcamtv.live,thapcam53.net,xx2.thapcam53.info,nn13.thapcam.asia##.modal
+xem.thapcamtv.live,thapcam53.net,xx2.thapcam53.info,nn13.thapcam.asia,xem.thapcamtv.com,vv13.thapcamtivi.live##.modal
 d1046 1
 a1046 1
 xemphimchill.xyz,hhninja14.tv,phimhoathinh3d.vip,hoathinhtq.site,hhtq8.vip,hhtqvietsub.me,motchillco.net,hhtrungquoc6.com,hhtutien.tv,animeweb.vip,hh3d1.xyz,hoathinh4k3.net,motchilltvzz.biz,hoathinh3dtq.site,dragonphim.tv,hhchina.my,hhh3d.tv,hhtq3d.net,hhtq5.vip,wibu47.com,yanhh3d.tv,hhhay.ink,hhvsub.com,motphim.cv,phimdacap.tv###catfish
@@ -1306,7 +1409,7 @@ a1079 1
 xoilaczz63.live,mitomvg.cc##.d-lg-flex.d-none.p-0.company.flex-1.table
 d1090 1
 a1090 1
-xxoilac.com,goal.90phut24.xyz,thapcam53.net,xem.thapcamtv.live,xx2.thapcam53.info,nn13.thapcam.asia##.active.bg-overlay
+xxoilac.com,goal.90phut24.xyz,thapcam53.net,xem.thapcamtv.live,xx2.thapcam53.info,nn13.thapcam.asia,vv13.thapcamtivi.live,xem.thapcamtv.com##.active.bg-overlay
 a1108 6
 z1000.thapcam53.net##.grid-match__footer>a.btn:nth-child(3)
 z1000.thapcam53.net##.mct_-bet-bot
@@ -1354,7 +1457,7 @@ a1266 1
 cliphot69.help###custom_html-42
 d1269 4
 a1272 3
-cliphotvn69.com,mobiblog123.one,cliphot69.help,phevkl.to,www.gvnvh.net,topviet69.video,sayhentai.one,viet69.ad##.float-ck-center-lt
+cliphotvn69.com,mobiblog123.xyz,cliphot69.help,phevkl.to,www.gvnvh.net,topviet69.video,sayhentai.one,viet69.ad##.float-ck-center-lt
 damconuong.art##a[rel="nofollow"]
 dualeotruyenxyz.com##[id$="bnr"]
 d1282 1
@@ -1410,7 +1513,7 @@ a1406 1
 dualeotruyenxyz.com,m.blogtruyenmoi.com##+js(acs, document.addEventListener, popunder)
 d1411 1
 a1411 1
-goctruyentranhvui6.com,nettruyenww.com,sextop1.today,hhvsub.com,sayhentai.one,web1.sexviet88.xyz##+js(acs, WebAssembly, globalThis)
+goctruyentranhvui6.com,nettruyenww.com,sextop1.today,hhvsub.com,sayhentai.one,web.sexviet88.link##+js(acs, WebAssembly, globalThis)
 d1417 1
 a1417 1
 hhpanda.video###overlay
@@ -1420,7 +1523,7 @@ a1431 1
 lxmanga.live##+js(acs, $, PopUnder)
 d1436 1
 a1436 1
-phimgichill.net,hhhay.ink,hh3dhay.life,truyengihotnha.com,truyengihotnha.net,tram3d.me,animevietsub.info##+js(acs, eval, $._Eu)
+phimgichill.net,hhhay.ink,hh3dhay.life,truyengihotnha.com,truyengihotnha.net,tram3d.me,animevietsub.info,animevietsub.video###+js(acs, eval, $._Eu)
 d1451 1
 a1452 1
 sieutamphim.com##+js(acs, document.addEventListener, shopee)
@@ -1435,11 +1538,11 @@ a1463 1
 truyensieuhay.com,hayhaytv.org,quangcaoyenbai.com,sieudam.site,ephimchill.com,thuvienhd.xyz,xemtivi.tvhayhd.tv,www.khophim88s.com,nhentaivn.online,mv.dailyphimz.com,mv.phimbathu.one,sexhihiz.me##+js(aopr, document.cookie)
 d1466 1
 a1466 1
-vailonxx.co,phimlongtieng.com,phimlongtieng.net##+js(acs, jQuery, window.open)
+vailonxx.co,www.phimchaua.com,phimlongtieng.net##+js(acs, jQuery, window.open)
 d1468 3
 a1470 3
 viet69.ad##+js(acs, jQuery, open)
-viet69.mn,ungtycomicsvip.com,vlxx.tech,dualeotruyenxyz.com,yurineko.my,vlxyz.tube,hd.javhay.site,phimsexhay669.pro,cliphot69.help,doctruyen3qw.com,ihentai.fan,jav.vc,sex.tuoi69.store,top1sex.me,sexmup18.com,hentaivn.today,www.buomtv.io,truyenvn.live,cdnstream.sbs,javtiful.com,truyengihotdo.net,truyengihotzay.net,truyengihotnha.com,truyengihotnha.net,truyengihotqua.net,truyengihotqua.com,truyengihotnay.com,quatvn.fit,tenmientruyengi.net,topviet69.video,phim18hd.in,web1.sexviet88.xyz,vlmupsex.com,demo.14412882.com,ungtycomicsvip.org,cliphot69.pics,hhtq5.vip,sexdiary.club,vn2.xvideos69.xxx,umetruyenhay.com,damconuong.art##+js(acs, WebAssembly, instantiate)
+viet69.mn,ungtycomicsvip.com,vlxx.tech,dualeotruyenxyz.com,yurineko.my,vlxyz.tube,hd.javhay.site,phimsexhay669.pro,cliphot69.help,doctruyen3qw.com,ihentai.fan,jav.vc,sex.tuoi69.store,top1sex.me,sexmup18.com,hentaivn.today,www.buomtv.io,truyenvn.live,cdnstream.sbs,javtiful.com,truyengihotdo.net,truyengihotzay.net,truyengihotnha.com,truyengihotnha.net,truyengihotqua.net,truyengihotqua.com,truyengihotnay.com,quatvn.fit,tenmientruyengi.net,topviet69.video,phim18hd.in,web.sexviet88.link,vlmupsex.com,demo.14412882.com,ungtycomicsvip.org,cliphot69.pics,hhtq5.vip,sexdiary.club,vn2.xvideos69.xxx,umetruyenhay.com,damconuong.art##+js(acs, WebAssembly, instantiate)
 viettoons.tv,mv.phimmoiaz.cc,dood.pm,ytstv.me,animet3.site,anh.moe,maclife.io,xemphimjav.com,hoctot.hocmai.vn,bluphim.fun,cdn2.blueskychilling.online,ohaha79xxx.site,fastscans5.net,herotruyen.com,truyenfull.io##+js(aopr, open)
 a1471 1
 vlmupsex.com##+js(aopr, Cookies)
