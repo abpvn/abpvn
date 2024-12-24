@@ -1,9 +1,9 @@
 [Adblock Plus 2.0]
-! Version: 20241224120522890
+! Version: 20241224180442216
 ! id: D4028CDD-3D39-4624-ACC7-8140F4EC3888
 ! Title: ABPVN List
-! Last modified: 24 Dec 2024 12:05:22 UTC+7
-! Diff-Path: patches/20241224120522890.patch#abpvn_ublock
+! Last modified: 24 Dec 2024 18:04:42 UTC+7
+! Diff-Path: patches/20241224180442216.patch#abpvn_ublock
 ! Diff-Expires: 60 minutes
 ! Expires: 1 days (update frequency)
 !
@@ -179,10 +179,10 @@ thaudiotruyen.com/wp-content/uploads/2024/10/temu.jpg$image
 ||motphim.cv/js/ads.js?$script,~third-party
 ||mplmncb.com/banners-web$image,domain=truyenqqto.com
 ||mplmncb.com/popup/$script,domain=truyenqqto.com
+||nettruyenrr.com/public/assets/js/pop$script,~third-party
 ||nettruyenviet.com/assets/js/pop$script
-||nettruyenww.com/public/assets/js/pop$script,~third-party
-||newoneinoldoneout.pro/banners-web/$image,domain=nettruyenww.com
-||newoneinoldoneout.pro/popup$script,domain=nettruyenww.com
+||newoneinoldoneout.pro/banners-web/$image,domain=nettruyenrr.com
+||newoneinoldoneout.pro/popup$script,domain=nettruyenrr.com
 ||nhadatvang.vn/images/$domain=muabanraovat.com
 ||nhipcaudautu.vn/*gafin$script
 ||nhipcaudautu.vn/Media/*.gif
@@ -989,10 +989,10 @@ muabanraovat.com##[class^="box_adv_ele"]
 muare.vn##.admicro_top
 myeva.vn###adop_bfd
 myeva.vn##ins[class*="adsby"]
-nettruyenww.com###_pop-nettruyenww-15
-nettruyenww.com###catfish-content
-nettruyenww.com###pop_nettruyenww
-nettruyenww.com##.banner
+nettruyenrr.com###_pop-nettruyenww-15
+nettruyenrr.com###catfish-content
+nettruyenrr.com###pop_nettruyenww
+nettruyenrr.com##.banner
 nettruyenx.com###_pop-nettruyenx-13
 nhaccuatui.com###banner-qc_outstream
 nhaccuatui.com##.adv_home_300_250
@@ -1663,7 +1663,7 @@ freeplayervideo.com,abysscdn.com,player-cdn.com,geoip.redirect-ads.com,playhydra
 freeplayervideo.com,abysscdn.com,player-cdn.com,geoip.redirect-ads.com,playhydrax.com##+js(set, open, noopFunc)
 giavang.net##+js(no-fetch-if, method:HEAD)
 gocmod.com##+js(acs, jQuery, popup)
-goctruyentranhvui6.com,nettruyenww.com,sextop1.today,hhvsub.com,sayhentai.one,web.sexviet88.link##+js(acs, WebAssembly, globalThis)
+goctruyentranhvui6.com,nettruyenrr.com,sextop1.today,hhvsub.com,sayhentai.one,web.sexviet88.link##+js(acs, WebAssembly, globalThis)
 gotphim.com##+js(acs, navigator, devtoolsDetector)
 haychillz.com##+js(acs, Object.defineProperty, fromCharCode)
 hayhaytv.org,subnhanh1.org##+js(set, maxAds, 0)
