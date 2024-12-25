@@ -1,9 +1,9 @@
 [Adblock Plus 2.0]
-! Version: 20241224180442216
+! Version: 20241225090045544
 ! id: D4028CDD-3D39-4624-ACC7-8140F4EC3888
 ! Title: ABPVN List
-! Last modified: 24 Dec 2024 18:04:42 UTC+7
-! Diff-Path: patches/20241224180442216.patch#abpvn_content_blocker
+! Last modified: 25 Dec 2024 09:00:45 UTC+7
+! Diff-Path: patches/20241225090045544.patch#abpvn_content_blocker
 ! Diff-Expires: 60 minutes
 ! Expires: 1 days (update frequency)
 !
@@ -137,6 +137,7 @@ thaudiotruyen.com/wp-content/uploads/2024/10/temu.jpg$image
 ||github.com/vietcodeno1/basic-lesson/$domain=phimno1.me
 ||github.com^$image,domain=xemphim18.net
 ||goal.90phut24.xyz^*.gif$image
+||goal.thapcamtv.com^*.gif$image,domain=goal.thapcamtv.com|vv13.thapcamtivi.live
 ||googleusercontent.com^$domain=hhtqvietsub.me
 ||haychillz.com/*-pop$image
 ||heovktgame.club/wp-content/plugins/banner-management/$image
@@ -292,7 +293,6 @@ thaudiotruyen.com/wp-content/uploads/2024/10/temu.jpg$image
 ||www.thuocbietduoc.com.vn/aqc/$image
 ||xahoingaynay.com.vn/upload/$image
 ||xc.1357668.com^*.gif$domain=live.7mvn4.com
-||xem.thapcamtv.com^*.gif$image,domain=xem.thapcamtv.com|vv13.thapcamtivi.live
 ||xmedia.antt.vn/upload/*.gif$image,domain=antt.vn
 ||xxoilac.com^*.gif$image
 ||zcine.net^*.gif$image
@@ -866,6 +866,12 @@ giadinhonline.vn,congluan.vn##.exp_qc_share
 giadinhonline.vn,vietnamnet.vn,dubaotiente.io,taichinhdoanhnghiep.net.vn##.adv
 goal.90phut24.xyz##.group-link:has(a[href*="&utm_"])
 goal.90phut24.xyz##.topnhacai
+goal.thapcamtv.com###partner5
+goal.thapcamtv.com##.container.pc.g-imgtop
+goal.thapcamtv.com##.d-md-none.d-block.mobile.g-imgbot
+goal.thapcamtv.com##.group-btn
+goal.thapcamtv.com##.list-main-link
+goal.thapcamtv.com##.ref-link
 gocmod.com###bannerContainer1
 gocmod.com###bannerContainer2
 gocmod.com###sp-wrapper-hovering-format
@@ -1098,7 +1104,7 @@ thanhtra.com.vn###Adsv
 thanhtra.com.vn##.right-banner>a[title]
 thapcam53.net,vv13.thapcamtivi.live##.mmo
 thapcam53.net,xem.thapcamtv.live##.btnz
-thapcam53.net,xem.thapcamtv.live,xx2.thapcam53.info,nn13.thapcam.asia,xem.thapcamtv.com,vv13.thapcamtivi.live##.modal
+thapcam53.net,xem.thapcamtv.live,xx2.thapcam53.info,nn13.thapcam.asia,goal.thapcamtv.com,vv13.thapcamtivi.live##.modal
 thaudiotruyen.com##.ai-close-fit.ai-close.code-block-7.code-block
 the.tube##.ads-container
 thethao247.vn##div[class$="_ads"]
@@ -1310,12 +1316,6 @@ www.youtube.com##.ytd-display-ad-renderer
 www.youtube.com##ytd-ad-slot-renderer
 www.youtube.com##ytd-rich-item-renderer:has(ytd-ad-slot-renderer)
 xehay.vn###banner1ab
-xem.thapcamtv.com###partner5
-xem.thapcamtv.com##.container.pc.g-imgtop
-xem.thapcamtv.com##.d-md-none.d-block.mobile.g-imgbot
-xem.thapcamtv.com##.group-btn
-xem.thapcamtv.com##.list-main-link
-xem.thapcamtv.com##.ref-link
 xem.tructiepnba.me##.truct-catfish
 xem.tructiepnba.me##.truct-widget
 xem15.com,download.vn###ouibounce-modal
@@ -1364,7 +1364,7 @@ xxoilac.com##.g-imgtop
 xxoilac.com##.link2.group-link
 xxoilac.com##.top-main>div:nth-child(1)>div:nth-child(1)>div:nth-child(2)
 xxoilac.com,goal.90phut24.xyz##.btn-bet
-xxoilac.com,goal.90phut24.xyz,thapcam53.net,xem.thapcamtv.live,xx2.thapcam53.info,nn13.thapcam.asia,vv13.thapcamtivi.live,xem.thapcamtv.com##.active.bg-overlay
+xxoilac.com,goal.90phut24.xyz,thapcam53.net,xem.thapcamtv.live,xx2.thapcam53.info,nn13.thapcam.asia,vv13.thapcamtivi.live,goal.thapcamtv.com##.active.bg-overlay
 yanhh3d.tv##.banner-ads-cs
 yanhh3d.tv,hhtm.site###catfish-ads
 ycongnghe.com##.td-container-wrap.td-logo-wrap-full.td-banner-wrap-full
