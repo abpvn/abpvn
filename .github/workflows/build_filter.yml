@@ -24,7 +24,7 @@ env:
 jobs:
   build_filter_master:
     if: ${{ github.repository_owner == 'abpvn' && (contains(fromJSON('["schedule", "workflow_dispatch"]'), github.event_name) || contains(github.event.head_commit.message, '[build]') || contains(github.event.head_commit.message, '(#')) }}
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     outputs:
       NEED_BUILD_MASTER: ${{steps.check_build.outputs.NEED_BUILD_MASTER}}
     steps:
@@ -83,7 +83,7 @@ jobs:
           fi
   build_filter_single:
     if: ${{ github.repository_owner == 'abpvn' && (contains(fromJSON('["schedule", "workflow_dispatch"]'), github.event_name) || contains(github.event.head_commit.message, '[build]')) }}
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     outputs:
       NEED_BUILD_SINGLE: ${{steps.check_build.outputs.NEED_BUILD_SINGLE}}
     steps:
@@ -141,7 +141,7 @@ jobs:
             fi
           fi
   update_server_filter:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     needs: [build_filter_master, build_filter_single]
     if: ${{ always() && (needs.build_filter_master.outputs.NEED_BUILD_MASTER == 'true' || needs.build_filter_single.outputs.NEED_BUILD_SINGLE == 'true') }}
     steps:
