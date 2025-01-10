@@ -1,9 +1,9 @@
 [Adblock Plus 2.0]
-! Version: 20250110085616428
+! Version: 20250110120526034
 ! id: D4028CDD-3D39-4624-ACC7-8140F4EC3888
 ! Title: ABPVN List
-! Last modified: 10 Jan 2025 08:56:16 UTC+7
-! Diff-Path: patches/20250110085616428.patch#abpvn_noelemhide
+! Last modified: 10 Jan 2025 12:05:26 UTC+7
+! Diff-Path: patches/20250110120526034.patch#abpvn_noelemhide
 ! Diff-Expires: 60 minutes
 ! Expires: 1 days (update frequency)
 !
@@ -46,11 +46,11 @@ $popup,domain=truyenfull.io
 /disable-devtool.min.js$script
 /giadinhonline.vn/files/qc/*
 /i.imgur.com$domain=xemphimchill.xyz
-/i.imgur.com/*.gif$domain=keonhacai55.chat|phimlongtieng.org|www.phimdinhcaoz.com|phimdinhcao.net|xoilacxj.cc|90phutzv.cc|vebozy.cc|cakhiai.cc|listnhacai88.com|xoilaczz63.live|xemtivingon.org|www.phimchaua.net|mitomvh.cc|eastloshigh.com|plcdn.xyz|phimmoi.ing|motphimww.net
+/i.imgur.com/*.gif$domain=keonhacai55.chat|phimlongtieng.org|www.phimdinhcaoz.com|www.phimdinhcao.online|xoilacxj.cc|90phutzv.cc|vebozy.cc|cakhiai.cc|listnhacai88.com|xoilaczz63.live|xemtivingon.org|www.phimchaua.net|mitomvh.cc|eastloshigh.com|plcdn.xyz|phimmoi.ing|motphimww.net
 /mmo/*$xmlhttprequest,image,domain=vuighe4.com
 /newchill/*gif$image
 /polyad.
-/pop.js$script,domain=motchill.pe|ohaytv.biz
+/pop.js$script,domain=motchill.ph|ohaytv.biz
 /popunder7.
 /porpoiseant$script
 /qcao/*$domain=~thegioididong.com
@@ -104,8 +104,6 @@ $popup,domain=truyenfull.io
 ||cdn.thichxemphim1.net/wp-content/themes/halimmovies-child/jscm.min.js$domain=thichxemphim1.net
 ||cdn.webhoctienganh.com/asset/home/img/banner/$image,domain=webhoctienganh.com
 ||cdn2-img.net^*.gif$image,domain=hhpanda.love|dongchill.org|biphim.xyz|motchill.mn|subnhanh.love|subnhanhvl.xyz|bichill.xyz|dongphim.love
-||chillphimmoi.pro/assets/*.gif$image
-||chillphimmoi.pro/assets/js/popup.js
 ||chodansinh.net^*.gif
 ||chotlo3s.com^*gif
 ||cloud.motchill-stream.win/common/ads/$image,domain=motchilltv.name
@@ -191,6 +189,8 @@ $popup,domain=truyenfull.io
 ||phimhdc.wiki$csp=script-src 'self' 'unsafe-inline' https:
 ||phimhdc.wiki^*.gif$image
 ||phimmoi.ing/js/ads.js$script
+||phimmoi.rip/assets/*.gif$image
+||phimmoi.rip/assets/js/popup.js
 ||phimmoichill.bio/newchill/$script,~third-party
 ||phimmoichillz.my/pop$image
 ||phimmoichillz.my^*.gif$image
@@ -207,11 +207,11 @@ $popup,domain=truyenfull.io
 ||qthang.net/js/blocker$script,~third-party
 ||quaivatdienanh.com/*banner$image
 ||quangcaosanpham.com/images/$third-party
-||quoracdn.net^$image,domain=www.phimlongtieng.org|www.phimchaua.net|www.phimdinhcaoz.com|phimdinhcao.com
+||quoracdn.net^$image,domain=www.phimlongtieng.org|www.phimchaua.net|www.phimdinhcaoz.com|www.phimdinhcaoz.com
 ||raovat.tuoitre.vn^$domain=tuoitre.vn
 ||raovatdidong.vn/images/$domain=muabanraovat.com
 ||s.lazada.vn^$popup,domain=chillphimmoizz.org
-||s2.phim1280.tv/adjump$domain=yeuphim.me
+||s2.phim1280.tv/adjump$domain=yeuphim.vip
 ||s2.truyentot.com^*.gif$image,domain=hhtq8.vip|hhtq3d.net|hhtq5.vip|hhvsub.com
 ||sansale.online/hh3d.js$script,domain=yanhh3d.tv
 ||sansale.online/hhtm.js$domain=hhtm.site
@@ -219,7 +219,7 @@ $popup,domain=truyenfull.io
 ||sggp.org.vn/*banner
 ||sharecode.vn/assets/images/thiet-ke-web-gia-re.jpg
 ||sharecode.vn/assets/images/thiet-ke-website.jpg
-||shope.ee^$popup,domain=chillphimmoi.pro|blogtruyenmoi.com|cunghocvui.com|truyensextv.com
+||shope.ee^$popup,domain=phimmoi.rip|blogtruyenmoi.com|cunghocvui.com|truyensextv.com
 ||shopee.vn^$popup,domain=apkmoddone.com
 ||sognoansofou.net^$popup,domain=apkmoddone.phongroblox.com
 ||sohuutritue.net.vn/files/qc/
@@ -478,7 +478,7 @@ $third-party,script,domain=sexdiaryx.live
 ||t7cp4fldl.com^
 ||telegra.ph/file/$image,domain=cliphot69.pics
 ||telegra.ph^$image,domain=fulllivehot.live
-||topviet69.video^*.gif$image
+||top1phimsex.com^*.gif$image
 ||truyen18.fun/media/abc/$image
 ||truyen18.fun/media/banner/$image
 ||truyensextv.com/anh/$image
