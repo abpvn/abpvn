@@ -1,9 +1,9 @@
 [Adblock Plus 2.0]
-! Version: 20250112093053270
+! Version: 20250112102832113
 ! id: D4028CDD-3D39-4624-ACC7-8140F4EC3888
 ! Title: ABPVN List
-! Last modified: 12 Jan 2025 09:30:53 UTC+7
-! Diff-Path: patches/20250112093053270.patch#abpvn_noelemhide
+! Last modified: 12 Jan 2025 10:28:32 UTC+7
+! Diff-Path: patches/20250112102832113.patch#abpvn_noelemhide
 ! Diff-Expires: 60 minutes
 ! Expires: 1 days (update frequency)
 !
@@ -497,6 +497,7 @@ thaudiotruyen.com/wp-content/uploads/2024/10/temu.jpg$image
 ||inpagepush.com^
 ||iogjhbnoypg.com^
 ||ionigravida.com^
+||isolatedovercomepasted.com^
 ||iwanttodeliver.com^$third-party
 ||jarvispopsu.com^
 ||js.aiservice.vn^
@@ -598,6 +599,7 @@ thaudiotruyen.com/wp-content/uploads/2024/10/temu.jpg$image
 ||sbbanner.com^
 ||sdkbox.com^
 ||serving-sys.com^
+||shakingtacklingunpeeled.com^
 ||spotscenered.info^$third-party
 ||spuezain.com^
 ||ss.yomedia.vn^
@@ -697,7 +699,9 @@ thaudiotruyen.com/wp-content/uploads/2024/10/temu.jpg$image
 @@||xahoingaynay.com.vn/upload/20989/20200817/Asset_2_8x_9596af5d4e.png$~third-party
 !------ ABPVN Adult block -------
 $third-party,script,domain=sexdiaryx.live
+/^https:\/\/[a-z]{8,12}\.com\/en\/(?:[a-z]{2,5}\/){0,2}[a-z]{2,}\?(?:[a-z]+=(?:\d+|[a-z]+)&)*?id=[12]\d{6}/$script,third-party
 /assets/js/vast.js$script,domain=~phevkl.to|~viet69.ws
+/get/*?zoneid=$script
 /player/vast.js$script
 /theme/custom.int.js$script,domain=top1sex.me|sex.tuoi69.store|hd.javhay.site|coiphimsex.net|phimsexviet.io|phimsexvietnam.app|gm.phimsexnhanh.tv|clipsex.cam|ww1.ditnhau.cc
 /wp-content/uploads/*.gif$image,domain=tuoi69.fan|tuoinungvn.org|teletiengviet.com|phevkl.to|viet69.ws
@@ -762,6 +766,7 @@ $third-party,script,domain=sexdiaryx.live
 ||vl3x.vip/ads/$script
 ||www.buomtv.io/palivn/ad/$image
 ||www.displayvertising.com^
+||xnhau.blog^$media,domain=xnhau.pro
 ||xx.sexkhongchemoi.com/theme/main.isa.js$script,domain=xx.sexkhongchemoi.com
 ||ybs2ffs7v.com^
 ||yr.fopbandido.com^
