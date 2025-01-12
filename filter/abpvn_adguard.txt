@@ -1,9 +1,9 @@
 [Adblock Plus 2.0]
-! Version: 20250112093037743
+! Version: 20250112102829697
 ! id: D4028CDD-3D39-4624-ACC7-8140F4EC3888
 ! Title: ABPVN List
-! Last modified: 12 Jan 2025 09:30:37 UTC+7
-! Diff-Path: patches/20250112093037743.patch#abpvn_adguard
+! Last modified: 12 Jan 2025 10:28:29 UTC+7
+! Diff-Path: patches/20250112102829697.patch#abpvn_adguard
 ! Diff-Expires: 60 minutes
 ! Expires: 1 days (update frequency)
 !
@@ -1178,6 +1178,7 @@ vn2.vn#@#.advertiser
 vndoc.com#@#.showads
 !------ ABPVN Adult block -------
 $third-party,script,domain=sexdiaryx.live
+/^https:\/\/[a-z]{8,12}\.com\/en\/(?:[a-z]{2,5}\/){0,2}[a-z]{2,}\?(?:[a-z]+=(?:\d+|[a-z]+)&)*?id=[12]\d{6}/$script,third-party
 /assets/js/vast.js$script,domain=~phevkl.to|~viet69.ws
 /player/vast.js$script
 /theme/custom.int.js$script,domain=top1sex.me|sex.tuoi69.store|hd.javhay.site|coiphimsex.net|phimsexviet.io|phimsexvietnam.app|gm.phimsexnhanh.tv|clipsex.cam|ww1.ditnhau.cc
@@ -1241,6 +1242,7 @@ $third-party,script,domain=sexdiaryx.live
 ||vl3x.vip/ads/$script
 ||www.buomtv.io/palivn/ad/$image
 ||www.displayvertising.com^
+||xnhau.blog^$media,domain=xnhau.pro
 ||xx.sexkhongchemoi.com/theme/main.isa.js$script,domain=xx.sexkhongchemoi.com
 ||ybs2ffs7v.com^
 ||yr.fopbandido.com^
@@ -1334,6 +1336,7 @@ vailonxx.co##.vailo-under-navbar-mobile
 viet69.cat##.banner-play
 viet69.hn##.footer-fixed-br-container
 viet69.ws##.popup-overlay
+viet69vn.xyz##.footer-fixed-br-container
 vietxxx.xyz##.v4j-watch-1.v4j-content>center
 vl.phe.to##.sdzhead
 vl.phe.to,phim.sexxsub.pro###divExoLayerWrapper
@@ -1364,6 +1367,13 @@ www.gaingon18.me###iklan-atas-wrapper
 xem.javkche.info##[onclick^="__a.hide"]
 xem.javkche.info##div:has([class$="-modal"])
 xemphimjav.com##.pum-overlay
+xiuren.org###bannerIn
+xiuren.org###exoIMFrame
+xiuren.org###nativeAds_1505931906161
+xiuren.org##div[id^="exo_slider_"]
+xnhau.pro##.spot
+xnxx.com###ad-header-mobile
+xnxx.com###content-ad-top-zone
 ! ---------Rule only for AdGuard------
 10gb.vn#%#//scriptlet("abort-current-inline-script", "Promise", "detectedAdblock")
 abtruyenmoi.com#%#//scriptlet("abort-current-inline-script", "$", "popup")
@@ -1462,7 +1472,7 @@ www.iosviet.com#%#//scriptlet("set-constant", "timer", "0")
 www.nettruyenupp.com#%#//scriptlet("abort-on-property-read", "sp")
 www.o-study.net##.backdrop-popup
 www.o-study.net#$#body {position: static !important}
-www.phimdinhcao.online,phimlongtieng.org,www.phimdinhcaoz.com#%#//scriptlet("abort-on-property-read", "localStorage")
+www.phimdinhcao.online,phimlongtieng.org,www.phimdinhcaoz.com,xnhau.pro#%#//scriptlet("abort-on-property-read", "localStorage")
 www.saostar.vn#$#div.layout.pt-mobi-top {padding-top: 0 !important}
 www.saostar.vn#$#header.bg-white {margin-top: 0px !important}
 www.toptruyen28.net#%#//scriptlet("abort-current-inline-script", "setTimeout", "open")
