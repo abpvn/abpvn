@@ -1,15 +1,18 @@
-diff name:abpvn lines:23 checksum:13a6e41406
+diff name:abpvn lines:26 checksum:27b6b51cf8
 d2 1
 a2 1
-! Version: 20250113120541910
+! Version: 20250113180517859
 d5 2
 a6 2
-! Last modified: 13 Jan 2025 12:05:41 UTC+7
-! Diff-Path: patches/20250113120541910.patch#abpvn
+! Last modified: 13 Jan 2025 18:05:17 UTC+7
+! Diff-Path: patches/20250113180517859.patch#abpvn
 d48 1
 d53 1
 a53 1
 /pop.js$script,domain=motchill.ph|ohaytv.vip
+d215 1
+a215 1
+||s2.phim1280.tv/adjump$domain=yeuphim.me
 d273 1
 d482 1
 a482 1
@@ -22,18 +25,21 @@ hhninja15.tv,phimhoathinh3d.vip,hoathinhtq.site,hhtq8.vip,hhtqvietsub.me,motchil
 a945 1
 vivuphim.info,phimmoichill.org##.popUpBannerBox
 d1035 2
-diff name:abpvn_adguard lines:26 checksum:540410cce1
+diff name:abpvn_adguard lines:32 checksum:5b845b1dca
 d2 1
 a2 1
-! Version: 20250113120541910
+! Version: 20250113180517859
 d5 2
 a6 2
-! Last modified: 13 Jan 2025 12:05:41 UTC+7
-! Diff-Path: patches/20250113120541910.patch#abpvn_adguard
+! Last modified: 13 Jan 2025 18:05:17 UTC+7
+! Diff-Path: patches/20250113180517859.patch#abpvn_adguard
 d46 1
 d51 1
 a51 1
 /pop.js$script,domain=motchill.ph|ohaytv.vip
+d212 1
+a212 1
+||s2.phim1280.tv/adjump$domain=yeuphim.me
 d269 1
 d478 1
 a478 1
@@ -49,18 +55,24 @@ d1031 2
 d1451 1
 a1451 1
 tinsoikeo.live,motchill.ph,ohaytv.vip#%#//scriptlet("abort-on-property-read", "sessionStorage")
-diff name:abpvn_content_blocker lines:23 checksum:94a34b47f2
+d1483 1
+a1483 1
+yeuphim.me#%#//scriptlet("m3u-prune", "/adjump", "index.m3u8")
+diff name:abpvn_content_blocker lines:26 checksum:b793129623
 d2 1
 a2 1
-! Version: 20250113120541910
+! Version: 20250113180517859
 d5 2
 a6 2
-! Last modified: 13 Jan 2025 12:05:41 UTC+7
-! Diff-Path: patches/20250113120541910.patch#abpvn_content_blocker
+! Last modified: 13 Jan 2025 18:05:17 UTC+7
+! Diff-Path: patches/20250113180517859.patch#abpvn_content_blocker
 d48 1
 d53 1
 a53 1
 /pop.js$script,domain=motchill.ph|ohaytv.vip
+d215 1
+a215 1
+||s2.phim1280.tv/adjump$domain=yeuphim.me
 d273 1
 d482 1
 a482 1
@@ -73,31 +85,37 @@ hhninja15.tv,phimhoathinh3d.vip,hoathinhtq.site,hhtq8.vip,hhtqvietsub.me,motchil
 a945 1
 vivuphim.info,phimmoichill.org##.popUpBannerBox
 d1035 2
-diff name:abpvn_noelemhide lines:12 checksum:142d496189
+diff name:abpvn_noelemhide lines:15 checksum:f21c350298
 d2 1
 a2 1
-! Version: 20250113120541910
+! Version: 20250113180517859
 d5 2
 a6 2
-! Last modified: 13 Jan 2025 12:05:41 UTC+7
-! Diff-Path: patches/20250113120541910.patch#abpvn_noelemhide
+! Last modified: 13 Jan 2025 18:05:17 UTC+7
+! Diff-Path: patches/20250113180517859.patch#abpvn_noelemhide
 d48 1
 d53 1
 a53 1
 /pop.js$script,domain=motchill.ph|ohaytv.vip
+d215 1
+a215 1
+||s2.phim1280.tv/adjump$domain=yeuphim.me
 d273 1
-diff name:abpvn_ublock lines:26 checksum:115940c93e
+diff name:abpvn_ublock lines:32 checksum:634bd555c3
 d2 1
 a2 1
-! Version: 20250113120541910
+! Version: 20250113180517859
 d5 2
 a6 2
-! Last modified: 13 Jan 2025 12:05:41 UTC+7
-! Diff-Path: patches/20250113120541910.patch#abpvn_ublock
+! Last modified: 13 Jan 2025 18:05:17 UTC+7
+! Diff-Path: patches/20250113180517859.patch#abpvn_ublock
 d46 1
 d51 1
 a51 1
 /pop.js$script,domain=motchill.ph|ohaytv.vip
+d212 1
+a212 1
+||s2.phim1280.tv/adjump$domain=yeuphim.me
 d269 1
 d478 1
 a478 1
@@ -113,3 +131,6 @@ d1031 2
 d1451 1
 a1451 1
 tinsoikeo.live,motchill.ph,ohaytv.vip##+js(aopr, sessionStorage)
+d1483 1
+a1483 1
+yeuphim.me##+js(m3u-prune, /#EXT-X-DISCONTINUITY(.|\n){1\,1000}#EXT-X-DISCONTINUITY/gm, index.m3u8)

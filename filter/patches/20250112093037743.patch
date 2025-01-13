@@ -1,15 +1,18 @@
-diff name:abpvn lines:38 checksum:13a6e41406
+diff name:abpvn lines:41 checksum:27b6b51cf8
 d2 1
 a2 1
-! Version: 20250113120541910
+! Version: 20250113180517859
 d5 2
 a6 2
-! Last modified: 13 Jan 2025 12:05:41 UTC+7
-! Diff-Path: patches/20250113120541910.patch#abpvn
+! Last modified: 13 Jan 2025 18:05:17 UTC+7
+! Diff-Path: patches/20250113180517859.patch#abpvn
 d48 1
 d53 1
 a53 1
 /pop.js$script,domain=motchill.ph|ohaytv.vip
+d215 1
+a215 1
+||s2.phim1280.tv/adjump$domain=yeuphim.me
 d273 1
 d482 1
 a482 1
@@ -37,18 +40,21 @@ xnhau.pro##.sponsor
 xnhau.pro##.spot
 xnxx.com###ad-header-mobile
 xnxx.com###content-ad-top-zone
-diff name:abpvn_adguard lines:44 checksum:540410cce1
+diff name:abpvn_adguard lines:50 checksum:5b845b1dca
 d2 1
 a2 1
-! Version: 20250113120541910
+! Version: 20250113180517859
 d5 2
 a6 2
-! Last modified: 13 Jan 2025 12:05:41 UTC+7
-! Diff-Path: patches/20250113120541910.patch#abpvn_adguard
+! Last modified: 13 Jan 2025 18:05:17 UTC+7
+! Diff-Path: patches/20250113180517859.patch#abpvn_adguard
 d46 1
 d51 1
 a51 1
 /pop.js$script,domain=motchill.ph|ohaytv.vip
+d212 1
+a212 1
+||s2.phim1280.tv/adjump$domain=yeuphim.me
 d269 1
 d478 1
 a478 1
@@ -82,18 +88,24 @@ tinsoikeo.live,motchill.ph,ohaytv.vip#%#//scriptlet("abort-on-property-read", "s
 d1465 1
 a1465 1
 www.phimdinhcao.online,phimlongtieng.org,www.phimdinhcaoz.com,xnhau.pro#%#//scriptlet("abort-on-property-read", "localStorage")
-diff name:abpvn_content_blocker lines:38 checksum:94a34b47f2
+d1472 1
+a1472 1
+yeuphim.me#%#//scriptlet("m3u-prune", "/adjump", "index.m3u8")
+diff name:abpvn_content_blocker lines:41 checksum:b793129623
 d2 1
 a2 1
-! Version: 20250113120541910
+! Version: 20250113180517859
 d5 2
 a6 2
-! Last modified: 13 Jan 2025 12:05:41 UTC+7
-! Diff-Path: patches/20250113120541910.patch#abpvn_content_blocker
+! Last modified: 13 Jan 2025 18:05:17 UTC+7
+! Diff-Path: patches/20250113180517859.patch#abpvn_content_blocker
 d48 1
 d53 1
 a53 1
 /pop.js$script,domain=motchill.ph|ohaytv.vip
+d215 1
+a215 1
+||s2.phim1280.tv/adjump$domain=yeuphim.me
 d273 1
 d482 1
 a482 1
@@ -121,35 +133,41 @@ xnhau.pro##.sponsor
 xnhau.pro##.spot
 xnxx.com###ad-header-mobile
 xnxx.com###content-ad-top-zone
-diff name:abpvn_noelemhide lines:16 checksum:142d496189
+diff name:abpvn_noelemhide lines:19 checksum:f21c350298
 d2 1
 a2 1
-! Version: 20250113120541910
+! Version: 20250113180517859
 d5 2
 a6 2
-! Last modified: 13 Jan 2025 12:05:41 UTC+7
-! Diff-Path: patches/20250113120541910.patch#abpvn_noelemhide
+! Last modified: 13 Jan 2025 18:05:17 UTC+7
+! Diff-Path: patches/20250113180517859.patch#abpvn_noelemhide
 d48 1
 d53 1
 a53 1
 /pop.js$script,domain=motchill.ph|ohaytv.vip
+d215 1
+a215 1
+||s2.phim1280.tv/adjump$domain=yeuphim.me
 d273 1
 a427 1
 /^https:\/\/[a-z]{8,12}\.com\/en\/(?:[a-z]{2,5}\/){0,2}[a-z]{2,}\?(?:[a-z]+=(?:\d+|[a-z]+)&)*?id=[12]\d{6}/$script,third-party
 a490 1
 ||xnhau.blog^$media,domain=xnhau.pro
-diff name:abpvn_ublock lines:44 checksum:115940c93e
+diff name:abpvn_ublock lines:50 checksum:634bd555c3
 d2 1
 a2 1
-! Version: 20250113120541910
+! Version: 20250113180517859
 d5 2
 a6 2
-! Last modified: 13 Jan 2025 12:05:41 UTC+7
-! Diff-Path: patches/20250113120541910.patch#abpvn_ublock
+! Last modified: 13 Jan 2025 18:05:17 UTC+7
+! Diff-Path: patches/20250113180517859.patch#abpvn_ublock
 d46 1
 d51 1
 a51 1
 /pop.js$script,domain=motchill.ph|ohaytv.vip
+d212 1
+a212 1
+||s2.phim1280.tv/adjump$domain=yeuphim.me
 d269 1
 d478 1
 a478 1
@@ -183,3 +201,6 @@ tinsoikeo.live,motchill.ph,ohaytv.vip##+js(aopr, sessionStorage)
 d1465 1
 a1465 1
 www.phimdinhcao.online,phimlongtieng.org,www.phimdinhcaoz.com,xnhau.pro##+js(aopr, localStorage)
+d1472 1
+a1472 1
+yeuphim.me##+js(m3u-prune, /#EXT-X-DISCONTINUITY(.|\n){1\,1000}#EXT-X-DISCONTINUITY/gm, index.m3u8)
