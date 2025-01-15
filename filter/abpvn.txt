@@ -1,9 +1,9 @@
 [Adblock Plus 2.0]
-! Version: 20250113180517859
+! Version: 20250115082850869
 ! id: D4028CDD-3D39-4624-ACC7-8140F4EC3888
 ! Title: ABPVN List
-! Last modified: 13 Jan 2025 18:05:17 UTC+7
-! Diff-Path: patches/20250113180517859.patch#abpvn
+! Last modified: 15 Jan 2025 08:28:50 UTC+7
+! Diff-Path: patches/20250115082850869.patch#abpvn
 ! Diff-Expires: 60 minutes
 ! Expires: 1 days (update frequency)
 !
@@ -79,9 +79,9 @@ $popup,domain=truyenfull.io
 ||ads.nghenhinvietnam.vn^$domain=nghenhinvietnam.vn
 ||ahaphimz.com/js/pov.js$script
 ||alwingulla.com/88/tag.min.js$script,xmlhttprequest,rewrite=abp-resource:blank-js,domain=apkmoddone.com
-||animehay.name^*.gif
+||animehay.red^*.gif
 ||animet4.site^*.gif
-||animevietsub.biz/ads/popup.js$script
+||animevietsub.page/ads/popup.js$script
 ||animevietsubs.net/vast/$image
 ||animew.info/_next/image?url=https%3A%2F%2Flh3.googleusercontent.com$image
 ||animew.info/_next/image?url=https%3A%2F%2Fp21-ad-sg.ibyteimg.com$image
@@ -162,7 +162,7 @@ $popup,domain=truyenfull.io
 ||kenhtin.net/upload/images/banner-
 ||kienthuc.net.vn/*.ads
 ||laodong.vn/*QuangcaoOnline
-||lh3.googleusercontent.com/*=s0$image,domain=animevietsub.biz|hoathinh4k3.net|hayghe.me
+||lh3.googleusercontent.com/*=s0$image,domain=animevietsub.page|hoathinh4k3.net|hayghe.me
 ||listnhacai88.com^*.gif$image
 ||live.staticflickr.com$domain=timdaily.vn,image
 ||maclife.io^*.gif
@@ -263,7 +263,7 @@ $popup,domain=truyenfull.io
 ||tuviso.com/public/media//banner/
 ||tuyensinh247.com/$image,third-party
 ||tuyensinhso.vn/images/banners/*.gif$image,~third-party
-||tvhay.id/guide/popup.xp-f.js
+||tvhay.nl/guide/popup.xp-f.js
 ||tvphim.la/ads/popup$script,~third-party
 ||tvzinghd.co/wp-content/themes/zingtv/js/qci9bc.js$script,~third-party
 ||ungtycomicsxyz.com$csp=script-src self * data:* 'unsafe-inline'
@@ -306,6 +306,7 @@ $popup,domain=truyenfull.io
 ||adtima.vn^$third-party
 ||adtimaserver.vn^
 ||affordedseasick.com^
+||aiactiv.io^
 ||aj1047.online^
 ||aj1559.online^
 ||aj2393.online^
@@ -445,11 +446,11 @@ animet4.site###menubentrai
 animet4.site##.gnartyx-offads
 animet4.site,animetvn.com,subnhanh1.org###fbox-background
 animetvn.com##.gnarty-offads
-animevietsub.biz####invideo_wrapper
-animevietsub.biz###.Ads
-animevietsub.biz###.mobile-catfixx
-animevietsub.biz###.pc-catfixx
-animevietsub.biz##.mobile-catfish-top
+animevietsub.page####invideo_wrapper
+animevietsub.page###.Ads
+animevietsub.page###.mobile-catfixx
+animevietsub.page###.pc-catfixx
+animevietsub.page##.mobile-catfish-top
 animew.info##div.py-2.md\:py-6.mx-auto.w-full.max-w-screen-3xl>div.relative
 apkmoddone.com###sn-AnchorAd
 apkmoddone.com##.pAd
@@ -1198,7 +1199,7 @@ $third-party,script,domain=sexdiaryx.live
 ||cliphot69.cfd$csp=script-src 'self' 'unsafe-inline'
 ||cliphot69.cfd^*.gif$image
 ||cliphotvn69.com^*.gif$image
-||clipsexnhanh3x.net^*.gif$image
+||clipsexthudam.net^*.gif$image
 ||cloufdlare.com/ads/vn1.html$subdocument,domain=vl.phe.to
 ||demo123.info/*ads/$image,domain=phim.sexxsub.pro
 ||discordapp.$image,domain=phym18.lol|phim18vip.vip|avvietsub.info|phimsexsub.love
@@ -1219,14 +1220,13 @@ $third-party,script,domain=sexdiaryx.live
 ||mwejhobumo.com^
 ||ngaytho.me^*.gif
 ||nrs6ffl9w.com^
-||nungdam.pro^*.gif$image,domain=nungdam.pro
 ||phimsexsub.ch/wp-admin/admin-ajax.php?action=htmlcountry_get_data
 ||phimsexsub.ch^*.gif$image
 ||phym18.lol/static/js/adlia.js
 ||play.stream4.me/jwplayer/vast.js$script,domain=play.stream4.me
 ||qcvip.xyz^$script,domain=phevkl.to|viet69.ws
 ||quatvn.skin/ads.js$script
-||quoracdn.net^$image,domain=vlxx.tech|vlxyz.tube|sieudamsex.com|phevkl.to|viet69.ws|phim18vip.vip|phimsexchichnhau.com|sexpheclip.com|nungdam.pro|sexhihiz.co
+||quoracdn.net^$image,domain=vlxx.tech|vlxyz.tube|sieudamsex.com|phevkl.to|viet69.ws|phim18vip.vip|phimsexchichnhau.com|sexpheclip.com|vnsexmup.net|sexhihiz.co
 ||rphang.online^*.gif
 ||sayhentai.art/assets/js/ads.js
 ||sayhentai.art/storage/images/banner/$image
@@ -1244,6 +1244,7 @@ $third-party,script,domain=sexdiaryx.live
 ||truyensextv.com^*.gif
 ||truyenvn.la^*banner$image
 ||vl3x.vip/ads/$script
+||vnsexmup.net^*.gif$image,domain=vnsexmup.net
 ||www.buomtv.io/palivn/ad/$image
 ||www.displayvertising.com^
 ||xnhau.blog^$media,domain=xnhau.pro
@@ -1261,7 +1262,7 @@ cliphot69.cfd###custom_html-42
 cliphot69.pics###mp-preload-pp-overlay
 cliphot69.pics##.adpl
 cliphotvn69.com,mobiblogs.com,cliphot69.cfd,phevkl.to,www.gvnvh.net,top1phimsex.com,sayhentai.art,viet69.ws##.float-ck-center-lt
-damconuong.club##a[rel="nofollow"]
+damconuong.my##a[rel="nofollow"]
 dualeotruyenbeta.com##[id$="bnr"]
 fullcliphot.com##.banner-ads
 fullcliphot.com##div#recent-content:nth-of-type(1)
@@ -1271,7 +1272,7 @@ gockhuat.net###ad_global_below_navbar
 hd.javhay.site##.v4j-header>center
 jav.sexsub.icu##.v4j-watch-1.v4j-content
 jav.sexsub.icu##body>div[class]
-jav.vc,nungdam.pro##.catfix
+jav.vc,vnsexmup.net##.catfix
 javhd.shop,vlxxai.net,trangsexdam.net,javhd.social,sexsoc.info##.hd-tube-desktop
 javhd.shop,vlxxai.net,trangsexdam.net,javhd.social,sexsoc.info##.hd-tube-mobile
 javhd.tech###AgeModal
@@ -1348,14 +1349,14 @@ vlxx.tech###adx
 vlxx.tech##.banner-preload
 vlxx.tech##.ff-banner
 vlxx.tech##div.banner-catfish-bottom
-vlxx.tech,clipsexnhanh3x.net,sexhihiz.co##.catfish-bottom
+vlxx.tech,clipsexthudam.net,sexhihiz.co##.catfish-bottom
 vlxx.tech,javtopxx.com##.ads
-vlxx.tech,nungdam.pro,sexhihiz.co##.catfish-top
+vlxx.tech,vnsexmup.net,sexhihiz.co##.catfish-top
 vlxxhay.info##.code-block
 vlxxhot.xyz##.adx1
 vlxxhot.xyz,vailonxx.co###ab_ctl
 vlxxhot.xyz,vailonxx.co##.bannerads
-vlxyz.tube,nungdam.pro,sexhihiz.co##.xx-ads
+vlxyz.tube,vnsexmup.net,sexhihiz.co##.xx-ads
 vn.javbabe.net##.b-player
 vn.phym18.lol##div#bnads
 vtvgo.vn##.adContainer
