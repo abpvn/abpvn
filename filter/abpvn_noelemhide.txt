@@ -1,9 +1,9 @@
 [Adblock Plus 2.0]
-! Version: 20250204094408588
+! Version: 20250204153610737
 ! id: D4028CDD-3D39-4624-ACC7-8140F4EC3888
 ! Title: ABPVN List
-! Last modified: 04 Feb 2025 09:44:08 UTC+7
-! Diff-Path: patches/20250204094408588.patch#abpvn_noelemhide
+! Last modified: 04 Feb 2025 15:36:10 UTC+7
+! Diff-Path: patches/20250204153610737.patch#abpvn_noelemhide
 ! Diff-Expires: 60 minutes
 ! Expires: 1 days (update frequency)
 !
@@ -29,6 +29,7 @@ $popup,domain=truyenfull.bio
 .vn/c3s-ad/$xmlhttprequest
 .vn/qc/
 /Content/JS/jwplayer/vast.js$script
+/[a-z]{14}\.com/$xmlhttprequest,third-party
 /_BannerSlot.aspx$subdocument,domain=bongdaso66.net
 /aas/r45d/vki/*$script
 /ads/*.gif
@@ -233,6 +234,7 @@ thaudiotruyen.com/wp-content/uploads/2024/10/temu.jpg$image
 ||tailieuvnu.com/wp-content/uploads/2022/12/28/shopee-2*.png$image
 ||taoanhdep.com$csp=script-src 'self' 'unsafe-inline' data: https:
 ||tepbac.com/upload/advertiment/$image
+||thapcamtvz.net^*.gif$image,domain=thapcamtvz.net|vv13.thapcamtivi.live
 ||the.tube/js/detect-ab.js$script
 ||the.tube/js/simpleblocker.js$script
 ||thichxemphim1.net/Fb88-28012023.mp4$domain=thichxemphim1.net,rewrite=abp-resource:blank-mp4
@@ -274,7 +276,6 @@ thaudiotruyen.com/wp-content/uploads/2024/10/temu.jpg$image
 ||vsc62.com/wp-content/themes/vuasanco/assets/scripts/scripts.js
 ||wchem9.com/wp-content/plugins/deblocker/js/ads.min.js$script,~third-party
 ||wibu47.com^*.gif$image
-||world.thapcamtv.com^*.gif$image,domain=world.thapcamtv.com|vv13.thapcamtivi.live
 ||www.bk8vnaf.com^*.gif$image,domain=phimgichill.net
 ||www.bongdalu808.com^*.gif
 ||www.clbgamesvn.com/diendan/popup/popup.js$script,~third-party
@@ -529,6 +530,7 @@ thaudiotruyen.com/wp-content/uploads/2024/10/temu.jpg$image
 ||no2veeamggaseber.com^
 ||nomorepecans.com^
 ||ny.foonerne.com^
+||o6z2a2kq8fatj3ch0x5ow6v82ha2gja8x8c7w6pc5gx2ls0zia7bx1n28b5d.com^
 ||offclaydolon.com^
 ||offerimage.com^
 ||oghqvffmnt.com^
