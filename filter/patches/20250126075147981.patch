@@ -1,11 +1,13 @@
-diff name:abpvn lines:245 checksum:89f168db58
+diff name:abpvn lines:269 checksum:5451117d02
 d2 1
 a2 1
-! Version: 20250204094407480
+! Version: 20250204153610323
 d5 2
 a6 2
-! Last modified: 04 Feb 2025 09:44:07 UTC+7
-! Diff-Path: patches/20250204094407480.patch#abpvn
+! Last modified: 04 Feb 2025 15:36:10 UTC+7
+! Diff-Path: patches/20250204153610323.patch#abpvn
+a31 1
+/[a-z]{14}\.com/$xmlhttprequest,third-party
 d48 1
 a48 1
 /i.imgur.com/*.gif$domain=keonhacai55.chat|www.motchillme.com|www.phimdinhcao.online|xoilacxj.cc|90phutzv.cc|vebozy.cc|cakhiai.cc|listnhacai88.com|xoilaczz63.live|xemtivingon.org|mitomtvn.cc|eastloshigh.com|plcdn.xyz|phimmoi.ing|motphimww.info
@@ -28,13 +30,17 @@ d187 2
 d206 1
 a206 1
 ||quoracdn.net^$image,domain=www.motchillme.com
+a234 1
+||thapcamtvz.net^*.gif$image,domain=thapcamtvz.net|vv13.thapcamtivi.live
+d277 1
 d283 1
 a283 1
 ||www.motchillme.com/3s.m3u8$rewrite=abp-resource:blank-mp3,domain=www.motchillme.com
 a287 2
 ||xemphimhdc.club$csp=script-src 'self' 'unsafe-inline' https:
 ||xemphimhdc.club^*.gif$image
-a356 1
+a356 2
+||o6z2a2kq8fatj3ch0x5ow6v82ha2gja8x8c7w6pc5gx2ls0zia7bx1n28b5d.com^
 ||oursty.com^
 a373 1
 ||sourcetobin.com^
@@ -48,7 +54,11 @@ a397 1
 a398 2
 ##.adsbygoogle[data-ad-slot]
 ##.banner-ads
-a441 1
+a410 1
+##div[style="position: fixed; inset: 0px; z-index: 2147483647; pointer-events: auto;"]
+a441 3
+anime47.baby###swiper-wrapper
+animehay.red##div[style="position: fixed; bottom: 0px; z-index: 98; width: 100%; text-align: center; box-sizing: border-box;"]
 animetvn.com###mobile-ads
 a449 1
 apkmoddone.com###sn-Notif
@@ -105,6 +115,9 @@ m.autopro.com.vn##.pushed
 a671 2
 mannhan92.xyz##.bet-btn-8423
 mannhan92.xyz##.btn_betnow_632132
+a677 2
+metruyencv.info###article>.pt-3.text-centers
+metruyencv.info##.text-muted
 d682 1
 a682 1
 mitomtvn.cc##.btn-od
@@ -124,8 +137,14 @@ a759 1
 romgoc.net,giavang.net,cungthi.online,vn-z.vn##.adsbygoogle
 a801 1
 thapcam53.net,vv13.thapcamtivi.live##.mmo
-a802 1
-thapcam53.net,xem.thapcamtv.live,xx2.thapcam53.info,nn13.thapcam.asia,world.thapcamtv.com,vv13.thapcamtivi.live##.modal
+a802 7
+thapcam53.net,xem.thapcamtv.live,xx2.thapcam53.info,nn13.thapcam.asia,thapcamtvz.net,vv13.thapcamtivi.live##.modal
+thapcamtvz.net###partner5
+thapcamtvz.net##.container.pc.g-imgtop
+thapcamtvz.net##.d-md-none.d-block.mobile.g-imgbot
+thapcamtvz.net##.group-btn
+thapcamtvz.net##.list-main-link
+thapcamtvz.net##.ref-link
 d840 1
 a840 1
 toquoc.vn,baoxaydung.com.vn,tienphong.vn,taichinhdoanhnghiep.net.vn,thichxemphim1.net,v.xemphimviet.xyz,ghienphim.movie,truyengihotdo.net,truyengihotzay.net,truyengihotnha.com,truyengihotnha.net,truyengihotnay.com,tenmientruyengi.net##.banner
@@ -137,12 +156,14 @@ v.xemphimviet.xyz,ghienphim.movie##.popunder-link
 v.xemphimviet.xyz,ghienphim.movie##.promotion-popup
 v.xemphimviet.xyz,ghienphim.movie##.video-ad-layer
 d961 1
+d963 2
 a964 1
 vtvgo.vn##.adContainer
 d970 1
 a970 1
 vungtv.us,xemphimhdc.club###container-ads
 d975 1
+d983 6
 a995 5
 www.motchillme.com###mobile_content_top
 www.motchillme.com###p-GMH
@@ -172,6 +193,9 @@ xoilacxj.cc,vebozy.cc,cakhiai.cc,mitomtvn.cc,90phutvs.cc##div[id^="dnn_"]
 d1056 1
 a1056 1
 xoilaczz63.live,mitomtvn.cc##.d-lg-flex.d-none.p-0.company.flex-1.table
+d1067 1
+a1067 1
+xxoilac.com,goal.90phut24.xyz,thapcam53.net,xem.thapcamtv.live,xx2.thapcam53.info,nn13.thapcam.asia,vv13.thapcamtivi.live,thapcamtvz.net##.active.bg-overlay
 a1085 3
 yts.do,yts.mx,yts.rs##.bbj.eytry
 yts.do,yts.mx,yts.rs##.uy.hfc
@@ -244,14 +268,16 @@ vlxx.so,clipsexquaylen.net,sexhihiz.tv##.catfish-bottom
 vlxx.so,javtopxx.com##.ads
 vlxx.so,vnsexmup.net,sexhihiz.tv##.catfish-top
 d1353 1
-diff name:abpvn_adguard lines:264 checksum:da880344c1
+diff name:abpvn_adguard lines:294 checksum:b7585e2531
 d2 1
 a2 1
-! Version: 20250204094407480
+! Version: 20250204153610323
 d5 2
 a6 2
-! Last modified: 04 Feb 2025 09:44:07 UTC+7
-! Diff-Path: patches/20250204094407480.patch#abpvn_adguard
+! Last modified: 04 Feb 2025 15:36:10 UTC+7
+! Diff-Path: patches/20250204153610323.patch#abpvn_adguard
+a29 1
+/[a-z]{14}\.com/$xmlhttprequest,third-party
 d46 1
 a46 1
 /i.imgur.com/*.gif$domain=keonhacai55.chat|www.motchillme.com|www.phimdinhcao.online|xoilacxj.cc|90phutzv.cc|vebozy.cc|cakhiai.cc|listnhacai88.com|xoilaczz63.live|xemtivingon.org|mitomtvn.cc|eastloshigh.com|plcdn.xyz|phimmoi.ing|motphimww.info
@@ -274,13 +300,17 @@ d185 2
 d204 1
 a204 1
 ||quoracdn.net^$image,domain=www.motchillme.com
+a230 1
+||thapcamtvz.net^*.gif$image,domain=thapcamtvz.net|vv13.thapcamtivi.live
+d273 1
 d279 1
 a279 1
 ||www.motchillme.com/3s.m3u8$rewrite=abp-resource:blank-mp3,domain=www.motchillme.com
 a283 2
 ||xemphimhdc.club$csp=script-src 'self' 'unsafe-inline' https:
 ||xemphimhdc.club^*.gif$image
-a352 1
+a352 2
+||o6z2a2kq8fatj3ch0x5ow6v82ha2gja8x8c7w6pc5gx2ls0zia7bx1n28b5d.com^
 ||oursty.com^
 a369 1
 ||sourcetobin.com^
@@ -294,7 +324,11 @@ a393 1
 a394 2
 ##.adsbygoogle[data-ad-slot]
 ##.banner-ads
-a437 1
+a406 1
+##div[style="position: fixed; inset: 0px; z-index: 2147483647; pointer-events: auto;"]
+a437 3
+anime47.baby###swiper-wrapper
+animehay.red##div[style="position: fixed; bottom: 0px; z-index: 98; width: 100%; text-align: center; box-sizing: border-box;"]
 animetvn.com###mobile-ads
 a445 1
 apkmoddone.com###sn-Notif
@@ -351,6 +385,9 @@ m.autopro.com.vn##.pushed
 a667 2
 mannhan92.xyz##.bet-btn-8423
 mannhan92.xyz##.btn_betnow_632132
+a673 2
+metruyencv.info###article>.pt-3.text-centers
+metruyencv.info##.text-muted
 d678 1
 a678 1
 mitomtvn.cc##.btn-od
@@ -370,8 +407,14 @@ a755 1
 romgoc.net,giavang.net,cungthi.online,vn-z.vn##.adsbygoogle
 a797 1
 thapcam53.net,vv13.thapcamtivi.live##.mmo
-a798 1
-thapcam53.net,xem.thapcamtv.live,xx2.thapcam53.info,nn13.thapcam.asia,world.thapcamtv.com,vv13.thapcamtivi.live##.modal
+a798 7
+thapcam53.net,xem.thapcamtv.live,xx2.thapcam53.info,nn13.thapcam.asia,thapcamtvz.net,vv13.thapcamtivi.live##.modal
+thapcamtvz.net###partner5
+thapcamtvz.net##.container.pc.g-imgtop
+thapcamtvz.net##.d-md-none.d-block.mobile.g-imgbot
+thapcamtvz.net##.group-btn
+thapcamtvz.net##.list-main-link
+thapcamtvz.net##.ref-link
 d836 1
 a836 1
 toquoc.vn,baoxaydung.com.vn,tienphong.vn,taichinhdoanhnghiep.net.vn,thichxemphim1.net,v.xemphimviet.xyz,ghienphim.movie,truyengihotdo.net,truyengihotzay.net,truyengihotnha.com,truyengihotnha.net,truyengihotnay.com,tenmientruyengi.net##.banner
@@ -383,12 +426,14 @@ v.xemphimviet.xyz,ghienphim.movie##.popunder-link
 v.xemphimviet.xyz,ghienphim.movie##.promotion-popup
 v.xemphimviet.xyz,ghienphim.movie##.video-ad-layer
 d957 1
+d959 2
 a960 1
 vtvgo.vn##.adContainer
 d966 1
 a966 1
 vungtv.us,xemphimhdc.club###container-ads
 d971 1
+d979 6
 a991 5
 www.motchillme.com###mobile_content_top
 www.motchillme.com###p-GMH
@@ -418,6 +463,9 @@ xoilacxj.cc,vebozy.cc,cakhiai.cc,mitomtvn.cc,90phutvs.cc##div[id^="dnn_"]
 d1052 1
 a1052 1
 xoilaczz63.live,mitomtvn.cc##.d-lg-flex.d-none.p-0.company.flex-1.table
+d1063 1
+a1063 1
+xxoilac.com,goal.90phut24.xyz,thapcam53.net,xem.thapcamtv.live,xx2.thapcam53.info,nn13.thapcam.asia,vv13.thapcamtivi.live,thapcamtvz.net##.active.bg-overlay
 a1081 3
 yts.do,yts.mx,yts.rs##.bbj.eytry
 yts.do,yts.mx,yts.rs##.uy.hfc
@@ -490,6 +538,7 @@ vlxx.so,clipsexquaylen.net,sexhihiz.tv##.catfish-bottom
 vlxx.so,javtopxx.com##.ads
 vlxx.so,vnsexmup.net,sexhihiz.tv##.catfish-top
 d1347 1
+d1371 2
 d1387 1
 a1387 1
 chichnhausex.net#%#//scriptlet("abort-current-inline-script", "$", "open")
@@ -497,6 +546,11 @@ d1415 1
 a1415 1
 lxmanga.cloud#%#//scriptlet("abort-current-inline-script", "$", "PopUnder")
 d1420 1
+a1442 1
+truyengg.com#%#//scriptlet("abort-current-inline-script", "document.addEventListener", "window.open")
+d1446 1
+a1446 1
+truyensieuhay.com,hayhaytv.org,quangcaoyenbai.com,sieudamsex.net,phimchill.life,thuvienhd.xyz,tv.tvhayhd.org,www.khophim88s.com,nhentaivn.online,mv.dailyphimz.com,mv.phimbathu.one,sexhihiz.tv,anime47.baby#%#//scriptlet("abort-on-property-read", "document.cookie")
 d1449 1
 a1449 1
 vailonxx.co,www.motchillme.com#%#//scriptlet("abort-current-inline-script", "jQuery", "window.open")
@@ -509,14 +563,16 @@ a1466 1
 www.phimdinhcao.online,www.motchillme.com,xnhau.top#%#//scriptlet("abort-on-property-read", "localStorage")
 a1469 1
 xemphimhdc.club#%#//scriptlet("abort-current-inline-script", "document.addEventListener", "linksToOpen")
-diff name:abpvn_content_blocker lines:245 checksum:c8cd6d4152
+diff name:abpvn_content_blocker lines:269 checksum:a928a6d01d
 d2 1
 a2 1
-! Version: 20250204094407480
+! Version: 20250204153610323
 d5 2
 a6 2
-! Last modified: 04 Feb 2025 09:44:07 UTC+7
-! Diff-Path: patches/20250204094407480.patch#abpvn_content_blocker
+! Last modified: 04 Feb 2025 15:36:10 UTC+7
+! Diff-Path: patches/20250204153610323.patch#abpvn_content_blocker
+a31 1
+/[a-z]{14}\.com/$xmlhttprequest,third-party
 d48 1
 a48 1
 /i.imgur.com/*.gif$domain=keonhacai55.chat|www.motchillme.com|www.phimdinhcao.online|xoilacxj.cc|90phutzv.cc|vebozy.cc|cakhiai.cc|listnhacai88.com|xoilaczz63.live|xemtivingon.org|mitomtvn.cc|eastloshigh.com|plcdn.xyz|phimmoi.ing|motphimww.info
@@ -539,13 +595,17 @@ d187 2
 d206 1
 a206 1
 ||quoracdn.net^$image,domain=www.motchillme.com
+a234 1
+||thapcamtvz.net^*.gif$image,domain=thapcamtvz.net|vv13.thapcamtivi.live
+d277 1
 d283 1
 a283 1
 ||www.motchillme.com/3s.m3u8$rewrite=abp-resource:blank-mp3,domain=www.motchillme.com
 a287 2
 ||xemphimhdc.club$csp=script-src 'self' 'unsafe-inline' https:
 ||xemphimhdc.club^*.gif$image
-a356 1
+a356 2
+||o6z2a2kq8fatj3ch0x5ow6v82ha2gja8x8c7w6pc5gx2ls0zia7bx1n28b5d.com^
 ||oursty.com^
 a373 1
 ||sourcetobin.com^
@@ -559,7 +619,11 @@ a397 1
 a398 2
 ##.adsbygoogle[data-ad-slot]
 ##.banner-ads
-a441 1
+a410 1
+##div[style="position: fixed; inset: 0px; z-index: 2147483647; pointer-events: auto;"]
+a441 3
+anime47.baby###swiper-wrapper
+animehay.red##div[style="position: fixed; bottom: 0px; z-index: 98; width: 100%; text-align: center; box-sizing: border-box;"]
 animetvn.com###mobile-ads
 a449 1
 apkmoddone.com###sn-Notif
@@ -616,6 +680,9 @@ m.autopro.com.vn##.pushed
 a671 2
 mannhan92.xyz##.bet-btn-8423
 mannhan92.xyz##.btn_betnow_632132
+a677 2
+metruyencv.info###article>.pt-3.text-centers
+metruyencv.info##.text-muted
 d682 1
 a682 1
 mitomtvn.cc##.btn-od
@@ -635,8 +702,14 @@ a759 1
 romgoc.net,giavang.net,cungthi.online,vn-z.vn##.adsbygoogle
 a801 1
 thapcam53.net,vv13.thapcamtivi.live##.mmo
-a802 1
-thapcam53.net,xem.thapcamtv.live,xx2.thapcam53.info,nn13.thapcam.asia,world.thapcamtv.com,vv13.thapcamtivi.live##.modal
+a802 7
+thapcam53.net,xem.thapcamtv.live,xx2.thapcam53.info,nn13.thapcam.asia,thapcamtvz.net,vv13.thapcamtivi.live##.modal
+thapcamtvz.net###partner5
+thapcamtvz.net##.container.pc.g-imgtop
+thapcamtvz.net##.d-md-none.d-block.mobile.g-imgbot
+thapcamtvz.net##.group-btn
+thapcamtvz.net##.list-main-link
+thapcamtvz.net##.ref-link
 d840 1
 a840 1
 toquoc.vn,baoxaydung.com.vn,tienphong.vn,taichinhdoanhnghiep.net.vn,thichxemphim1.net,v.xemphimviet.xyz,ghienphim.movie,truyengihotdo.net,truyengihotzay.net,truyengihotnha.com,truyengihotnha.net,truyengihotnay.com,tenmientruyengi.net##.banner
@@ -648,12 +721,14 @@ v.xemphimviet.xyz,ghienphim.movie##.popunder-link
 v.xemphimviet.xyz,ghienphim.movie##.promotion-popup
 v.xemphimviet.xyz,ghienphim.movie##.video-ad-layer
 d961 1
+d963 2
 a964 1
 vtvgo.vn##.adContainer
 d970 1
 a970 1
 vungtv.us,xemphimhdc.club###container-ads
 d975 1
+d983 6
 a995 5
 www.motchillme.com###mobile_content_top
 www.motchillme.com###p-GMH
@@ -683,6 +758,9 @@ xoilacxj.cc,vebozy.cc,cakhiai.cc,mitomtvn.cc,90phutvs.cc##div[id^="dnn_"]
 d1056 1
 a1056 1
 xoilaczz63.live,mitomtvn.cc##.d-lg-flex.d-none.p-0.company.flex-1.table
+d1067 1
+a1067 1
+xxoilac.com,goal.90phut24.xyz,thapcam53.net,xem.thapcamtv.live,xx2.thapcam53.info,nn13.thapcam.asia,vv13.thapcamtivi.live,thapcamtvz.net##.active.bg-overlay
 a1085 3
 yts.do,yts.mx,yts.rs##.bbj.eytry
 yts.do,yts.mx,yts.rs##.uy.hfc
@@ -755,14 +833,16 @@ vlxx.so,clipsexquaylen.net,sexhihiz.tv##.catfish-bottom
 vlxx.so,javtopxx.com##.ads
 vlxx.so,vnsexmup.net,sexhihiz.tv##.catfish-top
 d1353 1
-diff name:abpvn_noelemhide lines:61 checksum:2eb3c0ba2e
+diff name:abpvn_noelemhide lines:67 checksum:851a6dc9cb
 d2 1
 a2 1
-! Version: 20250204094407480
+! Version: 20250204153610323
 d5 2
 a6 2
-! Last modified: 04 Feb 2025 09:44:07 UTC+7
-! Diff-Path: patches/20250204094407480.patch#abpvn_noelemhide
+! Last modified: 04 Feb 2025 15:36:10 UTC+7
+! Diff-Path: patches/20250204153610323.patch#abpvn_noelemhide
+a31 1
+/[a-z]{14}\.com/$xmlhttprequest,third-party
 d48 1
 a48 1
 /i.imgur.com/*.gif$domain=keonhacai55.chat|www.motchillme.com|www.phimdinhcao.online|xoilacxj.cc|90phutzv.cc|vebozy.cc|cakhiai.cc|listnhacai88.com|xoilaczz63.live|xemtivingon.org|mitomtvn.cc|eastloshigh.com|plcdn.xyz|phimmoi.ing|motphimww.info
@@ -785,13 +865,17 @@ d187 2
 d206 1
 a206 1
 ||quoracdn.net^$image,domain=www.motchillme.com
+a234 1
+||thapcamtvz.net^*.gif$image,domain=thapcamtvz.net|vv13.thapcamtivi.live
+d277 1
 d283 1
 a283 1
 ||www.motchillme.com/3s.m3u8$rewrite=abp-resource:blank-mp3,domain=www.motchillme.com
 a287 2
 ||xemphimhdc.club$csp=script-src 'self' 'unsafe-inline' https:
 ||xemphimhdc.club^*.gif$image
-a356 1
+a356 2
+||o6z2a2kq8fatj3ch0x5ow6v82ha2gja8x8c7w6pc5gx2ls0zia7bx1n28b5d.com^
 ||oursty.com^
 a373 1
 ||sourcetobin.com^
@@ -817,14 +901,16 @@ a463 1
 d465 1
 a465 1
 ||quoracdn.net^$image,domain=vlxx.so|heoxinh.net|sieudamsex.net|phevkl.to|viet69.icu|phim18vip.vip|chichnhausex.net|pheclip.mobi|vnsexmup.net|sexhihiz.tv
-diff name:abpvn_ublock lines:265 checksum:5f665599ef
+diff name:abpvn_ublock lines:295 checksum:9413f6c5b2
 d2 1
 a2 1
-! Version: 20250204094407480
+! Version: 20250204153610323
 d5 2
 a6 2
-! Last modified: 04 Feb 2025 09:44:07 UTC+7
-! Diff-Path: patches/20250204094407480.patch#abpvn_ublock
+! Last modified: 04 Feb 2025 15:36:10 UTC+7
+! Diff-Path: patches/20250204153610323.patch#abpvn_ublock
+a29 1
+/[a-z]{14}\.com/$xmlhttprequest,third-party
 d46 1
 a46 1
 /i.imgur.com/*.gif$domain=keonhacai55.chat|www.motchillme.com|www.phimdinhcao.online|xoilacxj.cc|90phutzv.cc|vebozy.cc|cakhiai.cc|listnhacai88.com|xoilaczz63.live|xemtivingon.org|mitomtvn.cc|eastloshigh.com|plcdn.xyz|phimmoi.ing|motphimww.info
@@ -847,13 +933,17 @@ d185 2
 d204 1
 a204 1
 ||quoracdn.net^$image,domain=www.motchillme.com
+a230 1
+||thapcamtvz.net^*.gif$image,domain=thapcamtvz.net|vv13.thapcamtivi.live
+d273 1
 d279 1
 a279 1
 ||www.motchillme.com/3s.m3u8$rewrite=abp-resource:blank-mp3,domain=www.motchillme.com
 a283 2
 ||xemphimhdc.club$csp=script-src 'self' 'unsafe-inline' https:
 ||xemphimhdc.club^*.gif$image
-a352 1
+a352 2
+||o6z2a2kq8fatj3ch0x5ow6v82ha2gja8x8c7w6pc5gx2ls0zia7bx1n28b5d.com^
 ||oursty.com^
 a369 1
 ||sourcetobin.com^
@@ -867,7 +957,11 @@ a393 1
 a394 2
 ##.adsbygoogle[data-ad-slot]
 ##.banner-ads
-a437 1
+a406 1
+##div[style="position: fixed; inset: 0px; z-index: 2147483647; pointer-events: auto;"]
+a437 3
+anime47.baby###swiper-wrapper
+animehay.red##div[style="position: fixed; bottom: 0px; z-index: 98; width: 100%; text-align: center; box-sizing: border-box;"]
 animetvn.com###mobile-ads
 a445 1
 apkmoddone.com###sn-Notif
@@ -924,6 +1018,9 @@ m.autopro.com.vn##.pushed
 a667 2
 mannhan92.xyz##.bet-btn-8423
 mannhan92.xyz##.btn_betnow_632132
+a673 2
+metruyencv.info###article>.pt-3.text-centers
+metruyencv.info##.text-muted
 d678 1
 a678 1
 mitomtvn.cc##.btn-od
@@ -943,8 +1040,14 @@ a755 1
 romgoc.net,giavang.net,cungthi.online,vn-z.vn##.adsbygoogle
 a797 1
 thapcam53.net,vv13.thapcamtivi.live##.mmo
-a798 1
-thapcam53.net,xem.thapcamtv.live,xx2.thapcam53.info,nn13.thapcam.asia,world.thapcamtv.com,vv13.thapcamtivi.live##.modal
+a798 7
+thapcam53.net,xem.thapcamtv.live,xx2.thapcam53.info,nn13.thapcam.asia,thapcamtvz.net,vv13.thapcamtivi.live##.modal
+thapcamtvz.net###partner5
+thapcamtvz.net##.container.pc.g-imgtop
+thapcamtvz.net##.d-md-none.d-block.mobile.g-imgbot
+thapcamtvz.net##.group-btn
+thapcamtvz.net##.list-main-link
+thapcamtvz.net##.ref-link
 d836 1
 a836 1
 toquoc.vn,baoxaydung.com.vn,tienphong.vn,taichinhdoanhnghiep.net.vn,thichxemphim1.net,v.xemphimviet.xyz,ghienphim.movie,truyengihotdo.net,truyengihotzay.net,truyengihotnha.com,truyengihotnha.net,truyengihotnay.com,tenmientruyengi.net##.banner
@@ -956,12 +1059,14 @@ v.xemphimviet.xyz,ghienphim.movie##.popunder-link
 v.xemphimviet.xyz,ghienphim.movie##.promotion-popup
 v.xemphimviet.xyz,ghienphim.movie##.video-ad-layer
 d957 1
+d959 2
 a960 1
 vtvgo.vn##.adContainer
 d966 1
 a966 1
 vungtv.us,xemphimhdc.club###container-ads
 d971 1
+d979 6
 a991 5
 www.motchillme.com###mobile_content_top
 www.motchillme.com###p-GMH
@@ -991,6 +1096,9 @@ xoilacxj.cc,vebozy.cc,cakhiai.cc,mitomtvn.cc,90phutvs.cc##div[id^="dnn_"]
 d1052 1
 a1052 1
 xoilaczz63.live,mitomtvn.cc##.d-lg-flex.d-none.p-0.company.flex-1.table
+d1063 1
+a1063 1
+xxoilac.com,goal.90phut24.xyz,thapcam53.net,xem.thapcamtv.live,xx2.thapcam53.info,nn13.thapcam.asia,vv13.thapcamtivi.live,thapcamtvz.net##.active.bg-overlay
 a1081 3
 yts.do,yts.mx,yts.rs##.bbj.eytry
 yts.do,yts.mx,yts.rs##.uy.hfc
@@ -1063,6 +1171,7 @@ vlxx.so,clipsexquaylen.net,sexhihiz.tv##.catfish-bottom
 vlxx.so,javtopxx.com##.ads
 vlxx.so,vnsexmup.net,sexhihiz.tv##.catfish-top
 d1346 1
+d1370 2
 d1386 1
 a1386 1
 chichnhausex.net##+js(acs, $, open)
@@ -1070,6 +1179,11 @@ d1414 1
 a1414 1
 lxmanga.cloud##+js(acs, $, PopUnder)
 d1419 1
+a1442 1
+truyengg.com##+js(acs, document.addEventListener, window.open)
+d1446 1
+a1446 1
+truyensieuhay.com,hayhaytv.org,quangcaoyenbai.com,sieudamsex.net,phimchill.life,thuvienhd.xyz,tv.tvhayhd.org,www.khophim88s.com,nhentaivn.online,mv.dailyphimz.com,mv.phimbathu.one,sexhihiz.tv,anime47.baby##+js(aopr, document.cookie)
 d1449 1
 a1449 1
 vailonxx.co,www.motchillme.com##+js(acs, jQuery, window.open)
