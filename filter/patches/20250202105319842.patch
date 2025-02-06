@@ -1,11 +1,11 @@
-diff name:abpvn lines:174 checksum:52bc41b409
+diff name:abpvn lines:185 checksum:b7d976fb71
 d2 1
 a2 1
-! Version: 20250205180432861
+! Version: 20250206132234799
 d5 2
 a6 2
-! Last modified: 05 Feb 2025 18:04:32 UTC+7
-! Diff-Path: patches/20250205180432861.patch#abpvn
+! Last modified: 06 Feb 2025 13:22:34 UTC+7
+! Diff-Path: patches/20250206132234799.patch#abpvn
 a31 1
 /^https:\/\/[a-z]{9,}\.com\/$/$xmlhttprequest,third-party
 d48 1
@@ -31,6 +31,9 @@ a207 1
 a235 1
 ||thapcamtvz.net^*.gif$image,domain=thapcamtvz.net|vv13.thapcamtivi.live
 d249 1
+d255 1
+a255 1
+||truyentuan.xyz/wp-content/banners
 d277 1
 d283 1
 a283 1
@@ -77,6 +80,9 @@ mitomtvn.cc##.btn-od
 d1005 1
 a1005 1
 phim.vkool8.net,subnhanhvl.live,motchill.ec,subnhanh.video,biphim.vote,dongphim.ee,phimbet.biz,hhanime3d.cc,dongchill.dev###overlay
+d1080 1
+a1080 1
+tenovi.net,truyentuan.xyz##.adpia_banner
 d1095 1
 a1095 7
 thapcam53.net,xem.thapcamtv.live,xx2.thapcam53.info,nn13.thapcam.asia,thapcamtvz.net,vv13.thapcamtivi.live##.modal
@@ -92,6 +98,11 @@ toquoc.vn,baoxaydung.com.vn,tienphong.vn,taichinhdoanhnghiep.net.vn,thichxemphim
 d1144 1
 a1144 1
 truyengihotzay.net,truyengihotnay.com,tenmientruyengi.net##div#adsChapterTop
+d1155 3
+a1157 3
+truyentuan.xyz###banner_preload
+truyentuan.xyz##.doc-truyen-ads-d1
+truyentuan.xyz##.doc-truyen-ads-d2
 d1177 4
 a1180 4
 v.xemphimviet.xyz,ghienphim.movie##.ad-floater
@@ -173,14 +184,14 @@ truyensextv.com,lxmanga.cloud##.sticky-footer
 d1603 1
 a1603 1
 viet69.icu##.popup-overlay
-diff name:abpvn_adguard lines:196 checksum:90e6ddd935
+diff name:abpvn_adguard lines:208 checksum:b1e10d46f8
 d2 1
 a2 1
-! Version: 20250205180432861
+! Version: 20250206132234799
 d5 2
 a6 2
-! Last modified: 05 Feb 2025 18:04:32 UTC+7
-! Diff-Path: patches/20250205180432861.patch#abpvn_adguard
+! Last modified: 06 Feb 2025 13:22:34 UTC+7
+! Diff-Path: patches/20250206132234799.patch#abpvn_adguard
 a29 1
 /^https:\/\/[a-z]{9,}\.com\/$/$xmlhttprequest,third-party
 d46 1
@@ -206,6 +217,9 @@ a205 1
 a231 1
 ||thapcamtvz.net^*.gif$image,domain=thapcamtvz.net|vv13.thapcamtivi.live
 d245 1
+d251 1
+a251 1
+||truyentuan.xyz/wp-content/banners
 d273 1
 d279 1
 a279 1
@@ -252,6 +266,9 @@ mitomtvn.cc##.btn-od
 d1001 1
 a1001 1
 phim.vkool8.net,subnhanhvl.live,motchill.ec,subnhanh.video,biphim.vote,dongphim.ee,phimbet.biz,hhanime3d.cc,dongchill.dev###overlay
+d1076 1
+a1076 1
+tenovi.net,truyentuan.xyz##.adpia_banner
 d1091 1
 a1091 7
 thapcam53.net,xem.thapcamtv.live,xx2.thapcam53.info,nn13.thapcam.asia,thapcamtvz.net,vv13.thapcamtivi.live##.modal
@@ -267,6 +284,11 @@ toquoc.vn,baoxaydung.com.vn,tienphong.vn,taichinhdoanhnghiep.net.vn,thichxemphim
 d1140 1
 a1140 1
 truyengihotzay.net,truyengihotnay.com,tenmientruyengi.net##div#adsChapterTop
+d1151 3
+a1153 3
+truyentuan.xyz###banner_preload
+truyentuan.xyz##.doc-truyen-ads-d1
+truyentuan.xyz##.doc-truyen-ads-d2
 d1173 4
 a1176 4
 v.xemphimviet.xyz,ghienphim.movie##.ad-floater
@@ -357,9 +379,10 @@ mv.phimmoiaz.cc,dood.pm,ytstv.me,anime1.site,anh.moe,maclife.io,xemphimjav.com,h
 d1687 1
 a1687 1
 phimgichill.net,hhhay.ink,hh3dhay.life,tram3d.me,animevietsub.page#%#//scriptlet("abort-current-inline-script", "eval", "$._Eu")
-d1713 1
-a1713 1
+d1713 2
+a1714 2
 truyensieuhay.com,hayhaytv.org,quangcaoyenbai.com,phimchill.life,thuvienhd.xyz,tv.tvhayhd.org,www.khophim88s.com,nhentaivn.online,mv.dailyphimz.com,mv.phimbathu.one,sexhihiz.tv,anime47.baby#%#//scriptlet("abort-on-property-read", "document.cookie")
+truyentuan.xyz#%#//scriptlet("abort-current-inline-script", "$", "btpop")
 d1716 1
 a1716 1
 vailonxx.co,www.motchillme.com#%#//scriptlet("abort-current-inline-script", "jQuery", "window.open")
@@ -370,14 +393,14 @@ viet69.st,vlxx.so,dualeotruyenbeta.com,yurineko.my,heoxinh.net,hd.javhay.site,ph
 d1733 1
 a1733 1
 www.phimdinhcao.online,www.motchillme.com,xnhau.top#%#//scriptlet("abort-on-property-read", "localStorage")
-diff name:abpvn_content_blocker lines:174 checksum:95e91eb99c
+diff name:abpvn_content_blocker lines:185 checksum:8fd5e5954b
 d2 1
 a2 1
-! Version: 20250205180432861
+! Version: 20250206132234799
 d5 2
 a6 2
-! Last modified: 05 Feb 2025 18:04:32 UTC+7
-! Diff-Path: patches/20250205180432861.patch#abpvn_content_blocker
+! Last modified: 06 Feb 2025 13:22:34 UTC+7
+! Diff-Path: patches/20250206132234799.patch#abpvn_content_blocker
 a31 1
 /^https:\/\/[a-z]{9,}\.com\/$/$xmlhttprequest,third-party
 d48 1
@@ -403,6 +426,9 @@ a207 1
 a235 1
 ||thapcamtvz.net^*.gif$image,domain=thapcamtvz.net|vv13.thapcamtivi.live
 d249 1
+d255 1
+a255 1
+||truyentuan.xyz/wp-content/banners
 d277 1
 d283 1
 a283 1
@@ -449,6 +475,9 @@ mitomtvn.cc##.btn-od
 d1005 1
 a1005 1
 phim.vkool8.net,subnhanhvl.live,motchill.ec,subnhanh.video,biphim.vote,dongphim.ee,phimbet.biz,hhanime3d.cc,dongchill.dev###overlay
+d1080 1
+a1080 1
+tenovi.net,truyentuan.xyz##.adpia_banner
 d1095 1
 a1095 7
 thapcam53.net,xem.thapcamtv.live,xx2.thapcam53.info,nn13.thapcam.asia,thapcamtvz.net,vv13.thapcamtivi.live##.modal
@@ -464,6 +493,11 @@ toquoc.vn,baoxaydung.com.vn,tienphong.vn,taichinhdoanhnghiep.net.vn,thichxemphim
 d1144 1
 a1144 1
 truyengihotzay.net,truyengihotnay.com,tenmientruyengi.net##div#adsChapterTop
+d1155 3
+a1157 3
+truyentuan.xyz###banner_preload
+truyentuan.xyz##.doc-truyen-ads-d1
+truyentuan.xyz##.doc-truyen-ads-d2
 d1177 4
 a1180 4
 v.xemphimviet.xyz,ghienphim.movie##.ad-floater
@@ -545,14 +579,14 @@ truyensextv.com,lxmanga.cloud##.sticky-footer
 d1603 1
 a1603 1
 viet69.icu##.popup-overlay
-diff name:abpvn_noelemhide lines:67 checksum:dc1c345563
+diff name:abpvn_noelemhide lines:70 checksum:2e5714f934
 d2 1
 a2 1
-! Version: 20250205180432861
+! Version: 20250206132234799
 d5 2
 a6 2
-! Last modified: 05 Feb 2025 18:04:32 UTC+7
-! Diff-Path: patches/20250205180432861.patch#abpvn_noelemhide
+! Last modified: 06 Feb 2025 13:22:34 UTC+7
+! Diff-Path: patches/20250206132234799.patch#abpvn_noelemhide
 a31 1
 /^https:\/\/[a-z]{9,}\.com\/$/$xmlhttprequest,third-party
 d48 1
@@ -578,6 +612,9 @@ a207 1
 a235 1
 ||thapcamtvz.net^*.gif$image,domain=thapcamtvz.net|vv13.thapcamtivi.live
 d249 1
+d255 1
+a255 1
+||truyentuan.xyz/wp-content/banners
 d277 1
 d283 1
 a283 1
@@ -613,14 +650,14 @@ a739 1
 d741 1
 a741 1
 ||quoracdn.net^$image,domain=vlxx.so|heoxinh.net|phevkl.to|viet69.icu|phim18vip.vip|chichnhausex.net|pheclip.mobi|vnsexmup.net|sexhihiz.tv
-diff name:abpvn_ublock lines:196 checksum:112575b19b
+diff name:abpvn_ublock lines:208 checksum:cd55d81d66
 d2 1
 a2 1
-! Version: 20250205180432861
+! Version: 20250206132234799
 d5 2
 a6 2
-! Last modified: 05 Feb 2025 18:04:32 UTC+7
-! Diff-Path: patches/20250205180432861.patch#abpvn_ublock
+! Last modified: 06 Feb 2025 13:22:34 UTC+7
+! Diff-Path: patches/20250206132234799.patch#abpvn_ublock
 a29 1
 /^https:\/\/[a-z]{9,}\.com\/$/$xmlhttprequest,third-party
 d46 1
@@ -646,6 +683,9 @@ a205 1
 a231 1
 ||thapcamtvz.net^*.gif$image,domain=thapcamtvz.net|vv13.thapcamtivi.live
 d245 1
+d251 1
+a251 1
+||truyentuan.xyz/wp-content/banners
 d273 1
 d279 1
 a279 1
@@ -692,6 +732,9 @@ mitomtvn.cc##.btn-od
 d1001 1
 a1001 1
 phim.vkool8.net,subnhanhvl.live,motchill.ec,subnhanh.video,biphim.vote,dongphim.ee,phimbet.biz,hhanime3d.cc,dongchill.dev###overlay
+d1076 1
+a1076 1
+tenovi.net,truyentuan.xyz##.adpia_banner
 d1091 1
 a1091 7
 thapcam53.net,xem.thapcamtv.live,xx2.thapcam53.info,nn13.thapcam.asia,thapcamtvz.net,vv13.thapcamtivi.live##.modal
@@ -707,6 +750,11 @@ toquoc.vn,baoxaydung.com.vn,tienphong.vn,taichinhdoanhnghiep.net.vn,thichxemphim
 d1140 1
 a1140 1
 truyengihotzay.net,truyengihotnay.com,tenmientruyengi.net##div#adsChapterTop
+d1151 3
+a1153 3
+truyentuan.xyz###banner_preload
+truyentuan.xyz##.doc-truyen-ads-d1
+truyentuan.xyz##.doc-truyen-ads-d2
 d1173 4
 a1176 4
 v.xemphimviet.xyz,ghienphim.movie##.ad-floater
@@ -797,9 +845,10 @@ mv.phimmoiaz.cc,dood.pm,ytstv.me,anime1.site,anh.moe,maclife.io,xemphimjav.com,h
 d1687 1
 a1687 1
 phimgichill.net,hhhay.ink,hh3dhay.life,tram3d.me,animevietsub.page##+js(acs, eval, $._Eu)
-d1714 1
-a1714 1
+d1714 2
+a1715 2
 truyensieuhay.com,hayhaytv.org,quangcaoyenbai.com,phimchill.life,thuvienhd.xyz,tv.tvhayhd.org,www.khophim88s.com,nhentaivn.online,mv.dailyphimz.com,mv.phimbathu.one,sexhihiz.tv,anime47.baby##+js(aopr, document.cookie)
+truyentuan.xyz##+js(acs, $, btpop)
 d1717 1
 a1717 1
 vailonxx.co,www.motchillme.com##+js(acs, jQuery, window.open)
