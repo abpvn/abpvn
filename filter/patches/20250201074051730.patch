@@ -1,11 +1,11 @@
-diff name:abpvn lines:209 checksum:ddf9e6af32
+diff name:abpvn lines:210 checksum:26f93820d2
 d2 1
 a2 1
-! Version: 20250207081603421
+! Version: 20250207120524682
 d5 2
 a6 2
-! Last modified: 07 Feb 2025 08:16:03 UTC+7
-! Diff-Path: patches/20250207081603421.patch#abpvn
+! Last modified: 07 Feb 2025 12:05:24 UTC+7
+! Diff-Path: patches/20250207120524682.patch#abpvn
 a31 1
 /^https:\/\/[a-z]{9,}\.com\/$/$xmlhttprequest,third-party
 d48 2
@@ -30,7 +30,7 @@ a148 1
 ||i.imgur.com^*.gif$image,domain=ghienphim.movie|mv.dailyphimz.com|mv.phimmoiaz.cc|phimgichill.net|mythethao.net|xemtivi4k.com|vtipster.net|phimmoi.club|tv.tvhayhd.org|hoathinh4k3.net|vutruphim.tv|ketqua247vn.vip
 d160 2
 a184 1
-||noitu.pro^*.gif,~third-party
+||noitu.pro^*.gif,$~third-party
 d200 2
 d205 1
 a205 1
@@ -160,7 +160,7 @@ a1205 1
 d1215 1
 d1217 2
 a1218 2
-||i.imgur.com^$image,domain=phym18.lol|phim18hd.cam|fullcliphot.com|xx.sexkhongchemoi.com|bimmup.tv|xamvn.pet
+||i.imgur.com^$image,domain=phym18.lol|phim18hd.cam|fullcliphot.com|bimmup.tv|xamvn.pet
 ||i2.vlstorage.com/da88_1080p.mp4$domain=phevkl.to|viet69.icu,rewrite=abp-resource:blank-mp3
 d1226 1
 a1226 1
@@ -205,17 +205,18 @@ a1352 1
 viet69.icu##.popup-overlay
 d1371 1
 d1388 2
-a1389 2
+a1389 3
+xnhau.top,xnhau.xyz##.fp-ui>div[style]
 xnhau.top,xnhau.xyz##.sponsor
 xnhau.top,xnhau.xyz##.spot
-diff name:abpvn_adguard lines:235 checksum:82459e7623
+diff name:abpvn_adguard lines:239 checksum:2cff16a452
 d2 1
 a2 1
-! Version: 20250207081603421
+! Version: 20250207120524682
 d5 2
 a6 2
-! Last modified: 07 Feb 2025 08:16:03 UTC+7
-! Diff-Path: patches/20250207081603421.patch#abpvn_adguard
+! Last modified: 07 Feb 2025 12:05:24 UTC+7
+! Diff-Path: patches/20250207120524682.patch#abpvn_adguard
 a29 1
 /^https:\/\/[a-z]{9,}\.com\/$/$xmlhttprequest,third-party
 d46 2
@@ -240,7 +241,7 @@ a146 1
 ||i.imgur.com^*.gif$image,domain=ghienphim.movie|mv.dailyphimz.com|mv.phimmoiaz.cc|phimgichill.net|mythethao.net|xemtivi4k.com|vtipster.net|phimmoi.club|tv.tvhayhd.org|hoathinh4k3.net|vutruphim.tv|ketqua247vn.vip
 d158 2
 a182 1
-||noitu.pro^*.gif,~third-party
+||noitu.pro^*.gif,$~third-party
 d198 2
 d203 1
 a203 1
@@ -370,7 +371,7 @@ a1199 1
 d1209 1
 d1211 2
 a1212 2
-||i.imgur.com^$image,domain=phym18.lol|phim18hd.cam|fullcliphot.com|xx.sexkhongchemoi.com|bimmup.tv|xamvn.pet
+||i.imgur.com^$image,domain=phym18.lol|phim18hd.cam|fullcliphot.com|bimmup.tv|xamvn.pet
 ||i2.vlstorage.com/da88_1080p.mp4$domain=phevkl.to|viet69.icu,rewrite=abp-resource:blank-mp3
 d1220 1
 a1220 1
@@ -415,10 +416,14 @@ a1346 1
 viet69.icu##.popup-overlay
 d1365 1
 d1382 2
-a1383 2
+a1383 3
+xnhau.top,xnhau.xyz##.fp-ui>div[style]
 xnhau.top,xnhau.xyz##.sponsor
 xnhau.top,xnhau.xyz##.spot
 d1389 2
+d1408 1
+a1408 1
+coiphimsex.net,phimsexviet.io,phimsexvietnam.app,gm.phimsexnhanh.tv,clipsex.cam,ww1.ditnhau.cc#%#//scriptlet("set-constant", "video.adVast", "")
 d1433 1
 a1433 1
 lxmanga.cloud#%#//scriptlet("abort-current-inline-script", "$", "PopUnder")
@@ -444,14 +449,14 @@ viettoons.tv,mv.phimmoiaz.cc,dood.pm,ytstv.me,anime1.site,anh.moe,maclife.io,xem
 d1483 1
 a1483 1
 www.phimdinhcao.online,www.motchillme.com,xnhau.top#%#//scriptlet("abort-on-property-read", "localStorage")
-diff name:abpvn_content_blocker lines:209 checksum:2371659bb3
+diff name:abpvn_content_blocker lines:210 checksum:5f3bff585b
 d2 1
 a2 1
-! Version: 20250207081603421
+! Version: 20250207120524682
 d5 2
 a6 2
-! Last modified: 07 Feb 2025 08:16:03 UTC+7
-! Diff-Path: patches/20250207081603421.patch#abpvn_content_blocker
+! Last modified: 07 Feb 2025 12:05:24 UTC+7
+! Diff-Path: patches/20250207120524682.patch#abpvn_content_blocker
 a31 1
 /^https:\/\/[a-z]{9,}\.com\/$/$xmlhttprequest,third-party
 d48 2
@@ -476,7 +481,7 @@ a148 1
 ||i.imgur.com^*.gif$image,domain=ghienphim.movie|mv.dailyphimz.com|mv.phimmoiaz.cc|phimgichill.net|mythethao.net|xemtivi4k.com|vtipster.net|phimmoi.club|tv.tvhayhd.org|hoathinh4k3.net|vutruphim.tv|ketqua247vn.vip
 d160 2
 a184 1
-||noitu.pro^*.gif,~third-party
+||noitu.pro^*.gif,$~third-party
 d200 2
 d205 1
 a205 1
@@ -606,7 +611,7 @@ a1205 1
 d1215 1
 d1217 2
 a1218 2
-||i.imgur.com^$image,domain=phym18.lol|phim18hd.cam|fullcliphot.com|xx.sexkhongchemoi.com|bimmup.tv|xamvn.pet
+||i.imgur.com^$image,domain=phym18.lol|phim18hd.cam|fullcliphot.com|bimmup.tv|xamvn.pet
 ||i2.vlstorage.com/da88_1080p.mp4$domain=phevkl.to|viet69.icu,rewrite=abp-resource:blank-mp3
 d1226 1
 a1226 1
@@ -651,17 +656,18 @@ a1352 1
 viet69.icu##.popup-overlay
 d1371 1
 d1388 2
-a1389 2
+a1389 3
+xnhau.top,xnhau.xyz##.fp-ui>div[style]
 xnhau.top,xnhau.xyz##.sponsor
 xnhau.top,xnhau.xyz##.spot
-diff name:abpvn_noelemhide lines:82 checksum:12bc165566
+diff name:abpvn_noelemhide lines:82 checksum:fdec30884d
 d2 1
 a2 1
-! Version: 20250207081603421
+! Version: 20250207120524682
 d5 2
 a6 2
-! Last modified: 07 Feb 2025 08:16:03 UTC+7
-! Diff-Path: patches/20250207081603421.patch#abpvn_noelemhide
+! Last modified: 07 Feb 2025 12:05:24 UTC+7
+! Diff-Path: patches/20250207120524682.patch#abpvn_noelemhide
 a31 1
 /^https:\/\/[a-z]{9,}\.com\/$/$xmlhttprequest,third-party
 d48 2
@@ -686,7 +692,7 @@ a148 1
 ||i.imgur.com^*.gif$image,domain=ghienphim.movie|mv.dailyphimz.com|mv.phimmoiaz.cc|phimgichill.net|mythethao.net|xemtivi4k.com|vtipster.net|phimmoi.club|tv.tvhayhd.org|hoathinh4k3.net|vutruphim.tv|ketqua247vn.vip
 d160 2
 a184 1
-||noitu.pro^*.gif,~third-party
+||noitu.pro^*.gif,$~third-party
 d200 2
 d205 1
 a205 1
@@ -723,7 +729,7 @@ a433 1
 d443 1
 d445 2
 a446 2
-||i.imgur.com^$image,domain=phym18.lol|phim18hd.cam|fullcliphot.com|xx.sexkhongchemoi.com|bimmup.tv|xamvn.pet
+||i.imgur.com^$image,domain=phym18.lol|phim18hd.cam|fullcliphot.com|bimmup.tv|xamvn.pet
 ||i2.vlstorage.com/da88_1080p.mp4$domain=phevkl.to|viet69.icu,rewrite=abp-resource:blank-mp3
 d454 1
 a454 1
@@ -737,14 +743,14 @@ a466 1
 d486 2
 a487 1
 ||xnhau.blog^$media,domain=xnhau.top|xnhau.xyz
-diff name:abpvn_ublock lines:235 checksum:df1cd00a00
+diff name:abpvn_ublock lines:239 checksum:3396edf61f
 d2 1
 a2 1
-! Version: 20250207081603421
+! Version: 20250207120524682
 d5 2
 a6 2
-! Last modified: 07 Feb 2025 08:16:03 UTC+7
-! Diff-Path: patches/20250207081603421.patch#abpvn_ublock
+! Last modified: 07 Feb 2025 12:05:24 UTC+7
+! Diff-Path: patches/20250207120524682.patch#abpvn_ublock
 a29 1
 /^https:\/\/[a-z]{9,}\.com\/$/$xmlhttprequest,third-party
 d46 2
@@ -769,7 +775,7 @@ a146 1
 ||i.imgur.com^*.gif$image,domain=ghienphim.movie|mv.dailyphimz.com|mv.phimmoiaz.cc|phimgichill.net|mythethao.net|xemtivi4k.com|vtipster.net|phimmoi.club|tv.tvhayhd.org|hoathinh4k3.net|vutruphim.tv|ketqua247vn.vip
 d158 2
 a182 1
-||noitu.pro^*.gif,~third-party
+||noitu.pro^*.gif,$~third-party
 d198 2
 d203 1
 a203 1
@@ -899,7 +905,7 @@ a1198 1
 d1208 1
 d1210 2
 a1211 2
-||i.imgur.com^$image,domain=phym18.lol|phim18hd.cam|fullcliphot.com|xx.sexkhongchemoi.com|bimmup.tv|xamvn.pet
+||i.imgur.com^$image,domain=phym18.lol|phim18hd.cam|fullcliphot.com|bimmup.tv|xamvn.pet
 ||i2.vlstorage.com/da88_1080p.mp4$domain=phevkl.to|viet69.icu,rewrite=abp-resource:blank-mp3
 d1219 1
 a1219 1
@@ -944,10 +950,14 @@ a1345 1
 viet69.icu##.popup-overlay
 d1364 1
 d1381 2
-a1382 2
+a1382 3
+xnhau.top,xnhau.xyz##.fp-ui>div[style]
 xnhau.top,xnhau.xyz##.sponsor
 xnhau.top,xnhau.xyz##.spot
 d1388 2
+d1407 1
+a1407 1
+coiphimsex.net,phimsexviet.io,phimsexvietnam.app,gm.phimsexnhanh.tv,clipsex.cam,ww1.ditnhau.cc##+js(set, video.adVast, '')
 d1432 1
 a1432 1
 lxmanga.cloud##+js(acs, $, PopUnder)
