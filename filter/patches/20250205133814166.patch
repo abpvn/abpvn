@@ -1,11 +1,11 @@
-diff name:abpvn lines:39 checksum:18e276d08f
+diff name:abpvn lines:41 checksum:da91eea084
 d2 1
 a2 1
-! Version: 20250206180441889
+! Version: 20250207081604086
 d5 2
 a6 2
-! Last modified: 06 Feb 2025 18:04:41 UTC+7
-! Diff-Path: patches/20250206180441889.patch#abpvn
+! Last modified: 07 Feb 2025 08:16:04 UTC+7
+! Diff-Path: patches/20250207081604086.patch#abpvn
 d32 1
 a32 1
 /^https:\/\/[a-z]{9,}\.com\/$/$xmlhttprequest,third-party
@@ -16,6 +16,8 @@ d92 1
 a92 1
 ||api.anime3s.com^*.gif$image,domain=hayhaytv.org|anime1.site
 d119 1
+a184 1
+||noitu.pro^*.gif,$~third-party
 d251 1
 a251 1
 ||truyentuan.xyz/wp-content/banners
@@ -38,14 +40,14 @@ d1628 2
 a1629 2
 xnhau.top,xnhau.xyz##.sponsor
 xnhau.top,xnhau.xyz##.spot
-diff name:abpvn_adguard lines:48 checksum:09561fd1af
+diff name:abpvn_adguard lines:52 checksum:4ef411b744
 d2 1
 a2 1
-! Version: 20250206180441889
+! Version: 20250207081604086
 d5 2
 a6 2
-! Last modified: 06 Feb 2025 18:04:41 UTC+7
-! Diff-Path: patches/20250206180441889.patch#abpvn_adguard
+! Last modified: 07 Feb 2025 08:16:04 UTC+7
+! Diff-Path: patches/20250207081604086.patch#abpvn_adguard
 d30 1
 a30 1
 /^https:\/\/[a-z]{9,}\.com\/$/$xmlhttprequest,third-party
@@ -56,6 +58,8 @@ d90 1
 a90 1
 ||api.anime3s.com^*.gif$image,domain=hayhaytv.org|anime1.site
 d117 1
+a182 1
+||noitu.pro^*.gif,$~third-party
 d247 1
 a247 1
 ||truyentuan.xyz/wp-content/banners
@@ -78,6 +82,8 @@ d1622 2
 a1623 2
 xnhau.top,xnhau.xyz##.sponsor
 xnhau.top,xnhau.xyz##.spot
+a1674 1
+noitu.pro#%#//scriptlet("abort-on-property-read", "runAd")
 d1706 1
 a1706 1
 truyentuan.xyz#%#//scriptlet("abort-current-inline-script", "$", "btpop")
@@ -87,14 +93,14 @@ viet69.st,vlxx.so,dualeotruyenbeta.com,yurineko.my,heoxinh.net,hd.javhay.site,ph
 d1725 1
 a1725 1
 www.phimdinhcao.online,www.motchillme.com,xnhau.top,xnhau.xyz#%#//scriptlet("abort-on-property-read", "localStorage")
-diff name:abpvn_content_blocker lines:39 checksum:9f04610cd5
+diff name:abpvn_content_blocker lines:41 checksum:611e3e3d9c
 d2 1
 a2 1
-! Version: 20250206180441889
+! Version: 20250207081604086
 d5 2
 a6 2
-! Last modified: 06 Feb 2025 18:04:41 UTC+7
-! Diff-Path: patches/20250206180441889.patch#abpvn_content_blocker
+! Last modified: 07 Feb 2025 08:16:04 UTC+7
+! Diff-Path: patches/20250207081604086.patch#abpvn_content_blocker
 d32 1
 a32 1
 /^https:\/\/[a-z]{9,}\.com\/$/$xmlhttprequest,third-party
@@ -105,6 +111,8 @@ d92 1
 a92 1
 ||api.anime3s.com^*.gif$image,domain=hayhaytv.org|anime1.site
 d119 1
+a184 1
+||noitu.pro^*.gif,$~third-party
 d251 1
 a251 1
 ||truyentuan.xyz/wp-content/banners
@@ -127,14 +135,14 @@ d1628 2
 a1629 2
 xnhau.top,xnhau.xyz##.sponsor
 xnhau.top,xnhau.xyz##.spot
-diff name:abpvn_noelemhide lines:24 checksum:968739c2d6
+diff name:abpvn_noelemhide lines:26 checksum:d4c934952a
 d2 1
 a2 1
-! Version: 20250206180441889
+! Version: 20250207081604086
 d5 2
 a6 2
-! Last modified: 06 Feb 2025 18:04:41 UTC+7
-! Diff-Path: patches/20250206180441889.patch#abpvn_noelemhide
+! Last modified: 07 Feb 2025 08:16:04 UTC+7
+! Diff-Path: patches/20250207081604086.patch#abpvn_noelemhide
 d32 1
 a32 1
 /^https:\/\/[a-z]{9,}\.com\/$/$xmlhttprequest,third-party
@@ -145,6 +153,8 @@ d92 1
 a92 1
 ||api.anime3s.com^*.gif$image,domain=hayhaytv.org|anime1.site
 d119 1
+a184 1
+||noitu.pro^*.gif,$~third-party
 d251 1
 a251 1
 ||truyentuan.xyz/wp-content/banners
@@ -152,14 +162,14 @@ d352 1
 d755 2
 a756 1
 ||xnhau.blog^$media,domain=xnhau.top|xnhau.xyz
-diff name:abpvn_ublock lines:48 checksum:9e80ca38b3
+diff name:abpvn_ublock lines:52 checksum:b609194ec8
 d2 1
 a2 1
-! Version: 20250206180441889
+! Version: 20250207081604086
 d5 2
 a6 2
-! Last modified: 06 Feb 2025 18:04:41 UTC+7
-! Diff-Path: patches/20250206180441889.patch#abpvn_ublock
+! Last modified: 07 Feb 2025 08:16:04 UTC+7
+! Diff-Path: patches/20250207081604086.patch#abpvn_ublock
 d30 1
 a30 1
 /^https:\/\/[a-z]{9,}\.com\/$/$xmlhttprequest,third-party
@@ -170,6 +180,8 @@ d90 1
 a90 1
 ||api.anime3s.com^*.gif$image,domain=hayhaytv.org|anime1.site
 d117 1
+a182 1
+||noitu.pro^*.gif,$~third-party
 d247 1
 a247 1
 ||truyentuan.xyz/wp-content/banners
@@ -192,6 +204,8 @@ d1622 2
 a1623 2
 xnhau.top,xnhau.xyz##.sponsor
 xnhau.top,xnhau.xyz##.spot
+a1674 1
+noitu.pro##+js(aopr, runAd)
 d1707 1
 a1707 1
 truyentuan.xyz##+js(acs, $, btpop)
