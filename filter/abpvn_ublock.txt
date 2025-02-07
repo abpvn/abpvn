@@ -1,9 +1,9 @@
 [Adblock Plus 2.0]
-! Version: 20250206180443656
+! Version: 20250207081603421
 ! id: D4028CDD-3D39-4624-ACC7-8140F4EC3888
 ! Title: ABPVN List
-! Last modified: 06 Feb 2025 18:04:43 UTC+7
-! Diff-Path: patches/20250206180443656.patch#abpvn_ublock
+! Last modified: 07 Feb 2025 08:16:03 UTC+7
+! Diff-Path: patches/20250207081603421.patch#abpvn_ublock
 ! Diff-Expires: 60 minutes
 ! Expires: 1 days (update frequency)
 !
@@ -176,6 +176,7 @@
 ||nhadatvang.vn/images/$domain=muabanraovat.com
 ||nhipcaudautu.vn/*gafin$script
 ||nhipcaudautu.vn/Media/*.gif
+||noitu.pro^*.gif,~third-party
 ||notepad.vn/media/images/like68.jpg
 ||phim.vkool8.net/images/ads/$image
 ||phim.vkool8.net/js/pov.js$script,~third-party
@@ -1420,6 +1421,7 @@ linkneverdie.net,linkneverdie.top,linkneverdie2.com##+js(nostif, callback, 6004)
 lrepacks.net##+js(acs, JSON.parse, break;case $.)
 lxmanga.cloud##+js(acs, $, PopUnder)
 mephim.ink,cdnwp.icu##+js(json-prune, 0.time_mobile 0.time 0.link_video 0.link_video_mobile 0.link 0.link_mobile 1.time_mobile 1.time 1.link_video 1.link_video_mobile 1.link 1.link_mobile)
+noitu.pro##+js(aopr, runAd)
 p.thoctv.com##+js(acs, document.createElement, script)
 phimgichill.net##+js(acs, jQuery, popurl)
 phimgichill.net,hhhay.ink,hh3dhay.life,tram3d.me,animevietsub.page##+js(acs, eval, $._Eu)

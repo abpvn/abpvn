@@ -1,11 +1,11 @@
-diff name:abpvn lines:44 checksum:6ad1f51f69
+diff name:abpvn lines:46 checksum:ddf9e6af32
 d2 1
 a2 1
-! Version: 20250206180443656
+! Version: 20250207081603421
 d5 2
 a6 2
-! Last modified: 06 Feb 2025 18:04:43 UTC+7
-! Diff-Path: patches/20250206180443656.patch#abpvn
+! Last modified: 07 Feb 2025 08:16:03 UTC+7
+! Diff-Path: patches/20250207081603421.patch#abpvn
 d32 1
 a32 1
 /^https:\/\/[a-z]{9,}\.com\/$/$xmlhttprequest,third-party
@@ -16,6 +16,8 @@ d90 1
 a90 1
 ||api.anime3s.com^*.gif$image,domain=hayhaytv.org|anime1.site
 d117 1
+a181 1
+||noitu.pro^*.gif,~third-party
 d244 1
 d250 1
 a250 1
@@ -43,14 +45,14 @@ d1384 2
 a1385 2
 xnhau.top,xnhau.xyz##.sponsor
 xnhau.top,xnhau.xyz##.spot
-diff name:abpvn_adguard lines:47 checksum:5471fe1ba2
+diff name:abpvn_adguard lines:51 checksum:82459e7623
 d2 1
 a2 1
-! Version: 20250206180443656
+! Version: 20250207081603421
 d5 2
 a6 2
-! Last modified: 06 Feb 2025 18:04:43 UTC+7
-! Diff-Path: patches/20250206180443656.patch#abpvn_adguard
+! Last modified: 07 Feb 2025 08:16:03 UTC+7
+! Diff-Path: patches/20250207081603421.patch#abpvn_adguard
 d30 1
 a30 1
 /^https:\/\/[a-z]{9,}\.com\/$/$xmlhttprequest,third-party
@@ -61,6 +63,8 @@ d88 1
 a88 1
 ||api.anime3s.com^*.gif$image,domain=hayhaytv.org|anime1.site
 d115 1
+a179 1
+||noitu.pro^*.gif,~third-party
 d240 1
 d246 1
 a246 1
@@ -88,17 +92,19 @@ d1378 2
 a1379 2
 xnhau.top,xnhau.xyz##.sponsor
 xnhau.top,xnhau.xyz##.spot
+a1428 1
+noitu.pro#%#//scriptlet("abort-on-property-read", "runAd")
 d1459 1
 a1459 1
 truyentuan.xyz#%#//scriptlet("abort-current-inline-script", "$", "btpop")
-diff name:abpvn_content_blocker lines:44 checksum:9f32ba236b
+diff name:abpvn_content_blocker lines:46 checksum:2371659bb3
 d2 1
 a2 1
-! Version: 20250206180443656
+! Version: 20250207081603421
 d5 2
 a6 2
-! Last modified: 06 Feb 2025 18:04:43 UTC+7
-! Diff-Path: patches/20250206180443656.patch#abpvn_content_blocker
+! Last modified: 07 Feb 2025 08:16:03 UTC+7
+! Diff-Path: patches/20250207081603421.patch#abpvn_content_blocker
 d32 1
 a32 1
 /^https:\/\/[a-z]{9,}\.com\/$/$xmlhttprequest,third-party
@@ -109,6 +115,8 @@ d90 1
 a90 1
 ||api.anime3s.com^*.gif$image,domain=hayhaytv.org|anime1.site
 d117 1
+a181 1
+||noitu.pro^*.gif,~third-party
 d244 1
 d250 1
 a250 1
@@ -136,14 +144,14 @@ d1384 2
 a1385 2
 xnhau.top,xnhau.xyz##.sponsor
 xnhau.top,xnhau.xyz##.spot
-diff name:abpvn_noelemhide lines:29 checksum:80f74dbf3f
+diff name:abpvn_noelemhide lines:31 checksum:12bc165566
 d2 1
 a2 1
-! Version: 20250206180443656
+! Version: 20250207081603421
 d5 2
 a6 2
-! Last modified: 06 Feb 2025 18:04:43 UTC+7
-! Diff-Path: patches/20250206180443656.patch#abpvn_noelemhide
+! Last modified: 07 Feb 2025 08:16:03 UTC+7
+! Diff-Path: patches/20250207081603421.patch#abpvn_noelemhide
 d32 1
 a32 1
 /^https:\/\/[a-z]{9,}\.com\/$/$xmlhttprequest,third-party
@@ -154,6 +162,8 @@ d90 1
 a90 1
 ||api.anime3s.com^*.gif$image,domain=hayhaytv.org|anime1.site
 d117 1
+a181 1
+||noitu.pro^*.gif,~third-party
 d244 1
 d250 1
 a250 1
@@ -166,14 +176,14 @@ a383 1
 d483 2
 a484 1
 ||xnhau.blog^$media,domain=xnhau.top|xnhau.xyz
-diff name:abpvn_ublock lines:50 checksum:cd80852189
+diff name:abpvn_ublock lines:54 checksum:df1cd00a00
 d2 1
 a2 1
-! Version: 20250206180443656
+! Version: 20250207081603421
 d5 2
 a6 2
-! Last modified: 06 Feb 2025 18:04:43 UTC+7
-! Diff-Path: patches/20250206180443656.patch#abpvn_ublock
+! Last modified: 07 Feb 2025 08:16:03 UTC+7
+! Diff-Path: patches/20250207081603421.patch#abpvn_ublock
 d30 1
 a30 1
 /^https:\/\/[a-z]{9,}\.com\/$/$xmlhttprequest,third-party
@@ -184,6 +194,8 @@ d88 1
 a88 1
 ||api.anime3s.com^*.gif$image,domain=hayhaytv.org|anime1.site
 d115 1
+a179 1
+||noitu.pro^*.gif,~third-party
 d240 1
 d246 1
 a246 1
@@ -211,6 +223,8 @@ d1377 2
 a1378 2
 xnhau.top,xnhau.xyz##.sponsor
 xnhau.top,xnhau.xyz##.spot
+a1427 1
+noitu.pro##+js(aopr, runAd)
 d1459 1
 a1459 1
 truyentuan.xyz##+js(acs, $, btpop)

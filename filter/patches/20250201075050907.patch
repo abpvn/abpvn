@@ -1,11 +1,11 @@
-diff name:abpvn lines:207 checksum:6ad1f51f69
+diff name:abpvn lines:209 checksum:ddf9e6af32
 d2 1
 a2 1
-! Version: 20250206180443656
+! Version: 20250207081603421
 d5 2
 a6 2
-! Last modified: 06 Feb 2025 18:04:43 UTC+7
-! Diff-Path: patches/20250206180443656.patch#abpvn
+! Last modified: 07 Feb 2025 08:16:03 UTC+7
+! Diff-Path: patches/20250207081603421.patch#abpvn
 a31 1
 /^https:\/\/[a-z]{9,}\.com\/$/$xmlhttprequest,third-party
 d48 2
@@ -29,6 +29,8 @@ d148 1
 a148 1
 ||i.imgur.com^*.gif$image,domain=ghienphim.movie|mv.dailyphimz.com|mv.phimmoiaz.cc|phimgichill.net|mythethao.net|xemtivi4k.com|vtipster.net|phimmoi.club|tv.tvhayhd.org|hoathinh4k3.net|vutruphim.tv|ketqua247vn.vip
 d160 2
+a184 1
+||noitu.pro^*.gif,~third-party
 d200 2
 d205 1
 a205 1
@@ -206,14 +208,14 @@ d1388 2
 a1389 2
 xnhau.top,xnhau.xyz##.sponsor
 xnhau.top,xnhau.xyz##.spot
-diff name:abpvn_adguard lines:231 checksum:5471fe1ba2
+diff name:abpvn_adguard lines:235 checksum:82459e7623
 d2 1
 a2 1
-! Version: 20250206180443656
+! Version: 20250207081603421
 d5 2
 a6 2
-! Last modified: 06 Feb 2025 18:04:43 UTC+7
-! Diff-Path: patches/20250206180443656.patch#abpvn_adguard
+! Last modified: 07 Feb 2025 08:16:03 UTC+7
+! Diff-Path: patches/20250207081603421.patch#abpvn_adguard
 a29 1
 /^https:\/\/[a-z]{9,}\.com\/$/$xmlhttprequest,third-party
 d46 2
@@ -237,6 +239,8 @@ d146 1
 a146 1
 ||i.imgur.com^*.gif$image,domain=ghienphim.movie|mv.dailyphimz.com|mv.phimmoiaz.cc|phimgichill.net|mythethao.net|xemtivi4k.com|vtipster.net|phimmoi.club|tv.tvhayhd.org|hoathinh4k3.net|vutruphim.tv|ketqua247vn.vip
 d158 2
+a182 1
+||noitu.pro^*.gif,~third-party
 d198 2
 d203 1
 a203 1
@@ -418,6 +422,8 @@ d1389 2
 d1433 1
 a1433 1
 lxmanga.cloud#%#//scriptlet("abort-current-inline-script", "$", "PopUnder")
+a1434 1
+noitu.pro#%#//scriptlet("abort-on-property-read", "runAd")
 d1437 1
 a1437 1
 phimgichill.net,hhhay.ink,hh3dhay.life,tram3d.me,animevietsub.page##%#//scriptlet("abort-current-inline-script", "eval", "$._Eu")
@@ -438,14 +444,14 @@ viettoons.tv,mv.phimmoiaz.cc,dood.pm,ytstv.me,anime1.site,anh.moe,maclife.io,xem
 d1483 1
 a1483 1
 www.phimdinhcao.online,www.motchillme.com,xnhau.top#%#//scriptlet("abort-on-property-read", "localStorage")
-diff name:abpvn_content_blocker lines:207 checksum:9f32ba236b
+diff name:abpvn_content_blocker lines:209 checksum:2371659bb3
 d2 1
 a2 1
-! Version: 20250206180443656
+! Version: 20250207081603421
 d5 2
 a6 2
-! Last modified: 06 Feb 2025 18:04:43 UTC+7
-! Diff-Path: patches/20250206180443656.patch#abpvn_content_blocker
+! Last modified: 07 Feb 2025 08:16:03 UTC+7
+! Diff-Path: patches/20250207081603421.patch#abpvn_content_blocker
 a31 1
 /^https:\/\/[a-z]{9,}\.com\/$/$xmlhttprequest,third-party
 d48 2
@@ -469,6 +475,8 @@ d148 1
 a148 1
 ||i.imgur.com^*.gif$image,domain=ghienphim.movie|mv.dailyphimz.com|mv.phimmoiaz.cc|phimgichill.net|mythethao.net|xemtivi4k.com|vtipster.net|phimmoi.club|tv.tvhayhd.org|hoathinh4k3.net|vutruphim.tv|ketqua247vn.vip
 d160 2
+a184 1
+||noitu.pro^*.gif,~third-party
 d200 2
 d205 1
 a205 1
@@ -646,14 +654,14 @@ d1388 2
 a1389 2
 xnhau.top,xnhau.xyz##.sponsor
 xnhau.top,xnhau.xyz##.spot
-diff name:abpvn_noelemhide lines:80 checksum:80f74dbf3f
+diff name:abpvn_noelemhide lines:82 checksum:12bc165566
 d2 1
 a2 1
-! Version: 20250206180443656
+! Version: 20250207081603421
 d5 2
 a6 2
-! Last modified: 06 Feb 2025 18:04:43 UTC+7
-! Diff-Path: patches/20250206180443656.patch#abpvn_noelemhide
+! Last modified: 07 Feb 2025 08:16:03 UTC+7
+! Diff-Path: patches/20250207081603421.patch#abpvn_noelemhide
 a31 1
 /^https:\/\/[a-z]{9,}\.com\/$/$xmlhttprequest,third-party
 d48 2
@@ -677,6 +685,8 @@ d148 1
 a148 1
 ||i.imgur.com^*.gif$image,domain=ghienphim.movie|mv.dailyphimz.com|mv.phimmoiaz.cc|phimgichill.net|mythethao.net|xemtivi4k.com|vtipster.net|phimmoi.club|tv.tvhayhd.org|hoathinh4k3.net|vutruphim.tv|ketqua247vn.vip
 d160 2
+a184 1
+||noitu.pro^*.gif,~third-party
 d200 2
 d205 1
 a205 1
@@ -727,14 +737,14 @@ a466 1
 d486 2
 a487 1
 ||xnhau.blog^$media,domain=xnhau.top|xnhau.xyz
-diff name:abpvn_ublock lines:231 checksum:cd80852189
+diff name:abpvn_ublock lines:235 checksum:df1cd00a00
 d2 1
 a2 1
-! Version: 20250206180443656
+! Version: 20250207081603421
 d5 2
 a6 2
-! Last modified: 06 Feb 2025 18:04:43 UTC+7
-! Diff-Path: patches/20250206180443656.patch#abpvn_ublock
+! Last modified: 07 Feb 2025 08:16:03 UTC+7
+! Diff-Path: patches/20250207081603421.patch#abpvn_ublock
 a29 1
 /^https:\/\/[a-z]{9,}\.com\/$/$xmlhttprequest,third-party
 d46 2
@@ -758,6 +768,8 @@ d146 1
 a146 1
 ||i.imgur.com^*.gif$image,domain=ghienphim.movie|mv.dailyphimz.com|mv.phimmoiaz.cc|phimgichill.net|mythethao.net|xemtivi4k.com|vtipster.net|phimmoi.club|tv.tvhayhd.org|hoathinh4k3.net|vutruphim.tv|ketqua247vn.vip
 d158 2
+a182 1
+||noitu.pro^*.gif,~third-party
 d198 2
 d203 1
 a203 1
@@ -939,6 +951,8 @@ d1388 2
 d1432 1
 a1432 1
 lxmanga.cloud##+js(acs, $, PopUnder)
+a1433 1
+noitu.pro##+js(aopr, runAd)
 d1436 1
 a1436 1
 phimgichill.net,hhhay.ink,hh3dhay.life,tram3d.me,animevietsub.page##+js(acs, eval, $._Eu)
