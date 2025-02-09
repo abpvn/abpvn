@@ -1,17 +1,17 @@
-diff name:abpvn lines:120 checksum:5fdb1afa98
+diff name:abpvn lines:137 checksum:8a5089ad9f
 d2 1
 a2 1
-! Version: 20250208210329671
+! Version: 20250209144528086
 d5 2
 a6 2
-! Last modified: 08 Feb 2025 21:03:29 UTC+7
-! Diff-Path: patches/20250208210329671.patch#abpvn
+! Last modified: 09 Feb 2025 14:45:28 UTC+7
+! Diff-Path: patches/20250209144528086.patch#abpvn
 d32 1
 a32 1
 /^https:\/\/[a-z]{9,}\.com\/$/$xmlhttprequest,third-party
 d49 2
 a50 2
-/i.imgur.com/*.gif$domain=keonhacai55.chat|www.motchillme.com|www.phimdinhcao.online|xoilacxj.cc|90phutzv.cc|vebozy.cc|cakhiai.cc|listnhacai88.com|xoilaczz63.live|xemtivingon.org|mitomz38.live|eastloshigh.com|plcdn.xyz|phimmoi.ing|motphimww.info
+/i.imgur.com/*.gif$domain=keonhacai55.chat|www.motchillso.com|www.phimdinhcao.online|xoilacxj.cc|90phutzv.cc|vebozy.cc|cakhiai.cc|listnhacai88.com|xoilaczz63.live|xemtivingon.org|mitomz38.live|eastloshigh.com|plcdn.xyz|phimmoi.ing|motphimww.info
 /js/ads.js$script,~third-party,domain=~vipurl.in
 d92 1
 a92 1
@@ -29,10 +29,16 @@ d163 2
 a188 1
 ||noitu.pro^*.gif,$~third-party
 d204 1
+d208 1
+a208 1
+||quoracdn.net^$image,domain=www.motchillso.com|www.phimdinhcao.online
 d251 1
 d257 1
 a257 1
 ||truyentuan.xyz/wp-content/banners
+d284 1
+a284 1
+||www.motchillso.com/3s.m3u8$rewrite=abp-resource:blank-mp3,domain=www.motchillso.com
 d289 2
 a290 2
 ||xemphimhdc.live$csp=script-src 'self' 'unsafe-inline' https:
@@ -68,6 +74,17 @@ truyentuan.xyz##.doc-truyen-ads-d2
 d1275 1
 a1275 1
 vungtv.us,xemphimhdc.live###container-ads
+d1294 5
+a1298 5
+www.motchillso.com###mobile_content_top
+www.motchillso.com###p-GMH
+www.motchillso.com,www.phimdinhcao.online##.banner-container
+www.motchillso.com,www.phimdinhcao.online##.banner-preload
+www.motchillso.com,www.phimdinhcao.online##.catfish-top
+d1305 2
+a1306 2
+www.phimdinhcao.online,www.motchillso.com##.BanerTop100
+www.phimdinhcao.online,www.motchillso.com##.adv-300-right
 d1329 1
 a1329 1
 xemphimhdc.live##a#banner
@@ -119,20 +136,20 @@ a1645 3
 xnhau.top,xnhau.xyz##.fp-ui>div[style]
 xnhau.top,xnhau.xyz##.sponsor
 xnhau.top,xnhau.xyz##.spot
-diff name:abpvn_adguard lines:143 checksum:4aaa83a068
+diff name:abpvn_adguard lines:163 checksum:0f68ce345d
 d2 1
 a2 1
-! Version: 20250208210329671
+! Version: 20250209144528086
 d5 2
 a6 2
-! Last modified: 08 Feb 2025 21:03:29 UTC+7
-! Diff-Path: patches/20250208210329671.patch#abpvn_adguard
+! Last modified: 09 Feb 2025 14:45:28 UTC+7
+! Diff-Path: patches/20250209144528086.patch#abpvn_adguard
 d30 1
 a30 1
 /^https:\/\/[a-z]{9,}\.com\/$/$xmlhttprequest,third-party
 d47 2
 a48 2
-/i.imgur.com/*.gif$domain=keonhacai55.chat|www.motchillme.com|www.phimdinhcao.online|xoilacxj.cc|90phutzv.cc|vebozy.cc|cakhiai.cc|listnhacai88.com|xoilaczz63.live|xemtivingon.org|mitomz38.live|eastloshigh.com|plcdn.xyz|phimmoi.ing|motphimww.info
+/i.imgur.com/*.gif$domain=keonhacai55.chat|www.motchillso.com|www.phimdinhcao.online|xoilacxj.cc|90phutzv.cc|vebozy.cc|cakhiai.cc|listnhacai88.com|xoilaczz63.live|xemtivingon.org|mitomz38.live|eastloshigh.com|plcdn.xyz|phimmoi.ing|motphimww.info
 /js/ads.js$script,~third-party,domain=~vipurl.in
 d90 1
 a90 1
@@ -150,10 +167,16 @@ d161 2
 a186 1
 ||noitu.pro^*.gif,$~third-party
 d202 1
+d206 1
+a206 1
+||quoracdn.net^$image,domain=www.motchillso.com|www.phimdinhcao.online
 d247 1
 d253 1
 a253 1
 ||truyentuan.xyz/wp-content/banners
+d280 1
+a280 1
+||www.motchillso.com/3s.m3u8$rewrite=abp-resource:blank-mp3,domain=www.motchillso.com
 d285 2
 a286 2
 ||xemphimhdc.live$csp=script-src 'self' 'unsafe-inline' https:
@@ -189,6 +212,17 @@ truyentuan.xyz##.doc-truyen-ads-d2
 d1271 1
 a1271 1
 vungtv.us,xemphimhdc.live###container-ads
+d1290 5
+a1294 5
+www.motchillso.com###mobile_content_top
+www.motchillso.com###p-GMH
+www.motchillso.com,www.phimdinhcao.online##.banner-container
+www.motchillso.com,www.phimdinhcao.online##.banner-preload
+www.motchillso.com,www.phimdinhcao.online##.catfish-top
+d1301 2
+a1302 2
+www.phimdinhcao.online,www.motchillso.com##.BanerTop100
+www.phimdinhcao.online,www.motchillso.com##.adv-300-right
 d1325 1
 a1325 1
 xemphimhdc.live##a#banner
@@ -254,29 +288,32 @@ d1721 2
 a1722 2
 truyensieuhay.com,hayhaytv.org,quangcaoyenbai.com,phimchill.life,thuvienhd.xyz,tv.tvhayhd.org,www.khophim88s.com,nhentaivn.online,mv.dailyphimz.com,mv.phimbathu.one,sexhihiz.tv,anime47.baby#%#//scriptlet("abort-on-property-read", "document.cookie")
 truyentuan.xyz#%#//scriptlet("abort-current-inline-script", "$", "btpop")
+d1724 1
+a1724 1
+vailonxx.co,www.motchillso.com#%#//scriptlet("abort-current-inline-script", "jQuery", "window.open")
 d1728 1
 a1728 1
 viet69.st,vlxx.so,dualeotruyenbeta.com,yurineko.my,heoxinh.net,hd.javhay.site,phimsexhay669.pro,cliphot69.asia,doctruyen3qui.com,ihentai.now,jav.vc,top1sex.me,xemsex.cc,hentaivc.com,www.buomtv.io,truyenvn.li,javtiful.com,truyengihotnay.com,truyengihotzay.net,sex.tuoi69.store,quatvn.fit,tenmientruyengi.net,truyengihotzay.net,top1phimsex.com,phim18hd.cam,xem.sexviet88.link,vnsexmup.net,demo.14412882.com,ungtycomicsvip.org,cliphot69.pics,hhtq5.vip,sexdiary.club,vn2.xvideos69.xxx,umetruyenhay.com,damconuong.my#%#//scriptlet("abort-current-inline-script", "WebAssembly", "instantiate")
 d1741 1
 a1741 1
-www.phimdinhcao.online,www.motchillme.com,xnhau.top,xnhau.xyz#%#//scriptlet("abort-on-property-read", "localStorage")
+www.phimdinhcao.online,www.motchillso.com,xnhau.top,xnhau.xyz#%#//scriptlet("abort-on-property-read", "localStorage")
 d1745 1
 a1745 1
 xemphimhdc.live#%#//scriptlet("abort-current-inline-script", "document.addEventListener", "linksToOpen")
-diff name:abpvn_content_blocker lines:120 checksum:d98e879905
+diff name:abpvn_content_blocker lines:137 checksum:69e75a7126
 d2 1
 a2 1
-! Version: 20250208210329671
+! Version: 20250209144528086
 d5 2
 a6 2
-! Last modified: 08 Feb 2025 21:03:29 UTC+7
-! Diff-Path: patches/20250208210329671.patch#abpvn_content_blocker
+! Last modified: 09 Feb 2025 14:45:28 UTC+7
+! Diff-Path: patches/20250209144528086.patch#abpvn_content_blocker
 d32 1
 a32 1
 /^https:\/\/[a-z]{9,}\.com\/$/$xmlhttprequest,third-party
 d49 2
 a50 2
-/i.imgur.com/*.gif$domain=keonhacai55.chat|www.motchillme.com|www.phimdinhcao.online|xoilacxj.cc|90phutzv.cc|vebozy.cc|cakhiai.cc|listnhacai88.com|xoilaczz63.live|xemtivingon.org|mitomz38.live|eastloshigh.com|plcdn.xyz|phimmoi.ing|motphimww.info
+/i.imgur.com/*.gif$domain=keonhacai55.chat|www.motchillso.com|www.phimdinhcao.online|xoilacxj.cc|90phutzv.cc|vebozy.cc|cakhiai.cc|listnhacai88.com|xoilaczz63.live|xemtivingon.org|mitomz38.live|eastloshigh.com|plcdn.xyz|phimmoi.ing|motphimww.info
 /js/ads.js$script,~third-party,domain=~vipurl.in
 d92 1
 a92 1
@@ -294,10 +331,16 @@ d163 2
 a188 1
 ||noitu.pro^*.gif,$~third-party
 d204 1
+d208 1
+a208 1
+||quoracdn.net^$image,domain=www.motchillso.com|www.phimdinhcao.online
 d251 1
 d257 1
 a257 1
 ||truyentuan.xyz/wp-content/banners
+d284 1
+a284 1
+||www.motchillso.com/3s.m3u8$rewrite=abp-resource:blank-mp3,domain=www.motchillso.com
 d289 2
 a290 2
 ||xemphimhdc.live$csp=script-src 'self' 'unsafe-inline' https:
@@ -333,6 +376,17 @@ truyentuan.xyz##.doc-truyen-ads-d2
 d1275 1
 a1275 1
 vungtv.us,xemphimhdc.live###container-ads
+d1294 5
+a1298 5
+www.motchillso.com###mobile_content_top
+www.motchillso.com###p-GMH
+www.motchillso.com,www.phimdinhcao.online##.banner-container
+www.motchillso.com,www.phimdinhcao.online##.banner-preload
+www.motchillso.com,www.phimdinhcao.online##.catfish-top
+d1305 2
+a1306 2
+www.phimdinhcao.online,www.motchillso.com##.BanerTop100
+www.phimdinhcao.online,www.motchillso.com##.adv-300-right
 d1329 1
 a1329 1
 xemphimhdc.live##a#banner
@@ -384,20 +438,20 @@ a1645 3
 xnhau.top,xnhau.xyz##.fp-ui>div[style]
 xnhau.top,xnhau.xyz##.sponsor
 xnhau.top,xnhau.xyz##.spot
-diff name:abpvn_noelemhide lines:56 checksum:8d263e51f2
+diff name:abpvn_noelemhide lines:62 checksum:a75f72a68b
 d2 1
 a2 1
-! Version: 20250208210329671
+! Version: 20250209144528086
 d5 2
 a6 2
-! Last modified: 08 Feb 2025 21:03:29 UTC+7
-! Diff-Path: patches/20250208210329671.patch#abpvn_noelemhide
+! Last modified: 09 Feb 2025 14:45:28 UTC+7
+! Diff-Path: patches/20250209144528086.patch#abpvn_noelemhide
 d32 1
 a32 1
 /^https:\/\/[a-z]{9,}\.com\/$/$xmlhttprequest,third-party
 d49 2
 a50 2
-/i.imgur.com/*.gif$domain=keonhacai55.chat|www.motchillme.com|www.phimdinhcao.online|xoilacxj.cc|90phutzv.cc|vebozy.cc|cakhiai.cc|listnhacai88.com|xoilaczz63.live|xemtivingon.org|mitomz38.live|eastloshigh.com|plcdn.xyz|phimmoi.ing|motphimww.info
+/i.imgur.com/*.gif$domain=keonhacai55.chat|www.motchillso.com|www.phimdinhcao.online|xoilacxj.cc|90phutzv.cc|vebozy.cc|cakhiai.cc|listnhacai88.com|xoilaczz63.live|xemtivingon.org|mitomz38.live|eastloshigh.com|plcdn.xyz|phimmoi.ing|motphimww.info
 /js/ads.js$script,~third-party,domain=~vipurl.in
 d92 1
 a92 1
@@ -415,10 +469,16 @@ d163 2
 a188 1
 ||noitu.pro^*.gif,$~third-party
 d204 1
+d208 1
+a208 1
+||quoracdn.net^$image,domain=www.motchillso.com|www.phimdinhcao.online
 d251 1
 d257 1
 a257 1
 ||truyentuan.xyz/wp-content/banners
+d284 1
+a284 1
+||www.motchillso.com/3s.m3u8$rewrite=abp-resource:blank-mp3,domain=www.motchillso.com
 d289 2
 a290 2
 ||xemphimhdc.live$csp=script-src 'self' 'unsafe-inline' https:
@@ -441,20 +501,20 @@ a745 1
 d765 2
 a766 1
 ||xnhau.blog^$media,domain=xnhau.top|xnhau.xyz
-diff name:abpvn_ublock lines:142 checksum:dcb31d2d50
+diff name:abpvn_ublock lines:162 checksum:42eee24d90
 d2 1
 a2 1
-! Version: 20250208210329671
+! Version: 20250209144528086
 d5 2
 a6 2
-! Last modified: 08 Feb 2025 21:03:29 UTC+7
-! Diff-Path: patches/20250208210329671.patch#abpvn_ublock
+! Last modified: 09 Feb 2025 14:45:28 UTC+7
+! Diff-Path: patches/20250209144528086.patch#abpvn_ublock
 d30 1
 a30 1
 /^https:\/\/[a-z]{9,}\.com\/$/$xmlhttprequest,third-party
 d47 2
 a48 2
-/i.imgur.com/*.gif$domain=keonhacai55.chat|www.motchillme.com|www.phimdinhcao.online|xoilacxj.cc|90phutzv.cc|vebozy.cc|cakhiai.cc|listnhacai88.com|xoilaczz63.live|xemtivingon.org|mitomz38.live|eastloshigh.com|plcdn.xyz|phimmoi.ing|motphimww.info
+/i.imgur.com/*.gif$domain=keonhacai55.chat|www.motchillso.com|www.phimdinhcao.online|xoilacxj.cc|90phutzv.cc|vebozy.cc|cakhiai.cc|listnhacai88.com|xoilaczz63.live|xemtivingon.org|mitomz38.live|eastloshigh.com|plcdn.xyz|phimmoi.ing|motphimww.info
 /js/ads.js$script,~third-party,domain=~vipurl.in
 d90 1
 a90 1
@@ -472,10 +532,16 @@ d161 2
 a186 1
 ||noitu.pro^*.gif,$~third-party
 d202 1
+d206 1
+a206 1
+||quoracdn.net^$image,domain=www.motchillso.com|www.phimdinhcao.online
 d247 1
 d253 1
 a253 1
 ||truyentuan.xyz/wp-content/banners
+d280 1
+a280 1
+||www.motchillso.com/3s.m3u8$rewrite=abp-resource:blank-mp3,domain=www.motchillso.com
 d285 2
 a286 2
 ||xemphimhdc.live$csp=script-src 'self' 'unsafe-inline' https:
@@ -511,6 +577,17 @@ truyentuan.xyz##.doc-truyen-ads-d2
 d1271 1
 a1271 1
 vungtv.us,xemphimhdc.live###container-ads
+d1290 5
+a1294 5
+www.motchillso.com###mobile_content_top
+www.motchillso.com###p-GMH
+www.motchillso.com,www.phimdinhcao.online##.banner-container
+www.motchillso.com,www.phimdinhcao.online##.banner-preload
+www.motchillso.com,www.phimdinhcao.online##.catfish-top
+d1301 2
+a1302 2
+www.phimdinhcao.online,www.motchillso.com##.BanerTop100
+www.phimdinhcao.online,www.motchillso.com##.adv-300-right
 d1325 1
 a1325 1
 xemphimhdc.live##a#banner
@@ -575,12 +652,15 @@ d1722 2
 a1723 2
 truyensieuhay.com,hayhaytv.org,quangcaoyenbai.com,phimchill.life,thuvienhd.xyz,tv.tvhayhd.org,www.khophim88s.com,nhentaivn.online,mv.dailyphimz.com,mv.phimbathu.one,sexhihiz.tv,anime47.baby##+js(aopr, document.cookie)
 truyentuan.xyz##+js(acs, $, btpop)
+d1725 1
+a1725 1
+vailonxx.co,www.motchillso.com##+js(acs, jQuery, window.open)
 d1730 1
 a1730 1
 viet69.st,vlxx.so,dualeotruyenbeta.com,yurineko.my,heoxinh.net,hd.javhay.site,phimsexhay669.pro,cliphot69.asia,doctruyen3qui.com,ihentai.now,jav.vc,sex.tuoi69.store,top1sex.me,xemsex.cc,hentaivc.com,www.buomtv.io,truyenvn.li,javtiful.com,truyengihotnay.com,truyengihotzay.net,quatvn.fit,tenmientruyengi.net,top1phimsex.com,phim18hd.cam,xem.sexviet88.link,vnsexmup.net,demo.14412882.com,ungtycomicsvip.org,cliphot69.pics,hhtq5.vip,sexdiary.club,vn2.xvideos69.xxx,umetruyenhay.com,damconuong.my##+js(acs, WebAssembly, instantiate)
 d1743 1
 a1743 1
-www.phimdinhcao.online,www.motchillme.com,xnhau.top,xnhau.xyz##+js(aopr, localStorage)
+www.phimdinhcao.online,www.motchillso.com,xnhau.top,xnhau.xyz##+js(aopr, localStorage)
 d1747 1
 a1747 1
 xemphimhdc.live##+js(acs, document.addEventListener, linksToOpen)
