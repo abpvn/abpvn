@@ -8,14 +8,14 @@
 // @icon        https://abpvn.com/icon.png
 // @description Script block ads, remove wating of ABPVN
 // @description:vi Script chặn quảng cáo,loại bỏ chờ đợi của ABPVN
-// @contributionURL https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=donghoang.nguyen@gmail.com&item_name=ABPVN Donation
+// @contributionURL https://abpvn.com/donate/
 // @grant       GM_getValue
 // @grant       GM_setValue
 // @grant       GM_openInTab
 // @grant       GM_registerMenuCommand
 // @include     http://*
 // @include     https://*
-// @version     2.3.29
+// @version     2.3.30
 // @change-log  Fix game24h.vn iframe game load + remove outdate function
 // @run-at      document-end
 // ==/UserScript==
