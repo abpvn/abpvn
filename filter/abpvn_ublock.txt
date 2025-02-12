@@ -1,9 +1,9 @@
 [Adblock Plus 2.0]
-! Version: 20250212150633457
+! Version: 20250212153132140
 ! id: D4028CDD-3D39-4624-ACC7-8140F4EC3888
 ! Title: ABPVN List
-! Last modified: 12 Feb 2025 15:06:33 UTC+7
-! Diff-Path: patches/20250212150633457.patch#abpvn_ublock
+! Last modified: 12 Feb 2025 15:31:32 UTC+7
+! Diff-Path: patches/20250212153132140.patch#abpvn_ublock
 ! Diff-Expires: 60 minutes
 ! Expires: 1 days (update frequency)
 !
@@ -79,7 +79,7 @@ thaudiotruyen.com/wp-content/uploads/2024/10/temu.jpg$image
 ||ahaphimz.com/js/pov.js$script
 ||alwingulla.com/88/tag.min.js$script,xmlhttprequest,rewrite=abp-resource:blank-js,domain=apkmoddone.com
 ||anime1.site^*.gif
-||animehay.red^*.gif
+||animehay.blue^*.gif
 ||animevietsub.bio/ads/popup.js$script
 ||animevietsubs.net/vast/$image
 ||animew.net/_next/image?url=https%3A%2F%2Flh3.googleusercontent.com$image
@@ -710,7 +710,7 @@ anime1.site##.gnartyx-offads
 anime1.site,animetvn.com,subnhanh1.org###fbox-background
 anime47.baby###qc_clgt
 anime47.baby###swiper-wrapper
-animehay.red##div[style="position: fixed; bottom: 0px; z-index: 98; width: 100%; text-align: center; box-sizing: border-box;"]
+animehay.blue##div[style="position: fixed; bottom: 0px; z-index: 98; width: 100%; text-align: center; box-sizing: border-box;"]
 animetvn.com###mobile-ads
 animetvn.com,anime1.site##.gnarty-offads
 animevietsub.bio###invideo_wrapper
@@ -1620,8 +1620,8 @@ xnxx.com###content-ad-top-zone
 ! ---------Rule only for uBlock Origin------
 10gb.vn##+js(acs, Promise, detectedAdblock)
 abtruyenmoi.com##+js(acs, $, popup)
-animehay.red##+js(acs, Number, ;break;case)
-animehay.red,truyengg.com##+js(acs, document.addEventListener, window.open)
+animehay.blue##+js(acs, Number, ;break;case)
+animehay.blue,truyengg.com##+js(acs, document.addEventListener, window.open)
 animevietsubs.net##+js(aopr, _0x3f9b)
 aoe.vn##+js(aopr, parseInt)
 apkmoddone.phongroblox.com##+js(set-cookie, antiBlock, 1)
