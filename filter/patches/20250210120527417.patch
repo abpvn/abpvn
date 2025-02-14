@@ -1,11 +1,11 @@
-diff name:abpvn lines:231 checksum:ad3fd4dad8
+diff name:abpvn lines:256 checksum:ee30738b0c
 d2 1
 a2 1
-! Version: 20250213150639311
+! Version: 20250214082659305
 d5 2
 a6 2
-! Last modified: 13 Feb 2025 15:06:39 UTC+7
-! Diff-Path: patches/20250213150639311.patch#abpvn
+! Last modified: 14 Feb 2025 08:26:59 UTC+7
+! Diff-Path: patches/20250214082659305.patch#abpvn
 d22 1
 a22 1
 $popup,domain=truyenfull.vision
@@ -14,6 +14,9 @@ a32 1
 /^https:\/\/[a-z]{3,}\.com\/$/$xmlhttprequest,third-party
 a34 1
 /ad_banner/*.gif$image
+d47 1
+a47 1
+/i.imgur.com/*.gif$domain=keonhacai55.chat|www.motchillso.com|www.phimdinhcao.online|xoilacxj.cc|90phutzv.cc|vebozy.cc|cakhiai.cc|listnhacai88.com|xoilaczz63.live|xemtivingon.org|mitomtvn.cc|eastloshigh.com|plcdn.xyz|phimmoi.ing|motphimww.fun
 d52 1
 a52 1
 /pop.js$script,domain=motchiill.ac|ohaytv.me
@@ -27,9 +30,10 @@ a88 2
 d95 1
 a95 1
 ||biphim.dev/public/prom_ad/prom_ad.js$script
-d97 1
-a97 1
+d97 2
+a98 2
 ||blogger.googleusercontent.com^$image,domain=hhninja17.tv|xem15.com|hhtm.site|hoathinh3dtq.site|hhh3d.tv|hoathinhtq.site|phimhaytv.biz|yanhh3d.tv|phimhoathinh3d.vip
+||blvtap.com^*.gif$image,domain=phimmoizz.help
 d107 1
 a107 1
 ||cdn2-img.net^*.gif$image,domain=hhpanda.my|dongchill.xyz|biphim.dev|motchill.hn|subnhanh.ee|subnhanhvl.dev|bichill.dev|dongphim.dev
@@ -66,10 +70,16 @@ a224 3
 ||subnhanh.ee/js/ads_xx.js
 ||subnhanh.ee/js/ads_xx.min.js$script,~third-party
 ||subnhanhvl.dev/js/ads_xx.js$script,~third-party
+d240 1
+a240 1
+||tizihay.com^*.gif$image,domain=phimmoizz.help|phimmoichill.life
 d253 2
 a254 2
 ||tvhay.la/guide/popup.xp-f.js
 ||tvphim.pw/ads/popup$script,~third-party
+d256 1
+a256 1
+||ungtycomicsnay.com$csp=script-src self * data:* 'unsafe-inline'
 d279 2
 a280 2
 ||xem15.com/_next/image?url=%2Fpopup1.jpg&w=*&q=75$image
@@ -105,6 +115,9 @@ d814 2
 a815 2
 dongphim.dev##a[rel="nofollow sponsored"]
 dongphim.dev,dongchill.xyz,bichill.dev,timphim18.net,vivuphim.info,hhpanda.my,hhanime3d.cc,subnhanhvl.dev###footer_fixed_ads
+d820 1
+a820 1
+ephoto360.com,thiepmung.com,247phim.cc,www.phimmoichilla.xyz,hayhaytv.cc,www.ssphim.us,phimmoizz.help##.ad-container
 d867 2
 a868 2
 hh3dhay.life,timphim18.net,xem15.com,vutruphim.tv,tram3d.me##.float-ck-center-lt
@@ -125,13 +138,13 @@ a969 1
 motchill.it.com##a#banner
 d972 1
 a972 1
-motphimww.info,tvphim.pw##.module_single_ads
+motphimww.fun,tvphim.pw##.module_single_ads
 d995 1
 a995 1
 phim.vkool8.net,subnhanhvl.dev,motchill.hn,subnhanh.ee,biphim.dev,dongphim.dev,phimbet.biz,hhanime3d.cc,dongchill.xyz,tokuvn.com###overlay
 d1013 1
 a1013 1
-phimmoi.sale,motphimww.info,tvphim.pw##.module_home_ads
+phimmoi.sale,motphimww.fun,tvphim.pw##.module_home_ads
 d1017 1
 a1017 1
 phimmoichill.bar###pm_quangcao
@@ -155,9 +168,12 @@ www.toptruyen369.net,doctruyen3qui2.com,anime47.click##.advertisement
 d1310 1
 a1344 1
 xosodaiphat.com##.qc-sticky
+d1415 1
+a1415 1
+/assets/js/vast.js$script,domain=~phevkl.im|~viet69.icu
 d1419 1
 a1419 1
-/wp-content/uploads/*.gif$image,domain=tuoi69.army|tuoinungvn.org|teletiengviet.com|phevkl.im|viet69.ph
+/wp-content/uploads/*.gif$image,domain=tuoi69.army|tuoinungvn.org|teletiengviet.com|phevkl.im|viet69.icu
 d1429 2
 a1430 2
 ||cliphot69.bar$csp=script-src 'self' 'unsafe-inline'
@@ -165,14 +181,18 @@ a1430 2
 d1432 1
 a1432 1
 ||clipsexquaylen3s.net^*.gif$image
-d1439 1
-a1439 1
+d1439 2
+a1440 2
 ||i.imgur.com^$image,domain=phym18.lol|phim18hd.cam|fullcliphot.com|bimmup.tv|xamvn.uno
+||i2.vlstorage.com/da88_1080p.mp4$domain=phevkl.im|viet69.icu,rewrite=abp-resource:blank-mp3
 a1450 1
 ||mupnungvl.pro^*.gif$image,domain=mupnungvl.pro
+d1458 1
+a1458 1
+||qcvip.xyz^$script,domain=phevkl.im|viet69.icu
 d1460 1
 a1460 1
-||quoracdn.net^$image,domain=vlxx.gg|heoxinh.net|phevkl.im|viet69.ph|phim18vip.vip|chichnhausex.net|pheclip.mobi|mupnungvl.pro|sexhihiz.vc
+||quoracdn.net^$image,domain=vlxx.gg|heoxinh.net|phevkl.im|viet69.icu|phim18vip.vip|chichnhausex.net|pheclip.mobi|mupnungvl.pro|sexhihiz.vc
 d1476 2
 a1477 1
 ||truyenvn.tech^*banner$image
@@ -184,7 +204,7 @@ a1489 1
 cliphot69.bar###custom_html-42
 d1492 3
 a1494 3
-cliphotvn69.com,mobiblogss.com,cliphot69.bar,phevkl.im,www.gvnvh.net,top1phimsex.com,sayhentai.art,viet69.ph,phim18vip.vip##.float-ck-center-lt
+cliphotvn69.com,mobiblogss.com,cliphot69.bar,phevkl.im,www.gvnvh.net,top1phimsex.com,sayhentai.art,viet69.icu,phim18vip.vip##.float-ck-center-lt
 damconuongz.club##a[rel="nofollow"]
 dualeotruyenxxy.com##[id$="bnr"]
 d1499 1
@@ -193,6 +213,12 @@ heoxinh.net,mupnungvl.pro,sexhihiz.vc##.xx-ads
 d1505 1
 a1505 1
 jav.vc,mupnungvl.pro##.catfix
+d1519 4
+a1522 4
+phevkl.im,viet69.icu###haun-player>div[style]
+phevkl.im,viet69.icu###preload
+phevkl.im,viet69.icu###primary-nav>div[style]
+phevkl.im,viet69.icu##.separator
 d1533 1
 a1533 1
 phimsex91.pro,phimsex19x.pro##.quangcaomobile
@@ -210,12 +236,11 @@ d1577 2
 a1578 2
 tuoi69.army,sieukhung.meme###bar_float_r
 tuoi69.army,sieukhung.meme##.adsTopHome
-d1586 2
-a1587 2
+d1586 4
+a1589 4
 viet69.cz###mp-preload-popup-overlay
 viet69.cz##.banner-play
-d1589 1
-a1589 1
+viet69.icu##.popup-overlay
 viet69.ps,viet69vn.dev##.footer-fixed-br-container
 d1597 1
 a1597 1
@@ -230,19 +255,22 @@ a1622 3
 xnhau.men##.fp-ui>div[style]
 xnhau.men##.sponsor
 xnhau.men##.spot
-diff name:abpvn_adguard lines:271 checksum:37e277dd40
+diff name:abpvn_adguard lines:300 checksum:deeb02e4c8
 d2 1
 a2 1
-! Version: 20250213150639311
+! Version: 20250214082659305
 d5 2
 a6 2
-! Last modified: 13 Feb 2025 15:06:39 UTC+7
-! Diff-Path: patches/20250213150639311.patch#abpvn_adguard
+! Last modified: 14 Feb 2025 08:26:59 UTC+7
+! Diff-Path: patches/20250214082659305.patch#abpvn_adguard
 d30 1
 a30 1
 /^https:\/\/[a-z]{3,}\.com\/$/$xmlhttprequest,third-party
 a32 1
 /ad_banner/*.gif$image
+d45 1
+a45 1
+/i.imgur.com/*.gif$domain=keonhacai55.chat|www.motchillso.com|www.phimdinhcao.online|xoilacxj.cc|90phutzv.cc|vebozy.cc|cakhiai.cc|listnhacai88.com|xoilaczz63.live|xemtivingon.org|mitomtvn.cc|eastloshigh.com|plcdn.xyz|phimmoi.ing|motphimww.fun
 d50 1
 a50 1
 /pop.js$script,domain=motchiill.ac|ohaytv.me
@@ -256,9 +284,10 @@ a86 2
 d93 1
 a93 1
 ||biphim.dev/public/prom_ad/prom_ad.js$script
-d95 1
-a95 1
+d95 2
+a96 2
 ||blogger.googleusercontent.com^$image,domain=hhninja17.tv|xem15.com|hhtm.site|hoathinh3dtq.site|hhh3d.tv|hoathinhtq.site|phimhaytv.biz|yanhh3d.tv|phimhoathinh3d.vip
+||blvtap.com^*.gif$image,domain=phimmoizz.help
 d105 1
 a105 1
 ||cdn2-img.net^*.gif$image,domain=hhpanda.my|dongchill.xyz|biphim.dev|motchill.hn|subnhanh.ee|subnhanhvl.dev|bichill.dev|dongphim.dev
@@ -295,10 +324,16 @@ a220 3
 ||subnhanh.ee/js/ads_xx.js
 ||subnhanh.ee/js/ads_xx.min.js$script,~third-party
 ||subnhanhvl.dev/js/ads_xx.js$script,~third-party
+d236 1
+a236 1
+||tizihay.com^*.gif$image,domain=phimmoizz.help|phimmoichill.life
 d249 2
 a250 2
 ||tvhay.la/guide/popup.xp-f.js
 ||tvphim.pw/ads/popup$script,~third-party
+d252 1
+a252 1
+||ungtycomicsnay.com$csp=script-src self * data:* 'unsafe-inline'
 d275 2
 a276 2
 ||xem15.com/_next/image?url=%2Fpopup1.jpg&w=*&q=75$image
@@ -334,6 +369,9 @@ d810 2
 a811 2
 dongphim.dev##a[rel="nofollow sponsored"]
 dongphim.dev,dongchill.xyz,bichill.dev,timphim18.net,vivuphim.info,hhpanda.my,hhanime3d.cc,subnhanhvl.dev###footer_fixed_ads
+d816 1
+a816 1
+ephoto360.com,thiepmung.com,247phim.cc,www.phimmoichilla.xyz,hayhaytv.cc,www.ssphim.us,phimmoizz.help##.ad-container
 d863 2
 a864 2
 hh3dhay.life,timphim18.net,xem15.com,vutruphim.tv,tram3d.me##.float-ck-center-lt
@@ -354,13 +392,13 @@ a965 1
 motchill.it.com##a#banner
 d968 1
 a968 1
-motphimww.info,tvphim.pw##.module_single_ads
+motphimww.fun,tvphim.pw##.module_single_ads
 d991 1
 a991 1
 phim.vkool8.net,subnhanhvl.dev,motchill.hn,subnhanh.ee,biphim.dev,dongphim.dev,phimbet.biz,hhanime3d.cc,dongchill.xyz,tokuvn.com###overlay
 d1009 1
 a1009 1
-phimmoi.sale,motphimww.info,tvphim.pw##.module_home_ads
+phimmoi.sale,motphimww.fun,tvphim.pw##.module_home_ads
 d1013 1
 a1013 1
 phimmoichill.bar###pm_quangcao
@@ -384,9 +422,12 @@ www.toptruyen369.net,doctruyen3qui2.com,anime47.click##.advertisement
 d1306 1
 a1340 1
 xosodaiphat.com##.qc-sticky
+d1409 1
+a1409 1
+/assets/js/vast.js$script,domain=~phevkl.im|~viet69.icu
 d1413 1
 a1413 1
-/wp-content/uploads/*.gif$image,domain=tuoi69.army|tuoinungvn.org|teletiengviet.com|phevkl.im|viet69.ph
+/wp-content/uploads/*.gif$image,domain=tuoi69.army|tuoinungvn.org|teletiengviet.com|phevkl.im|viet69.icu
 d1423 2
 a1424 2
 ||cliphot69.bar$csp=script-src 'self' 'unsafe-inline'
@@ -394,14 +435,18 @@ a1424 2
 d1426 1
 a1426 1
 ||clipsexquaylen3s.net^*.gif$image
-d1433 1
-a1433 1
+d1433 2
+a1434 2
 ||i.imgur.com^$image,domain=phym18.lol|phim18hd.cam|fullcliphot.com|bimmup.tv|xamvn.uno
+||i2.vlstorage.com/da88_1080p.mp4$domain=phevkl.im|viet69.icu,rewrite=abp-resource:blank-mp3
 a1444 1
 ||mupnungvl.pro^*.gif$image,domain=mupnungvl.pro
+d1452 1
+a1452 1
+||qcvip.xyz^$script,domain=phevkl.im|viet69.icu
 d1454 1
 a1454 1
-||quoracdn.net^$image,domain=vlxx.gg|heoxinh.net|phevkl.im|viet69.ph|phim18vip.vip|chichnhausex.net|pheclip.mobi|mupnungvl.pro|sexhihiz.vc
+||quoracdn.net^$image,domain=vlxx.gg|heoxinh.net|phevkl.im|viet69.icu|phim18vip.vip|chichnhausex.net|pheclip.mobi|mupnungvl.pro|sexhihiz.vc
 d1470 2
 a1471 1
 ||truyenvn.tech^*banner$image
@@ -413,7 +458,7 @@ a1483 1
 cliphot69.bar###custom_html-42
 d1486 3
 a1488 3
-cliphotvn69.com,mobiblogss.com,cliphot69.bar,phevkl.im,www.gvnvh.net,top1phimsex.com,sayhentai.art,viet69.ph,phim18vip.vip##.float-ck-center-lt
+cliphotvn69.com,mobiblogss.com,cliphot69.bar,phevkl.im,www.gvnvh.net,top1phimsex.com,sayhentai.art,viet69.icu,phim18vip.vip##.float-ck-center-lt
 damconuongz.club##a[rel="nofollow"]
 dualeotruyenxxy.com##[id$="bnr"]
 d1493 1
@@ -422,6 +467,12 @@ heoxinh.net,mupnungvl.pro,sexhihiz.vc##.xx-ads
 d1499 1
 a1499 1
 jav.vc,mupnungvl.pro##.catfix
+d1513 4
+a1516 4
+phevkl.im,viet69.icu###haun-player>div[style]
+phevkl.im,viet69.icu###preload
+phevkl.im,viet69.icu###primary-nav>div[style]
+phevkl.im,viet69.icu##.separator
 d1527 1
 a1527 1
 phimsex91.pro,phimsex19x.pro##.quangcaomobile
@@ -439,12 +490,11 @@ d1571 2
 a1572 2
 tuoi69.army,sieukhung.meme###bar_float_r
 tuoi69.army,sieukhung.meme##.adsTopHome
-d1580 2
-a1581 2
+d1580 4
+a1583 4
 viet69.cz###mp-preload-popup-overlay
 viet69.cz##.banner-play
-d1583 1
-a1583 1
+viet69.icu##.popup-overlay
 viet69.ps,viet69vn.dev##.footer-fixed-br-container
 d1591 1
 a1591 1
@@ -480,6 +530,9 @@ mv.phimmoiaz.cc,dood.pm,ytstv.me,anime1.site,anh.moe,maclife.io,xemphimjav.com,h
 d1673 1
 a1673 1
 phimgichill.net,hhhay.ink,hh3dhay.life,tram3d.me,animevietsub.bio#%#//scriptlet("abort-current-inline-script", "eval", "$._Eu")
+d1675 1
+a1675 1
+phimmoi.sale,motphimww.fun#%#//scriptlet("abort-current-inline-script", "addEvent", "popu")
 d1693 1
 a1693 1
 tinsoikeo.live,motchiill.ac,ohaytv.me#%#//scriptlet("abort-on-property-read", "sessionStorage")
@@ -489,8 +542,9 @@ truyenqqtet.com,viet69.cz#%#//scriptlet("abort-current-inline-script", "Promise"
 d1699 1
 a1699 1
 truyensieuhay.com,hayhaytv.site,quangcaoyenbai.com,phimchill.life,thuvienhd.xyz,tv.tvhayhd.org,www.khophim88s.com,thefaplive.com,mv.dailyphimz.com,mv.phimbathu.one,sexhihiz.vc,anime47.click#%#//scriptlet("abort-on-property-read", "document.cookie")
-d1706 1
-a1706 1
+d1705 2
+a1706 2
+viet69.icu#%#//scriptlet("abort-current-inline-script", "jQuery", "open")
 viet69.ps,vlxx.gg,dualeotruyenxxy.com,yurineko.my,heoxinh.net,hd.javhay.site,phimsexhay669.pro,cliphot69.bar,doctruyen3qui2.com,ihentai.nl,jav.vc,top1sex.me,xemsex.ai,hentaivc.com,www.buomtv.io,truyenvn.tech,javtiful.com,truyengihotnay.com,truyengihotzay.net,sex.tuoi69.store,quatvn.fit,tenmientruyengi.net,truyengihotzay.net,top1phimsex.com,phim18hd.cam,coi.sexviet88.xyz,mupnungvl.pro,demo.14412882.com,ungtycomicsvip.org,cliphot69.pics,hhtq5.vip,sexdiary.club,vn2.xvideos69.xxx,umetruyenhay.com,damconuongz.club#%#//scriptlet("abort-current-inline-script", "WebAssembly", "instantiate")
 d1709 1
 d1719 1
@@ -502,14 +556,14 @@ www.toptruyen369.net#%#//scriptlet("abort-current-inline-script", "setTimeout", 
 d1731 1
 a1731 1
 z1000.thapcam53.net,hhpanda.my#$#html {overflow: auto!important;}
-diff name:abpvn_content_blocker lines:231 checksum:87ba5db05a
+diff name:abpvn_content_blocker lines:256 checksum:b797bdfe92
 d2 1
 a2 1
-! Version: 20250213150639311
+! Version: 20250214082659305
 d5 2
 a6 2
-! Last modified: 13 Feb 2025 15:06:39 UTC+7
-! Diff-Path: patches/20250213150639311.patch#abpvn_content_blocker
+! Last modified: 14 Feb 2025 08:26:59 UTC+7
+! Diff-Path: patches/20250214082659305.patch#abpvn_content_blocker
 d22 1
 a22 1
 $popup,domain=truyenfull.vision
@@ -518,6 +572,9 @@ a32 1
 /^https:\/\/[a-z]{3,}\.com\/$/$xmlhttprequest,third-party
 a34 1
 /ad_banner/*.gif$image
+d47 1
+a47 1
+/i.imgur.com/*.gif$domain=keonhacai55.chat|www.motchillso.com|www.phimdinhcao.online|xoilacxj.cc|90phutzv.cc|vebozy.cc|cakhiai.cc|listnhacai88.com|xoilaczz63.live|xemtivingon.org|mitomtvn.cc|eastloshigh.com|plcdn.xyz|phimmoi.ing|motphimww.fun
 d52 1
 a52 1
 /pop.js$script,domain=motchiill.ac|ohaytv.me
@@ -531,9 +588,10 @@ a88 2
 d95 1
 a95 1
 ||biphim.dev/public/prom_ad/prom_ad.js$script
-d97 1
-a97 1
+d97 2
+a98 2
 ||blogger.googleusercontent.com^$image,domain=hhninja17.tv|xem15.com|hhtm.site|hoathinh3dtq.site|hhh3d.tv|hoathinhtq.site|phimhaytv.biz|yanhh3d.tv|phimhoathinh3d.vip
+||blvtap.com^*.gif$image,domain=phimmoizz.help
 d107 1
 a107 1
 ||cdn2-img.net^*.gif$image,domain=hhpanda.my|dongchill.xyz|biphim.dev|motchill.hn|subnhanh.ee|subnhanhvl.dev|bichill.dev|dongphim.dev
@@ -570,10 +628,16 @@ a224 3
 ||subnhanh.ee/js/ads_xx.js
 ||subnhanh.ee/js/ads_xx.min.js$script,~third-party
 ||subnhanhvl.dev/js/ads_xx.js$script,~third-party
+d240 1
+a240 1
+||tizihay.com^*.gif$image,domain=phimmoizz.help|phimmoichill.life
 d253 2
 a254 2
 ||tvhay.la/guide/popup.xp-f.js
 ||tvphim.pw/ads/popup$script,~third-party
+d256 1
+a256 1
+||ungtycomicsnay.com$csp=script-src self * data:* 'unsafe-inline'
 d279 2
 a280 2
 ||xem15.com/_next/image?url=%2Fpopup1.jpg&w=*&q=75$image
@@ -609,6 +673,9 @@ d814 2
 a815 2
 dongphim.dev##a[rel="nofollow sponsored"]
 dongphim.dev,dongchill.xyz,bichill.dev,timphim18.net,vivuphim.info,hhpanda.my,hhanime3d.cc,subnhanhvl.dev###footer_fixed_ads
+d820 1
+a820 1
+ephoto360.com,thiepmung.com,247phim.cc,www.phimmoichilla.xyz,hayhaytv.cc,www.ssphim.us,phimmoizz.help##.ad-container
 d867 2
 a868 2
 hh3dhay.life,timphim18.net,xem15.com,vutruphim.tv,tram3d.me##.float-ck-center-lt
@@ -629,13 +696,13 @@ a969 1
 motchill.it.com##a#banner
 d972 1
 a972 1
-motphimww.info,tvphim.pw##.module_single_ads
+motphimww.fun,tvphim.pw##.module_single_ads
 d995 1
 a995 1
 phim.vkool8.net,subnhanhvl.dev,motchill.hn,subnhanh.ee,biphim.dev,dongphim.dev,phimbet.biz,hhanime3d.cc,dongchill.xyz,tokuvn.com###overlay
 d1013 1
 a1013 1
-phimmoi.sale,motphimww.info,tvphim.pw##.module_home_ads
+phimmoi.sale,motphimww.fun,tvphim.pw##.module_home_ads
 d1017 1
 a1017 1
 phimmoichill.bar###pm_quangcao
@@ -659,9 +726,12 @@ www.toptruyen369.net,doctruyen3qui2.com,anime47.click##.advertisement
 d1310 1
 a1344 1
 xosodaiphat.com##.qc-sticky
+d1415 1
+a1415 1
+/assets/js/vast.js$script,domain=~phevkl.im|~viet69.icu
 d1419 1
 a1419 1
-/wp-content/uploads/*.gif$image,domain=tuoi69.army|tuoinungvn.org|teletiengviet.com|phevkl.im|viet69.ph
+/wp-content/uploads/*.gif$image,domain=tuoi69.army|tuoinungvn.org|teletiengviet.com|phevkl.im|viet69.icu
 d1429 2
 a1430 2
 ||cliphot69.bar$csp=script-src 'self' 'unsafe-inline'
@@ -669,14 +739,18 @@ a1430 2
 d1432 1
 a1432 1
 ||clipsexquaylen3s.net^*.gif$image
-d1439 1
-a1439 1
+d1439 2
+a1440 2
 ||i.imgur.com^$image,domain=phym18.lol|phim18hd.cam|fullcliphot.com|bimmup.tv|xamvn.uno
+||i2.vlstorage.com/da88_1080p.mp4$domain=phevkl.im|viet69.icu,rewrite=abp-resource:blank-mp3
 a1450 1
 ||mupnungvl.pro^*.gif$image,domain=mupnungvl.pro
+d1458 1
+a1458 1
+||qcvip.xyz^$script,domain=phevkl.im|viet69.icu
 d1460 1
 a1460 1
-||quoracdn.net^$image,domain=vlxx.gg|heoxinh.net|phevkl.im|viet69.ph|phim18vip.vip|chichnhausex.net|pheclip.mobi|mupnungvl.pro|sexhihiz.vc
+||quoracdn.net^$image,domain=vlxx.gg|heoxinh.net|phevkl.im|viet69.icu|phim18vip.vip|chichnhausex.net|pheclip.mobi|mupnungvl.pro|sexhihiz.vc
 d1476 2
 a1477 1
 ||truyenvn.tech^*banner$image
@@ -688,7 +762,7 @@ a1489 1
 cliphot69.bar###custom_html-42
 d1492 3
 a1494 3
-cliphotvn69.com,mobiblogss.com,cliphot69.bar,phevkl.im,www.gvnvh.net,top1phimsex.com,sayhentai.art,viet69.ph,phim18vip.vip##.float-ck-center-lt
+cliphotvn69.com,mobiblogss.com,cliphot69.bar,phevkl.im,www.gvnvh.net,top1phimsex.com,sayhentai.art,viet69.icu,phim18vip.vip##.float-ck-center-lt
 damconuongz.club##a[rel="nofollow"]
 dualeotruyenxxy.com##[id$="bnr"]
 d1499 1
@@ -697,6 +771,12 @@ heoxinh.net,mupnungvl.pro,sexhihiz.vc##.xx-ads
 d1505 1
 a1505 1
 jav.vc,mupnungvl.pro##.catfix
+d1519 4
+a1522 4
+phevkl.im,viet69.icu###haun-player>div[style]
+phevkl.im,viet69.icu###preload
+phevkl.im,viet69.icu###primary-nav>div[style]
+phevkl.im,viet69.icu##.separator
 d1533 1
 a1533 1
 phimsex91.pro,phimsex19x.pro##.quangcaomobile
@@ -714,12 +794,11 @@ d1577 2
 a1578 2
 tuoi69.army,sieukhung.meme###bar_float_r
 tuoi69.army,sieukhung.meme##.adsTopHome
-d1586 2
-a1587 2
+d1586 4
+a1589 4
 viet69.cz###mp-preload-popup-overlay
 viet69.cz##.banner-play
-d1589 1
-a1589 1
+viet69.icu##.popup-overlay
 viet69.ps,viet69vn.dev##.footer-fixed-br-container
 d1597 1
 a1597 1
@@ -734,14 +813,14 @@ a1622 3
 xnhau.men##.fp-ui>div[style]
 xnhau.men##.sponsor
 xnhau.men##.spot
-diff name:abpvn_noelemhide lines:105 checksum:5dae9ab72e
+diff name:abpvn_noelemhide lines:122 checksum:169b93efe0
 d2 1
 a2 1
-! Version: 20250213150639311
+! Version: 20250214082659305
 d5 2
 a6 2
-! Last modified: 13 Feb 2025 15:06:39 UTC+7
-! Diff-Path: patches/20250213150639311.patch#abpvn_noelemhide
+! Last modified: 14 Feb 2025 08:26:59 UTC+7
+! Diff-Path: patches/20250214082659305.patch#abpvn_noelemhide
 d22 1
 a22 1
 $popup,domain=truyenfull.vision
@@ -750,6 +829,9 @@ a32 1
 /^https:\/\/[a-z]{3,}\.com\/$/$xmlhttprequest,third-party
 a34 1
 /ad_banner/*.gif$image
+d47 1
+a47 1
+/i.imgur.com/*.gif$domain=keonhacai55.chat|www.motchillso.com|www.phimdinhcao.online|xoilacxj.cc|90phutzv.cc|vebozy.cc|cakhiai.cc|listnhacai88.com|xoilaczz63.live|xemtivingon.org|mitomtvn.cc|eastloshigh.com|plcdn.xyz|phimmoi.ing|motphimww.fun
 d52 1
 a52 1
 /pop.js$script,domain=motchiill.ac|ohaytv.me
@@ -763,9 +845,10 @@ a88 2
 d95 1
 a95 1
 ||biphim.dev/public/prom_ad/prom_ad.js$script
-d97 1
-a97 1
+d97 2
+a98 2
 ||blogger.googleusercontent.com^$image,domain=hhninja17.tv|xem15.com|hhtm.site|hoathinh3dtq.site|hhh3d.tv|hoathinhtq.site|phimhaytv.biz|yanhh3d.tv|phimhoathinh3d.vip
+||blvtap.com^*.gif$image,domain=phimmoizz.help
 d107 1
 a107 1
 ||cdn2-img.net^*.gif$image,domain=hhpanda.my|dongchill.xyz|biphim.dev|motchill.hn|subnhanh.ee|subnhanhvl.dev|bichill.dev|dongphim.dev
@@ -802,10 +885,16 @@ a224 3
 ||subnhanh.ee/js/ads_xx.js
 ||subnhanh.ee/js/ads_xx.min.js$script,~third-party
 ||subnhanhvl.dev/js/ads_xx.js$script,~third-party
+d240 1
+a240 1
+||tizihay.com^*.gif$image,domain=phimmoizz.help|phimmoichill.life
 d253 2
 a254 2
 ||tvhay.la/guide/popup.xp-f.js
 ||tvphim.pw/ads/popup$script,~third-party
+d256 1
+a256 1
+||ungtycomicsnay.com$csp=script-src self * data:* 'unsafe-inline'
 d279 2
 a280 2
 ||xem15.com/_next/image?url=%2Fpopup1.jpg&w=*&q=75$image
@@ -816,9 +905,12 @@ d529 1
 d535 1
 a556 1
 ||psugheeghuli.net^
+d685 1
+a685 1
+/assets/js/vast.js$script,domain=~phevkl.im|~viet69.icu
 d689 1
 a689 1
-/wp-content/uploads/*.gif$image,domain=tuoi69.army|tuoinungvn.org|teletiengviet.com|phevkl.im|viet69.ph
+/wp-content/uploads/*.gif$image,domain=tuoi69.army|tuoinungvn.org|teletiengviet.com|phevkl.im|viet69.icu
 d699 2
 a700 2
 ||cliphot69.bar$csp=script-src 'self' 'unsafe-inline'
@@ -826,33 +918,40 @@ a700 2
 d702 1
 a702 1
 ||clipsexquaylen3s.net^*.gif$image
-d709 1
-a709 1
+d709 2
+a710 2
 ||i.imgur.com^$image,domain=phym18.lol|phim18hd.cam|fullcliphot.com|bimmup.tv|xamvn.uno
+||i2.vlstorage.com/da88_1080p.mp4$domain=phevkl.im|viet69.icu,rewrite=abp-resource:blank-mp3
 a720 1
 ||mupnungvl.pro^*.gif$image,domain=mupnungvl.pro
+d728 1
+a728 1
+||qcvip.xyz^$script,domain=phevkl.im|viet69.icu
 d730 1
 a730 1
-||quoracdn.net^$image,domain=vlxx.gg|heoxinh.net|phevkl.im|viet69.ph|phim18vip.vip|chichnhausex.net|pheclip.mobi|mupnungvl.pro|sexhihiz.vc
+||quoracdn.net^$image,domain=vlxx.gg|heoxinh.net|phevkl.im|viet69.icu|phim18vip.vip|chichnhausex.net|pheclip.mobi|mupnungvl.pro|sexhihiz.vc
 d746 2
 a747 1
 ||truyenvn.tech^*banner$image
 d750 1
 a750 1
 ||xnhau.blog^$media,domain=xnhau.men
-diff name:abpvn_ublock lines:271 checksum:1a08a00499
+diff name:abpvn_ublock lines:300 checksum:8111c1257a
 d2 1
 a2 1
-! Version: 20250213150639311
+! Version: 20250214082659305
 d5 2
 a6 2
-! Last modified: 13 Feb 2025 15:06:39 UTC+7
-! Diff-Path: patches/20250213150639311.patch#abpvn_ublock
+! Last modified: 14 Feb 2025 08:26:59 UTC+7
+! Diff-Path: patches/20250214082659305.patch#abpvn_ublock
 d30 1
 a30 1
 /^https:\/\/[a-z]{3,}\.com\/$/$xmlhttprequest,third-party
 a32 1
 /ad_banner/*.gif$image
+d45 1
+a45 1
+/i.imgur.com/*.gif$domain=keonhacai55.chat|www.motchillso.com|www.phimdinhcao.online|xoilacxj.cc|90phutzv.cc|vebozy.cc|cakhiai.cc|listnhacai88.com|xoilaczz63.live|xemtivingon.org|mitomtvn.cc|eastloshigh.com|plcdn.xyz|phimmoi.ing|motphimww.fun
 d50 1
 a50 1
 /pop.js$script,domain=motchiill.ac|ohaytv.me
@@ -866,9 +965,10 @@ a86 2
 d93 1
 a93 1
 ||biphim.dev/public/prom_ad/prom_ad.js$script
-d95 1
-a95 1
+d95 2
+a96 2
 ||blogger.googleusercontent.com^$image,domain=hhninja17.tv|xem15.com|hhtm.site|hoathinh3dtq.site|hhh3d.tv|hoathinhtq.site|phimhaytv.biz|yanhh3d.tv|phimhoathinh3d.vip
+||blvtap.com^*.gif$image,domain=phimmoizz.help
 d105 1
 a105 1
 ||cdn2-img.net^*.gif$image,domain=hhpanda.my|dongchill.xyz|biphim.dev|motchill.hn|subnhanh.ee|subnhanhvl.dev|bichill.dev|dongphim.dev
@@ -905,10 +1005,16 @@ a220 3
 ||subnhanh.ee/js/ads_xx.js
 ||subnhanh.ee/js/ads_xx.min.js$script,~third-party
 ||subnhanhvl.dev/js/ads_xx.js$script,~third-party
+d236 1
+a236 1
+||tizihay.com^*.gif$image,domain=phimmoizz.help|phimmoichill.life
 d249 2
 a250 2
 ||tvhay.la/guide/popup.xp-f.js
 ||tvphim.pw/ads/popup$script,~third-party
+d252 1
+a252 1
+||ungtycomicsnay.com$csp=script-src self * data:* 'unsafe-inline'
 d275 2
 a276 2
 ||xem15.com/_next/image?url=%2Fpopup1.jpg&w=*&q=75$image
@@ -944,6 +1050,9 @@ d810 2
 a811 2
 dongphim.dev##a[rel="nofollow sponsored"]
 dongphim.dev,dongchill.xyz,bichill.dev,timphim18.net,vivuphim.info,hhpanda.my,hhanime3d.cc,subnhanhvl.dev###footer_fixed_ads
+d816 1
+a816 1
+ephoto360.com,thiepmung.com,247phim.cc,www.phimmoichilla.xyz,hayhaytv.cc,www.ssphim.us,phimmoizz.help##.ad-container
 d863 2
 a864 2
 hh3dhay.life,timphim18.net,xem15.com,vutruphim.tv,tram3d.me##.float-ck-center-lt
@@ -964,13 +1073,13 @@ a965 1
 motchill.it.com##a#banner
 d968 1
 a968 1
-motphimww.info,tvphim.pw##.module_single_ads
+motphimww.fun,tvphim.pw##.module_single_ads
 d991 1
 a991 1
 phim.vkool8.net,subnhanhvl.dev,motchill.hn,subnhanh.ee,biphim.dev,dongphim.dev,phimbet.biz,hhanime3d.cc,dongchill.xyz,tokuvn.com###overlay
 d1009 1
 a1009 1
-phimmoi.sale,motphimww.info,tvphim.pw##.module_home_ads
+phimmoi.sale,motphimww.fun,tvphim.pw##.module_home_ads
 d1013 1
 a1013 1
 phimmoichill.bar###pm_quangcao
@@ -994,9 +1103,12 @@ www.toptruyen369.net,doctruyen3qui2.com,anime47.click##.advertisement
 d1306 1
 a1340 1
 xosodaiphat.com##.qc-sticky
+d1409 1
+a1409 1
+/assets/js/vast.js$script,domain=~phevkl.im|~viet69.icu
 d1413 1
 a1413 1
-/wp-content/uploads/*.gif$image,domain=tuoi69.army|tuoinungvn.org|teletiengviet.com|phevkl.im|viet69.ph
+/wp-content/uploads/*.gif$image,domain=tuoi69.army|tuoinungvn.org|teletiengviet.com|phevkl.im|viet69.icu
 d1423 2
 a1424 2
 ||cliphot69.bar$csp=script-src 'self' 'unsafe-inline'
@@ -1004,14 +1116,18 @@ a1424 2
 d1426 1
 a1426 1
 ||clipsexquaylen3s.net^*.gif$image
-d1433 1
-a1433 1
+d1433 2
+a1434 2
 ||i.imgur.com^$image,domain=phym18.lol|phim18hd.cam|fullcliphot.com|bimmup.tv|xamvn.uno
+||i2.vlstorage.com/da88_1080p.mp4$domain=phevkl.im|viet69.icu,rewrite=abp-resource:blank-mp3
 a1444 1
 ||mupnungvl.pro^*.gif$image,domain=mupnungvl.pro
+d1452 1
+a1452 1
+||qcvip.xyz^$script,domain=phevkl.im|viet69.icu
 d1454 1
 a1454 1
-||quoracdn.net^$image,domain=vlxx.gg|heoxinh.net|phevkl.im|viet69.ph|phim18vip.vip|chichnhausex.net|pheclip.mobi|mupnungvl.pro|sexhihiz.vc
+||quoracdn.net^$image,domain=vlxx.gg|heoxinh.net|phevkl.im|viet69.icu|phim18vip.vip|chichnhausex.net|pheclip.mobi|mupnungvl.pro|sexhihiz.vc
 d1470 2
 a1471 1
 ||truyenvn.tech^*banner$image
@@ -1023,7 +1139,7 @@ a1483 1
 cliphot69.bar###custom_html-42
 d1486 3
 a1488 3
-cliphotvn69.com,mobiblogss.com,cliphot69.bar,phevkl.im,www.gvnvh.net,top1phimsex.com,sayhentai.art,viet69.ph,phim18vip.vip##.float-ck-center-lt
+cliphotvn69.com,mobiblogss.com,cliphot69.bar,phevkl.im,www.gvnvh.net,top1phimsex.com,sayhentai.art,viet69.icu,phim18vip.vip##.float-ck-center-lt
 damconuongz.club##a[rel="nofollow"]
 dualeotruyenxxy.com##[id$="bnr"]
 d1493 1
@@ -1032,6 +1148,12 @@ heoxinh.net,mupnungvl.pro,sexhihiz.vc##.xx-ads
 d1499 1
 a1499 1
 jav.vc,mupnungvl.pro##.catfix
+d1513 4
+a1516 4
+phevkl.im,viet69.icu###haun-player>div[style]
+phevkl.im,viet69.icu###preload
+phevkl.im,viet69.icu###primary-nav>div[style]
+phevkl.im,viet69.icu##.separator
 d1527 1
 a1527 1
 phimsex91.pro,phimsex19x.pro##.quangcaomobile
@@ -1049,12 +1171,11 @@ d1571 2
 a1572 2
 tuoi69.army,sieukhung.meme###bar_float_r
 tuoi69.army,sieukhung.meme##.adsTopHome
-d1580 2
-a1581 2
+d1580 4
+a1583 4
 viet69.cz###mp-preload-popup-overlay
 viet69.cz##.banner-play
-d1583 1
-a1583 1
+viet69.icu##.popup-overlay
 viet69.ps,viet69vn.dev##.footer-fixed-br-container
 d1591 1
 a1591 1
@@ -1090,6 +1211,9 @@ mv.phimmoiaz.cc,dood.pm,ytstv.me,anime1.site,anh.moe,maclife.io,xemphimjav.com,h
 d1672 1
 a1672 1
 phimgichill.net,hhhay.ink,hh3dhay.life,tram3d.me,animevietsub.bio##+js(acs, eval, $._Eu)
+d1675 1
+a1675 1
+phimmoi.sale,motphimww.fun##+js(acs, addEvent, popu)
 d1693 1
 a1693 1
 tinsoikeo.live,motchiill.ac,ohaytv.me##+js(aopr, sessionStorage)
@@ -1099,8 +1223,9 @@ truyenqqtet.com,viet69.cz##+js(acs, Promise, break;case)
 d1699 1
 a1699 1
 truyensieuhay.com,hayhaytv.site,quangcaoyenbai.com,phimchill.life,thuvienhd.xyz,tv.tvhayhd.org,www.khophim88s.com,thefaplive.com,mv.dailyphimz.com,mv.phimbathu.one,sexhihiz.vc,anime47.click##+js(aopr, document.cookie)
-d1707 1
-a1707 1
+d1706 2
+a1707 2
+viet69.icu##+js(acs, jQuery, open)
 viet69.ps,vlxx.gg,dualeotruyenxxy.com,yurineko.my,heoxinh.net,hd.javhay.site,phimsexhay669.pro,cliphot69.bar,doctruyen3qui2.com,ihentai.nl,jav.vc,sex.tuoi69.store,top1sex.me,xemsex.ai,hentaivc.com,www.buomtv.io,truyenvn.tech,javtiful.com,truyengihotnay.com,truyengihotzay.net,quatvn.fit,tenmientruyengi.net,top1phimsex.com,phim18hd.cam,coi.sexviet88.xyz,mupnungvl.pro,demo.14412882.com,ungtycomicsvip.org,cliphot69.pics,hhtq5.vip,sexdiary.club,vn2.xvideos69.xxx,umetruyenhay.com,damconuongz.club##+js(acs, WebAssembly, instantiate)
 d1710 1
 d1720 1
