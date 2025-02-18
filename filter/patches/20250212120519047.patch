@@ -1,11 +1,11 @@
-diff name:abpvn lines:301 checksum:99a03833e6
+diff name:abpvn lines:314 checksum:2520db6fe7
 d2 1
 a2 1
-! Version: 20250218120525219
+! Version: 20250218162546297
 d5 2
 a6 2
-! Last modified: 18 Feb 2025 12:05:25 UTC+7
-! Diff-Path: patches/20250218120525219.patch#abpvn
+! Last modified: 18 Feb 2025 16:25:46 UTC+7
+! Diff-Path: patches/20250218162546297.patch#abpvn
 d22 1
 a22 1
 $popup,domain=truyenfull.vision
@@ -61,6 +61,13 @@ a171 2
 ||motchill.hn/js/ads_xx.js
 a172 1
 ||motchillcx.com/3s.m3u8$rewrite=abp-resource:blank-mp3,domain=motchillcx.com
+d176 1
+a177 1
+||nettruyenvng.com/public/assets/js/pop$script,~third-party
+d179 2
+a180 2
+||newoneinoldoneout.pro/banners-web/$image,domain=nettruyenvng.com|nettruyenvie.com
+||newoneinoldoneout.pro/popup$script,domain=nettruyenvng.com|nettruyenvie.com
 d189 1
 a189 1
 ||phimmoichill.bar/newchill/$script,~third-party
@@ -160,6 +167,12 @@ motchillcx.com,www.phimdinhcao.online##.banner-preload
 motchillcx.com,www.phimdinhcao.online##.catfish-top
 motphimchillt.net###catfish_ad_top
 motphimww.top,tvphim.pw##.module_single_ads
+d978 4
+a982 4
+nettruyenvng.com###_pop-nettruyenww-15
+nettruyenvng.com###catfish-content
+nettruyenvng.com###pop_nettruyenww
+nettruyenvng.com##.banner
 d994 1
 a994 1
 phim.vkool8.net,subnhanhvl.dev,motchill.hn,subnhanh.ee,biphim.dev,dongphim.dev,phimbet.biz,hhanime3d.cc,dongchill.xyz,tokuvn.com###overlay
@@ -300,14 +313,14 @@ a1623 3
 xnhau.men##.fp-ui>div[style]
 xnhau.men##.sponsor
 xnhau.men##.spot
-diff name:abpvn_adguard lines:346 checksum:ca269d9f72
+diff name:abpvn_adguard lines:359 checksum:ff98af3983
 d2 1
 a2 1
-! Version: 20250218120525219
+! Version: 20250218162546297
 d5 2
 a6 2
-! Last modified: 18 Feb 2025 12:05:25 UTC+7
-! Diff-Path: patches/20250218120525219.patch#abpvn_adguard
+! Last modified: 18 Feb 2025 16:25:46 UTC+7
+! Diff-Path: patches/20250218162546297.patch#abpvn_adguard
 d30 1
 a30 1
 /^https:\/\/[a-z]{3,}\.com\/$/$xmlhttprequest,third-party
@@ -360,6 +373,13 @@ a169 2
 ||motchill.hn/js/ads_xx.js
 a170 1
 ||motchillcx.com/3s.m3u8$rewrite=abp-resource:blank-mp3,domain=motchillcx.com
+d174 1
+a175 1
+||nettruyenvng.com/public/assets/js/pop$script,~third-party
+d177 2
+a178 2
+||newoneinoldoneout.pro/banners-web/$image,domain=nettruyenvng.com|nettruyenvie.com
+||newoneinoldoneout.pro/popup$script,domain=nettruyenvng.com|nettruyenvie.com
 d187 1
 a187 1
 ||phimmoichill.bar/newchill/$script,~third-party
@@ -459,6 +479,12 @@ motchillcx.com,www.phimdinhcao.online##.banner-preload
 motchillcx.com,www.phimdinhcao.online##.catfish-top
 motphimchillt.net###catfish_ad_top
 motphimww.top,tvphim.pw##.module_single_ads
+d974 4
+a978 4
+nettruyenvng.com###_pop-nettruyenww-15
+nettruyenvng.com###catfish-content
+nettruyenvng.com###pop_nettruyenww
+nettruyenvng.com##.banner
 d990 1
 a990 1
 phim.vkool8.net,subnhanhvl.dev,motchill.hn,subnhanh.ee,biphim.dev,dongphim.dev,phimbet.biz,hhanime3d.cc,dongchill.xyz,tokuvn.com###overlay
@@ -609,7 +635,7 @@ a1645 1
 dualeotruyenxxy.com,m.blogtruyenmoi.com#%#//scriptlet("abort-current-inline-script", "document.addEventListener", "popunder")
 d1650 1
 a1650 1
-goctruyentranhvuiaa.com,nettruyenrr.com,sextop1.show,hhvsub.com,sayhentai.ink,coi.sexviet88.xyz#%#//scriptlet("abort-current-inline-script", "WebAssembly", "globalThis")
+goctruyentranhvuiaa.com,nettruyenvng.com,sextop1.show,hhvsub.com,sayhentai.ink,coi.sexviet88.xyz#%#//scriptlet("abort-current-inline-script", "WebAssembly", "globalThis")
 d1656 1
 a1656 1
 hhpanda.my###overlay
@@ -627,7 +653,7 @@ a1696 1
 tinsoikeo.live,motchiill.cx,ohaytv.me#%#//scriptlet("abort-on-property-read", "sessionStorage")
 d1702 1
 a1702 1
-truyensieuhay.com,hayhaytv.site,quangcaoyenbai.com,phimchill.life,thuvienhd.xyz,tv.tvhayhd.org,www.khophim88s.com,thefaplive.com,mv.dailyphimz.com,mv.phimbathu.one,sexhihiz.vc,anime47.click#%#//scriptlet("abort-on-property-read", "document.cookie")
+truyensieuhay.com,hayhaytv.site,quangcaoyenbai.com,phimchill.life,thuvienhd.biz,tv.tvhayhd.org,www.khophim88s.com,thefaplive.com,mv.dailyphimz.com,mv.phimbathu.one,sexhihiz.vc,anime47.click#%#//scriptlet("abort-on-property-read", "document.cookie")
 d1705 1
 a1705 1
 vailonxx.co,motchillcx.com#%#//scriptlet("abort-current-inline-script", "jQuery", "window.open")
@@ -647,14 +673,14 @@ yeuphim.fun#%#//scriptlet("m3u-prune", "/adjump", "index.m3u8")
 d1732 1
 a1732 1
 z1000.thapcam53.net,hhpanda.my#$#html {overflow: auto!important;}
-diff name:abpvn_content_blocker lines:301 checksum:5b7948a22a
+diff name:abpvn_content_blocker lines:314 checksum:05e96ed546
 d2 1
 a2 1
-! Version: 20250218120525219
+! Version: 20250218162546297
 d5 2
 a6 2
-! Last modified: 18 Feb 2025 12:05:25 UTC+7
-! Diff-Path: patches/20250218120525219.patch#abpvn_content_blocker
+! Last modified: 18 Feb 2025 16:25:46 UTC+7
+! Diff-Path: patches/20250218162546297.patch#abpvn_content_blocker
 d22 1
 a22 1
 $popup,domain=truyenfull.vision
@@ -710,6 +736,13 @@ a171 2
 ||motchill.hn/js/ads_xx.js
 a172 1
 ||motchillcx.com/3s.m3u8$rewrite=abp-resource:blank-mp3,domain=motchillcx.com
+d176 1
+a177 1
+||nettruyenvng.com/public/assets/js/pop$script,~third-party
+d179 2
+a180 2
+||newoneinoldoneout.pro/banners-web/$image,domain=nettruyenvng.com|nettruyenvie.com
+||newoneinoldoneout.pro/popup$script,domain=nettruyenvng.com|nettruyenvie.com
 d189 1
 a189 1
 ||phimmoichill.bar/newchill/$script,~third-party
@@ -809,6 +842,12 @@ motchillcx.com,www.phimdinhcao.online##.banner-preload
 motchillcx.com,www.phimdinhcao.online##.catfish-top
 motphimchillt.net###catfish_ad_top
 motphimww.top,tvphim.pw##.module_single_ads
+d978 4
+a982 4
+nettruyenvng.com###_pop-nettruyenww-15
+nettruyenvng.com###catfish-content
+nettruyenvng.com###pop_nettruyenww
+nettruyenvng.com##.banner
 d994 1
 a994 1
 phim.vkool8.net,subnhanhvl.dev,motchill.hn,subnhanh.ee,biphim.dev,dongphim.dev,phimbet.biz,hhanime3d.cc,dongchill.xyz,tokuvn.com###overlay
@@ -949,14 +988,14 @@ a1623 3
 xnhau.men##.fp-ui>div[style]
 xnhau.men##.sponsor
 xnhau.men##.spot
-diff name:abpvn_noelemhide lines:129 checksum:c38135724c
+diff name:abpvn_noelemhide lines:136 checksum:d83706213b
 d2 1
 a2 1
-! Version: 20250218120525219
+! Version: 20250218162546297
 d5 2
 a6 2
-! Last modified: 18 Feb 2025 12:05:25 UTC+7
-! Diff-Path: patches/20250218120525219.patch#abpvn_noelemhide
+! Last modified: 18 Feb 2025 16:25:46 UTC+7
+! Diff-Path: patches/20250218162546297.patch#abpvn_noelemhide
 d22 1
 a22 1
 $popup,domain=truyenfull.vision
@@ -1012,6 +1051,13 @@ a171 2
 ||motchill.hn/js/ads_xx.js
 a172 1
 ||motchillcx.com/3s.m3u8$rewrite=abp-resource:blank-mp3,domain=motchillcx.com
+d176 1
+a177 1
+||nettruyenvng.com/public/assets/js/pop$script,~third-party
+d179 2
+a180 2
+||newoneinoldoneout.pro/banners-web/$image,domain=nettruyenvng.com|nettruyenvie.com
+||newoneinoldoneout.pro/popup$script,domain=nettruyenvng.com|nettruyenvie.com
 d189 1
 a189 1
 ||phimmoichill.bar/newchill/$script,~third-party
@@ -1079,14 +1125,14 @@ a746 1
 d749 1
 a749 1
 ||xnhau.blog^$media,domain=xnhau.men
-diff name:abpvn_ublock lines:346 checksum:babb087bb6
+diff name:abpvn_ublock lines:359 checksum:556f5ed3aa
 d2 1
 a2 1
-! Version: 20250218120525219
+! Version: 20250218162546297
 d5 2
 a6 2
-! Last modified: 18 Feb 2025 12:05:25 UTC+7
-! Diff-Path: patches/20250218120525219.patch#abpvn_ublock
+! Last modified: 18 Feb 2025 16:25:46 UTC+7
+! Diff-Path: patches/20250218162546297.patch#abpvn_ublock
 d30 1
 a30 1
 /^https:\/\/[a-z]{3,}\.com\/$/$xmlhttprequest,third-party
@@ -1139,6 +1185,13 @@ a169 2
 ||motchill.hn/js/ads_xx.js
 a170 1
 ||motchillcx.com/3s.m3u8$rewrite=abp-resource:blank-mp3,domain=motchillcx.com
+d174 1
+a175 1
+||nettruyenvng.com/public/assets/js/pop$script,~third-party
+d177 2
+a178 2
+||newoneinoldoneout.pro/banners-web/$image,domain=nettruyenvng.com|nettruyenvie.com
+||newoneinoldoneout.pro/popup$script,domain=nettruyenvng.com|nettruyenvie.com
 d187 1
 a187 1
 ||phimmoichill.bar/newchill/$script,~third-party
@@ -1238,6 +1291,12 @@ motchillcx.com,www.phimdinhcao.online##.banner-preload
 motchillcx.com,www.phimdinhcao.online##.catfish-top
 motphimchillt.net###catfish_ad_top
 motphimww.top,tvphim.pw##.module_single_ads
+d974 4
+a978 4
+nettruyenvng.com###_pop-nettruyenww-15
+nettruyenvng.com###catfish-content
+nettruyenvng.com###pop_nettruyenww
+nettruyenvng.com##.banner
 d990 1
 a990 1
 phim.vkool8.net,subnhanhvl.dev,motchill.hn,subnhanh.ee,biphim.dev,dongphim.dev,phimbet.biz,hhanime3d.cc,dongchill.xyz,tokuvn.com###overlay
@@ -1388,7 +1447,7 @@ a1645 1
 dualeotruyenxxy.com,m.blogtruyenmoi.com##+js(acs, document.addEventListener, popunder)
 d1650 1
 a1650 1
-goctruyentranhvuiaa.com,nettruyenrr.com,sextop1.show,hhvsub.com,sayhentai.ink,coi.sexviet88.xyz##+js(acs, WebAssembly, globalThis)
+goctruyentranhvuiaa.com,nettruyenvng.com,sextop1.show,hhvsub.com,sayhentai.ink,coi.sexviet88.xyz##+js(acs, WebAssembly, globalThis)
 d1656 1
 a1656 1
 hhpanda.my###overlay
@@ -1406,7 +1465,7 @@ a1696 1
 tinsoikeo.live,motchiill.cx,ohaytv.me##+js(aopr, sessionStorage)
 d1702 1
 a1702 1
-truyensieuhay.com,hayhaytv.site,quangcaoyenbai.com,phimchill.life,thuvienhd.xyz,tv.tvhayhd.org,www.khophim88s.com,thefaplive.com,mv.dailyphimz.com,mv.phimbathu.one,sexhihiz.vc,anime47.click##+js(aopr, document.cookie)
+truyensieuhay.com,hayhaytv.site,quangcaoyenbai.com,phimchill.life,thuvienhd.biz,tv.tvhayhd.org,www.khophim88s.com,thefaplive.com,mv.dailyphimz.com,mv.phimbathu.one,sexhihiz.vc,anime47.click##+js(aopr, document.cookie)
 d1705 1
 a1705 1
 vailonxx.co,motchillcx.com##+js(acs, jQuery, window.open)
