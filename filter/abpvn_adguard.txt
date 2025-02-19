@@ -1,9 +1,9 @@
 [Adblock Plus 2.0]
-! Version: 20250219092648031
+! Version: 20250219112108761
 ! id: D4028CDD-3D39-4624-ACC7-8140F4EC3888
 ! Title: ABPVN List
-! Last modified: 19 Feb 2025 09:26:48 UTC+7
-! Diff-Path: patches/20250219092648031.patch#abpvn_adguard
+! Last modified: 19 Feb 2025 11:21:08 UTC+7
+! Diff-Path: patches/20250219112108761.patch#abpvn_adguard
 ! Diff-Expires: 60 minutes
 ! Expires: 1 days (update frequency)
 !
@@ -1194,7 +1194,7 @@ $third-party,script,domain=sexdiaryx.live
 ||truyensextv.com^*.gif
 ||truyenvn.tech^*banner$image
 ||www.buomtv.io/palivn/ad/$image
-||xnhau.blog^$media,domain=xnhau.men
+||xnhau.blog^$media,domain=xnhau.one
 ||yr.fopbandido.com^
 !---------- ABPVN Adult Element Hide ---------------
 ##[href^="https://www.i9017.com/"]
@@ -1314,9 +1314,9 @@ xiuren.org###bannerIn
 xiuren.org###exoIMFrame
 xiuren.org###nativeAds_1505931906161
 xiuren.org##div[id^="exo_slider_"]
-xnhau.men##.fp-ui>div[style]
-xnhau.men##.sponsor
-xnhau.men##.spot
+xnhau.one##.fp-ui>div[style]
+xnhau.one##.sponsor
+xnhau.one##.spot
 xnxx.com###content-ad-top-zone
 ! ---------Rule only for AdGuard------
 10gb.vn#%#//scriptlet("abort-current-inline-script", "Promise", "detectedAdblock")
@@ -1414,7 +1414,7 @@ www.iosviet.com#%#//scriptlet("set-constant", "timer", "0")
 www.nettruyenupp.com#%#//scriptlet("abort-on-property-read", "sp")
 www.o-study.net##.backdrop-popup
 www.o-study.net#$#body {position: static !important}
-www.phimdinhcao.online,motchillcx.com,xnhau.men#%#//scriptlet("abort-on-property-read", "localStorage")
+www.phimdinhcao.online,motchillcx.com,xnhau.one#%#//scriptlet("abort-on-property-read", "localStorage")
 www.saostar.vn#$#div.layout.pt-mobi-top {padding-top: 0 !important}
 www.saostar.vn#$#header.bg-white {margin-top: 0px !important}
 www.toptruyen369.net#%#//scriptlet("abort-current-inline-script", "setTimeout", "open")
