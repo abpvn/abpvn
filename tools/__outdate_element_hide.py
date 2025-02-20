@@ -12,10 +12,16 @@ from const import Const
 from util import box_print
 
 class OutdateElementHideCheck(threading.Thread):
-    def set_data(self, domain, element_hide, domain_with_outdate_element_hide: dict, error_domains: list):
+    def __init__(self, domain, element_hide, domain_with_outdate_element_hide: dict, error_domains: list):
         """
-        Set process domain
+        Initialize the OutdateElementHideCheck thread.
+
+        :param domain: The domain to check.
+        :param element_hide: The elements to hide.
+        :param domain_with_outdate_element_hide: Dictionary to store domains with outdated element hides.
+        :param error_domains: List to store domains that encountered errors.
         """
+        threading.Thread.__init__(self)
         self.__element_hide = element_hide
         self.__domain = domain
         self.domain_with_outdate_element_hide = domain_with_outdate_element_hide
@@ -69,9 +75,9 @@ class OutdateElementHide():
     def __init__(self, filter_text, domains) -> None:
         self.filter_text = filter_text
         self.domains = domains
-        self.__threads = []
-        self.domains_with_outdate_element_hide = {}
-        self.error_domains = []
+        self.__threads: list[threading.Thread] = []
+        self.domains_with_outdate_element_hide: dict = {}
+        self.error_domains: list[str] = []
 
     def parse_filter(self):
         domains_with_element_hide = {}
@@ -86,8 +92,7 @@ class OutdateElementHide():
         return domains_with_element_hide
 
     def process_domain(self, domain, element_hide):
-        domain_check = OutdateElementHideCheck()
-        domain_check.set_data(
+        domain_check = OutdateElementHideCheck(
             domain,
             element_hide,
             domain_with_outdate_element_hide=self.domains_with_outdate_element_hide,
