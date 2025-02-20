@@ -64,7 +64,11 @@ jobs:
           git config user.email github-actions@github.com
           BUILD_OUTPUT=$(bash commit.sh true)
           GIT_TAG=$(cat version)
-          git commit -m "Auto build filter on master to $GIT_TAG"
+          BUILD_TYPE_MESSAGE='Build'
+          if [ '${{github.event_name == 'schedule'}}' == 'true' ]; then
+            BUILD_TYPE_MESSAGE='Auto build'
+          fi
+          git commit -m "$BUILD_TYPE_MESSAGE filter on master to $GIT_TAG"
           git tag $GIT_TAG
           if [ '${{env.DRY_RUN}}' == 'false' ]; then
             git push origin master
@@ -123,7 +127,11 @@ jobs:
           git config user.email github-actions@github.com
           BUILD_OUTPUT=$(bash commit.sh true)
           GIT_TAG=$(cat version)
-          git commit -m "Auto build filter on single to $GIT_TAG"
+          BUILD_TYPE_MESSAGE='Build'
+          if [ '${{github.event_name == 'schedule'}}' == 'true' ]; then
+            BUILD_TYPE_MESSAGE='Auto build'
+          fi
+          git commit -m "$BUILD_TYPE_MESSAGE filter on single to $GIT_TAG"
           git tag $GIT_TAG
           if [ '${{env.DRY_RUN}}' == 'false' ]; then
             git push origin single
