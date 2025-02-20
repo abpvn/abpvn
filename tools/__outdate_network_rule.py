@@ -11,10 +11,11 @@ from const import Const
 from util import box_print
 
 class OutdateNetworkRuleCheck(threading.Thread):
-    def set_data(self, domain, network_rule: dict, domain_with_outdate_network_rule: dict, error_domains: list):
+    def __init__(self, domain, network_rule: dict, domain_with_outdate_network_rule: dict, error_domains: list):
         """
-        Set process domain
+        Initialize the thread with domain data
         """
+        threading.Thread.__init__(self)
         self.__network_rule = network_rule
         self.__domain = domain
         self.domain_with_outdate_network_rule = domain_with_outdate_network_rule
@@ -77,9 +78,9 @@ class OutdateNetWorkRule():
     def __init__(self, filter_text, domains) -> None:
         self.filter_text = filter_text
         self.domains = domains
-        self.__threads = []
-        self.domains_with_outdate_network_rule = {}
-        self.error_domains = []
+        self.__threads: list[OutdateNetworkRuleCheck] = []
+        self.domains_with_outdate_network_rule: dict[str, list[str]] = {}
+        self.error_domains: list[str] = []
 
     def to_regex(self, network_rule_str: str):
         """
@@ -129,8 +130,7 @@ class OutdateNetWorkRule():
         return network_rule
 
     def process_domain(self, domain, network_rule):
-        domain_check = OutdateNetworkRuleCheck()
-        domain_check.set_data(
+        domain_check = OutdateNetworkRuleCheck(
             domain,
             network_rule,
             domain_with_outdate_network_rule=self.domains_with_outdate_network_rule,
