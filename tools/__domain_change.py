@@ -75,9 +75,9 @@ class DomainCheck(threading.Thread):
 class DomainChange():
     def __init__(self, domains) -> None:
         self.domains = domains
-        self.__threads = []
-        self.redirect_pairs = []
-        self.error_domains = []
+        self.__threads: list[DomainCheck] = []
+        self.redirect_pairs: list[list[str]] = []
+        self.error_domains: list[str] = []
 
     def process_domain(self, domain, index, total_domain):
         domain_check = DomainCheck()
