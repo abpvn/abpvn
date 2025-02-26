@@ -10,10 +10,11 @@ import os
 from util import box_print
 
 class DomainCheck(threading.Thread):
-    def set_data(self, domain, index, total_domain,redirect_pairs: list, error_domains: list):
+    def __init__(self, domain, index, total_domain,redirect_pairs: list, error_domains: list):
         """
         Set process domain
         """
+        super(DomainCheck, self).__init__()
         self.__domain = domain
         self.__domain_index = index
         self.__total_domain = total_domain
@@ -80,8 +81,7 @@ class DomainChange():
         self.error_domains: list[str] = []
 
     def process_domain(self, domain, index, total_domain):
-        domain_check = DomainCheck()
-        domain_check.set_data(domain, index, total_domain, redirect_pairs=self.redirect_pairs, error_domains=self.error_domains)
+        domain_check = DomainCheck(domain, index, total_domain, redirect_pairs=self.redirect_pairs, error_domains=self.error_domains)
         self.__threads.append(domain_check)
         domain_check.start()
 

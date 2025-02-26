@@ -10,10 +10,11 @@ import dns.rdatatype
 from util import box_print
 
 class NoIpCheck(threading.Thread):
-    def set_data(self, domain, index, total_domain, no_ip_domains: list, error_domains: list):
+    def __init__(self, domain, index, total_domain, no_ip_domains: list, error_domains: list):
         """
         Set process domain
         """
+        super(NoIpCheck, self).__init__()
         self.__domain = domain
         self.__domain_index = index
         self.__total_domain = total_domain
@@ -65,8 +66,7 @@ class NoIpDomain():
         self.error_domains: list[str] = []
 
     def process_domain(self, domain, index, total_domain):
-        domain_check = NoIpCheck()
-        domain_check.set_data(domain, index, total_domain, no_ip_domains=self.no_ip_domains, error_domains=self.error_domains)
+        domain_check = NoIpCheck(domain, index, total_domain, no_ip_domains=self.no_ip_domains, error_domains=self.error_domains)
         self.__threads.append(domain_check)
         domain_check.start()
 
