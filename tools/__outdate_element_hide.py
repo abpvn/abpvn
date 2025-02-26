@@ -21,7 +21,7 @@ class OutdateElementHideCheck(threading.Thread):
         :param domain_with_outdate_element_hide: Dictionary to store domains with outdated element hides.
         :param error_domains: List to store domains that encountered errors.
         """
-        threading.Thread.__init__(self)
+        super(OutdateElementHideCheck, self).__init__()
         self.__element_hide = element_hide
         self.__domain = domain
         self.domain_with_outdate_element_hide = domain_with_outdate_element_hide

@@ -9,10 +9,11 @@ from util import box_print
 
 
 class FileCheck(threading.Thread):
-    def set_data(self, file, not_found_pairs: list, error_files: list):
+    def __init__(self, file, not_found_pairs: list, error_files: list):
         """
         Set process file
         """
+        super(FileCheck, self).__init__()
         self.__file = file
         self.not_found_pairs = not_found_pairs
         self.error_files = error_files
@@ -54,8 +55,7 @@ class FileNotFound():
         self.error_files: list[dict] = []
 
     def process_file(self, file):
-        file_check = FileCheck()
-        file_check.set_data(file, not_found_pairs=self.not_found_pairs, error_files=self.error_files)
+        file_check = FileCheck(file, not_found_pairs=self.not_found_pairs, error_files=self.error_files)
         self.__threads.append(file_check)
         file_check.start()
 

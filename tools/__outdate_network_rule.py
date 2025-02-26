@@ -15,7 +15,7 @@ class OutdateNetworkRuleCheck(threading.Thread):
         """
         Initialize the thread with domain data
         """
-        threading.Thread.__init__(self)
+        super(OutdateNetworkRuleCheck, self).__init__()
         self.__network_rule = network_rule
         self.__domain = domain
         self.domain_with_outdate_network_rule = domain_with_outdate_network_rule
