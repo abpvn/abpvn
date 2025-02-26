@@ -1,9 +1,9 @@
 [Adblock Plus 2.0]
-! Version: 20250226150639309
+! Version: 20250226180502701
 ! id: D4028CDD-3D39-4624-ACC7-8140F4EC3888
 ! Title: ABPVN List
-! Last modified: 26 Feb 2025 15:06:39 UTC+7
-! Diff-Path: patches/20250226150639309.patch#abpvn_adguard
+! Last modified: 26 Feb 2025 18:05:02 UTC+7
+! Diff-Path: patches/20250226180502701.patch#abpvn_adguard
 ! Diff-Expires: 60 minutes
 ! Expires: 1 days (update frequency)
 !
@@ -160,6 +160,7 @@
 ||mocfun.net/uploads/banners/
 ||motchiill.to^*.gif$image
 ||motchill.hn/js/ads_xx.js
+||motchill10.com/public/upload/ads/ads.js$script,~third-party
 ||motchill2.top/banner$image
 ||motchillfa.com/3s.m3u8$rewrite=abp-resource:blank-mp3,domain=motchillfa.com
 ||mplmncb.com/banners-web$image,domain=truyenqqto.com
@@ -871,7 +872,6 @@ loigiaihay.com##div[style="margin: 10px 0 5px 0; min-height: 250px;"]
 luatduonggia.vn##.ads-tags
 luatduonggia.vn##.img_side_bar
 luatduonggia.vn##.poka-image
-lucloi.vn##.ads_shortcode
 m.autopro.com.vn##.pushed
 maclife.io##[href*="hnmac.vn"]
 maclife.io##[href*="laptopvang.com"]
@@ -887,22 +887,19 @@ mannhan95.xyz##.images-bnr
 mannhan95.xyz##.images_fixed
 mannhan95.xyz##.popup
 mannhan95.xyz##a.btn_fb:nth-of-type(2)
-mephim.ink###myModal
-mephim.ink##.adsphim-mobile-popup
-mephim.ink##div[id^="adsphim-"]
 metruyencv.info###article>.pt-3.text-centers
 metruyencv.info##.text-muted
 metruyencv.info,metruyencv.net,metruyencv.com##[href$="/goout/lazada"]
 metruyencv.info,metruyencv.net,metruyencv.com##section.nh-section:nth-of-type(5)
 metruyencv.info,metruyencv.net,metruyencv.com#?#.text-center:-abp-has(small:-abp-contains(QUẢNG CÁO))
 minhngoc.net.vn,vn-z.vn,kinhtedothi.vn##[id^="adv"]
-mitomtvn.cc##.btn-od
+mitomtvn.cc##.menu-cuoc-8xbet
+mitomtvn.cc##.menu-top-nha-cai
 mn.mediastation.live##.btn-bottom-right-append-player
 mn.mediastation.live##.images-bnr-bellow-append-custom
 mn.mediastation.live##.images-top-pl
 monkeyd.com.vn###affLayer
 monkeyd.com.vn##.justify-content-center.d-flex.mx-3.mx-lg-4.mt-3 > [href]
-motchill10.com##.ads-embed
 motchillfa.com###mobile_content_top
 motchillfa.com###p-GMH
 motchillfa.com,www.phimdinhcao.online##.banner-container
@@ -1317,7 +1314,7 @@ z1000.thapcam53.net##.grid-match__footer>a.btn:nth-child(3)
 z1000.thapcam53.net##.mct_-bet-bot
 z1000.thapcam53.net##.mmo-inner
 z1000.thapcam53.net##a[href^="/go"]
-z1000.thapcam53.net,xoilaczz63.live,vebozy.cc,mitomtvn.cc,rakhoivz.cc##.btn-odds
+z1000.thapcam53.net,xoilaczz63.live,vebozy.cc,rakhoivz.cc##.btn-odds
 zcine.net##winbox-1
 znews.vn###Zingnews_SiteHeader
 znews.vn##.znews-banner
@@ -1452,7 +1449,6 @@ javtiful.com##.v3sb-box
 javtopxx.com##.cat-fish.a-play
 javtopxx.com##.overlay
 khosex.blog,quat69.pro,trangsexdam.net##.w1e48c4420b7073bc11916c6c1de226bb
-luscious.net###l-center-txt
 lxmanga.cloud##.ads-wrapper
 nangcuc.tel##.active.bg-overlay
 nangcuc.tel##.popup-banner
@@ -1618,7 +1614,6 @@ linkneverdie.net,linkneverdie.top,linkneverdie2.com#%#//scriptlet("prevent-setTi
 linkneverdie.net,linkneverdie.top,linkneverdie2.com#%#//scriptlet("prevent-setTimeout", "callback", "6004")
 lrepacks.net#%#//scriptlet("abort-current-inline-script", "JSON.parse", "break;case $.")
 lxmanga.cloud#%#//scriptlet("abort-current-inline-script", "$", "PopUnder")
-mephim.ink#%#//scriptlet("json-prune", "0.time_mobile 0.time 0.link_video 0.link_video_mobile 0.link 0.link_mobile 1.time_mobile 1.time 1.link_video 1.link_video_mobile 1.link 1.link_mobile")
 mupnungvl.pro#%#//scriptlet("abort-on-property-read", "Cookies")
 mv.phimmoiaz.cc,dood.pm,ytstv.me,anime1.site,anh.moe,maclife.io,xemphimjav.com,hoctot.hocmai.vn,cdn2.blueskychilling.online,ohaha79xxx.site,herotruyen.com,truyenfull.vision,player.phimapi.com,noitu.pro#%#//scriptlet("abort-on-property-read", "open")
 noitu.pro#%#//scriptlet("abort-on-property-read", "runAd")
