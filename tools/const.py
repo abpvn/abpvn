@@ -21,7 +21,7 @@ class Const():
         'doubleclick.net', 'github.io', 'herokuapp.com', 'zing.vn', 'com.vn',
         'net.vn', 'edu.vn', 'googlesyndication.com', 'gov.vn', 'nct.vn', 'org.vn',
         'phukienthoitranggiare.com', 'cloudfront.net', 'admarketplace.net', 'www5.cbox.ws',
-        'web1s.asia', 'vinaurl.net', 'ezodn.com', 'adocean.pl', 'i.postimg.cc', 'mannhan92.xyz', 'api.anime3s.com'
+        'web1s.asia', 'vinaurl.net', 'ezodn.com', 'adocean.pl', 'i.postimg.cc', 'mannhan95.xyz', 'api.anime3s.com'
     ]
     REDIRECT_REJECT_TARGET_DOMAIN = [
         'www.google.com', 'www.facebook.com', 'www.advertising.yahooinc.com', 'marketingplatform.google.com',
