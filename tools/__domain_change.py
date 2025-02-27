@@ -41,7 +41,7 @@ class DomainCheck(threading.Thread):
             request_url = "http://" + domain
             res = requests.head(url=request_url, headers={
                 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36 Edg/120.0.0.0'
-            }, allow_redirects=True, timeout=5)
+            }, allow_redirects=True)
             if Const.DEBUG:
                 print(f"[DEBUG]: Requested to domain {domain} with response url {res.url}")
             if domain not in res.url:
