@@ -1,11 +1,11 @@
-diff name:abpvn lines:317 checksum:416dff8d04
+diff name:abpvn lines:326 checksum:11e4248d8b
 d2 1
 a2 1
-! Version: 20250227132825330
+! Version: 20250227135319636
 d5 2
 a6 2
-! Last modified: 27 Feb 2025 13:28:25 UTC+7
-! Diff-Path: patches/20250227132825330.patch#abpvn
+! Last modified: 27 Feb 2025 13:53:19 UTC+7
+! Diff-Path: patches/20250227135319636.patch#abpvn
 d21 1
 a21 1
 $popup,domain=player-cdn.com|freeplayervideo.com|abysscdn.com|playhydrax.com
@@ -18,6 +18,8 @@ a52 1
 d77 1
 a77 1
 ||anime2.site^*.gif
+a78 1
+||animevietsub.one/ads/popup.js$script
 d82 1
 a82 1
 ||api.anime3s.com^*.gif$image,domain=hayhaytv.site|anime2.site
@@ -48,7 +50,7 @@ a145 1
 ||imagedelivery.net^$image,domain=motphimchillv.net
 d154 1
 a154 1
-||lh3.googleusercontent.com/*=s0$image,domain=animevietsub.bio|hoathinh4k3.net
+||lh3.googleusercontent.com/*=s0$image,domain=animevietsub.bio|hoathinh4k3.net|animevietsub.one
 d158 1
 a158 1
 ||mediastation.live^*.gif$image,domain=mn.mediastation.live|home1.mannhan22.pro|mannhan95.xyz
@@ -94,9 +96,14 @@ anime2.site##.gnartyx-offads
 anime2.site,animetvn4.com,subnhanh1.org###fbox-background
 anime47.buzz###qc_clgt
 anime47.buzz###swiper-wrapper
-d415 1
-a415 1
+d415 6
+a420 6
 animetvn4.com##.gnarty-offads
+animevietsub.one,animevietsub.bio###invideo_wrapper
+animevietsub.one,animevietsub.bio##.Ads
+animevietsub.one,animevietsub.bio##.mobile-catfish-top
+animevietsub.one,animevietsub.bio##.mobile-catfixx
+animevietsub.one,animevietsub.bio##.pc-catfixx
 d422 1
 d440 2
 a441 2
@@ -250,6 +257,8 @@ d1165 2
 a1166 2
 ||i.imgur.com^$image,domain=phym18.lol|phim18hd.cam|fullcliphot.com|nettruyentranh.pro|xamvn.media
 ||i2.vlstorage.com/da88_1080p.mp4$domain=phevkl.vin|viet69.digital,rewrite=abp-resource:blank-mp3
+a1170 1
+||imgcdn.henho24h.net/images/$image,domain=phimxxx.ai
 d1176 1
 a1178 1
 ||nunglonvl.pro^*.gif$image,domain=nunglonvl.pro
@@ -316,14 +325,14 @@ vlxx.bot,nunglonvl.pro,sexhihiz.bz##.catfish-top
 d1323 1
 a1323 1
 xemsex.ai,nunglonvl.pro,sexhihiz.bz##.xx-ads
-diff name:abpvn_adguard lines:362 checksum:183d3820ef
+diff name:abpvn_adguard lines:371 checksum:3cceab4ea4
 d2 1
 a2 1
-! Version: 20250227132825330
+! Version: 20250227135319636
 d5 2
 a6 2
-! Last modified: 27 Feb 2025 13:28:25 UTC+7
-! Diff-Path: patches/20250227132825330.patch#abpvn_adguard
+! Last modified: 27 Feb 2025 13:53:19 UTC+7
+! Diff-Path: patches/20250227135319636.patch#abpvn_adguard
 d45 1
 a45 1
 /i.imgur.com/*.gif$domain=keonhacai55.chat|motchillfa.com|www.phimdinhcao.online|xoilacxj.cc|vebozy.cc|cakhiacc.cc|listnhacai88.com|xoilaczz63.live|xemtivingon.org|mitomtvn.cc|rakhoivz.cc|plcdn.xyz|phimmoi.ing|motphimww.biz
@@ -333,6 +342,8 @@ a50 1
 d75 1
 a75 1
 ||anime2.site^*.gif
+a76 1
+||animevietsub.one/ads/popup.js$script
 d80 1
 a80 1
 ||api.anime3s.com^*.gif$image,domain=hayhaytv.site|anime2.site
@@ -363,7 +374,7 @@ a143 1
 ||imagedelivery.net^$image,domain=motphimchillv.net
 d152 1
 a152 1
-||lh3.googleusercontent.com/*=s0$image,domain=animevietsub.bio|hoathinh4k3.net
+||lh3.googleusercontent.com/*=s0$image,domain=animevietsub.bio|hoathinh4k3.net|animevietsub.one
 d156 1
 a156 1
 ||mediastation.live^*.gif$image,domain=mn.mediastation.live|home1.mannhan22.pro|mannhan95.xyz
@@ -409,9 +420,14 @@ anime2.site##.gnartyx-offads
 anime2.site,animetvn4.com,subnhanh1.org###fbox-background
 anime47.buzz###qc_clgt
 anime47.buzz###swiper-wrapper
-d411 1
-a411 1
+d411 6
+a416 6
 animetvn4.com##.gnarty-offads
+animevietsub.one,animevietsub.bio###invideo_wrapper
+animevietsub.one,animevietsub.bio##.Ads
+animevietsub.one,animevietsub.bio##.mobile-catfish-top
+animevietsub.one,animevietsub.bio##.mobile-catfixx
+animevietsub.one,animevietsub.bio##.pc-catfixx
 d418 1
 d436 2
 a437 2
@@ -565,6 +581,8 @@ d1159 2
 a1160 2
 ||i.imgur.com^$image,domain=phym18.lol|phim18hd.cam|fullcliphot.com|nettruyentranh.pro|xamvn.media
 ||i2.vlstorage.com/da88_1080p.mp4$domain=phevkl.vin|viet69.digital,rewrite=abp-resource:blank-mp3
+a1164 1
+||imgcdn.henho24h.net/images/$image,domain=phimxxx.ai
 d1170 1
 a1172 1
 ||nunglonvl.pro^*.gif$image,domain=nunglonvl.pro
@@ -652,7 +670,7 @@ a1372 1
 nunglonvl.pro#%#//scriptlet("abort-on-property-read", "Cookies")
 d1375 1
 a1375 1
-phimgichill.net,hh3dhay.life,tram3d.me,animevietsub.bio##%#//scriptlet("abort-current-inline-script", "eval", "$._Eu")
+phimgichill.net,hh3dhay.life,tram3d.me,animevietsub.one,animevietsub.bio##%#//scriptlet("abort-current-inline-script", "eval", "$._Eu")
 d1393 1
 a1393 1
 thempho.me##div.ReactModalPortal
@@ -679,14 +697,14 @@ www.toptruyentv.pro#%#//scriptlet("abort-current-inline-script", "setTimeout", "
 d1434 1
 a1434 1
 z1000.thapcam53.net,hhpanda.dev,thempho.me#$#html {overflow: auto!important;}
-diff name:abpvn_content_blocker lines:317 checksum:e9d9aa49ff
+diff name:abpvn_content_blocker lines:326 checksum:20490c3cdb
 d2 1
 a2 1
-! Version: 20250227132825330
+! Version: 20250227135319636
 d5 2
 a6 2
-! Last modified: 27 Feb 2025 13:28:25 UTC+7
-! Diff-Path: patches/20250227132825330.patch#abpvn_content_blocker
+! Last modified: 27 Feb 2025 13:53:19 UTC+7
+! Diff-Path: patches/20250227135319636.patch#abpvn_content_blocker
 d21 1
 a21 1
 $popup,domain=player-cdn.com|freeplayervideo.com|abysscdn.com|playhydrax.com
@@ -699,6 +717,8 @@ a52 1
 d77 1
 a77 1
 ||anime2.site^*.gif
+a78 1
+||animevietsub.one/ads/popup.js$script
 d82 1
 a82 1
 ||api.anime3s.com^*.gif$image,domain=hayhaytv.site|anime2.site
@@ -729,7 +749,7 @@ a145 1
 ||imagedelivery.net^$image,domain=motphimchillv.net
 d154 1
 a154 1
-||lh3.googleusercontent.com/*=s0$image,domain=animevietsub.bio|hoathinh4k3.net
+||lh3.googleusercontent.com/*=s0$image,domain=animevietsub.bio|hoathinh4k3.net|animevietsub.one
 d158 1
 a158 1
 ||mediastation.live^*.gif$image,domain=mn.mediastation.live|home1.mannhan22.pro|mannhan95.xyz
@@ -775,9 +795,14 @@ anime2.site##.gnartyx-offads
 anime2.site,animetvn4.com,subnhanh1.org###fbox-background
 anime47.buzz###qc_clgt
 anime47.buzz###swiper-wrapper
-d415 1
-a415 1
+d415 6
+a420 6
 animetvn4.com##.gnarty-offads
+animevietsub.one,animevietsub.bio###invideo_wrapper
+animevietsub.one,animevietsub.bio##.Ads
+animevietsub.one,animevietsub.bio##.mobile-catfish-top
+animevietsub.one,animevietsub.bio##.mobile-catfixx
+animevietsub.one,animevietsub.bio##.pc-catfixx
 d422 1
 d440 2
 a441 2
@@ -931,6 +956,8 @@ d1165 2
 a1166 2
 ||i.imgur.com^$image,domain=phym18.lol|phim18hd.cam|fullcliphot.com|nettruyentranh.pro|xamvn.media
 ||i2.vlstorage.com/da88_1080p.mp4$domain=phevkl.vin|viet69.digital,rewrite=abp-resource:blank-mp3
+a1170 1
+||imgcdn.henho24h.net/images/$image,domain=phimxxx.ai
 d1176 1
 a1178 1
 ||nunglonvl.pro^*.gif$image,domain=nunglonvl.pro
@@ -997,14 +1024,14 @@ vlxx.bot,nunglonvl.pro,sexhihiz.bz##.catfish-top
 d1323 1
 a1323 1
 xemsex.ai,nunglonvl.pro,sexhihiz.bz##.xx-ads
-diff name:abpvn_noelemhide lines:118 checksum:325c8b0ef7
+diff name:abpvn_noelemhide lines:122 checksum:fa9800d510
 d2 1
 a2 1
-! Version: 20250227132825330
+! Version: 20250227135319636
 d5 2
 a6 2
-! Last modified: 27 Feb 2025 13:28:25 UTC+7
-! Diff-Path: patches/20250227132825330.patch#abpvn_noelemhide
+! Last modified: 27 Feb 2025 13:53:19 UTC+7
+! Diff-Path: patches/20250227135319636.patch#abpvn_noelemhide
 d21 1
 a21 1
 $popup,domain=player-cdn.com|freeplayervideo.com|abysscdn.com|playhydrax.com
@@ -1017,6 +1044,8 @@ a52 1
 d77 1
 a77 1
 ||anime2.site^*.gif
+a78 1
+||animevietsub.one/ads/popup.js$script
 d82 1
 a82 1
 ||api.anime3s.com^*.gif$image,domain=hayhaytv.site|anime2.site
@@ -1047,7 +1076,7 @@ a145 1
 ||imagedelivery.net^$image,domain=motphimchillv.net
 d154 1
 a154 1
-||lh3.googleusercontent.com/*=s0$image,domain=animevietsub.bio|hoathinh4k3.net
+||lh3.googleusercontent.com/*=s0$image,domain=animevietsub.bio|hoathinh4k3.net|animevietsub.one
 d158 1
 a158 1
 ||mediastation.live^*.gif$image,domain=mn.mediastation.live|home1.mannhan22.pro|mannhan95.xyz
@@ -1102,6 +1131,8 @@ d407 2
 a408 2
 ||i.imgur.com^$image,domain=phym18.lol|phim18hd.cam|fullcliphot.com|nettruyentranh.pro|xamvn.media
 ||i2.vlstorage.com/da88_1080p.mp4$domain=phevkl.vin|viet69.digital,rewrite=abp-resource:blank-mp3
+a412 1
+||imgcdn.henho24h.net/images/$image,domain=phimxxx.ai
 d418 1
 a420 1
 ||nunglonvl.pro^*.gif$image,domain=nunglonvl.pro
@@ -1116,14 +1147,14 @@ a437 3
 ||static.stream68.cloud/candy/image/*.gif$image,domain=thempho.me
 ||static.stream68.cloud/candy/image/1280X274$image,domain=thempho.me
 ||static.stream68.cloud/candy/video/$domain=thempho.me
-diff name:abpvn_ublock lines:362 checksum:5db0242680
+diff name:abpvn_ublock lines:371 checksum:82ef668842
 d2 1
 a2 1
-! Version: 20250227132825330
+! Version: 20250227135319636
 d5 2
 a6 2
-! Last modified: 27 Feb 2025 13:28:25 UTC+7
-! Diff-Path: patches/20250227132825330.patch#abpvn_ublock
+! Last modified: 27 Feb 2025 13:53:19 UTC+7
+! Diff-Path: patches/20250227135319636.patch#abpvn_ublock
 d45 1
 a45 1
 /i.imgur.com/*.gif$domain=keonhacai55.chat|motchillfa.com|www.phimdinhcao.online|xoilacxj.cc|vebozy.cc|cakhiacc.cc|listnhacai88.com|xoilaczz63.live|xemtivingon.org|mitomtvn.cc|rakhoivz.cc|plcdn.xyz|phimmoi.ing|motphimww.biz
@@ -1133,6 +1164,8 @@ a50 1
 d75 1
 a75 1
 ||anime2.site^*.gif
+a76 1
+||animevietsub.one/ads/popup.js$script
 d80 1
 a80 1
 ||api.anime3s.com^*.gif$image,domain=hayhaytv.site|anime2.site
@@ -1163,7 +1196,7 @@ a143 1
 ||imagedelivery.net^$image,domain=motphimchillv.net
 d152 1
 a152 1
-||lh3.googleusercontent.com/*=s0$image,domain=animevietsub.bio|hoathinh4k3.net
+||lh3.googleusercontent.com/*=s0$image,domain=animevietsub.bio|hoathinh4k3.net|animevietsub.one
 d156 1
 a156 1
 ||mediastation.live^*.gif$image,domain=mn.mediastation.live|home1.mannhan22.pro|mannhan95.xyz
@@ -1209,9 +1242,14 @@ anime2.site##.gnartyx-offads
 anime2.site,animetvn4.com,subnhanh1.org###fbox-background
 anime47.buzz###qc_clgt
 anime47.buzz###swiper-wrapper
-d411 1
-a411 1
+d411 6
+a416 6
 animetvn4.com##.gnarty-offads
+animevietsub.one,animevietsub.bio###invideo_wrapper
+animevietsub.one,animevietsub.bio##.Ads
+animevietsub.one,animevietsub.bio##.mobile-catfish-top
+animevietsub.one,animevietsub.bio##.mobile-catfixx
+animevietsub.one,animevietsub.bio##.pc-catfixx
 d418 1
 d436 2
 a437 2
@@ -1365,6 +1403,8 @@ d1158 2
 a1159 2
 ||i.imgur.com^$image,domain=phym18.lol|phim18hd.cam|fullcliphot.com|nettruyentranh.pro|xamvn.media
 ||i2.vlstorage.com/da88_1080p.mp4$domain=phevkl.vin|viet69.digital,rewrite=abp-resource:blank-mp3
+a1163 1
+||imgcdn.henho24h.net/images/$image,domain=phimxxx.ai
 d1169 1
 a1171 1
 ||nunglonvl.pro^*.gif$image,domain=nunglonvl.pro
@@ -1452,7 +1492,7 @@ a1371 1
 nunglonvl.pro##+js(aopr, Cookies)
 d1374 1
 a1374 1
-phimgichill.net,hh3dhay.life,tram3d.me,animevietsub.bio##+js(acs, eval, $._Eu)
+phimgichill.net,hh3dhay.life,tram3d.me,animevietsub.one,animevietsub.bio##+js(acs, eval, $._Eu)
 d1393 1
 a1393 1
 thempho.me##div.ReactModalPortal
