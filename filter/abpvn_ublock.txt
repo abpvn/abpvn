@@ -1,9 +1,9 @@
 [Adblock Plus 2.0]
-! Version: 20250311120535437
+! Version: 20250311150712163
 ! id: D4028CDD-3D39-4624-ACC7-8140F4EC3888
 ! Title: ABPVN List
-! Last modified: 11 Mar 2025 12:05:35 UTC+7
-! Diff-Path: patches/20250311120535437.patch#abpvn_ublock
+! Last modified: 11 Mar 2025 15:07:12 UTC+7
+! Diff-Path: patches/20250311150712163.patch#abpvn_ublock
 ! Diff-Expires: 60 minutes
 ! Expires: 1 days (update frequency)
 !
@@ -42,7 +42,7 @@
 /core/*$script,domain=gamek.vn|genk.vn|kenh14.vn|cafef.vn|thanhnien.vn
 /disable-devtool.min.js$script
 /giadinhonline.vn/files/qc/*
-/i.imgur.com/*.gif$domain=keonhacai55.chat|motchill99.com|www.phimdinhcao.online|xoilacxj.cc|vebozy.cc|cakhiavk.cc|listnhacai88.com|xoilaczz63.live|xemtivingon.org|mitomtvu.cc|djdekker.net|plcdn.xyz|phimmoi.ing|motphimww.biz
+/i.imgur.com/*.gif$domain=keonhacai55.chat|motchill99.com|www.phimdinhcao.online|xoilacxj.cc|vebozy.cc|cakhiavk.cc|listnhacai88.com|xoilaczz63.live|xemtivingon.org|mitomtvu.cc|djdekker.net|plcdn.xyz|phimmoi.ing
 /js/ads.js$script,~third-party,domain=~vipurl.in
 /mmo/*$xmlhttprequest,image,domain=vuighe4.com
 /newchill/*gif$image
@@ -155,6 +155,7 @@
 ||motchill10.com/public/upload/ads/ads.js$script,~third-party
 ||motchill99.com/3s.m3u8$rewrite=abp-resource:blank-mp3,domain=motchill99.com
 ||motchillac.net/banner$image
+||motphimtv.zip^*.gif$image
 ||mplmncb.com/banners-web$image,domain=truyenqqto.com
 ||mplmncb.com/popup/$script,domain=truyenqqto.com
 ||msdigital.vn/ads$subdocument
@@ -162,6 +163,7 @@
 ||nettruyenvie.com/assets/js/pop$script
 ||newoneinoldoneout.pro/banners-web/$image,domain=nettruyenrr.com|nettruyenvie.com
 ||newoneinoldoneout.pro/popup$script,domain=nettruyenrr.com|nettruyenvie.com
+||newoneinoldoneout.pro/zrlosadr.js$script,domain=nettruyenrr.com
 ||nhadatvang.vn/images/$domain=muabanraovat.com
 ||nhipcaudautu.vn/*gafin$script
 ||nhipcaudautu.vn/Media/*.gif
@@ -422,7 +424,7 @@ blogkiienthuc.net##.textwidget
 bluphim2.com###ads-1xbet-catfish
 bluphim2.com###popup-1720497466
 bluphim2.com##.container>div[style^="height: 228px"]
-boctem.com,movies.vkoolz.com,247phim.cc,vungtv.us,www.phimmoi05.net,tvhay26.com,www.phimmoichilla.xyz,hayhaytv.cc,yanhh3d.vip,www.ssphim.us###popup-giua-man-hinh
+boctem.com,247phim.cc,vungtv.us,www.phimmoi05.net,tvhay26.com,www.phimmoichilla.xyz,hayhaytv.cc,yanhh3d.vip,www.ssphim.us###popup-giua-man-hinh
 bongda12h365.com##.list-dat-cuoc
 bongdaso66.net###right_float
 bongdaso66.net##[id$="float_banner"]
@@ -510,7 +512,7 @@ gocmod.com##center:has(.adsbygoogle)
 hayhaytv.site,subnhanh1.org##.sticky_bottom
 heovktgame.club##.toogle-ads
 hhanime3d.dev,hhpanda.dev,subnhanhvl.now###top_addd
-hhninja18.tv,phimhoathinh3d.vip,hoathinhtq.site,hhtq8.vip,hhtqvietsub.me,motchillac.net,hhtutien.tv,animeweb.vip,hoathinh4k3.top,motchilltvzz.biz,animehay.loan,motphimtv.zip,hhh3d.tv,hhtq3d.net,wibu47.com,yanhh3d.vip,hhvsub1.com,phimdacap.tv,motchiill.sh###catfish
+hhninja18.tv,phimhoathinh3d.vip,hoathinhtq.site,hhtq8.vip,hhtqvietsub.me,motchillac.net,hhtutien.tv,animeweb.vip,hoathinh4k3.top,animehay.loan,hhh3d.tv,hhtq3d.net,wibu47.com,yanhh3d.vip,hhvsub1.com,phimdacap.tv,motchiill.sh###catfish
 hhpanda.dev##.btn-fanpage.btn-default.btn-block.btn
 hhtqvietsub.me###top-banner-pc
 hhtqvietsub.me,animehay.loan###sponsor-balloon
@@ -601,8 +603,6 @@ mn.mediastation.live##.images-bnr-bellow-append-custom
 mn.mediastation.live##.images-top-pl
 monkeyd.com.vn###affLayer
 monkeyd.com.vn##.justify-content-center.d-flex.mx-3.mx-lg-4.mt-3 > [href]
-motchill99.com###mobile_content_top
-motchill99.com###p-GMH
 motchill99.com,www.phimdinhcao.online##.banner-container
 motchill99.com,www.phimdinhcao.online##.banner-preload
 motchill99.com,www.phimdinhcao.online##.catfish-top
@@ -613,10 +613,6 @@ muabanraovat.com##[class^="box_adv_ele"]
 muare.vn##.admicro_top
 myeva.vn###adop_bfd
 myeva.vn##ins[class*="adsby"]
-nettruyenrr.com###_pop-nettruyenww-15
-nettruyenrr.com###catfish-content
-nettruyenrr.com###pop_nettruyenww
-nettruyenvie.com###pop_nettruyenviet
 nettruyenx.com###_pop-nettruyenx-13
 nhaccuatui.com###banner-qc_outstream
 nhaccuatui.com##.adv_home_300_250
@@ -914,7 +910,7 @@ www.clbgamesvn.com##.footerBanner
 www.clbgamesvn.com##center>[href*="tlink.vn"]
 www.iosviet.com##[href^="https://shope.ee"]
 www.mp.com###mp-adx-b32
-www.mp.com,movies.vkoolz.com,subnhanh1.org,motchilltvzz.biz,hayhaytv.site##.mp-adz
+www.mp.com,subnhanh1.org,hayhaytv.site,motphimtv.zip##.mp-adz
 www.o-study.net###IMAGE635>.ladi-transition.ladi-image
 www.o-study.net###IMAGE639>.ladi-transition.ladi-image
 www.o-study.net###POPUP648
@@ -1116,7 +1112,7 @@ $third-party,script,domain=sexdiaryx.live
 ||img.av3x.net/upload/av3x.net/banners/$domain=phimsexhay669.pro
 ||img.buomtv.vip/palivn/ad/$image,domain=www.buomtv.io
 ||img.congdongmassage.com/banner/$image,domain=congdongmassage.com
-||imgcdn.henho24h.net/images/$image,domain=phimxxx.ai
+||imgcdn.henho24h.net/images/$image,domain=phimxxx.site
 ||javtopxx.com^*.gif$image
 ||lxmanga.art/storage/images/banners
 ||mangadm.cc$csp=script-src 'self' 'unsafe-inline' http
@@ -1321,7 +1317,7 @@ phimgichill.net##+js(acs, jQuery, popurl)
 phimgichill.net,hh3dhay.life,tram3d.me,animevietsub.one##+js(acs, eval, $._Eu)
 phimmoi.rip##body:remove-attr(data-pop1)
 phimmoi.rip##body:remove-attr(data-pop2)
-phimmoi.sale,motphimww.biz##+js(acs, addEvent, popu)
+phimmoi.sale##+js(acs, addEvent, popu)
 phimmoinay.top##+js(acs, jQuery, click_time)
 phimsexviet.io,phimsexvietnam.app,gm.phimsexnhanh.tv,clipsex.cam,ww1.ditnhau.cc##+js(set, video.adVast, '')
 phimsexvietnam.co##+js(acs, $, open)
