@@ -25,7 +25,7 @@ class Const():
     ]
     REDIRECT_REJECT_TARGET_DOMAIN = [
         'www.google.com', 'www.facebook.com', 'www.advertising.yahooinc.com', 'marketingplatform.google.com',
-        'imgbb.com', 'blueseeddigital.com', 'www.criteo.com', 'github.com', 'speedcdnjs.com'
+        'imgbb.com', 'blueseeddigital.com', 'www.criteo.com', 'github.com', 'speedcdnjs.com', 'www.cloudflare-terms-of-service-abuse.com'
     ]
     REDIRECT_SKIP_SUB_TO_DOMAIN = True
     FILE_REGEX = r"\|\|([^*\n]+\.(js|png|webp|jpg|jpeg|mp4|gif))([\n\$])"
