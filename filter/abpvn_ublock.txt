@@ -1,9 +1,9 @@
 [Adblock Plus 2.0]
-! Version: 20250321122626844
+! Version: 20250321150646717
 ! id: D4028CDD-3D39-4624-ACC7-8140F4EC3888
 ! Title: ABPVN List
-! Last modified: 21 Mar 2025 12:26:26 UTC+7
-! Diff-Path: patches/20250321122626844.patch#abpvn_ublock
+! Last modified: 21 Mar 2025 15:06:46 UTC+7
+! Diff-Path: patches/20250321150646717.patch#abpvn_ublock
 ! Diff-Expires: 60 minutes
 ! Expires: 1 days (update frequency)
 !
@@ -110,6 +110,7 @@
 ||fshare.vn/lib/jwplayer/jwplayer.js
 ||fun6668.com/Banner/$domain=mythethao.net
 ||fundingchoicesmessages.google.com^$third-party
+||ghienphim.blog^*.gif$image,domain=xemphimviet.xyz
 ||ghienphim.show/client_assets/js/minijumb.js
 ||ghienphim.show^*.gif$image
 ||ght.kernh41.com^$script,third-party
@@ -237,7 +238,6 @@
 ||ungtycomicsnay.com$csp=script-src self * data:* 'unsafe-inline'
 ||uniad.$third-party
 ||upanh.vn-z.vn/images/2024/05/20/Ban-sao-Deskin-banner-1.jpeg$image,domain=vn-z.vn
-||v.xemphimviet.xyz/client_assets/js/minijumb.js$script,~third-party
 ||vesotantai.com/upload/photo/$image
 ||vidian.online/images/*.gif
 ||vietjack.com/FrontEndWeb/js/sp.js$script
@@ -255,6 +255,9 @@
 ||xahoingaynay.com.vn/upload/$image
 ||xc.1357668.com^*.gif$domain=live.7mvn4.com
 ||xem15.com/_next/image?url=%2Fpopup1.jpg&w=*&q=75$image
+||xemphimviet.xyz/client_assets/js/dataview/adsview.js$script,~third-party
+||xemphimviet.xyz/client_assets/js/minijumb.js$script,~third-party
+||xemphimviet.xyz^*.gif$image
 ||xmedia.antt.vn/upload/*.gif$image,domain=antt.vn
 ||xxoilac.com^*.gif$image
 ||zcine.net^*.gif$image
@@ -431,7 +434,7 @@ cakhiavv.cc,vebozy.cc##.align-items-center.justify-content-between.d-flex.col-12
 cakhiavv.cc,xoilacxj.cc##.sub-menu.d-none.d-lg-flex
 cakhiavv.cc,xoilacxj.cc,vebozy.cc###quangcaopc
 cakhiavv.cc,xoilacxj.cc,vebozy.cc##.marquee-container
-cakhiavv.cc,xoilacxj.cc,vebozy.cc,xoilaczz63.live,tv.tvhayhd.org,paulwesterberg.com,xoilaczvx.cc###wap_bottombanner
+cakhiavv.cc,xoilacxj.cc,vebozy.cc,xoilaczz63.live,paulwesterberg.com,xoilaczvx.cc###wap_bottombanner
 chap.vn##.my_responsive_add
 chap.vn##.titleBar + *
 chap.vn##[class1="my_responsive_add"]
@@ -537,7 +540,7 @@ khiphach.net###qc-kpgame
 kickass.sx##.dssdffds
 kickass.sx##.novertpad.clearleft.downloadButtonGroup.buttonsline
 kienthuc.net.vn##.sponsor-zone
-kienthuc.net.vn,saostar.vn,bongda24h.vn,cungthi.online,appvn.com,antt.vn,v.xemphimviet.xyz,ghienphim.show,nghenhinvietnam.vn,vivuphim.info,vn-z.vn##.ads
+kienthuc.net.vn,saostar.vn,bongda24h.vn,cungthi.online,appvn.com,antt.vn,xemphimviet.xyz,ghienphim.show,nghenhinvietnam.vn,vivuphim.info,vn-z.vn##.ads
 kinhtedothi.vn##.top-banner-mobile
 lazi.vn##.quang_cao_pc_right_hoc_tap
 lichngaytot.com##.advbox
@@ -708,7 +711,7 @@ tintucvietnam.vn##.mobilejszone
 toithuthuat.com##.box
 toithuthuat.com##.pum
 topthuthuat.com,canhrau.com##.widget.widget_text
-toquoc.vn,baoxaydung.com.vn,tienphong.vn,taichinhdoanhnghiep.net.vn,thichxemphim1.net,v.xemphimviet.xyz,ghienphim.show,nettruyenrr.com##.banner
+toquoc.vn,baoxaydung.com.vn,tienphong.vn,taichinhdoanhnghiep.net.vn,thichxemphim1.net,xemphimviet.xyz,ghienphim.show,nettruyenrr.com##.banner
 tracnghiem.net##.sbAdv
 tram3d.vip##div.text-center:nth-of-type(2)
 truyenaudiocv.org##.js-editors-choice-slider.editors-choice-slider>.adsbygoogle
@@ -730,16 +733,10 @@ tuoitre.vn##.box-qad
 tuoitre.vn##.content-amuasam
 tuoitre.vn##.section__r-vietlot
 tv.tvhayhd.org##.navbar-ex8-collapse
-tvhaiss.com##.ai-viewport-1
 tvhayr.org##.catfish-bottom
 tvhayr.org##[src^="https://ads.starzd.com/"]
 tvzinghd.pro##.sda-preload-popup
 tvzinghd.pro##.sda-preload-popup-overlay
-v.xemphimviet.xyz##li.special.parent
-v.xemphimviet.xyz,ghienphim.show##.ad-floater
-v.xemphimviet.xyz,ghienphim.show##.popunder-link
-v.xemphimviet.xyz,ghienphim.show##.promotion-popup
-v.xemphimviet.xyz,ghienphim.show##.video-ad-layer
 v4u.vn##.Flagrow-Ads-under-header
 vaoroi14.live##.ads-menu-item
 vaoroi14.live##.dcmm-button-player-item
@@ -880,6 +877,11 @@ xem.thapcamtv.live,xx2.thapcam53.info,nn13.thapcam.asia,thapcamtvz.net,vv13.thap
 xem.tructiepnba.me##.truct-catfish
 xem.tructiepnba.me##.truct-widget
 xem15.com###ouibounce-modal
+xemphimviet.xyz##li.special.parent
+xemphimviet.xyz,ghienphim.show##.ad-floater
+xemphimviet.xyz,ghienphim.show##.popunder-link
+xemphimviet.xyz,ghienphim.show##.promotion-popup
+xemphimviet.xyz,ghienphim.show##.video-ad-layer
 xemtivi4k.com###adstop2
 xemtivi4k.com##.col-lg-4.hidden-xs.d-flex.flex-column.address-wrap
 xemtivi4k.com##.float-right
