@@ -1,9 +1,9 @@
 [Adblock Plus 2.0]
-! Version: 20250326103521214
+! Version: 20250326150707327
 ! id: D4028CDD-3D39-4624-ACC7-8140F4EC3888
 ! Title: ABPVN List
-! Last modified: 26 Mar 2025 10:35:21 UTC+7
-! Diff-Path: patches/20250326103521214.patch#abpvn_ublock
+! Last modified: 26 Mar 2025 15:07:07 UTC+7
+! Diff-Path: patches/20250326150707327.patch#abpvn_ublock
 ! Diff-Expires: 60 minutes
 ! Expires: 1 days (update frequency)
 !
@@ -195,7 +195,7 @@
 ||raovat.tuoitre.vn^$domain=tuoitre.vn
 ||raovatdidong.vn/images/$domain=muabanraovat.com
 ||s1.truyentranh3q.com^*.gif$image
-||s2.phim1280.tv/adjump$domain=yeuphim.mom
+||s2.phim1280.tv/adjump$domain=yeuphim.de
 ||s2.truyentot.com^*.gif$image,domain=hhtq10.vip|hhtq3d.net|hhtq5.vip|hhvsub1.com
 ||server.zmedia.vn/static/$script
 ||sggp.org.vn/*banner
@@ -1525,6 +1525,6 @@ www.saostar.vn##header.bg-white:style(margin-top: 0px !important)
 www.toptruyentv3.pro##+js(acs, setTimeout, open)
 xnxx-sex-videos.com##+js(acs, setTimeout, window.location)
 xnxx-sex-videos.com##+js(ra, target|onclick, a[href^="/video/"])
-yeuphim.mom##+js(m3u-prune, /#EXT-X-DISCONTINUITY(.|\n){1\,1000}#EXT-X-DISCONTINUITY/gm, index.m3u8)
+yeuphim.de##+js(m3u-prune, /#EXT-X-DISCONTINUITY(.|\n){1\,1000}#EXT-X-DISCONTINUITY/gm, index.m3u8)
 yts.do,yts.mx,yts.rs##+js(aopr, window.aclib)
 znews.vn##+js(aopr, adtimaConfig)
