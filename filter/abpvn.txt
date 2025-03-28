@@ -1,9 +1,9 @@
 [Adblock Plus 2.0]
-! Version: 20250328093141770
+! Version: 20250328150705482
 ! id: D4028CDD-3D39-4624-ACC7-8140F4EC3888
 ! Title: ABPVN List
-! Last modified: 28 Mar 2025 09:31:41 UTC+7
-! Diff-Path: patches/20250328093141770.patch#abpvn
+! Last modified: 28 Mar 2025 15:07:05 UTC+7
+! Diff-Path: patches/20250328150705482.patch#abpvn
 ! Diff-Expires: 60 minutes
 ! Expires: 1 days (update frequency)
 !
@@ -74,13 +74,12 @@ $popup,domain=truyenfull.vision
 ||ads.nghenhinvietnam.vn^$domain=nghenhinvietnam.vn
 ||ahaphimz.com/js/pov.js$script
 ||anime4.site^*.gif
-||animevietsub.lol/ads/popup.js$script
+||animevietsub.lol/ads/$script
 ||animevietsubs.net/vast/$image
 ||animew.net/_next/image?url=https%3A%2F%2Flh3.googleusercontent.com$image
 ||animew.net/_next/image?url=https%3A%2F%2Fp21-ad-sg.ibyteimg.com$image
 ||api.anime3s.com^*.gif$image,domain=hayhaytv.site|anime4.site
 ||asecdn.w88media.com/VN/250x250-VN.gif$domain=mythethao.net
-||baohaugiang.com.vn/uploads/SlideHomeimg/
 ||baomoi.com$csp=script-src data: blob: * 'self' 'unsafe-inline'
 ||baonga.com/FileUpload/Images/*banner
 ||bf.333xbet.com^$media,third-party
@@ -88,19 +87,17 @@ $popup,domain=truyenfull.vision
 ||blog.abit.vn/wp-content/uploads/2020/05/abit_$image
 ||blogger.googleusercontent.com^$image,domain=hhninja20.tv|xem15.com|hhtm.site|hhh3d.tv|hoathinhtq.site|phimhaytv.biz|yanhh3d.vip|phimhoathinh3d.vip
 ||blvtap.com^*.gif$image,domain=phimmoinet.life
-||bonbanh.com/ad/
 ||bp.blogspot.com$image,domain=xemtivi4k.com
 ||bp.blogspot.com/*banner$image,domain=~aowvn.org|~www.umu.pro.vn
 ||cdn-data.gtvplus.vn/banners/$image,domain=gametv.vn
 ||cdn.lfastcdn.com^*.gif$image,domain=bongdainfox.tv|xoilaczzu.tv|rakhoivi.cc|cakhiavv.cc|mitomtvb.cc|xoilaczvx.cc|vaoroi14.live|veboxi.cc
-||cdn.monkeydarchive.com/images/banner/$image
+||cdn.monkeydarchive.com/images/banner/$image,domain=monkeyd.com.vn
 ||cdn.webhoctienganh.com/asset/home/img/banner/$image,domain=webhoctienganh.com
 ||chodansinh.net^*.gif
 ||chotlo3s.com^*gif
+||client.rigelink.com/delivery/$xmlhttprequest
 ||code.gunnymienphi.net^*.gif
 ||danketoan.com/banner/
-||daotruyen.me/static/media/omo-popup.051a651e9e72c4171ffc.png$image,~third-party
-||docnhanh.vn/images/ads/$image
 ||doctruyenchu.info/ads/$image
 ||dongchill.mom/ads/ads_xx.js$script,~third-party
 ||dongphim.baby/ads/ads_xx.js$script
@@ -197,8 +194,6 @@ $popup,domain=truyenfull.vision
 ||sharecode.vn/assets/images/thiet-ke-web-gia-re.jpg
 ||sharecode.vn/assets/images/thiet-ke-website.jpg
 ||shope.ee^$popup,domain=blogtruyenmoi.com|cunghocvui.com|truyensextv.com
-||shopee.vn^$popup,domain=apkmoddone.com
-||sognoansofou.net^$popup,domain=apkmoddone.phongroblox.com
 ||sohuutritue.net.vn/files/qc/
 ||static.cdnno.com/storage/topbox/*.webp$image,domain=metruyencv.com
 ||static.ybox.vn^*.gif$domain=ybox.vn
@@ -440,7 +435,7 @@ bc.xoilac5.lol,live4.xoilac34.org,xem.banhkhuc120.info##.btn-betnow
 bing.com##.b_algo:has(.rms_img[src*="/th?id=OADD2."][src$="21.2"])
 bing.com##.b_algo:has(.rms_img[src*="=AdsPlus"])
 biphim.mom###top_oddd
-biphim.mom,subnhanh.icu,subnhanhvl.baby,hhpanda.id##.underplayer_btn
+biphim.mom,subnhanh.icu,subnhanhvl.baby,hhpanda.id,dongphim.baby##.underplayer_btn
 blog.abit.vn##.button-dangkyngay
 blogkiienthuc.net##.textwidget
 bluphim3.com###ads-1xbet-catfish
@@ -486,14 +481,14 @@ dantri.com.vn###mobile-home-top-page
 dantri.com.vn##.ads-masthead
 danviet.vn##.bg-gray
 danviet.vn##.sidebar>div[style]
-daotruyen.me##.z-\[999\].fixed
 diadiem.com##.div_box_adv
+docnhanh.vn##div.ads-position
 doctruyenchu.info##.topbanner
 doctruyenln.com##.chapter-content .min-h-\[275px\]
 docviewer.yandex.com##.js-doc-html>div>div[id]
 doisongphapluat.com.vn,vtcnews.vn##.sys-ads
 domdomcomicsxyz.com##iframe[src*="ads"]
-dongphim.baby##a[rel="nofollow sponsored"]
+dongphim.baby##.btn-primary.btn
 dongphim.baby,dongchill.mom,bichill.mom,hongphim18.net,hhpanda.id,hhanime3d.dev,subnhanhvl.baby###footer_fixed_ads
 download.vn##div[id^="adsbg"]
 dubaotiente.pro##.ad-pin-right-bottom
@@ -674,7 +669,7 @@ soha.vn,gamek.vn##[id^="admzone"]
 sport5.vn,afamily.vn##.afw-topbanner
 subnhanh1.org##.t_logo
 subnhanh1.org,hayhaytv.site,motphimtv.im##.mp-adz
-subnhanhvl.baby,motchillid.me,subnhanh.icu,hhpanda.id###xs-addd0
+subnhanhvl.baby,motchillid.me,subnhanh.icu,hhpanda.id,dongphim.baby###xs-addd0
 subnhanhvl.baby,subnhanh.icu##.w-button.button_trailer
 survey-smiles.com##.toogle-ads
 tapchibitcoin.io##.header-fix-ads
@@ -893,14 +888,13 @@ znews.vn##.znews-banner
 @@||anime47.one/ads/v/8.26.9/jw
 @@||anime47.one/ads/v/8.26.9/translations
 @@||cdnjs.cloudflare.com/ajax/libs/videojs-contrib-ads/6.0.0/videojs-contrib-ads.js$script,domain=sctvonline.vn
-@@||contextual.media.net/dmedianet.js$domain=azrom.net
 @@||googleads.g.doubleclick.net/pagead/$domain=cungthi.online|romgoc.net
 @@||imasdk.googleapis.com^$script,xmlhttprequest,domain=vieon.vn|fptplay.vn|24h.com.vn|game24h.vn|sctvonline.vn|danet.vn|vtvgo.vn
 @@||jsc.adskeeper.co.uk^$script,domain=ios.codevn.net
 @@||media.nghean24h.vn/image_resize$image,domain=nghean24h.vn
 @@||media1.admicro.vn/cms/$script,domain=tuoitre.vn
 @@||on-web-cdn.gviet.vn/public/js/player/ads/ima3.js$script,domain=vtvcab.vn
-@@||pagead2.googlesyndication.com^$script,xmlhttprequest,image,domain=thuthuatmeovat.net|kites.vn|phuongtrinhhoahoc.com|letrongdai.vn|romgoc.net|traderviet.tv|sum.vn|truyenaudiocv.org|1shortlink.com|thelanb.com|cungthi.online|lehait.net|nhacsong.pro|kientruc360.info|giavang.net|vnjpclub.com|753x.blogspot.com|ngohoanganhtuan.com|ngohoanganhtuan.net|vungoctuan.vn|ichi.pro|gocmod.com|tromcap.com|dafontvn.com|www.gvnvh.net|sesenblog.com|filess.us|xaydungplus.com|nguonhd.net|anhdep24.com|windowslite.net|tiengnhatdongian.com|quangcaoyenbai.com|ios.codevn.net|traffic1s.com|audiotruyenfull.com|minhpc.com|vongquaymayman.one|toilaquantri.com|diendancauduong.com|taisachonthi.com|mifirm.net|web1s.com|anonyviet.com|4g.tintuc247.top|web1s.asia|vanhoatamlinh.com|kiemtien247.net|khotailieuonthi247.com|ipacrack.com|duan24h.net|www.iosviet.com|hoctoan123.com|yhocdata.com|ycongnghe.com|imail.edu.vn|thitotnghiepthpt.vn|mod.lnpchannel.com|handydecor.com.vn|apkmoddone.phongroblox.com|chuyenreview.net
+@@||pagead2.googlesyndication.com^$script,xmlhttprequest,image,domain=thuthuatmeovat.net|kites.vn|phuongtrinhhoahoc.com|letrongdai.vn|romgoc.net|traderviet.tv|sum.vn|truyenaudiocv.org|thelanb.com|cungthi.online|lehait.net|nhacsong.pro|kientruc360.info|giavang.net|vnjpclub.com|753x.blogspot.com|ngohoanganhtuan.com|ngohoanganhtuan.net|vungoctuan.vn|ichi.pro|gocmod.com|tromcap.com|dafontvn.com|www.gvnvh.net|sesenblog.com|filess.us|xaydungplus.com|nguonhd.net|anhdep24.com|windowslite.net|tiengnhatdongian.com|quangcaoyenbai.com|ios.codevn.net|traffic1s.com|audiotruyenfull.com|minhpc.com|vongquaymayman.one|toilaquantri.com|diendancauduong.com|taisachonthi.com|mifirm.net|web1s.com|anonyviet.com|4g.tintuc247.top|web1s.asia|vanhoatamlinh.com|kiemtien247.net|khotailieuonthi247.com|ipacrack.com|duan24h.net|www.iosviet.com|hoctoan123.com|yhocdata.com|ycongnghe.com|imail.edu.vn|thitotnghiepthpt.vn|mod.lnpchannel.com|handydecor.com.vn|apkmoddone.phongroblox.com|chuyenreview.net
 @@||player.sohatv.vn/resource/$script,domain=cafef.vn|gamek.vn|genk.vn|kenh14.vn|thanhnien.vn
 @@||securepubads.g.doubleclick.net/tag/js/gpt.js$script,domain=handydecor.com.vn
 @@||services.vlitag.com^$xmlhttprequest,script,domain=game24h.vn
@@ -939,6 +933,7 @@ znews.vn##.znews-banner
 @@||web1s.asia$generichide
 @@||web1s.com$generichide
 @@||windowslite.net$generichide
+@@||www.diendancauduong.com$generichide
 @@||www.taimods.com$generichide
 @@||www.tiengnhatdongian.com$generichide
 @@||ycongnghe.com$generichide
