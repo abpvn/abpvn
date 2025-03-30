@@ -1,9 +1,9 @@
 [Adblock Plus 2.0]
-! Version: 20250328180438472
+! Version: 20250330175832094
 ! id: D4028CDD-3D39-4624-ACC7-8140F4EC3888
 ! Title: ABPVN List
-! Last modified: 28 Mar 2025 18:04:38 UTC+7
-! Diff-Path: patches/20250328180438472.patch#abpvn_ublock
+! Last modified: 30 Mar 2025 17:58:32 UTC+7
+! Diff-Path: patches/20250330175832094.patch#abpvn_ublock
 ! Diff-Expires: 60 minutes
 ! Expires: 1 days (update frequency)
 !
@@ -45,6 +45,7 @@
 /giadinhonline.vn/files/qc/*
 /i.imgur.com/*.gif$domain=keonhacai55.chat|motchill69.com|www.phimdinhcao.online|aluminiuminsider.com|veboxi.cc|cakhiavv.cc|listnhacai88.com|xoilaczzu.tv|xemtivingon.org|mitomtvb.cc|rakhoivi.cc|plcdn.xyz|phimmoi.ing
 /js/ads.js$script,~third-party,domain=~vipurl.in
+/lv/esnk/*$script
 /newchill/*gif$image
 /polyad.
 /pop.js$script,domain=motchiill.li|ohaytv.id
@@ -161,6 +162,7 @@
 ||mplmncb.com/popup/$script,domain=truyenqqto.com
 ||msdigital.vn/ads$subdocument
 ||nettruyenrr.com/public/assets/js/pop$script,~third-party
+||nettruyenvie.com/assets/js/ads/$script
 ||nettruyenvie.com/assets/js/pop$script
 ||newoneinoldoneout.pro/banners-web$image.domain=
 ||newoneinoldoneout.pro/banners-web/$image,domain=nettruyenrr.com|nettruyenvie.com
@@ -1086,6 +1088,7 @@ vnesports.net##.banner_site
 vnesports.net##.sidebar_box_gray
 vnesports.net,mythethao.net##.banner_top
 vnews.gov.vn##[href*="bit.ly"]
+vnexpress.net###banner_top
 vnexpress.net###rich-media-banner-ads
 vnexpress.net###supper_masthead
 voz.vn##.adsbypubpower
@@ -1459,6 +1462,7 @@ linkneverdie.net,linkneverdie.top,linkneverdie2.com##+js(nostif, callback, 6004)
 lrepacks.net##+js(acs, JSON.parse, break;case $.)
 lxmanga.sbs##+js(acs, $, PopUnder)
 mv.phimmoiaz.cc,ytstv.me,anime4.site,anh.moe,maclife.io,xemphimjav.com,hoctot.hocmai.vn,cdn2.blueskychilling.online,ohaha79xxx.site,herotruyen.com,truyenfull.vision,player.phimapi.com,noitu.site##+js(aopr, open)
+nettruyenvie.com##+js(acs, JSON, fromCharCode)
 opensubtitles.com##div[class*="download-ready"]:style(display:block!important)
 opensubtitles.com##div[id^="clock_"]
 p.thoctv.com,ytstv.me##+js(acs, document.createElement, script)
@@ -1518,3 +1522,4 @@ xnxx-sex-videos.com##+js(acs, setTimeout, window.location)
 xnxx-sex-videos.com##+js(ra, target|onclick, a[href^="/video/"])
 yeuphim.de##+js(m3u-prune, /#EXT-X-DISCONTINUITY(.|\n){1\,1000}#EXT-X-DISCONTINUITY/gm, index.m3u8)
 znews.vn##+js(aopr, adtimaConfig)
+||enamelhurdleunpaid.com^
