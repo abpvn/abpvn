@@ -1,9 +1,9 @@
 [Adblock Plus 2.0]
-! Version: 20250401120558826
+! Version: 20250401140547598
 ! id: D4028CDD-3D39-4624-ACC7-8140F4EC3888
 ! Title: ABPVN List
-! Last modified: 01 Apr 2025 12:05:58 UTC+7
-! Diff-Path: patches/20250401120558826.patch#abpvn
+! Last modified: 01 Apr 2025 14:05:47 UTC+7
+! Diff-Path: patches/20250401140547598.patch#abpvn
 ! Diff-Expires: 60 minutes
 ! Expires: 1 days (update frequency)
 !
@@ -90,7 +90,6 @@ $popup,domain=truyenfull.vision
 ||baomoi.com$csp=script-src data: blob: * 'self' 'unsafe-inline'
 ||baonga.com/FileUpload/Images/*banner
 ||bf.333xbet.com^$media,third-party
-||biphim.mom/public/prom_ad/prom_ad.js$script
 ||blog.abit.vn/wp-content/uploads/2020/05/abit_$image
 ||blogger.googleusercontent.com^$image,domain=hhninja20.tv|xem15.com|hhtm.site|hhh3d.tv|hoathinhtq.site|phimhaytv.biz|yanhh3d.vip|phimhoathinh3d.vip
 ||blvtap.com^*.gif$image,domain=phimmoinet.life
@@ -106,8 +105,6 @@ $popup,domain=truyenfull.vision
 ||code.gunnymienphi.net^*.gif
 ||danketoan.com/banner/
 ||doctruyenchu.info/ads/$image
-||dongchill.mom/ads/ads_xx.js$script,~third-party
-||dongphim.baby/ads/ads_xx.js$script
 ||ff.imacdn.com^$image,domain=xem1080.com
 ||file1.dangcongsan.vn^*.gif$image,domain=dangcongsan.vn
 ||forum.idichvuseo.com/images/quang-cao
@@ -155,7 +152,6 @@ $popup,domain=truyenfull.vision
 ||motchiill.vc^*.gif$image
 ||motchill10.com/public/upload/ads/ads.js$script,~third-party
 ||motchill69.com/3s.m3u8$rewrite=abp-resource:blank-mp3,domain=motchill69.com
-||motchillid.me/js/ads_xx.js
 ||motchillti.com/banner$image
 ||motphimtv.im^*.gif$image
 ||mplmncb.com/banners-web$image,domain=truyenqqto.com
@@ -200,9 +196,6 @@ $popup,domain=truyenfull.vision
 ||static.ybox.vn^*.gif$domain=ybox.vn
 ||stc02bc54661548.cloud.anycastapnic.com^*gif$image,domain=gavangtv5.net
 ||storage.fshare.vn/images/$third-party
-||subnhanh.icu/js/ads_xx.js
-||subnhanh.icu/js/ads_xx.min.js$script,~third-party
-||subnhanhvl.baby/js/ads_xx.js$script,~third-party
 ||suckhoelamdep.vn^*.gif$image
 ||survey-smiles.com/wp-content/plugins/banner-management/$image
 ||tailieuvnu.com/wp-content/uploads/2022/12/28/shopee-2*.png$image
@@ -718,8 +711,6 @@ bc.xoilac5.lol,live4.xoilac34.org##.vb-button>.mct_-bet
 bc.xoilac5.lol,live4.xoilac34.org##div.vebo-sp.container:nth-of-type(7)
 bing.com##.b_algo:has(.rms_img[src*="/th?id=OADD2."][src$="21.2"])
 bing.com##.b_algo:has(.rms_img[src*="=AdsPlus"])
-biphim.mom###top_oddd
-biphim.mom,subnhanh.icu,subnhanhvl.baby,hhpanda.id,dongphim.baby##.underplayer_btn
 blog.abit.vn##.button-dangkyngay
 blogkiienthuc.net##.textwidget
 bluphim3.com###ads-1xbet-catfish
@@ -772,8 +763,6 @@ doctruyenln.com##.chapter-content .min-h-\[275px\]
 docviewer.yandex.com##.js-doc-html>div>div[id]
 doisongphapluat.com.vn,vtcnews.vn##.sys-ads
 domdomcomicsxyz.com##iframe[src*="ads"]
-dongphim.baby##.btn-primary.btn
-dongphim.baby,dongchill.mom,bichill.mom,hongphim18.net,hhpanda.id,hhanime3d.tv,subnhanhvl.baby###footer_fixed_ads
 download.vn##div[id^="adsbg"]
 dubaotiente.pro##.ad-pin-right-bottom
 ebookbkmt.com##.top-right
@@ -813,9 +802,11 @@ gocmod.com###sp-wrapper-hovering-format
 gocmod.com##.wam-banner
 gocmod.com##center:has(.adsbygoogle)
 hayhaytv.site,subnhanh1.org##.sticky_bottom
-hhanime3d.tv,hhpanda.id,subnhanhvl.baby###top_addd
+hhanime3d.tv,hhpanda.id###top_addd
 hhninja20.tv,phimhoathinh3d.vip,hoathinhtq.site,hhtq10.vip,hhtqvietsub.me,motchillti.com,hhtutien.tv,animeweb.vip,hoathinh4k3.top,animehay.li,hhh3d.tv,hhtq3d.net,wibu47.com,hhvsub1.com,phimdacap.tv,motchiill.vc###catfish
+hhpanda.id###xs-addd0
 hhpanda.id##.btn-fanpage.btn-default.btn-block.btn
+hhpanda.id##.underplayer_btn
 hhtqvietsub.me###top-banner-pc
 hhtqvietsub.me,animehay.li###sponsor-balloon
 hoahoc247.com##.btn_small_fix_container
@@ -832,6 +823,7 @@ home1.mannhan22.pro##li.for-desktop-2>[href]
 home1.mannhan22.pro##li.for-mobile-2>[href]
 hongphim18.net###pc-top-banner
 hongphim18.net###quang-cao
+hongphim18.net,hhpanda.id,hhanime3d.tv###footer_fixed_ads
 hongphim18.net,vutruphim.tv##.float-ck-center-lt
 hsctvn.com##.advertTop
 hsctvn.com##.hsdn>li:has(.adsbygoogle)
@@ -846,7 +838,7 @@ keoso.me##.widget-sidebar-block
 ketqua04.net##.baloon
 ketqua04.net##.col-sm-10.kqcenter
 ketqua04.net##.kqbackground.vien ~ a[target="_blank"]
-ketqua04.net,nghean24h.vn,xem.tructiepnba.me,biphim.mom,vidian.online,doctruyenln.com,xemtivi4k.com,aluminiuminsider.com,bongdainfox.tv,watch.thapcam.pro,xx2.thapcam53.info,nn13.thapcam.asia,www.phimdinhcao.online##a[rel="nofollow"]
+ketqua04.net,nghean24h.vn,xem.tructiepnba.me,vidian.online,doctruyenln.com,xemtivi4k.com,aluminiuminsider.com,bongdainfox.tv,watch.thapcam.pro,xx2.thapcam53.info,nn13.thapcam.asia,www.phimdinhcao.online##a[rel="nofollow"]
 ketqua247vn.vip##.box-ads
 ketqua247vn.vip##.linkBanner
 khiphach.net###qc-kpgame
@@ -925,7 +917,7 @@ outlook.live.com##.LBktY>.GssDD
 phapluatplus.baophapluat.vn##div[style="text-align:center;margin-top:0px;margin-bottom:0px;"]
 phim.vkool8.net##.box-rating
 phim.vkool8.net##.catfish-ck
-phim.vkool8.net,subnhanhvl.baby,motchillid.me,subnhanh.icu,biphim.mom,dongphim.baby,phimbet.biz,hhanime3d.tv,dongchill.mom,tokuvn.com###overlay
+phim.vkool8.net,phimbet.biz,hhanime3d.tv,tokuvn.com###overlay
 phim1080.in##.ff-banner
 phimbet.biz###banner
 phimdacap.tv###ads-popup
@@ -959,8 +951,6 @@ soha.vn,gamek.vn##[id^="admzone"]
 sport5.vn,afamily.vn##.afw-topbanner
 subnhanh1.org##.t_logo
 subnhanh1.org,hayhaytv.site,motphimtv.im##.mp-adz
-subnhanhvl.baby,motchillid.me,subnhanh.icu,hhpanda.id,dongphim.baby###xs-addd0
-subnhanhvl.baby,subnhanh.icu##.w-button.button_trailer
 suckhoedoisong.vn##.top-ads
 survey-smiles.com##.toogle-ads
 tapchibitcoin.io##.header-fix-ads
