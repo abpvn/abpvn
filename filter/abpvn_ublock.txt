@@ -1,9 +1,9 @@
 [Adblock Plus 2.0]
-! Version: 20250408180441704
+! Version: 20250409093225011
 ! id: D4028CDD-3D39-4624-ACC7-8140F4EC3888
 ! Title: ABPVN List
-! Last modified: 08 Apr 2025 18:04:41 UTC+7
-! Diff-Path: patches/20250408180441704.patch#abpvn_ublock
+! Last modified: 09 Apr 2025 09:32:25 UTC+7
+! Diff-Path: patches/20250409093225011.patch#abpvn_ublock
 ! Diff-Expires: 60 minutes
 ! Expires: 1 days (update frequency)
 !
@@ -110,8 +110,8 @@
 ||github.com^$image,domain=phim18vl.net
 ||goal.90phut24.xyz^*.gif$image
 ||googleusercontent.com^$domain=hhtqvietsub.me
-||hhkungfu.club/88vn$image,domain=animehay.li
-||hhpanda.id/ads/$script,~third-party
+||hhkungfu.club/88vn$image,domain=animehay.page
+||hhpanda.sh/ads/$script,~third-party
 ||hinhso.com^$domain=diendanmaychu.vn,image
 ||hotphim.us/disable.js$script
 ||hsctvn.com/uploads/products/$~third-party,image
@@ -213,7 +213,7 @@
 ||tuyensinh247.com/$image,third-party
 ||tuyensinhso.vn/images/banners/*.gif$image,~third-party
 ||tvhay.ac/guide/popup.xp-f.js
-||tvphim.mx/ads/popup$script,~third-party
+||tvphim.sh/ads/popup$script,~third-party
 ||tvzinghd.co/wp-content/themes/zingtv/js/qci9bc.js$script,~third-party
 ||ungtycomicsnay.com$csp=script-src self * data:* 'unsafe-inline'
 ||uniad.$third-party
@@ -381,8 +381,8 @@ anime4.site##.gnartyx-offads
 anime4.site,animetvn4.com,subnhanh1.org###fbox-background
 anime47.one###qc_clgt
 anime47.one###swiper-wrapper
-animehay.li###header-ads + center
-animehay.li##div[style="position: fixed; bottom: 0px; z-index: 98; width: 100%; text-align: center; box-sizing: border-box;"]
+animehay.page###header-ads + center
+animehay.page##div[style="position: fixed; bottom: 0px; z-index: 98; width: 100%; text-align: center; box-sizing: border-box;"]
 animetvn4.com###mobile-ads
 animetvn4.com##.gnarty-offads
 animevietsub.lol###invideo_wrapper
@@ -507,13 +507,13 @@ gocmod.com###sp-wrapper-hovering-format
 gocmod.com##.wam-banner
 gocmod.com##center:has(.adsbygoogle)
 hayhaytv.site,subnhanh1.org##.sticky_bottom
-hhanime3d.tv,hhpanda.id###top_addd
-hhninja20.tv,phimhoathinh3d.vip,hoathinhtq.site,hhtq10.vip,hhtqvietsub.me,motchillti.com,hhtutien.tv,animeweb.vip,hoathinh4k3.top,animehay.li,hhh3d.tv,hhtq3d.net,wibu47.com,hhvsub1.com,phimdacap.tv,motchill.fit###catfish
-hhpanda.id###xs-addd0
-hhpanda.id##.btn-fanpage.btn-default.btn-block.btn
-hhpanda.id##.underplayer_btn
+hhanime3d.tv,hhpanda.sh###top_addd
+hhninja20.tv,phimhoathinh3d.vip,hoathinhtq.site,hhtq10.vip,hhtqvietsub.me,motchillti.com,hhtutien.tv,animeweb.vip,hoathinh4k3.top,animehay.page,hhh3d.tv,hhtq3d.net,wibu47.com,hhvsub1.com,phimdacap.tv,motchill.fit###catfish
+hhpanda.sh###xs-addd0
+hhpanda.sh##.btn-fanpage.btn-default.btn-block.btn
+hhpanda.sh##.underplayer_btn
 hhtqvietsub.me###top-banner-pc
-hhtqvietsub.me,animehay.li###sponsor-balloon
+hhtqvietsub.me,animehay.page###sponsor-balloon
 hoahoc247.com##.btn_small_fix_container
 hoathinh4k3.top##.ads-nlp
 hoatieu.vn###adrightspecial
@@ -612,7 +612,7 @@ phim.vkool8.net,phimbet.biz,hhanime3d.tv,tokuvn.com###overlay
 phim1080.in##.ff-banner
 phim18vl.net###pc-top-banner
 phim18vl.net###quang-cao
-phim18vl.net,hhpanda.id,hhanime3d.tv###footer_fixed_ads
+phim18vl.net,hhpanda.sh,hhanime3d.tv###footer_fixed_ads
 phim18vl.net,vutruphim.tv##.float-ck-center-lt
 phimbet.biz###banner
 phimdacap.tv###ads-popup
@@ -703,7 +703,7 @@ tintucvietnam.vn##.mobilejszone
 toithuthuat.com##.box
 toithuthuat.com##.pum
 topthuthuat.com,canhrau.com##.widget.widget_text
-toquoc.vn,baoxaydung.com.vn,tienphong.vn,taichinhdoanhnghiep.net.vn,thichxemphim.top,xemphimviet.casa,ghienphim.show,nettruyenrr.com##.banner
+toquoc.vn,baoxaydung.vn,tienphong.vn,taichinhdoanhnghiep.net.vn,thichxemphim.top,xemphimviet.casa,ghienphim.show,nettruyenrr.com##.banner
 tracnghiem.net##.sbAdv
 tram3d.vip##div.text-center:nth-of-type(2)
 truyenaudiocv.org##.js-editors-choice-slider.editors-choice-slider>.adsbygoogle
@@ -811,7 +811,7 @@ www.saostar.vn###page-skin-top-holder
 www.saostar.vn###pc-bill-top
 www.saostar.vn###pc-bill-top-1
 www.thuocbietduoc.com.vn###neo-right-ads
-www.toptruyentv3.pro,doctruyen3qui5.pro##.advertisement
+www.toptruyentv3.pro,doctruyen3qui6.pro##.advertisement
 www.vietjack.com##.box-most-viewed.box-course.box-slide
 www.vietjack.com##div.ads_ads
 www.vietjack.com##h3.sub-title
@@ -927,7 +927,7 @@ $third-party,script,domain=sexdiaryx.live
 /assets/js/vast.js$script,domain=~phevkl.vin|~viet69.meme
 /player/vast.js$script
 /theme/custom.int.js$script,domain=phimsexvietnam.app|gm.phimsexnhanh.tv|clipsex.cam|ww1.ditnhau.cc
-/wp-content/uploads/*.gif$image,domain=tuoi69.love|tuoinungvn.com|teletiengviet.com|phevkl.vin|viet69.meme
+/wp-content/uploads/*.gif$image,domain=tuoi69.gives|tuoinungvn.com|teletiengviet.com|phevkl.vin|viet69.meme
 @@||pagead2.googlesyndication.com^$domain=www.gaingon18.me
 ||ads.6789live.com^
 ||anhgaixinh.online^*.webp$image
@@ -982,7 +982,7 @@ $third-party,script,domain=sexdiaryx.live
 ||uimg.buomtv.io/palivn/ad/$image,domain=www.buomtv.xyz
 ||xamer.xyz/styles/file/$image
 ||xfast.sbs/media/$image,domain=fullcliphot.com
-||xnhau.blog^$media,domain=xnhau.fm
+||xnhau.blog^$media,domain=xnhau.run
 ||yr.fopbandido.com^
 !---------- ABPVN Adult Element Hide ---------------
 ##[href^="https://www.i9017.com/"]
@@ -1054,8 +1054,8 @@ truyen18.fun##.apu
 truyen18.fun##.header
 truyenfull.vision###shoppe_ads_fly
 truyensextv.com,lxmanga.sbs##.sticky-footer
-tuoi69.love###bar_float_r
-tuoi69.love##.quangcaomb
+tuoi69.gives###bar_float_r
+tuoi69.gives##.quangcaomb
 tuoinungvn.com###hide_float_right
 tut4ktream.online###idAdLink
 vailonxx.co##.vailo-sticky
@@ -1095,9 +1095,9 @@ xiuren.org###bannerIn
 xiuren.org###exoIMFrame
 xiuren.org###nativeAds_1505931906161
 xiuren.org##div[id^="exo_slider_"]
-xnhau.fm##.fp-ui>div[style]
-xnhau.fm##.sponsor
-xnhau.fm##.spot
+xnhau.run##.fp-ui>div[style]
+xnhau.run##.sponsor
+xnhau.run##.spot
 xnxx.com###content-ad-top-zone
 ! ---------Rule only for uBlock Origin------
  
@@ -1134,8 +1134,8 @@ hayhaytv.site,subnhanh1.org##+js(set, maxAds, 0)
 hh3dhay.life##+js(acs, Symbol, break;case $)
 hh3dhay.life,tram3d.com##+js(acs, document.createElement, ;break;case)
 hh3dhay.life,tram3d.me,animevietsub.lol##+js(acs, eval, $._Eu)
-hhpanda.id###overlay
-hhpanda.id,thempho.xyz##html:style(overflow: auto !important)
+hhpanda.sh###overlay
+hhpanda.sh,thempho.xyz##html:style(overflow: auto !important)
 holyfilm.org##+js(acs, window.addEventListener, window.open)
 imail.edu.vn##+js(acs, setTimeout, Aff)
 imail.edu.vn##+js(acs, setTimeout, ad_block)
@@ -1186,7 +1186,7 @@ vailonxx.co,www.motchill72.com##+js(acs, jQuery, window.open)
 vaoroi14.live##+js(set, adsPlayer, '')
 vaoroi14.live##+js(set, adsTvcs, '')
 veryfiles.com##+js(aopr, nFNcksmwU)
-viet69.gl,vlxx.my,dualeotruyenbotx.com,yurineko.my,xemsex.tube,cliphot69.homes,doctruyen3qui5.pro,ihentai.men,hentaivc.com,www.buomtv.xyz,truyenvn.ac,javtiful.com,quatvn.love,top1phimsex.com,phim18hd.cam,jav.sexviet88.link,sextv18.pro,demo.14412882.com,ungtycomicsvip.org,cliphot69.pics,hhtq5.vip,sexdiary.club,vn2.xvideos69.xxx,umetruyenhay.com,damconuong.love##+js(acs, WebAssembly, instantiate)
+viet69.gl,vlxx.my,dualeotruyenbotx.com,yurineko.my,xemsex.tube,cliphot69.homes,doctruyen3qui6.pro,ihentai.men,hentaivc.com,www.buomtv.xyz,truyenvn.ac,javtiful.com,quatvn.love,top1phimsex.com,phim18hd.cam,jav.sexviet88.link,sextv18.pro,demo.14412882.com,ungtycomicsvip.org,cliphot69.pics,hhtq5.vip,sexdiary.club,vn2.xvideos69.xxx,umetruyenhay.com,damconuong.love##+js(acs, WebAssembly, instantiate)
 viet69.meme##+js(acs, jQuery, open)
 viettoons.tv,mv.phimmoiaz.cc,ytstv.me,anime4.site,anh.moe,maclife.io,xemphimjav.com,hoctot.hocmai.vn,bluphim3.com,ohaha79xxx.site,herotruyen.com,truyenfull.vision,player.phimapi.com,noitu.site##+js(aopr, open)
 vinaurl.net##+js(aopr, oneClick)
@@ -1199,7 +1199,7 @@ www.iosviet.com##+js(set, timer, 0)
 www.nettruyenupp.com##+js(aopr, sp)
 www.o-study.net##.backdrop-popup
 www.o-study.net##body:style(position: static !important)
-www.phimdinhcao.online,www.motchill72.com,xnhau.fm,teamlanhlung3.shop##+js(aopr, localStorage)
+www.phimdinhcao.online,www.motchill72.com,xnhau.run,teamlanhlung3.shop##+js(aopr, localStorage)
 www.saostar.vn##div.layout.pt-mobi-top:style(padding-top: 0 !important)
 www.saostar.vn##header.bg-white:style(margin-top: 0px !important)
 www.toptruyentv3.pro##+js(acs, setTimeout, open)
