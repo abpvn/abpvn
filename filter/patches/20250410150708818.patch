@@ -1,11 +1,11 @@
-diff name:abpvn lines:113 checksum:e89bc8e58a
+diff name:abpvn lines:120 checksum:a6d3b3db6a
 d2 1
 a2 1
-! Version: 20250416093257066
+! Version: 20250416105049304
 d5 2
 a6 2
-! Last modified: 16 Apr 2025 09:32:57 UTC+7
-! Diff-Path: patches/20250416093257066.patch#abpvn
+! Last modified: 16 Apr 2025 10:50:49 UTC+7
+! Diff-Path: patches/20250416105049304.patch#abpvn
 d48 1
 a48 1
 /i.imgur.com/*.gif$domain=keonhacai55.chat|www.motchill75.com|www.phimdinhcao.online|aluminiuminsider.com|veboxi.cc|cakhiavx.cc|listnhacai88.com|xoilaczzu.tv|xemtivingon.org|mitomtvt.cc|rakhoivx.cc|plcdn.xyz
@@ -17,8 +17,10 @@ d99 1
 a99 1
 ||cdn.lfastcdn.com^*.gif$image,domain=bongdainfox.tv|xoilaczzu.tv|rakhoivx.cc|cakhiavx.cc|mitomtvt.cc|xoilaczvx.cc|xoilaczzza.tv|veboxi.cc
 d124 1
-d159 3
-a161 3
+d157 5
+a161 5
+||mplmncb.com/banners-web$image,domain=truyenqqgo.co
+||mplmncb.com/popup/$script,domain=truyenqqgo.co
 ||nettruyenr.com/public/assets/js/pop$script,~third-party
 ||nettruyenvio.com/assets/js/ads/$script
 ||nettruyenvio.com/assets/js/pop$script
@@ -60,9 +62,14 @@ metruyencv.com,metruyencv.net,metruyencv.com#?#.text-center:-abp-has(small:-abp-
 d943 1
 a943 1
 rakhoivx.cc,xoilaczzza.tv##.btn-8xbet
-d1025 1
-a1025 1
-truyenqqto.com,nettruyenvio.com,truyentranh3q.com##.ads-banner
+d1020 6
+a1025 6
+truyenqqgo.co###ad_info_top
+truyenqqgo.co###catfishAd
+truyenqqgo.co###floating-banner-left
+truyenqqgo.co###floating-banner-right
+truyenqqgo.co##div#ad_info
+truyenqqgo.co,nettruyenvio.com,truyentranh3q.com##.ads-banner
 d1040 1
 d1103 3
 a1105 3
@@ -112,14 +119,14 @@ vlxxhot.net,vailonxx.vip##.bannerads
 d1388 1
 a1397 1
 xphim18.com,sextv18.pro,sexhihiz.ac##.xx-ads
-diff name:abpvn_adguard lines:133 checksum:2694a0cb0e
+diff name:abpvn_adguard lines:143 checksum:411995c5b6
 d2 1
 a2 1
-! Version: 20250416093257066
+! Version: 20250416105049304
 d5 2
 a6 2
-! Last modified: 16 Apr 2025 09:32:57 UTC+7
-! Diff-Path: patches/20250416093257066.patch#abpvn_adguard
+! Last modified: 16 Apr 2025 10:50:49 UTC+7
+! Diff-Path: patches/20250416105049304.patch#abpvn_adguard
 d46 1
 a46 1
 /i.imgur.com/*.gif$domain=keonhacai55.chat|www.motchill75.com|www.phimdinhcao.online|aluminiuminsider.com|veboxi.cc|cakhiavx.cc|listnhacai88.com|xoilaczzu.tv|xemtivingon.org|mitomtvt.cc|rakhoivx.cc|plcdn.xyz
@@ -131,8 +138,10 @@ d97 1
 a97 1
 ||cdn.lfastcdn.com^*.gif$image,domain=bongdainfox.tv|xoilaczzu.tv|rakhoivx.cc|cakhiavx.cc|mitomtvt.cc|xoilaczvx.cc|xoilaczzza.tv|veboxi.cc
 d122 1
-d157 3
-a159 3
+d155 5
+a159 5
+||mplmncb.com/banners-web$image,domain=truyenqqgo.co
+||mplmncb.com/popup/$script,domain=truyenqqgo.co
 ||nettruyenr.com/public/assets/js/pop$script,~third-party
 ||nettruyenvio.com/assets/js/ads/$script
 ||nettruyenvio.com/assets/js/pop$script
@@ -174,9 +183,14 @@ metruyencv.com,metruyencv.net,metruyencv.com#?#.text-center:-abp-has(small:-abp-
 d939 1
 a939 1
 rakhoivx.cc,xoilaczzza.tv##.btn-8xbet
-d1021 1
-a1021 1
-truyenqqto.com,nettruyenvio.com,truyentranh3q.com##.ads-banner
+d1016 6
+a1021 6
+truyenqqgo.co###ad_info_top
+truyenqqgo.co###catfishAd
+truyenqqgo.co###floating-banner-left
+truyenqqgo.co###floating-banner-right
+truyenqqgo.co##div#ad_info
+truyenqqgo.co,nettruyenvio.com,truyentranh3q.com##.ads-banner
 d1036 1
 d1099 3
 a1101 3
@@ -235,6 +249,9 @@ lxmanga.link#%#//scriptlet("abort-current-inline-script", "$", "PopUnder")
 d1443 1
 a1443 1
 nettruyenvio.com#%#//scriptlet("abort-current-inline-script", "JSON", "fromCharCode")
+a1472 1
+truyenqqgo.co#%#//scriptlet("abort-current-inline-script", "WebAssembly", "localStorage")
+d1474 1
 d1478 2
 a1479 1
 vailonxx.vip,www.motchill75.com#%#//scriptlet("abort-current-inline-script", "jQuery", "window.open")
@@ -246,14 +263,14 @@ a1495 1
 www.phimdinhcao.online,www.motchill75.com,xnhau.run,teamlanhlung3.shop#%#//scriptlet("abort-on-property-read", "localStorage")
 a1500 1
 xoilaczzza.tv#%#//scriptlet("set-constant", "adsTvcs", "")
-diff name:abpvn_content_blocker lines:113 checksum:c9312b26e1
+diff name:abpvn_content_blocker lines:120 checksum:813f98cb79
 d2 1
 a2 1
-! Version: 20250416093257066
+! Version: 20250416105049304
 d5 2
 a6 2
-! Last modified: 16 Apr 2025 09:32:57 UTC+7
-! Diff-Path: patches/20250416093257066.patch#abpvn_content_blocker
+! Last modified: 16 Apr 2025 10:50:49 UTC+7
+! Diff-Path: patches/20250416105049304.patch#abpvn_content_blocker
 d48 1
 a48 1
 /i.imgur.com/*.gif$domain=keonhacai55.chat|www.motchill75.com|www.phimdinhcao.online|aluminiuminsider.com|veboxi.cc|cakhiavx.cc|listnhacai88.com|xoilaczzu.tv|xemtivingon.org|mitomtvt.cc|rakhoivx.cc|plcdn.xyz
@@ -265,8 +282,10 @@ d99 1
 a99 1
 ||cdn.lfastcdn.com^*.gif$image,domain=bongdainfox.tv|xoilaczzu.tv|rakhoivx.cc|cakhiavx.cc|mitomtvt.cc|xoilaczvx.cc|xoilaczzza.tv|veboxi.cc
 d124 1
-d159 3
-a161 3
+d157 5
+a161 5
+||mplmncb.com/banners-web$image,domain=truyenqqgo.co
+||mplmncb.com/popup/$script,domain=truyenqqgo.co
 ||nettruyenr.com/public/assets/js/pop$script,~third-party
 ||nettruyenvio.com/assets/js/ads/$script
 ||nettruyenvio.com/assets/js/pop$script
@@ -308,9 +327,14 @@ metruyencv.com,metruyencv.net,metruyencv.com#?#.text-center:-abp-has(small:-abp-
 d943 1
 a943 1
 rakhoivx.cc,xoilaczzza.tv##.btn-8xbet
-d1025 1
-a1025 1
-truyenqqto.com,nettruyenvio.com,truyentranh3q.com##.ads-banner
+d1020 6
+a1025 6
+truyenqqgo.co###ad_info_top
+truyenqqgo.co###catfishAd
+truyenqqgo.co###floating-banner-left
+truyenqqgo.co###floating-banner-right
+truyenqqgo.co##div#ad_info
+truyenqqgo.co,nettruyenvio.com,truyentranh3q.com##.ads-banner
 d1040 1
 d1103 3
 a1105 3
@@ -360,14 +384,14 @@ vlxxhot.net,vailonxx.vip##.bannerads
 d1388 1
 a1397 1
 xphim18.com,sextv18.pro,sexhihiz.ac##.xx-ads
-diff name:abpvn_noelemhide lines:52 checksum:dbba77a749
+diff name:abpvn_noelemhide lines:54 checksum:d9d3e65ecf
 d2 1
 a2 1
-! Version: 20250416093257066
+! Version: 20250416105049304
 d5 2
 a6 2
-! Last modified: 16 Apr 2025 09:32:57 UTC+7
-! Diff-Path: patches/20250416093257066.patch#abpvn_noelemhide
+! Last modified: 16 Apr 2025 10:50:49 UTC+7
+! Diff-Path: patches/20250416105049304.patch#abpvn_noelemhide
 d48 1
 a48 1
 /i.imgur.com/*.gif$domain=keonhacai55.chat|www.motchill75.com|www.phimdinhcao.online|aluminiuminsider.com|veboxi.cc|cakhiavx.cc|listnhacai88.com|xoilaczzu.tv|xemtivingon.org|mitomtvt.cc|rakhoivx.cc|plcdn.xyz
@@ -379,8 +403,10 @@ d99 1
 a99 1
 ||cdn.lfastcdn.com^*.gif$image,domain=bongdainfox.tv|xoilaczzu.tv|rakhoivx.cc|cakhiavx.cc|mitomtvt.cc|xoilaczvx.cc|xoilaczzza.tv|veboxi.cc
 d124 1
-d159 3
-a161 3
+d157 5
+a161 5
+||mplmncb.com/banners-web$image,domain=truyenqqgo.co
+||mplmncb.com/popup/$script,domain=truyenqqgo.co
 ||nettruyenr.com/public/assets/js/pop$script,~third-party
 ||nettruyenvio.com/assets/js/ads/$script
 ||nettruyenvio.com/assets/js/pop$script
@@ -413,14 +439,14 @@ a683 1
 d695 1
 a695 1
 ||quoracdn.net^$image,domain=vlxx.my|xphim18.com|phevkl.vin|viet69.tools|phim18vip.vip|thiendia.pro|pheclip.top|sextv18.pro|sexhihiz.ac|sieudamsexvietnam.com|fulllivehot.live
-diff name:abpvn_ublock lines:134 checksum:5879473075
+diff name:abpvn_ublock lines:144 checksum:5879314688
 d2 1
 a2 1
-! Version: 20250416093257066
+! Version: 20250416105049304
 d5 2
 a6 2
-! Last modified: 16 Apr 2025 09:32:57 UTC+7
-! Diff-Path: patches/20250416093257066.patch#abpvn_ublock
+! Last modified: 16 Apr 2025 10:50:49 UTC+7
+! Diff-Path: patches/20250416105049304.patch#abpvn_ublock
 d46 1
 a46 1
 /i.imgur.com/*.gif$domain=keonhacai55.chat|www.motchill75.com|www.phimdinhcao.online|aluminiuminsider.com|veboxi.cc|cakhiavx.cc|listnhacai88.com|xoilaczzu.tv|xemtivingon.org|mitomtvt.cc|rakhoivx.cc|plcdn.xyz
@@ -432,8 +458,10 @@ d97 1
 a97 1
 ||cdn.lfastcdn.com^*.gif$image,domain=bongdainfox.tv|xoilaczzu.tv|rakhoivx.cc|cakhiavx.cc|mitomtvt.cc|xoilaczvx.cc|xoilaczzza.tv|veboxi.cc
 d122 1
-d157 3
-a159 3
+d155 5
+a159 5
+||mplmncb.com/banners-web$image,domain=truyenqqgo.co
+||mplmncb.com/popup/$script,domain=truyenqqgo.co
 ||nettruyenr.com/public/assets/js/pop$script,~third-party
 ||nettruyenvio.com/assets/js/ads/$script
 ||nettruyenvio.com/assets/js/pop$script
@@ -475,9 +503,14 @@ metruyencv.com,metruyencv.net,metruyencv.com#?#.text-center:-abp-has(small:-abp-
 d939 1
 a939 1
 rakhoivx.cc,xoilaczzza.tv##.btn-8xbet
-d1021 1
-a1021 1
-truyenqqto.com,nettruyenvio.com,truyentranh3q.com##.ads-banner
+d1016 6
+a1021 6
+truyenqqgo.co###ad_info_top
+truyenqqgo.co###catfishAd
+truyenqqgo.co###floating-banner-left
+truyenqqgo.co###floating-banner-right
+truyenqqgo.co##div#ad_info
+truyenqqgo.co,nettruyenvio.com,truyentranh3q.com##.ads-banner
 d1036 1
 d1099 3
 a1101 3
@@ -536,6 +569,9 @@ lxmanga.link##+js(acs, $, PopUnder)
 d1443 1
 a1443 1
 nettruyenvio.com##+js(acs, JSON, fromCharCode)
+a1471 1
+truyenqqgo.co##+js(acs, WebAssembly, localStorage)
+d1473 1
 d1477 3
 a1479 1
 vailonxx.vip,www.motchill75.com##+js(acs, jQuery, window.open)
