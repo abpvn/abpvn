@@ -1,9 +1,9 @@
 [Adblock Plus 2.0]
-! Version: 20250415150731312
+! Version: 20250416093256699
 ! id: D4028CDD-3D39-4624-ACC7-8140F4EC3888
 ! Title: ABPVN List
-! Last modified: 15 Apr 2025 15:07:31 UTC+7
-! Diff-Path: patches/20250415150731312.patch#abpvn_content_blocker
+! Last modified: 16 Apr 2025 09:32:56 UTC+7
+! Diff-Path: patches/20250416093256699.patch#abpvn_content_blocker
 ! Diff-Expires: 60 minutes
 ! Expires: 1 days (update frequency)
 !
@@ -149,10 +149,10 @@ $popup,domain=truyenfull.vision
 ||mplmncb.com/banners-web$image,domain=truyenqqto.com
 ||mplmncb.com/popup/$script,domain=truyenqqto.com
 ||nettruyenr.com/public/assets/js/pop$script,~third-party
-||nettruyenvie.com/assets/js/ads/$script
-||nettruyenvie.com/assets/js/pop$script
-||newoneinoldoneout.pro/banners-web/$image,domain=nettruyenr.com|nettruyenvie.com
-||newoneinoldoneout.pro/popup$script,domain=nettruyenr.com|nettruyenvie.com
+||nettruyenvio.com/assets/js/ads/$script
+||nettruyenvio.com/assets/js/pop$script
+||newoneinoldoneout.pro/banners-web/$image,domain=nettruyenr.com|nettruyenvio.com
+||newoneinoldoneout.pro/popup$script,domain=nettruyenr.com|nettruyenvio.com
 ||newoneinoldoneout.pro/zrlosadr.js$script,domain=nettruyenr.com
 ||nhipcaudautu.vn/*gafin$script
 ||nhipcaudautu.vn/Media/*.gif
@@ -718,7 +718,7 @@ truyenqqto.com###catfishAd
 truyenqqto.com###floating-banner-left
 truyenqqto.com###floating-banner-right
 truyenqqto.com##div#ad_info
-truyenqqto.com,nettruyenvie.com,truyentranh3q.com##.ads-banner
+truyenqqto.com,nettruyenvio.com,truyentranh3q.com##.ads-banner
 truyensieuhay.com##.footer-info
 truyensieuhay.com,hhtrungquoc6.com,hhtq11.vip,animeweb.vip,hhtq3d.net###topbanner
 tuoitre.vn###LeaderBoardTop
@@ -967,7 +967,7 @@ $third-party,script,domain=sexdiaryx.live
 ||play.stream4.me/jwplayer/vast.js$script,domain=play.stream4.me
 ||qcvip.xyz^$script,domain=phevkl.vin|viet69.tools
 ||quatvn.pet/ads.js$script
-||quoracdn.net^$image,domain=vlxx.my|xemsex.sex|phevkl.vin|viet69.tools|phim18vip.vip|thiendia.pro|pheclip.top|sextv18.pro|sexhihiz.ac|sieudamsexvietnam.com|fulllivehot.live
+||quoracdn.net^$image,domain=vlxx.my|xphim18.com|phevkl.vin|viet69.tools|phim18vip.vip|thiendia.pro|pheclip.top|sextv18.pro|sexhihiz.ac|sieudamsexvietnam.com|fulllivehot.live
 ||rphang.online^*.gif
 ||sayhentai.ink/assets/js/ads.js
 ||sayhentai.ink/storage/images/banner/$image
@@ -1065,9 +1065,9 @@ tuoi69.gives###bar_float_r
 tuoi69.gives##.quangcaomb
 tuoinung.io###hide_float_right
 tut4ktream.online###idAdLink
-vailonxx.co##.vailo-sticky
-vailonxx.co##.vailo-under-navbar
-vailonxx.co##.vailo-under-navbar-mobile
+vailonxx.vip##.vailo-sticky
+vailonxx.vip##.vailo-under-navbar
+vailonxx.vip##.vailo-under-navbar-mobile
 viet69.lc,viet69vn.li##.footer-fixed-br-container
 viet69.tools##.popup-overlay
 viet69moi.net##.banner-play
@@ -1084,7 +1084,7 @@ vlxxai.net,trangsexdam.net,sexsoc.info##.hd-tube-desktop
 vlxxai.net,trangsexdam.net,sexsoc.info##.hd-tube-mobile
 vlxxhay.info##.code-block
 vlxxhot.net##.adx1
-vlxxhot.net,vailonxx.co###ab_ctl
+vlxxhot.net,vailonxx.vip###ab_ctl
 vn.javbabe.net##.b-player
 vn.phym18.lol##div#bnads
 www.buomtv.org##._9xtpcl.c4je67d.c1qs0lzc.c1hrlkpu.cc2icwl.c1i0iccj.cfd18df
@@ -1097,7 +1097,6 @@ www.buomtv.org##.pointer-events-auto.block
 www.buomtv.org##.zbgpvb19.zbgpvb16.zbgpvbj.zbgpvbh.zbgpvbg.zbgpvbf.zbgpvbe.zbgpvb1
 www.gaingon18.me###iklan-atas-wrapper
 xemphimjav.com##.pum-overlay
-xemsex.sex,sextv18.pro,sexhihiz.ac##.xx-ads
 xiuren.org###bannerIn
 xiuren.org###exoIMFrame
 xiuren.org###nativeAds_1505931906161
@@ -1106,5 +1105,6 @@ xnhau.run##.fp-ui>div[style]
 xnhau.run##.sponsor
 xnhau.run##.spot
 xnxx.com###content-ad-top-zone
+xphim18.com,sextv18.pro,sexhihiz.ac##.xx-ads
 ! --- Hot fix rule for content blocker (ABP for Samsung internet, Adguard Content Blocker)
 @@||nessainy.net^$popup
