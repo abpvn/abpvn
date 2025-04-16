@@ -1,11 +1,11 @@
-diff name:abpvn lines:191 checksum:abed9ab87b
+diff name:abpvn lines:198 checksum:d2757bd635
 d2 1
 a2 1
-! Version: 20250416093256699
+! Version: 20250416105049620
 d5 2
 a6 2
-! Last modified: 16 Apr 2025 09:32:56 UTC+7
-! Diff-Path: patches/20250416093256699.patch#abpvn
+! Last modified: 16 Apr 2025 10:50:49 UTC+7
+! Diff-Path: patches/20250416105049620.patch#abpvn
 d47 1
 a47 1
 /i.imgur.com/*.gif$domain=keonhacai55.chat|www.motchill75.com|www.phimdinhcao.online|aluminiuminsider.com|veboxi.cc|cakhiavx.cc|listnhacai88.com|xoilaczzu.tv|xemtivingon.org|mitomtvt.cc|rakhoivx.cc|plcdn.xyz
@@ -17,8 +17,10 @@ d93 1
 a93 1
 ||cdn.lfastcdn.com^*.gif$image,domain=bongdainfox.tv|xoilaczzu.tv|rakhoivx.cc|cakhiavx.cc|mitomtvt.cc|xoilaczvx.cc|xoilaczzza.tv|veboxi.cc
 d118 1
-d152 6
-a157 6
+d150 8
+a157 8
+||mplmncb.com/banners-web$image,domain=truyenqqgo.co
+||mplmncb.com/popup/$script,domain=truyenqqgo.co
 ||nettruyenr.com/public/assets/js/pop$script,~third-party
 ||nettruyenvio.com/assets/js/ads/$script
 ||nettruyenvio.com/assets/js/pop$script
@@ -87,9 +89,14 @@ rakhoivx.cc,xoilaczzza.tv##.btn-8xbet
 d710 1
 a710 1
 toquoc.vn,baoxaydung.vn,tienphong.vn,taichinhdoanhnghiep.net.vn,thichxemphim.top,xemphimviet.casa,ghienphim.show,nettruyenr.com##.banner
-d722 1
-a722 1
-truyenqqto.com,nettruyenvio.com,truyentranh3q.com##.ads-banner
+d717 6
+a722 6
+truyenqqgo.co###ad_info_top
+truyenqqgo.co###catfishAd
+truyenqqgo.co###floating-banner-left
+truyenqqgo.co###floating-banner-right
+truyenqqgo.co##div#ad_info
+truyenqqgo.co,nettruyenvio.com,truyentranh3q.com##.ads-banner
 d737 5
 d804 3
 a806 3
@@ -190,14 +197,14 @@ www.buomtv.org##.zbgpvb19.zbgpvb16.zbgpvbj.zbgpvbh.zbgpvbg.zbgpvbf.zbgpvbe.zbgpv
 d1101 1
 a1109 1
 xphim18.com,sextv18.pro,sexhihiz.ac##.xx-ads
-diff name:abpvn_adguard lines:222 checksum:85971dbf24
+diff name:abpvn_adguard lines:230 checksum:f4ebb3efda
 d2 1
 a2 1
-! Version: 20250416093256699
+! Version: 20250416105049620
 d5 2
 a6 2
-! Last modified: 16 Apr 2025 09:32:56 UTC+7
-! Diff-Path: patches/20250416093256699.patch#abpvn_adguard
+! Last modified: 16 Apr 2025 10:50:49 UTC+7
+! Diff-Path: patches/20250416105049620.patch#abpvn_adguard
 d45 1
 a45 1
 /i.imgur.com/*.gif$domain=keonhacai55.chat|www.motchill75.com|www.phimdinhcao.online|aluminiuminsider.com|veboxi.cc|cakhiavx.cc|listnhacai88.com|xoilaczzu.tv|xemtivingon.org|mitomtvt.cc|rakhoivx.cc|plcdn.xyz
@@ -209,8 +216,10 @@ d91 1
 a91 1
 ||cdn.lfastcdn.com^*.gif$image,domain=bongdainfox.tv|xoilaczzu.tv|rakhoivx.cc|cakhiavx.cc|mitomtvt.cc|xoilaczvx.cc|xoilaczzza.tv|veboxi.cc
 d116 1
-d150 6
-a155 6
+d148 8
+a155 8
+||mplmncb.com/banners-web$image,domain=truyenqqgo.co
+||mplmncb.com/popup/$script,domain=truyenqqgo.co
 ||nettruyenr.com/public/assets/js/pop$script,~third-party
 ||nettruyenvio.com/assets/js/ads/$script
 ||nettruyenvio.com/assets/js/pop$script
@@ -279,9 +288,14 @@ rakhoivx.cc,xoilaczzza.tv##.btn-8xbet
 d706 1
 a706 1
 toquoc.vn,baoxaydung.vn,tienphong.vn,taichinhdoanhnghiep.net.vn,thichxemphim.top,xemphimviet.casa,ghienphim.show,nettruyenr.com##.banner
-d718 1
-a718 1
-truyenqqto.com,nettruyenvio.com,truyentranh3q.com##.ads-banner
+d713 6
+a718 6
+truyenqqgo.co###ad_info_top
+truyenqqgo.co###catfishAd
+truyenqqgo.co###floating-banner-left
+truyenqqgo.co###floating-banner-right
+truyenqqgo.co##div#ad_info
+truyenqqgo.co,nettruyenvio.com,truyentranh3q.com##.ads-banner
 d733 5
 d800 3
 a802 3
@@ -392,8 +406,9 @@ nettruyenvio.com#%#//scriptlet("abort-current-inline-script", "JSON", "fromCharC
 d1174 1
 a1174 1
 thiendia.pro#%#//scriptlet("abort-current-inline-script", "$", "open")
-d1180 1
-a1180 1
+d1180 2
+a1181 2
+truyenqqgo.co#%#//scriptlet("abort-current-inline-script", "WebAssembly", "localStorage")
 truyenqqtet.com,viet69moi.net#%#//scriptlet("abort-current-inline-script", "Promise", "break;case")
 d1183 1
 a1183 1
@@ -413,14 +428,14 @@ www.toptruyentv5.pro#%#//scriptlet("abort-current-inline-script", "setTimeout", 
 a1207 2
 xoilaczzza.tv#%#//scriptlet("set-constant", "adsPlayer", "")
 xoilaczzza.tv#%#//scriptlet("set-constant", "adsTvcs", "")
-diff name:abpvn_content_blocker lines:191 checksum:c8f77dbd0e
+diff name:abpvn_content_blocker lines:198 checksum:35c4e75795
 d2 1
 a2 1
-! Version: 20250416093256699
+! Version: 20250416105049620
 d5 2
 a6 2
-! Last modified: 16 Apr 2025 09:32:56 UTC+7
-! Diff-Path: patches/20250416093256699.patch#abpvn_content_blocker
+! Last modified: 16 Apr 2025 10:50:49 UTC+7
+! Diff-Path: patches/20250416105049620.patch#abpvn_content_blocker
 d47 1
 a47 1
 /i.imgur.com/*.gif$domain=keonhacai55.chat|www.motchill75.com|www.phimdinhcao.online|aluminiuminsider.com|veboxi.cc|cakhiavx.cc|listnhacai88.com|xoilaczzu.tv|xemtivingon.org|mitomtvt.cc|rakhoivx.cc|plcdn.xyz
@@ -432,8 +447,10 @@ d93 1
 a93 1
 ||cdn.lfastcdn.com^*.gif$image,domain=bongdainfox.tv|xoilaczzu.tv|rakhoivx.cc|cakhiavx.cc|mitomtvt.cc|xoilaczvx.cc|xoilaczzza.tv|veboxi.cc
 d118 1
-d152 6
-a157 6
+d150 8
+a157 8
+||mplmncb.com/banners-web$image,domain=truyenqqgo.co
+||mplmncb.com/popup/$script,domain=truyenqqgo.co
 ||nettruyenr.com/public/assets/js/pop$script,~third-party
 ||nettruyenvio.com/assets/js/ads/$script
 ||nettruyenvio.com/assets/js/pop$script
@@ -502,9 +519,14 @@ rakhoivx.cc,xoilaczzza.tv##.btn-8xbet
 d710 1
 a710 1
 toquoc.vn,baoxaydung.vn,tienphong.vn,taichinhdoanhnghiep.net.vn,thichxemphim.top,xemphimviet.casa,ghienphim.show,nettruyenr.com##.banner
-d722 1
-a722 1
-truyenqqto.com,nettruyenvio.com,truyentranh3q.com##.ads-banner
+d717 6
+a722 6
+truyenqqgo.co###ad_info_top
+truyenqqgo.co###catfishAd
+truyenqqgo.co###floating-banner-left
+truyenqqgo.co###floating-banner-right
+truyenqqgo.co##div#ad_info
+truyenqqgo.co,nettruyenvio.com,truyentranh3q.com##.ads-banner
 d737 5
 d804 3
 a806 3
@@ -605,14 +627,14 @@ www.buomtv.org##.zbgpvb19.zbgpvb16.zbgpvbj.zbgpvbh.zbgpvbg.zbgpvbf.zbgpvbe.zbgpv
 d1101 1
 a1109 1
 xphim18.com,sextv18.pro,sexhihiz.ac##.xx-ads
-diff name:abpvn_noelemhide lines:67 checksum:ffe8739cf4
+diff name:abpvn_noelemhide lines:69 checksum:12cee640a1
 d2 1
 a2 1
-! Version: 20250416093256699
+! Version: 20250416105049620
 d5 2
 a6 2
-! Last modified: 16 Apr 2025 09:32:56 UTC+7
-! Diff-Path: patches/20250416093256699.patch#abpvn_noelemhide
+! Last modified: 16 Apr 2025 10:50:49 UTC+7
+! Diff-Path: patches/20250416105049620.patch#abpvn_noelemhide
 d47 1
 a47 1
 /i.imgur.com/*.gif$domain=keonhacai55.chat|www.motchill75.com|www.phimdinhcao.online|aluminiuminsider.com|veboxi.cc|cakhiavx.cc|listnhacai88.com|xoilaczzu.tv|xemtivingon.org|mitomtvt.cc|rakhoivx.cc|plcdn.xyz
@@ -624,8 +646,10 @@ d93 1
 a93 1
 ||cdn.lfastcdn.com^*.gif$image,domain=bongdainfox.tv|xoilaczzu.tv|rakhoivx.cc|cakhiavx.cc|mitomtvt.cc|xoilaczvx.cc|xoilaczzza.tv|veboxi.cc
 d118 1
-d152 6
-a157 6
+d150 8
+a157 8
+||mplmncb.com/banners-web$image,domain=truyenqqgo.co
+||mplmncb.com/popup/$script,domain=truyenqqgo.co
 ||nettruyenr.com/public/assets/js/pop$script,~third-party
 ||nettruyenvio.com/assets/js/ads/$script
 ||nettruyenvio.com/assets/js/pop$script
@@ -673,14 +697,14 @@ a398 1
 d417 1
 a417 1
 ||uimg.buomtv.io/palivn/ad/$image,domain=www.buomtv.org
-diff name:abpvn_ublock lines:222 checksum:9b1619145a
+diff name:abpvn_ublock lines:230 checksum:12356fc8b4
 d2 1
 a2 1
-! Version: 20250416093256699
+! Version: 20250416105049620
 d5 2
 a6 2
-! Last modified: 16 Apr 2025 09:32:56 UTC+7
-! Diff-Path: patches/20250416093256699.patch#abpvn_ublock
+! Last modified: 16 Apr 2025 10:50:49 UTC+7
+! Diff-Path: patches/20250416105049620.patch#abpvn_ublock
 d45 1
 a45 1
 /i.imgur.com/*.gif$domain=keonhacai55.chat|www.motchill75.com|www.phimdinhcao.online|aluminiuminsider.com|veboxi.cc|cakhiavx.cc|listnhacai88.com|xoilaczzu.tv|xemtivingon.org|mitomtvt.cc|rakhoivx.cc|plcdn.xyz
@@ -692,8 +716,10 @@ d91 1
 a91 1
 ||cdn.lfastcdn.com^*.gif$image,domain=bongdainfox.tv|xoilaczzu.tv|rakhoivx.cc|cakhiavx.cc|mitomtvt.cc|xoilaczvx.cc|xoilaczzza.tv|veboxi.cc
 d116 1
-d150 6
-a155 6
+d148 8
+a155 8
+||mplmncb.com/banners-web$image,domain=truyenqqgo.co
+||mplmncb.com/popup/$script,domain=truyenqqgo.co
 ||nettruyenr.com/public/assets/js/pop$script,~third-party
 ||nettruyenvio.com/assets/js/ads/$script
 ||nettruyenvio.com/assets/js/pop$script
@@ -762,9 +788,14 @@ rakhoivx.cc,xoilaczzza.tv##.btn-8xbet
 d706 1
 a706 1
 toquoc.vn,baoxaydung.vn,tienphong.vn,taichinhdoanhnghiep.net.vn,thichxemphim.top,xemphimviet.casa,ghienphim.show,nettruyenr.com##.banner
-d718 1
-a718 1
-truyenqqto.com,nettruyenvio.com,truyentranh3q.com##.ads-banner
+d713 6
+a718 6
+truyenqqgo.co###ad_info_top
+truyenqqgo.co###catfishAd
+truyenqqgo.co###floating-banner-left
+truyenqqgo.co###floating-banner-right
+truyenqqgo.co##div#ad_info
+truyenqqgo.co,nettruyenvio.com,truyentranh3q.com##.ads-banner
 d733 5
 d800 3
 a802 3
@@ -875,8 +906,9 @@ nettruyenvio.com##+js(acs, JSON, fromCharCode)
 d1174 1
 a1174 1
 thiendia.pro##+js(acs, $, open)
-d1180 1
-a1180 1
+d1180 2
+a1181 2
+truyenqqgo.co##+js(acs, WebAssembly, localStorage)
 truyenqqtet.com,viet69moi.net##+js(acs, Promise, break;case)
 d1183 1
 a1183 1
