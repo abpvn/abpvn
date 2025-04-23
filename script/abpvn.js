@@ -15,8 +15,8 @@
 // @grant       GM_registerMenuCommand
 // @include     http://*
 // @include     https://*
-// @version     2.3.30
-// @change-log  Fix game24h.vn iframe game load + remove outdate function
+// @version     2.3.31
+// @change-log  Remove redirect remove config of cakhia-tv.onl
 // @run-at      document-end
 // ==/UserScript==
 /* String Prototype */
@@ -423,10 +423,6 @@ var fixSite = {
             {
                 url: 'https://icongnghe.com',
                 replace: 'https://icongnghe.com/download/?url='
-            },
-            {
-                url: 'https://cakhia-tv.onl',
-                replace: '/chuyen-huong/?redirect='
             },
             {
                 url: 'www.hdvietnam.',
