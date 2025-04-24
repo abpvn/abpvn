@@ -1,11 +1,11 @@
-diff name:abpvn lines:216 checksum:b07201c5d1
+diff name:abpvn lines:232 checksum:8cc2ac2b2f
 d2 1
 a2 1
-! Version: 20250424150721176
+! Version: 20250424230617119
 d5 2
 a6 2
-! Last modified: 24 Apr 2025 15:07:21 UTC+7
-! Diff-Path: patches/20250424150721176.patch#abpvn
+! Last modified: 24 Apr 2025 23:06:17 UTC+7
+! Diff-Path: patches/20250424230617119.patch#abpvn
 d47 1
 a47 1
 /i.imgur.com/*.gif$domain=keonhacai55.chat|www.motchill79.com|www.phimdinhcao.online|aluminiuminsider.com|veboxi.cc|cakhiavx.cc|listnhacai88.com|superconstellation.org|xemtivingon.org|mitomtvt.cc|rakhoivg.cc|plcdn.xyz
@@ -28,8 +28,9 @@ d93 1
 a93 1
 ||cdn.lfastcdn.com^*.gif$image,domain=bongdainfox.tv|superconstellation.org|rakhoivg.cc|cakhiavx.cc|mitomtvt.cc|veboxi.cc
 d99 1
-d117 1
-a117 1
+d116 2
+a117 2
+||hhkungfu.club/88vn$image,domain=animehay.bid
 ||hhpanda.now/ads/$script,~third-party
 d146 1
 a146 1
@@ -40,6 +41,9 @@ a164 1
 d176 1
 a176 1
 ||quoracdn.net^$image,domain=www.motchill79.com|www.phimdinhcao.online
+d181 1
+a181 1
+||s2.truyentot.com^*.gif$image,domain=hhtq12.vip|hhtq3d.net|hhtq5.vip|hhvsub1.com
 d188 1
 a188 1
 ||stc02bc54661548.cloud.anycastapnic.com^*gif$image,domain=gavangtv7.net
@@ -57,17 +61,19 @@ d237 1
 a237 1
 ||www.motchill79.com/3s.m3u8$rewrite=abp-resource:blank-mp3,domain=www.motchill79.com
 d373 1
-d376 3
-a378 4
+d376 10
+a385 11
 aluminiuminsider.com,rakhoivg.cc##.sk_balloon
 aluminiuminsider.com,superconstellation.org##.match-detail__offer
 aluminiuminsider.com,veboxi.cc,cakhiavx.cc,mitomtvt.cc,superconstellation.org##div[id^="dnn_"]
 aluminiuminsider.com,veboxi.cc,cakhiavx.cc,superconstellation.org,mitomtvt.cc##.company
-d381 3
-a383 3
+anime47.lat###qc_clgt
+anime47.lat###swiper-wrapper
 anime6.site###menubentrai
 anime6.site##.gnartyx-offads
 anime6.site,animetvn4.com,subnhanh1.org###fbox-background
+animehay.bid###header-ads + center
+animehay.bid##div[style="position: fixed; bottom: 0px; z-index: 98; width: 100%; text-align: center; box-sizing: border-box;"]
 d393 1
 a393 1
 animew.biz##div.py-2.md\:py-6.mx-auto.w-full.max-w-screen-3xl>div.relative
@@ -87,10 +93,13 @@ ephoto360.com,thiepmung.com,247phim.cc,www.phimmoichilla.xyz,hayhaytv.cc,www.ssp
 d522 5
 a526 5
 hhanime3d.tv,hhpanda.now###top_addd
-hhninja23.tv,phimhoathinh3d.vip,hoathinhtq.site,hhtq11.vip,hhtqvietsub.me,motchillti.com,hhtutien.tv,animeweb.vip,hoathinh4k3.top,animehay.page,hhtq3d.net,wibu47.com,hhvsub1.com,phimdacap.tv,motchill.how###catfish
+hhninja23.tv,phimhoathinh3d.vip,hoathinhtq.site,hhtq12.vip,hhtqvietsub.me,motchillti.com,hhtutien.tv,animeweb.vip,hoathinh4k3.top,animehay.bid,hhtq3d.net,wibu47.com,hhvsub1.com,phimdacap.tv,motchill.how###catfish
 hhpanda.now###xs-addd0
 hhpanda.now##.btn-fanpage.btn-default.btn-block.btn
 hhpanda.now##.underplayer_btn
+d528 1
+a528 1
+hhtqvietsub.me,animehay.bid###sponsor-balloon
 d627 1
 a627 1
 phim18vl.net,hhpanda.now,hhanime3d.tv###footer_fixed_ads
@@ -114,6 +123,9 @@ superconstellation.org##.w-100.justify-content-center.align-items-center.d-flex
 superconstellation.org##.widget
 superconstellation.org##a.d-lg-none.d-block:nth-of-type(1)
 superconstellation.org,rakhoivg.cc##.btn-odds
+d734 1
+a734 1
+truyensieuhay.com,hhtrungquoc6.com,hhtq12.vip,animeweb.vip,hhtq3d.net###topbanner
 d756 1
 a756 1
 veboxi.cc,mitomtvt.cc,rakhoivg.cc##.footer-banner
@@ -129,6 +141,10 @@ www.phimdinhcao.online,www.motchill79.com##.adv-300-right
 d823 1
 a823 1
 www.toptruyentv6.pro,doctruyen3qui8.pro##.advertisement
+d866 2
+a867 2
+@@||anime47.lat/ads/v/8.26.9/jw
+@@||anime47.lat/ads/v/8.26.9/translations
 d933 1
 a933 1
 /assets/js/vast.js$script,domain=~phevkl.icu|~viet69.fans
@@ -215,14 +231,14 @@ d1092 1
 a1092 2
 xemsex.tax,sextv18.pro,sexhihizz.pro##.xx-ads
 xemviet69.com##.banner-play
-diff name:abpvn_adguard lines:255 checksum:75b1a0457f
+diff name:abpvn_adguard lines:271 checksum:4c338a1745
 d2 1
 a2 1
-! Version: 20250424150721176
+! Version: 20250424230617119
 d5 2
 a6 2
-! Last modified: 24 Apr 2025 15:07:21 UTC+7
-! Diff-Path: patches/20250424150721176.patch#abpvn_adguard
+! Last modified: 24 Apr 2025 23:06:17 UTC+7
+! Diff-Path: patches/20250424230617119.patch#abpvn_adguard
 d45 1
 a45 1
 /i.imgur.com/*.gif$domain=keonhacai55.chat|www.motchill79.com|www.phimdinhcao.online|aluminiuminsider.com|veboxi.cc|cakhiavx.cc|listnhacai88.com|superconstellation.org|xemtivingon.org|mitomtvt.cc|rakhoivg.cc|plcdn.xyz
@@ -245,8 +261,9 @@ d91 1
 a91 1
 ||cdn.lfastcdn.com^*.gif$image,domain=bongdainfox.tv|superconstellation.org|rakhoivg.cc|cakhiavx.cc|mitomtvt.cc|veboxi.cc
 d97 1
-d115 1
-a115 1
+d114 2
+a115 2
+||hhkungfu.club/88vn$image,domain=animehay.bid
 ||hhpanda.now/ads/$script,~third-party
 d144 1
 a144 1
@@ -257,6 +274,9 @@ a162 1
 d174 1
 a174 1
 ||quoracdn.net^$image,domain=www.motchill79.com|www.phimdinhcao.online
+d178 1
+a178 1
+||s2.truyentot.com^*.gif$image,domain=hhtq12.vip|hhtq3d.net|hhtq5.vip|hhvsub1.com
 d184 1
 a184 1
 ||stc02bc54661548.cloud.anycastapnic.com^*gif$image,domain=gavangtv7.net
@@ -274,17 +294,19 @@ d233 1
 a233 1
 ||www.motchill79.com/3s.m3u8$rewrite=abp-resource:blank-mp3,domain=www.motchill79.com
 d369 1
-d372 3
-a374 4
+d372 10
+a381 11
 aluminiuminsider.com,rakhoivg.cc##.sk_balloon
 aluminiuminsider.com,superconstellation.org##.match-detail__offer
 aluminiuminsider.com,veboxi.cc,cakhiavx.cc,mitomtvt.cc,superconstellation.org##div[id^="dnn_"]
 aluminiuminsider.com,veboxi.cc,cakhiavx.cc,superconstellation.org,mitomtvt.cc##.company
-d377 3
-a379 3
+anime47.lat###qc_clgt
+anime47.lat###swiper-wrapper
 anime6.site###menubentrai
 anime6.site##.gnartyx-offads
 anime6.site,animetvn4.com,subnhanh1.org###fbox-background
+animehay.bid###header-ads + center
+animehay.bid##div[style="position: fixed; bottom: 0px; z-index: 98; width: 100%; text-align: center; box-sizing: border-box;"]
 d389 1
 a389 1
 animew.biz##div.py-2.md\:py-6.mx-auto.w-full.max-w-screen-3xl>div.relative
@@ -304,10 +326,13 @@ ephoto360.com,thiepmung.com,247phim.cc,www.phimmoichilla.xyz,hayhaytv.cc,www.ssp
 d518 5
 a522 5
 hhanime3d.tv,hhpanda.now###top_addd
-hhninja23.tv,phimhoathinh3d.vip,hoathinhtq.site,hhtq11.vip,hhtqvietsub.me,motchillti.com,hhtutien.tv,animeweb.vip,hoathinh4k3.top,animehay.page,hhtq3d.net,wibu47.com,hhvsub1.com,phimdacap.tv,motchill.how###catfish
+hhninja23.tv,phimhoathinh3d.vip,hoathinhtq.site,hhtq12.vip,hhtqvietsub.me,motchillti.com,hhtutien.tv,animeweb.vip,hoathinh4k3.top,animehay.bid,hhtq3d.net,wibu47.com,hhvsub1.com,phimdacap.tv,motchill.how###catfish
 hhpanda.now###xs-addd0
 hhpanda.now##.btn-fanpage.btn-default.btn-block.btn
 hhpanda.now##.underplayer_btn
+d524 1
+a524 1
+hhtqvietsub.me,animehay.bid###sponsor-balloon
 d623 1
 a623 1
 phim18vl.net,hhpanda.now,hhanime3d.tv###footer_fixed_ads
@@ -331,6 +356,9 @@ superconstellation.org##.w-100.justify-content-center.align-items-center.d-flex
 superconstellation.org##.widget
 superconstellation.org##a.d-lg-none.d-block:nth-of-type(1)
 superconstellation.org,rakhoivg.cc##.btn-odds
+d730 1
+a730 1
+truyensieuhay.com,hhtrungquoc6.com,hhtq12.vip,animeweb.vip,hhtq3d.net###topbanner
 d752 1
 a752 1
 veboxi.cc,mitomtvt.cc,rakhoivg.cc##.footer-banner
@@ -346,6 +374,10 @@ www.phimdinhcao.online,www.motchill79.com##.adv-300-right
 d819 1
 a819 1
 www.toptruyentv6.pro,doctruyen3qui8.pro##.advertisement
+d862 2
+a863 2
+@@||anime47.lat/ads/v/8.26.9/jw
+@@||anime47.lat/ads/v/8.26.9/translations
 d926 1
 a926 1
 /assets/js/vast.js$script,domain=~phevkl.icu|~viet69.fans
@@ -457,7 +489,7 @@ a1174 1
 truyenqqtet.com,xemviet69.com#%#//scriptlet("abort-current-inline-script", "Promise", "break;case")
 d1176 1
 a1176 1
-truyensieuhay.com,hayhaytv.site,quangcaoyenbai.com,phimchill.life,thuvienhd.biz,tv.tvhayhd.org,thefaplive.com,mv.dailyphimz.com,mv.phimbathu.one,sexhihizz.pro,anime47.ink,teamlanhlung3.shop#%#//scriptlet("abort-on-property-read", "document.cookie")
+truyensieuhay.com,hayhaytv.site,quangcaoyenbai.com,phimchill.life,thuvienhd.biz,tv.tvhayhd.org,thefaplive.com,mv.dailyphimz.com,mv.phimbathu.one,sexhihizz.pro,anime47.lat,teamlanhlung3.shop#%#//scriptlet("abort-on-property-read", "document.cookie")
 d1178 1
 a1178 1
 vailonxx.vip,www.motchill79.com#%#//scriptlet("abort-current-inline-script", "jQuery", "window.open")
@@ -471,14 +503,14 @@ www.phimdinhcao.online,www.motchill79.com,xnhau.im,teamlanhlung3.shop#%#//script
 d1196 1
 a1196 1
 www.toptruyentv6.pro#%#//scriptlet("abort-current-inline-script", "setTimeout", "open")
-diff name:abpvn_content_blocker lines:216 checksum:77e56f7670
+diff name:abpvn_content_blocker lines:232 checksum:009f135fbe
 d2 1
 a2 1
-! Version: 20250424150721176
+! Version: 20250424230617119
 d5 2
 a6 2
-! Last modified: 24 Apr 2025 15:07:21 UTC+7
-! Diff-Path: patches/20250424150721176.patch#abpvn_content_blocker
+! Last modified: 24 Apr 2025 23:06:17 UTC+7
+! Diff-Path: patches/20250424230617119.patch#abpvn_content_blocker
 d47 1
 a47 1
 /i.imgur.com/*.gif$domain=keonhacai55.chat|www.motchill79.com|www.phimdinhcao.online|aluminiuminsider.com|veboxi.cc|cakhiavx.cc|listnhacai88.com|superconstellation.org|xemtivingon.org|mitomtvt.cc|rakhoivg.cc|plcdn.xyz
@@ -501,8 +533,9 @@ d93 1
 a93 1
 ||cdn.lfastcdn.com^*.gif$image,domain=bongdainfox.tv|superconstellation.org|rakhoivg.cc|cakhiavx.cc|mitomtvt.cc|veboxi.cc
 d99 1
-d117 1
-a117 1
+d116 2
+a117 2
+||hhkungfu.club/88vn$image,domain=animehay.bid
 ||hhpanda.now/ads/$script,~third-party
 d146 1
 a146 1
@@ -513,6 +546,9 @@ a164 1
 d176 1
 a176 1
 ||quoracdn.net^$image,domain=www.motchill79.com|www.phimdinhcao.online
+d181 1
+a181 1
+||s2.truyentot.com^*.gif$image,domain=hhtq12.vip|hhtq3d.net|hhtq5.vip|hhvsub1.com
 d188 1
 a188 1
 ||stc02bc54661548.cloud.anycastapnic.com^*gif$image,domain=gavangtv7.net
@@ -530,17 +566,19 @@ d237 1
 a237 1
 ||www.motchill79.com/3s.m3u8$rewrite=abp-resource:blank-mp3,domain=www.motchill79.com
 d373 1
-d376 3
-a378 4
+d376 10
+a385 11
 aluminiuminsider.com,rakhoivg.cc##.sk_balloon
 aluminiuminsider.com,superconstellation.org##.match-detail__offer
 aluminiuminsider.com,veboxi.cc,cakhiavx.cc,mitomtvt.cc,superconstellation.org##div[id^="dnn_"]
 aluminiuminsider.com,veboxi.cc,cakhiavx.cc,superconstellation.org,mitomtvt.cc##.company
-d381 3
-a383 3
+anime47.lat###qc_clgt
+anime47.lat###swiper-wrapper
 anime6.site###menubentrai
 anime6.site##.gnartyx-offads
 anime6.site,animetvn4.com,subnhanh1.org###fbox-background
+animehay.bid###header-ads + center
+animehay.bid##div[style="position: fixed; bottom: 0px; z-index: 98; width: 100%; text-align: center; box-sizing: border-box;"]
 d393 1
 a393 1
 animew.biz##div.py-2.md\:py-6.mx-auto.w-full.max-w-screen-3xl>div.relative
@@ -560,10 +598,13 @@ ephoto360.com,thiepmung.com,247phim.cc,www.phimmoichilla.xyz,hayhaytv.cc,www.ssp
 d522 5
 a526 5
 hhanime3d.tv,hhpanda.now###top_addd
-hhninja23.tv,phimhoathinh3d.vip,hoathinhtq.site,hhtq11.vip,hhtqvietsub.me,motchillti.com,hhtutien.tv,animeweb.vip,hoathinh4k3.top,animehay.page,hhtq3d.net,wibu47.com,hhvsub1.com,phimdacap.tv,motchill.how###catfish
+hhninja23.tv,phimhoathinh3d.vip,hoathinhtq.site,hhtq12.vip,hhtqvietsub.me,motchillti.com,hhtutien.tv,animeweb.vip,hoathinh4k3.top,animehay.bid,hhtq3d.net,wibu47.com,hhvsub1.com,phimdacap.tv,motchill.how###catfish
 hhpanda.now###xs-addd0
 hhpanda.now##.btn-fanpage.btn-default.btn-block.btn
 hhpanda.now##.underplayer_btn
+d528 1
+a528 1
+hhtqvietsub.me,animehay.bid###sponsor-balloon
 d627 1
 a627 1
 phim18vl.net,hhpanda.now,hhanime3d.tv###footer_fixed_ads
@@ -587,6 +628,9 @@ superconstellation.org##.w-100.justify-content-center.align-items-center.d-flex
 superconstellation.org##.widget
 superconstellation.org##a.d-lg-none.d-block:nth-of-type(1)
 superconstellation.org,rakhoivg.cc##.btn-odds
+d734 1
+a734 1
+truyensieuhay.com,hhtrungquoc6.com,hhtq12.vip,animeweb.vip,hhtq3d.net###topbanner
 d756 1
 a756 1
 veboxi.cc,mitomtvt.cc,rakhoivg.cc##.footer-banner
@@ -602,6 +646,10 @@ www.phimdinhcao.online,www.motchill79.com##.adv-300-right
 d823 1
 a823 1
 www.toptruyentv6.pro,doctruyen3qui8.pro##.advertisement
+d866 2
+a867 2
+@@||anime47.lat/ads/v/8.26.9/jw
+@@||anime47.lat/ads/v/8.26.9/translations
 d933 1
 a933 1
 /assets/js/vast.js$script,domain=~phevkl.icu|~viet69.fans
@@ -688,14 +736,14 @@ d1092 1
 a1092 2
 xemsex.tax,sextv18.pro,sexhihizz.pro##.xx-ads
 xemviet69.com##.banner-play
-diff name:abpvn_noelemhide lines:82 checksum:7786ebf4ac
+diff name:abpvn_noelemhide lines:90 checksum:4dad0df091
 d2 1
 a2 1
-! Version: 20250424150721176
+! Version: 20250424230617119
 d5 2
 a6 2
-! Last modified: 24 Apr 2025 15:07:21 UTC+7
-! Diff-Path: patches/20250424150721176.patch#abpvn_noelemhide
+! Last modified: 24 Apr 2025 23:06:17 UTC+7
+! Diff-Path: patches/20250424230617119.patch#abpvn_noelemhide
 d47 1
 a47 1
 /i.imgur.com/*.gif$domain=keonhacai55.chat|www.motchill79.com|www.phimdinhcao.online|aluminiuminsider.com|veboxi.cc|cakhiavx.cc|listnhacai88.com|superconstellation.org|xemtivingon.org|mitomtvt.cc|rakhoivg.cc|plcdn.xyz
@@ -718,8 +766,9 @@ d93 1
 a93 1
 ||cdn.lfastcdn.com^*.gif$image,domain=bongdainfox.tv|superconstellation.org|rakhoivg.cc|cakhiavx.cc|mitomtvt.cc|veboxi.cc
 d99 1
-d117 1
-a117 1
+d116 2
+a117 2
+||hhkungfu.club/88vn$image,domain=animehay.bid
 ||hhpanda.now/ads/$script,~third-party
 d146 1
 a146 1
@@ -730,6 +779,9 @@ a164 1
 d176 1
 a176 1
 ||quoracdn.net^$image,domain=www.motchill79.com|www.phimdinhcao.online
+d181 1
+a181 1
+||s2.truyentot.com^*.gif$image,domain=hhtq12.vip|hhtq3d.net|hhtq5.vip|hhvsub1.com
 d188 1
 a188 1
 ||stc02bc54661548.cloud.anycastapnic.com^*gif$image,domain=gavangtv7.net
@@ -746,6 +798,10 @@ a219 2
 d237 1
 a237 1
 ||www.motchill79.com/3s.m3u8$rewrite=abp-resource:blank-mp3,domain=www.motchill79.com
+d334 2
+a335 2
+@@||anime47.lat/ads/v/8.26.9/jw
+@@||anime47.lat/ads/v/8.26.9/translations
 d358 1
 a358 1
 /assets/js/vast.js$script,domain=~phevkl.icu|~viet69.fans
@@ -771,14 +827,14 @@ a400 1
 d409 1
 a409 1
 ||uimg.buomtv.io/palivn/ad/$image,domain=buomtv.blog
-diff name:abpvn_ublock lines:255 checksum:9f43c1ac8a
+diff name:abpvn_ublock lines:271 checksum:3b40c89684
 d2 1
 a2 1
-! Version: 20250424150721176
+! Version: 20250424230617119
 d5 2
 a6 2
-! Last modified: 24 Apr 2025 15:07:21 UTC+7
-! Diff-Path: patches/20250424150721176.patch#abpvn_ublock
+! Last modified: 24 Apr 2025 23:06:17 UTC+7
+! Diff-Path: patches/20250424230617119.patch#abpvn_ublock
 d45 1
 a45 1
 /i.imgur.com/*.gif$domain=keonhacai55.chat|www.motchill79.com|www.phimdinhcao.online|aluminiuminsider.com|veboxi.cc|cakhiavx.cc|listnhacai88.com|superconstellation.org|xemtivingon.org|mitomtvt.cc|rakhoivg.cc|plcdn.xyz
@@ -801,8 +857,9 @@ d91 1
 a91 1
 ||cdn.lfastcdn.com^*.gif$image,domain=bongdainfox.tv|superconstellation.org|rakhoivg.cc|cakhiavx.cc|mitomtvt.cc|veboxi.cc
 d97 1
-d115 1
-a115 1
+d114 2
+a115 2
+||hhkungfu.club/88vn$image,domain=animehay.bid
 ||hhpanda.now/ads/$script,~third-party
 d144 1
 a144 1
@@ -813,6 +870,9 @@ a162 1
 d174 1
 a174 1
 ||quoracdn.net^$image,domain=www.motchill79.com|www.phimdinhcao.online
+d178 1
+a178 1
+||s2.truyentot.com^*.gif$image,domain=hhtq12.vip|hhtq3d.net|hhtq5.vip|hhvsub1.com
 d184 1
 a184 1
 ||stc02bc54661548.cloud.anycastapnic.com^*gif$image,domain=gavangtv7.net
@@ -830,17 +890,19 @@ d233 1
 a233 1
 ||www.motchill79.com/3s.m3u8$rewrite=abp-resource:blank-mp3,domain=www.motchill79.com
 d369 1
-d372 3
-a374 4
+d372 10
+a381 11
 aluminiuminsider.com,rakhoivg.cc##.sk_balloon
 aluminiuminsider.com,superconstellation.org##.match-detail__offer
 aluminiuminsider.com,veboxi.cc,cakhiavx.cc,mitomtvt.cc,superconstellation.org##div[id^="dnn_"]
 aluminiuminsider.com,veboxi.cc,cakhiavx.cc,superconstellation.org,mitomtvt.cc##.company
-d377 3
-a379 3
+anime47.lat###qc_clgt
+anime47.lat###swiper-wrapper
 anime6.site###menubentrai
 anime6.site##.gnartyx-offads
 anime6.site,animetvn4.com,subnhanh1.org###fbox-background
+animehay.bid###header-ads + center
+animehay.bid##div[style="position: fixed; bottom: 0px; z-index: 98; width: 100%; text-align: center; box-sizing: border-box;"]
 d389 1
 a389 1
 animew.biz##div.py-2.md\:py-6.mx-auto.w-full.max-w-screen-3xl>div.relative
@@ -860,10 +922,13 @@ ephoto360.com,thiepmung.com,247phim.cc,www.phimmoichilla.xyz,hayhaytv.cc,www.ssp
 d518 5
 a522 5
 hhanime3d.tv,hhpanda.now###top_addd
-hhninja23.tv,phimhoathinh3d.vip,hoathinhtq.site,hhtq11.vip,hhtqvietsub.me,motchillti.com,hhtutien.tv,animeweb.vip,hoathinh4k3.top,animehay.page,hhtq3d.net,wibu47.com,hhvsub1.com,phimdacap.tv,motchill.how###catfish
+hhninja23.tv,phimhoathinh3d.vip,hoathinhtq.site,hhtq12.vip,hhtqvietsub.me,motchillti.com,hhtutien.tv,animeweb.vip,hoathinh4k3.top,animehay.bid,hhtq3d.net,wibu47.com,hhvsub1.com,phimdacap.tv,motchill.how###catfish
 hhpanda.now###xs-addd0
 hhpanda.now##.btn-fanpage.btn-default.btn-block.btn
 hhpanda.now##.underplayer_btn
+d524 1
+a524 1
+hhtqvietsub.me,animehay.bid###sponsor-balloon
 d623 1
 a623 1
 phim18vl.net,hhpanda.now,hhanime3d.tv###footer_fixed_ads
@@ -887,6 +952,9 @@ superconstellation.org##.w-100.justify-content-center.align-items-center.d-flex
 superconstellation.org##.widget
 superconstellation.org##a.d-lg-none.d-block:nth-of-type(1)
 superconstellation.org,rakhoivg.cc##.btn-odds
+d730 1
+a730 1
+truyensieuhay.com,hhtrungquoc6.com,hhtq12.vip,animeweb.vip,hhtq3d.net###topbanner
 d752 1
 a752 1
 veboxi.cc,mitomtvt.cc,rakhoivg.cc##.footer-banner
@@ -902,6 +970,10 @@ www.phimdinhcao.online,www.motchill79.com##.adv-300-right
 d819 1
 a819 1
 www.toptruyentv6.pro,doctruyen3qui8.pro##.advertisement
+d862 2
+a863 2
+@@||anime47.lat/ads/v/8.26.9/jw
+@@||anime47.lat/ads/v/8.26.9/translations
 d925 1
 a925 1
 /assets/js/vast.js$script,domain=~phevkl.icu|~viet69.fans
@@ -1013,7 +1085,7 @@ a1174 1
 truyenqqtet.com,xemviet69.com##+js(acs, Promise, break;case)
 d1176 1
 a1176 1
-truyensieuhay.com,hayhaytv.site,quangcaoyenbai.com,phimchill.life,thuvienhd.biz,tv.tvhayhd.org,thefaplive.com,mv.dailyphimz.com,mv.phimbathu.one,sexhihizz.pro,anime47.ink,teamlanhlung3.shop##+js(aopr, document.cookie)
+truyensieuhay.com,hayhaytv.site,quangcaoyenbai.com,phimchill.life,thuvienhd.biz,tv.tvhayhd.org,thefaplive.com,mv.dailyphimz.com,mv.phimbathu.one,sexhihizz.pro,anime47.lat,teamlanhlung3.shop##+js(aopr, document.cookie)
 d1178 1
 a1178 1
 vailonxx.vip,www.motchill79.com##+js(acs, jQuery, window.open)
