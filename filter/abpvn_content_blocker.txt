@@ -1,9 +1,9 @@
 [Adblock Plus 2.0]
-! Version: 20250425132832974
+! Version: 20250425140501883
 ! id: D4028CDD-3D39-4624-ACC7-8140F4EC3888
 ! Title: ABPVN List
-! Last modified: 25 Apr 2025 13:28:33 UTC+7
-! Diff-Path: patches/20250425132832974.patch#abpvn_content_blocker
+! Last modified: 25 Apr 2025 14:05:01 UTC+7
+! Diff-Path: patches/20250425140501883.patch#abpvn_content_blocker
 ! Diff-Expires: 60 minutes
 ! Expires: 1 days (update frequency)
 !
@@ -119,6 +119,7 @@ $popup,domain=truyenfull.vision
 ||hsctvn.com/uploads/products/$~third-party,image
 ||huongdanjava.com$csp=script-src data: 'self' 'unsafe-inline' http: https:
 ||i.ex-cdn.com/nhadautu.vn/files/qc/$domain=nhadautu.vn
+||i.ibb.co^*.gif$image,domain=phimtuoitho.site
 ||i.imgur.com/81uid6d.jpg$domain=vozer.net
 ||i.imgur.com/FbUH5AQ.png$domain=vozer.net
 ||i.imgur.com^$image,domain=nhacdj.vn|diendanit.net|banbuondalat.com|hoathinhtq.site|xem.tructiepnba.me|www.ssphim.us|phimbet.biz
@@ -349,7 +350,7 @@ $popup,domain=truyenfull.vision
 ##[id^="bn_bottom_fixed_"]
 ##div[style="position: fixed; inset: 0px; z-index: 2147483647; pointer-events: auto;"]
 10gb.vn##.text-center.rounded.p-3.border.mb-lg-4.mb-3
-123nhadatviet.net,123nhadatviet.com,news.tuoitre.vn,tuoitre.vn,nld.com.vn##.banner-top
+123nhadatviet.net,123nhadatviet.com,tuoitre.vn,nld.com.vn##.banner-top
 24h.com.vn###background_bg_link
 24h.com.vn###subRightAboveHome
 24h.com.vn##.adv-24h-mid
@@ -388,7 +389,7 @@ animevietsub.lol###invideo_wrapper
 animevietsub.lol##.Ads
 animevietsub.lol##.mobile-catfish-top
 animevietsub.lol##.mobile-catfixx
-animevietsub.lol##.pc-catfixx
+animevietsub.lol,phimtuoitho.site##.pc-catfixx
 animew.biz##div.py-2.md\:py-6.mx-auto.w-full.max-w-screen-3xl>div.relative
 apkmoddone.com###sn-Notif
 apkmoddone.com##.pAd
@@ -581,9 +582,9 @@ mannhan95.xyz##.popup
 mannhan95.xyz##.sticky
 mannhan95.xyz##a.btn_fb:nth-of-type(2)
 metruyencv.com##.text-muted
-metruyencv.com,metruyencv.net,metruyencv.com##[href$="/goout/lazada"]
-metruyencv.com,metruyencv.net,metruyencv.com##section.nh-section:nth-of-type(5)
-metruyencv.com,metruyencv.net,metruyencv.com#?#.text-center:-abp-has(small:-abp-contains(QUẢNG CÁO))
+metruyencv.com,metruyencv.net##[href$="/goout/lazada"]
+metruyencv.com,metruyencv.net##section.nh-section:nth-of-type(5)
+metruyencv.com,metruyencv.net#?#.text-center:-abp-has(small:-abp-contains(QUẢNG CÁO))
 minhngoc.net.vn,vn-z.vn,kinhtedothi.vn##[id^="adv"]
 mn.mediastation.live##.btn-bottom-right-append-player
 mn.mediastation.live##.images-bnr-bellow-append-custom
