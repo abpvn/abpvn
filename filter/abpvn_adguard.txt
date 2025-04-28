@@ -1,9 +1,9 @@
 [Adblock Plus 2.0]
-! Version: 20250428120720085
+! Version: 20250428143852566
 ! id: D4028CDD-3D39-4624-ACC7-8140F4EC3888
 ! Title: ABPVN List
-! Last modified: 28 Apr 2025 12:07:20 UTC+7
-! Diff-Path: patches/20250428120720085.patch#abpvn_adguard
+! Last modified: 28 Apr 2025 14:38:52 UTC+7
+! Diff-Path: patches/20250428143852566.patch#abpvn_adguard
 ! Diff-Expires: 60 minutes
 ! Expires: 1 days (update frequency)
 !
@@ -43,7 +43,7 @@
 /core/*$script,domain=gamek.vn|genk.vn|kenh14.vn|cafef.vn|thanhnien.vn
 /disable-devtool.min.js$script
 /giadinhonline.vn/files/qc/*
-/i.imgur.com/*.gif$domain=keonhacai55.chat|www.motchill79.com|www.phimdinhcao.online|foodsov.org|veboxi.cc|cakhiavx.cc|listnhacai88.com|gezitter.org|xemtivingon.org|mitomtvt.cc|rakhoivg.cc|plcdn.xyz
+/i.imgur.com/*.gif$domain=keonhacai55.chat|www.motchill79.com|www.phimdinhcao.online|foodsov.org|veboxi.cc|cakhiavx.cc|listnhacai88.com|redhotjazz.com|xemtivingon.org|mitomtvt.cc|rakhoivg.cc|plcdn.xyz
 /js/ads.js$script,~third-party,domain=~vipurl.in
 /lv/esnk/*$script
 /newchill/*gif$image
@@ -95,7 +95,7 @@
 ||bp.blogspot.com$image,domain=xemtivi4k.com
 ||bp.blogspot.com/*banner$image,domain=~aowvn.org|~www.umu.pro.vn
 ||cdn-data.gtvplus.vn/banners/$image,domain=gametv.vn
-||cdn.lfastcdn.com^*.gif$image,domain=bongdainfox.tv|gezitter.org|rakhoivg.cc|cakhiavx.cc|mitomtvt.cc|veboxi.cc
+||cdn.lfastcdn.com^*.gif$image,domain=bongdainfox.tv|redhotjazz.com|rakhoivg.cc|cakhiavx.cc|mitomtvt.cc|veboxi.cc
 ||cdn.monkeydarchive.com/images/banner/$image,domain=monkeyd.net.vn
 ||cdn.webhoctienganh.com/asset/home/img/banner/$image,domain=webhoctienganh.com
 ||chodansinh.net^*.gif
@@ -109,7 +109,6 @@
 ||forum.idichvuseo.com/images/quang-cao
 ||fun6668.com/Banner/$domain=mythethao.net
 ||fundingchoicesmessages.google.com^$third-party
-||gezitter.org/wp-content/themes/bongda/dist/images/company/21.png$image
 ||ghienphim.blog^*.gif$image,domain=xemphimviet.casa
 ||ghienphim.show/client_assets/js/minijumb.js
 ||ghienphim.show^*.gif$image
@@ -181,6 +180,8 @@
 ||quangcaosanpham.com/images/$third-party
 ||quoracdn.net^$image,domain=www.motchill79.com|www.phimdinhcao.online
 ||raovat.tuoitre.vn^$domain=tuoitre.vn
+||redhotjazz.com/wp-content/themes/bongda/dist/images/company/21.png$image
+||run.vn/widget$script,~third-party
 ||s1.truyentranh3q.com^*.gif$image
 ||s2.phim1280.tv/adjump$domain=yeuphim.de
 ||s2.truyentot.com^*.gif$image,domain=hhtq12.vip|hhtq3d.net|hhtq5.vip|hhvsub1.com
@@ -703,7 +704,7 @@ cakhiavx.cc##.menu-item-object-custom
 cakhiavx.cc##.sub-menu.d-none.d-lg-flex
 cakhiavx.cc,foodsov.org,veboxi.cc###quangcaopc
 cakhiavx.cc,foodsov.org,veboxi.cc##.marquee-container
-cakhiavx.cc,foodsov.org,veboxi.cc,rakhoivg.cc,gezitter.org###wap_bottombanner
+cakhiavx.cc,foodsov.org,veboxi.cc,rakhoivg.cc,redhotjazz.com###wap_bottombanner
 cakhiavx.cc,veboxi.cc##.align-items-center.justify-content-between.d-flex.col-12>.d-lg-none.d-block
 chap.vn##.my_responsive_add
 chap.vn##.titleBar + *
@@ -752,12 +753,12 @@ foodsov.org##.pl-lg-0.col-xl-4
 foodsov.org##.row.d-none
 foodsov.org##.widget-offers__list
 foodsov.org##div.d-lg-none.d-block:nth-of-type(3)
-foodsov.org,gezitter.org##.match-detail__offer
 foodsov.org,mitomtvt.cc##.menu-cuoc-8xbet
 foodsov.org,mitomtvt.cc##.menu-top-nha-cai
 foodsov.org,rakhoivg.cc##.sk_balloon
-foodsov.org,veboxi.cc,cakhiavx.cc,gezitter.org,mitomtvt.cc##.company
-foodsov.org,veboxi.cc,cakhiavx.cc,mitomtvt.cc,gezitter.org##div[id^="dnn_"]
+foodsov.org,redhotjazz.com##.match-detail__offer
+foodsov.org,veboxi.cc,cakhiavx.cc,mitomtvt.cc,redhotjazz.com##div[id^="dnn_"]
+foodsov.org,veboxi.cc,cakhiavx.cc,redhotjazz.com,mitomtvt.cc##.company
 freeplayervideo.com,abysscdn.com,player-cdn.com###player + div[id]
 freeplayervideo.com,abysscdn.com,player-cdn.com##.playover
 fshare.vn###myElementz
@@ -773,13 +774,6 @@ game8.vn##.box_text_qc
 game8.vn##div.news-left-related:nth-of-type(2)
 gameio.vn###tubia
 genk.vn##.khw-ads-wrapper.clearfix
-gezitter.org##.c-int.d-lg-none.d-block>p.block-int.mb-1
-gezitter.org##.col-12>p.block-int.mb-1
-gezitter.org##.grid-match__footer
-gezitter.org##.odds-comp
-gezitter.org##.w-100.justify-content-center.align-items-center.d-flex
-gezitter.org##.widget
-gezitter.org##a.d-lg-none.d-block:nth-of-type(1)
 ghienphim.show##.no-ads
 ghienphim.show##.parent.special
 ghienphim.show##.partner-me
@@ -934,8 +928,15 @@ qdnd.vn##.box-banner
 quantrimang.com###adrighttop
 rakhoivg.cc##.bookmaker-selector-container
 rakhoivg.cc##.btn-odds
-rakhoivg.cc,gezitter.org##.btn-8xbet
+rakhoivg.cc,redhotjazz.com##.btn-8xbet
 reatimes.vn##div[class^="adv-"]
+redhotjazz.com##.c-int.d-lg-none.d-block>p.block-int.mb-1
+redhotjazz.com##.col-12>p.block-int.mb-1
+redhotjazz.com##.grid-match__footer
+redhotjazz.com##.odds-comp
+redhotjazz.com##.w-100.justify-content-center.align-items-center.d-flex
+redhotjazz.com##.widget
+redhotjazz.com##a.d-lg-none.d-block:nth-of-type(1)
 sachmoi.net##.boxzilla-bottom-right-container
 sachmoi.net##[href^="https://gotrackecom.info"]
 saostar.vn##.pc-bill
@@ -1403,7 +1404,6 @@ foodsov.org#%#//scriptlet("abort-on-property-read", "adsRedirectPopups")
 freeplayervideo.com,abysscdn.com,player-cdn.com#%#//scriptlet("set-constant", "open", "noopFunc")
 freeplayervideo.com,abysscdn.com,player-cdn.com,playhydrax.com#%#//scriptlet("abort-current-inline-script", "document.getElementById", "openPop")
 game8.vn#%#//scriptlet("abort-on-property-read", "document.addEventListener", "open")
-gezitter.org#%#//scriptlet("set-constant", "adsTvcs", "")
 giavang.net#%#//scriptlet("prevent-fetch", "method:HEAD")
 gocmod.com#%#//scriptlet("abort-current-inline-script", "jQuery", "popup")
 goctruyentranhvui17.com,nettruyener.com,sextop1.show,hhvsub1.com,sayhentai.ink,live.sexviet88.wiki#%#//scriptlet("abort-current-inline-script", "WebAssembly", "globalThis")
@@ -1443,6 +1443,7 @@ plcdn.xyz#%#//scriptlet("abort-on-property-read", "adsPlayer")
 plcdn.xyz#%#//scriptlet("abort-on-property-read", "adsPopupPlayer")
 plcdn.xyz#%#//scriptlet("abort-on-property-read", "adsTvc")
 plcdn.xyz#%#//scriptlet("abort-on-property-read", "keyPlayer")
+redhotjazz.com#%#//scriptlet("set-constant", "adsTvcs", "")
 rphang.online,misskon.com#%#//scriptlet("abort-current-inline-script", "document.querySelectorAll", "popMagic")
 saigon24.net#%#//scriptlet("abort-current-inline-script", "document.getElementById", "myModal")
 sexhd88.online#%#//scriptlet("abort-current-inline-script", "document.addEventListener", "open")
