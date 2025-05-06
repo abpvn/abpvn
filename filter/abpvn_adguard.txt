@@ -1,9 +1,9 @@
 [Adblock Plus 2.0]
-! Version: 20250506193648570
+! Version: 20250506200733147
 ! id: D4028CDD-3D39-4624-ACC7-8140F4EC3888
 ! Title: ABPVN List
-! Last modified: 06 May 2025 19:36:48 UTC+7
-! Diff-Path: patches/20250506193648570.patch#abpvn_adguard
+! Last modified: 06 May 2025 20:07:33 UTC+7
+! Diff-Path: patches/20250506200733147.patch#abpvn_adguard
 ! Diff-Expires: 60 minutes
 ! Expires: 1 days (update frequency)
 !
@@ -151,6 +151,8 @@
 ||motchill.cm^*.gif$image
 ||motchill10.com/public/upload/ads/ads.js$script,~third-party
 ||motchill88.net/banner$image
+||motchillo.fm/wp-content/plugins/AdsManager/js/aam-scripts.js$script,~third-party
+||motchillo.fm^*.gif$image
 ||motphimtv.ad^*.gif$image
 ||mplmncb.com/banners-web$image,domain=truyenqqgo.com
 ||mplmncb.com/popup/$script,domain=truyenqqgo.com
@@ -681,6 +683,7 @@ baomoi.com##.block:has([data-adaptive])
 baonga.com##.monkey-content-duoicanbiet
 baonga.com##.monkey-section-tinnoibat
 baonga.com##div.monkey-qc
+baoquangninh.vn##.bottom-right-ads
 bc.xoilac5.lol,live4.xoilac34.org##.vb-button>.mct_-bet
 bc.xoilac5.lol,live4.xoilac34.org##div.vebo-sp.container:nth-of-type(7)
 bing.com##.b_algo:has(.rms_img[src*="/th?id=OADD2."][src$="21.2"])
@@ -870,6 +873,10 @@ mn.mediastation.live##.images-top-pl
 monkeyd.net.vn###affLayer
 monkeyd.net.vn##.justify-content-center.d-flex.mx-3.mx-lg-4.mt-3 > [href]
 motchiill.pw##.overlay-1
+motchillo.fm##.aam-banner-wrapper
+motchillo.fm##.cat-footer-wrapper
+motchillo.fm##.cat-header-wrapper
+motchillo.fm##.popup-overlay
 motphimchill.club###catfish_ad_top
 mphim14.org##.adv_phim
 mphim14.org##.fixed_bottom
