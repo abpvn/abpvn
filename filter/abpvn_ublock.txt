@@ -1,9 +1,9 @@
 [Adblock Plus 2.0]
-! Version: 20250514150730970
+! Version: 20250514180513121
 ! id: D4028CDD-3D39-4624-ACC7-8140F4EC3888
 ! Title: ABPVN List
-! Last modified: 14 May 2025 15:07:30 UTC+7
-! Diff-Path: patches/20250514150730970.patch#abpvn_ublock
+! Last modified: 14 May 2025 18:05:13 UTC+7
+! Diff-Path: patches/20250514180513121.patch#abpvn_ublock
 ! Diff-Expires: 60 minutes
 ! Expires: 1 days (update frequency)
 !
@@ -1186,7 +1186,7 @@ $third-party,script,domain=sexdiaryx.live
 /assets/js/vast.js$script,domain=~phevkl.im|~viet69.adult
 /get/*?zoneid=$script
 /player/vast.js$script
-/theme/custom.int.js$script,domain=phimsexvietnam.app|gm.phimsexnhanh.tv|clipsex.cam|ww1.ditnhau.cc
+/theme/custom.int.js$script,domain=gm.phimsexnhanh.tv|clipsex.cam|ww1.ditnhau.cc
 /wp-content/uploads/*.gif$image,domain=tuoi69.center|tuoinung.asia|teletiengviet.com|phevkl.im|viet69.adult
 ||ads.6789live.com^
 ||anhgaixinh.online^*.webp$image
@@ -1403,6 +1403,7 @@ freeplayervideo.com,abysscdn.com,player-cdn.com,playhydrax.com##+js(acs, documen
 freeplayervideo.com,abysscdn.com,player-cdn.com,playhydrax.com##+js(set, open, noopFunc)
 game8.vn##+js(acs, document.addEventListener, open)
 giavang.net##+js(no-fetch-if, method:HEAD)
+gm.phimsexnhanh.tv,clipsex.cam,ww1.ditnhau.cc##+js(set, video.adVast, '')
 gocmod.com##+js(acs, jQuery, popup)
 goctruyentranhvui17.com,nettruyener.com,sextop1.show,hhvsub1.com,sayhentai.ink,vn1.sexviet88.xyz##+js(acs, WebAssembly, globalThis)
 gotphim.com##+js(acs, navigator, devtoolsDetector)
@@ -1433,7 +1434,6 @@ opensubtitles.com##div[class*="download-ready"]:style(display:block!important)
 opensubtitles.com##div[id^="clock_"]
 p.thoctv.com,ytstv.me##+js(acs, document.createElement, script)
 phimmoi.sale##+js(acs, addEvent, popu)
-phimsexvietnam.app,gm.phimsexnhanh.tv,clipsex.cam,ww1.ditnhau.cc##+js(set, video.adVast, '')
 phimtho.net#%#//scriptlet("abort-current-inline-script", "$", "p0pUpRandom")
 phimvuihd.org##+js(set, urlAds, '')
 plcdn.xyz##+js(aopr, ads)
