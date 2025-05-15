@@ -1,9 +1,9 @@
 [Adblock Plus 2.0]
-! Version: 20250515150737047
+! Version: 20250515170011751
 ! id: D4028CDD-3D39-4624-ACC7-8140F4EC3888
 ! Title: ABPVN List
-! Last modified: 15 May 2025 15:07:37 UTC+7
-! Diff-Path: patches/20250515150737047.patch#abpvn_ublock
+! Last modified: 15 May 2025 17:00:11 UTC+7
+! Diff-Path: patches/20250515170011751.patch#abpvn_ublock
 ! Diff-Expires: 60 minutes
 ! Expires: 1 days (update frequency)
 !
@@ -30,7 +30,7 @@
 /^https:\/\/[a-z]{3,}\.com\/$/$xmlhttprequest,third-party
 /_BannerSlot.aspx$subdocument,domain=bongdaso66.net
 /aas/r45d/vki/*$script
-/ads/*.gif
+/ads/*.gif$domain=~phimvn2.my
 /ads/*.xml$xmlhttprequest
 /ads/popup_
 /adv/*$image,domain=bongdaso66.net
@@ -1133,8 +1133,8 @@ hhpanda.now###overlay
 hhpanda.now,thempho.club##html:style(overflow: auto !important)
 holyfilm.org##+js(acs, window.addEventListener, window.open)
 ibrarian.net##+js(aopr, adsRedirectPopups)
-imail.edu.vn##+js(acs, setTimeout, Aff)
 imail.edu.vn##+js(acs, setTimeout, ad_block)
+imail.edu.vn,motchill81.com,trumtruyen.live##+js(acs, setTimeout, Aff)
 ios.codevn.net##+js(acs, jQuery, Popup)
 ios.codevn.net##+js(acs, setInterval, offsetHeight)
 javhd.shop##+js(acs, document.addEventListener, Click)
@@ -1145,7 +1145,6 @@ linkneverdie.net,linkneverdie.top,linkneverdie2.com##+js(nostif, DisplayAHTML, 5
 linkneverdie.net,linkneverdie.top,linkneverdie2.com##+js(nostif, callback, 6004)
 lrepacks.net##+js(acs, JSON.parse, break;case $.)
 lxmanga.help##+js(acs, $, PopUnder)
-motchill81.com##+js(acs, setTimeout, Aff)
 motchilltvphim.com##+js(acs, jQuery, click_time)
 nettruyenvio.com##+js(acs, JSON, fromCharCode)
 p.thoctv.com##+js(acs, document.createElement, script)
