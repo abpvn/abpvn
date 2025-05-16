@@ -20,7 +20,7 @@ class Const():
         'amazonaws.com', 'blogspot.com', 'blogtruyen.com', 'fptplay.net',
         'doubleclick.net', 'github.io', 'herokuapp.com', 'zing.vn', 'com.vn',
         'net.vn', 'edu.vn', 'googlesyndication.com', 'gov.vn', 'nct.vn', 'org.vn',
-        'phukienthoitranggiare.com', 'cloudfront.net', 'admarketplace.net', 'www5.cbox.ws',
+        'phukienthoitranggiare.com', 'cloudfront.net', 'admarketplace.net',
         'web1s.asia', 'vinaurl.net', 'ezodn.com', 'adocean.pl', 'i.postimg.cc', 'mannhan97.xyz', 'api.anime3s.com',
         'iili.io', 'cdn.jsdelivr.net'
     ]
