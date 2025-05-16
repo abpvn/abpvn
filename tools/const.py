@@ -17,11 +17,10 @@ class Const():
         '2Fp21-ad-sg.ibyteimg.com'
     ]
     SKIP_CHECK_REDIRECT = [
-        'amazonaws.com', 'blogspot.com', 'blogtruyen.com', 'fptplay.net',
-        'doubleclick.net', 'github.io', 'herokuapp.com', 'zing.vn', 'com.vn',
+        'blogspot.com', 'fptplay.net', 'doubleclick.net', 'com.vn',
         'net.vn', 'edu.vn', 'googlesyndication.com', 'gov.vn', 'nct.vn', 'org.vn',
-        'phukienthoitranggiare.com', 'cloudfront.net', 'admarketplace.net',
-        'web1s.asia', 'vinaurl.net', 'ezodn.com', 'adocean.pl', 'i.postimg.cc', 'mannhan97.xyz', 'api.anime3s.com',
+        'phukienthoitranggiare.com', 'cloudfront.net',
+        'web1s.asia', 'vinaurl.net', 'i.postimg.cc', 'mannhan97.xyz', 'api.anime3s.com',
         'iili.io', 'cdn.jsdelivr.net'
     ]
     REDIRECT_REJECT_TARGET_DOMAIN = [
