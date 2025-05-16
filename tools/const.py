@@ -7,12 +7,8 @@ class Const():
         '.js', '.png', '.jpg', '.gif', '.aspx', '.jpeg',
         '.widget', 'block.ad', '.mp4', '.mp3', '.m3u8',
         '.row', '.parse', '.round', 'abpvn.com',
-        'abpvn.org', '.php', '.html', '.button', '.mrb10',
-        '.modal', '.ico', '.write', '.webp', 'PanelScroller.Notices',
-        'firstmessfloadright.samItem', 'banner-top-box.click',
-        'clear.hd', 'blqPr.nwsItHm', 'text-center.adsense', '.btn', '.show',
-        'show.fade', 'parent.special', '.patch', 'li.special.parent',
-        'relative.px-2.flex', 'd-none.p-0.company.flex-1.table', '2.bottom-0.fixed',
+        'abpvn.org', '.html', '.button',
+        '.modal', '.ico', '.write', '.webp', '.btn', '.show', 'parent.special', '.patch', 'li.special.parent',
         '2Flh3.googleusercontent.com', 'div.ad',
         '2Fp21-ad-sg.ibyteimg.com'
     ]
