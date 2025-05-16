@@ -22,7 +22,7 @@ class Const():
         'net.vn', 'edu.vn', 'googlesyndication.com', 'gov.vn', 'nct.vn', 'org.vn',
         'phukienthoitranggiare.com', 'cloudfront.net', 'admarketplace.net', 'www5.cbox.ws',
         'web1s.asia', 'vinaurl.net', 'ezodn.com', 'adocean.pl', 'i.postimg.cc', 'mannhan97.xyz', 'api.anime3s.com',
-        'iili.io'
+        'iili.io', 'cdn.jsdelivr.net'
     ]
     REDIRECT_REJECT_TARGET_DOMAIN = [
         'www.google.com', 'www.facebook.com', 'www.advertising.yahooinc.com', 'marketingplatform.google.com',
