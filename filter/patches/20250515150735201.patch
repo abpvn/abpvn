@@ -1,17 +1,17 @@
-diff name:abpvn lines:301 checksum:41b788be48
+diff name:abpvn lines:308 checksum:be79423620
 d2 1
 a2 1
-! Version: 20250519150819420
+! Version: 20250519180510152
 d5 2
 a6 2
-! Last modified: 19 May 2025 15:08:19 UTC+7
-! Diff-Path: patches/20250519150819420.patch#abpvn
+! Last modified: 19 May 2025 18:05:10 UTC+7
+! Diff-Path: patches/20250519180510152.patch#abpvn
 d36 1
 a36 1
 /ads/*.gif$domain=~phimvn2.my
 d48 1
 a48 1
-/i.imgur.com/*.gif$domain=keonhacai55.chat|www.motchill84.com|www.phimdinhcao.online|socialfinanceus.org|veboxg.cc|cakhiavx.cc|listnhacai88.com|www.supervisorkuehl.com|ww38.xemtivingon.org|mitomtvt.cc|rakhoivk.cc|plcdn.xyz
+/i.imgur.com/*.gif$domain=keonhacai55.chat|motchill84.com|www.phimdinhcao.online|tetherreport.com|veboxg.cc|cakhiavx.cc|listnhacai88.com|www.supervisorkuehl.com|ww38.xemtivingon.org|mitomtvt.cc|rakhoivk.cc|plcdn.xyz
 d53 1
 a53 1
 /pop.js$script,domain=motchill.fish|ohaytv.fit
@@ -42,7 +42,8 @@ d155 1
 a155 1
 ||motchill.fish^*.gif$image
 d157 2
-a158 2
+a158 3
+||motchill84.com/3s.m3u8$rewrite=abp-resource:blank-mp3,domain=motchill84.com
 ||motchilla.fm/wp-content/plugins/AdsManager/js/aam-scripts.js$script,~third-party
 ||motchilla.fm^*.gif$image
 d175 1
@@ -50,7 +51,7 @@ a175 1
 ||phimmoichill.dev/newchill/$script,~third-party
 d187 1
 a187 1
-||quoracdn.net^$image,domain=www.motchill84.com|www.phimdinhcao.online
+||quoracdn.net^$image,domain=motchill84.com|www.phimdinhcao.online
 d193 1
 a193 1
 ||s2.truyentot.com^*.gif$image,domain=hhtq13.vip|hhtq3d.net|hhtq5.vip|hhvsub1.com
@@ -66,8 +67,7 @@ a231 2
 ||tvhay.ph/guide/popup.xp-f.js
 ||tvphim.fm/ads/popup$script,~third-party
 d249 1
-a249 2
-||www.motchill84.com/3s.m3u8$rewrite=abp-resource:blank-mp3,domain=www.motchill84.com
+a249 1
 ||www.supervisorkuehl.com/wp-content/themes/bongda/dist/images/company/21.png$image
 d628 1
 d657 2
@@ -94,9 +94,9 @@ bunchatv1.com##.styles_textAds__s6yM4
 bunchatv1.com##a.btn-player-ads
 d712 3
 a714 3
-cakhiavx.cc,socialfinanceus.org,veboxg.cc###quangcaopc
-cakhiavx.cc,socialfinanceus.org,veboxg.cc##.marquee-container
-cakhiavx.cc,socialfinanceus.org,veboxg.cc,rakhoivk.cc,www.supervisorkuehl.com###wap_bottombanner
+cakhiavx.cc,tetherreport.com,veboxg.cc###quangcaopc
+cakhiavx.cc,tetherreport.com,veboxg.cc##.marquee-container
+cakhiavx.cc,tetherreport.com,veboxg.cc,rakhoivk.cc,www.supervisorkuehl.com###wap_bottombanner
 d750 1
 a750 1
 ephoto360.com,thiepmung.com,www1.247phim.cc,www.phimmoichilla.xyz,hayhaytv.cc,www.ssphim.us,phimmoitv.cfd##.ad-container
@@ -121,7 +121,7 @@ d809 1
 d815 15
 d840 1
 a840 1
-ketqua04.net,nghean24h.vn,xem.tructiepnba.me,doctruyenln.com,xemtivi4k.com,socialfinanceus.org,bongdainfox.tv,watch.thapcam.pro,xx2.thapcam53.info,nn13.thapcam.asia,www.phimdinhcao.online##a[rel="nofollow"]
+ketqua04.net,nghean24h.vn,xem.tructiepnba.me,doctruyenln.com,xemtivi4k.com,tetherreport.com,bongdainfox.tv,watch.thapcam.pro,xx2.thapcam53.info,nn13.thapcam.asia,www.phimdinhcao.online##a[rel="nofollow"]
 d845 1
 a845 1
 kienthuc.net.vn,saostar.vn,bongda24h.vn,cungthi.online,appvn.com,antt.vn,xemphimviet.casa,ghienphim.co,nghenhinvietnam.vn,vivuphim.info,vn-z.vn##.ads
@@ -135,7 +135,10 @@ mannhan97.xyz##.popup
 mannhan97.xyz##.sticky
 mannhan97.xyz##a.btn_fb:nth-of-type(2)
 d896 4
-a899 4
+a899 7
+motchill84.com##.banner-preload
+motchill84.com,www.phimdinhcao.online##.banner-container
+motchill84.com,www.phimdinhcao.online##.catfish-top
 motchilla.fm##.aam-banner-wrapper
 motchilla.fm##.cat-footer-wrapper
 motchilla.fm##.cat-header-wrapper
@@ -149,22 +152,22 @@ phimmoichill.dev###pm_quangcao
 d945 1
 a945 1
 rakhoivk.cc,www.supervisorkuehl.com##.btn-8xbet
-a949 15
-socialfinanceus.org###match-child-1
-socialfinanceus.org##.block-catfish.text-center.d-lg-none.d-block
-socialfinanceus.org##.container>ul
-socialfinanceus.org##.offer
-socialfinanceus.org##.offer__btn
-socialfinanceus.org##.pl-lg-0.col-xl-4
-socialfinanceus.org##.row.d-none
-socialfinanceus.org##.widget-offers__list
-socialfinanceus.org##div.d-lg-none.d-block:nth-of-type(3)
-socialfinanceus.org,mitomtvt.cc##.menu-cuoc-8xbet
-socialfinanceus.org,mitomtvt.cc##.menu-top-nha-cai
-socialfinanceus.org,rakhoivk.cc##.sk_balloon
-socialfinanceus.org,veboxg.cc,cakhiavx.cc,mitomtvt.cc,www.supervisorkuehl.com##div[id^="dnn_"]
-socialfinanceus.org,veboxg.cc,cakhiavx.cc,www.supervisorkuehl.com,mitomtvt.cc##.company
-socialfinanceus.org,www.supervisorkuehl.com##.match-detail__offer
+a963 15
+tetherreport.com###match-child-1
+tetherreport.com##.block-catfish.text-center.d-lg-none.d-block
+tetherreport.com##.container>ul
+tetherreport.com##.offer
+tetherreport.com##.offer__btn
+tetherreport.com##.pl-lg-0.col-xl-4
+tetherreport.com##.row.d-none
+tetherreport.com##.widget-offers__list
+tetherreport.com##div.d-lg-none.d-block:nth-of-type(3)
+tetherreport.com,mitomtvt.cc##.menu-cuoc-8xbet
+tetherreport.com,mitomtvt.cc##.menu-top-nha-cai
+tetherreport.com,rakhoivk.cc##.sk_balloon
+tetherreport.com,veboxg.cc,cakhiavx.cc,mitomtvt.cc,www.supervisorkuehl.com##div[id^="dnn_"]
+tetherreport.com,veboxg.cc,cakhiavx.cc,www.supervisorkuehl.com,mitomtvt.cc##.company
+tetherreport.com,www.supervisorkuehl.com##.match-detail__offer
 d981 7
 d1021 1
 a1021 1
@@ -172,18 +175,16 @@ toquoc.vn,baoxaydung.vn,tienphong.vn,taichinhdoanhnghiep.net.vn,thichxemphim1.si
 d1037 1
 a1037 1
 truyensieuhay.com,hhtrungquoc6.com,hhtq13.vip,animeweb.vip,hhtq3d.net###topbanner
+a1049 1
+vanphatelectric.com###levelmaxblock
 d1093 1
 a1093 1
 vungtv.xyz###container-ads
 d1115 3
-a1117 3
-www.motchill84.com##.banner-preload
-www.motchill84.com,www.phimdinhcao.online##.banner-container
-www.motchill84.com,www.phimdinhcao.online##.catfish-top
 d1122 2
 a1123 2
-www.phimdinhcao.online,www.motchill84.com##.BanerTop100
-www.phimdinhcao.online,www.motchill84.com##.adv-300-right
+www.phimdinhcao.online,motchill84.com##.BanerTop100
+www.phimdinhcao.online,motchill84.com##.adv-300-right
 a1128 7
 www.supervisorkuehl.com##.c-int.d-lg-none.d-block>p.block-int.mb-1
 www.supervisorkuehl.com##.col-12>p.block-int.mb-1
@@ -202,7 +203,7 @@ xemphimviet.casa,ghienphim.co##.popunder-link
 xemphimviet.casa,ghienphim.co##.promotion-popup
 xemphimviet.casa,ghienphim.co##.video-ad-layer
 a1159 1
-~dl.thuthuatjb.com##.adsbygoogle[data-ad-slot] 
+~dl.thuthuatjb.com##.adsbygoogle[data-ad-slot]
 a1166 1
 @@||cdn2.kenhvn2.com/Images/ads/300.gif$xmlhttprequest,domain=phimvn2.my
 d1193 1
@@ -232,9 +233,12 @@ a1236 2
 a1239 1
 ||sayhentaii.me/assets/js/ads.js
 d1243 1
-a1244 1
+d1245 3
+a1247 5
 ||ssayhentaii.me/storage/images/banner/$image
-a1247 1
+||static.stream68.cloud/candy/image/*.gif$image,domain=thempho1.com
+||static.stream68.cloud/candy/image/1280X274$image,domain=thempho1.com
+||static.stream68.cloud/candy/video/$domain=thempho1.com
 ||synz.liveonce.online^$script,domain=javtiful.com
 d1253 2
 a1254 3
@@ -282,6 +286,9 @@ a1338 3
 sieukhung.fyi,tuoi69.pet##.adsCenterHome
 sieukhung.fyi,tuoi69.pet##.banner-detail
 sieukhung.fyi,tuoi69.pet##.banner-topR
+d1344 1
+a1344 1
+thempho1.com##.w-full.cursor-pointer.block>div
 d1347 2
 a1348 2
 tuoi69.pet,sieukhung.fyi###bar_float_r
@@ -300,20 +307,20 @@ vlxx.now##a[rel*="nofollow"]
 vlxx.now##div.banner-catfish-bottom
 vlxx.now,clipsexsub3x.net,sexhihiz.nl##.catfish-bottom
 vlxx.now,vlsexsuong.pro,sexhihiz.nl##.catfish-top
-diff name:abpvn_adguard lines:347 checksum:c782ad131d
+diff name:abpvn_adguard lines:355 checksum:c6e49dba83
 d2 1
 a2 1
-! Version: 20250519150819420
+! Version: 20250519180510152
 d5 2
 a6 2
-! Last modified: 19 May 2025 15:08:19 UTC+7
-! Diff-Path: patches/20250519150819420.patch#abpvn_adguard
+! Last modified: 19 May 2025 18:05:10 UTC+7
+! Diff-Path: patches/20250519180510152.patch#abpvn_adguard
 d34 1
 a34 1
 /ads/*.gif$domain=~phimvn2.my
 d46 1
 a46 1
-/i.imgur.com/*.gif$domain=keonhacai55.chat|www.motchill84.com|www.phimdinhcao.online|socialfinanceus.org|veboxg.cc|cakhiavx.cc|listnhacai88.com|www.supervisorkuehl.com|ww38.xemtivingon.org|mitomtvt.cc|rakhoivk.cc|plcdn.xyz
+/i.imgur.com/*.gif$domain=keonhacai55.chat|motchill84.com|www.phimdinhcao.online|tetherreport.com|veboxg.cc|cakhiavx.cc|listnhacai88.com|www.supervisorkuehl.com|ww38.xemtivingon.org|mitomtvt.cc|rakhoivk.cc|plcdn.xyz
 d51 1
 a51 1
 /pop.js$script,domain=motchill.fish|ohaytv.fit
@@ -344,7 +351,8 @@ d153 1
 a153 1
 ||motchill.fish^*.gif$image
 d155 2
-a156 2
+a156 3
+||motchill84.com/3s.m3u8$rewrite=abp-resource:blank-mp3,domain=motchill84.com
 ||motchilla.fm/wp-content/plugins/AdsManager/js/aam-scripts.js$script,~third-party
 ||motchilla.fm^*.gif$image
 d173 1
@@ -352,7 +360,7 @@ a173 1
 ||phimmoichill.dev/newchill/$script,~third-party
 d185 1
 a185 1
-||quoracdn.net^$image,domain=www.motchill84.com|www.phimdinhcao.online
+||quoracdn.net^$image,domain=motchill84.com|www.phimdinhcao.online
 d190 1
 a190 1
 ||s2.truyentot.com^*.gif$image,domain=hhtq13.vip|hhtq3d.net|hhtq5.vip|hhvsub1.com
@@ -368,8 +376,7 @@ a227 2
 ||tvhay.ph/guide/popup.xp-f.js
 ||tvphim.fm/ads/popup$script,~third-party
 d245 1
-a245 2
-||www.motchill84.com/3s.m3u8$rewrite=abp-resource:blank-mp3,domain=www.motchill84.com
+a245 1
 ||www.supervisorkuehl.com/wp-content/themes/bongda/dist/images/company/21.png$image
 d624 1
 d653 2
@@ -396,9 +403,9 @@ bunchatv1.com##.styles_textAds__s6yM4
 bunchatv1.com##a.btn-player-ads
 d708 3
 a710 3
-cakhiavx.cc,socialfinanceus.org,veboxg.cc###quangcaopc
-cakhiavx.cc,socialfinanceus.org,veboxg.cc##.marquee-container
-cakhiavx.cc,socialfinanceus.org,veboxg.cc,rakhoivk.cc,www.supervisorkuehl.com###wap_bottombanner
+cakhiavx.cc,tetherreport.com,veboxg.cc###quangcaopc
+cakhiavx.cc,tetherreport.com,veboxg.cc##.marquee-container
+cakhiavx.cc,tetherreport.com,veboxg.cc,rakhoivk.cc,www.supervisorkuehl.com###wap_bottombanner
 d746 1
 a746 1
 ephoto360.com,thiepmung.com,www1.247phim.cc,www.phimmoichilla.xyz,hayhaytv.cc,www.ssphim.us,phimmoitv.cfd##.ad-container
@@ -423,7 +430,7 @@ d805 1
 d811 15
 d836 1
 a836 1
-ketqua04.net,nghean24h.vn,xem.tructiepnba.me,doctruyenln.com,xemtivi4k.com,socialfinanceus.org,bongdainfox.tv,watch.thapcam.pro,xx2.thapcam53.info,nn13.thapcam.asia,www.phimdinhcao.online##a[rel="nofollow"]
+ketqua04.net,nghean24h.vn,xem.tructiepnba.me,doctruyenln.com,xemtivi4k.com,tetherreport.com,bongdainfox.tv,watch.thapcam.pro,xx2.thapcam53.info,nn13.thapcam.asia,www.phimdinhcao.online##a[rel="nofollow"]
 d841 1
 a841 1
 kienthuc.net.vn,saostar.vn,bongda24h.vn,cungthi.online,appvn.com,antt.vn,xemphimviet.casa,ghienphim.co,nghenhinvietnam.vn,vivuphim.info,vn-z.vn##.ads
@@ -437,7 +444,10 @@ mannhan97.xyz##.popup
 mannhan97.xyz##.sticky
 mannhan97.xyz##a.btn_fb:nth-of-type(2)
 d892 4
-a895 4
+a895 7
+motchill84.com##.banner-preload
+motchill84.com,www.phimdinhcao.online##.banner-container
+motchill84.com,www.phimdinhcao.online##.catfish-top
 motchilla.fm##.aam-banner-wrapper
 motchilla.fm##.cat-footer-wrapper
 motchilla.fm##.cat-header-wrapper
@@ -451,22 +461,22 @@ phimmoichill.dev###pm_quangcao
 d941 1
 a941 1
 rakhoivk.cc,www.supervisorkuehl.com##.btn-8xbet
-a945 15
-socialfinanceus.org###match-child-1
-socialfinanceus.org##.block-catfish.text-center.d-lg-none.d-block
-socialfinanceus.org##.container>ul
-socialfinanceus.org##.offer
-socialfinanceus.org##.offer__btn
-socialfinanceus.org##.pl-lg-0.col-xl-4
-socialfinanceus.org##.row.d-none
-socialfinanceus.org##.widget-offers__list
-socialfinanceus.org##div.d-lg-none.d-block:nth-of-type(3)
-socialfinanceus.org,mitomtvt.cc##.menu-cuoc-8xbet
-socialfinanceus.org,mitomtvt.cc##.menu-top-nha-cai
-socialfinanceus.org,rakhoivk.cc##.sk_balloon
-socialfinanceus.org,veboxg.cc,cakhiavx.cc,mitomtvt.cc,www.supervisorkuehl.com##div[id^="dnn_"]
-socialfinanceus.org,veboxg.cc,cakhiavx.cc,www.supervisorkuehl.com,mitomtvt.cc##.company
-socialfinanceus.org,www.supervisorkuehl.com##.match-detail__offer
+a959 15
+tetherreport.com###match-child-1
+tetherreport.com##.block-catfish.text-center.d-lg-none.d-block
+tetherreport.com##.container>ul
+tetherreport.com##.offer
+tetherreport.com##.offer__btn
+tetherreport.com##.pl-lg-0.col-xl-4
+tetherreport.com##.row.d-none
+tetherreport.com##.widget-offers__list
+tetherreport.com##div.d-lg-none.d-block:nth-of-type(3)
+tetherreport.com,mitomtvt.cc##.menu-cuoc-8xbet
+tetherreport.com,mitomtvt.cc##.menu-top-nha-cai
+tetherreport.com,rakhoivk.cc##.sk_balloon
+tetherreport.com,veboxg.cc,cakhiavx.cc,mitomtvt.cc,www.supervisorkuehl.com##div[id^="dnn_"]
+tetherreport.com,veboxg.cc,cakhiavx.cc,www.supervisorkuehl.com,mitomtvt.cc##.company
+tetherreport.com,www.supervisorkuehl.com##.match-detail__offer
 d977 7
 d1017 1
 a1017 1
@@ -474,18 +484,16 @@ toquoc.vn,baoxaydung.vn,tienphong.vn,taichinhdoanhnghiep.net.vn,thichxemphim1.si
 d1033 1
 a1033 1
 truyensieuhay.com,hhtrungquoc6.com,hhtq13.vip,animeweb.vip,hhtq3d.net###topbanner
+a1045 1
+vanphatelectric.com###levelmaxblock
 d1089 1
 a1089 1
 vungtv.xyz###container-ads
 d1111 3
-a1113 3
-www.motchill84.com##.banner-preload
-www.motchill84.com,www.phimdinhcao.online##.banner-container
-www.motchill84.com,www.phimdinhcao.online##.catfish-top
 d1118 2
 a1119 2
-www.phimdinhcao.online,www.motchill84.com##.BanerTop100
-www.phimdinhcao.online,www.motchill84.com##.adv-300-right
+www.phimdinhcao.online,motchill84.com##.BanerTop100
+www.phimdinhcao.online,motchill84.com##.adv-300-right
 a1124 7
 www.supervisorkuehl.com##.c-int.d-lg-none.d-block>p.block-int.mb-1
 www.supervisorkuehl.com##.col-12>p.block-int.mb-1
@@ -504,7 +512,7 @@ xemphimviet.casa,ghienphim.co##.popunder-link
 xemphimviet.casa,ghienphim.co##.promotion-popup
 xemphimviet.casa,ghienphim.co##.video-ad-layer
 a1155 1
-~dl.thuthuatjb.com##.adsbygoogle[data-ad-slot] 
+~dl.thuthuatjb.com##.adsbygoogle[data-ad-slot]
 a1162 1
 @@||cdn2.kenhvn2.com/Images/ads/300.gif$xmlhttprequest,domain=phimvn2.my
 d1187 1
@@ -534,9 +542,12 @@ a1230 2
 a1233 1
 ||sayhentaii.me/assets/js/ads.js
 d1237 1
-a1238 1
+d1239 3
+a1241 5
 ||ssayhentaii.me/storage/images/banner/$image
-a1241 1
+||static.stream68.cloud/candy/image/*.gif$image,domain=thempho1.com
+||static.stream68.cloud/candy/image/1280X274$image,domain=thempho1.com
+||static.stream68.cloud/candy/video/$domain=thempho1.com
 ||synz.liveonce.online^$script,domain=javtiful.com
 d1247 2
 a1248 3
@@ -584,6 +595,9 @@ a1332 3
 sieukhung.fyi,tuoi69.pet##.adsCenterHome
 sieukhung.fyi,tuoi69.pet##.banner-detail
 sieukhung.fyi,tuoi69.pet##.banner-topR
+d1338 1
+a1338 1
+thempho1.com##.w-full.cursor-pointer.block>div
 d1341 2
 a1342 2
 tuoi69.pet,sieukhung.fyi###bar_float_r
@@ -615,17 +629,18 @@ goctruyentranhvui17.com,nettruyener.com,sextop1.show,hhvsub1.com,sayhentai.blog,
 d1415 2
 a1416 2
 hhpanda.baby###overlay
-hhpanda.baby,thempho.club#$#html {overflow: auto!important;}
+hhpanda.baby,thempho1.com#$#html {overflow: auto!important;}
 d1418 2
 a1419 1
-imail.edu.vn,www.motchill84.com,trumtruyen.live#%#//scriptlet("abort-current-inline-script", "setTimeout", "Aff")
+imail.edu.vn,motchill84.com,trumtruyen.live#%#//scriptlet("abort-current-inline-script", "setTimeout", "Aff")
 d1430 1
 a1448 1
 sayhentai.blog,sayhentaii.me#%#//scriptlet("abort-current-inline-script", "document.addEventListener", "window.open")
 d1450 1
-a1450 1
-socialfinanceus.org#%#//scriptlet("abort-on-property-read", "adsRedirectPopups")
-d1453 1
+d1453 2
+a1454 2
+tetherreport.com#%#//scriptlet("abort-on-property-read", "adsRedirectPopups")
+thempho1.com##div.ReactModalPortal
 d1458 1
 a1458 1
 tinsoikeo.live,motchill.fish,ohaytv.fit#%#//scriptlet("abort-on-property-read", "sessionStorage")
@@ -634,7 +649,7 @@ a1462 1
 truyensieuhay.com,hayhaytv.site,quangcaoyenbai.com,phimchill.life,thuvienhd.biz,tv.tvhayhd.org,thefaplive.com,mv.dailyphimz.com,mv.phimbathu.one,sexhihiz.nl,anime47.fun,teamlanhlung8.shop#%#//scriptlet("abort-on-property-read", "document.cookie")
 d1464 1
 a1464 1
-vailonxx.vip,www.motchill84.com#%#//scriptlet("abort-current-inline-script", "jQuery", "window.open")
+vailonxx.vip#%#//scriptlet("abort-current-inline-script", "jQuery", "window.open")
 d1467 2
 a1468 2
 viet69.channel#%#//scriptlet("abort-current-inline-script", "jQuery", "open")
@@ -643,25 +658,25 @@ a1469 1
 vlsexsuong.pro#%#//scriptlet("abort-on-property-read", "Cookies")
 d1481 1
 a1481 1
-www.phimdinhcao.online,www.motchill84.com,xnhau.pe,teamlanhlung8.shop,xemphimjav.us#%#//scriptlet("abort-on-property-read", "localStorage")
+www.phimdinhcao.online,motchill84.com,xnhau.pe,teamlanhlung8.shop,xemphimjav.us#%#//scriptlet("abort-on-property-read", "localStorage")
 d1485 1
 a1485 2
 www.supervisorkuehl.com#%#//scriptlet("set-constant", "adsTvcs", "")
 www.toptruyentv7.pro#%#//scriptlet("abort-current-inline-script", "setTimeout", "open")
-diff name:abpvn_content_blocker lines:301 checksum:6559019786
+diff name:abpvn_content_blocker lines:308 checksum:34ca63efd4
 d2 1
 a2 1
-! Version: 20250519150819420
+! Version: 20250519180510152
 d5 2
 a6 2
-! Last modified: 19 May 2025 15:08:19 UTC+7
-! Diff-Path: patches/20250519150819420.patch#abpvn_content_blocker
+! Last modified: 19 May 2025 18:05:10 UTC+7
+! Diff-Path: patches/20250519180510152.patch#abpvn_content_blocker
 d36 1
 a36 1
 /ads/*.gif$domain=~phimvn2.my
 d48 1
 a48 1
-/i.imgur.com/*.gif$domain=keonhacai55.chat|www.motchill84.com|www.phimdinhcao.online|socialfinanceus.org|veboxg.cc|cakhiavx.cc|listnhacai88.com|www.supervisorkuehl.com|ww38.xemtivingon.org|mitomtvt.cc|rakhoivk.cc|plcdn.xyz
+/i.imgur.com/*.gif$domain=keonhacai55.chat|motchill84.com|www.phimdinhcao.online|tetherreport.com|veboxg.cc|cakhiavx.cc|listnhacai88.com|www.supervisorkuehl.com|ww38.xemtivingon.org|mitomtvt.cc|rakhoivk.cc|plcdn.xyz
 d53 1
 a53 1
 /pop.js$script,domain=motchill.fish|ohaytv.fit
@@ -692,7 +707,8 @@ d155 1
 a155 1
 ||motchill.fish^*.gif$image
 d157 2
-a158 2
+a158 3
+||motchill84.com/3s.m3u8$rewrite=abp-resource:blank-mp3,domain=motchill84.com
 ||motchilla.fm/wp-content/plugins/AdsManager/js/aam-scripts.js$script,~third-party
 ||motchilla.fm^*.gif$image
 d175 1
@@ -700,7 +716,7 @@ a175 1
 ||phimmoichill.dev/newchill/$script,~third-party
 d187 1
 a187 1
-||quoracdn.net^$image,domain=www.motchill84.com|www.phimdinhcao.online
+||quoracdn.net^$image,domain=motchill84.com|www.phimdinhcao.online
 d193 1
 a193 1
 ||s2.truyentot.com^*.gif$image,domain=hhtq13.vip|hhtq3d.net|hhtq5.vip|hhvsub1.com
@@ -716,8 +732,7 @@ a231 2
 ||tvhay.ph/guide/popup.xp-f.js
 ||tvphim.fm/ads/popup$script,~third-party
 d249 1
-a249 2
-||www.motchill84.com/3s.m3u8$rewrite=abp-resource:blank-mp3,domain=www.motchill84.com
+a249 1
 ||www.supervisorkuehl.com/wp-content/themes/bongda/dist/images/company/21.png$image
 d628 1
 d657 2
@@ -744,9 +759,9 @@ bunchatv1.com##.styles_textAds__s6yM4
 bunchatv1.com##a.btn-player-ads
 d712 3
 a714 3
-cakhiavx.cc,socialfinanceus.org,veboxg.cc###quangcaopc
-cakhiavx.cc,socialfinanceus.org,veboxg.cc##.marquee-container
-cakhiavx.cc,socialfinanceus.org,veboxg.cc,rakhoivk.cc,www.supervisorkuehl.com###wap_bottombanner
+cakhiavx.cc,tetherreport.com,veboxg.cc###quangcaopc
+cakhiavx.cc,tetherreport.com,veboxg.cc##.marquee-container
+cakhiavx.cc,tetherreport.com,veboxg.cc,rakhoivk.cc,www.supervisorkuehl.com###wap_bottombanner
 d750 1
 a750 1
 ephoto360.com,thiepmung.com,www1.247phim.cc,www.phimmoichilla.xyz,hayhaytv.cc,www.ssphim.us,phimmoitv.cfd##.ad-container
@@ -771,7 +786,7 @@ d809 1
 d815 15
 d840 1
 a840 1
-ketqua04.net,nghean24h.vn,xem.tructiepnba.me,doctruyenln.com,xemtivi4k.com,socialfinanceus.org,bongdainfox.tv,watch.thapcam.pro,xx2.thapcam53.info,nn13.thapcam.asia,www.phimdinhcao.online##a[rel="nofollow"]
+ketqua04.net,nghean24h.vn,xem.tructiepnba.me,doctruyenln.com,xemtivi4k.com,tetherreport.com,bongdainfox.tv,watch.thapcam.pro,xx2.thapcam53.info,nn13.thapcam.asia,www.phimdinhcao.online##a[rel="nofollow"]
 d845 1
 a845 1
 kienthuc.net.vn,saostar.vn,bongda24h.vn,cungthi.online,appvn.com,antt.vn,xemphimviet.casa,ghienphim.co,nghenhinvietnam.vn,vivuphim.info,vn-z.vn##.ads
@@ -785,7 +800,10 @@ mannhan97.xyz##.popup
 mannhan97.xyz##.sticky
 mannhan97.xyz##a.btn_fb:nth-of-type(2)
 d896 4
-a899 4
+a899 7
+motchill84.com##.banner-preload
+motchill84.com,www.phimdinhcao.online##.banner-container
+motchill84.com,www.phimdinhcao.online##.catfish-top
 motchilla.fm##.aam-banner-wrapper
 motchilla.fm##.cat-footer-wrapper
 motchilla.fm##.cat-header-wrapper
@@ -799,22 +817,22 @@ phimmoichill.dev###pm_quangcao
 d945 1
 a945 1
 rakhoivk.cc,www.supervisorkuehl.com##.btn-8xbet
-a949 15
-socialfinanceus.org###match-child-1
-socialfinanceus.org##.block-catfish.text-center.d-lg-none.d-block
-socialfinanceus.org##.container>ul
-socialfinanceus.org##.offer
-socialfinanceus.org##.offer__btn
-socialfinanceus.org##.pl-lg-0.col-xl-4
-socialfinanceus.org##.row.d-none
-socialfinanceus.org##.widget-offers__list
-socialfinanceus.org##div.d-lg-none.d-block:nth-of-type(3)
-socialfinanceus.org,mitomtvt.cc##.menu-cuoc-8xbet
-socialfinanceus.org,mitomtvt.cc##.menu-top-nha-cai
-socialfinanceus.org,rakhoivk.cc##.sk_balloon
-socialfinanceus.org,veboxg.cc,cakhiavx.cc,mitomtvt.cc,www.supervisorkuehl.com##div[id^="dnn_"]
-socialfinanceus.org,veboxg.cc,cakhiavx.cc,www.supervisorkuehl.com,mitomtvt.cc##.company
-socialfinanceus.org,www.supervisorkuehl.com##.match-detail__offer
+a963 15
+tetherreport.com###match-child-1
+tetherreport.com##.block-catfish.text-center.d-lg-none.d-block
+tetherreport.com##.container>ul
+tetherreport.com##.offer
+tetherreport.com##.offer__btn
+tetherreport.com##.pl-lg-0.col-xl-4
+tetherreport.com##.row.d-none
+tetherreport.com##.widget-offers__list
+tetherreport.com##div.d-lg-none.d-block:nth-of-type(3)
+tetherreport.com,mitomtvt.cc##.menu-cuoc-8xbet
+tetherreport.com,mitomtvt.cc##.menu-top-nha-cai
+tetherreport.com,rakhoivk.cc##.sk_balloon
+tetherreport.com,veboxg.cc,cakhiavx.cc,mitomtvt.cc,www.supervisorkuehl.com##div[id^="dnn_"]
+tetherreport.com,veboxg.cc,cakhiavx.cc,www.supervisorkuehl.com,mitomtvt.cc##.company
+tetherreport.com,www.supervisorkuehl.com##.match-detail__offer
 d981 7
 d1021 1
 a1021 1
@@ -822,18 +840,16 @@ toquoc.vn,baoxaydung.vn,tienphong.vn,taichinhdoanhnghiep.net.vn,thichxemphim1.si
 d1037 1
 a1037 1
 truyensieuhay.com,hhtrungquoc6.com,hhtq13.vip,animeweb.vip,hhtq3d.net###topbanner
+a1049 1
+vanphatelectric.com###levelmaxblock
 d1093 1
 a1093 1
 vungtv.xyz###container-ads
 d1115 3
-a1117 3
-www.motchill84.com##.banner-preload
-www.motchill84.com,www.phimdinhcao.online##.banner-container
-www.motchill84.com,www.phimdinhcao.online##.catfish-top
 d1122 2
 a1123 2
-www.phimdinhcao.online,www.motchill84.com##.BanerTop100
-www.phimdinhcao.online,www.motchill84.com##.adv-300-right
+www.phimdinhcao.online,motchill84.com##.BanerTop100
+www.phimdinhcao.online,motchill84.com##.adv-300-right
 a1128 7
 www.supervisorkuehl.com##.c-int.d-lg-none.d-block>p.block-int.mb-1
 www.supervisorkuehl.com##.col-12>p.block-int.mb-1
@@ -852,7 +868,7 @@ xemphimviet.casa,ghienphim.co##.popunder-link
 xemphimviet.casa,ghienphim.co##.promotion-popup
 xemphimviet.casa,ghienphim.co##.video-ad-layer
 a1159 1
-~dl.thuthuatjb.com##.adsbygoogle[data-ad-slot] 
+~dl.thuthuatjb.com##.adsbygoogle[data-ad-slot]
 a1166 1
 @@||cdn2.kenhvn2.com/Images/ads/300.gif$xmlhttprequest,domain=phimvn2.my
 d1193 1
@@ -882,9 +898,12 @@ a1236 2
 a1239 1
 ||sayhentaii.me/assets/js/ads.js
 d1243 1
-a1244 1
+d1245 3
+a1247 5
 ||ssayhentaii.me/storage/images/banner/$image
-a1247 1
+||static.stream68.cloud/candy/image/*.gif$image,domain=thempho1.com
+||static.stream68.cloud/candy/image/1280X274$image,domain=thempho1.com
+||static.stream68.cloud/candy/video/$domain=thempho1.com
 ||synz.liveonce.online^$script,domain=javtiful.com
 d1253 2
 a1254 3
@@ -932,6 +951,9 @@ a1338 3
 sieukhung.fyi,tuoi69.pet##.adsCenterHome
 sieukhung.fyi,tuoi69.pet##.banner-detail
 sieukhung.fyi,tuoi69.pet##.banner-topR
+d1344 1
+a1344 1
+thempho1.com##.w-full.cursor-pointer.block>div
 d1347 2
 a1348 2
 tuoi69.pet,sieukhung.fyi###bar_float_r
@@ -950,20 +972,20 @@ vlxx.now##a[rel*="nofollow"]
 vlxx.now##div.banner-catfish-bottom
 vlxx.now,clipsexsub3x.net,sexhihiz.nl##.catfish-bottom
 vlxx.now,vlsexsuong.pro,sexhihiz.nl##.catfish-top
-diff name:abpvn_noelemhide lines:108 checksum:828107f60a
+diff name:abpvn_noelemhide lines:111 checksum:227670ea7a
 d2 1
 a2 1
-! Version: 20250519150819420
+! Version: 20250519180510152
 d5 2
 a6 2
-! Last modified: 19 May 2025 15:08:19 UTC+7
-! Diff-Path: patches/20250519150819420.patch#abpvn_noelemhide
+! Last modified: 19 May 2025 18:05:10 UTC+7
+! Diff-Path: patches/20250519180510152.patch#abpvn_noelemhide
 d36 1
 a36 1
 /ads/*.gif$domain=~phimvn2.my
 d48 1
 a48 1
-/i.imgur.com/*.gif$domain=keonhacai55.chat|www.motchill84.com|www.phimdinhcao.online|socialfinanceus.org|veboxg.cc|cakhiavx.cc|listnhacai88.com|www.supervisorkuehl.com|ww38.xemtivingon.org|mitomtvt.cc|rakhoivk.cc|plcdn.xyz
+/i.imgur.com/*.gif$domain=keonhacai55.chat|motchill84.com|www.phimdinhcao.online|tetherreport.com|veboxg.cc|cakhiavx.cc|listnhacai88.com|www.supervisorkuehl.com|ww38.xemtivingon.org|mitomtvt.cc|rakhoivk.cc|plcdn.xyz
 d53 1
 a53 1
 /pop.js$script,domain=motchill.fish|ohaytv.fit
@@ -994,7 +1016,8 @@ d155 1
 a155 1
 ||motchill.fish^*.gif$image
 d157 2
-a158 2
+a158 3
+||motchill84.com/3s.m3u8$rewrite=abp-resource:blank-mp3,domain=motchill84.com
 ||motchilla.fm/wp-content/plugins/AdsManager/js/aam-scripts.js$script,~third-party
 ||motchilla.fm^*.gif$image
 d175 1
@@ -1002,7 +1025,7 @@ a175 1
 ||phimmoichill.dev/newchill/$script,~third-party
 d187 1
 a187 1
-||quoracdn.net^$image,domain=www.motchill84.com|www.phimdinhcao.online
+||quoracdn.net^$image,domain=motchill84.com|www.phimdinhcao.online
 d193 1
 a193 1
 ||s2.truyentot.com^*.gif$image,domain=hhtq13.vip|hhtq3d.net|hhtq5.vip|hhvsub1.com
@@ -1018,8 +1041,7 @@ a231 2
 ||tvhay.ph/guide/popup.xp-f.js
 ||tvphim.fm/ads/popup$script,~third-party
 d249 1
-a249 2
-||www.motchill84.com/3s.m3u8$rewrite=abp-resource:blank-mp3,domain=www.motchill84.com
+a249 1
 ||www.supervisorkuehl.com/wp-content/themes/bongda/dist/images/company/21.png$image
 a620 1
 @@||cdn2.kenhvn2.com/Images/ads/300.gif$xmlhttprequest,domain=phimvn2.my
@@ -1050,29 +1072,32 @@ a684 2
 a687 1
 ||sayhentaii.me/assets/js/ads.js
 d691 1
-a692 1
+d693 3
+a695 5
 ||ssayhentaii.me/storage/images/banner/$image
-a695 1
+||static.stream68.cloud/candy/image/*.gif$image,domain=thempho1.com
+||static.stream68.cloud/candy/image/1280X274$image,domain=thempho1.com
+||static.stream68.cloud/candy/video/$domain=thempho1.com
 ||synz.liveonce.online^$script,domain=javtiful.com
 d701 2
 a702 3
 ||uimg.buomtv.io/palivn/ad/$image,domain=buomtv.art
 ||vlsexsuong.pro^*.gif$image,domain=vlsexsuong.pro
 ||vn18phimsexhay.com^*.gif$image
-diff name:abpvn_ublock lines:348 checksum:1ebdc1ddf9
+diff name:abpvn_ublock lines:356 checksum:0ff75293f0
 d2 1
 a2 1
-! Version: 20250519150819420
+! Version: 20250519180510152
 d5 2
 a6 2
-! Last modified: 19 May 2025 15:08:19 UTC+7
-! Diff-Path: patches/20250519150819420.patch#abpvn_ublock
+! Last modified: 19 May 2025 18:05:10 UTC+7
+! Diff-Path: patches/20250519180510152.patch#abpvn_ublock
 d34 1
 a34 1
 /ads/*.gif$domain=~phimvn2.my
 d46 1
 a46 1
-/i.imgur.com/*.gif$domain=keonhacai55.chat|www.motchill84.com|www.phimdinhcao.online|socialfinanceus.org|veboxg.cc|cakhiavx.cc|listnhacai88.com|www.supervisorkuehl.com|ww38.xemtivingon.org|mitomtvt.cc|rakhoivk.cc|plcdn.xyz
+/i.imgur.com/*.gif$domain=keonhacai55.chat|motchill84.com|www.phimdinhcao.online|tetherreport.com|veboxg.cc|cakhiavx.cc|listnhacai88.com|www.supervisorkuehl.com|ww38.xemtivingon.org|mitomtvt.cc|rakhoivk.cc|plcdn.xyz
 d51 1
 a51 1
 /pop.js$script,domain=motchill.fish|ohaytv.fit
@@ -1103,7 +1128,8 @@ d153 1
 a153 1
 ||motchill.fish^*.gif$image
 d155 2
-a156 2
+a156 3
+||motchill84.com/3s.m3u8$rewrite=abp-resource:blank-mp3,domain=motchill84.com
 ||motchilla.fm/wp-content/plugins/AdsManager/js/aam-scripts.js$script,~third-party
 ||motchilla.fm^*.gif$image
 d173 1
@@ -1111,7 +1137,7 @@ a173 1
 ||phimmoichill.dev/newchill/$script,~third-party
 d185 1
 a185 1
-||quoracdn.net^$image,domain=www.motchill84.com|www.phimdinhcao.online
+||quoracdn.net^$image,domain=motchill84.com|www.phimdinhcao.online
 d190 1
 a190 1
 ||s2.truyentot.com^*.gif$image,domain=hhtq13.vip|hhtq3d.net|hhtq5.vip|hhvsub1.com
@@ -1127,8 +1153,7 @@ a227 2
 ||tvhay.ph/guide/popup.xp-f.js
 ||tvphim.fm/ads/popup$script,~third-party
 d245 1
-a245 2
-||www.motchill84.com/3s.m3u8$rewrite=abp-resource:blank-mp3,domain=www.motchill84.com
+a245 1
 ||www.supervisorkuehl.com/wp-content/themes/bongda/dist/images/company/21.png$image
 d624 1
 d653 2
@@ -1155,9 +1180,9 @@ bunchatv1.com##.styles_textAds__s6yM4
 bunchatv1.com##a.btn-player-ads
 d708 3
 a710 3
-cakhiavx.cc,socialfinanceus.org,veboxg.cc###quangcaopc
-cakhiavx.cc,socialfinanceus.org,veboxg.cc##.marquee-container
-cakhiavx.cc,socialfinanceus.org,veboxg.cc,rakhoivk.cc,www.supervisorkuehl.com###wap_bottombanner
+cakhiavx.cc,tetherreport.com,veboxg.cc###quangcaopc
+cakhiavx.cc,tetherreport.com,veboxg.cc##.marquee-container
+cakhiavx.cc,tetherreport.com,veboxg.cc,rakhoivk.cc,www.supervisorkuehl.com###wap_bottombanner
 d746 1
 a746 1
 ephoto360.com,thiepmung.com,www1.247phim.cc,www.phimmoichilla.xyz,hayhaytv.cc,www.ssphim.us,phimmoitv.cfd##.ad-container
@@ -1182,7 +1207,7 @@ d805 1
 d811 15
 d836 1
 a836 1
-ketqua04.net,nghean24h.vn,xem.tructiepnba.me,doctruyenln.com,xemtivi4k.com,socialfinanceus.org,bongdainfox.tv,watch.thapcam.pro,xx2.thapcam53.info,nn13.thapcam.asia,www.phimdinhcao.online##a[rel="nofollow"]
+ketqua04.net,nghean24h.vn,xem.tructiepnba.me,doctruyenln.com,xemtivi4k.com,tetherreport.com,bongdainfox.tv,watch.thapcam.pro,xx2.thapcam53.info,nn13.thapcam.asia,www.phimdinhcao.online##a[rel="nofollow"]
 d841 1
 a841 1
 kienthuc.net.vn,saostar.vn,bongda24h.vn,cungthi.online,appvn.com,antt.vn,xemphimviet.casa,ghienphim.co,nghenhinvietnam.vn,vivuphim.info,vn-z.vn##.ads
@@ -1196,7 +1221,10 @@ mannhan97.xyz##.popup
 mannhan97.xyz##.sticky
 mannhan97.xyz##a.btn_fb:nth-of-type(2)
 d892 4
-a895 4
+a895 7
+motchill84.com##.banner-preload
+motchill84.com,www.phimdinhcao.online##.banner-container
+motchill84.com,www.phimdinhcao.online##.catfish-top
 motchilla.fm##.aam-banner-wrapper
 motchilla.fm##.cat-footer-wrapper
 motchilla.fm##.cat-header-wrapper
@@ -1210,22 +1238,22 @@ phimmoichill.dev###pm_quangcao
 d941 1
 a941 1
 rakhoivk.cc,www.supervisorkuehl.com##.btn-8xbet
-a945 15
-socialfinanceus.org###match-child-1
-socialfinanceus.org##.block-catfish.text-center.d-lg-none.d-block
-socialfinanceus.org##.container>ul
-socialfinanceus.org##.offer
-socialfinanceus.org##.offer__btn
-socialfinanceus.org##.pl-lg-0.col-xl-4
-socialfinanceus.org##.row.d-none
-socialfinanceus.org##.widget-offers__list
-socialfinanceus.org##div.d-lg-none.d-block:nth-of-type(3)
-socialfinanceus.org,mitomtvt.cc##.menu-cuoc-8xbet
-socialfinanceus.org,mitomtvt.cc##.menu-top-nha-cai
-socialfinanceus.org,rakhoivk.cc##.sk_balloon
-socialfinanceus.org,veboxg.cc,cakhiavx.cc,mitomtvt.cc,www.supervisorkuehl.com##div[id^="dnn_"]
-socialfinanceus.org,veboxg.cc,cakhiavx.cc,www.supervisorkuehl.com,mitomtvt.cc##.company
-socialfinanceus.org,www.supervisorkuehl.com##.match-detail__offer
+a959 15
+tetherreport.com###match-child-1
+tetherreport.com##.block-catfish.text-center.d-lg-none.d-block
+tetherreport.com##.container>ul
+tetherreport.com##.offer
+tetherreport.com##.offer__btn
+tetherreport.com##.pl-lg-0.col-xl-4
+tetherreport.com##.row.d-none
+tetherreport.com##.widget-offers__list
+tetherreport.com##div.d-lg-none.d-block:nth-of-type(3)
+tetherreport.com,mitomtvt.cc##.menu-cuoc-8xbet
+tetherreport.com,mitomtvt.cc##.menu-top-nha-cai
+tetherreport.com,rakhoivk.cc##.sk_balloon
+tetherreport.com,veboxg.cc,cakhiavx.cc,mitomtvt.cc,www.supervisorkuehl.com##div[id^="dnn_"]
+tetherreport.com,veboxg.cc,cakhiavx.cc,www.supervisorkuehl.com,mitomtvt.cc##.company
+tetherreport.com,www.supervisorkuehl.com##.match-detail__offer
 d977 7
 d1017 1
 a1017 1
@@ -1233,18 +1261,16 @@ toquoc.vn,baoxaydung.vn,tienphong.vn,taichinhdoanhnghiep.net.vn,thichxemphim1.si
 d1033 1
 a1033 1
 truyensieuhay.com,hhtrungquoc6.com,hhtq13.vip,animeweb.vip,hhtq3d.net###topbanner
+a1045 1
+vanphatelectric.com###levelmaxblock
 d1089 1
 a1089 1
 vungtv.xyz###container-ads
 d1111 3
-a1113 3
-www.motchill84.com##.banner-preload
-www.motchill84.com,www.phimdinhcao.online##.banner-container
-www.motchill84.com,www.phimdinhcao.online##.catfish-top
 d1118 2
 a1119 2
-www.phimdinhcao.online,www.motchill84.com##.BanerTop100
-www.phimdinhcao.online,www.motchill84.com##.adv-300-right
+www.phimdinhcao.online,motchill84.com##.BanerTop100
+www.phimdinhcao.online,motchill84.com##.adv-300-right
 a1124 7
 www.supervisorkuehl.com##.c-int.d-lg-none.d-block>p.block-int.mb-1
 www.supervisorkuehl.com##.col-12>p.block-int.mb-1
@@ -1263,7 +1289,7 @@ xemphimviet.casa,ghienphim.co##.popunder-link
 xemphimviet.casa,ghienphim.co##.promotion-popup
 xemphimviet.casa,ghienphim.co##.video-ad-layer
 a1155 1
-~dl.thuthuatjb.com##.adsbygoogle[data-ad-slot] 
+~dl.thuthuatjb.com##.adsbygoogle[data-ad-slot]
 a1162 1
 @@||cdn2.kenhvn2.com/Images/ads/300.gif$xmlhttprequest,domain=phimvn2.my
 d1187 1
@@ -1293,9 +1319,12 @@ a1230 2
 a1233 1
 ||sayhentaii.me/assets/js/ads.js
 d1237 1
-a1238 1
+d1239 3
+a1241 5
 ||ssayhentaii.me/storage/images/banner/$image
-a1241 1
+||static.stream68.cloud/candy/image/*.gif$image,domain=thempho1.com
+||static.stream68.cloud/candy/image/1280X274$image,domain=thempho1.com
+||static.stream68.cloud/candy/video/$domain=thempho1.com
 ||synz.liveonce.online^$script,domain=javtiful.com
 d1247 2
 a1248 3
@@ -1343,6 +1372,9 @@ a1332 3
 sieukhung.fyi,tuoi69.pet##.adsCenterHome
 sieukhung.fyi,tuoi69.pet##.banner-detail
 sieukhung.fyi,tuoi69.pet##.banner-topR
+d1338 1
+a1338 1
+thempho1.com##.w-full.cursor-pointer.block>div
 d1341 2
 a1342 2
 tuoi69.pet,sieukhung.fyi###bar_float_r
@@ -1374,17 +1406,18 @@ goctruyentranhvui17.com,nettruyener.com,sextop1.show,hhvsub1.com,sayhentai.blog,
 d1415 2
 a1416 2
 hhpanda.baby###overlay
-hhpanda.baby,thempho.club##html:style(overflow: auto !important)
+hhpanda.baby,thempho1.com##html:style(overflow: auto !important)
 d1418 2
 a1419 1
-imail.edu.vn,www.motchill84.com,trumtruyen.live##+js(acs, setTimeout, Aff)
+imail.edu.vn,motchill84.com,trumtruyen.live##+js(acs, setTimeout, Aff)
 d1430 1
 a1446 1
 sayhentai.blog,sayhentaii.me##+js(acs, document.addEventListener, window.open)
 d1448 1
-a1448 1
-socialfinanceus.org##+js(aopr, adsRedirectPopups)
-d1451 2
+d1451 3
+a1453 2
+tetherreport.com##+js(aopr, adsRedirectPopups)
+thempho1.com##div.ReactModalPortal
 d1457 1
 a1457 1
 tinsoikeo.live,motchill.fish,ohaytv.fit##+js(aopr, sessionStorage)
@@ -1393,7 +1426,7 @@ a1461 1
 truyensieuhay.com,hayhaytv.site,quangcaoyenbai.com,phimchill.life,thuvienhd.biz,tv.tvhayhd.org,thefaplive.com,mv.dailyphimz.com,mv.phimbathu.one,sexhihiz.nl,anime47.fun,teamlanhlung8.shop##+js(aopr, document.cookie)
 d1463 1
 a1463 1
-vailonxx.vip,www.motchill84.com##+js(acs, jQuery, window.open)
+vailonxx.vip##+js(acs, jQuery, window.open)
 d1466 2
 a1467 2
 viet69.channel##+js(acs, jQuery, open)
@@ -1402,7 +1435,7 @@ a1468 1
 vlsexsuong.pro##+js(aopr, Cookies)
 d1480 1
 a1480 1
-www.phimdinhcao.online,www.motchill84.com,xnhau.pe,teamlanhlung8.shop,xemphimjav.us##+js(aopr, localStorage)
+www.phimdinhcao.online,motchill84.com,xnhau.pe,teamlanhlung8.shop,xemphimjav.us##+js(aopr, localStorage)
 d1484 1
 a1484 3
 www.supervisorkuehl.com##+js(set, adsPlayer, '')
