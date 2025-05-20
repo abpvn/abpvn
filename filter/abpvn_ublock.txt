@@ -1,9 +1,9 @@
 [Adblock Plus 2.0]
-! Version: 20250520093459242
+! Version: 20250520120604583
 ! id: D4028CDD-3D39-4624-ACC7-8140F4EC3888
 ! Title: ABPVN List
-! Last modified: 20 May 2025 09:34:59 UTC+7
-! Diff-Path: patches/20250520093459242.patch#abpvn_ublock
+! Last modified: 20 May 2025 12:06:04 UTC+7
+! Diff-Path: patches/20250520120604583.patch#abpvn_ublock
 ! Diff-Expires: 60 minutes
 ! Expires: 1 days (update frequency)
 !
@@ -42,7 +42,7 @@
 /core/*$script,domain=gamek.vn|genk.vn|kenh14.vn|cafef.vn|thanhnien.vn
 /disable-devtool.min.js$script
 /giadinhonline.vn/files/qc/*
-/i.imgur.com/*.gif$domain=keonhacai55.chat|motchill85.com|www.phimdinhcao.online|tetherreport.com|veboxg.cc|cakhiavx.cc|listnhacai88.com|whoopiandmaya.com|ww38.xemtivingon.org|mitomtvt.cc|rakhoivk.cc|plcdn.xyz
+/i.imgur.com/*.gif$domain=keonhacai55.chat|motchill85.com|www.phimdinhcao.online|drinkfortpoint.com|veboxg.cc|cakhiavx.cc|listnhacai88.com|whoopiandmaya.com|ww38.xemtivingon.org|mitomtvt.cc|rakhoivk.cc|plcdn.xyz
 /js/ads.js$script,~third-party,domain=~vipurl.in
 /lv/esnk/*$script
 /newchill/*gif$image
@@ -149,6 +149,7 @@
 ||motchill85.com/3s.m3u8$rewrite=abp-resource:blank-mp3,domain=motchill85.com
 ||motchilla.fm/wp-content/plugins/AdsManager/js/aam-scripts.js$script,~third-party
 ||motchilla.fm^*.gif$image
+||motphimc.bz^*.gif$~third-party
 ||motphimtv.ad^*.gif$image
 ||mplmncb.com/banners-web$image,domain=truyenqqgo.com
 ||mplmncb.com/popup/$script,domain=truyenqqgo.com
@@ -298,6 +299,7 @@
 ||mt.deimosfestuca.com^
 ||ny.foonerne.com^
 ||o6z2a2kq8fatj3ch0x5ow6v82ha2gja8x8c7w6pc5gx2ls0zia7bx1n28b5d.com^
+||onnetwork.tv^$third-party
 ||oursty.com^
 ||platform.adlinknetwork.vn^
 ||player.gliacloud.com^
@@ -432,9 +434,9 @@ cafef.vn,ttvn.toquoc.vn##.bannertop
 cakhiavx.cc##.container.mt-1.d-none.d-lg-block
 cakhiavx.cc##.menu-item-object-custom
 cakhiavx.cc##.sub-menu.d-none.d-lg-flex
-cakhiavx.cc,tetherreport.com,veboxg.cc###quangcaopc
-cakhiavx.cc,tetherreport.com,veboxg.cc##.marquee-container
-cakhiavx.cc,tetherreport.com,veboxg.cc,whoopiandmaya.com,rakhoivk.cc###wap_bottombanner
+cakhiavx.cc,drinkfortpoint.com,veboxg.cc###quangcaopc
+cakhiavx.cc,drinkfortpoint.com,veboxg.cc##.marquee-container
+cakhiavx.cc,drinkfortpoint.com,veboxg.cc,whoopiandmaya.com,rakhoivk.cc###wap_bottombanner
 cakhiavx.cc,veboxg.cc##.align-items-center.justify-content-between.d-flex.col-12>.d-lg-none.d-block
 chap.vn##.my_responsive_add
 chap.vn##.titleBar + *
@@ -467,6 +469,21 @@ docviewer.yandex.com##.js-doc-html>div>div[id]
 doisongphapluat.com.vn,vtcnews.vn##.sys-ads
 domdomcomicsxyz.com##iframe[src*="ads"]
 download.vn##div[id^="adsbg"]
+drinkfortpoint.com###match-child-1
+drinkfortpoint.com##.block-catfish.text-center.d-lg-none.d-block
+drinkfortpoint.com##.container>ul
+drinkfortpoint.com##.offer
+drinkfortpoint.com##.offer__btn
+drinkfortpoint.com##.pl-lg-0.col-xl-4
+drinkfortpoint.com##.row.d-none
+drinkfortpoint.com##.widget-offers__list
+drinkfortpoint.com##div.d-lg-none.d-block:nth-of-type(3)
+drinkfortpoint.com,mitomtvt.cc##.menu-cuoc-8xbet
+drinkfortpoint.com,mitomtvt.cc##.menu-top-nha-cai
+drinkfortpoint.com,rakhoivk.cc##.sk_balloon
+drinkfortpoint.com,veboxg.cc,cakhiavx.cc,mitomtvt.cc,whoopiandmaya.com##div[id^="dnn_"]
+drinkfortpoint.com,veboxg.cc,cakhiavx.cc,whoopiandmaya.com,mitomtvt.cc##.company
+drinkfortpoint.com,whoopiandmaya.com##.match-detail__offer
 dubaotiente.pro##.ad-pin-right-bottom
 ebookbkmt.com##.top-right
 ephoto360.com##.line-ads
@@ -537,7 +554,7 @@ keoso.me##.widget-sidebar-block
 ketqua04.net##.baloon
 ketqua04.net##.col-sm-10.kqcenter
 ketqua04.net##.kqbackground.vien ~ a[target="_blank"]
-ketqua04.net,nghean24h.vn,xem.tructiepnba.me,doctruyenln.com,xemtivi4k.com,tetherreport.com,bongdainfox.tv,watch.thapcam.pro,xx2.thapcam53.info,nn13.thapcam.asia,www.phimdinhcao.online##a[rel="nofollow"]
+ketqua04.net,nghean24h.vn,xem.tructiepnba.me,doctruyenln.com,xemtivi4k.com,drinkfortpoint.com,bongdainfox.tv,watch.thapcam.pro,xx2.thapcam53.info,nn13.thapcam.asia,www.phimdinhcao.online##a[rel="nofollow"]
 ketqua247vn.vip##.linkBanner
 khiphach.net###qc-kpgame
 kickass.sx##.dssdffds
@@ -595,10 +612,10 @@ motchiill.pw##.overlay-1
 motchill85.com##.banner-preload
 motchill85.com,www.phimdinhcao.online##.banner-container
 motchill85.com,www.phimdinhcao.online##.catfish-top
-motchilla.fm##.aam-banner-wrapper
-motchilla.fm##.cat-footer-wrapper
-motchilla.fm##.cat-header-wrapper
-motchilla.fm##.popup-overlay
+motchilla.fm,motphimc.bz##.aam-banner-wrapper
+motchilla.fm,motphimc.bz##.cat-footer-wrapper
+motchilla.fm,motphimc.bz##.cat-header-wrapper
+motchilla.fm,motphimc.bz##.popup-overlay
 motchilltvphim.com,phimmoissz.info,tvzinghd.co##.sda-catfish
 motchilltvphim.com,phimtho.net###popup_banner_beta
 motphimchillfb.net###catfish_ad_top
@@ -659,21 +676,6 @@ techrum.vn##.block:has(.block-container>.block-body>a[href])
 techrum.vn##.block:has(.block-container>.block-body>ins)
 tenovi.net###ad_balloon
 tenovi.net##.adpia_banner
-tetherreport.com###match-child-1
-tetherreport.com##.block-catfish.text-center.d-lg-none.d-block
-tetherreport.com##.container>ul
-tetherreport.com##.offer
-tetherreport.com##.offer__btn
-tetherreport.com##.pl-lg-0.col-xl-4
-tetherreport.com##.row.d-none
-tetherreport.com##.widget-offers__list
-tetherreport.com##div.d-lg-none.d-block:nth-of-type(3)
-tetherreport.com,mitomtvt.cc##.menu-cuoc-8xbet
-tetherreport.com,mitomtvt.cc##.menu-top-nha-cai
-tetherreport.com,rakhoivk.cc##.sk_balloon
-tetherreport.com,veboxg.cc,cakhiavx.cc,mitomtvt.cc,whoopiandmaya.com##div[id^="dnn_"]
-tetherreport.com,veboxg.cc,cakhiavx.cc,whoopiandmaya.com,mitomtvt.cc##.company
-tetherreport.com,whoopiandmaya.com##.match-detail__offer
 thanhnien.vn##.asd-headt
 thanhnien.vn##.detail__foru
 thanhnien.vn##.mb-40.section__qadd
@@ -792,6 +794,7 @@ vnexpress.net###supper_masthead
 voz.vn##.adsbypubpower
 voz.vn##.p-body-sidebar>.block>.block-container:has(.adsbypubpower)
 voz.vn##.p-body-sidebar>.block>.block-container:has([data-widget_id])
+voz.vn##[data-dest="placeholder"]
 voz.vn##div.message--post
 voz.vn##div[style]:has(.adsbypubpower)
 vozer.net##.Notices.PanelScroller
@@ -1128,6 +1131,7 @@ cdn2.insure885.fun##+js(acs, $, aff)
 chotlo3s.com###header:style(margin-top: 0 !important)
 cliphot69.pics##+js(set, a_vid, 0)
 cunghocvui.com##+js(acs, document.addEventListener, opened_window_shoppe)
+drinkfortpoint.com##+js(aopr, adsRedirectPopups)
 dualeotruyeno.com,m.blogtruyenmoi.com##+js(acs, document.addEventListener, popunder)
 economic45882.shop,cdn4.tiptoe34x1.fun##+js(acs, $, arrDirectLink)
 freeplayervideo.com,abysscdn.com,player-cdn.com##+js(set, open, noopFunc)
@@ -1174,7 +1178,6 @@ sayhentai.blog,sayhentaii.me##+js(acs, document.addEventListener, window.open)
 sexhd88.online##+js(acs, document.addEventListener, open)
 survey-smiles.com##+js(addEventListener-defuser, click, open)
 tailieumoi.vn##+js(set, linkAff, null, 3)
-tetherreport.com##+js(aopr, adsRedirectPopups)
 thempho1.com##div.ReactModalPortal
 thichxemphim.live##+js(aopr, affUrls)
 thiendia.pro##+js(acs, $, open)
