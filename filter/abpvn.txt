@@ -1,9 +1,9 @@
 [Adblock Plus 2.0]
-! Version: 20250521112656967
+! Version: 20250521150730487
 ! id: D4028CDD-3D39-4624-ACC7-8140F4EC3888
 ! Title: ABPVN List
-! Last modified: 21 May 2025 11:26:56 UTC+7
-! Diff-Path: patches/20250521112656967.patch#abpvn
+! Last modified: 21 May 2025 15:07:30 UTC+7
+! Diff-Path: patches/20250521150730487.patch#abpvn
 ! Diff-Expires: 60 minutes
 ! Expires: 1 days (update frequency)
 !
@@ -45,7 +45,7 @@ $popup,domain=truyenfull.vision
 /core/*$script,domain=gamek.vn|genk.vn|kenh14.vn|cafef.vn|thanhnien.vn
 /disable-devtool.min.js$script
 /giadinhonline.vn/files/qc/*
-/i.imgur.com/*.gif$domain=keonhacai55.chat|motchill85.com|www.phimdinhcao.online|drinkfortpoint.com|veboxg.cc|cakhiavx.cc|listnhacai88.com|sharepointna.com|ww38.xemtivingon.org|mitomtvt.cc|rakhoivk.cc|plcdn.xyz
+/i.imgur.com/*.gif$domain=keonhacai55.chat|motchill85.com|www.phimdinhcao.online|drinkfortpoint.com|veboxg.cc|cakhiavx.cc|listnhacai88.com|alma-de-cuba.com|ww38.xemtivingon.org|mitomtvt.cc|rakhoivk.cc|plcdn.xyz
 /js/ads.js$script,~third-party,domain=~vipurl.in|~link.codevn.net
 /lv/esnk/*$script
 /newchill/*gif$image
@@ -79,6 +79,7 @@ $popup,domain=truyenfull.vision
 ||ads*.autodaily.vn
 ||ads.nghenhinvietnam.vn^$domain=nghenhinvietnam.vn
 ||ahaphimz.com/js/pov.js$script
+||alma-de-cuba.com/wp-content/themes/bongda/dist/images/company/21.png$image
 ||alwingulla.com/88/tag.min.js$script,xmlhttprequest,rewrite=abp-resource:blank-js,domain=apkmoddone.com
 ||anime7.site^*.gif
 ||animevietsub.lol/ads/$script
@@ -98,7 +99,7 @@ $popup,domain=truyenfull.vision
 ||cdn-data.gtvplus.vn/banners/$image,domain=gametv.vn
 ||cdn-live.taoxanh.biz^*.gif$image,domain=bunchatv1.com
 ||cdn.jsdelivr.net/gh/ngylduy/blog@b844bfe/js/AdsenseAds.min.js$script,domain=vanphatelectric.com
-||cdn.lfastcdn.com^*.gif$image,domain=bongdainfox.tv|sharepointna.com|rakhoivk.cc|cakhiavx.cc|mitomtvt.cc|veboxg.cc
+||cdn.lfastcdn.com^*.gif$image,domain=bongdainfox.tv|alma-de-cuba.com|rakhoivk.cc|cakhiavx.cc|mitomtvt.cc|veboxg.cc
 ||cdn.monkeydarchive.com/images/banner/$image,domain=monkeyd.net.vn
 ||cdn.webhoctienganh.com/asset/home/img/banner/$image,domain=webhoctienganh.com
 ||chodansinh.net^*.gif
@@ -196,7 +197,6 @@ $popup,domain=truyenfull.vision
 ||s2.truyentot.com^*.gif$image,domain=hhtq13.vip|hhtq3d.net|hhtq5.vip|hhvsub1.com
 ||server.zmedia.vn/static/$script
 ||sggp.org.vn/*banner
-||sharepointna.com/wp-content/themes/bongda/dist/images/company/21.png$image
 ||shope.ee^$popup,domain=blogtruyenmoi.com|cunghocvui.com|truyensextv.com
 ||sohuutritue.net.vn/files/qc/
 ||static.cdnno.com/storage/topbox/*.webp$image,domain=metruyencv.com
@@ -656,6 +656,13 @@ $popup,domain=truyenfull.vision
 24h.com.vn##[id^="ADS_"]
 2banh.vn###position_full_top_banner_pc
 2game.vn##.gc-header__wrapper + div[style]
+alma-de-cuba.com##.c-int.d-lg-none.d-block>p.block-int.mb-1
+alma-de-cuba.com##.col-12>p.block-int.mb-1
+alma-de-cuba.com##.grid-match__footer
+alma-de-cuba.com##.odds-comp
+alma-de-cuba.com##.w-100.justify-content-center.align-items-center.d-flex
+alma-de-cuba.com##.widget
+alma-de-cuba.com##a.d-lg-none.d-block:nth-of-type(1)
 anime47.fun###qc_clgt
 anime47.fun###swiper-wrapper
 anime7.site###menubentrai
@@ -722,7 +729,7 @@ cakhiavx.cc##.menu-item-object-custom
 cakhiavx.cc##.sub-menu.d-none.d-lg-flex
 cakhiavx.cc,drinkfortpoint.com,veboxg.cc###quangcaopc
 cakhiavx.cc,drinkfortpoint.com,veboxg.cc##.marquee-container
-cakhiavx.cc,drinkfortpoint.com,veboxg.cc,rakhoivk.cc,sharepointna.com###wap_bottombanner
+cakhiavx.cc,drinkfortpoint.com,veboxg.cc,rakhoivk.cc,alma-de-cuba.com###wap_bottombanner
 cakhiavx.cc,veboxg.cc##.align-items-center.justify-content-between.d-flex.col-12>.d-lg-none.d-block
 chap.vn##.my_responsive_add
 chap.vn##.titleBar + *
@@ -764,12 +771,12 @@ drinkfortpoint.com##.pl-lg-0.col-xl-4
 drinkfortpoint.com##.row.d-none
 drinkfortpoint.com##.widget-offers__list
 drinkfortpoint.com##div.d-lg-none.d-block:nth-of-type(3)
+drinkfortpoint.com,alma-de-cuba.com##.match-detail__offer
 drinkfortpoint.com,mitomtvt.cc##.menu-cuoc-8xbet
 drinkfortpoint.com,mitomtvt.cc##.menu-top-nha-cai
 drinkfortpoint.com,rakhoivk.cc##.sk_balloon
-drinkfortpoint.com,sharepointna.com##.match-detail__offer
-drinkfortpoint.com,veboxg.cc,cakhiavx.cc,mitomtvt.cc,sharepointna.com##div[id^="dnn_"]
-drinkfortpoint.com,veboxg.cc,cakhiavx.cc,sharepointna.com,mitomtvt.cc##.company
+drinkfortpoint.com,veboxg.cc,cakhiavx.cc,alma-de-cuba.com,mitomtvt.cc##.company
+drinkfortpoint.com,veboxg.cc,cakhiavx.cc,mitomtvt.cc,alma-de-cuba.com##div[id^="dnn_"]
 dubaotiente.pro##.ad-pin-right-bottom
 ebookbkmt.com##.top-right
 ephoto360.com##.line-ads
@@ -956,18 +963,11 @@ qdnd.vn##.box-banner
 quantrimang.com###adrighttop
 rakhoivk.cc##.bookmaker-selector-container
 rakhoivk.cc##.btn-odds
-rakhoivk.cc,sharepointna.com##.btn-8xbet
+rakhoivk.cc,alma-de-cuba.com##.btn-8xbet
 reatimes.vn##div[class^="adv-"]
 sachmoi.net##.boxzilla-bottom-right-container
 sachmoi.net##[href^="https://gotrackecom.info"]
 saostar.vn##.pc-bill
-sharepointna.com##.c-int.d-lg-none.d-block>p.block-int.mb-1
-sharepointna.com##.col-12>p.block-int.mb-1
-sharepointna.com##.grid-match__footer
-sharepointna.com##.odds-comp
-sharepointna.com##.w-100.justify-content-center.align-items-center.d-flex
-sharepointna.com##.widget
-sharepointna.com##a.d-lg-none.d-block:nth-of-type(1)
 soha.vn,gamek.vn##[id^="admzone"]
 sport5.vn,afamily.vn##.afw-topbanner
 subnhanh1.org##.t_logo
@@ -1250,7 +1250,7 @@ $third-party,script,domain=sexdiaryx.live
 ||phym18.lol/static/js/adlia.js
 ||play.stream4.me/jwplayer/vast.js$script,domain=play.stream4.me
 ||qcvip.xyz^$script,domain=phevkl.im|viet69.channel
-||quoracdn.net^$image,domain=vlxx.now|sexpro.pro|phevkl.im|viet69.channel|phim18vip.vip|thiendia.pro|pheclip.blog|vlsexsuong.pro|sexhihiz.nl|sieudam.love|fulllivehot.live
+||quoracdn.net^$image,domain=vlxx.now|sexpro.pro|phevkl.im|viet69.channel|phim18vip.vip|thiendia.pro|pheclip.blog|vlsexsuong.pro|sexhihivl.pro|sieudam.love|fulllivehot.live
 ||rphang.online^*.gif
 ||sayhentai.blog/assets/js/ads.js
 ||sayhentai.blog/storage/images/banner/$image
@@ -1271,7 +1271,7 @@ $third-party,script,domain=sexdiaryx.live
 ||truyenvn.ad^*banner$image
 ||uimg.buomtv.io/palivn/ad/$image,domain=buomtv.art
 ||vlsexsuong.pro^*.gif$image,domain=vlsexsuong.pro
-||vn18phimsexhay.com^*.gif$image
+||vn19phimsexhay.com^*.gif$image
 ||www.displayvertising.com^
 ||xamer.xyz/styles/file/$image
 ||xfast.sbs/media/$image,domain=fullcliphot.net
@@ -1288,7 +1288,7 @@ buomtv.art##.l1k7nns5.a1t03fa1
 buomtv.art##.l1k7nns5.ahen1fo
 buomtv.art##div._1vguhxv.cleaozk._3yp41v.row-0.ss > ._1lbf8q9
 cliphot69.autos###custom_html-42
-cliphotvn69.com,mobiblogss.com,cliphot69.autos,phevkl.im,www.gvnvh.net,vn18phimsexhay.com,sayhentai.blog,sayhentaii.me,viet69.channel,phim18vip.vip##.float-ck-center-lt
+cliphotvn69.com,mobiblogss.com,cliphot69.autos,phevkl.im,www.gvnvh.net,vn19phimsexhay.com,sayhentai.blog,sayhentaii.me,viet69.channel,phim18vip.vip##.float-ck-center-lt
 damconuong.site##a[rel="nofollow"]
 dualeotruyeno.com##[id$="bnr"]
 fullcliphot.net##.cashfish
@@ -1346,7 +1346,7 @@ rphang.online##.samVideoOverlay
 sexhaynung.xyz###tut4ktream_idAdLink
 sexhd88.online##.classvi
 sexhd88.online##.elementor-section-height-default.elementor-section-boxed.elementor-element-e601265.elementor-element.elementor-top-section.elementor-section
-sexpro.pro,vlsexsuong.pro,sexhihiz.nl##.xx-ads
+sexpro.pro,vlsexsuong.pro,sexhihivl.pro##.xx-ads
 sextop.asia##div[style^="position:fixed;inset:0px;z-index:100000;"]
 sextop.asia,hls.playerfb.xyz###video_player ~ div[id]
 sieukhung.fyi##.adspopupgiua
@@ -1384,8 +1384,8 @@ vlxx.now##.ads
 vlxx.now##.banner-preload
 vlxx.now##a[rel*="nofollow"]
 vlxx.now##div.banner-catfish-bottom
-vlxx.now,clipsexsub3x.net,sexhihiz.nl##.catfish-bottom
-vlxx.now,vlsexsuong.pro,sexhihiz.nl##.catfish-top
+vlxx.now,clipsexsub3x.net,sexhihivl.pro##.catfish-bottom
+vlxx.now,vlsexsuong.pro,sexhihivl.pro##.catfish-top
 vlxxai.net,trangsexdam.net,sexsoc.info##.hd-tube-desktop
 vlxxai.net,trangsexdam.net,sexsoc.info##.hd-tube-mobile
 vlxxhot.net,vailonxx.vip###ab_ctl
