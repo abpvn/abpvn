@@ -1,9 +1,9 @@
 [Adblock Plus 2.0]
-! Version: 20250523123719659
+! Version: 20250523150717050
 ! id: D4028CDD-3D39-4624-ACC7-8140F4EC3888
 ! Title: ABPVN List
-! Last modified: 23 May 2025 12:37:19 UTC+7
-! Diff-Path: patches/20250523123719659.patch#abpvn_ublock
+! Last modified: 23 May 2025 15:07:17 UTC+7
+! Diff-Path: patches/20250523150717050.patch#abpvn_ublock
 ! Diff-Expires: 60 minutes
 ! Expires: 1 days (update frequency)
 !
@@ -113,7 +113,6 @@
 ||goal.90phut24.xyz^*.gif$image
 ||googleusercontent.com^$domain=hhtqvietsub.me
 ||hhkungfu.club/88vn$image
-||hhkungfu.club/88vn$image,domain=animehay.tax
 ||hhkungfu.club/baner-6686$image
 ||hhpanda.baby/ads/$script,~third-party
 ||hinhso.com^$domain=diendanmaychu.vn,image
@@ -380,7 +379,7 @@ animevietsub.lol###invideo_wrapper
 animevietsub.lol##.Ads
 animevietsub.lol##.mobile-catfish-top
 animevietsub.lol##.mobile-catfixx
-animevietsub.lol,phimtuoitho.site,phimtuoitho.site##.pc-catfixx
+animevietsub.lol,phimtuoitho.site##.pc-catfixx
 animew.biz##div.py-2.md\:py-6.mx-auto.w-full.max-w-screen-3xl>div.relative
 apkmoddone.com###sn-Notif
 apkmoddone.com##.adNative
@@ -949,7 +948,7 @@ vn2.vn#@#.advertiser
 vndoc.com#@#.showads
 vozer.vn#@#[class^="div-gpt-ad"]
 !------ ABPVN Adult block -------
-$third-party,script,domain=sexdiaryx.live
+*$third-party,script,domain=sexdiaryx.live
 /^https:\/\/[a-z]{8,12}\.com\/en\/(?:[a-z]{2,5}\/){0,2}[a-z]{2,}\?(?:[a-z]+=(?:\d+|[a-z]+)&)*?id=[12]\d{6}/$script,third-party
 /assets/js/vast.js$script,domain=~phevkl.im|~viet69.hot
 /player/vast.js$script
