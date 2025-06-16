@@ -1,9 +1,9 @@
 [Adblock Plus 2.0]
-! Version: 20250616121227317
+! Version: 20250616150805591
 ! id: D4028CDD-3D39-4624-ACC7-8140F4EC3888
 ! Title: ABPVN List
-! Last modified: 16 Jun 2025 12:12:27 UTC+7
-! Diff-Path: patches/20250616121227317.patch#abpvn_ublock
+! Last modified: 16 Jun 2025 15:08:05 UTC+7
+! Diff-Path: patches/20250616150805591.patch#abpvn_ublock
 ! Diff-Expires: 60 minutes
 ! Expires: 1 days (update frequency)
 !
@@ -72,12 +72,12 @@
 ||ads*.autodaily.vn
 ||ads.nghenhinvietnam.vn^$domain=nghenhinvietnam.vn
 ||ahaphimz.com/js/pov.js$script
-||anime9.site^*.gif
+||anime10.site^*.gif
 ||animevietsub.lol/ads/$script
 ||animevietsubs.net/vast/$image
 ||animew.biz/_next/image?url=https%3A%2F%2Flh3.googleusercontent.com$image
 ||animew.biz/_next/image?url=https%3A%2F%2Fp21-ad-sg.ibyteimg.com$image
-||api.anime3s.com^*.gif$image,domain=hayhaytv.site|anime9.site
+||api.anime3s.com^*.gif$image,domain=hayhaytv.site|anime10.site
 ||asecdn.w88media.com/VN/250x250-VN.gif$domain=mythethao.net
 ||ax.mpcdn.top/tags/js?id=motchill$script,domain=motchillvl.com
 ||ax.mpcdn.top^*.gif$domain=motchillvl.com
@@ -222,7 +222,7 @@
 ||tuviso.com/public/media//banner/
 ||tuyensinh247.com/$image,third-party
 ||tuyensinhso.vn/images/banners/*.gif$image,~third-party
-||tvhay.fm/guide/popup.xp-f.js
+||tvhay.fm^*popup$script,~third-party
 ||tvphim.pe/ads/popup$script,~third-party
 ||tvzinghd.co/wp-content/themes/zingtv/js/qci9bc.js$script,~third-party
 ||ungtycomicsnay.com$csp=script-src self * data:* 'unsafe-inline'
@@ -364,11 +364,11 @@
 24h.com.vn##[id^="ADS_"]
 2banh.vn###position_full_top_banner_pc
 2game.vn##.gc-header__wrapper + div[style]
+anime10.site###menubentrai
+anime10.site##.gnartyx-offads
+anime10.site,animetvn4.com,subnhanh1.org###fbox-background
 anime47.shop###qc_clgt
 anime47.shop###swiper-wrapper
-anime9.site###menubentrai
-anime9.site##.gnartyx-offads
-anime9.site,animetvn4.com,subnhanh1.org###fbox-background
 animehay.ceo###header-ads + center
 animehay.ceo##div[style="position: fixed; bottom: 0px; z-index: 98; width: 100%; text-align: center; box-sizing: border-box;"]
 animetvn4.com###mobile-ads
@@ -402,7 +402,7 @@ bc.xoilac5.lol,live4.xoilac34.org,live4.vebo4.net,xem.vebo31.net,xem.banhkhuc120
 bc.xoilac5.lol,live4.xoilac34.org,live4.vebo4.net,xem.vebo31.net,xem.banhkhuc120.info##.ibs-bet
 bc.xoilac5.lol,live4.xoilac34.org,live4.vebo4.net,xem.vebo31.net,xem.banhkhuc120.info##div[class*="size-"]
 bc.xoilac5.lol,live4.xoilac34.org,live4.vebo4.net,xem.vebo31.net,xem.banhkhuc120.info,watch.thapcam.pro,f4.thapcam55.buzz,ca2.thapcam55.info###m-bet
-bc.xoilac5.lol,live4.xoilac34.org,phim18vl.net,freeplayervideo.com,abysscdn.com,player-cdn.com,fdcdn.xyz,anime9.site,cloudasiatv.xyz##.jw-logo
+bc.xoilac5.lol,live4.xoilac34.org,phim18vl.net,freeplayervideo.com,abysscdn.com,player-cdn.com,fdcdn.xyz,anime10.site,cloudasiatv.xyz##.jw-logo
 bc.xoilac5.lol,live4.xoilac34.org,xem.banhkhuc120.info##.btn-betnow
 bing.com##.b_algo:has(.rms_img[src*="/th?id=OADD2."][src$="21.2"])
 bing.com##.b_algo:has(.rms_img[src*="=AdsPlus"])
@@ -1059,7 +1059,7 @@ phim18hdxx.com##.under-player-pc-banner
 phim18vip.vip,pheclip.pro###pc-preload-modal
 phim18vip.vip,pheclip.pro##.quang-cao
 phim18vip.vip,sieudam.baby###popup
-phimsex38.pro,phimsex12x.pro##.quangcaomobile
+phimsex39.pro,phimsex12x.pro##.quangcaomobile
 phimsexvl69.net,quat69.pro,trangsexdam.net,vlxx.rip,sexsoc.info###f186fb23a33995d91ce3c2212189178c8
 phym18.lol##.black-layout>div:nth-child(2)
 phym18.lol##.popup_u
@@ -1205,7 +1205,7 @@ vanphatelectric.com##+js(acs, document.addEventListener, runAllDetections)
 veryfiles.com##+js(aopr, nFNcksmwU)
 viet69.fo,vlxx.bz,dualeotruyenl.com,yurineko.my,sexpro.bz,cliphot69.beer,doctruyen3qui10.pro,ihentai.cloud,hentaivc.net,buomtv.club,truyenvn.shop,javtiful.com,quatvn.love,vn34phimsexhay.com,phim18hdxx.com,vn4.sexviet88.xyz,sexmup3x.net,demo.14412882.com,ungtycomicsvip.org,cliphot69.pics,hhtq5.vip,sexdiary.club,vn2.xvideos69.xxx,umetruyenhay.com,damconuong.cam,truyenqqgo.com,clipsexsub3x.net##+js(acs, WebAssembly, instantiate)
 viet69.hot##+js(acs, jQuery, open)
-viettoons.tv,mv.phimmoiaz.cc,ytstv.me,anime9.site,anh.moe,maclife.io,xemphimjav.us,hoctot.hocmai.vn,bluphim3.com,samtruyentranh.com,truyenfull.vision,player.phimapi.com,noitu.site##+js(aopr, open)
+viettoons.tv,mv.phimmoiaz.cc,ytstv.me,anime10.site,anh.moe,maclife.io,xemphimjav.us,hoctot.hocmai.vn,bluphim3.com,samtruyentranh.com,truyenfull.vision,player.phimapi.com,noitu.site##+js(aopr, open)
 vinaurl.net##+js(aopr, oneClick)
 vndoc.com##+js(set, seconds, 0)
 vungoctuan.vn##+js(acs, document.write, snow)

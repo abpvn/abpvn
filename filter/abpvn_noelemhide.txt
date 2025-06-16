@@ -1,9 +1,9 @@
 [Adblock Plus 2.0]
-! Version: 20250616121227317
+! Version: 20250616150805591
 ! id: D4028CDD-3D39-4624-ACC7-8140F4EC3888
 ! Title: ABPVN List
-! Last modified: 16 Jun 2025 12:12:27 UTC+7
-! Diff-Path: patches/20250616121227317.patch#abpvn_noelemhide
+! Last modified: 16 Jun 2025 15:08:05 UTC+7
+! Diff-Path: patches/20250616150805591.patch#abpvn_noelemhide
 ! Diff-Expires: 60 minutes
 ! Expires: 1 days (update frequency)
 !
@@ -74,12 +74,12 @@ $popup,domain=truyenfull.vision
 ||ads*.autodaily.vn
 ||ads.nghenhinvietnam.vn^$domain=nghenhinvietnam.vn
 ||ahaphimz.com/js/pov.js$script
-||anime9.site^*.gif
+||anime10.site^*.gif
 ||animevietsub.lol/ads/$script
 ||animevietsubs.net/vast/$image
 ||animew.biz/_next/image?url=https%3A%2F%2Flh3.googleusercontent.com$image
 ||animew.biz/_next/image?url=https%3A%2F%2Fp21-ad-sg.ibyteimg.com$image
-||api.anime3s.com^*.gif$image,domain=hayhaytv.site|anime9.site
+||api.anime3s.com^*.gif$image,domain=hayhaytv.site|anime10.site
 ||asecdn.w88media.com/VN/250x250-VN.gif$domain=mythethao.net
 ||ax.mpcdn.top/tags/js?id=motchill$script,domain=motchillvl.com
 ||ax.mpcdn.top^*.gif$domain=motchillvl.com
@@ -226,7 +226,7 @@ $popup,domain=truyenfull.vision
 ||tuviso.com/public/media//banner/
 ||tuyensinh247.com/$image,third-party
 ||tuyensinhso.vn/images/banners/*.gif$image,~third-party
-||tvhay.fm/guide/popup.xp-f.js
+||tvhay.fm^*popup$script,~third-party
 ||tvphim.pe/ads/popup$script,~third-party
 ||tvzinghd.co/wp-content/themes/zingtv/js/qci9bc.js$script,~third-party
 ||ungtycomicsnay.com$csp=script-src self * data:* 'unsafe-inline'
