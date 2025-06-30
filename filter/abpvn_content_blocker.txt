@@ -1,9 +1,9 @@
 [Adblock Plus 2.0]
-! Version: 20250630120739147
+! Version: 20250630140044024
 ! id: D4028CDD-3D39-4624-ACC7-8140F4EC3888
 ! Title: ABPVN List
-! Last modified: 30 Jun 2025 12:07:39 UTC+7
-! Diff-Path: patches/20250630120739147.patch#abpvn_content_blocker
+! Last modified: 30 Jun 2025 14:00:44 UTC+7
+! Diff-Path: patches/20250630140044024.patch#abpvn_content_blocker
 ! Diff-Expires: 60 minutes
 ! Expires: 1 days (update frequency)
 !
@@ -87,7 +87,7 @@ $popup,domain=truyenfull.vision
 ||baonga.com/FileUpload/Images/*banner
 ||bf.333xbet.com^$media,third-party
 ||blog.abit.vn/wp-content/uploads/2020/05/abit_$image
-||blogger.googleusercontent.com^$image,domain=hhninja26.tv|xem15.net|hhtm.net|phimhaytv.biz|yanhh3d.vip|phimhoathinh3d.vip
+||blogger.googleusercontent.com^$image,domain=hhninja26.tv|hhtm.net|phimhaytv.biz|yanhh3d.vip|phimhoathinh3d.vip
 ||blvtap.com^*.gif$image,domain=phimmoinet.xyz
 ||bp.blogspot.com$image,domain=xemtivi4k.com
 ||bp.blogspot.com/*banner$image,domain=~aowvn.org|~www.umu.pro.vn
@@ -124,6 +124,7 @@ $popup,domain=truyenfull.vision
 ||huongdanjava.com$csp=script-src data: 'self' 'unsafe-inline' http: https:
 ||i.ex-cdn.com/nhadautu.vn/files/qc/$domain=nhadautu.vn
 ||i.ibb.co^*.gif$image,domain=phimtuoitho.site
+||i.imghippo.com/files/$image,domain=www.rophim.me
 ||i.imgur.com/81uid6d.jpg$domain=vozer.net
 ||i.imgur.com/FbUH5AQ.png$domain=vozer.net
 ||i.imgur.com^$image,domain=nhacdj.vn|diendanit.net|banbuondalat.com|xem.tructiepnba.me|www.ssphim.us|phimbet.biz
@@ -253,7 +254,7 @@ $popup,domain=truyenfull.vision
 ||www.thuocbietduoc.com.vn/aqc/$image
 ||xahoingaynay.com.vn/upload/$image
 ||xc.1357668.com^*.gif$domain=live.7mvn5.com
-||xem15.net/_next/image?url=%2Fpopup1.jpg&w=*&q=75$image
+||xem15.net/*.mp4$domain=xem15.net,rewrite=abp-resource:blank-mp3
 ||xemphimviet.site/client_assets/js/dataview/adsview.js$script,~third-party
 ||xemphimviet.site/client_assets/js/minijumb.js$script,~third-party
 ||xemphimviet.site^*.gif$image
@@ -838,6 +839,10 @@ www.o-study.net###POPUP648
 www.phim.world##.block.translate-x-\[-50\%\].left-2\/4.z-\[1\].bottom-\[-6px\].fixed.mx-auto.md\:container.md\:px-0.px-4.w-screen
 www.phimdinhcao.online,motchill93.com##.BanerTop100
 www.phimdinhcao.online,motchill93.com##.adv-300-right
+www.rophim.me##.is-catfish
+www.rophim.me##.show.modal-backdrop.fade
+www.rophim.me##.show.modal.sspp-modal.d-modal.v-modal.fade
+www.rophim.me##div.is-wide.sspp-area:nth-of-type(1)
 www.saostar.vn###mobi-sapo
 www.saostar.vn###page-skin-top-holder
 www.saostar.vn###pc-bill-top
