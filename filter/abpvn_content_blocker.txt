@@ -1,9 +1,9 @@
 [Adblock Plus 2.0]
-! Version: 20250709140038734
+! Version: 20250709150730511
 ! id: D4028CDD-3D39-4624-ACC7-8140F4EC3888
 ! Title: ABPVN List
-! Last modified: 09 Jul 2025 14:00:38 UTC+7
-! Diff-Path: patches/20250709140038734.patch#abpvn_content_blocker
+! Last modified: 09 Jul 2025 15:07:30 UTC+7
+! Diff-Path: patches/20250709150730511.patch#abpvn_content_blocker
 ! Diff-Expires: 60 minutes
 ! Expires: 1 days (update frequency)
 !
@@ -50,7 +50,7 @@ $popup,domain=truyenfull.vision
 /lv/esnk/*$script
 /newchill/*gif$image
 /polyad.
-/pop.js$script,domain=motchilli.id|ohaytv.pro
+/pop.js$script,domain=motchilli.cx|motchilli.cx
 /popunder7.
 /qcao/*$domain=~thegioididong.com
 /quang%20cao/*
@@ -122,6 +122,7 @@ $popup,domain=truyenfull.vision
 ||github.com^$image,domain=phim18vl.net
 ||goal.90phut24.xyz^*.gif$image
 ||googleusercontent.com^$domain=hhtqvietsub.me
+||hdcphim.com^*.gif$image
 ||hhkungfu.club/88vn$image
 ||hhkungfu.club/baner-6686$image
 ||hhpanda.win/ads/$script,~third-party
@@ -158,7 +159,7 @@ $popup,domain=truyenfull.vision
 ||mocfun.net/uploads/banners/
 ||motchill10.com/public/upload/ads/ads.js$script,~third-party
 ||motchill95.com/3s.m3u8$rewrite=abp-resource:blank-mp3,domain=motchill95.com
-||motchilli.id^*.gif$image
+||motchilli.cx^*.gif$image
 ||motchillsi.fm/wp-content/plugins/AdsManager/js/aam-scripts.js$script,~third-party
 ||motchillsi.fm^*.gif$image
 ||motphimc.nl^*.gif$~third-party
@@ -179,7 +180,6 @@ $popup,domain=truyenfull.vision
 ||phim.vkool8.net/images/ads/$image
 ||phim.vkool8.net/js/pov.js$script,~third-party
 ||phimchilltv.net/banner$image
-||phimhdcvn.com^*.gif$image
 ||phimmoichill.day/newchill/$script,~third-party
 ||phimmoichillz.my/pop$image
 ||phimmoichillz.my^*.gif$image
@@ -795,7 +795,7 @@ gocmod.com##center:has(.adsbygoogle)
 hayhaytv.site,subnhanh1.org##.sticky_bottom
 hhanime3d.org,hhpanda.win###top_addd
 hhdragon.com##.catfish-img
-hhninja26.tv,phimhoathinh3d.vip,hhtq13.vip,hhtqvietsub.me,phimchilltv.net,hhtutien.tv,animeweb.vip,hoathinh4k3.top,animehay.ceo,hhtq3d.net,wibu47.com,hhvsub1.com,phimdacap.tv,motchilli.id,hhdragon.com###catfish
+hhninja26.tv,phimhoathinh3d.vip,hhtq13.vip,hhtqvietsub.me,phimchilltv.net,hhtutien.tv,animeweb.vip,hoathinh4k3.top,animehay.ceo,hhtq3d.net,wibu47.com,hhvsub1.com,phimdacap.tv,motchilli.cx,hhdragon.com###catfish
 hhpanda.win###xs-addd0
 hhpanda.win##.btn-fanpage.btn-default.btn-block.btn
 hhpanda.win##.underplayer_btn
@@ -960,7 +960,7 @@ saostar.vn##.pc-bill
 soha.vn,gamek.vn##[id^="admzone"]
 sport5.vn,afamily.vn##.afw-topbanner
 subnhanh1.org##.t_logo
-subnhanh1.org,hayhaytv.site,motphimtv.bz,motchillvl.com,phimhdcvn.com##.mp-adz
+subnhanh1.org,hayhaytv.site,motphimtv.bz,motchillvl.com,hdcphim.com##.mp-adz
 suckhoedoisong.vn##.top-ads
 survey-smiles.com##.toogle-ads
 takertv.co##iframe[src*="ads"]
