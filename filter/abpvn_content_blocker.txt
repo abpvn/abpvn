@@ -1,9 +1,9 @@
 [Adblock Plus 2.0]
-! Version: 20250709230528083
+! Version: 20250710093913257
 ! id: D4028CDD-3D39-4624-ACC7-8140F4EC3888
 ! Title: ABPVN List
-! Last modified: 09 Jul 2025 23:05:28 UTC+7
-! Diff-Path: patches/20250709230528083.patch#abpvn_content_blocker
+! Last modified: 10 Jul 2025 09:39:13 UTC+7
+! Diff-Path: patches/20250710093913257.patch#abpvn_content_blocker
 ! Diff-Expires: 60 minutes
 ! Expires: 1 days (update frequency)
 !
@@ -282,6 +282,7 @@ $popup,domain=truyenfull.vision
 ||bidgear-syndication.com^
 ||blueseeddigital.com^$third-party
 ||cdn.adop.asia^
+||cdn.dtadnetwork.com^
 ||cdn.tpmedia.online^
 ||cdnv.tpmedia.online^
 ||click.advertnative.com^
@@ -291,7 +292,6 @@ $popup,domain=truyenfull.vision
 ||cv.bentsdiorism.com^
 ||delivery.yomedia.vn^
 ||distinctrobin.com^
-||dtadnetwork.com^
 ||fv.togataurnfuls.com^
 ||gammaplatform.com^$third-party
 ||genieesspv.jp^$third-party
@@ -962,7 +962,7 @@ vn2.vn#@#.advertiser
 vndoc.com#@#.showads
 vozer.vn#@#[class^="div-gpt-ad"]
 !------ ABPVN Adult block -------
-*$third-party,script,domain=sexdiaryx.live
+*$third-party,script,domain=sexdiaryx.to
 /^https:\/\/[a-z]{8,12}\.com\/en\/(?:[a-z]{2,5}\/){0,2}[a-z]{2,}\?(?:[a-z]+=(?:\d+|[a-z]+)&)*?id=[12]\d{6}/$script,third-party
 /assets/js/vast.js$script,domain=~phevkl.gg|~viet69.hot
 /player/vast.js$script
@@ -1007,7 +1007,7 @@ vozer.vn#@#[class^="div-gpt-ad"]
 ||rphang.online^*.gif
 ||sayhentaii.art/assets/js/ads.js
 ||sayhentaii.art/storage/images/banner/$image
-||sexdiaryx.live$csp=script-src 'self' 'unsafe-eval'
+||sexdiaryx.to$csp=script-src 'self' 'unsafe-eval'
 ||sexhd88.online/wp-content/themes/vidorev/img/jun881.png$image
 ||sexhd88.online^*.gif$image
 ||sexlive.biz/_next/image?url=%2Fimages%2F*.avif&w=*&q=75$image
@@ -1023,7 +1023,7 @@ vozer.vn#@#[class^="div-gpt-ad"]
 ||truyensextv.com^*.gif
 ||truyenvn.shop^*banner$image
 ||uimg.buomtv.io/palivn/ad/$image,domain=buomtv.live
-||vn47phimsexhay.com^*.gif$image
+||vn48phimsexhay.com^*.gif$image
 ||xamer.xyz/styles/file/$image
 ||xfast.sbs/media/$image,domain=fullcliphot.net|fulllivehot.live
 ||xnhau.blog^$media,domain=xnhau.sh
@@ -1042,7 +1042,7 @@ buomtv.live##.luq51lg.a13wihj
 buomtv.live##.pointer-events-auto.block
 buomtv.live##.zbgpvb19.zbgpvb16.zbgpvbj.zbgpvbh.zbgpvbg.zbgpvbf.zbgpvbe.zbgpvb1
 cliphot69.beer###custom_html-42
-cliphotvn69.com,mobiblogss.com,cliphot69.beer,phevkl.gg,www.gvnvh.net,vn47phimsexhay.com,sayhentaii.art,viet69.hot,xamvn.blog##.float-ck-center-lt
+cliphotvn69.com,mobiblogss.com,cliphot69.beer,phevkl.gg,www.gvnvh.net,vn48phimsexhay.com,sayhentaii.art,viet69.hot,xamvn.blog##.float-ck-center-lt
 damconuong.cam##.catfish-ad
 damconuong.cam,hentaivn.xyz##a[rel="nofollow"]
 dualeotruyenp.com##[id$="bnr"]
