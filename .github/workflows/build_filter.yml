@@ -155,4 +155,4 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - name: Request to server
-        run: bash pull.sh
+        run: curl ${{secrets.PULL_GIT_URL}}
