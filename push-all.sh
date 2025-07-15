@@ -15,6 +15,3 @@ git push origin $TEMP_VERSION
 cd "$CURRENT_DIR"
 rm -rf $TEMP_DIR
 git worktree prune
-
-sleep 5
-bash pull.sh
