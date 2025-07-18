@@ -1,9 +1,9 @@
 [Adblock Plus 2.0]
-! Version: 20250718180534958
+! Version: 20250718230741255
 ! id: D4028CDD-3D39-4624-ACC7-8140F4EC3888
 ! Title: ABPVN List
-! Last modified: 18 Jul 2025 18:05:34 UTC+7
-! Diff-Path: patches/20250718180534958.patch#abpvn_ublock
+! Last modified: 18 Jul 2025 23:07:41 UTC+7
+! Diff-Path: patches/20250718230741255.patch#abpvn_ublock
 ! Diff-Expires: 60 minutes
 ! Expires: 1 days (update frequency)
 !
@@ -660,6 +660,9 @@ phim18vl.net###quang-cao
 phim18vl.net,hhpanda.win,hhanime3d.org###footer_fixed_ads
 phim18vl.net,vutruphim.tv,phimmoi.hot##.float-ck-center-lt
 phimbet.biz###banner
+phimchautinhtri.net##.ban-top-left-host
+phimchautinhtri.net##.ban-top-right-host
+phimchautinhtri.net##[href^="https://s.shopee.vn/"]
 phimdacap.tv###ads-popup
 phimhaytv.biz##.navbar-container + .container
 phimmoichill.day###pm_quangcao
@@ -1169,7 +1172,7 @@ hh3dhay.life##+js(acs, Symbol, break;case $)
 hh3dhay.life,tram3d.com##+js(acs, document.createElement, ;break;case)
 hh3dhay.life,tram3d.me,animevietsub.lol##+js(acs, eval, $._Eu)
 hhpanda.win###overlay
-hhpanda.win,thempho2.com##html:style(overflow: auto !important)
+hhpanda.win,thempho2.com,phimchautinhtri.net##html:style(overflow: auto !important)
 imail.edu.vn##+js(acs, setTimeout, ad_block)
 imail.edu.vn,motchill96.com,trumtruyen.live##+js(acs, setTimeout, Aff)
 ios.codevn.net##+js(acs, jQuery, Popup)
@@ -1187,6 +1190,7 @@ momofilmfest.com##+js(aopr, adsRedirectPopups)
 motchilltvphim.com##+js(acs, jQuery, click_time)
 nettruyenvio.com##+js(acs, JSON, fromCharCode)
 p.thoctv.com##+js(acs, document.createElement, script)
+phimchautinhtri.net##.popmake-overlay
 phimmoi.sale##+js(acs, addEvent, popu)
 phimtho.net#%#//scriptlet("abort-current-inline-script", "$", "p0pUpRandom")
 phimvuihd.org##+js(set, urlAds, '')
