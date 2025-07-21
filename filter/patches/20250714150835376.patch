@@ -1,14 +1,14 @@
-diff name:abpvn lines:178 checksum:bc73beb083
+diff name:abpvn lines:190 checksum:50e77c390b
 d2 1
 a2 1
-! Version: 20250721150907903
+! Version: 20250721180540042
 d5 2
 a6 2
-! Last modified: 21 Jul 2025 15:09:07 UTC+7
-! Diff-Path: patches/20250721150907903.patch#abpvn
+! Last modified: 21 Jul 2025 18:05:40 UTC+7
+! Diff-Path: patches/20250721180540042.patch#abpvn
 d48 1
 a48 1
-/i.imgur.com/*.gif$domain=keonhacai55.chat|motchill97.com|www.phimdinhcao.online|momofilmfest.com|vebotz.cc|cakhiazzs.cc|listnhacai88.com|xoilaczztt.tv|ww38.xemtivingon.org|mitomzc.cc|rakhoivk.cc|plcdn.xyz
+/i.imgur.com/*.gif$domain=keonhacai55.chat|motchill97.com|www.phimdinhcao.online|momofilmfest.com|vebotz.cc|cakhiazzs.cc|listnhacai88.com|farmedanddangerous.org|ww38.xemtivingon.org|mitomzc.cc|rakhoivk.cc|plcdn.xyz
 d69 1
 a69 1
 /vast.js$script,domain=boctem.com|hayhaytv.site|phimdacap.tv|tvhay26.com|tvzinghd.co|player.cloudbeta.win|mn.mediastation.live
@@ -24,8 +24,10 @@ a101 1
 ||cdn-live.taoxanh.biz^*.gif$image,domain=bunchatv3.com
 d103 1
 a103 1
-||cdn.lfastcdn.com^*.gif$image,domain=bongdainfox.tv|xoilaczztt.tv|rakhoivk.cc|cakhiazzs.cc|mitomzc.cc|vebotz.cc
+||cdn.lfastcdn.com^*.gif$image,domain=bongdainfox.tv|farmedanddangerous.org|rakhoivk.cc|cakhiazzs.cc|mitomzc.cc|vebotz.cc
 d111 1
+a111 1
+||farmedanddangerous.org/wp-content/themes/bongda/dist/images/company/21.png$image
 a128 1
 ||hongbiennhanh24h.online/wp-content/themes/flatsome-child/assets/js/main.js$script,~third-party
 d138 1
@@ -40,6 +42,14 @@ a164 3
 ||motchills.to/wp-content/plugins/AdsManager/js/aam-scripts.js$script,~third-party
 ||motchills.to^*.gif$image
 ||motphimc.zip^*.gif$~third-party
+d169 6
+a174 6
+||nettruyenar.com/public/assets/js/pop$script,~third-party
+||nettruyenvia.com/assets/js/ads/$script
+||nettruyenvia.com/assets/js/pop$script
+||newoneinoldoneout.pro/banners-web/$image,domain=nettruyenar.com|nettruyenvia.com
+||newoneinoldoneout.pro/popup$script,domain=nettruyenar.com|nettruyenvia.com
+||newoneinoldoneout.pro/zrlosadr.js$script,domain=nettruyenar.com
 d185 1
 d195 1
 a195 1
@@ -47,14 +57,13 @@ a195 1
 a205 1
 ||static-mn-vnd.mediastation.live/template/*.mp4$domain=mn.mediastation.live,rewrite=abp-resource:blank-mp3
 d228 1
-d241 1
-a241 1
+d241 2
+a242 2
 ||tvhay.io^*popup$script,~third-party
+||tvphim.bid/ads/popup$script,~third-party
 d257 1
 a257 1
 ||www.bongdalu618.com^*.gif
-a268 1
-||xoilaczztt.tv/wp-content/themes/bongda/dist/images/company/21.png$image
 a304 1
 ||ae.carnelbawrel.com^
 a428 1
@@ -86,11 +95,19 @@ cakhiazzs.cc##.menu-item-object-custom
 cakhiazzs.cc##.sub-menu.d-none.d-lg-flex
 cakhiazzs.cc,momofilmfest.com,vebotz.cc###quangcaopc
 cakhiazzs.cc,momofilmfest.com,vebotz.cc##.marquee-container
-cakhiazzs.cc,momofilmfest.com,vebotz.cc,rakhoivk.cc,xoilaczztt.tv###wap_bottombanner
+cakhiazzs.cc,momofilmfest.com,vebotz.cc,rakhoivk.cc,farmedanddangerous.org###wap_bottombanner
 cakhiazzs.cc,vebotz.cc##.align-items-center.justify-content-between.d-flex.col-12>.d-lg-none.d-block
 d766 1
 a766 1
 ephoto360.com,thiepmung.com,www1.247phim.cc,www.ssphim.us,phimmoinet.xyz##.ad-container
+a767 7
+farmedanddangerous.org##.c-int.d-lg-none.d-block>p.block-int.mb-1
+farmedanddangerous.org##.col-12>p.block-int.mb-1
+farmedanddangerous.org##.grid-match__footer
+farmedanddangerous.org##.odds-comp
+farmedanddangerous.org##.w-100.justify-content-center.align-items-center.d-flex
+farmedanddangerous.org##.widget
+farmedanddangerous.org##a.d-lg-none.d-block:nth-of-type(1)
 d800 15
 d818 1
 a818 1
@@ -108,12 +125,12 @@ momofilmfest.com##.pl-lg-0.col-xl-4
 momofilmfest.com##.row.d-none
 momofilmfest.com##.widget-offers__list
 momofilmfest.com##div.d-lg-none.d-block:nth-of-type(3)
+momofilmfest.com,farmedanddangerous.org##.match-detail__offer
 momofilmfest.com,mitomzc.cc##.menu-cuoc-8xbet
 momofilmfest.com,mitomzc.cc##.menu-top-nha-cai
 momofilmfest.com,rakhoivk.cc##.sk_balloon
-momofilmfest.com,vebotz.cc,cakhiazzs.cc,mitomzc.cc,xoilaczztt.tv##div[id^="dnn_"]
-momofilmfest.com,vebotz.cc,cakhiazzs.cc,xoilaczztt.tv,mitomzc.cc##.company
-momofilmfest.com,xoilaczztt.tv##.match-detail__offer
+momofilmfest.com,vebotz.cc,cakhiazzs.cc,farmedanddangerous.org,mitomzc.cc##.company
+momofilmfest.com,vebotz.cc,cakhiazzs.cc,mitomzc.cc,farmedanddangerous.org##div[id^="dnn_"]
 d913 7
 a919 7
 motchill97.com##.banner-preload
@@ -131,8 +148,11 @@ phimchautinhtri.net##[href="https://snapback.vn/"]
 phimchautinhtri.net##[href^="https://s.shopee.vn/"]
 d975 1
 a975 1
-rakhoivk.cc,xoilaczztt.tv##.btn-8xbet
+rakhoivk.cc,farmedanddangerous.org##.btn-8xbet
 d1042 7
+d1068 1
+a1068 1
+truyenqqgo.com,nettruyenvia.com,truyentranh3q.com##.ads-banner
 d1090 1
 a1090 1
 vebotz.cc,mitomzc.cc,rakhoivk.cc##.footer-banner
@@ -140,14 +160,6 @@ d1149 2
 a1150 2
 www.phimdinhcao.online,motchill97.com##.BanerTop100
 www.phimdinhcao.online,motchill97.com##.adv-300-right
-a1177 7
-xoilaczztt.tv##.c-int.d-lg-none.d-block>p.block-int.mb-1
-xoilaczztt.tv##.col-12>p.block-int.mb-1
-xoilaczztt.tv##.grid-match__footer
-xoilaczztt.tv##.odds-comp
-xoilaczztt.tv##.w-100.justify-content-center.align-items-center.d-flex
-xoilaczztt.tv##.widget
-xoilaczztt.tv##a.d-lg-none.d-block:nth-of-type(1)
 d1231 1
 a1231 1
 ||blogger.googleusercontent.com^*.gif$image,domain=www.gvnvh.net|hentaivn.stream
@@ -177,17 +189,17 @@ vailonxx.vip,phimxxx.ai###adsbottom
 a1404 1
 viet69vn.ac##.footer-fixed-br-container
 d1434 1
-diff name:abpvn_adguard lines:203 checksum:09698c695e
+diff name:abpvn_adguard lines:219 checksum:8b48278d81
 d2 1
 a2 1
-! Version: 20250721150907903
+! Version: 20250721180540042
 d5 2
 a6 2
-! Last modified: 21 Jul 2025 15:09:07 UTC+7
-! Diff-Path: patches/20250721150907903.patch#abpvn_adguard
+! Last modified: 21 Jul 2025 18:05:40 UTC+7
+! Diff-Path: patches/20250721180540042.patch#abpvn_adguard
 d46 1
 a46 1
-/i.imgur.com/*.gif$domain=keonhacai55.chat|motchill97.com|www.phimdinhcao.online|momofilmfest.com|vebotz.cc|cakhiazzs.cc|listnhacai88.com|xoilaczztt.tv|ww38.xemtivingon.org|mitomzc.cc|rakhoivk.cc|plcdn.xyz
+/i.imgur.com/*.gif$domain=keonhacai55.chat|motchill97.com|www.phimdinhcao.online|momofilmfest.com|vebotz.cc|cakhiazzs.cc|listnhacai88.com|farmedanddangerous.org|ww38.xemtivingon.org|mitomzc.cc|rakhoivk.cc|plcdn.xyz
 d67 1
 a67 1
 /vast.js$script,domain=boctem.com|hayhaytv.site|phimdacap.tv|tvhay26.com|tvzinghd.co|player.cloudbeta.win|mn.mediastation.live
@@ -203,8 +215,10 @@ a99 1
 ||cdn-live.taoxanh.biz^*.gif$image,domain=bunchatv3.com
 d101 1
 a101 1
-||cdn.lfastcdn.com^*.gif$image,domain=bongdainfox.tv|xoilaczztt.tv|rakhoivk.cc|cakhiazzs.cc|mitomzc.cc|vebotz.cc
+||cdn.lfastcdn.com^*.gif$image,domain=bongdainfox.tv|farmedanddangerous.org|rakhoivk.cc|cakhiazzs.cc|mitomzc.cc|vebotz.cc
 d109 1
+a109 1
+||farmedanddangerous.org/wp-content/themes/bongda/dist/images/company/21.png$image
 a126 1
 ||hongbiennhanh24h.online/wp-content/themes/flatsome-child/assets/js/main.js$script,~third-party
 d136 1
@@ -219,6 +233,14 @@ a162 3
 ||motchills.to/wp-content/plugins/AdsManager/js/aam-scripts.js$script,~third-party
 ||motchills.to^*.gif$image
 ||motphimc.zip^*.gif$~third-party
+d167 6
+a172 6
+||nettruyenar.com/public/assets/js/pop$script,~third-party
+||nettruyenvia.com/assets/js/ads/$script
+||nettruyenvia.com/assets/js/pop$script
+||newoneinoldoneout.pro/banners-web/$image,domain=nettruyenar.com|nettruyenvia.com
+||newoneinoldoneout.pro/popup$script,domain=nettruyenar.com|nettruyenvia.com
+||newoneinoldoneout.pro/zrlosadr.js$script,domain=nettruyenar.com
 d183 1
 d193 1
 a193 1
@@ -226,14 +248,13 @@ a193 1
 a201 1
 ||static-mn-vnd.mediastation.live/template/*.mp4$domain=mn.mediastation.live,rewrite=abp-resource:blank-mp3
 d224 1
-d237 1
-a237 1
+d237 2
+a238 2
 ||tvhay.io^*popup$script,~third-party
+||tvphim.bid/ads/popup$script,~third-party
 d253 1
 a253 1
 ||www.bongdalu618.com^*.gif
-a264 1
-||xoilaczztt.tv/wp-content/themes/bongda/dist/images/company/21.png$image
 a300 1
 ||ae.carnelbawrel.com^
 a424 1
@@ -265,11 +286,19 @@ cakhiazzs.cc##.menu-item-object-custom
 cakhiazzs.cc##.sub-menu.d-none.d-lg-flex
 cakhiazzs.cc,momofilmfest.com,vebotz.cc###quangcaopc
 cakhiazzs.cc,momofilmfest.com,vebotz.cc##.marquee-container
-cakhiazzs.cc,momofilmfest.com,vebotz.cc,rakhoivk.cc,xoilaczztt.tv###wap_bottombanner
+cakhiazzs.cc,momofilmfest.com,vebotz.cc,rakhoivk.cc,farmedanddangerous.org###wap_bottombanner
 cakhiazzs.cc,vebotz.cc##.align-items-center.justify-content-between.d-flex.col-12>.d-lg-none.d-block
 d762 1
 a762 1
 ephoto360.com,thiepmung.com,www1.247phim.cc,www.ssphim.us,phimmoinet.xyz##.ad-container
+a763 7
+farmedanddangerous.org##.c-int.d-lg-none.d-block>p.block-int.mb-1
+farmedanddangerous.org##.col-12>p.block-int.mb-1
+farmedanddangerous.org##.grid-match__footer
+farmedanddangerous.org##.odds-comp
+farmedanddangerous.org##.w-100.justify-content-center.align-items-center.d-flex
+farmedanddangerous.org##.widget
+farmedanddangerous.org##a.d-lg-none.d-block:nth-of-type(1)
 d796 15
 d814 1
 a814 1
@@ -287,12 +316,12 @@ momofilmfest.com##.pl-lg-0.col-xl-4
 momofilmfest.com##.row.d-none
 momofilmfest.com##.widget-offers__list
 momofilmfest.com##div.d-lg-none.d-block:nth-of-type(3)
+momofilmfest.com,farmedanddangerous.org##.match-detail__offer
 momofilmfest.com,mitomzc.cc##.menu-cuoc-8xbet
 momofilmfest.com,mitomzc.cc##.menu-top-nha-cai
 momofilmfest.com,rakhoivk.cc##.sk_balloon
-momofilmfest.com,vebotz.cc,cakhiazzs.cc,mitomzc.cc,xoilaczztt.tv##div[id^="dnn_"]
-momofilmfest.com,vebotz.cc,cakhiazzs.cc,xoilaczztt.tv,mitomzc.cc##.company
-momofilmfest.com,xoilaczztt.tv##.match-detail__offer
+momofilmfest.com,vebotz.cc,cakhiazzs.cc,farmedanddangerous.org,mitomzc.cc##.company
+momofilmfest.com,vebotz.cc,cakhiazzs.cc,mitomzc.cc,farmedanddangerous.org##div[id^="dnn_"]
 d909 7
 a915 7
 motchill97.com##.banner-preload
@@ -309,8 +338,11 @@ phimchautinhtri.net##.ban-top-right-host
 phimchautinhtri.net##[href^="https://s.shopee.vn/"]
 d971 1
 a971 1
-rakhoivk.cc,xoilaczztt.tv##.btn-8xbet
+rakhoivk.cc,farmedanddangerous.org##.btn-8xbet
 d1038 7
+d1064 1
+a1064 1
+truyenqqgo.com,nettruyenvia.com,truyentranh3q.com##.ads-banner
 d1086 1
 a1086 1
 vebotz.cc,mitomzc.cc,rakhoivk.cc##.footer-banner
@@ -318,14 +350,6 @@ d1145 2
 a1146 2
 www.phimdinhcao.online,motchill97.com##.BanerTop100
 www.phimdinhcao.online,motchill97.com##.adv-300-right
-a1173 7
-xoilaczztt.tv##.c-int.d-lg-none.d-block>p.block-int.mb-1
-xoilaczztt.tv##.col-12>p.block-int.mb-1
-xoilaczztt.tv##.grid-match__footer
-xoilaczztt.tv##.odds-comp
-xoilaczztt.tv##.w-100.justify-content-center.align-items-center.d-flex
-xoilaczztt.tv##.widget
-xoilaczztt.tv##a.d-lg-none.d-block:nth-of-type(1)
 d1225 1
 a1225 1
 ||blogger.googleusercontent.com^*.gif$image,domain=www.gvnvh.net|hentaivn.stream
@@ -355,6 +379,11 @@ vailonxx.vip,phimxxx.ai###adsbottom
 a1398 1
 viet69vn.ac##.footer-fixed-br-container
 d1428 1
+a1453 1
+farmedanddangerous.org#%#//scriptlet("set-constant", "adsTvcs", "")
+d1458 1
+a1458 1
+goctruyentranhvui17.com,nettruyenar.com,sextop1.show,hhvsub1.com,vn5.sexviet88.xyz#%#//scriptlet("abort-current-inline-script", "WebAssembly", "globalThis")
 d1460 1
 d1464 1
 a1464 1
@@ -365,9 +394,10 @@ hhpanda.win,thempho2.com,phimchautinhtri.net#$#html {overflow: auto!important;}
 imail.edu.vn,motchill97.com,trumtruyen.live#%#//scriptlet("abort-current-inline-script", "setTimeout", "Aff")
 a1478 1
 momofilmfest.com#%#//scriptlet("abort-on-property-read", "adsRedirectPopups")
-d1480 1
-a1480 1
+d1480 2
+a1481 2
 mv.phimmoiaz.cc,anime10.site,anh.moe,maclife.io,xemphimjav.us,hoctot.hocmai.vn,samtruyentranh.com,truyenfull.vision,player.phimapi.com,noitu.site#%#//scriptlet("abort-on-property-read", "open")
+nettruyenvia.com#%#//scriptlet("abort-current-inline-script", "JSON", "fromCharCode")
 d1485 1
 a1485 2
 p.thoctv.com#%#//scriptlet("abort-current-inline-script", "document.createElement", "script")
@@ -379,19 +409,17 @@ vlxx.bz,dualeotruyenp.com,yurineko.my,haysex.ai,cliphot69.beer,doctruyen3qui12.p
 d1526 1
 a1526 1
 www.phimdinhcao.online,motchill97.com,xnhau.sh,teamlanhlung8.shop,xemphimjav.us#%#//scriptlet("abort-on-property-read", "localStorage")
-a1535 1
-xoilaczztt.tv#%#//scriptlet("set-constant", "adsTvcs", "")
-diff name:abpvn_content_blocker lines:178 checksum:e35a18a72b
+diff name:abpvn_content_blocker lines:190 checksum:7579a68fc8
 d2 1
 a2 1
-! Version: 20250721150907903
+! Version: 20250721180540042
 d5 2
 a6 2
-! Last modified: 21 Jul 2025 15:09:07 UTC+7
-! Diff-Path: patches/20250721150907903.patch#abpvn_content_blocker
+! Last modified: 21 Jul 2025 18:05:40 UTC+7
+! Diff-Path: patches/20250721180540042.patch#abpvn_content_blocker
 d48 1
 a48 1
-/i.imgur.com/*.gif$domain=keonhacai55.chat|motchill97.com|www.phimdinhcao.online|momofilmfest.com|vebotz.cc|cakhiazzs.cc|listnhacai88.com|xoilaczztt.tv|ww38.xemtivingon.org|mitomzc.cc|rakhoivk.cc|plcdn.xyz
+/i.imgur.com/*.gif$domain=keonhacai55.chat|motchill97.com|www.phimdinhcao.online|momofilmfest.com|vebotz.cc|cakhiazzs.cc|listnhacai88.com|farmedanddangerous.org|ww38.xemtivingon.org|mitomzc.cc|rakhoivk.cc|plcdn.xyz
 d69 1
 a69 1
 /vast.js$script,domain=boctem.com|hayhaytv.site|phimdacap.tv|tvhay26.com|tvzinghd.co|player.cloudbeta.win|mn.mediastation.live
@@ -407,8 +435,10 @@ a101 1
 ||cdn-live.taoxanh.biz^*.gif$image,domain=bunchatv3.com
 d103 1
 a103 1
-||cdn.lfastcdn.com^*.gif$image,domain=bongdainfox.tv|xoilaczztt.tv|rakhoivk.cc|cakhiazzs.cc|mitomzc.cc|vebotz.cc
+||cdn.lfastcdn.com^*.gif$image,domain=bongdainfox.tv|farmedanddangerous.org|rakhoivk.cc|cakhiazzs.cc|mitomzc.cc|vebotz.cc
 d111 1
+a111 1
+||farmedanddangerous.org/wp-content/themes/bongda/dist/images/company/21.png$image
 a128 1
 ||hongbiennhanh24h.online/wp-content/themes/flatsome-child/assets/js/main.js$script,~third-party
 d138 1
@@ -423,6 +453,14 @@ a164 3
 ||motchills.to/wp-content/plugins/AdsManager/js/aam-scripts.js$script,~third-party
 ||motchills.to^*.gif$image
 ||motphimc.zip^*.gif$~third-party
+d169 6
+a174 6
+||nettruyenar.com/public/assets/js/pop$script,~third-party
+||nettruyenvia.com/assets/js/ads/$script
+||nettruyenvia.com/assets/js/pop$script
+||newoneinoldoneout.pro/banners-web/$image,domain=nettruyenar.com|nettruyenvia.com
+||newoneinoldoneout.pro/popup$script,domain=nettruyenar.com|nettruyenvia.com
+||newoneinoldoneout.pro/zrlosadr.js$script,domain=nettruyenar.com
 d185 1
 d195 1
 a195 1
@@ -430,14 +468,13 @@ a195 1
 a205 1
 ||static-mn-vnd.mediastation.live/template/*.mp4$domain=mn.mediastation.live,rewrite=abp-resource:blank-mp3
 d228 1
-d241 1
-a241 1
+d241 2
+a242 2
 ||tvhay.io^*popup$script,~third-party
+||tvphim.bid/ads/popup$script,~third-party
 d257 1
 a257 1
 ||www.bongdalu618.com^*.gif
-a268 1
-||xoilaczztt.tv/wp-content/themes/bongda/dist/images/company/21.png$image
 a304 1
 ||ae.carnelbawrel.com^
 a428 1
@@ -469,11 +506,19 @@ cakhiazzs.cc##.menu-item-object-custom
 cakhiazzs.cc##.sub-menu.d-none.d-lg-flex
 cakhiazzs.cc,momofilmfest.com,vebotz.cc###quangcaopc
 cakhiazzs.cc,momofilmfest.com,vebotz.cc##.marquee-container
-cakhiazzs.cc,momofilmfest.com,vebotz.cc,rakhoivk.cc,xoilaczztt.tv###wap_bottombanner
+cakhiazzs.cc,momofilmfest.com,vebotz.cc,rakhoivk.cc,farmedanddangerous.org###wap_bottombanner
 cakhiazzs.cc,vebotz.cc##.align-items-center.justify-content-between.d-flex.col-12>.d-lg-none.d-block
 d766 1
 a766 1
 ephoto360.com,thiepmung.com,www1.247phim.cc,www.ssphim.us,phimmoinet.xyz##.ad-container
+a767 7
+farmedanddangerous.org##.c-int.d-lg-none.d-block>p.block-int.mb-1
+farmedanddangerous.org##.col-12>p.block-int.mb-1
+farmedanddangerous.org##.grid-match__footer
+farmedanddangerous.org##.odds-comp
+farmedanddangerous.org##.w-100.justify-content-center.align-items-center.d-flex
+farmedanddangerous.org##.widget
+farmedanddangerous.org##a.d-lg-none.d-block:nth-of-type(1)
 d800 15
 d818 1
 a818 1
@@ -491,12 +536,12 @@ momofilmfest.com##.pl-lg-0.col-xl-4
 momofilmfest.com##.row.d-none
 momofilmfest.com##.widget-offers__list
 momofilmfest.com##div.d-lg-none.d-block:nth-of-type(3)
+momofilmfest.com,farmedanddangerous.org##.match-detail__offer
 momofilmfest.com,mitomzc.cc##.menu-cuoc-8xbet
 momofilmfest.com,mitomzc.cc##.menu-top-nha-cai
 momofilmfest.com,rakhoivk.cc##.sk_balloon
-momofilmfest.com,vebotz.cc,cakhiazzs.cc,mitomzc.cc,xoilaczztt.tv##div[id^="dnn_"]
-momofilmfest.com,vebotz.cc,cakhiazzs.cc,xoilaczztt.tv,mitomzc.cc##.company
-momofilmfest.com,xoilaczztt.tv##.match-detail__offer
+momofilmfest.com,vebotz.cc,cakhiazzs.cc,farmedanddangerous.org,mitomzc.cc##.company
+momofilmfest.com,vebotz.cc,cakhiazzs.cc,mitomzc.cc,farmedanddangerous.org##div[id^="dnn_"]
 d913 7
 a919 7
 motchill97.com##.banner-preload
@@ -514,8 +559,11 @@ phimchautinhtri.net##[href="https://snapback.vn/"]
 phimchautinhtri.net##[href^="https://s.shopee.vn/"]
 d975 1
 a975 1
-rakhoivk.cc,xoilaczztt.tv##.btn-8xbet
+rakhoivk.cc,farmedanddangerous.org##.btn-8xbet
 d1042 7
+d1068 1
+a1068 1
+truyenqqgo.com,nettruyenvia.com,truyentranh3q.com##.ads-banner
 d1090 1
 a1090 1
 vebotz.cc,mitomzc.cc,rakhoivk.cc##.footer-banner
@@ -523,14 +571,6 @@ d1149 2
 a1150 2
 www.phimdinhcao.online,motchill97.com##.BanerTop100
 www.phimdinhcao.online,motchill97.com##.adv-300-right
-a1177 7
-xoilaczztt.tv##.c-int.d-lg-none.d-block>p.block-int.mb-1
-xoilaczztt.tv##.col-12>p.block-int.mb-1
-xoilaczztt.tv##.grid-match__footer
-xoilaczztt.tv##.odds-comp
-xoilaczztt.tv##.w-100.justify-content-center.align-items-center.d-flex
-xoilaczztt.tv##.widget
-xoilaczztt.tv##a.d-lg-none.d-block:nth-of-type(1)
 d1231 1
 a1231 1
 ||blogger.googleusercontent.com^*.gif$image,domain=www.gvnvh.net|hentaivn.stream
@@ -560,17 +600,17 @@ vailonxx.vip,phimxxx.ai###adsbottom
 a1404 1
 viet69vn.ac##.footer-fixed-br-container
 d1434 1
-diff name:abpvn_noelemhide lines:70 checksum:17ba19354a
+diff name:abpvn_noelemhide lines:79 checksum:027b9257e2
 d2 1
 a2 1
-! Version: 20250721150907903
+! Version: 20250721180540042
 d5 2
 a6 2
-! Last modified: 21 Jul 2025 15:09:07 UTC+7
-! Diff-Path: patches/20250721150907903.patch#abpvn_noelemhide
+! Last modified: 21 Jul 2025 18:05:40 UTC+7
+! Diff-Path: patches/20250721180540042.patch#abpvn_noelemhide
 d48 1
 a48 1
-/i.imgur.com/*.gif$domain=keonhacai55.chat|motchill97.com|www.phimdinhcao.online|momofilmfest.com|vebotz.cc|cakhiazzs.cc|listnhacai88.com|xoilaczztt.tv|ww38.xemtivingon.org|mitomzc.cc|rakhoivk.cc|plcdn.xyz
+/i.imgur.com/*.gif$domain=keonhacai55.chat|motchill97.com|www.phimdinhcao.online|momofilmfest.com|vebotz.cc|cakhiazzs.cc|listnhacai88.com|farmedanddangerous.org|ww38.xemtivingon.org|mitomzc.cc|rakhoivk.cc|plcdn.xyz
 d69 1
 a69 1
 /vast.js$script,domain=boctem.com|hayhaytv.site|phimdacap.tv|tvhay26.com|tvzinghd.co|player.cloudbeta.win|mn.mediastation.live
@@ -586,8 +626,10 @@ a101 1
 ||cdn-live.taoxanh.biz^*.gif$image,domain=bunchatv3.com
 d103 1
 a103 1
-||cdn.lfastcdn.com^*.gif$image,domain=bongdainfox.tv|xoilaczztt.tv|rakhoivk.cc|cakhiazzs.cc|mitomzc.cc|vebotz.cc
+||cdn.lfastcdn.com^*.gif$image,domain=bongdainfox.tv|farmedanddangerous.org|rakhoivk.cc|cakhiazzs.cc|mitomzc.cc|vebotz.cc
 d111 1
+a111 1
+||farmedanddangerous.org/wp-content/themes/bongda/dist/images/company/21.png$image
 a128 1
 ||hongbiennhanh24h.online/wp-content/themes/flatsome-child/assets/js/main.js$script,~third-party
 d138 1
@@ -602,6 +644,14 @@ a164 3
 ||motchills.to/wp-content/plugins/AdsManager/js/aam-scripts.js$script,~third-party
 ||motchills.to^*.gif$image
 ||motphimc.zip^*.gif$~third-party
+d169 6
+a174 6
+||nettruyenar.com/public/assets/js/pop$script,~third-party
+||nettruyenvia.com/assets/js/ads/$script
+||nettruyenvia.com/assets/js/pop$script
+||newoneinoldoneout.pro/banners-web/$image,domain=nettruyenar.com|nettruyenvia.com
+||newoneinoldoneout.pro/popup$script,domain=nettruyenar.com|nettruyenvia.com
+||newoneinoldoneout.pro/zrlosadr.js$script,domain=nettruyenar.com
 d185 1
 d195 1
 a195 1
@@ -609,14 +659,13 @@ a195 1
 a205 1
 ||static-mn-vnd.mediastation.live/template/*.mp4$domain=mn.mediastation.live,rewrite=abp-resource:blank-mp3
 d228 1
-d241 1
-a241 1
+d241 2
+a242 2
 ||tvhay.io^*popup$script,~third-party
+||tvphim.bid/ads/popup$script,~third-party
 d257 1
 a257 1
 ||www.bongdalu618.com^*.gif
-a268 1
-||xoilaczztt.tv/wp-content/themes/bongda/dist/images/company/21.png$image
 a304 1
 ||ae.carnelbawrel.com^
 a428 1
@@ -631,17 +680,17 @@ a696 1
 d717 1
 a717 1
 ||vn53phimsexhay.com^*.gif$image
-diff name:abpvn_ublock lines:204 checksum:a7105d98df
+diff name:abpvn_ublock lines:220 checksum:06ba1fdf57
 d2 1
 a2 1
-! Version: 20250721150907903
+! Version: 20250721180540042
 d5 2
 a6 2
-! Last modified: 21 Jul 2025 15:09:07 UTC+7
-! Diff-Path: patches/20250721150907903.patch#abpvn_ublock
+! Last modified: 21 Jul 2025 18:05:40 UTC+7
+! Diff-Path: patches/20250721180540042.patch#abpvn_ublock
 d46 1
 a46 1
-/i.imgur.com/*.gif$domain=keonhacai55.chat|motchill97.com|www.phimdinhcao.online|momofilmfest.com|vebotz.cc|cakhiazzs.cc|listnhacai88.com|xoilaczztt.tv|ww38.xemtivingon.org|mitomzc.cc|rakhoivk.cc|plcdn.xyz
+/i.imgur.com/*.gif$domain=keonhacai55.chat|motchill97.com|www.phimdinhcao.online|momofilmfest.com|vebotz.cc|cakhiazzs.cc|listnhacai88.com|farmedanddangerous.org|ww38.xemtivingon.org|mitomzc.cc|rakhoivk.cc|plcdn.xyz
 d67 1
 a67 1
 /vast.js$script,domain=boctem.com|hayhaytv.site|phimdacap.tv|tvhay26.com|tvzinghd.co|player.cloudbeta.win|mn.mediastation.live
@@ -657,8 +706,10 @@ a99 1
 ||cdn-live.taoxanh.biz^*.gif$image,domain=bunchatv3.com
 d101 1
 a101 1
-||cdn.lfastcdn.com^*.gif$image,domain=bongdainfox.tv|xoilaczztt.tv|rakhoivk.cc|cakhiazzs.cc|mitomzc.cc|vebotz.cc
+||cdn.lfastcdn.com^*.gif$image,domain=bongdainfox.tv|farmedanddangerous.org|rakhoivk.cc|cakhiazzs.cc|mitomzc.cc|vebotz.cc
 d109 1
+a109 1
+||farmedanddangerous.org/wp-content/themes/bongda/dist/images/company/21.png$image
 a126 1
 ||hongbiennhanh24h.online/wp-content/themes/flatsome-child/assets/js/main.js$script,~third-party
 d136 1
@@ -673,6 +724,14 @@ a162 3
 ||motchills.to/wp-content/plugins/AdsManager/js/aam-scripts.js$script,~third-party
 ||motchills.to^*.gif$image
 ||motphimc.zip^*.gif$~third-party
+d167 6
+a172 6
+||nettruyenar.com/public/assets/js/pop$script,~third-party
+||nettruyenvia.com/assets/js/ads/$script
+||nettruyenvia.com/assets/js/pop$script
+||newoneinoldoneout.pro/banners-web/$image,domain=nettruyenar.com|nettruyenvia.com
+||newoneinoldoneout.pro/popup$script,domain=nettruyenar.com|nettruyenvia.com
+||newoneinoldoneout.pro/zrlosadr.js$script,domain=nettruyenar.com
 d183 1
 d193 1
 a193 1
@@ -680,14 +739,13 @@ a193 1
 a201 1
 ||static-mn-vnd.mediastation.live/template/*.mp4$domain=mn.mediastation.live,rewrite=abp-resource:blank-mp3
 d224 1
-d237 1
-a237 1
+d237 2
+a238 2
 ||tvhay.io^*popup$script,~third-party
+||tvphim.bid/ads/popup$script,~third-party
 d253 1
 a253 1
 ||www.bongdalu618.com^*.gif
-a264 1
-||xoilaczztt.tv/wp-content/themes/bongda/dist/images/company/21.png$image
 a300 1
 ||ae.carnelbawrel.com^
 a424 1
@@ -719,11 +777,19 @@ cakhiazzs.cc##.menu-item-object-custom
 cakhiazzs.cc##.sub-menu.d-none.d-lg-flex
 cakhiazzs.cc,momofilmfest.com,vebotz.cc###quangcaopc
 cakhiazzs.cc,momofilmfest.com,vebotz.cc##.marquee-container
-cakhiazzs.cc,momofilmfest.com,vebotz.cc,rakhoivk.cc,xoilaczztt.tv###wap_bottombanner
+cakhiazzs.cc,momofilmfest.com,vebotz.cc,rakhoivk.cc,farmedanddangerous.org###wap_bottombanner
 cakhiazzs.cc,vebotz.cc##.align-items-center.justify-content-between.d-flex.col-12>.d-lg-none.d-block
 d762 1
 a762 1
 ephoto360.com,thiepmung.com,www1.247phim.cc,www.ssphim.us,phimmoinet.xyz##.ad-container
+a763 7
+farmedanddangerous.org##.c-int.d-lg-none.d-block>p.block-int.mb-1
+farmedanddangerous.org##.col-12>p.block-int.mb-1
+farmedanddangerous.org##.grid-match__footer
+farmedanddangerous.org##.odds-comp
+farmedanddangerous.org##.w-100.justify-content-center.align-items-center.d-flex
+farmedanddangerous.org##.widget
+farmedanddangerous.org##a.d-lg-none.d-block:nth-of-type(1)
 d796 15
 d814 1
 a814 1
@@ -741,12 +807,12 @@ momofilmfest.com##.pl-lg-0.col-xl-4
 momofilmfest.com##.row.d-none
 momofilmfest.com##.widget-offers__list
 momofilmfest.com##div.d-lg-none.d-block:nth-of-type(3)
+momofilmfest.com,farmedanddangerous.org##.match-detail__offer
 momofilmfest.com,mitomzc.cc##.menu-cuoc-8xbet
 momofilmfest.com,mitomzc.cc##.menu-top-nha-cai
 momofilmfest.com,rakhoivk.cc##.sk_balloon
-momofilmfest.com,vebotz.cc,cakhiazzs.cc,mitomzc.cc,xoilaczztt.tv##div[id^="dnn_"]
-momofilmfest.com,vebotz.cc,cakhiazzs.cc,xoilaczztt.tv,mitomzc.cc##.company
-momofilmfest.com,xoilaczztt.tv##.match-detail__offer
+momofilmfest.com,vebotz.cc,cakhiazzs.cc,farmedanddangerous.org,mitomzc.cc##.company
+momofilmfest.com,vebotz.cc,cakhiazzs.cc,mitomzc.cc,farmedanddangerous.org##div[id^="dnn_"]
 d909 7
 a915 7
 motchill97.com##.banner-preload
@@ -763,8 +829,11 @@ phimchautinhtri.net##.ban-top-right-host
 phimchautinhtri.net##[href^="https://s.shopee.vn/"]
 d971 1
 a971 1
-rakhoivk.cc,xoilaczztt.tv##.btn-8xbet
+rakhoivk.cc,farmedanddangerous.org##.btn-8xbet
 d1038 7
+d1064 1
+a1064 1
+truyenqqgo.com,nettruyenvia.com,truyentranh3q.com##.ads-banner
 d1086 1
 a1086 1
 vebotz.cc,mitomzc.cc,rakhoivk.cc##.footer-banner
@@ -772,14 +841,6 @@ d1145 2
 a1146 2
 www.phimdinhcao.online,motchill97.com##.BanerTop100
 www.phimdinhcao.online,motchill97.com##.adv-300-right
-a1173 7
-xoilaczztt.tv##.c-int.d-lg-none.d-block>p.block-int.mb-1
-xoilaczztt.tv##.col-12>p.block-int.mb-1
-xoilaczztt.tv##.grid-match__footer
-xoilaczztt.tv##.odds-comp
-xoilaczztt.tv##.w-100.justify-content-center.align-items-center.d-flex
-xoilaczztt.tv##.widget
-xoilaczztt.tv##a.d-lg-none.d-block:nth-of-type(1)
 d1225 1
 a1225 1
 ||blogger.googleusercontent.com^*.gif$image,domain=www.gvnvh.net|hentaivn.stream
@@ -809,6 +870,12 @@ vailonxx.vip,phimxxx.ai###adsbottom
 a1398 1
 viet69vn.ac##.footer-fixed-br-container
 d1428 1
+a1452 2
+farmedanddangerous.org##+js(set, adsPlayer, '')
+farmedanddangerous.org##+js(set, adsTvcs, '')
+d1458 1
+a1458 1
+goctruyentranhvui17.com,nettruyenar.com,sextop1.show,hhvsub1.com,vn5.sexviet88.xyz##+js(acs, WebAssembly, globalThis)
 d1460 1
 d1464 1
 a1464 1
@@ -819,9 +886,10 @@ hhpanda.win,thempho2.com,phimchautinhtri.net##html:style(overflow: auto !importa
 imail.edu.vn,motchill97.com,trumtruyen.live##+js(acs, setTimeout, Aff)
 a1478 1
 momofilmfest.com##+js(aopr, adsRedirectPopups)
-d1480 1
-a1480 1
+d1480 2
+a1481 2
 mv.phimmoiaz.cc,anime10.site,anh.moe,maclife.io,xemphimjav.us,hoctot.hocmai.vn,samtruyentranh.com,truyenfull.vision,player.phimapi.com,noitu.site##+js(aopr, open)
+nettruyenvia.com##+js(acs, JSON, fromCharCode)
 d1484 1
 a1484 2
 p.thoctv.com##+js(acs, document.createElement, script)
@@ -833,6 +901,3 @@ vlxx.bz,dualeotruyenp.com,yurineko.my,haysex.ai,cliphot69.beer,doctruyen3qui12.p
 d1525 1
 a1525 1
 www.phimdinhcao.online,motchill97.com,xnhau.sh,teamlanhlung8.shop,xemphimjav.us##+js(aopr, localStorage)
-a1534 2
-xoilaczztt.tv##+js(set, adsPlayer, '')
-xoilaczztt.tv##+js(set, adsTvcs, '')
