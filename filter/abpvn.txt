@@ -1,9 +1,9 @@
 [Adblock Plus 2.0]
-! Version: 20250801180541349
+! Version: 20250801181454641
 ! id: D4028CDD-3D39-4624-ACC7-8140F4EC3888
 ! Title: ABPVN List
-! Last modified: 01 Aug 2025 18:05:41 UTC+7
-! Diff-Path: patches/20250801180541349.patch#abpvn
+! Last modified: 01 Aug 2025 18:14:54 UTC+7
+! Diff-Path: patches/20250801181454641.patch#abpvn
 ! Diff-Expires: 60 minutes
 ! Expires: 1 days (update frequency)
 !
@@ -44,7 +44,7 @@ $popup,domain=truyenfull.vision
 /core/*$script,domain=gamek.vn|genk.vn|kenh14.vn|cafef.vn|thanhnien.vn
 /disable-devtool.min.js$script
 /giadinhonline.vn/files/qc/*
-/i.imgur.com/*.gif$domain=keonhacai55.chat|www.motchill18.com|www.phimdinhcao.online|xoilaciix.cc|vebotz.cc|cakhiazzcc.cc|listnhacai88.com|visitfrenchwine.com|ww38.xemtivingon.org|mitomzc.cc|rakhoivk.cc|plcdn.xyz
+/i.imgur.com/*.gif$domain=keonhacai55.chat|motchill18.com|www.phimdinhcao.online|xoilaciix.cc|vebotz.cc|cakhiazzcc.cc|listnhacai88.com|visitfrenchwine.com|ww38.xemtivingon.org|mitomzc.cc|rakhoivk.cc|plcdn.xyz
 /js/ads.js$script,~third-party,domain=~vipurl.in
 /lv/esnk/*$script
 /newchill/*gif$image
@@ -149,6 +149,7 @@ $popup,domain=truyenfull.vision
 ||mediastation.live^*.gif$image,domain=mn.mediastation.live|home1.mannhan22.pro|mannhan97.xyz
 ||mocfun.net/uploads/banners/
 ||motchill10.com/public/upload/ads/ads.js$script,~third-party
+||motchill18.com/3s.m3u8$rewrite=abp-resource:blank-mp3,domain=motchill18.com
 ||motchilli.to/wp-content/plugins/AdsManager/js/aam-scripts.js$script,~third-party
 ||motchilli.to^*.gif$image
 ||motchilll.sh^*.gif$image
@@ -182,7 +183,7 @@ $popup,domain=truyenfull.vision
 ||qthang.net/js/blocker$script,~third-party
 ||quaivatdienanh.com/*banner$image
 ||quangcaosanpham.com/images/$third-party
-||quoracdn.net^$image,domain=www.motchill18.com|www.phimdinhcao.online
+||quoracdn.net^$image,domain=motchill18.com|www.phimdinhcao.online
 ||raovat.tuoitre.vn^$domain=tuoitre.vn
 ||run.vn/widget$script,~third-party
 ||s.lazada.vn^$popup,domain=chillphimmoizz.org
@@ -248,7 +249,6 @@ $popup,domain=truyenfull.vision
 ||www.bongdalu618.com^*.gif
 ||www.clbgamesvn.com/diendan/popup/popup.js$script,~third-party
 ||www.iosviet.com^$csp=script-src 'self' 'unsafe-inline' http: https:
-||www.motchill18.com/3s.m3u8$rewrite=abp-resource:blank-mp3,domain=www.motchill18.com
 ||www.thuocbietduoc.com.vn/adv/
 ||www.thuocbietduoc.com.vn/aqc/$image
 ||xahoingaynay.com.vn/upload/$image
@@ -616,6 +616,9 @@ mn.mediastation.live##.images-top-pl
 monkeyd.net.vn###affLayer
 monkeyd.net.vn##.justify-content-center.d-flex.mx-3.mx-lg-4.mt-3>[href]
 motchiill.pw##.overlay-1
+motchill18.com##.banner-preload
+motchill18.com,www.phimdinhcao.online##.banner-container
+motchill18.com,www.phimdinhcao.online##.catfish-top
 motchilli.to,motphimc.zip##.aam-banner-wrapper
 motchilli.to,motphimc.zip##.cat-footer-wrapper
 motchilli.to,motphimc.zip##.cat-header-wrapper
@@ -842,15 +845,12 @@ www.clbgamesvn.com##.bannerBox
 www.clbgamesvn.com##.footerBanner
 www.clbgamesvn.com##center>[href*="tlink.vn"]
 www.iosviet.com##[href^="https://shope.ee"]
-www.motchill18.com##.banner-preload
-www.motchill18.com,www.phimdinhcao.online##.banner-container
-www.motchill18.com,www.phimdinhcao.online##.catfish-top
 www.o-study.net###IMAGE635>.ladi-transition.ladi-image
 www.o-study.net###IMAGE639>.ladi-transition.ladi-image
 www.o-study.net###POPUP648
 www.phim.world##.block.translate-x-\[-50\%\].left-2\/4.z-\[1\].bottom-\[-6px\].fixed.mx-auto.md\:container.md\:px-0.px-4.w-screen
-www.phimdinhcao.online,www.motchill18.com##.BanerTop100
-www.phimdinhcao.online,www.motchill18.com##.adv-300-right
+www.phimdinhcao.online,motchill18.com##.BanerTop100
+www.phimdinhcao.online,motchill18.com##.adv-300-right
 www.rophim.me##.is-catfish
 www.rophim.me##.modal-backdrop
 www.rophim.me##.sspp-modal
