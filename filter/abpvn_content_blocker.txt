@@ -1,9 +1,9 @@
 [Adblock Plus 2.0]
-! Version: 20250804095214360
+! Version: 20250804150834544
 ! id: D4028CDD-3D39-4624-ACC7-8140F4EC3888
 ! Title: ABPVN List
-! Last modified: 04 Aug 2025 09:52:14 UTC+7
-! Diff-Path: patches/20250804095214360.patch#abpvn_content_blocker
+! Last modified: 04 Aug 2025 15:08:34 UTC+7
+! Diff-Path: patches/20250804150834544.patch#abpvn_content_blocker
 ! Diff-Expires: 60 minutes
 ! Expires: 1 days (update frequency)
 !
@@ -45,7 +45,7 @@ $popup,domain=truyenfull.vision
 /core/*$script,domain=gamek.vn|genk.vn|kenh14.vn|cafef.vn|thanhnien.vn
 /disable-devtool.min.js$script
 /giadinhonline.vn/files/qc/*
-/i.imgur.com/*.gif$domain=keonhacai55.chat|motchill18.com|www.phimdinhcao.online|xoilaciik.cc|vebotz.cc|cakhiazzmm.cc|listnhacai88.com|visitfrenchwine.com|ww38.xemtivingon.org|mitomzc.cc|rakhoivk.cc|plcdn.xyz
+/i.imgur.com/*.gif$domain=keonhacai55.chat|motchill18.com|www.motchill18.com|xoilaciik.cc|vebotz.cc|cakhiazzmm.cc|listnhacai88.com|visitfrenchwine.com|ww38.xemtivingon.org|mitomzc.cc|rakhoivk.cc|plcdn.xyz
 /js/ads.js$script,~third-party,domain=~vipurl.in|~link.codevn.net
 /lv/esnk/*$script
 /newchill/*gif$image
@@ -188,7 +188,7 @@ $popup,domain=truyenfull.vision
 ||qthang.net/js/blocker$script,~third-party
 ||quaivatdienanh.com/*banner$image
 ||quangcaosanpham.com/images/$third-party
-||quoracdn.net^$image,domain=motchill18.com|www.phimdinhcao.online
+||quoracdn.net^$image,domain=motchill18.com|www.motchill18.com
 ||raovat.tuoitre.vn^$domain=tuoitre.vn
 ||run.vn/widget$script,~third-party
 ||s.lazada.vn^$popup,domain=chillphimmoizz.org
@@ -835,7 +835,7 @@ keoso.me##.widget-sidebar-block
 ketqua04.net##.baloon
 ketqua04.net##.col-sm-10.kqcenter
 ketqua04.net##.kqbackground.vien ~ a[target="_blank"]
-ketqua04.net,nghean24h.vn,xem.tructiepnba.me,doctruyenln.com,xemtivi4k.com,xoilaciik.cc,bongdainfox.tv,90phuttv.link,xx2.thapcam53.info,nn13.thapcam.asia,www.phimdinhcao.online##a[rel="nofollow"]
+ketqua04.net,nghean24h.vn,xem.tructiepnba.me,doctruyenln.com,xemtivi4k.com,xoilaciik.cc,bongdainfox.tv,90phuttv.link,xx2.thapcam53.info,nn13.thapcam.asia,www.motchill18.com##a[rel="nofollow"]
 ketqua247vn.vip##.box-ads
 ketqua247vn.vip##.linkBanner
 khiphach.net###qc-kpgame
@@ -900,8 +900,8 @@ monkeyd.net.vn###affLayer
 monkeyd.net.vn##.justify-content-center.d-flex.mx-3.mx-lg-4.mt-3>[href]
 motchiill.pw##.overlay-1
 motchill18.com##.banner-preload
-motchill18.com,www.phimdinhcao.online##.banner-container
-motchill18.com,www.phimdinhcao.online##.catfish-top
+motchill18.com,www.motchill18.com##.banner-container
+motchill18.com,www.motchill18.com##.catfish-top
 motchilli.to,motphimc.zip##.aam-banner-wrapper
 motchilli.to,motphimc.zip##.cat-footer-wrapper
 motchilli.to,motphimc.zip##.cat-header-wrapper
@@ -1055,7 +1055,7 @@ tuoitre.vn##.content-amuasam
 tuoitre.vn##.section__r-vietlot
 tv.tvhayhd.org##.navbar-ex8-collapse
 tvhayr.org##[src^="https://ads.starzd.com/"]
-tvhayr.org,www.phimdinhcao.online##.catfish-bottom
+tvhayr.org,www.motchill18.com##.catfish-bottom
 tvzinghd.co##.sda-preload-popup
 tvzinghd.co##.sda-preload-popup-overlay
 v4u.vn##.Flagrow-Ads-under-header
@@ -1113,7 +1113,6 @@ vtipster.net##div[class*="qca"]
 vungoctuan.vn##.bf-3-primary-column-size.bs-vc-sidebar-column.vc_col-sm-3.vc_column_container.bs-vc-column.wpb_column>.wpb_wrapper.bs-vc-wrapper
 vungtv.xyz###container-ads
 vuonhoalan.net##.content_middle_rightbar
-web1s.com###link-view>center:nth-of-type(1)
 webhoctienganh.com##.button-action-float-banner
 webtretho.com##.wtt-ads
 ww2.phimnhua.com###catfish-banner
@@ -1128,12 +1127,12 @@ www.clbgamesvn.com##.bannerBox
 www.clbgamesvn.com##.footerBanner
 www.clbgamesvn.com##center>[href*="tlink.vn"]
 www.iosviet.com##[href^="https://shope.ee"]
+www.motchill18.com,motchill18.com##.BanerTop100
+www.motchill18.com,motchill18.com##.adv-300-right
 www.o-study.net###IMAGE635>.ladi-transition.ladi-image
 www.o-study.net###IMAGE639>.ladi-transition.ladi-image
 www.o-study.net###POPUP648
 www.phim.world##.block.translate-x-\[-50\%\].left-2\/4.z-\[1\].bottom-\[-6px\].fixed.mx-auto.md\:container.md\:px-0.px-4.w-screen
-www.phimdinhcao.online,motchill18.com##.BanerTop100
-www.phimdinhcao.online,motchill18.com##.adv-300-right
 www.rophim.me##.is-catfish
 www.rophim.me##.modal-backdrop
 www.rophim.me##.sspp-modal
@@ -1212,7 +1211,6 @@ znews.vn##.znews-banner
 @@||www3.doubleclick.net^$xmlhttprequest,domain=the.tube
 @@||xahoingaynay.com.vn/upload/20989/20200817/Asset_2_8x_9596af5d4e.png$~third-party
 !--------Element Hiding Exception--------------
-@@||web1s.com$generichide
 @@||windowsreport.com$generichide
 @@||xiuren.org$generichide
 ios.codevn.net#@#div[id*="ScriptRoot"]
