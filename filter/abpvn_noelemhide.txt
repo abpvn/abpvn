@@ -1,9 +1,9 @@
 [Adblock Plus 2.0]
-! Version: 20250813150737130
+! Version: 20250813180522531
 ! id: D4028CDD-3D39-4624-ACC7-8140F4EC3888
 ! Title: ABPVN List
-! Last modified: 13 Aug 2025 15:07:37 UTC+7
-! Diff-Path: patches/20250813150737130.patch#abpvn_noelemhide
+! Last modified: 13 Aug 2025 18:05:22 UTC+7
+! Diff-Path: patches/20250813180522531.patch#abpvn_noelemhide
 ! Diff-Expires: 60 minutes
 ! Expires: 1 days (update frequency)
 !
@@ -30,6 +30,7 @@ $popup,domain=truyenfull.vision
 .vn/qc/
 /Content/JS/jwplayer/vast.js$script
 /^https:\/\/[a-z]{3,}\.com\/$/$xmlhttprequest,third-party
+/^https:\/\/[a-z]{8,12}\.com(?:\/[a-z]{2,10}){1,3}$/$script,third-party
 /_BannerSlot.aspx$subdocument,domain=bongdaso66.net
 /aas/r45d/vki/*$script
 /ad_banner/*.gif$image
