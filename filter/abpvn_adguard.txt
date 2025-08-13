@@ -1,9 +1,9 @@
 [Adblock Plus 2.0]
-! Version: 20250813180522531
+! Version: 20250813200614080
 ! id: D4028CDD-3D39-4624-ACC7-8140F4EC3888
 ! Title: ABPVN List
-! Last modified: 13 Aug 2025 18:05:22 UTC+7
-! Diff-Path: patches/20250813180522531.patch#abpvn_adguard
+! Last modified: 13 Aug 2025 20:06:14 UTC+7
+! Diff-Path: patches/20250813200614080.patch#abpvn_adguard
 ! Diff-Expires: 60 minutes
 ! Expires: 1 days (update frequency)
 !
@@ -44,7 +44,7 @@
 /core/*$script,domain=gamek.vn|genk.vn|kenh14.vn|cafef.vn|thanhnien.vn
 /disable-devtool.min.js$script
 /giadinhonline.vn/files/qc/*
-/i.imgur.com/*.gif$domain=keonhacai55.chat|motchill19.com|emuenglish.org|vebotz.cc|cakhiazzss.cc|listnhacai88.com|visitfrenchwine.com|ww38.xemtivingon.org|mitomzc.cc|rakhoivk.cc|plcdn.xyz
+/i.imgur.com/*.gif$domain=keonhacai55.chat|motchill18.com|motchill19.com|emuenglish.org|vebotz.cc|cakhiazzss.cc|listnhacai88.com|visitfrenchwine.com|ww38.xemtivingon.org|mitomzc.cc|rakhoivk.cc|plcdn.xyz
 /js/ads.js$script,~third-party,domain=~vipurl.in|~link.codevn.net
 /lv/esnk/*$script
 /newchill/*gif$image
@@ -157,6 +157,7 @@
 ||mediastation.live^*.gif$image,domain=mn.mediastation.live|home1.mannhan22.pro|mannhan97.xyz
 ||mocfun.net/uploads/banners/
 ||motchill10.com/public/upload/ads/ads.js$script,~third-party
+||motchill18.com/3s.m3u8$rewrite=abp-resource:blank-mp3,domain=motchill18.com
 ||motchill19.com/3s.m3u8$rewrite=abp-resource:blank-mp3,domain=motchill19.com
 ||motchilli.to/wp-content/plugins/AdsManager/js/aam-scripts.js$script,~third-party
 ||motchilli.to^*.gif$image
@@ -192,7 +193,7 @@
 ||qthang.net/js/blocker$script,~third-party
 ||quaivatdienanh.com/*banner$image
 ||quangcaosanpham.com/images/$third-party
-||quoracdn.net^$image,domain=motchill19.com
+||quoracdn.net^$image,domain=motchill18.com|motchill19.com
 ||raovat.tuoitre.vn^$domain=tuoitre.vn
 ||run.vn/widget$script,~third-party
 ||s1.truyentranh3q.com^*.gif$image
@@ -851,7 +852,7 @@ keoso.me##.widget-sidebar-block
 ketqua04.net##.baloon
 ketqua04.net##.col-sm-10.kqcenter
 ketqua04.net##.kqbackground.vien ~ a[target="_blank"]
-ketqua04.net,nghean24h.vn,xem.tructiepnba.me,doctruyenln.com,xemtivi4k.com,emuenglish.org,bongdainfox.tv,90phuttv.link,xx2.thapcam53.info,nn13.thapcam.asia,motchill19.com##a[rel="nofollow"]
+ketqua04.net,nghean24h.vn,xem.tructiepnba.me,doctruyenln.com,xemtivi4k.com,emuenglish.org,bongdainfox.tv,90phuttv.link,xx2.thapcam53.info,nn13.thapcam.asia,motchill18.com,motchill18.com,motchill19.com##a[rel="nofollow"]
 ketqua247vn.vip##.box-ads
 ketqua247vn.vip##.linkBanner
 khiphach.net###qc-kpgame
@@ -915,11 +916,11 @@ mn.mediastation.live##.images-top-pl
 monkeyd.net.vn###affLayer
 monkeyd.net.vn##.justify-content-center.d-flex.mx-3.mx-lg-4.mt-3>[href]
 motchiill.pw##.overlay-1
-motchill19.com##.BanerTop100
-motchill19.com##.adv-300-right
-motchill19.com##.banner-container
-motchill19.com##.banner-preload
-motchill19.com##.catfish-top
+motchill18.com,motchill19.com##.BanerTop100
+motchill18.com,motchill19.com##.adv-300-right
+motchill18.com,motchill19.com##.banner-container
+motchill18.com,motchill19.com##.banner-preload
+motchill18.com,motchill19.com##.catfish-top
 motchilli.to,motphimc.zip##.aam-banner-wrapper
 motchilli.to,motphimc.zip##.cat-footer-wrapper
 motchilli.to,motphimc.zip##.cat-header-wrapper
@@ -1074,7 +1075,7 @@ tuoitre.vn##.content-amuasam
 tuoitre.vn##.section__r-vietlot
 tv.tvhayhd.org##.navbar-ex8-collapse
 tvhayr.org##[src^="https://ads.starzd.com/"]
-tvhayr.org,motchill19.com##.catfish-bottom
+tvhayr.org,motchill18.com,motchill19.com##.catfish-bottom
 tvzinghd.co##.sda-preload-popup
 tvzinghd.co##.sda-preload-popup-overlay
 v4u.vn##.Flagrow-Ads-under-header
@@ -1120,6 +1121,8 @@ vnesports.net,mythethao.net##.banner_top
 vnexpress.net###banner_top
 vnexpress.net###rich-media-banner-ads
 vnexpress.net###supper_masthead
+vnexpress.net##.box-kd-300
+vnexpress.net##.section_ads_300x250
 voz.vn##.adsbypubpower
 voz.vn##.p-body-sidebar>.block>.block-container:has(.adsbypubpower)
 voz.vn##.p-body-sidebar>.block>.block-container:has([data-widget_id])
@@ -1459,7 +1462,7 @@ hh3dhay.life,tram3d.com#%#//scriptlet("abort-current-inline-script", "document.c
 hh3dhay.life,tram3d.me,animevietsub.cam#%#//scriptlet("abort-current-inline-script", "eval", "$._Eu")
 hhtq.click###overlay
 hhtq.click,thempho2.com,phimchautinhtri.net#$#html {overflow: auto!important;}
-imail.edu.vn,motchill19.com,trumtruyen.live,teamlanhlungday.me#%#//scriptlet("abort-current-inline-script", "setTimeout", "Aff")
+imail.edu.vn,motchill18.com,motchill19.com,trumtruyen.live,teamlanhlungday.me#%#//scriptlet("abort-current-inline-script", "setTimeout", "Aff")
 ios.codevn.net#%#//scriptlet("abort-current-inline-script", "jQuery", "Popup")
 ios.codevn.net#%#//scriptlet("abort-current-inline-script", "setInterval", "offsetHeight")
 javhd.shop#%#//scriptlet("abort-current-inline-script", "document.addEventListener", "Click")
@@ -1471,7 +1474,7 @@ linkneverdie.net,linkneverdie.top,linkneverdie2.com#%#//scriptlet("prevent-setTi
 linkneverdie.net,linkneverdie.top,linkneverdie2.com#%#//scriptlet("prevent-setTimeout", "callback", "6004")
 lrepacks.net#%#//scriptlet("abort-current-inline-script", "JSON.parse", "break;case $.")
 lxmanga.my#%#//scriptlet("abort-current-inline-script", "$", "PopUnder")
-motchill19.com,xnhau.sh,teamlanhlung8.shop,xemphimjav.us#%#//scriptlet("abort-on-property-read", "localStorage")
+motchill18.com,motchill19.com,xnhau.sh,teamlanhlung8.shop,xemphimjav.us#%#//scriptlet("abort-on-property-read", "localStorage")
 motchillk.to#%#//scriptlet("abort-on-property-read", "sessionStorage")
 motchilltvphim.com#%#//scriptlet("abort-current-inline-script", "jQuery", "click_time")
 mv.phimmoiaz.cc,anime11.site,anh.moe,maclife.io,xemphimjav.us,hoctot.hocmai.vn,samtruyentranh.com,truyenfull.vision,player.phimapi.com,noitu.site#%#//scriptlet("abort-on-property-read", "open")

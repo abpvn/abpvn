@@ -1,22 +1,27 @@
-diff name:abpvn lines:64 checksum:316377aa04
+diff name:abpvn lines:82 checksum:632cba4860
 d2 1
 a2 1
-! Version: 20250813180522531
+! Version: 20250813200614080
 d5 2
 a6 2
-! Last modified: 13 Aug 2025 18:05:22 UTC+7
-! Diff-Path: patches/20250813180522531.patch#abpvn
+! Last modified: 13 Aug 2025 20:06:14 UTC+7
+! Diff-Path: patches/20250813200614080.patch#abpvn
 a32 1
 /^https:\/\/[a-z]{8,12}\.com(?:\/[a-z]{2,10}){1,3}$/$script,third-party
 d48 1
 a48 1
-/i.imgur.com/*.gif$domain=keonhacai55.chat|motchill19.com|emuenglish.org|vebotz.cc|cakhiazzss.cc|listnhacai88.com|visitfrenchwine.com|ww38.xemtivingon.org|mitomzc.cc|rakhoivk.cc|plcdn.xyz
+/i.imgur.com/*.gif$domain=keonhacai55.chat|motchill18.com|motchill19.com|emuenglish.org|vebotz.cc|cakhiazzss.cc|listnhacai88.com|visitfrenchwine.com|ww38.xemtivingon.org|mitomzc.cc|rakhoivk.cc|plcdn.xyz
 d102 1
 a102 1
 ||cdn.lfastcdn.com^*.gif$image,domain=bongdainfox.tv|visitfrenchwine.com|rakhoivk.cc|cakhiazzss.cc|mitomzc.cc|vebotz.cc
 d119 1
 a119 1
 ||github.com^$image,domain=cungtv.xyz
+a160 1
+||motchill18.com/3s.m3u8$rewrite=abp-resource:blank-mp3,domain=motchill18.com
+d196 1
+a196 1
+||quoracdn.net^$image,domain=motchill18.com|motchill19.com
 a336 1
 ||browsecoherentunrefined.com^
 d728 7
@@ -51,11 +56,24 @@ emuenglish.org,vebotz.cc,cakhiazzss.cc,visitfrenchwine.com,mitomzc.cc##.company
 emuenglish.org,visitfrenchwine.com##.match-detail__offer
 d837 1
 a837 1
-ketqua04.net,nghean24h.vn,xem.tructiepnba.me,doctruyenln.com,xemtivi4k.com,emuenglish.org,bongdainfox.tv,90phuttv.link,xx2.thapcam53.info,nn13.thapcam.asia,motchill19.com##a[rel="nofollow"]
+ketqua04.net,nghean24h.vn,xem.tructiepnba.me,doctruyenln.com,xemtivi4k.com,emuenglish.org,bongdainfox.tv,90phuttv.link,xx2.thapcam53.info,nn13.thapcam.asia,motchill18.com,motchill18.com,motchill19.com##a[rel="nofollow"]
 a859 1
 live4.xoilac34.org,90phuttv.link,cungtv.xyz,freeplayervideo.com,abysscdn.com,player-cdn.com,fdcdn.xyz,anime11.site##.jw-logo
 d863 1
+d901 5
+a905 5
+motchill18.com,motchill19.com##.BanerTop100
+motchill18.com,motchill19.com##.adv-300-right
+motchill18.com,motchill19.com##.banner-container
+motchill18.com,motchill19.com##.banner-preload
+motchill18.com,motchill19.com##.catfish-top
 d934 4
+d1065 1
+a1065 1
+tvhayr.org,motchill18.com,motchill19.com##.catfish-bottom
+a1110 2
+vnexpress.net##.box-kd-300
+vnexpress.net##.section_ads_300x250
 d1164 15
 d1291 1
 a1291 1
@@ -63,25 +81,30 @@ a1291 1
 d1309 1
 a1309 1
 cliphotvn69.com,mobiblogss.com,cliphot69.shop,phevkl.gg,www.gvnvh.net,vn66phimsexhay.com,sayhentaii.art,viet69.free,phim18vip.vip,xamvn.blog##.float-ck-center-lt
-diff name:abpvn_adguard lines:70 checksum:3f8e687396
+diff name:abpvn_adguard lines:94 checksum:4f9eeb0f08
 d2 1
 a2 1
-! Version: 20250813180522531
+! Version: 20250813200614080
 d5 2
 a6 2
-! Last modified: 13 Aug 2025 18:05:22 UTC+7
-! Diff-Path: patches/20250813180522531.patch#abpvn_adguard
+! Last modified: 13 Aug 2025 20:06:14 UTC+7
+! Diff-Path: patches/20250813200614080.patch#abpvn_adguard
 a30 1
 /^https:\/\/[a-z]{8,12}\.com(?:\/[a-z]{2,10}){1,3}$/$script,third-party
 d46 1
 a46 1
-/i.imgur.com/*.gif$domain=keonhacai55.chat|motchill19.com|emuenglish.org|vebotz.cc|cakhiazzss.cc|listnhacai88.com|visitfrenchwine.com|ww38.xemtivingon.org|mitomzc.cc|rakhoivk.cc|plcdn.xyz
+/i.imgur.com/*.gif$domain=keonhacai55.chat|motchill18.com|motchill19.com|emuenglish.org|vebotz.cc|cakhiazzss.cc|listnhacai88.com|visitfrenchwine.com|ww38.xemtivingon.org|mitomzc.cc|rakhoivk.cc|plcdn.xyz
 d100 1
 a100 1
 ||cdn.lfastcdn.com^*.gif$image,domain=bongdainfox.tv|visitfrenchwine.com|rakhoivk.cc|cakhiazzss.cc|mitomzc.cc|vebotz.cc
 d117 1
 a117 1
 ||github.com^$image,domain=cungtv.xyz
+a158 1
+||motchill18.com/3s.m3u8$rewrite=abp-resource:blank-mp3,domain=motchill18.com
+d194 1
+a194 1
+||quoracdn.net^$image,domain=motchill18.com|motchill19.com
 a332 1
 ||browsecoherentunrefined.com^
 d724 7
@@ -116,11 +139,24 @@ emuenglish.org,vebotz.cc,cakhiazzss.cc,visitfrenchwine.com,mitomzc.cc##.company
 emuenglish.org,visitfrenchwine.com##.match-detail__offer
 d833 1
 a833 1
-ketqua04.net,nghean24h.vn,xem.tructiepnba.me,doctruyenln.com,xemtivi4k.com,emuenglish.org,bongdainfox.tv,90phuttv.link,xx2.thapcam53.info,nn13.thapcam.asia,motchill19.com##a[rel="nofollow"]
+ketqua04.net,nghean24h.vn,xem.tructiepnba.me,doctruyenln.com,xemtivi4k.com,emuenglish.org,bongdainfox.tv,90phuttv.link,xx2.thapcam53.info,nn13.thapcam.asia,motchill18.com,motchill18.com,motchill19.com##a[rel="nofollow"]
 a855 1
 live4.xoilac34.org,90phuttv.link,cungtv.xyz,freeplayervideo.com,abysscdn.com,player-cdn.com,fdcdn.xyz,anime11.site##.jw-logo
 d859 1
+d897 5
+a901 5
+motchill18.com,motchill19.com##.BanerTop100
+motchill18.com,motchill19.com##.adv-300-right
+motchill18.com,motchill19.com##.banner-container
+motchill18.com,motchill19.com##.banner-preload
+motchill18.com,motchill19.com##.catfish-top
 d930 4
+d1060 1
+a1060 1
+tvhayr.org,motchill18.com,motchill19.com##.catfish-bottom
+a1105 2
+vnexpress.net##.box-kd-300
+vnexpress.net##.section_ads_300x250
 d1159 15
 d1284 1
 a1284 1
@@ -130,29 +166,40 @@ a1302 1
 cliphotvn69.com,mobiblogss.com,cliphot69.shop,phevkl.gg,www.gvnvh.net,vn66phimsexhay.com,sayhentaii.art,viet69.free,phim18vip.vip,xamvn.blog##.float-ck-center-lt
 a1446 1
 emuenglish.org#%#//scriptlet("abort-on-property-read", "adsRedirectPopups")
+d1459 1
+a1459 1
+imail.edu.vn,motchill18.com,motchill19.com,trumtruyen.live,teamlanhlungday.me#%#//scriptlet("abort-current-inline-script", "setTimeout", "Aff")
+d1471 1
+a1471 1
+motchill18.com,motchill19.com,xnhau.sh,teamlanhlung8.shop,xemphimjav.us#%#//scriptlet("abort-on-property-read", "localStorage")
 d1509 1
 a1509 1
 vlxx.bz,dualeotruyenpm.com,yurineko.my,phimhaysex.net,cliphot69.shop,doctruyen3qui12.pro,ihentai.cloud,phimhaysex.net,hentaivc.net,buomtv.live,truyenvn.shop,javtiful.com,quatvn.love,vn66phimsexhay.com,phim18hdxx.com,vn5.sexviet88.xyz,sexmup3x.net,demo.14412882.com,cliphot69.pics,hhtq5.vip,sexdiary.club,vn2.xvideos69.xxx,umetruyenhay.com,damconuong.run,truyenqqgo.com,clipsexsub3x.net,sayhentaii.art#%#//scriptlet("abort-current-inline-script", "WebAssembly", "instantiate")
 d1530 1
-diff name:abpvn_content_blocker lines:64 checksum:88516d7232
+diff name:abpvn_content_blocker lines:82 checksum:ad1166e98d
 d2 1
 a2 1
-! Version: 20250813180522531
+! Version: 20250813200614080
 d5 2
 a6 2
-! Last modified: 13 Aug 2025 18:05:22 UTC+7
-! Diff-Path: patches/20250813180522531.patch#abpvn_content_blocker
+! Last modified: 13 Aug 2025 20:06:14 UTC+7
+! Diff-Path: patches/20250813200614080.patch#abpvn_content_blocker
 a32 1
 /^https:\/\/[a-z]{8,12}\.com(?:\/[a-z]{2,10}){1,3}$/$script,third-party
 d48 1
 a48 1
-/i.imgur.com/*.gif$domain=keonhacai55.chat|motchill19.com|emuenglish.org|vebotz.cc|cakhiazzss.cc|listnhacai88.com|visitfrenchwine.com|ww38.xemtivingon.org|mitomzc.cc|rakhoivk.cc|plcdn.xyz
+/i.imgur.com/*.gif$domain=keonhacai55.chat|motchill18.com|motchill19.com|emuenglish.org|vebotz.cc|cakhiazzss.cc|listnhacai88.com|visitfrenchwine.com|ww38.xemtivingon.org|mitomzc.cc|rakhoivk.cc|plcdn.xyz
 d102 1
 a102 1
 ||cdn.lfastcdn.com^*.gif$image,domain=bongdainfox.tv|visitfrenchwine.com|rakhoivk.cc|cakhiazzss.cc|mitomzc.cc|vebotz.cc
 d119 1
 a119 1
 ||github.com^$image,domain=cungtv.xyz
+a160 1
+||motchill18.com/3s.m3u8$rewrite=abp-resource:blank-mp3,domain=motchill18.com
+d196 1
+a196 1
+||quoracdn.net^$image,domain=motchill18.com|motchill19.com
 a336 1
 ||browsecoherentunrefined.com^
 d728 7
@@ -187,11 +234,24 @@ emuenglish.org,vebotz.cc,cakhiazzss.cc,visitfrenchwine.com,mitomzc.cc##.company
 emuenglish.org,visitfrenchwine.com##.match-detail__offer
 d837 1
 a837 1
-ketqua04.net,nghean24h.vn,xem.tructiepnba.me,doctruyenln.com,xemtivi4k.com,emuenglish.org,bongdainfox.tv,90phuttv.link,xx2.thapcam53.info,nn13.thapcam.asia,motchill19.com##a[rel="nofollow"]
+ketqua04.net,nghean24h.vn,xem.tructiepnba.me,doctruyenln.com,xemtivi4k.com,emuenglish.org,bongdainfox.tv,90phuttv.link,xx2.thapcam53.info,nn13.thapcam.asia,motchill18.com,motchill18.com,motchill19.com##a[rel="nofollow"]
 a859 1
 live4.xoilac34.org,90phuttv.link,cungtv.xyz,freeplayervideo.com,abysscdn.com,player-cdn.com,fdcdn.xyz,anime11.site##.jw-logo
 d863 1
+d901 5
+a905 5
+motchill18.com,motchill19.com##.BanerTop100
+motchill18.com,motchill19.com##.adv-300-right
+motchill18.com,motchill19.com##.banner-container
+motchill18.com,motchill19.com##.banner-preload
+motchill18.com,motchill19.com##.catfish-top
 d934 4
+d1065 1
+a1065 1
+tvhayr.org,motchill18.com,motchill19.com##.catfish-bottom
+a1110 2
+vnexpress.net##.box-kd-300
+vnexpress.net##.section_ads_300x250
 d1164 15
 d1291 1
 a1291 1
@@ -199,49 +259,59 @@ a1291 1
 d1309 1
 a1309 1
 cliphotvn69.com,mobiblogss.com,cliphot69.shop,phevkl.gg,www.gvnvh.net,vn66phimsexhay.com,sayhentaii.art,viet69.free,phim18vip.vip,xamvn.blog##.float-ck-center-lt
-diff name:abpvn_noelemhide lines:23 checksum:357f9d0210
+diff name:abpvn_noelemhide lines:28 checksum:4c4f2ba4f5
 d2 1
 a2 1
-! Version: 20250813180522531
+! Version: 20250813200614080
 d5 2
 a6 2
-! Last modified: 13 Aug 2025 18:05:22 UTC+7
-! Diff-Path: patches/20250813180522531.patch#abpvn_noelemhide
+! Last modified: 13 Aug 2025 20:06:14 UTC+7
+! Diff-Path: patches/20250813200614080.patch#abpvn_noelemhide
 a32 1
 /^https:\/\/[a-z]{8,12}\.com(?:\/[a-z]{2,10}){1,3}$/$script,third-party
 d48 1
 a48 1
-/i.imgur.com/*.gif$domain=keonhacai55.chat|motchill19.com|emuenglish.org|vebotz.cc|cakhiazzss.cc|listnhacai88.com|visitfrenchwine.com|ww38.xemtivingon.org|mitomzc.cc|rakhoivk.cc|plcdn.xyz
+/i.imgur.com/*.gif$domain=keonhacai55.chat|motchill18.com|motchill19.com|emuenglish.org|vebotz.cc|cakhiazzss.cc|listnhacai88.com|visitfrenchwine.com|ww38.xemtivingon.org|mitomzc.cc|rakhoivk.cc|plcdn.xyz
 d102 1
 a102 1
 ||cdn.lfastcdn.com^*.gif$image,domain=bongdainfox.tv|visitfrenchwine.com|rakhoivk.cc|cakhiazzss.cc|mitomzc.cc|vebotz.cc
 d119 1
 a119 1
 ||github.com^$image,domain=cungtv.xyz
+a160 1
+||motchill18.com/3s.m3u8$rewrite=abp-resource:blank-mp3,domain=motchill18.com
+d196 1
+a196 1
+||quoracdn.net^$image,domain=motchill18.com|motchill19.com
 a336 1
 ||browsecoherentunrefined.com^
 d709 1
 a709 1
 ||vn66phimsexhay.com^*.gif$image
-diff name:abpvn_ublock lines:70 checksum:889f0e7556
+diff name:abpvn_ublock lines:97 checksum:581cba760d
 d2 1
 a2 1
-! Version: 20250813180522531
+! Version: 20250813200614080
 d5 2
 a6 2
-! Last modified: 13 Aug 2025 18:05:22 UTC+7
-! Diff-Path: patches/20250813180522531.patch#abpvn_ublock
+! Last modified: 13 Aug 2025 20:06:14 UTC+7
+! Diff-Path: patches/20250813200614080.patch#abpvn_ublock
 a30 1
 /^https:\/\/[a-z]{8,12}\.com(?:\/[a-z]{2,10}){1,3}$/$script,third-party
 d46 1
 a46 1
-/i.imgur.com/*.gif$domain=keonhacai55.chat|motchill19.com|emuenglish.org|vebotz.cc|cakhiazzss.cc|listnhacai88.com|visitfrenchwine.com|ww38.xemtivingon.org|mitomzc.cc|rakhoivk.cc|plcdn.xyz
+/i.imgur.com/*.gif$domain=keonhacai55.chat|motchill18.com|motchill19.com|emuenglish.org|vebotz.cc|cakhiazzss.cc|listnhacai88.com|visitfrenchwine.com|ww38.xemtivingon.org|mitomzc.cc|rakhoivk.cc|plcdn.xyz
 d100 1
 a100 1
 ||cdn.lfastcdn.com^*.gif$image,domain=bongdainfox.tv|visitfrenchwine.com|rakhoivk.cc|cakhiazzss.cc|mitomzc.cc|vebotz.cc
 d117 1
 a117 1
 ||github.com^$image,domain=cungtv.xyz
+a158 1
+||motchill18.com/3s.m3u8$rewrite=abp-resource:blank-mp3,domain=motchill18.com
+d194 1
+a194 1
+||quoracdn.net^$image,domain=motchill18.com|motchill19.com
 a332 1
 ||browsecoherentunrefined.com^
 d724 7
@@ -276,11 +346,24 @@ emuenglish.org,vebotz.cc,cakhiazzss.cc,visitfrenchwine.com,mitomzc.cc##.company
 emuenglish.org,visitfrenchwine.com##.match-detail__offer
 d833 1
 a833 1
-ketqua04.net,nghean24h.vn,xem.tructiepnba.me,doctruyenln.com,xemtivi4k.com,emuenglish.org,bongdainfox.tv,90phuttv.link,xx2.thapcam53.info,nn13.thapcam.asia,motchill19.com##a[rel="nofollow"]
+ketqua04.net,nghean24h.vn,xem.tructiepnba.me,doctruyenln.com,xemtivi4k.com,emuenglish.org,bongdainfox.tv,90phuttv.link,xx2.thapcam53.info,nn13.thapcam.asia,motchill18.com,motchill18.com,motchill19.com##a[rel="nofollow"]
 a855 1
 live4.xoilac34.org,90phuttv.link,cungtv.xyz,freeplayervideo.com,abysscdn.com,player-cdn.com,fdcdn.xyz,anime11.site##.jw-logo
 d859 1
+d897 5
+a901 5
+motchill18.com,motchill19.com##.BanerTop100
+motchill18.com,motchill19.com##.adv-300-right
+motchill18.com,motchill19.com##.banner-container
+motchill18.com,motchill19.com##.banner-preload
+motchill18.com,motchill19.com##.catfish-top
 d930 4
+d1060 1
+a1060 1
+tvhayr.org,motchill18.com,motchill19.com##.catfish-bottom
+a1105 2
+vnexpress.net##.box-kd-300
+vnexpress.net##.section_ads_300x250
 d1159 15
 d1284 1
 a1284 1
@@ -290,6 +373,15 @@ a1302 1
 cliphotvn69.com,mobiblogss.com,cliphot69.shop,phevkl.gg,www.gvnvh.net,vn66phimsexhay.com,sayhentaii.art,viet69.free,phim18vip.vip,xamvn.blog##.float-ck-center-lt
 a1445 1
 emuenglish.org##+js(aopr, adsRedirectPopups)
+d1459 1
+a1459 1
+imail.edu.vn,motchill18.com,motchill19.com,trumtruyen.live,teamlanhlungday.me##+js(acs, setTimeout, Aff)
+d1471 1
+a1471 1
+motchill18.com,motchill19.com,xnhau.sh,teamlanhlung8.shop,xemphimjav.us##+js(aopr, localStorage)
+d1493 1
+a1493 1
+teamlanhlungday.me##+js(acs, $, window.open)
 d1508 1
 a1508 1
 vlxx.bz,dualeotruyenpm.com,yurineko.my,phimhaysex.net,cliphot69.shop,doctruyen3qui12.pro,ihentai.cloud,hentaivc.net,buomtv.live,truyenvn.shop,javtiful.com,quatvn.love,vn66phimsexhay.com,phim18hdxx.com,vn5.sexviet88.xyz,sexmup3x.net,demo.14412882.com,cliphot69.pics,hhtq5.vip,sexdiary.club,vn2.xvideos69.xxx,umetruyenhay.com,damconuong.run,truyenqqgo.com,clipsexsub3x.net,sayhentaii.art##+js(acs, WebAssembly, instantiate)
