@@ -1,9 +1,9 @@
 [Adblock Plus 2.0]
-! Version: 20250813150737220
+! Version: 20250813200613936
 ! id: D4028CDD-3D39-4624-ACC7-8140F4EC3888
 ! Title: ABPVN List
-! Last modified: 13 Aug 2025 15:07:37 UTC+7
-! Diff-Path: patches/20250813150737220.patch#abpvn_ublock
+! Last modified: 13 Aug 2025 20:06:13 UTC+7
+! Diff-Path: patches/20250813200613936.patch#abpvn_ublock
 ! Diff-Expires: 60 minutes
 ! Expires: 1 days (update frequency)
 !
@@ -42,7 +42,7 @@
 /core/*$script,domain=gamek.vn|genk.vn|kenh14.vn|cafef.vn|thanhnien.vn
 /disable-devtool.min.js$script
 /giadinhonline.vn/files/qc/*
-/i.imgur.com/*.gif$domain=keonhacai55.chat|motchill19.com|emuenglish.org|vebotz.cc|cakhiazzss.cc|listnhacai88.com|visitfrenchwine.com|ww38.xemtivingon.org|mitomzc.cc|rakhoivk.cc|plcdn.xyz
+/i.imgur.com/*.gif$domain=keonhacai55.chat|motchill18.com|motchill19.com|emuenglish.org|vebotz.cc|cakhiazzss.cc|listnhacai88.com|visitfrenchwine.com|ww38.xemtivingon.org|mitomzc.cc|rakhoivk.cc|plcdn.xyz
 /js/ads.js$script,~third-party,domain=~vipurl.in
 /lv/esnk/*$script
 /newchill/*gif$image
@@ -138,6 +138,9 @@
 ||imagedelivery.net^$image,domain=motphimchill.live
 ||images.tuyensinh247.com^*.gif$third-party
 ||img.iketqua.com^*.gif$image
+||img.mmo4me.com/image.php?di=0QI2$image
+||img.mmo4me.com/image.php?di=146J$image
+||img.mmo4me.com/image.php?di=W9IR$image
 ||kenhgamez.co^*.gif
 ||kienthuc.net.vn/*.ads
 ||laodong.vn/*QuangcaoOnline
@@ -148,6 +151,7 @@
 ||mediastation.live^*.gif$image,domain=mn.mediastation.live|home1.mannhan22.pro|mannhan97.xyz
 ||mocfun.net/uploads/banners/
 ||motchill10.com/public/upload/ads/ads.js$script,~third-party
+||motchill18.com/3s.m3u8$rewrite=abp-resource:blank-mp3,domain=motchill18.com
 ||motchill19.com/3s.m3u8$rewrite=abp-resource:blank-mp3,domain=motchill19.com
 ||motchilli.to/wp-content/plugins/AdsManager/js/aam-scripts.js$script,~third-party
 ||motchilli.to^*.gif$image
@@ -183,7 +187,7 @@
 ||qthang.net/js/blocker$script,~third-party
 ||quaivatdienanh.com/*banner$image
 ||quangcaosanpham.com/images/$third-party
-||quoracdn.net^$image,domain=motchill19.com
+||quoracdn.net^$image,domain=motchill19.com|motchill18.com
 ||raovat.tuoitre.vn^$domain=tuoitre.vn
 ||run.vn/widget$script,~third-party
 ||s1.truyentranh3q.com^*.gif$image
@@ -575,7 +579,7 @@ keoso.me##.widget-sidebar-block
 ketqua04.net##.baloon
 ketqua04.net##.col-sm-10.kqcenter
 ketqua04.net##.kqbackground.vien ~ a[target="_blank"]
-ketqua04.net,nghean24h.vn,xem.tructiepnba.me,doctruyenln.com,xemtivi4k.com,emuenglish.org,bongdainfox.tv,90phuttv.link,xx2.thapcam53.info,nn13.thapcam.asia,motchill19.com##a[rel="nofollow"]
+ketqua04.net,nghean24h.vn,xem.tructiepnba.me,doctruyenln.com,xemtivi4k.com,emuenglish.org,bongdainfox.tv,90phuttv.link,xx2.thapcam53.info,nn13.thapcam.asia,motchill18.com,motchill19.com##a[rel="nofollow"]
 ketqua247vn.vip##.linkBanner
 khiphach.net###qc-kpgame
 kickass.sx##.dssdffds
@@ -630,11 +634,11 @@ mn.mediastation.live##.images-top-pl
 monkeyd.net.vn###affLayer
 monkeyd.net.vn##.justify-content-center.d-flex.mx-3.mx-lg-4.mt-3>[href]
 motchiill.pw##.overlay-1
-motchill19.com##.BanerTop100
-motchill19.com##.adv-300-right
-motchill19.com##.banner-container
-motchill19.com##.banner-preload
-motchill19.com##.catfish-top
+motchill18.com,motchill19.com##.BanerTop100
+motchill18.com,motchill19.com##.adv-300-right
+motchill18.com,motchill19.com##.banner-container
+motchill18.com,motchill19.com##.banner-preload
+motchill18.com,motchill19.com##.catfish-top
 motchilli.to,motphimc.zip##.aam-banner-wrapper
 motchilli.to,motphimc.zip##.cat-footer-wrapper
 motchilli.to,motphimc.zip##.cat-header-wrapper
@@ -784,7 +788,7 @@ tuoitre.vn##.content-amuasam
 tuoitre.vn##.section__r-vietlot
 tv.tvhayhd.org##.navbar-ex8-collapse
 tvhayr.org##[src^="https://ads.starzd.com/"]
-tvhayr.org,motchill19.com##.catfish-bottom
+tvhayr.org,motchill18.com,motchill19.com##.catfish-bottom
 tvzinghd.co##.sda-preload-popup
 tvzinghd.co##.sda-preload-popup-overlay
 v4u.vn##.Flagrow-Ads-under-header
@@ -836,6 +840,8 @@ vnesports.net,mythethao.net##.banner_top
 vnexpress.net###banner_top
 vnexpress.net###rich-media-banner-ads
 vnexpress.net###supper_masthead
+vnexpress.net##.box-kd-300
+vnexpress.net##.section_ads_300x250
 voz.vn##.adsbypubpower
 voz.vn##.p-body-sidebar>.block>.block-container:has(.adsbypubpower)
 voz.vn##.p-body-sidebar>.block>.block-container:has([data-widget_id])
@@ -1172,7 +1178,7 @@ hh3dhay.life,tram3d.me,animevietsub.cam##+js(acs, eval, $._Eu)
 hhtq.click###overlay
 hhtq.click,thempho2.com,phimchautinhtri.net##html:style(overflow: auto !important)
 imail.edu.vn##+js(acs, setTimeout, ad_block)
-imail.edu.vn,motchill19.com,trumtruyen.live,teamlanhlungday.me##+js(acs, setTimeout, Aff)
+imail.edu.vn,motchill18.com,motchill19.com,trumtruyen.live,teamlanhlungday.me##+js(acs, setTimeout, Aff)
 ios.codevn.net##+js(acs, jQuery, Popup)
 ios.codevn.net##+js(acs, setInterval, offsetHeight)
 javhd.shop##+js(acs, document.addEventListener, Click)
@@ -1184,7 +1190,7 @@ linkneverdie.net,linkneverdie.top,linkneverdie2.com##+js(nostif, DisplayAHTML, 5
 linkneverdie.net,linkneverdie.top,linkneverdie2.com##+js(nostif, callback, 6004)
 lrepacks.net##+js(acs, JSON.parse, break;case $.)
 lxmanga.my##+js(acs, $, PopUnder)
-motchill19.com,xnhau.sh,teamlanhlung8.shop,xemphimjav.us##+js(aopr, localStorage)
+motchill18.com,motchill19.com,xnhau.sh,teamlanhlung8.shop,xemphimjav.us##+js(aopr, localStorage)
 motchillk.to##+js(aopr, sessionStorage)
 motchilltvphim.com##+js(acs, jQuery, click_time)
 nettruyenvia.com##+js(acs, JSON, fromCharCode)
@@ -1203,7 +1209,7 @@ saigon24.net##+js(acs, document.getElementById, myModal)
 sexmup3x.net##+js(aopr, Cookies)
 survey-smiles.com##+js(addEventListener-defuser, click, open)
 tailieumoi.vn##+js(set, linkAff, null, 3)
-teamlanhlungday.me##+js(acs, $, open)
+teamlanhlungday.me##+js(acs, $, window.open)
 thempho2.com##div.ReactModalPortal
 thichxemphim.live##+js(aopr, affUrls)
 truyen247.pro##+js(acs, eval)
