@@ -1,11 +1,11 @@
-diff name:abpvn lines:110 checksum:0dafa702ca
+diff name:abpvn lines:130 checksum:3c1410b1c0
 d2 1
 a2 1
-! Version: 20250815150807558
+! Version: 20250815230620874
 d5 2
 a6 2
-! Last modified: 15 Aug 2025 15:08:07 UTC+7
-! Diff-Path: patches/20250815150807558.patch#abpvn
+! Last modified: 15 Aug 2025 23:06:20 UTC+7
+! Diff-Path: patches/20250815230620874.patch#abpvn
 a32 1
 /^https:\/\/[a-z]{8,12}\.com(?:\/[a-z]{2,10}){1,3}$/$script,third-party
 d48 1
@@ -17,8 +17,11 @@ a102 1
 d119 1
 a119 1
 ||github.com^$image,domain=cungtv.xyz
+d122 1
 a160 1
 ||motchill18.com/3s.m3u8$rewrite=abp-resource:blank-mp3,domain=motchill18.com
+a182 1
+||phimhdctv.net^*.gif$image
 d191 1
 a191 1
 ||pub-5fed774e465e4b98976b32ac90065247.r2.dev^*.gif$image,domain=phimmoi.cash
@@ -28,6 +31,9 @@ a196 1
 d222 1
 a222 1
 ||thichxemphim1.site/wp-content/themes/halimmovies-child/jscm.min.js$domain=thichxemphim1.site
+d256 1
+a256 1
+||www.bongdalu800.com^*.gif
 d581 1
 d729 7
 a735 7
@@ -78,6 +84,9 @@ a968 3
 rakhoixv.cc##.bookmaker-selector-container
 rakhoixv.cc##.btn-odds
 rakhoixv.cc,visitfrenchwine.com##.btn-8xbet
+d977 1
+a977 1
+subnhanh1.org,hayhaytv.site,motphimtv.bz,motchillvl.com,phimhdctv.net##.mp-adz
 d1009 2
 a1010 2
 thichxemphim1.site##.fixed-bottom
@@ -99,24 +108,35 @@ a1187 1
 znews.vn##.banner-slider-wrapper
 d1271 1
 a1271 1
-||quoracdn.net^$image,domain=vlxx.bz|heohay.net|phevkl.gg|viet69.free|phim18vip.vip|pheclip.pro|sexmup3x.net|sexhihi.bar|sieudam.vet|fulllivehot.live
+||quoracdn.net^$image,domain=vlxx.bz|heohay.net|phevkl.gg|viet69.free|phim18vip.vip|pheclip.pro|xxmupsex.com|sexhihi.bar|sieudam.vet|fulllivehot.live
+d1280 1
 d1292 1
 a1292 1
 ||vn67phimsexhay.com^*.gif$image
+a1296 1
+||xxmupsex.com^*.gif$image,domain=xxmupsex.com
 d1310 1
 a1310 1
 cliphotvn69.com,mobiblogss.com,cliphot69.shop,phevkl.gg,www.gvnvh.net,vn67phimsexhay.com,sayhentaii.art,viet69.free,phim18vip.vip,xamvn.blog##.float-ck-center-lt
 a1322 1
-heohay.net,sexmup3x.net,sexhihi.bar##.xx-ads
-d1347 1
-diff name:abpvn_adguard lines:125 checksum:6f439de617
+heohay.net,xxmupsex.com,sexhihi.bar##.xx-ads
+d1347 2
+a1348 1
+phimsex62.pro,phimsex12x.pro##.quangcaomobile
+d1375 1
+d1413 1
+a1413 1
+vlxx.bz,xxmupsex.com,sexhihi.bar##.catfish-top
+a1438 1
+xxmupsex.com##.catfix
+diff name:abpvn_adguard lines:154 checksum:79afe6e5a9
 d2 1
 a2 1
-! Version: 20250815150807558
+! Version: 20250815230620874
 d5 2
 a6 2
-! Last modified: 15 Aug 2025 15:08:07 UTC+7
-! Diff-Path: patches/20250815150807558.patch#abpvn_adguard
+! Last modified: 15 Aug 2025 23:06:20 UTC+7
+! Diff-Path: patches/20250815230620874.patch#abpvn_adguard
 a30 1
 /^https:\/\/[a-z]{8,12}\.com(?:\/[a-z]{2,10}){1,3}$/$script,third-party
 d46 1
@@ -128,8 +148,11 @@ a100 1
 d117 1
 a117 1
 ||github.com^$image,domain=cungtv.xyz
+d120 1
 a158 1
 ||motchill18.com/3s.m3u8$rewrite=abp-resource:blank-mp3,domain=motchill18.com
+a180 1
+||phimhdctv.net^*.gif$image
 d189 1
 a189 1
 ||pub-5fed774e465e4b98976b32ac90065247.r2.dev^*.gif$image,domain=phimmoi.cash
@@ -139,6 +162,9 @@ a194 1
 d218 1
 a218 1
 ||thichxemphim1.site/wp-content/themes/halimmovies-child/jscm.min.js$domain=thichxemphim1.site
+d252 1
+a252 1
+||www.bongdalu800.com^*.gif
 d577 1
 d725 7
 a731 7
@@ -189,6 +215,9 @@ a963 3
 rakhoixv.cc##.bookmaker-selector-container
 rakhoixv.cc##.btn-odds
 rakhoixv.cc,visitfrenchwine.com##.btn-8xbet
+d972 1
+a972 1
+subnhanh1.org,hayhaytv.site,motphimtv.bz,motchillvl.com,phimhdctv.net##.mp-adz
 d1004 2
 a1005 2
 thichxemphim1.site##.fixed-bottom
@@ -210,39 +239,59 @@ a1182 1
 znews.vn##.banner-slider-wrapper
 d1264 1
 a1264 1
-||quoracdn.net^$image,domain=vlxx.bz|heohay.net|phevkl.gg|viet69.free|phim18vip.vip|pheclip.pro|sexmup3x.net|sexhihi.bar|sieudam.vet|fulllivehot.live
+||quoracdn.net^$image,domain=vlxx.bz|heohay.net|phevkl.gg|viet69.free|phim18vip.vip|pheclip.pro|xxmupsex.com|sexhihi.bar|sieudam.vet|fulllivehot.live
+d1273 1
 d1285 1
 a1285 1
 ||vn67phimsexhay.com^*.gif$image
+a1289 1
+||xxmupsex.com^*.gif$image,domain=xxmupsex.com
 d1303 1
 a1303 1
 cliphotvn69.com,mobiblogss.com,cliphot69.shop,phevkl.gg,www.gvnvh.net,vn67phimsexhay.com,sayhentaii.art,viet69.free,phim18vip.vip,xamvn.blog##.float-ck-center-lt
 a1315 1
-heohay.net,sexmup3x.net,sexhihi.bar##.xx-ads
-d1340 1
+heohay.net,xxmupsex.com,sexhihi.bar##.xx-ads
+d1340 2
+a1341 1
+phimsex62.pro,phimsex12x.pro##.quangcaomobile
+d1368 1
+d1406 1
+a1406 1
+vlxx.bz,xxmupsex.com,sexhihi.bar##.catfish-top
+a1431 1
+xxmupsex.com##.catfix
 a1447 1
 emuenglish.org#%#//scriptlet("abort-on-property-read", "adsRedirectPopups")
 d1460 1
 a1460 1
-imail.edu.vn,motchill18.com,motchill19.com,trumtruyen.live,teamlanhlungday.me#%#//scriptlet("abort-current-inline-script", "setTimeout", "Aff")
+imail.edu.vn,motchill18.com,motchill19.com,trumtruyen.live,teamlanhlungday.store#%#//scriptlet("abort-current-inline-script", "setTimeout", "Aff")
 d1472 1
 a1472 1
 motchill18.com,motchill19.com,xnhau.sh,teamlanhlung8.shop,xemphimjav.us#%#//scriptlet("abort-on-property-read", "localStorage")
+d1493 1
+d1496 1
+a1496 1
+teamlanhlungday.store#%#//scriptlet("abort-current-inline-script", "$", "open")
 d1498 1
 a1498 1
 thichxemphim1.site#%#//scriptlet("abort-on-property-read", "affUrls")
+d1502 1
+a1502 1
+truyensieuhay.com,hayhaytv.site,quangcaoyenbai.com,phimchill.life,thuvienhd.biz,tv.tvhayhd.org,thefaplive.com,mv.dailyphimz.com,mv.phimbathu.one,sexhihi.bar,anime47.live,teamlanhlung8.shop,phimhdctv.net,forum.timfshare.com#%#//scriptlet("abort-on-property-read", "document.cookie")
 d1510 1
 a1510 1
-vlxx.bz,dualeotruyenpm.com,yurineko.my,heohay.net,cliphot69.shop,doctruyen3qui12.pro,ihentai.cloud,heohay.net,hentaivc.net,buomtv.live,truyenvn.shop,javtiful.com,quatvn.love,vn67phimsexhay.com,phim18hdxx.com,vn5.sexviet88.xyz,sexmup3x.net,demo.14412882.com,cliphot69.pics,hhtq5.vip,sexdiary.club,vn2.xvideos69.xxx,umetruyenhay.com,damconuong.run,truyenqqgo.com,clipsexsub3x.net,sayhentaii.art#%#//scriptlet("abort-current-inline-script", "WebAssembly", "instantiate")
+vlxx.bz,dualeotruyenpm.com,yurineko.my,heohay.net,cliphot69.shop,doctruyen3qui12.pro,ihentai.cloud,heohay.net,hentaivc.net,buomtv.live,truyenvn.shop,javtiful.com,quatvn.love,vn67phimsexhay.com,phim18hdxx.com,vn5.sexviet88.xyz,xxmupsex.com,demo.14412882.com,cliphot69.pics,hhtq5.vip,sexdiary.club,vn2.xvideos69.xxx,umetruyenhay.com,damconuong.run,truyenqqgo.com,clipsexsub3x.net,sayhentaii.art#%#//scriptlet("abort-current-inline-script", "WebAssembly", "instantiate")
 d1531 1
-diff name:abpvn_content_blocker lines:110 checksum:3bbb205776
+a1531 1
+xxmupsex.com#%#//scriptlet("abort-on-property-read", "Cookies")
+diff name:abpvn_content_blocker lines:130 checksum:9192aac238
 d2 1
 a2 1
-! Version: 20250815150807558
+! Version: 20250815230620874
 d5 2
 a6 2
-! Last modified: 15 Aug 2025 15:08:07 UTC+7
-! Diff-Path: patches/20250815150807558.patch#abpvn_content_blocker
+! Last modified: 15 Aug 2025 23:06:20 UTC+7
+! Diff-Path: patches/20250815230620874.patch#abpvn_content_blocker
 a32 1
 /^https:\/\/[a-z]{8,12}\.com(?:\/[a-z]{2,10}){1,3}$/$script,third-party
 d48 1
@@ -254,8 +303,11 @@ a102 1
 d119 1
 a119 1
 ||github.com^$image,domain=cungtv.xyz
+d122 1
 a160 1
 ||motchill18.com/3s.m3u8$rewrite=abp-resource:blank-mp3,domain=motchill18.com
+a182 1
+||phimhdctv.net^*.gif$image
 d191 1
 a191 1
 ||pub-5fed774e465e4b98976b32ac90065247.r2.dev^*.gif$image,domain=phimmoi.cash
@@ -265,6 +317,9 @@ a196 1
 d222 1
 a222 1
 ||thichxemphim1.site/wp-content/themes/halimmovies-child/jscm.min.js$domain=thichxemphim1.site
+d256 1
+a256 1
+||www.bongdalu800.com^*.gif
 d581 1
 d729 7
 a735 7
@@ -315,6 +370,9 @@ a968 3
 rakhoixv.cc##.bookmaker-selector-container
 rakhoixv.cc##.btn-odds
 rakhoixv.cc,visitfrenchwine.com##.btn-8xbet
+d977 1
+a977 1
+subnhanh1.org,hayhaytv.site,motphimtv.bz,motchillvl.com,phimhdctv.net##.mp-adz
 d1009 2
 a1010 2
 thichxemphim1.site##.fixed-bottom
@@ -336,24 +394,35 @@ a1187 1
 znews.vn##.banner-slider-wrapper
 d1271 1
 a1271 1
-||quoracdn.net^$image,domain=vlxx.bz|heohay.net|phevkl.gg|viet69.free|phim18vip.vip|pheclip.pro|sexmup3x.net|sexhihi.bar|sieudam.vet|fulllivehot.live
+||quoracdn.net^$image,domain=vlxx.bz|heohay.net|phevkl.gg|viet69.free|phim18vip.vip|pheclip.pro|xxmupsex.com|sexhihi.bar|sieudam.vet|fulllivehot.live
+d1280 1
 d1292 1
 a1292 1
 ||vn67phimsexhay.com^*.gif$image
+a1296 1
+||xxmupsex.com^*.gif$image,domain=xxmupsex.com
 d1310 1
 a1310 1
 cliphotvn69.com,mobiblogss.com,cliphot69.shop,phevkl.gg,www.gvnvh.net,vn67phimsexhay.com,sayhentaii.art,viet69.free,phim18vip.vip,xamvn.blog##.float-ck-center-lt
 a1322 1
-heohay.net,sexmup3x.net,sexhihi.bar##.xx-ads
-d1347 1
-diff name:abpvn_noelemhide lines:36 checksum:8cf10174b3
+heohay.net,xxmupsex.com,sexhihi.bar##.xx-ads
+d1347 2
+a1348 1
+phimsex62.pro,phimsex12x.pro##.quangcaomobile
+d1375 1
+d1413 1
+a1413 1
+vlxx.bz,xxmupsex.com,sexhihi.bar##.catfish-top
+a1438 1
+xxmupsex.com##.catfix
+diff name:abpvn_noelemhide lines:45 checksum:6e0d9b4726
 d2 1
 a2 1
-! Version: 20250815150807558
+! Version: 20250815230620874
 d5 2
 a6 2
-! Last modified: 15 Aug 2025 15:08:07 UTC+7
-! Diff-Path: patches/20250815150807558.patch#abpvn_noelemhide
+! Last modified: 15 Aug 2025 23:06:20 UTC+7
+! Diff-Path: patches/20250815230620874.patch#abpvn_noelemhide
 a32 1
 /^https:\/\/[a-z]{8,12}\.com(?:\/[a-z]{2,10}){1,3}$/$script,third-party
 d48 1
@@ -365,8 +434,11 @@ a102 1
 d119 1
 a119 1
 ||github.com^$image,domain=cungtv.xyz
+d122 1
 a160 1
 ||motchill18.com/3s.m3u8$rewrite=abp-resource:blank-mp3,domain=motchill18.com
+a182 1
+||phimhdctv.net^*.gif$image
 d191 1
 a191 1
 ||pub-5fed774e465e4b98976b32ac90065247.r2.dev^*.gif$image,domain=phimmoi.cash
@@ -376,21 +448,27 @@ a196 1
 d222 1
 a222 1
 ||thichxemphim1.site/wp-content/themes/halimmovies-child/jscm.min.js$domain=thichxemphim1.site
+d256 1
+a256 1
+||www.bongdalu800.com^*.gif
 d581 1
 d689 1
 a689 1
-||quoracdn.net^$image,domain=vlxx.bz|heohay.net|phevkl.gg|viet69.free|phim18vip.vip|pheclip.pro|sexmup3x.net|sexhihi.bar|sieudam.vet|fulllivehot.live
+||quoracdn.net^$image,domain=vlxx.bz|heohay.net|phevkl.gg|viet69.free|phim18vip.vip|pheclip.pro|xxmupsex.com|sexhihi.bar|sieudam.vet|fulllivehot.live
+d698 1
 d710 1
 a710 1
 ||vn67phimsexhay.com^*.gif$image
-diff name:abpvn_ublock lines:128 checksum:46ced690a1
+a714 1
+||xxmupsex.com^*.gif$image,domain=xxmupsex.com
+diff name:abpvn_ublock lines:154 checksum:76945f8645
 d2 1
 a2 1
-! Version: 20250815150807558
+! Version: 20250815230620874
 d5 2
 a6 2
-! Last modified: 15 Aug 2025 15:08:07 UTC+7
-! Diff-Path: patches/20250815150807558.patch#abpvn_ublock
+! Last modified: 15 Aug 2025 23:06:20 UTC+7
+! Diff-Path: patches/20250815230620874.patch#abpvn_ublock
 a30 1
 /^https:\/\/[a-z]{8,12}\.com(?:\/[a-z]{2,10}){1,3}$/$script,third-party
 d46 1
@@ -402,8 +480,11 @@ a100 1
 d117 1
 a117 1
 ||github.com^$image,domain=cungtv.xyz
+d120 1
 a158 1
 ||motchill18.com/3s.m3u8$rewrite=abp-resource:blank-mp3,domain=motchill18.com
+a180 1
+||phimhdctv.net^*.gif$image
 d189 1
 a189 1
 ||pub-5fed774e465e4b98976b32ac90065247.r2.dev^*.gif$image,domain=phimmoi.cash
@@ -413,6 +494,9 @@ a194 1
 d218 1
 a218 1
 ||thichxemphim1.site/wp-content/themes/halimmovies-child/jscm.min.js$domain=thichxemphim1.site
+d252 1
+a252 1
+||www.bongdalu800.com^*.gif
 d577 1
 d725 7
 a731 7
@@ -463,6 +547,9 @@ a963 3
 rakhoixv.cc##.bookmaker-selector-container
 rakhoixv.cc##.btn-odds
 rakhoixv.cc,visitfrenchwine.com##.btn-8xbet
+d972 1
+a972 1
+subnhanh1.org,hayhaytv.site,motphimtv.bz,motchillvl.com,phimhdctv.net##.mp-adz
 d1004 2
 a1005 2
 thichxemphim1.site##.fixed-bottom
@@ -484,31 +571,48 @@ a1182 1
 znews.vn##.banner-slider-wrapper
 d1264 1
 a1264 1
-||quoracdn.net^$image,domain=vlxx.bz|heohay.net|phevkl.gg|viet69.free|phim18vip.vip|pheclip.pro|sexmup3x.net|sexhihi.bar|sieudam.vet|fulllivehot.live
+||quoracdn.net^$image,domain=vlxx.bz|heohay.net|phevkl.gg|viet69.free|phim18vip.vip|pheclip.pro|xxmupsex.com|sexhihi.bar|sieudam.vet|fulllivehot.live
+d1273 1
 d1285 1
 a1285 1
 ||vn67phimsexhay.com^*.gif$image
+a1289 1
+||xxmupsex.com^*.gif$image,domain=xxmupsex.com
 d1303 1
 a1303 1
 cliphotvn69.com,mobiblogss.com,cliphot69.shop,phevkl.gg,www.gvnvh.net,vn67phimsexhay.com,sayhentaii.art,viet69.free,phim18vip.vip,xamvn.blog##.float-ck-center-lt
 a1315 1
-heohay.net,sexmup3x.net,sexhihi.bar##.xx-ads
-d1340 1
+heohay.net,xxmupsex.com,sexhihi.bar##.xx-ads
+d1340 2
+a1341 1
+phimsex62.pro,phimsex12x.pro##.quangcaomobile
+d1368 1
+d1406 1
+a1406 1
+vlxx.bz,xxmupsex.com,sexhihi.bar##.catfish-top
+a1431 1
+xxmupsex.com##.catfix
 a1446 1
 emuenglish.org##+js(aopr, adsRedirectPopups)
 d1460 1
 a1460 1
-imail.edu.vn,motchill18.com,motchill19.com,trumtruyen.live,teamlanhlungday.me##+js(acs, setTimeout, Aff)
+imail.edu.vn,motchill18.com,motchill19.com,trumtruyen.live,teamlanhlungday.store##+js(acs, setTimeout, Aff)
 d1472 1
 a1472 1
 motchill18.com,motchill19.com,xnhau.sh,teamlanhlung8.shop,xemphimjav.us##+js(aopr, localStorage)
+d1491 1
 d1494 1
 a1494 1
-teamlanhlungday.me##+js(acs, $, window.open)
+teamlanhlungday.store##+js(acs, $, window.open)
 d1496 1
 a1496 1
 thichxemphim1.site##+js(aopr, affUrls)
+d1500 1
+a1500 1
+truyensieuhay.com,hayhaytv.site,quangcaoyenbai.com,phimchill.life,thuvienhd.biz,tv.tvhayhd.org,thefaplive.com,mv.dailyphimz.com,mv.phimbathu.one,sexhihi.bar,anime47.live,teamlanhlung8.shop,phimhdctv.net,forum.timfshare.com##+js(aopr, document.cookie)
 d1509 1
 a1509 1
-vlxx.bz,dualeotruyenpm.com,yurineko.my,heohay.net,cliphot69.shop,doctruyen3qui12.pro,ihentai.cloud,hentaivc.net,buomtv.live,truyenvn.shop,javtiful.com,quatvn.love,vn67phimsexhay.com,phim18hdxx.com,vn5.sexviet88.xyz,sexmup3x.net,demo.14412882.com,cliphot69.pics,hhtq5.vip,sexdiary.club,vn2.xvideos69.xxx,umetruyenhay.com,damconuong.run,truyenqqgo.com,clipsexsub3x.net,sayhentaii.art##+js(acs, WebAssembly, instantiate)
+vlxx.bz,dualeotruyenpm.com,yurineko.my,heohay.net,cliphot69.shop,doctruyen3qui12.pro,ihentai.cloud,hentaivc.net,buomtv.live,truyenvn.shop,javtiful.com,quatvn.love,vn67phimsexhay.com,phim18hdxx.com,vn5.sexviet88.xyz,xxmupsex.com,demo.14412882.com,cliphot69.pics,hhtq5.vip,sexdiary.club,vn2.xvideos69.xxx,umetruyenhay.com,damconuong.run,truyenqqgo.com,clipsexsub3x.net,sayhentaii.art##+js(acs, WebAssembly, instantiate)
 d1530 1
+a1530 1
+xxmupsex.com##+js(aopr, Cookies)

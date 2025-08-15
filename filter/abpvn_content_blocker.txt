@@ -1,9 +1,9 @@
 [Adblock Plus 2.0]
-! Version: 20250815150807558
+! Version: 20250815230620874
 ! id: D4028CDD-3D39-4624-ACC7-8140F4EC3888
 ! Title: ABPVN List
-! Last modified: 15 Aug 2025 15:08:07 UTC+7
-! Diff-Path: patches/20250815150807558.patch#abpvn_content_blocker
+! Last modified: 15 Aug 2025 23:06:20 UTC+7
+! Diff-Path: patches/20250815230620874.patch#abpvn_content_blocker
 ! Diff-Expires: 60 minutes
 ! Expires: 1 days (update frequency)
 !
@@ -120,7 +120,6 @@ $popup,domain=truyenfull.vision
 ||github.com^$image,domain=cungtv.xyz
 ||goal.90phut24.xyz^*.gif$image
 ||googleusercontent.com^$domain=hhtqvietsub.cc
-||hdcphim.us^*.gif$image
 ||hhkungfu.club/88vn$image
 ||hhkungfu.club/baner-6686$image
 ||hhtq.click/ads/$script,~third-party
@@ -182,6 +181,7 @@ $popup,domain=truyenfull.vision
 ||notepad.vn/media/images/like68.jpg
 ||phim.vkool8.net/images/ads/$image
 ||phim.vkool8.net/js/pov.js$script,~third-party
+||phimhdctv.net^*.gif$image
 ||phimmoichill.bot/newchill/$script,~third-party
 ||phimmoichillz.my/pop$image
 ||phimmoichillz.my^*.gif$image
@@ -255,7 +255,7 @@ $popup,domain=truyenfull.vision
 ||vov.vn/ads/show-ads
 ||vsc69.com/wp-content/themes/vuasanco/assets/scripts/scripts.js
 ||wibu47.com^*.gif$image
-||www.bongdalu628.com^*.gif
+||www.bongdalu800.com^*.gif
 ||www.clbgamesvn.com/diendan/popup/popup.js$script,~third-party
 ||www.iosviet.com^$csp=script-src 'self' 'unsafe-inline' http: https:
 ||www.thuocbietduoc.com.vn/adv/
@@ -990,7 +990,7 @@ saostar.vn##.pc-bill
 soha.vn,gamek.vn##[id^="admzone"]
 sport5.vn,afamily.vn##.afw-topbanner
 subnhanh1.org##.t_logo
-subnhanh1.org,hayhaytv.site,motphimtv.bz,motchillvl.com,hdcphim.us##.mp-adz
+subnhanh1.org,hayhaytv.site,motphimtv.bz,motchillvl.com,phimhdctv.net##.mp-adz
 suckhoedoisong.vn##.top-ads
 survey-smiles.com##.toogle-ads
 takertv.co##iframe[src*="ads"]
@@ -1272,7 +1272,7 @@ vozer.vn#@#[class^="div-gpt-ad"]
 ||nrs6ffl9w.com^
 ||phym18.lol/static/js/adlia.js
 ||qcvip.xyz^$script,domain=phevkl.gg|viet69.free
-||quoracdn.net^$image,domain=vlxx.bz|heohay.net|phevkl.gg|viet69.free|phim18vip.vip|pheclip.pro|sexmup3x.net|sexhihi.bar|sieudam.vet|fulllivehot.live
+||quoracdn.net^$image,domain=vlxx.bz|heohay.net|phevkl.gg|viet69.free|phim18vip.vip|pheclip.pro|xxmupsex.com|sexhihi.bar|sieudam.vet|fulllivehot.live
 ||rphang.online^*.gif
 ||sayhentaii.art/assets/js/ads.js
 ||sayhentaii.art/storage/images/banner/$image
@@ -1281,7 +1281,6 @@ vozer.vn#@#[class^="div-gpt-ad"]
 ||sexhd88.online^*.gif$image
 ||sexlive.biz/_next/image?url=%2Fimages%2F*.avif&w=*&q=75$image
 ||sexlive.biz/mb66.mp4$media,~third-party
-||sexmup3x.net^*.gif$image,domain=sexmup3x.net
 ||sieukhung.fan^*.gif$image
 ||static.stream68.cloud/candy/image/*.gif$image,domain=thempho2.com
 ||static.stream68.cloud/candy/image/1280X274$image,domain=thempho2.com
@@ -1298,6 +1297,7 @@ vozer.vn#@#[class^="div-gpt-ad"]
 ||xamer.xyz/styles/file/$image
 ||xfast.sbs/media/$image,domain=fullcliphot.net|fulllivehot.live
 ||xnhau.blog^$media,domain=xnhau.sh
+||xxmupsex.com^*.gif$image,domain=xxmupsex.com
 ||ybs2ffs7v.com^
 ||zr.mezcalumlaut.com^
 !---------- ABPVN Adult Element Hide ---------------
@@ -1324,7 +1324,7 @@ genzsex.blog##.adx-ad-item
 haysex.site###mp-preload-popup-overlay
 haysex.site##.banner-play
 hentaivn.uk##.mp-adz
-heohay.net,sexmup3x.net,sexhihi.bar##.xx-ads
+heohay.net,xxmupsex.com,sexhihi.bar##.xx-ads
 javhub.me###invideo_wrapper
 javtiful.com###latest-censored-videos>.row>div.pb-3.col:nth-of-type(1)
 javtiful.com##.nopop.fah-btn
@@ -1349,7 +1349,7 @@ phim18vip.vip,pheclip.pro###pc-preload-modal
 phim18vip.vip,pheclip.pro##.in.fade.modal-backdrop
 phim18vip.vip,pheclip.pro##.quang-cao
 phim18vip.vip,sieudam.vet###popup
-phimsex61.pro,phimsex12x.pro##.quangcaomobile
+phimsex62.pro,phimsex12x.pro##.quangcaomobile
 phimsexvl69.net,quat69.pro,trangsexdam.net,vlxx.rip###f186fb23a33995d91ce3c2212189178c8
 phimxxx.ai##.adx1
 phym18.lol###a-player
@@ -1376,7 +1376,6 @@ sexhaynung.xyz###tut4ktream_idAdLink
 sexhd88.online##.classvi
 sexhd88.online##.elementor-section-height-default.elementor-section-boxed.elementor-element-e601265.elementor-element.elementor-top-section.elementor-section
 sexlive.biz##.popup
-sexmup3x.net##.catfix
 sextop.asia##div[style^="position:fixed;inset:0px;z-index:100000;"]
 sextop.asia,hls.playerfb.xyz###video_player ~ div[id]
 sieukhung.fan##.adspopupgiua
@@ -1414,7 +1413,7 @@ vlxx.bz##.banner-preload
 vlxx.bz##a[rel*="nofollow"]
 vlxx.bz##div.banner-catfish-bottom
 vlxx.bz,clipsexsub3x.net,sexhihi.bar##.catfish-bottom
-vlxx.bz,sexmup3x.net,sexhihi.bar##.catfish-top
+vlxx.bz,xxmupsex.com,sexhihi.bar##.catfish-top
 vlxx.rip,trangsexdam.net##.hd-tube-desktop
 vlxx.rip,trangsexdam.net##.hd-tube-mobile
 vlxxhot.vip,vailonxx.vip###ab_ctl
@@ -1440,6 +1439,7 @@ xnhau.sh##.sponsor
 xnhau.sh##.spot
 xnxx.com###ad-header-mobile
 xnxx.com###content-ad-top-zone
+xxmupsex.com##.catfix
 ! --- Hot fix rule for content blocker (ABP for Samsung internet, Adguard Content Blocker)
 ||kz2oq0xm6ie7gn5dkswlpv6mfgci8yoe3xlqp12gjotp5fdjxs5ckztb8rzn.codes^
 ||op.hectordehort.com^
