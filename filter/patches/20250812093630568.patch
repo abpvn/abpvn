@@ -1,11 +1,11 @@
-diff name:abpvn lines:172 checksum:17f2988a28
+diff name:abpvn lines:185 checksum:24ebfdcacd
 d2 1
 a2 1
-! Version: 20250817122214470
+! Version: 20250817162708191
 d5 2
 a6 2
-! Last modified: 17 Aug 2025 12:22:14 UTC+7
-! Diff-Path: patches/20250817122214470.patch#abpvn
+! Last modified: 17 Aug 2025 16:27:08 UTC+7
+! Diff-Path: patches/20250817162708191.patch#abpvn
 a32 1
 /^https:\/\/[a-z]{8,12}\.com(?:\/[a-z]{2,10}){1,3}$/$script,third-party
 d48 1
@@ -169,16 +169,29 @@ d1371 1
 d1409 1
 a1409 1
 vlxx.bz,xxmupsex.com,sexhihi.bar##.catfish-top
-a1434 1
+a1434 14
 xxmupsex.com##.catfix
-diff name:abpvn_adguard lines:196 checksum:18d2c97850
+!----------Mobile filter-------------
+||adash*.m.taobao.com^
+||adash.man.aliyuncs.com^
+||applvn.com^$important
+||supersonicads.com^
+||api.vungle.com^
+||inapps.appsflyer.com^
+||inv-nets-sg.admixer.net^
+||ads.outfit7.com^
+||pangle.io^
+||robin-flow.com^
+||appsflyer.com^
+||umeng.com^
+diff name:abpvn_adguard lines:209 checksum:87eb6d6602
 d2 1
 a2 1
-! Version: 20250817122214470
+! Version: 20250817162708191
 d5 2
 a6 2
-! Last modified: 17 Aug 2025 12:22:14 UTC+7
-! Diff-Path: patches/20250817122214470.patch#abpvn_adguard
+! Last modified: 17 Aug 2025 16:27:08 UTC+7
+! Diff-Path: patches/20250817162708191.patch#abpvn_adguard
 a30 1
 /^https:\/\/[a-z]{8,12}\.com(?:\/[a-z]{2,10}){1,3}$/$script,third-party
 d46 1
@@ -342,8 +355,21 @@ d1364 1
 d1402 1
 a1402 1
 vlxx.bz,xxmupsex.com,sexhihi.bar##.catfish-top
-a1427 1
+a1427 14
 xxmupsex.com##.catfix
+!----------Mobile filter-------------
+||adash*.m.taobao.com^
+||adash.man.aliyuncs.com^
+||applvn.com^$important
+||supersonicads.com^
+||api.vungle.com^
+||inapps.appsflyer.com^
+||inv-nets-sg.admixer.net^
+||ads.outfit7.com^
+||pangle.io^
+||robin-flow.com^
+||appsflyer.com^
+||umeng.com^
 a1450 1
 hh2d.tv#%#//scriptlet("abort-current-inline-script", "$", "adblock")
 d1456 1
@@ -368,14 +394,14 @@ d1526 1
 a1526 2
 xoilaciia.cc#%#//scriptlet("abort-on-property-read", "adsRedirectPopups")
 xxmupsex.com#%#//scriptlet("abort-on-property-read", "Cookies")
-diff name:abpvn_content_blocker lines:172 checksum:ccdf1a8746
+diff name:abpvn_content_blocker lines:185 checksum:c439a37dce
 d2 1
 a2 1
-! Version: 20250817122214470
+! Version: 20250817162708191
 d5 2
 a6 2
-! Last modified: 17 Aug 2025 12:22:14 UTC+7
-! Diff-Path: patches/20250817122214470.patch#abpvn_content_blocker
+! Last modified: 17 Aug 2025 16:27:08 UTC+7
+! Diff-Path: patches/20250817162708191.patch#abpvn_content_blocker
 a32 1
 /^https:\/\/[a-z]{8,12}\.com(?:\/[a-z]{2,10}){1,3}$/$script,third-party
 d48 1
@@ -539,16 +565,29 @@ d1371 1
 d1409 1
 a1409 1
 vlxx.bz,xxmupsex.com,sexhihi.bar##.catfish-top
-a1434 1
+a1434 14
 xxmupsex.com##.catfix
-diff name:abpvn_noelemhide lines:73 checksum:ef19f09ddb
+!----------Mobile filter-------------
+||adash*.m.taobao.com^
+||adash.man.aliyuncs.com^
+||applvn.com^$important
+||supersonicads.com^
+||api.vungle.com^
+||inapps.appsflyer.com^
+||inv-nets-sg.admixer.net^
+||ads.outfit7.com^
+||pangle.io^
+||robin-flow.com^
+||appsflyer.com^
+||umeng.com^
+diff name:abpvn_noelemhide lines:87 checksum:1654edca24
 d2 1
 a2 1
-! Version: 20250817122214470
+! Version: 20250817162708191
 d5 2
 a6 2
-! Last modified: 17 Aug 2025 12:22:14 UTC+7
-! Diff-Path: patches/20250817122214470.patch#abpvn_noelemhide
+! Last modified: 17 Aug 2025 16:27:08 UTC+7
+! Diff-Path: patches/20250817162708191.patch#abpvn_noelemhide
 a32 1
 /^https:\/\/[a-z]{8,12}\.com(?:\/[a-z]{2,10}){1,3}$/$script,third-party
 d48 1
@@ -615,14 +654,28 @@ a706 1
 ||vn68phimsexhay.com^*.gif$image
 a710 1
 ||xxmupsex.com^*.gif$image,domain=xxmupsex.com
-diff name:abpvn_ublock lines:196 checksum:730d323109
+a712 13
+!----------Mobile filter-------------
+||adash*.m.taobao.com^
+||adash.man.aliyuncs.com^
+||applvn.com^$important
+||supersonicads.com^
+||api.vungle.com^
+||inapps.appsflyer.com^
+||inv-nets-sg.admixer.net^
+||ads.outfit7.com^
+||pangle.io^
+||robin-flow.com^
+||appsflyer.com^
+||umeng.com^
+diff name:abpvn_ublock lines:209 checksum:b21006be38
 d2 1
 a2 1
-! Version: 20250817122214470
+! Version: 20250817162708191
 d5 2
 a6 2
-! Last modified: 17 Aug 2025 12:22:14 UTC+7
-! Diff-Path: patches/20250817122214470.patch#abpvn_ublock
+! Last modified: 17 Aug 2025 16:27:08 UTC+7
+! Diff-Path: patches/20250817162708191.patch#abpvn_ublock
 a30 1
 /^https:\/\/[a-z]{8,12}\.com(?:\/[a-z]{2,10}){1,3}$/$script,third-party
 d46 1
@@ -786,8 +839,21 @@ d1364 1
 d1402 1
 a1402 1
 vlxx.bz,xxmupsex.com,sexhihi.bar##.catfish-top
-a1427 1
+a1427 14
 xxmupsex.com##.catfix
+!----------Mobile filter-------------
+||adash*.m.taobao.com^
+||adash.man.aliyuncs.com^
+||applvn.com^$important
+||supersonicads.com^
+||api.vungle.com^
+||inapps.appsflyer.com^
+||inv-nets-sg.admixer.net^
+||ads.outfit7.com^
+||pangle.io^
+||robin-flow.com^
+||appsflyer.com^
+||umeng.com^
 a1450 1
 hh2d.tv##+js(acs, $, adblock)
 d1456 1
