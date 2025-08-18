@@ -1,9 +1,9 @@
 [Adblock Plus 2.0]
-! Version: 20250818180521928
+! Version: 20250818192139364
 ! id: D4028CDD-3D39-4624-ACC7-8140F4EC3888
 ! Title: ABPVN List
-! Last modified: 18 Aug 2025 18:05:21 UTC+7
-! Diff-Path: patches/20250818180521928.patch#abpvn_ublock
+! Last modified: 18 Aug 2025 19:21:39 UTC+7
+! Diff-Path: patches/20250818192139364.patch#abpvn_ublock
 ! Diff-Expires: 60 minutes
 ! Expires: 1 days (update frequency)
 !
@@ -91,6 +91,7 @@
 ||bp.blogspot.com/*banner$image,domain=~aowvn.org|~www.umu.pro.vn
 ||cdn-data.gtvplus.vn/banners/$image,domain=gametv.vn
 ||cdn-live.taoxanh.biz^*.gif$image,domain=bunchatv3.com
+||cdn.giavang.org/images/ads/$image,domain=giavang.org
 ||cdn.jsdelivr.net/gh/ngylduy/blog@b844bfe/js/AdsenseAds.min.js$script,domain=vanphatelectric.com
 ||cdn.lfastcdn.com^*.gif$image,domain=bongdainfox.tv|visitfrenchwine.com|rakhoixv.cc|cakhiazzrr.cc|mitomzc.cc|vebotz.cc
 ||cdn.monkeydarchive.com/images/banner/$image,domain=monkeyd.net.vn
@@ -254,6 +255,7 @@
 ||www.thuocbietduoc.com.vn/aqc/$image
 ||xahoingaynay.com.vn/upload/$image
 ||xc.1357668.com^*.gif$domain=live.7mvn5.com
+||xem14.net/taptap.mp4$rewrite=abp-resource:blank-mp3,domain=xem14.net
 ||xem15.net/*.mp4$domain=xem15.net,rewrite=abp-resource:blank-mp3
 ||xemphimviet.site/client_assets/js/dataview/adsview.js$script,~third-party
 ||xemphimviet.site/client_assets/js/minijumb.js$script,~third-party
@@ -524,6 +526,8 @@ ghienphim.social##.parent.special
 ghienphim.social##.partner-me
 giadinhonline.vn,congluan.vn##.exp_qc_share
 giadinhonline.vn,dubaotiente.pro,taichinhdoanhnghiep.net.vn##.adv
+giavang.org##.sponsor-img
+giavang.org##.tradingview-widget-copyright
 goal.90phut24.xyz##.btn-bet
 goal.90phut24.xyz##.group-link:has(a[href*="&utm_"])
 goal.90phut24.xyz##.topnhacai
