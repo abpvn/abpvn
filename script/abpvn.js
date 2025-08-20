@@ -15,9 +15,11 @@
 // @grant       GM_registerMenuCommand
 // @include     http://*
 // @include     https://*
-// @version     2.3.31
-// @change-log  Remove redirect remove config of cakhia-tv.onl
+// @version     2.3.32
+// @change-log  Update mediafire.com auto download
 // @run-at      document-end
+// @downloadURL https://update.greasyfork.org/scripts/9099/ABPVN%20AdsBlock.user.js
+// @updateURL https://update.greasyfork.org/scripts/9099/ABPVN%20AdsBlock.meta.js
 // ==/UserScript==
 /* String Prototype */
 String.prototype.startWith = function (str) {
@@ -241,13 +243,28 @@ var getLink = {
         document.body.innerHTML = '<style>html,body{background: #fff !important;}h1{color: #00dc58;}a{color: #015199}a h1{color: #015199;}</style><center><h1>ABPVN ' + label + ' download đã hoạt động</h1><a href=\'https://abpvn.com/donate\'><h1>Ủng hộ ABPVN</h1></a><br/>Không tự tải xuống? <a href=\'' + link + '\' title=\'Download\'>Click vào đây</a></center>';
         location.href = link;
     },
-    mediafire_com: function () {
-        if (this.url.startWith('http://www.mediafire.com/file/') || this.url.startWith('https://www.mediafire.com/file/')) {
-            var a_tag = document.querySelector('.download_link a.input');
-            var link = a_tag.getAttribute('href');
-            if (link.startWith('http')) {
-                this.showBodyLinkDownloadAndRedirect('MediaFire', link);
-            }
+    mediafire_com: function (retryTime) {
+        if (
+          this.url.startWith("http://www.mediafire.com/file/") ||
+          this.url.startWith("https://www.mediafire.com/file/")
+        ) {
+          if (!retryTime) {
+            retryTime = 0;
+          }
+          if (retryTime > 10) {
+            return;
+          }
+          var a_tag = document.querySelector(".download_link a.input");
+          if (!a_tag) {
+            return setTimeout(() => {
+              this.mediafire_com(retryTime++);
+            }, 300);
+          }
+          var base64Link = a_tag.getAttribute("data-scrambled-url");
+          var link = atob(base64Link);
+          if (link.startWith("http")) {
+            this.showBodyLinkDownloadAndRedirect("MediaFire", link);
+          }
         }
     },
     init: function () {
