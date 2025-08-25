@@ -1,9 +1,9 @@
 [Adblock Plus 2.0]
-! Version: 20250825180525212
+! Version: 20250825204311747
 ! id: D4028CDD-3D39-4624-ACC7-8140F4EC3888
 ! Title: ABPVN List
-! Last modified: 25 Aug 2025 18:05:25 UTC+7
-! Diff-Path: patches/20250825180525212.patch#abpvn_ublock
+! Last modified: 25 Aug 2025 20:43:11 UTC+7
+! Diff-Path: patches/20250825204311747.patch#abpvn_ublock
 ! Diff-Expires: 60 minutes
 ! Expires: 1 days (update frequency)
 !
@@ -1015,10 +1015,11 @@ vozer.top#@#[class^="div-gpt-ad"]
 ||mangadm.cc$csp=script-src 'self' 'unsafe-inline' http
 ||mneydirec.com^
 ||ngaytho.me^*.gif
+||nmshsa.com^*.gif$image
 ||phimsexhay19vn.com^*.gif$image
 ||phym18.lol/static/js/adlia.js
 ||qcvip.xyz^$script,domain=phevkl.fit|viet69.press
-||quoracdn.net^$image,domain=vlxx.bz|heohay.net|phevkl.fit|viet69.press|phim18vip.vip|pheclip.pro|vlsexdam.net|sexhihiz.mx|sieudam.vet|fulllivehot.live
+||quoracdn.net^$image,domain=vlxx.bz|heohay.net|phevkl.fit|viet69.press|phim18vip.vip|pheclip.pro|vlsexdam.net|sexhihiz.mx|sieudam.vet|fulllivehot.live|haysexvl.com
 ||rphang.online^*.gif
 ||sayhentaii.art/assets/js/ads.js
 ||sayhentaii.art/storage/images/banner/$image
@@ -1066,6 +1067,9 @@ gamer18.net##div[id^="divFLR"]
 genzsex.blog##.adx-ad-item
 gockhuat.net###ad_global_below_navbar
 haysex.mom##.banner-play
+haysexvl.com###vl-header-adx
+haysexvl.com##.castfish-wrapper
+haysexvl.com##.popup
 hentaivn.uk##.mp-adz
 heohay.net,vlsexdam.net,sexhihiz.mx##.xx-ads
 javtiful.com###latest-censored-videos>.row>div.pb-3.col:nth-of-type(1)
@@ -1182,6 +1186,7 @@ gocmod.com##+js(acs, jQuery, popup)
 goctruyentranhvui17.com,nettruyenar.com,sextop1.show,hhvsub1.com,vn5.sexviet88.xyz##+js(acs, WebAssembly, globalThis)
 gotphim.com##+js(acs, navigator, devtoolsDetector)
 hayhaytv.site,subnhanh1.org##+js(set, maxAds, 0)
+haysexvl.com##+js(acs, document.addEventListener, adx)
 hh2d.tv##+js(acs, $, adblock)
 hh3dhay.life##+js(acs, Symbol, break;case $)
 hh3dhay.life,tram3d.com##+js(acs, document.createElement, ;break;case)
@@ -1205,6 +1210,7 @@ lxmanga.my##+js(acs, $, PopUnder)
 motchillk.tv##+js(aopr, sessionStorage)
 motchilltvphim.com##+js(acs, jQuery, click_time)
 nettruyenvia.com##+js(acs, JSON, fromCharCode)
+nmshsa.com##+js(acs, window.addEventListener, Ads)
 p.thoctv.com##+js(acs, document.createElement, script)
 phimchautinhtri.net##.popmake-overlay
 phimmoi.sale##+js(acs, addEvent, popu)
