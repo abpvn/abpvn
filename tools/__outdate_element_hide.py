@@ -4,8 +4,6 @@ from pprint import pprint
 import threading
 from domain_list import DomainList
 from selenium import webdriver 
-from selenium.webdriver.chrome.service import Service as ChromeService
-from webdriver_manager.chrome import ChromeDriverManager
 from selenium.webdriver.common.by import By
 import re
 from const import Const
@@ -40,7 +38,7 @@ class OutdateElementHideCheck(threading.Thread):
         options.add_argument("–disable-gpu")
         options.add_argument("--headless")
         options.add_argument("--log-level=3")
-        with webdriver.Chrome(service=ChromeService(ChromeDriverManager().install()), options=options) as browser:
+        with webdriver.Chrome(options=options) as browser:
             try:
                 browser.set_page_load_timeout(120)
                 browser.implicitly_wait(10)
