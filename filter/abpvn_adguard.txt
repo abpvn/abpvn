@@ -1,9 +1,9 @@
 [Adblock Plus 2.0]
-! Version: 20250828120551854
+! Version: 20250828180459511
 ! id: D4028CDD-3D39-4624-ACC7-8140F4EC3888
 ! Title: ABPVN List
-! Last modified: 28 Aug 2025 12:05:51 UTC+7
-! Diff-Path: patches/20250828120551854.patch#abpvn_adguard
+! Last modified: 28 Aug 2025 18:04:59 UTC+7
+! Diff-Path: patches/20250828180459511.patch#abpvn_adguard
 ! Diff-Expires: 60 minutes
 ! Expires: 1 days (update frequency)
 !
@@ -227,7 +227,6 @@
 ||tizihay.com^*.gif$image,domain=phimmois.click|phimchill.life
 ||toithuthuat.com^*.gif
 ||traderviet.tv/data/siropu/am/user/$image
-||tram3d.vip^*.gif$image,~third-party
 ||tructiep.vn/website/adv/
 ||truyenconect.com/uploads/*-truyenconect_com-*.
 ||truyenwikidich.net/static/js/adx/$script
@@ -252,7 +251,6 @@
 ||xemphimviet.page/client_assets/js/minijumb.js$script,~third-party
 ||xemphimviet.page^*.gif$image
 ||xmedia.antt.vn/upload/*.gif$image,domain=antt.vn
-||zunia.vn/ads.html$subdocument,domain=tracnghiem.net
 ! ---------- Ad domain ----------
 ||12ezo5v60.com^
 ||6v41p4bsq.com^
@@ -484,6 +482,7 @@
 ||nomorepecans.com^
 ||ny.foonerne.com^
 ||o6z2a2kq8fatj3ch0x5ow6v82ha2gja8x8c7w6pc5gx2ls0zia7bx1n28b5d.com^
+||ob.joyrodetoment.com^
 ||offclaydolon.com^
 ||offerimage.com^
 ||oghqvffmnt.com^
@@ -1047,8 +1046,6 @@ toithuthuat.com##.box
 toithuthuat.com##.pum
 topthuthuat.com,canhrau.com##.widget.widget_text
 toquoc.vn,baoxaydung.vn,tienphong.vn,taichinhdoanhnghiep.net.vn,thichxemphim1.site,xemphimviet.page,ghienphim.social##.banner
-tracnghiem.net##.sbAdv
-tram3d.vip##div.text-center:nth-of-type(2)
 truyenaudiocv.org##.js-editors-choice-slider.editors-choice-slider>.adsbygoogle
 truyenfull.vision###header-ads-full
 truyenfull.vision##.ads-responsive
@@ -1065,11 +1062,11 @@ truyenqqgo.com,nettruyenvia.com,truyentranh3qq.com##.ads-banner
 truyensieuhay.com##.footer-info
 truyensieuhay.com,hhtrungquoc6.com,hhtq13.vip,animeweb.vip,hhtq3d.net###topbanner
 tuoitre.vn###LeaderBoardTop
-tuoitre.vn###admbackground
 tuoitre.vn###adsMainFooter
 tuoitre.vn##.box-qad
 tuoitre.vn##.content-amuasam
 tuoitre.vn##.section__r-vietlot
+tuoitre.vn,vnexpress.net###admbackground
 tv.tvhayhd.org##.navbar-ex8-collapse
 tvhayr.org##[src^="https://ads.starzd.com/"]
 tvhayr.org,motchill21.com##.catfish-bottom
@@ -1115,7 +1112,6 @@ vndoc.com,download.com.vn,quantrimang.com,download.vn,gamevui.vn,khoahoc.tv##.ad
 vnesports.net##.banner_site
 vnesports.net##.sidebar_box_gray
 vnesports.net,mythethao.net##.banner_top
-vnexpress.net###admbackground
 vnexpress.net###banner_top
 vnexpress.net###rich-media-banner-ads
 vnexpress.net###supper_masthead
@@ -1315,8 +1311,8 @@ fullcliphot.net,fulllivehot.live##.mini-player
 gamer18.net##.fixed-banner-bottom
 gamer18.net##div[id^="divFLR"]
 genzsex.blog##.adx-ad-item
-haysex.mom###mp-preload-popup-overlay
-haysex.mom##.banner-play
+haysex.sbs###mp-preload-popup-overlay
+haysex.sbs##.banner-play
 haysexvl.com###vl-header-adx
 haysexvl.com##.castfish-wrapper
 haysexvl.com,sexlive.biz##.popup
@@ -1518,8 +1514,9 @@ tailieumoi.vn#%#//scriptlet("set-constant", "linkAff", "null")
 teamlanhlungday.store#%#//scriptlet("abort-current-inline-script", "$", "open")
 thempho5.com##div.ReactModalPortal
 thichxemphim1.site#%#//scriptlet("abort-on-property-read", "affUrls")
+tram3d.vip#%#//scriptlet("abort-current-inline-script", "setTimeout", "appendChild")
 truyen247.pro#%#//scriptlet("abort-current-inline-script", "eval")
-truyenqqtto.com,haysex.mom#%#//scriptlet("abort-current-inline-script", "Promise", "break;case")
+truyenqqtto.com,haysex.sbs#%#//scriptlet("abort-current-inline-script", "Promise", "break;case")
 truyensextv.com,yanhh3d.vip#%#//scriptlet("abort-current-inline-script", "document.addEventListener", "opup")
 truyensieuhay.com,hayhaytv.site,quangcaoyenbai.com,phimchill.life,thuvienhd.biz,tv.tvhayhd.org,thefaplive.com,mv.dailyphimz.com,mv.phimbathu.one,sexhihiz.mx,anime47.live,teamlanhlung8.shop,phimhdctv.net,forum.timfshare.com#%#//scriptlet("abort-on-property-read", "document.cookie")
 tusachmanga99.com#%#//scriptlet("abort-current-inline-script", "$", "window.open")
