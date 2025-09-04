@@ -61,7 +61,7 @@ class OutdateNetworkRuleCheck(threading.Thread):
                 self.error_domains.append(self.__domain)
                 self.lock.release()
             finally:
-                box_print(f"Finish visit {self.__domain} with Chrome")
+                box_print(f"Finish visit {self.__domain} with Firefox")
                 if current_outdate_nr is not None:
                     pprint(current_outdate_nr)
             browser.quit()
