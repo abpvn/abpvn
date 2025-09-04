@@ -39,13 +39,13 @@ class OutdateNetworkRuleCheck(threading.Thread):
         if self.__network_rule is None:
             return
         current_outdate_nr = self.domain_with_outdate_network_rule.get(self.__domain)
-        box_print(f"Start visit {self.__domain} with Chrome")
-        options = webdriver.ChromeOptions()
+        box_print(f"Start visit {self.__domain} with Firefox")
+        options = webdriver.FirefoxOptions()
         options.add_argument("--start-maximized")
         options.add_argument("–disable-gpu")
         options.add_argument("--headless")
         options.add_argument("--log-level=3")
-        with webdriver.Chrome(options=options) as browser:
+        with webdriver.Firefox(options=options) as browser:
             try:
                 browser.set_page_load_timeout(120)
                 browser.implicitly_wait(10)
