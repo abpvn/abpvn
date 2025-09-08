@@ -17,7 +17,7 @@ class Const():
         'net.vn', 'edu.vn', 'googlesyndication.com', 'gov.vn', 'nct.vn', 'org.vn',
         'phukienthoitranggiare.com', 'cloudfront.net',
         'web1s.asia', 'vinaurl.net', 'i.postimg.cc', 'mannhan97.xyz', 'api.anime3s.com',
-        'iili.io', 'cdn.jsdelivr.net', 's.shopee.vn', 'i.imghippo.com'
+        'iili.io', 'cdn.jsdelivr.net', 's.shopee.vn', 'i.imghippo.com', 'quatvn2.net'
     ]
     REDIRECT_REJECT_TARGET_DOMAIN = [
         'www.google.com', 'www.facebook.com', 'www.advertising.yahooinc.com', 'marketingplatform.google.com',
