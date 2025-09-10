@@ -1,9 +1,9 @@
 [Adblock Plus 2.0]
-! Version: 20250910120546570
+! Version: 20250910162540648
 ! id: D4028CDD-3D39-4624-ACC7-8140F4EC3888
 ! Title: ABPVN List
-! Last modified: 10 Sep 2025 12:05:46 UTC+7
-! Diff-Path: patches/20250910120546570.patch#abpvn
+! Last modified: 10 Sep 2025 16:25:40 UTC+7
+! Diff-Path: patches/20250910162540648.patch#abpvn
 ! Diff-Expires: 60 minutes
 ! Expires: 1 days (update frequency)
 !
@@ -46,7 +46,7 @@ $popup,domain=truyenfull.vision
 /core/*$script,domain=gamek.vn|genk.vn|kenh14.vn|cafef.vn|thanhnien.vn
 /disable-devtool.min.js$script
 /giadinhonline.vn/files/qc/*
-/i.imgur.com/*.gif$domain=keonhacai55.bike|motchill22.com|theicec.com|veboth.cc|mylapka.com|listnhacai88.com|visitfrenchwine.com|mitomzc.cc|rakhoixv.cc|plcdn.xyz
+/i.imgur.com/*.gif$domain=keonhacai55.bike|www.motchill23.com|theicec.com|veboth.cc|mylapka.com|listnhacai88.com|visitfrenchwine.com|mitomzc.cc|rakhoixv.cc|plcdn.xyz
 /js/ads.js$script,~third-party,domain=~vipurl.in|~link.codevn.net
 /lv/esnk/*$script
 /newchill/*gif$image
@@ -162,11 +162,10 @@ $popup,domain=truyenfull.vision
 ||mediastation.live^*.gif$image,domain=mn.mediastation.live|home1.mannhan22.pro|mannhan97.xyz
 ||mocfun.net/uploads/banners/
 ||motchill10.com/public/upload/ads/ads.js$script,~third-party
-||motchill22.com/3s.m3u8$rewrite=abp-resource:blank-mp3,domain=motchill22.com
-||motchillfm.to/wp-content/plugins/AdsManager/$script,~third-party
-||motchillfm.to^*.gif$image
 ||motchillj.uk/banner$image
 ||motchillk.biz^*.gif$image
+||motchillr.fm/wp-content/plugins/AdsManager/$script,~third-party
+||motchillr.fm^*.gif$image
 ||motphimc.ws^*.gif$~third-party
 ||motphimtv.bz^*.gif$image
 ||mplmncb.com/banners-web/$script,image,domain=truyenqqgo.com
@@ -197,7 +196,7 @@ $popup,domain=truyenfull.vision
 ||qthang.net/js/blocker$script,~third-party
 ||quaivatdienanh.com/*banner$image
 ||quangcaosanpham.com/images/$third-party
-||quoracdn.net^$image,domain=motchill22.com
+||quoracdn.net^$image,domain=www.motchill23.com
 ||run.vn/widget$script,~third-party
 ||s.lazada.vn^$popup,domain=chillphimmoizz.org
 ||s2.truyentot.com^*.gif$image,domain=hhtq13.vip|hhtq3d.net|hhtq5.vip|hhvsub1.com|hhvietsub.com
@@ -250,6 +249,7 @@ $popup,domain=truyenfull.vision
 ||www.bongdalu800.com^*.gif
 ||www.clbgamesvn.com/diendan/popup/popup.js$script,~third-party
 ||www.iosviet.com^$csp=script-src 'self' 'unsafe-inline' http: https:
+||www.motchill23.com/3s.m3u8$rewrite=abp-resource:blank-mp3,domain=www.motchill23.com
 ||www.thuocbietduoc.com.vn/aqc/$image
 ||xahoingaynay.com.vn/upload/$image
 ||xc.1357668.com^*.gif$domain=live.7mvn5.com
@@ -833,7 +833,7 @@ keoso.me##.widget-sidebar-block
 ketqua04.net##.baloon
 ketqua04.net##.col-sm-10.kqcenter
 ketqua04.net##.kqbackground.vien ~ a[target="_blank"]
-ketqua04.net,nghean24h.vn,xem.tructiepnba.me,doctruyenln.com,xemtivi4k.com,theicec.com,bongdainfox.tv,90phuttv.link,xx2.thapcam53.info,nn13.thapcam.asia,motchill22.com##a[rel="nofollow"]
+ketqua04.net,nghean24h.vn,xem.tructiepnba.me,doctruyenln.com,xemtivi4k.com,theicec.com,bongdainfox.tv,90phuttv.link,xx2.thapcam53.info,nn13.thapcam.asia,www.motchill23.com##a[rel="nofollow"]
 khiphach.net###qc-kpgame
 kienthuc.net.vn##.sponsor-zone
 kienthuc.net.vn,saostar.vn,bongda24h.vn,cungthi.online,appvn.com,antt.vn,xemphimviet.page,ghienphim.social,nghenhinvietnam.vn,vn-z.vn##.ads
@@ -894,17 +894,12 @@ mn.mediastation.live##.images-bnr-bellow-append-custom
 mn.mediastation.live##.images-top-pl
 monkeyd.net.vn###affLayer
 monkeyd.net.vn##.justify-content-center.d-flex.mx-3.mx-lg-4.mt-3>[href]
-motchill22.com##.BanerTop100
-motchill22.com##.adv-300-right
-motchill22.com##.banner-container
-motchill22.com##.banner-preload
-motchill22.com##.catfish-top
-motchillfm.to,motphimc.ws##.aam-banner-wrapper
-motchillfm.to,motphimc.ws##.cat-footer-wrapper
-motchillfm.to,motphimc.ws##.cat-header-wrapper
-motchillfm.to,motphimc.ws##.disable-ads-icon
-motchillfm.to,motphimc.ws##.popup-overlay
 motchillpm.net##.overlay-1
+motchillr.fm,motphimc.ws##.aam-banner-wrapper
+motchillr.fm,motphimc.ws##.cat-footer-wrapper
+motchillr.fm,motphimc.ws##.cat-header-wrapper
+motchillr.fm,motphimc.ws##.disable-ads-icon
+motchillr.fm,motphimc.ws##.popup-overlay
 motchilltvphim.com,phimmoissz.info,tvzinghd.co,subnhanhcx.net##.sda-catfish
 motchilltvphim.com,phimtho.net,subnhanhcx.net###popup_banner_beta
 motphimchill.live###catfish_ad_top
@@ -1080,7 +1075,7 @@ tuoitre.vn##.section__r-vietlot
 tuoitre.vn,vnexpress.net###admbackground
 tv.tvhayhd.org##.navbar-ex8-collapse
 tvhayr.org##[src^="https://ads.starzd.com/"]
-tvhayr.org,motchill22.com##.catfish-bottom
+tvhayr.org,www.motchill23.com##.catfish-bottom
 tvzinghd.co##.sda-preload-popup
 tvzinghd.co##.sda-preload-popup-overlay
 v4u.vn##.Flagrow-Ads-under-header
@@ -1150,6 +1145,11 @@ www.clbgamesvn.com##.bannerBox
 www.clbgamesvn.com##.footerBanner
 www.clbgamesvn.com##center>[href*="tlink.vn"]
 www.iosviet.com##[href^="https://shope.ee"]
+www.motchill23.com##.BanerTop100
+www.motchill23.com##.adv-300-right
+www.motchill23.com##.banner-container
+www.motchill23.com##.banner-preload
+www.motchill23.com##.catfish-top
 www.o-study.net###IMAGE635>.ladi-transition.ladi-image
 www.o-study.net###IMAGE639>.ladi-transition.ladi-image
 www.o-study.net###POPUP648
