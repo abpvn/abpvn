@@ -1,9 +1,9 @@
 [Adblock Plus 2.0]
-! Version: 20250910194138088
+! Version: 20250911093144271
 ! id: D4028CDD-3D39-4624-ACC7-8140F4EC3888
 ! Title: ABPVN List
-! Last modified: 10 Sep 2025 19:41:38 UTC+7
-! Diff-Path: patches/20250910194138088.patch#abpvn_ublock
+! Last modified: 11 Sep 2025 09:31:44 UTC+7
+! Diff-Path: patches/20250911093144271.patch#abpvn_ublock
 ! Diff-Expires: 60 minutes
 ! Expires: 1 days (update frequency)
 !
@@ -181,7 +181,6 @@
 ||phimmoichill.ceo/newchill/$script,~third-party
 ||phimmoichillz.my/pop$image
 ||phimmoichillz.my^*.gif$image
-||phimnhua.fefim.com^*.gif
 ||phimreview.org^*.gif$image
 ||photo2.tinhte.vn/data/attachment-files/*banner
 ||photo2.tinhte.vn^*.gif$domain=live4.vebo4.net|90phuttv.link
@@ -243,6 +242,7 @@
 ||www.clbgamesvn.com/diendan/popup/popup.js$script,~third-party
 ||www.iosviet.com^$csp=script-src 'self' 'unsafe-inline' http: https:
 ||www.motchill23.com/3s.m3u8$rewrite=abp-resource:blank-mp3,domain=www.motchill23.com
+||www.phimnhua.com^*.gif
 ||www.thuocbietduoc.com.vn/aqc/$image
 ||xahoingaynay.com.vn/upload/$image
 ||xc.1357668.com^*.gif$domain=live.7mvn5.com
@@ -664,10 +664,6 @@ phimhaytv.biz##.navbar-container + .container
 phimmoichill.ceo###pm_quangcao
 phimmoichillz.my###preload
 phimmoissz.info###adspm4u
-phimnhua.fefim.com###catfish-banner
-phimnhua.fefim.com###dl-banner-728x90
-phimnhua.fefim.com##.center-screen.backdrop
-phimnhua.fefim.com##.topless
 phimno1.pro##.block.ad
 phimvuihd.org##div[data-widget-id]
 phunumoi.net.vn,nhipcaudautu.vn##div[id^="ads_"]
@@ -876,6 +872,10 @@ www.o-study.net###IMAGE635>.ladi-transition.ladi-image
 www.o-study.net###IMAGE639>.ladi-transition.ladi-image
 www.o-study.net###POPUP648
 www.phim.world##.block.translate-x-\[-50\%\].left-2\/4.z-\[1\].bottom-\[-6px\].fixed.mx-auto.md\:container.md\:px-0.px-4.w-screen
+www.phimnhua.com###catfish-banner
+www.phimnhua.com###dl-banner-728x90
+www.phimnhua.com##.center-screen.backdrop
+www.phimnhua.com##.topless
 www.rophim.me##.is-catfish
 www.rophim.me##.modal-backdrop
 www.rophim.me##.sspp-area
