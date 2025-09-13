@@ -1,9 +1,9 @@
 [Adblock Plus 2.0]
-! Version: 20250912180450402
+! Version: 20250913163703626
 ! id: D4028CDD-3D39-4624-ACC7-8140F4EC3888
 ! Title: ABPVN List
-! Last modified: 12 Sep 2025 18:04:50 UTC+7
-! Diff-Path: patches/20250912180450402.patch#abpvn_content_blocker
+! Last modified: 13 Sep 2025 16:37:03 UTC+7
+! Diff-Path: patches/20250913163703626.patch#abpvn_content_blocker
 ! Diff-Expires: 60 minutes
 ! Expires: 1 days (update frequency)
 !
@@ -48,6 +48,7 @@ $popup,domain=truyenfull.vision
 /js/ads.js$script,~third-party,domain=~vipurl.in
 /lv/esnk/*$script
 /newchill/*gif$image
+/plugins/AdsManager/*$script,~third-party
 /polyad.
 /pop.js$script,domain=motchillk.biz
 /popunder7.
@@ -160,7 +161,6 @@ $popup,domain=truyenfull.vision
 ||motchill10.com/public/upload/ads/ads.js$script,~third-party
 ||motchillj.uk/banner$image
 ||motchillk.biz^*.gif$image
-||motchillr.fm/wp-content/plugins/AdsManager/$script,~third-party
 ||motchillr.fm^*.gif$image
 ||motphimc.moi^*.gif$~third-party
 ||motphimtv.bz^*.gif$image
