@@ -1,9 +1,9 @@
 [Adblock Plus 2.0]
-! Version: 20250914100419563
+! Version: 20250914101542851
 ! id: D4028CDD-3D39-4624-ACC7-8140F4EC3888
 ! Title: ABPVN List
-! Last modified: 14 Sep 2025 10:04:19 UTC+7
-! Diff-Path: patches/20250914100419563.patch#abpvn_ublock
+! Last modified: 14 Sep 2025 10:15:42 UTC+7
+! Diff-Path: patches/20250914101542851.patch#abpvn_ublock
 ! Diff-Expires: 60 minutes
 ! Expires: 1 days (update frequency)
 !
@@ -67,6 +67,7 @@
 /vast.js$script,domain=boctem.com|hayhaytv.site|phimdacap.tv|tvzinghd.co|player.cloudbeta.win|mn.mediastation.live
 /videojs.ads.$domain=~danet.vn
 /videojs.ima.js$domain=~jut.su|~earthcam.com
+||*.servimg.com/u/f45/$domain=gocmod.com
 ||123nhadatviet.com/Media/CK/banners/
 ||123nhadatviet.net/Media/CK/banners/
 ||2banh.vn/images/banners/
@@ -132,7 +133,6 @@
 ||i.imgur.com/FbUH5AQ.png$domain=vozer.net
 ||i.imgur.com^$image,domain=nhacdj.vn|diendanit.net|banbuondalat.com|xem.tructiepnba.me|www.ssphim.us|phimbet.biz
 ||i.imgur.com^*.gif$image,domain=ghienphim.social|mv.dailyphimz.com|mv.phimmoiaz.cc|mythethao.net|xemtivi4k.com|vtipster.net|phimmoi.sale|tv.tvhayhd.org|vutruphim.tv|soicau247s.org|phim24k.top|jophim.top|rophimz.top
-||i45.servimg.com/u/f45/$domain=gocmod.com
 ||iamcdn.net/players/playera.dmins.js
 ||iamcdn.net/players/playhydraxs.min.js
 ||iili.io^*.gif$image,domain=phimtuoitho.tv
@@ -521,6 +521,7 @@ gocmod.com###bannerContainer2
 gocmod.com###sp-wrapper-hovering-format
 gocmod.com##.downline-line-list>center
 gocmod.com##.wam-banner
+gocmod.com##.wrp-min>center
 gocmod.com##center:has(.adsbygoogle)
 gocmod.com##div[style^="position: fixed"]
 hayhaytv.site,subnhanh1.org##.sticky_bottom
