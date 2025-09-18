@@ -1,9 +1,9 @@
 [Adblock Plus 2.0]
-! Version: 20250917180446989
+! Version: 20250918093012670
 ! id: D4028CDD-3D39-4624-ACC7-8140F4EC3888
 ! Title: ABPVN List
-! Last modified: 17 Sep 2025 18:04:47 UTC+7
-! Diff-Path: patches/20250917180446989.patch#abpvn_adguard
+! Last modified: 18 Sep 2025 09:30:12 UTC+7
+! Diff-Path: patches/20250918093012670.patch#abpvn_adguard
 ! Diff-Expires: 60 minutes
 ! Expires: 1 days (update frequency)
 !
@@ -444,7 +444,6 @@
 ||iads.staticscdn.net^
 ||iads.vision^
 ||img.yeuketqua.net^
-||immaculate-suspect.com^
 ||imstore.bet365affiliates.com$third-party
 ||in-page-push.com^
 ||infolinks.com^$third-party
@@ -1245,7 +1244,7 @@ znews.vn##.znews-banner
 !--------Element Hiding Exception--------------
 @@||windowsreport.com$generichide
 @@||xiuren.org$generichide
-vozer.vn#@#[class^="div-gpt-ad"]
+vozer.io#@#[class^="div-gpt-ad"]
 !------ ABPVN Adult block -------
 *$third-party,script,domain=sexdiaryx.to
 /^https:\/\/[a-z]{8,12}\.com\/en\/(?:[a-z]{2,5}\/){0,2}[a-z]{2,}\?(?:[a-z]+=(?:\d+|[a-z]+)&)*?id=[12]\d{6}/$script,third-party
@@ -1558,7 +1557,6 @@ truyensieuhay.com,hayhaytv.site,quangcaoyenbai.com,phimchill.life,thuvienhd.biz,
 tusachmanga99.com#%#//scriptlet("abort-current-inline-script", "$", "window.open")
 vailonxx.vip#%#//scriptlet("abort-current-inline-script", "jQuery", "window.open")
 vanphatelectric.com#%#//scriptlet("abort-current-inline-script", "document.addEventListener", "runAllDetections")
-veryfiles.com#%#//scriptlet("abort-on-property-read", "nFNcksmwU")
 viet69.it#%#//scriptlet("abort-current-inline-script", "jQuery", "open")
 vinaurl.net#%#//scriptlet("abort-on-property-read", "oneClick")
 visitfrenchwine.com#%#//scriptlet("set-constant", "adsTvcs", "")
