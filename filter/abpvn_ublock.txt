@@ -1,9 +1,9 @@
 [Adblock Plus 2.0]
-! Version: 20250917180447939
+! Version: 20250918093014956
 ! id: D4028CDD-3D39-4624-ACC7-8140F4EC3888
 ! Title: ABPVN List
-! Last modified: 17 Sep 2025 18:04:47 UTC+7
-! Diff-Path: patches/20250917180447939.patch#abpvn_ublock
+! Last modified: 18 Sep 2025 09:30:14 UTC+7
+! Diff-Path: patches/20250918093014956.patch#abpvn_ublock
 ! Diff-Expires: 60 minutes
 ! Expires: 1 days (update frequency)
 !
@@ -296,7 +296,6 @@
 ||iads.staticscdn.net^
 ||iads.vision^
 ||img.yeuketqua.net^
-||immaculate-suspect.com^
 ||js.aiservice.vn^
 ||jsc.yodimedia.com^
 ||lepidpomps.com^
@@ -993,7 +992,7 @@ timvanban.vn#@##ad-slot
 tratu.soha.vn#@#.adheader
 vn2.vn#@#.advertiser
 vndoc.com#@#.showads
-vozer.vn#@#[class^="div-gpt-ad"]
+vozer.io#@#[class^="div-gpt-ad"]
 !------ ABPVN Adult block -------
 *$third-party,script,domain=sexdiaryx.to
 /^https:\/\/[a-z]{8,12}\.com\/en\/(?:[a-z]{2,5}\/){0,2}[a-z]{2,}\?(?:[a-z]+=(?:\d+|[a-z]+)&)*?id=[12]\d{6}/$script,third-party
@@ -1223,6 +1222,7 @@ lrepacks.net##+js(acs, JSON.parse, break;case $.)
 lxmanga.my##+js(acs, $, PopUnder)
 motchillk.me##+js(aopr, sessionStorage)
 motchilltvphim.com##+js(acs, jQuery, click_time)
+mv.phimmoiaz.cc,anime11.site,anh.moe,maclife.io,xemphimjav.us,hoctot.hocmai.vn,bluphim4.com,samtruyentranh.com,truyenfull.vision,player.phimapi.com,noitu.site,sachmoi.net##+js(aopr, open)
 nettruyenvia.com##+js(acs, JSON, fromCharCode)
 p.thoctv.com##+js(acs, document.createElement, script)
 phimchautinhtri.net##.popmake-overlay
@@ -1251,9 +1251,7 @@ truyensieuhay.com,hayhaytv.site,quangcaoyenbai.com,phimchill.life,thuvienhd.biz,
 tusachmanga99.com##+js(acs, $, window.open)
 vailonxx.vip##+js(acs, jQuery, window.open)
 vanphatelectric.com##+js(acs, document.addEventListener, runAllDetections)
-veryfiles.com##+js(aopr, nFNcksmwU)
 viet69.it##+js(acs, jQuery, open)
-viettoons.tv,mv.phimmoiaz.cc,anime11.site,anh.moe,maclife.io,xemphimjav.us,hoctot.hocmai.vn,bluphim4.com,samtruyentranh.com,truyenfull.vision,player.phimapi.com,noitu.site,sachmoi.net##+js(aopr, open)
 vinaurl.net##+js(aopr, oneClick)
 visitfrenchwine.com##+js(set, adsPlayer, '')
 visitfrenchwine.com##+js(set, adsTvcs, '')
