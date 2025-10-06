@@ -20,7 +20,7 @@ class Const():
         'iili.io', 'cdn.jsdelivr.net', 's.shopee.vn', 'i.imghippo.com', 'quatvn2.net'
     ]
     REDIRECT_REJECT_TARGET_DOMAIN = [
-        'www.google.com', 'www.facebook.com', 'www.advertising.yahooinc.com', 'marketingplatform.google.com',
+        'google.com', 'www.google.com', 'www.facebook.com', 'facebook.com', 'www.advertising.yahooinc.com', 'marketingplatform.google.com',
         'imgbb.com', 'blueseeddigital.com', 'www.criteo.com', 'github.com', 'speedcdnjs.com', 'www.cloudflare-terms-of-service-abuse.com'
     ]
     REDIRECT_SKIP_SUB_TO_DOMAIN = True
