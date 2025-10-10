@@ -10,7 +10,7 @@ class Const():
         'abpvn.org', '.html', '.button',
         '.modal', '.ico', '.write', '.webp', '.btn', '.show', 'parent.special', '.patch', 'li.special.parent',
         '2Flh3.googleusercontent.com', 'div.ad',
-        '2Fp21-ad-sg.ibyteimg.com'
+        '2Fp21-ad-sg.ibyteimg.com', '.fixed'
     ]
     SKIP_CHECK_REDIRECT = [
         'blogspot.com', 'fptplay.net', 'doubleclick.net', 'com.vn',
