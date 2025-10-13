@@ -1,9 +1,9 @@
 [Adblock Plus 2.0]
-! Version: 20251013093521002
+! Version: 20251013120606906
 ! id: D4028CDD-3D39-4624-ACC7-8140F4EC3888
 ! Title: ABPVN List
-! Last modified: 13 Oct 2025 09:35:21 UTC+7
-! Diff-Path: patches/20251013093521002.patch#abpvn_ublock
+! Last modified: 13 Oct 2025 12:06:06 UTC+7
+! Diff-Path: patches/20251013120606906.patch#abpvn_ublock
 ! Diff-Expires: 60 minutes
 ! Expires: 1 days (update frequency)
 !
@@ -166,7 +166,7 @@
 ||mediastation.live^*.gif$image,domain=mn.mediastation.live|home1.mannhan22.pro|mannhan97.xyz
 ||mocfun.net/uploads/banners/
 ||motchill10.com/public/upload/ads/ads.js$script,~third-party
-||motchillcr.fm^*.gif$image
+||motchillbr.fm^*.gif$image
 ||motchillk.now^*.gif$image
 ||motchills.biz/banner$image
 ||motphimc.ac^*.gif$~third-party
@@ -186,7 +186,7 @@
 ||notepad.vn/media/images/like68.jpg
 ||phim.vkool8.net/images/ads/$image
 ||phim.vkool8.net/js/pov.js$script,~third-party
-||phimhdctv.net^*.gif$image
+||phimhdc1.com^*.gif$image
 ||phimmoichill.bz/newchill/$script,~third-party
 ||phimmoichillz.my/pop$image
 ||phimmoichillz.my^*.gif$image
@@ -641,16 +641,16 @@ mn.mediastation.live##.images-bnr-bellow-append-custom
 mn.mediastation.live##.images-top-pl
 monkeyd.net.vn###affLayer
 monkeyd.net.vn##.justify-content-center.d-flex.mx-3.mx-lg-4.mt-3>[href]
-motchillcr.fm,motphimc.ac##.aam-banner-wrapper
-motchillcr.fm,motphimc.ac##.cat-footer-wrapper
-motchillcr.fm,motphimc.ac##.cat-header-wrapper
-motchillcr.fm,motphimc.ac##.disable-ads-icon
-motchillcr.fm,motphimc.ac##.popup-overlay
+motchillbr.fm,motphimc.ac##.aam-banner-wrapper
+motchillbr.fm,motphimc.ac##.cat-footer-wrapper
+motchillbr.fm,motphimc.ac##.cat-header-wrapper
+motchillbr.fm,motphimc.ac##.disable-ads-icon
+motchillbr.fm,motphimc.ac##.popup-overlay
 motchilllfe.net##.overlay-1
 motchilltvphim.com,phimmoissz.info,tvzinghd.co,subnhanhcx.info##.sda-catfish
 motchilltvphim.com,phimtho.cc,subnhanhcx.info###popup_banner_beta
 motchillzz.site##.t_logo
-motchillzz.site,hayhaytv.site,motphimtv.bz,motchillvl.com,phimhdctv.net##.mp-adz
+motchillzz.site,hayhaytv.site,motphimtv.bz,motchillvl.com,phimhdc1.com##.mp-adz
 motphimchill.live###catfish_ad_top
 muare.vn##.admicro_top
 myeva.vn###adop_bfd
@@ -1053,10 +1053,11 @@ vozer.io#@#[class^="div-gpt-ad"]
 ||l1.stream4k.online^*.gif$image,domain=genzsex.blog
 ||lxmanga.my/storage/images/banners
 ||mangadm.cc$csp=script-src 'self' 'unsafe-inline' http
+||memecup.io^*.gif$image
 ||mneydirec.com^
 ||ngaytho.me^*.gif
 ||phim.sexnungvl.pro^*.gif$image,domain=phim.sexnungvl.pro
-||phimsexhayvn31.com^*.gif$image
+||phimsexhayvn32.com^*.gif$image
 ||qcvip.xyz^$script,domain=phevkl.bz|viet69.my
 ||quatvn.love^*.gif$image
 ||quatvn2.net/TVC-gaixinh.mp4$media,domain=quatvn.love
@@ -1074,7 +1075,6 @@ vozer.io#@#[class^="div-gpt-ad"]
 ||truyensextv.com^*.gif
 ||truyenvn.shop^*banner$image
 ||uimg.buomtv.io/palivn/ad/$image,domain=buomtv.media
-||unitedweconquer.co.uk^*.gif$image
 ||vn5.sexviet88.xyz^*.gif
 ||xamer.xyz/styles/file/$image
 ||xfast.sbs/media/$image,domain=fullcliphot.org|fulllivehot.live
@@ -1094,7 +1094,7 @@ buomtv.media##.luq51lg.a13wihj
 buomtv.media##.pointer-events-auto.block
 buomtv.media##.zbgpvb19.zbgpvb16.zbgpvbj.zbgpvbh.zbgpvbg.zbgpvbf.zbgpvbe.zbgpvb1
 cliphot69.shop###custom_html-42
-cliphotvn69.com,mobiblogss.com,cliphot69.shop,phevkl.bz,www.gvnvh.net,phimsexhayvn31.com,sayhentaii.art,viet69.my,xamvn.blog##.float-ck-center-lt
+cliphotvn69.com,mobiblogss.com,cliphot69.shop,phevkl.bz,www.gvnvh.net,phimsexhayvn32.com,sayhentaii.art,viet69.my,xamvn.blog##.float-ck-center-lt
 clipphot.net##.cashfish
 clipphot.net##.mini-player
 damconuong.skin##.catfish-ad
@@ -1255,6 +1255,7 @@ linkneverdie.net,linkneverdie.top,linkneverdie2.com##+js(nostif, DisplayAHTML, 5
 linkneverdie.net,linkneverdie.top,linkneverdie2.com##+js(nostif, callback, 6004)
 lrepacks.net##+js(acs, JSON.parse, break;case $.)
 lxmanga.my##+js(acs, $, PopUnder)
+memecup.io##+js(acs, window.addEventListener, Ads)
 motchillk.now##+js(aopr, sessionStorage)
 motchilltvphim.com##+js(acs, jQuery, click_time)
 mv.phimmoiaz.cc,anime12.site,anh.moe,maclife.io,xemphimjav.us,hoctot.hocmai.vn,bluphim2.uk.com,samtruyentranh.com,truyenfull.vision,player.phimapi.com,noitu.site,sachmoi.net,xfast.sbs##+js(aopr, open)
@@ -1282,14 +1283,13 @@ tram3d.xyz##+js(acs, setTimeout, appendChild)
 truyen247.pro##+js(acs, eval)
 truyenqqtto.com,phim.haysex.asia##+js(acs, Promise, break;case)
 truyensextv.com,yanhh3d.vip,s4.chinav.sex##+js(acs, document.addEventListener, opup)
-truyensieuhay.com,hayhaytv.site,quangcaoyenbai.com,phimchill.life,thuvienhd.biz,tv.tvhayhd.org,thefaplive.com,mv.dailyphimz.com,mv.phimbathu.one,sexhihiz.mx,anime47.best,teamlanhlung8.shop,phimhdctv.net,forum.timfshare.com,ungtycomicshot.com,honghotduongpho.vn,chich69.blog##+js(aopr, document.cookie)
+truyensieuhay.com,hayhaytv.site,quangcaoyenbai.com,phimchill.life,thuvienhd.biz,tv.tvhayhd.org,thefaplive.com,mv.dailyphimz.com,mv.phimbathu.one,sexhihiz.mx,anime47.best,teamlanhlung8.shop,phimhdc1.com,forum.timfshare.com,ungtycomicshot.com,honghotduongpho.vn,chich69.blog##+js(aopr, document.cookie)
 tusachmanga99.com##+js(acs, $, window.open)
-unitedweconquer.co.uk##+js(acs, window.addEventListener, Ads)
 vailonxx.vip##+js(acs, jQuery, window.open)
 vanphatelectric.com##+js(acs, document.addEventListener, runAllDetections)
 viet69.my##+js(acs, jQuery, open)
 vinaurl.net##+js(aopr, oneClick)
-vlxx.bz,dualeotruyenzx.com,yurineko.my,haysexvl.net,cliphot69.shop,doctruyen3qui14.com,ihentai.cloud,hentaivc.com,buomtv.media,truyenvn.shop,javtiful.com,quatvn.love,phimsexhayvn31.com,phim18hdxx.com,vn5.sexviet88.xyz,phim.sexnungvl.pro,demo.14412882.com,cliphot69.pics,hhtq5.vip,sexdiary.club,vn2.xvideos69.xxx,umetruyenz.net,damconuong.skin,truyenqqgo.com,clipsexsub3x.net,sayhentaii.art,motphim.pokemonviet.com,lxmanga.my##+js(acs, WebAssembly, instantiate)
+vlxx.bz,dualeotruyenzx.com,yurineko.my,haysexvl.net,cliphot69.shop,doctruyen3qui14.com,ihentai.cloud,hentaivc.com,buomtv.media,truyenvn.shop,javtiful.com,quatvn.love,phimsexhayvn32.com,phim18hdxx.com,vn5.sexviet88.xyz,phim.sexnungvl.pro,demo.14412882.com,cliphot69.pics,hhtq5.vip,sexdiary.club,vn2.xvideos69.xxx,umetruyenz.net,damconuong.skin,truyenqqgo.com,clipsexsub3x.net,sayhentaii.art,motphim.pokemonviet.com,lxmanga.my##+js(acs, WebAssembly, instantiate)
 vndoc.com##+js(set, seconds, 0)
 vungoctuan.vn##+js(acs, document.write, snow)
 vungoctuan.vn##+js(no-xhr-if, ads)
