@@ -1,9 +1,9 @@
 [Adblock Plus 2.0]
-! Version: 20251030150747884
+! Version: 20251030180507270
 ! id: D4028CDD-3D39-4624-ACC7-8140F4EC3888
 ! Title: ABPVN List
-! Last modified: 30 Oct 2025 15:07:47 UTC+7
-! Diff-Path: patches/20251030150747884.patch#abpvn_adguard
+! Last modified: 30 Oct 2025 18:05:07 UTC+7
+! Diff-Path: patches/20251030180507270.patch#abpvn_adguard
 ! Diff-Expires: 60 minutes
 ! Expires: 1 days (update frequency)
 !
@@ -1562,6 +1562,7 @@ noitu.site#%#//scriptlet("abort-on-property-read", "runAd")
 opensubtitles.com##div[id^="clock_"]
 opensubtitles.com#$#div[class*="download-ready"]{display:block!important}
 p.thoctv.com,phimlongtieng.net#%#//scriptlet("abort-current-inline-script", "document.createElement", "script")
+pheclip.vet#%#//scriptlet("abort-current-inline-script", "$", "pop")
 phimchautinhtri.net##.popmake-overlay
 phimmoi.sale#%#//scriptlet("abort-current-inline-script", "addEvent", "popu")
 phimtho.cc#%#//scriptlet("abort-current-inline-script", "$", "p0pUpRandom")
