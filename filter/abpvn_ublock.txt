@@ -1,9 +1,9 @@
 [Adblock Plus 2.0]
-! Version: 20251103150814406
+! Version: 20251103180504836
 ! id: D4028CDD-3D39-4624-ACC7-8140F4EC3888
 ! Title: ABPVN List
-! Last modified: 03 Nov 2025 15:08:14 UTC+7
-! Diff-Path: patches/20251103150814406.patch#abpvn_ublock
+! Last modified: 03 Nov 2025 18:05:04 UTC+7
+! Diff-Path: patches/20251103180504836.patch#abpvn_ublock
 ! Diff-Expires: 60 minutes
 ! Expires: 1 days (update frequency)
 !
@@ -44,6 +44,7 @@
 /disable-devtool.min.js$script
 /giadinhonline.vn/files/qc/*
 /i.imgur.com/*.gif$domain=keonhacai55.buzz|www.motchill30.com|theicec.com|vebota.cc|wolfparade.com|listnhacai88.com|enjb.com|mitomza.cc|rakhoixv.cc
+/images/company/21.png$image,domain=vebota.cc|enjb.com
 /js/ads.js$script,~third-party,domain=~vipurl.in
 /lv/esnk/*$script
 /newchill/*gif$image
@@ -208,7 +209,6 @@
 ||static-mn-vnd.mediastation.live/template/*.mp4$domain=mn.mediastation.live,rewrite=abp-resource:blank-mp3
 ||static.cdnno.com/storage/topbox/*.webp$image,domain=metruyencv.com
 ||static.masothue.com/js/shopee_bell.js$script
-||static.vebota.cc/images/company/21.png$image,domain=vebota.cc
 ||static.ybox.vn^*.gif$domain=ybox.vn
 ||stc02bc54661548.cloud.anycastapnic.com^*.gif$image,domain=xem1.gv03.live|gavangtv10.net
 ||storage.fshare.vn/images/$third-party
@@ -503,9 +503,11 @@ enjb.com##.col-12>p.block-int.mb-1
 enjb.com##.dcmm-button-player-item
 enjb.com##.divdatcuoc
 enjb.com##.grid-match__footer
+enjb.com##.odds-comp-logo
 enjb.com##.show-ads-banner
 enjb.com##.w-100.justify-content-center.align-items-center.d-flex
 enjb.com##.widget
+enjb.com##.xlz-ads-item
 enjb.com##a.d-lg-none.d-block:nth-of-type(1)
 enjb.com,rakhoixv.cc##.btn-odds
 enjb.com,vebota.cc##.odds-comp
@@ -1270,7 +1272,7 @@ mv.phimmoiaz.cc,anime12.site,anh.moe,maclife.io,xemphimjav.us,hoctot.hocmai.vn,b
 nettruyenviet1.com##+js(acs, JSON, fromCharCode)
 officelinx.co.uk##+js(acs, document.addEventListener, adx)
 p.thoctv.com,phimlongtieng.net##+js(acs, document.createElement, script)
-pheclip.vet##+js(acs, $, pop)
+pheclip.vet,phim18vip.one##+js(acs, $, pop)
 phimchautinhtri.net##.popmake-overlay
 phimmoi.sale##+js(acs, addEvent, popu)
 phimtho.cc#%#//scriptlet("abort-current-inline-script", "$", "p0pUpRandom")
@@ -1298,7 +1300,7 @@ truyensieuhay.com,hayhaytv.site,quangcaoyenbai.com,phimchill.life,tv.tvhayhd.org
 tusachmanga99.com##+js(acs, $, window.open)
 vailonxx.co##+js(acs, jQuery, window.open)
 vanphatelectric.com##+js(acs, document.addEventListener, runAllDetections)
-viet69.my##+js(acs, jQuery, open)
+viet69.my,enjb.com##+js(acs, jQuery, open)
 vinaurl.net##+js(aopr, oneClick)
 vlxx.bz,dualeotruyenlv.com,yurineko.my,haysexvl.net,cliphot69.shop,doctruyen3qui16.com,ihentai.cloud,hentaivc.com,buomtv.media,truyenvn.shop,javtiful.com,quatvn.love,phimsexhayvn46.com,phim18hdxx.com,vn5.sexviet88.xyz,xem.sexnung3x.com,demo.14412882.com,cliphot69.pics,hhtq5.vip,sexdiary.club,vn2.xvideos69.xxx,umetruyenz.org,damconuong.co,truyenqqgo.com,clipsexsub3x.net,sayhentaii.ink,motphim.pokemonviet.com,lxmanga.my,phimlongtieng.net##+js(acs, WebAssembly, instantiate)
 vndoc.com##+js(set, seconds, 0)
