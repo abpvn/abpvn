@@ -15,8 +15,8 @@
 // @grant       GM_registerMenuCommand
 // @include     http://*
 // @include     https://*
-// @version     2.3.32
-// @change-log  Update mediafire.com auto download
+// @version     2.3.33
+// @change-log  Add bachnguyetquang.online body overflow hidden remove
 // @run-at      document-end
 // @downloadURL https://update.greasyfork.org/scripts/9099/ABPVN%20AdsBlock.user.js
 // @updateURL https://update.greasyfork.org/scripts/9099/ABPVN%20AdsBlock.meta.js
@@ -487,7 +487,7 @@ var adBlocker = {
         }
     },
     noAdsModal: function () {
-        const domainRegex = /vebo|90phut|khomuc|xoilac|banhkhuc/;
+        const domainRegex = /vebo|90phut|khomuc|xoilac|banhkhuc|bachnguyetquang.online/;
         if (location.hostname.match(domainRegex)) {
             const styleTag = document.createElement('style');
             styleTag.innerHTML = 'html,body{overflow: auto!important} .modal-backdrop,.modal{display: none!important}';
