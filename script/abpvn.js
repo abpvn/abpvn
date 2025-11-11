@@ -15,8 +15,8 @@
 // @grant       GM_registerMenuCommand
 // @include     http://*
 // @include     https://*
-// @version     2.3.33
-// @change-log  Add bachnguyetquang.online body overflow hidden remove
+// @version     2.3.34
+// @change-log  Add bachnguyetquang.online .ant-modal-root hide
 // @run-at      document-end
 // @downloadURL https://update.greasyfork.org/scripts/9099/ABPVN%20AdsBlock.user.js
 // @updateURL https://update.greasyfork.org/scripts/9099/ABPVN%20AdsBlock.meta.js
@@ -490,7 +490,7 @@ var adBlocker = {
         const domainRegex = /vebo|90phut|khomuc|xoilac|banhkhuc|bachnguyetquang.online/;
         if (location.hostname.match(domainRegex)) {
             const styleTag = document.createElement('style');
-            styleTag.innerHTML = 'html,body{overflow: auto!important} .modal-backdrop,.modal{display: none!important}';
+            styleTag.innerHTML = 'html,body{overflow: auto!important} .modal-backdrop,.modal,.ant-modal-root{display: none!important}';
             document.head.appendChild(styleTag);
             ABPVN.cTitle();
         }
