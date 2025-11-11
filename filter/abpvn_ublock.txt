@@ -1,9 +1,9 @@
 [Adblock Plus 2.0]
-! Version: 20251111180510686
+! Version: 20251111210150566
 ! id: D4028CDD-3D39-4624-ACC7-8140F4EC3888
 ! Title: ABPVN List
-! Last modified: 11 Nov 2025 18:05:10 UTC+7
-! Diff-Path: patches/20251111180510686.patch#abpvn_ublock
+! Last modified: 11 Nov 2025 21:01:50 UTC+7
+! Diff-Path: patches/20251111210150566.patch#abpvn_ublock
 ! Diff-Expires: 60 minutes
 ! Expires: 1 days (update frequency)
 !
@@ -84,6 +84,7 @@
 ||api-gavang.gvtv1.com/banners/graph$xmlhttprequest,domain=xem1.gv03.live
 ||api.anime3s.com^*.gif$image,domain=hayhaytv.site|anime12.site
 ||api.ybox.vn/graphql?query=*Ads
+||aquastarsleep.co.uk/images/banners/$image
 ||asecdn.w88media.com/VN/250x250-VN.gif$domain=mythethao.net
 ||ax.mpcdn.top/tags/js?id=motchill$script,domain=motchillvl.com
 ||ax.mpcdn.top^*.gif$domain=motchillvl.com
@@ -237,7 +238,7 @@
 ||tudomuaban.com/public/upload/ad/
 ||tuyensinh247.com/$image,third-party
 ||tuyensinhso.vn/images/banners/*.gif$image,~third-party
-||ungtycomicsay.com$csp=script-src self * data:* 'unsafe-inline'
+||ungtycomicsa.com$csp=script-src self * data:* 'unsafe-inline'
 ||uniad.$third-party
 ||vesotantai.com/upload/photo/$image
 ||vietjack.com/FrontEndWeb/js/sp.js$script
@@ -407,6 +408,7 @@ apkmoddone.com##.adNative
 apkmoddone.com##.pAd
 apkmoddone.com##.relatedPostsAd
 apkmoddone.com##div.pAdin
+aquastarsleep.co.uk##.banner-fixed
 asianbookie.com##a[href^="/cgi-bin/to.cgi"]
 audiotruyenfull.com##.code-block-24.code-block
 autodaily.vn,xehay.vn###banner3double
@@ -1032,6 +1034,7 @@ portodouro.co.uk/wp-content/themes/vlxx/js/*-adx.js$script
 ||anhgaixinh.online^*.webp$image
 ||blogger.googleusercontent.com^*.gif$image,domain=www.gvnvh.net|hentaivn.website
 ||buomtv.media/palivn/ad/$image,~third-party
+||burntsoup.co.uk^*.gif
 ||cdn-01.w3img.com^*.gif$image,domain=phimsexvl69.net|vlxx.rip
 ||cdn.adxcontent.com^
 ||cliphot69.shop$csp=script-src 'self' 'unsafe-inline'
@@ -1043,6 +1046,7 @@ portodouro.co.uk/wp-content/themes/vlxx/js/*-adx.js$script
 ||discordapp.$image,domain=phim18vip.one|thefaplive.com|phimsexsub.website
 ||gamer18.net^*.gif$image
 ||hellobabygirl.live/*/adx*.js$domain=nung18.com|phimxxx.ai
+||hhkungfu.us^*.gif$image,domain=s1.phimsexvn1.blog
 ||hhkungfu.us^*.gif$image,domain=s4.chinav.sex
 ||i.ibb.co^*.gif$image,domain=sex.javnong.cc
 ||i.imgur.com^$image,domain=phim18hdxx.com|xamvn.cam
@@ -1151,6 +1155,9 @@ rphang.online##.bbMediaWrapper-inner>.samCodeUnit
 rphang.online##.js-replyNewMessageContainer.block-body>div.samCodeUnit>.samItem
 rphang.online##.p-footer
 rphang.online##.samVideoOverlay
+s1.phimsexvn1.blog###ads-wrapper
+s1.phimsexvn1.blog###cashfit-spacer
+s1.phimsexvn1.blog##.ads-header
 s4.chinav.sex###cashfit-banner-host
 s4.chinav.sex##.adbox
 s4.chinav.sex##.banner-container
@@ -1193,11 +1200,11 @@ vl.phe.to###divExoLayerWrapper
 vl.phe.to##.sdzhead
 vlxx.bz###adx
 vlxx.bz##.ads
-vlxx.bz##.banner-preload
 vlxx.bz##.ff-banner
 vlxx.bz##div.banner-catfish-bottom
-vlxx.bz,clipsexsub3x.net,sexhihiz.mx,javhdz.baby##.catfish-bottom
-vlxx.bz,xem.sexnung3x.com,sexhihiz.mx##.catfish-top
+vlxx.bz,burntsoup.co.uk##.banner-preload
+vlxx.bz,clipsexsub3x.net,sexhihiz.mx,javhdz.baby,burntsoup.co.uk##.catfish-bottom
+vlxx.bz,xem.sexnung3x.com,sexhihiz.mx,burntsoup.co.uk##.catfish-top
 vlxx.rip,trangsexdam.net##.hd-tube-desktop
 vlxx.rip,trangsexdam.net##.hd-tube-mobile
 vlxxhot.net,phimxxx.ai##.adx1
@@ -1261,7 +1268,7 @@ lxmanga.my##+js(acs, $, PopUnder)
 mochamocha.co.uk##+js(acs, window.addEventListener, Ads)
 motchillk.ph##+js(aopr, sessionStorage)
 motchilltvphim.com##+js(acs, jQuery, click_time)
-mv.phimmoiaz.cc,anime12.site,anh.moe,maclife.io,xemphimjav.us,hoctot.hocmai.vn,bluphim5.com,samtruyentranh.com,truyenfull.vision,player.phimapi.com,noitu.site,sachmoi.net,xfast.sbs,anime47.best##+js(aopr, open)
+mv.phimmoiaz.cc,anime12.site,anh.moe,maclife.io,xemphimjav.us,hoctot.hocmai.vn,bluphim5.com,samtruyentranh.com,truyenfull.vision,player.phimapi.com,noitu.site,sachmoi.net,xfast.sbs,anime47.best,s1.phimsexvn1.blog##+js(aopr, open)
 nettruyenviet1.com##+js(acs, JSON, fromCharCode)
 nurtureart.org##+js(set, adsPlayer, '')
 nurtureart.org##+js(set, adsTvcs, '')
@@ -1291,7 +1298,7 @@ tram3d.xyz##+js(acs, setTimeout, appendChild)
 truyen247.pro##+js(acs, eval)
 truyenqqtto.com,phim.haysex.asia##+js(acs, Promise, break;case)
 truyensextv.com,yanhh3d.vip,s4.chinav.sex##+js(acs, document.addEventListener, opup)
-truyensieuhay.com,hayhaytv.site,quangcaoyenbai.com,phimchill.life,tv.tvhayhd.org,thefaplive.com,mv.dailyphimz.com,mv.phimbathu.one,sexhihiz.mx,anime47.best,teamlanhlung8.shop,phimhdc.com,forum.timfshare.com,ungtycomicsay.com,honghotduongpho.vn,chich69.blog##+js(aopr, document.cookie)
+truyensieuhay.com,hayhaytv.site,quangcaoyenbai.com,phimchill.life,tv.tvhayhd.org,thefaplive.com,mv.dailyphimz.com,mv.phimbathu.one,sexhihiz.mx,anime47.best,teamlanhlung8.shop,phimhdc.com,forum.timfshare.com,ungtycomicsa.com,honghotduongpho.vn,chich69.blog##+js(aopr, document.cookie)
 tusachmanga99.com##+js(acs, $, window.open)
 vailonxx.co##+js(acs, jQuery, window.open)
 vanphatelectric.com##+js(acs, document.addEventListener, runAllDetections)
