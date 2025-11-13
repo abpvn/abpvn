@@ -1,9 +1,9 @@
 [Adblock Plus 2.0]
-! Version: 20251113082352604
+! Version: 20251113090928921
 ! id: D4028CDD-3D39-4624-ACC7-8140F4EC3888
 ! Title: ABPVN List
-! Last modified: 13 Nov 2025 08:23:52 UTC+7
-! Diff-Path: patches/20251113082352604.patch#abpvn_ublock
+! Last modified: 13 Nov 2025 09:09:28 UTC+7
+! Diff-Path: patches/20251113090928921.patch#abpvn_ublock
 ! Diff-Expires: 60 minutes
 ! Expires: 1 days (update frequency)
 !
@@ -162,8 +162,7 @@
 ||linkphim.online^*.gif$domain=www.ssphim.lol
 ||listnhacai88.com^*.gif$image
 ||maclife.io^*.gif
-||media-static.cdnproz1.online/cakhiastatic/*.gif$image,domain=watch.rkplayer.xyz
-||media-static.cdnproz1.online/cakhiastatic/*.gif$image,domain=xem2.cakhia78.xyz
+||media-static.cdnproz1.online/cakhiastatic/*.gif$image,domain=xem2.cakhia78.xyz|watch.rkplayer.xyz
 ||media.nghean24h.vn$image,domain=nghean24h.vn
 ||mediastation.live^*.gif$image,domain=mn.mediastation.live|home1.mannhan22.pro|mannhan97.xyz
 ||mocfun.net/uploads/banners/
@@ -384,7 +383,7 @@
 90phuttv.link,live4.xoilac34.org,live4.vebo4.net##.ibs-bet
 90phuttv.link,live4.xoilac34.org,live4.vebo4.net,f4.thapcam55.buzz,ca2.thapcam55.info,thapcam73.live,ss.90phut27.com,t.vebo8.fun,r.vebo8.hair###m-bet
 90phuttv.link,live4.xoilac34.org,live4.vebo4.net,r.vebo8.hair##div[class*="size-"]
-90phuttv.link,live4.xoilac34.org,r.vebo8.hair##.ft-box
+90phuttv.link,live4.xoilac34.org,r.vebo8.hair,ss.90phut27.com##.ft-box
 90phuttv.link,live4.xoilac34.org,t.vebo8.fun,r.vebo8.hair##.btn-betnow
 90phuttv.link,thapcam73.live##.mzdal
 90phuttv.link,xx2.thapcam53.info,nn13.thapcam.asia,thapcamtvz.net,f4.thapcam55.buzz,ca2.thapcam55.info##.modal
@@ -711,7 +710,6 @@ saostar.vn##.pc-bill
 soha.vn,gamek.vn##[id^="admzone"]
 soicau247s.org##.linkBanner
 sport5.vn,afamily.vn##.afw-topbanner
-ss.90phut27.com##.ft-box
 ss.90phut27.com,t.vebo8.fun,r.vebo8.hair##.for-desktop
 ss.90phut27.com,t.vebo8.fun,r.vebo8.hair##.modal-backdropz
 ss.90phut27.com,t.vebo8.fun,r.vebo8.hair##.to-left
@@ -1046,8 +1044,7 @@ portodouro.co.uk/wp-content/themes/vlxx/js/*-adx.js$script
 ||discordapp.$image,domain=phim18vip.one|thefaplive.com|phimsexsub.website
 ||gamer18.net^*.gif$image
 ||hellobabygirl.live/*/adx*.js$domain=nung18.com|phimxxx.ai
-||hhkungfu.us^*.gif$image,domain=s1.phimsexvn1.blog
-||hhkungfu.us^*.gif$image,domain=s4.chinav.sex
+||hhkungfu.us^*.gif$image,domain=s4.chinav.sex|s1.phimsexvn1.blog
 ||i.ibb.co^*.gif$image,domain=sex.javnong.cc
 ||i.imgur.com^$image,domain=phim18hdxx.com|xamvn.cam
 ||i.imgur.com^*.gif$image,domain=s4.chinav.sex|quatvn.love
@@ -1102,14 +1099,12 @@ buomtv.media##.pointer-events-auto.block
 buomtv.media##.zbgpvb19.zbgpvb16.zbgpvbj.zbgpvbh.zbgpvbg.zbgpvbf.zbgpvbe.zbgpvb1
 cliphot69.shop###custom_html-42
 cliphotvn69.com,mobiblogss.com,cliphot69.shop,phevkl.co.uk,www.gvnvh.net,phimsexhayvn58.com,sayhentaii.ink,viet69.my,xamvn.cam##.float-ck-center-lt
-clipphot.org##.cashfish
-clipphot.org##.mini-player
 damconuong.co##.catfish-ad
 damconuong.co,hentaivn.website##a[rel="nofollow"]
 dualeotruyenks.com##[id$="bnr"]
 fullcliphot.org##div#recent-content:nth-of-type(1)
-fullcliphot.org,fulllivehot.live##.cashfish
-fullcliphot.org,fulllivehot.live##.mini-player
+fullcliphot.org,fulllivehot.live,clipphot.org##.cashfish
+fullcliphot.org,fulllivehot.live,clipphot.org##.mini-player
 gaingon3d.com###iklan-atas-wrapper
 gamer18.net##.fixed-banner-bottom
 gamer18.net##div[id^="divFLR"]
@@ -1155,7 +1150,7 @@ quatvn.love##body>div[style^="position: fixed;"]
 rphang.online##.bbMediaWrapper-inner>.samCodeUnit
 rphang.online##.js-replyNewMessageContainer.block-body>div.samCodeUnit>.samItem
 rphang.online##.p-footer
-rphang.online##.samVideoOverlay
+rphang.online,thiendia1.vip##.samVideoOverlay
 s1.phimsexvn1.blog###ads-wrapper
 s1.phimsexvn1.blog###cashfit-spacer
 s1.phimsexvn1.blog##.ads-header
@@ -1183,7 +1178,6 @@ thefaplive.com,phimsexsub.website###wap_bottombanner
 themphotv5.com##.w-full.cursor-pointer.block>div
 thiendia1.vip##.ad-overlay
 thiendia1.vip##.bottom_banner
-thiendia1.vip##.samVideoOverlay
 thiendia1.vip##.story_ads
 thiendia1.vip##.video-ad-container
 trangsexdam.net##.w1e48c4420b7073bc11916c6c1de226bb
