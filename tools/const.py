@@ -12,7 +12,7 @@ class Const():
         'clear.hd', '.btn', '.show',
         'parent.special', '.patch', 'li.special.parent',
         '2Flh3.googleusercontent.com', 'div.ad',
-        'ibyteimg.com', '.fixed', '.blpha'
+        'ibyteimg.com', '.fixed', '.blpha', '.php'
     ]
     SKIP_CHECK_REDIRECT = [
         'blogspot.com', 'fptplay.net', 'doubleclick.net', 'com.vn',
