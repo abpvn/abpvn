@@ -1,9 +1,9 @@
 [Adblock Plus 2.0]
-! Version: 20251216080904375
+! Version: 20251216094009282
 ! id: D4028CDD-3D39-4624-ACC7-8140F4EC3888
 ! Title: ABPVN List
-! Last modified: 16 Dec 2025 08:09:04 UTC+7
-! Diff-Path: patches/20251216080904375.patch#abpvn_adguard
+! Last modified: 16 Dec 2025 09:40:09 UTC+7
+! Diff-Path: patches/20251216094009282.patch#abpvn_adguard
 ! Diff-Expires: 60 minutes
 ! Expires: 1 days (update frequency)
 !
@@ -71,6 +71,8 @@
 /videojs.ads.$domain=~danet.vn
 /videojs.ima.js$domain=~jut.su|~earthcam.com
 /wp-auto-affiliate-links/*
+/wp-content/plugins/Popup%20Protect/$script,~third-party
+/wp-content/plugins/ads-manager/$~third-party
 ://ads.$~image,domain=~ads.gatacivi.com
 ||*.servimg.com/u/f45/$domain=gocmod.com
 ||10gb.vn/assets/ads/
@@ -88,6 +90,7 @@
 ||animevietsub.show/ads/$script
 ||animevietsub9.com/vast/$image
 ||api-gavang.gvtv1.com/banners/graph$xmlhttprequest,domain=xem1.gv03.live
+||api.anime3s.com/i9bet.php$xmlhttprequest,~third-party
 ||api.anime3s.com^*.gif$image,domain=hayhaytv.site|anime12.site
 ||api.ybox.vn/graphql?query=*Ads
 ||aquastarsleep.co.uk/images/banners/$image
@@ -917,7 +920,7 @@ motchilli.sh##.popup-overlay
 motchillke.me##.overlay-1
 motchilltvphim.com,phimmoissz.info,tvzinghd.co,subnhanhcx.info##.sda-catfish
 motchilltvphim.com,phimtho.cc,subnhanhcx.info###popup_banner_beta
-motchillzz.site##.t_logo
+motchillzz.site,api.anime3s.com##.t_logo
 motchillzz.site,hayhaytv.site,motphimtv.bz,motchillvl.com,phimhdc.com##.mp-adz
 motphimchillkr.net###catfish_ad_top
 muare.vn##.admicro_top
@@ -1520,7 +1523,7 @@ baomoi.com#%#//scriptlet("abort-on-property-write", "AdtimaRender")
 cafef.vn,gamek.vn,genk.vn,kenh14.vn,soha.vn,tuoitre.vn,afamily.vn,thanhnien.vn#%#//scriptlet("abort-current-inline-script", "Object.defineProperty", "ADMStorageFileCDN")
 cafef.vn,gamek.vn,genk.vn,kenh14.vn,soha.vn,tuoitre.vn,afamily.vn,thanhnien.vn#%#//scriptlet("set-constant", "ADMStorageFileCDN", "noopFunc")
 checkscam.vn#%#//scriptlet("abort-current-inline-script", "document.addEventListener", "open")
-childish2x1.fun,childish2x2.fun,tekora.space,lottedira.store#%#//scriptlet("abort-current-inline-script", "$", "aff")
+childish2x1.fun,childish2x2.fun,tekora.space,lottedira.store,tekora.fun#%#//scriptlet("abort-current-inline-script", "$", "aff")
 chotlo3s.com#$##header {margin-top: 0!important}
 cliphubs.com,viet69hay.com#%#//scriptlet("abort-current-inline-script", "document.addEventListener", "pop")
 clipphot.org#%#//scriptlet("abort-current-inline-script", "document.addEventListener", "POP")
