@@ -1,9 +1,9 @@
 [Adblock Plus 2.0]
-! Version: 20251216080904008
+! Version: 20251216094010339
 ! id: D4028CDD-3D39-4624-ACC7-8140F4EC3888
 ! Title: ABPVN List
-! Last modified: 16 Dec 2025 08:09:04 UTC+7
-! Diff-Path: patches/20251216080904008.patch#abpvn_ublock
+! Last modified: 16 Dec 2025 09:40:10 UTC+7
+! Diff-Path: patches/20251216094010339.patch#abpvn_ublock
 ! Diff-Expires: 60 minutes
 ! Expires: 1 days (update frequency)
 !
@@ -83,6 +83,7 @@
 ||animevietsub.show/ads/$script
 ||animevietsub9.com/vast/$image
 ||api-gavang.gvtv1.com/banners/graph$xmlhttprequest,domain=xem1.gv03.live
+||api.anime3s.com/i9bet.php$xmlhttprequest,~third-party
 ||api.anime3s.com^*.gif$image,domain=hayhaytv.site|anime12.site
 ||api.ybox.vn/graphql?query=*Ads
 ||aquastarsleep.co.uk/images/banners/$image
@@ -630,7 +631,7 @@ motchilli.sh##.popup-overlay
 motchillke.me##.overlay-1
 motchilltvphim.com,phimmoissz.info,tvzinghd.co,subnhanhcx.info##.sda-catfish
 motchilltvphim.com,phimtho.cc,subnhanhcx.info###popup_banner_beta
-motchillzz.site##.t_logo
+motchillzz.site,api.anime3s.com##.t_logo
 motchillzz.site,hayhaytv.site,motphimtv.bz,motchillvl.com,phimhdc.com##.mp-adz
 motphimchillkr.net###catfish_ad_top
 muare.vn##.admicro_top
@@ -1219,7 +1220,7 @@ baomoi.com##+js(aopw, AdtimaRender)
 cafef.vn,gamek.vn,genk.vn,kenh14.vn,soha.vn,tuoitre.vn,afamily.vn,thanhnien.vn##+js(acs, Object.defineProperty, ADMStorageFileCDN)
 cafef.vn,gamek.vn,genk.vn,kenh14.vn,soha.vn,tuoitre.vn,afamily.vn,thanhnien.vn##+js(set, ADMStorageFileCDN, noopFunc)
 checkscam.vn##+js(acs, document.addEventListener, open)
-childish2x1.fun,childish2x2.fun,tekora.space,lottedira.store##+js(acs, $, aff)
+childish2x1.fun,childish2x2.fun,tekora.space,lottedira.store,tekora.fun##+js(acs, $, aff)
 chotlo3s.com###header:style(margin-top: 0 !important)
 cliphubs.com,viet69hay.com##+js(acs, document.addEventListener, pop)
 clipphot.org##+js(acs, document.addEventListener, POP)
