@@ -1,9 +1,9 @@
 [Adblock Plus 2.0]
-! Version: 20251222142457855
+! Version: 20251222150906159
 ! id: D4028CDD-3D39-4624-ACC7-8140F4EC3888
 ! Title: ABPVN List
-! Last modified: 22 Dec 2025 14:24:57 UTC+7
-! Diff-Path: patches/20251222142457855.patch#abpvn_ublock
+! Last modified: 22 Dec 2025 15:09:06 UTC+7
+! Diff-Path: patches/20251222150906159.patch#abpvn_ublock
 ! Diff-Expires: 60 minutes
 ! Expires: 1 days (update frequency)
 !
@@ -165,6 +165,7 @@
 ||mediastation.live^*.gif$image,domain=mn.mediastation.live|home1.mannhan22.pro|mannhan97.xyz
 ||mocfun.net/uploads/banners/
 ||motchill10.com/public/upload/ads/ads.js$script,~third-party
+||motchillbr.com^*.gif$~third-party
 ||motchillk.gg^*.gif$image
 ||motchillre.fm^*.gif$image
 ||motphimtv.bz^*.gif$image
@@ -629,6 +630,7 @@ mn.mediastation.live##.images-top-pl
 monkeyd.net.vn##.justify-content-center.d-flex.mx-3.mx-lg-4.mt-3>[href]
 monkeyd.net.vn,monkeydtruyen.com###affLayer
 monkeydtruyen.com###affLayer2
+motchillbr.com##.fixed.inset-0.z-\[9999\].flex.items-center.justify-center.bg-black\/70
 motchillie.me##.overlay-1
 motchillre.fm##.aam-banner-wrapper
 motchillre.fm##.cat-footer-wrapper
@@ -1268,7 +1270,7 @@ pheclip.love,phim18vip.one,sieudam.sh##+js(acs, $, pop)
 phimchautinhtri.net##.popmake-overlay
 phimlongtieng.net##+js(acs, document.createElement, script)
 phimmoi.club##+js(acs, addEvent, popu)
-phimmoier.io##+js(aeld, click, ads)
+phimmoier.io,motchillbr.com##+js(aeld, click, ads)
 phimtho.cc#%#//scriptlet("abort-current-inline-script", "$", "p0pUpRandom")
 plcdn.xyz##+js(aopr, ads)
 plcdn.xyz##+js(aopr, adsPlayer)
