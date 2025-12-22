@@ -1,9 +1,9 @@
 [Adblock Plus 2.0]
-! Version: 20251222142456985
+! Version: 20251222150904250
 ! id: D4028CDD-3D39-4624-ACC7-8140F4EC3888
 ! Title: ABPVN List
-! Last modified: 22 Dec 2025 14:24:57 UTC+7
-! Diff-Path: patches/20251222142456985.patch#abpvn
+! Last modified: 22 Dec 2025 15:09:04 UTC+7
+! Diff-Path: patches/20251222150904250.patch#abpvn
 ! Diff-Expires: 60 minutes
 ! Expires: 1 days (update frequency)
 !
@@ -173,6 +173,7 @@ $popup,domain=truyenfull.vision
 ||mediastation.live^*.gif$image,domain=mn.mediastation.live|home1.mannhan22.pro|mannhan97.xyz
 ||mocfun.net/uploads/banners/
 ||motchill10.com/public/upload/ads/ads.js$script,~third-party
+||motchillbr.com^*.gif$~third-party
 ||motchillk.gg^*.gif$image
 ||motchillre.fm^*.gif$image
 ||motphimtv.bz^*.gif$image
@@ -629,6 +630,7 @@ $popup,domain=truyenfull.vision
 ##.aanetwork-ads-box
 ##.adWidget
 ##.ad_location
+##.ads-banner
 ##.banner-ads
 ##.bottom-adv
 ##.close-ads
@@ -921,6 +923,7 @@ mn.mediastation.live##.images-top-pl
 monkeyd.net.vn##.justify-content-center.d-flex.mx-3.mx-lg-4.mt-3>[href]
 monkeyd.net.vn,monkeydtruyen.com###affLayer
 monkeydtruyen.com###affLayer2
+motchillbr.com##.fixed.inset-0.z-\[9999\].flex.items-center.justify-center.bg-black\/70
 motchillie.me##.overlay-1
 motchillre.fm##.aam-banner-wrapper
 motchillre.fm##.cat-footer-wrapper
@@ -1070,7 +1073,6 @@ truyenqqno.com###floating-banner-left
 truyenqqno.com###floating-banner-right
 truyenqqno.com##.text_ads
 truyenqqno.com##div#ad_info
-truyenqqno.com,nettruyenviet1.com,truyentranh3qr.com##.ads-banner
 truyensieuhay.com##.footer-info
 truyensieuhay.com,hhtrungquoc6.com,hhtq13.vip,animeweb.vip,hhtq3d.net###topbanner
 tuoitre.vn###LeaderBoardTop
