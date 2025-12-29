@@ -28,7 +28,7 @@ class DomainCheck(threading.Thread):
         """
         if not Const.REDIRECT_SKIP_SUB_TO_DOMAIN:
             return False
-        return redirected_domain in domain
+        return "www." not in domain and redirected_domain in domain
 
     def get_redirect_domain(self):
         """
@@ -60,6 +60,8 @@ class DomainCheck(threading.Thread):
                         self.redirect_pairs.append([domain, final_redirect_domain])
                         self.lock.release()
                         print("{}: Processed domain in index {}/{}".format(domain, self.__domain_index, self.__total_domain))
+                    elif self.is_redirect_sub_to_domain(domain, final_redirect_domain):
+                        print("{}: Redirect but skiped because redirected from subdomain {} to domain {}".format(domain, domain, final_redirect_domain))
                     else:
                         print("{}: Redirect but skiped because redirected to reject target domain".format(domain))
             else:
