@@ -1,9 +1,9 @@
 [Adblock Plus 2.0]
-! Version: 20251226234709003
+! Version: 20251229094911214
 ! id: D4028CDD-3D39-4624-ACC7-8140F4EC3888
 ! Title: ABPVN List
-! Last modified: 26 Dec 2025 23:47:09 UTC+7
-! Diff-Path: patches/20251226234709003.patch#abpvn_noelemhide
+! Last modified: 29 Dec 2025 09:49:11 UTC+7
+! Diff-Path: patches/20251229094911214.patch#abpvn_noelemhide
 ! Diff-Expires: 60 minutes
 ! Expires: 1 days (update frequency)
 !
@@ -45,8 +45,8 @@ $popup,domain=truyenfull.vision
 /core/*$script,domain=gamek.vn|genk.vn|kenh14.vn|cafef.vn|thanhnien.vn
 /disable-devtool.min.js$script
 /giadinhonline.vn/files/qc/*
-/i.imgur.com/*.gif$domain=keonhacai55.pw|www.motchill37.com|wemakeevents.org|cj-entertainment.com|volvooceanrace.org|listnhacai88.com|zeldinforcongress.com|mitomza.cc|rakhoivq.cc
-/images/company/21.png$image,domain=cj-entertainment.com|zeldinforcongress.com
+/i.imgur.com/*.gif$domain=keonhacai55.pw|www.motchill37.com|wemakeevents.org|cj-entertainment.com|cakhiaztk.cc|listnhacai88.com|xoilaczzdzz.tv|mitomza.cc|rakhoivq.cc
+/images/company/21.png$image,domain=cj-entertainment.com|xoilaczzdzz.tv
 /js/ads.js$script,~third-party,domain=~vipurl.in
 /lv/esnk/*$script
 /newchill/*gif$image
@@ -79,14 +79,14 @@ $popup,domain=truyenfull.vision
 ||ads*.autodaily.vn
 ||ads.nghenhinvietnam.vn^$domain=nghenhinvietnam.vn
 ||ahaphimz.com/js/pov.js$script
-||anime12.site^*.gif
+||anime13.site^*.gif
 ||anime1s.com/_next/image?url=https%3A%2F%2F*.ibyteimg.com$image
 ||anime1s.com/_next/image?url=https%3A%2F%2Flh3.googleusercontent.com$image
 ||animevietsub.show/ads/$script
 ||animevietsub9.com/vast/$image
 ||api-gavang.gvtv1.com/banners/graph$xmlhttprequest,domain=xem1.gv03.live
 ||api.anime3s.com/i9bet.php$xmlhttprequest,~third-party
-||api.anime3s.com^*.gif$image,domain=hayhaytv.site|anime12.site
+||api.anime3s.com^*.gif$image,domain=hayhaytv.site|anime13.site
 ||api.ybox.vn/graphql?query=*Ads
 ||asecdn.w88media.com/VN/250x250-VN.gif$domain=mythethao.net
 ||ax.mpcdn.top/tags/js?id=motchill$script,domain=motchillvl.com
@@ -104,7 +104,7 @@ $popup,domain=truyenfull.vision
 ||cdn-live.taoxanh.biz/live-dev/cms/*.gif$image,domain=bunchatv.net
 ||cdn.giavang.org/images/ads/$image,domain=giavang.org
 ||cdn.jsdelivr.net/gh/ngylduy/blog@b844bfe/js/AdsenseAds.min.js$script,domain=vanphatelectric.com
-||cdn.lfastcdn.com^*.gif$image,domain=bongdainfox.tv|zeldinforcongress.com|rakhoivq.cc|volvooceanrace.org|mitomza.cc|cj-entertainment.com
+||cdn.lfastcdn.com^*.gif$image,domain=bongdainfox.tv|xoilaczzdzz.tv|rakhoivq.cc|cakhiaztk.cc|mitomza.cc|cj-entertainment.com
 ||cdn.monkeydarchive.com/images/banner/$image,domain=monkeyd.net.vn
 ||cdn.webhoctienganh.com/asset/home/img/banner/$image,domain=webhoctienganh.com
 ||cf.shopee.vn/file/$image,domain=tctruyen.org
@@ -167,9 +167,9 @@ $popup,domain=truyenfull.vision
 ||mediastation.live^*.gif$image,domain=mn.mediastation.live|home1.mannhan22.pro|mannhan97.xyz
 ||mocfun.net/uploads/banners/
 ||motchill10.com/public/upload/ads/ads.js$script,~third-party
-||motchillbr.com^*.gif$~third-party
 ||motchillk.gg^*.gif$image
 ||motchillre.fm^*.gif$image
+||motchillzz.fm^*.gif$~third-party
 ||motphimtv.bz^*.gif$image
 ||mplmncb.com/banners-web/$script,image,domain=truyenqqno.com
 ||mplmncb.com/popup/$script,domain=truyenqqno.com
@@ -225,6 +225,7 @@ $popup,domain=truyenfull.vision
 ||the.tube/js/simpleblocker.js$script
 ||thoigian.com.vn/mFiles/N/06/$image
 ||thoigian.com.vn^*.gif
+||thuocbietduoc.com.vn/aqc/$image
 ||thuysanvietnam.com.vn^*.gif
 ||timsanpham.com/images/$third-party
 ||tinhayvip.com^*.gif
@@ -252,7 +253,6 @@ $popup,domain=truyenfull.vision
 ||www.clbgamesvn.com/diendan/popup/popup.js$script,~third-party
 ||www.iosviet.com^$csp=script-src 'self' 'unsafe-inline' http: https:
 ||www.motchill37.com/3s.m3u8$rewrite=abp-resource:blank-mp3,domain=www.motchill37.com
-||www.thuocbietduoc.com.vn/aqc/$image
 ||xahoingaynay.com.vn/upload/$image
 ||xem16.net^*.gif
 ||xemphimviet.one/client_assets/js/dataview/adsview.js$script,~third-party
@@ -415,10 +415,10 @@ docufind.org.uk/wp-content/themes/vlxx/js/*-adx.js$script
 ||mialsja.life^$image,domain=phimxxx.ai
 ||mneydirec.com^
 ||ngaytho.me^*.gif
-||phimsexhayvn82.com^*.gif$image
+||phimsexhayvn85.com^*.gif$image
 ||quatvn.my^*.gif$image
 ||quatvn2.net/TVC-gaixinh.mp4$media,domain=quatvn.my
-||quoracdn.net^$image,domain=vlxx.bz|haysex.mobi|phim18vip.one|pheclip.love|vailonmup.com|newshound.org.uk|phevl.club|fulllivehot.live|haysexvn.baby|chich69.club|viet69hay.life|sieudam.sh
+||quoracdn.net^$image,domain=vlxx.bz|haysex.mobi|phim18vip.one|pheclip.love|vailonmup.com|newshound.org.uk|phevl.club|fulllivehot.live|haysexvn.baby|chich69.club|viet69hay.com|sieudam.sh
 ||rphang.online^*.gif
 ||sayhentai.live/assets/js/ads.js
 ||sayhentai.live/storage/images/banner/$image
