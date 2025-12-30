@@ -1,9 +1,9 @@
 [Adblock Plus 2.0]
-! Version: 20251230150832043
+! Version: 20251230213457337
 ! id: D4028CDD-3D39-4624-ACC7-8140F4EC3888
 ! Title: ABPVN List
-! Last modified: 30 Dec 2025 15:08:32 UTC+7
-! Diff-Path: patches/20251230150832043.patch#abpvn_ublock
+! Last modified: 30 Dec 2025 21:34:57 UTC+7
+! Diff-Path: patches/20251230213457337.patch#abpvn_ublock
 ! Diff-Expires: 60 minutes
 ! Expires: 1 days (update frequency)
 !
@@ -1058,6 +1058,7 @@ docufind.org.uk/wp-content/themes/vlxx/js/*-adx.js$script
 ||l1.stream4k.online^*.gif$image,domain=genzsex.blog
 ||lxmanga.my/storage/images/banners
 ||mangadm.cc$csp=script-src 'self' 'unsafe-inline' http
+||menudash.net^*.gif$image
 ||mialsja.life^$image,domain=phimxxx.ai
 ||mneydirec.com^
 ||ngaytho.me^*.gif
@@ -1123,6 +1124,8 @@ javtiful.com###latest-censored-videos>.row>div.pb-3.col:nth-of-type(1)
 javtopxx2.com###fbox-background
 javtopxx2.com##.logo-player
 javtopxx2.com##.sticky_bottom
+menudash.net###vl-header-adx
+menudash.net##.xx-ads
 ngaytho.me##.body_wrapper1
 nung18.com##.jw-overlays>img[src]
 pheclip.love,phim18vip.one##.in.fade.modal-backdrop
@@ -1261,6 +1264,7 @@ linkneverdie.net,linkneverdie.top,linkneverdie2.com##+js(nostif, DisplayAHTML, 5
 linkneverdie.net,linkneverdie.top,linkneverdie2.com##+js(nostif, callback, 6004)
 lrepacks.net##+js(acs, JSON.parse, break;case $.)
 lxmanga.my##+js(acs, $, PopUnder)
+menudash.net##+js(acs, window.addEventListener, Ads)
 monkeydtruyen.com##.affActive:style(display:block!important)
 monkeydtruyen.com##.affClick
 motchillk.gg##+js(aopr, sessionStorage)
