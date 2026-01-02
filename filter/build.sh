@@ -11,10 +11,10 @@ sed -e "s/_time_stamp_/$TIME_STAMP/g" -e "s/_version_/$VERSION/g" src/abpvn_titl
 echo >> src/abpvn_title.tmp
 # add to 1 file
 # abpvn.txt
-cat src/abpvn_title.tmp src/abpvn_general.txt src/abpvn_ad_domain.txt src/abpvn_elemhide.txt src/abpvn_whitelist.txt src/abpvn_whitelist_elemhide.txt src/abpvn_adult.txt src/abpvn_adult_elemhide.txt > abpvn.tmp
+cat src/abpvn_title.tmp src/abpvn_general.txt src/abpvn_ad_domain.txt src/abpvn_elemhide.txt src/abpvn_whitelist.txt src/abpvn_whitelist_elemhide.txt src/abpvn_adult.txt src/abpvn_adult_elemhide.txt | sed -e "s/_adblocker_name_//g" > abpvn.tmp
 sed -e '/^$/d' -e "s/.patch#/.patch#abpvn/" abpvn.tmp > abpvn.txt
 # abpvn_ublock.txt
-cat src/abpvn_title.tmp src/abpvn_general.txt src/abpvn_ad_domain.txt src/abpvn_elemhide.txt src/abpvn_whitelist.txt src/abpvn_whitelist_elemhide.txt src/abpvn_adult.txt src/abpvn_adult_elemhide.txt src/abpvn_ublock_specific.txt > abpvn_ublock.tmp
+cat src/abpvn_title.tmp src/abpvn_general.txt src/abpvn_ad_domain.txt src/abpvn_elemhide.txt src/abpvn_whitelist.txt src/abpvn_whitelist_elemhide.txt src/abpvn_adult.txt src/abpvn_adult_elemhide.txt src/abpvn_ublock_specific.txt | sed -e "s/_adblocker_name_/ | Ublock Origin/g" > abpvn_ublock.tmp
 get_replace_rule () {
     # $1 is input file
     local INPUT_FILE="src/$1.txt"
@@ -43,7 +43,7 @@ else
     sed -e '/^$/d' -e "s/.patch#/.patch#abpvn_ublock/" abpvn_ublock1.tmp > abpvn_ublock.txt
 fi
 # abpvn_adguard.txt
-cat src/abpvn_title.tmp src/abpvn_general.txt src/abpvn_ad_domain.txt src/abpvn_elemhide.txt src/abpvn_whitelist.txt src/abpvn_whitelist_elemhide.txt src/abpvn_adult.txt src/abpvn_adult_elemhide.txt src/abpvn_adguard_specific.txt > abpvn_adguard.tmp
+cat src/abpvn_title.tmp src/abpvn_general.txt src/abpvn_ad_domain.txt src/abpvn_elemhide.txt src/abpvn_whitelist.txt src/abpvn_whitelist_elemhide.txt src/abpvn_adult.txt src/abpvn_adult_elemhide.txt src/abpvn_adguard_specific.txt | sed -e "s/_adblocker_name_/ | AdGuard/g" > abpvn_adguard.tmp
 # Search useless rule by adguard specific
 ADGUARD_REPLACE_RULE=$(get_replace_rule abpvn_adguard_specific)
 if [ "$ADGUARD_REPLACE_RULE" == "" ]
@@ -54,10 +54,10 @@ else
     sed -e '/^$/d' -e "s/.patch#/.patch#abpvn_adguard/" abpvn_adguard1.tmp > abpvn_adguard.txt
 fi
 # abpvn_noelemhide.txt
-cat src/abpvn_title.tmp src/abpvn_general.txt src/abpvn_ad_domain.txt src/abpvn_whitelist.txt src/abpvn_adult.txt > abpvn_noelemhide.tmp
+cat src/abpvn_title.tmp src/abpvn_general.txt src/abpvn_ad_domain.txt src/abpvn_whitelist.txt src/abpvn_adult.txt | sed -e "s/_adblocker_name_//g" > abpvn_noelemhide.tmp
 sed -e '/^$/d' -e "s/.patch#/.patch#abpvn_noelemhide/" abpvn_noelemhide.tmp > abpvn_noelemhide.txt
 # abpvn_content_blocker.txt
-cat src/abpvn_title.tmp src/abpvn_general.txt src/abpvn_ad_domain.txt src/abpvn_elemhide.txt src/abpvn_whitelist.txt src/abpvn_whitelist_elemhide.txt src/abpvn_adult.txt src/abpvn_adult_elemhide.txt src/abpvn_content_blocker_hot_fix.txt > abpvn_content_blocker.tmp
+cat src/abpvn_title.tmp src/abpvn_general.txt src/abpvn_ad_domain.txt src/abpvn_elemhide.txt src/abpvn_whitelist.txt src/abpvn_whitelist_elemhide.txt src/abpvn_adult.txt src/abpvn_adult_elemhide.txt src/abpvn_content_blocker_hot_fix.txt | sed -e "s/_adblocker_name_/ | Content Blocker/g" > abpvn_content_blocker.tmp
 # Search useless rule by content blocker
 CONTENT_BLOCKER_REPLACE_RULE=$(get_replace_rule abpvn_content_blocker_hot_fix)
 if [ "$CONTENT_BLOCKER_REPLACE_RULE" == "" ]
