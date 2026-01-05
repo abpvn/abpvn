@@ -20,7 +20,7 @@ class Const():
         'phukienthoitranggiare.com', 'cloudfront.net',
         'vinaurl.net', 'ezodn.com', 'adocean.pl', 'i.postimg.cc', 'mannhan97.xyz', 'api.anime3s.com',
         'mail.yandex.com', 'iili.io', 'cdn.jsdelivr.net', 'cleverwebserver.com', 's.shopee.vn', 'i.imghippo.com',
-        'quatvn2.net'
+        'quatvn2.net', 'video.qmh.sex'
     ]
     REDIRECT_REJECT_TARGET_DOMAIN = [
         'google.com', 'www.google.com', 'www.facebook.com', 'facebook.com', 'www.advertising.yahooinc.com', 'marketingplatform.google.com',
