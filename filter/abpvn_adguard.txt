@@ -1,9 +1,9 @@
 [Adblock Plus 2.0]
-! Version: 20260124104258428
+! Version: 20260124120706557
 ! id: D4028CDD-3D39-4624-ACC7-8140F4EC3888
 ! Title: ABPVN List | AdGuard
-! Last modified: 24 Jan 2026 10:42:58 UTC+7
-! Diff-Path: patches/20260124104258428.patch#abpvn_adguard
+! Last modified: 24 Jan 2026 12:07:06 UTC+7
+! Diff-Path: patches/20260124120706557.patch#abpvn_adguard
 ! Diff-Expires: 60 minutes
 ! Expires: 1 days (update frequency)
 !
@@ -89,6 +89,7 @@
 ||anime1s.com/_next/image?url=https%3A%2F%2F*.ibyteimg.com$image
 ||anime1s.com/_next/image?url=https%3A%2F%2Flh3.googleusercontent.com$image
 ||anime47.onl^*.gif$image
+||animevietsub.ee/ads/$script
 ||animevietsub.vip/ads/$script
 ||animevietsub9.com/vast/$image
 ||api-gavang.gvtv1.com/banners/graph$xmlhttprequest,domain=xem1.gv03.live
@@ -166,7 +167,7 @@
 ||khotruyen.ac/banner_image/$image
 ||kienthuc.net.vn/*.ads
 ||laodong.vn/*QuangcaoOnline
-||lh3.googleusercontent.com/*=s0$image,domain=animevietsub.vip
+||lh3.googleusercontent.com/*=s0$image,domain=animevietsub.vip|animevietsub.ee
 ||listnhacai88.com^*.gif$image
 ||lurj.org^*.gif$~third-party
 ||media.nghean24h.vn$image,domain=nghean24h.vn
@@ -674,10 +675,10 @@ animehay.bar###header-ads + center
 animehay.bar##div[style="position: fixed; bottom: 0px; z-index: 98; width: 100%; text-align: center; box-sizing: border-box;"]
 animetvn4.com###mobile-ads
 animetvn4.com##.gnarty-offads
-animevietsub.vip###invideo_wrapper
-animevietsub.vip##.Ads
-animevietsub.vip##.mobile-catfish-top
-animevietsub.vip##.mobile-catfixx
+animevietsub.vip,animevietsub.ee###invideo_wrapper
+animevietsub.vip,animevietsub.ee##.Ads
+animevietsub.vip,animevietsub.ee##.mobile-catfish-top
+animevietsub.vip,animevietsub.ee##.mobile-catfixx
 animevietsub.vip,phimtuoitho.tv##.pc-catfixx
 anninhthudo.vn##.adsitem
 apkmoddone.com###sn-Notif
@@ -982,6 +983,7 @@ rakhoivq.cc##.btn-odds
 rakhoivq.cc,sresproductions.com,vebozxn.cc##.btn-8xbet
 reatimes.vn##div[class^="adv-"]
 robong.cc##.chat-spr
+robong.cc##.h_spr
 russianbooker.org###match-child-1
 russianbooker.org##.block-catfish.text-center.d-lg-none.d-block
 russianbooker.org##.container>ul
@@ -1342,6 +1344,7 @@ vozer.io#@#[class^="div-gpt-ad"]
 ||quatvn.my^*.gif$image
 ||quatvn2.net/TVC-gaixinh.mp4$media,domain=quatvn.my
 ||quoracdn.net^$image,domain=vlxx.net|playjumps.co.uk|phim18vip.one|pheclip.love|vlgaisex.pro|sexhihi.fit|phevl.sh|fulllivehot.live|scdvd.com|chich69.top|olivierperu.com|sieudam.sh
+||rmsolutions.ch^*.gif$image
 ||rphang.online^*.gif
 ||sayhentai.live/assets/js/ads.js
 ||sayhentai.live/storage/images/banner/$image
@@ -1368,8 +1371,10 @@ vozer.io#@#[class^="div-gpt-ad"]
 ||xfast.sbs^*.gif$image,domain=clipphot.biz
 ||xnhau.blog^$media,domain=xnhau.hot
 ||ybs2ffs7v.com^
+||zcap3.space/api/ads$xmlhttprequest
 ||zr.mezcalumlaut.com^
 !---------- ABPVN Adult Element Hide ---------------
+abc.systemcdncdn.store##iframe + img
 anhgaixinh.online##.footer-banner
 basmaticw5.co.uk###vl-header-adx
 basmaticw5.co.uk##.xx-ads
@@ -1434,6 +1439,13 @@ quatvn.my##.popup-banner
 quatvn.my##.popup-overlay
 quatvn.my##.preroll-content
 quatvn.my##body>div[style^="position: fixed;"]
+rmsolutions.ch###vl-header-adx
+rmsolutions.ch##.banner-preload
+rmsolutions.ch##.banner-preload-container
+rmsolutions.ch##.catfish-bottom
+rmsolutions.ch##.catfish-top
+rmsolutions.ch##.float-contact
+rmsolutions.ch##.float-contact2
 rphang.online##.bbMediaWrapper-inner>.samCodeUnit
 rphang.online##.js-replyNewMessageContainer.block-body>div.samCodeUnit>.samItem
 rphang.online##.p-footer
@@ -1557,7 +1569,7 @@ gotphim.com#%#//scriptlet("abort-current-inline-script", "navigator", "devtoolsD
 hh2d.tv#%#//scriptlet("abort-current-inline-script", "$", "adblock")
 hh3dhay.life#%#//scriptlet("abort-current-inline-script", "Symbol", "break;case $")
 hh3dhay.life,tram3d.com#%#//scriptlet("abort-current-inline-script", "document.createElement", ";break;case")
-hh3dhay.life,tram3d.online,animevietsub.vip#%#//scriptlet("abort-current-inline-script", "eval", "$._Eu")
+hh3dhay.life,tram3d.online,animevietsub.vip,animevietsub.ee#%#//scriptlet("abort-current-inline-script", "eval", "$._Eu")
 hhtq.lol###overlay
 hhtq.lol,themphotv5.com,phimchautinhtri.net,robong.cc#$#html {overflow: auto!important;}
 imail.edu.vn,www.motchill41.com,trumtruyen.xyz,teamlanhlungday.store#%#//scriptlet("abort-current-inline-script", "setTimeout", "Aff")
@@ -1574,7 +1586,7 @@ lrepacks.net#%#//scriptlet("abort-current-inline-script", "JSON.parse", "break;c
 lxmanga.space#%#//scriptlet("abort-current-inline-script", "$", "PopUnder")
 monkeydtruyen.com##.affClick
 monkeydtruyen.com#$#.affActive {display:block!important;}
-motchillk.mx#%#//scriptlet("abort-on-property-read", "sessionStorage")
+motchillk.mx,zcap3.space#%#//scriptlet("abort-on-property-read", "sessionStorage")
 motchilltvphim.com#%#//scriptlet("abort-current-inline-script", "jQuery", "click_time")
 mv.phimmoiaz.cc,anime13.site,anh.moe,xemphimjav.xyz,hoctot.hocmai.vn,samtruyentranh.com,truyenfull.vision,player.phimapi.com,noitu.site,sachmoi.net,xfast.sbs,anime47.best,phimsexvn1.co.uk#%#//scriptlet("abort-on-property-read", "open")
 nettruyenar.com,sextop1.moi,hhvsub1.com#%#//scriptlet("abort-current-inline-script", "WebAssembly", "globalThis")
