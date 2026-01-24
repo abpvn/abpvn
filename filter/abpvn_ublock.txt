@@ -1,9 +1,9 @@
 [Adblock Plus 2.0]
-! Version: 20260124120706338
+! Version: 20260124133644817
 ! id: D4028CDD-3D39-4624-ACC7-8140F4EC3888
 ! Title: ABPVN List | Ublock Origin
-! Last modified: 24 Jan 2026 12:07:06 UTC+7
-! Diff-Path: patches/20260124120706338.patch#abpvn_ublock
+! Last modified: 24 Jan 2026 13:36:44 UTC+7
+! Diff-Path: patches/20260124133644817.patch#abpvn_ublock
 ! Diff-Expires: 60 minutes
 ! Expires: 1 days (update frequency)
 !
@@ -74,6 +74,7 @@
 ||123nhadatviet.net/Media/CK/banners/
 ||2banh.vn/images/banners/
 ||7jab1225.edgemaxcdn.org^*.gif$domain=xem.cakhia81.xyz|watch.rkplayer.xyz|xem.rakhoi53.xyz
+||7jab1225.edgemaxcdn.org^*.gif$image
 ||a1apollodriving.co.uk/images/banners/$image
 ||ads*.autodaily.vn
 ||ads.nghenhinvietnam.vn^$domain=nghenhinvietnam.vn
@@ -415,10 +416,10 @@ baonga.com##.monkey-content-duoicanbiet
 baonga.com##.monkey-section-tinnoibat
 baonga.com##div.monkey-qc
 baoquangninh.vn##.bottom-right-ads
-bat.vebo5.info##.link2.group-link
 bat.vebo5.info##.link3.group-link
 bat.vebo5.info##.link4.group-link
 bat.vebo5.info##div.link1.group-link:nth-of-type(4)
+bat.vebo5.info,rakhoitvv.link##.link2
 bing.com##.b_algo:has(.rms_img[src*="/th?id=OADD2."][src$="21.2"])
 bing.com##.b_algo:has(.rms_img[src*="=AdsPlus"])
 blog.abit.vn##.button-dangkyngay
@@ -451,6 +452,7 @@ cafef.vn###wrapper>[id^="adm-slot"]
 cafef.vn##.box-adm
 cafef.vn##[class^="ads_"]
 cafef.vn,ttvn.toquoc.vn##.bannertop
+cakhiaaz.tv##div.link-mobile:nth-child(3) ~ .group-link
 cakhiazte.cc##.container.mt-1.d-none.d-lg-block
 cakhiazte.cc##.menu-item-object-custom
 cakhiazte.cc##.sub-menu.d-none.d-lg-flex
@@ -682,6 +684,12 @@ qdnd.vn##.box-banner
 qmanga.art,khotruyen.ac##.gwd-banner-image
 quantrimang.com###adrighttop
 r.cakeo3.rocks##a.bg-yellow-1[target="_blank"]
+rakhoitvv.link##.main-link.right
+rakhoitvv.link,cakhiaaz.tv###modelAds
+rakhoitvv.link,cakhiaaz.tv##.g-imgbot
+rakhoitvv.link,cakhiaaz.tv##.g-imgtop
+rakhoitvv.link,cakhiaaz.tv##.group-btn:has(.btn-bet)
+rakhoitvv.link,cakhiaaz.tv##.main-link.news
 rakhoivq.cc##.bookmaker-selector-container
 rakhoivq.cc,sresproductions.com,vebozxn.cc##.btn-8xbet
 reatimes.vn##div[class^="adv-"]
