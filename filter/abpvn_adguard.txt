@@ -1,9 +1,9 @@
 [Adblock Plus 2.0]
-! Version: 20260129105306729
+! Version: 20260129203110550
 ! id: D4028CDD-3D39-4624-ACC7-8140F4EC3888
 ! Title: ABPVN List | AdGuard
-! Last modified: 29 Jan 2026 10:53:06 UTC+7
-! Diff-Path: patches/20260129105306729.patch#abpvn_adguard
+! Last modified: 29 Jan 2026 20:31:10 UTC+7
+! Diff-Path: patches/20260129203110550.patch#abpvn_adguard
 ! Diff-Expires: 60 minutes
 ! Expires: 1 days (update frequency)
 !
@@ -43,8 +43,8 @@
 /core/*$script,domain=gamek.vn|genk.vn|kenh14.vn|cafef.vn|thanhnien.vn
 /disable-devtool.min.js$script
 /giadinhonline.vn/files/qc/*
-/i.imgur.com/*.gif$domain=keonhacai55.lol|www.motchill42.com|borealisrecords.com|vebozxn.cc|joebrower.com|listnhacai88.com|mamby.com|mitomzh.cc|rakhoivq.cc
-/images/company/21.png$image,domain=vebozxn.cc|mamby.com|borealisrecords.com
+/i.imgur.com/*.gif$domain=keonhacai55.lol|www.motchill42.com|borealisrecords.com|vebozxn.cc|joebrower.com|listnhacai88.com|ruwenzori.net|mitomzh.cc|rakhoivq.cc
+/images/company/21.png$image,domain=vebozxn.cc|ruwenzori.net|borealisrecords.com
 /js/ads.js$script,~third-party,domain=~vipurl.in
 /lv/esnk/*$script
 /newchill/*gif$image
@@ -104,7 +104,7 @@
 ||cdn-data.gtvplus.vn/banners/$image,domain=gametv.vn
 ||cdn-live.taoxanh.biz/live-dev/cms/*.gif$image,domain=bunchatv.net
 ||cdn.giavang.org/images/ads/$image,domain=giavang.org
-||cdn.lfastcdn.com^*.gif$image,domain=bongdainfox.tv|mamby.com|rakhoivq.cc|joebrower.com|mitomzh.cc|vebozxn.cc
+||cdn.lfastcdn.com^*.gif$image,domain=bongdainfox.tv|ruwenzori.net|rakhoivq.cc|joebrower.com|mitomzh.cc|vebozxn.cc
 ||cdn.monkeydarchive.com/images/banner/$image,domain=monkeyd.net.vn
 ||cdn.webhoctienganh.com/asset/home/img/banner/$image,domain=webhoctienganh.com
 ||cf.shopee.vn/file/$image,domain=tctruyen.org
@@ -114,6 +114,7 @@
 ||chotlo3s.com^*gif
 ||client.rigelink.com/delivery/$xmlhttprequest
 ||code.gunnymienphi.net^*.gif
+||comanalysis.ch^*.gif$~third-party
 ||danketoan.com/banner/
 ||down-vn.img.susercontent.com/file/vn-11134207-7ra0g-m7vtp74a0ozne9.webp$image,domain=audiotruyenfull.com
 ||file1.dangcongsan.vn^*.gif$image,domain=dangcongsan.vn
@@ -166,7 +167,6 @@
 ||media.nghean24h.vn$image,domain=nghean24h.vn
 ||mediastation.live^*.gif$image,domain=mn.mediastation.live|home1.mannhan22.pro|mannhan97.xyz
 ||mocfun.net/uploads/banners/
-||motchillie.org^*.gif$~third-party
 ||motchillk.mx^*.gif$image
 ||motchillki.fm^*.gif$image
 ||motphimtv.bz^*.gif$image
@@ -448,12 +448,12 @@ borealisrecords.com##.pl-lg-0.col-xl-4
 borealisrecords.com##.row.d-none
 borealisrecords.com##.widget-offers__list
 borealisrecords.com##div.d-lg-none.d-block:nth-of-type(3)
-borealisrecords.com,mamby.com##.match-detail__offer
 borealisrecords.com,mitomzh.cc##.menu-cuoc-8xbet
 borealisrecords.com,mitomzh.cc,vebozxn.cc##.menu-top-nha-cai
 borealisrecords.com,rakhoivq.cc##.sk_balloon
-borealisrecords.com,vebozxn.cc,joebrower.com,mamby.com,mitomzh.cc##.company
-borealisrecords.com,vebozxn.cc,joebrower.com,mitomzh.cc,mamby.com##div[id^="dnn_"]
+borealisrecords.com,ruwenzori.net##.match-detail__offer
+borealisrecords.com,vebozxn.cc,joebrower.com,mitomzh.cc,ruwenzori.net##div[id^="dnn_"]
+borealisrecords.com,vebozxn.cc,joebrower.com,ruwenzori.net,mitomzh.cc##.company
 bunchatv.net##.AdsBT1_container__mj9mh
 bunchatv.net##.AdsBottom_adsBottom__h3oS6
 bunchatv.net##.AdsPrBtn_adsButton__8xvdb
@@ -484,6 +484,7 @@ chotlo3s.com##div[id^="hide_float"]
 coinphoton.com##.header-fix-ads
 coinphoton.com##.lepopup-popup-container
 coinphoton.com##.lepopup-popup-overlay
+comanalysis.ch##.fixed.inset-0.z-\[9999\].flex.items-center.justify-center.bg-black\/70
 comong.info###layer-popup-link3
 comong.info###transparentLayer
 comong.info###virtualLayer
@@ -559,8 +560,8 @@ gocmod.com##.wrp-min>center
 gocmod.com##center:has(.adsbygoogle)
 gocmod.com##div[style^="position: fixed"]
 hhanime3d.ee,hhtq.lol###top_addd
-hhdragon.cam##.catfish-img
-hhninja30.tv,hhtq13.vip,hhtqvietsub.cc,hhtutien.cc,animeweb.vip,animehay.bar,hhtq3d.net,hhvsub1.com,phimdacap.tv,motchillk.mx,hhdragon.cam,hh2d.tv###catfish
+hhdragon.vip##.catfish-img
+hhninja30.tv,hhtq13.vip,hhtqvietsub.cc,hhtutien.cc,animeweb.vip,animehay.bar,hhtq3d.net,hhvsub1.com,phimdacap.tv,motchillk.mx,hhdragon.vip,hh2d.tv###catfish
 hhtq.lol###xs-addd0
 hhtq.lol##.btn-fanpage.btn-default.btn-block.btn
 hhtq.lol##.underplayer_btn
@@ -587,7 +588,7 @@ joebrower.com##.menu-item-object-custom
 joebrower.com##.sub-menu.d-none.d-lg-flex
 joebrower.com,borealisrecords.com,vebozxn.cc###quangcaopc
 joebrower.com,borealisrecords.com,vebozxn.cc##.marquee-container
-joebrower.com,borealisrecords.com,vebozxn.cc,mamby.com,rakhoivq.cc###wap_bottombanner
+joebrower.com,borealisrecords.com,vebozxn.cc,ruwenzori.net,rakhoivq.cc###wap_bottombanner
 joebrower.com,vebozxn.cc##.align-items-center.justify-content-between.d-flex.col-12>.d-lg-none.d-block
 kenh14.vn##.ads-sponsor
 kenh14.vn##.khw-adk14-wrapper
@@ -625,21 +626,6 @@ loigiaihay.com##div[style="margin: 10px 0 5px 0; min-height: 250px;"]
 luatduonggia.vn##.ads-tags
 luatduonggia.vn##.img_side_bar
 luatduonggia.vn##.poka-image
-mamby.com##.ads-item
-mamby.com##.ads-menu-item
-mamby.com##.c-int.d-lg-none.d-block>p.block-int.mb-1
-mamby.com##.col-12>p.block-int.mb-1
-mamby.com##.dcmm-button-player-item
-mamby.com##.divdatcuoc
-mamby.com##.grid-match__footer
-mamby.com##.odds-comp-logo
-mamby.com##.show-ads-banner
-mamby.com##.w-100.justify-content-center.align-items-center.d-flex
-mamby.com##.widget
-mamby.com##.xlz-ads-item
-mamby.com##a.d-lg-none.d-block:nth-of-type(1)
-mamby.com,rakhoivq.cc##.btn-odds
-mamby.com,vebozxn.cc##.odds-comp
 manhua3q.com##.native-ad-container
 mannhan97.xyz##.bet-btn-8423
 mannhan97.xyz##.btn_betnow_632132
@@ -661,7 +647,6 @@ monkeyd.net.vn##.justify-content-center.d-flex.mx-3.mx-lg-4.mt-3>[href]
 monkeyd.net.vn,monkeydtruyen.com###affLayer
 monkeydtruyen.com###affLayer2
 motchillec.cc##.overlay-1
-motchillie.org##.fixed.inset-0.z-\[9999\].flex.items-center.justify-center.bg-black\/70
 motchillki.fm##.aam-banner-wrapper
 motchillki.fm##.cat-footer-wrapper
 motchillki.fm##.cat-header-wrapper
@@ -723,10 +708,25 @@ rakhoitvv.link,cakhiaaz.tv##.g-imgtop
 rakhoitvv.link,cakhiaaz.tv##.group-btn:has(.btn-bet)
 rakhoitvv.link,cakhiaaz.tv##.main-link.news
 rakhoivq.cc##.bookmaker-selector-container
-rakhoivq.cc,mamby.com,vebozxn.cc,borealisrecords.com##.btn-8xbet
+rakhoivq.cc,ruwenzori.net,vebozxn.cc,borealisrecords.com##.btn-8xbet
 reatimes.vn##div[class^="adv-"]
 robong.cc##.chat-spr
 robong.cc##.h_spr
+ruwenzori.net##.ads-item
+ruwenzori.net##.ads-menu-item
+ruwenzori.net##.c-int.d-lg-none.d-block>p.block-int.mb-1
+ruwenzori.net##.col-12>p.block-int.mb-1
+ruwenzori.net##.dcmm-button-player-item
+ruwenzori.net##.divdatcuoc
+ruwenzori.net##.grid-match__footer
+ruwenzori.net##.odds-comp-logo
+ruwenzori.net##.show-ads-banner
+ruwenzori.net##.w-100.justify-content-center.align-items-center.d-flex
+ruwenzori.net##.widget
+ruwenzori.net##.xlz-ads-item
+ruwenzori.net##a.d-lg-none.d-block:nth-of-type(1)
+ruwenzori.net,rakhoivq.cc##.btn-odds
+ruwenzori.net,vebozxn.cc##.odds-comp
 sachmoi.net##.boxzilla-bottom-right-container
 sachmoi.net##[href^="https://gotrackecom.info"]
 saostar.vn###mobi-top
@@ -1042,6 +1042,7 @@ vozer.io#@#[class^="div-gpt-ad"]
 docufind.org.uk/wp-content/themes/vlxx/js/*-adx.js$script
 ||26efp.com/js/dulak2.js$script,~third-party
 ||anhgaixinh.online^*.webp$image
+||as-technology.co.uk^*.gif$image
 ||basmaticw5.co.uk^*.gif$image
 ||blogger.googleusercontent.com^*.gif$image,domain=www.gvnvh18z.com
 ||buomtv.media/palivn/ad/$image,~third-party
@@ -1078,7 +1079,7 @@ docufind.org.uk/wp-content/themes/vlxx/js/*-adx.js$script
 ||qmh.sex/assets/js/simpleblocker.js$script,~third-party
 ||quatvn.my^*.gif$image
 ||quatvn2.net/TVC-gaixinh.mp4$media,domain=quatvn.my
-||quoracdn.net^$image,domain=vlxx.net|playjumps.co.uk|phim18vip.one|pheclip.love|vlgaisex.pro|sexhihi.fit|phevl.sh|fulllivehot.live|scdvd.com|chich69.top|olivierperu.com|sieudam.sh
+||quoracdn.net^$image,domain=vlxx.net|playjumps.co.uk|phim18vip.one|pheclip.love|vlgaisex.pro|sexhihi.fit|phevl.sh|fulllivehot.live|haysexvn.lol|chich69.top|viet69hayz.life|sieudam.sh
 ||rmsolutions.ch^*.gif$image
 ||rphang.online^*.gif
 ||sayhentai.live/assets/js/ads.js
@@ -1110,6 +1111,8 @@ docufind.org.uk/wp-content/themes/vlxx/js/*-adx.js$script
 @@||lxmanga.space$generichide
 abc.systemcdncdn.store##iframe + img
 anhgaixinh.online##.footer-banner
+as-technology.co.uk###bannerWrapper
+as-technology.co.uk##.floating-banner-wrapper
 basmaticw5.co.uk###vl-header-adx
 basmaticw5.co.uk##.xx-ads
 buomtv.media##._9xtpcl.c1mnguco.c9pdtme.c1q1n9rc.c1f8a55r.c2wbcgy.c1qs0lzc.cq980mc.cosll6e.cxngf0m.c199xq07.c1xtmnwt
@@ -1136,13 +1139,14 @@ gamer18.net##.fixed-banner-bottom
 gamer18.net##div[id^="divFLR"]
 genzsex.blog##.adx-ad-item
 gockhuat.net###ad_global_below_navbar
+haysexvn.lol###vl-header-adx
+haysexvn.lol##.castfish-wrappe
 javtiful.com###latest-censored-videos>.row>div.pb-3.col:nth-of-type(1)
 javtopxx2.com###fbox-background
 javtopxx2.com##.logo-player
 javtopxx2.com##.sticky_bottom
 ngaytho.me##.body_wrapper1
 nung18.com##.jw-overlays>img[src]
-olivierperu.com###castfish
 pheclip.love,phim18vip.one##.in.fade.modal-backdrop
 phim.haysex.asia###mp-preload-popup-overlay
 phim.haysex.asia##.banner-play
@@ -1181,10 +1185,8 @@ rphang.online##.js-replyNewMessageContainer.block-body>div.samCodeUnit>.samItem
 rphang.online##.p-footer
 rphang.online,thiendia1.vip##.samVideoOverlay
 sayhentai.live#@#.c-ads
-scdvd.com###vl-header-adx
-scdvd.com##.castfish-wrappe
 sexhaynung.xyz###tut4ktream_idAdLink
-sexlive.biz,scdvd.com,olivierperu.com##.popup
+sexlive.biz,haysexvn.lol,viet69hayz.life##.popup
 sextop.asia##div[style^="position:fixed;inset:0px;z-index:100000;"]
 sextop.asia,hls.playerfb.xyz###video_player ~ div[id]
 sieukhung.ltd##.adspopupgiua
@@ -1216,6 +1218,7 @@ vailonxx.co##.vailo-sticky
 vailonxx.co##.vailo-under-navbar
 vailonxx.co##.vailo-under-navbar-mobile
 viet69.cm##.footer-fixed-br-container
+viet69hayz.life###castfish
 viet69vn.at##.footer-fixed-br-container
 vl.phe.to###divExoLayerWrapper
 vl.phe.to##.sdzhead
@@ -1261,8 +1264,8 @@ cafef.vn,gamek.vn,genk.vn,kenh14.vn,soha.vn,tuoitre.vn,afamily.vn,thanhnien.vn#%
 checkscam.vn#%#//scriptlet("abort-current-inline-script", "document.addEventListener", "open")
 childish2x1.fun,childish2x2.fun,tekora.space,lottedira.store,tekora.fun#%#//scriptlet("abort-current-inline-script", "$", "aff")
 chotlo3s.com#$##header {margin-top: 0!important}
-cliphubs.com,olivierperu.com#%#//scriptlet("abort-current-inline-script", "document.addEventListener", "pop")
-clipphot.biz#%#//scriptlet("abort-current-inline-script", "document.addEventListener", "POP")
+cliphubs.com,viet69hayz.life#%#//scriptlet("abort-current-inline-script", "document.addEventListener", "pop")
+clipphot.biz,as-technology.co.uk#%#//scriptlet("abort-current-inline-script", "document.addEventListener", "POP")
 dualeotruyenpe.com#%#//scriptlet("abort-current-inline-script", "document.addEventListener", "popunder")
 economic45882.shop,cdn4.tiptoe34x1.fun#%#//scriptlet("abort-current-inline-script", "$", "arrDirectLink")
 freeplayervideo.com,abysscdn.com,player-cdn.com#%#//scriptlet("set-constant", "open", "noopFunc")
@@ -1271,6 +1274,7 @@ game8.vn,cunghocvui.com#%#//scriptlet("abort-on-property-read", "document.addEve
 giavang.net#%#//scriptlet("prevent-fetch", "method:HEAD")
 gocmod.com#%#//scriptlet("abort-current-inline-script", "jQuery", "popup")
 gotphim.com#%#//scriptlet("abort-current-inline-script", "navigator", "devtoolsDetector")
+haysexvn.lol#%#//scriptlet("abort-current-inline-script", "document.addEventListener", "adx")
 hh2d.tv#%#//scriptlet("abort-current-inline-script", "$", "adblock")
 hh3dhay.life#%#//scriptlet("abort-current-inline-script", "Symbol", "break;case $")
 hh3dhay.life,tram3d.com#%#//scriptlet("abort-current-inline-script", "document.createElement", ";break;case")
@@ -1289,9 +1293,6 @@ linkneverdie.net,linkneverdie.top,linkneverdie2.com#%#//scriptlet("prevent-setTi
 linkneverdie.net,linkneverdie.top,linkneverdie2.com#%#//scriptlet("prevent-setTimeout", "callback", "6004")
 lrepacks.net#%#//scriptlet("abort-current-inline-script", "JSON.parse", "break;case $.")
 lxmanga.space#%#//scriptlet("abort-current-inline-script", "$", "PopUnder")
-mamby.com#%#//scriptlet("abort-current-inline-script", "jQuery", "open")
-mamby.com#%#//scriptlet("set-constant", "adsPlayer", "")
-mamby.com#%#//scriptlet("set-constant", "adsTvcs", "")
 monkeydtruyen.com##.affClick
 monkeydtruyen.com#$#.affActive {display:block!important;}
 motchillk.mx,xxcap3.space#%#//scriptlet("abort-on-property-read", "sessionStorage")
@@ -1302,7 +1303,7 @@ nettruyenviet1.com#%#//scriptlet("abort-current-inline-script", "JSON", "fromCha
 pheclip.love,phim18vip.one,sieudam.sh#%#//scriptlet("abort-current-inline-script", "$", "pop")
 phimchautinhtri.net##.popmake-overlay
 phimlongtieng.net#%#//scriptlet("abort-current-inline-script", "document.createElement", "script")
-phimmoii.to,motchillie.org#%#//scriptlet("prevent-addEventListener", "click", "ads")
+phimmoii.to,comanalysis.ch#%#//scriptlet("prevent-addEventListener", "click", "ads")
 phimtho.cc#%#//scriptlet("abort-current-inline-script", "$", "p0pUpRandom")
 phimtuoitho.tv#%#//scriptlet("abort-current-inline-script", "document.documentElement", "break;case $.")
 phimvuihd.net#%#//scriptlet("set-constant", "urlAds", "")
@@ -1316,8 +1317,10 @@ robong.cc##.show.modal-backdrop.fade
 robong.cc##.sspp-modal
 rophim.moe#%#//scriptlet("abort-current-inline-script", "addEvent", "popu")
 rphang.online,misskon.com#%#//scriptlet("abort-current-inline-script", "document.querySelectorAll", "popMagic")
+ruwenzori.net#%#//scriptlet("abort-current-inline-script", "jQuery", "open")
+ruwenzori.net#%#//scriptlet("set-constant", "adsPlayer", "")
+ruwenzori.net#%#//scriptlet("set-constant", "adsTvcs", "")
 saigon24.net#%#//scriptlet("abort-current-inline-script", "document.getElementById", "myModal")
-scdvd.com#%#//scriptlet("abort-current-inline-script", "document.addEventListener", "adx")
 sex.javnong.cc#%#//scriptlet("abort-on-property-read", "Math.round")
 tailieumoi.vn#%#//scriptlet("set-constant", "linkAff", "null")
 talesfromthegoldenage.co.uk#%#//scriptlet("abort-current-inline-script", "window.addEventListener", "Ads")
