@@ -1,9 +1,9 @@
 [Adblock Plus 2.0]
-! Version: 20260129203110550
+! Version: 20260130095957400
 ! id: D4028CDD-3D39-4624-ACC7-8140F4EC3888
 ! Title: ABPVN List | Ublock Origin
-! Last modified: 29 Jan 2026 20:31:10 UTC+7
-! Diff-Path: patches/20260129203110550.patch#abpvn_ublock
+! Last modified: 30 Jan 2026 09:59:57 UTC+7
+! Diff-Path: patches/20260130095957400.patch#abpvn_ublock
 ! Diff-Expires: 60 minutes
 ! Expires: 1 days (update frequency)
 !
@@ -43,8 +43,8 @@
 /core/*$script,domain=gamek.vn|genk.vn|kenh14.vn|cafef.vn|thanhnien.vn
 /disable-devtool.min.js$script
 /giadinhonline.vn/files/qc/*
-/i.imgur.com/*.gif$domain=keonhacai55.lol|www.motchill42.com|borealisrecords.com|vebozxn.cc|joebrower.com|listnhacai88.com|ruwenzori.net|mitomzh.cc|rakhoivq.cc
-/images/company/21.png$image,domain=vebozxn.cc|ruwenzori.net|borealisrecords.com
+/i.imgur.com/*.gif$domain=keonhacai55.lol|www.motchill42.com|borealisrecords.com|vebozxn.cc|joebrower.com|listnhacai88.com|mcortechnologies.com|mitomzh.cc|rakhoivq.cc
+/images/company/21.png$image,domain=vebozxn.cc|mcortechnologies.com|borealisrecords.com
 /js/ads.js$script,~third-party,domain=~vipurl.in
 /lv/esnk/*$script
 /newchill/*gif$image
@@ -104,7 +104,7 @@
 ||cdn-data.gtvplus.vn/banners/$image,domain=gametv.vn
 ||cdn-live.taoxanh.biz/live-dev/cms/*.gif$image,domain=bunchatv.net
 ||cdn.giavang.org/images/ads/$image,domain=giavang.org
-||cdn.lfastcdn.com^*.gif$image,domain=bongdainfox.tv|ruwenzori.net|rakhoivq.cc|joebrower.com|mitomzh.cc|vebozxn.cc
+||cdn.lfastcdn.com^*.gif$image,domain=bongdainfox.tv|mcortechnologies.com|rakhoivq.cc|joebrower.com|mitomzh.cc|vebozxn.cc
 ||cdn.monkeydarchive.com/images/banner/$image,domain=monkeyd.net.vn
 ||cdn.webhoctienganh.com/asset/home/img/banner/$image,domain=webhoctienganh.com
 ||cf.shopee.vn/file/$image,domain=tctruyen.org
@@ -154,10 +154,7 @@
 ||images.tuyensinh247.com^*.gif$third-party
 ||img.iketqua.com^*.gif$image
 ||img.lazcdn.com^*.gif$image,domain=tctruyen.org
-||img.mmo4me.com/image.php?di=0QI2$image
-||img.mmo4me.com/image.php?di=146J$image
-||img.mmo4me.com/image.php?di=W9IR$image
-||kenhgamez.co^*.gif
+||kenhgamez.cc^*.gif
 ||kenhthethaotv.com/wp-content/plugins/popup-builder/public/js/PopupBuilder.js$script,~third-party
 ||khotruyen.ac/banner_image/$image
 ||kienthuc.net.vn/*.ads
@@ -448,12 +445,12 @@ borealisrecords.com##.pl-lg-0.col-xl-4
 borealisrecords.com##.row.d-none
 borealisrecords.com##.widget-offers__list
 borealisrecords.com##div.d-lg-none.d-block:nth-of-type(3)
+borealisrecords.com,mcortechnologies.com##.match-detail__offer
 borealisrecords.com,mitomzh.cc##.menu-cuoc-8xbet
 borealisrecords.com,mitomzh.cc,vebozxn.cc##.menu-top-nha-cai
 borealisrecords.com,rakhoivq.cc##.sk_balloon
-borealisrecords.com,ruwenzori.net##.match-detail__offer
-borealisrecords.com,vebozxn.cc,joebrower.com,mitomzh.cc,ruwenzori.net##div[id^="dnn_"]
-borealisrecords.com,vebozxn.cc,joebrower.com,ruwenzori.net,mitomzh.cc##.company
+borealisrecords.com,vebozxn.cc,joebrower.com,mcortechnologies.com,mitomzh.cc##.company
+borealisrecords.com,vebozxn.cc,joebrower.com,mitomzh.cc,mcortechnologies.com##div[id^="dnn_"]
 bunchatv.net##.AdsBT1_container__mj9mh
 bunchatv.net##.AdsBottom_adsBottom__h3oS6
 bunchatv.net##.AdsPrBtn_adsButton__8xvdb
@@ -588,7 +585,7 @@ joebrower.com##.menu-item-object-custom
 joebrower.com##.sub-menu.d-none.d-lg-flex
 joebrower.com,borealisrecords.com,vebozxn.cc###quangcaopc
 joebrower.com,borealisrecords.com,vebozxn.cc##.marquee-container
-joebrower.com,borealisrecords.com,vebozxn.cc,ruwenzori.net,rakhoivq.cc###wap_bottombanner
+joebrower.com,borealisrecords.com,vebozxn.cc,mcortechnologies.com,rakhoivq.cc###wap_bottombanner
 joebrower.com,vebozxn.cc##.align-items-center.justify-content-between.d-flex.col-12>.d-lg-none.d-block
 kenh14.vn##.ads-sponsor
 kenh14.vn##.khw-adk14-wrapper
@@ -635,6 +632,21 @@ mannhan97.xyz##.images_fixed
 mannhan97.xyz##.popup
 mannhan97.xyz##.sticky
 mannhan97.xyz##a.btn_fb:nth-of-type(2)
+mcortechnologies.com##.ads-item
+mcortechnologies.com##.ads-menu-item
+mcortechnologies.com##.c-int.d-lg-none.d-block>p.block-int.mb-1
+mcortechnologies.com##.col-12>p.block-int.mb-1
+mcortechnologies.com##.dcmm-button-player-item
+mcortechnologies.com##.divdatcuoc
+mcortechnologies.com##.grid-match__footer
+mcortechnologies.com##.odds-comp-logo
+mcortechnologies.com##.show-ads-banner
+mcortechnologies.com##.w-100.justify-content-center.align-items-center.d-flex
+mcortechnologies.com##.widget
+mcortechnologies.com##.xlz-ads-item
+mcortechnologies.com##a.d-lg-none.d-block:nth-of-type(1)
+mcortechnologies.com,rakhoivq.cc##.btn-odds
+mcortechnologies.com,vebozxn.cc##.odds-comp
 metruyencv.com##.text-muted
 metruyencv.com,metruyencv.net##[href$="/goout/lazada"]
 metruyencv.com,metruyencv.net##section.nh-section:nth-of-type(5)
@@ -708,25 +720,10 @@ rakhoitvv.link,cakhiaaz.tv##.g-imgtop
 rakhoitvv.link,cakhiaaz.tv##.group-btn:has(.btn-bet)
 rakhoitvv.link,cakhiaaz.tv##.main-link.news
 rakhoivq.cc##.bookmaker-selector-container
-rakhoivq.cc,ruwenzori.net,vebozxn.cc,borealisrecords.com##.btn-8xbet
+rakhoivq.cc,mcortechnologies.com,vebozxn.cc,borealisrecords.com##.btn-8xbet
 reatimes.vn##div[class^="adv-"]
 robong.cc##.chat-spr
 robong.cc##.h_spr
-ruwenzori.net##.ads-item
-ruwenzori.net##.ads-menu-item
-ruwenzori.net##.c-int.d-lg-none.d-block>p.block-int.mb-1
-ruwenzori.net##.col-12>p.block-int.mb-1
-ruwenzori.net##.dcmm-button-player-item
-ruwenzori.net##.divdatcuoc
-ruwenzori.net##.grid-match__footer
-ruwenzori.net##.odds-comp-logo
-ruwenzori.net##.show-ads-banner
-ruwenzori.net##.w-100.justify-content-center.align-items-center.d-flex
-ruwenzori.net##.widget
-ruwenzori.net##.xlz-ads-item
-ruwenzori.net##a.d-lg-none.d-block:nth-of-type(1)
-ruwenzori.net,rakhoivq.cc##.btn-odds
-ruwenzori.net,vebozxn.cc##.odds-comp
 sachmoi.net##.boxzilla-bottom-right-container
 sachmoi.net##[href^="https://gotrackecom.info"]
 saostar.vn###mobi-top
@@ -1045,6 +1042,7 @@ docufind.org.uk/wp-content/themes/vlxx/js/*-adx.js$script
 ||basmaticw5.co.uk^*.gif$image
 ||blogger.googleusercontent.com^*.gif$image,domain=www.gvnvh18z.com
 ||buomtv.media/palivn/ad/$image,~third-party
+||call-io-pe.net^*.gif$image
 ||cash4clothes-aberdeen.co.uk^*.gif$image
 ||cdn-01.w3img.com^*.gif$image,domain=phimsexvl69.net|vlxx.rip
 ||cdn.adxcontent.com^
@@ -1089,7 +1087,6 @@ docufind.org.uk/wp-content/themes/vlxx/js/*-adx.js$script
 ||sexlive.biz/mb66.mp4$media,~third-party
 ||sexlive.biz^*.avif$~third-party
 ||sieukhung.ltd^*.gif$image
-||talesfromthegoldenage.co.uk^*.gif$image
 ||thiendia1.vip/banner/$image
 ||truyensextv.com/anh/$image
 ||truyensextv.com^*.gif
@@ -1261,6 +1258,7 @@ basmaticw5.co.uk##+js(acs, window.addEventListener, Ads)
 borealisrecords.com##+js(aopr, adsRedirectPopups)
 cafef.vn,gamek.vn,genk.vn,kenh14.vn,soha.vn,tuoitre.vn,afamily.vn,thanhnien.vn##+js(acs, Object.defineProperty, ADMStorageFileCDN)
 cafef.vn,gamek.vn,genk.vn,kenh14.vn,soha.vn,tuoitre.vn,afamily.vn,thanhnien.vn##+js(set, ADMStorageFileCDN, noopFunc)
+call-io-pe.net##+js(acs, window.addEventListener, Ads)
 checkscam.vn##+js(acs, document.addEventListener, open)
 childish2x1.fun,childish2x2.fun,tekora.space,lottedira.store,tekora.fun##+js(acs, $, aff)
 chotlo3s.com###header:style(margin-top: 0 !important)
@@ -1293,6 +1291,9 @@ linkneverdie.net,linkneverdie.top,linkneverdie2.com##+js(nostif, DisplayAHTML, 5
 linkneverdie.net,linkneverdie.top,linkneverdie2.com##+js(nostif, callback, 6004)
 lrepacks.net##+js(acs, JSON.parse, break;case $.)
 lxmanga.space##+js(acs, $, PopUnder)
+mcortechnologies.com##+js(acs, jQuery, open)
+mcortechnologies.com##+js(set, adsPlayer, '')
+mcortechnologies.com##+js(set, adsTvcs, '')
 monkeydtruyen.com##.affActive:style(display:block!important)
 monkeydtruyen.com##.affClick
 motchillk.mx,xxcap3.space##+js(aopr, sessionStorage)
@@ -1316,13 +1317,9 @@ robong.cc##.show.modal-backdrop.fade
 robong.cc##.sspp-modal
 rophim.moe##+js(acs, addEvent, popu)
 rphang.online,misskon.com##+js(acs, document.querySelectorAll, popMagic)
-ruwenzori.net##+js(acs, jQuery, open)
-ruwenzori.net##+js(set, adsPlayer, '')
-ruwenzori.net##+js(set, adsTvcs, '')
 saigon24.net##+js(acs, document.getElementById, myModal)
 sex.javnong.cc##+js(aopr, Math.round)
 tailieumoi.vn##+js(set, linkAff, null, 3)
-talesfromthegoldenage.co.uk##+js(acs, window.addEventListener, Ads)
 teamlanhlungday.store##+js(acs, $, window.open)
 themphotv5.com##div.ReactModalPortal
 thiendia1.vip##+js(acs, document.addEventListener, adState)
