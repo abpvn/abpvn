@@ -6,7 +6,7 @@ d5 2
 a6 2
 ! Last modified: 09 Feb 2026 21:55:28 UTC+7
 ! Diff-Path: patches/20260209215528741.patch#abpvn
-diff name:abpvn_adguard lines:15 checksum:cb9c88868c
+diff name:abpvn_adguard lines:12 checksum:cb9c88868c
 d2 1
 a2 1
 ! Version: 20260209215528741
@@ -14,14 +14,11 @@ d5 2
 a6 2
 ! Last modified: 09 Feb 2026 21:55:28 UTC+7
 ! Diff-Path: patches/20260209215528741.patch#abpvn_adguard
-a1554 4
+a1554 2
 cap3.life#%#//scriptlet("prevent-addEventListener", "click", "d", "elements", ".art-control-fullscreen")
 cap3.life#%#//scriptlet("prevent-addEventListener", "click", "e.target")
-cap3.life#%#//scriptlet("prevent-addEventListener", "click", "setTimeout")
+a1555 1
 cap3.life#%#//scriptlet("prevent-addEventListener", "fullscreenchange", "e.target")
-d1589 1
-a1589 1
-motchillk.ac#%#//scriptlet("abort-on-property-read", "sessionStorage")
 diff name:abpvn_content_blocker lines:7 checksum:d8a1b944f1
 d2 1
 a2 1
@@ -38,7 +35,7 @@ d5 2
 a6 2
 ! Last modified: 09 Feb 2026 21:55:28 UTC+7
 ! Diff-Path: patches/20260209215528741.patch#abpvn_noelemhide
-diff name:abpvn_ublock lines:15 checksum:a8c1210e19
+diff name:abpvn_ublock lines:12 checksum:a8c1210e19
 d2 1
 a2 1
 ! Version: 20260209215528741
@@ -46,11 +43,8 @@ d5 2
 a6 2
 ! Last modified: 09 Feb 2026 21:55:28 UTC+7
 ! Diff-Path: patches/20260209215528741.patch#abpvn_ublock
-a1553 4
+a1553 2
 cap3.life##+js(aeld, click, d, elements, .art-control-fullscreen)
 cap3.life##+js(aeld, click, e.target)
-cap3.life##+js(aeld, click, setTimeout)
+a1554 1
 cap3.life##+js(aeld, fullscreenchange, e.target)
-d1589 1
-a1589 1
-motchillk.ac##+js(aopr, sessionStorage)
