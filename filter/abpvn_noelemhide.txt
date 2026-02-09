@@ -1,9 +1,9 @@
 [Adblock Plus 2.0]
-! Version: 20260208081616059
+! Version: 20260209123427305
 ! id: D4028CDD-3D39-4624-ACC7-8140F4EC3888
 ! Title: ABPVN List
-! Last modified: 08 Feb 2026 08:16:16 UTC+7
-! Diff-Path: patches/20260208081616059.patch#abpvn_noelemhide
+! Last modified: 09 Feb 2026 12:34:27 UTC+7
+! Diff-Path: patches/20260209123427305.patch#abpvn_noelemhide
 ! Diff-Expires: 60 minutes
 ! Expires: 1 days (update frequency)
 !
@@ -306,8 +306,6 @@ $popup,domain=truyenfull.vision
 ||media.yomedia.vn^
 ||meta.vn^$third-party
 ||mt.deimosfestuca.com^
-||nnlko.in.net^
-||nnlko.in.net^$popup
 ||ob.joyrodetoment.com^
 ||onnetwork.tv^$third-party
 ||oursty.com^
@@ -319,6 +317,8 @@ $popup,domain=truyenfull.vision
 ||qc.violet.vn^
 ||realclick.vn^$third-party
 ||sbbanner.com^
+||sghga.in.net^
+||sghga.in.net^$popup
 ||sourcetobin.com^
 ||ss.yomedia.vn^
 ||static.adconnect.vn^
@@ -366,7 +366,7 @@ $popup,domain=truyenfull.vision
 /^https:\/\/[a-z]{8,12}\.com\/en\/(?:[a-z]{2,5}\/){0,2}[a-z]{2,}\?(?:[a-z]+=(?:\d+|[a-z]+)&)*?id=[12]\d{6}/$script,third-party
 /assets/js/vast.js$script
 /player/vast.js$script
-/wp-content/uploads/*.gif$image,domain=tuoi69m.org|tuoinung.bio
+/wp-content/uploads/*.gif$image,domain=tuoi69.com|tuoinung.bio
 @@||bullionglidingscuttle.com/lv/esnk/2031811/code.js$domain=lxmanga.space
 @@||crumpetprankerstench.com/on.js$domain=lxmanga.space
 @@||jf.nairydeices.com/rXAp4JBa7jNUt/114370$domain=lxmanga.space
@@ -381,7 +381,6 @@ docufind.org.uk/wp-content/themes/vlxx/js/*-adx.js$script
 ||blogger.googleusercontent.com^*.gif$image,domain=www.gvnvh18z.com
 ||buomtv.media/palivn/ad/$image,~third-party
 ||cap3.life/api/ads$xmlhttprequest
-||cash4clothes-aberdeen.co.uk^*.gif$image
 ||cdn-01.w3img.com^*.gif$image,domain=phimsexvl69.net|vlxx.rip
 ||cdn.adxcontent.com^
 ||cliphot69.shop$csp=script-src 'self' 'unsafe-inline'
@@ -389,6 +388,7 @@ docufind.org.uk/wp-content/themes/vlxx/js/*-adx.js$script
 ||cliphotvn69.com^*.gif$image
 ||clipsexsub3x.net^*.gif$image
 ||cloufdlare.com/ads/vn1.html$subdocument,domain=vl.phe.to
+||coolstrip.co.uk^*.gif$image
 ||cruncherpatiencestoreroom.com^$popup,domain=cap3.life|qmh.sex
 ||discordapp.$image,domain=phim18vip.one|thefaplive.com|phimsexsub.website
 ||excavatenearbywand.com^
@@ -422,7 +422,7 @@ docufind.org.uk/wp-content/themes/vlxx/js/*-adx.js$script
 ||sexlive.biz/_next/image?url=%2Fimages%2F*.avif&w=*&q=75$image
 ||sexlive.biz/mb66.mp4$media,~third-party
 ||sexlive.biz^*.avif$~third-party
-||sieukhung.ltd^*.gif$image
+||sieukhung.net^*.gif$image
 ||thaizabbbyging.co.uk^*.gif$image
 ||thiendia1.vip/banner/$image
 ||truyensextv.com/anh/$image
