@@ -7,7 +7,7 @@ class Const():
         '.js', '.png', '.jpg', '.gif', '.aspx', '.jpeg',
         '.widget', 'block.ad', '.mp4', '.mp3', '.m3u8',
         '.row', '.parse', '.round', 'abpvn.com',
-        'abpvn.org', '.html', '.button',
+        'abpvn.org', '.html', '.button', 'items-center.flex',
         '.modal', '.ico', '.write', '.webp', 'PanelScroller.Notices',
         'clear.hd', '.btn', '.show',
         'parent.special', '.patch', 'li.special.parent',
