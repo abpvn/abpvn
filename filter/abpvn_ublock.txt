@@ -1,9 +1,9 @@
 [Adblock Plus 2.0]
-! Version: 20260226151721666
+! Version: 20260227122621977
 ! id: D4028CDD-3D39-4624-ACC7-8140F4EC3888
 ! Title: ABPVN List | Ublock Origin
-! Last modified: 26 Feb 2026 15:17:21 UTC+7
-! Diff-Path: patches/20260226151721666.patch#abpvn_ublock
+! Last modified: 27 Feb 2026 12:26:22 UTC+7
+! Diff-Path: patches/20260227122621977.patch#abpvn_ublock
 ! Diff-Expires: 60 minutes
 ! Expires: 1 days (update frequency)
 !
@@ -169,8 +169,6 @@
 ||motchill.fm^*.gif$image
 ||motchill.us.org^*.gif$image
 ||motchillk.bz^*.gif$image
-||motchilll.ws^*.gif
-||motchilll.ws^*.gif$~third-party
 ||motphimtv.bz^*.gif$image
 ||mplmncb.com/banners-web/$script,image,domain=truyenqqno.com
 ||mplmncb.com/popup/$script,domain=truyenqqno.com
@@ -204,6 +202,8 @@
 ||run.vn/widget$script,~third-party
 ||s1.truyentranh3q.com^*.gif$image,domain=manhua3q.com
 ||s2.truyentot.com^*.gif$image,domain=hhtq13.vip|hhtq3d.net|hhtq5.vip|hhvsub1.com|hhvietsub.com
+||sendpage.org^*.gif
+||sendpage.org^*.gif$~third-party
 ||server.zmedia.vn/static/$script
 ||sf-static.onflixcdn.pics/images/ads/$image
 ||sggp.org.vn/*banner
@@ -489,7 +489,7 @@ comong.info###virtualLayer
 congan.com.vn###subiz_wrapper
 congan.com.vn##.ad-embed
 congthucvatly.com##.mb-4>[style="min-height: 350px;"]
-congthucvatly.com,phuongtrinhhoahoc.com,xem16.net,r.cakeo3.rocks,exokit.org,motchilll.ws##.fixed
+congthucvatly.com,phuongtrinhhoahoc.com,xem16.net,r.cakeo3.rocks,exokit.org,sendpage.org##.fixed
 contuhoc.com,cbox.ws##a[rel="noopener noreferrer"]
 cryptoviet.com##.widget-wrap.widget_text
 cumeo.link##.gap-2.mt-2.grid-cols-\[1fr_auto_1fr\].grid>.text-sm.font-semibold.rounded-sm.text-white.shadow-custom.bg-brand.-skew-x-8.uppercase.py-2.px-4.cursor-pointer.justify-center.items-center.flex.h-full
@@ -658,7 +658,6 @@ motchill.fm##.disable-ads-icon
 motchill.fm##.popup-overlay
 motchill.us.org##.float-contact
 motchill.us.org,idirectsolutions.co.za###vl-header-adx
-motchilll.ws##.fixed.inset-0.z-\[9999\].flex.items-center.justify-center.bg-black\/70
 motchillte.cc##.overlay-1
 motchilltvphim.com,phimmoissz.info,subnhanhcx.info##.sda-catfish
 motchilltvphim.com,phimtho.cc,subnhanhcx.info###popup_banner_beta
@@ -748,6 +747,7 @@ savethislife.com##.xlz-ads-item
 savethislife.com##a.d-lg-none.d-block:nth-of-type(1)
 savethislife.com,rakhoivq.cc##.btn-odds
 savethislife.com,vebotva.cc##.odds-comp
+sendpage.org##.fixed.inset-0.z-\[9999\].flex.items-center.justify-center.bg-black\/70
 sieudam.sh##.popup-image
 soha.vn,gamek.vn##[id^="admzone"]
 soicau247s.org##.linkBanner
@@ -1250,7 +1250,7 @@ clipphot.biz,as-technology.co.uk##+js(acs, document.addEventListener, POP)
 dualeotruyenvh.com##+js(acs, document.addEventListener, popunder)
 dualeotruyenvh.com,ucsatinal.net,cliphot69.shop,doctruyen3qhubx.com,ihentai.network,hentaivc.vip,buomtv.media,truyenvn.shop,javtiful.com,quatvn.my,phimsexhayvn120.com,phim18hdxx.com,vn6.sexviet88.xyz,xinhmupvn.net,demo.14412882.com,hhtq5.vip,sexdiary.club,vn2.xvideos69.xxx,umetruyenz.org,damconuong.app,truyenqqno.com,clipsexsub3x.net,sayhentai.world,motphim.pokemonviet.com,lxmanga.space,phimlongtieng.net,newtruyenhot.pro,www.sieutamphim.pro,vevocloud.com,sex.xinh3x.me,sexviet88.xyz,viet69.bi,goctruyentranhvui19.com,viet69vn.at##+js(acs, WebAssembly, instantiate)
 economic45882.shop,cdn4.tiptoe34x1.fun##+js(acs, $, arrDirectLink)
-exokit.org,motchilll.ws,onflix.me,motchilll.ws##+js(aeld, click, ads)
+exokit.org,sendpage.org,onflix.me,sendpage.org##+js(aeld, click, ads)
 freeplayervideo.com,abysscdn.com,player-cdn.com##+js(set, open, noopFunc)
 freeplayervideo.com,abysscdn.com,player-cdn.com,playhydrax.com##+js(acs, document.getElementById, openPop)
 game8.vn,cunghocvui.com##+js(acs, document.addEventListener, open)
