@@ -1,9 +1,9 @@
 [Adblock Plus 2.0]
-! Version: 20260302151653885
+! Version: 20260303104320012
 ! id: D4028CDD-3D39-4624-ACC7-8140F4EC3888
 ! Title: ABPVN List
-! Last modified: 02 Mar 2026 15:16:53 UTC+7
-! Diff-Path: patches/20260302151653885.patch#abpvn
+! Last modified: 03 Mar 2026 10:43:20 UTC+7
+! Diff-Path: patches/20260303104320012.patch#abpvn
 ! Diff-Expires: 60 minutes
 ! Expires: 1 days (update frequency)
 !
@@ -47,8 +47,8 @@ $popup,domain=truyenfull.vision
 /disable-devtool.min.js$script
 /full-page-script.js$script
 /giadinhonline.vn/files/qc/*
-/i.imgur.com/*.gif$domain=keonhacai55.click|www.motchill48.com|diamundialradio.org|vebotvc.cc|harassmentfreealbany.com|listnhacai88.com|fshcgroup.com|mitomzh.cc|rakhoivh.cc
-/images/company/21.png$image,domain=vebotvc.cc|fshcgroup.com|diamundialradio.org
+/i.imgur.com/*.gif$domain=keonhacai55.click|www.motchill48.com|diamundialradio.org|vebotvc.cc|harassmentfreealbany.com|listnhacai88.com|barefootblonde.com|mitomzh.cc|rakhoixh.cc
+/images/company/21.png$image,domain=vebotvc.cc|barefootblonde.com|diamundialradio.org
 /js/ads.js$script,~third-party,domain=~vipurl.in|~link.codevn.net
 /lv/esnk/*$script,domain=~lxmanga.space
 /newchill/*gif$image
@@ -111,7 +111,7 @@ $popup,domain=truyenfull.vision
 ||cdn-data.gtvplus.vn/banners/$image,domain=gametv.vn
 ||cdn-live.taoxanh.biz/live-dev/cms/*.gif$image,domain=bunchatv.net
 ||cdn.giavang.org/images/ads/$image,domain=giavang.org
-||cdn.lfastcdn.com^*.gif$image,domain=bongdainfox.tv|fshcgroup.com|rakhoivh.cc|harassmentfreealbany.com|mitomzh.cc|vebotvc.cc
+||cdn.lfastcdn.com^*.gif$image,domain=bongdainfox.tv|barefootblonde.com|rakhoixh.cc|harassmentfreealbany.com|mitomzh.cc|vebotvc.cc
 ||cdn.monkeydarchive.com/images/banner/$image,domain=monkeyd.net.vn
 ||cdn.webhoctienganh.com/asset/home/img/banner/$image,domain=webhoctienganh.com
 ||cdn1.fastestcdn-global.com/gavangtv/*.gif$image
@@ -369,6 +369,7 @@ $popup,domain=truyenfull.vision
 ||collagenbeauty.vn^$third-party
 ||contextual.media.net^
 ||contineljs.com^
+||coverdistilltile.com^
 ||cpm20.com^$popup
 ||cpmstar.com^
 ||cpt.geniee.jp^
@@ -709,6 +710,15 @@ baonga.com##.monkey-content-duoicanbiet
 baonga.com##.monkey-section-tinnoibat
 baonga.com##div.monkey-qc
 baoquangninh.vn##.bottom-right-ads
+barefootblonde.com##.c-int.d-lg-none.d-block>p.block-int.mb-1
+barefootblonde.com##.col-12>p.block-int.mb-1
+barefootblonde.com##.grid-match__footer
+barefootblonde.com##.odds-comp-logo
+barefootblonde.com##.w-100.justify-content-center.align-items-center.d-flex
+barefootblonde.com##.widget
+barefootblonde.com##.xlz-ads-item
+barefootblonde.com##a.d-lg-none.d-block:nth-of-type(1)
+barefootblonde.com,vebotvc.cc##.odds-comp
 bat.vebo5.info##.link2
 bat.vebo5.info##.link3.group-link
 bat.vebo5.info##.link4.group-link
@@ -816,12 +826,12 @@ diamundialradio.org##.pl-lg-0.col-xl-4
 diamundialradio.org##.row.d-none
 diamundialradio.org##.widget-offers__list
 diamundialradio.org##div.d-lg-none.d-block:nth-of-type(3)
-diamundialradio.org,fshcgroup.com##.match-detail__offer
+diamundialradio.org,barefootblonde.com##.match-detail__offer
 diamundialradio.org,mitomzh.cc##.menu-cuoc-8xbet
 diamundialradio.org,mitomzh.cc,vebotvc.cc##.menu-top-nha-cai
-diamundialradio.org,rakhoivh.cc##.sk_balloon
-diamundialradio.org,vebotvc.cc,harassmentfreealbany.com,fshcgroup.com,mitomzh.cc##.company
-diamundialradio.org,vebotvc.cc,harassmentfreealbany.com,mitomzh.cc,fshcgroup.com##div[id^="dnn_"]
+diamundialradio.org,rakhoixh.cc##.sk_balloon
+diamundialradio.org,vebotvc.cc,harassmentfreealbany.com,barefootblonde.com,mitomzh.cc##.company
+diamundialradio.org,vebotvc.cc,harassmentfreealbany.com,mitomzh.cc,barefootblonde.com##div[id^="dnn_"]
 docnhanh.vn##.ad-position-container
 docnhanh.vn##.lg\:\!h-\[260px\].\!h-\[240px\].lg\:mb-3.lg\:mt-1.tss-widget
 docviewer.yandex.com##.js-doc-html>div>div[id]
@@ -841,15 +851,6 @@ freeplayervideo.com,abysscdn.com,player-cdn.com##.playover
 fshare.vn###myElementz
 fshare.vn##.bannerinfooter
 fshare.vn##.quang-cao-ben-phai
-fshcgroup.com##.c-int.d-lg-none.d-block>p.block-int.mb-1
-fshcgroup.com##.col-12>p.block-int.mb-1
-fshcgroup.com##.grid-match__footer
-fshcgroup.com##.odds-comp-logo
-fshcgroup.com##.w-100.justify-content-center.align-items-center.d-flex
-fshcgroup.com##.widget
-fshcgroup.com##.xlz-ads-item
-fshcgroup.com##a.d-lg-none.d-block:nth-of-type(1)
-fshcgroup.com,vebotvc.cc##.odds-comp
 game24h.vn###vi-smartbanner
 game24h.vn##.LRBanner
 game8.vn##.bg_allpopupss
@@ -886,7 +887,7 @@ harassmentfreealbany.com##.menu-item-object-custom
 harassmentfreealbany.com##.sub-menu.d-none.d-lg-flex
 harassmentfreealbany.com,diamundialradio.org,vebotvc.cc###quangcaopc
 harassmentfreealbany.com,diamundialradio.org,vebotvc.cc##.marquee-container
-harassmentfreealbany.com,diamundialradio.org,vebotvc.cc,rakhoivh.cc,fshcgroup.com###wap_bottombanner
+harassmentfreealbany.com,diamundialradio.org,vebotvc.cc,rakhoixh.cc,barefootblonde.com###wap_bottombanner
 harassmentfreealbany.com,vebotvc.cc##.align-items-center.justify-content-between.d-flex.col-12>.d-lg-none.d-block
 hhanime3d.ee,hhtq.cx###top_addd
 hhdragon.cv##.catfish-img
@@ -1028,9 +1029,9 @@ qdnd.vn##.box-banner
 qmanga.art,khotruyen.ac##.gwd-banner-image
 quantrimang.com###adrighttop
 r.cakeo3.rocks##a.bg-yellow-1[target="_blank"]
-rakhoivh.cc##.bookmaker-selector-container
-rakhoivh.cc##.btn-odds
-rakhoivh.cc,fshcgroup.com,vebotvc.cc,diamundialradio.org##.btn-8xbet
+rakhoixh.cc##.bookmaker-selector-container
+rakhoixh.cc##.btn-odds
+rakhoixh.cc,barefootblonde.com,vebotvc.cc,diamundialradio.org##.btn-8xbet
 reatimes.vn##div[class^="adv-"]
 rophim.moe##.module_home_ads
 sachmoi.net##.boxzilla-bottom-right-container
@@ -1143,7 +1144,7 @@ vebotvc.cc##.menu-item:has(a[rel="nofollow"])
 vebotvc.cc##.topButton
 vebotvc.cc##.widget_offer
 vebotvc.cc##header>.container
-vebotvc.cc,mitomzh.cc,rakhoivh.cc##.footer-banner
+vebotvc.cc,mitomzh.cc,rakhoixh.cc##.footer-banner
 vesotantai.com##.item-qc
 videophapluat.baophapluat.vn##[class^="sticky-top"]
 videophapluat.baophapluat.vn##[href*="vietcombank.com.vn"]
@@ -1235,7 +1236,7 @@ xemphim.site,motchillzz.site##.sticky_bottom
 xemtivi4k.com###adstop2
 xemtivi4k.com##.col-lg-4.hidden-xs.d-flex.flex-column.address-wrap
 xemtivi4k.com##.float-right
-xemtivi4k.com,fshcgroup.com##.ads-item
+xemtivi4k.com,barefootblonde.com##.ads-item
 xskt.com.vn,vieclam.tv###bnc0
 yanhh3d.club,hhtm.net###catfish-ads
 ybox.vn###ybox-H1>div[style]
@@ -1299,7 +1300,7 @@ vozer.io#@#[class^="div-gpt-ad"]
 ||blurbreimbursetrombone.com^
 ||bullionglidingscuttle.com/lv/esnk/2031811/code.js$domain=lxmanga.space,script,rewrite=abp-resource:blank-js
 ||buomtv.media/palivn/ad/$image,~third-party
-||cap3.website/api/ads$xmlhttprequest
+||cap3.store/api/ads$xmlhttprequest
 ||cdn-01.w3img.com^*.gif$image,domain=vi.xnxx.studio|vlxx.rip
 ||cdn.adxcontent.com^
 ||chaseherbalpasty.com^
@@ -1314,7 +1315,7 @@ vozer.io#@#[class^="div-gpt-ad"]
 ||cloufdlare.com/ads/vn1.html$subdocument,domain=vl.phe.to
 ||creative.mnaspm.com^
 ||crumpetprankerstench.com/on.js$domain=lxmanga.space,script,rewrite=abp-resource:blank-js
-||cruncherpatiencestoreroom.com^$popup,domain=cap3.website|qmh.sex
+||cruncherpatiencestoreroom.com^$popup,domain=cap3.store|qmh.sex
 ||d3mzokty951c5w.cloudfront.net^
 ||darnobedienceupscale.com^
 ||diarrhoeaeaglesunday.com^
@@ -1342,22 +1343,21 @@ vozer.io#@#[class^="div-gpt-ad"]
 ||l1.stream4k.online^*.gif$image,domain=genzsex.blog
 ||laalmirchitakeaway.co.uk^*.gif
 ||lxmanga.space/storage/images/banners
-||makeitwork4u.co.uk^*.gif$image
 ||mangadm.cc$csp=script-src 'self' 'unsafe-inline' http
 ||mialsja.life^$image,domain=phimxxx.ai
 ||mumtazrestvn.com^*.gif$image
 ||ngaytho.me^*.gif
 ||nrs6ffl9w.com^
 ||phimsexhayvn122.com^*.gif$image
+||pink-nintendo-ds-lite.co.uk^*.gif$image
 ||qmh.sex/assets/js/simpleblocker.js$script,~third-party
 ||quatvn.my^*.gif$image
-||quoracdn.net^$image,domain=pornosexy.net|phim18vip.top|pheclip.love|sexgainung.vip|sexhihi.fit|phevl.sh|fulllivehot.live|haysexvn.lol|chich69.top|elicaeditions.com
+||quoracdn.net^$image,domain=haxcore.net|phim18vip.top|pheclip.love|xem.phimnung3x.pro|sexhihi.fit|phevl.sh|fulllivehot.live|haysexvn.lol|chich69.top|elicaeditions.com
 ||rphang.online^*.gif
 ||sayhentai.world/assets/js/ads.js
 ||sayhentai.world/storage/images/banner/$image
 ||seccc.jasjas.xyz^
 ||sexdiaryx.to$csp=script-src 'self' 'unsafe-eval'
-||sexgainung.vip^*.gif$image,domain=sexgainung.vip
 ||sexlive.biz/_next/image?url=%2Fimages%2F*.avif&w=*&q=75$image
 ||sexlive.biz/mb66.mp4$media,~third-party
 ||sexlive.biz^*.avif$~third-party
@@ -1368,7 +1368,7 @@ vozer.io#@#[class^="div-gpt-ad"]
 ||truyensextv.com/anh/$image
 ||truyensextv.com^*.gif
 ||truyenvn.shop^*banner$image
-||video.qmh.sex/uploads/banners/$image,domain=cap3.website|qmh.sex
+||video.qmh.sex/uploads/banners/$image,domain=cap3.store|qmh.sex
 ||vn6.sexviet88.xyz^*.gif
 ||www.displayvertising.com^
 ||www.hentaivnx.com/js/cla/2064711.js$script
@@ -1376,6 +1376,7 @@ vozer.io#@#[class^="div-gpt-ad"]
 ||www.hentaivnx.com/js/random-click-opener.js$script
 ||www.vipads.live/vn/$domain=lxmanga.space,script,rewrite=abp-resource:blank-js
 ||xamer.xyz/styles/file/$image
+||xem.phimnung3x.pro^*.gif$image,domain=xem.phimnung3x.pro
 ||xfast.sbs/media/$image,domain=fullcliphot.org|fulllivehot.live
 ||xfast.sbs^*.gif$image,domain=clipphot.vip
 ||xnhau.blog^$media,domain=xnhau.hot
@@ -1392,8 +1393,8 @@ buomtv.media##._9xtpcl.cxwrp3i.c1skg1w3.cxngf0m.c199xq07.c10dklm2.c1xtmnwt.cvk29
 buomtv.media##.l1k7nns5.a1t03fa1
 buomtv.media##.l1k7nns5.ahen1fo
 buomtv.media##div._1vguhxv.cleaozk._3yp41v.row-0.ss>._1lbf8q9
-cap3.website##.p-4.justify-center.items-center.flex.backdrop-blur-sm.bg-black\/80.z-\[9999\].inset-0.fixed
-cap3.website,qmh.sex##.header>app-banner
+cap3.store##.p-4.justify-center.items-center.flex.backdrop-blur-sm.bg-black\/80.z-\[9999\].inset-0.fixed
+cap3.store,qmh.sex##.header>app-banner
 cliphot69.shop###custom_html-42
 cliphotvn69.com,dynadot.rsocdomains.com,cliphot69.shop,www.gvnvh18z.com,phimsexhayvn122.com,sayhentai.world,phim18vip.top,xamvn.bond##.float-ck-center-lt
 clipsexsub3x.net,sexhihi.fit,javhdz.hot,laalmirchitakeaway.co.uk##.catfish-bottom
@@ -1408,6 +1409,7 @@ gaingon3d.com###iklan-atas-wrapper
 gamer18.net##.fixed-banner-bottom
 gamer18.net##div[id^="divFLR"]
 genzsex.blog##.adx-ad-item
+haxcore.net,xem.phimnung3x.pro,sexhihi.fit,19holebar.com##.xx-ads
 haysexvn.lol##.castfish-wrapper
 haysexvn.lol,19holebar.com###vl-header-adx
 haysexvn.lol,sexlive.biz,elicaeditions.com##.popup
@@ -1419,7 +1421,6 @@ javtopxx2.com###fbox-background
 javtopxx2.com##.logo-player
 laalmirchitakeaway.co.uk##.banner-preload
 lxmanga.space##.ads-wrapper
-makeitwork4u.co.uk###catfish
 ngaytho.me##.body_wrapper1
 nung18.com##.jw-overlays>img[src]
 phim.haysex.asia###mp-preload-popup-overlay
@@ -1434,12 +1435,12 @@ phim18vip.top,pheclip.love##.in.fade.modal-backdrop
 phim18vip.top,pheclip.love##.quang-cao
 phim18vip.top,phevl.sh###popup
 phimxxx.ai##.adx1
+pink-nintendo-ds-lite.co.uk###catfish
 play.anh.moe##.btm_bar
 pornhub.com###hd-rightColVideoPage>.clearfix
 pornhub.com##.mhp1138_actionTag
 pornhub.com##.sectionWrapper>div:nth-child(2)
 pornhub.com##.wrapper + div
-pornosexy.net,sexgainung.vip,sexhihi.fit,19holebar.com##.xx-ads
 quatvn.my##.adace-slideup-slot-wrap
 quatvn.my##.adace-slot
 quatvn.my##.g1-advertisement
@@ -1455,12 +1456,10 @@ rphang.online,s2.phimsexvn1.blog##.samVideoOverlay
 s2.phimsexvn1.blog###ads-wrapper
 s2.phimsexvn1.blog###cashfit-spacer
 s2.phimsexvn1.blog##.ads-header
-sexgainung.vip##.catfix
-sexgainung.vip,sexhihi.fit,laalmirchitakeaway.co.uk##.catfish-top
 sexhaynung.xyz###tut4ktream_idAdLink
 sexhd.eu.com,phimsex12x.pro##.quangcaomobile
 sextop.asia##div[style^="position:fixed;inset:0px;z-index:100000;"]
-sextop.asia,hls.playerfb.xyz###video_player ~ div[id]
+sextop.asia,dynadot.rsocdomains.com###video_player ~ div[id]
 sieukhung.net##.adspopupgiua
 sieukhung.net##.adspopupleft
 sieukhung.net##.adspopupright
@@ -1513,6 +1512,8 @@ www.pornhub.com##.adContainer
 www.pornhub.com##.clear.hd
 www.xnxx.com##.video-ad
 xamvn.bond##.js-notices
+xem.phimnung3x.pro##.catfix
+xem.phimnung3x.pro,sexhihi.fit,laalmirchitakeaway.co.uk##.catfish-top
 xemphimjav.xyz##.pum-overlay
 xfast.sbs###overlay
 xiuren.org###bannerIn
