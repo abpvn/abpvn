@@ -1,9 +1,9 @@
 [Adblock Plus 2.0]
-! Version: 20260308102204040
+! Version: 20260308180635512
 ! id: D4028CDD-3D39-4624-ACC7-8140F4EC3888
 ! Title: ABPVN List | Ublock Origin
-! Last modified: 08 Mar 2026 10:22:04 UTC+7
-! Diff-Path: patches/20260308102204040.patch#abpvn_ublock
+! Last modified: 08 Mar 2026 18:06:35 UTC+7
+! Diff-Path: patches/20260308180635512.patch#abpvn_ublock
 ! Diff-Expires: 60 minutes
 ! Expires: 1 days (update frequency)
 !
@@ -397,6 +397,9 @@ anime47.best###qc_clgt
 anime47.best###swiper-wrapper
 anime47.onl###section_553754114
 anime47.onl##.section-catfish
+animehay.vin###top-banner
+animehay.vin##.under_player.flex-hozi-center.flex-column.flex
+animehay.vin##body>div[style^="position: fixed"]
 animetvn4.com###mobile-ads
 animetvn4.com##.gnarty-offads
 animevietsub.how###invideo_wrapper
@@ -1245,6 +1248,7 @@ z.chinav.sex##.banner-container
 ! ---------Rule only for uBlock Origin------
 anime47.best##+js(nostif, Adblock)
 anime47.best##.affiliate-swiper
+animehay.vin##+js(aopr, popUp)
 animevietsub9.com##+js(aopr, _0x3f9b)
 aoe.vn##+js(aopr, parseInt)
 audiotruyenfull.com##+js(acs, document.addEventListener, ai_run)
