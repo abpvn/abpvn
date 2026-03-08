@@ -1,9 +1,9 @@
 [Adblock Plus 2.0]
-! Version: 20260308102204295
+! Version: 20260308180636393
 ! id: D4028CDD-3D39-4624-ACC7-8140F4EC3888
 ! Title: ABPVN List | Ublock Origin
-! Last modified: 08 Mar 2026 10:22:04 UTC+7
-! Diff-Path: patches/20260308102204295.patch#abpvn_ublock
+! Last modified: 08 Mar 2026 18:06:36 UTC+7
+! Diff-Path: patches/20260308180636393.patch#abpvn_ublock
 ! Diff-Expires: 60 minutes
 ! Expires: 1 days (update frequency)
 !
@@ -88,6 +88,7 @@
 ||anime1s.com/_next/image?url=https%3A%2F%2F*.ibyteimg.com$image
 ||anime1s.com/_next/image?url=https%3A%2F%2Flh3.googleusercontent.com$image
 ||anime47.onl^*.gif$image
+||animehay.vin/ad_banner/$image
 ||animevietsub.how/ads/$script
 ||animevietsub9.com/vast/$image
 ||api-gavang.gvtv1.com/banners/graph$xmlhttprequest,domain=xem1.gv04.live|xem1.gv05.live|xem2.gv05.live
@@ -687,6 +688,9 @@ anime47.best###qc_clgt
 anime47.best###swiper-wrapper
 anime47.onl###section_553754114
 anime47.onl##.section-catfish
+animehay.vin###top-banner
+animehay.vin##.under_player.flex-hozi-center.flex-column.flex
+animehay.vin##body>div[style^="position: fixed"]
 animetvn4.com###mobile-ads
 animetvn4.com##.gnarty-offads
 animevietsub.how###invideo_wrapper
@@ -1557,6 +1561,7 @@ z.chinav.sex##.banner-container
 ! ---------Rule only for uBlock Origin------
 anime47.best##+js(nostif, Adblock)
 anime47.best##.affiliate-swiper
+animehay.vin##+js(aopr, popUp)
 animevietsub9.com##+js(aopr, _0x3f9b)
 aoe.vn##+js(aopr, parseInt)
 audiotruyenfull.com##+js(acs, setTimeout, Aff)
