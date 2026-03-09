@@ -9,7 +9,7 @@ class Const():
         '.row', '.parse', '.round', 'abpvn.com',
         'abpvn.org', '.html', '.button', 'items-center.flex',
         '.modal', '.ico', '.write', '.webp', '.btn', '.show', 'parent.special', '.patch', 'li.special.parent',
-        '2Flh3.googleusercontent.com', 'div.ad',
+        '2Flh3.googleusercontent.com', 'div.ad', '.flex', '.img',
         'ibyteimg.com', '.fixed', '.blpha', '.php', '.fade'
     ]
     SKIP_CHECK_REDIRECT = [
