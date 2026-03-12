@@ -1,9 +1,9 @@
 [Adblock Plus 2.0]
-! Version: 20260312100306311
+! Version: 20260312122624775
 ! id: D4028CDD-3D39-4624-ACC7-8140F4EC3888
 ! Title: ABPVN List | Ublock Origin
-! Last modified: 12 Mar 2026 10:03:06 UTC+7
-! Diff-Path: patches/20260312100306311.patch#abpvn_ublock
+! Last modified: 12 Mar 2026 12:26:24 UTC+7
+! Diff-Path: patches/20260312122624775.patch#abpvn_ublock
 ! Diff-Expires: 60 minutes
 ! Expires: 1 days (update frequency)
 !
@@ -82,6 +82,7 @@
 ||anime1s.com/_next/image?url=https%3A%2F%2Flh3.googleusercontent.com$image
 ||anime47.tv^*.gif$image
 ||animevietsub.how/ads/$script
+||animevietsub.mx/ads/$script
 ||animevietsub9.com/vast/$image
 ||api-gavang.gvtv1.com/banners/graph$xmlhttprequest,domain=xem1.gv04.live|xem1.gv05.live|xem2.gv05.live
 ||api.anime3s.com/i9bet.php$xmlhttprequest,~third-party
@@ -160,7 +161,7 @@
 ||khotruyen.ac/banner_image/$image
 ||kienthuc.net.vn/*.ads
 ||laodong.vn/*QuangcaoOnline
-||lh3.googleusercontent.com/*=s0$image,domain=animevietsub.how
+||lh3.googleusercontent.com/*=s0$image,domain=animevietsub.how|animevietsub.mx
 ||listnhacai88.com^*.gif$image
 ||media.nghean24h.vn$image,domain=nghean24h.vn
 ||mediastation.live^*.gif$image,domain=mn.mediastation.live|home1.mannhan22.pro|mannhan97.xyz
@@ -398,11 +399,11 @@ anime47.tv###section_553754114
 anime47.tv##.section-catfish
 animetvn4.com###mobile-ads
 animetvn4.com##.gnarty-offads
-animevietsub.how###invideo_wrapper
-animevietsub.how##.Ads
-animevietsub.how##.mobile-catfish-top
-animevietsub.how##.mobile-catfixx
-animevietsub.how,phimtuoitho.tv##.pc-catfixx
+animevietsub.how,animevietsub.mx###invideo_wrapper
+animevietsub.how,animevietsub.mx##.Ads
+animevietsub.how,animevietsub.mx##.mobile-catfish-top
+animevietsub.how,animevietsub.mx##.mobile-catfixx
+animevietsub.how,animevietsub.mx,phimtuoitho.tv##.pc-catfixx
 apkmoddone.com##.adNative
 apkmoddone.com##.pAd
 apkmoddone.com##.relatedPostsAd
@@ -1268,7 +1269,7 @@ haysexvn.lol##+js(acs, document.addEventListener, adx)
 hh2d.tv##+js(acs, $, adblock)
 hh3dhay.life##+js(acs, Symbol, break;case $)
 hh3dhay.life,tram3d.com##+js(acs, document.createElement, ;break;case)
-hh3dhay.life,tram3d.online,animevietsub.how##+js(acs, eval, $._Eu)
+hh3dhay.life,tram3d.online,animevietsub.how,animevietsub.mx##+js(acs, eval, $._Eu)
 hhtq.li###overlay
 hhtq.li,phimchautinhtri.net##html:style(overflow: auto !important)
 imail.edu.vn##+js(acs, setTimeout, ad_block)
