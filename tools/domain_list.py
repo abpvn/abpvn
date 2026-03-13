@@ -13,7 +13,7 @@ class DomainList():
         for match in matches:
             invalid_domain = False
             for reject_ending in Const.DOMAIN_REJECT_ENDINGS:
-                if str(match[1]).endswith(reject_ending) or len(re.findall(r"\.\d+$", match[1])) > 0:
+                if str(match[1]).endswith(reject_ending) or len(re.findall(r"\.\d+$", match[1]))>0:
                     invalid_domain = True
             # Skip if subdomain when in process bellow
             if (include_sub_domain and match[0] == ".") or invalid_domain:
@@ -28,7 +28,7 @@ class DomainList():
             for match in sub_matches:
                 invalid_domain = False
                 for reject_ending in Const.DOMAIN_REJECT_ENDINGS:
-                    if str(match[1]).endswith(reject_ending) or len(re.findall(r"\.\d+$", match[1])) > 0:
+                    if str(match[1]).endswith(reject_ending) or len(re.findall(r"\.\d+$", match[1]))>0:
                         invalid_domain = True
                 if invalid_domain:
                     continue
