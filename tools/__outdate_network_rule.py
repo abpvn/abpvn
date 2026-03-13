@@ -27,7 +27,7 @@ class OutdateNetworkRuleCheck(threading.Thread):
             matches = re.findall(nr_regex, request.url)
             if Const.DEBUG:
                 print(f"Checking rule {network_rule} with regex {nr_regex} on {self.__domain} with request url {request.url} and matches: {matches}")
-            if len(matches) > 0:
+            if len(matches)>0:
                 print(f"Network rule {network_rule} is up to date because of match url {request.url} with regex {nr_regex} in {self.__domain}")
                 return False
         return True
@@ -123,7 +123,7 @@ class OutdateNetWorkRule():
             domain_network_rule = {}
             for type, regex_str in Const.NETWORK_RULE_REGEX.items():
                 self.parse_rule(domain, type, regex_str, domain_network_rule)
-            if len(domain_network_rule) > 0:
+            if len(domain_network_rule)>0:
                 network_rule.__setitem__(domain, domain_network_rule)
         return network_rule
 

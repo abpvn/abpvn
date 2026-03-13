@@ -5,7 +5,7 @@ def box_print(message: str):
     :param message: Message to print
     """
     line = "--------------------------------------------------------------------------------------------------------------"
-    if len(message) > len(line):
+    if len(message)>len(line):
         for _ in range(len(message) - len(line)):
             line = '-' + line
     print("|{}|".format(line))
@@ -22,4 +22,4 @@ def is_sub_domain(domain: str):
     Check domain string is subdomain
     """
     split_domain = domain.split(".")
-    return len(split_domain) > 2
+    return len(split_domain)>2
