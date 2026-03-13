@@ -1,9 +1,9 @@
 [Adblock Plus 2.0]
-! Version: 20260313084232849
+! Version: 20260313100114765
 ! id: D4028CDD-3D39-4624-ACC7-8140F4EC3888
 ! Title: ABPVN List | AdGuard
-! Last modified: 13 Mar 2026 08:42:32 UTC+7
-! Diff-Path: patches/20260313084232849.patch#abpvn_adguard
+! Last modified: 13 Mar 2026 10:01:14 UTC+7
+! Diff-Path: patches/20260313100114765.patch#abpvn_adguard
 ! Diff-Expires: 60 minutes
 ! Expires: 1 days (update frequency)
 !
@@ -397,6 +397,11 @@ anime47.best###qc_clgt
 anime47.best###swiper-wrapper
 anime47.tv###section_553754114
 anime47.tv##.section-catfish
+animehay.ngo,chuyentiepanimehay.one###header-ads + center
+animehay.ngo,chuyentiepanimehay.one###top-banner
+animehay.ngo,chuyentiepanimehay.one##.under_player.flex-hozi-center.flex-column.flex
+animehay.ngo,chuyentiepanimehay.one##body>div[style^="position: fixed"]
+animehay.ngo,chuyentiepanimehay.one##div[style="position: fixed; bottom: 0px; z-index: 98; width: 100%; text-align: center; box-sizing: border-box;"]
 animetvn4.com###mobile-ads
 animetvn4.com##.gnarty-offads
 animevietsub.how,animevietsub.mx###invideo_wrapper
@@ -460,11 +465,6 @@ chodansinh.net##.link-gold
 chodansinh.net##[id^="banner"]
 chotlo3s.com##div[id^="float"]
 chotlo3s.com##div[id^="hide_float"]
-chuyentiepanimehay.one###header-ads + center
-chuyentiepanimehay.one###top-banner
-chuyentiepanimehay.one##.under_player.flex-hozi-center.flex-column.flex
-chuyentiepanimehay.one##body>div[style^="position: fixed"]
-chuyentiepanimehay.one##div[style="position: fixed; bottom: 0px; z-index: 98; width: 100%; text-align: center; box-sizing: border-box;"]
 coinphoton.com##.header-fix-ads
 coinphoton.com##.lepopup-popup-container
 coinphoton.com##.lepopup-popup-overlay
@@ -575,7 +575,7 @@ hhtq.li###xs-addd0
 hhtq.li##.btn-fanpage.btn-default.btn-block.btn
 hhtq.li##.underplayer_btn
 hhtqvietsub.cc###top-banner-pc
-hhtqvietsub.cc,chuyentiepanimehay.one###sponsor-balloon
+hhtqvietsub.cc,animehay.ngo,chuyentiepanimehay.one###sponsor-balloon
 hoahoc247.com##.btn_small_fix_container
 hoatieu.vn###adrightspecial
 hoatieu.vn###adsuggestion
@@ -1242,6 +1242,7 @@ z.chinav.sex##.banner-container
 ! ---------Rule only for AdGuard------
 anime47.best##.affiliate-swiper
 anime47.best#%#//scriptlet("prevent-setTimeout", "Adblock")
+animehay.ngo,chuyentiepanimehay.one#%#//scriptlet("abort-on-property-read", "popUp")
 animevietsub9.com#%#//scriptlet("abort-on-property-read", "_0x3f9b")
 aoe.vn#%#//scriptlet("abort-on-property-read", "parseInt")
 audiotruyenfull.com#%#//scriptlet("abort-on-property-read", "adpiaListUrl")
@@ -1254,7 +1255,6 @@ cap3.mom#%#//scriptlet("prevent-addEventListener", "click", "setTimeout")
 cap3.mom#%#//scriptlet("prevent-addEventListener", "fullscreenchange", "e.target")
 childish2x1.fun,childish2x2.fun,tekora.space,lottedira.store,tekora.fun#%#//scriptlet("abort-current-inline-script", "$", "aff")
 chotlo3s.com#$##header {margin-top: 0!important}
-chuyentiepanimehay.one#%#//scriptlet("abort-on-property-read", "popUp")
 cliphubs.com,elicaeditions.com#%#//scriptlet("abort-current-inline-script", "document.addEventListener", "pop")
 clipphot.vip,lodgesincheshire.co.uk#%#//scriptlet("abort-current-inline-script", "document.addEventListener", "POP")
 cmangax15.com#%#//scriptlet("prevent-setTimeout", "ads_num")
