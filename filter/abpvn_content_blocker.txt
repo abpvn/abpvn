@@ -1,9 +1,9 @@
 [Adblock Plus 2.0]
-! Version: 20260315110607145
+! Version: 20260315202356990
 ! id: D4028CDD-3D39-4624-ACC7-8140F4EC3888
 ! Title: ABPVN List | Content Blocker
-! Last modified: 15 Mar 2026 11:06:07 UTC+7
-! Diff-Path: patches/20260315110607145.patch#abpvn_content_blocker
+! Last modified: 15 Mar 2026 20:23:57 UTC+7
+! Diff-Path: patches/20260315202356990.patch#abpvn_content_blocker
 ! Diff-Expires: 60 minutes
 ! Expires: 1 days (update frequency)
 !
@@ -48,8 +48,8 @@ $popup,domain=truyenfull.vision
 /disable-devtool.min.js$script
 /full-page-script.js$script
 /giadinhonline.vn/files/qc/*
-/i.imgur.com/*.gif$domain=keonhacai55.bar|www.motchill50.com|mashrouleila.com|vebotvd.cc|fespaco.org|listnhacai88.com|xoilaczzpz.tv|mitomzl.cc|rakhoixd.cc
-/images/company/21.png$image,domain=vebotvd.cc|xoilaczzpz.tv|mashrouleila.com
+/i.imgur.com/*.gif$domain=keonhacai55.bar|www.motchill50.com|mashrouleila.com|vebotvd.cc|fespaco.org|listnhacai88.com|northernlightsccs.com|mitomzl.cc|rakhoixd.cc
+/images/company/21.png$image,domain=vebotvd.cc|northernlightsccs.com|mashrouleila.com
 /js/ads.js$script,~third-party,domain=~vipurl.in|~link.codevn.net
 /lv/esnk/*$script,domain=~lxmanga.space
 /newchill/*gif$image
@@ -112,7 +112,7 @@ $popup,domain=truyenfull.vision
 ||bp.blogspot.com/*banner$image,domain=~aowvn.org
 ||cdn-data.gtvplus.vn/banners/$image,domain=gametv.vn
 ||cdn.giavang.org/images/ads/$image,domain=giavang.org
-||cdn.lfastcdn.com^*.gif$image,domain=bongdainfox.tv|xoilaczzpz.tv|rakhoixd.cc|fespaco.org|mitomzl.cc|vebotvd.cc
+||cdn.lfastcdn.com^*.gif$image,domain=bongdainfox.tv|northernlightsccs.com|rakhoixd.cc|fespaco.org|mitomzl.cc|vebotvd.cc
 ||cdn.monkeydarchive.com/images/banner/$image,domain=monkeyd.net.vn
 ||cdn.webhoctienganh.com/asset/home/img/banner/$image,domain=webhoctienganh.com
 ||cdn1.fastestcdn-global.com/gavangtv/*.gif$image
@@ -828,7 +828,7 @@ fespaco.org##.menu-item-object-custom
 fespaco.org##.sub-menu.d-none.d-lg-flex
 fespaco.org,mashrouleila.com,vebotvd.cc###quangcaopc
 fespaco.org,mashrouleila.com,vebotvd.cc##.marquee-container
-fespaco.org,mashrouleila.com,vebotvd.cc,rakhoixd.cc,xoilaczzpz.tv###wap_bottombanner
+fespaco.org,mashrouleila.com,vebotvd.cc,rakhoixd.cc,northernlightsccs.com###wap_bottombanner
 fespaco.org,vebotvd.cc##.align-items-center.justify-content-between.d-flex.col-12>.d-lg-none.d-block
 file.gocmod.com##div.ad
 foxtruyen2.com##div#ad_info_top
@@ -950,10 +950,10 @@ mashrouleila.com##.widget-offers__list
 mashrouleila.com##div.d-lg-none.d-block:nth-of-type(3)
 mashrouleila.com,mitomzl.cc##.menu-cuoc-8xbet
 mashrouleila.com,mitomzl.cc,vebotvd.cc##.menu-top-nha-cai
+mashrouleila.com,northernlightsccs.com##.match-detail__offer
 mashrouleila.com,rakhoixd.cc##.sk_balloon
-mashrouleila.com,vebotvd.cc,fespaco.org,mitomzl.cc,xoilaczzpz.tv##div[id^="dnn_"]
-mashrouleila.com,vebotvd.cc,fespaco.org,xoilaczzpz.tv,mitomzl.cc##.company
-mashrouleila.com,xoilaczzpz.tv##.match-detail__offer
+mashrouleila.com,vebotvd.cc,fespaco.org,mitomzl.cc,northernlightsccs.com##div[id^="dnn_"]
+mashrouleila.com,vebotvd.cc,fespaco.org,northernlightsccs.com,mitomzl.cc##.company
 metruyencv.com##.text-muted
 metruyencv.com,metruyencv.net##[href$="/goout/lazada"]
 metruyencv.com,metruyencv.net##section.nh-section:nth-of-type(5)
@@ -991,6 +991,15 @@ nhaccuatui.com##.nqc-zone
 nhacdj.vn###top-adv
 nld.com.vn,danviet.vn##.ads-top
 noitu.site##.modal-backdrop.show
+northernlightsccs.com##.c-int.d-lg-none.d-block>p.block-int.mb-1
+northernlightsccs.com##.col-12>p.block-int.mb-1
+northernlightsccs.com##.grid-match__footer
+northernlightsccs.com##.odds-comp-logo
+northernlightsccs.com##.w-100.justify-content-center.align-items-center.d-flex
+northernlightsccs.com##.widget
+northernlightsccs.com##.xlz-ads-item
+northernlightsccs.com##a.d-lg-none.d-block:nth-of-type(1)
+northernlightsccs.com,vebotvd.cc##.odds-comp
 onflix.my##.absolute.inset-0.\-z-10
 onflix.my##.space-y-0.py-2.lg\:pl-14.md\:px-12.px-1.w-full>.duration-300.fade-in.animate-in.p-4.bg-black\/50.justify-center.items-center.flex.z-\[100\].inset-0.fixed
 onflix.my##body>.duration-300.fade-in.animate-in.p-4.bg-black\/50.justify-center.items-center.flex.z-\[100\].inset-0.fixed
@@ -1032,7 +1041,7 @@ quantrimang.com###adrighttop
 r.cakeo3.rocks##a.bg-yellow-1[target="_blank"]
 rakhoixd.cc##.bookmaker-selector-container
 rakhoixd.cc##.btn-odds
-rakhoixd.cc,xoilaczzpz.tv,vebotvd.cc,mashrouleila.com##.btn-8xbet
+rakhoixd.cc,northernlightsccs.com,vebotvd.cc,mashrouleila.com##.btn-8xbet
 reatimes.vn##div[class^="adv-"]
 rophim.moe##.module_home_ads
 sachmoi.net##.boxzilla-bottom-right-container
@@ -1255,16 +1264,7 @@ xemphim.site,motchillzz.site##.sticky_bottom
 xemtivi4k.com###adstop2
 xemtivi4k.com##.col-lg-4.hidden-xs.d-flex.flex-column.address-wrap
 xemtivi4k.com##.float-right
-xemtivi4k.com,xoilaczzpz.tv##.ads-item
-xoilaczzpz.tv##.c-int.d-lg-none.d-block>p.block-int.mb-1
-xoilaczzpz.tv##.col-12>p.block-int.mb-1
-xoilaczzpz.tv##.grid-match__footer
-xoilaczzpz.tv##.odds-comp-logo
-xoilaczzpz.tv##.w-100.justify-content-center.align-items-center.d-flex
-xoilaczzpz.tv##.widget
-xoilaczzpz.tv##.xlz-ads-item
-xoilaczzpz.tv##a.d-lg-none.d-block:nth-of-type(1)
-xoilaczzpz.tv,vebotvd.cc##.odds-comp
+xemtivi4k.com,northernlightsccs.com##.ads-item
 xskt.com.vn,vieclam.tv###bnc0
 yanhh3d.sh,hhtm.net###catfish-ads
 ybox.vn###ybox-H1>div[style]
@@ -1379,7 +1379,7 @@ vozer.io#@#[class^="div-gpt-ad"]
 ||phimsexhayvn128.com^*.gif$image
 ||qmh.sex/assets/js/simpleblocker.js$script,~third-party
 ||quatvn.my^*.gif$image
-||quoracdn.net^$image,domain=txtrek.net|phim18vip.top|pheclip.love|vnsexdam.net|sexhihi.fit|phevl.sh|fulllivehot.live|haysexvn.lol|chich69.top|elicaeditions.com
+||quoracdn.net^$image,domain=choiboi.net|phim18vip.top|pheclip.love|vnsexdam.net|sexhihi.fit|phevl.sh|fulllivehot.live|haysexvn.lol|chich69.top|elicaeditions.com
 ||rphang.online^*.gif
 ||sayhentai.vc/assets/js/ads.js
 ||sayhentai.vc/storage/images/banner/$image
@@ -1424,6 +1424,7 @@ buomtv.media##.l1k7nns5.ahen1fo
 buomtv.media##div._1vguhxv.cleaozk._3yp41v.row-0.ss>._1lbf8q9
 cap3.mom##.p-4.justify-center.items-center.flex.backdrop-blur-sm.bg-black\/80.z-\[9999\].inset-0.fixed
 cap3.mom,qmh.sex##.header>app-banner
+choiboi.net,vnsexdam.net,sexhihi.fit,theofficialjohnsonbrothers.co.uk##.xx-ads
 cliphot69.shop###custom_html-42
 cliphotvn69.com,dynadot.rsocdomains.com,cliphot69.shop,www.gvnvh18z.com,phimsexhayvn128.com,sayhentai.vc,phim18vip.top,xamvn.bond##.float-ck-center-lt
 clipsexsub3x.net,sexhihi.fit,javhdz.hot,laalmirchitakeaway.co.uk##.catfish-bottom
@@ -1516,7 +1517,6 @@ tuoi69.com,sieukhung.net###bar_float_r
 tuoi69.com,sieukhung.net##.adsTopHome
 tuoinung.cfd###hide_float_right
 tut4ktream.online###idAdLink
-txtrek.net,vnsexdam.net,sexhihi.fit,theofficialjohnsonbrothers.co.uk##.xx-ads
 vailonxx.me##.happy-under-player
 vailonxx.me##.vailo-sticky
 vailonxx.me##.vailo-under-navbar
