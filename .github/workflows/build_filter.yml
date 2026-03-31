@@ -31,7 +31,7 @@ jobs:
       - uses: hoang-rio/set-timezone@v1.4
         with:
           timezoneLinux: "Asia/Ho_Chi_Minh"
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v6
         with:
           ref: master
           fetch-depth: 0
@@ -94,7 +94,7 @@ jobs:
       - uses: hoang-rio/set-timezone@v1.4
         with:
           timezoneLinux: "Asia/Ho_Chi_Minh"
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v6
         with:
           ref: single
           fetch-depth: 0
@@ -153,6 +153,6 @@ jobs:
     needs: [build_filter_master, build_filter_single]
     if: ${{ always() && (needs.build_filter_master.outputs.NEED_BUILD_MASTER == 'true' || needs.build_filter_single.outputs.NEED_BUILD_SINGLE == 'true') }}
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v6
       - name: Request to server
         run: curl ${{secrets.PULL_GIT_URL}}
