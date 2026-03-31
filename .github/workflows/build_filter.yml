@@ -28,7 +28,7 @@ jobs:
     outputs:
       NEED_BUILD_MASTER: ${{steps.check_build.outputs.NEED_BUILD_MASTER}}
     steps:
-      - uses: hoang-rio/set-timezone@v1.4
+      - uses: hoang-rio/set-timezone@v1
         with:
           timezoneLinux: "Asia/Ho_Chi_Minh"
       - uses: actions/checkout@v6
@@ -91,7 +91,7 @@ jobs:
     outputs:
       NEED_BUILD_SINGLE: ${{steps.check_build.outputs.NEED_BUILD_SINGLE}}
     steps:
-      - uses: hoang-rio/set-timezone@v1.4
+      - uses: hoang-rio/set-timezone@v1
         with:
           timezoneLinux: "Asia/Ho_Chi_Minh"
       - uses: actions/checkout@v6
