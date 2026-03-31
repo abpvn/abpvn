@@ -1,11 +1,11 @@
-diff name:abpvn lines:162 checksum:5df29cc0f7
+diff name:abpvn lines:175 checksum:5568f75116
 d2 1
 a2 1
-! Version: 20260331100849380
+! Version: 20260331130842877
 d5 2
 a6 2
-! Last modified: 31 Mar 2026 10:08:49 UTC+7
-! Diff-Path: patches/20260331100849380.patch#abpvn
+! Last modified: 31 Mar 2026 13:08:42 UTC+7
+! Diff-Path: patches/20260331130842877.patch#abpvn
 d48 2
 a49 2
 /i.imgur.com/*.gif$domain=keonhacai55.onl|www.motchill52.com|inas.org|vebotvd.cc|listnhacai88.com|scribblediffusion.com|mitomzl.cc|rakhoixd.cc
@@ -13,6 +13,9 @@ a49 2
 d71 1
 a71 1
 /vast.js$script,domain=boctem.com|xemphim.site|phimdacap.tv|player.cloudbeta.win|mn.mediastation.live|javavietnam.org
+d86 1
+a86 1
+||animevietsub.id/ads/$script
 d93 2
 a94 2
 ||ax.mpcdn.top/tags/js?id=motchill$script,domain=motchillzl.id
@@ -25,6 +28,9 @@ a135 1
 ||hhtq.dev/ads/$script,~third-party
 a158 1
 ||javavietnam.org^*.gif
+d164 1
+a164 1
+||lh3.googleusercontent.com/*=s0$image,domain=animevietsub.how|animevietsub.id
 d170 2
 a172 1
 ||motchillx.io^*.gif$image
@@ -40,6 +46,13 @@ animehay.uno,chuyentiepanimehay.one###top-banner
 animehay.uno,chuyentiepanimehay.one##.under_player.flex-hozi-center.flex-column.flex
 animehay.uno,chuyentiepanimehay.one##body>div[style^="position: fixed"]
 animehay.uno,chuyentiepanimehay.one##div[style="position: fixed; bottom: 0px; z-index: 98; width: 100%; text-align: center; box-sizing: border-box;"]
+d412 5
+a416 5
+animevietsub.how,animevietsub.id###invideo_wrapper
+animevietsub.how,animevietsub.id##.Ads
+animevietsub.how,animevietsub.id##.mobile-catfish-top
+animevietsub.how,animevietsub.id##.mobile-catfixx
+animevietsub.how,animevietsub.id,phimtuoitho.tv##.pc-catfixx
 d441 15
 d483 1
 a483 1
@@ -161,14 +174,14 @@ d1251 1
 a1251 1
 viet69vn.at,viet69.cd##.footer-fixed-br-container
 d1255 2
-diff name:abpvn_adguard lines:202 checksum:b6d74ef3b6
+diff name:abpvn_adguard lines:216 checksum:3e41c2beb9
 d2 1
 a2 1
-! Version: 20260331100849380
+! Version: 20260331130842877
 d5 2
 a6 2
-! Last modified: 31 Mar 2026 10:08:49 UTC+7
-! Diff-Path: patches/20260331100849380.patch#abpvn_adguard
+! Last modified: 31 Mar 2026 13:08:42 UTC+7
+! Diff-Path: patches/20260331130842877.patch#abpvn_adguard
 d46 2
 a47 2
 /i.imgur.com/*.gif$domain=keonhacai55.onl|www.motchill52.com|inas.org|vebotvd.cc|listnhacai88.com|scribblediffusion.com|mitomzl.cc|rakhoixd.cc
@@ -176,6 +189,9 @@ a47 2
 d69 1
 a69 1
 /vast.js$script,domain=boctem.com|xemphim.site|phimdacap.tv|player.cloudbeta.win|mn.mediastation.live|javavietnam.org
+d84 1
+a84 1
+||animevietsub.id/ads/$script
 d91 2
 a92 2
 ||ax.mpcdn.top/tags/js?id=motchill$script,domain=motchillzl.id
@@ -188,6 +204,9 @@ a133 1
 ||hhtq.dev/ads/$script,~third-party
 a156 1
 ||javavietnam.org^*.gif
+d162 1
+a162 1
+||lh3.googleusercontent.com/*=s0$image,domain=animevietsub.how|animevietsub.id
 d168 2
 a170 1
 ||motchillx.io^*.gif$image
@@ -203,6 +222,13 @@ animehay.uno,chuyentiepanimehay.one###top-banner
 animehay.uno,chuyentiepanimehay.one##.under_player.flex-hozi-center.flex-column.flex
 animehay.uno,chuyentiepanimehay.one##body>div[style^="position: fixed"]
 animehay.uno,chuyentiepanimehay.one##div[style="position: fixed; bottom: 0px; z-index: 98; width: 100%; text-align: center; box-sizing: border-box;"]
+d408 5
+a412 5
+animevietsub.how,animevietsub.id###invideo_wrapper
+animevietsub.how,animevietsub.id##.Ads
+animevietsub.how,animevietsub.id##.mobile-catfish-top
+animevietsub.how,animevietsub.id##.mobile-catfixx
+animevietsub.how,animevietsub.id,phimtuoitho.tv##.pc-catfixx
 d437 15
 d479 1
 a479 1
@@ -336,8 +362,9 @@ d1283 1
 d1290 1
 a1290 1
 hh2d.top#%#//scriptlet("abort-current-inline-script", "$", "adblock")
-d1294 2
-a1295 2
+d1293 3
+a1295 3
+hh3dhay.life,tram3d.online,animevietsub.how,animevietsub.id#%#//scriptlet("abort-current-inline-script", "eval", "$._Eu")
 hhtq.dev###overlay
 hhtq.dev,phimchautinhtri.net#$#html {overflow: auto!important;}
 a1297 1
@@ -364,14 +391,14 @@ d1340 1
 a1340 1
 truyensieuhay.com,xemphim.site,quangcaoyenbai.com,phimchill.life,thefaplive.com,mv.dailyphimz.com,mv.phimbathu.one,xemsexhihi.net,anime47.best,teamlanhlung8.shop,phimhdc.com,forum.timfshare.com,ungtycomicsan.com,honghotduongpho.vn,chich69.top,comong.info#%#//scriptlet("abort-on-property-read", "document.cookie")
 d1344 1
-diff name:abpvn_content_blocker lines:162 checksum:3eb4e794e3
+diff name:abpvn_content_blocker lines:175 checksum:0775adc7a5
 d2 1
 a2 1
-! Version: 20260331100849380
+! Version: 20260331130842877
 d5 2
 a6 2
-! Last modified: 31 Mar 2026 10:08:49 UTC+7
-! Diff-Path: patches/20260331100849380.patch#abpvn_content_blocker
+! Last modified: 31 Mar 2026 13:08:42 UTC+7
+! Diff-Path: patches/20260331130842877.patch#abpvn_content_blocker
 d48 2
 a49 2
 /i.imgur.com/*.gif$domain=keonhacai55.onl|www.motchill52.com|inas.org|vebotvd.cc|listnhacai88.com|scribblediffusion.com|mitomzl.cc|rakhoixd.cc
@@ -379,6 +406,9 @@ a49 2
 d71 1
 a71 1
 /vast.js$script,domain=boctem.com|xemphim.site|phimdacap.tv|player.cloudbeta.win|mn.mediastation.live|javavietnam.org
+d86 1
+a86 1
+||animevietsub.id/ads/$script
 d93 2
 a94 2
 ||ax.mpcdn.top/tags/js?id=motchill$script,domain=motchillzl.id
@@ -391,6 +421,9 @@ a135 1
 ||hhtq.dev/ads/$script,~third-party
 a158 1
 ||javavietnam.org^*.gif
+d164 1
+a164 1
+||lh3.googleusercontent.com/*=s0$image,domain=animevietsub.how|animevietsub.id
 d170 2
 a172 1
 ||motchillx.io^*.gif$image
@@ -406,6 +439,13 @@ animehay.uno,chuyentiepanimehay.one###top-banner
 animehay.uno,chuyentiepanimehay.one##.under_player.flex-hozi-center.flex-column.flex
 animehay.uno,chuyentiepanimehay.one##body>div[style^="position: fixed"]
 animehay.uno,chuyentiepanimehay.one##div[style="position: fixed; bottom: 0px; z-index: 98; width: 100%; text-align: center; box-sizing: border-box;"]
+d412 5
+a416 5
+animevietsub.how,animevietsub.id###invideo_wrapper
+animevietsub.how,animevietsub.id##.Ads
+animevietsub.how,animevietsub.id##.mobile-catfish-top
+animevietsub.how,animevietsub.id##.mobile-catfixx
+animevietsub.how,animevietsub.id,phimtuoitho.tv##.pc-catfixx
 d441 15
 d483 1
 a483 1
@@ -527,14 +567,14 @@ d1251 1
 a1251 1
 viet69vn.at,viet69.cd##.footer-fixed-br-container
 d1255 2
-diff name:abpvn_noelemhide lines:57 checksum:ac771a356c
+diff name:abpvn_noelemhide lines:63 checksum:05059abe06
 d2 1
 a2 1
-! Version: 20260331100849380
+! Version: 20260331130842877
 d5 2
 a6 2
-! Last modified: 31 Mar 2026 10:08:49 UTC+7
-! Diff-Path: patches/20260331100849380.patch#abpvn_noelemhide
+! Last modified: 31 Mar 2026 13:08:42 UTC+7
+! Diff-Path: patches/20260331130842877.patch#abpvn_noelemhide
 d48 2
 a49 2
 /i.imgur.com/*.gif$domain=keonhacai55.onl|www.motchill52.com|inas.org|vebotvd.cc|listnhacai88.com|scribblediffusion.com|mitomzl.cc|rakhoixd.cc
@@ -542,6 +582,9 @@ a49 2
 d71 1
 a71 1
 /vast.js$script,domain=boctem.com|xemphim.site|phimdacap.tv|player.cloudbeta.win|mn.mediastation.live|javavietnam.org
+d86 1
+a86 1
+||animevietsub.id/ads/$script
 d93 2
 a94 2
 ||ax.mpcdn.top/tags/js?id=motchill$script,domain=motchillzl.id
@@ -554,6 +597,9 @@ a135 1
 ||hhtq.dev/ads/$script,~third-party
 a158 1
 ||javavietnam.org^*.gif
+d164 1
+a164 1
+||lh3.googleusercontent.com/*=s0$image,domain=animevietsub.how|animevietsub.id
 d170 2
 a172 1
 ||motchillx.io^*.gif$image
@@ -585,14 +631,14 @@ a424 1
 d439 2
 a440 1
 ||video.qmh.one/uploads/banners/$image,domain=cap3.monster|qmh.one
-diff name:abpvn_ublock lines:202 checksum:63e0bb9f15
+diff name:abpvn_ublock lines:216 checksum:41d9cf9cb9
 d2 1
 a2 1
-! Version: 20260331100849380
+! Version: 20260331130842877
 d5 2
 a6 2
-! Last modified: 31 Mar 2026 10:08:49 UTC+7
-! Diff-Path: patches/20260331100849380.patch#abpvn_ublock
+! Last modified: 31 Mar 2026 13:08:42 UTC+7
+! Diff-Path: patches/20260331130842877.patch#abpvn_ublock
 d46 2
 a47 2
 /i.imgur.com/*.gif$domain=keonhacai55.onl|www.motchill52.com|inas.org|vebotvd.cc|listnhacai88.com|scribblediffusion.com|mitomzl.cc|rakhoixd.cc
@@ -600,6 +646,9 @@ a47 2
 d69 1
 a69 1
 /vast.js$script,domain=boctem.com|xemphim.site|phimdacap.tv|player.cloudbeta.win|mn.mediastation.live|javavietnam.org
+d84 1
+a84 1
+||animevietsub.id/ads/$script
 d91 2
 a92 2
 ||ax.mpcdn.top/tags/js?id=motchill$script,domain=motchillzl.id
@@ -612,6 +661,9 @@ a133 1
 ||hhtq.dev/ads/$script,~third-party
 a156 1
 ||javavietnam.org^*.gif
+d162 1
+a162 1
+||lh3.googleusercontent.com/*=s0$image,domain=animevietsub.how|animevietsub.id
 d168 2
 a170 1
 ||motchillx.io^*.gif$image
@@ -627,6 +679,13 @@ animehay.uno,chuyentiepanimehay.one###top-banner
 animehay.uno,chuyentiepanimehay.one##.under_player.flex-hozi-center.flex-column.flex
 animehay.uno,chuyentiepanimehay.one##body>div[style^="position: fixed"]
 animehay.uno,chuyentiepanimehay.one##div[style="position: fixed; bottom: 0px; z-index: 98; width: 100%; text-align: center; box-sizing: border-box;"]
+d408 5
+a412 5
+animevietsub.how,animevietsub.id###invideo_wrapper
+animevietsub.how,animevietsub.id##.Ads
+animevietsub.how,animevietsub.id##.mobile-catfish-top
+animevietsub.how,animevietsub.id##.mobile-catfixx
+animevietsub.how,animevietsub.id,phimtuoitho.tv##.pc-catfixx
 d437 15
 d479 1
 a479 1
@@ -760,8 +819,9 @@ d1282 1
 d1289 1
 a1289 1
 hh2d.top##+js(acs, $, adblock)
-d1293 2
-a1294 2
+d1292 3
+a1294 3
+hh3dhay.life,tram3d.online,animevietsub.how,animevietsub.id##+js(acs, eval, $._Eu)
 hhtq.dev###overlay
 hhtq.dev,phimchautinhtri.net##html:style(overflow: auto !important)
 a1296 1
