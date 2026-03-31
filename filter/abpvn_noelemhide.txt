@@ -1,9 +1,9 @@
 [Adblock Plus 2.0]
-! Version: 20260330182506702
+! Version: 20260331100850065
 ! id: D4028CDD-3D39-4624-ACC7-8140F4EC3888
 ! Title: ABPVN List
-! Last modified: 30 Mar 2026 18:25:06 UTC+7
-! Diff-Path: patches/20260330182506702.patch#abpvn_noelemhide
+! Last modified: 31 Mar 2026 10:08:50 UTC+7
+! Diff-Path: patches/20260331100850065.patch#abpvn_noelemhide
 ! Diff-Expires: 60 minutes
 ! Expires: 1 days (update frequency)
 !
@@ -98,8 +98,8 @@ $popup,domain=truyenfull.vision
 ||api.anime3s.com^*.gif$image,domain=xemphim.site|anime13.site
 ||api.onflix.xyz/api/ads/$xmlhttprequest
 ||api.ybox.vn/graphql?query=*Ads
-||ax.mpcdn.top/tags/js?id=motchill$script,domain=motchillzl.io
-||ax.mpcdn.top^*.gif$domain=motchillzl.io
+||ax.mpcdn.top/tags/js?id=motchill$script,domain=motchillzl.id
+||ax.mpcdn.top^*.gif$domain=motchillzl.id
 ||baomoi.com$csp=script-src data: blob: * 'self' 'unsafe-inline'
 ||baonga.com/FileUpload/Images/*banner
 ||beerbrothers.co.za^*.gif$image
@@ -141,7 +141,7 @@ $popup,domain=truyenfull.vision
 ||goal.90phut24.xyz^*.gif$image
 ||gocmod.com/*code.js$script,domain=gocmod.com
 ||googleusercontent.com^$domain=hhtqvietsub.cc
-||hhtq.li/ads/$script,~third-party
+||hhtq.dev/ads/$script,~third-party
 ||hinhso.com^$domain=diendanmaychu.vn,image
 ||hocaz.vn/_next/*banner$image,~third-party
 ||hoiquan1.tv^*.gif$image
@@ -258,7 +258,7 @@ $popup,domain=truyenfull.vision
 ||tudomuaban.com/public/upload/ad/
 ||tuyensinh247.com/$image,third-party
 ||tuyensinhso.vn/images/banners/*.gif$image,~third-party
-||ungtycomicsau.com$csp=script-src self * data:* 'unsafe-inline'
+||ungtycomicsan.com$csp=script-src self * data:* 'unsafe-inline'
 ||uniad.$third-party
 ||vesotantai.com/upload/photo/$image
 ||vietjack.com/FrontEndWeb/js/sp.js$script
@@ -703,7 +703,7 @@ $popup,domain=truyenfull.vision
 ||ihentai.network/banner_image/$image
 ||img.congdongmassage.com/banner/$image,domain=congdongmassage.com
 ||imgcdn.mikelarsenal.pro/images/$image,domain=phimxxx.ac
-||javhdz.hot/js/ads-javhd.js$script,~third-party
+||javhdz.xxx/js/ads-javhd.js$script,~third-party
 ||javtopxx2.com^*.gif$image
 ||jf.nairydeices.com/rXAp4JBa7jNUt/114370$domain=lxmanga.space,script,rewrite=abp-resource:blank-js
 ||js.onclckmn.com^
@@ -713,12 +713,13 @@ $popup,domain=truyenfull.vision
 ||lxmanga.space/storage/images/banners
 ||mangadm.cc$csp=script-src 'self' 'unsafe-inline' http
 ||mialsja.life^$image,domain=phimxxx.ac
+||mupsexphim.net^*.gif$image,domain=mupsexphim.net
 ||ngaytho.me^*.gif
 ||nrs6ffl9w.com^
 ||phimsexhayvnz.com^*.gif$image
 ||qmh.one/assets/js/simpleblocker.js$script,~third-party
 ||quatvn.my^*.gif$image
-||quoracdn.net^$image,domain=phim3xhay.net|phim18vip.top|pheclip.love|sexmup9x.pro|xemsexhihi.net|phevl.sh|fulllivehot.live|haysexvn.lol|chich69.top|viet69hay.bar
+||quoracdn.net^$image,domain=phim3xhay.net|phim18vip.top|pheclip.love|mupsexphim.net|xemsexhihi.net|phevl.sh|fulllivehot.live|haysexvn.lol|chich69.top|viet69hay.bar
 ||rphang.online^*.gif
 ||sandridge-solar.co.uk^*.gif$image
 ||sayhentai.vc/assets/js/ads.js
@@ -729,7 +730,6 @@ $popup,domain=truyenfull.vision
 ||sexlive.biz/_next/image?url=*.gif$image
 ||sexlive.biz/mb66.mp4$media,~third-party
 ||sexlive.biz^*.avif$~third-party
-||sexmup9x.pro^*.gif$image,domain=sexmup9x.pro
 ||sieukhung.net^*.gif$image
 ||stream.cliphot69.one/mb66.mp4$media,domain=sexlive.biz
 ||t7cp4fldl.com^
