@@ -1,9 +1,9 @@
 [Adblock Plus 2.0]
-! Version: 20260412190535530
+! Version: 20260412231326168
 ! id: D4028CDD-3D39-4624-ACC7-8140F4EC3888
 ! Title: ABPVN List | Content Blocker
-! Last modified: 12 Apr 2026 19:05:35 UTC+7
-! Diff-Path: patches/20260412190535530.patch#abpvn_content_blocker
+! Last modified: 12 Apr 2026 23:13:26 UTC+7
+! Diff-Path: patches/20260412231326168.patch#abpvn_content_blocker
 ! Diff-Expires: 60 minutes
 ! Expires: 1 days (update frequency)
 !
@@ -241,6 +241,7 @@ $popup,domain=truyenfull.vision
 ||thapcamtvz.org^*.gif$image,domain=thapcamtvz.org
 ||the.tube/js/detect-ab.js$script
 ||the.tube/js/simpleblocker.js$script
+||thiendinh2.tv^*.gif$image
 ||thoigian.com.vn/mFiles/N/06/$image
 ||thoigian.com.vn^*.gif
 ||thuocbietduoc.com.vn/aqc/$image
@@ -527,7 +528,6 @@ $popup,domain=truyenfull.vision
 ||onclicksuper.com^
 ||onclicktop.com^$third-party
 ||onnetwork.tv^$third-party
-||orqmimfug.in^
 ||oursty.com^
 ||outbrain.com^
 ||perigshfnon.com^
@@ -1093,6 +1093,7 @@ the.tube##.ads-container
 thethao247.vn##div[class$="_ads"]
 thethaovanhoa.vn##.zone-top
 thethaovanhoa.vn##[id^="pos-"]
+thiendinh2.tv##.footer-wrapper
 thitruongtaichinhtiente.vn##.c-banner-item
 thitruongtaichinhtiente.vn,congly.vn##.c-banner
 thoidai.com.vn,petrotimes.vn##.__ads_click
@@ -1376,7 +1377,6 @@ quykhu.com#@#[class^="div-gpt-ad"]
 ||jf.nairydeices.com/rXAp4JBa7jNUt/114370$domain=lxmanga.space,script,rewrite=abp-resource:blank-js
 ||js.onclckmn.com^
 ||kgfjrb711.com^
-||l1.stream4k.online^*.gif$image,domain=genzsex.blog
 ||laalmirchitakeaway.co.uk^*.gif
 ||lxmanga.space/storage/images/banners
 ||mangadm.cc$csp=script-src 'self' 'unsafe-inline' http
