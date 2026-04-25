@@ -1,9 +1,9 @@
 [Adblock Plus 2.0]
-! Version: 20260425100748239
+! Version: 20260425152403912
 ! id: D4028CDD-3D39-4624-ACC7-8140F4EC3888
 ! Title: ABPVN List
-! Last modified: 25 Apr 2026 10:07:48 UTC+7
-! Diff-Path: patches/20260425100748239.patch#abpvn_noelemhide
+! Last modified: 25 Apr 2026 15:24:03 UTC+7
+! Diff-Path: patches/20260425152403912.patch#abpvn_noelemhide
 ! Diff-Expires: 60 minutes
 ! Expires: 1 days (update frequency)
 !
@@ -88,7 +88,6 @@ $popup,domain=truyenfull.vision
 ||api.anime3s.com^*.gif$image,domain=xemphim.site|animet.info
 ||api.onflix.xyz/api/ads/$xmlhttprequest
 ||api.ybox.vn/graphql?query=*Ads
-||aqueousone.co.uk/images/banners/$image
 ||ax.mpcdn.top/tags/js?id=motchill$script,domain=motchillzl.in
 ||ax.mpcdn.top^*.gif$domain=motchillzl.in
 ||baomoi.com$csp=script-src data: blob: * 'self' 'unsafe-inline'
@@ -105,6 +104,7 @@ $popup,domain=truyenfull.vision
 ||cdn.webhoctienganh.com/asset/home/img/banner/$image,domain=webhoctienganh.com
 ||cdn1.fastestcdn-global.com/gavangtv/*.gif$image
 ||cf.shopee.vn/file/$image,domain=tctruyen.org
+||chapellodge.co.uk/images/banners/$image
 ||checkscam.vn/wp-content/uploads/2025/10/2.png$image
 ||checkscam.vn^*.gif$image
 ||chodansinh.net^*.gif
@@ -133,7 +133,7 @@ $popup,domain=truyenfull.vision
 ||hinhso.com^$domain=diendanmaychu.vn,image
 ||hoadaotv.info/assets/js/ads_popup.js$script,~third-party
 ||hocaz.vn/_next/*banner$image,~third-party
-||hoiquan2.tv^*.gif$image
+||hoiquan3.tv^*.gif$image
 ||hongbiennhanh24h.online/wp-content/themes/flatsome-child/assets/js/main.js$script,~third-party
 ||hsctvn.com/uploads/products/$~third-party,image
 ||huongdanjava.com$csp=script-src data: 'self' 'unsafe-inline' http: https:
@@ -186,9 +186,9 @@ $popup,domain=truyenfull.vision
 ||phim.vkool8.net/images/ads/$image
 ||phim.vkool8.net/js/pov.js$script,~third-party
 ||phimhdc.com^*.gif$image
-||phimhdcs.com/js/ad.js$script,~third-party
-||phimhdcs.com/storage/files/*.gif$image,~third-party
-||phimhdcs.com/storage/files/abcd123.webp$image,~third-party
+||phimhdcss.com/js/ad.js$script,~third-party
+||phimhdcss.com/storage/files/*.gif$image,~third-party
+||phimhdcss.com/storage/files/abcd123.webp$image,~third-party
 ||phimlongtieng.net/2s.m3u8
 ||phimmoichill.ai/newchill/$script,~third-party
 ||phimmoichillz.top/pop$image
@@ -225,14 +225,14 @@ $popup,domain=truyenfull.vision
 ||sv2.thiendinh1.live/banners/$image
 ||sv2.xaycon1.live/banners/$image
 ||tailieuvnu.com/wp-content/uploads/2022/12/28/shopee-2*.png$image
-||tamquoc2.tv^*.gif$image
+||tamquoc3.tv^*.gif$image
 ||taoanhdep.com$csp=script-src 'self' 'unsafe-inline' data: https:
 ||telendos.net^*.gif$domain=thungphim.us
 ||tepbac.com/upload/advertiment/$image
 ||thapcamtvz.org^*.gif$image,domain=thapcamtvz.org
 ||the.tube/js/detect-ab.js$script
 ||the.tube/js/simpleblocker.js$script
-||thiendinh2.tv^*.gif$image
+||thiendinh3.tv^*.gif$image
 ||thoigian.com.vn/mFiles/N/06/$image
 ||thoigian.com.vn^*.gif
 ||thuocbietduoc.com.vn/aqc/$image
@@ -394,7 +394,7 @@ docufind.org.uk/wp-content/themes/vlxx/js/*-adx.js$script
 ||cliphotvn69.com^*.gif$image
 ||cloufdlare.com/ads/vn1.html$subdocument,domain=vl.phe.to
 ||connec8.co^*.gif$image
-||cruncherpatiencestoreroom.com^$popup,domain=cap3.cyou|qmh.bz
+||cruncherpatiencestoreroom.com^$popup,domain=cap3.cyou|qmh.cat
 ||discordapp.$image,domain=phim18vip.top|thefaplive.com|phimsexsub.website
 ||gamer18.net^*.gif$image
 ||genz3x.com^*.gif$image
@@ -415,7 +415,7 @@ docufind.org.uk/wp-content/themes/vlxx/js/*-adx.js$script
 ||ngaytho.me^*.gif
 ||phimnung3x.pro^*.gif$image,domain=phimnung3x.pro
 ||phimsexhayvne.com^*.gif$image
-||qmh.bz/assets/js/simpleblocker.js$script,~third-party
+||qmh.cat/assets/js/simpleblocker.js$script,~third-party
 ||quatvn.my^*.gif$image
 ||quoracdn.net^$image,domain=chetnguoi.net|phim18vip.top|pheclip.site|phimnung3x.pro|xemsexhihi.net|phevl.hot|fulllivehot.live|haysexvn.lol|chich69.men|viet69hayz.click
 ||rphang.online^*.gif
@@ -434,7 +434,7 @@ docufind.org.uk/wp-content/themes/vlxx/js/*-adx.js$script
 ||truyensextv.com/anh/$image
 ||truyensextv.com^*.gif
 ||truyenvn.shop^*banner$image
-||video.qmh.bz/uploads/banners/$image,domain=cap3.cyou|qmh.bz
+||video.qmh.cat/uploads/banners/$image,domain=cap3.cyou|qmh.cat
 ||vieonline.tv^*.gif$image
 ||vn6.sexviet88.xyz^*.gif
 ||www.hentaivnx.com/js/cla/2064711.js$script

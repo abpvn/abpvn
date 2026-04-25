@@ -1,11 +1,11 @@
-diff name:abpvn lines:222 checksum:6879daa6c3
+diff name:abpvn lines:260 checksum:522b2a418a
 d2 1
 a2 1
-! Version: 20260425100748239
+! Version: 20260425152403912
 d5 2
 a6 2
-! Last modified: 25 Apr 2026 10:07:48 UTC+7
-! Diff-Path: patches/20260425100748239.patch#abpvn
+! Last modified: 25 Apr 2026 15:24:03 UTC+7
+! Diff-Path: patches/20260425152403912.patch#abpvn
 d48 2
 a49 2
 /i.imgur.com/*.gif$domain=keonhacai55.one|www.motchill56.com|xoilackv.tv|vebotvp.cc|listnhacai88.com|mitomzo.cc|rakhoixo.cc
@@ -18,11 +18,17 @@ a78 1
 d83 1
 a83 1
 ||animevietsub.bz/ads/$script
+d90 1
 d102 1
 a102 1
 ||cdn.lfastcdn.com^*.gif$image,domain=bongdainfox.tv|rakhoixo.cc|mitomzo.cc|vebotvp.cc
+a106 1
+||chapellodge.co.uk/images/banners/$image
 a132 1
 ||hoadaotv.info/assets/js/ads_popup.js$script,~third-party
+d134 1
+a134 1
+||hoiquan3.tv^*.gif$image
 d144 1
 a144 1
 ||i.imgur.com^*.gif$image,domain=ghienphimz.show|mv.dailyphimz.com|mv.phimmoiaz.cc|xemtivi4k.com|rophim.moe|vutruphim.tv|soicau247s.org|phim24k.top|jophim.top|rophimz.top
@@ -32,6 +38,11 @@ a160 1
 a166 1
 ||motchillic.ac^*.gif$image
 d168 2
+d188 3
+a190 3
+||phimhdcss.com/js/ad.js$script,~third-party
+||phimhdcss.com/storage/files/*.gif$image,~third-party
+||phimhdcss.com/storage/files/abcd123.webp$image,~third-party
 d192 1
 a192 1
 ||phimmoichill.ai/newchill/$script,~third-party
@@ -48,7 +59,10 @@ a216 1
 a221 1
 ||sv2.tamquoc2.live/banners/$image
 a224 1
-||tamquoc2.tv^*.gif$image
+||tamquoc3.tv^*.gif$image
+d231 1
+a231 1
+||thiendinh3.tv^*.gif$image
 d249 1
 d261 1
 a261 1
@@ -65,6 +79,7 @@ animevietsub.bz##.Ads
 animevietsub.bz##.mobile-catfish-top
 animevietsub.bz##.mobile-catfixx
 animevietsub.bz,phimtuoitho.tv##.pc-catfixx
+d416 1
 d443 5
 a447 5
 bongdanet.online###xs-ads
@@ -75,6 +90,8 @@ bongdanet.online##div[id^="ads_banner_bdn"]
 a453 1
 cafef.vn##.bannertop
 d456 1
+a459 1
+chapellodge.co.uk##.banner-fixed
 d462 1
 a462 1
 chatboxn.com,xoilackv.tv##a[target="_blank"][rel="nofollow"]
@@ -98,6 +115,12 @@ hoadaotv.info##.floating-side-ads
 hoadaotv.info##.menu-header-btn-bet-wrapper
 hoadaotv.info##.super-hot-card__button-bet
 hoadaotv.info##body > div.container > .ads-top-banner
+d578 4
+a581 4
+hoiquan3.tv##.a-overlay
+hoiquan3.tv##.cuoc-nha-cai
+hoiquan3.tv##.lg-y.md-y.y.lg-x.md-x.x.img-border.a-popup-center.has-hover.img
+hoiquan3.tv##.row-topnhacai
 d586 1
 a586 1
 home1.mannhan22.pro,gavangtv13.net##.bn-popup-bottom-sdwdwxw
@@ -114,6 +137,9 @@ motchillic.ac##.popup-overlay
 d654 1
 a654 1
 motchilltvphim.com,subnhanhcx.info##.sda-catfish
+d657 1
+a657 1
+motchillzz.site,xemphim.site,motphimtv.bz,motchillzl.in,phimhdc.com,phimhdcss.com##.mp-adz
 d672 3
 a674 3
 onflix.run##.absolute.inset-0.\-z-10
@@ -145,9 +171,12 @@ sv2.tamquoc2.live##.px-3.py-1.border-\[\#F8C32F\].border.rounded-\[6px\].text-bl
 sv2.tamquoc2.live##.text-xs.py-2.px-4.shadow.rounded.to-\[\#FFDD75\].from-\[\#F8C32F\].bg-gradient-to-b.border-\[\#2B2C2D80\].border.whitespace-nowrap
 sv2.tamquoc2.live##.z-50.items-center.justify-center.flex.backdrop-blur-sm.bg-opacity-50.bg-black.inset-0.fixed
 a767 3
-tamquoc2.tv##.a-overlay
-tamquoc2.tv##.flex-right.hide-for-medium.flex-col
-tamquoc2.tv##.footer-wrapper
+tamquoc3.tv##.a-overlay
+tamquoc3.tv##.flex-right.hide-for-medium.flex-col
+tamquoc3.tv##.footer-wrapper
+d796 1
+a796 1
+thiendinh3.tv##.footer-wrapper
 d859 1
 a859 1
 tvhayd.org,www.motchill56.com,misseschloe.co.za,motchill.us.org##.catfish-bottom
@@ -171,7 +200,7 @@ www.motchill56.com,amlich.org##.banner-container
 www.motchill56.com,misseschloe.co.za##.catfish-top
 d933 1
 a933 1
-www.toptruyenzone.com,doctruyen3qhub.org##.advertisement
+www.toptruyenzone1.com,doctruyen3qhub.org##.advertisement
 d957 19
 a975 19
 xoilackv.tv###match-child-1
@@ -196,18 +225,27 @@ xoilackv.tv,vebotvp.cc,rakhoixo.cc###wap_bottombanner
 d1067 1
 a1067 1
 /player/html.php?aid=*&video_id=*&referer=https*xnhau.hot*^$domain=xnhau.ing
-a1087 1
+d1088 1
+a1088 2
 ||connec8.co^*.gif$image
+||cruncherpatiencestoreroom.com^$popup,domain=cap3.cyou|qmh.cat
 d1106 2
+d1111 1
+a1111 1
+||qmh.cat/assets/js/simpleblocker.js$script,~third-party
 d1113 1
 a1113 1
 ||quoracdn.net^$image,domain=chetnguoi.net|phim18vip.top|pheclip.site|phimnung3x.pro|xemsexhihi.net|phevl.hot|fulllivehot.live|haysexvn.lol|chich69.men|viet69hayz.click
-a1130 1
+d1130 1
+a1130 2
+||video.qmh.cat/uploads/banners/$image,domain=cap3.cyou|qmh.cat
 ||vieonline.tv^*.gif$image
 d1138 1
 a1138 1
 ||xnhau.blog^$media,domain=xnhau.ing
-a1154 1
+d1154 1
+a1154 2
+cap3.cyou,qmh.cat##.header>app-banner
 chetnguoi.net,phimnung3x.pro,xemsexhihi.net,vieonline.tv##.xx-ads
 d1170 1
 d1177 1
@@ -221,14 +259,14 @@ a1260 3
 xnhau.ing##.fp-ui>div[style]
 xnhau.ing##.sponsor
 xnhau.ing##.spot
-diff name:abpvn_adguard lines:253 checksum:23356ffe29
+diff name:abpvn_adguard lines:294 checksum:1d16dc8f55
 d2 1
 a2 1
-! Version: 20260425100748239
+! Version: 20260425152403912
 d5 2
 a6 2
-! Last modified: 25 Apr 2026 10:07:48 UTC+7
-! Diff-Path: patches/20260425100748239.patch#abpvn_adguard
+! Last modified: 25 Apr 2026 15:24:03 UTC+7
+! Diff-Path: patches/20260425152403912.patch#abpvn_adguard
 d46 2
 a47 2
 /i.imgur.com/*.gif$domain=keonhacai55.one|www.motchill56.com|xoilackv.tv|vebotvp.cc|listnhacai88.com|mitomzo.cc|rakhoixo.cc
@@ -241,11 +279,17 @@ a76 1
 d81 1
 a81 1
 ||animevietsub.bz/ads/$script
+d88 1
 d100 1
 a100 1
 ||cdn.lfastcdn.com^*.gif$image,domain=bongdainfox.tv|rakhoixo.cc|mitomzo.cc|vebotvp.cc
+a104 1
+||chapellodge.co.uk/images/banners/$image
 a130 1
 ||hoadaotv.info/assets/js/ads_popup.js$script,~third-party
+d132 1
+a132 1
+||hoiquan3.tv^*.gif$image
 d142 1
 a142 1
 ||i.imgur.com^*.gif$image,domain=ghienphimz.show|mv.dailyphimz.com|mv.phimmoiaz.cc|xemtivi4k.com|rophim.moe|vutruphim.tv|soicau247s.org|phim24k.top|jophim.top|rophimz.top
@@ -255,6 +299,11 @@ a158 1
 a164 1
 ||motchillic.ac^*.gif$image
 d166 2
+d186 3
+a188 3
+||phimhdcss.com/js/ad.js$script,~third-party
+||phimhdcss.com/storage/files/*.gif$image,~third-party
+||phimhdcss.com/storage/files/abcd123.webp$image,~third-party
 d190 1
 a190 1
 ||phimmoichill.ai/newchill/$script,~third-party
@@ -271,7 +320,10 @@ a212 1
 a217 1
 ||sv2.tamquoc2.live/banners/$image
 a220 1
-||tamquoc2.tv^*.gif$image
+||tamquoc3.tv^*.gif$image
+d227 1
+a227 1
+||thiendinh3.tv^*.gif$image
 d245 1
 d257 1
 a257 1
@@ -288,6 +340,7 @@ animevietsub.bz##.Ads
 animevietsub.bz##.mobile-catfish-top
 animevietsub.bz##.mobile-catfixx
 animevietsub.bz,phimtuoitho.tv##.pc-catfixx
+d412 1
 d439 5
 a443 5
 bongdanet.online###xs-ads
@@ -298,6 +351,8 @@ bongdanet.online##div[id^="ads_banner_bdn"]
 a449 1
 cafef.vn##.bannertop
 d452 1
+a455 1
+chapellodge.co.uk##.banner-fixed
 d458 1
 a458 1
 chatboxn.com,xoilackv.tv##a[target="_blank"][rel="nofollow"]
@@ -321,6 +376,12 @@ hoadaotv.info##.floating-side-ads
 hoadaotv.info##.menu-header-btn-bet-wrapper
 hoadaotv.info##.super-hot-card__button-bet
 hoadaotv.info##body > div.container > .ads-top-banner
+d574 4
+a577 4
+hoiquan3.tv##.a-overlay
+hoiquan3.tv##.cuoc-nha-cai
+hoiquan3.tv##.lg-y.md-y.y.lg-x.md-x.x.img-border.a-popup-center.has-hover.img
+hoiquan3.tv##.row-topnhacai
 d582 1
 a582 1
 home1.mannhan22.pro,gavangtv13.net##.bn-popup-bottom-sdwdwxw
@@ -337,6 +398,9 @@ motchillic.ac##.popup-overlay
 d650 1
 a650 1
 motchilltvphim.com,subnhanhcx.info##.sda-catfish
+d653 1
+a653 1
+motchillzz.site,xemphim.site,motphimtv.bz,motchillzl.in,phimhdc.com,phimhdcss.com##.mp-adz
 d668 3
 a670 3
 onflix.run##.absolute.inset-0.\-z-10
@@ -368,9 +432,12 @@ sv2.tamquoc2.live##.px-3.py-1.border-\[\#F8C32F\].border.rounded-\[6px\].text-bl
 sv2.tamquoc2.live##.text-xs.py-2.px-4.shadow.rounded.to-\[\#FFDD75\].from-\[\#F8C32F\].bg-gradient-to-b.border-\[\#2B2C2D80\].border.whitespace-nowrap
 sv2.tamquoc2.live##.z-50.items-center.justify-center.flex.backdrop-blur-sm.bg-opacity-50.bg-black.inset-0.fixed
 a762 3
-tamquoc2.tv##.a-overlay
-tamquoc2.tv##.flex-right.hide-for-medium.flex-col
-tamquoc2.tv##.footer-wrapper
+tamquoc3.tv##.a-overlay
+tamquoc3.tv##.flex-right.hide-for-medium.flex-col
+tamquoc3.tv##.footer-wrapper
+d791 1
+a791 1
+thiendinh3.tv##.footer-wrapper
 d854 1
 a854 1
 tvhayd.org,www.motchill56.com,misseschloe.co.za,motchill.us.org##.catfish-bottom
@@ -394,7 +461,7 @@ www.motchill56.com,amlich.org##.banner-container
 www.motchill56.com,misseschloe.co.za##.catfish-top
 d928 1
 a928 1
-www.toptruyenzone.com,doctruyen3qhub.org##.advertisement
+www.toptruyenzone1.com,doctruyen3qhub.org##.advertisement
 d952 19
 a970 19
 xoilackv.tv###match-child-1
@@ -419,18 +486,27 @@ xoilackv.tv,vebotvp.cc,rakhoixo.cc###wap_bottombanner
 d1056 1
 a1056 1
 /player/html.php?aid=*&video_id=*&referer=https*xnhau.hot*^$domain=xnhau.ing
-a1071 1
+d1072 1
+a1072 2
 ||connec8.co^*.gif$image
+||cruncherpatiencestoreroom.com^$popup,domain=cap3.cyou|qmh.cat
 d1090 2
+d1095 1
+a1095 1
+||qmh.cat/assets/js/simpleblocker.js$script,~third-party
 d1097 1
 a1097 1
 ||quoracdn.net^$image,domain=chetnguoi.net|phim18vip.top|pheclip.site|phimnung3x.pro|xemsexhihi.net|phevl.hot|fulllivehot.live|haysexvn.lol|chich69.men|viet69hayz.click
-a1114 1
+d1114 1
+a1114 2
+||video.qmh.cat/uploads/banners/$image,domain=cap3.cyou|qmh.cat
 ||vieonline.tv^*.gif$image
 d1122 1
 a1122 1
 ||xnhau.blog^$media,domain=xnhau.ing
-a1138 1
+d1138 1
+a1138 2
+cap3.cyou,qmh.cat##.header>app-banner
 chetnguoi.net,phimnung3x.pro,xemsexhihi.net,vieonline.tv##.xx-ads
 d1154 1
 d1161 1
@@ -468,6 +544,9 @@ vieonline.tv,connec8.co#%#//scriptlet("abort-current-inline-script", "window.add
 d1344 1
 a1344 1
 www.motchill56.com,teamlanhlung8.shop,javgiga.wordpress.com#%#//scriptlet("abort-on-property-read", "localStorage")
+d1349 1
+a1349 1
+www.toptruyenzone1.com#%#//scriptlet("abort-current-inline-script", "setTimeout", "open")
 d1356 2
 a1357 2
 xnhau.ing#%#//scriptlet("abort-current-inline-script", "document.addEventListener", "lastPopunderTime")
@@ -475,14 +554,14 @@ xnhau.ing#%#//scriptlet("prevent-addEventListener", "click", "/acquirecardedsull
 d1360 1
 a1360 1
 xoilackv.tv#%#//scriptlet("abort-on-property-read", "adsRedirectPopups")
-diff name:abpvn_content_blocker lines:222 checksum:5af3f71e37
+diff name:abpvn_content_blocker lines:260 checksum:866f1f92e8
 d2 1
 a2 1
-! Version: 20260425100748239
+! Version: 20260425152403912
 d5 2
 a6 2
-! Last modified: 25 Apr 2026 10:07:48 UTC+7
-! Diff-Path: patches/20260425100748239.patch#abpvn_content_blocker
+! Last modified: 25 Apr 2026 15:24:03 UTC+7
+! Diff-Path: patches/20260425152403912.patch#abpvn_content_blocker
 d48 2
 a49 2
 /i.imgur.com/*.gif$domain=keonhacai55.one|www.motchill56.com|xoilackv.tv|vebotvp.cc|listnhacai88.com|mitomzo.cc|rakhoixo.cc
@@ -495,11 +574,17 @@ a78 1
 d83 1
 a83 1
 ||animevietsub.bz/ads/$script
+d90 1
 d102 1
 a102 1
 ||cdn.lfastcdn.com^*.gif$image,domain=bongdainfox.tv|rakhoixo.cc|mitomzo.cc|vebotvp.cc
+a106 1
+||chapellodge.co.uk/images/banners/$image
 a132 1
 ||hoadaotv.info/assets/js/ads_popup.js$script,~third-party
+d134 1
+a134 1
+||hoiquan3.tv^*.gif$image
 d144 1
 a144 1
 ||i.imgur.com^*.gif$image,domain=ghienphimz.show|mv.dailyphimz.com|mv.phimmoiaz.cc|xemtivi4k.com|rophim.moe|vutruphim.tv|soicau247s.org|phim24k.top|jophim.top|rophimz.top
@@ -509,6 +594,11 @@ a160 1
 a166 1
 ||motchillic.ac^*.gif$image
 d168 2
+d188 3
+a190 3
+||phimhdcss.com/js/ad.js$script,~third-party
+||phimhdcss.com/storage/files/*.gif$image,~third-party
+||phimhdcss.com/storage/files/abcd123.webp$image,~third-party
 d192 1
 a192 1
 ||phimmoichill.ai/newchill/$script,~third-party
@@ -525,7 +615,10 @@ a216 1
 a221 1
 ||sv2.tamquoc2.live/banners/$image
 a224 1
-||tamquoc2.tv^*.gif$image
+||tamquoc3.tv^*.gif$image
+d231 1
+a231 1
+||thiendinh3.tv^*.gif$image
 d249 1
 d261 1
 a261 1
@@ -542,6 +635,7 @@ animevietsub.bz##.Ads
 animevietsub.bz##.mobile-catfish-top
 animevietsub.bz##.mobile-catfixx
 animevietsub.bz,phimtuoitho.tv##.pc-catfixx
+d416 1
 d443 5
 a447 5
 bongdanet.online###xs-ads
@@ -552,6 +646,8 @@ bongdanet.online##div[id^="ads_banner_bdn"]
 a453 1
 cafef.vn##.bannertop
 d456 1
+a459 1
+chapellodge.co.uk##.banner-fixed
 d462 1
 a462 1
 chatboxn.com,xoilackv.tv##a[target="_blank"][rel="nofollow"]
@@ -575,6 +671,12 @@ hoadaotv.info##.floating-side-ads
 hoadaotv.info##.menu-header-btn-bet-wrapper
 hoadaotv.info##.super-hot-card__button-bet
 hoadaotv.info##body > div.container > .ads-top-banner
+d578 4
+a581 4
+hoiquan3.tv##.a-overlay
+hoiquan3.tv##.cuoc-nha-cai
+hoiquan3.tv##.lg-y.md-y.y.lg-x.md-x.x.img-border.a-popup-center.has-hover.img
+hoiquan3.tv##.row-topnhacai
 d586 1
 a586 1
 home1.mannhan22.pro,gavangtv13.net##.bn-popup-bottom-sdwdwxw
@@ -591,6 +693,9 @@ motchillic.ac##.popup-overlay
 d654 1
 a654 1
 motchilltvphim.com,subnhanhcx.info##.sda-catfish
+d657 1
+a657 1
+motchillzz.site,xemphim.site,motphimtv.bz,motchillzl.in,phimhdc.com,phimhdcss.com##.mp-adz
 d672 3
 a674 3
 onflix.run##.absolute.inset-0.\-z-10
@@ -622,9 +727,12 @@ sv2.tamquoc2.live##.px-3.py-1.border-\[\#F8C32F\].border.rounded-\[6px\].text-bl
 sv2.tamquoc2.live##.text-xs.py-2.px-4.shadow.rounded.to-\[\#FFDD75\].from-\[\#F8C32F\].bg-gradient-to-b.border-\[\#2B2C2D80\].border.whitespace-nowrap
 sv2.tamquoc2.live##.z-50.items-center.justify-center.flex.backdrop-blur-sm.bg-opacity-50.bg-black.inset-0.fixed
 a767 3
-tamquoc2.tv##.a-overlay
-tamquoc2.tv##.flex-right.hide-for-medium.flex-col
-tamquoc2.tv##.footer-wrapper
+tamquoc3.tv##.a-overlay
+tamquoc3.tv##.flex-right.hide-for-medium.flex-col
+tamquoc3.tv##.footer-wrapper
+d796 1
+a796 1
+thiendinh3.tv##.footer-wrapper
 d859 1
 a859 1
 tvhayd.org,www.motchill56.com,misseschloe.co.za,motchill.us.org##.catfish-bottom
@@ -648,7 +756,7 @@ www.motchill56.com,amlich.org##.banner-container
 www.motchill56.com,misseschloe.co.za##.catfish-top
 d933 1
 a933 1
-www.toptruyenzone.com,doctruyen3qhub.org##.advertisement
+www.toptruyenzone1.com,doctruyen3qhub.org##.advertisement
 d957 19
 a975 19
 xoilackv.tv###match-child-1
@@ -673,18 +781,27 @@ xoilackv.tv,vebotvp.cc,rakhoixo.cc###wap_bottombanner
 d1067 1
 a1067 1
 /player/html.php?aid=*&video_id=*&referer=https*xnhau.hot*^$domain=xnhau.ing
-a1087 1
+d1088 1
+a1088 2
 ||connec8.co^*.gif$image
+||cruncherpatiencestoreroom.com^$popup,domain=cap3.cyou|qmh.cat
 d1106 2
+d1111 1
+a1111 1
+||qmh.cat/assets/js/simpleblocker.js$script,~third-party
 d1113 1
 a1113 1
 ||quoracdn.net^$image,domain=chetnguoi.net|phim18vip.top|pheclip.site|phimnung3x.pro|xemsexhihi.net|phevl.hot|fulllivehot.live|haysexvn.lol|chich69.men|viet69hayz.click
-a1130 1
+d1130 1
+a1130 2
+||video.qmh.cat/uploads/banners/$image,domain=cap3.cyou|qmh.cat
 ||vieonline.tv^*.gif$image
 d1138 1
 a1138 1
 ||xnhau.blog^$media,domain=xnhau.ing
-a1154 1
+d1154 1
+a1154 2
+cap3.cyou,qmh.cat##.header>app-banner
 chetnguoi.net,phimnung3x.pro,xemsexhihi.net,vieonline.tv##.xx-ads
 d1170 1
 d1177 1
@@ -698,14 +815,14 @@ a1260 3
 xnhau.ing##.fp-ui>div[style]
 xnhau.ing##.sponsor
 xnhau.ing##.spot
-diff name:abpvn_noelemhide lines:68 checksum:68500c8d1a
+diff name:abpvn_noelemhide lines:89 checksum:1f0fb3cc54
 d2 1
 a2 1
-! Version: 20260425100748239
+! Version: 20260425152403912
 d5 2
 a6 2
-! Last modified: 25 Apr 2026 10:07:48 UTC+7
-! Diff-Path: patches/20260425100748239.patch#abpvn_noelemhide
+! Last modified: 25 Apr 2026 15:24:03 UTC+7
+! Diff-Path: patches/20260425152403912.patch#abpvn_noelemhide
 d48 2
 a49 2
 /i.imgur.com/*.gif$domain=keonhacai55.one|www.motchill56.com|xoilackv.tv|vebotvp.cc|listnhacai88.com|mitomzo.cc|rakhoixo.cc
@@ -718,11 +835,17 @@ a78 1
 d83 1
 a83 1
 ||animevietsub.bz/ads/$script
+d90 1
 d102 1
 a102 1
 ||cdn.lfastcdn.com^*.gif$image,domain=bongdainfox.tv|rakhoixo.cc|mitomzo.cc|vebotvp.cc
+a106 1
+||chapellodge.co.uk/images/banners/$image
 a132 1
 ||hoadaotv.info/assets/js/ads_popup.js$script,~third-party
+d134 1
+a134 1
+||hoiquan3.tv^*.gif$image
 d144 1
 a144 1
 ||i.imgur.com^*.gif$image,domain=ghienphimz.show|mv.dailyphimz.com|mv.phimmoiaz.cc|xemtivi4k.com|rophim.moe|vutruphim.tv|soicau247s.org|phim24k.top|jophim.top|rophimz.top
@@ -732,6 +855,11 @@ a160 1
 a166 1
 ||motchillic.ac^*.gif$image
 d168 2
+d188 3
+a190 3
+||phimhdcss.com/js/ad.js$script,~third-party
+||phimhdcss.com/storage/files/*.gif$image,~third-party
+||phimhdcss.com/storage/files/abcd123.webp$image,~third-party
 d192 1
 a192 1
 ||phimmoichill.ai/newchill/$script,~third-party
@@ -748,7 +876,10 @@ a216 1
 a221 1
 ||sv2.tamquoc2.live/banners/$image
 a224 1
-||tamquoc2.tv^*.gif$image
+||tamquoc3.tv^*.gif$image
+d231 1
+a231 1
+||thiendinh3.tv^*.gif$image
 d249 1
 d261 1
 a261 1
@@ -756,25 +887,32 @@ a261 1
 d372 1
 a372 1
 /player/html.php?aid=*&video_id=*&referer=https*xnhau.hot*^$domain=xnhau.ing
-a392 1
+d393 1
+a393 2
 ||connec8.co^*.gif$image
+||cruncherpatiencestoreroom.com^$popup,domain=cap3.cyou|qmh.cat
 d411 2
+d416 1
+a416 1
+||qmh.cat/assets/js/simpleblocker.js$script,~third-party
 d418 1
 a418 1
 ||quoracdn.net^$image,domain=chetnguoi.net|phim18vip.top|pheclip.site|phimnung3x.pro|xemsexhihi.net|phevl.hot|fulllivehot.live|haysexvn.lol|chich69.men|viet69hayz.click
-a435 1
+d435 1
+a435 2
+||video.qmh.cat/uploads/banners/$image,domain=cap3.cyou|qmh.cat
 ||vieonline.tv^*.gif$image
 d443 1
 a443 1
 ||xnhau.blog^$media,domain=xnhau.ing
-diff name:abpvn_ublock lines:253 checksum:fbe2dc1632
+diff name:abpvn_ublock lines:294 checksum:1e038e3e57
 d2 1
 a2 1
-! Version: 20260425100748239
+! Version: 20260425152403912
 d5 2
 a6 2
-! Last modified: 25 Apr 2026 10:07:48 UTC+7
-! Diff-Path: patches/20260425100748239.patch#abpvn_ublock
+! Last modified: 25 Apr 2026 15:24:03 UTC+7
+! Diff-Path: patches/20260425152403912.patch#abpvn_ublock
 d46 2
 a47 2
 /i.imgur.com/*.gif$domain=keonhacai55.one|www.motchill56.com|xoilackv.tv|vebotvp.cc|listnhacai88.com|mitomzo.cc|rakhoixo.cc
@@ -787,11 +925,17 @@ a76 1
 d81 1
 a81 1
 ||animevietsub.bz/ads/$script
+d88 1
 d100 1
 a100 1
 ||cdn.lfastcdn.com^*.gif$image,domain=bongdainfox.tv|rakhoixo.cc|mitomzo.cc|vebotvp.cc
+a104 1
+||chapellodge.co.uk/images/banners/$image
 a130 1
 ||hoadaotv.info/assets/js/ads_popup.js$script,~third-party
+d132 1
+a132 1
+||hoiquan3.tv^*.gif$image
 d142 1
 a142 1
 ||i.imgur.com^*.gif$image,domain=ghienphimz.show|mv.dailyphimz.com|mv.phimmoiaz.cc|xemtivi4k.com|rophim.moe|vutruphim.tv|soicau247s.org|phim24k.top|jophim.top|rophimz.top
@@ -801,6 +945,11 @@ a158 1
 a164 1
 ||motchillic.ac^*.gif$image
 d166 2
+d186 3
+a188 3
+||phimhdcss.com/js/ad.js$script,~third-party
+||phimhdcss.com/storage/files/*.gif$image,~third-party
+||phimhdcss.com/storage/files/abcd123.webp$image,~third-party
 d190 1
 a190 1
 ||phimmoichill.ai/newchill/$script,~third-party
@@ -817,7 +966,10 @@ a212 1
 a217 1
 ||sv2.tamquoc2.live/banners/$image
 a220 1
-||tamquoc2.tv^*.gif$image
+||tamquoc3.tv^*.gif$image
+d227 1
+a227 1
+||thiendinh3.tv^*.gif$image
 d245 1
 d257 1
 a257 1
@@ -834,6 +986,7 @@ animevietsub.bz##.Ads
 animevietsub.bz##.mobile-catfish-top
 animevietsub.bz##.mobile-catfixx
 animevietsub.bz,phimtuoitho.tv##.pc-catfixx
+d412 1
 d439 5
 a443 5
 bongdanet.online###xs-ads
@@ -844,6 +997,8 @@ bongdanet.online##div[id^="ads_banner_bdn"]
 a449 1
 cafef.vn##.bannertop
 d452 1
+a455 1
+chapellodge.co.uk##.banner-fixed
 d458 1
 a458 1
 chatboxn.com,xoilackv.tv##a[target="_blank"][rel="nofollow"]
@@ -867,6 +1022,12 @@ hoadaotv.info##.floating-side-ads
 hoadaotv.info##.menu-header-btn-bet-wrapper
 hoadaotv.info##.super-hot-card__button-bet
 hoadaotv.info##body > div.container > .ads-top-banner
+d574 4
+a577 4
+hoiquan3.tv##.a-overlay
+hoiquan3.tv##.cuoc-nha-cai
+hoiquan3.tv##.lg-y.md-y.y.lg-x.md-x.x.img-border.a-popup-center.has-hover.img
+hoiquan3.tv##.row-topnhacai
 d582 1
 a582 1
 home1.mannhan22.pro,gavangtv13.net##.bn-popup-bottom-sdwdwxw
@@ -883,6 +1044,9 @@ motchillic.ac##.popup-overlay
 d650 1
 a650 1
 motchilltvphim.com,subnhanhcx.info##.sda-catfish
+d653 1
+a653 1
+motchillzz.site,xemphim.site,motphimtv.bz,motchillzl.in,phimhdc.com,phimhdcss.com##.mp-adz
 d668 3
 a670 3
 onflix.run##.absolute.inset-0.\-z-10
@@ -914,9 +1078,12 @@ sv2.tamquoc2.live##.px-3.py-1.border-\[\#F8C32F\].border.rounded-\[6px\].text-bl
 sv2.tamquoc2.live##.text-xs.py-2.px-4.shadow.rounded.to-\[\#FFDD75\].from-\[\#F8C32F\].bg-gradient-to-b.border-\[\#2B2C2D80\].border.whitespace-nowrap
 sv2.tamquoc2.live##.z-50.items-center.justify-center.flex.backdrop-blur-sm.bg-opacity-50.bg-black.inset-0.fixed
 a762 3
-tamquoc2.tv##.a-overlay
-tamquoc2.tv##.flex-right.hide-for-medium.flex-col
-tamquoc2.tv##.footer-wrapper
+tamquoc3.tv##.a-overlay
+tamquoc3.tv##.flex-right.hide-for-medium.flex-col
+tamquoc3.tv##.footer-wrapper
+d791 1
+a791 1
+thiendinh3.tv##.footer-wrapper
 d854 1
 a854 1
 tvhayd.org,www.motchill56.com,misseschloe.co.za,motchill.us.org##.catfish-bottom
@@ -940,7 +1107,7 @@ www.motchill56.com,amlich.org##.banner-container
 www.motchill56.com,misseschloe.co.za##.catfish-top
 d928 1
 a928 1
-www.toptruyenzone.com,doctruyen3qhub.org##.advertisement
+www.toptruyenzone1.com,doctruyen3qhub.org##.advertisement
 d952 19
 a970 19
 xoilackv.tv###match-child-1
@@ -965,18 +1132,27 @@ xoilackv.tv,vebotvp.cc,rakhoixo.cc###wap_bottombanner
 d1055 1
 a1055 1
 /player/html.php?aid=*&video_id=*&referer=https*xnhau.hot*^$domain=xnhau.ing
-a1070 1
+d1071 1
+a1071 2
 ||connec8.co^*.gif$image
+||cruncherpatiencestoreroom.com^$popup,domain=cap3.cyou|qmh.cat
 d1089 2
+d1094 1
+a1094 1
+||qmh.cat/assets/js/simpleblocker.js$script,~third-party
 d1096 1
 a1096 1
 ||quoracdn.net^$image,domain=chetnguoi.net|phim18vip.top|pheclip.site|phimnung3x.pro|xemsexhihi.net|phevl.hot|fulllivehot.live|haysexvn.lol|chich69.men|viet69hayz.click
-a1113 1
+d1113 1
+a1113 2
+||video.qmh.cat/uploads/banners/$image,domain=cap3.cyou|qmh.cat
 ||vieonline.tv^*.gif$image
 d1121 1
 a1121 1
 ||xnhau.blog^$media,domain=xnhau.ing
-a1137 1
+d1137 1
+a1137 2
+cap3.cyou,qmh.cat##.header>app-banner
 chetnguoi.net,phimnung3x.pro,xemsexhihi.net,vieonline.tv##.xx-ads
 d1153 1
 d1160 1
@@ -1014,6 +1190,9 @@ vieonline.tv,connec8.co##+js(acs, window.addEventListener, Ads)
 d1342 1
 a1342 1
 www.motchill56.com,teamlanhlung8.shop,javgiga.wordpress.com##+js(aopr, localStorage)
+d1347 1
+a1347 1
+www.toptruyenzone1.com##+js(acs, setTimeout, open)
 d1354 2
 a1355 2
 xnhau.ing##+js(acs, document.addEventListener, lastPopunderTime)
