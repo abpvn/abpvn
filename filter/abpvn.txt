@@ -1,9 +1,9 @@
 [Adblock Plus 2.0]
-! Version: 20260425152403912
+! Version: 20260426162049253
 ! id: D4028CDD-3D39-4624-ACC7-8140F4EC3888
 ! Title: ABPVN List
-! Last modified: 25 Apr 2026 15:24:03 UTC+7
-! Diff-Path: patches/20260425152403912.patch#abpvn
+! Last modified: 26 Apr 2026 16:20:49 UTC+7
+! Diff-Path: patches/20260426162049253.patch#abpvn
 ! Diff-Expires: 60 minutes
 ! Expires: 1 days (update frequency)
 !
@@ -22,6 +22,7 @@ $popup,domain=player-cdn.com|freeplayervideo.com|abysscdn.com|playhydrax.com
 $popup,domain=truyenfull.vision
 .com/cpc/$script
 .com/qc/
+.gif$xhr,domain=animehay01.site
 .net/ads/$domain=~linkneverdie.net
 .net/cpf/$script
 .tv/ads/$image,script,subdocument
@@ -80,6 +81,7 @@ $popup,domain=truyenfull.vision
 ||ahaphimz.com/js/pov.js$script
 ||anime1s.com/_next/image?url=https%3A%2F%2F*.ibyteimg.com$image
 ||anime1s.com/_next/image?url=https%3A%2F%2Flh3.googleusercontent.com$image
+||animehay01.site/sw.js$script,~third-party
 ||animet.info^*.gif
 ||animevietsub.bz/ads/$script
 ||animevietsub9.com/vast/$image
@@ -403,6 +405,7 @@ animehay.today,animehay.today###top-banner
 animehay.today,animehay.today##.under_player.flex-hozi-center.flex-column.flex
 animehay.today,animehay.today##body>div[style^="position: fixed"]
 animehay.today,animehay.today##div[style="position: fixed; bottom: 0px; z-index: 98; width: 100%; text-align: center; box-sizing: border-box;"]
+animehay01.site##[src*=".gif"]
 animet.info###menubentrai
 animet.info##.gnartyx-offads
 animet.info,animetvn4.com,motchillzz.site###fbox-background
