@@ -1,9 +1,9 @@
 [Adblock Plus 2.0]
-! Version: 20260503174501381
+! Version: 20260504130412093
 ! id: D4028CDD-3D39-4624-ACC7-8140F4EC3888
 ! Title: ABPVN List
-! Last modified: 03 May 2026 17:45:01 UTC+7
-! Diff-Path: patches/20260503174501381.patch#abpvn_noelemhide
+! Last modified: 04 May 2026 13:04:12 UTC+7
+! Diff-Path: patches/20260504130412093.patch#abpvn_noelemhide
 ! Diff-Expires: 60 minutes
 ! Expires: 1 days (update frequency)
 !
@@ -50,11 +50,12 @@ $popup,domain=truyenfull.vision
 /disable-devtool.min.js$script
 /full-page-script.js$script
 /giadinhonline.vn/files/qc/*
-/i.imgur.com/*.gif$domain=keonhacai55.uno|www.motchill57.com|xoilackz.tv|vebotvt.cc|listnhacai88.com|mitomzu.cc|rakhoiik.cc
-/images/company/21.png$image,domain=vebotvt.cc|xoilackz.tv
+/i.imgur.com/*.gif$domain=keonhacai55.uno|www.motchill57.com|xoilacks.tv|vebotvt.cc|listnhacai88.com|mitomzu.cc|rakhoiik.cc
+/images/company/21.png$image,domain=vebotvt.cc|xoilacks.tv
 /js/ads.js$script,~third-party,domain=~vipurl.in|~link.codevn.net
 /lv/esnk/*$script,domain=~lxmanga.space
 /newchill/*gif$image
+/player/jwplayer-*/vast.js$script
 /plugins/AdsManager/*$script,~third-party
 /polyad.
 /pop.js$script,domain=motchillk.lol
@@ -100,6 +101,7 @@ $popup,domain=truyenfull.vision
 ||api.anime3s.com^*.gif$image,domain=xemphim.site|animet.info
 ||api.onflix.xyz/api/ads/$xmlhttprequest
 ||api.ybox.vn/graphql?query=*Ads
+||apiv2-gw.phogatv2.com/ads$xmlhttprequest,domain=cbox-prd.phogatv2.com
 ||ax.mpcdn.top/tags/js?id=motchill$script,domain=motchillzl.my
 ||ax.mpcdn.top^*.gif$domain=motchillzl.my
 ||baomoi.com$csp=script-src data: blob: * 'self' 'unsafe-inline'
@@ -110,6 +112,7 @@ $popup,domain=truyenfull.vision
 ||bp.blogspot.com$image,domain=xemtivi4k.com
 ||bp.blogspot.com/*banner$image,domain=~aowvn.org
 ||cdn-data.gtvplus.vn/banners/$image,domain=gametv.vn
+||cdn-live.taoxanh.biz^*.gif$image,domain=thapcam24h.net
 ||cdn.giavang.org/images/ads/$image,domain=giavang.org
 ||cdn.lfastcdn.com^*.gif$image,domain=bongdainfox.tv|rakhoiik.cc|mitomzu.cc|vebotvt.cc
 ||cdn.monkeydarchive.com/images/banner/$image,domain=monkeyd.net.vn
@@ -177,7 +180,7 @@ $popup,domain=truyenfull.vision
 ||mediastation.live^*.gif$image,domain=mn.mediastation.live|home1.mannhan22.pro|mannhan97.xyz
 ||misseschloe.co.za^*.gif$image
 ||mocfun.net/uploads/banners/
-||motchillic.com^*.gif$image
+||motchillic.org^*.gif$image
 ||motchillk.lol^*.gif$image
 ||motphimtv.bz^*.gif$image
 ||mplmncb.com/banners-web/$script,image,domain=truyenqqno.com
@@ -687,7 +690,6 @@ $popup,domain=truyenfull.vision
 ||excavatenearbywand.com^
 ||flagstonefoundingmonotype.com^
 ||frozenpayerpregnant.com^
-||gaimupsex.net^*.gif$image,domain=gaimupsex.net
 ||gamer18.net^*.gif$image
 ||genz3x.com^*.gif$image
 ||go.xlviirdr.com^
@@ -714,7 +716,7 @@ $popup,domain=truyenfull.vision
 ||qmanga.art/banner_image/$image
 ||qmh.cat/assets/js/simpleblocker.js$script,~third-party
 ||quatvn.my^*.gif$image
-||quoracdn.net^$image,domain=xemphimsec.net|phim18vip.top|pheclip.dev|gaimupsex.net|xemsexhihi.com|phevl.hot|fulllivehot.live|haysexvn.lol|chich69.men|viet69hay.site
+||quoracdn.net^$image,domain=xemphimsec.net|phim18vip.top|pheclip.dev|sexmup9x.pro|xemsexhihi.com|phevl.hot|fulllivehot.live|haysexvn.lol|chich69.men|viet69hay.site
 ||rphang.online^*.gif
 ||sayhentai.sh/assets/js/ads.js
 ||sayhentai.sh/storage/images/banner/$image
@@ -724,6 +726,7 @@ $popup,domain=truyenfull.vision
 ||sexlive.biz/_next/image?url=*.gif$image
 ||sexlive.biz/mb66.mp4$media,~third-party
 ||sexlive.biz^*.avif$~third-party
+||sexmup9x.pro^*.gif$image,domain=sexmup9x.pro
 ||sieukhung.net^*.gif$image
 ||squibonk.com^*.gif$image
 ||stream.cliphot69.one/mb66.mp4$media,domain=sexlive.biz
