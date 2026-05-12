@@ -1,9 +1,9 @@
 [Adblock Plus 2.0]
-! Version: 20260511235743705
+! Version: 20260512130434608
 ! id: D4028CDD-3D39-4624-ACC7-8140F4EC3888
 ! Title: ABPVN List | Content Blocker
-! Last modified: 11 May 2026 23:57:43 UTC+7
-! Diff-Path: patches/20260511235743705.patch#abpvn_content_blocker
+! Last modified: 12 May 2026 13:04:34 UTC+7
+! Diff-Path: patches/20260512130434608.patch#abpvn_content_blocker
 ! Diff-Expires: 60 minutes
 ! Expires: 1 days (update frequency)
 !
@@ -50,8 +50,8 @@ $popup,domain=truyenfull.vision
 /disable-devtool.min.js$script
 /full-page-script.js$script
 /giadinhonline.vn/files/qc/*
-/i.imgur.com/*.gif$domain=keonhacai55.uno|www.aphim2.com|xoilaciiq.cc|vebotvv.cc|listnhacai88.com|mitomzu.cc|rakhoiik.cc
-/images/company/21.png$image,domain=vebotvv.cc|xoilaciiq.cc
+/i.imgur.com/*.gif$domain=keonhacai55.uno|www.aphim2.com|whoownsfacebook.com|vebotvv.cc|listnhacai88.com|mitomzu.cc|rakhoiik.cc
+/images/company/21.png$image,domain=vebotvv.cc|whoownsfacebook.com
 /js/ads.js$script,~third-party,domain=~vipurl.in|~link.codevn.net
 /lv/esnk/*$script,domain=~lxmanga.space
 /newchill/*gif$image
@@ -175,7 +175,7 @@ $popup,domain=truyenfull.vision
 ||lh3.googleusercontent.com/*=s0$image,domain=animevietsub.site|googleapiscdn.com
 ||listnhacai88.com^*.gif$image
 ||media.nghean24h.vn$image,domain=nghean24h.vn
-||mediastation.live^*.gif$image,domain=mn.mediastation.live|home1.mannhan22.pro|mannhan97.xyz
+||mediastation.live^*.gif$image,domain=mn.mediastation.live|home4.mannhan22.pro|mannhan97.xyz
 ||misseschloe.co.za^*.gif$image
 ||mocfun.net/uploads/banners/
 ||motchill.farm^*.gif
@@ -761,7 +761,7 @@ chap.vn##.titleBar + *
 chap.vn##[class1="my_responsive_add"]
 chat.vebotv.me##.chat-header
 chat.vebotv.me##[href="https://8xbe52.com"]
-chatboxn.com,xoilaciiq.cc##a[target="_blank"][rel="nofollow"]
+chatboxn.com,whoownsfacebook.com##a[target="_blank"][rel="nofollow"]
 checkscam.vn##.qh_qcbp
 chodansinh.net##.link-gold
 chodansinh.net##[id^="banner"]
@@ -788,7 +788,7 @@ comong.info###virtualLayer
 congan.com.vn###subiz_wrapper
 congan.com.vn##.ad-embed
 congthucvatly.com##.mb-4>[style="min-height: 350px;"]
-congthucvatly.com,phuongtrinhhoahoc.com,xem16.net,phimmoi.farm##.fixed
+congthucvatly.com,phuongtrinhhoahoc.com,xem16.net,phimmoi.blue##.fixed
 contuhoc.com,cbox.ws##a[rel="noopener noreferrer"]
 cryptoviet.com##.widget-wrap.widget_text
 cumeo2.link##.gap-2.mt-2.grid-cols-\[1fr_auto_1fr\].grid>.text-sm.font-semibold.rounded-sm.text-white.shadow-custom.bg-brand.-skew-x-8.uppercase.py-2.px-4.cursor-pointer.justify-center.items-center.flex.h-full
@@ -882,11 +882,11 @@ hoiquan3.tv##.a-overlay
 hoiquan3.tv##.cuoc-nha-cai
 hoiquan3.tv##.lg-y.md-y.y.lg-x.md-x.x.img-border.a-popup-center.has-hover.img
 hoiquan3.tv##.row-topnhacai
-home1.mannhan22.pro###hots-btn
-home1.mannhan22.pro##[href="/top-nha-cai.html"]
-home1.mannhan22.pro##li.for-desktop-2>[href]
-home1.mannhan22.pro##li.for-mobile-2>[href]
-home1.mannhan22.pro,gavangtv14.net##.bn-popup-bottom-sdwdwxw
+home4.mannhan22.pro###hots-btn
+home4.mannhan22.pro##[href="/top-nha-cai.html"]
+home4.mannhan22.pro##li.for-desktop-2>[href]
+home4.mannhan22.pro##li.for-mobile-2>[href]
+home4.mannhan22.pro,gavangtv14.net##.bn-popup-bottom-sdwdwxw
 hsctvn.com##.advertTop
 hsctvn.com##.hsdn>li:has(.adsbygoogle)
 hsctvn.com##.module_plugins
@@ -1012,7 +1012,7 @@ quykhu.com###ad-bottom
 quykhu.com###ad-top
 rakhoiik.cc##.bookmaker-selector-container
 rakhoiik.cc##.btn-odds
-rakhoiik.cc,vebotvv.cc,xoilaciiq.cc##.btn-8xbet
+rakhoiik.cc,vebotvv.cc,whoownsfacebook.com##.btn-8xbet
 reatimes.vn##div[class^="adv-"]
 rophim.moe##.module_home_ads
 sachmoi.net##.boxzilla-bottom-right-container
@@ -1217,6 +1217,25 @@ vozer.net##.Notices.PanelScroller
 vungtv.shop###container-ads
 vuonhoalan.net##.content_middle_rightbar
 webhoctienganh.com##.button-action-float-banner
+whoownsfacebook.com###match-child-1
+whoownsfacebook.com##.block-catfish.text-center.d-lg-none.d-block
+whoownsfacebook.com##.container>ul
+whoownsfacebook.com##.match-detail__offer
+whoownsfacebook.com##.menu-top
+whoownsfacebook.com##.offer
+whoownsfacebook.com##.offer__btn
+whoownsfacebook.com##.pl-lg-0.col-xl-4
+whoownsfacebook.com##.row.d-none
+whoownsfacebook.com##.widget-offers__list
+whoownsfacebook.com##div.d-lg-none.d-block:nth-of-type(3)
+whoownsfacebook.com,mitomzu.cc##.menu-cuoc-8xbet
+whoownsfacebook.com,mitomzu.cc,vebotvv.cc##.menu-top-nha-cai
+whoownsfacebook.com,rakhoiik.cc##.sk_balloon
+whoownsfacebook.com,vebotvv.cc###quangcaopc
+whoownsfacebook.com,vebotvv.cc##.marquee-container
+whoownsfacebook.com,vebotvv.cc,mitomzu.cc##.company
+whoownsfacebook.com,vebotvv.cc,mitomzu.cc##div[id^="dnn_"]
+whoownsfacebook.com,vebotvv.cc,rakhoiik.cc###wap_bottombanner
 www.2banh.vn##.grp-grp.header_wp
 www.2banh.vn##.lb_overlay
 www.aphim2.com##.BanerTop100
@@ -1263,25 +1282,6 @@ xemtivi4k.com###adstop2
 xemtivi4k.com##.ads-item
 xemtivi4k.com##.col-lg-4.hidden-xs.d-flex.flex-column.address-wrap
 xemtivi4k.com##.float-right
-xoilaciiq.cc###match-child-1
-xoilaciiq.cc##.block-catfish.text-center.d-lg-none.d-block
-xoilaciiq.cc##.container>ul
-xoilaciiq.cc##.match-detail__offer
-xoilaciiq.cc##.menu-top
-xoilaciiq.cc##.offer
-xoilaciiq.cc##.offer__btn
-xoilaciiq.cc##.pl-lg-0.col-xl-4
-xoilaciiq.cc##.row.d-none
-xoilaciiq.cc##.widget-offers__list
-xoilaciiq.cc##div.d-lg-none.d-block:nth-of-type(3)
-xoilaciiq.cc,mitomzu.cc##.menu-cuoc-8xbet
-xoilaciiq.cc,mitomzu.cc,vebotvv.cc##.menu-top-nha-cai
-xoilaciiq.cc,rakhoiik.cc##.sk_balloon
-xoilaciiq.cc,vebotvv.cc###quangcaopc
-xoilaciiq.cc,vebotvv.cc##.marquee-container
-xoilaciiq.cc,vebotvv.cc,mitomzu.cc##.company
-xoilaciiq.cc,vebotvv.cc,mitomzu.cc##div[id^="dnn_"]
-xoilaciiq.cc,vebotvv.cc,rakhoiik.cc###wap_bottombanner
 xskt.com.vn,vieclam.tv###bnc0
 yanhh3d.id,hhtm.net###catfish-ads
 ybox.vn###ybox-H1>div[style]
