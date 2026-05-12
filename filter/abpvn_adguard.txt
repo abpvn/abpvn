@@ -1,9 +1,9 @@
 [Adblock Plus 2.0]
-! Version: 20260512151319994
+! Version: 20260512153317488
 ! id: D4028CDD-3D39-4624-ACC7-8140F4EC3888
 ! Title: ABPVN List | AdGuard
-! Last modified: 12 May 2026 15:13:20 UTC+7
-! Diff-Path: patches/20260512151319994.patch#abpvn_adguard
+! Last modified: 12 May 2026 15:33:17 UTC+7
+! Diff-Path: patches/20260512153317488.patch#abpvn_adguard
 ! Diff-Expires: 60 minutes
 ! Expires: 1 days (update frequency)
 !
@@ -155,6 +155,7 @@
 ||images.tuyensinh247.com^*.gif$third-party
 ||img.iketqua.com^*.gif$image
 ||img.lazcdn.com^*.gif$image,domain=tctruyen.org
+||ipatool.codevn.net/inject-dylib/js/bootstraps.min.js
 ||kenhgamez.cc^*.gif
 ||kenhthethaotv.com/wp-content/plugins/popup-builder/public/js/PopupBuilder.js$script,~third-party
 ||khotruyen.ac/banner_image/$image
@@ -594,6 +595,8 @@ hsctvn.com##.advertTop
 hsctvn.com##.hsdn>li:has(.adsbygoogle)
 hsctvn.com##.module_plugins
 idpvn.com##[id^="idpvn-"]
+ipatool.codevn.net##.ad-left
+ipatool.codevn.net##.ad-right
 kenh14.vn##.ads-sponsor
 kenh14.vn##.khw-adk14-wrapper
 keonhacai55.uno##.container>.row>center
