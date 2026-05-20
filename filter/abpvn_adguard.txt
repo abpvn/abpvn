@@ -1,9 +1,9 @@
 [Adblock Plus 2.0]
-! Version: 20260520161337506
+! Version: 20260521000840241
 ! id: D4028CDD-3D39-4624-ACC7-8140F4EC3888
 ! Title: ABPVN List | AdGuard
-! Last modified: 20 May 2026 16:13:37 UTC+7
-! Diff-Path: patches/20260520161337506.patch#abpvn_adguard
+! Last modified: 21 May 2026 00:08:40 UTC+7
+! Diff-Path: patches/20260521000840241.patch#abpvn_adguard
 ! Diff-Expires: 60 minutes
 ! Expires: 1 days (update frequency)
 !
@@ -1262,6 +1262,7 @@ linkneverdie.net,linkneverdie.top,linkneverdie2.com#%#//scriptlet("abort-current
 linkneverdie.net,linkneverdie.top,linkneverdie2.com#%#//scriptlet("abort-on-property-read", "pushOnPage")
 linkneverdie.net,linkneverdie.top,linkneverdie2.com#%#//scriptlet("prevent-setTimeout", "DisplayAHTML", "5001")
 linkneverdie.net,linkneverdie.top,linkneverdie2.com#%#//scriptlet("prevent-setTimeout", "callback", "6004")
+lottedira.store,tekora.fun#%#//scriptlet("abort-current-inline-script", "$", "aff")
 lrepacks.net#%#//scriptlet("abort-current-inline-script", "JSON.parse", "break;case $.")
 lxmanga.space#%#//scriptlet("abort-current-inline-script", "$", "PopUnder")
 monkeydtruyen.com##.affClick
@@ -1291,7 +1292,6 @@ rphang.online,misskon.com#%#//scriptlet("abort-current-inline-script", "document
 saigon24.net#%#//scriptlet("abort-current-inline-script", "document.getElementById", "myModal")
 sex.javnong.cc#%#//scriptlet("abort-on-property-read", "Math.round")
 sexmupxinh.net#%#//scriptlet("abort-on-property-read", "Cookies")
-tekora.space,lottedira.store,tekora.fun#%#//scriptlet("abort-current-inline-script", "$", "aff")
 thiendia3.com#$#.story-info {bottom: 90px! important;}
 thiendia3.com#%#//scriptlet("abort-current-inline-script", "document.addEventListener", "adState")
 topnovelhub.com#%#//scriptlet("abort-on-property-read", "sp")
