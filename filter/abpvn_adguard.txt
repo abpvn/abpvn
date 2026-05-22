@@ -1,9 +1,9 @@
 [Adblock Plus 2.0]
-! Version: 20260521132504860
+! Version: 20260522101405749
 ! id: D4028CDD-3D39-4624-ACC7-8140F4EC3888
 ! Title: ABPVN List | AdGuard
-! Last modified: 21 May 2026 13:25:04 UTC+7
-! Diff-Path: patches/20260521132504860.patch#abpvn_adguard
+! Last modified: 22 May 2026 10:14:05 UTC+7
+! Diff-Path: patches/20260522101405749.patch#abpvn_adguard
 ! Diff-Expires: 60 minutes
 ! Expires: 1 days (update frequency)
 !
@@ -48,8 +48,8 @@
 /disable-devtool.min.js$script
 /full-page-script.js$script
 /giadinhonline.vn/files/qc/*
-/i.imgur.com/*.gif$domain=keonhacai55.uno|www.aphim4.com|nurtureart.org|vebotvx.cc|listnhacai88.com|rakhoiic.cc
-/images/company/21.png$image,domain=vebotvx.cc|nurtureart.org
+/i.imgur.com/*.gif$domain=keonhacai55.uno|www.aphim4.com|idcubed.org|vebotvx.cc|listnhacai88.com|rakhoiic.cc
+/images/company/21.png$image,domain=vebotvx.cc|idcubed.org
 /js/ads.js$script,~third-party,domain=~vipurl.in|~link.codevn.net
 /lv/esnk/*$script,domain=~lxmanga.space
 /newchill/*gif$image
@@ -746,7 +746,7 @@ chap.vn##.titleBar + *
 chap.vn##[class1="my_responsive_add"]
 chat.vebotv.me##.chat-header
 chat.vebotv.me##[href="https://8xbe52.com"]
-chatboxn.com,nurtureart.org##a[target="_blank"][rel="nofollow"]
+chatboxn.com,idcubed.org##a[target="_blank"][rel="nofollow"]
 checkscam.vn##.qh_qcbp
 chodansinh.net##.link-gold
 chodansinh.net##[id^="banner"]
@@ -880,6 +880,25 @@ home4.mannhan22.pro,gavangtv14.net##.bn-popup-bottom-sdwdwxw
 hsctvn.com##.advertTop
 hsctvn.com##.hsdn>li:has(.adsbygoogle)
 hsctvn.com##.module_plugins
+idcubed.org###match-child-1
+idcubed.org##.block-catfish.text-center.d-lg-none.d-block
+idcubed.org##.container>ul
+idcubed.org##.match-detail__offer
+idcubed.org##.menu-cuoc-8xbet
+idcubed.org##.menu-top
+idcubed.org##.offer
+idcubed.org##.offer__btn
+idcubed.org##.pl-lg-0.col-xl-4
+idcubed.org##.row.d-none
+idcubed.org##.widget-offers__list
+idcubed.org##div.d-lg-none.d-block:nth-of-type(3)
+idcubed.org,rakhoiic.cc##.sk_balloon
+idcubed.org,vebotvx.cc###quangcaopc
+idcubed.org,vebotvx.cc##.company
+idcubed.org,vebotvx.cc##.marquee-container
+idcubed.org,vebotvx.cc##.menu-top-nha-cai
+idcubed.org,vebotvx.cc##div[id^="dnn_"]
+idcubed.org,vebotvx.cc,rakhoiic.cc###wap_bottombanner
 ipatool.codevn.net##.ad-left
 ipatool.codevn.net##.ad-right
 kenh14.vn##.ads-sponsor
@@ -952,25 +971,6 @@ nhaccuatui.com##.adv_home_300_250
 nhaccuatui.com##.nqc-zone
 nhacdj.vn###top-adv
 nld.com.vn,danviet.vn##.ads-top
-nurtureart.org###match-child-1
-nurtureart.org##.block-catfish.text-center.d-lg-none.d-block
-nurtureart.org##.container>ul
-nurtureart.org##.match-detail__offer
-nurtureart.org##.menu-cuoc-8xbet
-nurtureart.org##.menu-top
-nurtureart.org##.offer
-nurtureart.org##.offer__btn
-nurtureart.org##.pl-lg-0.col-xl-4
-nurtureart.org##.row.d-none
-nurtureart.org##.widget-offers__list
-nurtureart.org##div.d-lg-none.d-block:nth-of-type(3)
-nurtureart.org,rakhoiic.cc##.sk_balloon
-nurtureart.org,vebotvx.cc###quangcaopc
-nurtureart.org,vebotvx.cc##.company
-nurtureart.org,vebotvx.cc##.marquee-container
-nurtureart.org,vebotvx.cc##.menu-top-nha-cai
-nurtureart.org,vebotvx.cc##div[id^="dnn_"]
-nurtureart.org,vebotvx.cc,rakhoiic.cc###wap_bottombanner
 outlook.live.com##.LBktY>.GssDD
 outlook.live.com##div[data-viewport-type="element"] .Ogt7j
 oxfordlearnersdictionaries.com##.am-entry_long
@@ -1012,7 +1012,7 @@ quykhu.com###ad-bottom
 quykhu.com###ad-top
 rakhoiic.cc##.bookmaker-selector-container
 rakhoiic.cc##.btn-odds
-rakhoiic.cc,vebotvx.cc,nurtureart.org##.btn-8xbet
+rakhoiic.cc,vebotvx.cc,idcubed.org##.btn-8xbet
 reatimes.vn##div[class^="adv-"]
 rophim.moe##.module_home_ads
 sachmoi.net##.boxzilla-bottom-right-container
@@ -1299,7 +1299,7 @@ www.qmh.cx##+js(set, open, noopFunc)
 ||blurbreimbursetrombone.com^
 ||bullionglidingscuttle.com/lv/esnk/2031811/code.js$domain=lxmanga.space,script,rewrite=abp-resource:blank-js
 ||buomtv.life/palivn/ad/$image,~third-party
-||cap3.baby/api/ads$xmlhttprequest
+||cap3.skin/api/ads$xmlhttprequest
 ||cdn-01.w3img.com^*.gif$image,domain=vi.xnxx.studio|vlxx.rip
 ||cdn.adxcontent.com^
 ||chaseherbalpasty.com^
@@ -1315,7 +1315,7 @@ www.qmh.cx##+js(set, open, noopFunc)
 ||cloufdlare.com/ads/vn1.html$subdocument,domain=vl.phe.to
 ||creative.mnaspm.com^
 ||crumpetprankerstench.com/on.js$domain=lxmanga.space,script,rewrite=abp-resource:blank-js
-||cruncherpatiencestoreroom.com^$popup,domain=cap3.baby|qmh.cx
+||cruncherpatiencestoreroom.com^$popup,domain=cap3.skin|qmh.cx
 ||d3mzokty951c5w.cloudfront.net^
 ||darnobedienceupscale.com^
 ||diarrhoeaeaglesunday.com^
@@ -1368,7 +1368,7 @@ www.qmh.cx##+js(set, open, noopFunc)
 ||truyensextv.com/anh/$image
 ||truyensextv.com^*.gif
 ||truyenvn.sbs^*banner$image
-||video.qmh.cx/uploads/banners/$image,domain=cap3.baby|qmh.cx
+||video.qmh.cx/uploads/banners/$image,domain=cap3.skin|qmh.cx
 ||www.displayvertising.com^
 ||www.hentaivnx.com/js/cla/2064711.js$script
 ||www.hentaivnx.com/js/modscript.js$script
@@ -1389,8 +1389,8 @@ buomtv.life##._9xtpcl.cxwrp3i.c1skg1w3.cxngf0m.c199xq07.c10dklm2.c1xtmnwt.cvk29a
 buomtv.life##.l1k7nns5.a1t03fa1
 buomtv.life##.l1k7nns5.ahen1fo
 buomtv.life##div._1vguhxv.cleaozk._3yp41v.row-0.ss>._1lbf8q9
-cap3.baby##.p-4.justify-center.items-center.flex.backdrop-blur-sm.bg-black\/80.z-\[9999\].inset-0.fixed
-cap3.baby,qmh.cx##.header>app-banner
+cap3.skin##.p-4.justify-center.items-center.flex.backdrop-blur-sm.bg-black\/80.z-\[9999\].inset-0.fixed
+cap3.skin,qmh.cx##.header>app-banner
 cliphot69.wiki###custom_html-42
 cliphotvn69.com,dynadot.rsocdomains.com,cliphot69.wiki,www.gvnvh18z.com,phimsexhayvne.com,sayhentai.sh,phim18vip.top,xamvn.hair##.float-ck-center-lt
 clipphimsex3x.net,xemsexhihi.com,javhdz.men,laalmirchitakeaway.co.uk##.catfish-bottom
@@ -1547,10 +1547,10 @@ audiotruyenfull.com#%#//scriptlet("abort-on-property-read", "adpiaListUrl")
 baomoi.com#%#//scriptlet("abort-on-property-write", "AdtimaRender")
 cafef.vn,gamek.vn,genk.vn,kenh14.vn,soha.vn,tuoitre.vn,afamily.vn,thanhnien.vn#%#//scriptlet("abort-current-inline-script", "Object.defineProperty", "ADMStorageFileCDN")
 cafef.vn,gamek.vn,genk.vn,kenh14.vn,soha.vn,tuoitre.vn,afamily.vn,thanhnien.vn#%#//scriptlet("set-constant", "ADMStorageFileCDN", "noopFunc")
-cap3.baby#%#//scriptlet("prevent-addEventListener", "click", "d", "elements", ".art-control-fullscreen")
-cap3.baby#%#//scriptlet("prevent-addEventListener", "click", "e.target")
-cap3.baby#%#//scriptlet("prevent-addEventListener", "click", "setTimeout")
-cap3.baby#%#//scriptlet("prevent-addEventListener", "fullscreenchange", "e.target")
+cap3.skin#%#//scriptlet("prevent-addEventListener", "click", "d", "elements", ".art-control-fullscreen")
+cap3.skin#%#//scriptlet("prevent-addEventListener", "click", "e.target")
+cap3.skin#%#//scriptlet("prevent-addEventListener", "click", "setTimeout")
+cap3.skin#%#//scriptlet("prevent-addEventListener", "fullscreenchange", "e.target")
 cdn.codexa.fun#%#//scriptlet("abort-current-inline-script", "$", "arrDirectLink")
 chotlo3s.com#$##header {margin-top: 0!important}
 cliphotneww.blog,sexnhathdi.blog#%#//scriptlet("abort-current-inline-script", "window.addEventListener", "Ads")
@@ -1570,6 +1570,7 @@ hh3dhay.life,tram3d.com#%#//scriptlet("abort-current-inline-script", "document.c
 hh3dhay.life,tram3d.online,animevietsub.site#%#//scriptlet("abort-current-inline-script", "eval", "$._Eu")
 hhtq.digital###overlay
 hhtq.digital,phimchautinhtri.net#$#html {overflow: auto!important;}
+idcubed.org#%#//scriptlet("abort-on-property-read", "adsRedirectPopups")
 imail.edu.vn,www.aphim4.com,trumtruyen.xyz,teamlanhlungday.store#%#//scriptlet("abort-current-inline-script", "setTimeout", "Aff")
 ios.codevn.net#%#//scriptlet("abort-current-inline-script", "jQuery", "Popup")
 ios.codevn.net#%#//scriptlet("abort-current-inline-script", "setInterval", "offsetHeight")
@@ -1589,7 +1590,6 @@ mphim.cc#%#//scriptlet("set-constant", "urlAds", "")
 mv.phimmoiaz.cc,anime14.site,zpic.biz,javgiga.wordpress.com,hoctot.hocmai.vn,truyenfull.today,player.phimapi.com,sachmoi.net,xfast.sbs,anime47.best,s2.phimsexvn1.blog#%#//scriptlet("abort-on-property-read", "open")
 nettruyenar.com,hhvsub1.com#%#//scriptlet("abort-current-inline-script", "WebAssembly", "globalThis")
 nettruyenviet10.com#%#//scriptlet("abort-current-inline-script", "JSON", "fromCharCode")
-nurtureart.org#%#//scriptlet("abort-on-property-read", "adsRedirectPopups")
 ombak700.org#%#//scriptlet("abort-on-property-read", "sp")
 opensubtitles.com##div[id^="clock_"]
 opensubtitles.com#$#div[class*="download-ready"]{display:block!important}
