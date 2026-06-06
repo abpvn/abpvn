@@ -1,9 +1,9 @@
 [Adblock Plus 2.0]
-! Version: 20260606183340573
+! Version: 20260606190158397
 ! id: D4028CDD-3D39-4624-ACC7-8140F4EC3888
 ! Title: ABPVN List | Ublock Origin
-! Last modified: 06 Jun 2026 18:33:40 UTC+7
-! Diff-Path: patches/20260606183340573.patch#abpvn_ublock
+! Last modified: 06 Jun 2026 19:01:58 UTC+7
+! Diff-Path: patches/20260606190158397.patch#abpvn_ublock
 ! Diff-Expires: 60 minutes
 ! Expires: 1 days (update frequency)
 !
@@ -22,7 +22,7 @@
 .com/cpc/$script
 .com/on.js$third-party
 .com/qc/
-.gif$xmlhttprequest,domain=animehay04.site
+.gif$xmlhttprequest,domain=animehay05.site
 .net/ads/$domain=~linkneverdie.net
 .net/cpf/$script
 .tv/ads/$image,script,subdocument
@@ -88,8 +88,8 @@
 ||anime14.site^*.gif
 ||anime1s.com/_next/image?url=https%3A%2F%2F*.ibyteimg.com$image
 ||anime1s.com/_next/image?url=https%3A%2F%2Flh3.googleusercontent.com$image
-||animehay04.site/ad_banner/$image
-||animehay04.site/sw.js$script,~third-party
+||animehay05.site/ad_banner/$image
+||animehay05.site/sw.js$script,~third-party
 ||animevietsub.by/ads/$script
 ||animevietsub9.com/vast/$image
 ||api.anime3s.com/i9bet.php$xmlhttprequest,~third-party
@@ -666,13 +666,13 @@ anime14.site,animetvn.com,motchillzz.site###fbox-background
 anime1s.com##div.py-2.md\:py-6.mx-auto.w-full.max-w-screen-3xl>div.relative
 anime47.best###qc_clgt
 anime47.best###swiper-wrapper
-animehay04.site###header-ads
-animehay04.site###header-ads + center
-animehay04.site###top-banner
-animehay04.site##.under_player.flex-hozi-center.flex-column.flex
-animehay04.site##[src*=".gif"]
-animehay04.site##body>div[style^="position: fixed"]
-animehay04.site##div[style="position: fixed; bottom: 0px; z-index: 98; width: 100%; text-align: center; box-sizing: border-box;"]
+animehay05.site###header-ads
+animehay05.site###header-ads + center
+animehay05.site###top-banner
+animehay05.site##.under_player.flex-hozi-center.flex-column.flex
+animehay05.site##[src*=".gif"]
+animehay05.site##body>div[style^="position: fixed"]
+animehay05.site##div[style="position: fixed; bottom: 0px; z-index: 98; width: 100%; text-align: center; box-sizing: border-box;"]
 animetvn.com###mobile-ads
 animetvn.com##.gnarty-offads
 animevietsub.by###_preload-ads-1
@@ -837,9 +837,9 @@ googleapiscdn.com###avs-banner-overlay
 googleapiscdn.com###avs-pause-ad
 hh3dhay.ceo,hhtq.news###top_addd
 hhdragon.fit##.catfish-img
-hhninja30.tv,hhtq13.vip,hhtq.hair,animehay04.site,hhtq3d.net,hhvsub1.com,phimdacap.tv,hhdragon.fit,hh2d.top###catfish
+hhninja30.tv,hhtq13.vip,hhtq.hair,animehay05.site,hhtq3d.net,hhvsub1.com,phimdacap.tv,hhdragon.fit,hh2d.top###catfish
 hhtq.hair###top-banner-pc
-hhtq.hair,animehay04.site###sponsor-balloon
+hhtq.hair,animehay05.site###sponsor-balloon
 hhtq.news###xs-addd0
 hhtq.news##.btn-fanpage.btn-default.btn-block.btn
 hhtq.news##.underplayer_btn
@@ -1508,9 +1508,9 @@ zpic.biz##.ad-banner
 ! ---------Rule only for uBlock Origin------
 anime47.best##+js(nostif, Adblock)
 anime47.best##.affiliate-swiper
-animehay04.site##+js(acs, Number, ;break;case)
-animehay04.site##+js(aopr, popUp)
-animehay04.site##+js(rmnt, script, popup)
+animehay05.site##+js(acs, Number, ;break;case)
+animehay05.site##+js(aopr, popUp)
+animehay05.site##+js(rmnt, script, popup)
 animevietsub9.com##+js(aopr, _0x3f9b)
 aoe.vn##+js(aopr, parseInt)
 baomoi.com##+js(aopw, AdtimaRender)
@@ -1530,7 +1530,7 @@ dualeotruyenpy.com##+js(acs, document.addEventListener, popunder)
 dualeotruyenpy.com,sexnung24h.net,cliphot69.wiki,doctruyen3qhub.live,qmanga.art,hentaivkl.com,buomtv.life,truyenvn.sbs,javtiful.com,quatvn.now,phimsexhayvne.com,phim18hdxx.com,sexviet88.it.com,sexmupxinh.net,demo.14412882.com,hhtq5.vip,sexdiary.club,vn2.xvideos69.xxx,umetruyenz.org,damconuong.lol,truyenqqko.com,clipphimsex3x.net,sayhentai.sh,lxmanga.space,phimlongtieng.net,www.sieutamphim.pro,vevocloud.com,sex.xinh3x.me,viet69.be,viet69vn.at,misskon.com,luottruyen7.com##+js(acs, WebAssembly, instantiate)
 freeplayervideo.com,abysscdn.com,player-cdn.com,playhydrax.com##+js(acs, document.getElementById, openPop)
 freeplayervideo.com,abysscdn.com,player-cdn.com,playhydrax.com,hopphim.online,www.bachnguyetquang.online,streamc.xyz##+js(set, open, noopFunc)
-game8.vn,animehay04.site,cunghocvui.com,checkscam.vn##+js(acs, document.addEventListener, open)
+game8.vn,animehay05.site,cunghocvui.com,checkscam.vn##+js(acs, document.addEventListener, open)
 giavang.net##+js(no-fetch-if, method:HEAD)
 gocmod.com##+js(acs, jQuery, popup)
 haysexvn.shop##+js(acs, document.addEventListener, adx)
