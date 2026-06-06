@@ -1,9 +1,9 @@
 [Adblock Plus 2.0]
-! Version: 20260606103338306
+! Version: 20260606183336971
 ! id: D4028CDD-3D39-4624-ACC7-8140F4EC3888
 ! Title: ABPVN List | Ublock Origin
-! Last modified: 06 Jun 2026 10:33:38 UTC+7
-! Diff-Path: patches/20260606103338306.patch#abpvn_ublock
+! Last modified: 06 Jun 2026 18:33:37 UTC+7
+! Diff-Path: patches/20260606183336971.patch#abpvn_ublock
 ! Diff-Expires: 60 minutes
 ! Expires: 1 days (update frequency)
 !
@@ -44,8 +44,8 @@
 /core/*$script,domain=gamek.vn|genk.vn|kenh14.vn|cafef.vn|thanhnien.vn
 /disable-devtool.min.js$script
 /giadinhonline.vn/files/qc/*
-/i.imgur.com/*.gif$domain=www.1phim1.com|xoilackw.tv|vebotvu.cc|listnhacai88.com|rakhoivd.cc
-/images/company/21.png$image,domain=vebotvu.cc|xoilackw.tv
+/i.imgur.com/*.gif$domain=www.1phim1.com|ridecabin.com|vebotvu.cc|listnhacai88.com|rakhoivd.cc
+/images/company/21.png$image,domain=vebotvu.cc|ridecabin.com
 /js/ads.js$script,~third-party
 /lv/esnk/*$script
 /newchill/*gif$image
@@ -80,7 +80,7 @@
 ||anime1s.com/_next/image?url=https%3A%2F%2F*.ibyteimg.com$image
 ||anime1s.com/_next/image?url=https%3A%2F%2Flh3.googleusercontent.com$image
 ||animehay04.site/sw.js$script,~third-party
-||animevietsub.name/ads/$script
+||animevietsub.by/ads/$script
 ||animevietsub9.com/vast/$image
 ||api.anime3s.com/i9bet.php$xmlhttprequest,~third-party
 ||api.anime3s.com^*.gif$image,domain=xemphim.site|anime14.site
@@ -153,7 +153,7 @@
 ||khotruyen.ac/banner_image/$image
 ||kienthuc.net.vn/*.ads
 ||laodong.vn/*QuangcaoOnline
-||lh3.googleusercontent.com/*=s0$image,domain=animevietsub.name|googleapiscdn.com
+||lh3.googleusercontent.com/*=s0$image,domain=animevietsub.by|googleapiscdn.com
 ||listnhacai88.com^*.gif$image
 ||media.nghean24h.vn$image,domain=nghean24h.vn
 ||misseschloe.co.za^*.gif$image
@@ -385,12 +385,12 @@ animehay04.site##body>div[style^="position: fixed"]
 animehay04.site##div[style="position: fixed; bottom: 0px; z-index: 98; width: 100%; text-align: center; box-sizing: border-box;"]
 animetvn.com###mobile-ads
 animetvn.com##.gnarty-offads
-animevietsub.name###_preload-ads-1
-animevietsub.name###invideo_wrapper
-animevietsub.name##.Ads
-animevietsub.name##.mobile-catfish-top
-animevietsub.name##.mobile-catfixx
-animevietsub.name,phimtuoitho.tv##.pc-catfixx
+animevietsub.by###_preload-ads-1
+animevietsub.by###invideo_wrapper
+animevietsub.by##.Ads
+animevietsub.by##.mobile-catfish-top
+animevietsub.by##.mobile-catfixx
+animevietsub.by,phimtuoitho.tv##.pc-catfixx
 apkmoddone.com##.adNative
 apkmoddone.com##.pAd
 apkmoddone.com##.relatedPostsAd
@@ -440,7 +440,7 @@ chap.vn##.titleBar + *
 chap.vn##[class1="my_responsive_add"]
 chat.vebotv.me##.chat-header
 chat.vebotv.me##[href="https://8xbe52.com"]
-chatboxn.com,xoilackw.tv##a[target="_blank"][rel="nofollow"]
+chatboxn.com,ridecabin.com##a[target="_blank"][rel="nofollow"]
 checkscam.vn##.qh_qcbp
 chodansinh.net##.link-gold
 chodansinh.net##[id^="banner"]
@@ -676,8 +676,27 @@ quechoa9.live##.transition-opacity.hover\:opacity-90.shadow-\[0px_4px_4px_0px_rg
 quechoa9.live##.transition-opacity.hover\:opacity-90.shadow-\[0px_4px_4px_0px_rgba\(0\,0\,0\,0\.25\)\].py-2.px-4.rounded-lg.to-\[\#f8e201\].from-\[\#fee701\].bg-gradient-to-r.gap-2.items-center.flex
 rakhoivd.cc##.bookmaker-selector-container
 rakhoivd.cc##.btn-odds
-rakhoivd.cc,vebotvu.cc,xoilackw.tv##.btn-8xbet
+rakhoivd.cc,vebotvu.cc,ridecabin.com##.btn-8xbet
 reatimes.vn##div[class^="adv-"]
+ridecabin.com###match-child-1
+ridecabin.com##.block-catfish.text-center.d-lg-none.d-block
+ridecabin.com##.container>ul
+ridecabin.com##.match-detail__offer
+ridecabin.com##.menu-cuoc-8xbet
+ridecabin.com##.menu-top
+ridecabin.com##.offer
+ridecabin.com##.offer__btn
+ridecabin.com##.pl-lg-0.col-xl-4
+ridecabin.com##.row.d-none
+ridecabin.com##.widget-offers__list
+ridecabin.com##div.d-lg-none.d-block:nth-of-type(3)
+ridecabin.com,rakhoivd.cc##.sk_balloon
+ridecabin.com,vebotvu.cc###quangcaopc
+ridecabin.com,vebotvu.cc##.company
+ridecabin.com,vebotvu.cc##.marquee-container
+ridecabin.com,vebotvu.cc##.menu-top-nha-cai
+ridecabin.com,vebotvu.cc##div[id^="dnn_"]
+ridecabin.com,vebotvu.cc,rakhoivd.cc###wap_bottombanner
 sachmoi.net##.boxzilla-bottom-right-container
 sachmoi.net##[href^="https://gotrackecom.info"]
 saostar.vn###mobi-top
@@ -899,25 +918,6 @@ xemphim.site,motchillzz.site##.sticky_bottom
 xemtivi4k.com###adstop2
 xemtivi4k.com##.col-lg-4.hidden-xs.d-flex.flex-column.address-wrap
 xemtivi4k.com##.float-right
-xoilackw.tv###match-child-1
-xoilackw.tv##.block-catfish.text-center.d-lg-none.d-block
-xoilackw.tv##.container>ul
-xoilackw.tv##.match-detail__offer
-xoilackw.tv##.menu-cuoc-8xbet
-xoilackw.tv##.menu-top
-xoilackw.tv##.offer
-xoilackw.tv##.offer__btn
-xoilackw.tv##.pl-lg-0.col-xl-4
-xoilackw.tv##.row.d-none
-xoilackw.tv##.widget-offers__list
-xoilackw.tv##div.d-lg-none.d-block:nth-of-type(3)
-xoilackw.tv,rakhoivd.cc##.sk_balloon
-xoilackw.tv,vebotvu.cc###quangcaopc
-xoilackw.tv,vebotvu.cc##.company
-xoilackw.tv,vebotvu.cc##.marquee-container
-xoilackw.tv,vebotvu.cc##.menu-top-nha-cai
-xoilackw.tv,vebotvu.cc##div[id^="dnn_"]
-xoilackw.tv,vebotvu.cc,rakhoivd.cc###wap_bottombanner
 yanhh3d.hot,hhtm.net###catfish-ads
 ybox.vn###ybox-H1>div[style]
 ycongnghe.com##.td-container-wrap.td-logo-wrap-full.td-banner-wrap-full
@@ -1221,7 +1221,7 @@ haysexvn.shop##+js(acs, document.addEventListener, adx)
 hh2d.top##+js(acs, $, adblock)
 hh3dhay.life##+js(acs, Symbol, break;case $)
 hh3dhay.life,tram3d.com##+js(acs, document.createElement, ;break;case)
-hh3dhay.life,tram3d.online,animevietsub.name##+js(acs, eval, $._Eu)
+hh3dhay.life,tram3d.online,animevietsub.by##+js(acs, eval, $._Eu)
 hhtq.news###overlay
 hhtq.news,phimchautinhtri.net##html:style(overflow: auto !important)
 hopphim.online##iframe.aspect-video.z-30:style(pointer-events:auto! important)
@@ -1260,6 +1260,7 @@ quatvn.now##+js(acs, window.addEventListener, localStorage)
 quykhu.com###content:style(max-height:none !important;opacity:1 !important)
 quykhu.com##+js(acs, document.addEventListener, atob)
 quykhu.com##.shadow-sm.space-y-2.text-center.text-blue-900.rounded-2xl.border-blue-200.border.bg-blue-50.p-3
+ridecabin.com##+js(aopr, adsRedirectPopups)
 rophim.moe##+js(acs, addEvent, popu)
 rphang.online,misskon.com##+js(acs, document.querySelectorAll, popMagic)
 saigon24.net##+js(acs, document.getElementById, myModal)
@@ -1294,7 +1295,6 @@ xnhau.vc##+js(acs, document.addEventListener, lastPopunderTime)
 xnhau.vc##+js(aeld, click, /acquirecardedsullen|POPUNDER_INTERVAL|lastPopunderTime/)
 xnxx-sex-videos.com##+js(acs, setTimeout, window.location)
 xnxx-sex-videos.com##+js(ra, target|onclick, a[href^="/video/"])
-xoilackw.tv##+js(aopr, adsRedirectPopups)
 znews.vn##+js(aopr, adtimaConfig)
 ||bullionglidingscuttle.com/lv/esnk/2031811/code.js$domain=lxmanga.space,script,redirect=noop.js
 ||crumpetprankerstench.com/on.js$domain=lxmanga.space,script,redirect=noop.js
