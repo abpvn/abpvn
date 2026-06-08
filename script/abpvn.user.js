@@ -15,8 +15,8 @@
 // @grant       GM_registerMenuCommand
 // @include     http://*
 // @include     https://*
-// @version     2.3.34
-// @change-log  Add bachnguyetquang.online .ant-modal-root hide
+// @version     2.3.35
+// @change-log  Add go.kecapku.com auto  bypass
 // @run-at      document-end
 // @downloadURL https://update.greasyfork.org/scripts/9099/ABPVN%20AdsBlock.user.js
 // @updateURL https://update.greasyfork.org/scripts/9099/ABPVN%20AdsBlock.meta.js
@@ -85,9 +85,9 @@ var byPass = {
         setTimeout(() => location.href = link, 500);
     },
     quickByPassLink: function () {
-        var regex = /123link\..*|phlame.pw|megaurl\.*|www.123l\.*|vinaurl\.*|share4you.pro|doxeaz10.site|derow.win|linkviet.net|ez4linkss.com|ckk.ai|link\.codevn\.net|linksht.com|beta.shortearn.eu|getlink\.tienichmaytinh\.net|download.baominh.tech|download3s.net/;
+        var regex = /123link\..*|phlame.pw|megaurl\.*|www.123l\.*|vinaurl\.*|share4you.pro|doxeaz10.site|derow.win|linkviet.net|ez4linkss.com|ckk.ai|link\.codevn\.net|linksht.com|beta.shortearn.eu|getlink\.tienichmaytinh\.net|download.baominh.tech|download3s.net|go.kecapku.com/;
         var largeTimeoutHost = /share4you.pro|derow.win/;
-        var autoCaptchaOnlyList = /megaurl\.*|vinaurl\.*|doxeaz10.site|linkviet.net|ez4linkss.com|ckk.ai|link\.codevn\.net|beta.shortearn.eu|getlink\.tienichmaytinh\.net|download.baominh.tech|download3s.net/;
+        var autoCaptchaOnlyList = /megaurl\.*|vinaurl\.*|doxeaz10.site|linkviet.net|ez4linkss.com|ckk.ai|link\.codevn\.net|beta.shortearn.eu|getlink\.tienichmaytinh\.net|download.baominh.tech|download3s.net|go.kecapku.com/;
         if (regex.test(location.hostname)) {
             try {
                 var checkClick = function (mutation) {
