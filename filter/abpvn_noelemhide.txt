@@ -1,9 +1,9 @@
 [Adblock Plus 2.0]
-! Version: 20260612101505755
+! Version: 20260613183924450
 ! id: D4028CDD-3D39-4624-ACC7-8140F4EC3888
 ! Title: ABPVN List
-! Last modified: 12 Jun 2026 10:15:05 UTC+7
-! Diff-Path: patches/20260612101505755.patch#abpvn_noelemhide
+! Last modified: 13 Jun 2026 18:39:24 UTC+7
+! Diff-Path: patches/20260613183924450.patch#abpvn_noelemhide
 ! Diff-Expires: 60 minutes
 ! Expires: 1 days (update frequency)
 !
@@ -46,8 +46,8 @@ $popup,domain=truyenfull.today
 /core/*$script,domain=gamek.vn|genk.vn|kenh14.vn|cafef.vn|thanhnien.vn
 /disable-devtool.min.js$script
 /giadinhonline.vn/files/qc/*
-/i.imgur.com/*.gif$domain=www.1phim2.com|xoilaciiw.cc|vebozaa.cc|listnhacai88.com|rakhoive.cc
-/images/company/21.png$image,domain=vebozaa.cc|xoilaciiw.cc
+/i.imgur.com/*.gif$domain=www.1phim2.com|xoilaciiw.cc|vebozaa.cc|listnhacai88.com|rakhoivr.cc
+/images/company/21.png$image,domain=vebozaa.cc|xoilaciiw.cc|xoilacztj.tv
 /lv/esnk/*$script
 /newchill/*gif$image
 /player/jwplayer-*/vast.js$script
@@ -81,7 +81,7 @@ $popup,domain=truyenfull.today
 ||anime1s.com/_next/image?url=https%3A%2F%2F*.ibyteimg.com$image
 ||anime1s.com/_next/image?url=https%3A%2F%2Flh3.googleusercontent.com$image
 ||animehay05.site/sw.js$script,~third-party
-||animevietsub.by/ads/$script
+||animevietsub.pl/ads/$script
 ||animevietsub9.com/vast/$image
 ||api.anime3s.com/i9bet.php$xmlhttprequest,~third-party
 ||api.anime3s.com^*.gif$image,domain=xemphim.site|anime14.site
@@ -98,7 +98,8 @@ $popup,domain=truyenfull.today
 ||cdn-data.gtvplus.vn/banners/$image,domain=gametv.vn
 ||cdn.giavang.org/images/ads/$image,domain=giavang.org
 ||cdn.imgts.com^*.gif$image,domain=gavang33.tv
-||cdn.lfastcdn.com^*.gif$image,domain=bongdainfox.tv|rakhoive.cc|vebozaa.cc
+||cdn.lfastcdn.com/2026/04/dzzmi8.gif$image
+||cdn.lfastcdn.com^*.gif$image,domain=bongdainfox.tv|rakhoivr.cc|vebozaa.cc
 ||cdn.monkeydarchive.com/images/banner/$image,domain=monkeyd.net.vn
 ||cdn.webhoctienganh.com/asset/home/img/banner/$image,domain=webhoctienganh.com
 ||cf.shopee.vn/file/$image,domain=tctruyen.org
@@ -143,7 +144,7 @@ $popup,domain=truyenfull.today
 ||image-eu-na-ctnytbefjq.4shares.live/90link/*.gif$image
 ||image-eu-na-ctnytbefjq.4shares.live/90link/*.mp4$media
 ||image.cdend.com^*.gif$image,domain=rophim.moe
-||imagedelivery.net^$image,domain=motphimchilll.cc
+||imagedelivery.net^$image,domain=motphimchilll.biz
 ||images.tuyensinh247.com^*.gif$third-party
 ||img.iketqua.com^*.gif$image
 ||img.lazcdn.com^*.gif$image,domain=tctruyen.org
@@ -153,7 +154,7 @@ $popup,domain=truyenfull.today
 ||khotruyen.ac/banner_image/$image
 ||kienthuc.net.vn/*.ads
 ||laodong.vn/*QuangcaoOnline
-||lh3.googleusercontent.com/*=s0$image,domain=animevietsub.by|googleapiscdn.com
+||lh3.googleusercontent.com/*=s0$image,domain=animevietsub.pl|googleapiscdn.com
 ||listnhacai88.com^*.gif$image
 ||media.nghean24h.vn$image,domain=nghean24h.vn
 ||misseschloe.co.za^*.gif$image
@@ -367,7 +368,7 @@ docufind.org.uk/wp-content/themes/vlxx/js/*-adx.js$script
 ||cdn.adxcontent.com^
 ||cliphot69.shop$csp=script-src 'self' 'unsafe-inline'
 ||cliphot69.shop^*.gif$image
-||cliphotnewu.blog^*.gif$image
+||cliphotnewo.blog^*.gif$image
 ||cliphotvn69.com^*.gif$image
 ||cruncherpatiencestoreroom.com^$popup,domain=cap3.asia
 ||discordapp.$image,domain=phim18vip.site|thefaplive.com
@@ -375,8 +376,8 @@ docufind.org.uk/wp-content/themes/vlxx/js/*-adx.js$script
 ||hentaivn.show/banner_image/$image
 ||hhkungfu.us^*.gif$image,domain=z.chinav.sex|z.phimsexvn1.blog
 ||i.ibb.co^*.gif$image,domain=sex.javnong.cc
-||i.imgur.com^$image,domain=phim18hdxx.com|xamvn.skin
-||i.imgur.com^*.gif$image,domain=z.chinav.sex|quatvn.now
+||i.imgur.com^$image,domain=phim18hdxx.com|xamvn.pics
+||i.imgur.com^*.gif$image,domain=z.chinav.sex|quatvn.one
 ||img.congdongmassage.com/banner/$image,domain=congdongmassage.com
 ||javhdz.men/js/ads-javhd.js$script,~third-party
 ||javtopxx2.com^*.gif$image
@@ -384,13 +385,12 @@ docufind.org.uk/wp-content/themes/vlxx/js/*-adx.js$script
 ||lxmanga.space/storage/images/banners
 ||mangadm.cc$csp=script-src 'self' 'unsafe-inline' http
 ||ngaytho.me^*.gif
-||phim.xxxphap.net/ads/vn1.html$subdocument,domain=phim.xxxphap.net
 ||phimsexhayvne.com^*.gif$image
 ||phimsexsuong3x.net^*.gif$image
 ||qmanga.art/banner_image/$image
 ||qmh.mom/uploads/banners/$image,domain=cap3.asia
-||quatvn.now^*.gif$image
-||quoracdn.net^$image,domain=sexvietlive.net|phim18vip.site|pheclip.baby|sexmupxinh.net|sexhihi.cool|phevl.sex|fulllivehot.live|haysexvn.shop|chich69.mobi|viet69hay.site
+||quatvn.one^*.gif$image
+||quoracdn.net^$image,domain=sexvietlive.net|phim18vip.site|pheclip.baby|sexmupxinh.net|vnsexhihi.com|phevl.sex|fulllivehot.live|haysexvn.shop|chich69.mobi|viet69hay.site
 ||rphang.online^*.gif
 ||sayhentai.cx/assets/js/ads.js
 ||sayhentai.cx/storage/images/banner/$image
@@ -410,6 +410,7 @@ docufind.org.uk/wp-content/themes/vlxx/js/*-adx.js$script
 ||truyensextv.com^*.gif
 ||truyenvn.sbs^*banner$image
 ||video.s3viphub.shop/uploads/banners$image,domain=cap3.asia
+||vl.xxxphap.net/ads/vn1.html$subdocument,domain=vl.xxxphap.net
 ||www.hentaivnx.com/js/cla/2064711.js$script
 ||www.hentaivnx.com/js/modscript.js$script
 ||www.hentaivnx.com/js/random-click-opener.js$script
