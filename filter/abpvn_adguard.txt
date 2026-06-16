@@ -1,9 +1,9 @@
 [Adblock Plus 2.0]
-! Version: 20260616101449035
+! Version: 20260616134954756
 ! id: D4028CDD-3D39-4624-ACC7-8140F4EC3888
 ! Title: ABPVN List | AdGuard
-! Last modified: 16 Jun 2026 10:14:49 UTC+7
-! Diff-Path: patches/20260616101449035.patch#abpvn_adguard
+! Last modified: 16 Jun 2026 13:49:54 UTC+7
+! Diff-Path: patches/20260616134954756.patch#abpvn_adguard
 ! Diff-Expires: 60 minutes
 ! Expires: 1 days (update frequency)
 !
@@ -49,7 +49,7 @@
 /full-page-script.js$script
 /giadinhonline.vn/files/qc/*
 /i.imgur.com/*.gif$domain=www.1phim3.com|xoilackvc.tv|vebozam.cc|listnhacai88.com|rakhoivu.cc
-/images/company/21.png$image,domain=vebozam.cc|xoilackvc.tv|xoilaczhhz.tv
+/images/company/21.png$image,domain=vebozam.cc|xoilackvc.tv|xoilaczmmz.tv
 /lv/esnk/*$script,domain=~lxmanga.space
 /newchill/*gif$image
 /player/jwplayer-*/vast.js$script
@@ -1181,8 +1181,8 @@ xoilackvc.tv,vebozam.cc##.marquee-container
 xoilackvc.tv,vebozam.cc##.menu-top-nha-cai
 xoilackvc.tv,vebozam.cc##div[id^="dnn_"]
 xoilackvc.tv,vebozam.cc,rakhoivu.cc###wap_bottombanner
-xoilaczhhz.tv##.btn-company
-xoilaczhhz.tv##.xlz-ads-item
+xoilaczmmz.tv##.btn-company
+xoilaczmmz.tv##.xlz-ads-item
 xskt.com.vn,vieclam.tv###bnc0
 yanhh3d.cv,hhtm.net###catfish-ads
 ybox.vn###ybox-H1>div[style]
@@ -1274,7 +1274,9 @@ quykhu.com#@#[class^="div-gpt-ad"]
 ||mangadm.cc$csp=script-src 'self' 'unsafe-inline' http
 ||ngaytho.me^*.gif
 ||nrs6ffl9w.com^
+||phim2.xxxphap.net/ads/vn1.html$subdocument,domain=phim2.xxxphap.net
 ||phimsexhayvne.com^*.gif$image
+||phimsexnhat.me^*.gif$image
 ||phimsexsuong3x.net^*.gif$image
 ||qmanga.art/banner_image/$image
 ||quatvn.one^*.gif$image
@@ -1289,7 +1291,6 @@ quykhu.com#@#[class^="div-gpt-ad"]
 ||sexlive.biz/mb66.mp4$media,~third-party
 ||sexlive.biz^*.avif$~third-party
 ||sexmupxinh.net^*.gif$image,domain=sexmupxinh.net
-||sexnhat4k.com^*.gif$image
 ||sexviet88.it.com^*.gif
 ||sieukhung.net^*.gif$image
 ||stream.cliphot69.one/mb66.mp4$media,domain=sexlive.biz
@@ -1299,7 +1300,6 @@ quykhu.com#@#[class^="div-gpt-ad"]
 ||truyensextv.com^*.gif
 ||truyenvn.sbs^*banner$image
 ||video.s3viphub.shop/uploads/banners$image,domain=cap3.asia
-||vl.xxxphap.net/ads/vn1.html$subdocument,domain=vl.xxxphap.net
 ||www.displayvertising.com^
 ||www.hentaivnx.com/js/cla/2064711.js$script
 ||www.hentaivnx.com/js/modscript.js$script
@@ -1358,6 +1358,8 @@ phim18vip.site,pheclip.my###pc-preload-modal
 phim18vip.site,pheclip.my##.in.fade.modal-backdrop
 phim18vip.site,pheclip.my##.quang-cao
 phim18vip.site,phevl.men###popup
+phim2.xxxphap.net###divExoLayerWrapper
+phim2.xxxphap.net##.sdzhead
 phimsexlive.net,sexmupxinh.net,vnsexhihi.com,cliphot234.com##.xx-ads
 phimsexsuong3x.net,vnsexhihi.com,javhdz.mobi,laalmirchitakeaway.co.uk##.catfish-bottom
 play.zpic.live##.btm_bar
@@ -1419,8 +1421,6 @@ vailonxx.me##.vailo-under-navbar-mobile
 vi.xnxx.studio,trangsexdam.net,vlxx.rip###f186fb23a33995d91ce3c2212189178c8
 viet69hay.site###castfish
 viet69vn.at,viet69.be##.footer-fixed-br-container
-vl.xxxphap.net###divExoLayerWrapper
-vl.xxxphap.net##.sdzhead
 vlxx.rip,trangsexdam.net##.hd-tube-desktop
 vlxx.rip,trangsexdam.net##.hd-tube-mobile
 vlxxhot.net,vailonxx.me###ab_ctl
@@ -1486,7 +1486,7 @@ cap3.asia#%#//scriptlet("prevent-addEventListener", "fullscreenchange", "e.targe
 cap3.asia#%#//scriptlet("set-constant", "open", "noopFunc")
 cdn.codexa.fun#%#//scriptlet("abort-current-inline-script", "$", "arrDirectLink")
 chotlo3s.com#$##header {margin-top: 0!important}
-cliphot234.com,sexnhat4k.com#%#//scriptlet("abort-current-inline-script", "window.addEventListener", "Ads")
+cliphot234.com,phimsexnhat.me#%#//scriptlet("abort-current-inline-script", "window.addEventListener", "Ads")
 cliphubs.com,viet69hay.site#%#//scriptlet("abort-current-inline-script", "document.addEventListener", "pop")
 clipphot.vip#%#//scriptlet("abort-current-inline-script", "document.addEventListener", "POP")
 cmangax17.com#%#//scriptlet("prevent-setTimeout", "ads_num")
