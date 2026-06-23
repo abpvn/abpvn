@@ -1,9 +1,9 @@
 [Adblock Plus 2.0]
-! Version: 20260623132530424
+! Version: 20260623161339244
 ! id: D4028CDD-3D39-4624-ACC7-8140F4EC3888
 ! Title: ABPVN List | AdGuard
-! Last modified: 23 Jun 2026 13:25:30 UTC+7
-! Diff-Path: patches/20260623132530424.patch#abpvn_adguard
+! Last modified: 23 Jun 2026 16:13:39 UTC+7
+! Diff-Path: patches/20260623161339244.patch#abpvn_adguard
 ! Diff-Expires: 60 minutes
 ! Expires: 1 days (update frequency)
 !
@@ -988,6 +988,7 @@ docufind.org.uk/wp-content/themes/vlxx/js/*-adx.js$script
 ||mangadm.cc$csp=script-src 'self' 'unsafe-inline' http
 ||ngaytho.me^*.gif
 ||phimsexhayvne.com^*.gif$image
+||phimsexnhat3x.com^*.gif$image
 ||phimsexsuong3x.net^*.gif$image
 ||qmanga.art/banner_image/$image
 ||qmh.autos/uploads/banners/$image,domain=cap3.asia
@@ -1003,7 +1004,6 @@ docufind.org.uk/wp-content/themes/vlxx/js/*-adx.js$script
 ||sexlive.biz/mb66.mp4$media,~third-party
 ||sexlive.biz^*.avif$~third-party
 ||sexmupxinh.net^*.gif$image,domain=sexmupxinh.net
-||sexnhat4k.me^*.gif$image
 ||sexviet88.it.com^*.gif
 ||stream.cliphot69.one/mb66.mp4$media,domain=sexlive.biz
 ||thiendia3.com/banner/$image
@@ -1166,7 +1166,7 @@ cap3.asia#%#//scriptlet("prevent-addEventListener", "click", "setTimeout")
 cap3.asia#%#//scriptlet("prevent-addEventListener", "fullscreenchange", "e.target")
 cdn.codexa.fun#%#//scriptlet("abort-current-inline-script", "$", "arrDirectLink")
 chotlo3s.com#$##header {margin-top: 0!important}
-cliphotgirl.com,sexnhat4k.me#%#//scriptlet("abort-current-inline-script", "window.addEventListener", "Ads")
+cliphotgirl.com,phimsexnhat3x.com#%#//scriptlet("abort-current-inline-script", "window.addEventListener", "Ads")
 cliphubs.com,viet69hay.site,clipphot.vip,cliphotgirl.com#%#//scriptlet("abort-current-inline-script", "document.addEventListener", "pop")
 cmangax17.com#%#//scriptlet("prevent-setTimeout", "ads_num")
 dualeotruyenpt.com#%#//scriptlet("abort-current-inline-script", "document.addEventListener", "popunder")
