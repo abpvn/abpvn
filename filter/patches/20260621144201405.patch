@@ -1,11 +1,11 @@
-diff name:abpvn lines:75 checksum:2d65994320
+diff name:abpvn lines:91 checksum:cc68ddd86e
 d2 1
 a2 1
-! Version: 20260623161339244
+! Version: 20260623235304194
 d5 2
 a6 2
-! Last modified: 23 Jun 2026 16:13:39 UTC+7
-! Diff-Path: patches/20260623161339244.patch#abpvn
+! Last modified: 23 Jun 2026 23:53:04 UTC+7
+! Diff-Path: patches/20260623235304194.patch#abpvn
 d32 1
 d130 1
 a130 1
@@ -48,20 +48,36 @@ d983 1
 a983 2
 ||ads.bizwd.net^$image,domain=bannygo.com
 ||agtcmuohbt.in^
+d986 1
+a986 1
+||cap3.pics/api/ads$xmlhttprequest
 d991 1
 a991 1
 ||cliphotgirl.com^*.gif$image
+d993 1
+a993 1
+||cruncherpatiencestoreroom.com^$popup,domain=cap3.pics
 a1009 1
 ||phimsexnhat3x.com^*.gif$image
+d1012 1
+a1012 1
+||qmh.autos/uploads/banners/$image,domain=cap3.pics
 d1014 1
 a1014 1
 ||quoracdn.net^$image,domain=clip3xhay.net|phim18vip.site|pheclip.fit|sexmupxinh.net|vnsexhihi.net|phevl.top|fulllivehot.live|haysexvn.shop|chichvn.men|viet69hay.site
 d1025 1
+d1032 1
+a1032 1
+||video.s3viphub.shop/uploads/banners$image,domain=cap3.pics
 d1045 2
 a1046 2
 bannygo.com###popup-ad-box
 bannygo.com##.banner-ad
-a1059 1
+d1057 3
+a1059 4
+cap3.pics##.global-sticky-ads
+cap3.pics##.header>app-banner
+cap3.pics##.p-4.justify-center.items-center.flex.backdrop-blur-sm.bg-black\/80.z-\[9999\].inset-0.fixed
 clip3xhay.net,sexmupxinh.net,vnsexhihi.net,cliphotgirl.com##.xx-ads
 d1061 1
 a1061 2
@@ -74,14 +90,14 @@ sexphimhayo.pro,sexhayvl.co.uk##.quangcaomobile
 d1152 1
 a1153 1
 xamvn.beer,cliphotgirl.com##.float-contact2
-diff name:abpvn_adguard lines:92 checksum:b6cb1c98c5
+diff name:abpvn_adguard lines:113 checksum:e4c7db41af
 d2 1
 a2 1
-! Version: 20260623161339244
+! Version: 20260623235304194
 d5 2
 a6 2
-! Last modified: 23 Jun 2026 16:13:39 UTC+7
-! Diff-Path: patches/20260623161339244.patch#abpvn_adguard
+! Last modified: 23 Jun 2026 23:53:04 UTC+7
+! Diff-Path: patches/20260623235304194.patch#abpvn_adguard
 d30 1
 d128 1
 a128 1
@@ -124,20 +140,36 @@ d966 1
 a966 2
 ||ads.bizwd.net^$image,domain=bannygo.com
 ||agtcmuohbt.in^
+d969 1
+a969 1
+||cap3.pics/api/ads$xmlhttprequest
 d974 1
 a974 1
 ||cliphotgirl.com^*.gif$image
+d976 1
+a976 1
+||cruncherpatiencestoreroom.com^$popup,domain=cap3.pics
 a992 1
 ||phimsexnhat3x.com^*.gif$image
+d995 1
+a995 1
+||qmh.autos/uploads/banners/$image,domain=cap3.pics
 d997 1
 a997 1
 ||quoracdn.net^$image,domain=clip3xhay.net|phim18vip.site|pheclip.fit|sexmupxinh.net|vnsexhihi.net|phevl.top|fulllivehot.live|haysexvn.shop|chichvn.men|viet69hay.site
 d1008 1
+d1015 1
+a1015 1
+||video.s3viphub.shop/uploads/banners$image,domain=cap3.pics
 d1028 2
 a1029 2
 bannygo.com###popup-ad-box
 bannygo.com##.banner-ad
-a1042 1
+d1040 3
+a1042 4
+cap3.pics##.global-sticky-ads
+cap3.pics##.header>app-banner
+cap3.pics##.p-4.justify-center.items-center.flex.backdrop-blur-sm.bg-black\/80.z-\[9999\].inset-0.fixed
 clip3xhay.net,sexmupxinh.net,vnsexhihi.net,cliphotgirl.com##.xx-ads
 d1044 1
 a1044 2
@@ -150,7 +182,12 @@ sexphimhayo.pro,sexhayvl.co.uk##.quangcaomobile
 d1135 1
 a1136 1
 xamvn.beer,cliphotgirl.com##.float-contact2
-d1168 1
+d1164 5
+a1168 4
+cap3.pics#%#//scriptlet("prevent-addEventListener", "click", "d", "elements", ".art-control-fullscreen")
+cap3.pics#%#//scriptlet("prevent-addEventListener", "click", "e.target")
+cap3.pics#%#//scriptlet("prevent-addEventListener", "click", "setTimeout")
+cap3.pics#%#//scriptlet("prevent-addEventListener", "fullscreenchange", "e.target")
 d1171 3
 a1173 2
 cliphotgirl.com,phimsexnhat3x.com#%#//scriptlet("abort-current-inline-script", "window.addEventListener", "Ads")
@@ -160,21 +197,21 @@ a1176 1
 dualeotruyenpt.com,clip3xhay.net,cliphot69.shop,doctruyen3qhub1.com,qmanga.art,hentaivkl.com,buomtv.life,truyenvn.sbs,javtiful.com,quatvn.biz,phimsexhayvne.com,phim18hdxx.com,sexviet88.it.com,sexmupxinh.net,demo.14412882.com,hhtq5.vip,sexdiary.club,vn2.xvideos69.xxx,umetruyenz.org,damconuong.mom,truyenqqko.com,phimsexsuong3x.net,sayhentai.cx,lxmanga.space,phimlongtieng.net,www.sieutamphim.pro,vevocloud.com,sex.xinh3x.me,viet69.be,viet69vn.at,misskon.com,luottruyen9.com#%#//scriptlet("abort-current-inline-script", "WebAssembly", "instantiate")
 d1178 1
 a1178 1
-freeplayervideo.com,abysscdn.com,player-cdn.com,www.bachnguyetquang.online,hopphim.online,streamc.xyz,cap3.asia#%#//scriptlet("set-constant", "open", "noopFunc")
+freeplayervideo.com,abysscdn.com,player-cdn.com,www.bachnguyetquang.online,hopphim.online,streamc.xyz,cap3.pics#%#//scriptlet("set-constant", "open", "noopFunc")
 d1228 1
 a1228 1
 rophimzz.online,motphimz.ac#%#//scriptlet("prevent-addEventListener", "click", "ads")
 d1239 1
 a1239 1
 truyensieuhay.com,xemphim.site,quangcaoyenbai.com,phimchill.life,thefaplive.com,mv.dailyphimz.com,mv.phimbathu.one,vnsexhihi.net,anime47.best,teamlanhlung8.shop,phimhdc.com,honghotduongpho.vn,chichvn.men,comong.info,qmhsex.com#%#//scriptlet("abort-on-property-read", "document.cookie")
-diff name:abpvn_content_blocker lines:75 checksum:51bb2362bc
+diff name:abpvn_content_blocker lines:91 checksum:d0ef3f5f09
 d2 1
 a2 1
-! Version: 20260623161339244
+! Version: 20260623235304194
 d5 2
 a6 2
-! Last modified: 23 Jun 2026 16:13:39 UTC+7
-! Diff-Path: patches/20260623161339244.patch#abpvn_content_blocker
+! Last modified: 23 Jun 2026 23:53:04 UTC+7
+! Diff-Path: patches/20260623235304194.patch#abpvn_content_blocker
 d32 1
 d130 1
 a130 1
@@ -217,20 +254,36 @@ d983 1
 a983 2
 ||ads.bizwd.net^$image,domain=bannygo.com
 ||agtcmuohbt.in^
+d986 1
+a986 1
+||cap3.pics/api/ads$xmlhttprequest
 d991 1
 a991 1
 ||cliphotgirl.com^*.gif$image
+d993 1
+a993 1
+||cruncherpatiencestoreroom.com^$popup,domain=cap3.pics
 a1009 1
 ||phimsexnhat3x.com^*.gif$image
+d1012 1
+a1012 1
+||qmh.autos/uploads/banners/$image,domain=cap3.pics
 d1014 1
 a1014 1
 ||quoracdn.net^$image,domain=clip3xhay.net|phim18vip.site|pheclip.fit|sexmupxinh.net|vnsexhihi.net|phevl.top|fulllivehot.live|haysexvn.shop|chichvn.men|viet69hay.site
 d1025 1
+d1032 1
+a1032 1
+||video.s3viphub.shop/uploads/banners$image,domain=cap3.pics
 d1045 2
 a1046 2
 bannygo.com###popup-ad-box
 bannygo.com##.banner-ad
-a1059 1
+d1057 3
+a1059 4
+cap3.pics##.global-sticky-ads
+cap3.pics##.header>app-banner
+cap3.pics##.p-4.justify-center.items-center.flex.backdrop-blur-sm.bg-black\/80.z-\[9999\].inset-0.fixed
 clip3xhay.net,sexmupxinh.net,vnsexhihi.net,cliphotgirl.com##.xx-ads
 d1061 1
 a1061 2
@@ -243,14 +296,14 @@ sexphimhayo.pro,sexhayvl.co.uk##.quangcaomobile
 d1152 1
 a1153 1
 xamvn.beer,cliphotgirl.com##.float-contact2
-diff name:abpvn_noelemhide lines:31 checksum:eb549c5eef
+diff name:abpvn_noelemhide lines:43 checksum:8e97022926
 d2 1
 a2 1
-! Version: 20260623161339244
+! Version: 20260623235304194
 d5 2
 a6 2
-! Last modified: 23 Jun 2026 16:13:39 UTC+7
-! Diff-Path: patches/20260623161339244.patch#abpvn_noelemhide
+! Last modified: 23 Jun 2026 23:53:04 UTC+7
+! Diff-Path: patches/20260623235304194.patch#abpvn_noelemhide
 d32 1
 d130 1
 a130 1
@@ -266,23 +319,35 @@ d360 1
 a360 2
 ||ads.bizwd.net^$image,domain=bannygo.com
 ||agtcmuohbt.in^
+d363 1
+a363 1
+||cap3.pics/api/ads$xmlhttprequest
 d368 1
 a368 1
 ||cliphotgirl.com^*.gif$image
+d370 1
+a370 1
+||cruncherpatiencestoreroom.com^$popup,domain=cap3.pics
 a386 1
 ||phimsexnhat3x.com^*.gif$image
+d389 1
+a389 1
+||qmh.autos/uploads/banners/$image,domain=cap3.pics
 d391 1
 a391 1
 ||quoracdn.net^$image,domain=clip3xhay.net|phim18vip.site|pheclip.fit|sexmupxinh.net|vnsexhihi.net|phevl.top|fulllivehot.live|haysexvn.shop|chichvn.men|viet69hay.site
 d402 1
-diff name:abpvn_ublock lines:92 checksum:7a5a6612ae
+d409 1
+a409 1
+||video.s3viphub.shop/uploads/banners$image,domain=cap3.pics
+diff name:abpvn_ublock lines:113 checksum:42b347e47e
 d2 1
 a2 1
-! Version: 20260623161339244
+! Version: 20260623235304194
 d5 2
 a6 2
-! Last modified: 23 Jun 2026 16:13:39 UTC+7
-! Diff-Path: patches/20260623161339244.patch#abpvn_ublock
+! Last modified: 23 Jun 2026 23:53:04 UTC+7
+! Diff-Path: patches/20260623235304194.patch#abpvn_ublock
 d30 1
 d128 1
 a128 1
@@ -325,20 +390,36 @@ d965 1
 a965 2
 ||ads.bizwd.net^$image,domain=bannygo.com
 ||agtcmuohbt.in^
+d968 1
+a968 1
+||cap3.pics/api/ads$xmlhttprequest
 d973 1
 a973 1
 ||cliphotgirl.com^*.gif$image
+d975 1
+a975 1
+||cruncherpatiencestoreroom.com^$popup,domain=cap3.pics
 a991 1
 ||phimsexnhat3x.com^*.gif$image
+d994 1
+a994 1
+||qmh.autos/uploads/banners/$image,domain=cap3.pics
 d996 1
 a996 1
 ||quoracdn.net^$image,domain=clip3xhay.net|phim18vip.site|pheclip.fit|sexmupxinh.net|vnsexhihi.net|phevl.top|fulllivehot.live|haysexvn.shop|chichvn.men|viet69hay.site
 d1007 1
+d1014 1
+a1014 1
+||video.s3viphub.shop/uploads/banners$image,domain=cap3.pics
 d1027 2
 a1028 2
 bannygo.com###popup-ad-box
 bannygo.com##.banner-ad
-a1041 1
+d1039 3
+a1041 4
+cap3.pics##.global-sticky-ads
+cap3.pics##.header>app-banner
+cap3.pics##.p-4.justify-center.items-center.flex.backdrop-blur-sm.bg-black\/80.z-\[9999\].inset-0.fixed
 clip3xhay.net,sexmupxinh.net,vnsexhihi.net,cliphotgirl.com##.xx-ads
 d1043 1
 a1043 2
@@ -351,7 +432,12 @@ sexphimhayo.pro,sexhayvl.co.uk##.quangcaomobile
 d1134 1
 a1135 1
 xamvn.beer,cliphotgirl.com##.float-contact2
-d1167 1
+d1163 5
+a1167 4
+cap3.pics##+js(aeld, click, d, elements, .art-control-fullscreen)
+cap3.pics##+js(aeld, click, e.target)
+cap3.pics##+js(aeld, click, setTimeout)
+cap3.pics##+js(aeld, fullscreenchange, e.target)
 d1170 3
 a1172 2
 cliphotgirl.com,phimsexnhat3x.com##+js(acs, window.addEventListener, Ads)
@@ -361,7 +447,7 @@ a1175 1
 dualeotruyenpt.com,clip3xhay.net,cliphot69.shop,doctruyen3qhub1.com,qmanga.art,hentaivkl.com,buomtv.life,truyenvn.sbs,javtiful.com,quatvn.biz,phimsexhayvne.com,phim18hdxx.com,sexviet88.it.com,sexmupxinh.net,demo.14412882.com,hhtq5.vip,sexdiary.club,vn2.xvideos69.xxx,umetruyenz.org,damconuong.mom,truyenqqko.com,phimsexsuong3x.net,sayhentai.cx,lxmanga.space,phimlongtieng.net,www.sieutamphim.pro,vevocloud.com,sex.xinh3x.me,viet69.be,viet69vn.at,misskon.com,luottruyen9.com##+js(acs, WebAssembly, instantiate)
 d1177 1
 a1177 1
-freeplayervideo.com,abysscdn.com,player-cdn.com,www.bachnguyetquang.online,hopphim.online,streamc.xyz,cap3.asia##+js(set, open, noopFunc)
+freeplayervideo.com,abysscdn.com,player-cdn.com,www.bachnguyetquang.online,hopphim.online,streamc.xyz,cap3.pics##+js(set, open, noopFunc)
 d1226 1
 a1226 1
 rophimzz.online,motphimz.ac##+js(aeld, click, ads)
