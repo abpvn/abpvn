@@ -1,9 +1,9 @@
 [Adblock Plus 2.0]
-! Version: 20260625161145312
+! Version: 20260626101342384
 ! id: D4028CDD-3D39-4624-ACC7-8140F4EC3888
 ! Title: ABPVN List
-! Last modified: 25 Jun 2026 16:11:45 UTC+7
-! Diff-Path: patches/20260625161145312.patch#abpvn_noelemhide
+! Last modified: 26 Jun 2026 10:13:42 UTC+7
+! Diff-Path: patches/20260626101342384.patch#abpvn_noelemhide
 ! Diff-Expires: 60 minutes
 ! Expires: 1 days (update frequency)
 !
@@ -95,7 +95,6 @@ $popup,domain=truyenfull.today
 ||api.anime3s.com^*.gif$image,domain=xemphim.site|anime14.site
 ||api.onflix.xyz/api/ads/$xmlhttprequest
 ||api.ybox.vn/graphql?query=*Ads
-||astons-online.co.uk/images/banners/$image
 ||baomoi.com$csp=script-src data: blob: * 'self' 'unsafe-inline'
 ||baonga.com/FileUpload/Images/*banner
 ||blog.abit.vn/wp-content/uploads/2020/05/abit_$image
@@ -132,6 +131,7 @@ $popup,domain=truyenfull.today
 ||github.com/user-attachments/assets/$image,domain=phim24k.top|jophim.top|rophimz.top
 ||gocmod.com/*code.js$script,domain=gocmod.com
 ||googleusercontent.com^$domain=hhtq.hair
+||healinghandsltd.com/images/banners/$image
 ||hhtq.ceo/ads/$script,~third-party
 ||hocaz.vn/_next/*banner$image,~third-party
 ||hoiquan6.tv^*.gif$image
@@ -190,7 +190,7 @@ $popup,domain=truyenfull.today
 ||quaivatdienanh.com/*banner$image
 ||quechoa9.live/images/partners/$image
 ||quoracdn.net^$image,domain=www.1phim6.com|phimlongtieng.net
-||rophimzz.online^*.gif,~third-party
+||rophims.cc^*.gif,~third-party
 ||run.vn/widget$script,~third-party
 ||s.lazada.vn^$popup,domain=chillphimmoizz.org
 ||s2.truyentot.com^*.gif$image,domain=hhtq13.vip|hhtq3d.net|hhtq5.vip|hhvsub1.com|hhvietsub.com
@@ -204,11 +204,7 @@ $popup,domain=truyenfull.today
 ||static.ybox.vn^*.gif$domain=ybox.vn
 ||storage.fshare.vn/images/$third-party
 ||subnhanh.plus^*.gif$image
-||sv2.hoiquan2.live/banners/$image
-||sv2.thiendinh1.live/banners/$image
-||sv2.thiendinh2.live/banners/$image
 ||sv2.thiendinh3.live/banners/$image
-||sv2.xaycon1.live/banners/$image
 ||tailieuvnu.com/wp-content/uploads/2022/12/28/shopee-2*.png$image
 ||tamquoc3.tv^*.gif$image
 ||taoanhdep.com$csp=script-src 'self' 'unsafe-inline' data: https:
@@ -502,7 +498,6 @@ $popup,domain=truyenfull.today
 ||otieu.com^
 ||oursty.com^
 ||outbrain.com^
-||owhtcuwab.in^
 ||perigshfnon.com^
 ||pertawee.net^
 ||pierisrapgae.com^
@@ -625,7 +620,7 @@ $popup,domain=truyenfull.today
 /player/vast.js$script
 /wp-content/uploads/*.gif$image,domain=www.hayvn.net|tuoinung.cfd
 ||a.magsrv.com^
-||ads.bizwd.net^$image,domain=bannygo.com
+||ads.bizwd.net^$image,domain=carolynmcmanus.com
 ||agtcmuohbt.in^
 ||androidduvetscribble.com^
 ||avalanchetremorunfilled.com^
@@ -633,7 +628,7 @@ $popup,domain=truyenfull.today
 ||blurbreimbursetrombone.com^
 ||bullionglidingscuttle.com/lv/esnk/2031811/code.js$domain=lxmanga.space,script,rewrite=abp-resource:blank-js
 ||buomtv.life/palivn/ad/$image,~third-party
-||cap3.pics/api/ads$xmlhttprequest
+||cap3.beer/api/ads$xmlhttprequest
 ||cdn-01.w3img.com^*.gif$image,domain=vi.xnxx.studio|vlxx.rip
 ||cdn.adxcontent.com^
 ||chaseherbalpasty.com^
@@ -647,7 +642,7 @@ $popup,domain=truyenfull.today
 ||clobberprocurertightwad.com^
 ||creative.mnaspm.com^
 ||crumpetprankerstench.com/on.js$domain=lxmanga.space,script,rewrite=abp-resource:blank-js
-||cruncherpatiencestoreroom.com^$popup,domain=cap3.pics
+||cruncherpatiencestoreroom.com^$popup,domain=cap3.beer
 ||dance.bytecdn.cfd^*.gif$image,domain=qmhsex.cc
 ||darnobedienceupscale.com^
 ||diarrhoeaeaglesunday.com^
@@ -659,10 +654,10 @@ $popup,domain=truyenfull.today
 ||gamer18.net^*.gif$image
 ||go.xlviirdr.com^
 ||hentaivn.show/banner_image/$image
-||hhkungfu.us^*.gif$image,domain=z.chinav.sex|z.phimsexvn1.blog
+||hhkungfu.us^*.gif$image,domain=z.chinav.sex|x.phimsexvn1.co.uk
 ||i.ibb.co^*.gif$image,domain=sex.javnong.cc
-||i.imgur.com^$image,domain=phim18hdxx.com|xamvn.beer
-||i.imgur.com^*.gif$image,domain=z.chinav.sex|quatvn.biz
+||i.imgur.com^$image,domain=phim18hdxx.com|xamvn.makeup
+||i.imgur.com^*.gif$image,domain=z.chinav.sex|quatvn.org
 ||img.congdongmassage.com/banner/$image,domain=congdongmassage.com
 ||javhdz.mobi/js/ads-javhd.js$script,~third-party
 ||javtopxx2.com^*.gif$image
@@ -678,26 +673,26 @@ $popup,domain=truyenfull.today
 ||phimsexhayvne.com^*.gif$image
 ||phimsexsuong3x.net^*.gif$image
 ||qmanga.art/banner_image/$image
-||quatvn.biz^*.gif$image
-||quoracdn.net^$image,domain=websexviet.net|phim18vip.site|pheclip.fit|sexmupxinh.net|xemsexhihi.biz|phevl.top|fulllivehot.live|haysexvn.click|chichvn.men|viet69hay.site
+||quatvn.org^*.gif$image
+||quoracdn.net^$image,domain=sexnao.net|phim18vip.site|pheclip.fit|sexmupxinh.net|xemsexhihi.biz|phevl.top|fulllivehot.live|haysexvn.shop|chichvn.men|viet69hay.site
 ||rphang.online^*.gif
 ||sayhentai.cx/assets/js/ads.js
 ||sayhentai.cx/storage/images/banner/$image
 ||seccc.jasjas.xyz^
 ||sexdiaryx.to$csp=script-src 'self' 'unsafe-eval'
-||sexlive.biz/_next/image?url=%2Fimages%2F*.avif&w=*&q=75$image
-||sexlive.biz/_next/image?url=*.gif$image
-||sexlive.biz/mb66.mp4$media,~third-party
-||sexlive.biz^*.avif$~third-party
+||sexlive.us/_next/image?url=%2Fimages%2F*.avif&w=*&q=75$image
+||sexlive.us/_next/image?url=*.gif$image
+||sexlive.us/mb66.mp4$media,~third-party
+||sexlive.us^*.avif$~third-party
 ||sexmupxinh.net^*.gif$image,domain=sexmupxinh.net
 ||sexviet88.it.com^*.gif
-||stream.cliphot69.one/mb66.mp4$media,domain=sexlive.biz
+||stream.cliphot69.one/mb66.mp4$media,domain=sexlive.us
 ||t7cp4fldl.com^
 ||thiendia3.com/banner/$image
 ||truyensextv.com/anh/$image
 ||truyensextv.com^*.gif
 ||truyenvn.sbs^*banner$image
-||video.s3viphub.shop/uploads/banners$image,domain=cap3.pics
+||video.s3viphub.shop/uploads/banners$image,domain=cap3.beer
 ||www.displayvertising.com^
 ||www.hayvn.net^*.gif$image
 ||www.hentaivnx.com/js/cla/2064711.js$script
@@ -705,8 +700,8 @@ $popup,domain=truyenfull.today
 ||www.hentaivnx.com/js/random-click-opener.js$script
 ||www.vipads.live/vn/$domain=lxmanga.space,script,rewrite=abp-resource:blank-js
 ||xamer.xyz/styles/file/$image
-||xcdn.cloud/files/photos/CPD_____ng_k___2_1_2_1781171671.gif$image,domain=xamvn.beer
-||xcdn.cloud/files/photos/Group_1_copy_1778253584.gif$image,domain=xamvn.beer
+||xcdn.cloud/files/photos/CPD_____ng_k___2_1_2_1781171671.gif$image,domain=xamvn.makeup
+||xcdn.cloud/files/photos/Group_1_copy_1778253584.gif$image,domain=xamvn.makeup
 ||xfast.sbs/media/$image,domain=fullcliphot.org|fulllivehot.live
 ||xfast.sbs^*.gif$image,domain=clipphot.vip
 ||xnhau.blog^$media,domain=xnhau.kim
