@@ -1,9 +1,9 @@
 [Adblock Plus 2.0]
-! Version: 20260726170256427
+! Version: 20260726210137751
 ! id: D4028CDD-3D39-4624-ACC7-8140F4EC3888
 ! Title: ABPVN List | Ublock Origin
-! Last modified: 26 Jul 2026 17:02:56 UTC+7
-! Diff-Path: patches/20260726170256427.patch#abpvn_ublock
+! Last modified: 26 Jul 2026 21:01:37 UTC+7
+! Diff-Path: patches/20260726210137751.patch#abpvn_ublock
 ! Diff-Expires: 60 minutes
 ! Expires: 1 days (update frequency)
 !
@@ -1196,6 +1196,7 @@ quykhu.com#@#[class^="div-gpt-ad"]
 ||cliphot69.click^*.gif$image
 ||cliphotvn69.com^*.gif$image
 ||clobberprocurertightwad.com^
+||content.mediacdn.me^*.gif$image
 ||creative.mnaspm.com^
 ||crumpetprankerstench.com/on.js$domain=lxmanga.space,script,rewrite=abp-resource:blank-js
 ||cruncherpatiencestoreroom.com^$popup,domain=cap3.boats
@@ -1221,6 +1222,7 @@ quykhu.com#@#[class^="div-gpt-ad"]
 ||js.onclckmn.com^
 ||kgfjrb711.com^
 ||laalmirchitakeaway.co.uk^*.gif
+||lmovixat.in^
 ||lxmanga.space/storage/images/banners
 ||mangadm.cc$csp=script-src 'self' 'unsafe-inline' http
 ||ngaytho.me^*.gif
@@ -1262,6 +1264,7 @@ quykhu.com#@#[class^="div-gpt-ad"]
 ||ybs2ffs7v.com^
 ||zr.mezcalumlaut.com^
 !---------- ABPVN Adult Element Hide ---------------
+18tube.my##.ads-gated
 buomtv.baby##._1vguhxv.cosll6e._3yp41v.row-3.lgy>._1lbf8q9
 buomtv.baby##._1vguhxv.cwzsl22.czdj0j5.c1skg1w3.c1q1n9rc.c1f8a55r.c2wbcgy.c1qs0lzc.cq980mc.cosll6e.cjq7bud.c10dklm2.c1xtmnwt.dlnefd1
 buomtv.baby##._9xtpcl.c1mnguco.c9pdtme.c1q1n9rc.c1f8a55r.c2wbcgy.c1qs0lzc.cq980mc.cosll6e.cxngf0m.c199xq07.c1xtmnwt
@@ -1416,6 +1419,7 @@ zpic.st##.ad-banner
 ||abr.ge^
 ||vibeaconstr.onezapp.com^
 ! ---------Rule only for uBlock Origin------
+18tube.my##+js(acs, document.addEventListener, ads)
 anime47.best##+js(nostif, Adblock)
 anime47.best##.affiliate-swiper
 animehay10.site##+js(acs, Number, ;break;case)
