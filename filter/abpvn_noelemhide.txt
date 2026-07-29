@@ -1,9 +1,9 @@
 [Adblock Plus 2.0]
-! Version: 20260729081456131
+! Version: 20260730001532388
 ! id: D4028CDD-3D39-4624-ACC7-8140F4EC3888
 ! Title: ABPVN List
-! Last modified: 29 Jul 2026 08:14:56 UTC+7
-! Diff-Path: patches/20260729081456131.patch#abpvn_noelemhide
+! Last modified: 30 Jul 2026 00:15:32 UTC+7
+! Diff-Path: patches/20260730001532388.patch#abpvn_noelemhide
 ! Diff-Expires: 60 minutes
 ! Expires: 1 days (update frequency)
 !
@@ -87,7 +87,6 @@ $popup,domain=truyenfull.live
 ||anime14.site^*.gif
 ||anime1s.com/_next/image?url=https%3A%2F%2F*.ibyteimg.com$image
 ||anime1s.com/_next/image?url=https%3A%2F%2Flh3.googleusercontent.com$image
-||anime47.onl^*.gif$image
 ||animehay10.site/ad_banner/$image
 ||animehay10.site/sw.js$script,~third-party
 ||animevietsub.ad/ads/$script
@@ -96,6 +95,7 @@ $popup,domain=truyenfull.live
 ||api.anime3s.com^*.gif$image,domain=xemphim.site|anime14.site
 ||api.onflix.xyz/api/ads/$xmlhttprequest
 ||api.ybox.vn/graphql?query=*Ads
+||baddaythemovie.co.uk^*.gif$image
 ||baomoi.com$csp=script-src data: blob: * 'self' 'unsafe-inline'
 ||baonga.com/FileUpload/Images/*banner
 ||blog.abit.vn/wp-content/uploads/2020/05/abit_$image
@@ -134,6 +134,7 @@ $popup,domain=truyenfull.live
 ||github.com/user-attachments/assets/$image,domain=phim24k.top|jophim.top|rophimz.top
 ||gocmod.com/*code.js$script,domain=gocmod.com
 ||googleusercontent.com^$domain=hhtq.hair
+||hartglobal.co.uk/images/banners/$image
 ||hhtq.sh/ads/$script,~third-party
 ||hocaz.vn/_next/*banner$image,~third-party
 ||hsctvn.com/uploads/products/$~third-party,image
@@ -149,7 +150,7 @@ $popup,domain=truyenfull.live
 ||iamcdn.net/players/playhydraxs.min.js
 ||iili.io^*.gif$image,domain=phimtuoitho.tv
 ||image.cdend.com^*.gif$image,domain=rophim.moe
-||imagedelivery.net^$image,domain=motphimchilll.co
+||imagedelivery.net^$image,domain=motphimchilll.win
 ||images.tuyensinh247.com^*.gif$third-party
 ||img.iketqua.com^*.gif$image
 ||img.lazcdn.com^*.gif$image,domain=tctruyen.org
@@ -189,11 +190,10 @@ $popup,domain=truyenfull.live
 ||qthang.net/js/blocker$script,~third-party
 ||quaivatdienanh.com/*banner$image
 ||quoracdn.net^$image,domain=www.1phim16.com|phimlongtieng.net
-||rophims.fm^*.gif,~third-party
+||rophims.cx^*.gif,~third-party
 ||run.vn/widget$script,~third-party
 ||s.lazada.vn^$popup,domain=chillphimmoizz.org
 ||s2.truyentot.com^*.gif$image,domain=hhtq13.vip|hhtq3d.net|hhtq5.vip|hhvsub1.com|hhvietsub.com
-||safe-strip-uk.co.uk/images/banners/$image
 ||server.zmedia.vn/static/$script
 ||sf-static.onflixcdn.pics/images/ads/$image
 ||sggp.org.vn/*banner
@@ -614,7 +614,7 @@ $popup,domain=truyenfull.live
 /assets/js/vast.js$script
 /get/*?zoneid=$script
 /jwplayer/vast.js$script
-/player/html.php?aid=*&video_id=*&referer=https*xnhau.video$domain=xnhau.video
+/player/html.php?aid=*&video_id=*&referer=https*xnhau.guru$domain=xnhau.guru
 /player/vast.js$script
 /wp-content/uploads/*.gif$image,domain=www.hayvn.net|tuoinung.cfd
 ||a.magsrv.com^
@@ -641,7 +641,7 @@ $popup,domain=truyenfull.live
 ||creative.mnaspm.com^
 ||crumpetprankerstench.com/on.js$domain=lxmanga.space,script,rewrite=abp-resource:blank-js
 ||cruncherpatiencestoreroom.com^$popup,domain=cap3.boats
-||dance.bytecdn.cfd^*.gif$image,domain=qmhsex.lat
+||dance.bytecdn.cfd^*.gif$image,domain=qmhsex.best
 ||darnobedienceupscale.com^
 ||diarrhoeaeaglesunday.com^
 ||discordapp.$image,domain=phim18vip.site|thefaplive.com
@@ -674,7 +674,7 @@ $popup,domain=truyenfull.live
 ||phimsexsuong3x.net^*.gif$image
 ||qmanga.art/banner_image/$image
 ||quatvn.hair^*.gif$image
-||quoracdn.net^$image,domain=clipsexviet.mobi|phim18vip.site|pheclip.fit|sexmupxinh.net|xemsexhihi.me|phevl.win|fulllivehot.co|haysexvn.shop|chichvn.vip|viet69hay.autos
+||quoracdn.net^$image,domain=sexviet247.net|phim18vip.site|pheclip.fit|sexmupxinh.net|vlsexhihi.net|phevl.win|fulllivehot.co|haysexvn.shop|chichvn.vip|viet69hay.autos
 ||rphang.online^*.gif
 ||sayhentai.cx/assets/js/ads.js
 ||sayhentai.cx/storage/images/banner/$image
@@ -697,7 +697,7 @@ $popup,domain=truyenfull.live
 ||xamer.xyz/styles/file/$image
 ||xfast.sbs/media/$image,domain=fullcliphot.org|fulllivehot.co
 ||xfast.sbs^*.gif$image,domain=clipphot.vip
-||xnhau.blog^$media,domain=xnhau.video
+||xnhau.blog^$media,domain=xnhau.guru
 ||ybs2ffs7v.com^
 ||zr.mezcalumlaut.com^
 !----------Mobile filter-------------
