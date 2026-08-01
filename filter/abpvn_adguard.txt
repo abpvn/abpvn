@@ -1,9 +1,9 @@
 [Adblock Plus 2.0]
-! Version: 20260801084100478
+! Version: 20260801215119804
 ! id: D4028CDD-3D39-4624-ACC7-8140F4EC3888
 ! Title: ABPVN List | AdGuard
-! Last modified: 01 Aug 2026 08:41:00 UTC+7
-! Diff-Path: patches/20260801084100478.patch#abpvn_adguard
+! Last modified: 01 Aug 2026 21:51:19 UTC+7
+! Diff-Path: patches/20260801215119804.patch#abpvn_adguard
 ! Diff-Expires: 60 minutes
 ! Expires: 1 days (update frequency)
 !
@@ -1151,6 +1151,7 @@ quykhu.com#@#[class^="div-gpt-ad"]
 !------ ABPVN Adult block -------
 *$third-party,script,domain=sexdiaryx.to
 /^https:\/\/[a-z]{8,12}\.com\/en\/(?:[a-z]{2,5}\/){0,2}[a-z]{2,}\?(?:[a-z]+=(?:\d+|[a-z]+)&)*?id=[12]\d{6}/$script,third-party
+/adserve/*$xhr
 /assets/js/vast.js$script
 /get/*?zoneid=$script
 /jwplayer/vast.js$script
@@ -1158,10 +1159,12 @@ quykhu.com#@#[class^="div-gpt-ad"]
 /player/vast.js$script
 /wp-content/uploads/*.gif$image,domain=www.hayvn.net|tuoinung.cfd
 ||a.magsrv.com^
-||ads.bizwd.net^$image,domain=littlehandsservices.com
+||ad.twinrdengine.com^
+||ads.bizwd.net^$image,domain=aquilonegiocattoli.com
 ||agtcmuohbt.in^
 ||androidduvetscribble.com^
 ||avalanchetremorunfilled.com^
+||axjndvucr.com^
 ||blogger.googleusercontent.com^*.gif$image,domain=www.gvnvh18z.com
 ||blurbreimbursetrombone.com^
 ||bullionglidingscuttle.com/lv/esnk/2031811/code.js$domain=lxmanga.space,script,rewrite=abp-resource:blank-js
@@ -1169,6 +1172,7 @@ quykhu.com#@#[class^="div-gpt-ad"]
 ||cap3.boats/api/ads$xmlhttprequest
 ||cdn-01.w3img.com^*.gif$image,domain=vi.xnxx.studio|vlxx.rip
 ||cdn.adxcontent.com^
+||cdn.tsyndicate.com^
 ||chaseherbalpasty.com^
 ||chilihandshakewing.com^
 ||chubbyexemplaryhardiness.com^
@@ -1190,15 +1194,16 @@ quykhu.com#@#[class^="div-gpt-ad"]
 ||flagstonefoundingmonotype.com^
 ||frozenpayerpregnant.com^
 ||gamer18.net^*.gif$image
+||go.janusaent.com^
 ||go.xlviirdr.com^
 ||grizaqtzuwaz.in^
 ||hentaivn.show/banner_image/$image
 ||hhkungfu.us^*.gif$image,domain=z1.chinav.sex|x.phimsexvn1.co.uk
 ||i.ibb.co^*.gif$image,domain=sex.javnong.cc
-||i.imgur.com^$image,domain=phim18hd.site|xamvn.boats
-||i.imgur.com^*.gif$image,domain=z1.chinav.sex|quatvn.autos
+||i.imgur.com^$image,domain=phim18hd.site|xamvn.click
+||i.imgur.com^*.gif$image,domain=z1.chinav.sex|quatvn.hair
 ||img.congdongmassage.com/banner/$image,domain=congdongmassage.com
-||javhdz.fun/js/ads-javhd.js$script,~third-party
+||javhdz.red/js/ads-javhd.js$script,~third-party
 ||javtopxx2.com^*.gif$image
 ||jf.nairydeices.com/rXAp4JBa7jNUt/114370$domain=lxmanga.space,script,rewrite=abp-resource:blank-js
 ||js.onclckmn.com^
@@ -1215,9 +1220,10 @@ quykhu.com#@#[class^="div-gpt-ad"]
 ||phimsexhayvne.com^*.gif$image
 ||phimsexsuong3x.net^*.gif$image
 ||qmanga.art/banner_image/$image
-||quatvn.autos^*.gif$image
-||quoracdn.net^$image,domain=vndam.net|phim18vip.site|pheclip.fit|sexmupxinh.net|vlsexhihi.net|phevl.win|fulllivehot.co|haysexvn.shop|chichvn.vip|viet69hay.autos
+||quatvn.hair^*.gif$image
+||quoracdn.net^$image,domain=sexdam.mobi|phim18vip.site|pheclip.fit|sexmupxinh.net|vlsexhihi.net|phevl.win|fulllivehot.co|haysexvn.shop|chichvn.vip|viet69hay.autos
 ||rphang.online^*.gif
+||s.magsrv.com^
 ||sayhentai.cx/assets/js/ads.js
 ||sayhentai.cx/storage/images/banner/$image
 ||seccc.jasjas.xyz^
@@ -1228,8 +1234,11 @@ quykhu.com#@#[class^="div-gpt-ad"]
 ||truyensextv.com/anh/$image
 ||truyensextv.com^*.gif
 ||truyenvn.sbs^*banner$image
+||tsyndicate.com^
+||vast.yomeno.xyz^
 ||video.s3viphub.shop/uploads/banners$image,domain=cap3.boats
 ||www.displayvertising.com^
+||www.eporner.com/dot/pop4.php$script,~third-party
 ||www.hayvn.net^*.gif$image
 ||www.hentaivnx.com/js/cla/2064711.js$script
 ||www.hentaivnx.com/js/modscript.js$script
@@ -1342,6 +1351,16 @@ vlxx.rip,trangsexdam.net##.hd-tube-mobile
 vlxxhot.net,vailonxx.me###ab_ctl
 vlxxhot.net,vailonxx.me##.bannerads
 vndam.net,sexmupxinh.net,vlsexhihi.net##.xx-ads
+www.eporner.com###EPimLayerOuter
+www.eporner.com###admobileoutstream
+www.eporner.com###admobiletop
+www.eporner.com###btasd
+www.eporner.com###deskadmiddle
+www.eporner.com###movieplayer-box-adv
+www.eporner.com###movieplayer-box-adv-NTVA
+www.eporner.com###videotextbanner
+www.eporner.com##.adsinfo
+www.eporner.com##.vjs-inplayer-container
 www.gvnvh18z.com##.footmenu
 www.gvnvh18z.com##a[rel="nofollow norefferer noopener"]
 www.gvnvh18z.com,javtopxx2.com##.sticky_bottom
@@ -1489,6 +1508,7 @@ www.1phim17.com,javgiga.wordpress.com#%#//scriptlet("abort-on-property-read", "l
 www.asu.baby#%#//scriptlet("abort-on-property-read", "initialAdURLs")
 www.bachnguyetquang.online##.ant-modal-root
 www.bachnguyetquang.online#$#body {overflow: auto!important}
+www.eporner.com#%#//scriptlet("abort-on-property-read", "initEPNB")
 www.gvnvh18z.com,sexdiaryx.to#%#//scriptlet("set-constant", "D4zz", "noopFunc")
 www.iosviet.com#%#//scriptlet("set-constant", "timer", "0")
 www.javbangers.com#%#//scriptlet("abort-current-inline-script", "window.addEventListener", "open")
