@@ -1,9 +1,9 @@
 [Adblock Plus 2.0]
-! Version: 20260810165907514
+! Version: 20260811104445623
 ! id: D4028CDD-3D39-4624-ACC7-8140F4EC3888
 ! Title: ABPVN List | Content Blocker
-! Last modified: 10 Aug 2026 16:59:07 UTC+7
-! Diff-Path: patches/20260810165907514.patch#abpvn_content_blocker
+! Last modified: 11 Aug 2026 10:44:45 UTC+7
+! Diff-Path: patches/20260811104445623.patch#abpvn_content_blocker
 ! Diff-Expires: 60 minutes
 ! Expires: 1 days (update frequency)
 !
@@ -83,6 +83,7 @@ $popup,domain=truyenfull.live
 ||ads*.autodaily.vn
 ||ads.nghenhinvietnam.vn^$domain=nghenhinvietnam.vn
 ||ahaphimz.com/js/pov.js$script
+||aizuriquartet.com/wp-content/themes/bongda/dist/images/company/21-1.png$image
 ||alwingulla.com/88/tag.min.js$script,xmlhttprequest,rewrite=abp-resource:blank-js,domain=apkmoddone.com
 ||anime14.site^*.gif
 ||anime1s.com/_next/image?url=https%3A%2F%2F*.ibyteimg.com$image
@@ -106,8 +107,8 @@ $popup,domain=truyenfull.live
 ||cdn-data.gtvplus.vn/banners/$image,domain=gametv.vn
 ||cdn.giavang.org/images/ads/$image,domain=giavang.org
 ||cdn.lfastcdn.com/2026/04/dzzmi8.gif$image
+||cdn.lfastcdn.com^*.gif$image,domain=aizuriquartet.com
 ||cdn.lfastcdn.com^*.gif$image,domain=bongdainfox.tv|rakhoizd.cc
-||cdn.lfastcdn.com^*.gif$image,domain=xoilaczzmmz.tv
 ||cdn.monkeydarchive.com/images/banner/$image,domain=monkeyd.net.vn
 ||cdn.webhoctienganh.com/asset/home/img/banner/$image,domain=webhoctienganh.com
 ||cf.shopee.vn/file/$image,domain=tctruyen.org
@@ -243,7 +244,6 @@ $popup,domain=truyenfull.live
 ||xem20.net^*.gif
 ||xmedia.antt.vn/upload/*.gif$image,domain=antt.vn
 ||xoilackvb.cc^*.gif$image,domain=colatv45.live
-||xoilaczzmmz.tv/wp-content/themes/bongda/dist/images/company/21-1.png$image
 ! ---------- Ad domain ----------
 ||12ezo5v60.com^
 ||3nbf4.com^
@@ -628,6 +628,9 @@ $popup,domain=truyenfull.live
 24h.com.vn##[id^="ADS_"]
 2banh.vn###position_full_top_banner_pc
 2game.vn##.gc-header__wrapper + div[style]
+aizuriquartet.com##.btn-company
+aizuriquartet.com##.odds-comp-logo
+aizuriquartet.com##.xlz-ads-item
 anime14.site###menubentrai
 anime14.site##.gnartyx-offads
 anime14.site,animetvn.com,motchillzz.site###fbox-background
@@ -1113,9 +1116,6 @@ xehay.vn###banner1ab
 xem1080.com##.banner-masthead
 xemphim.site,motchillzz.site##.sticky_bottom
 xlz.buzzscorelinez.com##.banner-bottom-1
-xoilaczzmmz.tv##.btn-company
-xoilaczzmmz.tv##.odds-comp-logo
-xoilaczzmmz.tv##.xlz-ads-item
 xskt.com.vn,vieclam.tv###bnc0
 yanhh3d.mom,hhtm.net###catfish-ads
 ybox.vn###ybox-H1>div[style]
@@ -1166,7 +1166,7 @@ quykhu.com#@#[class^="div-gpt-ad"]
 ||1phimsex.com^*.gif$image
 ||a.magsrv.com^
 ||ad.twinrdengine.com^
-||ads.bizwd.net^$image,domain=conferringcarl.com
+||ads.bizwd.net^$image,domain=charapanworld.com
 ||agtcmuohbt.in^
 ||androidduvetscribble.com^
 ||avalanchetremorunfilled.com^
@@ -1225,7 +1225,7 @@ quykhu.com#@#[class^="div-gpt-ad"]
 ||phimsexsuong3x.net^*.gif$image
 ||qmanga.art/banner_image/$image
 ||quatvn.forum^*.gif$image
-||quoracdn.net^$image,domain=ditnhau24h.com|phim18vip.site|pheclip.lol|sexmupxinh.net|vlsexhihi.pro|phevl.pet|fulllivehot.us|haysexvn.shop|chichvn.my|viet69hay.sbs
+||quoracdn.net^$image,domain=heosex.mobi|phim18vip.site|pheclip.lol|sexmupxinh.net|vlsexhihi.pro|phevl.pet|fulllivehot.us|haysexvn.shop|chichvn.my|viet69hay.sbs
 ||rphang.online^*.gif
 ||s.magsrv.com^
 ||sayhentai.cx/assets/js/ads.js
@@ -1267,13 +1267,12 @@ buomtv.love##div._1vguhxv.cleaozk._3yp41v.row-0.ss>._1lbf8q9
 cap3.garden##.global-sticky-ads
 cap3.garden##.header>app-banner
 cap3.garden##.p-4.justify-center.items-center.flex.backdrop-blur-sm.bg-black\/80.z-\[9999\].inset-0.fixed
+charapanworld.com###popup-ad-box
+charapanworld.com##.banner-ad
 cliphot69.cyou###custom_html-42
 cliphotvn69.com,dynadot.rsocdomains.com,cliphot69.cyou,www.gvnvh18z.com,phimsexhayvne.com,sayhentai.cx,phim18vip.site,xamvn.beauty##.float-ck-center-lt
-conferringcarl.com###popup-ad-box
-conferringcarl.com##.banner-ad
 damconuong.sbs##.catfish-ad
 damconuong.sbs##a[rel="nofollow"]
-ditnhau24h.com,sexmupxinh.net,vlsexhihi.pro##.xx-ads
 dualeotruyencw.com##[id$="bnr"]
 fullcliphot.org##div#recent-content:nth-of-type(1)
 fullcliphot.org,fulllivehot.us,clipphot.co##.cashfish
@@ -1284,6 +1283,7 @@ gamer18.net##div[id^="divFLR"]
 haysexvn.shop###vl-header-adx
 haysexvn.shop##.castfish-wrapper
 haysexvn.shop,viet69hay.sbs##.popup
+heosex.mobi,sexmupxinh.net,vlsexhihi.pro##.xx-ads
 javgiga.wordpress.com##.pum-overlay
 javtiful.com###latest-censored-videos>.row>div.pb-3.col:nth-of-type(1)
 javtiful.com##.nopop.fah-btn
