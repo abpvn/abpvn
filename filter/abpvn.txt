@@ -1,9 +1,9 @@
 [Adblock Plus 2.0]
-! Version: 20260811155713190
+! Version: 20260812110806922
 ! id: D4028CDD-3D39-4624-ACC7-8140F4EC3888
 ! Title: ABPVN List
-! Last modified: 11 Aug 2026 15:57:13 UTC+7
-! Diff-Path: patches/20260811155713190.patch#abpvn
+! Last modified: 12 Aug 2026 11:08:06 UTC+7
+! Diff-Path: patches/20260812110806922.patch#abpvn
 ! Diff-Expires: 60 minutes
 ! Expires: 1 days (update frequency)
 !
@@ -83,7 +83,6 @@ $popup,domain=truyenfull.live
 ||ads*.autodaily.vn
 ||ads.nghenhinvietnam.vn^$domain=nghenhinvietnam.vn
 ||ahaphimz.com/js/pov.js$script
-||aizuriquartet.com/wp-content/themes/bongda/dist/images/company/21-1.png$image
 ||alwingulla.com/88/tag.min.js$script,xmlhttprequest,rewrite=abp-resource:blank-js,domain=apkmoddone.com
 ||anime14.site^*.gif
 ||anime1s.com/_next/image?url=https%3A%2F%2F*.ibyteimg.com$image
@@ -106,8 +105,8 @@ $popup,domain=truyenfull.live
 ||cdn-data.gtvplus.vn/banners/$image,domain=gametv.vn
 ||cdn.giavang.org/images/ads/$image,domain=giavang.org
 ||cdn.lfastcdn.com/2026/04/dzzmi8.gif$image
-||cdn.lfastcdn.com^*.gif$image,domain=aizuriquartet.com
 ||cdn.lfastcdn.com^*.gif$image,domain=bongdainfox.tv|rakhoizd.cc
+||cdn.lfastcdn.com^*.gif$image,domain=xoilaczzssz.tv
 ||cdn.monkeydarchive.com/images/banner/$image,domain=monkeyd.net.vn
 ||cdn.webhoctienganh.com/asset/home/img/banner/$image,domain=webhoctienganh.com
 ||cf.shopee.vn/file/$image,domain=tctruyen.org
@@ -243,6 +242,7 @@ $popup,domain=truyenfull.live
 ||xem20.net^*.gif
 ||xmedia.antt.vn/upload/*.gif$image,domain=antt.vn
 ||xoilackvb.cc^*.gif$image,domain=colatv45.live
+||xoilaczzssz.tv/wp-content/themes/bongda/dist/images/company/21-1.png$image
 ! ---------- Ad domain ----------
 ||12ezo5v60.com^
 ||3nbf4.com^
@@ -627,9 +627,6 @@ $popup,domain=truyenfull.live
 24h.com.vn##[id^="ADS_"]
 2banh.vn###position_full_top_banner_pc
 2game.vn##.gc-header__wrapper + div[style]
-aizuriquartet.com##.btn-company
-aizuriquartet.com##.odds-comp-logo
-aizuriquartet.com##.xlz-ads-item
 anime14.site###menubentrai
 anime14.site##.gnartyx-offads
 anime14.site,animetvn.com,motchillzz.site###fbox-background
@@ -1115,6 +1112,9 @@ xehay.vn###banner1ab
 xem1080.com##.banner-masthead
 xemphim.site,motchillzz.site##.sticky_bottom
 xlz.buzzscorelinez.com##.banner-bottom-1
+xoilaczzssz.tv##.btn-company
+xoilaczzssz.tv##.odds-comp-logo
+xoilaczzssz.tv##.xlz-ads-item
 xskt.com.vn,vieclam.tv###bnc0
 yanhh3d.mom,hhtm.net###catfish-ads
 ybox.vn###ybox-H1>div[style]
@@ -1162,7 +1162,6 @@ quykhu.com#@#[class^="div-gpt-ad"]
 /player/html.php?aid=*&video_id=*&referer=https*xnhau.ink$domain=xnhau.ink
 /player/vast.js$script
 /wp-content/uploads/*.gif$image,domain=www.hayvn.net|tuoinung.cfd
-||1phimsex.com^*.gif$image
 ||a.magsrv.com^
 ||ad.twinrdengine.com^
 ||ads.bizwd.net^$image,domain=niigata-kojintaxi.com
@@ -1248,6 +1247,7 @@ quykhu.com#@#[class^="div-gpt-ad"]
 ||www.hentaivnx.com/js/random-click-opener.js$script
 ||www.vipads.live/vn/$domain=lxmanga.space,script,rewrite=abp-resource:blank-js
 ||xamer.xyz/styles/file/$image
+||xemphimsexonline.net^*.gif$image
 ||xfast.sbs/media/$image,domain=fullcliphot.org|fulllivehot.us
 ||xfast.sbs^*.gif$image,domain=clipphot.co
 ||xnhau.blog^$media,domain=xnhau.ink
