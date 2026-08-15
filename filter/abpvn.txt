@@ -1,9 +1,9 @@
 [Adblock Plus 2.0]
-! Version: 20260814165755073
+! Version: 20260815122448297
 ! id: D4028CDD-3D39-4624-ACC7-8140F4EC3888
 ! Title: ABPVN List
-! Last modified: 14 Aug 2026 16:57:55 UTC+7
-! Diff-Path: patches/20260814165755073.patch#abpvn
+! Last modified: 15 Aug 2026 12:24:48 UTC+7
+! Diff-Path: patches/20260815122448297.patch#abpvn
 ! Diff-Expires: 60 minutes
 ! Expires: 1 days (update frequency)
 !
@@ -98,7 +98,7 @@ $popup,domain=truyenfull.live
 ||baomoi.com$csp=script-src data: blob: * 'self' 'unsafe-inline'
 ||baonga.com/FileUpload/Images/*banner
 ||blog.abit.vn/wp-content/uploads/2020/05/abit_$image
-||blogger.googleusercontent.com^$image,domain=hhninja6.mom|hhtm.net|yanhh3d.mom
+||blogger.googleusercontent.com^$image,domain=hhninja6.mom|hhtm.net|yanhh3d.pw
 ||blvtap.com^*.gif$image,domain=vietsub.help
 ||bp.blogspot.com$image,domain=tv.manhvl.com
 ||bp.blogspot.com/*banner$image,domain=~aow.vn
@@ -106,7 +106,7 @@ $popup,domain=truyenfull.live
 ||cdn.giavang.org/images/ads/$image,domain=giavang.org
 ||cdn.lfastcdn.com/2026/04/dzzmi8.gif$image
 ||cdn.lfastcdn.com^*.gif$image,domain=bongdainfox.tv|rakhoizd.cc
-||cdn.lfastcdn.com^*.gif$image,domain=xoilaczzssz.tv
+||cdn.lfastcdn.com^*.gif$image,domain=condohotelsdubai.com
 ||cdn.monkeydarchive.com/images/banner/$image,domain=monkeyd.net.vn
 ||cdn.webhoctienganh.com/asset/home/img/banner/$image,domain=webhoctienganh.com
 ||cf.shopee.vn/file/$image,domain=tctruyen.org
@@ -119,6 +119,7 @@ $popup,domain=truyenfull.live
 ||coiphim.show/client_assets/js/dataview/adsview.js$script,~third-party
 ||coiphim.show/client_assets/js/minijumb.js$script,~third-party
 ||coiphim.show^*.gif$image
+||condohotelsdubai.com/wp-content/themes/bongda/dist/images/company/21-1.png$image
 ||content.accesstrade.vn/evidence_add_lost/2026/img/upload/1782901020_add_lost_add_lost_tmpkr5r8ybs.png$image
 ||danketoan.com/banner/
 ||data.voz.vn/94bf/16a14febddab31.gif$image
@@ -241,7 +242,6 @@ $popup,domain=truyenfull.live
 ||xem20.net^*.gif
 ||xmedia.antt.vn/upload/*.gif$image,domain=antt.vn
 ||xoilackvb.cc^*.gif$image,domain=colatv45.live
-||xoilaczzssz.tv/wp-content/themes/bongda/dist/images/company/21-1.png$image
 ! ---------- Ad domain ----------
 ||12ezo5v60.com^
 ||3nbf4.com^
@@ -672,7 +672,7 @@ bing.com##.b_algo:has(.rms_img[src*="/th?id=OADD2."][src$="21.2"])
 bing.com##.b_algo:has(.rms_img[src*="=AdsPlus"])
 blog.abit.vn##.button-dangkyngay
 blogkiienthuc.net##.textwidget
-boctem.org,yanhh3d.mom###popup-giua-man-hinh
+boctem.org,yanhh3d.pw###popup-giua-man-hinh
 bongda12h365.com##.list-dat-cuoc
 bongdanet.online###xs-ads
 bongdanet.online##.ads-home-hide
@@ -715,6 +715,9 @@ colatv45.live##div.ad.chat-message
 comong.info###layer-popup-link3
 comong.info###transparentLayer
 comong.info###virtualLayer
+condohotelsdubai.com##.btn-company
+condohotelsdubai.com##.odds-comp-logo
+condohotelsdubai.com##.xlz-ads-item
 congan.com.vn###subiz_wrapper
 congan.com.vn##.ad-embed
 congthucvatly.com##.mb-4>[style="min-height: 350px;"]
@@ -1112,11 +1115,8 @@ xehay.vn###banner1ab
 xem1080.com##.banner-masthead
 xemphim.site,motchillzz.site##.sticky_bottom
 xlz.buzzscorelinez.com##.banner-bottom-1
-xoilaczzssz.tv##.btn-company
-xoilaczzssz.tv##.odds-comp-logo
-xoilaczzssz.tv##.xlz-ads-item
 xskt.com.vn,vieclam.tv###bnc0
-yanhh3d.mom,hhtm.net###catfish-ads
+yanhh3d.pw,hhtm.net###catfish-ads
 ybox.vn###ybox-H1>div[style]
 ycongnghe.com##.td-container-wrap.td-logo-wrap-full.td-banner-wrap-full
 ycongnghe.com##.td-crumb-container
@@ -1164,7 +1164,7 @@ quykhu.com#@#[class^="div-gpt-ad"]
 /wp-content/uploads/*.gif$image,domain=www.hayvn.net|tuoinung.cfd
 ||a.magsrv.com^
 ||ad.twinrdengine.com^
-||ads.bizwd.net^$image,domain=littlestepss.com
+||ads.bizwd.net^$image,domain=thomas-jankowski.com
 ||agtcmuohbt.in^
 ||androidduvetscribble.com^
 ||avalanchetremorunfilled.com^
@@ -1287,8 +1287,6 @@ javtiful.com##.v3sb-box
 javtopxx2.com###fbox-background
 javtopxx2.com##.logo-player
 laalmirchitakeaway.co.uk##.banner-preload
-littlestepss.com###popup-ad-box
-littlestepss.com##.banner-ad
 lxmanga.space##.ads-wrapper
 ngaytho.me##.body_wrapper1
 phe69.lol###ad-banner
@@ -1338,6 +1336,8 @@ thefaplive.com###popup_fipup-overlay
 thefaplive.com###wap_bottombanner
 thefaplive.com##.hidden-md.right.col-3
 thefaplive.com##body>.container>div
+thomas-jankowski.com###popup-ad-box
+thomas-jankowski.com##.banner-ad
 trangsexdam.net##.w1e48c4420b7073bc11916c6c1de226bb
 truyenmmhayr.com##.fixed
 truyensextv.com,lxmanga.space##.sticky-footer
