@@ -1,9 +1,9 @@
 [Adblock Plus 2.0]
-! Version: 20260821123242302
+! Version: 20260821154018168
 ! id: D4028CDD-3D39-4624-ACC7-8140F4EC3888
 ! Title: ABPVN List
-! Last modified: 21 Aug 2026 12:32:42 UTC+7
-! Diff-Path: patches/20260821123242302.patch#abpvn
+! Last modified: 21 Aug 2026 15:40:18 UTC+7
+! Diff-Path: patches/20260821154018168.patch#abpvn
 ! Diff-Expires: 60 minutes
 ! Expires: 1 days (update frequency)
 !
@@ -106,7 +106,7 @@ $popup,domain=truyenfull.live
 ||cdn.giavang.org/images/ads/$image,domain=giavang.org
 ||cdn.lfastcdn.com/2026/04/dzzmi8.gif$image
 ||cdn.lfastcdn.com^*.gif$image,domain=bongdainfox.tv|rakhoizd.cc
-||cdn.lfastcdn.com^*.gif$image,domain=e-sheep.com
+||cdn.lfastcdn.com^*.gif$image,domain=nmsba.com
 ||cdn.monkeydarchive.com/images/banner/$image,domain=monkeyd.net.vn
 ||cdn.webhoctienganh.com/asset/home/img/banner/$image,domain=webhoctienganh.com
 ||cf.shopee.vn/file/$image,domain=tctruyen.org
@@ -123,7 +123,6 @@ $popup,domain=truyenfull.live
 ||data.voz.vn/94bf/16a14febddab31.gif$image
 ||doctruyenqq.net/*banner$image
 ||down-vn.img.susercontent.com/file/vn-11134207-7ra0g-m7vtp74a0ozne9.webp$image,domain=audiotruyenfull.com
-||e-sheep.com/wp-content/themes/bongda/dist/images/company/21-1.png$image
 ||file1.dangcongsan.vn^*.gif$image,domain=dangcongsan.vn
 ||forum.idichvuseo.com/images/quang-cao
 ||fundingchoicesmessages.google.com^$third-party
@@ -149,7 +148,7 @@ $popup,domain=truyenfull.live
 ||iamcdn.net/players/playhydraxs.min.js
 ||iili.io^*.gif$image,domain=phimtuoitho.tv
 ||image.cdend.com^*.gif$image,domain=rophim.moe
-||imagedelivery.net^$image,domain=motphimchilll.me
+||imagedelivery.net^$image,domain=motphimchill.my
 ||images.tuyensinh247.com^*.gif$third-party
 ||img.iketqua.com^*.gif$image
 ||img.lazcdn.com^*.gif$image,domain=tctruyen.org
@@ -174,6 +173,7 @@ $popup,domain=truyenfull.live
 ||newoneinoldoneout.pro/zrlosadr.js$script,domain=nettruyenar.com
 ||nhipcaudautu.vn/*gafin$script
 ||nhipcaudautu.vn/Media/*.gif
+||nmsba.com/wp-content/themes/bongda/dist/images/company/21-1.png$image
 ||notepad.vn/media/images/like68.jpg
 ||phimhdc.com^*.gif$image
 ||phimhdcss.com/js/ad.js$script,~third-party
@@ -516,7 +516,7 @@ $popup,domain=truyenfull.live
 ||purgrobi.com/ub.pi$third-party
 ||pvclouds.com^
 ||pz.mulchimbiber.com^
-||q3ei4f.rophim10.cx^
+||q3ei4f.rophim10.one^
 ||qc.coccoc.com^
 ||qc.violet.vn^
 ||quangcao.24h.com.vn^$third-party
@@ -740,9 +740,6 @@ docviewer.yandex.com##.js-doc-html>div>div[id]
 doisongphapluat.com.vn,vtcnews.vn##.sys-ads
 download.vn##div[id^="adsbg"]
 dubaotiente.net##.ad-pin-right-bottom
-e-sheep.com##.btn-company
-e-sheep.com##.odds-comp-logo
-e-sheep.com##.xlz-ads-item
 ebookbkmt.com##.top-right
 ephoto360.com##.line-ads
 ephoto360.com,thiepmung.com,phimchill.life##.ad-container
@@ -868,7 +865,7 @@ motchillu.app##.bg-black\/70.justify-center.items-center.flex.z-\[9999\].inset-0
 motchillxe.cc##.overlay-1
 motchillzz.site,api.anime3s.com##.t_logo
 motchillzz.site,xemphim.site,phimhdc.com,phimhdcss.com##.mp-adz
-motphimchilll.me###catfish_ad_top
+motphimchill.my###catfish_ad_top
 motphimw.io##.bg-black\/70.justify-center.items-center.flex.z-\[9999\].inset-0.fixed
 mphimtv.my##div[data-widget-id]
 muare.vn##.admicro_top
@@ -882,6 +879,9 @@ nhaccuatui.com###banner-qc_outstream
 nhaccuatui.com##.adv_home_300_250
 nhaccuatui.com##.nqc-zone
 nhacdj.vn###top-adv
+nmsba.com##.btn-company
+nmsba.com##.odds-comp-logo
+nmsba.com##.xlz-ads-item
 olm.vn##.olm-ads
 outlook.live.com##.LBktY>.GssDD
 outlook.live.com##div[data-viewport-type="element"] .Ogt7j
@@ -924,8 +924,8 @@ rakhoizd.cc##.footer-banner
 rakhoizd.cc##.sk_balloon
 reatimes.vn##div[class^="adv-"]
 rophim.moe##.module_home_ads
-rophim10.cx##.adserver
-rophim10.cx##.mt-3.topics-line.topics-grid.topics-list
+rophim10.one##.adserver
+rophim10.one##.mt-3.topics-line.topics-grid.topics-list
 rophimss.fm##.sspp-area
 sachmoi.net##.boxzilla-bottom-right-container
 sachmoi.net##[href^="https://gotrackecom.info"]
@@ -1191,7 +1191,7 @@ quykhu.com#@#[class^="div-gpt-ad"]
 ||creative.mnaspm.com^
 ||crumpetprankerstench.com/on.js$domain=lxmanga.space,script,rewrite=abp-resource:blank-js
 ||cruncherpatiencestoreroom.com^$popup,domain=cap3.lifestyle
-||dance.bytecdn.cfd^*.gif$image,domain=qmhsex.club
+||dance.bytecdn.cfd^*.gif$image,domain=qmhsex.baby
 ||darnobedienceupscale.com^
 ||diarrhoeaeaglesunday.com^
 ||discordapp.$image,domain=phim18vip.site|thefaplive.com
