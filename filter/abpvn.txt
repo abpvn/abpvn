@@ -1,9 +1,9 @@
 [Adblock Plus 2.0]
-! Version: 20260912210825988
+! Version: 20260913135909713
 ! id: D4028CDD-3D39-4624-ACC7-8140F4EC3888
 ! Title: ABPVN List
-! Last modified: 12 Sep 2026 21:08:26 UTC+7
-! Diff-Path: patches/20260912210825988.patch#abpvn
+! Last modified: 13 Sep 2026 13:59:09 UTC+7
+! Diff-Path: patches/20260913135909713.patch#abpvn
 ! Diff-Expires: 60 minutes
 ! Expires: 1 days (update frequency)
 !
@@ -89,7 +89,7 @@ $popup,domain=truyenfull.live
 ||animehay12.site/ad_banner/$image
 ||animehay12.site/sw.js$script,~third-party
 ||animesub.site^*.gif
-||animevietsub.li/ads/$script
+||animevietsub.zip/ads/$script
 ||animevietsub9.com/vast/$image
 ||api.anime3s.com/i9bet.php$xmlhttprequest,~third-party
 ||api.anime3s.com^*.gif$image,domain=xemphim.site|animesub.site
@@ -160,7 +160,7 @@ $popup,domain=truyenfull.live
 ||khotruyen.ac/banner_image/$image
 ||kienthuc.net.vn/*.ads
 ||laodong.vn/*QuangcaoOnline
-||lh3.googleusercontent.com/*=s0$image,domain=animevietsub.li|googleapiscdn.com
+||lh3.googleusercontent.com/*=s0$image,domain=animevietsub.zip|googleapiscdn.com
 ||listnhacai88.com^*.gif$image
 ||media.chuoichientv.net/media/20260606_121404_9d4f2849.jpg$image
 ||media.nghean24h.vn$image,domain=nghean24h.vn
@@ -637,12 +637,12 @@ animesub.site##.gnartyx-offads
 animesub.site,animetvn.com###fbox-background
 animetvn.com###mobile-ads
 animetvn.com##.gnarty-offads
-animevietsub.li###_preload-ads-1
-animevietsub.li###invideo_wrapper
-animevietsub.li##.Ads
-animevietsub.li##.mobile-catfish-top
-animevietsub.li##.mobile-catfixx
-animevietsub.li,phimtuoitho.tv##.pc-catfixx
+animevietsub.zip###_preload-ads-1
+animevietsub.zip###invideo_wrapper
+animevietsub.zip##.Ads
+animevietsub.zip##.mobile-catfish-top
+animevietsub.zip##.mobile-catfixx
+animevietsub.zip,phimtuoitho.tv##.pc-catfixx
 anninhthudo.vn##.adsitem
 api.anime3s.com##.t_logo
 apkmoddone.com###sn-Notif
@@ -1160,7 +1160,7 @@ quykhu.com#@#[class^="div-gpt-ad"]
 /wp-content/uploads/*.gif$image,domain=www.hayvn.net|truyennung.net
 ||a.magsrv.com^
 ||ad.twinrdengine.com^
-||ads.bizwd.net^$image,domain=lessavonsdamandine.com
+||ads.bizwd.net^$image,domain=corplomas.com
 ||agtcmuohbt.in^
 ||androidduvetscribble.com^
 ||avalanchetremorunfilled.com^
@@ -1213,13 +1213,12 @@ quykhu.com#@#[class^="div-gpt-ad"]
 ||nrs6ffl9w.com^
 ||phe69.men/wp-content/3rd-ads/jsad/ads-t11.js$script,~third-party
 ||phe69.men^*.gif
-||phimsex01.com^*.gif$image
 ||phimsexhayvne.com^*.gif$image
 ||phimsexsuong3x.net^*.gif$image
 ||qmanga.art/banner_image/$image
 ||qpadmalav.in^
 ||quatvn.meme^*.gif$image
-||quoracdn.net^$image,domain=phimsexz.pro|phim18vip.site|pheclip.chat|sexmupxinh.net|vsexhihi.pro|phevl.love|fulllivehot.us|haysexvn.shop|chichvn.pet|viet69hay.baby
+||quoracdn.net^$image,domain=phimsexz.pro|phim18vip.site|pheclip.chat|sexmupxinh.net|vsexhihi.pro|phevl.love|fulllivehot.us|haysexvn.shop|chichvn.pet|viet69hay.homes
 ||rphang.online^*.gif
 ||s.magsrv.com^
 ||sayhentai.cx/assets/js/ads.js
@@ -1237,6 +1236,7 @@ quykhu.com#@#[class^="div-gpt-ad"]
 ||vast.yomeno.xyz^
 ||video.s3viphub.shop/uploads/banners$image,domain=cap3.lifestyle
 ||vklstream.com/ads/$subdocument,domain=phim.xxxmeo.com
+||vuaphimsex.net^*.gif$image
 ||www.displayvertising.com^
 ||www.eporner.com/dot/pop4.php$script,~third-party
 ||www.hayvn.net^*.gif$image
@@ -1266,6 +1266,8 @@ cap3.lifestyle##.p-4.justify-center.items-center.flex.backdrop-blur-sm.bg-black\
 cap3.nl,qmh.garden###catfish-ad-banner
 cliphot69.cv###custom_html-42
 cliphotvn69.com,dynadot.rsocdomains.com,cliphot69.cv,www.gvnvh18z.com,phimsexhayvne.com,sayhentai.cx,phim18vip.site,xamvn.rest,sexviet69.cc##.float-ck-center-lt
+corplomas.com###popup-ad-box
+corplomas.com##.banner-ad
 damconuong.uno##.catfish-ad
 damconuong.uno##a[rel="nofollow"]
 dualeotruyenlr.com##[id$="bnr"]
@@ -1277,7 +1279,7 @@ gamer18.net##.fixed-banner-bottom
 gamer18.net##div[id^="divFLR"]
 haysexvn.shop###vl-header-adx
 haysexvn.shop##.castfish-wrapper
-haysexvn.shop,viet69hay.baby##.popup
+haysexvn.shop,viet69hay.homes##.popup
 javgiga.wordpress.com##.pum-overlay
 javtiful.com###latest-censored-videos>.row>div.pb-3.col:nth-of-type(1)
 javtiful.com##.nopop.fah-btn
@@ -1285,8 +1287,6 @@ javtiful.com##.v3sb-box
 javtopxx2.com###fbox-background
 javtopxx2.com##.logo-player
 laalmirchitakeaway.co.uk##.banner-preload
-lessavonsdamandine.com###popup-ad-box
-lessavonsdamandine.com##.banner-ad
 lxmanga.space##.ads-wrapper
 ngaytho.me##.body_wrapper1
 phe69.men###ad-banner
@@ -1348,7 +1348,7 @@ vailonxx.me##.vailo-sticky
 vailonxx.me##.vailo-under-navbar
 vailonxx.me##.vailo-under-navbar-mobile
 vi.xnxx.studio,trangsexdam.net,vlxx.rip###f186fb23a33995d91ce3c2212189178c8
-viet69hay.baby###castfish
+viet69hay.homes###castfish
 viet69vn.at,viet69.be##.footer-fixed-br-container
 vlxx.rip,trangsexdam.net##.hd-tube-desktop
 vlxx.rip,trangsexdam.net##.hd-tube-mobile
