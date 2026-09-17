@@ -3,8 +3,7 @@ import os
 from pprint import pprint
 import threading
 from domain_list import DomainList
-from selenium import webdriver 
-from selenium.webdriver.common.by import By
+from playwright.sync_api import sync_playwright
 import re
 from const import Const
 from util import box_print
@@ -33,35 +32,29 @@ class OutdateElementHideCheck(threading.Thread):
             return
         current_out_date_el = self.domain_with_outdate_element_hide.get(self.__domain)
         box_print(f"Start visit {self.__domain} with Firefox")
-        options = webdriver.FirefoxOptions()
-        options.add_argument("--start-maximized")
-        options.add_argument("–disable-gpu")
-        options.add_argument("--headless")
-        options.add_argument("--log-level=3")
-        with webdriver.Firefox(options=options) as browser:
-            try:
-                browser.set_page_load_timeout(120)
-                browser.implicitly_wait(10)
-                browser.get(f"http://{self.__domain}")
+        try:
+            with sync_playwright() as p:
+                browser = p.firefox.launch(headless=True)
+                page = browser.new_page()
+                page.set_default_timeout(120000)
+                page.goto(f"http://{self.__domain}", timeout=120000)
+                page.wait_for_load_state("networkidle")
                 for el_hide in self.__element_hide:
                     try:
-                        el = browser.find_element(By.CSS_SELECTOR, el_hide)
-                        if el is None:
-                            current_out_date_el = current_out_date_el if current_out_date_el is not None else []
-                            current_out_date_el.append(el_hide)
+                        page.locator(el_hide).wait_for(state="attached", timeout=10000)
                     except Exception:
                         current_out_date_el = current_out_date_el if current_out_date_el is not None else []
                         current_out_date_el.append(el_hide)
-            except Exception as ex:
-                box_print("{}: Got exception {} when check".format(self.__domain, ex))
-                self.lock.acquire()
-                self.error_domains.append(self.__domain)
-                self.lock.release()
-            finally:
-                box_print(f"Finish visit {self.__domain} with Firefox")
-                if current_out_date_el is not None:
-                    pprint(current_out_date_el)
-            browser.quit()
+                browser.close()
+        except Exception as ex:
+            box_print("{}: Got exception {} when check".format(self.__domain, ex))
+            self.lock.acquire()
+            self.error_domains.append(self.__domain)
+            self.lock.release()
+        finally:
+            box_print(f"Finish visit {self.__domain} with Firefox")
+            if current_out_date_el is not None:
+                pprint(current_out_date_el)
         if current_out_date_el is not None:
             self.domain_with_outdate_element_hide.__setitem__(self.__domain, current_out_date_el)
 

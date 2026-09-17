@@ -3,7 +3,7 @@ import os
 from pprint import pprint
 import threading
 from domain_list import DomainList
-from seleniumwire import webdriver, request
+from playwright.sync_api import sync_playwright
 import re
 from const import Const
 from util import box_print
@@ -19,16 +19,16 @@ class OutdateNetworkRuleCheck(threading.Thread):
         self.domain_with_outdate_network_rule = domain_with_outdate_network_rule
         self.error_domains = error_domains
 
-    def is_outdate_nr(self, network_rule: str, nr_regex:str, requests: list[request.Request]):
+    def is_outdate_nr(self, network_rule: str, nr_regex:str, requests: list[str]):
         """
         Check network rule is outdate
         """
-        for request in requests:
-            matches = re.findall(nr_regex, request.url)
+        for url in requests:
+            matches = re.findall(nr_regex, url)
             if Const.DEBUG:
-                print(f"Checking rule {network_rule} with regex {nr_regex} on {self.__domain} with request url {request.url} and matches: {matches}")
+                print(f"Checking rule {network_rule} with regex {nr_regex} on {self.__domain} with request url {url} and matches: {matches}")
             if len(matches)>0:
-                print(f"Network rule {network_rule} is up to date because of match url {request.url} with regex {nr_regex} in {self.__domain}")
+                print(f"Network rule {network_rule} is up to date because of match url {url} with regex {nr_regex} in {self.__domain}")
                 return False
         return True
 
@@ -40,31 +40,30 @@ class OutdateNetworkRuleCheck(threading.Thread):
             return
         current_outdate_nr = self.domain_with_outdate_network_rule.get(self.__domain)
         box_print(f"Start visit {self.__domain} with Firefox")
-        options = webdriver.FirefoxOptions()
-        options.add_argument("--start-maximized")
-        options.add_argument("–disable-gpu")
-        options.add_argument("--headless")
-        options.add_argument("--log-level=3")
-        with webdriver.Firefox(options=options) as browser:
-            try:
-                browser.set_page_load_timeout(120)
-                browser.implicitly_wait(10)
-                browser.get(f"http://{self.__domain}")
+        try:
+            with sync_playwright() as p:
+                browser = p.firefox.launch(headless=True)
+                page = browser.new_page()
+                page.set_default_timeout(120000)
+                requests: list[str] = []
+                page.on("request", lambda req: requests.append(req.url))
+                page.goto(f"http://{self.__domain}", timeout=120000)
+                page.wait_for_load_state("networkidle")
                 for network_rule in self.__network_rule.keys():
                     nr_regex = self.__network_rule[network_rule]
-                    if self.is_outdate_nr(network_rule, nr_regex, browser.requests):
+                    if self.is_outdate_nr(network_rule, nr_regex, requests):
                         current_outdate_nr = current_outdate_nr if current_outdate_nr is not None else []
                         current_outdate_nr.append(network_rule)
-            except Exception as ex:
-                box_print("{}: Got exception {} when check".format(self.__domain, ex))
-                self.lock.acquire()
-                self.error_domains.append(self.__domain)
-                self.lock.release()
-            finally:
-                box_print(f"Finish visit {self.__domain} with Firefox")
-                if current_outdate_nr is not None:
-                    pprint(current_outdate_nr)
-            browser.quit()
+                browser.close()
+        except Exception as ex:
+            box_print("{}: Got exception {} when check".format(self.__domain, ex))
+            self.lock.acquire()
+            self.error_domains.append(self.__domain)
+            self.lock.release()
+        finally:
+            box_print(f"Finish visit {self.__domain} with Firefox")
+            if current_outdate_nr is not None:
+                pprint(current_outdate_nr)
         if current_outdate_nr is not None:
             self.domain_with_outdate_network_rule.__setitem__(self.__domain, current_outdate_nr)
 
