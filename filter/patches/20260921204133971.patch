@@ -1,11 +1,11 @@
-diff name:abpvn lines:54 checksum:be60ea0f0a
+diff name:abpvn lines:64 checksum:a8ba902a5e
 d2 1
 a2 1
-! Version: 20260922134445405
+! Version: 20260923083203465
 d5 2
 a6 2
-! Last modified: 22 Sep 2026 13:44:45 UTC+7
-! Diff-Path: patches/20260922134445405.patch#abpvn
+! Last modified: 23 Sep 2026 08:32:03 UTC+7
+! Diff-Path: patches/20260923083203465.patch#abpvn
 d116 1
 a180 1
 ||rophimss.id^*.gif,~third-party
@@ -22,26 +22,36 @@ a899 1
 /player/html.php?aid=*&video_id=*&referer=https*xnhau.free$domain=xnhau.free
 d910 1
 a910 1
-||ads.bizwd.net^$image,domain=genkido-seikotsu.com
+||ads.bizwd.net^$image,domain=nippo-direct.com
 a940 1
 ||phimsexgaiviet.com^*.gif$image
 d942 1
 d945 1
 a945 1
 ||qmhv3.ink/uploads/banners/$image,domain=cap3.lifestyle
-d947 1
-a947 1
+d947 2
+a948 2
 ||quoracdn.net^$image,domain=xxxhay.tv|sexmupxinh.net|sexhihi9x.pro|fulllivehot.us|haysexvn.shop|viet69hay.quest
+||rphang.now^*.gif
 d968 1
 a968 1
 ||xnhau.blog^$media,domain=xnhau.free
 d991 2
-a1001 2
-genkido-seikotsu.com###popup-ad-box
-genkido-seikotsu.com##.banner-ad
 d1005 1
 a1005 1
 haysexvn.shop,viet69hay.quest##.popup
+a1012 2
+nippo-direct.com###popup-ad-box
+nippo-direct.com##.banner-ad
+d1034 7
+a1040 7
+rphang.now###aboveFirstPost
+rphang.now##.bbMediaWrapper-inner>.samCodeUnit
+rphang.now##.js-replyNewMessageContainer.block-body>div.samCodeUnit>.samItem
+rphang.now##.p-footer
+rphang.now##.samVideoOverlay
+rphang.now##div.samCodeUnit[data-position="footer_fixed"]
+rphang.now##div.samItem:has(video.topmobileads)
 d1064 1
 a1064 1
 viet69hay.quest###castfish
@@ -53,14 +63,14 @@ xnhau.free##.spot
 d1095 1
 a1095 1
 zpic.org##.ad-banner
-diff name:abpvn_adguard lines:70 checksum:78cb381862
+diff name:abpvn_adguard lines:82 checksum:6cbbd38077
 d2 1
 a2 1
-! Version: 20260922134445405
+! Version: 20260923083203465
 d5 2
 a6 2
-! Last modified: 22 Sep 2026 13:44:45 UTC+7
-! Diff-Path: patches/20260922134445405.patch#abpvn_adguard
+! Last modified: 23 Sep 2026 08:32:03 UTC+7
+! Diff-Path: patches/20260923083203465.patch#abpvn_adguard
 d114 1
 a178 1
 ||rophimss.id^*.gif,~third-party
@@ -77,26 +87,36 @@ a887 1
 /player/html.php?aid=*&video_id=*&referer=https*xnhau.free$domain=xnhau.free
 d893 1
 a893 1
-||ads.bizwd.net^$image,domain=genkido-seikotsu.com
+||ads.bizwd.net^$image,domain=nippo-direct.com
 a923 1
 ||phimsexgaiviet.com^*.gif$image
 d925 1
 d928 1
 a928 1
 ||qmhv3.ink/uploads/banners/$image,domain=cap3.lifestyle
-d930 1
-a930 1
+d930 2
+a931 2
 ||quoracdn.net^$image,domain=xxxhay.tv|sexmupxinh.net|sexhihi9x.pro|fulllivehot.us|haysexvn.shop|viet69hay.quest
+||rphang.now^*.gif
 d951 1
 a951 1
 ||xnhau.blog^$media,domain=xnhau.free
 d974 2
-a984 2
-genkido-seikotsu.com###popup-ad-box
-genkido-seikotsu.com##.banner-ad
 d988 1
 a988 1
 haysexvn.shop,viet69hay.quest##.popup
+a995 2
+nippo-direct.com###popup-ad-box
+nippo-direct.com##.banner-ad
+d1017 7
+a1023 7
+rphang.now###aboveFirstPost
+rphang.now##.bbMediaWrapper-inner>.samCodeUnit
+rphang.now##.js-replyNewMessageContainer.block-body>div.samCodeUnit>.samItem
+rphang.now##.p-footer
+rphang.now##.samVideoOverlay
+rphang.now##div.samCodeUnit[data-position="footer_fixed"]
+rphang.now##div.samItem:has(video.topmobileads)
 d1047 1
 a1047 1
 viet69hay.quest###castfish
@@ -118,20 +138,22 @@ mv.phimmoiaz.cc,animesub.site,zpic.org,javgiga.wordpress.com,hoctot.hocmai.vn,tr
 d1144 1
 a1144 1
 phimsexgaiviet.com#%#//scriptlet("abort-current-inline-script", "window.addEventListener", "Ads")
-a1156 1
+d1157 1
+a1157 2
 rophimss.id,motphimc.pw,phimmoic.mx#%#//scriptlet("prevent-addEventListener", "click", "ads")
+rphang.now,misskon.com#%#//scriptlet("abort-current-inline-script", "document.querySelectorAll", "popMagic")
 d1182 2
 a1183 2
 xnhau.free#%#//scriptlet("abort-current-inline-script", "document.addEventListener", "lastPopunderTime")
 xnhau.free#%#//scriptlet("prevent-addEventListener", "click", "/acquirecardedsullen|POPUNDER_INTERVAL|lastPopunderTime/")
-diff name:abpvn_content_blocker lines:54 checksum:76ff50e863
+diff name:abpvn_content_blocker lines:64 checksum:c484465934
 d2 1
 a2 1
-! Version: 20260922134445405
+! Version: 20260923083203465
 d5 2
 a6 2
-! Last modified: 22 Sep 2026 13:44:45 UTC+7
-! Diff-Path: patches/20260922134445405.patch#abpvn_content_blocker
+! Last modified: 23 Sep 2026 08:32:03 UTC+7
+! Diff-Path: patches/20260923083203465.patch#abpvn_content_blocker
 d116 1
 a180 1
 ||rophimss.id^*.gif,~third-party
@@ -148,26 +170,36 @@ a899 1
 /player/html.php?aid=*&video_id=*&referer=https*xnhau.free$domain=xnhau.free
 d910 1
 a910 1
-||ads.bizwd.net^$image,domain=genkido-seikotsu.com
+||ads.bizwd.net^$image,domain=nippo-direct.com
 a940 1
 ||phimsexgaiviet.com^*.gif$image
 d942 1
 d945 1
 a945 1
 ||qmhv3.ink/uploads/banners/$image,domain=cap3.lifestyle
-d947 1
-a947 1
+d947 2
+a948 2
 ||quoracdn.net^$image,domain=xxxhay.tv|sexmupxinh.net|sexhihi9x.pro|fulllivehot.us|haysexvn.shop|viet69hay.quest
+||rphang.now^*.gif
 d968 1
 a968 1
 ||xnhau.blog^$media,domain=xnhau.free
 d991 2
-a1001 2
-genkido-seikotsu.com###popup-ad-box
-genkido-seikotsu.com##.banner-ad
 d1005 1
 a1005 1
 haysexvn.shop,viet69hay.quest##.popup
+a1012 2
+nippo-direct.com###popup-ad-box
+nippo-direct.com##.banner-ad
+d1034 7
+a1040 7
+rphang.now###aboveFirstPost
+rphang.now##.bbMediaWrapper-inner>.samCodeUnit
+rphang.now##.js-replyNewMessageContainer.block-body>div.samCodeUnit>.samItem
+rphang.now##.p-footer
+rphang.now##.samVideoOverlay
+rphang.now##div.samCodeUnit[data-position="footer_fixed"]
+rphang.now##div.samItem:has(video.topmobileads)
 d1064 1
 a1064 1
 viet69hay.quest###castfish
@@ -179,14 +211,14 @@ xnhau.free##.spot
 d1095 1
 a1095 1
 zpic.org##.ad-banner
-diff name:abpvn_noelemhide lines:31 checksum:2314795aa0
+diff name:abpvn_noelemhide lines:32 checksum:face203605
 d2 1
 a2 1
-! Version: 20260922134445405
+! Version: 20260923083203465
 d5 2
 a6 2
-! Last modified: 22 Sep 2026 13:44:45 UTC+7
-! Diff-Path: patches/20260922134445405.patch#abpvn_noelemhide
+! Last modified: 23 Sep 2026 08:32:03 UTC+7
+! Diff-Path: patches/20260923083203465.patch#abpvn_noelemhide
 d116 1
 a180 1
 ||rophimss.id^*.gif,~third-party
@@ -198,27 +230,28 @@ a337 1
 /player/html.php?aid=*&video_id=*&referer=https*xnhau.free$domain=xnhau.free
 d348 1
 a348 1
-||ads.bizwd.net^$image,domain=genkido-seikotsu.com
+||ads.bizwd.net^$image,domain=nippo-direct.com
 a378 1
 ||phimsexgaiviet.com^*.gif$image
 d380 1
 d383 1
 a383 1
 ||qmhv3.ink/uploads/banners/$image,domain=cap3.lifestyle
-d385 1
-a385 1
+d385 2
+a386 2
 ||quoracdn.net^$image,domain=xxxhay.tv|sexmupxinh.net|sexhihi9x.pro|fulllivehot.us|haysexvn.shop|viet69hay.quest
+||rphang.now^*.gif
 d406 1
 a406 1
 ||xnhau.blog^$media,domain=xnhau.free
-diff name:abpvn_ublock lines:70 checksum:2bd2d9e632
+diff name:abpvn_ublock lines:82 checksum:d58c0f1421
 d2 1
 a2 1
-! Version: 20260922134445405
+! Version: 20260923083203465
 d5 2
 a6 2
-! Last modified: 22 Sep 2026 13:44:45 UTC+7
-! Diff-Path: patches/20260922134445405.patch#abpvn_ublock
+! Last modified: 23 Sep 2026 08:32:03 UTC+7
+! Diff-Path: patches/20260923083203465.patch#abpvn_ublock
 d114 1
 a178 1
 ||rophimss.id^*.gif,~third-party
@@ -235,26 +268,36 @@ a886 1
 /player/html.php?aid=*&video_id=*&referer=https*xnhau.free$domain=xnhau.free
 d892 1
 a892 1
-||ads.bizwd.net^$image,domain=genkido-seikotsu.com
+||ads.bizwd.net^$image,domain=nippo-direct.com
 a922 1
 ||phimsexgaiviet.com^*.gif$image
 d924 1
 d927 1
 a927 1
 ||qmhv3.ink/uploads/banners/$image,domain=cap3.lifestyle
-d929 1
-a929 1
+d929 2
+a930 2
 ||quoracdn.net^$image,domain=xxxhay.tv|sexmupxinh.net|sexhihi9x.pro|fulllivehot.us|haysexvn.shop|viet69hay.quest
+||rphang.now^*.gif
 d950 1
 a950 1
 ||xnhau.blog^$media,domain=xnhau.free
 d973 2
-a983 2
-genkido-seikotsu.com###popup-ad-box
-genkido-seikotsu.com##.banner-ad
 d987 1
 a987 1
 haysexvn.shop,viet69hay.quest##.popup
+a994 2
+nippo-direct.com###popup-ad-box
+nippo-direct.com##.banner-ad
+d1016 7
+a1022 7
+rphang.now###aboveFirstPost
+rphang.now##.bbMediaWrapper-inner>.samCodeUnit
+rphang.now##.js-replyNewMessageContainer.block-body>div.samCodeUnit>.samItem
+rphang.now##.p-footer
+rphang.now##.samVideoOverlay
+rphang.now##div.samCodeUnit[data-position="footer_fixed"]
+rphang.now##div.samItem:has(video.topmobileads)
 d1046 1
 a1046 1
 viet69hay.quest###castfish
@@ -276,8 +319,10 @@ mv.phimmoiaz.cc,animesub.site,zpic.org,javgiga.wordpress.com,hoctot.hocmai.vn,fr
 d1143 1
 a1143 1
 phimsexgaiviet.com##+js(acs, window.addEventListener, Ads)
-a1154 1
+d1155 1
+a1155 2
 rophimss.id,motphimc.pw,phimmoic.mx##+js(aeld, click, ads)
+rphang.now,misskon.com##+js(acs, document.querySelectorAll, popMagic)
 d1180 2
 a1181 2
 xnhau.free##+js(acs, document.addEventListener, lastPopunderTime)
