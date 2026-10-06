@@ -1,9 +1,9 @@
 [Adblock Plus 2.0]
-! Version: 20261006133452504
+! Version: 20261006141707229
 ! id: D4028CDD-3D39-4624-ACC7-8140F4EC3888
 ! Title: ABPVN List | AdGuard
-! Last modified: 06 Oct 2026 13:34:52 UTC+7
-! Diff-Path: patches/20261006133452504.patch#abpvn_adguard
+! Last modified: 06 Oct 2026 14:17:07 UTC+7
+! Diff-Path: patches/20261006141707229.patch#abpvn_adguard
 ! Diff-Expires: 60 minutes
 ! Expires: 1 days (update frequency)
 !
@@ -114,9 +114,9 @@
 ||chophim.fun/ads/$media,~third-party,rewrite=abp-resource:blank-mp3
 ||chotlo3s.com^*gif
 ||client.rigelink.com/delivery/$xmlhttprequest
-||coiphim.show/client_assets/js/dataview/adsview.js$script,~third-party
-||coiphim.show/client_assets/js/minijumb.js$script,~third-party
-||coiphim.show^*.gif$image
+||coiphim.mom/client_assets/js/dataview/adsview.js$script,~third-party
+||coiphim.mom/client_assets/js/minijumb.js$script,~third-party
+||coiphim.mom^*.gif$image
 ||content.accesstrade.vn/evidence_add_lost/2026/img/upload/1782901020_add_lost_add_lost_tmpkr5r8ybs.png$image
 ||danketoan.com/banner/
 ||data.voz.vn/94bf/16a14febddab31.gif$image
@@ -125,9 +125,9 @@
 ||file1.dangcongsan.vn^*.gif$image,domain=dangcongsan.vn
 ||forum.idichvuseo.com/images/quang-cao
 ||fundingchoicesmessages.google.com^$third-party
-||ghienphim.blog^*.gif$image,domain=coiphim.show
-||ghienphimz.show/client_assets/js/minijumb.js
-||ghienphimz.show^*.gif$image
+||ghienphim.blog^*.gif$image,domain=coiphim.mom
+||ghienphimz.mom/client_assets/js/minijumb.js
+||ghienphimz.mom^*.gif$image
 ||ght.kernh41.com^$script,third-party
 ||giovang.rent/wp-content/plugins/ovn-suite/assets/frontend/banner/$~third-party
 ||giovang.rent/wp-content/themes/GioVang/assets/js/giovang-banner-resolve.js$script,~third-party
@@ -147,7 +147,7 @@
 ||i.imgur.com/81uid6d.jpg$domain=vozer.net
 ||i.imgur.com/FbUH5AQ.png$domain=vozer.net
 ||i.imgur.com^$image,domain=nhacdj.vn|banbuondalat.com|new.tructiepnba.me|phimbet.top
-||i.imgur.com^*.gif$image,domain=ghienphimz.show|mv.dailyphimz.com|mv.phimmoiaz.cc|tv.manhvl.com|rophim.moe|soicau247s.org|phim24k.top|jophim.top|rophimz.top
+||i.imgur.com^*.gif$image,domain=ghienphimz.mom|mv.dailyphimz.com|mv.phimmoiaz.cc|tv.manhvl.com|rophim.moe|soicau247s.org|phim24k.top|jophim.top|rophimz.top
 ||iamcdn.net/players/playera.dmins.js
 ||iamcdn.net/players/playhydraxs.min.js
 ||iili.io^*.gif$image,domain=phimtuoitho.tv
@@ -301,7 +301,6 @@
 ||applovin.com^
 ||aroundcommoditysway.com^
 ||asacdn.com^
-||asg.phukienthoitranggiare.com^
 ||ashcdn.com^
 ||astronautlividlyreformer.com^
 ||b.cdsbnrs.com^
@@ -701,11 +700,11 @@ chotlo3s.com##div[id^="hide_float"]
 coinphoton.com##.header-fix-ads
 coinphoton.com##.lepopup-popup-container
 coinphoton.com##.lepopup-popup-overlay
-coiphim.show##li.special.parent
-coiphim.show,ghienphimz.show##.ad-floater
-coiphim.show,ghienphimz.show##.popunder-link
-coiphim.show,ghienphimz.show##.promotion-popup
-coiphim.show,ghienphimz.show,subnhanh.plus##.video-ad-layer
+coiphim.mom##li.special.parent
+coiphim.mom,ghienphimz.mom##.ad-floater
+coiphim.mom,ghienphimz.mom##.popunder-link
+coiphim.mom,ghienphimz.mom##.promotion-popup
+coiphim.mom,ghienphimz.mom,subnhanh.plus##.video-ad-layer
 colatv45.live###catfish-ad
 colatv45.live##.blv-follow-btn
 colatv45.live##.btn-primary.btn
@@ -758,9 +757,9 @@ fshare.vn##.quang-cao-ben-phai
 game24h.vn###vi-smartbanner
 game24h.vn##.LRBanner
 genk.vn##.khw-ads-wrapper.clearfix
-ghienphimz.show##.no-ads
-ghienphimz.show##.parent.special
-ghienphimz.show##.partner-me
+ghienphimz.mom##.no-ads
+ghienphimz.mom##.parent.special
+ghienphimz.mom##.partner-me
 giadinhonline.vn,congluan.vn##.exp_qc_share
 giadinhonline.vn,dubaotiente.net,taichinhdoanhnghiep.net.vn##.adv
 giavang.org##.sponsor-img
@@ -814,7 +813,7 @@ ketqua16.net##.col-sm-10.kqcenter
 ketqua16.net##.kqbackground.vien ~ a[target="_blank"]
 ketqua16.net,nghean24h.vn,new.tructiepnba.me,tv.manhvl.com,bongdainfox.tv,www.1phim36.com,thapcam73.live,thapcam73.life,i2pd.website##a[rel="nofollow"]
 kienthuc.net.vn##.sponsor-zone
-kienthuc.net.vn,saostar.vn,bongda24h.vn,antt.vn,coiphim.show,ghienphimz.show,nghenhinvietnam.vn,vn-z.vn##.ads
+kienthuc.net.vn,saostar.vn,bongda24h.vn,antt.vn,coiphim.mom,ghienphimz.mom,nghenhinvietnam.vn,vn-z.vn##.ads
 kinhtedothi.vn##.top-banner-mobile
 laptrinhcanban.com##.ezoic-ad
 lazi.vn##.quang_cao_pc_right_hoc_tap
@@ -1002,7 +1001,7 @@ tinmoi.vn###pc-top
 tinmoi.vn,docnhanh.vn##.ads-position
 tinnhanhchungkhoan.vn,tienphong.vn##.fyi
 tinxe.vn##.box-bound-midd-middetail.box-bound-midd
-toquoc.vn,baoxaydung.vn,tienphong.vn,taichinhdoanhnghiep.net.vn,coiphim.show,ghienphimz.show##.banner
+toquoc.vn,baoxaydung.vn,tienphong.vn,taichinhdoanhnghiep.net.vn,coiphim.mom,ghienphimz.mom##.banner
 truyenaudiocv.org##.col-xs-12>.ads-large
 truyenaudiocv.org##.js-editors-choice-slider.editors-choice-slider>.adsbygoogle
 truyenfull.live###header-ads-full
