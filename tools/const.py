@@ -7,20 +7,16 @@ class Const():
         '.js', '.png', '.jpg', '.gif', '.aspx', '.jpeg',
         '.widget', 'block.ad', '.mp4', '.mp3', '.m3u8',
         '.row', '.parse', '.round', 'abpvn.com',
-        'abpvn.org', '.html', '.button', 'items-center.flex',
-        '.modal', '.ico', '.write', '.webp', 'PanelScroller.Notices',
-        'clear.hd', '.btn', '.show', '.img',
-        'parent.special', '.patch', 'li.special.parent',
-        '2Flh3.googleusercontent.com', 'div.ad', '.flex',
-        'ibyteimg.com', '.fixed', '.blpha', '.php', '.fade'
+        'abpvn.org', '.html', '.webp',
+        'clear.hd', '.btn', '.img',
+        'parent.special', '.patch', 'li.special.parent', 'div.ad', '.flex',
+        'ibyteimg.com', '.fixed', '.php', '.fade', '.container'
     ]
     SKIP_CHECK_REDIRECT = [
         'blogspot.com', 'fptplay.net', 'doubleclick.net', 'com.vn',
         'net.vn', 'edu.vn', 'googlesyndication.com', 'gov.vn', 'nct.vn', 'org.vn',
-        'phukienthoitranggiare.com', 'cloudfront.net',
-        'vinaurl.net', 'ezodn.com', 'adocean.pl', 'i.postimg.cc', 'mannhan97.xyz', 'api.anime3s.com',
-        'mail.yandex.com', 'iili.io', 'cdn.jsdelivr.net', 'cleverwebserver.com', 's.shopee.vn', 'i.imghippo.com',
-        'video.qmh.cx', 'abr.ge'
+        'cloudfront.net', 'vinaurl.net', 'ezodn.com', 'adocean.pl', 'mannhan97.xyz', 'api.anime3s.com',
+        'mail.yandex.com', 'iili.io', 'cleverwebserver.com', 's.shopee.vn', 'abr.ge', 'fhd-01.cctvsignal.xyz'
     ]
     REDIRECT_REJECT_TARGET_DOMAIN = [
         'google.com', 'www.google.com', 'www.facebook.com', 'facebook.com', 'www.advertising.yahooinc.com', 'marketingplatform.google.com',
