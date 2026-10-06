@@ -7,17 +7,15 @@ class Const():
         '.js', '.png', '.jpg', '.gif', '.aspx', '.jpeg',
         '.widget', 'block.ad', '.mp4', '.mp3', '.m3u8',
         '.row', '.parse', '.round', 'abpvn.com',
-        'abpvn.org', '.html', '.button', 'items-center.flex',
-        '.modal', '.ico', '.write', '.webp', '.btn', '.show', 'parent.special', '.patch', 'li.special.parent',
-        '2Flh3.googleusercontent.com', 'div.ad', '.flex', '.img',
-        'ibyteimg.com', '.fixed', '.blpha', '.php', '.fade'
+        'abpvn.org', '.html',
+        '.modal', '.write', '.webp', '.btn', 'parent.special', '.patch', 'li.special.parent',
+        'div.ad', '.flex', '.img', '.fixed', '.blpha', '.php', '.container'
     ]
     SKIP_CHECK_REDIRECT = [
         'blogspot.com', 'fptplay.net', 'doubleclick.net', 'com.vn',
         'net.vn', 'edu.vn', 'googlesyndication.com', 'gov.vn', 'nct.vn', 'org.vn',
-        'phukienthoitranggiare.com', 'cloudfront.net',
-        'web1s.asia', 'vinaurl.net', 'i.postimg.cc', 'mannhan97.xyz', 'api.anime3s.com',
-        'iili.io', 'cdn.jsdelivr.net', 's.shopee.vn', 'i.imghippo.com', 'video.qmh.sex'
+        'cloudfront.net', 'web1s.asia', 'vinaurl.net', 'mannhan97.xyz', 'api.anime3s.com',
+        'iili.io', 's.shopee.vn', 'fhd-01.cctvsignal.xyz'
     ]
     REDIRECT_REJECT_TARGET_DOMAIN = [
         'google.com', 'www.google.com', 'www.facebook.com', 'facebook.com', 'www.advertising.yahooinc.com', 'marketingplatform.google.com',
