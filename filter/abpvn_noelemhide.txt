@@ -1,9 +1,9 @@
 [Adblock Plus 2.0]
-! Version: 20261013101511266
+! Version: 20261014102524889
 ! id: D4028CDD-3D39-4624-ACC7-8140F4EC3888
 ! Title: ABPVN List
-! Last modified: 13 Oct 2026 10:15:11 UTC+7
-! Diff-Path: patches/20261013101511266.patch#abpvn_noelemhide
+! Last modified: 14 Oct 2026 10:25:24 UTC+7
+! Diff-Path: patches/20261014102524889.patch#abpvn_noelemhide
 ! Diff-Expires: 60 minutes
 ! Expires: 1 days (update frequency)
 !
@@ -162,6 +162,7 @@ $popup,domain=truyenfull.live
 ||media.nghean24h.vn$image,domain=nghean24h.vn
 ||misseschloe.co.za^*.gif$image
 ||mocfun.net/uploads/banners/
+||moviehdthai.com^*.gif,~third-party
 ||mplmncb.com/banners-web/$script,image,domain=truyenqqko.com
 ||mplmncb.com/popup/$script,domain=truyenqqko.com
 ||nettruyenar.com/public/assets/js/pop$script,~third-party
@@ -185,7 +186,6 @@ $popup,domain=truyenfull.live
 ||qthang.net/js/blocker$script,~third-party
 ||quaivatdienanh.com/*banner$image
 ||quoracdn.net^$image,domain=www.8phim1.com|www.8phim1.com
-||rophimss.co.uk^*.gif,~third-party
 ||run.vn/widget$script,~third-party
 ||s.lazada.vn^$popup,domain=chillphimmoizz.org
 ||s2.truyentot.com^*.gif$image,domain=hhtq13.vip|hhtq3d.net|hhtq5.vip|hhvsub1.com|hhvietsub.com
@@ -342,7 +342,7 @@ $popup,domain=truyenfull.live
 /^https:\/\/[a-z]{8,12}\.com\/en\/(?:[a-z]{2,5}\/){0,2}[a-z]{2,}\?(?:[a-z]+=(?:\d+|[a-z]+)&)*?id=[12]\d{6}/$script,third-party
 /assets/js/vast.js$script
 /jwplayer/vast.js$script
-/player/html.php?aid=*&video_id=*&referer=https*xnhau.foo$domain=xnhau.foo
+/player/html.php?aid=*&video_id=*&referer=https*xnhau.dad$domain=xnhau.dad
 /player/vast.js$script
 /wp-content/uploads/*.gif$image,domain=www.hayvn.net|truyennung.net
 @@||cdn.adxcontent.com/vlxx/vl-inplayer-adx.js
@@ -363,7 +363,7 @@ docufind.org.uk/wp-content/themes/vlxx/js/*-adx.js$script
 ||content.mediacdn.me^*.gif$image
 ||creative.mnaspm.com^
 ||crumpetprankerstench.com/on.js$domain=lxmanga.space,script,rewrite=abp-resource:blank-js
-||cruncherpatiencestoreroom.com^$popup,domain=qmhv3.fit
+||cruncherpatiencestoreroom.com^$popup,domain=qmhv3.club
 ||dance.bytecdn.cfd^*.gif$image,domain=qmhsex.fun
 ||discordapp.$image,domain=thefaplive.com
 ||gamer18.net^*.gif$image
@@ -385,8 +385,8 @@ docufind.org.uk/wp-content/themes/vlxx/js/*-adx.js$script
 ||phimsexsinhvien.com^*.gif$image
 ||phimsexsuong3x.net^*.gif$image
 ||qmanga.art/banner_image/$image
-||qmhv3.fit/api/ads$xmlhttprequest
-||qmhv3.fit/uploads/banners/$image,domain=qmhv3.fit
+||qmhv3.club/api/ads$xmlhttprequest
+||qmhv3.club/uploads/banners/$image,domain=qmhv3.club
 ||quatvn.diy^*.gif$image
 ||quoracdn.net^$image,domain=javnhe.tv|sexmupxinh.net|vsexhihi.cc|fulllivehot.us|haysexvn.shop|viet69hayz.lat
 ||rphang.now^*.gif
@@ -400,7 +400,7 @@ docufind.org.uk/wp-content/themes/vlxx/js/*-adx.js$script
 ||truyensextv.com/anh/$image
 ||truyensextv.com^*.gif
 ||truyenvn.sbs^*banner$image
-||video.s3viphub.shop/uploads/banners$image,domain=qmhv3.fit
+||video.s3viphub.shop/uploads/banners$image,domain=qmhv3.club
 ||vklstream.com/ads/$subdocument,domain=phim.xxxmeo.com
 ||www.hayvn.net^*.gif$image
 ||www.hentaivnx.com/js/cla/2064711.js$script
@@ -409,4 +409,4 @@ docufind.org.uk/wp-content/themes/vlxx/js/*-adx.js$script
 ||xamer.xyz/styles/file/$image
 ||xfast.sbs/media/$image,domain=fullcliphot.org|fulllivehot.us
 ||xfast.sbs^*.gif$image,domain=clipphot.co
-||xnhau.blog^$media,domain=xnhau.foo
+||xnhau.blog^$media,domain=xnhau.dad
