@@ -16,7 +16,8 @@ class Const():
         'blogspot.com', 'fptplay.net', 'doubleclick.net', 'com.vn',
         'net.vn', 'edu.vn', 'googlesyndication.com', 'gov.vn', 'nct.vn', 'org.vn',
         'cloudfront.net', 'vinaurl.net', 'ezodn.com', 'adocean.pl', 'mannhan97.xyz', 'api.anime3s.com',
-        'mail.yandex.com', 'iili.io', 'cleverwebserver.com', 's.shopee.vn', 'abr.ge', 'fhd-01.cctvsignal.xyz'
+        'mail.yandex.com', 'iili.io', 'cleverwebserver.com', 's.shopee.vn', 'abr.ge', 'fhd-01.cctvsignal.xyz',
+        'mintegral.net'
     ]
     REDIRECT_REJECT_TARGET_DOMAIN = [
         'google.com', 'www.google.com', 'www.facebook.com', 'facebook.com', 'www.advertising.yahooinc.com', 'marketingplatform.google.com',
