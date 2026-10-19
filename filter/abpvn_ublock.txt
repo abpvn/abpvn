@@ -1,9 +1,9 @@
 [Adblock Plus 2.0]
-! Version: 20261019112952359
+! Version: 20261019130712632
 ! id: D4028CDD-3D39-4624-ACC7-8140F4EC3888
 ! Title: ABPVN List | Ublock Origin
-! Last modified: 19 Oct 2026 11:29:52 UTC+7
-! Diff-Path: patches/20261019112952359.patch#abpvn_ublock
+! Last modified: 19 Oct 2026 13:07:12 UTC+7
+! Diff-Path: patches/20261019130712632.patch#abpvn_ublock
 ! Diff-Expires: 60 minutes
 ! Expires: 1 days (update frequency)
 !
@@ -86,7 +86,7 @@
 ||animevietsub.sale/ads/$script
 ||animevietsub9.com/vast/$image
 ||api.anime3s.com/i9bet.php$xmlhttprequest,~third-party
-||api.anime3s.com^*.gif$image,domain=animesub.site|animesub.site
+||api.anime3s.com^*.gif$image,domain=animesub.site
 ||api.mamphim.site^*.gif$domain=mamphim.space
 ||baddaythemovie.co.uk^*.gif$image
 ||baomoi.com$csp=script-src data: blob: * 'self' 'unsafe-inline'
@@ -192,7 +192,7 @@
 ||pixnet.cc^*.gif,~third-party
 ||qthang.net/js/blocker$script,~third-party
 ||quaivatdienanh.com/*banner$image
-||quoracdn.net^$image,domain=www.8phim2.com|www.8phim2.com
+||quoracdn.net^$image,domain=www.8phim2.com
 ||rophim1.vip^*.gif$~third-party
 ||run.vn/widget$script,~third-party
 ||s2.truyentot.com^*.gif$image,domain=hhtq13.vip|hhtq3d.net|hhtq5.vip|hhvsub1.com|hhvietsub.com
@@ -1018,7 +1018,7 @@ truyenqqko.com##.chapter_content>.text-center
 truyenqqko.com##.text_ads
 truyenqqko.com##.w-overlay-catfish
 truyenqqko.com##div#ad_info
-truyenqqko.com##span[style="display: flex;flex-direction: column;align-items: center; color: white; padding-bottom: 10px"]truyenqqko.com##span[style="display: flex;flex-direction: column;align-items: center; color: white; padding-bottom: 10px"]
+truyenqqko.com##span[style="display: flex;flex-direction: column;align-items: center; color: white; padding-bottom: 10px"]
 truyenqqko.com,pagerrentablespotlight.com###ad_info_top
 truyensieuhay.com##.footer-info
 truyensieuhay.com,hhtrungquoc9.com,hhtq13.vip,hhtq3d.net###topbanner
@@ -1099,7 +1099,7 @@ www.8phim2.com##div[class^="catfish-"]
 www.8phim2.com,amlich.org##.banner-container
 www.8phim2.com,misseschloe.co.za##.catfish-top
 www.8phim2.com,misseschloe.co.za,vn-motchill.com##.catfish-bottom
-www.8phim2.com,www.8phim2.com,vn-motchill.com##.banner-preload
+www.8phim2.com,vn-motchill.com##.banner-preload
 www.asianbookie.org##a[href^="/cgi-bin/to.cgi"]
 www.asu.baby##.nhacai
 www.asu.baby##.nhacai2
@@ -1162,7 +1162,7 @@ quykhu.com#@#[class^="div-gpt-ad"]
 !------ ABPVN Adult block -------
 *$third-party,script,domain=sexdiaryx.to
 /^https:\/\/[a-z]{8,12}\.com\/en\/(?:[a-z]{2,5}\/){0,2}[a-z]{2,}\?(?:[a-z]+=(?:\d+|[a-z]+)&)*?id=[12]\d{6}/$script,third-party
-/adserve/*$xhr
+/adserve/*$xmlhttprequest
 /assets/js/vast.js$script
 /get/*?zoneid=$script
 /jwplayer/vast.js$script
@@ -1173,7 +1173,7 @@ quykhu.com#@#[class^="div-gpt-ad"]
 ||ad.twinrdengine.com^
 ||ads.bizwd.net^$image,domain=barbacoadictos.com
 ||agtcmuohbt.in^
-||androidduvetscribble.com^chigua.com##.banner
+||androidduvetscribble.com^
 ||avalanchetremorunfilled.com^
 ||axjndvucr.com^
 ||blogger.googleusercontent.com^*.gif$image,domain=www.gvnvh18z.com
@@ -1182,7 +1182,6 @@ quykhu.com#@#[class^="div-gpt-ad"]
 ||buomtv.page/palivn/ad/$image,~third-party
 ||cdn-01.w3img.com^*.gif$image,domain=vi.xnxx.studio|vlxx.rip
 ||cdn.adxcontent.com^
-||cdn.tsyndicate.com^
 ||chaseherbalpasty.com^
 ||chilihandshakewing.com^
 ||chubbyexemplaryhardiness.com^
@@ -1274,6 +1273,7 @@ buomtv.page##.l1k7nns5.a1t03fa1
 buomtv.page##.l1k7nns5.ahen1fo
 buomtv.page##div._1vguhxv.cleaozk._3yp41v.row-0.ss>._1lbf8q9
 cap3.video,qmh.garden###catfish-ad-banner
+chigua.com##.banner
 chigua.com##.post-card-ads
 chigua.com##.post>div>.horizontal-block
 chigua.com##.txt-apps
@@ -1286,7 +1286,7 @@ cliphot69.cloud###custom_html-42
 cliphotvn69.com,dynadot.rsocdomains.com,cliphot69.cloud,www.gvnvh18z.com,phimsexhayvne.com,sayhentai.cx,xamvn.yachts,sexviet69.cc##.float-ck-center-lt
 damconuong.win##.catfish-ad
 damconuong.win##a[rel="nofollow"]
-dualeotruyenbet.com##[id$="bnr"]chigua.com##.banner
+dualeotruyenbet.com##[id$="bnr"]
 fullcliphot.org##div#recent-content:nth-of-type(1)
 fullcliphot.org,fulllivehot.us,clipphot.co##.cashfish
 fullcliphot.org,fulllivehot.us,clipphot.co##.mini-player

@@ -1,11 +1,11 @@
-diff name:abpvn lines:297 checksum:f3aa881711
+diff name:abpvn lines:312 checksum:8a1906cbfe
 d2 1
 a2 1
-! Version: 20261019112952359
+! Version: 20261019130712632
 d5 2
 a6 2
-! Last modified: 19 Oct 2026 11:29:52 UTC+7
-! Diff-Path: patches/20261019112952359.patch#abpvn
+! Last modified: 19 Oct 2026 13:07:12 UTC+7
+! Diff-Path: patches/20261019130712632.patch#abpvn
 d27 1
 a27 1
 .gif$xmlhttprequest,domain=animehay15.site
@@ -19,6 +19,9 @@ a86 2
 d88 1
 a88 1
 ||animevietsub.sale/ads/$script
+d91 1
+a91 1
+||api.anime3s.com^*.gif$image,domain=animesub.site
 d97 1
 a97 1
 ||blogger.googleusercontent.com^$image,domain=hhninja1.lol|hhtm.club
@@ -74,7 +77,7 @@ a193 1
 ||pixnet.cc^*.gif,~third-party
 d196 1
 a196 2
-||quoracdn.net^$image,domain=www.8phim2.com|www.8phim2.com
+||quoracdn.net^$image,domain=www.8phim2.com
 ||rophim1.vip^*.gif$~third-party
 d222 1
 a227 1
@@ -182,6 +185,9 @@ a1018 1
 truyenqqko.com##.chapter_content>.text-center
 a1019 1
 truyenqqko.com##.w-overlay-catfish
+d1021 1
+a1021 1
+truyenqqko.com##span[style="display: flex;flex-direction: column;align-items: center; color: white; padding-bottom: 10px"]
 d1095 8
 a1102 8
 www.8phim2.com##.BanerTop100
@@ -191,7 +197,7 @@ www.8phim2.com##div[class^="catfish-"]
 www.8phim2.com,amlich.org##.banner-container
 www.8phim2.com,misseschloe.co.za##.catfish-top
 www.8phim2.com,misseschloe.co.za,vn-motchill.com##.catfish-bottom
-www.8phim2.com,www.8phim2.com,vn-motchill.com##.banner-preload
+www.8phim2.com,vn-motchill.com##.banner-preload
 a1112 1
 www.curvegrad.com##.module_home_ads
 d1120 1
@@ -203,15 +209,22 @@ yanhh3d.chat,hhtm.club###catfish-ads
 d1152 1
 a1152 1
 @@||static.ads-twitter.com/uwt.js$script,domain=linkneverdie.net|linkneverdie.top|linkneverdie2.com|rophim1.vip
+d1166 1
+a1166 1
+/adserve/*$xmlhttprequest
 d1170 1
 a1170 1
 /player/html.php?aid=*&video_id=*&referer=https*xnhau.pub$domain=xnhau.pub
 d1175 1
 a1175 1
 ||ads.bizwd.net^$image,domain=barbacoadictos.com
+d1177 1
+a1177 1
+||androidduvetscribble.com^
 d1183 1
 a1183 1
 ||buomtv.page/palivn/ad/$image,~third-party
+d1186 1
 d1191 2
 a1192 2
 ||cliphot69.cloud$csp=script-src 'self' 'unsafe-inline'
@@ -254,13 +267,15 @@ buomtv.page##._9xtpcl.cxwrp3i.c1skg1w3.cxngf0m.c199xq07.c10dklm2.c1xtmnwt.cvk29a
 buomtv.page##.l1k7nns5.a1t03fa1
 buomtv.page##.l1k7nns5.ahen1fo
 buomtv.page##div._1vguhxv.cleaozk._3yp41v.row-0.ss>._1lbf8q9
+a1275 1
+chigua.com##.banner
 d1284 5
 a1288 5
 cliphot69.cloud###custom_html-42
 cliphotvn69.com,dynadot.rsocdomains.com,cliphot69.cloud,www.gvnvh18z.com,phimsexhayvne.com,sayhentai.cx,xamvn.yachts,sexviet69.cc##.float-ck-center-lt
 damconuong.win##.catfish-ad
 damconuong.win##a[rel="nofollow"]
-dualeotruyenbet.com##[id$="bnr"]chigua.com##.banner
+dualeotruyenbet.com##[id$="bnr"]
 d1297 1
 a1297 1
 haysexvn.shop,viet69hayz.cfd##.popup
@@ -296,14 +311,14 @@ a1412 3
 xnhau.pub##.fp-ui>div[style]
 xnhau.pub##.sponsor
 xnhau.pub##.spot
-diff name:abpvn_adguard lines:361 checksum:f93af234c9
+diff name:abpvn_adguard lines:376 checksum:51707cb1c7
 d2 1
 a2 1
-! Version: 20261019112952359
+! Version: 20261019130712632
 d5 2
 a6 2
-! Last modified: 19 Oct 2026 11:29:52 UTC+7
-! Diff-Path: patches/20261019112952359.patch#abpvn_adguard
+! Last modified: 19 Oct 2026 13:07:12 UTC+7
+! Diff-Path: patches/20261019130712632.patch#abpvn_adguard
 d25 1
 a25 1
 .gif$xmlhttprequest,domain=animehay15.site
@@ -317,6 +332,9 @@ a84 2
 d86 1
 a86 1
 ||animevietsub.sale/ads/$script
+d89 1
+a89 1
+||api.anime3s.com^*.gif$image,domain=animesub.site
 d95 1
 a95 1
 ||blogger.googleusercontent.com^$image,domain=hhninja1.lol|hhtm.club
@@ -372,7 +390,7 @@ a191 1
 ||pixnet.cc^*.gif,~third-party
 d194 1
 a194 2
-||quoracdn.net^$image,domain=www.8phim2.com|www.8phim2.com
+||quoracdn.net^$image,domain=www.8phim2.com
 ||rophim1.vip^*.gif$~third-party
 d218 1
 a223 1
@@ -480,6 +498,9 @@ a1012 1
 truyenqqko.com##.chapter_content>.text-center
 a1013 1
 truyenqqko.com##.w-overlay-catfish
+d1015 1
+a1015 1
+truyenqqko.com##span[style="display: flex;flex-direction: column;align-items: center; color: white; padding-bottom: 10px"]
 d1089 8
 a1096 8
 www.8phim2.com##.BanerTop100
@@ -489,7 +510,7 @@ www.8phim2.com##div[class^="catfish-"]
 www.8phim2.com,amlich.org##.banner-container
 www.8phim2.com,misseschloe.co.za##.catfish-top
 www.8phim2.com,misseschloe.co.za,vn-motchill.com##.catfish-bottom
-www.8phim2.com,www.8phim2.com,vn-motchill.com##.banner-preload
+www.8phim2.com,vn-motchill.com##.banner-preload
 a1106 1
 www.curvegrad.com##.module_home_ads
 d1114 1
@@ -501,15 +522,22 @@ yanhh3d.chat,hhtm.club###catfish-ads
 d1145 1
 a1145 1
 @@||static.ads-twitter.com/uwt.js$script,domain=linkneverdie.net|linkneverdie.top|linkneverdie2.com|rophim1.vip
+d1158 1
+a1158 1
+/adserve/*$xmlhttprequest
 d1162 1
 a1162 1
 /player/html.php?aid=*&video_id=*&referer=https*xnhau.pub$domain=xnhau.pub
 d1167 1
 a1167 1
 ||ads.bizwd.net^$image,domain=barbacoadictos.com
+d1169 1
+a1169 1
+||androidduvetscribble.com^
 d1175 1
 a1175 1
 ||buomtv.page/palivn/ad/$image,~third-party
+d1178 1
 d1183 2
 a1184 2
 ||cliphot69.cloud$csp=script-src 'self' 'unsafe-inline'
@@ -552,13 +580,15 @@ buomtv.page##._9xtpcl.cxwrp3i.c1skg1w3.cxngf0m.c199xq07.c10dklm2.c1xtmnwt.cvk29a
 buomtv.page##.l1k7nns5.a1t03fa1
 buomtv.page##.l1k7nns5.ahen1fo
 buomtv.page##div._1vguhxv.cleaozk._3yp41v.row-0.ss>._1lbf8q9
+a1267 1
+chigua.com##.banner
 d1276 5
 a1280 5
 cliphot69.cloud###custom_html-42
 cliphotvn69.com,dynadot.rsocdomains.com,cliphot69.cloud,www.gvnvh18z.com,phimsexhayvne.com,sayhentai.cx,xamvn.yachts,sexviet69.cc##.float-ck-center-lt
 damconuong.win##.catfish-ad
 damconuong.win##a[rel="nofollow"]
-dualeotruyenbet.com##[id$="bnr"]chigua.com##.banner
+dualeotruyenbet.com##[id$="bnr"]
 d1289 1
 a1289 1
 haysexvn.shop,viet69hayz.cfd##.popup
@@ -658,14 +688,14 @@ d1539 2
 a1540 2
 xnhau.pub#%#//scriptlet("abort-current-inline-script", "document.addEventListener", "lastPopunderTime")
 xnhau.pub#%#//scriptlet("prevent-addEventListener", "click", "/acquirecardedsullen|POPUNDER_INTERVAL|lastPopunderTime/")
-diff name:abpvn_content_blocker lines:297 checksum:cc04452013
+diff name:abpvn_content_blocker lines:312 checksum:567a0892d7
 d2 1
 a2 1
-! Version: 20261019112952359
+! Version: 20261019130712632
 d5 2
 a6 2
-! Last modified: 19 Oct 2026 11:29:52 UTC+7
-! Diff-Path: patches/20261019112952359.patch#abpvn_content_blocker
+! Last modified: 19 Oct 2026 13:07:12 UTC+7
+! Diff-Path: patches/20261019130712632.patch#abpvn_content_blocker
 d27 1
 a27 1
 .gif$xmlhttprequest,domain=animehay15.site
@@ -679,6 +709,9 @@ a86 2
 d88 1
 a88 1
 ||animevietsub.sale/ads/$script
+d91 1
+a91 1
+||api.anime3s.com^*.gif$image,domain=animesub.site
 d97 1
 a97 1
 ||blogger.googleusercontent.com^$image,domain=hhninja1.lol|hhtm.club
@@ -734,7 +767,7 @@ a193 1
 ||pixnet.cc^*.gif,~third-party
 d196 1
 a196 2
-||quoracdn.net^$image,domain=www.8phim2.com|www.8phim2.com
+||quoracdn.net^$image,domain=www.8phim2.com
 ||rophim1.vip^*.gif$~third-party
 d222 1
 a227 1
@@ -842,6 +875,9 @@ a1018 1
 truyenqqko.com##.chapter_content>.text-center
 a1019 1
 truyenqqko.com##.w-overlay-catfish
+d1021 1
+a1021 1
+truyenqqko.com##span[style="display: flex;flex-direction: column;align-items: center; color: white; padding-bottom: 10px"]
 d1095 8
 a1102 8
 www.8phim2.com##.BanerTop100
@@ -851,7 +887,7 @@ www.8phim2.com##div[class^="catfish-"]
 www.8phim2.com,amlich.org##.banner-container
 www.8phim2.com,misseschloe.co.za##.catfish-top
 www.8phim2.com,misseschloe.co.za,vn-motchill.com##.catfish-bottom
-www.8phim2.com,www.8phim2.com,vn-motchill.com##.banner-preload
+www.8phim2.com,vn-motchill.com##.banner-preload
 a1112 1
 www.curvegrad.com##.module_home_ads
 d1120 1
@@ -863,15 +899,22 @@ yanhh3d.chat,hhtm.club###catfish-ads
 d1152 1
 a1152 1
 @@||static.ads-twitter.com/uwt.js$script,domain=linkneverdie.net|linkneverdie.top|linkneverdie2.com|rophim1.vip
+d1166 1
+a1166 1
+/adserve/*$xmlhttprequest
 d1170 1
 a1170 1
 /player/html.php?aid=*&video_id=*&referer=https*xnhau.pub$domain=xnhau.pub
 d1175 1
 a1175 1
 ||ads.bizwd.net^$image,domain=barbacoadictos.com
+d1177 1
+a1177 1
+||androidduvetscribble.com^
 d1183 1
 a1183 1
 ||buomtv.page/palivn/ad/$image,~third-party
+d1186 1
 d1191 2
 a1192 2
 ||cliphot69.cloud$csp=script-src 'self' 'unsafe-inline'
@@ -914,13 +957,15 @@ buomtv.page##._9xtpcl.cxwrp3i.c1skg1w3.cxngf0m.c199xq07.c10dklm2.c1xtmnwt.cvk29a
 buomtv.page##.l1k7nns5.a1t03fa1
 buomtv.page##.l1k7nns5.ahen1fo
 buomtv.page##div._1vguhxv.cleaozk._3yp41v.row-0.ss>._1lbf8q9
+a1275 1
+chigua.com##.banner
 d1284 5
 a1288 5
 cliphot69.cloud###custom_html-42
 cliphotvn69.com,dynadot.rsocdomains.com,cliphot69.cloud,www.gvnvh18z.com,phimsexhayvne.com,sayhentai.cx,xamvn.yachts,sexviet69.cc##.float-ck-center-lt
 damconuong.win##.catfish-ad
 damconuong.win##a[rel="nofollow"]
-dualeotruyenbet.com##[id$="bnr"]chigua.com##.banner
+dualeotruyenbet.com##[id$="bnr"]
 d1297 1
 a1297 1
 haysexvn.shop,viet69hayz.cfd##.popup
@@ -956,14 +1001,14 @@ a1412 3
 xnhau.pub##.fp-ui>div[style]
 xnhau.pub##.sponsor
 xnhau.pub##.spot
-diff name:abpvn_noelemhide lines:131 checksum:e374f6d8b1
+diff name:abpvn_noelemhide lines:141 checksum:b1a02bb34b
 d2 1
 a2 1
-! Version: 20261019112952359
+! Version: 20261019130712632
 d5 2
 a6 2
-! Last modified: 19 Oct 2026 11:29:52 UTC+7
-! Diff-Path: patches/20261019112952359.patch#abpvn_noelemhide
+! Last modified: 19 Oct 2026 13:07:12 UTC+7
+! Diff-Path: patches/20261019130712632.patch#abpvn_noelemhide
 d27 1
 a27 1
 .gif$xmlhttprequest,domain=animehay15.site
@@ -977,6 +1022,9 @@ a86 2
 d88 1
 a88 1
 ||animevietsub.sale/ads/$script
+d91 1
+a91 1
+||api.anime3s.com^*.gif$image,domain=animesub.site
 d97 1
 a97 1
 ||blogger.googleusercontent.com^$image,domain=hhninja1.lol|hhtm.club
@@ -1032,7 +1080,7 @@ a193 1
 ||pixnet.cc^*.gif,~third-party
 d196 1
 a196 2
-||quoracdn.net^$image,domain=www.8phim2.com|www.8phim2.com
+||quoracdn.net^$image,domain=www.8phim2.com
 ||rophim1.vip^*.gif$~third-party
 d222 1
 a227 1
@@ -1049,15 +1097,22 @@ a521 1
 d601 1
 a601 1
 @@||static.ads-twitter.com/uwt.js$script,domain=linkneverdie.net|linkneverdie.top|linkneverdie2.com|rophim1.vip
+d610 1
+a610 1
+/adserve/*$xmlhttprequest
 d614 1
 a614 1
 /player/html.php?aid=*&video_id=*&referer=https*xnhau.pub$domain=xnhau.pub
 d619 1
 a619 1
 ||ads.bizwd.net^$image,domain=barbacoadictos.com
+d621 1
+a621 1
+||androidduvetscribble.com^
 d627 1
 a627 1
 ||buomtv.page/palivn/ad/$image,~third-party
+d630 1
 d635 2
 a636 2
 ||cliphot69.cloud$csp=script-src 'self' 'unsafe-inline'
@@ -1088,14 +1143,14 @@ a694 1
 d706 1
 a706 1
 ||xnhau.blog^$media,domain=xnhau.pub
-diff name:abpvn_ublock lines:362 checksum:2b158c7923
+diff name:abpvn_ublock lines:377 checksum:68c78fe6dc
 d2 1
 a2 1
-! Version: 20261019112952359
+! Version: 20261019130712632
 d5 2
 a6 2
-! Last modified: 19 Oct 2026 11:29:52 UTC+7
-! Diff-Path: patches/20261019112952359.patch#abpvn_ublock
+! Last modified: 19 Oct 2026 13:07:12 UTC+7
+! Diff-Path: patches/20261019130712632.patch#abpvn_ublock
 d25 1
 a25 1
 .gif$xmlhttprequest,domain=animehay15.site
@@ -1109,6 +1164,9 @@ a84 2
 d86 1
 a86 1
 ||animevietsub.sale/ads/$script
+d89 1
+a89 1
+||api.anime3s.com^*.gif$image,domain=animesub.site
 d95 1
 a95 1
 ||blogger.googleusercontent.com^$image,domain=hhninja1.lol|hhtm.club
@@ -1164,7 +1222,7 @@ a191 1
 ||pixnet.cc^*.gif,~third-party
 d194 1
 a194 2
-||quoracdn.net^$image,domain=www.8phim2.com|www.8phim2.com
+||quoracdn.net^$image,domain=www.8phim2.com
 ||rophim1.vip^*.gif$~third-party
 d218 1
 a223 1
@@ -1272,6 +1330,9 @@ a1012 1
 truyenqqko.com##.chapter_content>.text-center
 a1013 1
 truyenqqko.com##.w-overlay-catfish
+d1015 1
+a1015 1
+truyenqqko.com##span[style="display: flex;flex-direction: column;align-items: center; color: white; padding-bottom: 10px"]
 d1089 8
 a1096 8
 www.8phim2.com##.BanerTop100
@@ -1281,7 +1342,7 @@ www.8phim2.com##div[class^="catfish-"]
 www.8phim2.com,amlich.org##.banner-container
 www.8phim2.com,misseschloe.co.za##.catfish-top
 www.8phim2.com,misseschloe.co.za,vn-motchill.com##.catfish-bottom
-www.8phim2.com,www.8phim2.com,vn-motchill.com##.banner-preload
+www.8phim2.com,vn-motchill.com##.banner-preload
 a1106 1
 www.curvegrad.com##.module_home_ads
 d1114 1
@@ -1293,15 +1354,22 @@ yanhh3d.chat,hhtm.club###catfish-ads
 d1145 1
 a1145 1
 @@||static.ads-twitter.com/uwt.js$script,domain=linkneverdie.net|linkneverdie.top|linkneverdie2.com|rophim1.vip
+d1158 1
+a1158 1
+/adserve/*$xmlhttprequest
 d1162 1
 a1162 1
 /player/html.php?aid=*&video_id=*&referer=https*xnhau.pub$domain=xnhau.pub
 d1167 1
 a1167 1
 ||ads.bizwd.net^$image,domain=barbacoadictos.com
+d1169 1
+a1169 1
+||androidduvetscribble.com^
 d1175 1
 a1175 1
 ||buomtv.page/palivn/ad/$image,~third-party
+d1178 1
 d1183 2
 a1184 2
 ||cliphot69.cloud$csp=script-src 'self' 'unsafe-inline'
@@ -1344,13 +1412,15 @@ buomtv.page##._9xtpcl.cxwrp3i.c1skg1w3.cxngf0m.c199xq07.c10dklm2.c1xtmnwt.cvk29a
 buomtv.page##.l1k7nns5.a1t03fa1
 buomtv.page##.l1k7nns5.ahen1fo
 buomtv.page##div._1vguhxv.cleaozk._3yp41v.row-0.ss>._1lbf8q9
+a1267 1
+chigua.com##.banner
 d1276 5
 a1280 5
 cliphot69.cloud###custom_html-42
 cliphotvn69.com,dynadot.rsocdomains.com,cliphot69.cloud,www.gvnvh18z.com,phimsexhayvne.com,sayhentai.cx,xamvn.yachts,sexviet69.cc##.float-ck-center-lt
 damconuong.win##.catfish-ad
 damconuong.win##a[rel="nofollow"]
-dualeotruyenbet.com##[id$="bnr"]chigua.com##.banner
+dualeotruyenbet.com##[id$="bnr"]
 d1289 1
 a1289 1
 haysexvn.shop,viet69hayz.cfd##.popup
