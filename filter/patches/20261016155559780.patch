@@ -1,11 +1,13 @@
-diff name:abpvn lines:254 checksum:c410faf93e
+diff name:abpvn lines:277 checksum:0a3521513d
 d2 1
 a2 1
-! Version: 20261022142520591
+! Version: 20261022163212161
 d5 2
 a6 2
-! Last modified: 22 Oct 2026 14:25:20 UTC+7
-! Diff-Path: patches/20261022142520591.patch#abpvn
+! Last modified: 22 Oct 2026 16:32:12 UTC+7
+! Diff-Path: patches/20261022163212161.patch#abpvn
+a20 1
+! 22 thg 10, 2026 https://film4k.net
 d52 1
 a52 1
 /i.imgur.com/*.gif$domain=www.8phimz.com|listnhacai88.com|rakhoizat.cc
@@ -14,6 +16,8 @@ a82 1
 d91 1
 a91 1
 ||api.anime3s.com^*.gif$image,domain=animesub.site
+a95 1
+||bf.333xbet.com^$media,domain=film4k.net|film4k.pl|film4k.fun
 d103 1
 a103 1
 ||cdn.lfastcdn.com^*.gif$image,domain=bongdainfox.tv|rakhoizat.cc
@@ -25,6 +29,10 @@ a120 3
 ||coiphim.club/client_assets/js/dataview/adsview.js$script,~third-party
 ||coiphim.club/client_assets/js/minijumb.js$script,~third-party
 ||coiphim.club^*.gif$image
+a126 3
+||film4k.fun^*.gif$image,~third-party
+||film4k.net^*.gif$image,~third-party
+||film4k.pl^*.gif$image,~third-party
 d129 3
 a131 3
 ||ghienphim.blog^*.gif$image,domain=coiphim.club
@@ -60,6 +68,10 @@ a196 3
 ||quoracdn.net^$image,domain=www.8phimz.com
 ||rophim1.vip^*.gif$~third-party
 ||rophimz.sh^*.gif,~third-party
+a202 1
+||sofaflix.rest^*.gif$~third-party
+a221 1
+||tophim.pro^*.gif$image,~third-party
 d237 2
 a238 2
 ||www.8phimz.com/2s.m3u8
@@ -69,6 +81,13 @@ a307 1
 d521 1
 a521 1
 ||q3ei4f.rophim10.best^
+a591 1
+###ad-popup
+a599 4
+##.ad-banner
+##.ad-popup
+##.ad-sidebar
+##.ad-slot
 d642 1
 a642 1
 animesub.site,animetvn.gay###fbox-background
@@ -83,6 +102,10 @@ coiphim.club,ghienphimz.life##.ad-floater
 coiphim.club,ghienphimz.life##.popunder-link
 coiphim.club,ghienphimz.life##.promotion-popup
 coiphim.club,ghienphimz.life,subnhanh.plus##.video-ad-layer
+a751 3
+film4k.net,film4k.pl,film4k.fun##.unit-bar
+film4k.net,film4k.pl,film4k.fun##.unit-fish
+film4k.net,film4k.pl,film4k.fun##.unit-sheet
 d765 3
 a767 3
 ghienphimz.life##.no-ads
@@ -253,20 +276,24 @@ xnhau.pub##.sponsor
 xnhau.pub##.spot
 a1415 1
 xphimsex.org,sexmupxinh.net,sexhihi3x.cc##.xx-ads
-diff name:abpvn_adguard lines:306 checksum:15272be144
+diff name:abpvn_adguard lines:331 checksum:6b3cbf97c5
 d2 1
 a2 1
-! Version: 20261022142520591
+! Version: 20261022163212161
 d5 2
 a6 2
-! Last modified: 22 Oct 2026 14:25:20 UTC+7
-! Diff-Path: patches/20261022142520591.patch#abpvn_adguard
+! Last modified: 22 Oct 2026 16:32:12 UTC+7
+! Diff-Path: patches/20261022163212161.patch#abpvn_adguard
+a20 1
+! 22 thg 10, 2026 https://film4k.net
 d50 1
 a50 1
 /i.imgur.com/*.gif$domain=www.8phimz.com|listnhacai88.com|rakhoizat.cc
 d89 1
 a89 1
 ||api.anime3s.com^*.gif$image,domain=animesub.site
+a93 1
+||bf.333xbet.com^$media,domain=film4k.net|film4k.pl|film4k.fun
 d101 1
 a101 1
 ||cdn.lfastcdn.com^*.gif$image,domain=bongdainfox.tv|rakhoizat.cc
@@ -278,6 +305,10 @@ a118 3
 ||coiphim.club/client_assets/js/dataview/adsview.js$script,~third-party
 ||coiphim.club/client_assets/js/minijumb.js$script,~third-party
 ||coiphim.club^*.gif$image
+a124 3
+||film4k.fun^*.gif$image,~third-party
+||film4k.net^*.gif$image,~third-party
+||film4k.pl^*.gif$image,~third-party
 d127 3
 a129 3
 ||ghienphim.blog^*.gif$image,domain=coiphim.club
@@ -313,6 +344,10 @@ a194 3
 ||quoracdn.net^$image,domain=www.8phimz.com
 ||rophim1.vip^*.gif$~third-party
 ||rophimz.sh^*.gif,~third-party
+a198 1
+||sofaflix.rest^*.gif$~third-party
+a217 1
+||tophim.pro^*.gif$image,~third-party
 d233 2
 a234 2
 ||www.8phimz.com/2s.m3u8
@@ -322,6 +357,13 @@ a303 1
 d517 1
 a517 1
 ||q3ei4f.rophim10.best^
+a587 1
+###ad-popup
+a595 4
+##.ad-banner
+##.ad-popup
+##.ad-sidebar
+##.ad-slot
 d638 1
 a638 1
 animesub.site,animetvn.gay###fbox-background
@@ -336,6 +378,10 @@ coiphim.club,ghienphimz.life##.ad-floater
 coiphim.club,ghienphimz.life##.popunder-link
 coiphim.club,ghienphimz.life##.promotion-popup
 coiphim.club,ghienphimz.life,subnhanh.plus##.video-ad-layer
+a747 3
+film4k.net,film4k.pl,film4k.fun##.unit-bar
+film4k.net,film4k.pl,film4k.fun##.unit-fish
+film4k.net,film4k.pl,film4k.fun##.unit-sheet
 d761 3
 a763 3
 ghienphimz.life##.no-ads
@@ -544,6 +590,8 @@ rophimz.sh,motphimc.mx,phimmoic.id#%#//scriptlet("prevent-addEventListener", "cl
 rphang.beer,misskon.com#%#//scriptlet("abort-current-inline-script", "document.querySelectorAll", "popMagic")
 a1514 1
 sexviet62.com#%#//scriptlet("abort-current-inline-script", "window.addEventListener", "Ads")
+a1515 1
+tophim.pro#%#//scriptlet("prevent-addEventListener", "click", "pop")
 d1522 1
 a1522 1
 truyensieuhay.com,animesub.site,quangcaoyenbai.com,phimchill.life,thefaplive.com,mv.dailyphimz.com,mv.phimbathu.one,sexhihi3x.cc,anime47.best,phimhdc.com,honghotduongpho.vn,comong.info,qmhsex.sbs#%#//scriptlet("abort-on-property-read", "document.cookie")
@@ -560,14 +608,16 @@ d1540 2
 a1541 2
 xnhau.pub#%#//scriptlet("abort-current-inline-script", "document.addEventListener", "lastPopunderTime")
 xnhau.pub#%#//scriptlet("prevent-addEventListener", "click", "/acquirecardedsullen|POPUNDER_INTERVAL|lastPopunderTime/")
-diff name:abpvn_content_blocker lines:254 checksum:809d5b16fa
+diff name:abpvn_content_blocker lines:277 checksum:ae5631ef24
 d2 1
 a2 1
-! Version: 20261022142520591
+! Version: 20261022163212161
 d5 2
 a6 2
-! Last modified: 22 Oct 2026 14:25:20 UTC+7
-! Diff-Path: patches/20261022142520591.patch#abpvn_content_blocker
+! Last modified: 22 Oct 2026 16:32:12 UTC+7
+! Diff-Path: patches/20261022163212161.patch#abpvn_content_blocker
+a20 1
+! 22 thg 10, 2026 https://film4k.net
 d52 1
 a52 1
 /i.imgur.com/*.gif$domain=www.8phimz.com|listnhacai88.com|rakhoizat.cc
@@ -576,6 +626,8 @@ a82 1
 d91 1
 a91 1
 ||api.anime3s.com^*.gif$image,domain=animesub.site
+a95 1
+||bf.333xbet.com^$media,domain=film4k.net|film4k.pl|film4k.fun
 d103 1
 a103 1
 ||cdn.lfastcdn.com^*.gif$image,domain=bongdainfox.tv|rakhoizat.cc
@@ -587,6 +639,10 @@ a120 3
 ||coiphim.club/client_assets/js/dataview/adsview.js$script,~third-party
 ||coiphim.club/client_assets/js/minijumb.js$script,~third-party
 ||coiphim.club^*.gif$image
+a126 3
+||film4k.fun^*.gif$image,~third-party
+||film4k.net^*.gif$image,~third-party
+||film4k.pl^*.gif$image,~third-party
 d129 3
 a131 3
 ||ghienphim.blog^*.gif$image,domain=coiphim.club
@@ -622,6 +678,10 @@ a196 3
 ||quoracdn.net^$image,domain=www.8phimz.com
 ||rophim1.vip^*.gif$~third-party
 ||rophimz.sh^*.gif,~third-party
+a202 1
+||sofaflix.rest^*.gif$~third-party
+a221 1
+||tophim.pro^*.gif$image,~third-party
 d237 2
 a238 2
 ||www.8phimz.com/2s.m3u8
@@ -631,6 +691,13 @@ a307 1
 d521 1
 a521 1
 ||q3ei4f.rophim10.best^
+a591 1
+###ad-popup
+a599 4
+##.ad-banner
+##.ad-popup
+##.ad-sidebar
+##.ad-slot
 d642 1
 a642 1
 animesub.site,animetvn.gay###fbox-background
@@ -645,6 +712,10 @@ coiphim.club,ghienphimz.life##.ad-floater
 coiphim.club,ghienphimz.life##.popunder-link
 coiphim.club,ghienphimz.life##.promotion-popup
 coiphim.club,ghienphimz.life,subnhanh.plus##.video-ad-layer
+a751 3
+film4k.net,film4k.pl,film4k.fun##.unit-bar
+film4k.net,film4k.pl,film4k.fun##.unit-fish
+film4k.net,film4k.pl,film4k.fun##.unit-sheet
 d765 3
 a767 3
 ghienphimz.life##.no-ads
@@ -815,14 +886,16 @@ xnhau.pub##.sponsor
 xnhau.pub##.spot
 a1415 1
 xphimsex.org,sexmupxinh.net,sexhihi3x.cc##.xx-ads
-diff name:abpvn_noelemhide lines:109 checksum:930356a9c4
+diff name:abpvn_noelemhide lines:121 checksum:cc6713d84f
 d2 1
 a2 1
-! Version: 20261022142520591
+! Version: 20261022163212161
 d5 2
 a6 2
-! Last modified: 22 Oct 2026 14:25:20 UTC+7
-! Diff-Path: patches/20261022142520591.patch#abpvn_noelemhide
+! Last modified: 22 Oct 2026 16:32:12 UTC+7
+! Diff-Path: patches/20261022163212161.patch#abpvn_noelemhide
+a20 1
+! 22 thg 10, 2026 https://film4k.net
 d52 1
 a52 1
 /i.imgur.com/*.gif$domain=www.8phimz.com|listnhacai88.com|rakhoizat.cc
@@ -831,6 +904,8 @@ a82 1
 d91 1
 a91 1
 ||api.anime3s.com^*.gif$image,domain=animesub.site
+a95 1
+||bf.333xbet.com^$media,domain=film4k.net|film4k.pl|film4k.fun
 d103 1
 a103 1
 ||cdn.lfastcdn.com^*.gif$image,domain=bongdainfox.tv|rakhoizat.cc
@@ -842,6 +917,10 @@ a120 3
 ||coiphim.club/client_assets/js/dataview/adsview.js$script,~third-party
 ||coiphim.club/client_assets/js/minijumb.js$script,~third-party
 ||coiphim.club^*.gif$image
+a126 3
+||film4k.fun^*.gif$image,~third-party
+||film4k.net^*.gif$image,~third-party
+||film4k.pl^*.gif$image,~third-party
 d129 3
 a131 3
 ||ghienphim.blog^*.gif$image,domain=coiphim.club
@@ -877,6 +956,10 @@ a196 3
 ||quoracdn.net^$image,domain=www.8phimz.com
 ||rophim1.vip^*.gif$~third-party
 ||rophimz.sh^*.gif,~third-party
+a202 1
+||sofaflix.rest^*.gif$~third-party
+a221 1
+||tophim.pro^*.gif$image,~third-party
 d237 2
 a238 2
 ||www.8phimz.com/2s.m3u8
@@ -925,14 +1008,16 @@ a694 1
 d706 1
 a706 1
 ||xnhau.blog^$media,domain=xnhau.pub
-diff name:abpvn_ublock lines:308 checksum:0543e285a6
+diff name:abpvn_ublock lines:333 checksum:256f83f279
 d2 1
 a2 1
-! Version: 20261022142520591
+! Version: 20261022163212161
 d5 2
 a6 2
-! Last modified: 22 Oct 2026 14:25:20 UTC+7
-! Diff-Path: patches/20261022142520591.patch#abpvn_ublock
+! Last modified: 22 Oct 2026 16:32:12 UTC+7
+! Diff-Path: patches/20261022163212161.patch#abpvn_ublock
+a20 1
+! 22 thg 10, 2026 https://film4k.net
 d50 1
 a50 1
 /i.imgur.com/*.gif$domain=www.8phimz.com|listnhacai88.com|rakhoizat.cc
@@ -941,6 +1026,8 @@ a80 1
 d89 1
 a89 1
 ||api.anime3s.com^*.gif$image,domain=animesub.site
+a93 1
+||bf.333xbet.com^$media,domain=film4k.net|film4k.pl|film4k.fun
 d101 1
 a101 1
 ||cdn.lfastcdn.com^*.gif$image,domain=bongdainfox.tv|rakhoizat.cc
@@ -952,6 +1039,10 @@ a118 3
 ||coiphim.club/client_assets/js/dataview/adsview.js$script,~third-party
 ||coiphim.club/client_assets/js/minijumb.js$script,~third-party
 ||coiphim.club^*.gif$image
+a124 3
+||film4k.fun^*.gif$image,~third-party
+||film4k.net^*.gif$image,~third-party
+||film4k.pl^*.gif$image,~third-party
 d127 3
 a129 3
 ||ghienphim.blog^*.gif$image,domain=coiphim.club
@@ -987,6 +1078,10 @@ a194 3
 ||quoracdn.net^$image,domain=www.8phimz.com
 ||rophim1.vip^*.gif$~third-party
 ||rophimz.sh^*.gif,~third-party
+a198 1
+||sofaflix.rest^*.gif$~third-party
+a217 1
+||tophim.pro^*.gif$image,~third-party
 d233 2
 a234 2
 ||www.8phimz.com/2s.m3u8
@@ -996,6 +1091,13 @@ a303 1
 d517 1
 a517 1
 ||q3ei4f.rophim10.best^
+a587 1
+###ad-popup
+a595 4
+##.ad-banner
+##.ad-popup
+##.ad-sidebar
+##.ad-slot
 d638 1
 a638 1
 animesub.site,animetvn.gay###fbox-background
@@ -1010,6 +1112,10 @@ coiphim.club,ghienphimz.life##.ad-floater
 coiphim.club,ghienphimz.life##.popunder-link
 coiphim.club,ghienphimz.life##.promotion-popup
 coiphim.club,ghienphimz.life,subnhanh.plus##.video-ad-layer
+a747 3
+film4k.net,film4k.pl,film4k.fun##.unit-bar
+film4k.net,film4k.pl,film4k.fun##.unit-fish
+film4k.net,film4k.pl,film4k.fun##.unit-sheet
 d761 3
 a763 3
 ghienphimz.life##.no-ads
@@ -1218,6 +1324,8 @@ rophimz.sh,motphimc.mx,phimmoic.id##+js(aeld, click, ads)
 rphang.beer,misskon.com##+js(acs, document.querySelectorAll, popMagic)
 a1512 1
 sexviet62.com##+js(acs, window.addEventListener, Ads)
+a1513 1
+tophim.pro##+js(aeld, click, pop)
 d1520 1
 a1520 1
 truyensieuhay.com,animesub.site,quangcaoyenbai.com,phimchill.life,thefaplive.com,mv.dailyphimz.com,mv.phimbathu.one,sexhihi3x.cc,anime47.best,phimhdc.com,honghotduongpho.vn,comong.info,qmhsex.sbs##+js(aopr, document.cookie)
