@@ -1,11 +1,13 @@
-diff name:abpvn lines:111 checksum:e1bf6ce13f
+diff name:abpvn lines:127 checksum:2d4b2d02e9
 d2 1
 a2 1
-! Version: 20261022142520654
+! Version: 20261022163217870
 d5 2
 a6 2
-! Last modified: 22 Oct 2026 14:25:20 UTC+7
-! Diff-Path: patches/20261022142520654.patch#abpvn
+! Last modified: 22 Oct 2026 16:32:17 UTC+7
+! Diff-Path: patches/20261022163217870.patch#abpvn
+a20 1
+! 22 thg 10, 2026 https://film4k.net
 d48 1
 a48 1
 /i.imgur.com/*.gif$domain=www.8phimz.com|listnhacai88.com|rakhoizat.cc
@@ -14,9 +16,15 @@ a74 1
 d82 1
 a82 1
 ||api.anime3s.com^*.gif$image,domain=animesub.site
+a86 1
+||bf.333xbet.com^$media,domain=film4k.net|film4k.pl|film4k.fun
 d101 1
 a101 1
 ||cdnvip.chuoichientv.net^*.gif$domain=live10.chuoichientv.me|fhd-01.cctvsignal.xyz|lau06.bonglautv1.org|www.chuoichientv1.live
+a117 3
+||film4k.fun^*.gif$image,~third-party
+||film4k.net^*.gif$image,~third-party
+||film4k.pl^*.gif$image,~third-party
 d131 1
 a131 1
 ||googleusercontent.com^$domain=hhtq.press
@@ -32,6 +40,10 @@ a188 3
 ||quoracdn.net^$image,domain=www.8phimz.com
 ||rophim1.vip^*.gif$~third-party
 ||rophimz.sh^*.gif,~third-party
+a195 1
+||sofaflix.rest^*.gif$~third-party
+a214 1
+||tophim.pro^*.gif$image,~third-party
 d230 2
 a231 2
 ||www.8phimz.com/2s.m3u8
@@ -45,6 +57,10 @@ d359 2
 a360 2
 animetvn.gay###mobile-ads
 animetvn.gay##.gnarty-offads
+a466 3
+film4k.net,film4k.pl,film4k.fun##.unit-bar
+film4k.net,film4k.pl,film4k.fun##.unit-fish
+film4k.net,film4k.pl,film4k.fun##.unit-sheet
 d505 3
 a507 3
 hhninja1.lol,hhtq13.vip,hhtq.press,animehay15.site,hhtq3d.net,hhvsub1.com,phimdacap.tv,hhdragon.blog,hh2d.top###catfish
@@ -110,23 +126,31 @@ mgmenjoy85.com##.banner-ad
 d1043 1
 a1113 1
 xphimsex.org,sexmupxinh.net,sexhihi3x.cc##.xx-ads
-diff name:abpvn_adguard lines:140 checksum:48cae0e018
+diff name:abpvn_adguard lines:158 checksum:cfd42f1b32
 d2 1
 a2 1
-! Version: 20261022142520654
+! Version: 20261022163217870
 d5 2
 a6 2
-! Last modified: 22 Oct 2026 14:25:20 UTC+7
-! Diff-Path: patches/20261022142520654.patch#abpvn_adguard
+! Last modified: 22 Oct 2026 16:32:17 UTC+7
+! Diff-Path: patches/20261022163217870.patch#abpvn_adguard
+a20 1
+! 22 thg 10, 2026 https://film4k.net
 d46 1
 a46 1
 /i.imgur.com/*.gif$domain=www.8phimz.com|listnhacai88.com|rakhoizat.cc
 d80 1
 a80 1
 ||api.anime3s.com^*.gif$image,domain=animesub.site
+a84 1
+||bf.333xbet.com^$media,domain=film4k.net|film4k.pl|film4k.fun
 d99 1
 a99 1
 ||cdnvip.chuoichientv.net^*.gif$domain=live10.chuoichientv.me|fhd-01.cctvsignal.xyz|lau06.bonglautv1.org|www.chuoichientv1.live
+a115 3
+||film4k.fun^*.gif$image,~third-party
+||film4k.net^*.gif$image,~third-party
+||film4k.pl^*.gif$image,~third-party
 d129 1
 a129 1
 ||googleusercontent.com^$domain=hhtq.press
@@ -142,6 +166,10 @@ a186 3
 ||quoracdn.net^$image,domain=www.8phimz.com
 ||rophim1.vip^*.gif$~third-party
 ||rophimz.sh^*.gif,~third-party
+a191 1
+||sofaflix.rest^*.gif$~third-party
+a210 1
+||tophim.pro^*.gif$image,~third-party
 d226 2
 a227 2
 ||www.8phimz.com/2s.m3u8
@@ -155,6 +183,10 @@ d355 2
 a356 2
 animetvn.gay###mobile-ads
 animetvn.gay##.gnarty-offads
+a462 3
+film4k.net,film4k.pl,film4k.fun##.unit-bar
+film4k.net,film4k.pl,film4k.fun##.unit-fish
+film4k.net,film4k.pl,film4k.fun##.unit-sheet
 d501 3
 a503 3
 hhninja1.lol,hhtq13.vip,hhtq.press,animehay15.site,hhtq3d.net,hhvsub1.com,phimdacap.tv,hhdragon.blog,hh2d.top###catfish
@@ -241,6 +273,8 @@ mv.phimmoiaz.cc,animesub.site,zpic.org,javgiga.wordpress.com,hoctot.hocmai.vn,tr
 d1166 1
 a1179 1
 rophimz.sh,motphimc.mx,phimmoic.id#%#//scriptlet("prevent-addEventListener", "click", "ads")
+a1185 1
+tophim.pro#%#//scriptlet("prevent-addEventListener", "click", "pop")
 d1192 1
 a1192 1
 truyensieuhay.com,animesub.site,quangcaoyenbai.com,phimchill.life,thefaplive.com,mv.dailyphimz.com,mv.phimbathu.one,sexhihi3x.cc,anime47.best,phimhdc.com,honghotduongpho.vn,comong.info,qmhsex.sbs#%#//scriptlet("abort-on-property-read", "document.cookie")
@@ -251,14 +285,16 @@ www.8phimz.com,javgiga.wordpress.com#%#//scriptlet("abort-on-property-read", "lo
 d1204 1
 a1204 1
 www.sieutamphim.top#%#//scriptlet("abort-on-property-write", "_$_d52e")
-diff name:abpvn_content_blocker lines:111 checksum:6ad76932db
+diff name:abpvn_content_blocker lines:127 checksum:4d56691450
 d2 1
 a2 1
-! Version: 20261022142520654
+! Version: 20261022163217870
 d5 2
 a6 2
-! Last modified: 22 Oct 2026 14:25:20 UTC+7
-! Diff-Path: patches/20261022142520654.patch#abpvn_content_blocker
+! Last modified: 22 Oct 2026 16:32:17 UTC+7
+! Diff-Path: patches/20261022163217870.patch#abpvn_content_blocker
+a20 1
+! 22 thg 10, 2026 https://film4k.net
 d48 1
 a48 1
 /i.imgur.com/*.gif$domain=www.8phimz.com|listnhacai88.com|rakhoizat.cc
@@ -267,9 +303,15 @@ a74 1
 d82 1
 a82 1
 ||api.anime3s.com^*.gif$image,domain=animesub.site
+a86 1
+||bf.333xbet.com^$media,domain=film4k.net|film4k.pl|film4k.fun
 d101 1
 a101 1
 ||cdnvip.chuoichientv.net^*.gif$domain=live10.chuoichientv.me|fhd-01.cctvsignal.xyz|lau06.bonglautv1.org|www.chuoichientv1.live
+a117 3
+||film4k.fun^*.gif$image,~third-party
+||film4k.net^*.gif$image,~third-party
+||film4k.pl^*.gif$image,~third-party
 d131 1
 a131 1
 ||googleusercontent.com^$domain=hhtq.press
@@ -285,6 +327,10 @@ a188 3
 ||quoracdn.net^$image,domain=www.8phimz.com
 ||rophim1.vip^*.gif$~third-party
 ||rophimz.sh^*.gif,~third-party
+a195 1
+||sofaflix.rest^*.gif$~third-party
+a214 1
+||tophim.pro^*.gif$image,~third-party
 d230 2
 a231 2
 ||www.8phimz.com/2s.m3u8
@@ -298,6 +344,10 @@ d359 2
 a360 2
 animetvn.gay###mobile-ads
 animetvn.gay##.gnarty-offads
+a466 3
+film4k.net,film4k.pl,film4k.fun##.unit-bar
+film4k.net,film4k.pl,film4k.fun##.unit-fish
+film4k.net,film4k.pl,film4k.fun##.unit-sheet
 d505 3
 a507 3
 hhninja1.lol,hhtq13.vip,hhtq.press,animehay15.site,hhtq3d.net,hhvsub1.com,phimdacap.tv,hhdragon.blog,hh2d.top###catfish
@@ -363,14 +413,16 @@ mgmenjoy85.com##.banner-ad
 d1043 1
 a1113 1
 xphimsex.org,sexmupxinh.net,sexhihi3x.cc##.xx-ads
-diff name:abpvn_noelemhide lines:58 checksum:569284d7c9
+diff name:abpvn_noelemhide lines:70 checksum:5c47fd33f0
 d2 1
 a2 1
-! Version: 20261022142520654
+! Version: 20261022163217870
 d5 2
 a6 2
-! Last modified: 22 Oct 2026 14:25:20 UTC+7
-! Diff-Path: patches/20261022142520654.patch#abpvn_noelemhide
+! Last modified: 22 Oct 2026 16:32:17 UTC+7
+! Diff-Path: patches/20261022163217870.patch#abpvn_noelemhide
+a20 1
+! 22 thg 10, 2026 https://film4k.net
 d48 1
 a48 1
 /i.imgur.com/*.gif$domain=www.8phimz.com|listnhacai88.com|rakhoizat.cc
@@ -379,9 +431,15 @@ a74 1
 d82 1
 a82 1
 ||api.anime3s.com^*.gif$image,domain=animesub.site
+a86 1
+||bf.333xbet.com^$media,domain=film4k.net|film4k.pl|film4k.fun
 d101 1
 a101 1
 ||cdnvip.chuoichientv.net^*.gif$domain=live10.chuoichientv.me|fhd-01.cctvsignal.xyz|lau06.bonglautv1.org|www.chuoichientv1.live
+a117 3
+||film4k.fun^*.gif$image,~third-party
+||film4k.net^*.gif$image,~third-party
+||film4k.pl^*.gif$image,~third-party
 d131 1
 a131 1
 ||googleusercontent.com^$domain=hhtq.press
@@ -397,6 +455,10 @@ a188 3
 ||quoracdn.net^$image,domain=www.8phimz.com
 ||rophim1.vip^*.gif$~third-party
 ||rophimz.sh^*.gif,~third-party
+a195 1
+||sofaflix.rest^*.gif$~third-party
+a214 1
+||tophim.pro^*.gif$image,~third-party
 d230 2
 a231 2
 ||www.8phimz.com/2s.m3u8
@@ -422,23 +484,31 @@ a367 1
 d390 1
 a390 1
 ||quoracdn.net^$image,domain=xphimsex.org|sexmupxinh.net|sexhihi3x.cc|fulllivehot.us|haysexvn.shop|viet69hayz.cfd
-diff name:abpvn_ublock lines:140 checksum:1941671cf6
+diff name:abpvn_ublock lines:158 checksum:0547d3acdc
 d2 1
 a2 1
-! Version: 20261022142520654
+! Version: 20261022163217870
 d5 2
 a6 2
-! Last modified: 22 Oct 2026 14:25:20 UTC+7
-! Diff-Path: patches/20261022142520654.patch#abpvn_ublock
+! Last modified: 22 Oct 2026 16:32:17 UTC+7
+! Diff-Path: patches/20261022163217870.patch#abpvn_ublock
+a20 1
+! 22 thg 10, 2026 https://film4k.net
 d46 1
 a46 1
 /i.imgur.com/*.gif$domain=www.8phimz.com|listnhacai88.com|rakhoizat.cc
 d80 1
 a80 1
 ||api.anime3s.com^*.gif$image,domain=animesub.site
+a84 1
+||bf.333xbet.com^$media,domain=film4k.net|film4k.pl|film4k.fun
 d99 1
 a99 1
 ||cdnvip.chuoichientv.net^*.gif$domain=live10.chuoichientv.me|fhd-01.cctvsignal.xyz|lau06.bonglautv1.org|www.chuoichientv1.live
+a115 3
+||film4k.fun^*.gif$image,~third-party
+||film4k.net^*.gif$image,~third-party
+||film4k.pl^*.gif$image,~third-party
 d129 1
 a129 1
 ||googleusercontent.com^$domain=hhtq.press
@@ -454,6 +524,10 @@ a186 3
 ||quoracdn.net^$image,domain=www.8phimz.com
 ||rophim1.vip^*.gif$~third-party
 ||rophimz.sh^*.gif,~third-party
+a191 1
+||sofaflix.rest^*.gif$~third-party
+a210 1
+||tophim.pro^*.gif$image,~third-party
 d226 2
 a227 2
 ||www.8phimz.com/2s.m3u8
@@ -467,6 +541,10 @@ d355 2
 a356 2
 animetvn.gay###mobile-ads
 animetvn.gay##.gnarty-offads
+a462 3
+film4k.net,film4k.pl,film4k.fun##.unit-bar
+film4k.net,film4k.pl,film4k.fun##.unit-fish
+film4k.net,film4k.pl,film4k.fun##.unit-sheet
 d501 3
 a503 3
 hhninja1.lol,hhtq13.vip,hhtq.press,animehay15.site,hhtq3d.net,hhvsub1.com,phimdacap.tv,hhdragon.blog,hh2d.top###catfish
@@ -553,6 +631,8 @@ mv.phimmoiaz.cc,animesub.site,zpic.org,javgiga.wordpress.com,hoctot.hocmai.vn,fr
 d1164 1
 a1177 1
 rophimz.sh,motphimc.mx,phimmoic.id##+js(aeld, click, ads)
+a1183 1
+tophim.pro##+js(aeld, click, pop)
 d1190 1
 a1190 1
 truyensieuhay.com,animesub.site,quangcaoyenbai.com,phimchill.life,thefaplive.com,mv.dailyphimz.com,mv.phimbathu.one,sexhihi3x.cc,anime47.best,phimhdc.com,honghotduongpho.vn,comong.info,qmhsex.sbs##+js(aopr, document.cookie)

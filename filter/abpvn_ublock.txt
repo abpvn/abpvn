@@ -1,9 +1,9 @@
 [Adblock Plus 2.0]
-! Version: 20261022142520654
+! Version: 20261022163217870
 ! id: D4028CDD-3D39-4624-ACC7-8140F4EC3888
 ! Title: ABPVN List | Ublock Origin
-! Last modified: 22 Oct 2026 14:25:20 UTC+7
-! Diff-Path: patches/20261022142520654.patch#abpvn_ublock
+! Last modified: 22 Oct 2026 16:32:17 UTC+7
+! Diff-Path: patches/20261022163217870.patch#abpvn_ublock
 ! Diff-Expires: 60 minutes
 ! Expires: 1 days (update frequency)
 !
@@ -18,6 +18,7 @@
 ! Forum: https://voz.vn/t/official-abpvn-bo-loc-quang-cao-cho-nguoi-viet-bao-cao-quang-cao-giai-dap-thac-mac.867616/
 ! Report new issue on github: https://github.com/abpvn/abpvn/issues/new
 ! ---------- Generic Blocking Rules ----------
+! 22 thg 10, 2026 https://film4k.net
 .com/cpc/$script
 .com/qc/
 .gif$xmlhttprequest,domain=animehay15.site
@@ -82,6 +83,7 @@
 ||baddaythemovie.co.uk^*.gif$image
 ||baomoi.com$csp=script-src data: blob: * 'self' 'unsafe-inline'
 ||baonga.com/FileUpload/Images/*banner
+||bf.333xbet.com^$media,domain=film4k.net|film4k.pl|film4k.fun
 ||blog.abit.vn/wp-content/uploads/2020/05/abit_$image
 ||blogger.googleusercontent.com^$image,domain=hhninja1.lol|hhtm.club
 ||bp.blogspot.com$image,domain=tv.manhvl.com
@@ -113,6 +115,9 @@
 ||doctruyenqq.net/*banner$image
 ||down-vn.img.susercontent.com/file/vn-11134207-7ra0g-m7vtp74a0ozne9.webp$image,domain=audiotruyenfull.com
 ||file1.dangcongsan.vn^*.gif$image,domain=dangcongsan.vn
+||film4k.fun^*.gif$image,~third-party
+||film4k.net^*.gif$image,~third-party
+||film4k.pl^*.gif$image,~third-party
 ||forum.idichvuseo.com/images/quang-cao
 ||fundingchoicesmessages.google.com^$third-party
 ||ghienphim.blog^*.gif$image,domain=coiphim.club
@@ -190,6 +195,7 @@
 ||server.zmedia.vn/static/$script
 ||sggp.org.vn/*banner
 ||smartf.vn/wp-content/themes/hongtq_smartf_theme/img/quang-cao/$image
+||sofaflix.rest^*.gif$~third-party
 ||sohuutritue.net.vn/files/qc/
 ||static.accesstrade.vn/js/v2/floating-ads-icon.min.js$script
 ||static.cdnno.com/storage/topbox/*.webp$image,domain=metruyencv.com
@@ -209,6 +215,7 @@
 ||tinmoi.vn/?mod=ajax&act=getAds
 ||tinxe.vn/Banner/LoadBanner$xmlhttprequest
 ||tinxe.vn/bn-campaign-for-iframe$subdocument,~third-party
+||tophim.pro^*.gif$image,~third-party
 ||traderviet.tv/data/siropu/am/user/$image
 ||tructiep.vn/website/adv/
 ||tudomuaban.com/public/upload/ad/
@@ -462,6 +469,9 @@ eva.vn##.banrpstn
 fhd-01.cctvsignal.xyz##.banner-player
 fhd-01.cctvsignal.xyz##.bet-button-player
 file.gocmod.com##div.ad
+film4k.net,film4k.pl,film4k.fun##.unit-bar
+film4k.net,film4k.pl,film4k.fun##.unit-fish
+film4k.net,film4k.pl,film4k.fun##.unit-sheet
 freeplayervideo.com,abysscdn.com,player-cdn.com###player + div[id]
 freeplayervideo.com,abysscdn.com,player-cdn.com##.playover
 freeplayervideo.com,abysscdn.com,player-cdn.com,animesub.site##.jw-logo
@@ -1188,6 +1198,7 @@ sex.javnong.cc##+js(aopr, Math.round)
 sexmupxinh.net##+js(aopr, Cookies)
 sexviet62.com##+js(acs, window.addEventListener, Ads)
 subnhanh.plus##+js(acs, $, pop)
+tophim.pro##+js(aeld, click, pop)
 tram3d.com##+js(acs, document.createElement, ;break;case)
 tram3d.mom##+js(acs, setTimeout, appendChild)
 tram3d.skin,animevietsub.sale##+js(acs, eval, $._Eu)
