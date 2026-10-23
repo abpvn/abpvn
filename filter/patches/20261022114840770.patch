@@ -1,11 +1,11 @@
-diff name:abpvn lines:61 checksum:db75e77391
+diff name:abpvn lines:94 checksum:155e31f779
 d2 1
 a2 1
-! Version: 20261023082433365
+! Version: 20261023083840862
 d5 2
 a6 2
-! Last modified: 23 Oct 2026 08:24:33 UTC+7
-! Diff-Path: patches/20261023082433365.patch#abpvn
+! Last modified: 23 Oct 2026 08:38:40 UTC+7
+! Diff-Path: patches/20261023083840862.patch#abpvn
 a20 1
 ! 22 thg 10, 2026 https://film4k.net
 a96 1
@@ -31,6 +31,9 @@ a205 1
 ||sofaflix.rest^*.gif$~third-party
 a224 1
 ||tophim.pro^*.gif$image,~third-party
+d525 1
+a525 1
+||q3ei4f.rophim10.cam^
 a595 1
 ###ad-popup
 a603 4
@@ -60,14 +63,44 @@ motphimchilll.icu###catfish_ad_top
 d911 1
 a911 1
 phimmoic.id##.bg-black\/70.justify-center.items-center.flex.z-\[9999\].inset-0.fixed
-diff name:abpvn_adguard lines:73 checksum:610baaf36b
+d934 2
+a935 2
+rophim10.cam##.adserver
+rophim10.cam##.mt-3.topics-line.topics-grid.topics-list
+d1205 1
+a1205 1
+||cruncherpatiencestoreroom.com^$popup,domain=qmhv3.biz
+d1238 1
+a1238 1
+||qmhv3.biz/api/ads$xmlhttprequest
+d1241 1
+a1241 1
+||quoracdn.net^$image,domain=xphimsex.org|sexmupxinh.net|sexhihi9x.me|fulllivehot.us|haysexvn.shop|viet69hayz.cfd
+d1257 1
+a1257 1
+||video.s3viphub.shop/uploads/banners$image,domain=qmhv3.biz
+d1326 1
+a1326 1
+phimsexsuong3x.net,sexhihi9x.me,javhdz.one,laalmirchitakeaway.co.uk##.catfish-bottom
+d1333 3
+a1335 3
+qmhv3.biz##.global-sticky-ads
+qmhv3.biz##.header>app-banner
+qmhv3.biz##.p-4.justify-center.items-center.flex.backdrop-blur-sm.bg-black\/80.z-\[9999\].inset-0.fixed
+d1349 1
+a1349 1
+sexmupxinh.net,sexhihi9x.me,laalmirchitakeaway.co.uk##.catfish-top
+d1422 1
+a1422 1
+xphimsex.org,sexmupxinh.net,sexhihi9x.me##.xx-ads
+diff name:abpvn_adguard lines:118 checksum:212879f90d
 d2 1
 a2 1
-! Version: 20261023082433365
+! Version: 20261023083840862
 d5 2
 a6 2
-! Last modified: 23 Oct 2026 08:24:33 UTC+7
-! Diff-Path: patches/20261023082433365.patch#abpvn_adguard
+! Last modified: 23 Oct 2026 08:38:40 UTC+7
+! Diff-Path: patches/20261023083840862.patch#abpvn_adguard
 a20 1
 ! 22 thg 10, 2026 https://film4k.net
 a93 1
@@ -93,6 +126,9 @@ a200 1
 ||sofaflix.rest^*.gif$~third-party
 a219 1
 ||tophim.pro^*.gif$image,~third-party
+d520 1
+a520 1
+||q3ei4f.rophim10.cam^
 a590 1
 ###ad-popup
 a598 4
@@ -122,6 +158,39 @@ motphimchilll.icu###catfish_ad_top
 d904 1
 a904 1
 phimmoic.id##.bg-black\/70.justify-center.items-center.flex.z-\[9999\].inset-0.fixed
+d927 2
+a928 2
+rophim10.cam##.adserver
+rophim10.cam##.mt-3.topics-line.topics-grid.topics-list
+d1196 1
+a1196 1
+||cruncherpatiencestoreroom.com^$popup,domain=qmhv3.biz
+d1229 1
+a1229 1
+||qmhv3.biz/api/ads$xmlhttprequest
+d1232 1
+a1232 1
+||quoracdn.net^$image,domain=xphimsex.org|sexmupxinh.net|sexhihi9x.me|fulllivehot.us|haysexvn.shop|viet69hayz.cfd
+d1248 1
+a1248 1
+||video.s3viphub.shop/uploads/banners$image,domain=qmhv3.biz
+d1317 1
+a1317 1
+phimsexsuong3x.net,sexhihi9x.me,javhdz.one,laalmirchitakeaway.co.uk##.catfish-bottom
+d1324 3
+a1326 3
+qmhv3.biz##.global-sticky-ads
+qmhv3.biz##.header>app-banner
+qmhv3.biz##.p-4.justify-center.items-center.flex.backdrop-blur-sm.bg-black\/80.z-\[9999\].inset-0.fixed
+d1340 1
+a1340 1
+sexmupxinh.net,sexhihi9x.me,laalmirchitakeaway.co.uk##.catfish-top
+d1413 1
+a1413 1
+xphimsex.org,sexmupxinh.net,sexhihi9x.me##.xx-ads
+d1462 1
+a1462 1
+freeplayervideo.com,www.sieutamphim.top,player-cdn.com,hopphim.online,streamc.xyz,qmhv3.biz,cap3.video,qmh.garden#%#//scriptlet("set-constant", "open", "noopFunc")
 d1464 1
 a1464 1
 giovang.uno#%#//scriptlet("json-prune", "0.default_ads_video")
@@ -129,19 +198,28 @@ d1488 2
 a1489 2
 motchillu.mx#%#//scriptlet("prevent-addEventListener", "click", "sessionStorage")
 motchillu.mx,fcloud.live#%#//scriptlet("prevent-addEventListener","click", "links")
+d1507 4
+a1510 4
+qmhv3.biz#%#//scriptlet("prevent-addEventListener", "click", "d", "elements", ".art-control-fullscreen")
+qmhv3.biz#%#//scriptlet("prevent-addEventListener", "click", "e.target")
+qmhv3.biz#%#//scriptlet("prevent-addEventListener", "click", "setTimeout")
+qmhv3.biz#%#//scriptlet("prevent-addEventListener", "fullscreenchange", "e.target")
 d1515 1
 a1515 1
 rophimz.sh,motphimc.mx,phimmoic.id#%#//scriptlet("prevent-addEventListener", "click", "ads")
 a1521 1
 tophim.pro#%#//scriptlet("prevent-addEventListener", "click", "pop")
-diff name:abpvn_content_blocker lines:61 checksum:11beb0ba12
+d1528 1
+a1528 1
+truyensieuhay.com,animesub.site,quangcaoyenbai.com,phimchill.life,thefaplive.com,mv.dailyphimz.com,mv.phimbathu.one,sexhihi9x.me,anime47.best,phimhdc.com,honghotduongpho.vn,comong.info,qmhsex.sbs#%#//scriptlet("abort-on-property-read", "document.cookie")
+diff name:abpvn_content_blocker lines:94 checksum:5683f6ed35
 d2 1
 a2 1
-! Version: 20261023082433365
+! Version: 20261023083840862
 d5 2
 a6 2
-! Last modified: 23 Oct 2026 08:24:33 UTC+7
-! Diff-Path: patches/20261023082433365.patch#abpvn_content_blocker
+! Last modified: 23 Oct 2026 08:38:40 UTC+7
+! Diff-Path: patches/20261023083840862.patch#abpvn_content_blocker
 a20 1
 ! 22 thg 10, 2026 https://film4k.net
 a96 1
@@ -167,6 +245,9 @@ a205 1
 ||sofaflix.rest^*.gif$~third-party
 a224 1
 ||tophim.pro^*.gif$image,~third-party
+d525 1
+a525 1
+||q3ei4f.rophim10.cam^
 a595 1
 ###ad-popup
 a603 4
@@ -196,14 +277,44 @@ motphimchilll.icu###catfish_ad_top
 d911 1
 a911 1
 phimmoic.id##.bg-black\/70.justify-center.items-center.flex.z-\[9999\].inset-0.fixed
-diff name:abpvn_noelemhide lines:32 checksum:c240db0d1f
+d934 2
+a935 2
+rophim10.cam##.adserver
+rophim10.cam##.mt-3.topics-line.topics-grid.topics-list
+d1205 1
+a1205 1
+||cruncherpatiencestoreroom.com^$popup,domain=qmhv3.biz
+d1238 1
+a1238 1
+||qmhv3.biz/api/ads$xmlhttprequest
+d1241 1
+a1241 1
+||quoracdn.net^$image,domain=xphimsex.org|sexmupxinh.net|sexhihi9x.me|fulllivehot.us|haysexvn.shop|viet69hayz.cfd
+d1257 1
+a1257 1
+||video.s3viphub.shop/uploads/banners$image,domain=qmhv3.biz
+d1326 1
+a1326 1
+phimsexsuong3x.net,sexhihi9x.me,javhdz.one,laalmirchitakeaway.co.uk##.catfish-bottom
+d1333 3
+a1335 3
+qmhv3.biz##.global-sticky-ads
+qmhv3.biz##.header>app-banner
+qmhv3.biz##.p-4.justify-center.items-center.flex.backdrop-blur-sm.bg-black\/80.z-\[9999\].inset-0.fixed
+d1349 1
+a1349 1
+sexmupxinh.net,sexhihi9x.me,laalmirchitakeaway.co.uk##.catfish-top
+d1422 1
+a1422 1
+xphimsex.org,sexmupxinh.net,sexhihi9x.me##.xx-ads
+diff name:abpvn_noelemhide lines:47 checksum:946fabacfb
 d2 1
 a2 1
-! Version: 20261023082433365
+! Version: 20261023083840862
 d5 2
 a6 2
-! Last modified: 23 Oct 2026 08:24:33 UTC+7
-! Diff-Path: patches/20261023082433365.patch#abpvn_noelemhide
+! Last modified: 23 Oct 2026 08:38:40 UTC+7
+! Diff-Path: patches/20261023083840862.patch#abpvn_noelemhide
 a20 1
 ! 22 thg 10, 2026 https://film4k.net
 a96 1
@@ -229,14 +340,29 @@ a205 1
 ||sofaflix.rest^*.gif$~third-party
 a224 1
 ||tophim.pro^*.gif$image,~third-party
-diff name:abpvn_ublock lines:73 checksum:be1fe52339
+d525 1
+a525 1
+||q3ei4f.rophim10.cam^
+d645 1
+a645 1
+||cruncherpatiencestoreroom.com^$popup,domain=qmhv3.biz
+d678 1
+a678 1
+||qmhv3.biz/api/ads$xmlhttprequest
+d681 1
+a681 1
+||quoracdn.net^$image,domain=xphimsex.org|sexmupxinh.net|sexhihi9x.me|fulllivehot.us|haysexvn.shop|viet69hayz.cfd
+d697 1
+a697 1
+||video.s3viphub.shop/uploads/banners$image,domain=qmhv3.biz
+diff name:abpvn_ublock lines:118 checksum:10e2ea4b99
 d2 1
 a2 1
-! Version: 20261023082433365
+! Version: 20261023083840862
 d5 2
 a6 2
-! Last modified: 23 Oct 2026 08:24:33 UTC+7
-! Diff-Path: patches/20261023082433365.patch#abpvn_ublock
+! Last modified: 23 Oct 2026 08:38:40 UTC+7
+! Diff-Path: patches/20261023083840862.patch#abpvn_ublock
 a20 1
 ! 22 thg 10, 2026 https://film4k.net
 a94 1
@@ -262,6 +388,9 @@ a201 1
 ||sofaflix.rest^*.gif$~third-party
 a220 1
 ||tophim.pro^*.gif$image,~third-party
+d521 1
+a521 1
+||q3ei4f.rophim10.cam^
 a591 1
 ###ad-popup
 a599 4
@@ -291,6 +420,39 @@ motphimchilll.icu###catfish_ad_top
 d905 1
 a905 1
 phimmoic.id##.bg-black\/70.justify-center.items-center.flex.z-\[9999\].inset-0.fixed
+d928 2
+a929 2
+rophim10.cam##.adserver
+rophim10.cam##.mt-3.topics-line.topics-grid.topics-list
+d1197 1
+a1197 1
+||cruncherpatiencestoreroom.com^$popup,domain=qmhv3.biz
+d1230 1
+a1230 1
+||qmhv3.biz/api/ads$xmlhttprequest
+d1233 1
+a1233 1
+||quoracdn.net^$image,domain=xphimsex.org|sexmupxinh.net|sexhihi9x.me|fulllivehot.us|haysexvn.shop|viet69hayz.cfd
+d1249 1
+a1249 1
+||video.s3viphub.shop/uploads/banners$image,domain=qmhv3.biz
+d1318 1
+a1318 1
+phimsexsuong3x.net,sexhihi9x.me,javhdz.one,laalmirchitakeaway.co.uk##.catfish-bottom
+d1325 3
+a1327 3
+qmhv3.biz##.global-sticky-ads
+qmhv3.biz##.header>app-banner
+qmhv3.biz##.p-4.justify-center.items-center.flex.backdrop-blur-sm.bg-black\/80.z-\[9999\].inset-0.fixed
+d1341 1
+a1341 1
+sexmupxinh.net,sexhihi9x.me,laalmirchitakeaway.co.uk##.catfish-top
+d1414 1
+a1414 1
+xphimsex.org,sexmupxinh.net,sexhihi9x.me##.xx-ads
+d1463 1
+a1463 1
+freeplayervideo.com,www.sieutamphim.top,player-cdn.com,playhydrax.com,hopphim.online,streamc.xyz,qmhv3.biz,cap3.video,qmh.garden##+js(set, open, noopFunc)
 d1465 1
 a1465 1
 giovang.uno##+js(json-prune, 0.default_ads_video)
@@ -298,8 +460,17 @@ d1489 2
 a1490 2
 motchillu.mx##+js(aeld, click, sessionStorage)
 motchillu.mx,fcloud.live##+js(aeld, click, links)
+d1506 4
+a1509 4
+qmhv3.biz##+js(aeld, click, d, elements, .art-control-fullscreen)
+qmhv3.biz##+js(aeld, click, e.target)
+qmhv3.biz##+js(aeld, click, setTimeout)
+qmhv3.biz##+js(aeld, fullscreenchange, e.target)
 d1514 1
 a1514 1
 rophimz.sh,motphimc.mx,phimmoic.id##+js(aeld, click, ads)
 a1520 1
 tophim.pro##+js(aeld, click, pop)
+d1527 1
+a1527 1
+truyensieuhay.com,animesub.site,quangcaoyenbai.com,phimchill.life,thefaplive.com,mv.dailyphimz.com,mv.phimbathu.one,sexhihi9x.me,anime47.best,phimhdc.com,honghotduongpho.vn,comong.info,qmhsex.sbs##+js(aopr, document.cookie)
