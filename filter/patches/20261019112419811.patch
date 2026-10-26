@@ -1,11 +1,11 @@
-diff name:abpvn lines:202 checksum:9f6554ae4a
+diff name:abpvn lines:201 checksum:0c94b8ede3
 d2 1
 a2 1
-! Version: 20261026133820596
+! Version: 20261026220506138
 d5 2
 a6 2
-! Last modified: 26 Oct 2026 13:38:20 UTC+7
-! Diff-Path: patches/20261026133820596.patch#abpvn
+! Last modified: 26 Oct 2026 22:05:06 UTC+7
+! Diff-Path: patches/20261026220506138.patch#abpvn
 a20 1
 ! 22 thg 10, 2026 https://film4k.net
 d52 1
@@ -56,7 +56,7 @@ a198 1
 a204 1
 ||sofaflix.rest^*.gif$~third-party
 a223 1
-||tophim.pro^*.gif$image,~third-party
+||tophim.vip^*.gif$image,~third-party
 d239 2
 a240 2
 ||www.8phim1.net/2s.m3u8
@@ -157,7 +157,7 @@ a1172 1
 /adserve/*$xmlhttprequest
 d1181 1
 a1181 1
-||ads.bizwd.net^$image,domain=taxisanmiguelito.com
+||ads.bizwd.net^$image,domain=grupoalfoz.com
 d1183 1
 a1183 1
 ||androidduvetscribble.com^
@@ -184,7 +184,9 @@ chigua.com##.banner
 d1296 1
 a1296 1
 dualeotruyenday.com##[id$="bnr"]
-a1302 1
+a1302 3
+grupoalfoz.com###popup-ad-box
+grupoalfoz.com##.banner-ad
 haysex.lat,sexmupxinh.net,sexhihi18.pro##.xx-ads
 d1324 2
 a1325 1
@@ -198,17 +200,14 @@ d1348 2
 a1349 2
 sexmupxinh.net,sexhihi18.pro,laalmirchitakeaway.co.uk##.catfish-top
 sexphimhayw.pro,phimsexhay3x.com##.quangcaomobile
-a1353 2
-taxisanmiguelito.com###popup-ad-box
-taxisanmiguelito.com##.banner-ad
-diff name:abpvn_adguard lines:245 checksum:a8e09441fe
+diff name:abpvn_adguard lines:244 checksum:dfd1608222
 d2 1
 a2 1
-! Version: 20261026133820596
+! Version: 20261026220506138
 d5 2
 a6 2
-! Last modified: 26 Oct 2026 13:38:20 UTC+7
-! Diff-Path: patches/20261026133820596.patch#abpvn_adguard
+! Last modified: 26 Oct 2026 22:05:06 UTC+7
+! Diff-Path: patches/20261026220506138.patch#abpvn_adguard
 a20 1
 ! 22 thg 10, 2026 https://film4k.net
 d50 1
@@ -257,7 +256,7 @@ a196 1
 a200 1
 ||sofaflix.rest^*.gif$~third-party
 a219 1
-||tophim.pro^*.gif$image,~third-party
+||tophim.vip^*.gif$image,~third-party
 d235 2
 a236 2
 ||www.8phim1.net/2s.m3u8
@@ -358,7 +357,7 @@ a1164 1
 /adserve/*$xmlhttprequest
 d1173 1
 a1173 1
-||ads.bizwd.net^$image,domain=taxisanmiguelito.com
+||ads.bizwd.net^$image,domain=grupoalfoz.com
 d1175 1
 a1175 1
 ||androidduvetscribble.com^
@@ -385,7 +384,9 @@ chigua.com##.banner
 d1288 1
 a1288 1
 dualeotruyenday.com##[id$="bnr"]
-a1294 1
+a1294 3
+grupoalfoz.com###popup-ad-box
+grupoalfoz.com##.banner-ad
 haysex.lat,sexmupxinh.net,sexhihi18.pro##.xx-ads
 d1316 2
 a1317 1
@@ -399,9 +400,6 @@ d1340 2
 a1341 2
 sexmupxinh.net,sexhihi18.pro,laalmirchitakeaway.co.uk##.catfish-top
 sexphimhayw.pro,phimsexhay3x.com##.quangcaomobile
-a1345 2
-taxisanmiguelito.com###popup-ad-box
-taxisanmiguelito.com##.banner-ad
 a1437 1
 a.kvp726.com#%#//scriptlet("m3u-prune", "/#EXT-X-DISCONTINUITY(.|\n){1,500}#EXT-X-DISCONTINUITY/gm", "index.m3u8")
 d1457 2
@@ -436,7 +434,7 @@ rophimz.sh,motphimc.mx,phimmoic.id#%#//scriptlet("prevent-addEventListener", "cl
 d1515 1
 d1518 1
 a1519 1
-tophim.pro#%#//scriptlet("prevent-addEventListener", "click", "pop")
+tophim.vip#%#//scriptlet("prevent-addEventListener", "click", "pop")
 d1526 1
 a1526 1
 truyensieuhay.com,animesub.site,quangcaoyenbai.com,phimchill.life,thefaplive.com,mv.dailyphimz.com,mv.phimbathu.one,sexhihi18.pro,anime47.best,phimhdc.com,honghotduongpho.vn,comong.info,qmhsex.sbs#%#//scriptlet("abort-on-property-read", "document.cookie")
@@ -447,14 +445,14 @@ www.8phim1.net,javgiga.wordpress.com#%#//scriptlet("abort-on-property-read", "lo
 d1542 1
 a1542 1
 www.sieutamphim.top#%#//scriptlet("abort-on-property-write", "_$_d52e")
-diff name:abpvn_content_blocker lines:202 checksum:ffcb856c57
+diff name:abpvn_content_blocker lines:201 checksum:5b26e63af4
 d2 1
 a2 1
-! Version: 20261026133820596
+! Version: 20261026220506138
 d5 2
 a6 2
-! Last modified: 26 Oct 2026 13:38:20 UTC+7
-! Diff-Path: patches/20261026133820596.patch#abpvn_content_blocker
+! Last modified: 26 Oct 2026 22:05:06 UTC+7
+! Diff-Path: patches/20261026220506138.patch#abpvn_content_blocker
 a20 1
 ! 22 thg 10, 2026 https://film4k.net
 d52 1
@@ -505,7 +503,7 @@ a198 1
 a204 1
 ||sofaflix.rest^*.gif$~third-party
 a223 1
-||tophim.pro^*.gif$image,~third-party
+||tophim.vip^*.gif$image,~third-party
 d239 2
 a240 2
 ||www.8phim1.net/2s.m3u8
@@ -606,7 +604,7 @@ a1172 1
 /adserve/*$xmlhttprequest
 d1181 1
 a1181 1
-||ads.bizwd.net^$image,domain=taxisanmiguelito.com
+||ads.bizwd.net^$image,domain=grupoalfoz.com
 d1183 1
 a1183 1
 ||androidduvetscribble.com^
@@ -633,7 +631,9 @@ chigua.com##.banner
 d1296 1
 a1296 1
 dualeotruyenday.com##[id$="bnr"]
-a1302 1
+a1302 3
+grupoalfoz.com###popup-ad-box
+grupoalfoz.com##.banner-ad
 haysex.lat,sexmupxinh.net,sexhihi18.pro##.xx-ads
 d1324 2
 a1325 1
@@ -647,17 +647,14 @@ d1348 2
 a1349 2
 sexmupxinh.net,sexhihi18.pro,laalmirchitakeaway.co.uk##.catfish-top
 sexphimhayw.pro,phimsexhay3x.com##.quangcaomobile
-a1353 2
-taxisanmiguelito.com###popup-ad-box
-taxisanmiguelito.com##.banner-ad
-diff name:abpvn_noelemhide lines:93 checksum:1a7870cfd3
+diff name:abpvn_noelemhide lines:93 checksum:39e2206baf
 d2 1
 a2 1
-! Version: 20261026133820596
+! Version: 20261026220506138
 d5 2
 a6 2
-! Last modified: 26 Oct 2026 13:38:20 UTC+7
-! Diff-Path: patches/20261026133820596.patch#abpvn_noelemhide
+! Last modified: 26 Oct 2026 22:05:06 UTC+7
+! Diff-Path: patches/20261026220506138.patch#abpvn_noelemhide
 a20 1
 ! 22 thg 10, 2026 https://film4k.net
 d52 1
@@ -708,7 +705,7 @@ a198 1
 a204 1
 ||sofaflix.rest^*.gif$~third-party
 a223 1
-||tophim.pro^*.gif$image,~third-party
+||tophim.vip^*.gif$image,~third-party
 d239 2
 a240 2
 ||www.8phim1.net/2s.m3u8
@@ -723,7 +720,7 @@ a612 1
 /adserve/*$xmlhttprequest
 d621 1
 a621 1
-||ads.bizwd.net^$image,domain=taxisanmiguelito.com
+||ads.bizwd.net^$image,domain=grupoalfoz.com
 d623 1
 a623 1
 ||androidduvetscribble.com^
@@ -744,14 +741,14 @@ d688 1
 d696 1
 a696 1
 ||video.s3viphub.shop/uploads/banners$image,domain=qmhv3.biz
-diff name:abpvn_ublock lines:247 checksum:1f248b32ec
+diff name:abpvn_ublock lines:246 checksum:1cfc3f51d4
 d2 1
 a2 1
-! Version: 20261026133820596
+! Version: 20261026220506138
 d5 2
 a6 2
-! Last modified: 26 Oct 2026 13:38:20 UTC+7
-! Diff-Path: patches/20261026133820596.patch#abpvn_ublock
+! Last modified: 26 Oct 2026 22:05:06 UTC+7
+! Diff-Path: patches/20261026220506138.patch#abpvn_ublock
 a20 1
 ! 22 thg 10, 2026 https://film4k.net
 d50 1
@@ -802,7 +799,7 @@ a196 1
 a200 1
 ||sofaflix.rest^*.gif$~third-party
 a219 1
-||tophim.pro^*.gif$image,~third-party
+||tophim.vip^*.gif$image,~third-party
 d235 2
 a236 2
 ||www.8phim1.net/2s.m3u8
@@ -903,7 +900,7 @@ a1164 1
 /adserve/*$xmlhttprequest
 d1173 1
 a1173 1
-||ads.bizwd.net^$image,domain=taxisanmiguelito.com
+||ads.bizwd.net^$image,domain=grupoalfoz.com
 d1175 1
 a1175 1
 ||androidduvetscribble.com^
@@ -930,7 +927,9 @@ chigua.com##.banner
 d1288 1
 a1288 1
 dualeotruyenday.com##[id$="bnr"]
-a1294 1
+a1294 3
+grupoalfoz.com###popup-ad-box
+grupoalfoz.com##.banner-ad
 haysex.lat,sexmupxinh.net,sexhihi18.pro##.xx-ads
 d1316 2
 a1317 1
@@ -944,9 +943,6 @@ d1340 2
 a1341 2
 sexmupxinh.net,sexhihi18.pro,laalmirchitakeaway.co.uk##.catfish-top
 sexphimhayw.pro,phimsexhay3x.com##.quangcaomobile
-a1345 2
-taxisanmiguelito.com###popup-ad-box
-taxisanmiguelito.com##.banner-ad
 a1438 1
 a.kvp726.com##+js(m3u-prune, /#EXT-X-DISCONTINUITY(.|\n){1,500}#EXT-X-DISCONTINUITY/gm, index.m3u8)
 d1457 2
@@ -981,7 +977,7 @@ rophimz.sh,motphimc.mx,phimmoic.id##+js(aeld, click, ads)
 d1513 1
 d1516 1
 a1517 1
-tophim.pro##+js(aeld, click, pop)
+tophim.vip##+js(aeld, click, pop)
 d1524 1
 a1524 1
 truyensieuhay.com,animesub.site,quangcaoyenbai.com,phimchill.life,thefaplive.com,mv.dailyphimz.com,mv.phimbathu.one,sexhihi18.pro,anime47.best,phimhdc.com,honghotduongpho.vn,comong.info,qmhsex.sbs##+js(aopr, document.cookie)
