@@ -1,11 +1,11 @@
-diff name:abpvn lines:218 checksum:56236d279f
+diff name:abpvn lines:220 checksum:d35838d690
 d2 1
 a2 1
-! Version: 20261027195149929
+! Version: 20261028110636347
 d5 2
 a6 2
-! Last modified: 27 Oct 2026 19:51:49 UTC+7
-! Diff-Path: patches/20261027195149929.patch#abpvn
+! Last modified: 28 Oct 2026 11:06:36 UTC+7
+! Diff-Path: patches/20261028110636347.patch#abpvn
 a20 1
 ! 22 thg 10, 2026 https://film4k.net
 d52 2
@@ -54,7 +54,7 @@ a198 1
 a204 1
 ||sofaflix.rest^*.gif$~third-party
 a223 1
-||tophim.pro^*.gif$image,~third-party
+||tophim.vip^*.gif$image,~third-party
 d239 3
 a241 3
 ||www.8phim.vip/2s.m3u8
@@ -192,11 +192,11 @@ a1264 1
 ||www.vipads.live/vn/$domain=lxmanga.top,script,rewrite=abp-resource:blank-js
 d1273 2
 d1297 1
-a1297 1
-dualeotruyenday.com##[id$="bnr"]
 a1303 2
 grupoalfoz.com###popup-ad-box
 grupoalfoz.com##.banner-ad
+a1306 1
+hentaibox.top##[id$="bnr"]
 d1314 1
 a1314 1
 lxmanga.top##.ads-wrapper
@@ -217,14 +217,16 @@ a1365 1
 truyensextv.com,lxmanga.top##.sticky-footer
 a1421 1
 xxxviet.biz,sexmupxinh.net,sexhihi18.pro##.xx-ads
-diff name:abpvn_adguard lines:265 checksum:3abca0a442
+a1432 1
+||ad-events.flashtalking.com^
+diff name:abpvn_adguard lines:267 checksum:f2df71e71f
 d2 1
 a2 1
-! Version: 20261027195149929
+! Version: 20261028110636347
 d5 2
 a6 2
-! Last modified: 27 Oct 2026 19:51:49 UTC+7
-! Diff-Path: patches/20261027195149929.patch#abpvn_adguard
+! Last modified: 28 Oct 2026 11:06:36 UTC+7
+! Diff-Path: patches/20261028110636347.patch#abpvn_adguard
 a20 1
 ! 22 thg 10, 2026 https://film4k.net
 d50 2
@@ -271,7 +273,7 @@ a196 1
 a200 1
 ||sofaflix.rest^*.gif$~third-party
 a219 1
-||tophim.pro^*.gif$image,~third-party
+||tophim.vip^*.gif$image,~third-party
 d235 3
 a237 3
 ||www.8phim.vip/2s.m3u8
@@ -409,11 +411,11 @@ a1256 1
 ||www.vipads.live/vn/$domain=lxmanga.top,script,rewrite=abp-resource:blank-js
 d1265 2
 d1289 1
-a1289 1
-dualeotruyenday.com##[id$="bnr"]
 a1295 2
 grupoalfoz.com###popup-ad-box
 grupoalfoz.com##.banner-ad
+a1298 1
+hentaibox.top##[id$="bnr"]
 d1306 1
 a1306 1
 lxmanga.top##.ads-wrapper
@@ -434,18 +436,20 @@ a1357 1
 truyensextv.com,lxmanga.top##.sticky-footer
 a1413 1
 xxxviet.biz,sexmupxinh.net,sexhihi18.pro##.xx-ads
+a1424 1
+||ad-events.flashtalking.com^
 a1438 1
 a.kvp726.com#%#//scriptlet("m3u-prune", "/#EXT-X-DISCONTINUITY(.|\n){1,500}#EXT-X-DISCONTINUITY/gm", "index.m3u8")
 d1458 2
-a1459 2
-dualeotruyenday.com#%#//scriptlet("abort-current-inline-script", "document.addEventListener", "popunder")
-dualeotruyenday.com,xxxviet.biz,cliphot69.cloud,doctruyen3qhub.fit,qmanga.art,hentaivkl.pro,buomtv.page,truyenvn.sbs,javtiful.com,quatvn.garden,phimsexhayvne.com,phim18hd.site,sexviet88.cam,sexmupxinh.net,demo.14412882.com,hhtq5.vip,umetruyenz.org,damconuong.win,truyenqqko.com,phimsexsuong3x.net,sayhentai.cx,lxmanga.top,www.8phim.vip,www.sieutamphim.top,vevocloud.com,ftscontent.com,viet69.be,viet69vn.at,misskon.com,luottruyen20.com#%#//scriptlet("abort-current-inline-script", "WebAssembly", "instantiate")
 d1461 1
 a1461 1
 freeplayervideo.com,www.sieutamphim.top,player-cdn.com,hopphim.online,streamc.xyz,qmhv3.live,cap3.video,qmh.garden#%#//scriptlet("set-constant", "open", "noopFunc")
 d1463 1
 a1463 1
 giovang.uno#%#//scriptlet("json-prune", "0.default_ads_video")
+a1465 2
+hentaibox.top#%#//scriptlet("abort-current-inline-script", "document.addEventListener", "popunder")
+hentaibox.top,xxxviet.biz,cliphot69.cloud,doctruyen3qhub.fit,qmanga.art,hentaivkl.pro,buomtv.page,truyenvn.sbs,javtiful.com,quatvn.garden,phimsexhayvne.com,phim18hd.site,sexviet88.cam,sexmupxinh.net,demo.14412882.com,hhtq5.vip,umetruyenz.org,damconuong.win,truyenqqko.com,phimsexsuong3x.net,sayhentai.cx,lxmanga.top,www.8phim.vip,www.sieutamphim.top,vevocloud.com,ftscontent.com,viet69.be,viet69vn.at,misskon.com,luottruyen20.com#%#//scriptlet("abort-current-inline-script", "WebAssembly", "instantiate")
 d1470 1
 a1470 1
 imail.edu.vn,www.8phim.vip,trumtruyen.xyz#%#//scriptlet("abort-current-inline-script", "setTimeout", "Aff")
@@ -472,7 +476,7 @@ rophimz.bz,motphimc.mx,phimmoic.biz#%#//scriptlet("prevent-addEventListener", "c
 d1516 1
 d1519 1
 a1520 1
-tophim.pro#%#//scriptlet("prevent-addEventListener", "click", "pop")
+tophim.vip#%#//scriptlet("prevent-addEventListener", "click", "pop")
 d1527 1
 a1527 1
 truyensieuhay.com,animesub.site,quangcaoyenbai.com,phimchill.life,thefaplive.com,mv.dailyphimz.com,mv.phimbathu.one,sexhihi18.pro,anime47.best,phimhdc.com,honghotduongpho.vn,comong.info,qmhsex.sbs#%#//scriptlet("abort-on-property-read", "document.cookie")
@@ -483,14 +487,14 @@ www.8phim.vip,javgiga.wordpress.com#%#//scriptlet("abort-on-property-read", "loc
 d1543 1
 a1543 1
 www.sieutamphim.top#%#//scriptlet("abort-on-property-write", "_$_d52e")
-diff name:abpvn_content_blocker lines:218 checksum:68e1518e44
+diff name:abpvn_content_blocker lines:220 checksum:23b1238264
 d2 1
 a2 1
-! Version: 20261027195149929
+! Version: 20261028110636347
 d5 2
 a6 2
-! Last modified: 27 Oct 2026 19:51:49 UTC+7
-! Diff-Path: patches/20261027195149929.patch#abpvn_content_blocker
+! Last modified: 28 Oct 2026 11:06:36 UTC+7
+! Diff-Path: patches/20261028110636347.patch#abpvn_content_blocker
 a20 1
 ! 22 thg 10, 2026 https://film4k.net
 d52 2
@@ -539,7 +543,7 @@ a198 1
 a204 1
 ||sofaflix.rest^*.gif$~third-party
 a223 1
-||tophim.pro^*.gif$image,~third-party
+||tophim.vip^*.gif$image,~third-party
 d239 3
 a241 3
 ||www.8phim.vip/2s.m3u8
@@ -677,11 +681,11 @@ a1264 1
 ||www.vipads.live/vn/$domain=lxmanga.top,script,rewrite=abp-resource:blank-js
 d1273 2
 d1297 1
-a1297 1
-dualeotruyenday.com##[id$="bnr"]
 a1303 2
 grupoalfoz.com###popup-ad-box
 grupoalfoz.com##.banner-ad
+a1306 1
+hentaibox.top##[id$="bnr"]
 d1314 1
 a1314 1
 lxmanga.top##.ads-wrapper
@@ -702,14 +706,16 @@ a1365 1
 truyensextv.com,lxmanga.top##.sticky-footer
 a1421 1
 xxxviet.biz,sexmupxinh.net,sexhihi18.pro##.xx-ads
-diff name:abpvn_noelemhide lines:108 checksum:abe853ffb5
+a1432 1
+||ad-events.flashtalking.com^
+diff name:abpvn_noelemhide lines:110 checksum:c6e4e25bae
 d2 1
 a2 1
-! Version: 20261027195149929
+! Version: 20261028110636347
 d5 2
 a6 2
-! Last modified: 27 Oct 2026 19:51:49 UTC+7
-! Diff-Path: patches/20261027195149929.patch#abpvn_noelemhide
+! Last modified: 28 Oct 2026 11:06:36 UTC+7
+! Diff-Path: patches/20261028110636347.patch#abpvn_noelemhide
 a20 1
 ! 22 thg 10, 2026 https://film4k.net
 d52 2
@@ -758,7 +764,7 @@ a198 1
 a204 1
 ||sofaflix.rest^*.gif$~third-party
 a223 1
-||tophim.pro^*.gif$image,~third-party
+||tophim.vip^*.gif$image,~third-party
 d239 3
 a241 3
 ||www.8phim.vip/2s.m3u8
@@ -811,14 +817,16 @@ a696 1
 d704 1
 a704 1
 ||www.vipads.live/vn/$domain=lxmanga.top,script,rewrite=abp-resource:blank-js
-diff name:abpvn_ublock lines:267 checksum:537042f3b3
+a717 1
+||ad-events.flashtalking.com^
+diff name:abpvn_ublock lines:269 checksum:1cdfaf9805
 d2 1
 a2 1
-! Version: 20261027195149929
+! Version: 20261028110636347
 d5 2
 a6 2
-! Last modified: 27 Oct 2026 19:51:49 UTC+7
-! Diff-Path: patches/20261027195149929.patch#abpvn_ublock
+! Last modified: 28 Oct 2026 11:06:36 UTC+7
+! Diff-Path: patches/20261028110636347.patch#abpvn_ublock
 a20 1
 ! 22 thg 10, 2026 https://film4k.net
 d50 2
@@ -867,7 +875,7 @@ a196 1
 a200 1
 ||sofaflix.rest^*.gif$~third-party
 a219 1
-||tophim.pro^*.gif$image,~third-party
+||tophim.vip^*.gif$image,~third-party
 d235 3
 a237 3
 ||www.8phim.vip/2s.m3u8
@@ -1005,11 +1013,11 @@ a1256 1
 ||www.vipads.live/vn/$domain=lxmanga.top,script,rewrite=abp-resource:blank-js
 d1265 2
 d1289 1
-a1289 1
-dualeotruyenday.com##[id$="bnr"]
 a1295 2
 grupoalfoz.com###popup-ad-box
 grupoalfoz.com##.banner-ad
+a1298 1
+hentaibox.top##[id$="bnr"]
 d1306 1
 a1306 1
 lxmanga.top##.ads-wrapper
@@ -1030,18 +1038,20 @@ a1357 1
 truyensextv.com,lxmanga.top##.sticky-footer
 a1413 1
 xxxviet.biz,sexmupxinh.net,sexhihi18.pro##.xx-ads
+a1424 1
+||ad-events.flashtalking.com^
 a1439 1
 a.kvp726.com##+js(m3u-prune, /#EXT-X-DISCONTINUITY(.|\n){1,500}#EXT-X-DISCONTINUITY/gm, index.m3u8)
 d1458 2
-a1459 2
-dualeotruyenday.com##+js(acs, document.addEventListener, popunder)
-dualeotruyenday.com,xxxviet.biz,cliphot69.cloud,doctruyen3qhub.fit,qmanga.art,hentaivkl.pro,buomtv.page,truyenvn.sbs,javtiful.com,quatvn.garden,phimsexhayvne.com,phim18hd.site,sexviet88.cam,sexmupxinh.net,demo.14412882.com,hhtq5.vip,umetruyenz.org,damconuong.win,truyenqqko.com,phimsexsuong3x.net,sayhentai.cx,lxmanga.top,www.8phim.vip,www.sieutamphim.top,vevocloud.com,ftscontent.com,viet69.be,viet69vn.at,misskon.com,luottruyen20.com##+js(acs, WebAssembly, instantiate)
 d1461 1
 a1461 1
 freeplayervideo.com,www.sieutamphim.top,player-cdn.com,playhydrax.com,hopphim.online,streamc.xyz,qmhv3.live,cap3.video,qmh.garden##+js(set, open, noopFunc)
 d1463 1
 a1463 1
 giovang.uno##+js(json-prune, 0.default_ads_video)
+a1465 2
+hentaibox.top##+js(acs, document.addEventListener, popunder)
+hentaibox.top,xxxviet.biz,cliphot69.cloud,doctruyen3qhub.fit,qmanga.art,hentaivkl.pro,buomtv.page,truyenvn.sbs,javtiful.com,quatvn.garden,phimsexhayvne.com,phim18hd.site,sexviet88.cam,sexmupxinh.net,demo.14412882.com,hhtq5.vip,umetruyenz.org,damconuong.win,truyenqqko.com,phimsexsuong3x.net,sayhentai.cx,lxmanga.top,www.8phim.vip,www.sieutamphim.top,vevocloud.com,ftscontent.com,viet69.be,viet69vn.at,misskon.com,luottruyen20.com##+js(acs, WebAssembly, instantiate)
 d1470 1
 a1470 1
 imail.edu.vn,www.8phim.vip,trumtruyen.xyz,audiotruyenfull.com##+js(acs, setTimeout, Aff)
@@ -1068,7 +1078,7 @@ rophimz.bz,motphimc.mx,phimmoic.biz##+js(aeld, click, ads)
 d1514 1
 d1517 1
 a1518 1
-tophim.pro##+js(aeld, click, pop)
+tophim.vip##+js(aeld, click, pop)
 d1525 1
 a1525 1
 truyensieuhay.com,animesub.site,quangcaoyenbai.com,phimchill.life,thefaplive.com,mv.dailyphimz.com,mv.phimbathu.one,sexhihi18.pro,anime47.best,phimhdc.com,honghotduongpho.vn,comong.info,qmhsex.sbs##+js(aopr, document.cookie)
