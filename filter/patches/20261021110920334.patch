@@ -1,11 +1,11 @@
-diff name:abpvn lines:200 checksum:3ce9fe89c6
+diff name:abpvn lines:242 checksum:2933533508
 d2 1
 a2 1
-! Version: 20261028113510566
+! Version: 20261029000512595
 d5 2
 a6 2
-! Last modified: 28 Oct 2026 11:35:10 UTC+7
-! Diff-Path: patches/20261028113510566.patch#abpvn
+! Last modified: 29 Oct 2026 00:05:12 UTC+7
+! Diff-Path: patches/20261029000512595.patch#abpvn
 a20 1
 ! 22 thg 10, 2026 https://film4k.net
 d52 2
@@ -20,10 +20,20 @@ a104 1
 d111 1
 a111 1
 ||cdnvip.chuoichientv.net^*.gif$domain=live10.chuoichientv.me|fhd-01.cctvsignal.xyz|lau06.bonglautv1.org|chuoichientv2.live
+d119 3
+a121 3
+||coiphim.cc/client_assets/js/dataview/adsview.js$script,~third-party
+||coiphim.cc/client_assets/js/minijumb.js$script,~third-party
+||coiphim.cc^*.gif$image
 a127 3
 ||film4k.fun^*.gif$image,~third-party
 ||film4k.net^*.gif$image,~third-party
 ||film4k.pl^*.gif$image,~third-party
+d130 3
+a132 3
+||ghienphim.blog^*.gif$image,domain=coiphim.cc
+||ghienphim.mobi/client_assets/js/minijumb.js
+||ghienphim.mobi^*.gif$image
 d134 5
 a138 5
 ||giovang.uno/wp-content/plugins/ovn-suite/assets/frontend/banner/$~third-party
@@ -31,6 +41,9 @@ a138 5
 ||giovang.uno/wp-content/themes/GioVang/assets/tvc/$media,~third-party
 ||giovang.uno/wp-content/uploads/2026/06/giovang-popup-1.png$image
 ||giovang.uno^*.gif$image
+d152 1
+a152 1
+||i.imgur.com^*.gif$image,domain=ghienphim.mobi|mv.dailyphimz.com|mv.phimmoiaz.cc|tv.manhvl.com|www.curvegrad.com|soicau247s.org|phim24k.top|jophim.top|rophimz.top
 d158 1
 a158 1
 ||imagedelivery.net^$image,domain=motphimchilll.xyz
@@ -86,10 +99,22 @@ chuoichientv2.live##.ad-catfish
 chuoichientv2.live##.ad-topbanners
 chuoichientv2.live##.cct-partner-row
 chuoichientv2.live##.cct-sponsor-strip
+d712 5
+a716 5
+coiphim.cc##li.special.parent
+coiphim.cc,ghienphim.mobi##.ad-floater
+coiphim.cc,ghienphim.mobi##.popunder-link
+coiphim.cc,ghienphim.mobi##.promotion-popup
+coiphim.cc,ghienphim.mobi,subnhanh.plus##.video-ad-layer
 a755 3
 film4k.net,film4k.pl,film4k.fun##.unit-bar
 film4k.net,film4k.pl,film4k.fun##.unit-fish
 film4k.net,film4k.pl,film4k.fun##.unit-sheet
+d769 3
+a771 3
+ghienphim.mobi##.no-ads
+ghienphim.mobi##.parent.special
+ghienphim.mobi##.partner-me
 d776 7
 a782 7
 giovang.uno##.balloon-wrapper
@@ -102,6 +127,9 @@ giovang.uno##.nav-top-nha-cai
 d823 1
 a823 1
 ketqua16.net,nghean24h.vn,new.tructiepnba.me,tv.manhvl.com,bongdainfox.tv,www.8phim.vip,thapcam73.live,thapcam73.life,i2pd.website##a[rel="nofollow"]
+d825 1
+a825 1
+kienthuc.net.vn,saostar.vn,bongda24h.vn,antt.vn,coiphim.cc,ghienphim.mobi,nghenhinvietnam.vn,vn-z.vn##.ads
 a870 1
 motchillt.cx##.bg-black\/70.justify-center.items-center.flex.z-\[9999\].inset-0.fixed
 d873 1
@@ -125,6 +153,9 @@ a936 3
 rophim10.cam##.adserver
 rophim10.cam##.mt-3.topics-line.topics-grid.topics-list
 rophimz.bz,mamphim.space,rophim1.vip##.sspp-area
+d1013 1
+a1013 1
+toquoc.vn,baoxaydung.vn,tienphong.vn,taichinhdoanhnghiep.net.vn,coiphim.cc,ghienphim.mobi##.banner
 d1099 8
 a1109 8
 www.8phim.vip##.BanerTop100
@@ -139,12 +170,19 @@ d1113 4
 d1127 1
 a1127 1
 www.sieutamphim.top###scriptDiv
+d1136 1
+a1136 1
+yanhh3d.plus,hhtm.club###catfish-ads
 d1183 1
 a1183 1
-||ads.bizwd.net^$image,domain=grupoalfoz.com
+||ads.bizwd.net^$image,domain=langostagalapagos.com
 d1190 1
 a1190 1
 ||bullionglidingscuttle.com/lv/esnk/2031811/code.js$domain=lxmanga.top,script,rewrite=abp-resource:blank-js
+d1198 2
+a1199 2
+||cliphot69.golf$csp=script-src 'self' 'unsafe-inline'
+||cliphot69.golf^*.gif$image
 d1204 3
 a1206 3
 ||crumpetprankerstench.com/on.js$domain=lxmanga.top,script,rewrite=abp-resource:blank-js
@@ -171,15 +209,19 @@ a1257 1
 d1265 1
 a1265 1
 ||www.vipads.live/vn/$domain=lxmanga.top,script,rewrite=abp-resource:blank-js
-d1296 1
-a1302 2
-grupoalfoz.com###popup-ad-box
-grupoalfoz.com##.banner-ad
+d1292 5
+a1296 4
+cliphot69.golf###custom_html-42
+cliphotvn69.com,dynadot.rsocdomains.com,cliphot69.golf,www.gvnvh18z.com,phimsexhayvne.com,sayhentai.cx,xamvn.yachts,sexviet69.cc##.float-ck-center-lt
+damconuong.icu##.catfish-ad
+damconuong.icu##a[rel="nofollow"]
 a1305 1
 hentaibox.top##[id$="bnr"]
 d1312 1
 d1314 3
-a1316 1
+a1316 3
+langostagalapagos.com###popup-ad-box
+langostagalapagos.com##.banner-ad
 lxmanga.top##.ads-wrapper
 d1327 1
 a1327 2
@@ -199,14 +241,14 @@ a1366 1
 truyensextv.com,lxmanga.top##.sticky-footer
 a1433 1
 ||ad-events.flashtalking.com^
-diff name:abpvn_adguard lines:247 checksum:f7110b3093
+diff name:abpvn_adguard lines:290 checksum:b0d623a6bf
 d2 1
 a2 1
-! Version: 20261028113510566
+! Version: 20261029000512595
 d5 2
 a6 2
-! Last modified: 28 Oct 2026 11:35:10 UTC+7
-! Diff-Path: patches/20261028113510566.patch#abpvn_adguard
+! Last modified: 29 Oct 2026 00:05:12 UTC+7
+! Diff-Path: patches/20261029000512595.patch#abpvn_adguard
 a20 1
 ! 22 thg 10, 2026 https://film4k.net
 d50 2
@@ -221,10 +263,20 @@ a101 1
 d108 1
 a108 1
 ||cdnvip.chuoichientv.net^*.gif$domain=live10.chuoichientv.me|fhd-01.cctvsignal.xyz|lau06.bonglautv1.org|chuoichientv2.live
+d116 3
+a118 3
+||coiphim.cc/client_assets/js/dataview/adsview.js$script,~third-party
+||coiphim.cc/client_assets/js/minijumb.js$script,~third-party
+||coiphim.cc^*.gif$image
 a124 3
 ||film4k.fun^*.gif$image,~third-party
 ||film4k.net^*.gif$image,~third-party
 ||film4k.pl^*.gif$image,~third-party
+d127 3
+a129 3
+||ghienphim.blog^*.gif$image,domain=coiphim.cc
+||ghienphim.mobi/client_assets/js/minijumb.js
+||ghienphim.mobi^*.gif$image
 d131 5
 a135 5
 ||giovang.uno/wp-content/plugins/ovn-suite/assets/frontend/banner/$~third-party
@@ -232,6 +284,9 @@ a135 5
 ||giovang.uno/wp-content/themes/GioVang/assets/tvc/$media,~third-party
 ||giovang.uno/wp-content/uploads/2026/06/giovang-popup-1.png$image
 ||giovang.uno^*.gif$image
+d149 1
+a149 1
+||i.imgur.com^*.gif$image,domain=ghienphim.mobi|mv.dailyphimz.com|mv.phimmoiaz.cc|tv.manhvl.com|www.curvegrad.com|soicau247s.org|phim24k.top|jophim.top|rophimz.top
 d155 1
 a155 1
 ||imagedelivery.net^$image,domain=motphimchilll.xyz
@@ -287,10 +342,22 @@ chuoichientv2.live##.ad-catfish
 chuoichientv2.live##.ad-topbanners
 chuoichientv2.live##.cct-partner-row
 chuoichientv2.live##.cct-sponsor-strip
+d707 5
+a711 5
+coiphim.cc##li.special.parent
+coiphim.cc,ghienphim.mobi##.ad-floater
+coiphim.cc,ghienphim.mobi##.popunder-link
+coiphim.cc,ghienphim.mobi##.promotion-popup
+coiphim.cc,ghienphim.mobi,subnhanh.plus##.video-ad-layer
 a750 3
 film4k.net,film4k.pl,film4k.fun##.unit-bar
 film4k.net,film4k.pl,film4k.fun##.unit-fish
 film4k.net,film4k.pl,film4k.fun##.unit-sheet
+d764 3
+a766 3
+ghienphim.mobi##.no-ads
+ghienphim.mobi##.parent.special
+ghienphim.mobi##.partner-me
 d771 7
 a777 7
 giovang.uno##.balloon-wrapper
@@ -303,6 +370,9 @@ giovang.uno##.nav-top-nha-cai
 d817 1
 a817 1
 ketqua16.net,nghean24h.vn,new.tructiepnba.me,tv.manhvl.com,bongdainfox.tv,www.8phim.vip,thapcam73.live,thapcam73.life,i2pd.website##a[rel="nofollow"]
+d819 1
+a819 1
+kienthuc.net.vn,saostar.vn,bongda24h.vn,antt.vn,coiphim.cc,ghienphim.mobi,nghenhinvietnam.vn,vn-z.vn##.ads
 a864 1
 motchillt.cx##.bg-black\/70.justify-center.items-center.flex.z-\[9999\].inset-0.fixed
 d867 1
@@ -326,6 +396,9 @@ a929 3
 rophim10.cam##.adserver
 rophim10.cam##.mt-3.topics-line.topics-grid.topics-list
 rophimz.bz,mamphim.space,rophim1.vip##.sspp-area
+d1006 1
+a1006 1
+toquoc.vn,baoxaydung.vn,tienphong.vn,taichinhdoanhnghiep.net.vn,coiphim.cc,ghienphim.mobi##.banner
 d1092 8
 a1102 8
 www.8phim.vip##.BanerTop100
@@ -340,12 +413,19 @@ d1106 4
 d1120 1
 a1120 1
 www.sieutamphim.top###scriptDiv
+d1129 1
+a1129 1
+yanhh3d.plus,hhtm.club###catfish-ads
 d1174 1
 a1174 1
-||ads.bizwd.net^$image,domain=grupoalfoz.com
+||ads.bizwd.net^$image,domain=langostagalapagos.com
 d1181 1
 a1181 1
 ||bullionglidingscuttle.com/lv/esnk/2031811/code.js$domain=lxmanga.top,script,rewrite=abp-resource:blank-js
+d1189 2
+a1190 2
+||cliphot69.golf$csp=script-src 'self' 'unsafe-inline'
+||cliphot69.golf^*.gif$image
 d1195 3
 a1197 3
 ||crumpetprankerstench.com/on.js$domain=lxmanga.top,script,rewrite=abp-resource:blank-js
@@ -372,15 +452,19 @@ a1248 1
 d1256 1
 a1256 1
 ||www.vipads.live/vn/$domain=lxmanga.top,script,rewrite=abp-resource:blank-js
-d1287 1
-a1293 2
-grupoalfoz.com###popup-ad-box
-grupoalfoz.com##.banner-ad
+d1283 5
+a1287 4
+cliphot69.golf###custom_html-42
+cliphotvn69.com,dynadot.rsocdomains.com,cliphot69.golf,www.gvnvh18z.com,phimsexhayvne.com,sayhentai.cx,xamvn.yachts,sexviet69.cc##.float-ck-center-lt
+damconuong.icu##.catfish-ad
+damconuong.icu##a[rel="nofollow"]
 a1296 1
 hentaibox.top##[id$="bnr"]
 d1303 1
 d1305 3
-a1307 1
+a1307 3
+langostagalapagos.com###popup-ad-box
+langostagalapagos.com##.banner-ad
 lxmanga.top##.ads-wrapper
 d1318 1
 a1318 2
@@ -409,7 +493,7 @@ a1464 1
 giovang.uno#%#//scriptlet("json-prune", "0.default_ads_video")
 a1466 2
 hentaibox.top#%#//scriptlet("abort-current-inline-script", "document.addEventListener", "popunder")
-hentaibox.top,phimsextrung.cc,cliphot69.cloud,doctruyen3qhub.fit,qmanga.art,hentaivkl.pro,buomtv.page,truyenvn.sbs,javtiful.com,quatvn.garden,phimsexhayvne.com,phim18hd.site,sexviet88.cam,sexmupxinh.net,demo.14412882.com,hhtq5.vip,umetruyenz.org,damconuong.win,truyenqqko.com,phimsexsuong3x.net,sayhentai.cx,lxmanga.top,www.8phim.vip,www.sieutamphim.top,vevocloud.com,ftscontent.com,viet69.be,viet69vn.at,misskon.com,luottruyen20.com#%#//scriptlet("abort-current-inline-script", "WebAssembly", "instantiate")
+hentaibox.top,phimsextrung.cc,cliphot69.golf,doctruyen3qhub.fit,qmanga.art,hentaivkl.pro,buomtv.page,truyenvn.sbs,javtiful.com,quatvn.garden,phimsexhayvne.com,phim18hd.site,sexviet88.cam,sexmupxinh.net,demo.14412882.com,hhtq5.vip,umetruyenz.org,damconuong.icu,truyenqqko.com,phimsexsuong3x.net,sayhentai.cx,lxmanga.top,www.8phim.vip,www.sieutamphim.top,vevocloud.com,ftscontent.com,viet69.be,viet69vn.at,misskon.com,luottruyen21.com#%#//scriptlet("abort-current-inline-script", "WebAssembly", "instantiate")
 d1471 1
 a1471 1
 imail.edu.vn,www.8phim.vip,trumtruyen.xyz#%#//scriptlet("abort-current-inline-script", "setTimeout", "Aff")
@@ -437,8 +521,9 @@ d1517 1
 d1520 1
 a1521 1
 tophim.vip#%#//scriptlet("prevent-addEventListener", "click", "pop")
-d1528 1
-a1528 1
+d1527 2
+a1528 2
+truyensextv.com,yanhh3d.plus,z1.chinav.sex#%#//scriptlet("abort-current-inline-script", "document.addEventListener", "opup")
 truyensieuhay.com,animesub.site,quangcaoyenbai.com,phimchill.life,thefaplive.com,mv.dailyphimz.com,mv.phimbathu.one,sexhihi18.pro,anime47.best,phimhdc.com,honghotduongpho.vn,comong.info,qmhsex.sbs#%#//scriptlet("abort-on-property-read", "document.cookie")
 d1532 2
 a1533 2
@@ -447,14 +532,14 @@ www.8phim.vip,javgiga.wordpress.com#%#//scriptlet("abort-on-property-read", "loc
 d1544 1
 a1544 1
 www.sieutamphim.top#%#//scriptlet("abort-on-property-write", "_$_d52e")
-diff name:abpvn_content_blocker lines:200 checksum:fd73fcc7fd
+diff name:abpvn_content_blocker lines:242 checksum:696cd70d8c
 d2 1
 a2 1
-! Version: 20261028113510566
+! Version: 20261029000512595
 d5 2
 a6 2
-! Last modified: 28 Oct 2026 11:35:10 UTC+7
-! Diff-Path: patches/20261028113510566.patch#abpvn_content_blocker
+! Last modified: 29 Oct 2026 00:05:12 UTC+7
+! Diff-Path: patches/20261029000512595.patch#abpvn_content_blocker
 a20 1
 ! 22 thg 10, 2026 https://film4k.net
 d52 2
@@ -469,10 +554,20 @@ a104 1
 d111 1
 a111 1
 ||cdnvip.chuoichientv.net^*.gif$domain=live10.chuoichientv.me|fhd-01.cctvsignal.xyz|lau06.bonglautv1.org|chuoichientv2.live
+d119 3
+a121 3
+||coiphim.cc/client_assets/js/dataview/adsview.js$script,~third-party
+||coiphim.cc/client_assets/js/minijumb.js$script,~third-party
+||coiphim.cc^*.gif$image
 a127 3
 ||film4k.fun^*.gif$image,~third-party
 ||film4k.net^*.gif$image,~third-party
 ||film4k.pl^*.gif$image,~third-party
+d130 3
+a132 3
+||ghienphim.blog^*.gif$image,domain=coiphim.cc
+||ghienphim.mobi/client_assets/js/minijumb.js
+||ghienphim.mobi^*.gif$image
 d134 5
 a138 5
 ||giovang.uno/wp-content/plugins/ovn-suite/assets/frontend/banner/$~third-party
@@ -480,6 +575,9 @@ a138 5
 ||giovang.uno/wp-content/themes/GioVang/assets/tvc/$media,~third-party
 ||giovang.uno/wp-content/uploads/2026/06/giovang-popup-1.png$image
 ||giovang.uno^*.gif$image
+d152 1
+a152 1
+||i.imgur.com^*.gif$image,domain=ghienphim.mobi|mv.dailyphimz.com|mv.phimmoiaz.cc|tv.manhvl.com|www.curvegrad.com|soicau247s.org|phim24k.top|jophim.top|rophimz.top
 d158 1
 a158 1
 ||imagedelivery.net^$image,domain=motphimchilll.xyz
@@ -535,10 +633,22 @@ chuoichientv2.live##.ad-catfish
 chuoichientv2.live##.ad-topbanners
 chuoichientv2.live##.cct-partner-row
 chuoichientv2.live##.cct-sponsor-strip
+d712 5
+a716 5
+coiphim.cc##li.special.parent
+coiphim.cc,ghienphim.mobi##.ad-floater
+coiphim.cc,ghienphim.mobi##.popunder-link
+coiphim.cc,ghienphim.mobi##.promotion-popup
+coiphim.cc,ghienphim.mobi,subnhanh.plus##.video-ad-layer
 a755 3
 film4k.net,film4k.pl,film4k.fun##.unit-bar
 film4k.net,film4k.pl,film4k.fun##.unit-fish
 film4k.net,film4k.pl,film4k.fun##.unit-sheet
+d769 3
+a771 3
+ghienphim.mobi##.no-ads
+ghienphim.mobi##.parent.special
+ghienphim.mobi##.partner-me
 d776 7
 a782 7
 giovang.uno##.balloon-wrapper
@@ -551,6 +661,9 @@ giovang.uno##.nav-top-nha-cai
 d823 1
 a823 1
 ketqua16.net,nghean24h.vn,new.tructiepnba.me,tv.manhvl.com,bongdainfox.tv,www.8phim.vip,thapcam73.live,thapcam73.life,i2pd.website##a[rel="nofollow"]
+d825 1
+a825 1
+kienthuc.net.vn,saostar.vn,bongda24h.vn,antt.vn,coiphim.cc,ghienphim.mobi,nghenhinvietnam.vn,vn-z.vn##.ads
 a870 1
 motchillt.cx##.bg-black\/70.justify-center.items-center.flex.z-\[9999\].inset-0.fixed
 d873 1
@@ -574,6 +687,9 @@ a936 3
 rophim10.cam##.adserver
 rophim10.cam##.mt-3.topics-line.topics-grid.topics-list
 rophimz.bz,mamphim.space,rophim1.vip##.sspp-area
+d1013 1
+a1013 1
+toquoc.vn,baoxaydung.vn,tienphong.vn,taichinhdoanhnghiep.net.vn,coiphim.cc,ghienphim.mobi##.banner
 d1099 8
 a1109 8
 www.8phim.vip##.BanerTop100
@@ -588,12 +704,19 @@ d1113 4
 d1127 1
 a1127 1
 www.sieutamphim.top###scriptDiv
+d1136 1
+a1136 1
+yanhh3d.plus,hhtm.club###catfish-ads
 d1183 1
 a1183 1
-||ads.bizwd.net^$image,domain=grupoalfoz.com
+||ads.bizwd.net^$image,domain=langostagalapagos.com
 d1190 1
 a1190 1
 ||bullionglidingscuttle.com/lv/esnk/2031811/code.js$domain=lxmanga.top,script,rewrite=abp-resource:blank-js
+d1198 2
+a1199 2
+||cliphot69.golf$csp=script-src 'self' 'unsafe-inline'
+||cliphot69.golf^*.gif$image
 d1204 3
 a1206 3
 ||crumpetprankerstench.com/on.js$domain=lxmanga.top,script,rewrite=abp-resource:blank-js
@@ -620,15 +743,19 @@ a1257 1
 d1265 1
 a1265 1
 ||www.vipads.live/vn/$domain=lxmanga.top,script,rewrite=abp-resource:blank-js
-d1296 1
-a1302 2
-grupoalfoz.com###popup-ad-box
-grupoalfoz.com##.banner-ad
+d1292 5
+a1296 4
+cliphot69.golf###custom_html-42
+cliphotvn69.com,dynadot.rsocdomains.com,cliphot69.golf,www.gvnvh18z.com,phimsexhayvne.com,sayhentai.cx,xamvn.yachts,sexviet69.cc##.float-ck-center-lt
+damconuong.icu##.catfish-ad
+damconuong.icu##a[rel="nofollow"]
 a1305 1
 hentaibox.top##[id$="bnr"]
 d1312 1
 d1314 3
-a1316 1
+a1316 3
+langostagalapagos.com###popup-ad-box
+langostagalapagos.com##.banner-ad
 lxmanga.top##.ads-wrapper
 d1327 1
 a1327 2
@@ -648,14 +775,14 @@ a1366 1
 truyensextv.com,lxmanga.top##.sticky-footer
 a1433 1
 ||ad-events.flashtalking.com^
-diff name:abpvn_noelemhide lines:102 checksum:387709f519
+diff name:abpvn_noelemhide lines:119 checksum:7881d819aa
 d2 1
 a2 1
-! Version: 20261028113510566
+! Version: 20261029000512595
 d5 2
 a6 2
-! Last modified: 28 Oct 2026 11:35:10 UTC+7
-! Diff-Path: patches/20261028113510566.patch#abpvn_noelemhide
+! Last modified: 29 Oct 2026 00:05:12 UTC+7
+! Diff-Path: patches/20261029000512595.patch#abpvn_noelemhide
 a20 1
 ! 22 thg 10, 2026 https://film4k.net
 d52 2
@@ -670,10 +797,20 @@ a104 1
 d111 1
 a111 1
 ||cdnvip.chuoichientv.net^*.gif$domain=live10.chuoichientv.me|fhd-01.cctvsignal.xyz|lau06.bonglautv1.org|chuoichientv2.live
+d119 3
+a121 3
+||coiphim.cc/client_assets/js/dataview/adsview.js$script,~third-party
+||coiphim.cc/client_assets/js/minijumb.js$script,~third-party
+||coiphim.cc^*.gif$image
 a127 3
 ||film4k.fun^*.gif$image,~third-party
 ||film4k.net^*.gif$image,~third-party
 ||film4k.pl^*.gif$image,~third-party
+d130 3
+a132 3
+||ghienphim.blog^*.gif$image,domain=coiphim.cc
+||ghienphim.mobi/client_assets/js/minijumb.js
+||ghienphim.mobi^*.gif$image
 d134 5
 a138 5
 ||giovang.uno/wp-content/plugins/ovn-suite/assets/frontend/banner/$~third-party
@@ -681,6 +818,9 @@ a138 5
 ||giovang.uno/wp-content/themes/GioVang/assets/tvc/$media,~third-party
 ||giovang.uno/wp-content/uploads/2026/06/giovang-popup-1.png$image
 ||giovang.uno^*.gif$image
+d152 1
+a152 1
+||i.imgur.com^*.gif$image,domain=ghienphim.mobi|mv.dailyphimz.com|mv.phimmoiaz.cc|tv.manhvl.com|www.curvegrad.com|soicau247s.org|phim24k.top|jophim.top|rophimz.top
 d158 1
 a158 1
 ||imagedelivery.net^$image,domain=motphimchilll.xyz
@@ -719,10 +859,14 @@ a571 1
 ||vipads.live^$domain=~lxmanga.top
 d623 1
 a623 1
-||ads.bizwd.net^$image,domain=grupoalfoz.com
+||ads.bizwd.net^$image,domain=langostagalapagos.com
 d630 1
 a630 1
 ||bullionglidingscuttle.com/lv/esnk/2031811/code.js$domain=lxmanga.top,script,rewrite=abp-resource:blank-js
+d638 2
+a639 2
+||cliphot69.golf$csp=script-src 'self' 'unsafe-inline'
+||cliphot69.golf^*.gif$image
 d644 3
 a646 3
 ||crumpetprankerstench.com/on.js$domain=lxmanga.top,script,rewrite=abp-resource:blank-js
@@ -751,14 +895,14 @@ a705 1
 ||www.vipads.live/vn/$domain=lxmanga.top,script,rewrite=abp-resource:blank-js
 a718 1
 ||ad-events.flashtalking.com^
-diff name:abpvn_ublock lines:247 checksum:8440fab358
+diff name:abpvn_ublock lines:290 checksum:ba2bc0f6da
 d2 1
 a2 1
-! Version: 20261028113510566
+! Version: 20261029000512595
 d5 2
 a6 2
-! Last modified: 28 Oct 2026 11:35:10 UTC+7
-! Diff-Path: patches/20261028113510566.patch#abpvn_ublock
+! Last modified: 29 Oct 2026 00:05:12 UTC+7
+! Diff-Path: patches/20261029000512595.patch#abpvn_ublock
 a20 1
 ! 22 thg 10, 2026 https://film4k.net
 d50 2
@@ -773,10 +917,20 @@ a102 1
 d109 1
 a109 1
 ||cdnvip.chuoichientv.net^*.gif$domain=live10.chuoichientv.me|fhd-01.cctvsignal.xyz|lau06.bonglautv1.org|chuoichientv2.live
+d117 3
+a119 3
+||coiphim.cc/client_assets/js/dataview/adsview.js$script,~third-party
+||coiphim.cc/client_assets/js/minijumb.js$script,~third-party
+||coiphim.cc^*.gif$image
 a125 3
 ||film4k.fun^*.gif$image,~third-party
 ||film4k.net^*.gif$image,~third-party
 ||film4k.pl^*.gif$image,~third-party
+d128 3
+a130 3
+||ghienphim.blog^*.gif$image,domain=coiphim.cc
+||ghienphim.mobi/client_assets/js/minijumb.js
+||ghienphim.mobi^*.gif$image
 d132 5
 a136 5
 ||giovang.uno/wp-content/plugins/ovn-suite/assets/frontend/banner/$~third-party
@@ -784,6 +938,9 @@ a136 5
 ||giovang.uno/wp-content/themes/GioVang/assets/tvc/$media,~third-party
 ||giovang.uno/wp-content/uploads/2026/06/giovang-popup-1.png$image
 ||giovang.uno^*.gif$image
+d150 1
+a150 1
+||i.imgur.com^*.gif$image,domain=ghienphim.mobi|mv.dailyphimz.com|mv.phimmoiaz.cc|tv.manhvl.com|www.curvegrad.com|soicau247s.org|phim24k.top|jophim.top|rophimz.top
 d156 1
 a156 1
 ||imagedelivery.net^$image,domain=motphimchilll.xyz
@@ -839,10 +996,22 @@ chuoichientv2.live##.ad-catfish
 chuoichientv2.live##.ad-topbanners
 chuoichientv2.live##.cct-partner-row
 chuoichientv2.live##.cct-sponsor-strip
+d708 5
+a712 5
+coiphim.cc##li.special.parent
+coiphim.cc,ghienphim.mobi##.ad-floater
+coiphim.cc,ghienphim.mobi##.popunder-link
+coiphim.cc,ghienphim.mobi##.promotion-popup
+coiphim.cc,ghienphim.mobi,subnhanh.plus##.video-ad-layer
 a751 3
 film4k.net,film4k.pl,film4k.fun##.unit-bar
 film4k.net,film4k.pl,film4k.fun##.unit-fish
 film4k.net,film4k.pl,film4k.fun##.unit-sheet
+d765 3
+a767 3
+ghienphim.mobi##.no-ads
+ghienphim.mobi##.parent.special
+ghienphim.mobi##.partner-me
 d772 7
 a778 7
 giovang.uno##.balloon-wrapper
@@ -855,6 +1024,9 @@ giovang.uno##.nav-top-nha-cai
 d818 1
 a818 1
 ketqua16.net,nghean24h.vn,new.tructiepnba.me,tv.manhvl.com,bongdainfox.tv,www.8phim.vip,thapcam73.live,thapcam73.life,i2pd.website##a[rel="nofollow"]
+d820 1
+a820 1
+kienthuc.net.vn,saostar.vn,bongda24h.vn,antt.vn,coiphim.cc,ghienphim.mobi,nghenhinvietnam.vn,vn-z.vn##.ads
 a865 1
 motchillt.cx##.bg-black\/70.justify-center.items-center.flex.z-\[9999\].inset-0.fixed
 d868 1
@@ -878,6 +1050,9 @@ a930 3
 rophim10.cam##.adserver
 rophim10.cam##.mt-3.topics-line.topics-grid.topics-list
 rophimz.bz,mamphim.space,rophim1.vip##.sspp-area
+d1007 1
+a1007 1
+toquoc.vn,baoxaydung.vn,tienphong.vn,taichinhdoanhnghiep.net.vn,coiphim.cc,ghienphim.mobi##.banner
 d1093 8
 a1103 8
 www.8phim.vip##.BanerTop100
@@ -892,12 +1067,19 @@ d1107 4
 d1121 1
 a1121 1
 www.sieutamphim.top###scriptDiv
+d1130 1
+a1130 1
+yanhh3d.plus,hhtm.club###catfish-ads
 d1175 1
 a1175 1
-||ads.bizwd.net^$image,domain=grupoalfoz.com
+||ads.bizwd.net^$image,domain=langostagalapagos.com
 d1182 1
 a1182 1
 ||bullionglidingscuttle.com/lv/esnk/2031811/code.js$domain=lxmanga.top,script,rewrite=abp-resource:blank-js
+d1190 2
+a1191 2
+||cliphot69.golf$csp=script-src 'self' 'unsafe-inline'
+||cliphot69.golf^*.gif$image
 d1196 3
 a1198 3
 ||crumpetprankerstench.com/on.js$domain=lxmanga.top,script,rewrite=abp-resource:blank-js
@@ -924,15 +1106,19 @@ a1249 1
 d1257 1
 a1257 1
 ||www.vipads.live/vn/$domain=lxmanga.top,script,rewrite=abp-resource:blank-js
-d1288 1
-a1294 2
-grupoalfoz.com###popup-ad-box
-grupoalfoz.com##.banner-ad
+d1284 5
+a1288 4
+cliphot69.golf###custom_html-42
+cliphotvn69.com,dynadot.rsocdomains.com,cliphot69.golf,www.gvnvh18z.com,phimsexhayvne.com,sayhentai.cx,xamvn.yachts,sexviet69.cc##.float-ck-center-lt
+damconuong.icu##.catfish-ad
+damconuong.icu##a[rel="nofollow"]
 a1297 1
 hentaibox.top##[id$="bnr"]
 d1304 1
 d1306 3
-a1308 1
+a1308 3
+langostagalapagos.com###popup-ad-box
+langostagalapagos.com##.banner-ad
 lxmanga.top##.ads-wrapper
 d1319 1
 a1319 2
@@ -961,7 +1147,7 @@ a1465 1
 giovang.uno##+js(json-prune, 0.default_ads_video)
 a1467 2
 hentaibox.top##+js(acs, document.addEventListener, popunder)
-hentaibox.top,phimsextrung.cc,cliphot69.cloud,doctruyen3qhub.fit,qmanga.art,hentaivkl.pro,buomtv.page,truyenvn.sbs,javtiful.com,quatvn.garden,phimsexhayvne.com,phim18hd.site,sexviet88.cam,sexmupxinh.net,demo.14412882.com,hhtq5.vip,umetruyenz.org,damconuong.win,truyenqqko.com,phimsexsuong3x.net,sayhentai.cx,lxmanga.top,www.8phim.vip,www.sieutamphim.top,vevocloud.com,ftscontent.com,viet69.be,viet69vn.at,misskon.com,luottruyen20.com##+js(acs, WebAssembly, instantiate)
+hentaibox.top,phimsextrung.cc,cliphot69.golf,doctruyen3qhub.fit,qmanga.art,hentaivkl.pro,buomtv.page,truyenvn.sbs,javtiful.com,quatvn.garden,phimsexhayvne.com,phim18hd.site,sexviet88.cam,sexmupxinh.net,demo.14412882.com,hhtq5.vip,umetruyenz.org,damconuong.icu,truyenqqko.com,phimsexsuong3x.net,sayhentai.cx,lxmanga.top,www.8phim.vip,www.sieutamphim.top,vevocloud.com,ftscontent.com,viet69.be,viet69vn.at,misskon.com,luottruyen21.com##+js(acs, WebAssembly, instantiate)
 d1472 1
 a1472 1
 imail.edu.vn,www.8phim.vip,trumtruyen.xyz,audiotruyenfull.com##+js(acs, setTimeout, Aff)
@@ -989,8 +1175,9 @@ d1516 1
 d1519 1
 a1520 1
 tophim.vip##+js(aeld, click, pop)
-d1527 1
-a1527 1
+d1526 2
+a1527 2
+truyensextv.com,yanhh3d.plus,z1.chinav.sex##+js(acs, document.addEventListener, opup)
 truyensieuhay.com,animesub.site,quangcaoyenbai.com,phimchill.life,thefaplive.com,mv.dailyphimz.com,mv.phimbathu.one,sexhihi18.pro,anime47.best,phimhdc.com,honghotduongpho.vn,comong.info,qmhsex.sbs##+js(aopr, document.cookie)
 d1531 2
 a1532 2
