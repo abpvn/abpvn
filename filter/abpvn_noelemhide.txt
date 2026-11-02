@@ -1,9 +1,9 @@
 [Adblock Plus 2.0]
-! Version: 20261031183737297
+! Version: 20261102091243210
 ! id: D4028CDD-3D39-4624-ACC7-8140F4EC3888
 ! Title: ABPVN List
-! Last modified: 31 Oct 2026 18:37:37 UTC+7
-! Diff-Path: patches/20261031183737297.patch#abpvn_noelemhide
+! Last modified: 02 Nov 2026 09:12:43 UTC+7
+! Diff-Path: patches/20261102091243210.patch#abpvn_noelemhide
 ! Diff-Expires: 60 minutes
 ! Expires: 1 days (update frequency)
 !
@@ -46,7 +46,7 @@ $popup,domain=truyenfull.live
 /core/*$script,domain=gamek.vn|genk.vn|kenh14.vn|cafef.vn|thanhnien.vn
 /disable-devtool.min.js$script
 /giadinhonline.vn/files/qc/*
-/i.imgur.com/*.gif$domain=ww1.8phim.top|listnhacai88.com|rakhoizag.cc
+/i.imgur.com/*.gif$domain=ww1.8phim.cc|listnhacai88.com|rakhoizag.cc
 /lv/esnk/*$script
 /newchill/*gif$image
 /player/jwplayer-*/vast.js$script
@@ -106,7 +106,7 @@ $popup,domain=truyenfull.live
 ||checkscam.vn/wp-content/uploads/2025/10/2.png$image
 ||checkscam.vn^*.gif$image
 ||chodansinh.net^*.gif
-||chophim.fun/ads/$media,~third-party,rewrite=abp-resource:blank-mp3
+||chophim.my/ads/$media,~third-party,rewrite=abp-resource:blank-mp3
 ||chotlo3s.com^*gif
 ||client.rigelink.com/delivery/$xmlhttprequest
 ||coiphim.sbs/client_assets/js/dataview/adsview.js$script,~third-party
@@ -161,6 +161,7 @@ $popup,domain=truyenfull.live
 ||khotruyen.ac/banner_image/$image
 ||kienthuc.net.vn/*.ads
 ||laodong.vn/*QuangcaoOnline
+||lauphimhay.com/ads/ads.min.js
 ||lh3.googleusercontent.com/*=s0$image,domain=animevietsub.news|googleapiscdn.com
 ||listnhacai88.com^*.gif$image
 ||media.chuoichientv.net/media/20260606_121404_9d4f2849.jpg$image
@@ -190,7 +191,7 @@ $popup,domain=truyenfull.live
 ||photo2.tinhte.vn/data/attachment-files/*banner
 ||qthang.net/js/blocker$script,~third-party
 ||quaivatdienanh.com/*banner$image
-||quoracdn.net^$image,domain=ww1.8phim.top
+||quoracdn.net^$image,domain=ww1.8phim.cc
 ||rophim1.vip^*.gif$~third-party
 ||rophimz.li^*.gif,~third-party
 ||run.vn/widget$script,~third-party
@@ -236,8 +237,8 @@ $popup,domain=truyenfull.live
 ||vnesports.net^*.gif
 ||vov.vn/ads/show-ads
 ||wikicv.org/static/js/adx/$script
-||ww1.8phim.top/2s.m3u8
-||ww1.8phim.top/3s.m3u8$rewrite=abp-resource:blank-mp3,domain=ww1.8phim.top
+||ww1.8phim.cc/2s.m3u8
+||ww1.8phim.cc/3s.m3u8$rewrite=abp-resource:blank-mp3,domain=ww1.8phim.cc
 ||www.bongdalu814.com^*.gif
 ||www.clbgamesvn.com/diendan/popup/popup.js$script,~third-party
 ||www.iosviet.com^$csp=script-src 'self' 'unsafe-inline' http: https:
@@ -269,6 +270,7 @@ $popup,domain=truyenfull.live
 ||atgpwurifh.in^
 ||bidgear-syndication.com^
 ||blueseeddigital.com^$third-party
+||bs.maltedsanxious.com^
 ||bx.limpestpilosin.com^
 ||cdn.adop.asia^
 ||cdn.tpmedia.online^
@@ -356,7 +358,7 @@ $popup,domain=truyenfull.live
 /^https:\/\/[a-z]{8,12}\.com\/en\/(?:[a-z]{2,5}\/){0,2}[a-z]{2,}\?(?:[a-z]+=(?:\d+|[a-z]+)&)*?id=[12]\d{6}/$script,third-party
 /assets/js/vast.js$script
 /jwplayer/vast.js$script
-/player/html.php?aid=*&video_id=*&referer=https*xnhau.band$domain=xnhau.band
+/player/html.php?aid=*&video_id=*&referer=https*xnhau.pink$domain=xnhau.pink
 /player/vast.js$script
 /wp-content/uploads/*.gif$image,domain=www.hayvn.net|truyennung.net
 @@||cdn.adxcontent.com/vlxx/vl-inplayer-adx.js
@@ -364,7 +366,7 @@ $popup,domain=truyenfull.live
 @@||www.vipads.live/vn/79B0206C-76B6-1910-34-B2A59522DC31.blpha$domain=lxmanga.top
 @@||www.vipads.live/vn/c-1911-25.js$domain=lxmanga.top
 docufind.org.uk/wp-content/themes/vlxx/js/*-adx.js$script
-||ads.bizwd.net^$image,domain=theaesthe.com
+||ads.bizwd.net^$image,domain=ahsapkurek.com
 ||agtcmuohbt.in^
 ||blogger.googleusercontent.com^*.gif$image,domain=www.gvnvh18z.com
 ||bullionglidingscuttle.com/lv/esnk/2031811/code.js$domain=lxmanga.top,rewrite=abp-resource:blank-js
@@ -378,7 +380,7 @@ docufind.org.uk/wp-content/themes/vlxx/js/*-adx.js$script
 ||creative.mnaspm.com^
 ||crumpetprankerstench.com/on.js$domain=lxmanga.top,script,rewrite=abp-resource:blank-js
 ||cruncherpatiencestoreroom.com^$popup,domain=qmhv3.xyz
-||dance.bytecdn.cfd^*.gif$image,domain=qmhsex.sbs
+||dance.bytecdn.cfd^*.gif$image,domain=qmhsex.shop
 ||discordapp.$image,domain=thefaplive.com
 ||gamer18.net^*.gif$image
 ||hentaivn.show/banner_image/$image
@@ -397,12 +399,13 @@ docufind.org.uk/wp-content/themes/vlxx/js/*-adx.js$script
 ||phe69.men^*.gif
 ||phimsexhayvne.com^*.gif$image
 ||phimsexsuong3x.net^*.gif$image
+||phimsexvietsubtv.com^*.gif$image
 ||qmanga.art/banner_image/$image
 ||qmhv3.xyz/api/ads$xmlhttprequest
 ||qmhv3.xyz/uploads/banners/$image,domain=qmhv3.xyz
 ||quatvn.si^*.gif$image
-||quoracdn.net^$image,domain=javhdhay.org|sexmupxinh.net|xxsexhihi.com|fulllivehot.us|haysexvn.shop|viet69hayz.quest
-||rphang.fish^*.gif
+||quoracdn.net^$image,domain=hangngon.tv|sexmupxinh.net|vlsexhihi.one|fulllivehot.us|haysexvn.shop|viet69hayz.quest
+||rphang.shop^*.gif
 ||sayhentai.cx/assets/js/ads.js
 ||sayhentai.cx/storage/images/banner/$image
 ||seccc.jasjas.xyz^
@@ -420,7 +423,6 @@ docufind.org.uk/wp-content/themes/vlxx/js/*-adx.js$script
 ||www.hentaivnx.com/js/modscript.js$script
 ||www.hentaivnx.com/js/random-click-opener.js$script
 ||xamer.xyz/styles/file/$image
-||xemphimsex99.com^*.gif$image
 ||xfast.sbs/media/$image,domain=fullcliphot.org|fulllivehot.us
 ||xfast.sbs^*.gif$image,domain=clipphot.co
-||xnhau.blog^$media,domain=xnhau.band
+||xnhau.blog^$media,domain=xnhau.pink
