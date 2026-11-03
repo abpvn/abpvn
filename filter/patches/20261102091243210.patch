@@ -1,11 +1,11 @@
-diff name:abpvn lines:77 checksum:a1b8a8b6ee
+diff name:abpvn lines:117 checksum:137c4bb312
 d2 1
 a2 1
-! Version: 20261103131448792
+! Version: 20261103153515022
 d5 2
 a6 2
-! Last modified: 03 Nov 2026 13:14:48 UTC+7
-! Diff-Path: patches/20261103131448792.patch#abpvn
+! Last modified: 03 Nov 2026 15:35:15 UTC+7
+! Diff-Path: patches/20261103153515022.patch#abpvn
 d89 1
 a89 1
 ||bf.333xbet.com^$media,domain=film4k.net|film4k.pl
@@ -15,7 +15,18 @@ a104 1
 d109 1
 a109 1
 ||chophim.lat/ads/$media,~third-party,rewrite=abp-resource:blank-mp3
+d112 3
+a114 3
+||coiphim.casa/client_assets/js/dataview/adsview.js$script,~third-party
+||coiphim.casa/client_assets/js/minijumb.js$script,~third-party
+||coiphim.casa^*.gif$image
 d121 1
+d126 1
+a126 1
+||ghienphim.blog^*.gif$image,domain=coiphim.casa
+d195 1
+a195 1
+||rophim1.co^*.gif$~third-party
 d199 1
 d400 1
 d424 2
@@ -28,11 +39,21 @@ chuoichientvplus.com##.ad-catfish
 chuoichientvplus.com##.ad-topbanners
 chuoichientvplus.com##.cct-partner-row
 chuoichientvplus.com##.cct-sponsor-strip
+d436 5
+a440 5
+coiphim.casa##li.special.parent
+coiphim.casa,ghienphimz.mobi##.ad-floater
+coiphim.casa,ghienphimz.mobi##.popunder-link
+coiphim.casa,ghienphimz.mobi##.promotion-popup
+coiphim.casa,ghienphimz.mobi,subnhanh.plus##.video-ad-layer
 d481 3
 a483 3
 film4k.net,film4k.pl##.unit-bar
 film4k.net,film4k.pl##.unit-fish
 film4k.net,film4k.pl##.unit-sheet
+d556 1
+a556 1
+kienthuc.net.vn,saostar.vn,bongda24h.vn,antt.vn,coiphim.casa,ghienphimz.mobi,nghenhinvietnam.vn,vn-z.vn##.ads
 d601 1
 a601 1
 motchilln.biz##.bg-black\/70.justify-center.items-center.flex.z-\[9999\].inset-0.fixed
@@ -40,10 +61,29 @@ d612 1
 d637 1
 a637 1
 phimmoic.vip##.bg-black\/70.justify-center.items-center.flex.z-\[9999\].inset-0.fixed
+d660 1
+a660 1
+rophimz.li,mamphim.space,rophim1.co##.sspp-area
+d735 1
+a735 1
+toquoc.vn,baoxaydung.vn,tienphong.vn,taichinhdoanhnghiep.net.vn,coiphim.casa,ghienphimz.mobi,nettruyenar.com##.banner
 d847 1
 d850 1
 a850 1
 yanhh3d.de,hhtm.club###catfish-ads
+d871 2
+a872 2
+@@||c.amazon-adsystem.com/aax2/apstag.js$domain=rophim1.co
+@@||cdn.taboola.com/libtrc/unresolved/tfa.js$domain=rophim1.co
+d874 1
+a874 1
+@@||connect.facebook.net/en_US/fbevents.js$domain=rophim1.co
+d886 1
+a886 1
+@@||static.ads-twitter.com/uwt.js$script,domain=linkneverdie.net|linkneverdie.top|linkneverdie2.com|rophim1.co
+d889 1
+a889 1
+@@||tpc.googlesyndication.com/sodar/sodar2.js$domain=rophim1.co
 d953 1
 a953 1
 ||ads.bizwd.net^$image,domain=profesor-p.com
@@ -76,14 +116,14 @@ x.chinav.sex###cashfit-banner-host
 x.chinav.sex##.adbox
 x.chinav.sex##.banner-container
 d1134 3
-diff name:abpvn_adguard lines:96 checksum:04944fd572
+diff name:abpvn_adguard lines:136 checksum:0e6af8ef98
 d2 1
 a2 1
-! Version: 20261103131448792
+! Version: 20261103153515022
 d5 2
 a6 2
-! Last modified: 03 Nov 2026 13:14:48 UTC+7
-! Diff-Path: patches/20261103131448792.patch#abpvn_adguard
+! Last modified: 03 Nov 2026 15:35:15 UTC+7
+! Diff-Path: patches/20261103153515022.patch#abpvn_adguard
 d86 1
 a86 1
 ||bf.333xbet.com^$media,domain=film4k.net|film4k.pl
@@ -93,7 +133,18 @@ a101 1
 d106 1
 a106 1
 ||chophim.lat/ads/$media,~third-party,rewrite=abp-resource:blank-mp3
+d109 3
+a111 3
+||coiphim.casa/client_assets/js/dataview/adsview.js$script,~third-party
+||coiphim.casa/client_assets/js/minijumb.js$script,~third-party
+||coiphim.casa^*.gif$image
 d118 1
+d123 1
+a123 1
+||ghienphim.blog^*.gif$image,domain=coiphim.casa
+d192 1
+a192 1
+||rophim1.co^*.gif$~third-party
 d195 1
 d395 1
 d419 2
@@ -106,11 +157,21 @@ chuoichientvplus.com##.ad-catfish
 chuoichientvplus.com##.ad-topbanners
 chuoichientvplus.com##.cct-partner-row
 chuoichientvplus.com##.cct-sponsor-strip
+d431 5
+a435 5
+coiphim.casa##li.special.parent
+coiphim.casa,ghienphimz.mobi##.ad-floater
+coiphim.casa,ghienphimz.mobi##.popunder-link
+coiphim.casa,ghienphimz.mobi##.promotion-popup
+coiphim.casa,ghienphimz.mobi,subnhanh.plus##.video-ad-layer
 d476 3
 a478 3
 film4k.net,film4k.pl##.unit-bar
 film4k.net,film4k.pl##.unit-fish
 film4k.net,film4k.pl##.unit-sheet
+d550 1
+a550 1
+kienthuc.net.vn,saostar.vn,bongda24h.vn,antt.vn,coiphim.casa,ghienphimz.mobi,nghenhinvietnam.vn,vn-z.vn##.ads
 d595 1
 a595 1
 motchilln.biz##.bg-black\/70.justify-center.items-center.flex.z-\[9999\].inset-0.fixed
@@ -118,10 +179,29 @@ d606 1
 d630 1
 a630 1
 phimmoic.vip##.bg-black\/70.justify-center.items-center.flex.z-\[9999\].inset-0.fixed
+d653 1
+a653 1
+rophimz.li,mamphim.space,rophim1.co##.sspp-area
+d728 1
+a728 1
+toquoc.vn,baoxaydung.vn,tienphong.vn,taichinhdoanhnghiep.net.vn,coiphim.casa,ghienphimz.mobi,nettruyenar.com##.banner
 d840 1
 d843 1
 a843 1
 yanhh3d.de,hhtm.club###catfish-ads
+d864 2
+a865 2
+@@||c.amazon-adsystem.com/aax2/apstag.js$domain=rophim1.co
+@@||cdn.taboola.com/libtrc/unresolved/tfa.js$domain=rophim1.co
+d867 1
+a867 1
+@@||connect.facebook.net/en_US/fbevents.js$domain=rophim1.co
+d878 1
+a878 1
+@@||static.ads-twitter.com/uwt.js$script,domain=linkneverdie.net|linkneverdie.top|linkneverdie2.com|rophim1.co
+d881 1
+a881 1
+@@||tpc.googlesyndication.com/sodar/sodar2.js$domain=rophim1.co
 d938 1
 a938 1
 ||ads.bizwd.net^$image,domain=profesor-p.com
@@ -173,14 +253,14 @@ rophimz.li,motphimc.tv,phimmoic.vip#%#//scriptlet("prevent-addEventListener", "c
 d1210 1
 a1210 1
 truyensextv.com,yanhh3d.de,x.chinav.sex#%#//scriptlet("abort-current-inline-script", "document.addEventListener", "opup")
-diff name:abpvn_content_blocker lines:77 checksum:61f04fa76f
+diff name:abpvn_content_blocker lines:117 checksum:829de27ff8
 d2 1
 a2 1
-! Version: 20261103131448792
+! Version: 20261103153515022
 d5 2
 a6 2
-! Last modified: 03 Nov 2026 13:14:48 UTC+7
-! Diff-Path: patches/20261103131448792.patch#abpvn_content_blocker
+! Last modified: 03 Nov 2026 15:35:15 UTC+7
+! Diff-Path: patches/20261103153515022.patch#abpvn_content_blocker
 d89 1
 a89 1
 ||bf.333xbet.com^$media,domain=film4k.net|film4k.pl
@@ -190,7 +270,18 @@ a104 1
 d109 1
 a109 1
 ||chophim.lat/ads/$media,~third-party,rewrite=abp-resource:blank-mp3
+d112 3
+a114 3
+||coiphim.casa/client_assets/js/dataview/adsview.js$script,~third-party
+||coiphim.casa/client_assets/js/minijumb.js$script,~third-party
+||coiphim.casa^*.gif$image
 d121 1
+d126 1
+a126 1
+||ghienphim.blog^*.gif$image,domain=coiphim.casa
+d195 1
+a195 1
+||rophim1.co^*.gif$~third-party
 d199 1
 d400 1
 d424 2
@@ -203,11 +294,21 @@ chuoichientvplus.com##.ad-catfish
 chuoichientvplus.com##.ad-topbanners
 chuoichientvplus.com##.cct-partner-row
 chuoichientvplus.com##.cct-sponsor-strip
+d436 5
+a440 5
+coiphim.casa##li.special.parent
+coiphim.casa,ghienphimz.mobi##.ad-floater
+coiphim.casa,ghienphimz.mobi##.popunder-link
+coiphim.casa,ghienphimz.mobi##.promotion-popup
+coiphim.casa,ghienphimz.mobi,subnhanh.plus##.video-ad-layer
 d481 3
 a483 3
 film4k.net,film4k.pl##.unit-bar
 film4k.net,film4k.pl##.unit-fish
 film4k.net,film4k.pl##.unit-sheet
+d556 1
+a556 1
+kienthuc.net.vn,saostar.vn,bongda24h.vn,antt.vn,coiphim.casa,ghienphimz.mobi,nghenhinvietnam.vn,vn-z.vn##.ads
 d601 1
 a601 1
 motchilln.biz##.bg-black\/70.justify-center.items-center.flex.z-\[9999\].inset-0.fixed
@@ -215,10 +316,29 @@ d612 1
 d637 1
 a637 1
 phimmoic.vip##.bg-black\/70.justify-center.items-center.flex.z-\[9999\].inset-0.fixed
+d660 1
+a660 1
+rophimz.li,mamphim.space,rophim1.co##.sspp-area
+d735 1
+a735 1
+toquoc.vn,baoxaydung.vn,tienphong.vn,taichinhdoanhnghiep.net.vn,coiphim.casa,ghienphimz.mobi,nettruyenar.com##.banner
 d847 1
 d850 1
 a850 1
 yanhh3d.de,hhtm.club###catfish-ads
+d871 2
+a872 2
+@@||c.amazon-adsystem.com/aax2/apstag.js$domain=rophim1.co
+@@||cdn.taboola.com/libtrc/unresolved/tfa.js$domain=rophim1.co
+d874 1
+a874 1
+@@||connect.facebook.net/en_US/fbevents.js$domain=rophim1.co
+d886 1
+a886 1
+@@||static.ads-twitter.com/uwt.js$script,domain=linkneverdie.net|linkneverdie.top|linkneverdie2.com|rophim1.co
+d889 1
+a889 1
+@@||tpc.googlesyndication.com/sodar/sodar2.js$domain=rophim1.co
 d953 1
 a953 1
 ||ads.bizwd.net^$image,domain=profesor-p.com
@@ -251,14 +371,14 @@ x.chinav.sex###cashfit-banner-host
 x.chinav.sex##.adbox
 x.chinav.sex##.banner-container
 d1134 3
-diff name:abpvn_noelemhide lines:37 checksum:bce2fc52db
+diff name:abpvn_noelemhide lines:61 checksum:e00144a507
 d2 1
 a2 1
-! Version: 20261103131448792
+! Version: 20261103153515022
 d5 2
 a6 2
-! Last modified: 03 Nov 2026 13:14:48 UTC+7
-! Diff-Path: patches/20261103131448792.patch#abpvn_noelemhide
+! Last modified: 03 Nov 2026 15:35:15 UTC+7
+! Diff-Path: patches/20261103153515022.patch#abpvn_noelemhide
 d89 1
 a89 1
 ||bf.333xbet.com^$media,domain=film4k.net|film4k.pl
@@ -268,8 +388,32 @@ a104 1
 d109 1
 a109 1
 ||chophim.lat/ads/$media,~third-party,rewrite=abp-resource:blank-mp3
+d112 3
+a114 3
+||coiphim.casa/client_assets/js/dataview/adsview.js$script,~third-party
+||coiphim.casa/client_assets/js/minijumb.js$script,~third-party
+||coiphim.casa^*.gif$image
 d121 1
+d126 1
+a126 1
+||ghienphim.blog^*.gif$image,domain=coiphim.casa
+d195 1
+a195 1
+||rophim1.co^*.gif$~third-party
 d199 1
+d333 2
+a334 2
+@@||c.amazon-adsystem.com/aax2/apstag.js$domain=rophim1.co
+@@||cdn.taboola.com/libtrc/unresolved/tfa.js$domain=rophim1.co
+d336 1
+a336 1
+@@||connect.facebook.net/en_US/fbevents.js$domain=rophim1.co
+d348 1
+a348 1
+@@||static.ads-twitter.com/uwt.js$script,domain=linkneverdie.net|linkneverdie.top|linkneverdie2.com|rophim1.co
+d351 1
+a351 1
+@@||tpc.googlesyndication.com/sodar/sodar2.js$domain=rophim1.co
 d369 1
 a369 1
 ||ads.bizwd.net^$image,domain=profesor-p.com
@@ -289,14 +433,14 @@ a405 2
 d419 1
 a419 1
 ||video.s3viphub.shop/uploads/banners$image,domain=qmhv3.mom
-diff name:abpvn_ublock lines:96 checksum:36b1af5a93
+diff name:abpvn_ublock lines:136 checksum:4fffeb6ce5
 d2 1
 a2 1
-! Version: 20261103131448792
+! Version: 20261103153515022
 d5 2
 a6 2
-! Last modified: 03 Nov 2026 13:14:48 UTC+7
-! Diff-Path: patches/20261103131448792.patch#abpvn_ublock
+! Last modified: 03 Nov 2026 15:35:15 UTC+7
+! Diff-Path: patches/20261103153515022.patch#abpvn_ublock
 d86 1
 a86 1
 ||bf.333xbet.com^$media,domain=film4k.net|film4k.pl
@@ -306,7 +450,18 @@ a101 1
 d106 1
 a106 1
 ||chophim.lat/ads/$media,~third-party,rewrite=abp-resource:blank-mp3
+d109 3
+a111 3
+||coiphim.casa/client_assets/js/dataview/adsview.js$script,~third-party
+||coiphim.casa/client_assets/js/minijumb.js$script,~third-party
+||coiphim.casa^*.gif$image
 d118 1
+d123 1
+a123 1
+||ghienphim.blog^*.gif$image,domain=coiphim.casa
+d192 1
+a192 1
+||rophim1.co^*.gif$~third-party
 d195 1
 d395 1
 d419 2
@@ -319,11 +474,21 @@ chuoichientvplus.com##.ad-catfish
 chuoichientvplus.com##.ad-topbanners
 chuoichientvplus.com##.cct-partner-row
 chuoichientvplus.com##.cct-sponsor-strip
+d431 5
+a435 5
+coiphim.casa##li.special.parent
+coiphim.casa,ghienphimz.mobi##.ad-floater
+coiphim.casa,ghienphimz.mobi##.popunder-link
+coiphim.casa,ghienphimz.mobi##.promotion-popup
+coiphim.casa,ghienphimz.mobi,subnhanh.plus##.video-ad-layer
 d476 3
 a478 3
 film4k.net,film4k.pl##.unit-bar
 film4k.net,film4k.pl##.unit-fish
 film4k.net,film4k.pl##.unit-sheet
+d550 1
+a550 1
+kienthuc.net.vn,saostar.vn,bongda24h.vn,antt.vn,coiphim.casa,ghienphimz.mobi,nghenhinvietnam.vn,vn-z.vn##.ads
 d595 1
 a595 1
 motchilln.biz##.bg-black\/70.justify-center.items-center.flex.z-\[9999\].inset-0.fixed
@@ -331,10 +496,29 @@ d606 1
 d630 1
 a630 1
 phimmoic.vip##.bg-black\/70.justify-center.items-center.flex.z-\[9999\].inset-0.fixed
+d653 1
+a653 1
+rophimz.li,mamphim.space,rophim1.co##.sspp-area
+d728 1
+a728 1
+toquoc.vn,baoxaydung.vn,tienphong.vn,taichinhdoanhnghiep.net.vn,coiphim.casa,ghienphimz.mobi,nettruyenar.com##.banner
 d840 1
 d843 1
 a843 1
 yanhh3d.de,hhtm.club###catfish-ads
+d864 2
+a865 2
+@@||c.amazon-adsystem.com/aax2/apstag.js$domain=rophim1.co
+@@||cdn.taboola.com/libtrc/unresolved/tfa.js$domain=rophim1.co
+d867 1
+a867 1
+@@||connect.facebook.net/en_US/fbevents.js$domain=rophim1.co
+d877 1
+a877 1
+@@||static.ads-twitter.com/uwt.js$script,domain=linkneverdie.net|linkneverdie.top|linkneverdie2.com|rophim1.co
+d880 1
+a880 1
+@@||tpc.googlesyndication.com/sodar/sodar2.js$domain=rophim1.co
 d937 1
 a937 1
 ||ads.bizwd.net^$image,domain=profesor-p.com
