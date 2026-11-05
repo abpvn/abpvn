@@ -1,17 +1,20 @@
-diff name:abpvn lines:99 checksum:ebb42f2c7e
+diff name:abpvn lines:138 checksum:22a91015b6
 d2 1
 a2 1
-! Version: 20261104234956306
+! Version: 20261105083505680
 d5 2
 a6 2
-! Last modified: 04 Nov 2026 23:49:56 UTC+7
-! Diff-Path: patches/20261104234956306.patch#abpvn
+! Last modified: 05 Nov 2026 08:35:05 UTC+7
+! Diff-Path: patches/20261105083505680.patch#abpvn
 d49 1
 a49 1
-/i.imgur.com/*.gif$domain=ww2.8phimx.com|listnhacai88.com|rakhoizag.cc
+/i.imgur.com/*.gif$domain=ww2.8phimx.com|listnhacai88.com|rakhoizau.cc
 d81 1
 a81 1
 ||animevietsub.best/ads/$script
+d97 1
+a97 1
+||cdn.lfastcdn.com^*.gif$image,domain=bongdainfox.tv|rakhoizau.cc
 d112 3
 a114 3
 ||coiphim.casa/client_assets/js/dataview/adsview.js$script,~third-party
@@ -20,16 +23,24 @@ a114 3
 d125 1
 a125 1
 ||ghienphim.blog^*.gif$image,domain=coiphim.casa
+d147 1
+a147 1
+||i.imgur.com^*.gif$image,domain=ghienphimz.mobi|mv.dailyphimz.com|mv.phimmoiaz.cc|tv.manhvl.com|www.pumpcrate.com|soicau247s.org|phim24k.top|jophim.top|rophimz.top
+d152 1
+a152 1
+||image.cdend.com^*.gif$image,domain=www.pumpcrate.com
 d164 1
 a164 1
 ||lh3.googleusercontent.com/*=s0$image,domain=animevietsub.best|googleapiscdn.com
-d193 2
-a194 1
+d193 3
+a195 2
 ||rophim1.co^*.gif$~third-party
-d238 2
-a239 2
+||rophimz.so^*.gif,~third-party
+d238 3
+a240 3
 ||ww2.8phimx.com/2s.m3u8
 ||ww2.8phimx.com/3s.m3u8$rewrite=abp-resource:blank-mp3,domain=ww2.8phimx.com
+||www.bongdalu815.com^*.gif
 d371 6
 a376 6
 animevietsub.best###_preload-ads-1
@@ -51,9 +62,17 @@ ketqua16.net,nghean24h.vn,new.tructiepnba.me,tv.manhvl.com,bongdainfox.tv,ww2.8p
 d553 1
 a553 1
 kienthuc.net.vn,saostar.vn,bongda24h.vn,antt.vn,coiphim.casa,ghienphimz.mobi,nghenhinvietnam.vn,vn-z.vn##.ads
+d647 6
+a652 6
+rakhoizau.cc###wap_bottombanner
+rakhoizau.cc##.bookmaker-selector-container
+rakhoizau.cc##.btn-8xbet
+rakhoizau.cc##.btn-odds
+rakhoizau.cc##.footer-banner
+rakhoizau.cc##.sk_balloon
 d656 1
 a656 1
-rophimz.li,mamphim.space,rophim1.co##.sspp-area
+rophimz.so,mamphim.space,rophim1.co##.sspp-area
 d731 1
 a731 1
 toquoc.vn,baoxaydung.vn,tienphong.vn,taichinhdoanhnghiep.net.vn,coiphim.casa,ghienphimz.mobi,nettruyenar.com##.banner
@@ -83,35 +102,58 @@ a881 1
 d884 1
 a884 1
 @@||tpc.googlesyndication.com/sodar/sodar2.js$domain=rophim1.co
+d934 1
+a934 1
+www.vn2d.my#@#.advertiser
 d945 2
 d948 1
 a948 1
-||ads.bizwd.net^$image,domain=sahrami.com
+||ads.bizwd.net^$image,domain=eastpacificsi.com
 d971 1
 a971 1
 ||javhdz.page/js/ads-javhd.js$script,~third-party
-d986 1
+d986 2
+a987 1
+||rphang.show^*.gif
+d1027 2
+a1028 4
+damconuong.cool##.catfish-ad
+damconuong.cool##a[rel="nofollow"]
+eastpacificsi.com###popup-ad-box
+eastpacificsi.com##.banner-ad
+d1036 1
+a1040 1
+heoxinh.tv,sexmupxinh.net,vlsexhihi.one##.xx-ads
 d1057 1
 a1057 1
 phimsexsuong3x.net,vlsexhihi.one,javhdz.page,laalmirchitakeaway.co.uk##.catfish-bottom
 d1060 2
-a1078 2
-sahrami.com###popup-ad-box
-sahrami.com##.banner-ad
-diff name:abpvn_adguard lines:118 checksum:c8da8df198
+d1072 7
+a1078 7
+rphang.show###aboveFirstPost
+rphang.show##.bbMediaWrapper-inner>.samCodeUnit
+rphang.show##.js-replyNewMessageContainer.block-body>div.samCodeUnit>.samItem
+rphang.show##.p-footer
+rphang.show##.samVideoOverlay
+rphang.show##div.samCodeUnit[data-position="footer_fixed"]
+rphang.show##div.samItem:has(video.topmobileads)
+diff name:abpvn_adguard lines:164 checksum:bb9b5e8b8a
 d2 1
 a2 1
-! Version: 20261104234956306
+! Version: 20261105083505680
 d5 2
 a6 2
-! Last modified: 04 Nov 2026 23:49:56 UTC+7
-! Diff-Path: patches/20261104234956306.patch#abpvn_adguard
+! Last modified: 05 Nov 2026 08:35:05 UTC+7
+! Diff-Path: patches/20261105083505680.patch#abpvn_adguard
 d47 1
 a47 1
-/i.imgur.com/*.gif$domain=ww2.8phimx.com|listnhacai88.com|rakhoizag.cc
+/i.imgur.com/*.gif$domain=ww2.8phimx.com|listnhacai88.com|rakhoizau.cc
 d78 1
 a78 1
 ||animevietsub.best/ads/$script
+d94 1
+a94 1
+||cdn.lfastcdn.com^*.gif$image,domain=bongdainfox.tv|rakhoizau.cc
 d109 3
 a111 3
 ||coiphim.casa/client_assets/js/dataview/adsview.js$script,~third-party
@@ -120,16 +162,24 @@ a111 3
 d122 1
 a122 1
 ||ghienphim.blog^*.gif$image,domain=coiphim.casa
+d144 1
+a144 1
+||i.imgur.com^*.gif$image,domain=ghienphimz.mobi|mv.dailyphimz.com|mv.phimmoiaz.cc|tv.manhvl.com|www.pumpcrate.com|soicau247s.org|phim24k.top|jophim.top|rophimz.top
+d149 1
+a149 1
+||image.cdend.com^*.gif$image,domain=www.pumpcrate.com
 d161 1
 a161 1
 ||lh3.googleusercontent.com/*=s0$image,domain=animevietsub.best|googleapiscdn.com
-d190 2
-a191 1
+d190 3
+a192 2
 ||rophim1.co^*.gif$~third-party
-d233 2
-a234 2
+||rophimz.so^*.gif,~third-party
+d233 3
+a235 3
 ||ww2.8phimx.com/2s.m3u8
 ||ww2.8phimx.com/3s.m3u8$rewrite=abp-resource:blank-mp3,domain=ww2.8phimx.com
+||www.bongdalu815.com^*.gif
 d366 6
 a371 6
 animevietsub.best###_preload-ads-1
@@ -151,9 +201,17 @@ ketqua16.net,nghean24h.vn,new.tructiepnba.me,tv.manhvl.com,bongdainfox.tv,ww2.8p
 d547 1
 a547 1
 kienthuc.net.vn,saostar.vn,bongda24h.vn,antt.vn,coiphim.casa,ghienphimz.mobi,nghenhinvietnam.vn,vn-z.vn##.ads
+d640 6
+a645 6
+rakhoizau.cc###wap_bottombanner
+rakhoizau.cc##.bookmaker-selector-container
+rakhoizau.cc##.btn-8xbet
+rakhoizau.cc##.btn-odds
+rakhoizau.cc##.footer-banner
+rakhoizau.cc##.sk_balloon
 d649 1
 a649 1
-rophimz.li,mamphim.space,rophim1.co##.sspp-area
+rophimz.so,mamphim.space,rophim1.co##.sspp-area
 d724 1
 a724 1
 toquoc.vn,baoxaydung.vn,tienphong.vn,taichinhdoanhnghiep.net.vn,coiphim.casa,ghienphimz.mobi,nettruyenar.com##.banner
@@ -183,29 +241,53 @@ a873 1
 d876 1
 a876 1
 @@||tpc.googlesyndication.com/sodar/sodar2.js$domain=rophim1.co
+d921 1
+a921 1
+www.vn2d.my#@#.advertiser
 d933 1
 a933 1
-||ads.bizwd.net^$image,domain=sahrami.com
+||ads.bizwd.net^$image,domain=eastpacificsi.com
 d956 1
 a956 1
 ||javhdz.page/js/ads-javhd.js$script,~third-party
-d971 1
+d971 2
+a972 1
+||rphang.show^*.gif
+d1012 2
+a1013 4
+damconuong.cool##.catfish-ad
+damconuong.cool##a[rel="nofollow"]
+eastpacificsi.com###popup-ad-box
+eastpacificsi.com##.banner-ad
+d1021 1
+a1025 1
+heoxinh.tv,sexmupxinh.net,vlsexhihi.one##.xx-ads
 d1042 1
 a1042 1
 phimsexsuong3x.net,vlsexhihi.one,javhdz.page,laalmirchitakeaway.co.uk##.catfish-bottom
 d1045 2
-a1063 2
-sahrami.com###popup-ad-box
-sahrami.com##.banner-ad
+d1057 7
+a1063 7
+rphang.show###aboveFirstPost
+rphang.show##.bbMediaWrapper-inner>.samCodeUnit
+rphang.show##.js-replyNewMessageContainer.block-body>div.samCodeUnit>.samItem
+rphang.show##.p-footer
+rphang.show##.samVideoOverlay
+rphang.show##div.samCodeUnit[data-position="footer_fixed"]
+rphang.show##div.samItem:has(video.topmobileads)
 d1139 1
 a1139 1
 freeplayervideo.com,www.sieutamphim.fun,player-cdn.com,hopphim.online,streamc.xyz,qmhv3.mom,cap3.video,qmh.garden#%#//scriptlet("set-constant", "open", "noopFunc")
 d1145 1
 a1145 1
-hentaibox.top,hangngon.tv,cliphot69.golf,doctruyen3qhub.fit,qmanga.art,hentaivkl.pro,buomtv.biz,truyenvn.sbs,javtiful.com,quatvn.si,phimsexhayvne.com,phim18hd.site,sexviet88.cam,sexmupxinh.net,demo.14412882.com,hhtq5.vip,umetruyenz.org,damconuong.icu,truyenqqko.com,phimsexsuong3x.net,sayhentai.cx,lxmanga.top,ww2.8phimx.com,www.sieutamphim.fun,vevocloud.com,ftscontent.com,viet69.be,viet69vn.at,misskon.com,luottruyen21.com#%#//scriptlet("abort-current-inline-script", "WebAssembly", "instantiate")
+hentaibox.top,heoxinh.tv,cliphot69.golf,doctruyen3qhub.fit,qmanga.art,hentaivkl.pro,buomtv.biz,truyenvn.sbs,javtiful.com,quatvn.si,phimsexhayvne.com,phim18hd.site,sexviet88.cam,sexmupxinh.net,demo.14412882.com,hhtq5.vip,umetruyenz.org,damconuong.cool,truyenqqko.com,phimsexsuong3x.net,sayhentai.cx,lxmanga.top,ww2.8phimx.com,www.sieutamphim.fun,vevocloud.com,ftscontent.com,viet69.be,viet69vn.at,misskon.com,luottruyen21.com#%#//scriptlet("abort-current-inline-script", "WebAssembly", "instantiate")
 d1151 1
 a1151 1
 imail.edu.vn,ww2.8phimx.com,trumtruyen.xyz,audiotruyenfull.com#%#//scriptlet("abort-current-inline-script", "setTimeout", "Aff")
+d1194 2
+a1195 2
+rophimz.so,motphimc.tv,phimmoic.vip#%#//scriptlet("prevent-addEventListener", "click", "ads")
+rphang.show,misskon.com#%#//scriptlet("abort-current-inline-script", "document.querySelectorAll", "popMagic")
 d1202 1
 a1202 1
 tram3d.skin,animevietsub.best#%#//scriptlet("abort-current-inline-script", "eval", "$._Eu")
@@ -213,24 +295,30 @@ d1210 2
 a1211 2
 ww2.8phimx.com#%#//scriptlet("abort-current-inline-script", "document.createElement", "script")
 ww2.8phimx.com,javgiga.wordpress.com#%#//scriptlet("abort-on-property-read", "localStorage")
+d1213 1
+a1215 1
+www.pumpcrate.com#%#//scriptlet("abort-current-inline-script", "addEvent", "popu")
 d1218 1
 a1218 1
 www.sieutamphim.fun#%#//scriptlet("abort-on-property-write", "_$_d52e")
 d1226 1
-diff name:abpvn_content_blocker lines:99 checksum:6197c68bcb
+diff name:abpvn_content_blocker lines:138 checksum:17c2b6fca0
 d2 1
 a2 1
-! Version: 20261104234956306
+! Version: 20261105083505680
 d5 2
 a6 2
-! Last modified: 04 Nov 2026 23:49:56 UTC+7
-! Diff-Path: patches/20261104234956306.patch#abpvn_content_blocker
+! Last modified: 05 Nov 2026 08:35:05 UTC+7
+! Diff-Path: patches/20261105083505680.patch#abpvn_content_blocker
 d49 1
 a49 1
-/i.imgur.com/*.gif$domain=ww2.8phimx.com|listnhacai88.com|rakhoizag.cc
+/i.imgur.com/*.gif$domain=ww2.8phimx.com|listnhacai88.com|rakhoizau.cc
 d81 1
 a81 1
 ||animevietsub.best/ads/$script
+d97 1
+a97 1
+||cdn.lfastcdn.com^*.gif$image,domain=bongdainfox.tv|rakhoizau.cc
 d112 3
 a114 3
 ||coiphim.casa/client_assets/js/dataview/adsview.js$script,~third-party
@@ -239,16 +327,24 @@ a114 3
 d125 1
 a125 1
 ||ghienphim.blog^*.gif$image,domain=coiphim.casa
+d147 1
+a147 1
+||i.imgur.com^*.gif$image,domain=ghienphimz.mobi|mv.dailyphimz.com|mv.phimmoiaz.cc|tv.manhvl.com|www.pumpcrate.com|soicau247s.org|phim24k.top|jophim.top|rophimz.top
+d152 1
+a152 1
+||image.cdend.com^*.gif$image,domain=www.pumpcrate.com
 d164 1
 a164 1
 ||lh3.googleusercontent.com/*=s0$image,domain=animevietsub.best|googleapiscdn.com
-d193 2
-a194 1
+d193 3
+a195 2
 ||rophim1.co^*.gif$~third-party
-d238 2
-a239 2
+||rophimz.so^*.gif,~third-party
+d238 3
+a240 3
 ||ww2.8phimx.com/2s.m3u8
 ||ww2.8phimx.com/3s.m3u8$rewrite=abp-resource:blank-mp3,domain=ww2.8phimx.com
+||www.bongdalu815.com^*.gif
 d371 6
 a376 6
 animevietsub.best###_preload-ads-1
@@ -270,9 +366,17 @@ ketqua16.net,nghean24h.vn,new.tructiepnba.me,tv.manhvl.com,bongdainfox.tv,ww2.8p
 d553 1
 a553 1
 kienthuc.net.vn,saostar.vn,bongda24h.vn,antt.vn,coiphim.casa,ghienphimz.mobi,nghenhinvietnam.vn,vn-z.vn##.ads
+d647 6
+a652 6
+rakhoizau.cc###wap_bottombanner
+rakhoizau.cc##.bookmaker-selector-container
+rakhoizau.cc##.btn-8xbet
+rakhoizau.cc##.btn-odds
+rakhoizau.cc##.footer-banner
+rakhoizau.cc##.sk_balloon
 d656 1
 a656 1
-rophimz.li,mamphim.space,rophim1.co##.sspp-area
+rophimz.so,mamphim.space,rophim1.co##.sspp-area
 d731 1
 a731 1
 toquoc.vn,baoxaydung.vn,tienphong.vn,taichinhdoanhnghiep.net.vn,coiphim.casa,ghienphimz.mobi,nettruyenar.com##.banner
@@ -302,35 +406,58 @@ a881 1
 d884 1
 a884 1
 @@||tpc.googlesyndication.com/sodar/sodar2.js$domain=rophim1.co
+d934 1
+a934 1
+www.vn2d.my#@#.advertiser
 d945 2
 d948 1
 a948 1
-||ads.bizwd.net^$image,domain=sahrami.com
+||ads.bizwd.net^$image,domain=eastpacificsi.com
 d971 1
 a971 1
 ||javhdz.page/js/ads-javhd.js$script,~third-party
-d986 1
+d986 2
+a987 1
+||rphang.show^*.gif
+d1027 2
+a1028 4
+damconuong.cool##.catfish-ad
+damconuong.cool##a[rel="nofollow"]
+eastpacificsi.com###popup-ad-box
+eastpacificsi.com##.banner-ad
+d1036 1
+a1040 1
+heoxinh.tv,sexmupxinh.net,vlsexhihi.one##.xx-ads
 d1057 1
 a1057 1
 phimsexsuong3x.net,vlsexhihi.one,javhdz.page,laalmirchitakeaway.co.uk##.catfish-bottom
 d1060 2
-a1078 2
-sahrami.com###popup-ad-box
-sahrami.com##.banner-ad
-diff name:abpvn_noelemhide lines:52 checksum:ed238439cc
+d1072 7
+a1078 7
+rphang.show###aboveFirstPost
+rphang.show##.bbMediaWrapper-inner>.samCodeUnit
+rphang.show##.js-replyNewMessageContainer.block-body>div.samCodeUnit>.samItem
+rphang.show##.p-footer
+rphang.show##.samVideoOverlay
+rphang.show##div.samCodeUnit[data-position="footer_fixed"]
+rphang.show##div.samItem:has(video.topmobileads)
+diff name:abpvn_noelemhide lines:65 checksum:e978633775
 d2 1
 a2 1
-! Version: 20261104234956306
+! Version: 20261105083505680
 d5 2
 a6 2
-! Last modified: 04 Nov 2026 23:49:56 UTC+7
-! Diff-Path: patches/20261104234956306.patch#abpvn_noelemhide
+! Last modified: 05 Nov 2026 08:35:05 UTC+7
+! Diff-Path: patches/20261105083505680.patch#abpvn_noelemhide
 d49 1
 a49 1
-/i.imgur.com/*.gif$domain=ww2.8phimx.com|listnhacai88.com|rakhoizag.cc
+/i.imgur.com/*.gif$domain=ww2.8phimx.com|listnhacai88.com|rakhoizau.cc
 d81 1
 a81 1
 ||animevietsub.best/ads/$script
+d97 1
+a97 1
+||cdn.lfastcdn.com^*.gif$image,domain=bongdainfox.tv|rakhoizau.cc
 d112 3
 a114 3
 ||coiphim.casa/client_assets/js/dataview/adsview.js$script,~third-party
@@ -339,16 +466,24 @@ a114 3
 d125 1
 a125 1
 ||ghienphim.blog^*.gif$image,domain=coiphim.casa
+d147 1
+a147 1
+||i.imgur.com^*.gif$image,domain=ghienphimz.mobi|mv.dailyphimz.com|mv.phimmoiaz.cc|tv.manhvl.com|www.pumpcrate.com|soicau247s.org|phim24k.top|jophim.top|rophimz.top
+d152 1
+a152 1
+||image.cdend.com^*.gif$image,domain=www.pumpcrate.com
 d164 1
 a164 1
 ||lh3.googleusercontent.com/*=s0$image,domain=animevietsub.best|googleapiscdn.com
-d193 2
-a194 1
+d193 3
+a195 2
 ||rophim1.co^*.gif$~third-party
-d238 2
-a239 2
+||rophimz.so^*.gif,~third-party
+d238 3
+a240 3
 ||ww2.8phimx.com/2s.m3u8
 ||ww2.8phimx.com/3s.m3u8$rewrite=abp-resource:blank-mp3,domain=ww2.8phimx.com
+||www.bongdalu815.com^*.gif
 d331 2
 a332 2
 @@||c.amazon-adsystem.com/aax2/apstag.js$domain=rophim1.co
@@ -365,25 +500,30 @@ a349 1
 d364 2
 d367 1
 a367 1
-||ads.bizwd.net^$image,domain=sahrami.com
+||ads.bizwd.net^$image,domain=eastpacificsi.com
 d390 1
 a390 1
 ||javhdz.page/js/ads-javhd.js$script,~third-party
-d405 1
-diff name:abpvn_ublock lines:118 checksum:ba0bbeda48
+d405 2
+a406 1
+||rphang.show^*.gif
+diff name:abpvn_ublock lines:164 checksum:735deb697d
 d2 1
 a2 1
-! Version: 20261104234956306
+! Version: 20261105083505680
 d5 2
 a6 2
-! Last modified: 04 Nov 2026 23:49:56 UTC+7
-! Diff-Path: patches/20261104234956306.patch#abpvn_ublock
+! Last modified: 05 Nov 2026 08:35:05 UTC+7
+! Diff-Path: patches/20261105083505680.patch#abpvn_ublock
 d47 1
 a47 1
-/i.imgur.com/*.gif$domain=ww2.8phimx.com|listnhacai88.com|rakhoizag.cc
+/i.imgur.com/*.gif$domain=ww2.8phimx.com|listnhacai88.com|rakhoizau.cc
 d78 1
 a78 1
 ||animevietsub.best/ads/$script
+d94 1
+a94 1
+||cdn.lfastcdn.com^*.gif$image,domain=bongdainfox.tv|rakhoizau.cc
 d109 3
 a111 3
 ||coiphim.casa/client_assets/js/dataview/adsview.js$script,~third-party
@@ -392,16 +532,24 @@ a111 3
 d122 1
 a122 1
 ||ghienphim.blog^*.gif$image,domain=coiphim.casa
+d144 1
+a144 1
+||i.imgur.com^*.gif$image,domain=ghienphimz.mobi|mv.dailyphimz.com|mv.phimmoiaz.cc|tv.manhvl.com|www.pumpcrate.com|soicau247s.org|phim24k.top|jophim.top|rophimz.top
+d149 1
+a149 1
+||image.cdend.com^*.gif$image,domain=www.pumpcrate.com
 d161 1
 a161 1
 ||lh3.googleusercontent.com/*=s0$image,domain=animevietsub.best|googleapiscdn.com
-d190 2
-a191 1
+d190 3
+a192 2
 ||rophim1.co^*.gif$~third-party
-d233 2
-a234 2
+||rophimz.so^*.gif,~third-party
+d233 3
+a235 3
 ||ww2.8phimx.com/2s.m3u8
 ||ww2.8phimx.com/3s.m3u8$rewrite=abp-resource:blank-mp3,domain=ww2.8phimx.com
+||www.bongdalu815.com^*.gif
 d366 6
 a371 6
 animevietsub.best###_preload-ads-1
@@ -423,9 +571,17 @@ ketqua16.net,nghean24h.vn,new.tructiepnba.me,tv.manhvl.com,bongdainfox.tv,ww2.8p
 d547 1
 a547 1
 kienthuc.net.vn,saostar.vn,bongda24h.vn,antt.vn,coiphim.casa,ghienphimz.mobi,nghenhinvietnam.vn,vn-z.vn##.ads
+d640 6
+a645 6
+rakhoizau.cc###wap_bottombanner
+rakhoizau.cc##.bookmaker-selector-container
+rakhoizau.cc##.btn-8xbet
+rakhoizau.cc##.btn-odds
+rakhoizau.cc##.footer-banner
+rakhoizau.cc##.sk_balloon
 d649 1
 a649 1
-rophimz.li,mamphim.space,rophim1.co##.sspp-area
+rophimz.so,mamphim.space,rophim1.co##.sspp-area
 d724 1
 a724 1
 toquoc.vn,baoxaydung.vn,tienphong.vn,taichinhdoanhnghiep.net.vn,coiphim.casa,ghienphimz.mobi,nettruyenar.com##.banner
@@ -455,29 +611,53 @@ a872 1
 d875 1
 a875 1
 @@||tpc.googlesyndication.com/sodar/sodar2.js$domain=rophim1.co
+d920 1
+a920 1
+www.vn2d.my#@#.advertiser
 d932 1
 a932 1
-||ads.bizwd.net^$image,domain=sahrami.com
+||ads.bizwd.net^$image,domain=eastpacificsi.com
 d955 1
 a955 1
 ||javhdz.page/js/ads-javhd.js$script,~third-party
-d970 1
+d970 2
+a971 1
+||rphang.show^*.gif
+d1011 2
+a1012 4
+damconuong.cool##.catfish-ad
+damconuong.cool##a[rel="nofollow"]
+eastpacificsi.com###popup-ad-box
+eastpacificsi.com##.banner-ad
+d1020 1
+a1024 1
+heoxinh.tv,sexmupxinh.net,vlsexhihi.one##.xx-ads
 d1041 1
 a1041 1
 phimsexsuong3x.net,vlsexhihi.one,javhdz.page,laalmirchitakeaway.co.uk##.catfish-bottom
 d1044 2
-a1062 2
-sahrami.com###popup-ad-box
-sahrami.com##.banner-ad
+d1056 7
+a1062 7
+rphang.show###aboveFirstPost
+rphang.show##.bbMediaWrapper-inner>.samCodeUnit
+rphang.show##.js-replyNewMessageContainer.block-body>div.samCodeUnit>.samItem
+rphang.show##.p-footer
+rphang.show##.samVideoOverlay
+rphang.show##div.samCodeUnit[data-position="footer_fixed"]
+rphang.show##div.samItem:has(video.topmobileads)
 d1138 1
 a1138 1
 freeplayervideo.com,www.sieutamphim.fun,player-cdn.com,hopphim.online,streamc.xyz,qmhv3.mom,cap3.video,qmh.garden##+js(set, open, noopFunc)
 d1144 1
 a1144 1
-hentaibox.top,hangngon.tv,cliphot69.golf,doctruyen3qhub.fit,qmanga.art,hentaivkl.pro,buomtv.biz,truyenvn.sbs,javtiful.com,quatvn.si,phimsexhayvne.com,phim18hd.site,sexviet88.cam,sexmupxinh.net,demo.14412882.com,hhtq5.vip,umetruyenz.org,damconuong.icu,truyenqqko.com,phimsexsuong3x.net,sayhentai.cx,lxmanga.top,ww2.8phimx.com,www.sieutamphim.fun,vevocloud.com,ftscontent.com,viet69.be,viet69vn.at,misskon.com,luottruyen21.com##+js(acs, WebAssembly, instantiate)
+hentaibox.top,heoxinh.tv,cliphot69.golf,doctruyen3qhub.fit,qmanga.art,hentaivkl.pro,buomtv.biz,truyenvn.sbs,javtiful.com,quatvn.si,phimsexhayvne.com,phim18hd.site,sexviet88.cam,sexmupxinh.net,demo.14412882.com,hhtq5.vip,umetruyenz.org,damconuong.cool,truyenqqko.com,phimsexsuong3x.net,sayhentai.cx,lxmanga.top,ww2.8phimx.com,www.sieutamphim.fun,vevocloud.com,ftscontent.com,viet69.be,viet69vn.at,misskon.com,luottruyen21.com##+js(acs, WebAssembly, instantiate)
 d1150 1
 a1150 1
 imail.edu.vn,ww2.8phimx.com,trumtruyen.xyz,audiotruyenfull.com##+js(acs, setTimeout, Aff)
+d1192 2
+a1193 2
+rophimz.so,motphimc.tv,phimmoic.vip##+js(aeld, click, ads)
+rphang.show,misskon.com##+js(acs, document.querySelectorAll, popMagic)
 d1200 1
 a1200 1
 tram3d.skin,animevietsub.best##+js(acs, eval, $._Eu)
@@ -485,6 +665,9 @@ d1208 2
 a1209 2
 ww2.8phimx.com##+js(acs, document.createElement, script)
 ww2.8phimx.com,javgiga.wordpress.com##+js(aopr, localStorage)
+d1211 1
+a1213 1
+www.pumpcrate.com##+js(acs, addEvent, popu)
 d1216 1
 a1216 1
 www.sieutamphim.fun##+js(aopw, _$_d52e)
