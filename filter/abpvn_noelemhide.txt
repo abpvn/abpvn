@@ -1,9 +1,9 @@
 [Adblock Plus 2.0]
-! Version: 20261109150449591
+! Version: 20261110085646394
 ! id: D4028CDD-3D39-4624-ACC7-8140F4EC3888
 ! Title: ABPVN List
-! Last modified: 09 Nov 2026 15:04:49 UTC+7
-! Diff-Path: patches/20261109150449591.patch#abpvn_noelemhide
+! Last modified: 10 Nov 2026 08:56:46 UTC+7
+! Diff-Path: patches/20261110085646394.patch#abpvn_noelemhide
 ! Diff-Expires: 60 minutes
 ! Expires: 1 days (update frequency)
 !
@@ -46,7 +46,7 @@ $popup,domain=truyenfull.live
 /core/*$script,domain=gamek.vn|genk.vn|kenh14.vn|cafef.vn|thanhnien.vn
 /disable-devtool.min.js$script
 /giadinhonline.vn/files/qc/*
-/i.imgur.com/*.gif$domain=ww4.8phimx.com|listnhacai88.com|rakhoizaw.cc
+/i.imgur.com/*.gif$domain=ww4.8phimx.com|listnhacai88.com|rakhoizbg.cc
 /lv/esnk/*$script
 /newchill/*gif$image
 /player/jwplayer-*/vast.js$script
@@ -93,11 +93,8 @@ $popup,domain=truyenfull.live
 ||cdn-data.gtvplus.vn/banners/$image,domain=gametv.vn
 ||cdn.giavang.org/images/ads/$image,domain=giavang.org
 ||cdn.lfastcdn.com/2026/04/dzzmi8.gif$image
-||cdn.lfastcdn.com^*.gif$image,domain=bongdainfox.tv|rakhoizaw.cc
+||cdn.lfastcdn.com^*.gif$image,domain=bongdainfox.tv|rakhoizbg.cc
 ||cdn.monkeydarchive.com/images/banner/$image,domain=monkeyd.net.vn
-||cdn.phimmoihd.online/uploads/images/hi88-preroll-1609.mp4$media
-||cdn.phimmoihd.online/uploads/images/i9-600x400.jpg$image
-||cdn.phimmoihd.online^*.gif$image
 ||cdn.upanhlaylink.com^*.gif$image,domain=onflix.lat
 ||cdn.webhoctienganh.com/asset/home/img/banner/$image,domain=webhoctienganh.com
 ||cdnvip.chuoichientv.net^*.gif$domain=live11.chuoichientv.me|fhd-01.cctvsignal.xyz|lau06.bonglautv1.org|chuoichientvplus.com
@@ -184,11 +181,14 @@ $popup,domain=truyenfull.live
 ||phimhdcss.com/storage/files/abcd123.webp$image,~third-party
 ||phimmoichillz.top/pop$image
 ||phimmoichillz.top^*.gif$image
+||phimmoihd.store/uploads/images/hi88-preroll-1609.mp4$media
+||phimmoihd.store/uploads/images/i9-600x400.jpg$image
+||phimmoihd.store^*.gif$image
 ||photo2.tinhte.vn/data/attachment-files/*banner
 ||qthang.net/js/blocker$script,~third-party
 ||quaivatdienanh.com/*banner$image
 ||rophim1.co^*.gif$~third-party
-||rophimz.so^*.gif,~third-party
+||rophimz.cx^*.gif,~third-party
 ||run.vn/widget$script,~third-party
 ||s.lazada.vn^$popup,domain=chillphimmoizz.org
 ||server.zmedia.vn/static/$script
@@ -358,7 +358,7 @@ $popup,domain=truyenfull.live
 @@||cdn.adxcontent.com/vlxx/vl-inplayer-adx.js
 @@||pagead2.googlesyndication.com^$domain=gaingon3d.com|cap3.video|qmh.garden
 docufind.org.uk/wp-content/themes/vlxx/js/*-adx.js$script
-||ads.bizwd.net^$image,domain=magicdownhill.com
+||ads.bizwd.net^$image,domain=bistrobaronde.com
 ||agtcmuohbt.in^
 ||blogger.googleusercontent.com^*.gif$image,domain=www.gvnvh18z.com
 ||bullionglidingscuttle.com/lv/esnk/2031811/code.js$domain=lxmanga.top,rewrite=abp-resource:blank-js
