@@ -1,9 +1,9 @@
 [Adblock Plus 2.0]
-! Version: 20261111081317276
+! Version: 20261111104619001
 ! id: D4028CDD-3D39-4624-ACC7-8140F4EC3888
 ! Title: ABPVN List | Content Blocker
-! Last modified: 11 Nov 2026 08:13:17 UTC+7
-! Diff-Path: patches/20261111081317276.patch#abpvn_content_blocker
+! Last modified: 11 Nov 2026 10:46:19 UTC+7
+! Diff-Path: patches/20261111104619001.patch#abpvn_content_blocker
 ! Diff-Expires: 60 minutes
 ! Expires: 1 days (update frequency)
 !
@@ -215,6 +215,7 @@ $popup,domain=truyenfull.live
 ||tophim.vip^*.gif$image,~third-party
 ||traderviet.tv/data/siropu/am/user/$image
 ||tructiep.vn/website/adv/
+||truyenqqko.com/api/widget/data$xmlhttprequest
 ||tudomuaban.com/public/upload/ad/
 ||tuyensinh247.com/$image,third-party
 ||tuyensinhso.vn/images/banners/*.gif$image,~third-party
@@ -734,9 +735,11 @@ truyenqqko.com###floating-banner-right
 truyenqqko.com##.chapter_content>.text-center
 truyenqqko.com##.text_ads
 truyenqqko.com##.w-backdrop
+truyenqqko.com##.w-overlay
 truyenqqko.com##.w-overlay-catfish
 truyenqqko.com##.w-overlay-popup
 truyenqqko.com##div#ad_info
+truyenqqko.com##div[data-zone]
 truyenqqko.com##span[style="display: flex;flex-direction: column;align-items: center; color: white; padding-bottom: 10px"]
 truyenqqko.com,pagerrentablespotlight.com###ad_info_top
 truyensieuhay.com##.footer-info
