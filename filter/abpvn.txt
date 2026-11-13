@@ -1,9 +1,9 @@
 [Adblock Plus 2.0]
-! Version: 20261113093716961
+! Version: 20261113112354841
 ! id: D4028CDD-3D39-4624-ACC7-8140F4EC3888
 ! Title: ABPVN List
-! Last modified: 13 Nov 2026 09:37:16 UTC+7
-! Diff-Path: patches/20261113093716961.patch#abpvn
+! Last modified: 13 Nov 2026 11:23:54 UTC+7
+! Diff-Path: patches/20261113112354841.patch#abpvn
 ! Diff-Expires: 60 minutes
 ! Expires: 1 days (update frequency)
 !
@@ -600,7 +600,6 @@ $popup,domain=truyenfull.live
 ###mobileCatfish
 ###pmadv
 ##.aanetwork-ads-box
-##.ad-banner
 ##.ad-popup
 ##.ad-sidebar
 ##.ad-slot
@@ -1131,6 +1130,7 @@ www.saostar.vn###pc-bill-top
 www.saostar.vn###pc-bill-top-1
 www.sieutamphim.site###scriptDiv
 www.toptruyenzone14.com,doctruyen3qhub.club##.advertisement
+www.vnjpclub.com##.vnjp-ad-slot
 www.youtube.com##.ytd-display-ad-renderer
 www.youtube.com##ytd-ad-slot-renderer
 www.youtube.com##ytd-rich-item-renderer:has(ytd-ad-slot-renderer)
@@ -1150,6 +1150,7 @@ znews.vn,tech.zingnews.vn###Zingnews_SiteHeader
 ~dl.thuthuatjb.com##.adsbygoogle[data-ad-slot]
 ~livescore.com,~msn.com,~dm.de,~medium.com##.qc
 ~vnexpress.net##.banner-bottom
+~www.vnjpclub.com##.ad-banner
 !---------------ABPVN White List--------------------
 @@/wp-content/plugins/advanced-ads/admin/assets/js/advertisement.js$script,~third-party
 @@||4.bp.blogspot.com/-Faf4F4bEgfs/X6bgItBh8RI/AAAAAAAADr4/TI07qDfVYWk4cPdNAj8Mn5Q_yVzuG2cJgCK4BGAYYCw/s1600/gvnvh18.png$image,domain=www.gvnvh18z.com
@@ -1251,6 +1252,7 @@ quykhu.com#@#[class^="div-gpt-ad"]
 ||sexmupxinh.net^*.gif$image,domain=sexmupxinh.net
 ||sexviet88.cam^*.gif
 ||sharelink.me/images/*.gif$domain=sexviet69.cc
+||stream.quatvn.best/wp-content/uploads/2026/11/78.webp$image
 ||t7cp4fldl.com^
 ||truyensextv.com/anh/$image
 ||truyensextv.com^*.gif
@@ -1284,6 +1286,7 @@ cap3.video,qmh.garden###catfish-ad-banner
 chigua.com##.banner
 chigua.com##.post-card-ads
 chigua.com##.post>div>.horizontal-block
+chigua.com##.recommend-layer
 chigua.com##.txt-apps
 chigua.com##[id^="article-bottom-ads-"]
 chigua.com##[id^="article-top-banner-"]
@@ -1335,13 +1338,10 @@ pornhub.com##.wrapper + div
 qmhv3.top##.global-sticky-ads
 qmhv3.top##.header>app-banner
 qmhv3.top##.p-4.justify-center.items-center.flex.backdrop-blur-sm.bg-black\/80.z-\[9999\].inset-0.fixed
-quatvn.best##.adace-slideup-slot-wrap
-quatvn.best##.adace-slot
-quatvn.best##.g1-advertisement
-quatvn.best##.popup-banner
-quatvn.best##.popup-overlay
-quatvn.best##.preroll-content
-quatvn.best##body>div[style^="position: fixed;"]
+quatvn.best###popupBanner
+quatvn.best###popupOverlay
+quatvn.best###stickyFooterAds
+quatvn.best###topBannerAds
 rphang.show##.bbMediaWrapper-inner>.samCodeUnit
 rphang.show##.js-replyNewMessageContainer.block-body>div.samCodeUnit>.samItem
 rphang.show##.p-body-pageContent>.samCodeUnit
@@ -1427,7 +1427,6 @@ xnhau.pink##.sponsor
 xnhau.pink##.spot
 xnxx.com###ad-header-mobile
 xnxx.com###content-ad-top-zone
-zpic.org##.ad-banner
 !----------Mobile filter-------------
 ||adash*.m.taobao.com^
 ||adash.man.aliyuncs.com^
