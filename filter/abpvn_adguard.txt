@@ -1,9 +1,9 @@
 [Adblock Plus 2.0]
-! Version: 20261116162351358
+! Version: 20261116203210555
 ! id: D4028CDD-3D39-4624-ACC7-8140F4EC3888
 ! Title: ABPVN List | AdGuard
-! Last modified: 16 Nov 2026 16:23:51 UTC+7
-! Diff-Path: patches/20261116162351358.patch#abpvn_adguard
+! Last modified: 16 Nov 2026 20:32:10 UTC+7
+! Diff-Path: patches/20261116203210555.patch#abpvn_adguard
 ! Diff-Expires: 60 minutes
 ! Expires: 1 days (update frequency)
 !
@@ -84,7 +84,7 @@
 ||animehay16.site/ad_banner/$image
 ||animehay16.site/sw.js$script,~third-party
 ||animesub.site^*.gif
-||animevietsub.best/ads/$script
+||animevietsub.bid/ads/$script
 ||api.anime3s.com/i9bet.php$xmlhttprequest,~third-party
 ||api.anime3s.com^*.gif$image,domain=animesub.site
 ||api.mamphim.site^*.gif$domain=mamphim.space
@@ -162,7 +162,7 @@
 ||kienthuc.net.vn/*.ads
 ||laodong.vn/*QuangcaoOnline
 ||lauphimhay.com/ads/ads.min.js
-||lh3.googleusercontent.com/*=s0$image,domain=animevietsub.best|googleapiscdn.com
+||lh3.googleusercontent.com/*=s0$image,domain=animevietsub.bid|googleapiscdn.com
 ||listnhacai88.com^*.gif$image
 ||media.chuoichientv.net/media/20260606_121404_9d4f2849.jpg$image
 ||media.chuoichientv.net^*.gif$domain=live11.chuoichientv.me
@@ -644,12 +644,12 @@ animesub.site,animetvn.gay###fbox-background
 animesub.site,phimhdc.com,phimhdcss.com##.mp-adz
 animetvn.gay###mobile-ads
 animetvn.gay##.gnarty-offads
-animevietsub.best###_preload-ads-1
-animevietsub.best###invideo_wrapper
-animevietsub.best##.Ads
-animevietsub.best##.mobile-catfish-top
-animevietsub.best##.mobile-catfixx
-animevietsub.best,phimtuoitho.tv##.pc-catfixx
+animevietsub.bid###_preload-ads-1
+animevietsub.bid###invideo_wrapper
+animevietsub.bid##.Ads
+animevietsub.bid##.mobile-catfish-top
+animevietsub.bid##.mobile-catfixx
+animevietsub.bid,phimtuoitho.tv##.pc-catfixx
 anninhthudo.vn##.adsitem
 api.anime3s.com##.t_logo
 audiotruyenfull.com##.code-block-24.code-block
@@ -1522,7 +1522,7 @@ subnhanh.plus#%#//scriptlet("abort-current-inline-script", "$", "pop")
 tophim.mom#%#//scriptlet("prevent-addEventListener", "click", "pop")
 tram3d.com#%#//scriptlet("abort-current-inline-script", "document.createElement", ";break;case")
 tram3d.mom#%#//scriptlet("abort-current-inline-script", "setTimeout", "appendChild")
-tram3d.skin,animevietsub.best#%#//scriptlet("abort-current-inline-script", "eval", "$._Eu")
+tram3d.skin,animevietsub.bid#%#//scriptlet("abort-current-inline-script", "eval", "$._Eu")
 truyen247.pro#%#//scriptlet("abort-current-inline-script", "eval")
 truyenfull.live#%#//scriptlet("set-constant", "ads_show", "0")
 truyensextv.com,yanhh3d.de,x.chinav.sex#%#//scriptlet("abort-current-inline-script", "document.addEventListener", "opup")
