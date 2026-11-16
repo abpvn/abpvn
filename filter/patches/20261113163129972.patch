@@ -1,26 +1,61 @@
-diff name:abpvn lines:64 checksum:fbfe367e31
+diff name:abpvn lines:105 checksum:8a8e7c7ed9
 d2 1
 a2 1
-! Version: 20261115202319595
+! Version: 20261116081928276
 d5 2
 a6 2
-! Last modified: 15 Nov 2026 20:23:19 UTC+7
-! Diff-Path: patches/20261115202319595.patch#abpvn
+! Last modified: 16 Nov 2026 08:19:28 UTC+7
+! Diff-Path: patches/20261116081928276.patch#abpvn
 d53 1
 a53 1
 /i.imgur.com/*.gif$domain=ww4.8phimx.com|listnhacai88.com|rakhoizah.cc
 d105 1
 a105 1
 ||cdn.lfastcdn.com^*.gif$image,domain=bongdainfox.tv|rakhoizah.cc
+d114 1
+a114 1
+||chophim.xyz/ads/$media,~third-party,rewrite=abp-resource:blank-mp3
+d117 3
+a119 3
+||coiphim.buzz/client_assets/js/dataview/adsview.js$script,~third-party
+||coiphim.buzz/client_assets/js/minijumb.js$script,~third-party
+||coiphim.buzz^*.gif$image
+d129 1
+a129 1
+||ghienphim.blog^*.gif$image,domain=coiphim.buzz
+d157 1
+a157 1
+||imagedelivery.net^$image,domain=motphimchilll.ink
+d223 1
+a223 1
+||tophim.mom^*.gif$image,~third-party
 d242 1
 a242 1
 ||www.bongdalu820.com^*.gif
+d703 2
+a704 2
+chophim.xyz##.p-4.bg-black\/65.justify-center.items-center.flex.z-\[90\].inset-0.fixed
+chophim.xyz##.pointer-events-none.justify-center.flex.z-\[80\].bottom-0.inset-x-0.fixed
+d715 5
+a719 5
+coiphim.buzz##li.special.parent
+coiphim.buzz,ghienphimz.mobi##.ad-floater
+coiphim.buzz,ghienphimz.mobi##.popunder-link
+coiphim.buzz,ghienphimz.mobi##.promotion-popup
+coiphim.buzz,ghienphimz.mobi,subnhanh.plus##.video-ad-layer
+d831 1
+a831 1
+kienthuc.net.vn,saostar.vn,bongda24h.vn,antt.vn,coiphim.buzz,ghienphimz.mobi,nghenhinvietnam.vn,vn-z.vn##.ads
 d879 1
 a879 1
 motchillc.ws##.bg-black\/70.justify-center.items-center.flex.z-\[9999\].inset-0.fixed
-d883 1
-a884 1
+d883 2
+a884 2
+motphimchilll.ink###catfish_ad_top
 motphimz.ws##.bg-black\/70.justify-center.items-center.flex.z-\[9999\].inset-0.fixed
+d917 1
+a917 1
+phimmoic.me##.bg-black\/70.justify-center.items-center.flex.z-\[9999\].inset-0.fixed
 d933 6
 a938 6
 rakhoizah.cc###wap_bottombanner
@@ -29,9 +64,15 @@ rakhoizah.cc##.btn-8xbet
 rakhoizah.cc##.btn-odds
 rakhoizah.cc##.footer-banner
 rakhoizah.cc##.sk_balloon
+d1017 1
+a1017 1
+toquoc.vn,baoxaydung.vn,tienphong.vn,taichinhdoanhnghiep.net.vn,coiphim.buzz,ghienphimz.mobi##.banner
+d1131 1
+a1131 1
+www.sieutamphim.art###scriptDiv
 d1188 1
 a1188 1
-||ads.bizwd.net^$image,domain=kuiseaction.com
+||ads.bizwd.net^$image,domain=museodebecal.com
 d1210 1
 a1210 1
 ||cruncherpatiencestoreroom.com^$popup,domain=qmhv3.lol
@@ -50,9 +91,9 @@ a1255 1
 d1261 1
 a1261 1
 ||video.s3viphub.shop/uploads/banners$image,domain=qmhv3.lol
-a1315 2
-kuiseaction.com###popup-ad-box
-kuiseaction.com##.banner-ad
+a1317 2
+museodebecal.com###popup-ad-box
+museodebecal.com##.banner-ad
 d1336 7
 a1342 7
 qmhv3.lol##.global-sticky-ads
@@ -63,29 +104,64 @@ quatvn.stream###popupOverlay
 quatvn.stream###stickyFooterAds
 quatvn.stream###topBannerAds
 d1357 2
-diff name:abpvn_adguard lines:84 checksum:d0be0cc018
+diff name:abpvn_adguard lines:131 checksum:4dd83321b1
 d2 1
 a2 1
-! Version: 20261115202319595
+! Version: 20261116081928276
 d5 2
 a6 2
-! Last modified: 15 Nov 2026 20:23:19 UTC+7
-! Diff-Path: patches/20261115202319595.patch#abpvn_adguard
+! Last modified: 16 Nov 2026 08:19:28 UTC+7
+! Diff-Path: patches/20261116081928276.patch#abpvn_adguard
 d51 1
 a51 1
 /i.imgur.com/*.gif$domain=ww4.8phimx.com|listnhacai88.com|rakhoizah.cc
 d102 1
 a102 1
 ||cdn.lfastcdn.com^*.gif$image,domain=bongdainfox.tv|rakhoizah.cc
+d111 1
+a111 1
+||chophim.xyz/ads/$media,~third-party,rewrite=abp-resource:blank-mp3
+d114 3
+a116 3
+||coiphim.buzz/client_assets/js/dataview/adsview.js$script,~third-party
+||coiphim.buzz/client_assets/js/minijumb.js$script,~third-party
+||coiphim.buzz^*.gif$image
+d126 1
+a126 1
+||ghienphim.blog^*.gif$image,domain=coiphim.buzz
+d154 1
+a154 1
+||imagedelivery.net^$image,domain=motphimchilll.ink
+d218 1
+a218 1
+||tophim.mom^*.gif$image,~third-party
 d237 1
 a237 1
 ||www.bongdalu820.com^*.gif
+d698 2
+a699 2
+chophim.xyz##.p-4.bg-black\/65.justify-center.items-center.flex.z-\[90\].inset-0.fixed
+chophim.xyz##.pointer-events-none.justify-center.flex.z-\[80\].bottom-0.inset-x-0.fixed
+d710 5
+a714 5
+coiphim.buzz##li.special.parent
+coiphim.buzz,ghienphimz.mobi##.ad-floater
+coiphim.buzz,ghienphimz.mobi##.popunder-link
+coiphim.buzz,ghienphimz.mobi##.promotion-popup
+coiphim.buzz,ghienphimz.mobi,subnhanh.plus##.video-ad-layer
+d825 1
+a825 1
+kienthuc.net.vn,saostar.vn,bongda24h.vn,antt.vn,coiphim.buzz,ghienphimz.mobi,nghenhinvietnam.vn,vn-z.vn##.ads
 d873 1
 a873 1
 motchillc.ws##.bg-black\/70.justify-center.items-center.flex.z-\[9999\].inset-0.fixed
-d877 1
-a878 1
+d877 2
+a878 2
+motphimchilll.ink###catfish_ad_top
 motphimz.ws##.bg-black\/70.justify-center.items-center.flex.z-\[9999\].inset-0.fixed
+d910 1
+a910 1
+phimmoic.me##.bg-black\/70.justify-center.items-center.flex.z-\[9999\].inset-0.fixed
 d926 6
 a931 6
 rakhoizah.cc###wap_bottombanner
@@ -94,9 +170,15 @@ rakhoizah.cc##.btn-8xbet
 rakhoizah.cc##.btn-odds
 rakhoizah.cc##.footer-banner
 rakhoizah.cc##.sk_balloon
+d1010 1
+a1010 1
+toquoc.vn,baoxaydung.vn,tienphong.vn,taichinhdoanhnghiep.net.vn,coiphim.buzz,ghienphimz.mobi##.banner
+d1124 1
+a1124 1
+www.sieutamphim.art###scriptDiv
 d1179 1
 a1179 1
-||ads.bizwd.net^$image,domain=kuiseaction.com
+||ads.bizwd.net^$image,domain=museodebecal.com
 d1201 1
 a1201 1
 ||cruncherpatiencestoreroom.com^$popup,domain=qmhv3.lol
@@ -115,9 +197,9 @@ a1246 1
 d1252 1
 a1252 1
 ||video.s3viphub.shop/uploads/banners$image,domain=qmhv3.lol
-a1306 2
-kuiseaction.com###popup-ad-box
-kuiseaction.com##.banner-ad
+a1308 2
+museodebecal.com###popup-ad-box
+museodebecal.com##.banner-ad
 d1327 7
 a1333 7
 qmhv3.lol##.global-sticky-ads
@@ -130,10 +212,10 @@ quatvn.stream###topBannerAds
 d1348 2
 d1462 1
 a1462 1
-freeplayervideo.com,www.sieutamphim.site,player-cdn.com,hopphim.online,streamc.xyz,qmhv3.lol,cap3.video,qmh.garden#%#//scriptlet("set-constant", "open", "noopFunc")
+freeplayervideo.com,www.sieutamphim.art,player-cdn.com,hopphim.online,streamc.xyz,qmhv3.lol,cap3.video,qmh.garden#%#//scriptlet("set-constant", "open", "noopFunc")
 d1468 1
 a1468 1
-hentaibox.top,phimsexlon.pro,cliphot69.golf,doctruyen3qhub.club,qmanga.art,hentaivkl.pro,buomtv.biz,truyenvn.sbs,javtiful.com,quatvn.stream,phimsexhayvne.com,phim18hd.site,sexviet88.cam,sexmupxinh.net,demo.14412882.com,hhtq5.vip,umetruyenz.org,damconuong.cool,truyenqqko.com,phimsexsuong3x.net,sayhentai.cx,lxmanga.top,ww4.8phimx.com,www.sieutamphim.site,vevocloud.com,ftscontent.com,viet69.be,viet69vn.at,misskon.com,luottruyen21.com#%#//scriptlet("abort-current-inline-script", "WebAssembly", "instantiate")
+hentaibox.top,phimsexlon.pro,cliphot69.golf,doctruyen3qhub.club,qmanga.art,hentaivkl.pro,buomtv.biz,truyenvn.sbs,javtiful.com,quatvn.stream,phimsexhayvne.com,phim18hd.site,sexviet88.cam,sexmupxinh.net,demo.14412882.com,hhtq5.vip,umetruyenz.org,damconuong.cool,truyenqqko.com,phimsexsuong3x.net,sayhentai.cx,lxmanga.top,ww4.8phimx.com,www.sieutamphim.art,vevocloud.com,ftscontent.com,viet69.be,viet69vn.at,misskon.com,luottruyen21.com#%#//scriptlet("abort-current-inline-script", "WebAssembly", "instantiate")
 d1488 2
 a1489 2
 motchillc.ws#%#//scriptlet("prevent-addEventListener", "click", "sessionStorage")
@@ -147,30 +229,71 @@ qmhv3.lol#%#//scriptlet("prevent-addEventListener", "fullscreenchange", "e.targe
 quatvn.stream#%#//scriptlet("abort-current-inline-script", "window.addEventListener", "localStorage")
 d1516 1
 a1516 1
-rophimz.com.mx,motphimz.ws,phimmoic.to#%#//scriptlet("prevent-addEventListener", "click", "ads")
-diff name:abpvn_content_blocker lines:64 checksum:274838f330
+rophimz.com.mx,motphimz.ws,phimmoic.me#%#//scriptlet("prevent-addEventListener", "click", "ads")
+d1521 1
+a1521 1
+tophim.mom#%#//scriptlet("prevent-addEventListener", "click", "pop")
+d1545 1
+a1545 1
+www.sieutamphim.art#%#//scriptlet("abort-on-property-write", "_$_d52e")
+diff name:abpvn_content_blocker lines:105 checksum:70c58b13d3
 d2 1
 a2 1
-! Version: 20261115202319595
+! Version: 20261116081928276
 d5 2
 a6 2
-! Last modified: 15 Nov 2026 20:23:19 UTC+7
-! Diff-Path: patches/20261115202319595.patch#abpvn_content_blocker
+! Last modified: 16 Nov 2026 08:19:28 UTC+7
+! Diff-Path: patches/20261116081928276.patch#abpvn_content_blocker
 d53 1
 a53 1
 /i.imgur.com/*.gif$domain=ww4.8phimx.com|listnhacai88.com|rakhoizah.cc
 d105 1
 a105 1
 ||cdn.lfastcdn.com^*.gif$image,domain=bongdainfox.tv|rakhoizah.cc
+d114 1
+a114 1
+||chophim.xyz/ads/$media,~third-party,rewrite=abp-resource:blank-mp3
+d117 3
+a119 3
+||coiphim.buzz/client_assets/js/dataview/adsview.js$script,~third-party
+||coiphim.buzz/client_assets/js/minijumb.js$script,~third-party
+||coiphim.buzz^*.gif$image
+d129 1
+a129 1
+||ghienphim.blog^*.gif$image,domain=coiphim.buzz
+d157 1
+a157 1
+||imagedelivery.net^$image,domain=motphimchilll.ink
+d223 1
+a223 1
+||tophim.mom^*.gif$image,~third-party
 d242 1
 a242 1
 ||www.bongdalu820.com^*.gif
+d703 2
+a704 2
+chophim.xyz##.p-4.bg-black\/65.justify-center.items-center.flex.z-\[90\].inset-0.fixed
+chophim.xyz##.pointer-events-none.justify-center.flex.z-\[80\].bottom-0.inset-x-0.fixed
+d715 5
+a719 5
+coiphim.buzz##li.special.parent
+coiphim.buzz,ghienphimz.mobi##.ad-floater
+coiphim.buzz,ghienphimz.mobi##.popunder-link
+coiphim.buzz,ghienphimz.mobi##.promotion-popup
+coiphim.buzz,ghienphimz.mobi,subnhanh.plus##.video-ad-layer
+d831 1
+a831 1
+kienthuc.net.vn,saostar.vn,bongda24h.vn,antt.vn,coiphim.buzz,ghienphimz.mobi,nghenhinvietnam.vn,vn-z.vn##.ads
 d879 1
 a879 1
 motchillc.ws##.bg-black\/70.justify-center.items-center.flex.z-\[9999\].inset-0.fixed
-d883 1
-a884 1
+d883 2
+a884 2
+motphimchilll.ink###catfish_ad_top
 motphimz.ws##.bg-black\/70.justify-center.items-center.flex.z-\[9999\].inset-0.fixed
+d917 1
+a917 1
+phimmoic.me##.bg-black\/70.justify-center.items-center.flex.z-\[9999\].inset-0.fixed
 d933 6
 a938 6
 rakhoizah.cc###wap_bottombanner
@@ -179,9 +302,15 @@ rakhoizah.cc##.btn-8xbet
 rakhoizah.cc##.btn-odds
 rakhoizah.cc##.footer-banner
 rakhoizah.cc##.sk_balloon
+d1017 1
+a1017 1
+toquoc.vn,baoxaydung.vn,tienphong.vn,taichinhdoanhnghiep.net.vn,coiphim.buzz,ghienphimz.mobi##.banner
+d1131 1
+a1131 1
+www.sieutamphim.art###scriptDiv
 d1188 1
 a1188 1
-||ads.bizwd.net^$image,domain=kuiseaction.com
+||ads.bizwd.net^$image,domain=museodebecal.com
 d1210 1
 a1210 1
 ||cruncherpatiencestoreroom.com^$popup,domain=qmhv3.lol
@@ -200,9 +329,9 @@ a1255 1
 d1261 1
 a1261 1
 ||video.s3viphub.shop/uploads/banners$image,domain=qmhv3.lol
-a1315 2
-kuiseaction.com###popup-ad-box
-kuiseaction.com##.banner-ad
+a1317 2
+museodebecal.com###popup-ad-box
+museodebecal.com##.banner-ad
 d1336 7
 a1342 7
 qmhv3.lol##.global-sticky-ads
@@ -213,26 +342,43 @@ quatvn.stream###popupOverlay
 quatvn.stream###stickyFooterAds
 quatvn.stream###topBannerAds
 d1357 2
-diff name:abpvn_noelemhide lines:37 checksum:1c15ad9131
+diff name:abpvn_noelemhide lines:54 checksum:95826b7148
 d2 1
 a2 1
-! Version: 20261115202319595
+! Version: 20261116081928276
 d5 2
 a6 2
-! Last modified: 15 Nov 2026 20:23:19 UTC+7
-! Diff-Path: patches/20261115202319595.patch#abpvn_noelemhide
+! Last modified: 16 Nov 2026 08:19:28 UTC+7
+! Diff-Path: patches/20261116081928276.patch#abpvn_noelemhide
 d53 1
 a53 1
 /i.imgur.com/*.gif$domain=ww4.8phimx.com|listnhacai88.com|rakhoizah.cc
 d105 1
 a105 1
 ||cdn.lfastcdn.com^*.gif$image,domain=bongdainfox.tv|rakhoizah.cc
+d114 1
+a114 1
+||chophim.xyz/ads/$media,~third-party,rewrite=abp-resource:blank-mp3
+d117 3
+a119 3
+||coiphim.buzz/client_assets/js/dataview/adsview.js$script,~third-party
+||coiphim.buzz/client_assets/js/minijumb.js$script,~third-party
+||coiphim.buzz^*.gif$image
+d129 1
+a129 1
+||ghienphim.blog^*.gif$image,domain=coiphim.buzz
+d157 1
+a157 1
+||imagedelivery.net^$image,domain=motphimchilll.ink
+d223 1
+a223 1
+||tophim.mom^*.gif$image,~third-party
 d242 1
 a242 1
 ||www.bongdalu820.com^*.gif
 d621 1
 a621 1
-||ads.bizwd.net^$image,domain=kuiseaction.com
+||ads.bizwd.net^$image,domain=museodebecal.com
 d643 1
 a643 1
 ||cruncherpatiencestoreroom.com^$popup,domain=qmhv3.lol
@@ -251,29 +397,64 @@ a688 1
 d694 1
 a694 1
 ||video.s3viphub.shop/uploads/banners$image,domain=qmhv3.lol
-diff name:abpvn_ublock lines:84 checksum:dcade7877e
+diff name:abpvn_ublock lines:131 checksum:48ef651cbc
 d2 1
 a2 1
-! Version: 20261115202319595
+! Version: 20261116081928276
 d5 2
 a6 2
-! Last modified: 15 Nov 2026 20:23:19 UTC+7
-! Diff-Path: patches/20261115202319595.patch#abpvn_ublock
+! Last modified: 16 Nov 2026 08:19:28 UTC+7
+! Diff-Path: patches/20261116081928276.patch#abpvn_ublock
 d51 1
 a51 1
 /i.imgur.com/*.gif$domain=ww4.8phimx.com|listnhacai88.com|rakhoizah.cc
 d103 1
 a103 1
 ||cdn.lfastcdn.com^*.gif$image,domain=bongdainfox.tv|rakhoizah.cc
+d112 1
+a112 1
+||chophim.xyz/ads/$media,~third-party,rewrite=abp-resource:blank-mp3
+d115 3
+a117 3
+||coiphim.buzz/client_assets/js/dataview/adsview.js$script,~third-party
+||coiphim.buzz/client_assets/js/minijumb.js$script,~third-party
+||coiphim.buzz^*.gif$image
+d127 1
+a127 1
+||ghienphim.blog^*.gif$image,domain=coiphim.buzz
+d155 1
+a155 1
+||imagedelivery.net^$image,domain=motphimchilll.ink
+d219 1
+a219 1
+||tophim.mom^*.gif$image,~third-party
 d238 1
 a238 1
 ||www.bongdalu820.com^*.gif
+d699 2
+a700 2
+chophim.xyz##.p-4.bg-black\/65.justify-center.items-center.flex.z-\[90\].inset-0.fixed
+chophim.xyz##.pointer-events-none.justify-center.flex.z-\[80\].bottom-0.inset-x-0.fixed
+d711 5
+a715 5
+coiphim.buzz##li.special.parent
+coiphim.buzz,ghienphimz.mobi##.ad-floater
+coiphim.buzz,ghienphimz.mobi##.popunder-link
+coiphim.buzz,ghienphimz.mobi##.promotion-popup
+coiphim.buzz,ghienphimz.mobi,subnhanh.plus##.video-ad-layer
+d826 1
+a826 1
+kienthuc.net.vn,saostar.vn,bongda24h.vn,antt.vn,coiphim.buzz,ghienphimz.mobi,nghenhinvietnam.vn,vn-z.vn##.ads
 d874 1
 a874 1
 motchillc.ws##.bg-black\/70.justify-center.items-center.flex.z-\[9999\].inset-0.fixed
-d878 1
-a879 1
+d878 2
+a879 2
+motphimchilll.ink###catfish_ad_top
 motphimz.ws##.bg-black\/70.justify-center.items-center.flex.z-\[9999\].inset-0.fixed
+d911 1
+a911 1
+phimmoic.me##.bg-black\/70.justify-center.items-center.flex.z-\[9999\].inset-0.fixed
 d927 6
 a932 6
 rakhoizah.cc###wap_bottombanner
@@ -282,9 +463,15 @@ rakhoizah.cc##.btn-8xbet
 rakhoizah.cc##.btn-odds
 rakhoizah.cc##.footer-banner
 rakhoizah.cc##.sk_balloon
+d1011 1
+a1011 1
+toquoc.vn,baoxaydung.vn,tienphong.vn,taichinhdoanhnghiep.net.vn,coiphim.buzz,ghienphimz.mobi##.banner
+d1125 1
+a1125 1
+www.sieutamphim.art###scriptDiv
 d1180 1
 a1180 1
-||ads.bizwd.net^$image,domain=kuiseaction.com
+||ads.bizwd.net^$image,domain=museodebecal.com
 d1202 1
 a1202 1
 ||cruncherpatiencestoreroom.com^$popup,domain=qmhv3.lol
@@ -303,9 +490,9 @@ a1247 1
 d1253 1
 a1253 1
 ||video.s3viphub.shop/uploads/banners$image,domain=qmhv3.lol
-a1307 2
-kuiseaction.com###popup-ad-box
-kuiseaction.com##.banner-ad
+a1309 2
+museodebecal.com###popup-ad-box
+museodebecal.com##.banner-ad
 d1328 7
 a1334 7
 qmhv3.lol##.global-sticky-ads
@@ -318,10 +505,10 @@ quatvn.stream###topBannerAds
 d1349 2
 d1463 1
 a1463 1
-freeplayervideo.com,www.sieutamphim.site,player-cdn.com,playhydrax.com,hopphim.online,streamc.xyz,qmhv3.lol,cap3.video,qmh.garden##+js(set, open, noopFunc)
+freeplayervideo.com,www.sieutamphim.art,player-cdn.com,playhydrax.com,hopphim.online,streamc.xyz,qmhv3.lol,cap3.video,qmh.garden##+js(set, open, noopFunc)
 d1469 1
 a1469 1
-hentaibox.top,phimsexlon.pro,cliphot69.golf,doctruyen3qhub.club,qmanga.art,hentaivkl.pro,buomtv.biz,truyenvn.sbs,javtiful.com,quatvn.stream,phimsexhayvne.com,phim18hd.site,sexviet88.cam,sexmupxinh.net,demo.14412882.com,hhtq5.vip,umetruyenz.org,damconuong.cool,truyenqqko.com,phimsexsuong3x.net,sayhentai.cx,lxmanga.top,ww4.8phimx.com,www.sieutamphim.site,vevocloud.com,ftscontent.com,viet69.be,viet69vn.at,misskon.com,luottruyen21.com##+js(acs, WebAssembly, instantiate)
+hentaibox.top,phimsexlon.pro,cliphot69.golf,doctruyen3qhub.club,qmanga.art,hentaivkl.pro,buomtv.biz,truyenvn.sbs,javtiful.com,quatvn.stream,phimsexhayvne.com,phim18hd.site,sexviet88.cam,sexmupxinh.net,demo.14412882.com,hhtq5.vip,umetruyenz.org,damconuong.cool,truyenqqko.com,phimsexsuong3x.net,sayhentai.cx,lxmanga.top,ww4.8phimx.com,www.sieutamphim.art,vevocloud.com,ftscontent.com,viet69.be,viet69vn.at,misskon.com,luottruyen21.com##+js(acs, WebAssembly, instantiate)
 d1489 2
 a1490 2
 motchillc.ws##+js(aeld, click, sessionStorage)
@@ -335,4 +522,10 @@ qmhv3.lol##+js(aeld, fullscreenchange, e.target)
 quatvn.stream##+js(acs, window.addEventListener, localStorage)
 d1515 1
 a1515 1
-rophimz.com.mx,motphimz.ws,phimmoic.to##+js(aeld, click, ads)
+rophimz.com.mx,motphimz.ws,phimmoic.me##+js(aeld, click, ads)
+d1520 1
+a1520 1
+tophim.mom##+js(aeld, click, pop)
+d1544 1
+a1544 1
+www.sieutamphim.art##+js(aopw, _$_d52e)
