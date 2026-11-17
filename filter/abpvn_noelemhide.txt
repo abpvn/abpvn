@@ -1,9 +1,9 @@
 [Adblock Plus 2.0]
-! Version: 20261116220347474
+! Version: 20261117092102365
 ! id: D4028CDD-3D39-4624-ACC7-8140F4EC3888
 ! Title: ABPVN List
-! Last modified: 16 Nov 2026 22:03:47 UTC+7
-! Diff-Path: patches/20261116220347474.patch#abpvn_noelemhide
+! Last modified: 17 Nov 2026 09:21:02 UTC+7
+! Diff-Path: patches/20261117092102365.patch#abpvn_noelemhide
 ! Diff-Expires: 60 minutes
 ! Expires: 1 days (update frequency)
 !
@@ -97,7 +97,7 @@ $popup,domain=truyenfull.live
 ||cdn.monkeydarchive.com/images/banner/$image,domain=monkeyd.net.vn
 ||cdn.upanhlaylink.com^*.gif$image,domain=onflix.lat
 ||cdn.webhoctienganh.com/asset/home/img/banner/$image,domain=webhoctienganh.com
-||cdnvip.chuoichientv.net^*.gif$domain=live11.chuoichientv.me|fhd-01.cctvsignal.xyz|lau06.bonglautv1.org|chuoichientvplus.com
+||cdnvip.chuoichientv.net^*.gif$domain=live12.chuoichientv.me|fhd-01.cctvsignal.xyz|lau06.bonglautv1.org|chuoichientvplus.com
 ||cf.shopee.vn/file/$image,domain=tctruyen.org
 ||checkscam.vn/wp-content/uploads/2025/10/2.png$image
 ||checkscam.vn^*.gif$image
@@ -105,9 +105,9 @@ $popup,domain=truyenfull.live
 ||chophim.xyz/ads/$media,~third-party,rewrite=abp-resource:blank-mp3
 ||chotlo3s.com^*gif
 ||client.rigelink.com/delivery/$xmlhttprequest
-||coiphim.buzz/client_assets/js/dataview/adsview.js$script,~third-party
-||coiphim.buzz/client_assets/js/minijumb.js$script,~third-party
-||coiphim.buzz^*.gif$image
+||coiphim.bond/client_assets/js/dataview/adsview.js$script,~third-party
+||coiphim.bond/client_assets/js/minijumb.js$script,~third-party
+||coiphim.bond^*.gif$image
 ||content.accesstrade.vn/evidence_add_lost/2026/img/upload/1782901020_add_lost_add_lost_tmpkr5r8ybs.png$image
 ||danketoan.com/banner/
 ||doctruyenqq.net/*banner$image
@@ -117,9 +117,9 @@ $popup,domain=truyenfull.live
 ||film4k.pl^*.gif$image,~third-party
 ||forum.idichvuseo.com/images/quang-cao
 ||fundingchoicesmessages.google.com^$third-party
-||ghienphim.blog^*.gif$image,domain=coiphim.buzz
-||ghienphimz.mobi/client_assets/js/minijumb.js
-||ghienphimz.mobi^*.gif$image
+||ghienphim.blog^*.gif$image,domain=coiphim.bond
+||ghienphimz.fun/client_assets/js/minijumb.js
+||ghienphimz.fun^*.gif$image
 ||ght.kernh41.com^$script,third-party
 ||giovang.cam/wp-content/plugins/ovn-suite/assets/frontend/banner/$~third-party
 ||giovang.cam/wp-content/themes/GioVang/assets/js/giovang-banner-resolve.js$script,~third-party
@@ -139,7 +139,7 @@ $popup,domain=truyenfull.live
 ||i.imgur.com/81uid6d.jpg$domain=vozer.net
 ||i.imgur.com/FbUH5AQ.png$domain=vozer.net
 ||i.imgur.com^$image,domain=nhacdj.vn|banbuondalat.com|new.tructiepnba.me|phimbet.top
-||i.imgur.com^*.gif$image,domain=ghienphimz.mobi|mv.dailyphimz.com|mv.phimmoiaz.cc|tv.manhvl.com|www.pumpcrate.com|phim24k.top|jophim.top|rophimz.top
+||i.imgur.com^*.gif$image,domain=ghienphimz.fun|mv.dailyphimz.com|mv.phimmoiaz.cc|tv.manhvl.com|www.pumpcrate.com|phim24k.top|jophim.top|rophimz.top
 ||i138.truyenvua.com/244/210/1.jpg$image
 ||iamcdn.net/players/playera.dmins.js
 ||iamcdn.net/players/playhydraxs.min.js
@@ -159,7 +159,7 @@ $popup,domain=truyenfull.live
 ||lh3.googleusercontent.com/*=s0$image,domain=animevietsub.bid|googleapiscdn.com
 ||listnhacai88.com^*.gif$image
 ||media.chuoichientv.net/media/20260606_121404_9d4f2849.jpg$image
-||media.chuoichientv.net^*.gif$domain=live11.chuoichientv.me
+||media.chuoichientv.net^*.gif$domain=live12.chuoichientv.me
 ||media.nghean24h.vn$image,domain=nghean24h.vn
 ||misseschloe.co.za^*.gif$image
 ||mocfun.net/uploads/banners/
@@ -185,7 +185,7 @@ $popup,domain=truyenfull.live
 ||qthang.net/js/blocker$script,~third-party
 ||quaivatdienanh.com/*banner$image
 ||rophim1.co^*.gif$~third-party
-||rophimz.com.mx^*.gif,~third-party
+||rophimz.ac^*.gif,~third-party
 ||run.vn/widget$script,~third-party
 ||s.lazada.vn^$popup,domain=chillphimmoizz.org
 ||server.zmedia.vn/static/$script
@@ -350,13 +350,13 @@ $popup,domain=truyenfull.live
 /^https:\/\/[a-z]{8,12}\.com\/en\/(?:[a-z]{2,5}\/){0,2}[a-z]{2,}\?(?:[a-z]+=(?:\d+|[a-z]+)&)*?id=[12]\d{6}/$script,third-party
 /assets/js/vast.js$script
 /jwplayer/vast.js$script
-/player/html.php?aid=*&video_id=*&referer=https*xnhau.pink$domain=xnhau.pink
+/player/html.php?aid=*&video_id=*&referer=https*xnhau.meme$domain=xnhau.meme
 /player/vast.js$script
 /wp-content/uploads/*.gif$image,domain=www.hayvn.net|truyennung.net
 @@||cdn.adxcontent.com/vlxx/vl-inplayer-adx.js
 @@||pagead2.googlesyndication.com^$domain=gaingon3d.com|cap3.video|qmh.garden
 docufind.org.uk/wp-content/themes/vlxx/js/*-adx.js$script
-||ads.bizwd.net^$image,domain=museodebecal.com
+||ads.bizwd.net^$image,domain=termebilgigazetesi.com
 ||agtcmuohbt.in^
 ||blogger.googleusercontent.com^*.gif$image,domain=www.gvnvh18z.com
 ||bullionglidingscuttle.com/lv/esnk/2031811/code.js$domain=lxmanga.top,rewrite=abp-resource:blank-js
@@ -370,13 +370,13 @@ docufind.org.uk/wp-content/themes/vlxx/js/*-adx.js$script
 ||creative.mnaspm.com^
 ||crumpetprankerstench.com/on.js$domain=lxmanga.top,script,rewrite=abp-resource:blank-js
 ||cruncherpatiencestoreroom.com^$popup,domain=qmhv3.lol
-||dance.bytecdn.cfd^*.gif$image,domain=qmhsex.skin
+||dance.bytecdn.cfd^*.gif$image,domain=qmhsex.wiki
 ||discordapp.$image,domain=thefaplive.com
 ||gamer18.net^*.gif$image
 ||hentaivn.show/banner_image/$image
 ||hhkungfu.us^*.gif$image,domain=x.chinav.sex|x.phimsexvn1.co.uk
 ||i.ibb.co^*.gif$image,domain=sex.javnong.cc
-||i.imgur.com^$image,domain=phim18hd.site|xamvn.work
+||i.imgur.com^$image,domain=phim18hd.site|xamvn.lat
 ||i.imgur.com^*.gif$image,domain=x.chinav.sex|quatvn.stream
 ||img.congdongmassage.com/banner/$image,domain=congdongmassage.com
 ||javhdz.page/js/ads-javhd.js$script,~third-party
@@ -415,4 +415,4 @@ docufind.org.uk/wp-content/themes/vlxx/js/*-adx.js$script
 ||xamer.xyz/styles/file/$image
 ||xfast.sbs/media/$image,domain=fullcliphot.org|fulllivehot.us
 ||xfast.sbs^*.gif$image,domain=clipphot.co
-||xnhau.blog^$media,domain=xnhau.pink
+||xnhau.blog^$media,domain=xnhau.meme
