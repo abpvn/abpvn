@@ -1,11 +1,11 @@
-diff name:abpvn lines:59 checksum:17b8715142
+diff name:abpvn lines:78 checksum:35a33872fc
 d2 1
 a2 1
-! Version: 20261126135310580
+! Version: 20261126174229372
 d5 2
 a6 2
-! Last modified: 26 Nov 2026 13:53:10 UTC+7
-! Diff-Path: patches/20261126135310580.patch#abpvn
+! Last modified: 26 Nov 2026 17:42:29 UTC+7
+! Diff-Path: patches/20261126174229372.patch#abpvn
 d108 3
 a110 3
 ||coiphim.art/client_assets/js/dataview/adsview.js$script,~third-party
@@ -14,6 +14,16 @@ a110 3
 d120 1
 a120 1
 ||ghienphim.blog^*.gif$image,domain=coiphim.art
+d124 5
+a128 5
+||giovang.baby/wp-content/plugins/ovn-suite/assets/frontend/banner/$~third-party
+||giovang.baby/wp-content/themes/GioVang/assets/js/giovang-banner-resolve.js$script,~third-party
+||giovang.baby/wp-content/themes/GioVang/assets/tvc/$media,~third-party
+||giovang.baby/wp-content/uploads/2026/06/giovang-popup-1.png$image
+||giovang.baby^*.gif$image
+d177 1
+a177 1
+||ovn-banner.megatech.global^$image,domain=giovang.baby
 d238 1
 a238 1
 ||xc.1357668.com^$image,domain=www.7mvn666.com
@@ -25,6 +35,15 @@ coiphim.art,ghienphimz.ink##.ad-floater
 coiphim.art,ghienphimz.ink##.popunder-link
 coiphim.art,ghienphimz.ink##.promotion-popup
 coiphim.art,ghienphimz.ink,subnhanh.plus##.video-ad-layer
+d493 7
+a499 7
+giovang.baby##.balloon-wrapper
+giovang.baby##.banner_popup
+giovang.baby##.banners-bottom
+giovang.baby##.bc-hidden-link.seo4s-resolve-link
+giovang.baby##.box-odds-match
+giovang.baby##.is-active.football.preview-detail-item>.col-info>.tiny-info>.cta>.btn-2.btn
+giovang.baby##.nav-top-nha-cai
 d546 1
 a546 1
 kienthuc.net.vn,saostar.vn,bongda24h.vn,antt.vn,coiphim.art,ghienphimz.ink,nghenhinvietnam.vn,vn-z.vn##.ads
@@ -58,14 +77,14 @@ qmhv3.shop##.p-4.justify-center.items-center.flex.backdrop-blur-sm.bg-black\/80.
 a1087 2
 theperfecttooltribute.com###popup-ad-box
 theperfecttooltribute.com##.banner-ad
-diff name:abpvn_adguard lines:68 checksum:f05a752b01
+diff name:abpvn_adguard lines:90 checksum:47339288a6
 d2 1
 a2 1
-! Version: 20261126135310580
+! Version: 20261126174229372
 d5 2
 a6 2
-! Last modified: 26 Nov 2026 13:53:10 UTC+7
-! Diff-Path: patches/20261126135310580.patch#abpvn_adguard
+! Last modified: 26 Nov 2026 17:42:29 UTC+7
+! Diff-Path: patches/20261126174229372.patch#abpvn_adguard
 d105 3
 a107 3
 ||coiphim.art/client_assets/js/dataview/adsview.js$script,~third-party
@@ -74,6 +93,16 @@ a107 3
 d117 1
 a117 1
 ||ghienphim.blog^*.gif$image,domain=coiphim.art
+d121 5
+a125 5
+||giovang.baby/wp-content/plugins/ovn-suite/assets/frontend/banner/$~third-party
+||giovang.baby/wp-content/themes/GioVang/assets/js/giovang-banner-resolve.js$script,~third-party
+||giovang.baby/wp-content/themes/GioVang/assets/tvc/$media,~third-party
+||giovang.baby/wp-content/uploads/2026/06/giovang-popup-1.png$image
+||giovang.baby^*.gif$image
+d174 1
+a174 1
+||ovn-banner.megatech.global^$image,domain=giovang.baby
 d233 1
 a233 1
 ||xc.1357668.com^$image,domain=www.7mvn666.com
@@ -85,6 +114,15 @@ coiphim.art,ghienphimz.ink##.ad-floater
 coiphim.art,ghienphimz.ink##.popunder-link
 coiphim.art,ghienphimz.ink##.promotion-popup
 coiphim.art,ghienphimz.ink,subnhanh.plus##.video-ad-layer
+d488 7
+a494 7
+giovang.baby##.balloon-wrapper
+giovang.baby##.banner_popup
+giovang.baby##.banners-bottom
+giovang.baby##.bc-hidden-link.seo4s-resolve-link
+giovang.baby##.box-odds-match
+giovang.baby##.is-active.football.preview-detail-item>.col-info>.tiny-info>.cta>.btn-2.btn
+giovang.baby##.nav-top-nha-cai
 d540 1
 a540 1
 kienthuc.net.vn,saostar.vn,bongda24h.vn,antt.vn,coiphim.art,ghienphimz.ink,nghenhinvietnam.vn,vn-z.vn##.ads
@@ -121,20 +159,23 @@ theperfecttooltribute.com##.banner-ad
 d1135 1
 a1135 1
 freeplayervideo.com,www.sieutamphim.cloud,player-cdn.com,hopphim.online,streamc.xyz,qmhv3.shop,cap3.video,qmh.garden#%#//scriptlet("set-constant", "open", "noopFunc")
+d1137 1
+a1137 1
+giovang.baby#%#//scriptlet("json-prune", "0.default_ads_video")
 d1178 4
 a1181 4
 qmhv3.shop#%#//scriptlet("prevent-addEventListener", "click", "d", "elements", ".art-control-fullscreen")
 qmhv3.shop#%#//scriptlet("prevent-addEventListener", "click", "e.target")
 qmhv3.shop#%#//scriptlet("prevent-addEventListener", "click", "setTimeout")
 qmhv3.shop#%#//scriptlet("prevent-addEventListener", "fullscreenchange", "e.target")
-diff name:abpvn_content_blocker lines:59 checksum:c949c7cf01
+diff name:abpvn_content_blocker lines:78 checksum:37a1dd3b7b
 d2 1
 a2 1
-! Version: 20261126135310580
+! Version: 20261126174229372
 d5 2
 a6 2
-! Last modified: 26 Nov 2026 13:53:10 UTC+7
-! Diff-Path: patches/20261126135310580.patch#abpvn_content_blocker
+! Last modified: 26 Nov 2026 17:42:29 UTC+7
+! Diff-Path: patches/20261126174229372.patch#abpvn_content_blocker
 d108 3
 a110 3
 ||coiphim.art/client_assets/js/dataview/adsview.js$script,~third-party
@@ -143,6 +184,16 @@ a110 3
 d120 1
 a120 1
 ||ghienphim.blog^*.gif$image,domain=coiphim.art
+d124 5
+a128 5
+||giovang.baby/wp-content/plugins/ovn-suite/assets/frontend/banner/$~third-party
+||giovang.baby/wp-content/themes/GioVang/assets/js/giovang-banner-resolve.js$script,~third-party
+||giovang.baby/wp-content/themes/GioVang/assets/tvc/$media,~third-party
+||giovang.baby/wp-content/uploads/2026/06/giovang-popup-1.png$image
+||giovang.baby^*.gif$image
+d177 1
+a177 1
+||ovn-banner.megatech.global^$image,domain=giovang.baby
 d238 1
 a238 1
 ||xc.1357668.com^$image,domain=www.7mvn666.com
@@ -154,6 +205,15 @@ coiphim.art,ghienphimz.ink##.ad-floater
 coiphim.art,ghienphimz.ink##.popunder-link
 coiphim.art,ghienphimz.ink##.promotion-popup
 coiphim.art,ghienphimz.ink,subnhanh.plus##.video-ad-layer
+d493 7
+a499 7
+giovang.baby##.balloon-wrapper
+giovang.baby##.banner_popup
+giovang.baby##.banners-bottom
+giovang.baby##.bc-hidden-link.seo4s-resolve-link
+giovang.baby##.box-odds-match
+giovang.baby##.is-active.football.preview-detail-item>.col-info>.tiny-info>.cta>.btn-2.btn
+giovang.baby##.nav-top-nha-cai
 d546 1
 a546 1
 kienthuc.net.vn,saostar.vn,bongda24h.vn,antt.vn,coiphim.art,ghienphimz.ink,nghenhinvietnam.vn,vn-z.vn##.ads
@@ -187,14 +247,14 @@ qmhv3.shop##.p-4.justify-center.items-center.flex.backdrop-blur-sm.bg-black\/80.
 a1087 2
 theperfecttooltribute.com###popup-ad-box
 theperfecttooltribute.com##.banner-ad
-diff name:abpvn_noelemhide lines:32 checksum:15ae29abe3
+diff name:abpvn_noelemhide lines:42 checksum:203410fb05
 d2 1
 a2 1
-! Version: 20261126135310580
+! Version: 20261126174229372
 d5 2
 a6 2
-! Last modified: 26 Nov 2026 13:53:10 UTC+7
-! Diff-Path: patches/20261126135310580.patch#abpvn_noelemhide
+! Last modified: 26 Nov 2026 17:42:29 UTC+7
+! Diff-Path: patches/20261126174229372.patch#abpvn_noelemhide
 d108 3
 a110 3
 ||coiphim.art/client_assets/js/dataview/adsview.js$script,~third-party
@@ -203,6 +263,16 @@ a110 3
 d120 1
 a120 1
 ||ghienphim.blog^*.gif$image,domain=coiphim.art
+d124 5
+a128 5
+||giovang.baby/wp-content/plugins/ovn-suite/assets/frontend/banner/$~third-party
+||giovang.baby/wp-content/themes/GioVang/assets/js/giovang-banner-resolve.js$script,~third-party
+||giovang.baby/wp-content/themes/GioVang/assets/tvc/$media,~third-party
+||giovang.baby/wp-content/uploads/2026/06/giovang-popup-1.png$image
+||giovang.baby^*.gif$image
+d177 1
+a177 1
+||ovn-banner.megatech.global^$image,domain=giovang.baby
 d238 1
 a238 1
 ||xc.1357668.com^$image,domain=www.7mvn666.com
@@ -220,14 +290,14 @@ a393 2
 d407 1
 a407 1
 ||video.s3viphub.shop/uploads/banners$image,domain=qmhv3.shop
-diff name:abpvn_ublock lines:68 checksum:c89259b8e1
+diff name:abpvn_ublock lines:90 checksum:07515c47e0
 d2 1
 a2 1
-! Version: 20261126135310580
+! Version: 20261126174229372
 d5 2
 a6 2
-! Last modified: 26 Nov 2026 13:53:10 UTC+7
-! Diff-Path: patches/20261126135310580.patch#abpvn_ublock
+! Last modified: 26 Nov 2026 17:42:29 UTC+7
+! Diff-Path: patches/20261126174229372.patch#abpvn_ublock
 d105 3
 a107 3
 ||coiphim.art/client_assets/js/dataview/adsview.js$script,~third-party
@@ -236,6 +306,16 @@ a107 3
 d117 1
 a117 1
 ||ghienphim.blog^*.gif$image,domain=coiphim.art
+d121 5
+a125 5
+||giovang.baby/wp-content/plugins/ovn-suite/assets/frontend/banner/$~third-party
+||giovang.baby/wp-content/themes/GioVang/assets/js/giovang-banner-resolve.js$script,~third-party
+||giovang.baby/wp-content/themes/GioVang/assets/tvc/$media,~third-party
+||giovang.baby/wp-content/uploads/2026/06/giovang-popup-1.png$image
+||giovang.baby^*.gif$image
+d174 1
+a174 1
+||ovn-banner.megatech.global^$image,domain=giovang.baby
 d233 1
 a233 1
 ||xc.1357668.com^$image,domain=www.7mvn666.com
@@ -247,6 +327,15 @@ coiphim.art,ghienphimz.ink##.ad-floater
 coiphim.art,ghienphimz.ink##.popunder-link
 coiphim.art,ghienphimz.ink##.promotion-popup
 coiphim.art,ghienphimz.ink,subnhanh.plus##.video-ad-layer
+d488 7
+a494 7
+giovang.baby##.balloon-wrapper
+giovang.baby##.banner_popup
+giovang.baby##.banners-bottom
+giovang.baby##.bc-hidden-link.seo4s-resolve-link
+giovang.baby##.box-odds-match
+giovang.baby##.is-active.football.preview-detail-item>.col-info>.tiny-info>.cta>.btn-2.btn
+giovang.baby##.nav-top-nha-cai
 d540 1
 a540 1
 kienthuc.net.vn,saostar.vn,bongda24h.vn,antt.vn,coiphim.art,ghienphimz.ink,nghenhinvietnam.vn,vn-z.vn##.ads
@@ -283,6 +372,9 @@ theperfecttooltribute.com##.banner-ad
 d1134 1
 a1134 1
 freeplayervideo.com,www.sieutamphim.cloud,player-cdn.com,hopphim.online,streamc.xyz,qmhv3.shop,cap3.video,qmh.garden##+js(set, open, noopFunc)
+d1136 1
+a1136 1
+giovang.baby##+js(json-prune, 0.default_ads_video)
 d1176 4
 a1179 4
 qmhv3.shop##+js(aeld, click, d, elements, .art-control-fullscreen)
